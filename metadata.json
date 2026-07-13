@@ -1,0 +1,8 @@
+{
+  "name": "English Vocabulary Exercise",
+  "description": "An interactive English vocabulary practice app with multiple-choice questions, definition matching, and detailed context explanations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
