@@ -128,12 +128,12 @@ export default function App() {
             {showProgress ? (
               <button
                 onClick={() => setShowProgress(false)}
-                className="p-2 bg-white/[0.03] text-[#c5a47e] border border-[#c5a47e]/20 rounded-xl shadow-sm cursor-pointer"
+                className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl shadow-sm cursor-pointer"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
             ) : (
-              <div className="p-2 bg-white/[0.03] text-[#c5a47e] border border-[#c5a47e]/20 rounded-xl shadow-sm">
+              <div className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl shadow-sm">
                 <BookOpen className="w-6 h-6" />
               </div>
             )}
@@ -147,14 +147,14 @@ export default function App() {
 
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-white/[0.06]">
-              <TrendingUp className="w-4 h-4 text-[#c5a47e]" />
+              <TrendingUp className="w-4 h-4 text-[#e3b553]" />
               <span className="text-xs text-white/50 font-medium">Accuracy:</span>
               <span className="text-xs font-mono font-bold text-white">{accuracyRate}%</span>
             </div>
-            <div className="flex items-center space-x-2 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-[#c5a47e]/20">
-              <Award className="w-4 h-4 text-[#c5a47e]" />
-              <span className="text-xs text-[#c5a47e] font-medium">Streak:</span>
-              <span className="text-xs font-mono font-bold text-[#c5a47e]">{streak} 🔥</span>
+            <div className="flex items-center space-x-2 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-[#e3b553]/20">
+              <Award className="w-4 h-4 text-[#e3b553]" />
+              <span className="text-xs text-[#e3b553] font-medium">Streak:</span>
+              <span className="text-xs font-mono font-bold text-[#e3b553]">{streak} 🔥</span>
             </div>
           </div>
         </div>

@@ -42,7 +42,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
     <div className="space-y-6">
       <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-white/[0.03] text-[#c5a47e] border border-[#c5a47e]/20 rounded-xl">
+          <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
             <Layers className="w-5 h-5" />
           </div>
           <div>
@@ -52,7 +52,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
         </div>
         <div className="text-right">
           <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider">Mastered</p>
-          <p className="text-lg font-serif text-[#c5a47e]">{masteredCount}/{FLASHCARDS.length}</p>
+          <p className="text-lg font-serif text-[#e3b553]">{masteredCount}/{FLASHCARDS.length}</p>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
           animate={{ opacity: 1, y: 0 }}
           className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-8 text-center shadow-lg min-h-[420px] flex flex-col justify-center items-center"
         >
-          <div className="p-4 bg-[#c5a47e]/10 text-[#c5a47e] border border-[#c5a47e]/20 rounded-2xl mb-5">
+          <div className="p-4 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl mb-5">
             <CheckCircle2 className="w-10 h-10" />
           </div>
           <h3 className="text-2xl font-serif italic text-white">
@@ -78,7 +78,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
         <>
           <div className="h-1 bg-white/[0.04] w-full rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#c5a47e] transition-all duration-300"
+              className="h-full bg-[#e3b553] transition-all duration-300"
               style={{ width: `${(position / queue.length) * 100}%` }}
             />
           </div>
@@ -102,12 +102,12 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
                 <h3 className="text-4xl font-serif italic font-bold text-white tracking-wide">
                   {currentCard.word}
                 </h3>
-                <span className="text-xs font-mono bg-[#c5a47e]/10 text-[#c5a47e] px-2.5 py-0.5 rounded-md mt-3 border border-[#c5a47e]/15">
+                <span className="text-xs font-mono bg-[#e3b553]/10 text-[#e3b553] px-2.5 py-0.5 rounded-md mt-3 border border-[#e3b553]/15">
                   {currentCard.partOfSpeech}
                 </span>
                 <button
                   onClick={(e) => { e.stopPropagation(); playPronunciation(currentCard.word); }}
-                  className="mt-5 p-2.5 text-white/50 hover:text-[#c5a47e] hover:bg-white/[0.03] rounded-xl transition-colors cursor-pointer"
+                  className="mt-5 p-2.5 text-white/50 hover:text-[#e3b553] hover:bg-white/[0.03] rounded-xl transition-colors cursor-pointer"
                   title="Listen"
                 >
                   <Volume2 className="w-5 h-5" />
@@ -121,12 +121,12 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
                 animate={{ rotateY: isFlipped ? 0 : 90, opacity: isFlipped ? 1 : 0 }}
                 transition={{ duration: 0.25 }}
                 style={{ pointerEvents: isFlipped ? 'auto' : 'none' }}
-                className="absolute inset-0 rounded-3xl border shadow-lg p-6 flex flex-col justify-center items-center text-center bg-[#c5a47e]/[0.06] border-[#c5a47e]/30"
+                className="absolute inset-0 rounded-3xl border shadow-lg p-6 flex flex-col justify-center items-center text-center bg-[#e3b553]/[0.06] border-[#e3b553]/30"
               >
-                <p className="text-2xl font-serif italic text-[#c5a47e] font-semibold">
+                <p className="text-2xl font-serif italic text-[#e3b553] font-semibold">
                   {currentCard.turkishMeaning}
                 </p>
-                <p className="text-sm text-white/70 leading-relaxed font-light mt-4 italic border-l-2 border-[#c5a47e]/40 pl-3 text-left">
+                <p className="text-sm text-white/70 leading-relaxed font-light mt-4 italic border-l-2 border-[#e3b553]/40 pl-3 text-left">
                   "{currentCard.exampleSentence}"
                 </p>
               </motion.div>
@@ -149,7 +149,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
               </button>
               <button
                 onClick={() => handleRate('easy')}
-                className="py-3.5 rounded-xl text-xs font-bold bg-[#c5a47e]/15 border border-[#c5a47e]/40 text-[#c5a47e] hover:bg-[#c5a47e]/25 transition-all cursor-pointer flex items-center justify-center gap-1.5"
+                className="py-3.5 rounded-xl text-xs font-bold bg-[#e3b553]/15 border border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/25 transition-all cursor-pointer flex items-center justify-center gap-1.5"
               >
                 <Sparkles className="w-3.5 h-3.5" /> Kolay
               </button>
@@ -160,7 +160,7 @@ export default function FlashcardsScreen({ srsState, reviewFlashcard, playPronun
             <div className="flex justify-center">
               <button
                 onClick={handleFlip}
-                className="flex items-center gap-2 text-xs font-mono text-white/40 hover:text-[#c5a47e] transition-colors cursor-pointer"
+                className="flex items-center gap-2 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
               >
                 <RotateCcw className="w-3.5 h-3.5" /> Click card to flip
               </button>

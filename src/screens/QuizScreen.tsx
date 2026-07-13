@@ -251,10 +251,10 @@ export default function QuizScreen({
             {/* Mixed practice CTA */}
             <button
               onClick={startMixedQuiz}
-              className="w-full text-left bg-[#c5a47e]/[0.07] hover:bg-[#c5a47e]/[0.1] border border-[#c5a47e]/25 rounded-2xl p-5 transition-all cursor-pointer flex items-center justify-between"
+              className="w-full text-left bg-[#e3b553]/[0.07] hover:bg-[#e3b553]/[0.1] border border-[#e3b553]/25 rounded-2xl p-5 transition-all cursor-pointer flex items-center justify-between"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-[#c5a47e]/10 text-[#c5a47e] border border-[#c5a47e]/20 rounded-xl">
+                <div className="p-2.5 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
                   <Shuffle className="w-5 h-5" />
                 </div>
                 <div>
@@ -262,16 +262,16 @@ export default function QuizScreen({
                   <p className="text-xs text-white/50 font-light mt-0.5">Vocabulary + grammar questions combined.</p>
                 </div>
               </div>
-              <ChevronRight className="w-4 h-4 text-[#c5a47e]" />
+              <ChevronRight className="w-4 h-4 text-[#e3b553]" />
             </button>
 
             {/* Category picker */}
             <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-sm font-serif italic text-white flex items-center gap-2">
-                  <Compass className="w-4 h-4 text-[#c5a47e]" /> Choose Practice Level
+                  <Compass className="w-4 h-4 text-[#e3b553]" /> Choose Practice Level
                 </h2>
-                <span className="text-[10px] uppercase font-mono tracking-widest font-semibold text-[#c5a47e] bg-[#c5a47e]/10 px-2.5 py-0.5 rounded-md border border-[#c5a47e]/20">
+                <span className="text-[10px] uppercase font-mono tracking-widest font-semibold text-[#e3b553] bg-[#e3b553]/10 px-2.5 py-0.5 rounded-md border border-[#e3b553]/20">
                   Standard Decks
                 </span>
               </div>
@@ -283,13 +283,13 @@ export default function QuizScreen({
                     <button
                       key={key}
                       onClick={() => startStaticQuiz(value)}
-                      className="group w-full text-left p-3.5 rounded-xl border transition-all duration-200 flex items-center justify-between bg-white/[0.01] hover:bg-white/[0.03] text-white/80 border-white/[0.05] hover:border-[#c5a47e]/30"
+                      className="group w-full text-left p-3.5 rounded-xl border transition-all duration-200 flex items-center justify-between bg-white/[0.01] hover:bg-white/[0.03] text-white/80 border-white/[0.05] hover:border-[#e3b553]/30"
                     >
                       <div>
                         <h3 className="text-sm font-medium text-white/90 font-light">{value}</h3>
                         <p className="text-xs mt-0.5 text-white/40 font-mono text-[11px]">{count} standard terms included</p>
                       </div>
-                      <div className="p-1.5 rounded-lg bg-white/[0.03] text-white/40 group-hover:bg-[#c5a47e]/10 group-hover:text-[#c5a47e] border border-white/[0.05]">
+                      <div className="p-1.5 rounded-lg bg-white/[0.03] text-white/40 group-hover:bg-[#e3b553]/10 group-hover:text-[#e3b553] border border-white/[0.05]">
                         <ChevronRight className="w-4 h-4" />
                       </div>
                     </button>
@@ -301,7 +301,7 @@ export default function QuizScreen({
             {/* AI Custom Quiz */}
             <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md relative overflow-hidden">
               <div className="absolute top-0 right-0 p-3">
-                <Sparkles className="w-5 h-5 text-[#c5a47e] animate-pulse" />
+                <Sparkles className="w-5 h-5 text-[#e3b553] animate-pulse" />
               </div>
               <h2 className="text-sm font-serif italic text-white flex items-center gap-2 mb-1.5">AI Custom Vocabulary Quiz</h2>
               <p className="text-xs text-white/50 mb-4 font-light leading-relaxed">
@@ -314,14 +314,14 @@ export default function QuizScreen({
                   value={customThemeInput}
                   onChange={(e) => setCustomThemeInput(e.target.value)}
                   placeholder="e.g., Medicine, Culinary, SAT Advanced, or list of words..."
-                  className="w-full text-sm bg-white/[0.02] hover:bg-white/[0.04] focus:bg-white/[0.05] border border-white/[0.08] focus:border-[#c5a47e] focus:ring-1 focus:ring-[#c5a47e] rounded-xl px-4 py-3 outline-hidden transition-all text-white font-light placeholder-white/20"
+                  className="w-full text-sm bg-white/[0.02] hover:bg-white/[0.04] focus:bg-white/[0.05] border border-white/[0.08] focus:border-[#e3b553] focus:ring-1 focus:ring-[#e3b553] rounded-xl px-4 py-3 outline-hidden transition-all text-white font-light placeholder-white/20"
                 />
                 <button
                   type="submit"
                   disabled={!customThemeInput.trim()}
                   className={`w-full py-3 px-4 rounded-xl text-xs font-semibold shadow-xs flex items-center justify-center space-x-2 transition-all ${
                     customThemeInput.trim()
-                      ? 'bg-[#c5a47e] text-[#0a0a0b] hover:bg-[#b4936d] font-bold cursor-pointer'
+                      ? 'bg-[#e3b553] text-[#0a0a0b] hover:bg-[#d2a442] font-bold cursor-pointer'
                       : 'bg-white/[0.02] text-white/25 border border-white/[0.04] cursor-not-allowed'
                   }`}
                 >
@@ -331,8 +331,8 @@ export default function QuizScreen({
               </form>
 
               {!isAiConfigured && (
-                <div className="mt-3.5 flex items-start gap-2 bg-[#c5a47e]/5 border border-[#c5a47e]/15 rounded-xl p-3">
-                  <AlertCircle className="w-4 h-4 text-[#c5a47e] shrink-0 mt-0.5" />
+                <div className="mt-3.5 flex items-start gap-2 bg-[#e3b553]/5 border border-[#e3b553]/15 rounded-xl p-3">
+                  <AlertCircle className="w-4 h-4 text-[#e3b553] shrink-0 mt-0.5" />
                   <p className="text-[11px] text-white/60 leading-relaxed font-light">
                     <strong>Static fallback active:</strong> Configure your <code>GEMINI_API_KEY</code> to unlock dynamic quiz generation on any theme.
                   </p>
@@ -344,7 +344,7 @@ export default function QuizScreen({
             <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-sm font-serif italic text-white flex items-center gap-2">
-                  <Award className="w-4 h-4 text-[#c5a47e]" /> Session Stats
+                  <Award className="w-4 h-4 text-[#e3b553]" /> Session Stats
                 </h2>
                 <button onClick={onResetStats} className="text-[11px] text-white/30 hover:text-red-400 font-mono font-medium transition-colors cursor-pointer">
                   Reset Stats
@@ -358,7 +358,7 @@ export default function QuizScreen({
                 </div>
                 <div className="bg-white/[0.01] rounded-xl p-3 border border-white/[0.04]">
                   <p className="text-[10px] text-white/40 font-mono tracking-wider uppercase">Accuracy Rate</p>
-                  <p className={`text-2xl font-serif mt-1 ${accuracyRate >= 80 ? 'text-[#c5a47e]' : accuracyRate >= 50 ? 'text-white/80' : 'text-white/40'}`}>{accuracyRate}%</p>
+                  <p className={`text-2xl font-serif mt-1 ${accuracyRate >= 80 ? 'text-[#e3b553]' : accuracyRate >= 50 ? 'text-white/80' : 'text-white/40'}`}>{accuracyRate}%</p>
                   <p className="text-[10px] text-white/30 mt-1 font-light">Overall accuracy</p>
                 </div>
                 <div className="bg-white/[0.01] rounded-xl p-3 border border-white/[0.04]">
@@ -367,7 +367,7 @@ export default function QuizScreen({
                 </div>
                 <div className="bg-white/[0.01] rounded-xl p-3 border border-white/[0.04]">
                   <p className="text-[10px] text-white/40 font-mono tracking-wider uppercase">High Streak</p>
-                  <p className="text-2xl font-serif text-[#c5a47e] mt-1">{highStreak} 🏆</p>
+                  <p className="text-2xl font-serif text-[#e3b553] mt-1">{highStreak} 🏆</p>
                 </div>
               </div>
             </div>
@@ -389,7 +389,7 @@ export default function QuizScreen({
                       <div className="space-y-1 pr-2">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className="text-xs font-serif font-bold text-white">{item.word}</span>
-                          <span className="text-[9px] font-mono bg-[#c5a47e]/10 text-[#c5a47e] px-1.5 py-0.5 rounded font-medium border border-[#c5a47e]/15">
+                          <span className="text-[9px] font-mono bg-[#e3b553]/10 text-[#e3b553] px-1.5 py-0.5 rounded font-medium border border-[#e3b553]/15">
                             {item.partOfSpeech}
                           </span>
                           {item.wasCorrect ? (
@@ -417,13 +417,13 @@ export default function QuizScreen({
             className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-8 text-center shadow-lg min-h-[500px] flex flex-col justify-center items-center"
           >
             <div className="relative mb-6">
-              <div className="w-16 h-16 border-4 border-white/10 border-t-[#c5a47e] rounded-full animate-spin"></div>
+              <div className="w-16 h-16 border-4 border-white/10 border-t-[#e3b553] rounded-full animate-spin"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-[#c5a47e] animate-pulse" />
+                <Sparkles className="w-6 h-6 text-[#e3b553] animate-pulse" />
               </div>
             </div>
             <h2 className="text-xl font-serif italic text-white">Curating Your Vocab Deck</h2>
-            <p className="text-sm font-mono text-[#c5a47e] bg-[#c5a47e]/5 border border-[#c5a47e]/15 px-4 py-2.5 rounded-xl mt-6 animate-pulse max-w-sm">
+            <p className="text-sm font-mono text-[#e3b553] bg-[#e3b553]/5 border border-[#e3b553]/15 px-4 py-2.5 rounded-xl mt-6 animate-pulse max-w-sm">
               {aiLoadingMessage}
             </p>
           </motion.div>
@@ -438,12 +438,12 @@ export default function QuizScreen({
             className="bg-white/[0.02] rounded-3xl border border-white/[0.06] shadow-lg overflow-hidden"
           >
             <div className="h-1 bg-white/[0.04] w-full">
-              <div className="h-full bg-[#c5a47e] transition-all duration-300" style={{ width: `${((currentQuestionIdx + 1) / quizQuestions.length) * 100}%` }} />
+              <div className="h-full bg-[#e3b553] transition-all duration-300" style={{ width: `${((currentQuestionIdx + 1) / quizQuestions.length) * 100}%` }} />
             </div>
 
             <div className="p-6 sm:p-8 space-y-6">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono tracking-widest font-bold bg-[#c5a47e]/10 border border-[#c5a47e]/15 text-[#c5a47e] px-2.5 py-1 rounded-lg uppercase flex items-center gap-1.5">
+                <span className="text-[10px] font-mono tracking-widest font-bold bg-[#e3b553]/10 border border-[#e3b553]/15 text-[#e3b553] px-2.5 py-1 rounded-lg uppercase flex items-center gap-1.5">
                   {currentQuestion.kind === 'grammar' ? <GraduationCap className="w-3 h-3" /> : <ListChecks className="w-3 h-3" />}
                   {selectedCategory}
                 </span>
@@ -458,7 +458,7 @@ export default function QuizScreen({
                     <h3 className={`font-serif italic font-bold text-white tracking-wide ${currentQuestion.kind === 'vocabulary' ? 'text-3xl' : 'text-lg'}`}>
                       {currentQuestion.headline}
                     </h3>
-                    <span className="text-xs font-mono bg-[#c5a47e]/10 text-[#c5a47e] px-2.5 py-0.5 rounded-md lowercase border border-[#c5a47e]/15">
+                    <span className="text-xs font-mono bg-[#e3b553]/10 text-[#e3b553] px-2.5 py-0.5 rounded-md lowercase border border-[#e3b553]/15">
                       {currentQuestion.partOfSpeech}
                     </span>
                   </div>
@@ -472,7 +472,7 @@ export default function QuizScreen({
                     onClick={() => playPronunciation(currentQuestion.headline)}
                     className="self-start sm:self-center bg-white/[0.03] hover:bg-white/[0.06] text-white/90 border border-white/[0.08] shadow-sm p-3 rounded-xl transition-all flex items-center gap-2 text-xs font-bold shrink-0 cursor-pointer"
                   >
-                    <Volume2 className="w-4 h-4 text-[#c5a47e]" />
+                    <Volume2 className="w-4 h-4 text-[#e3b553]" />
                     <span>Listen</span>
                   </button>
                 )}
@@ -484,13 +484,13 @@ export default function QuizScreen({
                   const isCorrectAnswer = idx === currentQuestion.correctIndex;
                   const hasUserAnswered = selectedOptionIdx !== null;
 
-                  let tileClass = 'bg-white/[0.01] border-white/[0.08] hover:border-[#c5a47e]/50 hover:bg-white/[0.03] text-white/80';
+                  let tileClass = 'bg-white/[0.01] border-white/[0.08] hover:border-[#e3b553]/50 hover:bg-white/[0.03] text-white/80';
                   let iconElement = null;
 
                   if (hasUserAnswered) {
                     if (isCorrectAnswer) {
-                      tileClass = 'bg-[#c5a47e]/10 border-[#c5a47e] text-white';
-                      iconElement = <CheckCircle2 className="w-5 h-5 text-[#c5a47e] shrink-0" />;
+                      tileClass = 'bg-[#e3b553]/10 border-[#e3b553] text-white';
+                      iconElement = <CheckCircle2 className="w-5 h-5 text-[#e3b553] shrink-0" />;
                     } else if (isSelected) {
                       tileClass = 'bg-red-950/20 border-red-500/80 text-red-200';
                       iconElement = <XCircle className="w-5 h-5 text-red-400 shrink-0" />;
@@ -508,7 +508,7 @@ export default function QuizScreen({
                     >
                       <span className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border mt-0.5 ${
                         hasUserAnswered && isCorrectAnswer
-                          ? 'bg-[#c5a47e] text-[#0a0a0b] border-[#c5a47e]'
+                          ? 'bg-[#e3b553] text-[#0a0a0b] border-[#e3b553]'
                           : hasUserAnswered && isSelected
                             ? 'bg-red-500 text-white border-red-500'
                             : 'bg-white/[0.02] text-white/40 border-white/[0.05]'
@@ -518,7 +518,7 @@ export default function QuizScreen({
                       <div className="flex-1">
                         <p className="text-sm font-light leading-relaxed">{option}</p>
                         {currentQuestion.optionsTr?.[idx] && (
-                          <p className="text-xs text-[#c5a47e]/70 font-light leading-relaxed mt-1">{currentQuestion.optionsTr[idx]}</p>
+                          <p className="text-xs text-[#e3b553]/70 font-light leading-relaxed mt-1">{currentQuestion.optionsTr[idx]}</p>
                         )}
                       </div>
                       {iconElement}
@@ -530,9 +530,9 @@ export default function QuizScreen({
               {selectedOptionIdx !== null && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="border-t border-white/[0.06] pt-6 mt-6 space-y-4">
                     {currentQuestion.kind === 'vocabulary' && currentQuestion.vocabExplanation && (
-                      <div className="bg-[#c5a47e]/5 border border-[#c5a47e]/15 rounded-2xl p-5 space-y-4 text-left">
-                        <h4 className="text-xs font-mono font-bold tracking-widest text-[#c5a47e] uppercase flex items-center gap-1.5">
-                          <Compass className="w-4 h-4 text-[#c5a47e]" /> Vocabulary Insight & Context
+                      <div className="bg-[#e3b553]/5 border border-[#e3b553]/15 rounded-2xl p-5 space-y-4 text-left">
+                        <h4 className="text-xs font-mono font-bold tracking-widest text-[#e3b553] uppercase flex items-center gap-1.5">
+                          <Compass className="w-4 h-4 text-[#e3b553]" /> Vocabulary Insight & Context
                         </h4>
                         <div className="space-y-1">
                           <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider">Definition</p>
@@ -543,7 +543,7 @@ export default function QuizScreen({
                             <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider">Example Sentences</p>
                             <ul className="space-y-1.5">
                               {currentQuestion.vocabExplanation.exampleSentences.map((sentence, sIdx) => (
-                                <li key={sIdx} className="text-xs text-white/60 leading-relaxed italic border-l-2 border-[#c5a47e]/40 pl-3 font-light">"{sentence}"</li>
+                                <li key={sIdx} className="text-xs text-white/60 leading-relaxed italic border-l-2 border-[#e3b553]/40 pl-3 font-light">"{sentence}"</li>
                               ))}
                             </ul>
                           </div>
@@ -570,16 +570,16 @@ export default function QuizScreen({
                     )}
 
                     {currentQuestion.kind === 'grammar' && (
-                      <div className="bg-[#c5a47e]/5 border border-[#c5a47e]/15 rounded-2xl p-5 space-y-2 text-left">
-                        <h4 className="text-xs font-mono font-bold tracking-widest text-[#c5a47e] uppercase flex items-center gap-1.5">
-                          <HelpCircle className="w-4 h-4 text-[#c5a47e]" /> Correct Answer
+                      <div className="bg-[#e3b553]/5 border border-[#e3b553]/15 rounded-2xl p-5 space-y-2 text-left">
+                        <h4 className="text-xs font-mono font-bold tracking-widest text-[#e3b553] uppercase flex items-center gap-1.5">
+                          <HelpCircle className="w-4 h-4 text-[#e3b553]" /> Correct Answer
                         </h4>
                         <p className="text-sm text-white/80 leading-relaxed font-light">{currentQuestion.options[currentQuestion.correctIndex]}</p>
                       </div>
                     )}
 
                     <div className="flex justify-end pt-2">
-                      <button onClick={handleNextWord} className="bg-[#c5a47e] text-[#0a0a0b] hover:bg-[#b4936d] rounded-xl py-3.5 px-6 text-xs font-bold flex items-center justify-center space-x-2 transition-all cursor-pointer">
+                      <button onClick={handleNextWord} className="bg-[#e3b553] text-[#0a0a0b] hover:bg-[#d2a442] rounded-xl py-3.5 px-6 text-xs font-bold flex items-center justify-center space-x-2 transition-all cursor-pointer">
                         <span>{currentQuestionIdx + 1 < quizQuestions.length ? 'Next Question' : 'Finish & See Score'}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </button>
@@ -599,8 +599,8 @@ export default function QuizScreen({
             className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-6 sm:p-8 text-center shadow-lg space-y-6"
           >
             <div className="flex flex-col items-center justify-center space-y-3">
-              <div className="p-3 bg-[#c5a47e]/10 text-[#c5a47e] border border-[#c5a47e]/20 rounded-full">
-                <Award className="w-8 h-8 text-[#c5a47e]" />
+              <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-full">
+                <Award className="w-8 h-8 text-[#e3b553]" />
               </div>
               <h2 className="text-2xl font-serif italic text-white tracking-wide">Practice Complete</h2>
               <p className="text-xs text-white/40 font-mono uppercase tracking-widest">{selectedCategory}</p>
@@ -611,7 +611,7 @@ export default function QuizScreen({
                 <svg className="w-24 h-24 transform -rotate-90">
                   <circle cx="48" cy="48" r="40" className="stroke-white/[0.04]" strokeWidth="8" fill="transparent" />
                   <circle
-                    cx="48" cy="48" r="40" className="stroke-[#c5a47e]" strokeWidth="8" fill="transparent"
+                    cx="48" cy="48" r="40" className="stroke-[#e3b553]" strokeWidth="8" fill="transparent"
                     strokeDasharray={2 * Math.PI * 40}
                     strokeDashoffset={2 * Math.PI * 40 * (1 - correctInRun / quizQuestions.length)}
                   />
@@ -633,19 +633,19 @@ export default function QuizScreen({
             {vocabResults.length > 0 && grammarResults.length > 0 && (
               <div className="bg-white/[0.01] border border-white/[0.03] rounded-2xl p-5 max-w-md mx-auto grid grid-cols-2 gap-4 text-left">
                 <div>
-                  <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider flex items-center gap-1.5"><ListChecks className="w-3 h-3 text-[#c5a47e]" /> Vocabulary</p>
+                  <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider flex items-center gap-1.5"><ListChecks className="w-3 h-3 text-[#e3b553]" /> Vocabulary</p>
                   <p className="text-lg font-serif text-white mt-1">{vocabResults.filter(r => r.wasCorrect).length}/{vocabResults.length} correct</p>
                 </div>
                 <div>
-                  <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider flex items-center gap-1.5"><GraduationCap className="w-3 h-3 text-[#c5a47e]" /> Grammar</p>
+                  <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider flex items-center gap-1.5"><GraduationCap className="w-3 h-3 text-[#e3b553]" /> Grammar</p>
                   <p className="text-lg font-serif text-white mt-1">{grammarResults.filter(r => r.wasCorrect).length}/{grammarResults.length} correct</p>
                 </div>
               </div>
             )}
 
             <div className="text-left space-y-3">
-              <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-[#c5a47e] flex items-center gap-1.5">
-                <History className="w-3.5 h-3.5 text-[#c5a47e]" /> Practice Run Summary
+              <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-[#e3b553] flex items-center gap-1.5">
+                <History className="w-3.5 h-3.5 text-[#e3b553]" /> Practice Run Summary
               </h3>
               <div className="grid grid-cols-1 gap-2.5">
                 {currentQuizResults.map((res, index) => (
@@ -675,7 +675,7 @@ export default function QuizScreen({
                   else if (selectedCategory.startsWith('AI: ')) startAiCustomQuiz(selectedCategory.replace('AI: ', ''));
                   else startStaticQuiz(selectedCategory);
                 }}
-                className="bg-[#c5a47e] hover:bg-[#b4936d] text-[#0a0a0b] rounded-xl py-3.5 px-6 text-xs font-bold flex items-center justify-center space-x-2 shadow-md cursor-pointer"
+                className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3.5 px-6 text-xs font-bold flex items-center justify-center space-x-2 shadow-md cursor-pointer"
               >
                 <RotateCcw className="w-4 h-4" />
                 <span>Practice Again</span>

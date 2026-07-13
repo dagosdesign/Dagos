@@ -28,7 +28,7 @@ export default function ProgressScreen({ gamification, srsState, grammarProgress
   return (
     <div className="space-y-6">
       <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
-        <div className="p-2.5 bg-white/[0.03] text-[#c5a47e] border border-[#c5a47e]/20 rounded-xl">
+        <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
           <Award className="w-5 h-5" />
         </div>
         <div>
@@ -40,12 +40,12 @@ export default function ProgressScreen({ gamification, srsState, grammarProgress
       {/* Streak & XP hero row */}
       <div className="grid grid-cols-2 gap-3.5">
         <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-5 flex flex-col items-center text-center">
-          <Flame className="w-7 h-7 text-[#c5a47e]" />
+          <Flame className="w-7 h-7 text-[#e3b553]" />
           <p className="text-3xl font-serif text-white mt-2">{gamification.streakDays}</p>
           <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider mt-1">Day Streak</p>
         </div>
         <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-5 flex flex-col items-center text-center">
-          <Zap className="w-7 h-7 text-[#c5a47e]" />
+          <Zap className="w-7 h-7 text-[#e3b553]" />
           <p className="text-3xl font-serif text-white mt-2">{gamification.xp}</p>
           <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider mt-1">Total XP</p>
         </div>
@@ -60,7 +60,7 @@ export default function ProgressScreen({ gamification, srsState, grammarProgress
               cx="56"
               cy="56"
               r={ringRadius}
-              className="stroke-[#c5a47e]"
+              className="stroke-[#e3b553]"
               strokeWidth="9"
               fill="transparent"
               strokeLinecap="round"
@@ -95,7 +95,7 @@ export default function ProgressScreen({ gamification, srsState, grammarProgress
 function StatTile({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
   return (
     <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-4">
-      <div className="flex items-center gap-2 text-[#c5a47e]">{icon}</div>
+      <div className="flex items-center gap-2 text-[#e3b553]">{icon}</div>
       <p className="text-xl font-serif text-white mt-2">{value}</p>
       <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider mt-0.5">{label}</p>
     </div>
