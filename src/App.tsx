@@ -23,6 +23,7 @@ interface PracticeHistoryItem {
 export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [showProgress, setShowProgress] = useState(false);
+  const [pendingQuizCategory, setPendingQuizCategory] = useState<string | null>(null);
 
   // Quiz session stats (persisted, same keys as the original single-file app)
   const [score, setScore] = useState<number>(() => {
@@ -119,6 +120,12 @@ export default function App() {
     setActiveTab(tab);
   };
 
+  const handleStartQuizCategory = (category: string) => {
+    setPendingQuizCategory(category);
+    setShowProgress(false);
+    setActiveTab('quiz');
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0a0b] text-[#dcdcdc] flex flex-col antialiased">
       {/* Top Header Bar (preserved) */}
@@ -177,6 +184,7 @@ export default function App() {
                 gamification={gamification}
                 onNavigate={handleNavigate}
                 onOpenProgress={() => setShowProgress(true)}
+                onStartQuizCategory={handleStartQuizCategory}
                 playPronunciation={playPronunciation}
               />
             )}
@@ -196,6 +204,8 @@ export default function App() {
                 recordQuizXp={recordQuizXp}
                 isAiConfigured={isAiConfigured}
                 playPronunciation={playPronunciation}
+                initialCategory={pendingQuizCategory}
+                onInitialCategoryConsumed={() => setPendingQuizCategory(null)}
               />
             )}
             {activeTab === 'grammar' && (

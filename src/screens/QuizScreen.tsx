@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import {
   Sparkles,
@@ -84,6 +84,8 @@ interface QuizScreenProps {
   recordQuizXp: (correctCount: number) => void;
   isAiConfigured: boolean;
   playPronunciation: (word: string) => void;
+  initialCategory?: string | null;
+  onInitialCategoryConsumed?: () => void;
 }
 
 export default function QuizScreen({
@@ -98,6 +100,8 @@ export default function QuizScreen({
   recordQuizXp,
   isAiConfigured,
   playPronunciation,
+  initialCategory,
+  onInitialCategoryConsumed,
 }: QuizScreenProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>(CATEGORIES.PHRASAL_VERBS);
   const [customThemeInput, setCustomThemeInput] = useState<string>('');
@@ -124,6 +128,15 @@ export default function QuizScreen({
     setApiError(null);
     setAppMode('quiz');
   };
+
+  // Auto-start a specific category quiz when arriving from the home screen hex menu.
+  useEffect(() => {
+    if (initialCategory) {
+      startStaticQuiz(initialCategory);
+      onInitialCategoryConsumed?.();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const startMixedQuiz = () => {
     setQuizQuestions(buildMixedDeck());

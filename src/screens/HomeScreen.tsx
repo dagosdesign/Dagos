@@ -1,14 +1,15 @@
-import { ReactNode } from 'react';
 import { motion } from 'motion/react';
-import { Layers, ListChecks, GraduationCap, TrendingUp, Volume2, ArrowRight, Flame, Zap, Compass } from 'lucide-react';
+import { Layers, TrendingUp, Volume2, ArrowRight, Flame, Zap, Compass } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { GamificationState, NavTab } from '../types';
+import HexMenu from '../components/HexMenu';
 
 interface HomeScreenProps {
   dueCount: number;
   gamification: GamificationState;
   onNavigate: (tab: NavTab) => void;
   onOpenProgress: () => void;
+  onStartQuizCategory: (category: string) => void;
   playPronunciation: (word: string) => void;
 }
 
@@ -17,7 +18,7 @@ function getWordOfTheDay() {
   return FLASHCARDS[dayIndex % FLASHCARDS.length];
 }
 
-export default function HomeScreen({ dueCount, gamification, onNavigate, onOpenProgress, playPronunciation }: HomeScreenProps) {
+export default function HomeScreen({ dueCount, gamification, onNavigate, onOpenProgress, onStartQuizCategory, playPronunciation }: HomeScreenProps) {
   const wordOfDay = getWordOfTheDay();
 
   return (
@@ -68,19 +69,14 @@ export default function HomeScreen({ dueCount, gamification, onNavigate, onOpenP
         </div>
       </button>
 
-      {/* Quick access tiles */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-        <QuickTile
-          icon={<ListChecks className="w-5 h-5" />}
-          title="Vocabulary Quiz"
-          description="Practice curated decks or AI-generated questions."
-          onClick={() => onNavigate('quiz')}
-        />
-        <QuickTile
-          icon={<GraduationCap className="w-5 h-5" />}
-          title="Grammar Lessons"
-          description="8 core grammar topics with mini tests."
-          onClick={() => onNavigate('grammar')}
+      {/* Animated category hex menu */}
+      <div className="pt-2">
+        <HexMenu
+          onQuizCategory={onStartQuizCategory}
+          onOpenGrammar={() => onNavigate('grammar')}
+          onOpenCards={() => onNavigate('cards')}
+          onOpenProgress={onOpenProgress}
+          onOpenQuizHub={() => onNavigate('quiz')}
         />
       </div>
 
@@ -109,18 +105,5 @@ export default function HomeScreen({ dueCount, gamification, onNavigate, onOpenP
         </div>
       </div>
     </motion.div>
-  );
-}
-
-function QuickTile({ icon, title, description, onClick }: { icon: ReactNode; title: string; description: string; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      className="text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl p-5 transition-all cursor-pointer group"
-    >
-      <div className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl w-fit">{icon}</div>
-      <h3 className="text-sm font-serif italic text-white mt-3 group-hover:text-[#e3b553] transition-colors">{title}</h3>
-      <p className="text-xs text-white/50 mt-1.5 leading-relaxed font-light">{description}</p>
-    </button>
   );
 }
