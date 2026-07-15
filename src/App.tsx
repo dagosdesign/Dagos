@@ -180,12 +180,9 @@ export default function App() {
           <>
             {activeTab === 'home' && (
               <HomeScreen
-                dueCount={dueCount}
-                gamification={gamification}
                 onNavigate={handleNavigate}
                 onOpenProgress={() => setShowProgress(true)}
                 onStartQuizCategory={handleStartQuizCategory}
-                playPronunciation={playPronunciation}
               />
             )}
             {activeTab === 'cards' && (
