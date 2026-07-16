@@ -5,7 +5,8 @@ import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
 import { FLASHCARDS } from './data/flashcards';
 import BottomNav from './components/BottomNav';
-import LearningOrbsTransition from './components/LearningOrbsTransition';
+import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
+import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
 import FlashcardsScreen from './screens/FlashcardsScreen';
 import QuizScreen from './screens/QuizScreen';
@@ -25,7 +26,9 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [showProgress, setShowProgress] = useState(false);
   const [pendingQuizCategory, setPendingQuizCategory] = useState<string | null>(null);
-  const [pendingAction, setPendingAction] = useState<(() => void) | null>(null);
+  // Orb flow: which word category the learning-method picker was opened for (null = all words).
+  const [orbFlow, setOrbFlow] = useState<{ category: string | null } | null>(null);
+  const [methodSession, setMethodSession] = useState<{ method: PracticeMethod; category: string | null } | null>(null);
 
   // Quiz session stats (persisted, same keys as the original single-file app)
   const [score, setScore] = useState<number>(() => {
@@ -133,13 +136,20 @@ export default function App() {
     setActiveTab('cards');
   };
 
-  const beginTransition = (run: () => void) => {
-    setPendingAction(() => run);
-  };
-
-  const handleTransitionProceed = () => {
-    pendingAction?.();
-    setPendingAction(null);
+  const handleOrbSelect = (method: LearningMethodLabel) => {
+    if (!orbFlow) return;
+    const category = orbFlow.category;
+    setOrbFlow(null);
+    if (method === 'Visual Learning') {
+      // Visual = the classic multiple-choice quiz for this category.
+      if (category) handleStartQuizCategory(category);
+      else handleNavigate('quiz');
+    } else if (method === 'AI') {
+      // AI custom quiz lives on the quiz hub screen.
+      handleNavigate('quiz');
+    } else {
+      setMethodSession({ method, category });
+    }
   };
 
   return (
@@ -196,11 +206,11 @@ export default function App() {
           <>
             {activeTab === 'home' && (
               <HomeScreen
-                onQuizCategory={(category) => beginTransition(() => handleStartQuizCategory(category))}
-                onOpenGrammar={() => beginTransition(() => handleNavigate('grammar'))}
-                onOpenCards={() => beginTransition(handleOpenCards)}
-                onOpenProgress={() => beginTransition(() => setShowProgress(true))}
-                onOpenQuizHub={() => beginTransition(() => handleNavigate('quiz'))}
+                onQuizCategory={(category) => setOrbFlow({ category })}
+                onOpenGrammar={() => handleNavigate('grammar')}
+                onOpenCards={handleOpenCards}
+                onOpenProgress={() => setShowProgress(true)}
+                onOpenQuizHub={() => setOrbFlow({ category: null })}
               />
             )}
             {activeTab === 'cards' && (
@@ -232,7 +242,23 @@ export default function App() {
 
       <BottomNav activeTab={activeTab} onChange={handleNavigate} dueCount={dueCount} />
 
-      {pendingAction && <LearningOrbsTransition onProceed={handleTransitionProceed} />}
+      {orbFlow && (
+        <LearningOrbsTransition
+          categoryLabel={orbFlow.category ?? 'Genel İngilizce'}
+          onSelect={handleOrbSelect}
+          onClose={() => setOrbFlow(null)}
+        />
+      )}
+
+      {methodSession && (
+        <MethodPracticeScreen
+          method={methodSession.method}
+          category={methodSession.category}
+          onExit={() => setMethodSession(null)}
+          playPronunciation={playPronunciation}
+          recordQuizXp={recordQuizXp}
+        />
+      )}
     </div>
   );
 }

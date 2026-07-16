@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
 import {
   Bot,
   BookOpen,
+  ChevronLeft,
   Eye,
   Gamepad2,
   Headphones,
@@ -9,7 +9,16 @@ import {
   Pencil,
 } from 'lucide-react';
 
-const learningMethods = [
+export type LearningMethodLabel =
+  | 'Listening'
+  | 'Writing'
+  | 'Visual Learning'
+  | 'Games'
+  | 'Stories'
+  | 'Conversations'
+  | 'AI';
+
+const learningMethods: { label: LearningMethodLabel; Icon: typeof Headphones; className: string }[] = [
   { label: 'Listening', Icon: Headphones, className: 'orb-1' },
   { label: 'Writing', Icon: Pencil, className: 'orb-2' },
   { label: 'Visual Learning', Icon: Eye, className: 'orb-3' },
@@ -20,17 +29,12 @@ const learningMethods = [
 ];
 
 interface LearningOrbsTransitionProps {
-  onProceed: () => void;
-  autoAdvanceMs?: number;
+  categoryLabel: string;
+  onSelect: (method: LearningMethodLabel) => void;
+  onClose: () => void;
 }
 
-export default function LearningOrbsTransition({ onProceed, autoAdvanceMs = 2600 }: LearningOrbsTransitionProps) {
-  useEffect(() => {
-    const timer = setTimeout(onProceed, autoAdvanceMs);
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
   return (
     <div className="fixed inset-0 z-50">
       <section className="learning-orbits" aria-labelledby="learning-orbits-title">
@@ -169,9 +173,47 @@ export default function LearningOrbsTransition({ onProceed, autoAdvanceMs = 2600
           }
         `}</style>
 
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Ana menüye dön"
+          style={{
+            position: 'absolute',
+            top: 'max(16px, env(safe-area-inset-top))',
+            left: 16,
+            zIndex: 3,
+            width: 42,
+            height: 42,
+            display: 'grid',
+            placeItems: 'center',
+            border: '1px solid rgba(244, 184, 47, 0.35)',
+            borderRadius: '50%',
+            color: '#f4b82f',
+            background: '#0b0b0b',
+            cursor: 'pointer',
+          }}
+        >
+          <ChevronLeft size={22} />
+        </button>
+
         <h2 id="learning-orbits-title" className="learning-orbits__heading">
           How would you<br />like to learn<span className="learning-orbits__accent">?</span>
         </h2>
+        <p
+          style={{
+            position: 'relative',
+            zIndex: 2,
+            margin: '6px auto 0',
+            textAlign: 'center',
+            fontSize: 12,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'rgba(244, 184, 47, 0.75)',
+            fontFamily: 'JetBrains Mono, monospace',
+          }}
+        >
+          {categoryLabel}
+        </p>
 
         <div className="learning-orbits__field">
           {learningMethods.map(({ label, Icon, className }) => (
@@ -179,7 +221,7 @@ export default function LearningOrbsTransition({ onProceed, autoAdvanceMs = 2600
               type="button"
               className={`learning-orbits__orb ${className}`}
               key={label}
-              onClick={onProceed}
+              onClick={() => onSelect(label)}
               aria-label={`${label} seçeneğini aç`}
             >
               <span className="learning-orbits__content">
