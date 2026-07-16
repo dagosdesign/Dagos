@@ -89,10 +89,10 @@ function HexButton({ label, icon, left, top, large, delay, onClick }: HexItem) {
           style={{ animationDelay: delay }}
         />
       </svg>
-      <span className={`relative z-10 flex flex-col items-center justify-center gap-1 h-full text-center px-2 ${large ? 'text-white' : 'text-white/90'}`}>
+      <span className={`relative z-10 flex flex-col items-center justify-center gap-1.5 h-full text-center px-2 ${large ? 'text-white' : 'text-white/90'}`}>
         <span className="text-[#e3b553]">{icon}</span>
         <span
-          className={`font-serif italic whitespace-pre-line leading-tight ${large ? 'text-sm sm:text-base font-semibold' : 'text-[10px] sm:text-xs'}`}
+          className={`font-serif italic whitespace-pre-line leading-tight ${large ? 'text-base sm:text-lg font-semibold' : 'text-xs sm:text-sm font-medium'}`}
         >
           {label}
         </span>

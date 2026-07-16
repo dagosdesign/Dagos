@@ -7,9 +7,10 @@ interface HomeScreenProps {
   onNavigate: (tab: NavTab) => void;
   onOpenProgress: () => void;
   onStartQuizCategory: (category: string) => void;
+  onOpenCards: () => void;
 }
 
-export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCategory }: HomeScreenProps) {
+export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCategory, onOpenCards }: HomeScreenProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCate
         <HexMenu
           onQuizCategory={onStartQuizCategory}
           onOpenGrammar={() => onNavigate('grammar')}
-          onOpenCards={() => onNavigate('cards')}
+          onOpenCards={onOpenCards}
           onOpenProgress={onOpenProgress}
           onOpenQuizHub={() => onNavigate('quiz')}
         />
