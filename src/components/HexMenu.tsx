@@ -58,12 +58,6 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
         delay="-1.6s"
         onClick={onOpenQuizHub}
       />
-
-      {/* Comet light sweeping through every hexagon in sequence */}
-      <div className="light-sweep-orb trail-3" aria-hidden="true" />
-      <div className="light-sweep-orb trail-2" aria-hidden="true" />
-      <div className="light-sweep-orb trail-1" aria-hidden="true" />
-      <div className="light-sweep-orb" aria-hidden="true" />
     </div>
   );
 }
