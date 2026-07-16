@@ -5,7 +5,7 @@ import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
 import { FLASHCARDS } from './data/flashcards';
 import BottomNav from './components/BottomNav';
-import CategoryTransition from './components/CategoryTransition';
+import LearningOrbsTransition from './components/LearningOrbsTransition';
 import HomeScreen from './screens/HomeScreen';
 import FlashcardsScreen from './screens/FlashcardsScreen';
 import QuizScreen from './screens/QuizScreen';
@@ -25,7 +25,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [showProgress, setShowProgress] = useState(false);
   const [pendingQuizCategory, setPendingQuizCategory] = useState<string | null>(null);
-  const [transition, setTransition] = useState<{ title: string; run: () => void } | null>(null);
+  const [pendingAction, setPendingAction] = useState<(() => void) | null>(null);
 
   // Quiz session stats (persisted, same keys as the original single-file app)
   const [score, setScore] = useState<number>(() => {
@@ -133,18 +133,14 @@ export default function App() {
     setActiveTab('cards');
   };
 
-  const beginTransition = (title: string, run: () => void) => {
-    setTransition({ title, run });
+  const beginTransition = (run: () => void) => {
+    setPendingAction(() => run);
   };
 
-  useEffect(() => {
-    if (!transition) return;
-    const timer = setTimeout(() => {
-      transition.run();
-      setTransition(null);
-    }, 1600);
-    return () => clearTimeout(timer);
-  }, [transition]);
+  const handleTransitionProceed = () => {
+    pendingAction?.();
+    setPendingAction(null);
+  };
 
   return (
     <div className="min-h-screen bg-[#0a0a0b] text-[#dcdcdc] flex flex-col antialiased">
@@ -200,10 +196,11 @@ export default function App() {
           <>
             {activeTab === 'home' && (
               <HomeScreen
-                onNavigate={handleNavigate}
-                onOpenProgress={() => setShowProgress(true)}
-                onStartQuizCategory={(category) => beginTransition(category, () => handleStartQuizCategory(category))}
-                onOpenCards={() => beginTransition('Kelime Kartları', handleOpenCards)}
+                onQuizCategory={(category) => beginTransition(() => handleStartQuizCategory(category))}
+                onOpenGrammar={() => beginTransition(() => handleNavigate('grammar'))}
+                onOpenCards={() => beginTransition(handleOpenCards)}
+                onOpenProgress={() => beginTransition(() => setShowProgress(true))}
+                onOpenQuizHub={() => beginTransition(() => handleNavigate('quiz'))}
               />
             )}
             {activeTab === 'cards' && (
@@ -235,7 +232,7 @@ export default function App() {
 
       <BottomNav activeTab={activeTab} onChange={handleNavigate} dueCount={dueCount} />
 
-      {transition && <CategoryTransition title={transition.title} />}
+      {pendingAction && <LearningOrbsTransition onProceed={handleTransitionProceed} />}
     </div>
   );
 }

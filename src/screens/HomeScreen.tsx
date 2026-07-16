@@ -1,16 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { NavTab } from '../types';
 import HexMenu from '../components/HexMenu';
 
 interface HomeScreenProps {
-  onNavigate: (tab: NavTab) => void;
-  onOpenProgress: () => void;
-  onStartQuizCategory: (category: string) => void;
+  onQuizCategory: (category: string) => void;
+  onOpenGrammar: () => void;
   onOpenCards: () => void;
+  onOpenProgress: () => void;
+  onOpenQuizHub: () => void;
 }
 
-export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCategory, onOpenCards }: HomeScreenProps) {
+export default function HomeScreen({ onQuizCategory, onOpenGrammar, onOpenCards, onOpenProgress, onOpenQuizHub }: HomeScreenProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -39,11 +39,11 @@ export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCate
         className="min-h-[calc(100dvh-160px)] flex items-center justify-center"
       >
         <HexMenu
-          onQuizCategory={onStartQuizCategory}
-          onOpenGrammar={() => onNavigate('grammar')}
+          onQuizCategory={onQuizCategory}
+          onOpenGrammar={onOpenGrammar}
           onOpenCards={onOpenCards}
           onOpenProgress={onOpenProgress}
-          onOpenQuizHub={() => onNavigate('quiz')}
+          onOpenQuizHub={onOpenQuizHub}
         />
       </motion.div>
     </>
