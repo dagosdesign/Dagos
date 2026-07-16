@@ -25,13 +25,13 @@ body {
   stroke-linecap: round;
   vector-effect: non-scaling-stroke;
   stroke-dasharray: 4 96;
-  animation: hex-orbit 6s linear infinite;
+  animation: hex-orbit 10s linear infinite;
   filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px rgba(227, 181, 83, 0.9));
 }
 
 .hex-button:hover .hex-orbit-light,
 .hex-button:focus-visible .hex-orbit-light {
-  animation-duration: 3.2s;
+  animation-duration: 4.5s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -64,13 +64,13 @@ body {
   mix-blend-mode: screen;
   background: radial-gradient(circle, #fffdf5 0%, #e3b553 38%, transparent 72%);
   filter: blur(1px);
-  animation: light-sweep 13s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  animation: light-sweep 22s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   z-index: 15;
 }
 
-.light-sweep-orb.trail-1 { opacity: 0.5;  width: 20px; height: 20px; margin-left: -10px; margin-top: -10px; filter: blur(2px); animation-delay: -0.45s; }
-.light-sweep-orb.trail-2 { opacity: 0.28; width: 14px; height: 14px; margin-left: -7px;  margin-top: -7px;  filter: blur(3px); animation-delay: -0.9s; }
-.light-sweep-orb.trail-3 { opacity: 0.14; width: 10px; height: 10px; margin-left: -5px;  margin-top: -5px;  filter: blur(4px); animation-delay: -1.35s; }
+.light-sweep-orb.trail-1 { opacity: 0.5;  width: 20px; height: 20px; margin-left: -10px; margin-top: -10px; filter: blur(2px); animation-delay: -0.75s; }
+.light-sweep-orb.trail-2 { opacity: 0.28; width: 14px; height: 14px; margin-left: -7px;  margin-top: -7px;  filter: blur(3px); animation-delay: -1.5s; }
+.light-sweep-orb.trail-3 { opacity: 0.14; width: 10px; height: 10px; margin-left: -5px;  margin-top: -5px;  filter: blur(4px); animation-delay: -2.25s; }
 
 @media (prefers-reduced-motion: reduce) {
   .light-sweep-orb {

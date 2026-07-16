@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { NavTab } from '../types';
 import HexMenu from '../components/HexMenu';
@@ -9,19 +10,41 @@ interface HomeScreenProps {
 }
 
 export default function HomeScreen({ onNavigate, onOpenProgress, onStartQuizCategory }: HomeScreenProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Slow, ambient playback — the light beams should drift, not race.
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.55;
+    }
+  }, []);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="min-h-[calc(100dvh-160px)] flex items-center justify-center"
-    >
-      <HexMenu
-        onQuizCategory={onStartQuizCategory}
-        onOpenGrammar={() => onNavigate('grammar')}
-        onOpenCards={() => onNavigate('cards')}
-        onOpenProgress={onOpenProgress}
-        onOpenQuizHub={() => onNavigate('quiz')}
+    <>
+      <video
+        ref={videoRef}
+        className="fixed inset-0 w-full h-full object-cover -z-10"
+        src="/videos/hex-glow-bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
-    </motion.div>
+      <div className="fixed inset-0 -z-10 bg-[#0a0a0b]/60" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="min-h-[calc(100dvh-160px)] flex items-center justify-center"
+      >
+        <HexMenu
+          onQuizCategory={onStartQuizCategory}
+          onOpenGrammar={() => onNavigate('grammar')}
+          onOpenCards={() => onNavigate('cards')}
+          onOpenProgress={onOpenProgress}
+          onOpenQuizHub={() => onNavigate('quiz')}
+        />
+      </motion.div>
+    </>
   );
 }
