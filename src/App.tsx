@@ -141,9 +141,7 @@ export default function App() {
     const category = orbFlow.category;
     setOrbFlow(null);
     if (method === 'Visual Learning') {
-      // Visual = the classic multiple-choice quiz for this category.
-      if (category) handleStartQuizCategory(category);
-      else handleNavigate('quiz');
+      setMethodSession({ method: 'Visual', category });
     } else if (method === 'AI') {
       // AI custom quiz lives on the quiz hub screen.
       handleNavigate('quiz');

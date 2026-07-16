@@ -1,13 +1,15 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { visualFor } from '../data/wordVisuals';
 import { Flashcard } from '../types';
 
-export type PracticeMethod = 'Listening' | 'Writing' | 'Games' | 'Stories' | 'Conversations';
+export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations';
 
 const METHOD_TITLES: Record<PracticeMethod, { title: string; hint: string }> = {
   Listening: { title: 'Listening', hint: 'Kelimeyi dinle, doğru Türkçe anlamı seç.' },
   Writing: { title: 'Writing', hint: 'Türkçe anlamı gör, İngilizce kelimeyi yaz.' },
+  Visual: { title: 'Visual Learning', hint: 'Kartlara dokun, görselle kelimeyi eşleştir.' },
   Games: { title: 'Games', hint: 'Kelimeleri Türkçe anlamlarıyla eşleştir.' },
   Stories: { title: 'Stories', hint: 'Cümledeki boşluğa uygun kelimeyi seç.' },
   Conversations: { title: 'Conversations', hint: 'Konuşmadaki boşluğu doğru kelimeyle tamamla.' },
@@ -74,6 +76,9 @@ export default function MethodPracticeScreen({ method, category, onExit, playPro
           )}
           {method === 'Writing' && (
             <WritingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+          )}
+          {method === 'Visual' && (
+            <VisualMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Games' && (
             <MatchingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
@@ -320,6 +325,105 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+/* ---------- Visual: cute emoji cards, tap to reveal the word behind each ---------- */
+
+function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
+  pool: Flashcard[];
+  playPronunciation: (w: string) => void;
+  recordQuizXp: (n: number) => void;
+  onExit: () => void;
+  onRestart: () => void;
+}) {
+  const cards = useMemo(() => sample(pool, Math.min(6, pool.length)), [pool]);
+  const [flipped, setFlipped] = useState<Set<string>>(new Set());
+  const [finished, setFinished] = useState(false);
+
+  if (finished) {
+    return (
+      <ResultsPanel
+        correct={flipped.size}
+        total={cards.length}
+        extraLine={`${flipped.size} görsel kartı keşfettin`}
+        recordQuizXp={recordQuizXp}
+        onExit={onExit}
+        onRestart={onRestart}
+      />
+    );
+  }
+
+  const toggle = (card: Flashcard) => {
+    setFlipped(prev => {
+      const next = new Set(prev);
+      if (next.has(card.id)) {
+        next.delete(card.id);
+      } else {
+        next.add(card.id);
+        playPronunciation(card.word);
+      }
+      return next;
+    });
+  };
+
+  return (
+    <div className="space-y-5">
+      <p className="text-xs font-mono text-white/40 text-center">
+        {flipped.size}/{cards.length} kart keşfedildi · Karta dokun
+      </p>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
+        {cards.map(card => {
+          const isFlipped = flipped.has(card.id);
+          return (
+            <button
+              key={card.id}
+              onClick={() => toggle(card)}
+              className={`relative aspect-[4/5] rounded-2xl border-2 p-3 flex flex-col items-center justify-center gap-2 text-center transition-all duration-300 cursor-pointer ${
+                isFlipped
+                  ? 'bg-[#e3b553]/[0.08] border-[#e3b553]/60 scale-[1.02]'
+                  : 'bg-white/[0.02] border-white/[0.08] hover:border-[#e3b553]/40 hover:-rotate-1 hover:scale-[1.03]'
+              }`}
+              style={{
+                background: isFlipped
+                  ? 'radial-gradient(circle at 50% 20%, rgba(227,181,83,0.14), transparent 60%), linear-gradient(160deg, #131008, #050403)'
+                  : 'radial-gradient(circle at 50% 30%, rgba(227,181,83,0.06), transparent 55%), linear-gradient(160deg, #0e0e0e, #030303)',
+              }}
+            >
+              {isFlipped ? (
+                <>
+                  <span className="text-2xl" aria-hidden="true">{visualFor(card.word)}</span>
+                  <span className="text-sm font-serif italic font-semibold text-white leading-tight">{card.word}</span>
+                  <span className="text-[11px] text-[#e3b553] font-light leading-snug">{card.turkishMeaning}</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-4xl drop-shadow-[0_0_12px_rgba(227,181,83,0.35)]" aria-hidden="true">
+                    {visualFor(card.word)}
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-white/35">Bu ne olabilir?</span>
+                </>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="flex justify-end">
+        <button
+          onClick={() => setFinished(true)}
+          disabled={flipped.size === 0}
+          className={`rounded-xl py-3 px-6 text-xs font-bold transition-all ${
+            flipped.size > 0
+              ? 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer'
+              : 'bg-white/[0.02] text-white/25 border border-white/[0.04] cursor-not-allowed'
+          }`}
+        >
+          Bitir
+        </button>
+      </div>
     </div>
   );
 }
