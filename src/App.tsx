@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BookOpen, TrendingUp, Award, ChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import { NavTab } from './types';
 import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
@@ -117,7 +117,6 @@ export default function App() {
     }
   };
 
-  const accuracyRate = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
   const dueCount = getDueCards(FLASHCARDS, srsState).length;
 
   const handleNavigate = (tab: NavTab) => {
@@ -152,54 +151,23 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0b] text-[#dcdcdc] flex flex-col antialiased">
-      {/* Top Header Bar (preserved) */}
-      <header className="sticky top-0 bg-[#0c0c0d]/90 backdrop-blur-md border-b border-white/[0.06] z-30 shadow-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            {showProgress ? (
-              <button
-                onClick={() => setShowProgress(false)}
-                className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl shadow-sm cursor-pointer"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-            ) : (
-              <div className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl shadow-sm">
-                <BookOpen className="w-6 h-6" />
-              </div>
-            )}
-            <div>
-              <h1 className="text-lg font-serif italic text-white tracking-wide">English Vocabulary Practice</h1>
-              <p className="text-xs text-white/50 font-mono tracking-tight">
-                {showProgress ? 'Your Progress' : 'Interactive Multi-Choice Definition Exercises'}
-              </p>
-            </div>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center space-x-2 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-white/[0.06]">
-              <TrendingUp className="w-4 h-4 text-[#e3b553]" />
-              <span className="text-xs text-white/50 font-medium">Accuracy:</span>
-              <span className="text-xs font-mono font-bold text-white">{accuracyRate}%</span>
-            </div>
-            <div className="flex items-center space-x-2 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-[#e3b553]/20">
-              <Award className="w-4 h-4 text-[#e3b553]" />
-              <span className="text-xs text-[#e3b553] font-medium">Streak:</span>
-              <span className="text-xs font-mono font-bold text-[#e3b553]">{streak} 🔥</span>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Main Container */}
       <main className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8">
         {showProgress ? (
-          <ProgressScreen
-            gamification={gamification}
-            srsState={srsState}
-            grammarProgress={grammarProgress}
-            quizStats={{ score, totalAnswered, highStreak }}
-          />
+          <div className="space-y-4">
+            <button
+              onClick={() => setShowProgress(false)}
+              className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
+            >
+              <ChevronLeft className="w-4 h-4" /> Ana Sayfa
+            </button>
+            <ProgressScreen
+              gamification={gamification}
+              srsState={srsState}
+              grammarProgress={grammarProgress}
+              quizStats={{ score, totalAnswered, highStreak }}
+            />
+          </div>
         ) : (
           <>
             {activeTab === 'home' && (

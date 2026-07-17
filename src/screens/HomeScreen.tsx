@@ -36,7 +36,7 @@ export default function HomeScreen({ onQuizCategory, onOpenGrammar, onOpenCards,
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="min-h-[calc(100dvh-160px)] flex items-center justify-center"
+        className="min-h-[calc(100dvh-96px)] flex items-center justify-center"
       >
         <HexMenu
           onQuizCategory={onQuizCategory}

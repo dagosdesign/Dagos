@@ -9,15 +9,16 @@ interface HexMenuProps {
 }
 
 // Link endpoints (center is 380,460) for the 8 satellite nodes, same order as `topics`.
+// Bottom row mirrors the top row for a balanced layout.
 const links: [number, number][] = [
   [380, 143],
   [162, 243],
   [598, 243],
   [72, 411],
   [688, 411],
-  [185, 777],
-  [380, 833],
-  [575, 777],
+  [162, 677],
+  [380, 777],
+  [598, 677],
 ];
 
 export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, onOpenProgress, onOpenQuizHub }: HexMenuProps) {
@@ -48,7 +49,7 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
         .een-field {
           position: relative;
           width: min(100%, 760px);
-          height: 920px;
+          height: 880px;
           margin: 0 auto;
         }
         .een-lines, .een-waves {
@@ -128,9 +129,9 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
         .een-n3 { right: 12%; top: 180px; animation-delay: -2.2s; }
         .een-n4 { left: 1%; top: 348px; animation-delay: -.9s; }
         .een-n5 { right: 1%; top: 348px; animation-delay: -2.8s; }
-        .een-n8 { left: 15%; top: 714px; animation-delay: -2.5s; }
-        .een-n9 { left: calc(50% - 71px); top: 770px; animation-delay: -1.1s; }
-        .een-n10 { right: 15%; top: 714px; animation-delay: -3s; }
+        .een-n8 { left: 12%; top: 614px; animation-delay: -2.5s; }
+        .een-n9 { left: calc(50% - 71px); top: 714px; animation-delay: -1.1s; }
+        .een-n10 { right: 12%; top: 614px; animation-delay: -3s; }
         @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
         @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
         @keyframes een-breathe {
@@ -142,7 +143,7 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
           50% { transform: scale(1.02); filter: drop-shadow(0 0 25px rgba(244,184,47,.68)); }
         }
         @media (max-width: 540px) {
-          .een-field { height: 820px; }
+          .een-field { height: 760px; }
           .een-hex { width: 104px; padding: 12px; font-size: .72rem; }
           .een-center { left: calc(50% - 86px); top: 318px; width: 172px; }
           .een-center span { font-size: 1.15rem; }
@@ -151,9 +152,9 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
           .een-n3 { right: 5%; top: 158px; }
           .een-n4 { left: 0; top: 312px; }
           .een-n5 { right: 0; top: 312px; }
-          .een-n8 { left: 7%; top: 654px; }
-          .een-n9 { left: calc(50% - 52px); top: 710px; }
-          .een-n10 { right: 7%; top: 654px; }
+          .een-n8 { left: 5%; top: 539px; }
+          .een-n9 { left: calc(50% - 52px); top: 631px; }
+          .een-n10 { right: 5%; top: 539px; }
         }
         @media (prefers-reduced-motion: reduce) {
           .een * { animation: none !important; }
@@ -161,13 +162,13 @@ export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, on
       `}</style>
 
       <div className="een-field">
-        <svg className="een-waves" viewBox="0 0 760 920" aria-hidden="true">
+        <svg className="een-waves" viewBox="0 0 760 880" preserveAspectRatio="none" aria-hidden="true">
           <path className="een-wave" d="M-30 80 C150 0 250 155 405 82 S650 10 810 100" />
           <path className="een-wave" d="M-40 105 C130 25 270 180 415 105 S650 40 800 125" />
-          <path className="een-wave" d="M-30 825 C140 740 270 900 410 820 S650 760 805 850" />
+          <path className="een-wave" d="M-30 785 C140 700 270 860 410 780 S650 720 805 810" />
         </svg>
 
-        <svg className="een-lines" viewBox="0 0 760 920" aria-hidden="true">
+        <svg className="een-lines" viewBox="0 0 760 880" preserveAspectRatio="none" aria-hidden="true">
           {links.map(([x, y], index) => (
             <g key={`${x}-${y}`}>
               <line className="een-link" x1="380" y1="460" x2={x} y2={y} />
