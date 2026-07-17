@@ -38,15 +38,16 @@ function sentenceContainsWord(card: Flashcard): boolean {
 interface MethodPracticeScreenProps {
   method: PracticeMethod;
   category: string | null; // null = all words (Genel İngilizce)
+  label?: string; // display label (may differ from the pool category, e.g. exam names)
   onExit: () => void;
   playPronunciation: (word: string) => void;
   recordQuizXp: (correctCount: number) => void;
 }
 
-export default function MethodPracticeScreen({ method, category, onExit, playPronunciation, recordQuizXp }: MethodPracticeScreenProps) {
+export default function MethodPracticeScreen({ method, category, label, onExit, playPronunciation, recordQuizXp }: MethodPracticeScreenProps) {
   const [sessionId, setSessionId] = useState(0);
   const meta = METHOD_TITLES[method];
-  const categoryLabel = category ?? 'Genel İngilizce';
+  const categoryLabel = label ?? category ?? 'Genel İngilizce';
 
   const pool = useMemo(
     () => (category ? FLASHCARDS.filter(f => f.category === category) : FLASHCARDS),

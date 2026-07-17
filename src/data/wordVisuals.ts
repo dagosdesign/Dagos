@@ -184,6 +184,54 @@ export const WORD_VISUALS: Record<string, string> = {
   'meticulous': '📏🧐',
   'ambiguous': '🌫️❓',
 
+  // Adjectives
+  'happy': '😊🌞',
+  'brave': '🦁🛡️',
+  'tiny': '🐜🔍',
+  'enormous': '🐘🏔️',
+  'noisy': '📢🥁',
+  'quiet': '🤫🌙',
+  'wealthy': '💎🏰',
+  'ancient': '🏛️📜',
+  'modern': '🏙️✨',
+  'delicious': '😋🍰',
+
+  // Adverbs
+  'quickly': '🏃💨',
+  'slowly': '🐢🍃',
+  'carefully': '🔍🧤',
+  'always': '🔁⭐',
+  'never': '🚫🙅',
+  'often': '📆🔂',
+  'sometimes': '🎲🌦️',
+  'loudly': '📣🎉',
+  'quietly': '🤫🐾',
+  'suddenly': '⚡😲',
+
+  // Nouns
+  'journey': '🧳🗺️',
+  'knowledge': '📚🧠',
+  'courage': '🦁❤️',
+  'friendship': '🤝💛',
+  'weather': '🌦️☀️',
+  'health': '🩺💚',
+  'success': '🏆🎉',
+  'mistake': '❌✏️',
+  'opportunity': '🚪✨',
+  'memory': '🧠📸',
+
+  // Irregular Verbs
+  'go': '🚶➡️',
+  'eat': '🍽️😋',
+  'see': '👀🌄',
+  'drink': '🥤💧',
+  'write': '✍️📄',
+  'speak': '🗣️💬',
+  'swim': '🏊🌊',
+  'fly': '🕊️☁️',
+  'break': '🔨💔',
+  'buy': '🛍️💳',
+
   // Business English
   'leverage': '⚖️📈',
   'redundant': '🪑🪑',

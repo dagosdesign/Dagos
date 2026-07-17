@@ -3,14 +3,12 @@ import { motion } from 'motion/react';
 import HexMenu from '../components/HexMenu';
 
 interface HomeScreenProps {
-  onQuizCategory: (category: string) => void;
+  onPractice: (category: string, label: string) => void;
   onOpenGrammar: () => void;
-  onOpenCards: () => void;
-  onOpenProgress: () => void;
   onOpenQuizHub: () => void;
 }
 
-export default function HomeScreen({ onQuizCategory, onOpenGrammar, onOpenCards, onOpenProgress, onOpenQuizHub }: HomeScreenProps) {
+export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub }: HomeScreenProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -39,10 +37,8 @@ export default function HomeScreen({ onQuizCategory, onOpenGrammar, onOpenCards,
         className="min-h-[calc(100dvh-96px)] flex items-center justify-center"
       >
         <HexMenu
-          onQuizCategory={onQuizCategory}
+          onPractice={onPractice}
           onOpenGrammar={onOpenGrammar}
-          onOpenCards={onOpenCards}
-          onOpenProgress={onOpenProgress}
           onOpenQuizHub={onOpenQuizHub}
         />
       </motion.div>

@@ -27,8 +27,8 @@ export default function App() {
   const [showProgress, setShowProgress] = useState(false);
   const [pendingQuizCategory, setPendingQuizCategory] = useState<string | null>(null);
   // Orb flow: which word category the learning-method picker was opened for (null = all words).
-  const [orbFlow, setOrbFlow] = useState<{ category: string | null } | null>(null);
-  const [methodSession, setMethodSession] = useState<{ method: PracticeMethod; category: string | null } | null>(null);
+  const [orbFlow, setOrbFlow] = useState<{ category: string | null; label: string } | null>(null);
+  const [methodSession, setMethodSession] = useState<{ method: PracticeMethod; category: string | null; label: string } | null>(null);
 
   // Quiz session stats (persisted, same keys as the original single-file app)
   const [score, setScore] = useState<number>(() => {
@@ -124,28 +124,17 @@ export default function App() {
     setActiveTab(tab);
   };
 
-  const handleStartQuizCategory = (category: string) => {
-    setPendingQuizCategory(category);
-    setShowProgress(false);
-    setActiveTab('quiz');
-  };
-
-  const handleOpenCards = () => {
-    setShowProgress(false);
-    setActiveTab('cards');
-  };
-
   const handleOrbSelect = (method: LearningMethodLabel) => {
     if (!orbFlow) return;
-    const category = orbFlow.category;
+    const { category, label } = orbFlow;
     setOrbFlow(null);
     if (method === 'Visual Learning') {
-      setMethodSession({ method: 'Visual', category });
+      setMethodSession({ method: 'Visual', category, label });
     } else if (method === 'AI') {
       // AI custom quiz lives on the quiz hub screen.
       handleNavigate('quiz');
     } else {
-      setMethodSession({ method, category });
+      setMethodSession({ method, category, label });
     }
   };
 
@@ -172,11 +161,9 @@ export default function App() {
           <>
             {activeTab === 'home' && (
               <HomeScreen
-                onQuizCategory={(category) => setOrbFlow({ category })}
+                onPractice={(category, label) => setOrbFlow({ category, label })}
                 onOpenGrammar={() => handleNavigate('grammar')}
-                onOpenCards={handleOpenCards}
-                onOpenProgress={() => setShowProgress(true)}
-                onOpenQuizHub={() => setOrbFlow({ category: null })}
+                onOpenQuizHub={() => setOrbFlow({ category: null, label: 'Genel İngilizce' })}
               />
             )}
             {activeTab === 'cards' && (
@@ -210,7 +197,7 @@ export default function App() {
 
       {orbFlow && (
         <LearningOrbsTransition
-          categoryLabel={orbFlow.category ?? 'Genel İngilizce'}
+          categoryLabel={orbFlow.label}
           onSelect={handleOrbSelect}
           onClose={() => setOrbFlow(null)}
         />
@@ -220,6 +207,7 @@ export default function App() {
         <MethodPracticeScreen
           method={methodSession.method}
           category={methodSession.category}
+          label={methodSession.label}
           onExit={() => setMethodSession(null)}
           playPronunciation={playPronunciation}
           recordQuizXp={recordQuizXp}

@@ -6,6 +6,10 @@ export const FLASHCARD_CATEGORIES = {
   ACADEMIC: 'Academic & IELTS',
   ADVANCED: 'Advanced & GRE/SAT',
   BUSINESS: 'Business English',
+  ADJECTIVES: 'Adjectives',
+  ADVERBS: 'Adverbs',
+  NOUNS: 'Nouns',
+  IRREGULAR_VERBS: 'Irregular Verbs',
 } as const;
 
 export const FLASHCARDS: Flashcard[] = [
@@ -201,4 +205,52 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-b6', word: 'negotiate', partOfSpeech: 'verb', turkishMeaning: 'müzakere etmek, pazarlık yapmak', exampleSentence: 'The union will negotiate with management over the new contract terms.', category: FLASHCARD_CATEGORIES.BUSINESS },
   { id: 'fc-b7', word: 'revenue', partOfSpeech: 'noun', turkishMeaning: 'gelir, hasılat', exampleSentence: 'The company’s revenue grew by fifteen percent last quarter.', category: FLASHCARD_CATEGORIES.BUSINESS },
   { id: 'fc-b8', word: 'outsource', partOfSpeech: 'verb', turkishMeaning: 'dış kaynak kullanmak', exampleSentence: 'Many companies outsource their customer support to reduce costs.', category: FLASHCARD_CATEGORIES.BUSINESS },
+
+  // Adjectives
+  { id: 'fc-adj1', word: 'happy', partOfSpeech: 'adjective', turkishMeaning: 'mutlu', exampleSentence: 'The children were very happy at the park.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj2', word: 'brave', partOfSpeech: 'adjective', turkishMeaning: 'cesur', exampleSentence: 'The brave firefighter rescued the cat from the tree.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj3', word: 'tiny', partOfSpeech: 'adjective', turkishMeaning: 'minicik, çok küçük', exampleSentence: 'A tiny kitten was sleeping in the basket.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj4', word: 'enormous', partOfSpeech: 'adjective', turkishMeaning: 'devasa, kocaman', exampleSentence: 'They live in an enormous house near the sea.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj5', word: 'noisy', partOfSpeech: 'adjective', turkishMeaning: 'gürültülü', exampleSentence: 'The classroom was too noisy to study in.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj6', word: 'quiet', partOfSpeech: 'adjective', turkishMeaning: 'sessiz, sakin', exampleSentence: 'We found a quiet corner in the library.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj7', word: 'wealthy', partOfSpeech: 'adjective', turkishMeaning: 'zengin, varlıklı', exampleSentence: 'A wealthy businessman donated money to the school.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj8', word: 'ancient', partOfSpeech: 'adjective', turkishMeaning: 'antik, çok eski', exampleSentence: 'We visited an ancient temple during our trip.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj9', word: 'modern', partOfSpeech: 'adjective', turkishMeaning: 'modern, çağdaş', exampleSentence: 'The museum is in a very modern building.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj10', word: 'delicious', partOfSpeech: 'adjective', turkishMeaning: 'lezzetli, çok tatlı', exampleSentence: 'My grandmother makes delicious cookies.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+
+  // Adverbs
+  { id: 'fc-adv1', word: 'quickly', partOfSpeech: 'adverb', turkishMeaning: 'hızlıca, çabucak', exampleSentence: 'She quickly finished her homework before dinner.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv2', word: 'slowly', partOfSpeech: 'adverb', turkishMeaning: 'yavaşça', exampleSentence: 'The old man walked slowly across the street.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv3', word: 'carefully', partOfSpeech: 'adverb', turkishMeaning: 'dikkatlice', exampleSentence: 'Please read the instructions carefully before starting.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv4', word: 'always', partOfSpeech: 'adverb', turkishMeaning: 'her zaman, daima', exampleSentence: 'She always drinks tea in the morning.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv5', word: 'never', partOfSpeech: 'adverb', turkishMeaning: 'asla, hiçbir zaman', exampleSentence: 'He never eats fast food.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv6', word: 'often', partOfSpeech: 'adverb', turkishMeaning: 'sık sık', exampleSentence: 'We often visit our grandparents on weekends.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv7', word: 'sometimes', partOfSpeech: 'adverb', turkishMeaning: 'bazen', exampleSentence: 'Sometimes I take the bus instead of walking.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv8', word: 'loudly', partOfSpeech: 'adverb', turkishMeaning: 'yüksek sesle', exampleSentence: 'The fans cheered loudly when the team scored.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv9', word: 'quietly', partOfSpeech: 'adverb', turkishMeaning: 'sessizce', exampleSentence: 'She quietly closed the door so the baby could sleep.', category: FLASHCARD_CATEGORIES.ADVERBS },
+  { id: 'fc-adv10', word: 'suddenly', partOfSpeech: 'adverb', turkishMeaning: 'aniden, birdenbire', exampleSentence: 'Suddenly, the lights went out in the whole house.', category: FLASHCARD_CATEGORIES.ADVERBS },
+
+  // Nouns
+  { id: 'fc-n1', word: 'journey', partOfSpeech: 'noun', turkishMeaning: 'yolculuk', exampleSentence: 'The journey to the mountain village took five hours.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n2', word: 'knowledge', partOfSpeech: 'noun', turkishMeaning: 'bilgi', exampleSentence: 'Reading books is a great way to gain knowledge.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n3', word: 'courage', partOfSpeech: 'noun', turkishMeaning: 'cesaret', exampleSentence: 'It takes courage to speak in front of a large crowd.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n4', word: 'friendship', partOfSpeech: 'noun', turkishMeaning: 'dostluk, arkadaşlık', exampleSentence: 'Their friendship started in primary school.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n5', word: 'weather', partOfSpeech: 'noun', turkishMeaning: 'hava durumu', exampleSentence: 'The weather was perfect for a picnic yesterday.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n6', word: 'health', partOfSpeech: 'noun', turkishMeaning: 'sağlık', exampleSentence: 'Regular exercise is important for your health.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n7', word: 'success', partOfSpeech: 'noun', turkishMeaning: 'başarı', exampleSentence: 'Hard work is the key to success.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n8', word: 'mistake', partOfSpeech: 'noun', turkishMeaning: 'hata', exampleSentence: 'Everyone makes a mistake from time to time.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n9', word: 'opportunity', partOfSpeech: 'noun', turkishMeaning: 'fırsat', exampleSentence: 'This job is a great opportunity for young graduates.', category: FLASHCARD_CATEGORIES.NOUNS },
+  { id: 'fc-n10', word: 'memory', partOfSpeech: 'noun', turkishMeaning: 'anı, hafıza', exampleSentence: 'That summer holiday is my favorite childhood memory.', category: FLASHCARD_CATEGORIES.NOUNS },
+
+  // Irregular Verbs
+  { id: 'fc-iv1', word: 'go', partOfSpeech: 'irregular verb', turkishMeaning: 'gitmek (go – went – gone)', exampleSentence: 'We go to the gym twice a week.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv2', word: 'eat', partOfSpeech: 'irregular verb', turkishMeaning: 'yemek yemek (eat – ate – eaten)', exampleSentence: 'They usually eat breakfast at seven o’clock.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv3', word: 'see', partOfSpeech: 'irregular verb', turkishMeaning: 'görmek (see – saw – seen)', exampleSentence: 'You can see the mountains from this window.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv4', word: 'drink', partOfSpeech: 'irregular verb', turkishMeaning: 'içmek (drink – drank – drunk)', exampleSentence: 'I drink a glass of water every morning.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv5', word: 'write', partOfSpeech: 'irregular verb', turkishMeaning: 'yazmak (write – wrote – written)', exampleSentence: 'Students write an essay every Friday.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv6', word: 'speak', partOfSpeech: 'irregular verb', turkishMeaning: 'konuşmak (speak – spoke – spoken)', exampleSentence: 'She can speak three languages fluently.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv7', word: 'swim', partOfSpeech: 'irregular verb', turkishMeaning: 'yüzmek (swim – swam – swum)', exampleSentence: 'The children swim in the lake every summer.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv8', word: 'fly', partOfSpeech: 'irregular verb', turkishMeaning: 'uçmak (fly – flew – flown)', exampleSentence: 'Some birds fly south for the winter.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv9', word: 'break', partOfSpeech: 'irregular verb', turkishMeaning: 'kırmak (break – broke – broken)', exampleSentence: 'Be careful not to break the glass vase.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
+  { id: 'fc-iv10', word: 'buy', partOfSpeech: 'irregular verb', turkishMeaning: 'satın almak (buy – bought – bought)', exampleSentence: 'We buy fresh bread from the bakery every day.', category: FLASHCARD_CATEGORIES.IRREGULAR_VERBS },
 ];
