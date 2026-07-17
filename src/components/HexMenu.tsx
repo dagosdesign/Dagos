@@ -1,18 +1,4 @@
-import { Fragment, ReactNode } from 'react';
-import { GraduationCap, Layers, TrendingUp, BookOpen, Briefcase, Sparkles, Award, Compass } from 'lucide-react';
 import { CATEGORIES } from '../data/staticQuestions';
-
-const HEX_POINTS = '25,2 75,2 99,50 75,98 25,98 1,50';
-
-interface HexItem {
-  label: string;
-  icon: ReactNode;
-  left: string;
-  top: string;
-  large?: boolean;
-  delay: string;
-  onClick: () => void;
-}
 
 interface HexMenuProps {
   onQuizCategory: (category: string) => void;
@@ -22,81 +8,202 @@ interface HexMenuProps {
   onOpenQuizHub: () => void;
 }
 
+// Link endpoints (center is 380,460) for the 8 satellite nodes, same order as `topics`.
+const links: [number, number][] = [
+  [380, 143],
+  [162, 243],
+  [598, 243],
+  [72, 411],
+  [688, 411],
+  [185, 777],
+  [380, 833],
+  [575, 777],
+];
+
 export default function HexMenu({ onQuizCategory, onOpenGrammar, onOpenCards, onOpenProgress, onOpenQuizHub }: HexMenuProps) {
-  const items: HexItem[] = [
-    { label: 'Phrasal\nVerbs', icon: <Sparkles className="w-4 h-4" />, left: '18%', top: '14%', delay: '-0.4s', onClick: () => onQuizCategory(CATEGORIES.PHRASAL_VERBS) },
-    { label: 'Grammar', icon: <GraduationCap className="w-4 h-4" />, left: '50%', top: '10%', delay: '-2.1s', onClick: onOpenGrammar },
-    { label: 'Everyday\nWords', icon: <BookOpen className="w-4 h-4" />, left: '82%', top: '14%', delay: '-3.6s', onClick: () => onQuizCategory(CATEGORIES.EVERYDAY) },
-    { label: 'Academic\n& IELTS', icon: <Compass className="w-4 h-4" />, left: '8%', top: '50%', delay: '-1.2s', onClick: () => onQuizCategory(CATEGORIES.ACADEMIC) },
-    { label: 'Advanced\n& GRE/SAT', icon: <Award className="w-4 h-4" />, left: '92%', top: '50%', delay: '-4.4s', onClick: () => onQuizCategory(CATEGORIES.ADVANCED) },
-    { label: 'Business\nEnglish', icon: <Briefcase className="w-4 h-4" />, left: '18%', top: '86%', delay: '-2.8s', onClick: () => onQuizCategory(CATEGORIES.BUSINESS) },
-    { label: 'Kartlar', icon: <Layers className="w-4 h-4" />, left: '50%', top: '90%', delay: '-5.1s', onClick: onOpenCards },
-    { label: 'İlerleme', icon: <TrendingUp className="w-4 h-4" />, left: '82%', top: '86%', delay: '-0.9s', onClick: onOpenProgress },
+  const topics = [
+    { label: 'Grammar', className: 'een-n1', onClick: onOpenGrammar },
+    { label: 'Phrasal Verbs', className: 'een-n2', onClick: () => onQuizCategory(CATEGORIES.PHRASAL_VERBS) },
+    { label: 'Everyday Words', className: 'een-n3', onClick: () => onQuizCategory(CATEGORIES.EVERYDAY) },
+    { label: 'Academic & IELTS', className: 'een-n4', onClick: () => onQuizCategory(CATEGORIES.ACADEMIC) },
+    { label: 'Advanced & GRE/SAT', className: 'een-n5', onClick: () => onQuizCategory(CATEGORIES.ADVANCED) },
+    { label: 'Business English', className: 'een-n8', onClick: () => onQuizCategory(CATEGORIES.BUSINESS) },
+    { label: 'Kartlar', className: 'een-n9', onClick: onOpenCards },
+    { label: 'İlerleme', className: 'een-n10', onClick: onOpenProgress },
   ];
 
   return (
-    <div className="relative w-full max-w-[420px] mx-auto aspect-[4/5]" aria-label="Animasyonlu kategori menüsü">
-      {items.map((item, idx) => (
-        <Fragment key={idx}>
-          <HexButton
-            label={item.label}
-            icon={item.icon}
-            left={item.left}
-            top={item.top}
-            large={item.large}
-            delay={item.delay}
-            onClick={item.onClick}
-          />
-        </Fragment>
-      ))}
-      <HexButton
-        label={'GENEL\nİNGİLİZCE'}
-        icon={<Sparkles className="w-6 h-6" />}
-        left="50%"
-        top="50%"
-        large
-        delay="-1.6s"
-        onClick={onOpenQuizHub}
-      />
-    </div>
-  );
-}
+    <section className="een" aria-label="Genel İngilizce konu ağı">
+      <style>{`
+        .een {
+          --gold: #f4b82f;
+          --gold-bright: #ffd66b;
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          background: transparent;
+          color: #f7f7f7;
+          isolation: isolate;
+        }
+        .een-field {
+          position: relative;
+          width: min(100%, 760px);
+          height: 920px;
+          margin: 0 auto;
+        }
+        .een-lines, .een-waves {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+        .een-waves { opacity: .55; }
+        .een-wave {
+          fill: none;
+          stroke: var(--gold);
+          stroke-width: .8;
+          stroke-dasharray: 3 12;
+          animation: een-wave-flow 14s linear infinite;
+        }
+        .een-wave:nth-child(2) { opacity: .55; animation-duration: 18s; }
+        .een-wave:nth-child(3) { opacity: .3; animation-duration: 22s; }
+        .een-link {
+          stroke: var(--gold);
+          stroke-width: 2;
+          opacity: .72;
+          stroke-dasharray: 10 8;
+          animation: een-energy-flow 5s linear infinite;
+        }
+        .een-dot {
+          fill: var(--gold-bright);
+          filter: drop-shadow(0 0 7px var(--gold));
+        }
+        .een-hex {
+          position: absolute;
+          display: grid;
+          place-items: center;
+          width: 142px;
+          aspect-ratio: 1.12;
+          padding: 18px;
+          border: 0;
+          clip-path: polygon(25% 2%, 75% 2%, 100% 50%, 75% 98%, 25% 98%, 0 50%);
+          background: var(--gold);
+          color: #f7f7f7;
+          font: inherit;
+          font-size: .88rem;
+          cursor: pointer;
+          filter: drop-shadow(0 0 12px rgba(244,184,47,.38));
+          animation: een-breathe 4.8s ease-in-out infinite;
+        }
+        .een-hex::before {
+          content: "";
+          position: absolute;
+          inset: 3px;
+          clip-path: inherit;
+          background: #050403;
+          z-index: -1;
+        }
+        .een-hex span {
+          max-width: 100%;
+          text-align: center;
+          font-weight: 500;
+          line-height: 1.2;
+        }
+        .een-hex:hover {
+          background: var(--gold-bright);
+          filter: drop-shadow(0 0 22px rgba(244,184,47,.75));
+        }
+        .een-hex:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+        .een-center {
+          left: calc(50% - 116px);
+          top: 344px;
+          width: 232px;
+          animation: een-center-pulse 4s ease-in-out infinite;
+        }
+        .een-center span { font-size: 1.55rem; }
+        .een-center strong { color: var(--gold); font-weight: 500; }
+        .een-n1 { left: calc(50% - 71px); top: 80px; animation-delay: -.6s; }
+        .een-n2 { left: 12%; top: 180px; animation-delay: -1.5s; }
+        .een-n3 { right: 12%; top: 180px; animation-delay: -2.2s; }
+        .een-n4 { left: 1%; top: 348px; animation-delay: -.9s; }
+        .een-n5 { right: 1%; top: 348px; animation-delay: -2.8s; }
+        .een-n8 { left: 15%; top: 714px; animation-delay: -2.5s; }
+        .een-n9 { left: calc(50% - 71px); top: 770px; animation-delay: -1.1s; }
+        .een-n10 { right: 15%; top: 714px; animation-delay: -3s; }
+        @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
+        @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
+        @keyframes een-breathe {
+          0%,100% { transform: translate3d(0,-3px,0) scale(.985); }
+          50% { transform: translate3d(0,5px,0) scale(1.015); }
+        }
+        @keyframes een-center-pulse {
+          0%,100% { transform: scale(.99); filter: drop-shadow(0 0 13px rgba(244,184,47,.4)); }
+          50% { transform: scale(1.02); filter: drop-shadow(0 0 25px rgba(244,184,47,.68)); }
+        }
+        @media (max-width: 540px) {
+          .een-field { height: 820px; }
+          .een-hex { width: 104px; padding: 12px; font-size: .72rem; }
+          .een-center { left: calc(50% - 86px); top: 318px; width: 172px; }
+          .een-center span { font-size: 1.15rem; }
+          .een-n1 { left: calc(50% - 52px); top: 66px; }
+          .een-n2 { left: 5%; top: 158px; }
+          .een-n3 { right: 5%; top: 158px; }
+          .een-n4 { left: 0; top: 312px; }
+          .een-n5 { right: 0; top: 312px; }
+          .een-n8 { left: 7%; top: 654px; }
+          .een-n9 { left: calc(50% - 52px); top: 710px; }
+          .een-n10 { right: 7%; top: 654px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .een * { animation: none !important; }
+        }
+      `}</style>
 
-function HexButton({ label, icon, left, top, large, delay, onClick }: HexItem) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`hex-button group absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer outline-none ${
-        large ? 'w-[clamp(110px,32vw,150px)] z-10' : 'w-[clamp(76px,21vw,98px)]'
-      }`}
-      style={{ left, top, aspectRatio: '1 / 0.9' }}
-    >
-      <span
-        className="absolute inset-[3px] transition-transform duration-200 group-hover:scale-[1.04] group-active:scale-[0.96]"
-        style={{
-          clipPath: 'polygon(25% 2%, 75% 2%, 99% 50%, 75% 98%, 25% 98%, 1% 50%)',
-          background: 'radial-gradient(circle at 50% 38%, rgba(227,181,83,0.1), transparent 45%), linear-gradient(145deg, #101010 0%, #020202 72%)',
-        }}
-      />
-      <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full overflow-visible pointer-events-none">
-        <polygon points={HEX_POINTS} fill="none" stroke="#a97e2f" strokeWidth="1.1" vectorEffect="non-scaling-stroke" />
-        <polygon
-          points={HEX_POINTS}
-          className="hex-orbit-light"
-          strokeWidth={large ? 1.8 : 1.4}
-          pathLength={100}
-          style={{ animationDelay: delay }}
-        />
-      </svg>
-      <span className={`relative z-10 flex flex-col items-center justify-center gap-1.5 h-full text-center px-2 ${large ? 'text-white' : 'text-white/90'}`}>
-        <span className="text-[#e3b553]">{icon}</span>
-        <span
-          className={`font-serif italic whitespace-pre-line leading-tight ${large ? 'text-base sm:text-lg font-semibold' : 'text-xs sm:text-sm font-medium'}`}
+      <div className="een-field">
+        <svg className="een-waves" viewBox="0 0 760 920" aria-hidden="true">
+          <path className="een-wave" d="M-30 80 C150 0 250 155 405 82 S650 10 810 100" />
+          <path className="een-wave" d="M-40 105 C130 25 270 180 415 105 S650 40 800 125" />
+          <path className="een-wave" d="M-30 825 C140 740 270 900 410 820 S650 760 805 850" />
+        </svg>
+
+        <svg className="een-lines" viewBox="0 0 760 920" aria-hidden="true">
+          {links.map(([x, y], index) => (
+            <g key={`${x}-${y}`}>
+              <line className="een-link" x1="380" y1="460" x2={x} y2={y} />
+              <circle className="een-dot" r="5">
+                <animateMotion
+                  dur={`${4.8 + (index % 5) * 0.35}s`}
+                  begin={`-${index * 0.45}s`}
+                  repeatCount="indefinite"
+                  path={`M380 460 L${x} ${y}`}
+                />
+              </circle>
+            </g>
+          ))}
+        </svg>
+
+        <button
+          type="button"
+          className="een-hex een-center"
+          onClick={onOpenQuizHub}
+          aria-label="Genel İngilizce"
         >
-          {label}
-        </span>
-      </span>
-    </button>
+          <span><strong>GENEL</strong><br />İNGİLİZCE</span>
+        </button>
+
+        {topics.map((topic) => (
+          <button
+            type="button"
+            key={topic.label}
+            className={`een-hex ${topic.className}`}
+            onClick={topic.onClick}
+            aria-label={topic.label}
+          >
+            <span>{topic.label}</span>
+          </button>
+        ))}
+      </div>
+    </section>
   );
 }
