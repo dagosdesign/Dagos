@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { NavTab } from './types';
 import { useLexProgress } from './hooks/useLexProgress';
@@ -119,6 +119,21 @@ export default function App() {
 
   const dueCount = getDueCards(FLASHCARDS, srsState).length;
 
+  // Measure the bottom nav's real height so the home animation can fit exactly
+  // above it, with no scroll, regardless of device font/zoom settings.
+  const bottomNavRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = bottomNavRef.current;
+    if (!el) return;
+    const setVar = () => {
+      document.documentElement.style.setProperty('--bottom-nav-h', `${el.offsetHeight}px`);
+    };
+    setVar();
+    const observer = new ResizeObserver(setVar);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
     setActiveTab(tab);
@@ -193,7 +208,9 @@ export default function App() {
         )}
       </main>
 
-      <BottomNav activeTab={activeTab} onChange={handleNavigate} dueCount={dueCount} />
+      <div ref={bottomNavRef}>
+        <BottomNav activeTab={activeTab} onChange={handleNavigate} dueCount={dueCount} />
+      </div>
 
       {orbFlow && (
         <LearningOrbsTransition
