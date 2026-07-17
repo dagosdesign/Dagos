@@ -69,7 +69,7 @@ export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub }:
       >
         <div
           ref={contentRef}
-          style={{ width: 760, flexShrink: 0, transform: `scale(${scale})`, transformOrigin: 'center center' }}
+          style={{ width: '100%', maxWidth: 760, flexShrink: 0, transform: `scale(${scale})`, transformOrigin: 'center center' }}
         >
           <HexMenu
             onPractice={onPractice}
