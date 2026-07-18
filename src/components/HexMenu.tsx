@@ -7,11 +7,24 @@ interface HexMenuProps {
   onOpenQuizHub: () => void;
 }
 
-// Link endpoints (center is 380,460) for the 10 satellite nodes, same order as `topics`.
-const links: [number, number][] = [
-  [380, 143], [162, 243], [598, 243], [72, 411], [688, 411],
-  [82, 603], [678, 603], [185, 777], [380, 833], [575, 777],
+// Satellite node centers as fractions of the field (also drives the SVG link endpoints
+// so lines always connect to hex centers). Order matches `topics` / een-n1..n10.
+const NODES: [number, number][] = [
+  [0.50, 0.15], // LGS
+  [0.20, 0.27], // YDT
+  [0.80, 0.27], // YÖK-DİL
+  [0.11, 0.46], // IELTS
+  [0.89, 0.46], // YDS
+  [0.13, 0.66], // GRAMMAR
+  [0.87, 0.66], // ADJECTIVES
+  [0.25, 0.85], // NOUNS
+  [0.50, 0.92], // ADVERBS
+  [0.75, 0.85], // IRREGULAR VERBS
 ];
+
+const VB_W = 760;
+const VB_H = 920;
+const links = NODES.map(([fx, fy]) => [Math.round(fx * VB_W), Math.round(fy * VB_H)] as [number, number]);
 
 export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: HexMenuProps) {
   const topics = [
@@ -35,16 +48,17 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: He
           --gold-bright: #ffd66b;
           position: relative;
           width: 100%;
-          overflow: hidden;
+          height: 100%;
+          max-width: 760px;
+          margin: 0 auto;
           background: transparent;
           color: #f7f7f7;
           isolation: isolate;
         }
         .een-field {
           position: relative;
-          width: min(100%, 760px);
-          height: 920px;
-          margin: 0 auto;
+          width: 100%;
+          height: 100%;
         }
         .een-lines, .een-waves {
           position: absolute;
@@ -78,15 +92,16 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: He
           position: absolute;
           display: grid;
           place-items: center;
-          width: 142px;
+          width: clamp(96px, 25vw, 150px);
           aspect-ratio: 1.12;
-          padding: 18px;
+          padding: 14px;
           border: 0;
+          transform: translate(-50%, -50%);
           clip-path: polygon(25% 2%, 75% 2%, 100% 50%, 75% 98%, 25% 98%, 0 50%);
           background: var(--gold);
           color: #f7f7f7;
           font: inherit;
-          font-size: .88rem;
+          font-size: clamp(0.72rem, 3vw, 0.92rem);
           cursor: pointer;
           filter: drop-shadow(0 0 12px rgba(244,184,47,.38));
           animation: een-breathe 4.8s ease-in-out infinite;
@@ -103,59 +118,48 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: He
           max-width: 100%;
           text-align: center;
           font-weight: 500;
-          line-height: 1.2;
+          line-height: 1.15;
         }
         .een-hex:hover {
           background: var(--gold-bright);
           filter: drop-shadow(0 0 22px rgba(244,184,47,.75));
         }
         .een-hex:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+
         .een-center {
-          left: calc(50% - 116px);
-          top: 344px;
-          width: 232px;
+          left: 50%;
+          top: 50%;
+          width: clamp(150px, 42vw, 236px);
           animation: een-center-pulse 4s ease-in-out infinite;
         }
-        .een-center span { font-size: 1.55rem; }
+        .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); }
         .een-center strong { color: var(--gold); font-weight: 500; }
-        .een-n1 { left: calc(50% - 71px); top: 80px; animation-delay: -.6s; }
-        .een-n2 { left: 12%; top: 180px; animation-delay: -1.5s; }
-        .een-n3 { right: 12%; top: 180px; animation-delay: -2.2s; }
-        .een-n4 { left: 1%; top: 348px; animation-delay: -.9s; }
-        .een-n5 { right: 1%; top: 348px; animation-delay: -2.8s; }
-        .een-n6 { left: 3%; top: 540px; animation-delay: -1.8s; }
-        .een-n7 { right: 3%; top: 540px; animation-delay: -3.4s; }
-        .een-n8 { left: 15%; top: 714px; animation-delay: -2.5s; }
-        .een-n9 { left: calc(50% - 71px); top: 770px; animation-delay: -1.1s; }
-        .een-n10 { right: 15%; top: 714px; animation-delay: -3s; }
+
+        .een-n1  { left: 50%;  top: 15%; animation-delay: -.6s; }
+        .een-n2  { left: 20%;  top: 27%; animation-delay: -1.5s; }
+        .een-n3  { left: 80%;  top: 27%; animation-delay: -2.2s; }
+        .een-n4  { left: 11%;  top: 46%; animation-delay: -.9s; }
+        .een-n5  { left: 89%;  top: 46%; animation-delay: -2.8s; }
+        .een-n6  { left: 13%;  top: 66%; animation-delay: -1.8s; }
+        .een-n7  { left: 87%;  top: 66%; animation-delay: -3.4s; }
+        .een-n8  { left: 25%;  top: 85%; animation-delay: -2.5s; }
+        .een-n9  { left: 50%;  top: 92%; animation-delay: -1.1s; }
+        .een-n10 { left: 75%;  top: 85%; animation-delay: -3s; }
+
         @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
         @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
         @keyframes een-breathe {
-          0%,100% { transform: translate3d(0,-3px,0) scale(.985); }
-          50% { transform: translate3d(0,5px,0) scale(1.015); }
+          0%,100% { transform: translate(-50%, calc(-50% - 3px)) scale(.985); }
+          50%     { transform: translate(-50%, calc(-50% + 5px)) scale(1.015); }
         }
         @keyframes een-center-pulse {
-          0%,100% { transform: scale(.99); filter: drop-shadow(0 0 13px rgba(244,184,47,.4)); }
-          50% { transform: scale(1.02); filter: drop-shadow(0 0 25px rgba(244,184,47,.68)); }
-        }
-        @media (max-width: 540px) {
-          .een-field { height: 820px; }
-          .een-hex { width: 104px; padding: 12px; font-size: .72rem; }
-          .een-center { left: calc(50% - 86px); top: 318px; width: 172px; }
-          .een-center span { font-size: 1.15rem; }
-          .een-n1 { left: calc(50% - 52px); top: 66px; }
-          .een-n2 { left: 5%; top: 158px; }
-          .een-n3 { right: 5%; top: 158px; }
-          .een-n4 { left: 0; top: 312px; }
-          .een-n5 { right: 0; top: 312px; }
-          .een-n6 { left: 1%; top: 486px; }
-          .een-n7 { right: 1%; top: 486px; }
-          .een-n8 { left: 7%; top: 654px; }
-          .een-n9 { left: calc(50% - 52px); top: 710px; }
-          .een-n10 { right: 7%; top: 654px; }
+          0%,100% { transform: translate(-50%,-50%) scale(.99); filter: drop-shadow(0 0 13px rgba(244,184,47,.4)); }
+          50%     { transform: translate(-50%,-50%) scale(1.02); filter: drop-shadow(0 0 25px rgba(244,184,47,.68)); }
         }
         @media (prefers-reduced-motion: reduce) {
-          .een * { animation: none !important; }
+          .een-hex { animation: none; transform: translate(-50%, -50%); }
+          .een-center { animation: none; transform: translate(-50%, -50%); }
+          .een-wave, .een-link, .een-dot { animation: none; }
         }
       `}</style>
 
