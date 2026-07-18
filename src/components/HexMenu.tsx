@@ -186,9 +186,9 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: He
           type="button"
           className="een-hex een-center"
           onClick={onOpenQuizHub}
-          aria-label="Genel İngilizce"
+          aria-label="General English"
         >
-          <span><strong>GENEL</strong><br />İNGİLİZCE</span>
+          <span><strong>GENERAL</strong><br />ENGLISH</span>
         </button>
 
         {topics.map((topic) => (

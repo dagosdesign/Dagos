@@ -116,7 +116,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         onClick={onBack}
         className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
       >
-        <ChevronLeft className="w-4 h-4" /> Ana Sayfa
+        <ChevronLeft className="w-4 h-4" /> Home
       </button>
 
       {/* User header card */}

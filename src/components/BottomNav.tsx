@@ -26,7 +26,7 @@ export default function BottomNav({ active, onSelect }: BottomNavProps) {
           boxShadow: '0 -6px 22px rgba(0,0,0,0.5)',
         }}
       >
-        <SideTab icon={Home} label="Ana Sayfa" active={active === 'home'} onClick={() => onSelect('home')} />
+        <SideTab icon={Home} label="Home" active={active === 'home'} onClick={() => onSelect('home')} />
         <AiButton active={active === 'ai'} onClick={() => onSelect('ai')} />
         <SideTab icon={User} label="Profile" active={active === 'profile'} onClick={() => onSelect('profile')} />
       </div>
@@ -64,15 +64,23 @@ function SideTab({
       className="relative flex flex-1 flex-col items-center justify-center gap-1 cursor-pointer h-full"
     >
       <motion.div animate={controls} className="flex flex-col items-center gap-1">
-        <Icon className="w-[22px] h-[22px]" strokeWidth={active ? 2.2 : 1.7} color={active ? '#ffd978' : '#858585'} />
+        <div
+          className="p-1.5 rounded-xl transition-colors"
+          style={{
+            background: active ? 'rgba(227,181,83,0.12)' : 'transparent',
+            boxShadow: active ? '0 0 14px rgba(227,181,83,0.35)' : 'none',
+          }}
+        >
+          <Icon className="w-[22px] h-[22px]" strokeWidth={active ? 2.2 : 1.7} color={active ? '#ffd978' : '#858585'} />
+        </div>
         <span className={`text-[11px] font-mono tracking-tight ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
           {label}
         </span>
       </motion.div>
 
       <motion.span
-        className="absolute bottom-1 h-[3px] rounded-full bg-[#ffd978]"
-        style={{ boxShadow: '0 0 6px rgba(255,217,120,0.75)' }}
+        className="absolute bottom-1.5 h-[3px] rounded-full bg-[#ffd978]"
+        style={{ boxShadow: '0 0 8px rgba(255,217,120,0.9)' }}
         initial={false}
         animate={{ opacity: active ? 1 : 0, scaleX: active ? 1 : 0, width: 26 }}
         transition={{ type: 'spring', damping: 14, stiffness: 260 }}

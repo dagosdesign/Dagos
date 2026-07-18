@@ -120,11 +120,14 @@ export default function LearningOrbsTransition({ categoryLabel, onSelect, onClos
           .learning-orbits__content {
             display: grid;
             justify-items: center;
-            gap: 9px;
-            padding: 16px;
+            gap: 8px;
+            padding: 10px;
             text-align: center;
-            font-size: 1rem;
+            font-size: clamp(0.72rem, 3.3vw, 0.95rem);
+            line-height: 1.15;
             font-weight: 500;
+            max-width: 100%;
+            overflow-wrap: break-word;
           }
 
           .learning-orbits__icon {

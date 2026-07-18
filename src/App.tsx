@@ -192,7 +192,7 @@ export default function App() {
               <HomeScreen
                 onPractice={(category, label) => setOrbFlow({ category, label })}
                 onOpenGrammar={() => handleNavigate('grammar')}
-                onOpenQuizHub={() => setOrbFlow({ category: null, label: 'Genel İngilizce' })}
+                onOpenQuizHub={() => setOrbFlow({ category: null, label: 'General English' })}
               />
             )}
             {activeTab === 'cards' && (
