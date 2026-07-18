@@ -207,7 +207,7 @@ export default function App() {
               </div>
             )}
             {activeTab === 'ai' && (
-              <AiCoachScreen isAiConfigured={isAiConfigured} playPronunciation={playPronunciation} />
+              <AiCoachScreen isAiConfigured={isAiConfigured} />
             )}
             {activeTab === 'quiz' && (
               <QuizScreen
