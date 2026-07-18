@@ -1,101 +1,69 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { motion, useAnimation } from 'motion/react';
-import { Home, Layers, Sparkles, GraduationCap } from 'lucide-react';
-import { NavTab } from '../types';
+import { Home, User, MessageCircle, Sparkles } from 'lucide-react';
+
+export type NavItem = 'home' | 'ai' | 'profile';
 
 interface BottomNavProps {
-  activeTab: NavTab;
-  onChange: (tab: NavTab) => void;
-  dueCount: number;
+  active: NavItem;
+  onSelect: (item: NavItem) => void;
 }
-
-const SIDE_TABS: { id: NavTab; label: string; icon: typeof Home }[] = [
-  { id: 'home', label: 'Ana Sayfa', icon: Home },
-  { id: 'cards', label: 'Kartlar', icon: Layers },
-  { id: 'grammar', label: 'Gramer', icon: GraduationCap },
-];
 
 const BAR_HEIGHT = 62;
-const CORNER_RADIUS = 22;
-const NOTCH_RADIUS = 34;
-const NOTCH_X_FRACTION = 0.625; // "Test" sits in the 3rd of 4 equal columns
-const PATH_WIDTH = 400; // reference width; SVG stretches non-uniformly to fill the real bar
 
-function buildBarPath(): string {
-  const w = PATH_WIDTH;
-  const cx = w * NOTCH_X_FRACTION;
-  const r = CORNER_RADIUS;
-  const nr = NOTCH_RADIUS;
-  const flare = nr * 0.55;
-
-  return `
-    M0,${r}
-    Q0,0 ${r},0
-    L${cx - nr - flare},0
-    C${cx - nr},0 ${cx - nr},${nr} ${cx},${nr}
-    C${cx + nr},${nr} ${cx + nr},0 ${cx + nr + flare},0
-    L${w - r},0
-    Q${w},0 ${w},${r}
-    L${w},${BAR_HEIGHT}
-    L0,${BAR_HEIGHT}
-    Z
-  `;
-}
-
-const BAR_PATH = buildBarPath();
-
-export default function BottomNav({ activeTab, onChange, dueCount }: BottomNavProps) {
-  const isQuizActive = activeTab === 'quiz';
-
+export default function BottomNav({ active, onSelect }: BottomNavProps) {
   return (
     <div className="sticky bottom-0 z-30 w-full pb-[env(safe-area-inset-bottom)]">
-      <div
-        className="relative w-full mx-auto max-w-7xl"
-        style={{ height: BAR_HEIGHT + 22 }}
-      >
-        <svg
-          width="100%"
-          height={BAR_HEIGHT}
-          viewBox={`0 0 ${PATH_WIDTH} ${BAR_HEIGHT}`}
-          preserveAspectRatio="none"
-          className="absolute bottom-0 left-0"
-          style={{ filter: 'drop-shadow(0 -6px 16px rgba(0,0,0,0.45))' }}
-        >
-          <path d={BAR_PATH} fill="#0c0c0d" fillOpacity={0.97} stroke="rgba(255,255,255,0.06)" strokeWidth={1} />
-        </svg>
+      <div className="relative mx-auto max-w-md" style={{ height: BAR_HEIGHT + 32 }}>
+        {/* Frosted pod bump behind the AI button */}
+        <div
+          className="absolute left-1/2 -translate-x-1/2"
+          style={{
+            bottom: BAR_HEIGHT - 40,
+            width: 96,
+            height: 96,
+            borderRadius: '50%',
+            background: 'rgba(28,26,22,0.75)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)',
+            border: '1px solid rgba(255,255,255,0.05)',
+          }}
+        />
 
-        {/* Flat side tabs, split around the notch */}
-        <div className="absolute bottom-0 left-0 right-0 grid grid-cols-4" style={{ height: BAR_HEIGHT }}>
-          <SideTab tab={SIDE_TABS[0]} active={activeTab === SIDE_TABS[0].id} onClick={() => onChange(SIDE_TABS[0].id)} />
-          <SideTab
-            tab={SIDE_TABS[1]}
-            active={activeTab === SIDE_TABS[1].id}
-            onClick={() => onChange(SIDE_TABS[1].id)}
-            badge={dueCount > 0 ? (dueCount > 99 ? '99+' : dueCount) : undefined}
-          />
-          {/* column 3 reserved for the floating Test button */}
-          <div />
-          <SideTab tab={SIDE_TABS[2]} active={activeTab === SIDE_TABS[2].id} onClick={() => onChange(SIDE_TABS[2].id)} />
+        {/* Bar */}
+        <div
+          className="absolute bottom-0 left-3 right-3 flex items-center justify-between px-10"
+          style={{
+            height: BAR_HEIGHT,
+            borderRadius: 30,
+            background: 'rgba(18,18,18,0.97)',
+            border: '1px solid rgba(255,255,255,0.06)',
+            boxShadow: '0 -6px 22px rgba(0,0,0,0.5)',
+          }}
+        >
+          <SideTab icon={Home} label="Ana Sayfa" active={active === 'home'} onClick={() => onSelect('home')} />
+          <div className="w-16 shrink-0" />
+          <SideTab icon={User} label="Profile" active={active === 'profile'} onClick={() => onSelect('profile')} />
         </div>
 
-        <ElevatedTestButton active={isQuizActive} onClick={() => onChange('quiz')} />
+        {/* Elevated AI Coach button */}
+        <AiButton active={active === 'ai'} onClick={() => onSelect('ai')} />
       </div>
     </div>
   );
 }
 
 function SideTab({
-  tab,
+  icon: Icon,
+  label,
   active,
   onClick,
-  badge,
 }: {
-  tab: { id: NavTab; label: string; icon: typeof Home };
+  icon: typeof Home;
+  label: string;
   active: boolean;
   onClick: () => void;
-  badge?: number | string;
 }) {
-  const Icon = tab.icon;
   const controls = useAnimation();
 
   useEffect(() => {
@@ -110,79 +78,72 @@ function SideTab({
     <button
       type="button"
       onClick={onClick}
-      aria-label={tab.label}
+      aria-label={label}
       aria-current={active ? 'page' : undefined}
       className="relative flex flex-col items-center justify-center gap-1 cursor-pointer"
     >
       <motion.div animate={controls} className="flex flex-col items-center gap-1">
-        <div className="relative">
-          <Icon className="w-5 h-5" strokeWidth={active ? 2.2 : 1.8} color={active ? '#ffd978' : '#858585'} />
-          {badge !== undefined && (
-            <span className="absolute -top-1.5 -right-2 bg-[#e3b553] text-[#0a0a0b] text-[9px] font-bold font-mono rounded-full min-w-[16px] h-4 px-1 flex items-center justify-center">
-              {badge}
-            </span>
-          )}
-        </div>
-        <span className={`text-[10px] font-mono tracking-tight ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
-          {tab.label}
+        <Icon className="w-[22px] h-[22px]" strokeWidth={active ? 2.2 : 1.7} color={active ? '#ffd978' : '#858585'} />
+        <span className={`text-[11px] font-mono tracking-tight ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
+          {label}
         </span>
       </motion.div>
 
       <motion.span
-        className="absolute bottom-0 h-[3px] rounded-full bg-[#ffd978]"
+        className="absolute -bottom-2 h-[3px] rounded-full bg-[#ffd978]"
         style={{ boxShadow: '0 0 6px rgba(255,217,120,0.75)' }}
         initial={false}
-        animate={{ opacity: active ? 1 : 0, scaleX: active ? 1 : 0, width: 22 }}
+        animate={{ opacity: active ? 1 : 0, scaleX: active ? 1 : 0, width: 26 }}
         transition={{ type: 'spring', damping: 14, stiffness: 260 }}
       />
     </button>
   );
 }
 
-function ElevatedTestButton({ active, onClick }: { active: boolean; onClick: () => void }) {
+function AiButton({ active, onClick }: { active: boolean; onClick: () => void }) {
   const controls = useAnimation();
-  const mounted = useRef(false);
 
   useEffect(() => {
     controls.start({
-      scale: active ? 1.08 : 1,
+      scale: active ? 1.06 : 1,
       y: active ? -4 : 0,
       transition: { type: 'spring', damping: 13, stiffness: 240 },
     });
-    mounted.current = true;
   }, [active, controls]);
 
   return (
     <div
-      className="absolute z-10 flex flex-col items-center"
-      style={{ left: `${NOTCH_X_FRACTION * 100}%`, top: 0, transform: 'translateX(-50%)' }}
+      className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center"
+      style={{ bottom: BAR_HEIGHT - 38 }}
     >
       <button
         type="button"
         onClick={onClick}
-        aria-label="Test"
+        aria-label="AI Coach"
         aria-current={active ? 'page' : undefined}
         className="flex flex-col items-center cursor-pointer"
       >
         <motion.div
           animate={controls}
-          className="w-[58px] h-[58px] rounded-full flex items-center justify-center bg-[#0a0a0b]"
+          className="relative w-[64px] h-[64px] rounded-full flex items-center justify-center"
           style={{
-            border: `2px solid ${active ? '#e3b553' : '#6b5730'}`,
+            background: 'radial-gradient(circle at 50% 35%, #23201a, #0a0a0b 72%)',
+            border: `2px solid ${active ? '#ffd978' : '#8a6f34'}`,
             boxShadow: active
-              ? '0 4px 16px rgba(227,181,83,0.45)'
-              : '0 4px 12px rgba(227,181,83,0.2)',
+              ? '0 0 20px 2px rgba(227,181,83,0.6), inset 0 0 12px rgba(227,181,83,0.15)'
+              : '0 4px 14px rgba(227,181,83,0.28)',
           }}
         >
-          <div
-            className="w-[42px] h-[42px] rounded-full flex items-center justify-center"
-            style={{ backgroundColor: '#171412', border: '1px solid #b18a37' }}
-          >
-            <Sparkles className="w-5 h-5" color="#ffd978" />
+          <div className="relative flex items-center justify-center">
+            <MessageCircle className="w-8 h-8" color="#ffd978" strokeWidth={1.5} />
+            <span className="absolute text-[11px] font-bold text-[#ffd978] leading-none" style={{ marginTop: '-1px' }}>
+              AI
+            </span>
+            <Sparkles className="absolute -top-1 -right-2.5 w-3 h-3" color="#ffd978" />
           </div>
         </motion.div>
-        <span className={`text-[10px] font-mono tracking-tight mt-1 ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
-          Test
+        <span className={`text-[11px] font-mono tracking-tight mt-1.5 ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
+          AI Coach
         </span>
       </button>
     </div>

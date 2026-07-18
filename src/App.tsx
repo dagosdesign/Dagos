@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, Layers, ArrowRight } from 'lucide-react';
 import { NavTab } from './types';
 import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
 import { FLASHCARDS } from './data/flashcards';
-import BottomNav from './components/BottomNav';
+import BottomNav, { NavItem } from './components/BottomNav';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -139,6 +139,21 @@ export default function App() {
     setActiveTab(tab);
   };
 
+  // Bottom nav is now 3 items: Ana Sayfa / AI Coach / Profile.
+  const navActive: NavItem = showProgress ? 'profile' : activeTab === 'quiz' ? 'ai' : 'home';
+
+  const handleNavSelect = (item: NavItem) => {
+    if (item === 'home') {
+      setShowProgress(false);
+      setActiveTab('home');
+    } else if (item === 'ai') {
+      setShowProgress(false);
+      setActiveTab('quiz');
+    } else {
+      setShowProgress(true);
+    }
+  };
+
   const handleOrbSelect = (method: LearningMethodLabel) => {
     if (!orbFlow) return;
     const { category, label } = orbFlow;
@@ -171,6 +186,27 @@ export default function App() {
               grammarProgress={grammarProgress}
               quizStats={{ score, totalAnswered, highStreak }}
             />
+
+            {/* Flashcard review entry point (SRS deck lives here now) */}
+            <button
+              onClick={() => { setShowProgress(false); setActiveTab('cards'); }}
+              className={`w-full flex items-center justify-between rounded-2xl border p-5 transition-all cursor-pointer ${
+                dueCount > 0 ? 'bg-[#e3b553]/[0.07] border-[#e3b553]/25' : 'bg-white/[0.02] border-white/[0.06]'
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
+                  <Layers className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm font-serif italic text-white">Kelime Kartları</p>
+                  <p className="text-[11px] text-white/40 font-mono">
+                    {dueCount > 0 ? `Bugün ${dueCount} kart tekrar edilecek` : 'Aralıklı tekrar destesi'}
+                  </p>
+                </div>
+              </div>
+              <ArrowRight className="w-4 h-4 text-[#e3b553]" />
+            </button>
           </div>
         ) : (
           <>
@@ -182,7 +218,15 @@ export default function App() {
               />
             )}
             {activeTab === 'cards' && (
-              <FlashcardsScreen srsState={srsState} reviewFlashcard={reviewFlashcard} playPronunciation={playPronunciation} />
+              <div className="space-y-4">
+                <button
+                  onClick={() => { setActiveTab('home'); setShowProgress(true); }}
+                  className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" /> Profil
+                </button>
+                <FlashcardsScreen srsState={srsState} reviewFlashcard={reviewFlashcard} playPronunciation={playPronunciation} />
+              </div>
             )}
             {activeTab === 'quiz' && (
               <QuizScreen
@@ -209,7 +253,7 @@ export default function App() {
       </main>
 
       <div ref={bottomNavRef}>
-        <BottomNav activeTab={activeTab} onChange={handleNavigate} dueCount={dueCount} />
+        <BottomNav active={navActive} onSelect={handleNavSelect} />
       </div>
 
       {orbFlow && (
