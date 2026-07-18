@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, Layers, ArrowRight } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import { NavTab } from './types';
 import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
@@ -9,9 +9,10 @@ import LearningOrbsTransition, { LearningMethodLabel } from './components/Learni
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
 import FlashcardsScreen from './screens/FlashcardsScreen';
+import AiCoachScreen from './screens/AiCoachScreen';
 import QuizScreen from './screens/QuizScreen';
 import GrammarScreen from './screens/GrammarScreen';
-import ProgressScreen from './screens/ProgressScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 interface PracticeHistoryItem {
   id: string;
@@ -119,11 +120,10 @@ export default function App() {
 
   const dueCount = getDueCards(FLASHCARDS, srsState).length;
 
-  // Measure the bottom nav's real height so the home animation can fit exactly
-  // above it, with no scroll, regardless of device font/zoom settings.
-  const bottomNavRef = useRef<HTMLDivElement>(null);
+  // Measure the (fixed) bottom nav's real height so the home animation can fit
+  // exactly above it, with no scroll, regardless of device font/zoom settings.
   useEffect(() => {
-    const el = bottomNavRef.current;
+    const el = document.querySelector('[data-bottom-nav]') as HTMLElement | null;
     if (!el) return;
     const setVar = () => {
       document.documentElement.style.setProperty('--bottom-nav-h', `${el.offsetHeight}px`);
@@ -140,7 +140,7 @@ export default function App() {
   };
 
   // Bottom nav is now 3 items: Ana Sayfa / AI Coach / Profile.
-  const navActive: NavItem = showProgress ? 'profile' : activeTab === 'quiz' ? 'ai' : 'home';
+  const navActive: NavItem = showProgress ? 'profile' : activeTab === 'ai' ? 'ai' : 'home';
 
   const handleNavSelect = (item: NavItem) => {
     if (item === 'home') {
@@ -148,7 +148,7 @@ export default function App() {
       setActiveTab('home');
     } else if (item === 'ai') {
       setShowProgress(false);
-      setActiveTab('quiz');
+      setActiveTab('ai');
     } else {
       setShowProgress(true);
     }
@@ -161,8 +161,8 @@ export default function App() {
     if (method === 'Visual Learning') {
       setMethodSession({ method: 'Visual', category, label });
     } else if (method === 'AI') {
-      // AI custom quiz lives on the quiz hub screen.
-      handleNavigate('quiz');
+      // The "AI" orb opens the conversational AI Coach.
+      handleNavigate('ai');
     } else {
       setMethodSession({ method, category, label });
     }
@@ -171,43 +171,21 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0b] text-[#dcdcdc] flex flex-col antialiased">
       {/* Main Container */}
-      <main className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+      <main
+        className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8"
+        style={{ paddingBottom: 'calc(var(--bottom-nav-h, 66px) + 24px)' }}
+      >
         {showProgress ? (
-          <div className="space-y-4">
-            <button
-              onClick={() => setShowProgress(false)}
-              className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
-            >
-              <ChevronLeft className="w-4 h-4" /> Ana Sayfa
-            </button>
-            <ProgressScreen
-              gamification={gamification}
-              srsState={srsState}
-              grammarProgress={grammarProgress}
-              quizStats={{ score, totalAnswered, highStreak }}
-            />
-
-            {/* Flashcard review entry point (SRS deck lives here now) */}
-            <button
-              onClick={() => { setShowProgress(false); setActiveTab('cards'); }}
-              className={`w-full flex items-center justify-between rounded-2xl border p-5 transition-all cursor-pointer ${
-                dueCount > 0 ? 'bg-[#e3b553]/[0.07] border-[#e3b553]/25' : 'bg-white/[0.02] border-white/[0.06]'
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
-                  <Layers className="w-5 h-5" />
-                </div>
-                <div className="text-left">
-                  <p className="text-sm font-serif italic text-white">Kelime Kartları</p>
-                  <p className="text-[11px] text-white/40 font-mono">
-                    {dueCount > 0 ? `Bugün ${dueCount} kart tekrar edilecek` : 'Aralıklı tekrar destesi'}
-                  </p>
-                </div>
-              </div>
-              <ArrowRight className="w-4 h-4 text-[#e3b553]" />
-            </button>
-          </div>
+          <ProfileScreen
+            gamification={gamification}
+            srsState={srsState}
+            grammarProgress={grammarProgress}
+            quizStats={{ score, totalAnswered, highStreak }}
+            dueCount={dueCount}
+            onBack={() => setShowProgress(false)}
+            onOpenCards={() => { setShowProgress(false); setActiveTab('cards'); }}
+            onResetStats={resetStats}
+          />
         ) : (
           <>
             {activeTab === 'home' && (
@@ -227,6 +205,9 @@ export default function App() {
                 </button>
                 <FlashcardsScreen srsState={srsState} reviewFlashcard={reviewFlashcard} playPronunciation={playPronunciation} />
               </div>
+            )}
+            {activeTab === 'ai' && (
+              <AiCoachScreen isAiConfigured={isAiConfigured} playPronunciation={playPronunciation} />
             )}
             {activeTab === 'quiz' && (
               <QuizScreen
@@ -252,9 +233,7 @@ export default function App() {
         )}
       </main>
 
-      <div ref={bottomNavRef}>
-        <BottomNav active={navActive} onSelect={handleNavSelect} />
-      </div>
+      <BottomNav active={navActive} onSelect={handleNavSelect} />
 
       {orbFlow && (
         <LearningOrbsTransition

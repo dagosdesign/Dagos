@@ -54,4 +54,4 @@ export interface GamificationState {
   lastActiveDate: string | null; // ISO date (YYYY-MM-DD)
 }
 
-export type NavTab = 'home' | 'cards' | 'quiz' | 'grammar';
+export type NavTab = 'home' | 'cards' | 'quiz' | 'grammar' | 'ai';

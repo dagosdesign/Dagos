@@ -14,9 +14,10 @@ interface ProgressScreenProps {
     totalAnswered: number;
     highStreak: number;
   };
+  hideHeader?: boolean;
 }
 
-export default function ProgressScreen({ gamification, srsState, grammarProgress, quizStats }: ProgressScreenProps) {
+export default function ProgressScreen({ gamification, srsState, grammarProgress, quizStats, hideHeader }: ProgressScreenProps) {
   const masteredCount = countMastered(FLASHCARDS, srsState);
   const masteryPercent = FLASHCARDS.length > 0 ? Math.round((masteredCount / FLASHCARDS.length) * 100) : 0;
   const grammarCompletedCount = Object.values(grammarProgress).filter(p => p.completed).length;
@@ -27,15 +28,17 @@ export default function ProgressScreen({ gamification, srsState, grammarProgress
 
   return (
     <div className="space-y-6">
-      <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
-        <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
-          <Award className="w-5 h-5" />
+      {!hideHeader && (
+        <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
+          <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
+            <Award className="w-5 h-5" />
+          </div>
+          <div>
+            <h2 className="text-lg font-serif italic text-white">Your Progress</h2>
+            <p className="text-xs text-white/40 font-mono">Track your learning journey</p>
+          </div>
         </div>
-        <div>
-          <h2 className="text-lg font-serif italic text-white">Your Progress</h2>
-          <p className="text-xs text-white/40 font-mono">Track your learning journey</p>
-        </div>
-      </div>
+      )}
 
       {/* Streak & XP hero row */}
       <div className="grid grid-cols-2 gap-3.5">

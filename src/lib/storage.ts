@@ -22,4 +22,23 @@ export const STORAGE_KEYS = {
   srsProgress: 'lex_srs_progress',
   grammarProgress: 'lex_grammar_progress',
   gamification: 'lex_gamification',
+  profile: 'lex_profile',
 } as const;
+
+export type PlanId = 'free' | 'premium' | 'pro';
+
+export interface UserProfile {
+  name: string;
+  email: string;
+  plan: PlanId;
+  memberSince: string; // ISO date
+}
+
+export function defaultProfile(): UserProfile {
+  return {
+    name: 'Öğrenci',
+    email: '',
+    plan: 'free',
+    memberSince: new Date().toISOString().slice(0, 10),
+  };
+}

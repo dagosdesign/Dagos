@@ -38,6 +38,61 @@ app.get("/api/config", (req, res) => {
   res.json({ isConfigured });
 });
 
+// AI Coach chat endpoint — a conversational English-learning tutor.
+app.post("/api/chat", async (req, res) => {
+  const { messages } = req.body as {
+    messages?: { role: "user" | "assistant"; content: string }[];
+  };
+
+  if (!Array.isArray(messages) || messages.length === 0) {
+    return res.status(400).json({ error: "Missing or invalid 'messages' in request body." });
+  }
+
+  try {
+    const ai = getAIClient();
+
+    const systemInstruction =
+      "You are 'AI Coach', a warm, encouraging English-learning tutor for Turkish speakers. " +
+      "Help the student practice English: explain vocabulary and grammar, correct their mistakes gently, " +
+      "give example sentences, and hold simple conversations to build fluency. " +
+      "Keep replies concise (2-5 sentences). When the student writes in Turkish, you may briefly answer in " +
+      "Turkish but always steer them back to practicing English. When you correct an error, show the corrected " +
+      "sentence clearly. Be positive and motivating.";
+
+    // Gemini expects a `contents` array with role 'user' | 'model'.
+    const contents = messages.map((m) => ({
+      role: m.role === "assistant" ? "model" : "user",
+      parts: [{ text: m.content }],
+    }));
+
+    const response = await ai.models.generateContent({
+      model: "gemini-3.5-flash",
+      contents,
+      config: { systemInstruction },
+    });
+
+    const text = response.text;
+    if (!text) {
+      throw new Error("Empty response received from the Gemini model.");
+    }
+
+    res.json({ reply: text.trim() });
+  } catch (err: any) {
+    console.error("Gemini AI Coach Chat Error:", err);
+    if (err.message && err.message.includes("GEMINI_API_KEY")) {
+      return res.status(403).json({
+        error: "api_key_missing",
+        message: "Your Gemini API key is not configured.",
+      });
+    }
+    res.status(500).json({
+      error: "chat_failed",
+      message: "Could not reach the AI Coach right now. Please try again.",
+      details: err.message,
+    });
+  }
+});
+
 // API endpoint to dynamically generate a vocabulary quiz using Gemini API
 app.post("/api/generate-quiz", async (req, res) => {
   const { theme, count = 5 } = req.body;
