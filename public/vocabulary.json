@@ -5576,5 +5576,1024 @@
   ],
   "definition": "Capable of being reversed or turned back.",
   "example": "This stylish jacket is completely reversible."
+ },
+ "successive": {
+  "ipa": "/səkˈses.ɪv/",
+  "reading": "saksesiv",
+  "meanings": [
+   "ardışık",
+   "birbiri ardına gelen"
+  ],
+  "definition": "Following one after another in order",
+  "example": "She won the tournament for three successive years."
+ },
+ "tentative": {
+  "ipa": "/ˈten.tə.tɪv/",
+  "reading": "tentativ",
+  "meanings": [
+   "geçici",
+   "kesin olmayan",
+   "tereddütlü"
+  ],
+  "definition": "Not certain or fixed",
+  "example": "We made a tentative plan to meet next Friday."
+ },
+ "opposite": {
+  "ipa": "/ˈɒp.ə.zɪt/",
+  "reading": "opızit",
+  "meanings": [
+   "karşı",
+   "karşıt",
+   "zıt"
+  ],
+  "definition": "Completely different or facing away from",
+  "example": "They lived on the opposite side of the street."
+ },
+ "unattractive": {
+  "ipa": "/ˌʌn.əˈtræk.tɪv/",
+  "reading": "anatrektiv",
+  "meanings": [
+   "çekici olmayan",
+   "çirkin"
+  ],
+  "definition": "Not pleasing or appealing to look at",
+  "example": "The grey old building looked very unattractive in the rain."
+ },
+ "undesirable": {
+  "ipa": "/ˌʌn.dɪˈzaɪə.rə.bəl/",
+  "reading": "andizayırıbıl",
+  "meanings": [
+   "istenmeyen",
+   "arzu edilmeyen"
+  ],
+  "definition": "Not wanted or welcome",
+  "example": "This drug may cause some undesirable side effects."
+ },
+ "admirable": {
+  "ipa": "/ˈæd.mɪ.rə.bəl/",
+  "reading": "edmirıbıl",
+  "meanings": [
+   "takdire şayan",
+   "hayranlık uyandıran"
+  ],
+  "definition": "Deserving respect and approval",
+  "example": "Her dedication to charity work is truly admirable."
+ },
+ "applicable": {
+  "ipa": "/əˈplɪk.ə.bəl/",
+  "reading": "eplikıbıl",
+  "meanings": [
+   "uygulanabilir",
+   "geçerli"
+  ],
+  "definition": "Relevant or appropriate to a situation",
+  "example": "This rule is not applicable in this specific case."
+ },
+ "casual": {
+  "ipa": "/ˈkæʒ.u.əl/",
+  "reading": "kejual",
+  "meanings": [
+   "gündelik",
+   "rahat",
+   "sıradan"
+  ],
+  "definition": "Relaxed, informal, or not serious",
+  "example": "He wore a casual shirt to the friendly dinner."
+ },
+ "conceivable": {
+  "ipa": "/kənˈsiː.və.bəl/",
+  "reading": "kınsivıbıl",
+  "meanings": [
+   "akla yatkın",
+   "düşünülebilir",
+   "olası"
+  ],
+  "definition": "Capable of being imagined or believed",
+  "example": "They analyzed the problem from every conceivable angle."
+ },
+ "corrupt": {
+  "ipa": "/kəˈrʌpt/",
+  "reading": "kırapt",
+  "meanings": [
+   "yozlaşmış",
+   "rüşvetçi",
+   "bozuk"
+  ],
+  "definition": "Dishonest or immoral for personal gain",
+  "example": "The citizens protested against the corrupt government officials."
+ },
+ "depressing": {
+  "ipa": "/dɪˈpres.ɪŋ/",
+  "reading": "dipresing",
+  "meanings": [
+   "depresif",
+   "iç karartıcı",
+   "üzücü"
+  ],
+  "definition": "Making you feel sad and without hope",
+  "example": "The cold rainy weather was very depressing."
+ },
+ "faithful": {
+  "ipa": "/ˈfeɪθ.fəl/",
+  "reading": "feytful",
+  "meanings": [
+   "sadık",
+   "vefakar",
+   "bağlı"
+  ],
+  "definition": "Loyal and constant in support",
+  "example": "He remained a faithful friend throughout his whole life."
+ },
+ "fanciful": {
+  "ipa": "/ˈfæn.sɪ.fəl/",
+  "reading": "fensifıl",
+  "meanings": [
+   "hayalperest",
+   "gerçek dışı",
+   "hayali"
+  ],
+  "definition": "Based on imagination rather than reason",
+  "example": "She told a fanciful story about meeting a dragon."
+ },
+ "expanding": {
+  "ipa": "/ɪkˈspæn.dɪŋ/",
+  "reading": "ikspending",
+  "meanings": [
+   "genişleyen",
+   "büyüyen"
+  ],
+  "definition": "Becoming larger in size or amount",
+  "example": "The business is targeting an expanding market in Asia."
+ },
+ "improbable": {
+  "ipa": "/ɪmˈprɒb.ə.bəl/",
+  "reading": "improbıbıl",
+  "meanings": [
+   "olasılıksız",
+   "beklenmeyen",
+   "ihtimal dışı"
+  ],
+  "definition": "Not likely to be true or to happen",
+  "example": "It seems highly improbable that they will win today."
+ },
+ "ignorant": {
+  "ipa": "/ˈɪɡ.nər.ənt/",
+  "reading": "ignırınt",
+  "meanings": [
+   "cahil",
+   "bilgisiz",
+   "habersiz"
+  ],
+  "definition": "Lacking knowledge or information about something",
+  "example": "He was completely ignorant of the new rules."
+ },
+ "impulsive": {
+  "ipa": "/ɪmˈpʌl.sɪv/",
+  "reading": "impalsiv",
+  "meanings": [
+   "dürtüsel",
+   "düşüncesizce hareket eden"
+  ],
+  "definition": "Acting suddenly without thinking carefully",
+  "example": "Buying that expensive car was an impulsive decision."
+ },
+ "incorrect": {
+  "ipa": "/ˌɪn.kəˈrekt/",
+  "reading": "inkırekt",
+  "meanings": [
+   "yanlış",
+   "hatalı"
+  ],
+  "definition": "Not correct or not true",
+  "example": "Most of his answers on the test were incorrect."
+ },
+ "intrinsic": {
+  "ipa": "/ɪnˈtrɪn.zɪk/",
+  "reading": "intrinzik",
+  "meanings": [
+   "asli",
+   "içsel",
+   "özünde olan"
+  ],
+  "definition": "Being an extremely important part of something",
+  "example": "Maths is an intrinsic part of the school curriculum."
+ },
+ "negligent": {
+  "ipa": "/ˈneɡ.lɪ.dʒənt/",
+  "reading": "neglıcınt",
+  "meanings": [
+   "ihmalkar",
+   "ihmalci"
+  ],
+  "definition": "Failing to take proper care in doing something",
+  "example": "The company was negligent in maintaining safety standards."
+ },
+ "nutritious": {
+  "ipa": "/njuːˈtrɪʃəs/",
+  "reading": "'nyutrişıs'",
+  "meanings": [
+   "besleyici"
+  ],
+  "definition": "Containing many nutrients that help the body grow.",
+  "example": "A nutritious breakfast gives you energy for the whole day."
+ },
+ "persuasive": {
+  "ipa": "/pəˈsweɪsɪv/",
+  "reading": "'pırsveysiv'",
+  "meanings": [
+   "ikna edici",
+   "inandırıcı"
+  ],
+  "definition": "Good at making people agree with you.",
+  "example": "She gave a very persuasive speech to the committee."
+ },
+ "pretentious": {
+  "ipa": "/prɪˈtenʃəs/",
+  "reading": "'pritenşıs'",
+  "meanings": [
+   "gösterişçi",
+   "kasıntı",
+   "yapmacık"
+  ],
+  "definition": "Trying to appear more important than you are.",
+  "example": "I found his pretentious attitude quite annoying during dinner."
+ },
+ "restrictive": {
+  "ipa": "/rɪˈstrɪktɪv/",
+  "reading": "'ristriktiv'",
+  "meanings": [
+   "sınırlayıcı",
+   "kısıtlayıcı"
+  ],
+  "definition": "Limiting freedom, development, or choice.",
+  "example": "These restrictive rules make it hard to do my job."
+ },
+ "scarce": {
+  "ipa": "/skeəs/",
+  "reading": "'skeıs'",
+  "meanings": [
+   "nadir",
+   "kıt",
+   "az"
+  ],
+  "definition": "Hard to find because there is not enough.",
+  "example": "Fresh water is scarce in this desert region."
+ },
+ "shy": {
+  "ipa": "/ʃaɪ/",
+  "reading": "'şay'",
+  "meanings": [
+   "utangaç",
+   "çekingen"
+  ],
+  "definition": "Nervous or uncomfortable with other people.",
+  "example": "The shy boy stood quietly in the corner."
+ },
+ "sincere": {
+  "ipa": "/sɪnˈsɪə/",
+  "reading": "'sinsiyı'",
+  "meanings": [
+   "samimi",
+   "içten",
+   "dürüst"
+  ],
+  "definition": "Honest and saying what you truly believe.",
+  "example": "I want to offer my sincere apologies for the mistake."
+ },
+ "uncomfortable": {
+  "ipa": "/uːnˈkʌmftəbl/",
+  "reading": "'ankamftıbıl'",
+  "meanings": [
+   "rahatsız",
+   "huzursuz"
+  ],
+  "definition": "Not feeling physically or mentally relaxed.",
+  "example": "This hard wooden chair is very uncomfortable to sit on."
+ },
+ "worthless": {
+  "ipa": "/ˈwɜːθləs/",
+  "reading": "'vörthlıs'",
+  "meanings": [
+   "değersiz",
+   "işe yaramaz"
+  ],
+  "definition": "Having no value, usefulness, or importance.",
+  "example": "Without a battery, this phone is completely worthless."
+ },
+ "complete": {
+  "ipa": "/kəmˈpliːt/",
+  "reading": "'kımpliit'",
+  "meanings": [
+   "tam",
+   "bütün",
+   "eksiksiz"
+  ],
+  "definition": "Whole, with all the necessary parts.",
+  "example": "You need to give us a complete list of names."
+ },
+ "threatening": {
+  "ipa": "/ˈθretnɪŋ/",
+  "reading": "'thretıniŋ'",
+  "meanings": [
+   "tehditkar",
+   "korkutucu"
+  ],
+  "definition": "Showing an intention to cause harm or pain.",
+  "example": "He sent a threatening letter to his former boss."
+ },
+ "attainable": {
+  "ipa": "/əˈteɪnəbl/",
+  "reading": "'ıteynıbıl'",
+  "meanings": [
+   "ulaşılabilir",
+   "elde edilebilir"
+  ],
+  "definition": "Possible to achieve or reach successfully.",
+  "example": "We must set goals that are realistic and attainable."
+ },
+ "autonomous": {
+  "ipa": "/ɔːˈtɒnəməs/",
+  "reading": "'ootonımıs'",
+  "meanings": [
+   "özerk",
+   "bağımsız",
+   "otonom"
+  ],
+  "definition": "Independent and having the power to self-govern.",
+  "example": "The region became an autonomous state after the war."
+ },
+ "bearable": {
+  "ipa": "/ˈbeərəbl/",
+  "reading": "'berıbıl'",
+  "meanings": [
+   "katlanılabilir",
+   "dayanılır"
+  ],
+  "definition": "Capable of being accepted or tolerated.",
+  "example": "The cold weather is bearable if you wear a coat."
+ },
+ "such": {
+  "ipa": "/sʌtʃ/",
+  "reading": "'saç'",
+  "meanings": [
+   "böyle",
+   "bu gibi",
+   "öylesine"
+  ],
+  "definition": "Of the type previously mentioned.",
+  "example": "I have never seen such a beautiful garden before."
+ },
+ "most": {
+  "ipa": "/məʊst/",
+  "reading": "'moust'",
+  "meanings": [
+   "en çok",
+   "çoğu",
+   "en fazla"
+  ],
+  "definition": "Greatest in amount, quantity, or degree.",
+  "example": "This is the most difficult question on the test."
+ },
+ "all": {
+  "ipa": "/ɔːl/",
+  "reading": "'ool'",
+  "meanings": [
+   "tüm",
+   "bütün",
+   "hepsi"
+  ],
+  "definition": "The whole quantity or extent of something.",
+  "example": "She invited all her friends to the party."
+ },
+ "greatest": {
+  "ipa": "/ˈɡreɪtɪst/",
+  "reading": "'greytıst'",
+  "meanings": [
+   "en büyük",
+   "en harika"
+  ],
+  "definition": "Largest in amount, size, or importance.",
+  "example": "This is the greatest achievement of his entire career."
+ },
+ "compulsory": {
+  "ipa": "/kəmˈpʌlsəri/",
+  "reading": "'kımpalsıri'",
+  "meanings": [
+   "zorunlu",
+   "mecburi"
+  ],
+  "definition": "Required by a law or a rule.",
+  "example": "Math is a compulsory subject in secondary school."
+ },
+ "coming": {
+  "ipa": "/ˈkʌm.ɪŋ/",
+  "reading": "kamıŋ",
+  "meanings": [
+   "gelecek",
+   "gelen",
+   "yaklaşan"
+  ],
+  "definition": "Happening or arriving soon.",
+  "example": "We are preparing for the coming winter."
+ },
+ "responsive": {
+  "ipa": "/rɪˈspɒn.sɪv/",
+  "reading": "risponsiv",
+  "meanings": [
+   "duyarlı",
+   "tepki veren",
+   "hızlı yanıt veren"
+  ],
+  "definition": "Reacting quickly and positively.",
+  "example": "The customer service team is very responsive to emails."
+ },
+ "lack": {
+  "ipa": "/læk/",
+  "reading": "lek",
+  "meanings": [
+   "eksik",
+   "yoksun",
+   "yetersiz"
+  ],
+  "definition": "Not having enough of something.",
+  "example": "They suffer from a lack of clean water."
+ },
+ "skillful": {
+  "ipa": "/ˈskɪl.fəl/",
+  "reading": "skilful",
+  "meanings": [
+   "becerikli",
+   "yetenekli",
+   "usta"
+  ],
+  "definition": "Having or showing knowledge and skill.",
+  "example": "She is a very skillful pilot."
+ },
+ "perishable": {
+  "ipa": "/ˈper.ɪ.ʃə.bəl/",
+  "reading": "perişbıl",
+  "meanings": [
+   "çabuk bozulan",
+   "dayanıksız"
+  ],
+  "definition": "Food that decays quickly.",
+  "example": "You must keep perishable food in the fridge."
+ },
+ "objective": {
+  "ipa": "/əbˈdʒek.tɪv/",
+  "reading": "objektiv",
+  "meanings": [
+   "tarafsız",
+   "nesnel",
+   "objektif"
+  ],
+  "definition": "Based on facts, not personal feelings.",
+  "example": "A judge must give an objective decision."
+ },
+ "unfavourable": {
+  "ipa": "/ʌnˈfeɪ.vər.ə.bəl/",
+  "reading": "anfeyvırıbıl",
+  "meanings": [
+   "olumsuz",
+   "elverişsiz",
+   "istenmeyen"
+  ],
+  "definition": "Not positive or helpful.",
+  "example": "The project was cancelled due to unfavourable weather."
+ },
+ "falling": {
+  "ipa": "/ˈfɔː.lɪŋ/",
+  "reading": "foliŋ",
+  "meanings": [
+   "düşen",
+   "azalan"
+  ],
+  "definition": "Moving downwards or dropping.",
+  "example": "Watch out for falling rocks on this road."
+ },
+ "mature": {
+  "ipa": "/mæˈtʃʊər/",
+  "reading": "meçuur",
+  "meanings": [
+   "olgun",
+   "ergin",
+   "gelişmiş"
+  ],
+  "definition": "Behaving like a sensible adult.",
+  "example": "He is a very mature young man."
+ },
+ "disputable": {
+  "ipa": "/dɪˈspjuː.tə.bəl/",
+  "reading": "dispyutıbıl",
+  "meanings": [
+   "tartışmalı",
+   "şüpheli"
+  ],
+  "definition": "Not certain or open to argument.",
+  "example": "The referee made a highly disputable decision."
+ },
+ "boastful": {
+  "ipa": "/ˈbəʊst.fəl/",
+  "reading": "boustful",
+  "meanings": [
+   "kendini beğenmiş",
+   "övüngen",
+   "böbürlenen"
+  ],
+  "definition": "Speaking with too much pride about oneself.",
+  "example": "Nobody likes a boastful person."
+ },
+ "cautious": {
+  "ipa": "/ˈkɔː.ʃəs/",
+  "reading": "kooşıs",
+  "meanings": [
+   "tedbirli",
+   "dikkatli",
+   "ihtiyatlı"
+  ],
+  "definition": "Avoiding risks and being careful.",
+  "example": "She is always very cautious when driving."
+ },
+ "commercial": {
+  "ipa": "/kəˈmɜː.ʃəl/",
+  "reading": "kımörşıl",
+  "meanings": [
+   "ticari",
+   "mesleki"
+  ],
+  "definition": "Related to buying and selling goods.",
+  "example": "The company operates a successful commercial business."
+ },
+ "disturbed": {
+  "ipa": "/dɪˈstɜːbd/",
+  "reading": "distörbd",
+  "meanings": [
+   "rahatsız edilmiş",
+   "huzursuz",
+   "aklı karışmış"
+  ],
+  "definition": "Having emotional or mental problems.",
+  "example": "He felt very disturbed by the bad news."
+ },
+ "deceitful": {
+  "ipa": "/dɪˈsiːt.fəl/",
+  "reading": "disiitful",
+  "meanings": [
+   "aldatıcı",
+   "hilekar",
+   "yalancı"
+  ],
+  "definition": "Keeping the truth hidden to deceive.",
+  "example": "I cannot trust such a deceitful person."
+ },
+ "impartial": {
+  "ipa": "/ɪmˈpɑː.ʃəl/",
+  "reading": "impaaşıl",
+  "meanings": [
+   "tarafsız",
+   "adil",
+   "tarafsız kalan"
+  ],
+  "definition": "Not supporting one person or group over another.",
+  "example": "An umpire must remain completely impartial."
+ },
+ "more": {
+  "ipa": "/mɔːr/",
+  "reading": "moor",
+  "meanings": [
+   "daha fazla",
+   "daha çok"
+  ],
+  "definition": "A larger amount or number of.",
+  "example": "We need more time to finish this project."
+ },
+ "least": {
+  "ipa": "/liːst/",
+  "reading": "liist",
+  "meanings": [
+   "en az",
+   "en ufak"
+  ],
+  "definition": "Smallest in amount, extent, or significance.",
+  "example": "That is the least expensive car in the shop."
+ },
+ "south": {
+  "ipa": "/saʊθ/",
+  "reading": "saut",
+  "meanings": [
+   "güney",
+   "güneye ait"
+  ],
+  "definition": "Direction or region pointing towards the south.",
+  "example": "They live in the south part of the city."
+ },
+ "north": {
+  "ipa": "/nɔːθ/",
+  "reading": "noot",
+  "meanings": [
+   "kuzey",
+   "kuzeye ait"
+  ],
+  "definition": "Direction or region pointing towards the north.",
+  "example": "We went to the north coast of Spain."
+ },
+ "less": {
+  "ipa": "/les/",
+  "reading": "les",
+  "meanings": [
+   "daha az",
+   "eksik"
+  ],
+  "definition": "A smaller amount of something.",
+  "example": "We need to spend less money this month."
+ },
+ "east": {
+  "ipa": "/iːst/",
+  "reading": "iist",
+  "meanings": [
+   "doğu",
+   "doğuda olan"
+  ],
+  "definition": "Positioned toward or facing the east.",
+  "example": "The east wind brought cold air."
+ },
+ "west": {
+  "ipa": "/west/",
+  "reading": "vest",
+  "meanings": [
+   "batı",
+   "batıda olan"
+  ],
+  "definition": "Positioned toward or facing the west.",
+  "example": "They live on the west side of the city."
+ },
+ "enough": {
+  "ipa": "/ɪˈnʌf/",
+  "reading": "inaf",
+  "meanings": [
+   "yeterli",
+   "kafi"
+  ],
+  "definition": "Equal to what is needed or wanted.",
+  "example": "We have enough food for everyone."
+ },
+ "living": {
+  "ipa": "/ˈlɪvɪŋ/",
+  "reading": "livinğ",
+  "meanings": [
+   "yaşayan",
+   "canlı"
+  ],
+  "definition": "Alive now and not dead.",
+  "example": "She is the oldest living relative in our family."
+ },
+ "higher": {
+  "ipa": "/ˈhaɪə(r)/",
+  "reading": "hayır",
+  "meanings": [
+   "daha yüksek",
+   "üst"
+  ],
+  "definition": "Located far above the ground or base.",
+  "example": "We need to reach a higher level of performance."
+ },
+ "invalid": {
+  "ipa": "/ɪnˈvælɪd/",
+  "reading": "invélid",
+  "meanings": [
+   "geçersiz",
+   "hükümsüz"
+  ],
+  "definition": "Not legally or officially acceptable.",
+  "example": "Your passport is invalid because it has expired."
+ },
+ "conditional": {
+  "ipa": "/kənˈdɪʃənl/",
+  "reading": "kındışınıl",
+  "meanings": [
+   "koşullu",
+   "şartlı"
+  ],
+  "definition": "Dependent on certain conditions.",
+  "example": "The offer is conditional on a medical test."
+ },
+ "spontaneous": {
+  "ipa": "/spɒnˈteɪniəs/",
+  "reading": "sponteyniyıs",
+  "meanings": [
+   "kendiliğinden olan",
+   "doğal",
+   "anlık"
+  ],
+  "definition": "Happening naturally without planning.",
+  "example": "We made a spontaneous decision to go to the beach."
+ },
+ "convertible": {
+  "ipa": "/kənˈvɜːtəbl/",
+  "reading": "kınvötıbıl",
+  "meanings": [
+   "dönüştürülebilir",
+   "üstü açılır"
+  ],
+  "definition": "Able to be changed into another form.",
+  "example": "This sofa is convertible into a comfortable bed."
+ },
+ "infamous": {
+  "ipa": "/ˈɪnfəməs/",
+  "reading": "infımıs",
+  "meanings": [
+   "adı çıkmış",
+   "kötü şöhretli"
+  ],
+  "definition": "Well known for some bad quality or deed.",
+  "example": "He is an infamous criminal wanted by the police."
+ },
+ "distasteful": {
+  "ipa": "/dɪsˈteɪstfl/",
+  "reading": "disteystfıl",
+  "meanings": [
+   "tatsız",
+   "hoş olmayan",
+   "itici"
+  ],
+  "definition": "Unpleasant, offensive, or causing dislike.",
+  "example": "I find his rude behavior very distasteful."
+ },
+ "illegible": {
+  "ipa": "/ɪˈledʒəbl/",
+  "reading": "ilecıbıl",
+  "meanings": [
+   "okunaksız",
+   "okunamayan"
+  ],
+  "definition": "Difficult or impossible to read.",
+  "example": "His handwriting is completely illegible."
+ },
+ "irresistible": {
+  "ipa": "/ˌɪrɪˈzɪstəbl/",
+  "reading": "irizistıbıl",
+  "meanings": [
+   "karşı konulmaz",
+   "dayanılmaz"
+  ],
+  "definition": "Too attractive or strong to be resisted.",
+  "example": "The smell of fresh cake was irresistible."
+ },
+ "based": {
+  "ipa": "/beɪst/",
+  "reading": "beyst",
+  "meanings": [
+   "merkezli",
+   "dayalı"
+  ],
+  "definition": "Located or established in a specific place.",
+  "example": "Our company is based in London."
+ },
+ "measurable": {
+  "ipa": "/ˈmeʒərəbl/",
+  "reading": "mejırıbıl",
+  "meanings": [
+   "ölçülebilir",
+   "belirgin"
+  ],
+  "definition": "Able to be measured.",
+  "example": "There is a measurable improvement in your test scores."
+ },
+ "inessential": {
+  "ipa": "/ˌɪnɪˈsenʃl/",
+  "reading": "inisenşıl",
+  "meanings": [
+   "önemsiz",
+   "gereksiz"
+  ],
+  "definition": "Not absolutely necessary.",
+  "example": "Do not waste money on inessential items."
+ },
+ "arbitrary": {
+  "ipa": "/ˈɑːbɪtrəri/",
+  "reading": "aabitrıri",
+  "meanings": [
+   "keyfi",
+   "rastgele"
+  ],
+  "definition": "Based on random choice rather than reason.",
+  "example": "The choice of colors was completely arbitrary."
+ },
+ "adamant": {
+  "ipa": "/ˈædəmənt/",
+  "reading": "edımınt",
+  "meanings": [
+   "kararlı",
+   "direngen"
+  ],
+  "definition": "Refusing to be persuaded or change one's mind.",
+  "example": "She was adamant about refusing the job offer."
+ },
+ "portative": {
+  "ipa": "/ˈpɔːtətɪv/",
+  "reading": "pootıtiv",
+  "meanings": [
+   "taşınabilir",
+   "portatif"
+  ],
+  "definition": "Light and easy to carry.",
+  "example": "They bought a portative organ for the traveling church."
+ },
+ "solvable": {
+  "ipa": "/ˈsɒlvəbl/",
+  "reading": "solvıbıl",
+  "meanings": [
+   "çözülebilir",
+   "halledilebilir"
+  ],
+  "definition": "Able to be solved or explained",
+  "example": "Every math problem on this test is solvable."
+ },
+ "elective": {
+  "ipa": "/ɪˈlektɪv/",
+  "reading": "ilektiv",
+  "meanings": [
+   "seçmeli",
+   "isteğe bağlı"
+  ],
+  "definition": "Optional or chosen by election",
+  "example": "She decided to take an elective course in art."
+ },
+ "precarious": {
+  "ipa": "/prɪˈkeəriəs/",
+  "reading": "prikeriyıs",
+  "meanings": [
+   "güvensiz",
+   "tehlikeli",
+   "eğreti"
+  ],
+  "definition": "Not secure or stable",
+  "example": "The ladder was in a precarious position."
+ },
+ "emphatic": {
+  "ipa": "/ɪmˈfætɪk/",
+  "reading": "imfetik",
+  "meanings": [
+   "kesin",
+   "vurgulu",
+   "kararlı"
+  ],
+  "definition": "Showing or giving emphasis",
+  "example": "She gave an emphatic refusal to the offer."
+ },
+ "deplorable": {
+  "ipa": "/dɪˈplɔːrəbl/",
+  "reading": "diplorıbıl",
+  "meanings": [
+   "acınası",
+   "berbat",
+   "esef verici"
+  ],
+  "definition": "Very bad and deserving strong disapproval",
+  "example": "The prisoners lived in deplorable conditions."
+ },
+ "inclusive": {
+  "ipa": "/ɪnˈkluːsɪv/",
+  "reading": "inklusiv",
+  "meanings": [
+   "kapsayıcı",
+   "dahil"
+  ],
+  "definition": "Including all the services or items",
+  "example": "The resort offers an inclusive package for guests."
+ },
+ "indecisive": {
+  "ipa": "/ˌɪndɪˈsaɪsɪv/",
+  "reading": "indisaysiv",
+  "meanings": [
+   "kararsız",
+   "belirsiz"
+  ],
+  "definition": "Not able to make decisions quickly",
+  "example": "An indecisive leader can cause many problems."
+ },
+ "obstructive": {
+  "ipa": "/əbˈstrʌktɪv/",
+  "reading": "ıbstraktiv",
+  "meanings": [
+   "engelleyici",
+   "zorluk çıkaran"
+  ],
+  "definition": "Causing a blockage or delay",
+  "example": "His obstructive behavior delayed the project."
+ },
+ "resentful": {
+  "ipa": "/rɪˈzentfl/",
+  "reading": "rizentful",
+  "meanings": [
+   "kırgın",
+   "alınmış",
+   "dargın"
+  ],
+  "definition": "Feeling bitter about unfair treatment",
+  "example": "He felt resentful about being left out."
+ },
+ "unaccountable": {
+  "ipa": "/ˌʌnəˈkaʊntəbl/",
+  "reading": "anakauntıbıl",
+  "meanings": [
+   "açıklanamaz",
+   "sorumsuz"
+  ],
+  "definition": "Unable to be explained",
+  "example": "For some unaccountable reason, the car stopped."
+ },
+ "negotiable": {
+  "ipa": "/nɪˈɡəʊʃiəbl/",
+  "reading": "nigoşiyıbıl",
+  "meanings": [
+   "müzakere edilebilir",
+   "tartışmaya açık"
+  ],
+  "definition": "Open to discussion or modification",
+  "example": "The price of the house is negotiable."
+ },
+ "publicized": {
+  "ipa": "/ˈpʌblɪsaɪzd/",
+  "reading": "pablisayzd",
+  "meanings": [
+   "tanıtılmış",
+   "duyurulmuş"
+  ],
+  "definition": "Made widely known to the public",
+  "example": "The highly publicized event attracted many visitors."
+ },
+ "decadent": {
+  "ipa": "/ˈdekədənt/",
+  "reading": "dekıdınt",
+  "meanings": [
+   "çökmekte olan",
+   "yozlaşmış",
+   "aşırı lüks"
+  ],
+  "definition": "Having low moral standards and loving luxury",
+  "example": "We enjoyed a decadent chocolate dessert after dinner."
+ },
+ "erroneous": {
+  "ipa": "/ɪˈrəʊniəs/",
+  "reading": "erouniyıs",
+  "meanings": [
+   "hatalı",
+   "yanlış"
+  ],
+  "definition": "Incorrect or based on mistaken beliefs",
+  "example": "The article contained erroneous information about the event."
+ },
+ "refutable": {
+  "ipa": "/rɪˈfjuːtəbl/",
+  "reading": "rifyutıbıl",
+  "meanings": [
+   "çürütülebilir",
+   "aksiliği kanıtlanabilir"
+  ],
+  "definition": "Able to be proven wrong",
+  "example": "His theory is refutable with simple facts."
+ },
+ "virtuous": {
+  "ipa": "/ˈvɜːtʃuəs/",
+  "reading": "vörçuıs",
+  "meanings": [
+   "erdemli",
+   "ahlaklı"
+  ],
+  "definition": "Having or showing high moral standards",
+  "example": "She lived a virtuous life helping the poor."
+ },
+ "untamed": {
+  "ipa": "/ʌnˈteɪmd/",
+  "reading": "anteymd",
+  "meanings": [
+   "evcilleştirilmemiş",
+   "yabani"
+  ],
+  "definition": "Not domesticated or wild",
+  "example": "They explored the untamed wilderness of Alaska."
+ },
+ "impetuous": {
+  "ipa": "/ɪmˈpetʃuəs/",
+  "reading": "impeçuıs",
+  "meanings": [
+   "fevri",
+   "aceleci",
+   "düşüncesiz"
+  ],
+  "definition": "Acting quickly without thought or care",
+  "example": "His impetuous decision led to many problems."
+ },
+ "rich": {
+  "ipa": "/rɪtʃ/",
+  "reading": "riç",
+  "meanings": [
+   "zengin",
+   "bol",
+   "verimli"
+  ],
+  "definition": "Having a lot of money or resources",
+  "example": "The country is rich in natural resources."
  }
 }
