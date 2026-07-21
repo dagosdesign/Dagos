@@ -195,6 +195,7 @@ export const WORD_VISUALS: Record<string, string> = {
   'ancient': '🏛️📜',
   'modern': '🏙️✨',
   'delicious': '😋🍰',
+  'poor': '🪙🥀',
 
   // Adverbs
   'quickly': '🏃💨',

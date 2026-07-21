@@ -343,6 +343,38 @@ function loadVocabulary(): Promise<Record<string, VocabEntry>> {
   return vocabPromise;
 }
 
+// Probes candidate image URLs in order; resolves the first that loads, else null.
+const imageProbeCache = new Map<string, Promise<string | null>>();
+function probeImage(candidates: string[]): Promise<string | null> {
+  const key = candidates.join('|');
+  const cached = imageProbeCache.get(key);
+  if (cached) return cached;
+  const p = (async () => {
+    for (const src of candidates) {
+      const ok = await new Promise<boolean>(resolve => {
+        const im = new Image();
+        im.onload = () => resolve(true);
+        im.onerror = () => resolve(false);
+        im.src = src;
+      });
+      if (ok) return src;
+    }
+    return null;
+  })();
+  imageProbeCache.set(key, p);
+  return p;
+}
+
+const IMG_EXTS = ['webp', 'png', 'jpg'];
+function slotImageCandidates(word: string): string[] {
+  const w = encodeURIComponent(word.toLowerCase());
+  return IMG_EXTS.map(ext => `/vocabulary/${w}.${ext}`);
+}
+function fullCardCandidates(word: string): string[] {
+  const w = encodeURIComponent(word.toLowerCase());
+  return IMG_EXTS.map(ext => `/vocabulary/cards/${w}.${ext}`);
+}
+
 function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
   playPronunciation: (w: string) => void;
@@ -354,18 +386,32 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   const [idx, setIdx] = useState(0);
   const [finished, setFinished] = useState(false);
   const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
-  const [brokenImages, setBrokenImages] = useState<Set<string>>(new Set());
+  // Resolved image URLs per card id: undefined = probing, null = none found.
+  const [fullCardSrc, setFullCardSrc] = useState<Record<string, string | null>>({});
+  const [slotSrc, setSlotSrc] = useState<Record<string, string | null>>({});
 
   const current = cards[idx];
   const entry: VocabEntry = (vocab && current && vocab[current.word.toLowerCase()]) || {};
   const example = entry.example || current?.exampleSentence || '';
   const meanings = entry.meanings ?? (current ? current.turkishMeaning.split(',').map(s => s.trim()) : []);
-  const imgSrc = current ? `/vocabulary/${current.word.toLowerCase()}.webp` : '';
-  const imgBroken = current ? brokenImages.has(current.id) : true;
 
   useEffect(() => {
     loadVocabulary().then(setVocab);
   }, []);
+
+  // Probe for a ready-made full card image and a photo for the side slot.
+  useEffect(() => {
+    if (!current) return;
+    let cancelled = false;
+    probeImage(fullCardCandidates(current.word)).then(src => {
+      if (!cancelled) setFullCardSrc(prev => ({ ...prev, [current.id]: src }));
+    });
+    probeImage(slotImageCandidates(current.word)).then(src => {
+      if (!cancelled) setSlotSrc(prev => ({ ...prev, [current.id]: src }));
+    });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx]);
 
   // Speak the word as each card appears.
   useEffect(() => {
@@ -387,90 +433,107 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   }
   if (!current) return null;
 
+  const readyMadeCard = fullCardSrc[current.id];
+  const slot = slotSrc[current.id];
+
   return (
     <div className="space-y-5">
       <ProgressDots idx={idx} total={cards.length} />
 
-      {/* Vocabulary card: word details on the left, picture on the right */}
-      <div
-        className="rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7"
-        style={{ background: 'linear-gradient(160deg, #0d0c08, #050403)' }}
-      >
-        <div className="flex gap-4 sm:gap-6">
-          {/* Left: word details */}
-          <div className="flex-1 min-w-0 space-y-2.5">
-            <div className="flex items-center gap-2 flex-wrap">
-              <h3 className="text-3xl sm:text-4xl font-serif italic font-bold text-[#e3b553] leading-tight break-words">
-                {current.word}
-              </h3>
-              <button
-                onClick={() => playPronunciation(current.word)}
-                className="p-1.5 text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer shrink-0"
-                aria-label="Kelimeyi dinle"
-              >
-                <Volume2 className="w-5 h-5" />
-              </button>
+      {readyMadeCard ? (
+        /* Ready-made designed card image (public/vocabulary/cards/<word>.*) */
+        <div className="relative">
+          <img
+            src={readyMadeCard}
+            alt={current.word}
+            className="w-full rounded-3xl border border-[#e3b553]/45"
+            style={{ boxShadow: '0 0 30px rgba(227,181,83,0.12)' }}
+          />
+          <button
+            onClick={() => playPronunciation(current.word)}
+            className="absolute top-3 right-3 p-2.5 rounded-full bg-black/60 text-[#e3b553] border border-[#e3b553]/40 hover:bg-black/80 transition-colors cursor-pointer"
+            aria-label="Kelimeyi dinle"
+          >
+            <Volume2 className="w-4 h-4" />
+          </button>
+        </div>
+      ) : (
+        /* Composed vocabulary card: word details on the left, picture on the right */
+        <div
+          className="rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7"
+          style={{ background: 'linear-gradient(160deg, #0d0c08, #050403)' }}
+        >
+          <div className="flex gap-4 sm:gap-6">
+            {/* Left: word details */}
+            <div className="flex-1 min-w-0 space-y-2.5">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-3xl sm:text-4xl font-serif italic font-bold text-[#e3b553] leading-tight break-words">
+                  {current.word}
+                </h3>
+                <button
+                  onClick={() => playPronunciation(current.word)}
+                  className="p-1.5 text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer shrink-0"
+                  aria-label="Kelimeyi dinle"
+                >
+                  <Volume2 className="w-5 h-5" />
+                </button>
+              </div>
+
+              {entry.ipa && (
+                <p className="text-sm font-mono text-white/90">{entry.ipa}</p>
+              )}
+              {entry.reading && (
+                <p className="text-sm font-light text-[#e3b553]">({entry.reading})</p>
+              )}
+
+              {meanings.length > 0 && (
+                <p className="text-xs font-light text-[#e3b553]/85 leading-relaxed">
+                  {meanings.join(' · ')}
+                </p>
+              )}
+
+              {entry.definition && (
+                <p className="text-sm font-light text-white leading-relaxed pt-1">
+                  {entry.definition}
+                </p>
+              )}
+
+              {example && (
+                <p className="text-xs text-white/60 italic font-light leading-relaxed pt-1">
+                  "<Highlighted text={example} word={current.word} />"
+                </p>
+              )}
             </div>
 
-            {entry.ipa && (
-              <p className="text-sm font-mono text-white/90">{entry.ipa}</p>
-            )}
-            {entry.reading && (
-              <p className="text-sm font-light text-[#e3b553]">({entry.reading})</p>
-            )}
-
-            {meanings.length > 0 && (
-              <p className="text-xs font-light text-[#e3b553]/85 leading-relaxed">
-                {meanings.join(' · ')}
-              </p>
-            )}
-
-            {entry.definition && (
-              <p className="text-sm font-light text-white leading-relaxed pt-1">
-                {entry.definition}
-              </p>
-            )}
-
-            {example && (
-              <p className="text-xs text-white/60 italic font-light leading-relaxed pt-1">
-                "<Highlighted text={example} word={current.word} />"
-              </p>
-            )}
-          </div>
-
-          {/* Right: picture (or elegant placeholder) */}
-          <div className="shrink-0 self-start">
-            <div
-              className="w-[110px] h-[110px] sm:w-[170px] sm:h-[170px] rounded-2xl overflow-hidden border border-[#e3b553]/35"
-              style={{ boxShadow: '0 0 24px rgba(227,181,83,0.15)' }}
-            >
-              {!imgBroken ? (
-                <img
-                  src={imgSrc}
-                  alt={current.word}
-                  className="w-full h-full object-cover"
-                  onError={() => setBrokenImages(prev => new Set(prev).add(current.id))}
-                />
-              ) : (
-                <div
-                  className="w-full h-full flex flex-col items-center justify-center gap-1.5"
-                  style={{
-                    background:
-                      'radial-gradient(circle at 50% 40%, rgba(227,181,83,0.18), transparent 70%), linear-gradient(160deg, #14110a, #060504)',
-                  }}
-                >
-                  <span className="text-4xl sm:text-5xl drop-shadow-[0_0_16px_rgba(227,181,83,0.5)]" aria-hidden="true">
-                    {visualFor(current.word)}
-                  </span>
-                  <span className="text-[9px] font-mono uppercase tracking-widest text-[#e3b553]/50">
-                    {current.word.slice(0, 12)}
-                  </span>
-                </div>
-              )}
+            {/* Right: picture (or elegant placeholder) */}
+            <div className="shrink-0 self-start">
+              <div
+                className="w-[110px] h-[110px] sm:w-[170px] sm:h-[170px] rounded-2xl overflow-hidden border border-[#e3b553]/35"
+                style={{ boxShadow: '0 0 24px rgba(227,181,83,0.15)' }}
+              >
+                {slot ? (
+                  <img src={slot} alt={current.word} className="w-full h-full object-cover" />
+                ) : (
+                  <div
+                    className="w-full h-full flex flex-col items-center justify-center gap-1.5"
+                    style={{
+                      background:
+                        'radial-gradient(circle at 50% 40%, rgba(227,181,83,0.18), transparent 70%), linear-gradient(160deg, #14110a, #060504)',
+                    }}
+                  >
+                    <span className="text-4xl sm:text-5xl drop-shadow-[0_0_16px_rgba(227,181,83,0.5)]" aria-hidden="true">
+                      {visualFor(current.word)}
+                    </span>
+                    <span className="text-[9px] font-mono uppercase tracking-widest text-[#e3b553]/50">
+                      {current.word.slice(0, 12)}
+                    </span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className="flex justify-between items-center">
         <p className="text-[11px] font-mono text-white/30">Görseli ve kelimeyi birlikte hatırla</p>

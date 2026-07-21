@@ -217,6 +217,7 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-adj8', word: 'ancient', partOfSpeech: 'adjective', turkishMeaning: 'antik, çok eski', exampleSentence: 'We visited an ancient temple during our trip.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
   { id: 'fc-adj9', word: 'modern', partOfSpeech: 'adjective', turkishMeaning: 'modern, çağdaş', exampleSentence: 'The museum is in a very modern building.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
   { id: 'fc-adj10', word: 'delicious', partOfSpeech: 'adjective', turkishMeaning: 'lezzetli, çok tatlı', exampleSentence: 'My grandmother makes delicious cookies.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj11', word: 'poor', partOfSpeech: 'adjective', turkishMeaning: 'fakir, yoksul', exampleSentence: 'He grew up in a poor neighborhood.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
 
   // Adverbs
   { id: 'fc-adv1', word: 'quickly', partOfSpeech: 'adverb', turkishMeaning: 'hızlıca, çabucak', exampleSentence: 'She quickly finished her homework before dinner.', category: FLASHCARD_CATEGORIES.ADVERBS },

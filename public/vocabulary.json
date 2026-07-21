@@ -47,6 +47,7 @@
   "ancient": { "ipa": "/ˈeɪnʃənt/", "reading": "eynşınt", "meanings": ["antik", "çok eski"], "definition": "Very old; from a long time ago.", "example": "We visited an ancient temple during our trip." },
   "modern": { "ipa": "/ˈmɒdən/", "reading": "modırn", "meanings": ["modern", "çağdaş"], "definition": "Of the present time; new in style.", "example": "The museum is in a very modern building." },
   "delicious": { "ipa": "/dɪˈlɪʃəs/", "reading": "dilişıs", "meanings": ["lezzetli"], "definition": "Tasting extremely good.", "example": "My grandmother makes delicious cookies." },
+  "poor": { "ipa": "/pʊə/", "reading": "pur", "meanings": ["fakir", "yoksul", "maddi imkânı kısıtlı"], "definition": "Having very little money, possessions, or resources.", "example": "He grew up in a poor neighborhood." },
 
   "quickly": { "ipa": "/ˈkwɪkli/", "reading": "kuikli", "meanings": ["hızlıca", "çabucak"], "definition": "At a fast speed; in a short time.", "example": "She quickly finished her homework before dinner." },
   "slowly": { "ipa": "/ˈsləʊli/", "reading": "slouli", "meanings": ["yavaşça"], "definition": "At a slow speed; not fast.", "example": "The old man walked slowly across the street." },
