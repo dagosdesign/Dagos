@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { visualFor } from '../data/wordVisuals';
+import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations';
@@ -375,10 +376,6 @@ function fullCardCandidates(word: string): string[] {
   return IMG_EXTS.map(ext => `/vocabulary/cards/${w}.${ext}`);
 }
 
-// Words with a fully designed ready-made card image always lead the Visual
-// Learning session, in this order, so the polished cards are seen first.
-const PRIORITY_VISUAL_WORDS = ['wealthy', 'poor'];
-
 function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
   playPronunciation: (w: string) => void;
@@ -386,13 +383,14 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   onExit: () => void;
   onRestart: () => void;
 }) {
+  // Prefer words that have a fully designed card image; fill any remaining
+  // slots from the rest of the pool.
   const cards = useMemo(() => {
-    const priority = PRIORITY_VISUAL_WORDS
-      .map(w => pool.find(f => f.word.toLowerCase() === w))
-      .filter((f): f is Flashcard => !!f);
-    const rest = pool.filter(f => !priority.includes(f));
-    const fillCount = Math.max(0, Math.min(5, pool.length) - priority.length);
-    return [...priority, ...sample(rest, fillCount)];
+    const count = Math.min(5, pool.length);
+    const withCard = pool.filter(f => READY_MADE_CARD_SET.has(f.word.toLowerCase()));
+    const withoutCard = pool.filter(f => !READY_MADE_CARD_SET.has(f.word.toLowerCase()));
+    const picked = sample(withCard, Math.min(count, withCard.length));
+    return [...picked, ...sample(withoutCard, count - picked.length)];
   }, [pool]);
   const [idx, setIdx] = useState(0);
   const [finished, setFinished] = useState(false);
