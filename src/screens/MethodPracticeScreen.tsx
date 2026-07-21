@@ -470,7 +470,7 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
           <div className="flex gap-3 sm:gap-5 flex-1 min-h-0">
             <div className="flex-1 min-w-0 space-y-1.5 sm:space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="text-4xl sm:text-5xl font-serif font-bold text-[#e3b553] leading-tight break-words">
+                <h3 className={`${current.word.length > 10 ? 'text-2xl sm:text-4xl' : 'text-4xl sm:text-5xl'} font-serif font-bold text-[#e3b553] leading-tight break-words`}>
                   {current.word}
                 </h3>
                 <button

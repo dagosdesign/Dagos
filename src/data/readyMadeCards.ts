@@ -11,6 +11,16 @@ export const READY_MADE_CARD_WORDS = [
   'comfortable', 'common', 'competitive', 'complex', 'complicated',
   'comprehensive', 'concerned', 'confident', 'considerable', 'consistent',
   'constant', 'contemporary', 'convenient', 'conventional', 'creative',
+  'criminal', 'critical', 'crucial', 'cultural', 'current',
+  'daily', 'dangerous', 'dead', 'decent', 'definite',
+  'dependent', 'desperate', 'determined', 'different', 'difficult',
+  'direct', 'disabled', 'distant', 'distinct', 'domestic',
+  'dull', 'early', 'eastern', 'easy', 'economic',
+  'effective', 'efficient', 'emotional', 'enormous', 'enthusiastic',
+  'entire', 'environmental', 'essential', 'exact', 'existing',
+  'expensive', 'experimental', 'extensive', 'extreme', 'false',
+  'familiar', 'famous', 'far', 'fast', 'few',
+  'financial', 'first', 'following', 'foreign',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
