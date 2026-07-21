@@ -375,6 +375,10 @@ function fullCardCandidates(word: string): string[] {
   return IMG_EXTS.map(ext => `/vocabulary/cards/${w}.${ext}`);
 }
 
+// Words with a fully designed ready-made card image always lead the Visual
+// Learning session, in this order, so the polished cards are seen first.
+const PRIORITY_VISUAL_WORDS = ['wealthy', 'poor'];
+
 function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
   playPronunciation: (w: string) => void;
@@ -382,7 +386,14 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const cards = useMemo(() => sample(pool, Math.min(5, pool.length)), [pool]);
+  const cards = useMemo(() => {
+    const priority = PRIORITY_VISUAL_WORDS
+      .map(w => pool.find(f => f.word.toLowerCase() === w))
+      .filter((f): f is Flashcard => !!f);
+    const rest = pool.filter(f => !priority.includes(f));
+    const fillCount = Math.max(0, Math.min(5, pool.length) - priority.length);
+    return [...priority, ...sample(rest, fillCount)];
+  }, [pool]);
   const [idx, setIdx] = useState(0);
   const [finished, setFinished] = useState(false);
   const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
