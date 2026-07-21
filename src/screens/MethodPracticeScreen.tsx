@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
-import { visualFor } from '../data/wordVisuals';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 
@@ -420,12 +419,6 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idx]);
 
-  // Speak the word as each card appears.
-  useEffect(() => {
-    if (current && !finished) playPronunciation(current.word);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [idx, finished]);
-
   if (finished) {
     return (
       <ResultsPanel
@@ -514,16 +507,12 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
                 />
               ) : (
                 <div
-                  className="w-full aspect-[3/4] max-h-full rounded-[50%] border border-[#e3b553]/40 flex flex-col items-center justify-center gap-1.5"
+                  className="w-full aspect-[3/4] max-h-full rounded-[50%] border border-[#e3b553]/40"
                   style={{
                     background:
                       'radial-gradient(circle at 50% 40%, rgba(227,181,83,0.18), transparent 70%), linear-gradient(160deg, #14110a, #060504)',
                   }}
-                >
-                  <span className="text-4xl sm:text-5xl drop-shadow-[0_0_16px_rgba(227,181,83,0.5)]" aria-hidden="true">
-                    {visualFor(current.word)}
-                  </span>
-                </div>
+                />
               )}
             </div>
           </div>
