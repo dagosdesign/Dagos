@@ -1,227 +1,5580 @@
 {
-  "reluctant": { "ipa": "/rɪˈlʌktənt/", "reading": "rilaktınt", "meanings": ["isteksiz", "gönülsüz"], "definition": "Unwilling and hesitant to do something.", "example": "She was reluctant to lend him her car because of his poor driving history." },
-  "diligent": { "ipa": "/ˈdɪlɪdʒənt/", "reading": "dilicınt", "meanings": ["çalışkan", "gayretli"], "definition": "Working carefully and with a lot of effort.", "example": "He is a diligent student who always completes his homework on time." },
-  "benevolent": { "ipa": "/bəˈnevələnt/", "reading": "binevılınt", "meanings": ["iyiliksever", "hayırsever"], "definition": "Kind, helpful and wanting to do good for others.", "example": "The hospital was built with support from a benevolent local citizen." },
-  "candid": { "ipa": "/ˈkændɪd/", "reading": "kendid", "meanings": ["samimi", "açık sözlü"], "definition": "Honest and direct, even when the truth is uncomfortable.", "example": "To be candid with you, I do not think this design will appeal to our target audience." },
-  "abundant": { "ipa": "/əˈbʌndənt/", "reading": "ıbandınt", "meanings": ["bol", "bereketli"], "definition": "Existing in large quantities; more than enough.", "example": "The forest offers an abundant supply of fresh water and edible plants." },
-  "generous": { "ipa": "/ˈdʒenərəs/", "reading": "cenırıs", "meanings": ["cömert"], "definition": "Happy to give more money, help or time than expected.", "example": "It was very generous of them to donate so much to the charity." },
-  "exhausted": { "ipa": "/ɪɡˈzɔːstɪd/", "reading": "igzostid", "meanings": ["bitkin", "çok yorgun"], "definition": "Extremely tired, with no energy left.", "example": "After the long hike, everyone was completely exhausted." },
-  "convenient": { "ipa": "/kənˈviːniənt/", "reading": "kınviniyınt", "meanings": ["uygun", "elverişli", "pratik"], "definition": "Easy to use or reach; causing no difficulty.", "example": "The new supermarket is very convenient because it is close to my house." },
-  "curious": { "ipa": "/ˈkjʊəriəs/", "reading": "kyuriyıs", "meanings": ["meraklı"], "definition": "Eager to know or learn about something.", "example": "The curious child kept asking questions about how the machine worked." },
-  "fragile": { "ipa": "/ˈfrædʒaɪl/", "reading": "frecayl", "meanings": ["kırılgan", "hassas"], "definition": "Easily broken or damaged; delicate.", "example": "Please handle the package carefully; the glass items inside are fragile." },
-
-  "acquire": { "ipa": "/əˈkwaɪər/", "reading": "ıkuayır", "meanings": ["edinmek", "kazanmak", "öğrenmek"], "definition": "To get or learn something over time.", "example": "Children acquire language skills rapidly during their early years." },
-  "advocate": { "ipa": "/ˈædvəkeɪt/", "reading": "edvıkeyt", "meanings": ["savunmak", "desteklemek"], "definition": "To publicly support an idea, plan or cause.", "example": "Medical professionals advocate getting at least seven hours of sleep per night." },
-  "empirical": { "ipa": "/ɪmˈpɪrɪkəl/", "reading": "empirikıl", "meanings": ["deneysel", "gözleme dayalı"], "definition": "Based on observation or experiment, not only on theory.", "example": "The researcher presented empirical evidence to support her hypothesis." },
-  "fluctuate": { "ipa": "/ˈflʌktʃueɪt/", "reading": "flakçueyt", "meanings": ["dalgalanmak", "iniş çıkış yapmak"], "definition": "To rise and fall irregularly in amount or level.", "example": "The stock market tends to fluctuate wildly in response to political news." },
-  "scrutinize": { "ipa": "/ˈskruːtənaɪz/", "reading": "skrutınayz", "meanings": ["dikkatle incelemek"], "definition": "To examine something very carefully and closely.", "example": "Every line of the contract was closely scrutinized by the company's legal team." },
-  "hypothesis": { "ipa": "/haɪˈpɒθəsɪs/", "reading": "haypotısis", "meanings": ["hipotez", "varsayım"], "definition": "An idea that is suggested as a possible explanation and can be tested.", "example": "The scientists designed an experiment to test their hypothesis." },
-  "coherent": { "ipa": "/kəʊˈhɪərənt/", "reading": "kohirınt", "meanings": ["tutarlı", "anlaşılır"], "definition": "Clear, logical and well organized.", "example": "She gave a coherent explanation of the complex process." },
-  "significant": { "ipa": "/sɪɡˈnɪfɪkənt/", "reading": "signifikınt", "meanings": ["önemli", "anlamlı"], "definition": "Large or important enough to be noticed.", "example": "There was a significant improvement in the patient's condition." },
-
-  "capricious": { "ipa": "/kəˈprɪʃəs/", "reading": "kıprişıs", "meanings": ["kaprisli", "dönek"], "definition": "Changing mood or behavior suddenly and unpredictably.", "example": "The capricious weather went from sunny to a severe thunderstorm in minutes." },
-  "loquacious": { "ipa": "/ləˈkweɪʃəs/", "reading": "lıkueyşıs", "meanings": ["geveze", "çok konuşan"], "definition": "Talking a lot; very talkative.", "example": "The loquacious host kept his guests entertained with endless stories." },
-  "ephemeral": { "ipa": "/ɪˈfemərəl/", "reading": "ifemırıl", "meanings": ["geçici", "kısa ömürlü"], "definition": "Lasting for only a very short time.", "example": "Fame in the internet age is often ephemeral, lasting only a few days." },
-  "pragmatic": { "ipa": "/præɡˈmætɪk/", "reading": "pregmetik", "meanings": ["pratik", "gerçekçi"], "definition": "Dealing with problems in a practical, realistic way.", "example": "We need to take a pragmatic approach to the budget problem rather than fighting over theories." },
-  "cacophony": { "ipa": "/kəˈkɒfəni/", "reading": "kıkofıni", "meanings": ["kulak tırmalayan gürültü"], "definition": "A loud, unpleasant mixture of sounds.", "example": "A cacophony of car horns and construction noise flooded through the open window." },
-  "ubiquitous": { "ipa": "/juːˈbɪkwɪtəs/", "reading": "yubikuitıs", "meanings": ["her yerde bulunan", "yaygın"], "definition": "Seeming to be everywhere at the same time.", "example": "Smartphones have become ubiquitous in modern society." },
-  "meticulous": { "ipa": "/məˈtɪkjələs/", "reading": "mıtikyulıs", "meanings": ["titiz", "aşırı dikkatli"], "definition": "Giving great attention to every small detail.", "example": "The editor was meticulous about checking every detail of the manuscript." },
-  "ambiguous": { "ipa": "/æmˈbɪɡjuəs/", "reading": "embigyuıs", "meanings": ["belirsiz", "muğlak"], "definition": "Having more than one possible meaning; unclear.", "example": "His ambiguous answer left everyone confused about his real intentions." },
-
-  "leverage": { "ipa": "/ˈliːvərɪdʒ/", "reading": "livıric", "meanings": ["avantaj olarak kullanmak"], "definition": "To use something you have to gain an advantage.", "example": "We should leverage our strong brand reputation to enter the new market." },
-  "redundant": { "ipa": "/rɪˈdʌndənt/", "reading": "ridandınt", "meanings": ["gereksiz", "fazladan", "işten çıkarılmış"], "definition": "No longer needed or useful; extra.", "example": "Due to the merger, fifty employees were unfortunately made redundant." },
-  "lucrative": { "ipa": "/ˈluːkrətɪv/", "reading": "lukrıtiv", "meanings": ["kazançlı", "kârlı"], "definition": "Producing a lot of money or profit.", "example": "She left her teaching job to start a highly lucrative consulting firm." },
-  "stagnant": { "ipa": "/ˈstæɡnənt/", "reading": "stegnınt", "meanings": ["durgun", "hareketsiz"], "definition": "Not moving, growing or developing.", "example": "Wage growth has remained stagnant for the past five years despite inflation." },
-  "mitigate": { "ipa": "/ˈmɪtɪɡeɪt/", "reading": "mitigeyt", "meanings": ["hafifletmek", "azaltmak"], "definition": "To make something less harmful or serious.", "example": "Good planning can help mitigate the negative effects of the economic downturn." },
-  "negotiate": { "ipa": "/nɪˈɡəʊʃieɪt/", "reading": "nigoşieyt", "meanings": ["müzakere etmek", "pazarlık yapmak"], "definition": "To discuss something to reach an agreement.", "example": "The union will negotiate with management over the new contract terms." },
-  "revenue": { "ipa": "/ˈrevənjuː/", "reading": "revınyu", "meanings": ["gelir", "hasılat"], "definition": "The money a company or government receives.", "example": "The company's revenue grew by fifteen percent last quarter." },
-  "outsource": { "ipa": "/ˈaʊtsɔːs/", "reading": "autsors", "meanings": ["dış kaynak kullanmak"], "definition": "To pay another company to do part of your work.", "example": "Many companies outsource their customer support to reduce costs." },
-
-  "happy": { "ipa": "/ˈhæpi/", "reading": "hepi", "meanings": ["mutlu"], "definition": "Feeling or showing pleasure and joy.", "example": "The children were very happy at the park." },
-  "brave": { "ipa": "/breɪv/", "reading": "breyv", "meanings": ["cesur"], "definition": "Showing courage; not afraid of danger.", "example": "The brave firefighter rescued the cat from the tree." },
-  "tiny": { "ipa": "/ˈtaɪni/", "reading": "tayni", "meanings": ["minicik", "çok küçük"], "definition": "Extremely small.", "example": "A tiny kitten was sleeping in the basket." },
-  "enormous": { "ipa": "/ɪˈnɔːməs/", "reading": "inormıs", "meanings": ["devasa", "kocaman"], "definition": "Extremely large in size or amount.", "example": "They live in an enormous house near the sea." },
-  "noisy": { "ipa": "/ˈnɔɪzi/", "reading": "noyzi", "meanings": ["gürültülü"], "definition": "Making a lot of loud sound.", "example": "The classroom was too noisy to study in." },
-  "quiet": { "ipa": "/ˈkwaɪət/", "reading": "kuayıt", "meanings": ["sessiz", "sakin"], "definition": "Making very little noise; calm.", "example": "We found a quiet corner in the library." },
-  "wealthy": { "ipa": "/ˈwelθi/", "reading": "velti", "meanings": ["zengin", "varlıklı"], "definition": "Having a lot of money or possessions.", "example": "A wealthy businessman donated money to the school." },
-  "ancient": { "ipa": "/ˈeɪnʃənt/", "reading": "eynşınt", "meanings": ["antik", "çok eski"], "definition": "Very old; from a long time ago.", "example": "We visited an ancient temple during our trip." },
-  "modern": { "ipa": "/ˈmɒdən/", "reading": "modırn", "meanings": ["modern", "çağdaş"], "definition": "Of the present time; new in style.", "example": "The museum is in a very modern building." },
-  "delicious": { "ipa": "/dɪˈlɪʃəs/", "reading": "dilişıs", "meanings": ["lezzetli"], "definition": "Tasting extremely good.", "example": "My grandmother makes delicious cookies." },
-  "poor": { "ipa": "/pʊə/", "reading": "pur", "meanings": ["fakir", "yoksul", "maddi imkânı kısıtlı"], "definition": "Having very little money, possessions, or resources.", "example": "He grew up in a poor neighborhood." },
-  "absolute": { "ipa": "/ˈæbsəluːt/", "reading": "ebsılut", "meanings": ["mutlak", "kesin"], "definition": "Complete and total; not limited in any way.", "example": "We need absolute silence." },
-  "acceptable": { "ipa": "/əkˈseptəbl/", "reading": "ıkseptıbıl", "meanings": ["kabul edilebilir"], "definition": "Good enough or satisfactory.", "example": "Your work is acceptable." },
-  "accurate": { "ipa": "/ˈækjərət/", "reading": "ekyırıt", "meanings": ["doğru", "isabetli"], "definition": "Correct in all the details.", "example": "The report is very accurate." },
-  "additional": { "ipa": "/əˈdɪʃənl/", "reading": "ıdişınıl", "meanings": ["ek", "ilave"], "definition": "Added to something else; extra.", "example": "There is an additional fee for this service." },
-  "adequate": { "ipa": "/ˈædɪkwət/", "reading": "edikuıt", "meanings": ["yeterli"], "definition": "Enough for a particular need or purpose.", "example": "We have adequate time." },
-  "adult": { "ipa": "/ˈædʌlt/", "reading": "edalt", "meanings": ["yetişkin"], "definition": "A grown-up person.", "example": "Only adults are allowed." },
-  "advanced": { "ipa": "/ədˈvɑːnst/", "reading": "ıdvanst", "meanings": ["ileri", "gelişmiş"], "definition": "Far on in development.", "example": "We have advanced technology." },
-  "aggressive": { "ipa": "/əˈɡresɪv/", "reading": "ıgresiv", "meanings": ["saldırgan"], "definition": "Ready or likely to attack.", "example": "The dog became aggressive." },
-  "annual": { "ipa": "/ˈænjuəl/", "reading": "enyuıl", "meanings": ["yıllık"], "definition": "Happening once every year.", "example": "We have an annual meeting." },
-  "anxious": { "ipa": "/ˈæŋkʃəs/", "reading": "enkşıs", "meanings": ["endişeli", "kaygılı"], "definition": "Worried and nervous.", "example": "She felt anxious before the exam." },
-  "apparent": { "ipa": "/əˈpærənt/", "reading": "ıperınt", "meanings": ["açıkça görünen", "belli"], "definition": "Easily seen or understood.", "example": "It is apparent that he is tired." },
-  "appropriate": { "ipa": "/əˈprəʊpriət/", "reading": "ıpropriyıt", "meanings": ["uygun"], "definition": "Suitable or fit for a particular purpose.", "example": "This is the most appropriate solution." },
-  "attractive": { "ipa": "/əˈtræktɪv/", "reading": "ıtrektiv", "meanings": ["çekici", "cazip"], "definition": "Pleasing and appealing.", "example": "She has an attractive personality." },
-  "available": { "ipa": "/əˈveɪləbl/", "reading": "ıveylıbıl", "meanings": ["müsait", "kullanılabilir"], "definition": "Ready for use or able to be obtained.", "example": "The room is available." },
-  "average": { "ipa": "/ˈævərɪdʒ/", "reading": "evıric", "meanings": ["ortalama"], "definition": "Typical or usual; not better or worse than most.", "example": "His test score is average." },
-  "aware": { "ipa": "/əˈweə(r)/", "reading": "ıver", "meanings": ["farkında", "bilgili"], "definition": "Knowing about something.", "example": "I wasn't aware of the problem." },
-  "bad": { "ipa": "/bæd/", "reading": "bed", "meanings": ["kötü"], "definition": "Of low quality or not good.", "example": "That was a bad decision." },
-  "basic": { "ipa": "/ˈbeɪsɪk/", "reading": "beysik", "meanings": ["temel", "basit"], "definition": "Forming an essential part.", "example": "You need basic computer skills." },
-  "beautiful": { "ipa": "/ˈbjuːtɪfl/", "reading": "byutifıl", "meanings": ["güzel"], "definition": "Pleasing the eye or mind.", "example": "The view was beautiful." },
-  "best": { "ipa": "/best/", "reading": "best", "meanings": ["en iyi"], "definition": "Of the highest quality.", "example": "She did her best." },
-  "better": { "ipa": "/ˈbetə(r)/", "reading": "betır", "meanings": ["daha iyi"], "definition": "Of a higher quality or standard.", "example": "This book is better than that one." },
-  "brief": { "ipa": "/briːf/", "reading": "brif", "meanings": ["kısa", "öz"], "definition": "Short in duration or length.", "example": "Please give me a brief summary." },
-  "bright": { "ipa": "/braɪt/", "reading": "brayt", "meanings": ["parlak", "ışıklı"], "definition": "Emitting or reflecting a lot of light.", "example": "The sun is very bright today." },
-  "brilliant": { "ipa": "/ˈbrɪliənt/", "reading": "brilyınt", "meanings": ["mükemmel", "parlak"], "definition": "Exceptionally clever or impressive.", "example": "She is a brilliant student." },
-  "busy": { "ipa": "/ˈbɪzi/", "reading": "bizi", "meanings": ["meşgul"], "definition": "Having a lot to do.", "example": "He is busy with work." },
-  "capable": { "ipa": "/ˈkeɪpəbl/", "reading": "keypıbıl", "meanings": ["yetenekli"], "definition": "Able to do something well.", "example": "She is capable of great things." },
-  "central": { "ipa": "/ˈsentrəl/", "reading": "sentrıl", "meanings": ["merkezi"], "definition": "Located in the middle.", "example": "The park is in the central part." },
-  "cheap": { "ipa": "/tʃiːp/", "reading": "çip", "meanings": ["ucuz"], "definition": "Costing little money.", "example": "This market sells cheap fruit." },
-  "chemical": { "ipa": "/ˈkemɪkl/", "reading": "kemikıl", "meanings": ["kimyasal"], "definition": "Related to chemistry.", "example": "He works in a chemical lab." },
-  "clear": { "ipa": "/klɪə(r)/", "reading": "klir", "meanings": ["açık", "net"], "definition": "Easy to see, hear or understand.", "example": "His explanation was very clear." },
-  "close": { "ipa": "/kləʊs/", "reading": "klous", "meanings": ["yakın"], "definition": "Near in distance or time.", "example": "The school is close to my house." },
-  "cold": { "ipa": "/kəʊld/", "reading": "kould", "meanings": ["soğuk"], "definition": "Having a low temperature.", "example": "It is very cold today." },
-  "comfortable": { "ipa": "/ˈkʌmftəbl/", "reading": "kamftıbıl", "meanings": ["rahat"], "definition": "Providing physical or mental ease.", "example": "This chair is very comfortable." },
-  "common": { "ipa": "/ˈkɒmən/", "reading": "komın", "meanings": ["yaygın", "sıradan"], "definition": "Happening often; ordinary.", "example": "This is a common mistake." },
-  "competitive": { "ipa": "/kəmˈpetətɪv/", "reading": "kımpetıtiv", "meanings": ["rekabetçi"], "definition": "Wanting to be better than others.", "example": "She is very competitive." },
-  "complex": { "ipa": "/ˈkɒmpleks/", "reading": "kompleks", "meanings": ["karmaşık"], "definition": "Consisting of many connected parts.", "example": "It is a complex problem." },
-  "complicated": { "ipa": "/ˈkɒmplɪkeɪtɪd/", "reading": "komplikeytid", "meanings": ["karışık", "çetrefilli"], "definition": "Difficult to understand or do.", "example": "The instructions are complicated." },
-  "comprehensive": { "ipa": "/ˌkɒmprɪˈhensɪv/", "reading": "komprihensiv", "meanings": ["kapsamlı"], "definition": "Including everything that is needed.", "example": "The report is comprehensive." },
-  "concerned": { "ipa": "/kənˈsɜːnd/", "reading": "kınsörnd", "meanings": ["endişeli", "kaygılı"], "definition": "Worried about something.", "example": "I am concerned about her health." },
-  "confident": { "ipa": "/ˈkɒnfɪdənt/", "reading": "konfidınt", "meanings": ["özgüvenli", "emin"], "definition": "Feeling sure of yourself.", "example": "He is confident in his abilities." },
-  "considerable": { "ipa": "/kənˈsɪdərəbl/", "reading": "kınsidırıbıl", "meanings": ["hatırı sayılır", "önemli"], "definition": "Large in amount or degree.", "example": "He earned a considerable amount of money." },
-  "consistent": { "ipa": "/kənˈsɪstənt/", "reading": "kınsistınt", "meanings": ["tutarlı", "istikrarlı"], "definition": "Always behaving or happening in the same way.", "example": "Her work is always consistent." },
-  "constant": { "ipa": "/ˈkɒnstənt/", "reading": "konstınt", "meanings": ["sabit", "sürekli"], "definition": "Happening all the time without stopping.", "example": "The machine makes a constant noise." },
-  "contemporary": { "ipa": "/kənˈtempərəri/", "reading": "kıntempırıri", "meanings": ["çağdaş", "modern"], "definition": "Belonging to the present time.", "example": "We visited a contemporary art museum." },
-  "conventional": { "ipa": "/kənˈvenʃənl/", "reading": "kınvenşınıl", "meanings": ["geleneksel", "alışılmış"], "definition": "Following what is traditional or usual.", "example": "He wore a conventional dark suit." },
-  "creative": { "ipa": "/kriˈeɪtɪv/", "reading": "krieytiv", "meanings": ["yaratıcı"], "definition": "Good at producing new and original ideas or things.", "example": "She has very creative ideas." },
-  "criminal": { "ipa": "/ˈkrɪmɪnl/", "reading": "kriminıl", "meanings": ["suça ilişkin", "suçlu"], "definition": "Relating to crime or illegal acts.", "example": "He has a criminal record." },
-  "critical": { "ipa": "/ˈkrɪtɪkl/", "reading": "kritikıl", "meanings": ["kritik", "eleştirel"], "definition": "Very important; or expressing judgement.", "example": "This is a critical decision." },
-  "crucial": { "ipa": "/ˈkruːʃl/", "reading": "kruşıl", "meanings": ["çok önemli", "hayati"], "definition": "Extremely important.", "example": "Sleep is crucial for health." },
-  "cultural": { "ipa": "/ˈkʌltʃərəl/", "reading": "kalçırıl", "meanings": ["kültürel"], "definition": "Relating to culture, art and traditions.", "example": "The city has a rich cultural life." },
-  "current": { "ipa": "/ˈkʌrənt/", "reading": "karınt", "meanings": ["güncel", "şu anki"], "definition": "Happening or existing now.", "example": "What is your current address?" },
-  "daily": { "ipa": "/ˈdeɪli/", "reading": "deyli", "meanings": ["günlük"], "definition": "Happening every day.", "example": "This is part of my daily routine." },
-  "dangerous": { "ipa": "/ˈdeɪndʒərəs/", "reading": "deyncırıs", "meanings": ["tehlikeli"], "definition": "Able or likely to cause harm.", "example": "Driving fast is dangerous." },
-  "dead": { "ipa": "/ded/", "reading": "ded", "meanings": ["ölü"], "definition": "No longer alive.", "example": "The plant is dead." },
-  "decent": { "ipa": "/ˈdiːsnt/", "reading": "disınt", "meanings": ["düzgün", "makul"], "definition": "Good enough; acceptable.", "example": "He earns a decent salary." },
-  "definite": { "ipa": "/ˈdefɪnət/", "reading": "definıt", "meanings": ["kesin", "belirli"], "definition": "Certain and clear.", "example": "We need a definite answer." },
-  "dependent": { "ipa": "/dɪˈpendənt/", "reading": "dipendınt", "meanings": ["bağımlı"], "definition": "Needing someone or something for support.", "example": "The baby is dependent on its mother." },
-  "desperate": { "ipa": "/ˈdespərət/", "reading": "despırıt", "meanings": ["çaresiz", "umutsuz"], "definition": "Feeling hopeless and willing to try anything.", "example": "He was desperate for a job." },
-  "determined": { "ipa": "/dɪˈtɜːmɪnd/", "reading": "ditörmind", "meanings": ["kararlı"], "definition": "Having a strong will to do something.", "example": "She is determined to succeed." },
-  "different": { "ipa": "/ˈdɪfrənt/", "reading": "difrınt", "meanings": ["farklı"], "definition": "Not the same.", "example": "These two books are different." },
-  "difficult": { "ipa": "/ˈdɪfɪkəlt/", "reading": "difikılt", "meanings": ["zor"], "definition": "Hard to do or understand.", "example": "The exam was very difficult." },
-  "direct": { "ipa": "/dəˈrekt/", "reading": "direkt", "meanings": ["doğrudan", "direkt"], "definition": "Going straight without stopping.", "example": "We took a direct flight." },
-  "disabled": { "ipa": "/dɪsˈeɪbld/", "reading": "diseybıld", "meanings": ["engelli"], "definition": "Having a condition that limits some activities.", "example": "The building has access for disabled people." },
-  "distant": { "ipa": "/ˈdɪstənt/", "reading": "distınt", "meanings": ["uzak"], "definition": "Far away.", "example": "We heard distant thunder." },
-  "distinct": { "ipa": "/dɪˈstɪŋkt/", "reading": "distinkt", "meanings": ["belirgin", "ayrı"], "definition": "Clearly different or noticeable.", "example": "The two flavors are quite distinct." },
-  "domestic": { "ipa": "/dəˈmestɪk/", "reading": "dımestik", "meanings": ["yerli", "ev içi", "evcil"], "definition": "Relating to home or one's own country.", "example": "Domestic flights are cheaper." },
-  "dull": { "ipa": "/dʌl/", "reading": "dal", "meanings": ["sıkıcı", "donuk"], "definition": "Boring or not bright.", "example": "The lecture was dull." },
-  "early": { "ipa": "/ˈɜːli/", "reading": "örli", "meanings": ["erken"], "definition": "Before the usual or expected time.", "example": "I woke up early this morning." },
-  "eastern": { "ipa": "/ˈiːstən/", "reading": "istırn", "meanings": ["doğu", "doğuya ait"], "definition": "In or from the east.", "example": "They live in the eastern part of the city." },
-  "easy": { "ipa": "/ˈiːzi/", "reading": "izi", "meanings": ["kolay"], "definition": "Not difficult.", "example": "The test was easy." },
-  "economic": { "ipa": "/ˌiːkəˈnɒmɪk/", "reading": "ikonomik", "meanings": ["ekonomik"], "definition": "Relating to the economy.", "example": "The country faces economic problems." },
-  "effective": { "ipa": "/ɪˈfektɪv/", "reading": "ifektiv", "meanings": ["etkili"], "definition": "Producing the intended result.", "example": "This medicine is very effective." },
-  "efficient": { "ipa": "/ɪˈfɪʃnt/", "reading": "ifişınt", "meanings": ["verimli"], "definition": "Working well without wasting time or energy.", "example": "The new engine is very efficient." },
-  "emotional": { "ipa": "/ɪˈməʊʃənl/", "reading": "imoşınıl", "meanings": ["duygusal"], "definition": "Relating to feelings.", "example": "It was an emotional moment." },
-  "enthusiastic": { "ipa": "/ɪnˌθjuːziˈæstɪk/", "reading": "intüziyestik", "meanings": ["hevesli", "istekli"], "definition": "Showing great excitement and interest.", "example": "She is enthusiastic about her new job." },
-  "entire": { "ipa": "/ɪnˈtaɪə(r)/", "reading": "intayır", "meanings": ["tüm", "bütün"], "definition": "Whole, complete.", "example": "I read the entire book." },
-  "environmental": { "ipa": "/ɪnˌvaɪrənˈmentl/", "reading": "invayrınmentıl", "meanings": ["çevresel"], "definition": "Relating to the natural environment.", "example": "Environmental pollution is increasing." },
-  "essential": { "ipa": "/ɪˈsenʃl/", "reading": "isenşıl", "meanings": ["gerekli", "temel"], "definition": "Absolutely necessary.", "example": "Water is essential for life." },
-  "exact": { "ipa": "/ɪɡˈzækt/", "reading": "igzekt", "meanings": ["tam", "kesin"], "definition": "Completely correct in every detail.", "example": "What is the exact time?" },
-  "existing": { "ipa": "/ɪɡˈzɪstɪŋ/", "reading": "igzisting", "meanings": ["mevcut"], "definition": "Present or in use now.", "example": "We will improve the existing system." },
-  "expensive": { "ipa": "/ɪkˈspensɪv/", "reading": "ikspensiv", "meanings": ["pahalı"], "definition": "Costing a lot of money.", "example": "This watch is very expensive." },
-  "experimental": { "ipa": "/ɪkˌsperɪˈmentl/", "reading": "iksperimentıl", "meanings": ["deneysel"], "definition": "Based on new ideas that are being tested.", "example": "It is an experimental treatment." },
-  "extensive": { "ipa": "/ɪkˈstensɪv/", "reading": "ikstensiv", "meanings": ["kapsamlı", "geniş"], "definition": "Covering a large area or amount.", "example": "The storm caused extensive damage." },
-  "extreme": { "ipa": "/ɪkˈstriːm/", "reading": "ikstrim", "meanings": ["aşırı", "uç"], "definition": "Very great in degree; far from moderate.", "example": "They train in extreme conditions." },
-  "false": { "ipa": "/fɔːls/", "reading": "fols", "meanings": ["yanlış", "sahte"], "definition": "Not true or not real.", "example": "He gave a false name." },
-  "familiar": { "ipa": "/fəˈmɪliə(r)/", "reading": "fımilyır", "meanings": ["tanıdık"], "definition": "Well known to you.", "example": "Her face looks familiar." },
-  "famous": { "ipa": "/ˈfeɪməs/", "reading": "feymıs", "meanings": ["ünlü"], "definition": "Known by many people.", "example": "Istanbul is famous for its history." },
-  "far": { "ipa": "/fɑː(r)/", "reading": "far", "meanings": ["uzak"], "definition": "At a great distance.", "example": "The station is not far from here." },
-  "fast": { "ipa": "/fɑːst/", "reading": "fest", "meanings": ["hızlı"], "definition": "Moving or happening quickly.", "example": "He drives a fast car." },
-  "few": { "ipa": "/fjuː/", "reading": "fyu", "meanings": ["az sayıda"], "definition": "A small number of.", "example": "Few people came to the meeting." },
-  "financial": { "ipa": "/faɪˈnænʃl/", "reading": "faynenşıl", "meanings": ["finansal", "mali"], "definition": "Relating to money.", "example": "They have financial problems." },
-  "first": { "ipa": "/fɜːst/", "reading": "först", "meanings": ["ilk", "birinci"], "definition": "Coming before all others.", "example": "She won first prize." },
-  "following": { "ipa": "/ˈfɒləʊɪŋ/", "reading": "folouing", "meanings": ["takip eden", "sonraki"], "definition": "Coming next.", "example": "Read the following sentences." },
-  "foreign": { "ipa": "/ˈfɒrən/", "reading": "forın", "meanings": ["yabancı"], "definition": "From another country.", "example": "She speaks two foreign languages." },
-  "former": { "ipa": "/ˈfɔːmə(r)/", "reading": "formır", "meanings": ["eski", "önceki"], "definition": "Existing or holding a position in the past.", "example": "The former president gave a speech." },
-  "free": { "ipa": "/friː/", "reading": "fri", "meanings": ["özgür", "ücretsiz"], "definition": "Not controlled, or costing nothing.", "example": "Entry to the museum is free." },
-  "frequent": { "ipa": "/ˈfriːkwənt/", "reading": "frikuınt", "meanings": ["sık"], "definition": "Happening often.", "example": "He makes frequent visits to his family." },
-  "full": { "ipa": "/fʊl/", "reading": "ful", "meanings": ["dolu"], "definition": "Containing as much as possible.", "example": "The glass is full." },
-  "fundamental": { "ipa": "/ˌfʌndəˈmentl/", "reading": "fandımentıl", "meanings": ["temel", "esas"], "definition": "Forming the base; most important.", "example": "Freedom is a fundamental right." },
-  "general": { "ipa": "/ˈdʒenrəl/", "reading": "cenırıl", "meanings": ["genel"], "definition": "Relating to the whole, not the details.", "example": "The general opinion is positive." },
-  "genuine": { "ipa": "/ˈdʒenjuɪn/", "reading": "cenyuin", "meanings": ["gerçek", "hakiki"], "definition": "Real and exactly what it appears to be.", "example": "This bag is made of genuine leather." },
-  "global": { "ipa": "/ˈɡləʊbl/", "reading": "globıl", "meanings": ["küresel"], "definition": "Relating to the whole world.", "example": "Climate change is a global problem." },
-  "good": { "ipa": "/ɡʊd/", "reading": "gud", "meanings": ["iyi"], "definition": "Of high quality; pleasing.", "example": "She is a good student." },
-  "grateful": { "ipa": "/ˈɡreɪtfl/", "reading": "greytfıl", "meanings": ["minnettar"], "definition": "Feeling thankful.", "example": "I am grateful for your help." },
-  "great": { "ipa": "/ɡreɪt/", "reading": "greyt", "meanings": ["harika", "büyük"], "definition": "Very good, or very large.", "example": "We had a great time at the party." },
-  "half": { "ipa": "/hɑːf/", "reading": "haf", "meanings": ["yarım", "yarı"], "definition": "One of two equal parts.", "example": "He ate half the cake." },
-  "hard": { "ipa": "/hɑːd/", "reading": "hard", "meanings": ["zor", "sert"], "definition": "Difficult, or firm and solid.", "example": "This question is very hard." },
-  "healthy": { "ipa": "/ˈhelθi/", "reading": "helti", "meanings": ["sağlıklı"], "definition": "In good physical condition.", "example": "Eating fruit keeps you healthy." },
-  "heavy": { "ipa": "/ˈhevi/", "reading": "hevi", "meanings": ["ağır"], "definition": "Weighing a lot.", "example": "This box is too heavy to carry." },
-  "high": { "ipa": "/haɪ/", "reading": "hay", "meanings": ["yüksek"], "definition": "Reaching far up from the ground.", "example": "The mountain is very high." },
-  "historical": { "ipa": "/hɪˈstɒrɪkl/", "reading": "historikıl", "meanings": ["tarihi"], "definition": "Connected with the past.", "example": "We visited a historical building." },
-  "huge": { "ipa": "/hjuːdʒ/", "reading": "hyuc", "meanings": ["kocaman", "devasa"], "definition": "Extremely large.", "example": "They live in a huge house." },
-  "ill": { "ipa": "/ɪl/", "reading": "il", "meanings": ["hasta"], "definition": "Not in good health; sick.", "example": "She stayed home because she was ill." },
-  "illegal": { "ipa": "/ɪˈliːɡl/", "reading": "iligıl", "meanings": ["yasa dışı"], "definition": "Against the law.", "example": "Parking here is illegal." },
-  "important": { "ipa": "/ɪmˈpɔːtnt/", "reading": "importınt", "meanings": ["önemli"], "definition": "Having great value or influence.", "example": "This is an important meeting." },
-  "impossible": { "ipa": "/ɪmˈpɒsəbl/", "reading": "imposıbıl", "meanings": ["imkânsız"], "definition": "Not able to happen or be done.", "example": "It is impossible to finish today." },
-  "impressive": { "ipa": "/ɪmˈpresɪv/", "reading": "impresiv", "meanings": ["etkileyici"], "definition": "Causing admiration.", "example": "The view from the tower is impressive." },
-  "independent": { "ipa": "/ˌɪndɪˈpendənt/", "reading": "indipendınt", "meanings": ["bağımsız"], "definition": "Not needing others; self-governing.", "example": "She is a very independent person." },
-  "individual": { "ipa": "/ˌɪndɪˈvɪdʒuəl/", "reading": "individuıl", "meanings": ["bireysel", "tek"], "definition": "Considered separately; single.", "example": "Each individual student gets a book." },
-  "inevitable": { "ipa": "/ɪnˈevɪtəbl/", "reading": "inevitıbıl", "meanings": ["kaçınılmaz"], "definition": "Certain to happen; unavoidable.", "example": "Change is inevitable." },
-  "initial": { "ipa": "/ɪˈnɪʃl/", "reading": "inişıl", "meanings": ["ilk", "başlangıç"], "definition": "Happening at the beginning.", "example": "My initial reaction was surprise." },
-  "innocent": { "ipa": "/ˈɪnəsnt/", "reading": "inısınt", "meanings": ["masum"], "definition": "Not guilty; pure.", "example": "The court found him innocent." },
-  "intellectual": { "ipa": "/ˌɪntəˈlektʃuəl/", "reading": "intılekçuıl", "meanings": ["entelektüel", "zihinsel"], "definition": "Relating to thinking and understanding.", "example": "She enjoys intellectual conversations." },
-  "interested": { "ipa": "/ˈɪntrəstɪd/", "reading": "intrıstid", "meanings": ["ilgili", "ilgi duyan"], "definition": "Wanting to know more about something.", "example": "I am interested in history." },
-  "interesting": { "ipa": "/ˈɪntrəstɪŋ/", "reading": "intrısting", "meanings": ["ilginç"], "definition": "Holding your attention.", "example": "This is an interesting book." },
-  "internal": { "ipa": "/ɪnˈtɜːnl/", "reading": "intörnıl", "meanings": ["iç", "dahili"], "definition": "Inside something.", "example": "The company held an internal meeting." },
-  "international": { "ipa": "/ˌɪntəˈnæʃnəl/", "reading": "intırneşınıl", "meanings": ["uluslararası"], "definition": "Involving more than one country.", "example": "She works for an international company." },
-  "involved": { "ipa": "/ɪnˈvɒlvd/", "reading": "involvd", "meanings": ["dahil", "ilgili"], "definition": "Taking part in something.", "example": "He is involved in many projects." },
-  "keen": { "ipa": "/kiːn/", "reading": "kin", "meanings": ["hevesli", "istekli"], "definition": "Very eager and interested.", "example": "She is keen to learn English." },
-  "kind": { "ipa": "/kaɪnd/", "reading": "kaynd", "meanings": ["nazik", "iyi kalpli"], "definition": "Caring and helpful to others.", "example": "He is kind to animals." },
-  "known": { "ipa": "/nəʊn/", "reading": "noun", "meanings": ["bilinen", "tanınan"], "definition": "Familiar to people.", "example": "The area is known for its beaches." },
-  "large": { "ipa": "/lɑːdʒ/", "reading": "larc", "meanings": ["büyük", "geniş"], "definition": "Big in size or amount.", "example": "They ordered a large pizza." },
-  "last": { "ipa": "/lɑːst/", "reading": "last", "meanings": ["son", "sonuncu"], "definition": "Coming after all others.", "example": "This is the last question." },
-  "late": { "ipa": "/leɪt/", "reading": "leyt", "meanings": ["geç"], "definition": "After the expected time.", "example": "He was late for school." },
-  "left": { "ipa": "/left/", "reading": "left", "meanings": ["sol"], "definition": "On the side of the body where the heart is.", "example": "Turn left at the corner." },
-  "light": { "ipa": "/laɪt/", "reading": "layt", "meanings": ["hafif"], "definition": "Not weighing much.", "example": "This bag is very light." },
-  "likely": { "ipa": "/ˈlaɪkli/", "reading": "laykli", "meanings": ["muhtemel"], "definition": "Probably going to happen.", "example": "It is likely to rain tomorrow." },
-  "limited": { "ipa": "/ˈlɪmɪtɪd/", "reading": "limitid", "meanings": ["sınırlı"], "definition": "Restricted in amount or extent.", "example": "We have limited time." },
-  "literary": { "ipa": "/ˈlɪtərəri/", "reading": "litırıri", "meanings": ["edebi"], "definition": "Relating to literature.", "example": "She won a literary award." },
-  "little": { "ipa": "/ˈlɪtl/", "reading": "litıl", "meanings": ["küçük", "az"], "definition": "Small in size or amount.", "example": "A little girl was playing in the garden." },
-  "local": { "ipa": "/ˈləʊkl/", "reading": "loukıl", "meanings": ["yerel"], "definition": "Relating to the nearby area.", "example": "We ate at a local restaurant." },
-  "lonely": { "ipa": "/ˈləʊnli/", "reading": "lounli", "meanings": ["yalnız"], "definition": "Unhappy because of being alone.", "example": "He felt lonely in the big city." },
-  "long": { "ipa": "/lɒŋ/", "reading": "long", "meanings": ["uzun"], "definition": "Measuring a great distance or time.", "example": "It was a long journey." },
-
-  "quickly": { "ipa": "/ˈkwɪkli/", "reading": "kuikli", "meanings": ["hızlıca", "çabucak"], "definition": "At a fast speed; in a short time.", "example": "She quickly finished her homework before dinner." },
-  "slowly": { "ipa": "/ˈsləʊli/", "reading": "slouli", "meanings": ["yavaşça"], "definition": "At a slow speed; not fast.", "example": "The old man walked slowly across the street." },
-  "carefully": { "ipa": "/ˈkeəfəli/", "reading": "kerfıli", "meanings": ["dikkatlice"], "definition": "With great attention, avoiding mistakes or damage.", "example": "Please read the instructions carefully before starting." },
-  "always": { "ipa": "/ˈɔːlweɪz/", "reading": "olveyz", "meanings": ["her zaman", "daima"], "definition": "At all times; on every occasion.", "example": "She always drinks tea in the morning." },
-  "never": { "ipa": "/ˈnevər/", "reading": "nevır", "meanings": ["asla", "hiçbir zaman"], "definition": "Not at any time; not ever.", "example": "He never eats fast food." },
-  "often": { "ipa": "/ˈɒfən/", "reading": "ofın", "meanings": ["sık sık"], "definition": "Many times; frequently.", "example": "We often visit our grandparents on weekends." },
-  "sometimes": { "ipa": "/ˈsʌmtaɪmz/", "reading": "samtaymz", "meanings": ["bazen"], "definition": "On some occasions but not always.", "example": "Sometimes I take the bus instead of walking." },
-  "loudly": { "ipa": "/ˈlaʊdli/", "reading": "laudli", "meanings": ["yüksek sesle"], "definition": "In a way that makes a lot of noise.", "example": "The fans cheered loudly when the team scored." },
-  "quietly": { "ipa": "/ˈkwaɪətli/", "reading": "kuayıtli", "meanings": ["sessizce"], "definition": "Making very little noise.", "example": "She quietly closed the door so the baby could sleep." },
-  "suddenly": { "ipa": "/ˈsʌdənli/", "reading": "sadınli", "meanings": ["aniden", "birdenbire"], "definition": "Quickly and unexpectedly.", "example": "Suddenly, the lights went out in the whole house." },
-
-  "journey": { "ipa": "/ˈdʒɜːni/", "reading": "cörni", "meanings": ["yolculuk"], "definition": "The act of travelling from one place to another.", "example": "The journey to the mountain village took five hours." },
-  "knowledge": { "ipa": "/ˈnɒlɪdʒ/", "reading": "nolic", "meanings": ["bilgi"], "definition": "Information and understanding gained through learning.", "example": "Reading books is a great way to gain knowledge." },
-  "courage": { "ipa": "/ˈkʌrɪdʒ/", "reading": "karic", "meanings": ["cesaret"], "definition": "The ability to face fear or difficulty bravely.", "example": "It takes courage to speak in front of a large crowd." },
-  "friendship": { "ipa": "/ˈfrendʃɪp/", "reading": "frendşip", "meanings": ["dostluk", "arkadaşlık"], "definition": "A close relationship between friends.", "example": "Their friendship started in primary school." },
-  "weather": { "ipa": "/ˈweðər/", "reading": "vedır", "meanings": ["hava durumu"], "definition": "The condition of the air: rain, sun, wind, etc.", "example": "The weather was perfect for a picnic yesterday." },
-  "health": { "ipa": "/helθ/", "reading": "helt", "meanings": ["sağlık"], "definition": "The condition of your body and mind.", "example": "Regular exercise is important for your health." },
-  "success": { "ipa": "/səkˈses/", "reading": "sıkses", "meanings": ["başarı"], "definition": "Achieving what you wanted or planned.", "example": "Hard work is the key to success." },
-  "mistake": { "ipa": "/mɪˈsteɪk/", "reading": "misteyk", "meanings": ["hata"], "definition": "Something done wrong; an error.", "example": "Everyone makes a mistake from time to time." },
-  "opportunity": { "ipa": "/ˌɒpəˈtjuːnəti/", "reading": "opırtyuniti", "meanings": ["fırsat"], "definition": "A chance to do something good or useful.", "example": "This job is a great opportunity for young graduates." },
-  "memory": { "ipa": "/ˈmeməri/", "reading": "memıri", "meanings": ["anı", "hafıza"], "definition": "Something you remember, or the ability to remember.", "example": "That summer holiday is my favorite childhood memory." },
-
-  "go": { "ipa": "/ɡəʊ/", "reading": "gou", "meanings": ["gitmek"], "definition": "To move or travel to a place. (go – went – gone)", "example": "We go to the gym twice a week." },
-  "eat": { "ipa": "/iːt/", "reading": "iit", "meanings": ["yemek yemek"], "definition": "To put food in your mouth and swallow it. (eat – ate – eaten)", "example": "They usually eat breakfast at seven o'clock." },
-  "see": { "ipa": "/siː/", "reading": "sii", "meanings": ["görmek"], "definition": "To notice with your eyes. (see – saw – seen)", "example": "You can see the mountains from this window." },
-  "drink": { "ipa": "/drɪŋk/", "reading": "drink", "meanings": ["içmek"], "definition": "To take liquid into your mouth and swallow it. (drink – drank – drunk)", "example": "I drink a glass of water every morning." },
-  "write": { "ipa": "/raɪt/", "reading": "rayt", "meanings": ["yazmak"], "definition": "To form letters or words on paper or a screen. (write – wrote – written)", "example": "Students write an essay every Friday." },
-  "speak": { "ipa": "/spiːk/", "reading": "spiik", "meanings": ["konuşmak"], "definition": "To say words; to talk. (speak – spoke – spoken)", "example": "She can speak three languages fluently." },
-  "swim": { "ipa": "/swɪm/", "reading": "suim", "meanings": ["yüzmek"], "definition": "To move through water using your body. (swim – swam – swum)", "example": "The children swim in the lake every summer." },
-  "fly": { "ipa": "/flaɪ/", "reading": "flay", "meanings": ["uçmak"], "definition": "To move through the air. (fly – flew – flown)", "example": "Some birds fly south for the winter." },
-  "break": { "ipa": "/breɪk/", "reading": "breyk", "meanings": ["kırmak"], "definition": "To separate into pieces by force. (break – broke – broken)", "example": "Be careful not to break the glass vase." },
-  "buy": { "ipa": "/baɪ/", "reading": "bay", "meanings": ["satın almak"], "definition": "To get something by paying money. (buy – bought – bought)", "example": "We buy fresh bread from the bakery every day." }
+ "reluctant": {
+  "ipa": "/rɪˈlʌktənt/",
+  "reading": "rilaktınt",
+  "meanings": [
+   "isteksiz",
+   "gönülsüz"
+  ],
+  "definition": "Unwilling and hesitant to do something.",
+  "example": "She was reluctant to lend him her car because of his poor driving history."
+ },
+ "diligent": {
+  "ipa": "/ˈdɪlɪdʒənt/",
+  "reading": "dilicınt",
+  "meanings": [
+   "çalışkan",
+   "gayretli"
+  ],
+  "definition": "Working carefully and with a lot of effort.",
+  "example": "He is a diligent student who always completes his homework on time."
+ },
+ "benevolent": {
+  "ipa": "/bəˈnevələnt/",
+  "reading": "binevılınt",
+  "meanings": [
+   "iyiliksever",
+   "hayırsever"
+  ],
+  "definition": "Kind, helpful and wanting to do good for others.",
+  "example": "The hospital was built with support from a benevolent local citizen."
+ },
+ "candid": {
+  "ipa": "/ˈkændɪd/",
+  "reading": "kendid",
+  "meanings": [
+   "samimi",
+   "açık sözlü"
+  ],
+  "definition": "Honest and direct, even when the truth is uncomfortable.",
+  "example": "To be candid with you, I do not think this design will appeal to our target audience."
+ },
+ "abundant": {
+  "ipa": "/əˈbʌndənt/",
+  "reading": "ıbandınt",
+  "meanings": [
+   "bol",
+   "bereketli"
+  ],
+  "definition": "Existing in large quantities; more than enough.",
+  "example": "The forest offers an abundant supply of fresh water and edible plants."
+ },
+ "generous": {
+  "ipa": "/ˈdʒenərəs/",
+  "reading": "cenırıs",
+  "meanings": [
+   "cömert"
+  ],
+  "definition": "Happy to give more money, help or time than expected.",
+  "example": "It was very generous of them to donate so much to the charity."
+ },
+ "exhausted": {
+  "ipa": "/ɪɡˈzɔːstɪd/",
+  "reading": "igzostid",
+  "meanings": [
+   "bitkin",
+   "çok yorgun"
+  ],
+  "definition": "Extremely tired, with no energy left.",
+  "example": "After the long hike, everyone was completely exhausted."
+ },
+ "convenient": {
+  "ipa": "/kənˈviːniənt/",
+  "reading": "kınviniyınt",
+  "meanings": [
+   "uygun",
+   "elverişli",
+   "pratik"
+  ],
+  "definition": "Easy to use or reach; causing no difficulty.",
+  "example": "The new supermarket is very convenient because it is close to my house."
+ },
+ "curious": {
+  "ipa": "/ˈkjʊəriəs/",
+  "reading": "kyuriyıs",
+  "meanings": [
+   "meraklı"
+  ],
+  "definition": "Eager to know or learn about something.",
+  "example": "The curious child kept asking questions about how the machine worked."
+ },
+ "fragile": {
+  "ipa": "/ˈfrædʒaɪl/",
+  "reading": "frecayl",
+  "meanings": [
+   "kırılgan",
+   "hassas"
+  ],
+  "definition": "Easily broken or damaged; delicate.",
+  "example": "Please handle the package carefully; the glass items inside are fragile."
+ },
+ "acquire": {
+  "ipa": "/əˈkwaɪər/",
+  "reading": "ıkuayır",
+  "meanings": [
+   "edinmek",
+   "kazanmak",
+   "öğrenmek"
+  ],
+  "definition": "To get or learn something over time.",
+  "example": "Children acquire language skills rapidly during their early years."
+ },
+ "advocate": {
+  "ipa": "/ˈædvəkeɪt/",
+  "reading": "edvıkeyt",
+  "meanings": [
+   "savunmak",
+   "desteklemek"
+  ],
+  "definition": "To publicly support an idea, plan or cause.",
+  "example": "Medical professionals advocate getting at least seven hours of sleep per night."
+ },
+ "empirical": {
+  "ipa": "/ɪmˈpɪrɪkəl/",
+  "reading": "empirikıl",
+  "meanings": [
+   "deneysel",
+   "gözleme dayalı"
+  ],
+  "definition": "Based on observation or experiment, not only on theory.",
+  "example": "The researcher presented empirical evidence to support her hypothesis."
+ },
+ "fluctuate": {
+  "ipa": "/ˈflʌktʃueɪt/",
+  "reading": "flakçueyt",
+  "meanings": [
+   "dalgalanmak",
+   "iniş çıkış yapmak"
+  ],
+  "definition": "To rise and fall irregularly in amount or level.",
+  "example": "The stock market tends to fluctuate wildly in response to political news."
+ },
+ "scrutinize": {
+  "ipa": "/ˈskruːtənaɪz/",
+  "reading": "skrutınayz",
+  "meanings": [
+   "dikkatle incelemek"
+  ],
+  "definition": "To examine something very carefully and closely.",
+  "example": "Every line of the contract was closely scrutinized by the company's legal team."
+ },
+ "hypothesis": {
+  "ipa": "/haɪˈpɒθəsɪs/",
+  "reading": "haypotısis",
+  "meanings": [
+   "hipotez",
+   "varsayım"
+  ],
+  "definition": "An idea that is suggested as a possible explanation and can be tested.",
+  "example": "The scientists designed an experiment to test their hypothesis."
+ },
+ "coherent": {
+  "ipa": "/kəʊˈhɪərənt/",
+  "reading": "kohirınt",
+  "meanings": [
+   "tutarlı",
+   "anlaşılır"
+  ],
+  "definition": "Clear, logical and well organized.",
+  "example": "She gave a coherent explanation of the complex process."
+ },
+ "significant": {
+  "ipa": "/sɪɡˈnɪfɪkənt/",
+  "reading": "signifikınt",
+  "meanings": [
+   "önemli",
+   "anlamlı"
+  ],
+  "definition": "Large or important enough to be noticed.",
+  "example": "There was a significant improvement in the patient's condition."
+ },
+ "capricious": {
+  "ipa": "/kəˈprɪʃəs/",
+  "reading": "kıprişıs",
+  "meanings": [
+   "kaprisli",
+   "dönek"
+  ],
+  "definition": "Changing mood or behavior suddenly and unpredictably.",
+  "example": "The capricious weather went from sunny to a severe thunderstorm in minutes."
+ },
+ "loquacious": {
+  "ipa": "/ləˈkweɪʃəs/",
+  "reading": "lıkueyşıs",
+  "meanings": [
+   "geveze",
+   "çok konuşan"
+  ],
+  "definition": "Talking a lot; very talkative.",
+  "example": "The loquacious host kept his guests entertained with endless stories."
+ },
+ "ephemeral": {
+  "ipa": "/ɪˈfemərəl/",
+  "reading": "ifemırıl",
+  "meanings": [
+   "geçici",
+   "kısa ömürlü"
+  ],
+  "definition": "Lasting for only a very short time.",
+  "example": "Fame in the internet age is often ephemeral, lasting only a few days."
+ },
+ "pragmatic": {
+  "ipa": "/præɡˈmætɪk/",
+  "reading": "pregmetik",
+  "meanings": [
+   "pratik",
+   "gerçekçi"
+  ],
+  "definition": "Dealing with problems in a practical, realistic way.",
+  "example": "We need to take a pragmatic approach to the budget problem rather than fighting over theories."
+ },
+ "cacophony": {
+  "ipa": "/kəˈkɒfəni/",
+  "reading": "kıkofıni",
+  "meanings": [
+   "kulak tırmalayan gürültü"
+  ],
+  "definition": "A loud, unpleasant mixture of sounds.",
+  "example": "A cacophony of car horns and construction noise flooded through the open window."
+ },
+ "ubiquitous": {
+  "ipa": "/juːˈbɪkwɪtəs/",
+  "reading": "yubikuitıs",
+  "meanings": [
+   "her yerde bulunan",
+   "yaygın"
+  ],
+  "definition": "Seeming to be everywhere at the same time.",
+  "example": "Smartphones have become ubiquitous in modern society."
+ },
+ "meticulous": {
+  "ipa": "/məˈtɪkjələs/",
+  "reading": "mıtikyulıs",
+  "meanings": [
+   "titiz",
+   "aşırı dikkatli"
+  ],
+  "definition": "Giving great attention to every small detail.",
+  "example": "The editor was meticulous about checking every detail of the manuscript."
+ },
+ "ambiguous": {
+  "ipa": "/æmˈbɪɡjuəs/",
+  "reading": "embigyuıs",
+  "meanings": [
+   "belirsiz",
+   "muğlak"
+  ],
+  "definition": "Having more than one possible meaning; unclear.",
+  "example": "His ambiguous answer left everyone confused about his real intentions."
+ },
+ "leverage": {
+  "ipa": "/ˈliːvərɪdʒ/",
+  "reading": "livıric",
+  "meanings": [
+   "avantaj olarak kullanmak"
+  ],
+  "definition": "To use something you have to gain an advantage.",
+  "example": "We should leverage our strong brand reputation to enter the new market."
+ },
+ "redundant": {
+  "ipa": "/rɪˈdʌndənt/",
+  "reading": "ridandınt",
+  "meanings": [
+   "gereksiz",
+   "fazladan",
+   "işten çıkarılmış"
+  ],
+  "definition": "No longer needed or useful; extra.",
+  "example": "Due to the merger, fifty employees were unfortunately made redundant."
+ },
+ "lucrative": {
+  "ipa": "/ˈluːkrətɪv/",
+  "reading": "lukrıtiv",
+  "meanings": [
+   "kazançlı",
+   "kârlı"
+  ],
+  "definition": "Producing a lot of money or profit.",
+  "example": "She left her teaching job to start a highly lucrative consulting firm."
+ },
+ "stagnant": {
+  "ipa": "/ˈstæɡnənt/",
+  "reading": "stegnınt",
+  "meanings": [
+   "durgun",
+   "hareketsiz"
+  ],
+  "definition": "Not moving, growing or developing.",
+  "example": "Wage growth has remained stagnant for the past five years despite inflation."
+ },
+ "mitigate": {
+  "ipa": "/ˈmɪtɪɡeɪt/",
+  "reading": "mitigeyt",
+  "meanings": [
+   "hafifletmek",
+   "azaltmak"
+  ],
+  "definition": "To make something less harmful or serious.",
+  "example": "Good planning can help mitigate the negative effects of the economic downturn."
+ },
+ "negotiate": {
+  "ipa": "/nɪˈɡəʊʃieɪt/",
+  "reading": "nigoşieyt",
+  "meanings": [
+   "müzakere etmek",
+   "pazarlık yapmak"
+  ],
+  "definition": "To discuss something to reach an agreement.",
+  "example": "The union will negotiate with management over the new contract terms."
+ },
+ "revenue": {
+  "ipa": "/ˈrevənjuː/",
+  "reading": "revınyu",
+  "meanings": [
+   "gelir",
+   "hasılat"
+  ],
+  "definition": "The money a company or government receives.",
+  "example": "The company's revenue grew by fifteen percent last quarter."
+ },
+ "outsource": {
+  "ipa": "/ˈaʊtsɔːs/",
+  "reading": "autsors",
+  "meanings": [
+   "dış kaynak kullanmak"
+  ],
+  "definition": "To pay another company to do part of your work.",
+  "example": "Many companies outsource their customer support to reduce costs."
+ },
+ "happy": {
+  "ipa": "/ˈhæpi/",
+  "reading": "hepi",
+  "meanings": [
+   "mutlu"
+  ],
+  "definition": "Feeling or showing pleasure and joy.",
+  "example": "The children were very happy at the park."
+ },
+ "brave": {
+  "ipa": "/breɪv/",
+  "reading": "breyv",
+  "meanings": [
+   "cesur"
+  ],
+  "definition": "Showing courage; not afraid of danger.",
+  "example": "The brave firefighter rescued the cat from the tree."
+ },
+ "tiny": {
+  "ipa": "/ˈtaɪni/",
+  "reading": "tayni",
+  "meanings": [
+   "minicik",
+   "çok küçük"
+  ],
+  "definition": "Extremely small.",
+  "example": "A tiny kitten was sleeping in the basket."
+ },
+ "enormous": {
+  "ipa": "/ɪˈnɔːməs/",
+  "reading": "inormıs",
+  "meanings": [
+   "devasa",
+   "kocaman"
+  ],
+  "definition": "Extremely large in size or amount.",
+  "example": "They live in an enormous house near the sea."
+ },
+ "noisy": {
+  "ipa": "/ˈnɔɪzi/",
+  "reading": "noyzi",
+  "meanings": [
+   "gürültülü"
+  ],
+  "definition": "Making a lot of loud sound.",
+  "example": "The classroom was too noisy to study in."
+ },
+ "quiet": {
+  "ipa": "/ˈkwaɪət/",
+  "reading": "kuayıt",
+  "meanings": [
+   "sessiz",
+   "sakin"
+  ],
+  "definition": "Making very little noise; calm.",
+  "example": "We found a quiet corner in the library."
+ },
+ "wealthy": {
+  "ipa": "/ˈwelθi/",
+  "reading": "velti",
+  "meanings": [
+   "zengin",
+   "varlıklı"
+  ],
+  "definition": "Having a lot of money or possessions.",
+  "example": "A wealthy businessman donated money to the school."
+ },
+ "ancient": {
+  "ipa": "/ˈeɪnʃənt/",
+  "reading": "eynşınt",
+  "meanings": [
+   "antik",
+   "çok eski"
+  ],
+  "definition": "Very old; from a long time ago.",
+  "example": "We visited an ancient temple during our trip."
+ },
+ "modern": {
+  "ipa": "/ˈmɒdən/",
+  "reading": "modırn",
+  "meanings": [
+   "modern",
+   "çağdaş"
+  ],
+  "definition": "Of the present time; new in style.",
+  "example": "The museum is in a very modern building."
+ },
+ "delicious": {
+  "ipa": "/dɪˈlɪʃəs/",
+  "reading": "dilişıs",
+  "meanings": [
+   "lezzetli"
+  ],
+  "definition": "Tasting extremely good.",
+  "example": "My grandmother makes delicious cookies."
+ },
+ "poor": {
+  "ipa": "/pʊə/",
+  "reading": "pur",
+  "meanings": [
+   "fakir",
+   "yoksul",
+   "maddi imkânı kısıtlı"
+  ],
+  "definition": "Having very little money, possessions, or resources.",
+  "example": "He grew up in a poor neighborhood."
+ },
+ "absolute": {
+  "ipa": "/ˈæbsəluːt/",
+  "reading": "ebsılut",
+  "meanings": [
+   "mutlak",
+   "kesin"
+  ],
+  "definition": "Complete and total; not limited in any way.",
+  "example": "We need absolute silence."
+ },
+ "acceptable": {
+  "ipa": "/əkˈseptəbl/",
+  "reading": "ıkseptıbıl",
+  "meanings": [
+   "kabul edilebilir"
+  ],
+  "definition": "Good enough or satisfactory.",
+  "example": "Your work is acceptable."
+ },
+ "accurate": {
+  "ipa": "/ˈækjərət/",
+  "reading": "ekyırıt",
+  "meanings": [
+   "doğru",
+   "isabetli"
+  ],
+  "definition": "Correct in all the details.",
+  "example": "The report is very accurate."
+ },
+ "additional": {
+  "ipa": "/əˈdɪʃənl/",
+  "reading": "ıdişınıl",
+  "meanings": [
+   "ek",
+   "ilave"
+  ],
+  "definition": "Added to something else; extra.",
+  "example": "There is an additional fee for this service."
+ },
+ "adequate": {
+  "ipa": "/ˈædɪkwət/",
+  "reading": "edikuıt",
+  "meanings": [
+   "yeterli"
+  ],
+  "definition": "Enough for a particular need or purpose.",
+  "example": "We have adequate time."
+ },
+ "adult": {
+  "ipa": "/ˈædʌlt/",
+  "reading": "edalt",
+  "meanings": [
+   "yetişkin"
+  ],
+  "definition": "A grown-up person.",
+  "example": "Only adults are allowed."
+ },
+ "advanced": {
+  "ipa": "/ədˈvɑːnst/",
+  "reading": "ıdvanst",
+  "meanings": [
+   "ileri",
+   "gelişmiş"
+  ],
+  "definition": "Far on in development.",
+  "example": "We have advanced technology."
+ },
+ "aggressive": {
+  "ipa": "/əˈɡresɪv/",
+  "reading": "ıgresiv",
+  "meanings": [
+   "saldırgan"
+  ],
+  "definition": "Ready or likely to attack.",
+  "example": "The dog became aggressive."
+ },
+ "annual": {
+  "ipa": "/ˈænjuəl/",
+  "reading": "enyuıl",
+  "meanings": [
+   "yıllık"
+  ],
+  "definition": "Happening once every year.",
+  "example": "We have an annual meeting."
+ },
+ "anxious": {
+  "ipa": "/ˈæŋkʃəs/",
+  "reading": "enkşıs",
+  "meanings": [
+   "endişeli",
+   "kaygılı"
+  ],
+  "definition": "Worried and nervous.",
+  "example": "She felt anxious before the exam."
+ },
+ "apparent": {
+  "ipa": "/əˈpærənt/",
+  "reading": "ıperınt",
+  "meanings": [
+   "açıkça görünen",
+   "belli"
+  ],
+  "definition": "Easily seen or understood.",
+  "example": "It is apparent that he is tired."
+ },
+ "appropriate": {
+  "ipa": "/əˈprəʊpriət/",
+  "reading": "ıpropriyıt",
+  "meanings": [
+   "uygun"
+  ],
+  "definition": "Suitable or fit for a particular purpose.",
+  "example": "This is the most appropriate solution."
+ },
+ "attractive": {
+  "ipa": "/əˈtræktɪv/",
+  "reading": "ıtrektiv",
+  "meanings": [
+   "çekici",
+   "cazip"
+  ],
+  "definition": "Pleasing and appealing.",
+  "example": "She has an attractive personality."
+ },
+ "available": {
+  "ipa": "/əˈveɪləbl/",
+  "reading": "ıveylıbıl",
+  "meanings": [
+   "müsait",
+   "kullanılabilir"
+  ],
+  "definition": "Ready for use or able to be obtained.",
+  "example": "The room is available."
+ },
+ "average": {
+  "ipa": "/ˈævərɪdʒ/",
+  "reading": "evıric",
+  "meanings": [
+   "ortalama"
+  ],
+  "definition": "Typical or usual; not better or worse than most.",
+  "example": "His test score is average."
+ },
+ "aware": {
+  "ipa": "/əˈweə(r)/",
+  "reading": "ıver",
+  "meanings": [
+   "farkında",
+   "bilgili"
+  ],
+  "definition": "Knowing about something.",
+  "example": "I wasn't aware of the problem."
+ },
+ "bad": {
+  "ipa": "/bæd/",
+  "reading": "bed",
+  "meanings": [
+   "kötü"
+  ],
+  "definition": "Of low quality or not good.",
+  "example": "That was a bad decision."
+ },
+ "basic": {
+  "ipa": "/ˈbeɪsɪk/",
+  "reading": "beysik",
+  "meanings": [
+   "temel",
+   "basit"
+  ],
+  "definition": "Forming an essential part.",
+  "example": "You need basic computer skills."
+ },
+ "beautiful": {
+  "ipa": "/ˈbjuːtɪfl/",
+  "reading": "byutifıl",
+  "meanings": [
+   "güzel"
+  ],
+  "definition": "Pleasing the eye or mind.",
+  "example": "The view was beautiful."
+ },
+ "best": {
+  "ipa": "/best/",
+  "reading": "best",
+  "meanings": [
+   "en iyi"
+  ],
+  "definition": "Of the highest quality.",
+  "example": "She did her best."
+ },
+ "better": {
+  "ipa": "/ˈbetə(r)/",
+  "reading": "betır",
+  "meanings": [
+   "daha iyi"
+  ],
+  "definition": "Of a higher quality or standard.",
+  "example": "This book is better than that one."
+ },
+ "brief": {
+  "ipa": "/briːf/",
+  "reading": "brif",
+  "meanings": [
+   "kısa",
+   "öz"
+  ],
+  "definition": "Short in duration or length.",
+  "example": "Please give me a brief summary."
+ },
+ "bright": {
+  "ipa": "/braɪt/",
+  "reading": "brayt",
+  "meanings": [
+   "parlak",
+   "ışıklı"
+  ],
+  "definition": "Emitting or reflecting a lot of light.",
+  "example": "The sun is very bright today."
+ },
+ "brilliant": {
+  "ipa": "/ˈbrɪliənt/",
+  "reading": "brilyınt",
+  "meanings": [
+   "mükemmel",
+   "parlak"
+  ],
+  "definition": "Exceptionally clever or impressive.",
+  "example": "She is a brilliant student."
+ },
+ "busy": {
+  "ipa": "/ˈbɪzi/",
+  "reading": "bizi",
+  "meanings": [
+   "meşgul"
+  ],
+  "definition": "Having a lot to do.",
+  "example": "He is busy with work."
+ },
+ "capable": {
+  "ipa": "/ˈkeɪpəbl/",
+  "reading": "keypıbıl",
+  "meanings": [
+   "yetenekli"
+  ],
+  "definition": "Able to do something well.",
+  "example": "She is capable of great things."
+ },
+ "central": {
+  "ipa": "/ˈsentrəl/",
+  "reading": "sentrıl",
+  "meanings": [
+   "merkezi"
+  ],
+  "definition": "Located in the middle.",
+  "example": "The park is in the central part."
+ },
+ "cheap": {
+  "ipa": "/tʃiːp/",
+  "reading": "çip",
+  "meanings": [
+   "ucuz"
+  ],
+  "definition": "Costing little money.",
+  "example": "This market sells cheap fruit."
+ },
+ "chemical": {
+  "ipa": "/ˈkemɪkl/",
+  "reading": "kemikıl",
+  "meanings": [
+   "kimyasal"
+  ],
+  "definition": "Related to chemistry.",
+  "example": "He works in a chemical lab."
+ },
+ "clear": {
+  "ipa": "/klɪə(r)/",
+  "reading": "klir",
+  "meanings": [
+   "açık",
+   "net"
+  ],
+  "definition": "Easy to see, hear or understand.",
+  "example": "His explanation was very clear."
+ },
+ "close": {
+  "ipa": "/kləʊs/",
+  "reading": "klous",
+  "meanings": [
+   "yakın"
+  ],
+  "definition": "Near in distance or time.",
+  "example": "The school is close to my house."
+ },
+ "cold": {
+  "ipa": "/kəʊld/",
+  "reading": "kould",
+  "meanings": [
+   "soğuk"
+  ],
+  "definition": "Having a low temperature.",
+  "example": "It is very cold today."
+ },
+ "comfortable": {
+  "ipa": "/ˈkʌmftəbl/",
+  "reading": "kamftıbıl",
+  "meanings": [
+   "rahat"
+  ],
+  "definition": "Providing physical or mental ease.",
+  "example": "This chair is very comfortable."
+ },
+ "common": {
+  "ipa": "/ˈkɒmən/",
+  "reading": "komın",
+  "meanings": [
+   "yaygın",
+   "sıradan"
+  ],
+  "definition": "Happening often; ordinary.",
+  "example": "This is a common mistake."
+ },
+ "competitive": {
+  "ipa": "/kəmˈpetətɪv/",
+  "reading": "kımpetıtiv",
+  "meanings": [
+   "rekabetçi"
+  ],
+  "definition": "Wanting to be better than others.",
+  "example": "She is very competitive."
+ },
+ "complex": {
+  "ipa": "/ˈkɒmpleks/",
+  "reading": "kompleks",
+  "meanings": [
+   "karmaşık"
+  ],
+  "definition": "Consisting of many connected parts.",
+  "example": "It is a complex problem."
+ },
+ "complicated": {
+  "ipa": "/ˈkɒmplɪkeɪtɪd/",
+  "reading": "komplikeytid",
+  "meanings": [
+   "karışık",
+   "çetrefilli"
+  ],
+  "definition": "Difficult to understand or do.",
+  "example": "The instructions are complicated."
+ },
+ "comprehensive": {
+  "ipa": "/ˌkɒmprɪˈhensɪv/",
+  "reading": "komprihensiv",
+  "meanings": [
+   "kapsamlı"
+  ],
+  "definition": "Including everything that is needed.",
+  "example": "The report is comprehensive."
+ },
+ "concerned": {
+  "ipa": "/kənˈsɜːnd/",
+  "reading": "kınsörnd",
+  "meanings": [
+   "endişeli",
+   "kaygılı"
+  ],
+  "definition": "Worried about something.",
+  "example": "I am concerned about her health."
+ },
+ "confident": {
+  "ipa": "/ˈkɒnfɪdənt/",
+  "reading": "konfidınt",
+  "meanings": [
+   "özgüvenli",
+   "emin"
+  ],
+  "definition": "Feeling sure of yourself.",
+  "example": "He is confident in his abilities."
+ },
+ "considerable": {
+  "ipa": "/kənˈsɪdərəbl/",
+  "reading": "kınsidırıbıl",
+  "meanings": [
+   "hatırı sayılır",
+   "önemli"
+  ],
+  "definition": "Large in amount or degree.",
+  "example": "He earned a considerable amount of money."
+ },
+ "consistent": {
+  "ipa": "/kənˈsɪstənt/",
+  "reading": "kınsistınt",
+  "meanings": [
+   "tutarlı",
+   "istikrarlı"
+  ],
+  "definition": "Always behaving or happening in the same way.",
+  "example": "Her work is always consistent."
+ },
+ "constant": {
+  "ipa": "/ˈkɒnstənt/",
+  "reading": "konstınt",
+  "meanings": [
+   "sabit",
+   "sürekli"
+  ],
+  "definition": "Happening all the time without stopping.",
+  "example": "The machine makes a constant noise."
+ },
+ "contemporary": {
+  "ipa": "/kənˈtempərəri/",
+  "reading": "kıntempırıri",
+  "meanings": [
+   "çağdaş",
+   "modern"
+  ],
+  "definition": "Belonging to the present time.",
+  "example": "We visited a contemporary art museum."
+ },
+ "conventional": {
+  "ipa": "/kənˈvenʃənl/",
+  "reading": "kınvenşınıl",
+  "meanings": [
+   "geleneksel",
+   "alışılmış"
+  ],
+  "definition": "Following what is traditional or usual.",
+  "example": "He wore a conventional dark suit."
+ },
+ "creative": {
+  "ipa": "/kriˈeɪtɪv/",
+  "reading": "krieytiv",
+  "meanings": [
+   "yaratıcı"
+  ],
+  "definition": "Good at producing new and original ideas or things.",
+  "example": "She has very creative ideas."
+ },
+ "criminal": {
+  "ipa": "/ˈkrɪmɪnl/",
+  "reading": "kriminıl",
+  "meanings": [
+   "suça ilişkin",
+   "suçlu"
+  ],
+  "definition": "Relating to crime or illegal acts.",
+  "example": "He has a criminal record."
+ },
+ "critical": {
+  "ipa": "/ˈkrɪtɪkl/",
+  "reading": "kritikıl",
+  "meanings": [
+   "kritik",
+   "eleştirel"
+  ],
+  "definition": "Very important; or expressing judgement.",
+  "example": "This is a critical decision."
+ },
+ "crucial": {
+  "ipa": "/ˈkruːʃl/",
+  "reading": "kruşıl",
+  "meanings": [
+   "çok önemli",
+   "hayati"
+  ],
+  "definition": "Extremely important.",
+  "example": "Sleep is crucial for health."
+ },
+ "cultural": {
+  "ipa": "/ˈkʌltʃərəl/",
+  "reading": "kalçırıl",
+  "meanings": [
+   "kültürel"
+  ],
+  "definition": "Relating to culture, art and traditions.",
+  "example": "The city has a rich cultural life."
+ },
+ "current": {
+  "ipa": "/ˈkʌrənt/",
+  "reading": "karınt",
+  "meanings": [
+   "güncel",
+   "şu anki"
+  ],
+  "definition": "Happening or existing now.",
+  "example": "What is your current address?"
+ },
+ "daily": {
+  "ipa": "/ˈdeɪli/",
+  "reading": "deyli",
+  "meanings": [
+   "günlük"
+  ],
+  "definition": "Happening every day.",
+  "example": "This is part of my daily routine."
+ },
+ "dangerous": {
+  "ipa": "/ˈdeɪndʒərəs/",
+  "reading": "deyncırıs",
+  "meanings": [
+   "tehlikeli"
+  ],
+  "definition": "Able or likely to cause harm.",
+  "example": "Driving fast is dangerous."
+ },
+ "dead": {
+  "ipa": "/ded/",
+  "reading": "ded",
+  "meanings": [
+   "ölü"
+  ],
+  "definition": "No longer alive.",
+  "example": "The plant is dead."
+ },
+ "decent": {
+  "ipa": "/ˈdiːsnt/",
+  "reading": "disınt",
+  "meanings": [
+   "düzgün",
+   "makul"
+  ],
+  "definition": "Good enough; acceptable.",
+  "example": "He earns a decent salary."
+ },
+ "definite": {
+  "ipa": "/ˈdefɪnət/",
+  "reading": "definıt",
+  "meanings": [
+   "kesin",
+   "belirli"
+  ],
+  "definition": "Certain and clear.",
+  "example": "We need a definite answer."
+ },
+ "dependent": {
+  "ipa": "/dɪˈpendənt/",
+  "reading": "dipendınt",
+  "meanings": [
+   "bağımlı"
+  ],
+  "definition": "Needing someone or something for support.",
+  "example": "The baby is dependent on its mother."
+ },
+ "desperate": {
+  "ipa": "/ˈdespərət/",
+  "reading": "despırıt",
+  "meanings": [
+   "çaresiz",
+   "umutsuz"
+  ],
+  "definition": "Feeling hopeless and willing to try anything.",
+  "example": "He was desperate for a job."
+ },
+ "determined": {
+  "ipa": "/dɪˈtɜːmɪnd/",
+  "reading": "ditörmind",
+  "meanings": [
+   "kararlı"
+  ],
+  "definition": "Having a strong will to do something.",
+  "example": "She is determined to succeed."
+ },
+ "different": {
+  "ipa": "/ˈdɪfrənt/",
+  "reading": "difrınt",
+  "meanings": [
+   "farklı"
+  ],
+  "definition": "Not the same.",
+  "example": "These two books are different."
+ },
+ "difficult": {
+  "ipa": "/ˈdɪfɪkəlt/",
+  "reading": "difikılt",
+  "meanings": [
+   "zor"
+  ],
+  "definition": "Hard to do or understand.",
+  "example": "The exam was very difficult."
+ },
+ "direct": {
+  "ipa": "/dəˈrekt/",
+  "reading": "direkt",
+  "meanings": [
+   "doğrudan",
+   "direkt"
+  ],
+  "definition": "Going straight without stopping.",
+  "example": "We took a direct flight."
+ },
+ "disabled": {
+  "ipa": "/dɪsˈeɪbld/",
+  "reading": "diseybıld",
+  "meanings": [
+   "engelli"
+  ],
+  "definition": "Having a condition that limits some activities.",
+  "example": "The building has access for disabled people."
+ },
+ "distant": {
+  "ipa": "/ˈdɪstənt/",
+  "reading": "distınt",
+  "meanings": [
+   "uzak"
+  ],
+  "definition": "Far away.",
+  "example": "We heard distant thunder."
+ },
+ "distinct": {
+  "ipa": "/dɪˈstɪŋkt/",
+  "reading": "distinkt",
+  "meanings": [
+   "belirgin",
+   "ayrı"
+  ],
+  "definition": "Clearly different or noticeable.",
+  "example": "The two flavors are quite distinct."
+ },
+ "domestic": {
+  "ipa": "/dəˈmestɪk/",
+  "reading": "dımestik",
+  "meanings": [
+   "yerli",
+   "ev içi",
+   "evcil"
+  ],
+  "definition": "Relating to home or one's own country.",
+  "example": "Domestic flights are cheaper."
+ },
+ "dull": {
+  "ipa": "/dʌl/",
+  "reading": "dal",
+  "meanings": [
+   "sıkıcı",
+   "donuk"
+  ],
+  "definition": "Boring or not bright.",
+  "example": "The lecture was dull."
+ },
+ "early": {
+  "ipa": "/ˈɜːli/",
+  "reading": "örli",
+  "meanings": [
+   "erken"
+  ],
+  "definition": "Before the usual or expected time.",
+  "example": "I woke up early this morning."
+ },
+ "eastern": {
+  "ipa": "/ˈiːstən/",
+  "reading": "istırn",
+  "meanings": [
+   "doğu",
+   "doğuya ait"
+  ],
+  "definition": "In or from the east.",
+  "example": "They live in the eastern part of the city."
+ },
+ "easy": {
+  "ipa": "/ˈiːzi/",
+  "reading": "izi",
+  "meanings": [
+   "kolay"
+  ],
+  "definition": "Not difficult.",
+  "example": "The test was easy."
+ },
+ "economic": {
+  "ipa": "/ˌiːkəˈnɒmɪk/",
+  "reading": "ikonomik",
+  "meanings": [
+   "ekonomik"
+  ],
+  "definition": "Relating to the economy.",
+  "example": "The country faces economic problems."
+ },
+ "effective": {
+  "ipa": "/ɪˈfektɪv/",
+  "reading": "ifektiv",
+  "meanings": [
+   "etkili"
+  ],
+  "definition": "Producing the intended result.",
+  "example": "This medicine is very effective."
+ },
+ "efficient": {
+  "ipa": "/ɪˈfɪʃnt/",
+  "reading": "ifişınt",
+  "meanings": [
+   "verimli"
+  ],
+  "definition": "Working well without wasting time or energy.",
+  "example": "The new engine is very efficient."
+ },
+ "emotional": {
+  "ipa": "/ɪˈməʊʃənl/",
+  "reading": "imoşınıl",
+  "meanings": [
+   "duygusal"
+  ],
+  "definition": "Relating to feelings.",
+  "example": "It was an emotional moment."
+ },
+ "enthusiastic": {
+  "ipa": "/ɪnˌθjuːziˈæstɪk/",
+  "reading": "intüziyestik",
+  "meanings": [
+   "hevesli",
+   "istekli"
+  ],
+  "definition": "Showing great excitement and interest.",
+  "example": "She is enthusiastic about her new job."
+ },
+ "entire": {
+  "ipa": "/ɪnˈtaɪə(r)/",
+  "reading": "intayır",
+  "meanings": [
+   "tüm",
+   "bütün"
+  ],
+  "definition": "Whole, complete.",
+  "example": "I read the entire book."
+ },
+ "environmental": {
+  "ipa": "/ɪnˌvaɪrənˈmentl/",
+  "reading": "invayrınmentıl",
+  "meanings": [
+   "çevresel"
+  ],
+  "definition": "Relating to the natural environment.",
+  "example": "Environmental pollution is increasing."
+ },
+ "essential": {
+  "ipa": "/ɪˈsenʃl/",
+  "reading": "isenşıl",
+  "meanings": [
+   "gerekli",
+   "temel"
+  ],
+  "definition": "Absolutely necessary.",
+  "example": "Water is essential for life."
+ },
+ "exact": {
+  "ipa": "/ɪɡˈzækt/",
+  "reading": "igzekt",
+  "meanings": [
+   "tam",
+   "kesin"
+  ],
+  "definition": "Completely correct in every detail.",
+  "example": "What is the exact time?"
+ },
+ "existing": {
+  "ipa": "/ɪɡˈzɪstɪŋ/",
+  "reading": "igzisting",
+  "meanings": [
+   "mevcut"
+  ],
+  "definition": "Present or in use now.",
+  "example": "We will improve the existing system."
+ },
+ "expensive": {
+  "ipa": "/ɪkˈspensɪv/",
+  "reading": "ikspensiv",
+  "meanings": [
+   "pahalı"
+  ],
+  "definition": "Costing a lot of money.",
+  "example": "This watch is very expensive."
+ },
+ "experimental": {
+  "ipa": "/ɪkˌsperɪˈmentl/",
+  "reading": "iksperimentıl",
+  "meanings": [
+   "deneysel"
+  ],
+  "definition": "Based on new ideas that are being tested.",
+  "example": "It is an experimental treatment."
+ },
+ "extensive": {
+  "ipa": "/ɪkˈstensɪv/",
+  "reading": "ikstensiv",
+  "meanings": [
+   "kapsamlı",
+   "geniş"
+  ],
+  "definition": "Covering a large area or amount.",
+  "example": "The storm caused extensive damage."
+ },
+ "extreme": {
+  "ipa": "/ɪkˈstriːm/",
+  "reading": "ikstrim",
+  "meanings": [
+   "aşırı",
+   "uç"
+  ],
+  "definition": "Very great in degree; far from moderate.",
+  "example": "They train in extreme conditions."
+ },
+ "false": {
+  "ipa": "/fɔːls/",
+  "reading": "fols",
+  "meanings": [
+   "yanlış",
+   "sahte"
+  ],
+  "definition": "Not true or not real.",
+  "example": "He gave a false name."
+ },
+ "familiar": {
+  "ipa": "/fəˈmɪliə(r)/",
+  "reading": "fımilyır",
+  "meanings": [
+   "tanıdık"
+  ],
+  "definition": "Well known to you.",
+  "example": "Her face looks familiar."
+ },
+ "famous": {
+  "ipa": "/ˈfeɪməs/",
+  "reading": "feymıs",
+  "meanings": [
+   "ünlü"
+  ],
+  "definition": "Known by many people.",
+  "example": "Istanbul is famous for its history."
+ },
+ "far": {
+  "ipa": "/fɑː(r)/",
+  "reading": "far",
+  "meanings": [
+   "uzak"
+  ],
+  "definition": "At a great distance.",
+  "example": "The station is not far from here."
+ },
+ "fast": {
+  "ipa": "/fɑːst/",
+  "reading": "fest",
+  "meanings": [
+   "hızlı"
+  ],
+  "definition": "Moving or happening quickly.",
+  "example": "He drives a fast car."
+ },
+ "few": {
+  "ipa": "/fjuː/",
+  "reading": "fyu",
+  "meanings": [
+   "az sayıda"
+  ],
+  "definition": "A small number of.",
+  "example": "Few people came to the meeting."
+ },
+ "financial": {
+  "ipa": "/faɪˈnænʃl/",
+  "reading": "faynenşıl",
+  "meanings": [
+   "finansal",
+   "mali"
+  ],
+  "definition": "Relating to money.",
+  "example": "They have financial problems."
+ },
+ "first": {
+  "ipa": "/fɜːst/",
+  "reading": "först",
+  "meanings": [
+   "ilk",
+   "birinci"
+  ],
+  "definition": "Coming before all others.",
+  "example": "She won first prize."
+ },
+ "following": {
+  "ipa": "/ˈfɒləʊɪŋ/",
+  "reading": "folouing",
+  "meanings": [
+   "takip eden",
+   "sonraki"
+  ],
+  "definition": "Coming next.",
+  "example": "Read the following sentences."
+ },
+ "foreign": {
+  "ipa": "/ˈfɒrən/",
+  "reading": "forın",
+  "meanings": [
+   "yabancı"
+  ],
+  "definition": "From another country.",
+  "example": "She speaks two foreign languages."
+ },
+ "former": {
+  "ipa": "/ˈfɔːmə(r)/",
+  "reading": "formır",
+  "meanings": [
+   "eski",
+   "önceki"
+  ],
+  "definition": "Existing or holding a position in the past.",
+  "example": "The former president gave a speech."
+ },
+ "free": {
+  "ipa": "/friː/",
+  "reading": "fri",
+  "meanings": [
+   "özgür",
+   "ücretsiz"
+  ],
+  "definition": "Not controlled, or costing nothing.",
+  "example": "Entry to the museum is free."
+ },
+ "frequent": {
+  "ipa": "/ˈfriːkwənt/",
+  "reading": "frikuınt",
+  "meanings": [
+   "sık"
+  ],
+  "definition": "Happening often.",
+  "example": "He makes frequent visits to his family."
+ },
+ "full": {
+  "ipa": "/fʊl/",
+  "reading": "ful",
+  "meanings": [
+   "dolu"
+  ],
+  "definition": "Containing as much as possible.",
+  "example": "The glass is full."
+ },
+ "fundamental": {
+  "ipa": "/ˌfʌndəˈmentl/",
+  "reading": "fandımentıl",
+  "meanings": [
+   "temel",
+   "esas"
+  ],
+  "definition": "Forming the base; most important.",
+  "example": "Freedom is a fundamental right."
+ },
+ "general": {
+  "ipa": "/ˈdʒenrəl/",
+  "reading": "cenırıl",
+  "meanings": [
+   "genel"
+  ],
+  "definition": "Relating to the whole, not the details.",
+  "example": "The general opinion is positive."
+ },
+ "genuine": {
+  "ipa": "/ˈdʒenjuɪn/",
+  "reading": "cenyuin",
+  "meanings": [
+   "gerçek",
+   "hakiki"
+  ],
+  "definition": "Real and exactly what it appears to be.",
+  "example": "This bag is made of genuine leather."
+ },
+ "global": {
+  "ipa": "/ˈɡləʊbl/",
+  "reading": "globıl",
+  "meanings": [
+   "küresel"
+  ],
+  "definition": "Relating to the whole world.",
+  "example": "Climate change is a global problem."
+ },
+ "good": {
+  "ipa": "/ɡʊd/",
+  "reading": "gud",
+  "meanings": [
+   "iyi"
+  ],
+  "definition": "Of high quality; pleasing.",
+  "example": "She is a good student."
+ },
+ "grateful": {
+  "ipa": "/ˈɡreɪtfl/",
+  "reading": "greytfıl",
+  "meanings": [
+   "minnettar"
+  ],
+  "definition": "Feeling thankful.",
+  "example": "I am grateful for your help."
+ },
+ "great": {
+  "ipa": "/ɡreɪt/",
+  "reading": "greyt",
+  "meanings": [
+   "harika",
+   "büyük"
+  ],
+  "definition": "Very good, or very large.",
+  "example": "We had a great time at the party."
+ },
+ "half": {
+  "ipa": "/hɑːf/",
+  "reading": "haf",
+  "meanings": [
+   "yarım",
+   "yarı"
+  ],
+  "definition": "One of two equal parts.",
+  "example": "He ate half the cake."
+ },
+ "hard": {
+  "ipa": "/hɑːd/",
+  "reading": "hard",
+  "meanings": [
+   "zor",
+   "sert"
+  ],
+  "definition": "Difficult, or firm and solid.",
+  "example": "This question is very hard."
+ },
+ "healthy": {
+  "ipa": "/ˈhelθi/",
+  "reading": "helti",
+  "meanings": [
+   "sağlıklı"
+  ],
+  "definition": "In good physical condition.",
+  "example": "Eating fruit keeps you healthy."
+ },
+ "heavy": {
+  "ipa": "/ˈhevi/",
+  "reading": "hevi",
+  "meanings": [
+   "ağır"
+  ],
+  "definition": "Weighing a lot.",
+  "example": "This box is too heavy to carry."
+ },
+ "high": {
+  "ipa": "/haɪ/",
+  "reading": "hay",
+  "meanings": [
+   "yüksek"
+  ],
+  "definition": "Reaching far up from the ground.",
+  "example": "The mountain is very high."
+ },
+ "historical": {
+  "ipa": "/hɪˈstɒrɪkl/",
+  "reading": "historikıl",
+  "meanings": [
+   "tarihi"
+  ],
+  "definition": "Connected with the past.",
+  "example": "We visited a historical building."
+ },
+ "huge": {
+  "ipa": "/hjuːdʒ/",
+  "reading": "hyuc",
+  "meanings": [
+   "kocaman",
+   "devasa"
+  ],
+  "definition": "Extremely large.",
+  "example": "They live in a huge house."
+ },
+ "ill": {
+  "ipa": "/ɪl/",
+  "reading": "il",
+  "meanings": [
+   "hasta"
+  ],
+  "definition": "Not in good health; sick.",
+  "example": "She stayed home because she was ill."
+ },
+ "illegal": {
+  "ipa": "/ɪˈliːɡl/",
+  "reading": "iligıl",
+  "meanings": [
+   "yasa dışı"
+  ],
+  "definition": "Against the law.",
+  "example": "Parking here is illegal."
+ },
+ "important": {
+  "ipa": "/ɪmˈpɔːtnt/",
+  "reading": "importınt",
+  "meanings": [
+   "önemli"
+  ],
+  "definition": "Having great value or influence.",
+  "example": "This is an important meeting."
+ },
+ "impossible": {
+  "ipa": "/ɪmˈpɒsəbl/",
+  "reading": "imposıbıl",
+  "meanings": [
+   "imkânsız"
+  ],
+  "definition": "Not able to happen or be done.",
+  "example": "It is impossible to finish today."
+ },
+ "impressive": {
+  "ipa": "/ɪmˈpresɪv/",
+  "reading": "impresiv",
+  "meanings": [
+   "etkileyici"
+  ],
+  "definition": "Causing admiration.",
+  "example": "The view from the tower is impressive."
+ },
+ "independent": {
+  "ipa": "/ˌɪndɪˈpendənt/",
+  "reading": "indipendınt",
+  "meanings": [
+   "bağımsız"
+  ],
+  "definition": "Not needing others; self-governing.",
+  "example": "She is a very independent person."
+ },
+ "individual": {
+  "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+  "reading": "individuıl",
+  "meanings": [
+   "bireysel",
+   "tek"
+  ],
+  "definition": "Considered separately; single.",
+  "example": "Each individual student gets a book."
+ },
+ "inevitable": {
+  "ipa": "/ɪnˈevɪtəbl/",
+  "reading": "inevitıbıl",
+  "meanings": [
+   "kaçınılmaz"
+  ],
+  "definition": "Certain to happen; unavoidable.",
+  "example": "Change is inevitable."
+ },
+ "initial": {
+  "ipa": "/ɪˈnɪʃl/",
+  "reading": "inişıl",
+  "meanings": [
+   "ilk",
+   "başlangıç"
+  ],
+  "definition": "Happening at the beginning.",
+  "example": "My initial reaction was surprise."
+ },
+ "innocent": {
+  "ipa": "/ˈɪnəsnt/",
+  "reading": "inısınt",
+  "meanings": [
+   "masum"
+  ],
+  "definition": "Not guilty; pure.",
+  "example": "The court found him innocent."
+ },
+ "intellectual": {
+  "ipa": "/ˌɪntəˈlektʃuəl/",
+  "reading": "intılekçuıl",
+  "meanings": [
+   "entelektüel",
+   "zihinsel"
+  ],
+  "definition": "Relating to thinking and understanding.",
+  "example": "She enjoys intellectual conversations."
+ },
+ "interested": {
+  "ipa": "/ˈɪntrəstɪd/",
+  "reading": "intrıstid",
+  "meanings": [
+   "ilgili",
+   "ilgi duyan"
+  ],
+  "definition": "Wanting to know more about something.",
+  "example": "I am interested in history."
+ },
+ "interesting": {
+  "ipa": "/ˈɪntrəstɪŋ/",
+  "reading": "intrısting",
+  "meanings": [
+   "ilginç"
+  ],
+  "definition": "Holding your attention.",
+  "example": "This is an interesting book."
+ },
+ "internal": {
+  "ipa": "/ɪnˈtɜːnl/",
+  "reading": "intörnıl",
+  "meanings": [
+   "iç",
+   "dahili"
+  ],
+  "definition": "Inside something.",
+  "example": "The company held an internal meeting."
+ },
+ "international": {
+  "ipa": "/ˌɪntəˈnæʃnəl/",
+  "reading": "intırneşınıl",
+  "meanings": [
+   "uluslararası"
+  ],
+  "definition": "Involving more than one country.",
+  "example": "She works for an international company."
+ },
+ "involved": {
+  "ipa": "/ɪnˈvɒlvd/",
+  "reading": "involvd",
+  "meanings": [
+   "dahil",
+   "ilgili"
+  ],
+  "definition": "Taking part in something.",
+  "example": "He is involved in many projects."
+ },
+ "keen": {
+  "ipa": "/kiːn/",
+  "reading": "kin",
+  "meanings": [
+   "hevesli",
+   "istekli"
+  ],
+  "definition": "Very eager and interested.",
+  "example": "She is keen to learn English."
+ },
+ "kind": {
+  "ipa": "/kaɪnd/",
+  "reading": "kaynd",
+  "meanings": [
+   "nazik",
+   "iyi kalpli"
+  ],
+  "definition": "Caring and helpful to others.",
+  "example": "He is kind to animals."
+ },
+ "known": {
+  "ipa": "/nəʊn/",
+  "reading": "noun",
+  "meanings": [
+   "bilinen",
+   "tanınan"
+  ],
+  "definition": "Familiar to people.",
+  "example": "The area is known for its beaches."
+ },
+ "large": {
+  "ipa": "/lɑːdʒ/",
+  "reading": "larc",
+  "meanings": [
+   "büyük",
+   "geniş"
+  ],
+  "definition": "Big in size or amount.",
+  "example": "They ordered a large pizza."
+ },
+ "last": {
+  "ipa": "/lɑːst/",
+  "reading": "last",
+  "meanings": [
+   "son",
+   "sonuncu"
+  ],
+  "definition": "Coming after all others.",
+  "example": "This is the last question."
+ },
+ "late": {
+  "ipa": "/leɪt/",
+  "reading": "leyt",
+  "meanings": [
+   "geç"
+  ],
+  "definition": "After the expected time.",
+  "example": "He was late for school."
+ },
+ "left": {
+  "ipa": "/left/",
+  "reading": "left",
+  "meanings": [
+   "sol"
+  ],
+  "definition": "On the side of the body where the heart is.",
+  "example": "Turn left at the corner."
+ },
+ "light": {
+  "ipa": "/laɪt/",
+  "reading": "layt",
+  "meanings": [
+   "hafif"
+  ],
+  "definition": "Not weighing much.",
+  "example": "This bag is very light."
+ },
+ "likely": {
+  "ipa": "/ˈlaɪkli/",
+  "reading": "laykli",
+  "meanings": [
+   "muhtemel"
+  ],
+  "definition": "Probably going to happen.",
+  "example": "It is likely to rain tomorrow."
+ },
+ "limited": {
+  "ipa": "/ˈlɪmɪtɪd/",
+  "reading": "limitid",
+  "meanings": [
+   "sınırlı"
+  ],
+  "definition": "Restricted in amount or extent.",
+  "example": "We have limited time."
+ },
+ "literary": {
+  "ipa": "/ˈlɪtərəri/",
+  "reading": "litırıri",
+  "meanings": [
+   "edebi"
+  ],
+  "definition": "Relating to literature.",
+  "example": "She won a literary award."
+ },
+ "little": {
+  "ipa": "/ˈlɪtl/",
+  "reading": "litıl",
+  "meanings": [
+   "küçük",
+   "az"
+  ],
+  "definition": "Small in size or amount.",
+  "example": "A little girl was playing in the garden."
+ },
+ "local": {
+  "ipa": "/ˈləʊkl/",
+  "reading": "loukıl",
+  "meanings": [
+   "yerel"
+  ],
+  "definition": "Relating to the nearby area.",
+  "example": "We ate at a local restaurant."
+ },
+ "lonely": {
+  "ipa": "/ˈləʊnli/",
+  "reading": "lounli",
+  "meanings": [
+   "yalnız"
+  ],
+  "definition": "Unhappy because of being alone.",
+  "example": "He felt lonely in the big city."
+ },
+ "long": {
+  "ipa": "/lɒŋ/",
+  "reading": "long",
+  "meanings": [
+   "uzun"
+  ],
+  "definition": "Measuring a great distance or time.",
+  "example": "It was a long journey."
+ },
+ "quickly": {
+  "ipa": "/ˈkwɪkli/",
+  "reading": "kuikli",
+  "meanings": [
+   "hızlıca",
+   "çabucak"
+  ],
+  "definition": "At a fast speed; in a short time.",
+  "example": "She quickly finished her homework before dinner."
+ },
+ "slowly": {
+  "ipa": "/ˈsləʊli/",
+  "reading": "slouli",
+  "meanings": [
+   "yavaşça"
+  ],
+  "definition": "At a slow speed; not fast.",
+  "example": "The old man walked slowly across the street."
+ },
+ "carefully": {
+  "ipa": "/ˈkeəfəli/",
+  "reading": "kerfıli",
+  "meanings": [
+   "dikkatlice"
+  ],
+  "definition": "With great attention, avoiding mistakes or damage.",
+  "example": "Please read the instructions carefully before starting."
+ },
+ "always": {
+  "ipa": "/ˈɔːlweɪz/",
+  "reading": "olveyz",
+  "meanings": [
+   "her zaman",
+   "daima"
+  ],
+  "definition": "At all times; on every occasion.",
+  "example": "She always drinks tea in the morning."
+ },
+ "never": {
+  "ipa": "/ˈnevər/",
+  "reading": "nevır",
+  "meanings": [
+   "asla",
+   "hiçbir zaman"
+  ],
+  "definition": "Not at any time; not ever.",
+  "example": "He never eats fast food."
+ },
+ "often": {
+  "ipa": "/ˈɒfən/",
+  "reading": "ofın",
+  "meanings": [
+   "sık sık"
+  ],
+  "definition": "Many times; frequently.",
+  "example": "We often visit our grandparents on weekends."
+ },
+ "sometimes": {
+  "ipa": "/ˈsʌmtaɪmz/",
+  "reading": "samtaymz",
+  "meanings": [
+   "bazen"
+  ],
+  "definition": "On some occasions but not always.",
+  "example": "Sometimes I take the bus instead of walking."
+ },
+ "loudly": {
+  "ipa": "/ˈlaʊdli/",
+  "reading": "laudli",
+  "meanings": [
+   "yüksek sesle"
+  ],
+  "definition": "In a way that makes a lot of noise.",
+  "example": "The fans cheered loudly when the team scored."
+ },
+ "quietly": {
+  "ipa": "/ˈkwaɪətli/",
+  "reading": "kuayıtli",
+  "meanings": [
+   "sessizce"
+  ],
+  "definition": "Making very little noise.",
+  "example": "She quietly closed the door so the baby could sleep."
+ },
+ "suddenly": {
+  "ipa": "/ˈsʌdənli/",
+  "reading": "sadınli",
+  "meanings": [
+   "aniden",
+   "birdenbire"
+  ],
+  "definition": "Quickly and unexpectedly.",
+  "example": "Suddenly, the lights went out in the whole house."
+ },
+ "journey": {
+  "ipa": "/ˈdʒɜːni/",
+  "reading": "cörni",
+  "meanings": [
+   "yolculuk"
+  ],
+  "definition": "The act of travelling from one place to another.",
+  "example": "The journey to the mountain village took five hours."
+ },
+ "knowledge": {
+  "ipa": "/ˈnɒlɪdʒ/",
+  "reading": "nolic",
+  "meanings": [
+   "bilgi"
+  ],
+  "definition": "Information and understanding gained through learning.",
+  "example": "Reading books is a great way to gain knowledge."
+ },
+ "courage": {
+  "ipa": "/ˈkʌrɪdʒ/",
+  "reading": "karic",
+  "meanings": [
+   "cesaret"
+  ],
+  "definition": "The ability to face fear or difficulty bravely.",
+  "example": "It takes courage to speak in front of a large crowd."
+ },
+ "friendship": {
+  "ipa": "/ˈfrendʃɪp/",
+  "reading": "frendşip",
+  "meanings": [
+   "dostluk",
+   "arkadaşlık"
+  ],
+  "definition": "A close relationship between friends.",
+  "example": "Their friendship started in primary school."
+ },
+ "weather": {
+  "ipa": "/ˈweðər/",
+  "reading": "vedır",
+  "meanings": [
+   "hava durumu"
+  ],
+  "definition": "The condition of the air: rain, sun, wind, etc.",
+  "example": "The weather was perfect for a picnic yesterday."
+ },
+ "health": {
+  "ipa": "/helθ/",
+  "reading": "helt",
+  "meanings": [
+   "sağlık"
+  ],
+  "definition": "The condition of your body and mind.",
+  "example": "Regular exercise is important for your health."
+ },
+ "success": {
+  "ipa": "/səkˈses/",
+  "reading": "sıkses",
+  "meanings": [
+   "başarı"
+  ],
+  "definition": "Achieving what you wanted or planned.",
+  "example": "Hard work is the key to success."
+ },
+ "mistake": {
+  "ipa": "/mɪˈsteɪk/",
+  "reading": "misteyk",
+  "meanings": [
+   "hata"
+  ],
+  "definition": "Something done wrong; an error.",
+  "example": "Everyone makes a mistake from time to time."
+ },
+ "opportunity": {
+  "ipa": "/ˌɒpəˈtjuːnəti/",
+  "reading": "opırtyuniti",
+  "meanings": [
+   "fırsat"
+  ],
+  "definition": "A chance to do something good or useful.",
+  "example": "This job is a great opportunity for young graduates."
+ },
+ "memory": {
+  "ipa": "/ˈmeməri/",
+  "reading": "memıri",
+  "meanings": [
+   "anı",
+   "hafıza"
+  ],
+  "definition": "Something you remember, or the ability to remember.",
+  "example": "That summer holiday is my favorite childhood memory."
+ },
+ "go": {
+  "ipa": "/ɡəʊ/",
+  "reading": "gou",
+  "meanings": [
+   "gitmek"
+  ],
+  "definition": "To move or travel to a place. (go – went – gone)",
+  "example": "We go to the gym twice a week."
+ },
+ "eat": {
+  "ipa": "/iːt/",
+  "reading": "iit",
+  "meanings": [
+   "yemek yemek"
+  ],
+  "definition": "To put food in your mouth and swallow it. (eat – ate – eaten)",
+  "example": "They usually eat breakfast at seven o'clock."
+ },
+ "see": {
+  "ipa": "/siː/",
+  "reading": "sii",
+  "meanings": [
+   "görmek"
+  ],
+  "definition": "To notice with your eyes. (see – saw – seen)",
+  "example": "You can see the mountains from this window."
+ },
+ "drink": {
+  "ipa": "/drɪŋk/",
+  "reading": "drink",
+  "meanings": [
+   "içmek"
+  ],
+  "definition": "To take liquid into your mouth and swallow it. (drink – drank – drunk)",
+  "example": "I drink a glass of water every morning."
+ },
+ "write": {
+  "ipa": "/raɪt/",
+  "reading": "rayt",
+  "meanings": [
+   "yazmak"
+  ],
+  "definition": "To form letters or words on paper or a screen. (write – wrote – written)",
+  "example": "Students write an essay every Friday."
+ },
+ "speak": {
+  "ipa": "/spiːk/",
+  "reading": "spiik",
+  "meanings": [
+   "konuşmak"
+  ],
+  "definition": "To say words; to talk. (speak – spoke – spoken)",
+  "example": "She can speak three languages fluently."
+ },
+ "swim": {
+  "ipa": "/swɪm/",
+  "reading": "suim",
+  "meanings": [
+   "yüzmek"
+  ],
+  "definition": "To move through water using your body. (swim – swam – swum)",
+  "example": "The children swim in the lake every summer."
+ },
+ "fly": {
+  "ipa": "/flaɪ/",
+  "reading": "flay",
+  "meanings": [
+   "uçmak"
+  ],
+  "definition": "To move through the air. (fly – flew – flown)",
+  "example": "Some birds fly south for the winter."
+ },
+ "break": {
+  "ipa": "/breɪk/",
+  "reading": "breyk",
+  "meanings": [
+   "kırmak"
+  ],
+  "definition": "To separate into pieces by force. (break – broke – broken)",
+  "example": "Be careful not to break the glass vase."
+ },
+ "buy": {
+  "ipa": "/baɪ/",
+  "reading": "bay",
+  "meanings": [
+   "satın almak"
+  ],
+  "definition": "To get something by paying money. (buy – bought – bought)",
+  "example": "We buy fresh bread from the bakery every day."
+ },
+ "loose": {
+  "ipa": "/luːs/",
+  "reading": "luus",
+  "meanings": [
+   "gevşek",
+   "bol"
+  ],
+  "definition": "Not firmly held or tightly in place",
+  "example": "The screw on the door handle is loose."
+ },
+ "lost": {
+  "ipa": "/lɒst/",
+  "reading": "lost",
+  "meanings": [
+   "kayıp",
+   "kaybolmuş"
+  ],
+  "definition": "Not able to be found",
+  "example": "I hope they find the lost dog soon."
+ },
+ "lower": {
+  "ipa": "/ˈləʊ.ə/",
+  "reading": "louı",
+  "meanings": [
+   "daha alçak",
+   "alt"
+  ],
+  "definition": "Less high in position or status",
+  "example": "Please sit on the lower step of the stairs."
+ },
+ "main": {
+  "ipa": "/meɪn/",
+  "reading": "meyn",
+  "meanings": [
+   "ana",
+   "temel",
+   "başlıca"
+  ],
+  "definition": "Most important or largest",
+  "example": "What is the main reason for your visit?"
+ },
+ "major": {
+  "ipa": "/ˈmeɪ.dʒə/",
+  "reading": "meydır",
+  "meanings": [
+   "büyük",
+   "önemli",
+   "ana"
+  ],
+  "definition": "Important, serious, or significant",
+  "example": "The construction caused a major delay in traffic."
+ },
+ "many": {
+  "ipa": "/ˈmen.i/",
+  "reading": "meni",
+  "meanings": [
+   "çok",
+   "birçok"
+  ],
+  "definition": "A large number of",
+  "example": "There are many students in the classroom today."
+ },
+ "medical": {
+  "ipa": "/ˈmed.ɪ.kəl/",
+  "reading": "medikıl",
+  "meanings": [
+   "tıbbi",
+   "tıp ile ilgili"
+  ],
+  "definition": "Relating to medicine or doctors",
+  "example": "He needs urgent medical attention after the accident."
+ },
+ "medieval": {
+  "ipa": "/ˌmed.iˈiː.vəl/",
+  "reading": "medyiivıl",
+  "meanings": [
+   "orta çağ'a ait",
+   "orta çağ"
+  ],
+  "definition": "Relating to the Middle Ages",
+  "example": "They visited a medieval castle during their trip."
+ },
+ "mental": {
+  "ipa": "/ˈmen.təl/",
+  "reading": "mentıl",
+  "meanings": [
+   "zihinsel",
+   "akli"
+  ],
+  "definition": "Relating to the mind",
+  "example": "Chess requires a lot of mental effort."
+ },
+ "middle": {
+  "ipa": "/ˈmɪd.əl/",
+  "reading": "midıl",
+  "meanings": [
+   "orta",
+   "ortadaki"
+  ],
+  "definition": "Equidistant from the extremes",
+  "example": "She sat in the middle seat of the car."
+ },
+ "military": {
+  "ipa": "/ˈmɪl.ɪ.tər.i/",
+  "reading": "militıri",
+  "meanings": [
+   "askeri"
+  ],
+  "definition": "Relating to soldiers or armed forces",
+  "example": "He wore a green military uniform to the event."
+ },
+ "mixed": {
+  "ipa": "/mɪkst/",
+  "reading": "mikst",
+  "meanings": [
+   "karışık",
+   "karışmış"
+  ],
+  "definition": "Consisting of different qualities or things",
+  "example": "They served a bowl of mixed nuts at the party."
+ },
+ "much": {
+  "ipa": "/mʌtʃ/",
+  "reading": "maç",
+  "meanings": [
+   "çok",
+   "fazla"
+  ],
+  "definition": "A large amount of",
+  "example": "Do you have much work to finish today?"
+ },
+ "nasty": {
+  "ipa": "/ˈnɑː.sti/",
+  "reading": "naasti",
+  "meanings": [
+   "çirkin",
+   "kötü",
+   "iğrenç"
+  ],
+  "definition": "Very unpleasant or unkind",
+  "example": "He has a nasty habit of biting his nails."
+ },
+ "national": {
+  "ipa": "/ˈnæʃ.ən.əl/",
+  "reading": "neşınıl",
+  "meanings": [
+   "ulusal",
+   "milli"
+  ],
+  "definition": "Relating to a whole nation",
+  "example": "Today is a national holiday in our country."
+ },
+ "native": {
+  "ipa": "/ˈneɪ.tɪv/",
+  "reading": "neytiv",
+  "meanings": [
+   "yerli",
+   "doğal"
+  ],
+  "definition": "Associated with the place of one's birth",
+  "example": "She is a native speaker of Spanish."
+ },
+ "natural": {
+  "ipa": "/ˈnætʃ.ər.əl/",
+  "reading": "neçırıl",
+  "meanings": [
+   "doğal",
+   "tabii"
+  ],
+  "definition": "Existing in or caused by nature",
+  "example": "They prefer to eat natural food without chemicals."
+ },
+ "naughty": {
+  "ipa": "/ˈnɔː.ti/",
+  "reading": "nooti",
+  "meanings": [
+   "yaramaz",
+   "haylaz"
+  ],
+  "definition": "Badly behaved or disobedient",
+  "example": "The naughty boy drew on the living room wall."
+ },
+ "near": {
+  "ipa": "/nɪə/",
+  "reading": "niı",
+  "meanings": [
+   "yakın"
+  ],
+  "definition": "Not far away in distance",
+  "example": "We hope to visit them in the near future."
+ },
+ "necessary": {
+  "ipa": "/ˈnesəsəri/",
+  "reading": "nesısəri",
+  "meanings": [
+   "gerekli",
+   "zorunlu"
+  ],
+  "definition": "Needed to achieve a particular result.",
+  "example": "It is necessary to wear a helmet while riding."
+ },
+ "nervous": {
+  "ipa": "/ˈnɜːvəs/",
+  "reading": "nöörvıs",
+  "meanings": [
+   "gergin",
+   "endişeli",
+   "heyecanlı"
+  ],
+  "definition": "Anxious about something or afraid.",
+  "example": "She felt nervous before her big exam."
+ },
+ "new": {
+  "ipa": "/njuː/",
+  "reading": "niyu",
+  "meanings": [
+   "yeni",
+   "taze"
+  ],
+  "definition": "Recently made, built, or created.",
+  "example": "I want to buy a new car next year."
+ },
+ "next": {
+  "ipa": "/nekst/",
+  "reading": "nekst",
+  "meanings": [
+   "sonraki",
+   "gelecekteki",
+   "bitişik"
+  ],
+  "definition": "Coming immediately after the present one.",
+  "example": "We will meet again next week."
+ },
+ "numerous": {
+  "ipa": "/ˈnjuːmərəs/",
+  "reading": "nyuumırıs",
+  "meanings": [
+   "çok sayıda",
+   "pek çok"
+  ],
+  "definition": "Existing in large numbers.",
+  "example": "There are numerous reasons to exercise daily."
+ },
+ "obvious": {
+  "ipa": "/ˈɒbviəs/",
+  "reading": "obviyıs",
+  "meanings": [
+   "açık",
+   "belirgin",
+   "apaçık"
+  ],
+  "definition": "Easy to see, recognize, or understand.",
+  "example": "The answer to this question is obvious."
+ },
+ "occasional": {
+  "ipa": "/əˈkeɪʒənəl/",
+  "reading": "ıkeyjınıl",
+  "meanings": [
+   "ara sıra olan",
+   "bazen olan"
+  ],
+  "definition": "Happening from time to time.",
+  "example": "He enjoys an occasional walk in the park."
+ },
+ "old": {
+  "ipa": "/əʊld/",
+  "reading": "ould",
+  "meanings": [
+   "eski",
+   "yaşlı"
+  ],
+  "definition": "Having lived or existed for a long time.",
+  "example": "This old book belongs to my grandfather."
+ },
+ "ordinary": {
+  "ipa": "/ˈɔːdnri/",
+  "reading": "oordinıri",
+  "meanings": [
+   "sıradan",
+   "normal"
+  ],
+  "definition": "Not different or special in any way.",
+  "example": "It was just an ordinary day at work."
+ },
+ "original": {
+  "ipa": "/əˈrɪdʒənəl/",
+  "reading": "orıcınıl",
+  "meanings": [
+   "özgün",
+   "orijinal",
+   "ilk"
+  ],
+  "definition": "Existing from the beginning; not copied.",
+  "example": "This is the original copy of the document."
+ },
+ "other": {
+  "ipa": "/ˈʌðə/",
+  "reading": "adı",
+  "meanings": [
+   "diğer",
+   "başka"
+  ],
+  "definition": "As well as the one already mentioned.",
+  "example": "Do you have any other questions?"
+ },
+ "particular": {
+  "ipa": "/pəˈtɪkjələ/",
+  "reading": "pıtikyılı",
+  "meanings": [
+   "belirli",
+   "özel",
+   "titiz"
+  ],
+  "definition": "Special or specific to a person or thing.",
+  "example": "Is there a particular reason you are late?"
+ },
+ "patient": {
+  "ipa": "/ˈpeɪʃnt/",
+  "reading": "peyşınt",
+  "meanings": [
+   "sabırlı"
+  ],
+  "definition": "Able to wait without becoming angry.",
+  "example": "You need to be patient with young children."
+ },
+ "peaceful": {
+  "ipa": "/ˈpiːsfl/",
+  "reading": "piisful",
+  "meanings": [
+   "huzurlu",
+   "sakin",
+   "barışçıl"
+  ],
+  "definition": "Quiet and free from war or worry.",
+  "example": "The lake is very peaceful in the morning."
+ },
+ "permanent": {
+  "ipa": "/ˈpɜːmənənt/",
+  "reading": "pöörmınınt",
+  "meanings": [
+   "kalıcı",
+   "daimi"
+  ],
+  "definition": "Lasting for a long time or forever.",
+  "example": "They are looking for a permanent home."
+ },
+ "personal": {
+  "ipa": "/ˈpɜːsənl/",
+  "reading": "pöörsınıl",
+  "meanings": [
+   "kişisel",
+   "özel"
+  ],
+  "definition": "Relating to a particular person's private life.",
+  "example": "Please do not ask me personal questions."
+ },
+ "pleasant": {
+  "ipa": "/ˈpleznt/",
+  "reading": "plezınt",
+  "meanings": [
+   "hoş",
+   "güzel",
+   "keyifli"
+  ],
+  "definition": "Enjoyable, attractive, or friendly.",
+  "example": "We had a pleasant conversation yesterday."
+ },
+ "plenty": {
+  "ipa": "/ˈplenti/",
+  "reading": "plenti",
+  "meanings": [
+   "bol",
+   "çok",
+   "yeterli"
+  ],
+  "definition": "Available in large or sufficient quantities.",
+  "example": "Five dollars is plenty for a simple lunch."
+ },
+ "political": {
+  "ipa": "/pəˈlɪtɪkl/",
+  "reading": "pılitıkl",
+  "meanings": [
+   "siyasi",
+   "politik"
+  ],
+  "definition": "Relating to the government or public affairs.",
+  "example": "She decided to start a political career."
+ },
+ "popular": {
+  "ipa": "/ˈpɒpjələ/",
+  "reading": "popyılı",
+  "meanings": [
+   "popüler",
+   "sevilen",
+   "yaygın"
+  ],
+  "definition": "Liked or enjoyed by many people.",
+  "example": "Football is a very popular sport worldwide."
+ },
+ "possible": {
+  "ipa": "/ˈpɒs.ə.bəl/",
+  "reading": "posıbıl",
+  "meanings": [
+   "mümkün",
+   "olası"
+  ],
+  "definition": "Able to be done or achieved.",
+  "example": "It is possible to complete the work today."
+ },
+ "potential": {
+  "ipa": "/pəˈten.ʃəl/",
+  "reading": "potenşıl",
+  "meanings": [
+   "potansiyel",
+   "olası"
+  ],
+  "definition": "Having the capacity to develop in the future.",
+  "example": "She is a potential candidate for the job."
+ },
+ "powerful": {
+  "ipa": "/ˈpaʊ.ə.fəl/",
+  "reading": "pauıfıl",
+  "meanings": [
+   "güçlü",
+   "etkili"
+  ],
+  "definition": "Having great power, strength, or influence.",
+  "example": "The president gave a powerful speech."
+ },
+ "practical": {
+  "ipa": "/ˈpræk.tɪ.kəl/",
+  "reading": "praktikıl",
+  "meanings": [
+   "pratik",
+   "kullanışlı"
+  ],
+  "definition": "Relating to actual experience rather than theory.",
+  "example": "We need a practical solution to this problem."
+ },
+ "precise": {
+  "ipa": "/prɪˈsaɪs/",
+  "reading": "prisays",
+  "meanings": [
+   "kesin",
+   "tam",
+   "titiz"
+  ],
+  "definition": "Exact, accurate, and careful about details.",
+  "example": "Please give me the precise measurements."
+ },
+ "present": {
+  "ipa": "/ˈprez.ənt/",
+  "reading": "prezınt",
+  "meanings": [
+   "mevcut",
+   "şimdiki",
+   "hazır"
+  ],
+  "definition": "Existing or occurring now.",
+  "example": "The whole team is present at the meeting."
+ },
+ "previous": {
+  "ipa": "/ˈpriː.vi.əs/",
+  "reading": "priviyıs",
+  "meanings": [
+   "önceki",
+   "geçmiş"
+  ],
+  "definition": "Existing or happening before something else.",
+  "example": "She has experience from her previous job."
+ },
+ "primary": {
+  "ipa": "/ˈpraɪ.mər.i/",
+  "reading": "praymıri",
+  "meanings": [
+   "birincil",
+   "ana",
+   "temel"
+  ],
+  "definition": "Most important; principal or basic.",
+  "example": "Our primary goal is to improve customer service."
+ },
+ "private": {
+  "ipa": "/ˈpraɪ.vət/",
+  "reading": "prayvıt",
+  "meanings": [
+   "özel",
+   "kişisel"
+  ],
+  "definition": "For the use of a single person or group.",
+  "example": "This is a private area for members only."
+ },
+ "proper": {
+  "ipa": "/ˈprɒp.ər/",
+  "reading": "propı",
+  "meanings": [
+   "uygun",
+   "doğru",
+   "düzgün"
+  ],
+  "definition": "Suitable, correct, or appropriate.",
+  "example": "It is important to use the proper tool."
+ },
+ "public": {
+  "ipa": "/ˈpʌb.lɪk/",
+  "reading": "pablik",
+  "meanings": [
+   "halka açık",
+   "kamusal"
+  ],
+  "definition": "Relating to or available to people in general.",
+  "example": "You can find information in the public library."
+ },
+ "pure": {
+  "ipa": "/pjʊər/",
+  "reading": "pyur",
+  "meanings": [
+   "saf",
+   "temiz",
+   "katkısız"
+  ],
+  "definition": "Not mixed with any other substance.",
+  "example": "This ring is made of pure gold."
+ },
+ "rapid": {
+  "ipa": "/ˈræp.ɪd/",
+  "reading": "repid",
+  "meanings": [
+   "hızlı",
+   "ani"
+  ],
+  "definition": "Happening or moving with great speed.",
+  "example": "The city is experiencing rapid growth."
+ },
+ "rare": {
+  "ipa": "/reər/",
+  "reading": "reır",
+  "meanings": [
+   "nadir",
+   "ender"
+  ],
+  "definition": "Not occurring very often; uncommon.",
+  "example": "It is rare to see snow here."
+ },
+ "real": {
+  "ipa": "/rɪəl/",
+  "reading": "riyıl",
+  "meanings": [
+   "gerçek",
+   "hakiki"
+  ],
+  "definition": "Actually existing as a thing.",
+  "example": "This is real leather, not synthetic."
+ },
+ "reasonable": {
+  "ipa": "/ˈriː.zən.ə.bəl/",
+  "reading": "rizınıbıl",
+  "meanings": [
+   "makul",
+   "mantıklı",
+   "uygun"
+  ],
+  "definition": "Fair, practical, and sensible.",
+  "example": "The hotel offers service at a reasonable price."
+ },
+ "recent": {
+  "ipa": "/ˈriː.sənt/",
+  "reading": "risınt",
+  "meanings": [
+   "son",
+   "yeni",
+   "yakın zamandaki"
+  ],
+  "definition": "Happening or starting only a short time ago.",
+  "example": "A recent study shows that exercise improves memory."
+ },
+ "regular": {
+  "ipa": "/ˈreɡ.jə.lər/",
+  "reading": "regyulır",
+  "meanings": [
+   "düzenli",
+   "olağan"
+  ],
+  "definition": "Happening at even, predictable intervals.",
+  "example": "You should do regular exercise to stay healthy."
+ },
+ "related": {
+  "ipa": "/rɪˈleɪ.tɪd/",
+  "reading": "rileytıd",
+  "meanings": [
+   "ilişkili",
+   "bağlantılı"
+  ],
+  "definition": "Connected in some way.",
+  "example": "The two events are related to each other."
+ },
+ "relevant": {
+  "ipa": "/ˈrel.ə.vənt/",
+  "reading": "relıvınt",
+  "meanings": [
+   "ilgili",
+   "alakalı"
+  ],
+  "definition": "Closely connected to the matter at hand.",
+  "example": "Please provide the relevant documents for your application."
+ },
+ "religious": {
+  "ipa": "/rɪˈlɪdʒ.əs/",
+  "reading": "rilicıs",
+  "meanings": [
+   "dini",
+   "dindar"
+  ],
+  "definition": "Relating to religion or believing in a god.",
+  "example": "She is a very religious person who goes to church daily."
+ },
+ "remaining": {
+  "ipa": "/rɪˈmeɪ.nɪŋ/",
+  "reading": "rimeyninğ",
+  "meanings": [
+   "kalan",
+   "geriye kalan"
+  ],
+  "definition": "Still left after other parts have gone.",
+  "example": "The remaining students must finish their work now."
+ },
+ "remarkable": {
+  "ipa": "/rɪˈmɑː.kə.bəl/",
+  "reading": "rimaakıbıl",
+  "meanings": [
+   "olağanüstü",
+   "dikkat çekici"
+  ],
+  "definition": "Worthy of attention or striking.",
+  "example": "He has a remarkable ability to remember faces."
+ },
+ "responsible": {
+  "ipa": "/rɪˈspɒn.sə.bəl/",
+  "reading": "risponsıbıl",
+  "meanings": [
+   "sorumlu"
+  ],
+  "definition": "Having control or authority over something.",
+  "example": "You are responsible for keeping your room clean."
+ },
+ "ridiculous": {
+  "ipa": "/rɪˈdɪk.jə.ləs/",
+  "reading": "ridikyulıs",
+  "meanings": [
+   "saçma",
+   "gülünç"
+  ],
+  "definition": "Very silly or unreasonable.",
+  "example": "It is ridiculous to pay so much for water."
+ },
+ "right": {
+  "ipa": "/raɪt/",
+  "reading": "rayt",
+  "meanings": [
+   "doğru",
+   "haklı",
+   "sağ"
+  ],
+  "definition": "Correct or morally good.",
+  "example": "I hope we made the right decision today."
+ },
+ "rural": {
+  "ipa": "/ˈrʊə.rəl/",
+  "reading": "ruurıl",
+  "meanings": [
+   "kırsal"
+  ],
+  "definition": "Relating to the countryside.",
+  "example": "They prefer to live in a rural area."
+ },
+ "same": {
+  "ipa": "/seɪm/",
+  "reading": "seym",
+  "meanings": [
+   "aynı",
+   "farksız"
+  ],
+  "definition": "Exactly alike or identical.",
+  "example": "We went to the same school together."
+ },
+ "satisfied": {
+  "ipa": "/ˈsæt.ɪs.faɪd/",
+  "reading": "setisfayd",
+  "meanings": [
+   "memnun",
+   "tatmin olmuş"
+  ],
+  "definition": "Pleased because you got what you wanted.",
+  "example": "I am fully satisfied with my new job."
+ },
+ "scientific": {
+  "ipa": "/ˌsaɪənˈtɪf.ɪk/",
+  "reading": "sayıntifik",
+  "meanings": [
+   "bilimsel"
+  ],
+  "definition": "Relating to science or systematic study.",
+  "example": "They need strong scientific proof before they believe it."
+ },
+ "senior": {
+  "ipa": "/ˈsiː.ni.ər/",
+  "reading": "siinyır",
+  "meanings": [
+   "kıdemli",
+   "üst düzey"
+  ],
+  "definition": "Having a higher rank or status.",
+  "example": "She is a senior manager at the company."
+ },
+ "sensible": {
+  "ipa": "/ˈsen.sə.bəl/",
+  "reading": "sensıbıl",
+  "meanings": [
+   "mantıklı",
+   "makul"
+  ],
+  "definition": "Having or showing good sense.",
+  "example": "Wearing a warm coat is a sensible choice."
+ },
+ "sensitive": {
+  "ipa": "/ˈsen.sɪ.tɪv/",
+  "reading": "sensitiv",
+  "meanings": [
+   "hassas",
+   "duyarlı"
+  ],
+  "definition": "Easily hurt, damaged, or affected.",
+  "example": "Her skin is very sensitive to sunlight."
+ },
+ "separate": {
+  "ipa": "/ˈsep.ər.ət/",
+  "reading": "sepırıt",
+  "meanings": [
+   "ayrı",
+   "bağımsız"
+  ],
+  "definition": "Existing or happening independently.",
+  "example": "We would like to have separate rooms please."
+ },
+ "serious": {
+  "ipa": "/ˈsɪə.ri.əs/",
+  "reading": "siriyıs",
+  "meanings": [
+   "ciddi",
+   "vahim"
+  ],
+  "definition": "Severe, important, or solemn.",
+  "example": "Please pay attention to this serious matter."
+ },
+ "severe": {
+  "ipa": "/sɪˈvɪər/",
+  "reading": "siviır",
+  "meanings": [
+   "şiddetli",
+   "ağır",
+   "sert"
+  ],
+  "definition": "Very bad, serious, or extreme.",
+  "example": "The region is facing a severe water shortage."
+ },
+ "short": {
+  "ipa": "/ʃɔːt/",
+  "reading": "şoot",
+  "meanings": [
+   "kısa"
+  ],
+  "definition": "Measuring a small distance or time.",
+  "example": "She wrote a short story for the competition."
+ },
+ "similar": {
+  "ipa": "/ˈsɪm.ɪ.lər/",
+  "reading": "similır",
+  "meanings": [
+   "benzer"
+  ],
+  "definition": "Look or behave almost the same.",
+  "example": "These two cars are very similar in design."
+ },
+ "simple": {
+  "ipa": "/ˈsɪm.pəl/",
+  "reading": "simpıl",
+  "meanings": [
+   "basit",
+   "sade"
+  ],
+  "definition": "Easy to understand or do.",
+  "example": "The rules of the game are very simple."
+ },
+ "single": {
+  "ipa": "/ˈsɪŋ.ɡəl/",
+  "reading": "singıl",
+  "meanings": [
+   "tek",
+   "bekar",
+   "yalnız"
+  ],
+  "definition": "Only one or not married.",
+  "example": "She remains single by choice."
+ },
+ "slow": {
+  "ipa": "/sləʊ/",
+  "reading": "slou",
+  "meanings": [
+   "yavaş",
+   "ağır"
+  ],
+  "definition": "Moving or happening at low speed.",
+  "example": "The service is very slow here."
+ },
+ "small": {
+  "ipa": "/smɔːl/",
+  "reading": "smool",
+  "meanings": [
+   "küçük",
+   "ufak"
+  ],
+  "definition": "Little in size or amount.",
+  "example": "They live in a small house."
+ },
+ "social": {
+  "ipa": "/ˈsəʊ.ʃəl/",
+  "reading": "souşıl",
+  "meanings": [
+   "sosyal",
+   "toplumsal"
+  ],
+  "definition": "Relating to society or companionship.",
+  "example": "Humans are naturally social animals."
+ },
+ "sole": {
+  "ipa": "/səʊl/",
+  "reading": "soul",
+  "meanings": [
+   "tek",
+   "yalnızca"
+  ],
+  "definition": "Being the only one.",
+  "example": "He is the sole survivor of the crash."
+ },
+ "sorry": {
+  "ipa": "/ˈsɒr.i/",
+  "reading": "sori",
+  "meanings": [
+   "üzgün",
+   "pişman"
+  ],
+  "definition": "Feeling sad, regretful, or sympathetic.",
+  "example": "I am sorry for the delay."
+ },
+ "special": {
+  "ipa": "/ˈspeʃ.əl/",
+  "reading": "speşıl",
+  "meanings": [
+   "özel",
+   "has",
+   "istisnai"
+  ],
+  "definition": "Better, greater, or otherwise different from what is usual.",
+  "example": "This is a very special occasion."
+ },
+ "specific": {
+  "ipa": "/spəˈsɪf.ɪk/",
+  "reading": "spesifik",
+  "meanings": [
+   "belirli",
+   "özel",
+   "özgü"
+  ],
+  "definition": "Clearly defined or identified.",
+  "example": "I need a specific tool for this job."
+ },
+ "spiritual": {
+  "ipa": "/ˈspɪr.ɪ.tʃu.əl/",
+  "reading": "spiriçuıl",
+  "meanings": [
+   "manevi",
+   "ruhani"
+  ],
+  "definition": "Relating to the human spirit or soul.",
+  "example": "Meditation helps develop spiritual peace."
+ },
+ "stable": {
+  "ipa": "/ˈsteɪ.bəl/",
+  "reading": "steybıl",
+  "meanings": [
+   "istikrarlı",
+   "dengeli",
+   "sabit"
+  ],
+  "definition": "Not likely to change or fail.",
+  "example": "The economy remains stable this year."
+ },
+ "steady": {
+  "ipa": "/ˈsted.i/",
+  "reading": "stedi",
+  "meanings": [
+   "sabit",
+   "düzenli",
+   "istikrarlı"
+  ],
+  "definition": "Firmly fixed, constant, or regular.",
+  "example": "He maintained a steady pace."
+ },
+ "straightforward": {
+  "ipa": "/ˌstreɪtˈfɔː.wəd/",
+  "reading": "stıreytforvırd",
+  "meanings": [
+   "açık",
+   "kolay",
+   "anlaşılır"
+  ],
+  "definition": "Easy to do or understand.",
+  "example": "The instructions are simple and straightforward."
+ },
+ "strict": {
+  "ipa": "/strɪkt/",
+  "reading": "stırikt",
+  "meanings": [
+   "katı",
+   "sert",
+   "disiplinli"
+  ],
+  "definition": "Demanding total obedience to rules.",
+  "example": "Our school has a strict dress code."
+ },
+ "strong": {
+  "ipa": "/strɒŋ/",
+  "reading": "strong",
+  "meanings": [
+   "güçlü",
+   "kuvvetli"
+  ],
+  "definition": "Having great power or physical strength.",
+  "example": "She has a strong work ethic."
+ },
+ "subsequent": {
+  "ipa": "/ˈsʌb.sɪ.kwənt/",
+  "reading": "sabsıkvınt",
+  "meanings": [
+   "sonraki",
+   "ardından gelen"
+  ],
+  "definition": "Coming after something in time.",
+  "example": "The subsequent events proved him right."
+ },
+ "substantial": {
+  "ipa": "/səbˈstæn.ʃəl/",
+  "reading": "sabstenşıl",
+  "meanings": [
+   "önemli",
+   "büyük",
+   "esaslı"
+  ],
+  "definition": "Large in size, value, or importance.",
+  "example": "She made a substantial contribution to the project."
+ },
+ "successful": {
+  "ipa": "/səkˈses.fəl/",
+  "reading": "sıksesfıl",
+  "meanings": [
+   "başarılı"
+  ],
+  "definition": "Achieving aim or prosperity.",
+  "example": "He is a very successful businessman."
+ },
+ "sufficient": {
+  "ipa": "/səˈfɪʃ.ənt/",
+  "reading": "safişınt",
+  "meanings": [
+   "yeterli",
+   "kafi"
+  ],
+  "definition": "Enough to meet a need.",
+  "example": "We have sufficient evidence to prove it."
+ },
+ "suitable": {
+  "ipa": "/ˈsuː.tə.bəl/",
+  "reading": "suutıbıl",
+  "meanings": [
+   "uygun",
+   "elverişli"
+  ],
+  "definition": "Right or appropriate for a particular purpose.",
+  "example": "This dress is suitable for a wedding."
+ },
+ "sure": {
+  "ipa": "/ʃɔːr/",
+  "reading": "şoor",
+  "meanings": [
+   "emin",
+   "kesin"
+  ],
+  "definition": "Completely confident in one's belief.",
+  "example": "I am sure about my decision."
+ },
+ "surprised": {
+  "ipa": "/səˈpraɪzd/",
+  "reading": "sıprayzd",
+  "meanings": [
+   "şaşırmış",
+   "hayret etmiş"
+  ],
+  "definition": "Feeling or showing surprise.",
+  "example": "He looked surprised when he heard the news."
+ },
+ "surprising": {
+  "ipa": "/səˈpraɪzɪŋ/",
+  "reading": "sıprayziŋ",
+  "meanings": [
+   "şaşırtıcı",
+   "beklenmedik"
+  ],
+  "definition": "Causing surprise or wonder.",
+  "example": "It is surprising that they lost the game."
+ },
+ "temporary": {
+  "ipa": "/ˈtempərəri/",
+  "reading": "tempırəri",
+  "meanings": [
+   "geçici",
+   "eğreti"
+  ],
+  "definition": "Lasting for only a limited time.",
+  "example": "This office is just a temporary solution."
+ },
+ "total": {
+  "ipa": "/ˈtəʊtl/",
+  "reading": "toutıl",
+  "meanings": [
+   "toplam",
+   "tam",
+   "bütün"
+  ],
+  "definition": "Complete or absolute.",
+  "example": "The project was a total failure."
+ },
+ "traditional": {
+  "ipa": "/trəˈdɪʃənl/",
+  "reading": "trıdişınıl",
+  "meanings": [
+   "geleneksel",
+   "görenekli"
+  ],
+  "definition": "Following old customs and beliefs.",
+  "example": "They wore traditional clothes for the festival."
+ },
+ "true": {
+  "ipa": "/truː/",
+  "reading": "tru",
+  "meanings": [
+   "doğru",
+   "gerçek",
+   "hakiki"
+  ],
+  "definition": "Agreeing with facts or reality.",
+  "example": "This is a true story about love."
+ },
+ "ultimate": {
+  "ipa": "/ˈʌltɪmət/",
+  "reading": "altımıt",
+  "meanings": [
+   "en son",
+   "nihai",
+   "temel"
+  ],
+  "definition": "Final or most important.",
+  "example": "Winning the cup is our ultimate goal."
+ },
+ "unfair": {
+  "ipa": "/ˌʌnˈfeə/",
+  "reading": "anfeır",
+  "meanings": [
+   "haksız",
+   "adaletsiz"
+  ],
+  "definition": "Not treating people equally.",
+  "example": "The rules of this game are unfair."
+ },
+ "unique": {
+  "ipa": "/juˈniːk/",
+  "reading": "yunik",
+  "meanings": [
+   "benzersiz",
+   "eşsiz",
+   "tek"
+  ],
+  "definition": "Being the only one of its kind.",
+  "example": "Every person has a unique voice."
+ },
+ "unknown": {
+  "ipa": "/ˌʌnˈnəʊn/",
+  "reading": "announ",
+  "meanings": [
+   "bilinmeyen",
+   "tanınmamış"
+  ],
+  "definition": "Not known or familiar.",
+  "example": "They traveled to an unknown island."
+ },
+ "unlikely": {
+  "ipa": "/ʌnˈlaɪkli/",
+  "reading": "anlaykli",
+  "meanings": [
+   "olası olmayan",
+   "ihtimal dışı"
+  ],
+  "definition": "Not expected to happen.",
+  "example": "Such a mistake is unlikely to happen again."
+ },
+ "unusual": {
+  "ipa": "/ʌnˈjuːʒuəl/",
+  "reading": "anyujuıl",
+  "meanings": [
+   "olağandışı",
+   "sıra dışı",
+   "nadir"
+  ],
+  "definition": "Different from what is normal.",
+  "example": "She has an unusual hobby."
+ },
+ "urban": {
+  "ipa": "/ˈɜːbən/",
+  "reading": "ööbın",
+  "meanings": [
+   "kentsel",
+   "şehirsel"
+  ],
+  "definition": "Relating to a town or city.",
+  "example": "I prefer urban life to the countryside."
+ },
+ "urgent": {
+  "ipa": "/ˈɜːdʒənt/",
+  "reading": "ööcınt",
+  "meanings": [
+   "acil",
+   "ivedi"
+  ],
+  "definition": "Requiring immediate action.",
+  "example": "She needs to make an urgent call."
+ },
+ "useful": {
+  "ipa": "/ˈjuːsfl/",
+  "reading": "yusful",
+  "meanings": [
+   "yararlı",
+   "faydalı",
+   "kullanışlı"
+  ],
+  "definition": "Helping to do or achieve something.",
+  "example": "This book is a useful guide for beginners."
+ },
+ "various": {
+  "ipa": "/ˈveəriəs/",
+  "reading": "veriıs",
+  "meanings": [
+   "çeşitli",
+   "türlü türlü"
+  ],
+  "definition": "Of different kinds.",
+  "example": "We can use various methods to solve this."
+ },
+ "vast": {
+  "ipa": "/vɑːst/",
+  "reading": "vaast",
+  "meanings": [
+   "geniş",
+   "büyük",
+   "devasa"
+  ],
+  "definition": "Very great in size or amount.",
+  "example": "They walked across the vast desert."
+ },
+ "very": {
+  "ipa": "/ˈveri/",
+  "reading": "veri",
+  "meanings": [
+   "ta kendisi",
+   "tam",
+   "asıl"
+  ],
+  "definition": "Actual, precise, or exact.",
+  "example": "This is the very book I wanted to buy."
+ },
+ "violent": {
+  "ipa": "/ˈvaɪələnt/",
+  "reading": "vayılınt",
+  "meanings": [
+   "şiddetli",
+   "saldırgan",
+   "vahşi"
+  ],
+  "definition": "Using or involving physical force.",
+  "example": "We must avoid a violent conflict."
+ },
+ "vital": {
+  "ipa": "/ˈvaɪtl/",
+  "reading": "vaytıl",
+  "meanings": [
+   "hayati",
+   "çok önemli"
+  ],
+  "definition": "Absolutely necessary or important.",
+  "example": "Water is vital for all living things."
+ },
+ "voluntary": {
+  "ipa": "/ˈvɒləntri/",
+  "reading": "volıntri",
+  "meanings": [
+   "gönüllü",
+   "isteğe bağlı"
+  ],
+  "definition": "Done by choice without being forced or paid.",
+  "example": "She did some voluntary work at the local hospital."
+ },
+ "vulnerable": {
+  "ipa": "/ˈvʌlnərəbl/",
+  "reading": "valnırıbıl",
+  "meanings": [
+   "savunmasız",
+   "hassas",
+   "incinebilir"
+  ],
+  "definition": "Easy to hurt physically or emotionally.",
+  "example": "Small children are vulnerable to many diseases."
+ },
+ "weak": {
+  "ipa": "/wiːk/",
+  "reading": "viik",
+  "meanings": [
+   "zayıf",
+   "güçsüz"
+  ],
+  "definition": "Lacking physical strength or energy.",
+  "example": "His legs felt weak after running the marathon."
+ },
+ "well": {
+  "ipa": "/wel/",
+  "reading": "vel",
+  "meanings": [
+   "iyi",
+   "sağlıklı"
+  ],
+  "definition": "Healthy and in good physical condition.",
+  "example": "I hope you feel well today."
+ },
+ "western": {
+  "ipa": "/ˈwestən/",
+  "reading": "vestırn",
+  "meanings": [
+   "batı",
+   "batı ile ilgili"
+  ],
+  "definition": "Located in or directed toward the west.",
+  "example": "They live in the western part of the city."
+ },
+ "wide": {
+  "ipa": "/waɪd/",
+  "reading": "vayd",
+  "meanings": [
+   "geniş",
+   "enli"
+  ],
+  "definition": "Measuring a large distance from side to side.",
+  "example": "The river is very wide near the ocean."
+ },
+ "widespread": {
+  "ipa": "/ˈwaɪdspred/",
+  "reading": "vaydspred",
+  "meanings": [
+   "yaygın",
+   "geniş çapta"
+  ],
+  "definition": "Existing or happening in many places.",
+  "example": "There is widespread support for the new law."
+ },
+ "willing": {
+  "ipa": "/ˈwɪlɪŋ/",
+  "reading": "viling",
+  "meanings": [
+   "istekli",
+   "gönüllü"
+  ],
+  "definition": "Ready or pleased to do something.",
+  "example": "He is willing to help us clean the house."
+ },
+ "wise": {
+  "ipa": "/waɪz/",
+  "reading": "vayz",
+  "meanings": [
+   "bilge",
+   "akıllı"
+  ],
+  "definition": "Having deep knowledge and good judgment.",
+  "example": "She gave me some wise advice about my future."
+ },
+ "wrong": {
+  "ipa": "/rɒŋ/",
+  "reading": "rong",
+  "meanings": [
+   "yanlış",
+   "hatalı"
+  ],
+  "definition": "Not correct or true.",
+  "example": "It is wrong to lie to your friends."
+ },
+ "young": {
+  "ipa": "/jʌŋ/",
+  "reading": "yang",
+  "meanings": [
+   "genç",
+   "yeni"
+  ],
+  "definition": "Having lived or existed for only a short time.",
+  "example": "The young boy loves to play outside."
+ },
+ "indifferent": {
+  "ipa": "/ɪnˈdɪfrənt/",
+  "reading": "indifrınt",
+  "meanings": [
+   "kayıtsız",
+   "ilgisiz"
+  ],
+  "definition": "Having no particular interest or sympathy.",
+  "example": "He is indifferent to politics and never votes."
+ },
+ "growing": {
+  "ipa": "/ˈɡrəʊɪŋ/",
+  "reading": "groying",
+  "meanings": [
+   "büyüyen",
+   "artan"
+  ],
+  "definition": "Increasing in size, amount, or degree.",
+  "example": "There is a growing need for clean energy."
+ },
+ "increased": {
+  "ipa": "/ɪnˈkriːst/",
+  "reading": "inkriist",
+  "meanings": [
+   "artmış",
+   "yükselmiş"
+  ],
+  "definition": "Greater in size, amount, or degree.",
+  "example": "We face increased pressure to finish the project."
+ },
+ "several": {
+  "ipa": "/ˈsevrəl/",
+  "reading": "sevırıl",
+  "meanings": [
+   "birkaç",
+   "çeşitli"
+  ],
+  "definition": "More than two but not many.",
+  "example": "I have several questions about the plan."
+ },
+ "further": {
+  "ipa": "/ˈfɜːðə(r)/",
+  "reading": "föödı",
+  "meanings": [
+   "daha fazla",
+   "ekstra",
+   "ileriki"
+  ],
+  "definition": "Additional or more advanced.",
+  "example": "Please contact us for further information."
+ },
+ "beneficial": {
+  "ipa": "/ˌbenɪˈfɪʃl/",
+  "reading": "benifişıl",
+  "meanings": [
+   "faydalı",
+   "yararlı"
+  ],
+  "definition": "Improving a situation or having a helpful effect.",
+  "example": "Fresh air is beneficial for your health."
+ },
+ "expected": {
+  "ipa": "/ɪkˈspektɪd/",
+  "reading": "ikspektıd",
+  "meanings": [
+   "beklenen",
+   "umulan"
+  ],
+  "definition": "Regarded as likely to happen.",
+  "example": "The expected arrival time of the train is noon."
+ },
+ "reckless": {
+  "ipa": "/ˈrekləs/",
+  "reading": "reklıs",
+  "meanings": [
+   "vurdumduymaz",
+   "pervasız",
+   "tedbirsiz"
+  ],
+  "definition": "Doing something dangerous without caring about risks.",
+  "example": "His reckless driving caused a bad accident."
+ },
+ "appealing": {
+  "ipa": "/əˈpiːlɪŋ/",
+  "reading": "ıpiiling",
+  "meanings": [
+   "çekici",
+   "cazip"
+  ],
+  "definition": "Attractive or interesting.",
+  "example": "The idea of a beach holiday sounds very appealing."
+ },
+ "controversial": {
+  "ipa": "/ˌkɒntrəˈvɜːʃl/",
+  "reading": "kontrıvörşıl",
+  "meanings": [
+   "tartışmalı",
+   "anlaşmazlığa yol açan"
+  ],
+  "definition": "Causing a lot of disagreement or discussion.",
+  "example": "This is a controversial topic that people often argue about."
+ },
+ "costly": {
+  "ipa": "/ˈkɒstli/",
+  "reading": "kostli",
+  "meanings": [
+   "pahalı",
+   "maliyetli"
+  ],
+  "definition": "Costing a lot of money.",
+  "example": "Buying a new car can be a costly mistake."
+ },
+ "novel": {
+  "ipa": "/ˈnɒvl/",
+  "reading": "novıl",
+  "meanings": [
+   "yeni",
+   "özgün",
+   "sıradışı"
+  ],
+  "definition": "New, original, and not like anything seen before.",
+  "example": "She thought of a novel way to solve the problem."
+ },
+ "harsh": {
+  "ipa": "/hɑːʃ/",
+  "reading": "haaş",
+  "meanings": [
+   "sert",
+   "acımasız",
+   "ağır"
+  ],
+  "definition": "Cruel, severe, or unkind.",
+  "example": "The winter weather can be very harsh in this region."
+ },
+ "innovative": {
+  "ipa": "/ˈɪnəvətɪv/",
+  "reading": "inıvıtiv",
+  "meanings": [
+   "yenilikçi",
+   "inovatif"
+  ],
+  "definition": "Introducing new ideas or methods.",
+  "example": "We need an innovative approach to improve our sales."
+ },
+ "sizeable": {
+  "ipa": "/ˈsaɪzəbl/",
+  "reading": "sayzıbıl",
+  "meanings": [
+   "bayağı büyük",
+   "oldukça büyük"
+  ],
+  "definition": "Fairly large in size or amount.",
+  "example": "The company received a sizeable amount of money from investors."
+ },
+ "constructive": {
+  "ipa": "/kənˈstrʌktɪv/",
+  "reading": "kınstraktiv",
+  "meanings": [
+   "yapıcı",
+   "faydalı"
+  ],
+  "definition": "Useful and intended to help or improve.",
+  "example": "Please give me some constructive feedback on my work."
+ },
+ "destructive": {
+  "ipa": "/dɪˈstrʌktɪv/",
+  "reading": "distraktiv",
+  "meanings": [
+   "yıkıcı",
+   "zarar verici"
+  ],
+  "definition": "Causing severe damage or harm.",
+  "example": "High winds can have a destructive effect on old buildings."
+ },
+ "progressive": {
+  "ipa": "/prəˈɡresɪv/",
+  "reading": "prıgresiv",
+  "meanings": [
+   "ilerici",
+   "ilerleyen"
+  ],
+  "definition": "Favoring social reform or new, liberal ideas.",
+  "example": "The school uses a progressive method to teach young children."
+ },
+ "loyal": {
+  "ipa": "/ˈlɔɪəl/",
+  "reading": "loyıl",
+  "meanings": [
+   "sadık",
+   "vefakar"
+  ],
+  "definition": "Remaining constant in support or friendship.",
+  "example": "A loyal dog will always stay by your side."
+ },
+ "profitable": {
+  "ipa": "/ˈprɒfɪtəbl/",
+  "reading": "profitıbıl",
+  "meanings": [
+   "karlı",
+   "kazançlı"
+  ],
+  "definition": "Making or likely to make money.",
+  "example": "The small business became profitable after its second year."
+ },
+ "favorable": {
+  "ipa": "/ˈfeɪvərəbl/",
+  "reading": "feyvırıbıl",
+  "meanings": [
+   "olumlu",
+   "uygun",
+   "lehine"
+  ],
+  "definition": "Showing approval or giving an advantage.",
+  "example": "The conditions are favorable for starting a new project."
+ },
+ "sophisticated": {
+  "ipa": "/səˈfɪstɪkeɪtɪd/",
+  "reading": "sıfistikeytıd",
+  "meanings": [
+   "gelişmiş",
+   "sofistike",
+   "karmaşık"
+  ],
+  "definition": "Having a lot of experience and knowledge of culture.",
+  "example": "He is a sophisticated man who enjoys classical music."
+ },
+ "variable": {
+  "ipa": "/ˈveəriəbl/",
+  "reading": "veriyıbıl",
+  "meanings": [
+   "değişken",
+   "farklılık gösteren"
+  ],
+  "definition": "Likely to change or vary frequently.",
+  "example": "The weather here is highly variable during the spring."
+ },
+ "fertile": {
+  "ipa": "/ˈfɜːtaɪl/",
+  "reading": "föötayl",
+  "meanings": [
+   "verimli",
+   "bereketli"
+  ],
+  "definition": "Producing many plants or crops easily.",
+  "example": "Farmers love this region because of its fertile soil."
+ },
+ "rising": {
+  "ipa": "/ˈraɪzɪŋ/",
+  "reading": "rayzing",
+  "meanings": [
+   "yükselen",
+   "artan"
+  ],
+  "definition": "Going up or increasing in level or amount.",
+  "example": "High demand is the main cause of rising prices."
+ },
+ "adverse": {
+  "ipa": "/ˈædvɜːs/",
+  "reading": "edvöös",
+  "meanings": [
+   "olumsuz",
+   "kötü",
+   "ters"
+  ],
+  "definition": "Preventing success or development; harmful.",
+  "example": "Bad weather can have an adverse effect on your health."
+ },
+ "excessive": {
+  "ipa": "/ɪkˈsesɪv/",
+  "reading": "iksesiv",
+  "meanings": [
+   "aşırı",
+   "fazla"
+  ],
+  "definition": "More than is necessary, normal, or desirable.",
+  "example": "Please avoid excessive noise during the late evening hours."
+ },
+ "representative": {
+  "ipa": "/ˌreprɪˈzentətɪv/",
+  "reading": "reprizentıtiv",
+  "meanings": [
+   "temsili",
+   "örnek oluşturan"
+  ],
+  "definition": "Typical of a class, group, or body of opinion.",
+  "example": "We need a representative sample of the whole population."
+ },
+ "respective": {
+  "ipa": "/rɪˈspektɪv/",
+  "reading": "rispektiv",
+  "meanings": [
+   "kendi",
+   "sırasıyla olan",
+   "her birinin kendi"
+  ],
+  "definition": "Belonging or relating separately to each of two or more",
+  "example": "They both went back to their respective homes after work."
+ },
+ "influential": {
+  "ipa": "/ˌɪnfluˈenʃl/",
+  "reading": "influênşıl",
+  "meanings": [
+   "etkili",
+   "nüfuzlu",
+   "sözü geçen"
+  ],
+  "definition": "Having a lot of influence on someone or something",
+  "example": "She is a very influential leader in this business industry."
+ },
+ "drastic": {
+  "ipa": "/ˈdræstɪk/",
+  "reading": "dræstik",
+  "meanings": [
+   "radikal",
+   "şiddetli",
+   "ani ve güçlü"
+  ],
+  "definition": "Likely to have a strong or far-reaching effect",
+  "example": "The company had to make a drastic change to survive."
+ },
+ "profound": {
+  "ipa": "/prəˈfaʊnd/",
+  "reading": "prıfaund",
+  "meanings": [
+   "derin",
+   "büyük",
+   "etkileyici"
+  ],
+  "definition": "Very great or intense",
+  "example": "Her speech had a profound impact on the entire audience."
+ },
+ "harmful": {
+  "ipa": "/ˈhɑːmfl/",
+  "reading": "haamfıl",
+  "meanings": [
+   "zararlı",
+   "dokuncalı"
+  ],
+  "definition": "Causing or likely to cause damage or harm",
+  "example": "Smoking is extremely harmful to your health."
+ },
+ "detrimental": {
+  "ipa": "/ˌdetrɪˈmentl/",
+  "reading": "detrimentıl",
+  "meanings": [
+   "zararlı",
+   "hasar veren"
+  ],
+  "definition": "Tending to cause harm or damage",
+  "example": "Lack of sleep can have a detrimental effect on brain."
+ },
+ "worldwide": {
+  "ipa": "/ˌwɜːldˈwaɪd/",
+  "reading": "vörldvayd",
+  "meanings": [
+   "dünya çapında",
+   "evrensel"
+  ],
+  "definition": "Extending or reaching throughout the entire world",
+  "example": "The company has achieved worldwide success with this new app."
+ },
+ "trivial": {
+  "ipa": "/ˈtrɪviəl/",
+  "reading": "triviyıl",
+  "meanings": [
+   "önemsiz",
+   "ufak tefek",
+   "değersiz"
+  ],
+  "definition": "Of little value or importance",
+  "example": "We should not waste time on such a trivial matter."
+ },
+ "developing": {
+  "ipa": "/dɪˈveləpɪŋ/",
+  "reading": "divelıpiŋ",
+  "meanings": [
+   "gelişmekte olan",
+   "gelişen"
+  ],
+  "definition": "Growing or becoming more advanced",
+  "example": "This program aims to support several developing nations."
+ },
+ "developed": {
+  "ipa": "/dɪˈveləpt/",
+  "reading": "divelıpt",
+  "meanings": [
+   "gelişmiş"
+  ],
+  "definition": "Advanced in technologies and economic status",
+  "example": "Most developed countries offer high standards of public healthcare."
+ },
+ "prevalent": {
+  "ipa": "/ˈprevələnt/",
+  "reading": "prevılınt",
+  "meanings": [
+   "yaygın",
+   "hüküm süren"
+  ],
+  "definition": "Widespread or common in a particular area",
+  "example": "Flu is very prevalent during the cold winter months."
+ },
+ "reliable": {
+  "ipa": "/rɪˈlaɪəbl/",
+  "reading": "rilaybıl",
+  "meanings": [
+   "güvenilir",
+   "itimat edilir"
+  ],
+  "definition": "Consistently good in quality or performance",
+  "example": "It is hard to find a truly reliable car nowadays."
+ },
+ "unreliable": {
+  "ipa": "/ˌʌnrɪˈlaɪəbl/",
+  "reading": "anrilaybıl",
+  "meanings": [
+   "güvenilmez",
+   "tutarsız"
+  ],
+  "definition": "Not able to be trusted or depended on",
+  "example": "Public transport in this town can be very unreliable sometimes."
+ },
+ "exceptional": {
+  "ipa": "/ɪkˈsepʃənl/",
+  "reading": "iksepşınıl",
+  "meanings": [
+   "olağanüstü",
+   "fevkalade",
+   "müstesna"
+  ],
+  "definition": "Unusually good or outstanding",
+  "example": "The young musician showed an exceptional talent for playing piano."
+ },
+ "resistant": {
+  "ipa": "/rɪˈzɪstənt/",
+  "reading": "rizistınt",
+  "meanings": [
+   "dirençli",
+   "dayanıklı",
+   "karşı koyan"
+  ],
+  "definition": "Offering resistance to something or unaffected by it",
+  "example": "This new watch is completely resistant to water."
+ },
+ "affordable": {
+  "ipa": "/əˈfɔːdəbl/",
+  "reading": "ıfordıbıl",
+  "meanings": [
+   "uygun fiyatlı",
+   "bütçeye uygun",
+   "alınabilir"
+  ],
+  "definition": "Inexpensive or reasonably priced",
+  "example": "We need to find an affordable apartment near the city."
+ },
+ "underlying": {
+  "ipa": "/ˌʌndəˈlaɪɪŋ/",
+  "reading": "andırlayiŋ",
+  "meanings": [
+   "altında yatan",
+   "temel",
+   "asıl"
+  ],
+  "definition": "Basic, fundamental, or hidden beneath the surface",
+  "example": "Stress was the underlying cause of his constant headaches."
+ },
+ "valid": {
+  "ipa": "/ˈvælɪd/",
+  "reading": "velid",
+  "meanings": [
+   "geçerli",
+   "mantıklı",
+   "yasal"
+  ],
+  "definition": "Legally or logically acceptable",
+  "example": "You must present a valid passport at the airport gate."
+ },
+ "competent": {
+  "ipa": "/ˈkɒmpɪtənt/",
+  "reading": "kompıtınt",
+  "meanings": [
+   "yetkin",
+   "becerikli",
+   "ehil"
+  ],
+  "definition": "Having the necessary ability or skill to do something",
+  "example": "She is a highly competent attorney with years of experience."
+ },
+ "delicate": {
+  "ipa": "/ˈdel.ɪ.kət/",
+  "reading": "delikıt",
+  "meanings": [
+   "hassas",
+   "narin",
+   "kolay kırılan"
+  ],
+  "definition": "Easily broken or damaged.",
+  "example": "The antique vase is very delicate."
+ },
+ "exclusive": {
+  "ipa": "/ɪkˈskluː.sɪv/",
+  "reading": "ikskluusiv",
+  "meanings": [
+   "özel",
+   "seçkin",
+   "hariç tutan"
+  ],
+  "definition": "Only for a limited or select group.",
+  "example": "They belong to an exclusive club in the city."
+ },
+ "extravagant": {
+  "ipa": "/ɪkˈstræv.ə.ɡənt/",
+  "reading": "ikstrevıgınt",
+  "meanings": [
+   "savurgan",
+   "aşırı",
+   "müsrif"
+  ],
+  "definition": "Spending much more money than is necessary.",
+  "example": "She has very extravagant tastes in fashion."
+ },
+ "frustrated": {
+  "ipa": "/frʌsˈtreɪ.tɪd/",
+  "reading": "frastreytid",
+  "meanings": [
+   "bıkkın",
+   "hüsrana uğramış",
+   "engellenmiş"
+  ],
+  "definition": "Feeling annoyed because you cannot achieve goals.",
+  "example": "He felt frustrated because the computer was slow."
+ },
+ "gradual": {
+  "ipa": "/ˈɡrædʒ.u.əl/",
+  "reading": "grecuıl",
+  "meanings": [
+   "kademeli",
+   "yavaş yavaş olan",
+   "aşamalı"
+  ],
+  "definition": "Happening slowly over a period of time.",
+  "example": "We noticed a gradual change in the weather."
+ },
+ "feasible": {
+  "ipa": "/ˈfiː.zə.bəl/",
+  "reading": "fiizıbıl",
+  "meanings": [
+   "mümkün",
+   "yapılabilir",
+   "uygulanabilir"
+  ],
+  "definition": "Possible and likely to be achieved easily.",
+  "example": "His plan is not feasible within our budget."
+ },
+ "notorious": {
+  "ipa": "/nəʊˈtɔː.ri.əs/",
+  "reading": "nıtooriyıs",
+  "meanings": [
+   "adı çıkmış",
+   "kötü şöhretli"
+  ],
+  "definition": "Famous for something bad.",
+  "example": "The area is notorious for high crime rates."
+ },
+ "respectable": {
+  "ipa": "/rɪˈspek.tə.bəl/",
+  "reading": "rispektıbıl",
+  "meanings": [
+   "saygın",
+   "itibarlı",
+   "kabul edilebilir"
+  ],
+  "definition": "Considered socially acceptable and good.",
+  "example": "He comes from a highly respectable family."
+ },
+ "subtle": {
+  "ipa": "/ˈsʌt.əl/",
+  "reading": "satıl",
+  "meanings": [
+   "hafif",
+   "ince",
+   "göze batmayan"
+  ],
+  "definition": "Not loud, bright, noticeable, or obvious.",
+  "example": "There is a subtle difference between the two colors."
+ },
+ "susceptible": {
+  "ipa": "/səˈsep.tə.bəl/",
+  "reading": "sıseptıbıl",
+  "meanings": [
+   "duyarlı",
+   "hassas",
+   "kolay etkilenen"
+  ],
+  "definition": "Easily influenced or harmed by something.",
+  "example": "Young children are very susceptible to infections."
+ },
+ "selective": {
+  "ipa": "/sɪˈlek.tɪv/",
+  "reading": "silektiv",
+  "meanings": [
+   "seçici",
+   "özenli"
+  ],
+  "definition": "Intentional in choosing only certain things.",
+  "example": "The university is highly selective in its admissions."
+ },
+ "arrogant": {
+  "ipa": "/ˈær.ə.ɡənt/",
+  "reading": "erıgınt",
+  "meanings": [
+   "kibirli",
+   "kendini beğenmiş"
+  ],
+  "definition": "Behaving in an unpleasant, proud way.",
+  "example": "He is so arrogant that he never listens."
+ },
+ "decisive": {
+  "ipa": "/dɪˈsaɪ.sɪv/",
+  "reading": "disaysiv",
+  "meanings": [
+   "kararlı",
+   "kesin",
+   "belirleyici"
+  ],
+  "definition": "Strongly affecting how a situation will progress.",
+  "example": "We need a decisive leader to win this election."
+ },
+ "declining": {
+  "ipa": "/dɪˈklaɪ.nɪŋ/",
+  "reading": "diklayniŋ",
+  "meanings": [
+   "azalan",
+   "düşüşte olan",
+   "gerileyen"
+  ],
+  "definition": "Becoming less, smaller, or worse.",
+  "example": "The company faces a declining market for its products."
+ },
+ "disturbing": {
+  "ipa": "/dɪˈstɜː.bɪŋ/",
+  "reading": "distööbiŋ",
+  "meanings": [
+   "rahatsız edici",
+   "endişe verici"
+  ],
+  "definition": "Making you feel worried or upset.",
+  "example": "The news report was deeply disturbing."
+ },
+ "doubtful": {
+  "ipa": "/ˈdaʊt.fəl/",
+  "reading": "davtfıl",
+  "meanings": [
+   "şüpheli",
+   "şüpheci",
+   "belirsiz"
+  ],
+  "definition": "Uncertain or unlikely to happen.",
+  "example": "It is highly doubtful that they will arrive tonight."
+ },
+ "deceptive": {
+  "ipa": "/dɪˈsep.tɪv/",
+  "reading": "diseptiv",
+  "meanings": [
+   "aldatıcı",
+   "yanıltıcı"
+  ],
+  "definition": "Making you believe something that is not true.",
+  "example": "Appearances can often be very deceptive."
+ },
+ "predictable": {
+  "ipa": "/prɪˈdɪk.tə.bəl/",
+  "reading": "pridiktıbıl",
+  "meanings": [
+   "öngörülebilir",
+   "tahmin edilebilir"
+  ],
+  "definition": "Happening in a way that is expected.",
+  "example": "The movie had a very predictable ending."
+ },
+ "ingenious": {
+  "ipa": "/ɪnˈdʒiː.ni.əs/",
+  "reading": "inciiniyıs",
+  "meanings": [
+   "dahice",
+   "yaratıcı",
+   "ustalıkla yapılmış"
+  ],
+  "definition": "Very intelligent, clever, and original.",
+  "example": "She came up with an ingenious solution to the problem."
+ },
+ "infinite": {
+  "ipa": "/ˈɪn.fɪ.nət/",
+  "reading": "infinit",
+  "meanings": [
+   "sonsuz",
+   "sınırsız"
+  ],
+  "definition": "Without limits; extremely large or great.",
+  "example": "The universe seems to have infinite space."
+ },
+ "immense": {
+  "ipa": "/ɪˈmɛns/",
+  "reading": "imens",
+  "meanings": [
+   "devasa",
+   "çok büyük"
+  ],
+  "definition": "Extremely large or great, especially in scale or degree.",
+  "example": "The project required an immense amount of time."
+ },
+ "implicit": {
+  "ipa": "/ɪmˈplɪsɪt/",
+  "reading": "implisit",
+  "meanings": [
+   "örtük",
+   "üstü kapalı"
+  ],
+  "definition": "Suggested though not directly expressed.",
+  "example": "There was an implicit agreement between them."
+ },
+ "explicit": {
+  "ipa": "/ɪkˈsplɪsɪt/",
+  "reading": "eksplisit",
+  "meanings": [
+   "açık",
+   "net"
+  ],
+  "definition": "Stated clearly and in detail, leaving no room for confusion.",
+  "example": "She gave explicit instructions on how to do it."
+ },
+ "noticeable": {
+  "ipa": "/ˈnəʊtɪsəbl/",
+  "reading": "notisabl",
+  "meanings": [
+   "fark edilebilir",
+   "belirgin"
+  ],
+  "definition": "Easily seen or noticed; clear.",
+  "example": "There was a noticeable change in his behavior."
+ },
+ "protective": {
+  "ipa": "/prəˈtɛktɪv/",
+  "reading": "protektiv",
+  "meanings": [
+   "koruyucu"
+  ],
+  "definition": "Intended to protect someone or something.",
+  "example": "Parents are naturally protective of their children."
+ },
+ "preventive": {
+  "ipa": "/prɪˈvɛntɪv/",
+  "reading": "priventiv",
+  "meanings": [
+   "önleyici"
+  ],
+  "definition": "Designed to keep something undesirable from occurring.",
+  "example": "Take preventive measures against the flu."
+ },
+ "notable": {
+  "ipa": "/ˈnəʊtəbl/",
+  "reading": "notabl",
+  "meanings": [
+   "dikkat çekici",
+   "önemli"
+  ],
+  "definition": "Worthy of attention or notice; remarkable.",
+  "example": "He made a notable contribution to science."
+ },
+ "outrageous": {
+  "ipa": "/aʊtˈreɪdʒəs/",
+  "reading": "autreycıs",
+  "meanings": [
+   "rezil",
+   "aşırı",
+   "şok edici"
+  ],
+  "definition": "Shockingly bad or excessive.",
+  "example": "They are charging outrageous prices for tickets."
+ },
+ "proven": {
+  "ipa": "/ˈpruːvn/",
+  "reading": "pruvn",
+  "meanings": [
+   "kanıtlanmış"
+  ],
+  "definition": "Shown to be true or honest.",
+  "example": "This is a proven method for learning languages."
+ },
+ "rigid": {
+  "ipa": "/ˈrɪdʒɪd/",
+  "reading": "rijid",
+  "meanings": [
+   "katı",
+   "sert"
+  ],
+  "definition": "Unable to bend or be forced out of shape.",
+  "example": "The school has a rigid dress code."
+ },
+ "regrettable": {
+  "ipa": "/rɪˈɡrɛtəbl/",
+  "reading": "rigretabl",
+  "meanings": [
+   "üzücü",
+   "esef verici"
+  ],
+  "definition": "Making you feel sad or sorry about something.",
+  "example": "That was a regrettable mistake."
+ },
+ "sustainable": {
+  "ipa": "/səˈsteɪnəbl/",
+  "reading": "susteynabl",
+  "meanings": [
+   "sürdürülebilir"
+  ],
+  "definition": "Able to be maintained at a certain rate or level.",
+  "example": "We need to find sustainable energy sources."
+ },
+ "deficient": {
+  "ipa": "/dɪˈfɪʃnt/",
+  "reading": "difişnt",
+  "meanings": [
+   "eksik",
+   "yetersiz"
+  ],
+  "definition": "Not having enough of a specified quality or ingredient.",
+  "example": "His diet is deficient in Vitamin C."
+ },
+ "affluent": {
+  "ipa": "/ˈæfluənt/",
+  "reading": "afluent",
+  "meanings": [
+   "zengin",
+   "varlıklı"
+  ],
+  "definition": "Having a great deal of money; wealthy.",
+  "example": "They live in an affluent neighborhood."
+ },
+ "abrupt": {
+  "ipa": "/əˈbrʌpt/",
+  "reading": "abrapt",
+  "meanings": [
+   "ani",
+   "beklenmedik"
+  ],
+  "definition": "Sudden and unexpected.",
+  "example": "The train came to an abrupt stop."
+ },
+ "charming": {
+  "ipa": "/ˈtʃɑːmɪŋ/",
+  "reading": "çarming",
+  "meanings": [
+   "çekici",
+   "cazibeli"
+  ],
+  "definition": "Very pleasant or attractive.",
+  "example": "They live in a charming little cottage."
+ },
+ "reputable": {
+  "ipa": "/ˈrɛpjuːtəbl/",
+  "reading": "repyutabl",
+  "meanings": [
+   "saygın",
+   "güvenilir"
+  ],
+  "definition": "Having a good reputation; respected.",
+  "example": "Always buy from a reputable dealer."
+ },
+ "primitive": {
+  "ipa": "/ˈprɪmɪtɪv/",
+  "reading": "primitiv",
+  "meanings": [
+   "ilkel"
+  ],
+  "definition": "Relating to an early stage in historical development.",
+  "example": "Early humans used primitive stone tools."
+ },
+ "hazardous": {
+  "ipa": "/ˈhæz.ə.dəs/",
+  "reading": "hezırdıs",
+  "meanings": [
+   "tehlikeli",
+   "riskli"
+  ],
+  "definition": "Dangerous and likely to cause damage or injury.",
+  "example": "Driving on icy roads can be very hazardous."
+ },
+ "indefinite": {
+  "ipa": "/ɪnˈdef.ɪ.nət/",
+  "reading": "indefinıt",
+  "meanings": [
+   "belirsiz",
+   "sınırsız"
+  ],
+  "definition": "Not clear, fixed, or defined in period.",
+  "example": "The workers went on an indefinite strike."
+ },
+ "recurrent": {
+  "ipa": "/rɪˈkʌr.ənt/",
+  "reading": "rikarınt",
+  "meanings": [
+   "tekrarlayan",
+   "periyodik"
+  ],
+  "definition": "Happening or occurring repeatedly.",
+  "example": "She suffers from recurrent headaches."
+ },
+ "polluted": {
+  "ipa": "/pəˈluː.tɪd/",
+  "reading": "pılutıd",
+  "meanings": [
+   "kirli",
+   "kirlenmiş"
+  ],
+  "definition": "Dirty and contaminated with harmful substances.",
+  "example": "They swim in a polluted river near the factory."
+ },
+ "desirable": {
+  "ipa": "/dɪˈzaɪə.rə.bəl/",
+  "reading": "dizayırıbıl",
+  "meanings": [
+   "çekici",
+   "arzu edilen",
+   "istenen"
+  ],
+  "definition": "Worth having or doing; pleasing.",
+  "example": "Good communication skills are highly desirable for this job."
+ },
+ "irreversible": {
+  "ipa": "/ˌɪr.ɪˈvɜː.sə.bəl/",
+  "reading": "irivörsıbıl",
+  "meanings": [
+   "geri dönülemez",
+   "kalıcı"
+  ],
+  "definition": "Impossible to change back to a previous state.",
+  "example": "Smoking causes irreversible damage to your lungs."
+ },
+ "negligible": {
+  "ipa": "/ˈneɡ.lɪ.dʒə.bəl/",
+  "reading": "neglıcıbıl",
+  "meanings": [
+   "ihmal edilebilir",
+   "önemsiz"
+  ],
+  "definition": "So small or unimportant that it can be ignored.",
+  "example": "The difference in cost between the two items is negligible."
+ },
+ "durable": {
+  "ipa": "/ˈdʒʊər.ə.bəl/",
+  "reading": "cuırıbıl",
+  "meanings": [
+   "dayanıklı",
+   "uzun ömürlü"
+  ],
+  "definition": "Remaining in good condition for a long time.",
+  "example": "These leather boots are very durable and weather-resistant."
+ },
+ "preferable": {
+  "ipa": "/ˈpref.ər.ə.bəl/",
+  "reading": "prefırıbıl",
+  "meanings": [
+   "tercih edilir",
+   "daha iyi"
+  ],
+  "definition": "More desirable or suitable than alternatives.",
+  "example": "Staying at home is preferable to going out in the rain."
+ },
+ "random": {
+  "ipa": "/ˈræn.dəm/",
+  "reading": "rendım",
+  "meanings": [
+   "rastgele",
+   "tesadüfi"
+  ],
+  "definition": "Done or chosen without a plan or pattern.",
+  "example": "The computer generates a random number every second."
+ },
+ "predominant": {
+  "ipa": "/prɪˈdɒm.ɪ.nənt/",
+  "reading": "pridomınınt",
+  "meanings": [
+   "baskın",
+   "en belirgin"
+  ],
+  "definition": "Being most common, frequent, or prominent.",
+  "example": "Green is the predominant color in this landscape painting."
+ },
+ "credible": {
+  "ipa": "/ˈkred.ə.bəl/",
+  "reading": "kredıbıl",
+  "meanings": [
+   "güvenilir",
+   "inanılır"
+  ],
+  "definition": "Able to be believed or trusted.",
+  "example": "The witness provided a credible account of the accident."
+ },
+ "obscure": {
+  "ipa": "/əbˈskjʊə(r)/",
+  "reading": "ıbskyuır",
+  "meanings": [
+   "belirsiz",
+   "anlaşılması güç",
+   "tanınmamış"
+  ],
+  "definition": "Not known to many people or difficult to understand.",
+  "example": "He made a reference to an obscure book from the 19th century."
+ },
+ "inaccessible": {
+  "ipa": "/ˌɪn.əkˈses.ə.bəl/",
+  "reading": "ineksesıbıl",
+  "meanings": [
+   "ulaşılamaz",
+   "erişilmez"
+  ],
+  "definition": "Very difficult or impossible to reach.",
+  "example": "The mountain village is inaccessible during the heavy winter snow."
+ },
+ "relaxed": {
+  "ipa": "/rɪˈlækst/",
+  "reading": "rilekst",
+  "meanings": [
+   "rahat",
+   "gevşemiş",
+   "sakin"
+  ],
+  "definition": "Feeling calm and not worried.",
+  "example": "She felt completely relaxed after her long vacation."
+ },
+ "thorough": {
+  "ipa": "/ˈθʌr.ə/",
+  "reading": "sarı",
+  "meanings": [
+   "ayrıntılı",
+   "titiz",
+   "eksiksiz"
+  ],
+  "definition": "Detailed and careful, leaving nothing unfinished.",
+  "example": "The police conducted a thorough investigation of the crime scene."
+ },
+ "diffident": {
+  "ipa": "/ˈdɪf.ɪ.dənt/",
+  "reading": "difidınt",
+  "meanings": [
+   "çekingen",
+   "utangaç",
+   "kendine güvensiz"
+  ],
+  "definition": "Shy and lacking confidence in one's own ability.",
+  "example": "She was too diffident to express her opinion in public."
+ },
+ "disposable": {
+  "ipa": "/dɪˈspəʊ.zə.bəl/",
+  "reading": "dispouzıbıl",
+  "meanings": [
+   "tek kullanımlık",
+   "atılabilir"
+  ],
+  "definition": "Designed to be thrown away after use.",
+  "example": "Many coffee shops use disposable paper cups."
+ },
+ "any": {
+  "ipa": "/ˈeni/",
+  "reading": "eni",
+  "meanings": [
+   "herhangi bir",
+   "hiç"
+  ],
+  "definition": "One or some of a thing, without specifying which.",
+  "example": "You can choose any book from this shelf."
+ },
+ "longer": {
+  "ipa": "/ˈlɒŋɡə/",
+  "reading": "longı",
+  "meanings": [
+   "daha uzun",
+   "daha uzun süreli"
+  ],
+  "definition": "Measuring more in length or time.",
+  "example": "We need a longer rope to reach the bottom."
+ },
+ "solar": {
+  "ipa": "/ˈsəʊlə/",
+  "reading": "solı",
+  "meanings": [
+   "güneş",
+   "güneşle ilgili"
+  ],
+  "definition": "Relating to or determined by the sun.",
+  "example": "They installed a solar panel on the roof."
+ },
+ "written": {
+  "ipa": "/ˈrɪtn/",
+  "reading": "ritın",
+  "meanings": [
+   "yazılı",
+   "yazılmış"
+  ],
+  "definition": "Expressed in writing rather than speech.",
+  "example": "Please provide a written agreement for this deal."
+ },
+ "commonplace": {
+  "ipa": "/ˈkɒmənpleɪs/",
+  "reading": "kamınpleys",
+  "meanings": [
+   "sıradan",
+   "yaygın",
+   "basmakalıp"
+  ],
+  "definition": "Ordinary or happening very often.",
+  "example": "Mobile phones have become commonplace in daily life."
+ },
+ "increasing": {
+  "ipa": "/ɪnˈkriːsɪŋ/",
+  "reading": "inkriisıng",
+  "meanings": [
+   "artan",
+   "çoğalan"
+  ],
+  "definition": "Becoming greater in size, amount, or degree.",
+  "example": "There is an increasing demand for organic food."
+ },
+ "overwhelming": {
+  "ipa": "/ˌəʊvəˈwelmɪŋ/",
+  "reading": "ovıvelming",
+  "meanings": [
+   "ezici",
+   "baskın",
+   "karşı konulmaz"
+  ],
+  "definition": "Very great in amount or strength.",
+  "example": "The support from the fans was overwhelming."
+ },
+ "indispensable": {
+  "ipa": "/ˌɪndɪˈspensəbl/",
+  "reading": "indispensıbıl",
+  "meanings": [
+   "vazgeçilmez",
+   "asli",
+   "kaçınılmaz"
+  ],
+  "definition": "Absolutely necessary or essential.",
+  "example": "A good dictionary is indispensable for language learning."
+ },
+ "mutual": {
+  "ipa": "/ˈmjuːtʃuəl/",
+  "reading": "müüçuıl",
+  "meanings": [
+   "karşılıklı",
+   "ortak"
+  ],
+  "definition": "Shared by two or more people.",
+  "example": "Their relationship is built on mutual respect."
+ },
+ "glamorous": {
+  "ipa": "/ˈɡlæmərəs/",
+  "reading": "glemırıs",
+  "meanings": [
+   "büyüleyici",
+   "göz alıcı",
+   "havalı"
+  ],
+  "definition": "Attractive, exciting, and full of glamour.",
+  "example": "She lived a glamorous life in Hollywood."
+ },
+ "incalculable": {
+  "ipa": "/ɪnˈkælkjələbl/",
+  "reading": "inkelyulıbıl",
+  "meanings": [
+   "hesaplanamaz",
+   "ölçülemez",
+   "çok büyük"
+  ],
+  "definition": "Too great to be calculated or estimated.",
+  "example": "The damage to the ancient monument is incalculable."
+ },
+ "indicative": {
+  "ipa": "/ɪnˈdɪkətɪv/",
+  "reading": "indıkıtiv",
+  "meanings": [
+   "gösterge",
+   "belirtici",
+   "işaret eden"
+  ],
+  "definition": "Serving as a sign or indication of something.",
+  "example": "High fever is indicative of an infection."
+ },
+ "inhospitable": {
+  "ipa": "/ˌɪnhɒˈspɪtəbl/",
+  "reading": "inhospıtıbıl",
+  "meanings": [
+   "konuksevmez",
+   "elverişsiz",
+   "yaşanmaz"
+  ],
+  "definition": "Harsh and difficult to live in.",
+  "example": "The desert is a very inhospitable place."
+ },
+ "dazzling": {
+  "ipa": "/ˈdæzlɪŋ/",
+  "reading": "dezling",
+  "meanings": [
+   "göz kamaştırıcı",
+   "büyüleyici"
+  ],
+  "definition": "Extremely bright, impressive, or beautiful.",
+  "example": "She wore a dazzling diamond necklace to the party."
+ },
+ "inquisitive": {
+  "ipa": "/ɪnˈkwɪzətɪv/",
+  "reading": "inkvızıtiv",
+  "meanings": [
+   "meraklı",
+   "araştırmacı"
+  ],
+  "definition": "Curious and eager to learn new things.",
+  "example": "The child has an inquisitive mind and asks questions."
+ },
+ "considerate": {
+  "ipa": "/kənˈsɪdərət/",
+  "reading": "kınsidırıt",
+  "meanings": [
+   "düşünceli",
+   "saygılı",
+   "nazik"
+  ],
+  "definition": "Thinking of other people's feelings and needs.",
+  "example": "He is always considerate of his neighbor's peace."
+ },
+ "compatible": {
+  "ipa": "/kəmˈpætəbl/",
+  "reading": "kımpetıbıl",
+  "meanings": [
+   "uyumlu",
+   "geçimli"
+  ],
+  "definition": "Able to exist or work together without problems.",
+  "example": "This software is compatible with your computer system."
+ },
+ "conclusive": {
+  "ipa": "/kənˈkluːsɪv/",
+  "reading": "kınkluüsiv",
+  "meanings": [
+   "kesin",
+   "nihai",
+   "inandırıcı"
+  ],
+  "definition": "Proving something without any doubt.",
+  "example": "They have no conclusive evidence to support this theory."
+ },
+ "diverse": {
+  "ipa": "/daɪˈvɜːs/",
+  "reading": "dayvörs",
+  "meanings": [
+   "çeşitli",
+   "farklı",
+   "türlü"
+  ],
+  "definition": "Showing a great deal of variety.",
+  "example": "The city has a diverse population from many cultures."
+ },
+ "perennial": {
+  "ipa": "/pəˈreniəl/",
+  "reading": "pıreniyıl",
+  "meanings": [
+   "kalıcı",
+   "uzun ömürlü",
+   "yıllık"
+  ],
+  "definition": "Lasting for a long time or active constantly.",
+  "example": "Water shortage is a perennial problem in this region."
+ },
+ "poignant": {
+  "ipa": "/ˈpɔɪnjənt/",
+  "reading": "poynyınt",
+  "meanings": [
+   "dokunaklı",
+   "yürek burkan",
+   "etkileyici"
+  ],
+  "definition": "Evoking a keen sense of sadness or regret.",
+  "example": "The movie has a very poignant ending."
+ },
+ "slippery": {
+  "ipa": "/ˈslɪpəri/",
+  "reading": "slipıri",
+  "meanings": [
+   "kaygan",
+   "güvenilmez"
+  ],
+  "definition": "Difficult to hold or stand on because of wetness.",
+  "example": "The wet road is very slippery today."
+ },
+ "prominent": {
+  "ipa": "/ˈprɒmɪnənt/",
+  "reading": "promınınt",
+  "meanings": [
+   "önde gelen",
+   "belirgin",
+   "göze çarpan"
+  ],
+  "definition": "Important, famous, or easily noticed.",
+  "example": "He played a prominent role in the negotiations."
+ },
+ "self-assertive": {
+  "ipa": "/ˌself.əˈsɜːtɪv/",
+  "reading": "self-asörtiv",
+  "meanings": [
+   "kendinden emin",
+   "iddialı",
+   "kendini kabul ettiren"
+  ],
+  "definition": "Confident and bold in expressing one's opinions.",
+  "example": "She is a very self-assertive person at work."
+ },
+ "stimulating": {
+  "ipa": "/ˈstɪmjuleɪtɪŋ/",
+  "reading": "stimyuleytin",
+  "meanings": [
+   "uyarıcı",
+   "canlandırıcı",
+   "ilgi çekici"
+  ],
+  "definition": "Encouraging new ideas, enthusiasm, or interest.",
+  "example": "We had a highly stimulating conversation last night."
+ },
+ "preservative": {
+  "ipa": "/prɪˈzɜːvətɪv/",
+  "reading": "prizörvıtiv",
+  "meanings": [
+   "koruyucu",
+   "muhafaza edici"
+  ],
+  "definition": "Having the power to keep something safe from decay.",
+  "example": "Salt has a preservative effect on food."
+ },
+ "quantitative": {
+  "ipa": "/ˈkwɒntɪtətɪv/",
+  "reading": "kwontitıtiv",
+  "meanings": [
+   "nicel",
+   "sayısal"
+  ],
+  "definition": "Relating to measuring by the quantity of something.",
+  "example": "We need a quantitative analysis of the data."
+ },
+ "nutritional": {
+  "ipa": "/njuːˈtrɪʃənl/",
+  "reading": "nyutrişınıl",
+  "meanings": [
+   "besinsel",
+   "besleyici"
+  ],
+  "definition": "Relating to the process of providing or obtaining food.",
+  "example": "This food has high nutritional value."
+ },
+ "optional": {
+  "ipa": "/ˈɒpʃənl/",
+  "reading": "opşınıl",
+  "meanings": [
+   "isteğe bağlı",
+   "seçmeli"
+  ],
+  "definition": "Left to one's choice; not mandatory.",
+  "example": "Wearing a tie is optional for this dinner."
+ },
+ "transient": {
+  "ipa": "/ˈtrænziənt/",
+  "reading": "trenziınt",
+  "meanings": [
+   "geçici",
+   "kısa süren"
+  ],
+  "definition": "Lasting only for a short time.",
+  "example": "They suffer from a transient memory loss."
+ },
+ "uncertain": {
+  "ipa": "/uːnˈsɜːtn/",
+  "reading": "ansörtın",
+  "meanings": [
+   "belirsiz",
+   "şüpheli",
+   "kararsız"
+  ],
+  "definition": "Not able to be relied on; not known.",
+  "example": "The future of the project is uncertain right now."
+ },
+ "unobserved": {
+  "ipa": "/ˌʌnəbˈzɜːvd/",
+  "reading": "anıpzörvd",
+  "meanings": [
+   "görülmeyen",
+   "fark edilmeyen",
+   "gözlenmemiş"
+  ],
+  "definition": "Not seen or noticed by anyone.",
+  "example": "The thief tried to remain unobserved in the dark."
+ },
+ "memorable": {
+  "ipa": "/ˈmemərəbl/",
+  "reading": "memırıbıl",
+  "meanings": [
+   "unutulmaz",
+   "akılda kalıcı"
+  ],
+  "definition": "Worth remembering or easily remembered.",
+  "example": "It was a truly memorable evening for everyone."
+ },
+ "faulty": {
+  "ipa": "/ˈfɔːlti/",
+  "reading": "foolti",
+  "meanings": [
+   "kusurlu",
+   "hatalı",
+   "bozuk"
+  ],
+  "definition": "Not working correctly; having a defect.",
+  "example": "The accident was caused by a faulty brake."
+ },
+ "compulsive": {
+  "ipa": "/kəmˈpʌlsɪv/",
+  "reading": "kımpalsiv",
+  "meanings": [
+   "zorunlu",
+   "durdurulamaz",
+   "saplantılı"
+  ],
+  "definition": "Resulting from or relating to an irresistible urge.",
+  "example": "He is a compulsive liar who cannot stop."
+ },
+ "probable": {
+  "ipa": "/ˈprɒbəbl/",
+  "reading": "probıbıl",
+  "meanings": [
+   "olası",
+   "muhtemel"
+  ],
+  "definition": "Likely to happen or be true.",
+  "example": "It is probable that it will rain tomorrow."
+ },
+ "selfish": {
+  "ipa": "/ˈselfɪʃ/",
+  "reading": "selfiş",
+  "meanings": [
+   "bencil",
+   "egoist"
+  ],
+  "definition": "Caring only about oneself and not others.",
+  "example": "Do not be so selfish with your toys."
+ },
+ "proportional": {
+  "ipa": "/prəˈpɔːʃənl/",
+  "reading": "pırpörşınıl",
+  "meanings": [
+   "orantılı",
+   "nisbi"
+  ],
+  "definition": "Corresponding in size or amount to something else.",
+  "example": "Salary increases should be proportional to your effort."
+ },
+ "greater": {
+  "ipa": "/ˈɡreɪtə/",
+  "reading": "greytı",
+  "meanings": [
+   "daha büyük",
+   "daha ulu"
+  ],
+  "definition": "Larger in size, amount, or degree.",
+  "example": "This new plan has a greater chance of success."
+ },
+ "older": {
+  "ipa": "/ˈəʊldə/",
+  "reading": "ouldı",
+  "meanings": [
+   "daha yaşlı",
+   "daha eski"
+  ],
+  "definition": "Having lived or existed for a longer time.",
+  "example": "My older brother lives in London now."
+ },
+ "invisible": {
+  "ipa": "/ɪnˈvɪz.ə.bəl/",
+  "reading": "invizıbıl",
+  "meanings": [
+   "görünmez",
+   "görünmeyen"
+  ],
+  "definition": "Impossible to see with the eyes.",
+  "example": "The tiny germs are invisible to the naked eye."
+ },
+ "irrelevant": {
+  "ipa": "/ɪˈrel.ə.vənt/",
+  "reading": "irelıvınt",
+  "meanings": [
+   "ilgisiz",
+   "alakasız",
+   "konu dışı"
+  ],
+  "definition": "Not related to the subject being discussed.",
+  "example": "That old document is irrelevant to our current discussion."
+ },
+ "lunar": {
+  "ipa": "/ˈluː.nər/",
+  "reading": "luunır",
+  "meanings": [
+   "ay ile ilgili",
+   "aya ait"
+  ],
+  "definition": "Relating to the moon.",
+  "example": "Scientists studied the lunar surface for many years."
+ },
+ "coastal": {
+  "ipa": "/ˈkəʊ.stəl/",
+  "reading": "koustıl",
+  "meanings": [
+   "kıyı",
+   "sahil"
+  ],
+  "definition": "Near or along a coast.",
+  "example": "We love to walk along the coastal path in summer."
+ },
+ "avoidable": {
+  "ipa": "/əˈvɔɪ.də.bəl/",
+  "reading": "ıvoydıbıl",
+  "meanings": [
+   "kaçınılabilir",
+   "önlenebilir"
+  ],
+  "definition": "Possible to prevent or avoid.",
+  "example": "Most of these accidents are avoidable if you are careful."
+ },
+ "irresponsible": {
+  "ipa": "/ˌɪr.ɪˈspɒn.sə.bəl/",
+  "reading": "irısponsıbıl",
+  "meanings": [
+   "sorumsuz",
+   "gamsız"
+  ],
+  "definition": "Not thinking about the results of your actions.",
+  "example": "It is irresponsible to drive without wearing a seatbelt."
+ },
+ "insufficient": {
+  "ipa": "/ˌɪn.səˈfɪʃ.ənt/",
+  "reading": "insıfışınt",
+  "meanings": [
+   "yetersiz",
+   "eksik"
+  ],
+  "definition": "Not enough in amount or quality.",
+  "example": "There is insufficient evidence to support your theory."
+ },
+ "inadequate": {
+  "ipa": "/ɪnˈæd.ɪ.kwət/",
+  "reading": "inedıkvıt",
+  "meanings": [
+   "yetersiz",
+   "noksan"
+  ],
+  "definition": "Not good enough for a particular purpose.",
+  "example": "The current lighting is inadequate for reading books."
+ },
+ "latest": {
+  "ipa": "/ˈleɪ.tɪst/",
+  "reading": "leytıst",
+  "meanings": [
+   "en son",
+   "en yeni"
+  ],
+  "definition": "Most recent or newest.",
+  "example": "Have you heard the latest news about the project?"
+ },
+ "confined": {
+  "ipa": "/kənˈfaɪnd/",
+  "reading": "kınfaynd",
+  "meanings": [
+   "sınırlı",
+   "dar",
+   "kısıtlı"
+  ],
+  "definition": "Kept in a small or limited space.",
+  "example": "It is hard to work in such a confined space."
+ },
+ "continental": {
+  "ipa": "/ˌkɒn.tɪˈnen.təl/",
+  "reading": "kontinentıl",
+  "meanings": [
+   "kıtasal",
+   "kıtaya özgü"
+  ],
+  "definition": "Relating to a continent.",
+  "example": "The region has a dry continental climate."
+ },
+ "varied": {
+  "ipa": "/ˈveə.rid/",
+  "reading": "verid",
+  "meanings": [
+   "çeşitli",
+   "farklı",
+   "değişik"
+  ],
+  "definition": "Having many different types of things.",
+  "example": "The shop offers a varied selection of fresh vegetables."
+ },
+ "allied": {
+  "ipa": "/ˈæl.aɪd/",
+  "reading": "alayd",
+  "meanings": [
+   "müttefik",
+   "birleşik",
+   "akraba"
+  ],
+  "definition": "Joined or associated by a common cause.",
+  "example": "They are allied nations that support each other."
+ },
+ "retired": {
+  "ipa": "/rɪˈtaɪəd/",
+  "reading": "ritayırd",
+  "meanings": [
+   "emekli"
+  ],
+  "definition": "Having stopped working because of old age.",
+  "example": "My retired father spends his days gardening."
+ },
+ "unpredictable": {
+  "ipa": "/ˌʌn.prɪˈdɪk.tə.bəl/",
+  "reading": "anpridiktıbıl",
+  "meanings": [
+   "öngörülemeyen",
+   "tahmin edilemez"
+  ],
+  "definition": "Likely to change suddenly and unexpectedly.",
+  "example": "The local weather is unpredictable during spring."
+ },
+ "hostile": {
+  "ipa": "/ˈhɒs.taɪl/",
+  "reading": "hostayl",
+  "meanings": [
+   "düşmanca",
+   "saldırgan"
+  ],
+  "definition": "Unfriendly and ready to fight or argue.",
+  "example": "The soldiers entered a very hostile environment."
+ },
+ "exposed": {
+  "ipa": "/ɪkˈspəʊzd/",
+  "reading": "ikspouzd",
+  "meanings": [
+   "açık",
+   "korumasız",
+   "maruz kalmış"
+  ],
+  "definition": "Not covered or protected from harm.",
+  "example": "Do not leave the wires exposed to the rain."
+ },
+ "subjective": {
+  "ipa": "/səbˈdʒek.tɪv/",
+  "reading": "sabdjektiv",
+  "meanings": [
+   "öznel",
+   "subjektif"
+  ],
+  "definition": "Based on personal opinions rather than facts.",
+  "example": "Art appreciation is a highly subjective experience."
+ },
+ "unstable": {
+  "ipa": "/ʌnˈsteɪ.bəl/",
+  "reading": "ansteybıl",
+  "meanings": [
+   "istikrarsız",
+   "dengesiz"
+  ],
+  "definition": "Likely to change, move, or fail.",
+  "example": "This old wooden table is very unstable."
+ },
+ "collective": {
+  "ipa": "/kəˈlek.tɪv/",
+  "reading": "kolektiv",
+  "meanings": [
+   "ortak",
+   "kolektif",
+   "toplu"
+  ],
+  "definition": "Shared by every member of a group.",
+  "example": "It is our collective duty to protect the environment."
+ },
+ "inexpensive": {
+  "ipa": "/ˌɪnɪkˈspensɪv/",
+  "reading": "inikspensiv",
+  "meanings": [
+   "ucuz",
+   "hesaplı"
+  ],
+  "definition": "Not costing a lot of money.",
+  "example": "This restaurant offers delicious and inexpensive meals."
+ },
+ "minimal": {
+  "ipa": "/ˈmɪnɪməl/",
+  "reading": "minimıl",
+  "meanings": [
+   "asgari",
+   "en az",
+   "minimal"
+  ],
+  "definition": "Of a minimum amount or quantity.",
+  "example": "He did the work with minimal effort."
+ },
+ "painful": {
+  "ipa": "/ˈpeɪnfl/",
+  "reading": "peynfıl",
+  "meanings": [
+   "acılı",
+   "ağrılı",
+   "zor"
+  ],
+  "definition": "Causing physical or mental pain.",
+  "example": "His knee injury was very painful."
+ },
+ "partial": {
+  "ipa": "/ˈpɑːʃl/",
+  "reading": "parşıl",
+  "meanings": [
+   "kısmi",
+   "yarım"
+  ],
+  "definition": "Not complete or whole.",
+  "example": "The project was only a partial success."
+ },
+ "futile": {
+  "ipa": "/ˈfjuːtaɪl/",
+  "reading": "fyutayl",
+  "meanings": [
+   "nafile",
+   "boşuna",
+   "yararsız"
+  ],
+  "definition": "Useless or producing no useful result.",
+  "example": "It is futile to argue about this matter."
+ },
+ "restricted": {
+  "ipa": "/rɪˈstrɪktɪd/",
+  "reading": "ristriktıd",
+  "meanings": [
+   "sınırlı",
+   "kısıtlı"
+  ],
+  "definition": "Limited in extent, number, or scope.",
+  "example": "Access to the server room is restricted."
+ },
+ "eager": {
+  "ipa": "/ˈiːɡə/",
+  "reading": "iigır",
+  "meanings": [
+   "istekli",
+   "hevesli"
+  ],
+  "definition": "Strongly wanting to do or have something.",
+  "example": "The eager students raised their hands."
+ },
+ "astonished": {
+  "ipa": "/əˈstɒnɪʃt/",
+  "reading": "ıstanişt",
+  "meanings": [
+   "şaşırmış",
+   "hayrete düşmüş"
+  ],
+  "definition": "Extremely surprised or amazed.",
+  "example": "She was astonished by his sudden decision."
+ },
+ "educated": {
+  "ipa": "/ˈedʒukeɪtɪd/",
+  "reading": "ecukeytıd",
+  "meanings": [
+   "eğitimli",
+   "okumuş"
+  ],
+  "definition": "Having a good education.",
+  "example": "He is an educated man with two degrees."
+ },
+ "countless": {
+  "ipa": "/ˈkaʊntləs/",
+  "reading": "kauntlıs",
+  "meanings": [
+   "sayısız",
+   "çok fazla"
+  ],
+  "definition": "Too many to be counted.",
+  "example": "I have visited this park countless times."
+ },
+ "impractical": {
+  "ipa": "/ɪmˈpræktɪkl/",
+  "reading": "imprektikıl",
+  "meanings": [
+   "pratik olmayan",
+   "kullanışsız"
+  ],
+  "definition": "Not sensible or realistic in practice.",
+  "example": "High heels are highly impractical for hiking."
+ },
+ "obliged": {
+  "ipa": "/əˈblaɪdʒd/",
+  "reading": "ıblayct",
+  "meanings": [
+   "zorunda",
+   "minnettar"
+  ],
+  "definition": "Forced to do something by law or duty.",
+  "example": "I felt obliged to help my neighbor."
+ },
+ "persistent": {
+  "ipa": "/pəˈsɪstənt/",
+  "reading": "pırsistınt",
+  "meanings": [
+   "kararlı",
+   "inatçı",
+   "sürekli"
+  ],
+  "definition": "Continuing firmly in spite of difficulty.",
+  "example": "Her persistent efforts finally led to success."
+ },
+ "changeable": {
+  "ipa": "/ˈtʃeɪndʒəbl/",
+  "reading": "çeynçıbıl",
+  "meanings": [
+   "değişken",
+   "kararsız"
+  ],
+  "definition": "Likely to change frequently or suddenly.",
+  "example": "The weather is very changeable in spring."
+ },
+ "defensive": {
+  "ipa": "/dɪˈfensɪv/",
+  "reading": "difensiv",
+  "meanings": [
+   "savunmacı",
+   "savunmaya yönelik"
+  ],
+  "definition": "Used or intended to defend or protect.",
+  "example": "She adopted a defensive attitude during the meeting."
+ },
+ "endemic": {
+  "ipa": "/enˈdemɪk/",
+  "reading": "endemik",
+  "meanings": [
+   "bölgeye özgü",
+   "endemik"
+  ],
+  "definition": "Regularly found in a particular place.",
+  "example": "This rare flower is endemic to the region."
+ },
+ "fluent": {
+  "ipa": "/ˈfluːənt/",
+  "reading": "fluınt",
+  "meanings": [
+   "akıcı"
+  ],
+  "definition": "Able to speak or write a language easily.",
+  "example": "She is fluent in three different languages."
+ },
+ "productive": {
+  "ipa": "/prəˈdʌktɪv/",
+  "reading": "prıdaktiv",
+  "meanings": [
+   "verimli",
+   "üretken"
+  ],
+  "definition": "Producing or able to produce large amounts.",
+  "example": "We had a highly productive meeting today."
+ },
+ "qualified": {
+  "ipa": "/ˈkwɒlɪfaɪd/",
+  "reading": "kwolifayd",
+  "meanings": [
+   "nitelikli",
+   "vasıflı",
+   "ehil"
+  ],
+  "definition": "Officially recognized as being trained to do something.",
+  "example": "She is a highly qualified teacher with experience."
+ },
+ "informative": {
+  "ipa": "/ɪnˈfɔːmətɪv/",
+  "reading": "informıtiv",
+  "meanings": [
+   "bilgilendirici",
+   "faydalı"
+  ],
+  "definition": "Providing useful or interesting information.",
+  "example": "The documentary was very informative and interesting."
+ },
+ "tedious": {
+  "ipa": "/ˈtiːdiəs/",
+  "reading": "tiidiyıs",
+  "meanings": [
+   "sıkıcı",
+   "bıktırıcı",
+   "yorucu"
+  ],
+  "definition": "Boring and continuing for a long time.",
+  "example": "The work was tedious and took many hours."
+ },
+ "extinct": {
+  "ipa": "/ɪkˈstɪŋkt/",
+  "reading": "ekstinkt",
+  "meanings": [
+   "nesli tükenmiş",
+   "sönmüş"
+  ],
+  "definition": "No longer existing or living.",
+  "example": "The dodo is an extinct bird."
+ },
+ "conspicuous": {
+  "ipa": "/kənˈspɪkjuəs/",
+  "reading": "kınspikyues",
+  "meanings": [
+   "göze çarpan",
+   "belirgin",
+   "göz alıcı"
+  ],
+  "definition": "Easy to see or notice.",
+  "example": "He stood out in a conspicuous red coat."
+ },
+ "inefficient": {
+  "ipa": "/ˌɪnɪˈfɪʃnt/",
+  "reading": "inifişınt",
+  "meanings": [
+   "verimsiz",
+   "etkisiz",
+   "beceriksiz"
+  ],
+  "definition": "Not using time, money, or energy well.",
+  "example": "An inefficient heating system costs a lot of money."
+ },
+ "liable": {
+  "ipa": "/ˈlaɪəbl/",
+  "reading": "layıbıl",
+  "meanings": [
+   "sorumlu",
+   "eğilimli",
+   "yükümlü"
+  ],
+  "definition": "Legally responsible for something.",
+  "example": "You will be liable for any damage caused."
+ },
+ "moderate": {
+  "ipa": "/ˈmɒdərət/",
+  "reading": "madırit",
+  "meanings": [
+   "ılımlı",
+   "orta",
+   "makul"
+  ],
+  "definition": "Neither very good nor very bad; medium.",
+  "example": "He has a moderate amount of experience."
+ },
+ "relentless": {
+  "ipa": "/rɪˈlentləs/",
+  "reading": "rilentlıs",
+  "meanings": [
+   "amansız",
+   "aralıksız",
+   "acımasız"
+  ],
+  "definition": "Continuing without stopping or getting weaker.",
+  "example": "The pressure to succeed was relentless."
+ },
+ "uneasy": {
+  "ipa": "/ʌnˈiːzi/",
+  "reading": "aniizi",
+  "meanings": [
+   "huzursuz",
+   "tedirgin",
+   "endişeli"
+  ],
+  "definition": "Feeling worried, anxious, or uncomfortable.",
+  "example": "She felt uneasy about leaving the children alone."
+ },
+ "versatile": {
+  "ipa": "/ˈvɜːsətaɪl/",
+  "reading": "vörsıtayl",
+  "meanings": [
+   "çok yönlü",
+   "hamarat"
+  ],
+  "definition": "Able to do many different things.",
+  "example": "He is a versatile actor who can play any role."
+ },
+ "abusive": {
+  "ipa": "/əˈbjuːsɪv/",
+  "reading": "ebyuziv",
+  "meanings": [
+   "aşağılayıcı",
+   "kötü davranan",
+   "şiddet içeren"
+  ],
+  "definition": "Using rude, cruel, or violent language or behavior.",
+  "example": "He became abusive when they refused to help him."
+ },
+ "relative": {
+  "ipa": "/ˈrelətɪv/",
+  "reading": "relıtiv",
+  "meanings": [
+   "göreceli",
+   "göreli",
+   "nispi"
+  ],
+  "definition": "True only when compared to something else.",
+  "example": "The relative merits of the two plans are clear."
+ },
+ "intensive": {
+  "ipa": "/ɪnˈtensɪv/",
+  "reading": "intensiv",
+  "meanings": [
+   "yoğun",
+   "şiddetli"
+  ],
+  "definition": "Involving a lot of activity, effort, or detail.",
+  "example": "She took an intensive language course last summer."
+ },
+ "continual": {
+  "ipa": "/kənˈtɪnjuəl/",
+  "reading": "kıntinyuıl",
+  "meanings": [
+   "sürekli",
+   "aralıksız",
+   "ardı arkası kesilmeyen"
+  ],
+  "definition": "Happening repeatedly over a period of time.",
+  "example": "The project was delayed by continual arguments."
+ },
+ "deliberate": {
+  "ipa": "/dɪˈlɪbərət/",
+  "reading": "dilibırıt",
+  "meanings": [
+   "kasıtlı",
+   "bilerek yapılan",
+   "taammüden"
+  ],
+  "definition": "Done on purpose rather than by accident.",
+  "example": "This was a deliberate attempt to deceive us."
+ },
+ "dissatisfied": {
+  "ipa": "/dɪˈsætɪsfaɪd/",
+  "reading": "disetısfayd",
+  "meanings": [
+   "memnuniyetsiz",
+   "hoşnutsuz",
+   "tatmin olmamış"
+  ],
+  "definition": "Not happy or satisfied with something.",
+  "example": "If you are dissatisfied with the service, please complain."
+ },
+ "expansive": {
+  "ipa": "/ɪkˈspænsɪv/",
+  "reading": "ekspensiv",
+  "meanings": [
+   "geniş",
+   "kapsamlı",
+   "genişleyen"
+  ],
+  "definition": "Covering a large area or of a wide range.",
+  "example": "We enjoyed the expansive view from the mountain top."
+ },
+ "challenging": {
+  "ipa": "/ˈtʃælɪndʒɪŋ/",
+  "reading": "çelincing",
+  "meanings": [
+   "zorlu",
+   "zor ama keyifli",
+   "meydan okuyan"
+  ],
+  "definition": "Difficult in an interesting or enjoyable way.",
+  "example": "This is a challenging project for our team."
+ },
+ "provisional": {
+  "ipa": "/prəˈvɪʒənl/",
+  "reading": "provijınıl",
+  "meanings": [
+   "geçici",
+   "muvakkat"
+  ],
+  "definition": "Accepted for the present time but possibly changing later.",
+  "example": "We made a provisional booking for the hotel."
+ },
+ "secular": {
+  "ipa": "/ˈsekjələ(r)/",
+  "reading": "sekyulır",
+  "meanings": [
+   "laik",
+   "dünyevi",
+   "dini olmayan"
+  ],
+  "definition": "Not connected with spiritual or religious matters.",
+  "example": "The country has a strictly secular government."
+ },
+ "second": {
+  "ipa": "/ˈsekənd/",
+  "reading": "sekınd",
+  "meanings": [
+   "ikinci",
+   "yardımcı"
+  ],
+  "definition": "Coming next after the first in order or time.",
+  "example": "This is the second time I have visited Paris."
+ },
+ "unsafe": {
+  "ipa": "/ʌnˈseɪf/",
+  "reading": "'anseyf'",
+  "meanings": [
+   "güvensiz",
+   "tehlikeli"
+  ],
+  "definition": "Not safe; dangerous.",
+  "example": "The old bridge is unsafe for heavy vehicles."
+ },
+ "confidential": {
+  "ipa": "/ˌkɒnfɪˈdenʃl/",
+  "reading": "'konfidenşıl'",
+  "meanings": [
+   "gizli",
+   "özel"
+  ],
+  "definition": "Intended to be kept secret.",
+  "example": "This letter contains highly confidential information."
+ },
+ "consecutive": {
+  "ipa": "/kənˈsekjətɪv/",
+  "reading": "'kınsekyutiv'",
+  "meanings": [
+   "ardışık",
+   "arka arkaya gelen"
+  ],
+  "definition": "Following continuously in unbroken sequence.",
+  "example": "She worked for three consecutive days without a break."
+ },
+ "discredited": {
+  "ipa": "/dɪsˈkredɪtɪd/",
+  "reading": "'diskreditid'",
+  "meanings": [
+   "itibarı sarsılmış",
+   "güvenilmez"
+  ],
+  "definition": "No longer trusted or believed.",
+  "example": "The scientist used a discredited theory to support his argument."
+ },
+ "legendary": {
+  "ipa": "/ˈledʒəndri/",
+  "reading": "'lecındıri'",
+  "meanings": [
+   "efsanevi",
+   "ünlü"
+  ],
+  "definition": "Very famous and talked about by many people.",
+  "example": "He is a legendary figure in the history of music."
+ },
+ "forceful": {
+  "ipa": "/ˈfɔːsfl/",
+  "reading": "'foosfıl'",
+  "meanings": [
+   "etkili",
+   "güçlü",
+   "zorlayıcı"
+  ],
+  "definition": "Strong, powerful, and assertive.",
+  "example": "She made a forceful argument during the debate."
+ },
+ "irregular": {
+  "ipa": "/ɪˈreɡjələ/",
+  "reading": "'iregyılır'",
+  "meanings": [
+   "düzensiz",
+   "kuralsız"
+  ],
+  "definition": "Not even or regular in shape or pattern.",
+  "example": "The patient had an irregular heartbeat."
+ },
+ "reversible": {
+  "ipa": "/rɪˈvɜːsəbl/",
+  "reading": "'rivöosıbıl'",
+  "meanings": [
+   "tersine çevrilebilir",
+   "çift taraflı"
+  ],
+  "definition": "Capable of being reversed or turned back.",
+  "example": "This stylish jacket is completely reversible."
+ }
 }
