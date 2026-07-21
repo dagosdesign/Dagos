@@ -546,6 +546,11 @@ function Highlighted({ text, word }: { text: string; word: string }) {
 interface StoryContent { title: string; story: string; }
 interface DialogueContent { title: string; lines: { speaker: string; text: string }[]; }
 
+// After a failed generation attempt, skip straight to local fallbacks for a
+// while instead of making every subsequent round wait out its own timeout.
+let aiFailureAt = 0;
+const AI_COOLDOWN_MS = 60_000;
+
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
   const cacheKey = `lex_pc_${kind}_${card.id}`;
   try {
@@ -553,15 +558,31 @@ async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashca
     if (cached) return JSON.parse(cached) as T;
   } catch { /* ignore */ }
 
-  const res = await fetch('/api/practice-content', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.message || 'İçerik üretilemedi.');
-  try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch { /* ignore */ }
-  return data as T;
+  if (Date.now() - aiFailureAt < AI_COOLDOWN_MS) {
+    throw new Error('AI content temporarily unavailable (cooldown).');
+  }
+
+  // Hard 12s cap so the loading screen can never hang; callers fall back to local content.
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 12000);
+  try {
+    const res = await fetch('/api/practice-content', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning }),
+      signal: controller.signal,
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'İçerik üretilemedi.');
+    try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch { /* ignore */ }
+    aiFailureAt = 0;
+    return data as T;
+  } catch (err) {
+    aiFailureAt = Date.now();
+    throw err;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 // Offline/no-key fallbacks so the modes are never dead.

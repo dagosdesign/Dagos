@@ -51,10 +51,15 @@ async function generateResilient(
       return await ai.models.generateContent({ model, ...params });
     } catch (err: any) {
       lastErr = err;
-      // Retryable: overloaded (503), gated model (404), or network-level failure (no HTTP status).
-      const retryable = err?.status === 503 || err?.status === 404 || err?.status === undefined;
-      if (!retryable) throw err;
-      console.warn(`Model ${model} failed (${err?.status ?? "network"}), trying next fallback...`);
+      // Network-level failure (no HTTP status): the host itself is unreachable,
+      // so trying other models would just stack more connect timeouts. Fail fast.
+      if (err?.status === undefined) {
+        console.warn(`Network failure reaching Gemini — failing fast.`);
+        throw err;
+      }
+      // Retryable per-model: overloaded (503) or gated for this account (404).
+      if (err.status !== 503 && err.status !== 404) throw err;
+      console.warn(`Model ${model} failed (${err.status}), trying next fallback...`);
     }
   }
   throw lastErr;
