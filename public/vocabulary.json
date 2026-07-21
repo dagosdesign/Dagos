@@ -90,6 +90,10 @@
   "confident": { "ipa": "/ˈkɒnfɪdənt/", "reading": "konfidınt", "meanings": ["özgüvenli", "emin"], "definition": "Feeling sure of yourself.", "example": "He is confident in his abilities." },
   "considerable": { "ipa": "/kənˈsɪdərəbl/", "reading": "kınsidırıbıl", "meanings": ["hatırı sayılır", "önemli"], "definition": "Large in amount or degree.", "example": "He earned a considerable amount of money." },
   "consistent": { "ipa": "/kənˈsɪstənt/", "reading": "kınsistınt", "meanings": ["tutarlı", "istikrarlı"], "definition": "Always behaving or happening in the same way.", "example": "Her work is always consistent." },
+  "constant": { "ipa": "/ˈkɒnstənt/", "reading": "konstınt", "meanings": ["sabit", "sürekli"], "definition": "Happening all the time without stopping.", "example": "The machine makes a constant noise." },
+  "contemporary": { "ipa": "/kənˈtempərəri/", "reading": "kıntempırıri", "meanings": ["çağdaş", "modern"], "definition": "Belonging to the present time.", "example": "We visited a contemporary art museum." },
+  "conventional": { "ipa": "/kənˈvenʃənl/", "reading": "kınvenşınıl", "meanings": ["geleneksel", "alışılmış"], "definition": "Following what is traditional or usual.", "example": "He wore a conventional dark suit." },
+  "creative": { "ipa": "/kriˈeɪtɪv/", "reading": "krieytiv", "meanings": ["yaratıcı"], "definition": "Good at producing new and original ideas or things.", "example": "She has very creative ideas." },
 
   "quickly": { "ipa": "/ˈkwɪkli/", "reading": "kuikli", "meanings": ["hızlıca", "çabucak"], "definition": "At a fast speed; in a short time.", "example": "She quickly finished her homework before dinner." },
   "slowly": { "ipa": "/ˈsləʊli/", "reading": "slouli", "meanings": ["yavaşça"], "definition": "At a slow speed; not fast.", "example": "The old man walked slowly across the street." },

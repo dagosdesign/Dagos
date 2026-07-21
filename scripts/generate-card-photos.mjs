@@ -7,7 +7,10 @@ import path from 'path';
 
 dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
 
+// Usage: node scripts/generate-card-photos.mjs <out_dir> [scenes.json]
+// scenes.json: { "word": "scene description", ... } — falls back to built-in SCENES.
 const OUT_DIR = process.argv[2];
+const SCENES_FILE = process.argv[3];
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const ai = new GoogleGenAI({
@@ -70,8 +73,14 @@ async function generateOne(word, scene) {
   return false;
 }
 
+const scenes = SCENES_FILE ? JSON.parse(fs.readFileSync(SCENES_FILE, 'utf8')) : SCENES;
 let ok = 0;
-for (const [word, scene] of Object.entries(SCENES)) {
+for (const [word, scene] of Object.entries(scenes)) {
+  if (fs.existsSync(path.join(OUT_DIR, `${word}.png`)) || fs.existsSync(path.join(OUT_DIR, `${word}.jpeg`))) {
+    console.log(`SKIP ${word} (already generated)`);
+    ok++;
+    continue;
+  }
   if (await generateOne(word, scene)) ok++;
 }
-console.log(`Done: ${ok}/${Object.keys(SCENES).length}`);
+console.log(`Done: ${ok}/${Object.keys(scenes).length}`);

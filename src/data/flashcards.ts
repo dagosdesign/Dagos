@@ -260,6 +260,11 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-adj51', word: 'confident', partOfSpeech: 'adjective', turkishMeaning: 'özgüvenli, emin', exampleSentence: 'He is confident in his abilities.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
   { id: 'fc-adj52', word: 'considerable', partOfSpeech: 'adjective', turkishMeaning: 'hatırı sayılır, önemli', exampleSentence: 'He earned a considerable amount of money.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
   { id: 'fc-adj53', word: 'consistent', partOfSpeech: 'adjective', turkishMeaning: 'tutarlı, istikrarlı', exampleSentence: 'Her work is always consistent.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj54', word: 'constant', partOfSpeech: 'adjective', turkishMeaning: 'sabit, sürekli', exampleSentence: 'The machine makes a constant noise.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj55', word: 'contemporary', partOfSpeech: 'adjective', turkishMeaning: 'çağdaş, modern', exampleSentence: 'We visited a contemporary art museum.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj56', word: 'convenient', partOfSpeech: 'adjective', turkishMeaning: 'uygun, pratik', exampleSentence: 'The new supermarket is very convenient.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj57', word: 'conventional', partOfSpeech: 'adjective', turkishMeaning: 'geleneksel, alışılmış', exampleSentence: 'He wore a conventional dark suit.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
+  { id: 'fc-adj58', word: 'creative', partOfSpeech: 'adjective', turkishMeaning: 'yaratıcı', exampleSentence: 'She has very creative ideas.', category: FLASHCARD_CATEGORIES.ADJECTIVES },
 
   // Adverbs
   { id: 'fc-adv1', word: 'quickly', partOfSpeech: 'adverb', turkishMeaning: 'hızlıca, çabucak', exampleSentence: 'She quickly finished her homework before dinner.', category: FLASHCARD_CATEGORIES.ADVERBS },

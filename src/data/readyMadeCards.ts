@@ -10,6 +10,7 @@ export const READY_MADE_CARD_WORDS = [
   'cheap', 'chemical', 'clear', 'close', 'cold',
   'comfortable', 'common', 'competitive', 'complex', 'complicated',
   'comprehensive', 'concerned', 'confident', 'considerable', 'consistent',
+  'constant', 'contemporary', 'convenient', 'conventional', 'creative',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
