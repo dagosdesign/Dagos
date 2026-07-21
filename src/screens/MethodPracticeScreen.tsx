@@ -551,14 +551,20 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
         </div>
       )}
 
-      <div className="flex justify-between items-center">
-        <p className="text-[11px] font-mono text-white/30">Görseli ve kelimeyi birlikte hatırla</p>
+      <div className="flex justify-between items-center gap-3">
+        <button
+          onClick={() => setIdx(i => Math.max(0, i - 1))}
+          disabled={idx === 0}
+          className="flex-1 border border-[#e3b553]/40 text-[#e3b553] rounded-xl py-3 text-xs font-bold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#e3b553]/10 transition-colors"
+        >
+          Önceki
+        </button>
         <button
           onClick={() => {
             if (idx + 1 < cards.length) setIdx(i => i + 1);
             else setFinished(true);
           }}
-          className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer"
+          className="flex-1 bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 text-xs font-bold cursor-pointer"
         >
           {idx + 1 < cards.length ? 'Sonraki' : 'Bitir'}
         </button>
