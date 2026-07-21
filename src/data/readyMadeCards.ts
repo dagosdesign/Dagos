@@ -21,6 +21,16 @@ export const READY_MADE_CARD_WORDS = [
   'expensive', 'experimental', 'extensive', 'extreme', 'false',
   'familiar', 'famous', 'far', 'fast', 'few',
   'financial', 'first', 'following', 'foreign',
+  'former', 'free', 'frequent', 'full', 'fundamental',
+  'general', 'generous', 'genuine', 'global', 'good',
+  'grateful', 'great', 'half', 'hard', 'healthy',
+  'heavy', 'high', 'historical', 'huge', 'ill',
+  'illegal', 'important', 'impossible', 'impressive', 'independent',
+  'individual', 'inevitable', 'initial', 'innocent', 'intellectual',
+  'interested', 'interesting', 'internal', 'international', 'involved',
+  'keen', 'kind', 'known', 'large', 'last',
+  'late', 'left', 'light', 'likely', 'limited',
+  'literary', 'little', 'local', 'lonely', 'long',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
