@@ -32,6 +32,34 @@ function getAIClient(): GoogleGenAI {
   return aiClient;
 }
 
+// Tries the primary model first; on 503 (overloaded) or 404 (gated for this
+// account) walks down the fallback chain. All verified available for this key.
+const GEMINI_MODELS = [
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite",
+  "gemini-3.6-flash",
+  "gemini-2.0-flash",
+];
+
+async function generateResilient(
+  ai: GoogleGenAI,
+  params: { contents: any; config?: any }
+) {
+  let lastErr: any;
+  for (const model of GEMINI_MODELS) {
+    try {
+      return await ai.models.generateContent({ model, ...params });
+    } catch (err: any) {
+      lastErr = err;
+      // Retryable: overloaded (503), gated model (404), or network-level failure (no HTTP status).
+      const retryable = err?.status === 503 || err?.status === 404 || err?.status === undefined;
+      if (!retryable) throw err;
+      console.warn(`Model ${model} failed (${err?.status ?? "network"}), trying next fallback...`);
+    }
+  }
+  throw lastErr;
+}
+
 // Endpoint to check if AI is configured
 app.get("/api/config", (req, res) => {
   const isConfigured = !!process.env.GEMINI_API_KEY;
@@ -65,8 +93,7 @@ app.post("/api/chat", async (req, res) => {
       parts: [{ text: m.content }],
     }));
 
-    const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+    const response = await generateResilient(ai, {
       contents,
       config: { systemInstruction },
     });
@@ -88,6 +115,98 @@ app.post("/api/chat", async (req, res) => {
     res.status(500).json({
       error: "chat_failed",
       message: "Could not reach the AI Coach right now. Please try again.",
+      details: err.message,
+    });
+  }
+});
+
+// Generates practice content for a target word: a short story or a two-person dialogue.
+app.post("/api/practice-content", async (req, res) => {
+  const { kind, word, meaning } = req.body as {
+    kind?: "story" | "dialogue";
+    word?: string;
+    meaning?: string;
+  };
+
+  if ((kind !== "story" && kind !== "dialogue") || !word || typeof word !== "string") {
+    return res.status(400).json({ error: "Expected { kind: 'story'|'dialogue', word, meaning? }." });
+  }
+
+  try {
+    const ai = getAIClient();
+
+    const systemInstruction =
+      "You are an English-learning content writer for Turkish students (A2-B1 level). " +
+      "Use simple, natural English. Output must match the JSON schema exactly.";
+
+    const prompt =
+      kind === "story"
+        ? `Write an engaging short story in simple English (130-170 words, 2-3 paragraphs separated by \\n\\n) ` +
+          `for a vocabulary learner. The story must naturally use the target word/phrase "${word}"` +
+          (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+          ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
+          `Give the story a short catchy title (3-6 words). Do not translate the story.`
+        : `Write a natural two-person dialogue in simple English between two friends, A and B ` +
+          `(8-10 short lines, alternating speakers, starting with A). The dialogue must naturally use ` +
+          `the target word/phrase "${word}"` +
+          (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+          ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
+          `Give it a short title (2-5 words) describing the situation. Do not translate.`;
+
+    const responseSchema =
+      kind === "story"
+        ? {
+            type: Type.OBJECT,
+            properties: {
+              title: { type: Type.STRING, description: "Short catchy story title." },
+              story: { type: Type.STRING, description: "The story text, paragraphs separated by \\n\\n." },
+            },
+            required: ["title", "story"],
+          }
+        : {
+            type: Type.OBJECT,
+            properties: {
+              title: { type: Type.STRING, description: "Short situation title." },
+              lines: {
+                type: Type.ARRAY,
+                description: "Dialogue lines in order, alternating speakers starting with A.",
+                items: {
+                  type: Type.OBJECT,
+                  properties: {
+                    speaker: { type: Type.STRING, description: "Either 'A' or 'B'." },
+                    text: { type: Type.STRING, description: "What this speaker says." },
+                  },
+                  required: ["speaker", "text"],
+                },
+              },
+            },
+            required: ["title", "lines"],
+          };
+
+    const response = await generateResilient(ai, {
+      contents: prompt,
+      config: {
+        systemInstruction,
+        responseMimeType: "application/json",
+        responseSchema,
+      },
+    });
+
+    const text = response.text;
+    if (!text) throw new Error("Empty response received from the Gemini model.");
+
+    res.json(JSON.parse(text.trim()));
+  } catch (err: any) {
+    console.error("Gemini practice-content error:", err);
+    if (err.message && err.message.includes("GEMINI_API_KEY")) {
+      return res.status(403).json({
+        error: "api_key_missing",
+        message: "Gemini API anahtarı tanımlı değil.",
+      });
+    }
+    res.status(500).json({
+      error: "generation_failed",
+      message: "İçerik üretilemedi. Lütfen tekrar dene.",
       details: err.message,
     });
   }
@@ -118,8 +237,7 @@ app.post("/api/generate-quiz", async (req, res) => {
       `including its meaning, 2 to 3 practical example sentences in English, 3 to 5 synonyms, and 3 to 5 antonyms.\n\n` +
       `Ensure the correctIndex points precisely to the correct definition option. All words and definitions must be in English, except optionsTr which must be in Turkish.`;
 
-    const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+    const response = await generateResilient(ai, {
       contents: prompt,
       config: {
         systemInstruction,

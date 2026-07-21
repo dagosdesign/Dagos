@@ -9,10 +9,10 @@ export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Sto
 const METHOD_TITLES: Record<PracticeMethod, { title: string; hint: string }> = {
   Listening: { title: 'Listening', hint: 'Kelimeyi dinle, doğru Türkçe anlamı seç.' },
   Writing: { title: 'Writing', hint: 'Türkçe anlamı gör, İngilizce kelimeyi yaz.' },
-  Visual: { title: 'Visual Learning', hint: 'Kartlara dokun, görselle kelimeyi eşleştir.' },
+  Visual: { title: 'Visual Learning', hint: 'Kelimeyi görselle birlikte hafızana kazı.' },
   Games: { title: 'Games', hint: 'Kelimeleri Türkçe anlamlarıyla eşleştir.' },
-  Stories: { title: 'Stories', hint: 'Cümledeki boşluğa uygun kelimeyi seç.' },
-  Conversations: { title: 'Conversations', hint: 'Konuşmadaki boşluğu doğru kelimeyle tamamla.' },
+  Stories: { title: 'Stories', hint: 'Hikayeyi oku, sarı kelimelere dikkat et.' },
+  Conversations: { title: 'Conversations', hint: 'Diyaloğu oku, hedef kelimeyi yakala.' },
 };
 
 function shuffle<T>(arr: T[]): T[] {
@@ -25,14 +25,6 @@ function sample<T>(arr: T[], n: number): T[] {
 
 function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-function blankSentence(card: Flashcard): string {
-  return card.exampleSentence.replace(new RegExp(escapeRegExp(card.word), 'i'), '_____');
-}
-
-function sentenceContainsWord(card: Flashcard): boolean {
-  return new RegExp(escapeRegExp(card.word), 'i').test(card.exampleSentence);
 }
 
 interface MethodPracticeScreenProps {
@@ -85,10 +77,10 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
             <MatchingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Stories' && (
-            <ClozeMode pool={pool} chat={false} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <StoryMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Conversations' && (
-            <ClozeMode pool={pool} chat={true} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <DialogueMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
         </Fragment>
       </div>
@@ -339,90 +331,86 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const cards = useMemo(() => sample(pool, Math.min(6, pool.length)), [pool]);
-  const [flipped, setFlipped] = useState<Set<string>>(new Set());
+  const cards = useMemo(() => sample(pool, Math.min(5, pool.length)), [pool]);
+  const [idx, setIdx] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  const current = cards[idx];
+
+  // Speak the word as each memory poster appears.
+  useEffect(() => {
+    if (current && !finished) playPronunciation(current.word);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, finished]);
 
   if (finished) {
     return (
       <ResultsPanel
-        correct={flipped.size}
+        correct={cards.length}
         total={cards.length}
-        extraLine={`${flipped.size} görsel kartı keşfettin`}
+        extraLine={`${cards.length} kelimeyi görselle öğrendin`}
         recordQuizXp={recordQuizXp}
         onExit={onExit}
         onRestart={onRestart}
       />
     );
   }
-
-  const toggle = (card: Flashcard) => {
-    setFlipped(prev => {
-      const next = new Set(prev);
-      if (next.has(card.id)) {
-        next.delete(card.id);
-      } else {
-        next.add(card.id);
-        playPronunciation(card.word);
-      }
-      return next;
-    });
-  };
+  if (!current) return null;
 
   return (
     <div className="space-y-5">
-      <p className="text-xs font-mono text-white/40 text-center">
-        {flipped.size}/{cards.length} kart keşfedildi · Karta dokun
-      </p>
+      <ProgressDots idx={idx} total={cards.length} />
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
-        {cards.map(card => {
-          const isFlipped = flipped.has(card.id);
-          return (
+      {/* Memory poster: one simple, bold picture + the word */}
+      <div
+        className="rounded-3xl border-2 border-[#e3b553]/40 overflow-hidden text-center"
+        style={{ background: 'linear-gradient(160deg, #12100a, #050403)' }}
+      >
+        {/* Picture area */}
+        <div
+          className="flex items-center justify-center py-12 sm:py-14"
+          style={{
+            background:
+              'radial-gradient(circle at 50% 45%, rgba(227,181,83,0.22), rgba(227,181,83,0.05) 55%, transparent 75%)',
+          }}
+        >
+          <span
+            className="text-[84px] sm:text-[96px] leading-none tracking-wide drop-shadow-[0_0_28px_rgba(227,181,83,0.55)]"
+            aria-hidden="true"
+          >
+            {visualFor(current.word)}
+          </span>
+        </div>
+
+        {/* Word area */}
+        <div className="px-6 pb-7 space-y-2 -mt-2">
+          <div className="flex items-center justify-center gap-2.5">
+            <h3 className="text-3xl font-serif italic font-bold text-[#e3b553]">{current.word}</h3>
             <button
-              key={card.id}
-              onClick={() => toggle(card)}
-              className={`relative aspect-[4/5] rounded-2xl border-2 p-3 flex flex-col items-center justify-center gap-2 text-center transition-all duration-300 cursor-pointer ${
-                isFlipped
-                  ? 'bg-[#e3b553]/[0.08] border-[#e3b553]/60 scale-[1.02]'
-                  : 'bg-white/[0.02] border-white/[0.08] hover:border-[#e3b553]/40 hover:-rotate-1 hover:scale-[1.03]'
-              }`}
-              style={{
-                background: isFlipped
-                  ? 'radial-gradient(circle at 50% 20%, rgba(227,181,83,0.14), transparent 60%), linear-gradient(160deg, #131008, #050403)'
-                  : 'radial-gradient(circle at 50% 30%, rgba(227,181,83,0.06), transparent 55%), linear-gradient(160deg, #0e0e0e, #030303)',
-              }}
+              onClick={() => playPronunciation(current.word)}
+              className="p-2 text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
+              aria-label="Kelimeyi dinle"
             >
-              {isFlipped ? (
-                <>
-                  <span className="text-2xl" aria-hidden="true">{visualFor(card.word)}</span>
-                  <span className="text-sm font-serif italic font-semibold text-white leading-tight">{card.word}</span>
-                  <span className="text-[11px] text-[#e3b553] font-light leading-snug">{card.turkishMeaning}</span>
-                </>
-              ) : (
-                <>
-                  <span className="text-4xl drop-shadow-[0_0_12px_rgba(227,181,83,0.35)]" aria-hidden="true">
-                    {visualFor(card.word)}
-                  </span>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-white/35">Bu ne olabilir?</span>
-                </>
-              )}
+              <Volume2 className="w-5 h-5" />
             </button>
-          );
-        })}
+          </div>
+          <p className="text-base text-white font-light">{current.turkishMeaning}</p>
+          <p className="text-xs text-white/45 italic font-light leading-relaxed max-w-sm mx-auto pt-1">
+            "<Highlighted text={current.exampleSentence} word={current.word} />"
+          </p>
+        </div>
       </div>
 
-      <div className="flex justify-end">
+      <div className="flex justify-between items-center">
+        <p className="text-[11px] font-mono text-white/30">Görseli ve kelimeyi birlikte hatırla</p>
         <button
-          onClick={() => setFinished(true)}
-          disabled={flipped.size === 0}
-          className={`rounded-xl py-3 px-6 text-xs font-bold transition-all ${
-            flipped.size > 0
-              ? 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer'
-              : 'bg-white/[0.02] text-white/25 border border-white/[0.04] cursor-not-allowed'
-          }`}
+          onClick={() => {
+            if (idx + 1 < cards.length) setIdx(i => i + 1);
+            else setFinished(true);
+          }}
+          className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer"
         >
-          Bitir
+          {idx + 1 < cards.length ? 'Sonraki' : 'Bitir'}
         </button>
       </div>
     </div>
@@ -533,121 +521,293 @@ function MatchingMode({ pool, recordQuizXp, onExit, onRestart }: {
   );
 }
 
-/* ---------- Stories & Conversations: fill the blank in example sentences ---------- */
+/* ---------- Shared: gold highlighting + Gemini practice content ---------- */
 
-function ClozeMode({ pool, chat, recordQuizXp, onExit, onRestart }: {
+// Renders text with every occurrence of the target word (plus simple suffixes) in gold.
+function Highlighted({ text, word }: { text: string; word: string }) {
+  const esc = escapeRegExp(word);
+  const re = word.includes(' ')
+    ? new RegExp(`(${esc})`, 'gi')
+    : new RegExp(`(\\b${esc}(?:s|es|ed|d|ing)?\\b)`, 'gi');
+  const parts = text.split(re);
+  return (
+    <>
+      {parts.map((p, i) =>
+        i % 2 === 1 ? (
+          <span key={i} className="text-[#e3b553] font-semibold">{p}</span>
+        ) : (
+          <Fragment key={i}>{p}</Fragment>
+        )
+      )}
+    </>
+  );
+}
+
+interface StoryContent { title: string; story: string; }
+interface DialogueContent { title: string; lines: { speaker: string; text: string }[]; }
+
+async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
+  const cacheKey = `lex_pc_${kind}_${card.id}`;
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) return JSON.parse(cached) as T;
+  } catch { /* ignore */ }
+
+  const res = await fetch('/api/practice-content', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning }),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.message || 'İçerik üretilemedi.');
+  try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch { /* ignore */ }
+  return data as T;
+}
+
+// Offline/no-key fallbacks so the modes are never dead.
+function fallbackStory(card: Flashcard): StoryContent {
+  return {
+    title: `A day with "${card.word}"`,
+    story:
+      `Last week, my friend Ali sent me a message about English class. ` +
+      `Our teacher taught us a new word: "${card.word}". At first, I did not understand it, ` +
+      `so I opened my notebook and wrote it down.\n\n` +
+      `Then the teacher gave us an example: "${card.exampleSentence}" ` +
+      `Suddenly everything was clear! Now I try to use "${card.word}" every day, ` +
+      `because using a word many times is the best way to remember it.`,
+  };
+}
+
+function fallbackDialogue(card: Flashcard): DialogueContent {
+  return {
+    title: `Talking about "${card.word}"`,
+    lines: [
+      { speaker: 'A', text: `Hey! Do you know the word "${card.word}"?` },
+      { speaker: 'B', text: `Hmm, I've heard it, but I'm not sure what it means.` },
+      { speaker: 'A', text: `It means "${card.turkishMeaning}" in Turkish.` },
+      { speaker: 'B', text: `Oh, nice! Can you use "${card.word}" in a sentence?` },
+      { speaker: 'A', text: card.exampleSentence },
+      { speaker: 'B', text: `Great example! Now I will remember "${card.word}" forever.` },
+    ],
+  };
+}
+
+function ContentLoading({ label }: { label: string }) {
+  return (
+    <div className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-10 flex flex-col items-center gap-4">
+      <div className="w-10 h-10 border-3 border-white/10 border-t-[#e3b553] rounded-full animate-spin" style={{ borderWidth: 3 }} />
+      <p className="text-xs font-mono text-[#e3b553] animate-pulse">{label}</p>
+    </div>
+  );
+}
+
+/* ---------- Stories: a long story built around the target word ---------- */
+
+function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
-  chat: boolean;
+  playPronunciation: (w: string) => void;
   recordQuizXp: (n: number) => void;
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const clozeable = useMemo(() => pool.filter(sentenceContainsWord), [pool]);
-  const rounds = useMemo(() => sample(clozeable, Math.min(5, clozeable.length)), [clozeable]);
+  const rounds = useMemo(() => sample(pool, Math.min(3, pool.length)), [pool]);
   const [idx, setIdx] = useState(0);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [correctCount, setCorrectCount] = useState(0);
+  const [content, setContent] = useState<StoryContent | null>(null);
+  const [loading, setLoading] = useState(true);
   const [finished, setFinished] = useState(false);
 
   const current = rounds[idx];
 
-  const options = useMemo(() => {
-    if (!current) return [];
-    const others = sample(pool.filter(f => f.id !== current.id), 3).map(f => f.word);
-    return shuffle([current.word, ...others]);
-  }, [current, pool]);
-
-  if (rounds.length === 0) {
-    return (
-      <div className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-8 text-center space-y-4">
-        <p className="text-sm text-white/60">Bu kategori için uygun cümle bulunamadı.</p>
-        <button onClick={onExit} className="bg-[#e3b553] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer">
-          Ana Sayfaya Dön
-        </button>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (!current || finished) return;
+    let cancelled = false;
+    setLoading(true);
+    setContent(null);
+    fetchPracticeContent<StoryContent>('story', current)
+      .catch(() => fallbackStory(current))
+      .then(c => { if (!cancelled) { setContent(c); setLoading(false); } });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, finished]);
 
   if (finished) {
-    return <ResultsPanel correct={correctCount} total={rounds.length} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={onRestart} />;
+    return (
+      <ResultsPanel
+        correct={rounds.length}
+        total={rounds.length}
+        extraLine={`${rounds.length} hikaye okudun`}
+        recordQuizXp={recordQuizXp}
+        onExit={onExit}
+        onRestart={onRestart}
+      />
+    );
   }
   if (!current) return null;
-
-  const answered = selected !== null;
 
   return (
     <div className="space-y-5">
       <ProgressDots idx={idx} total={rounds.length} />
 
-      {chat ? (
-        <div className="space-y-3">
-          {rounds.slice(0, idx).map((r, i) => (
-            <div
-              key={r.id}
-              className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm font-light leading-relaxed ${
-                i % 2 === 0
-                  ? 'bg-white/[0.04] border border-white/[0.06] text-white/80'
-                  : 'bg-[#e3b553]/10 border border-[#e3b553]/20 text-white/90 ml-auto'
-              }`}
-            >
-              {r.exampleSentence}
-            </div>
-          ))}
-          <div
-            className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm font-light leading-relaxed border-2 border-[#e3b553]/50 ${
-              idx % 2 === 0 ? 'bg-white/[0.04] text-white' : 'bg-[#e3b553]/10 text-white ml-auto'
-            }`}
-          >
-            {answered ? current.exampleSentence : blankSentence(current)}
-          </div>
+      {/* Target word banner */}
+      <div className="flex items-center justify-between bg-[#e3b553]/[0.07] border border-[#e3b553]/25 rounded-2xl px-4 py-3">
+        <div>
+          <p className="text-base font-serif italic font-semibold text-[#e3b553]">{current.word}</p>
+          <p className="text-[11px] text-white/50 font-light">{current.turkishMeaning}</p>
         </div>
+        <button
+          onClick={() => playPronunciation(current.word)}
+          className="p-2 text-[#e3b553] hover:bg-white/[0.04] rounded-xl transition-colors cursor-pointer"
+          aria-label="Kelimeyi dinle"
+        >
+          <Volume2 className="w-4 h-4" />
+        </button>
+      </div>
+
+      {loading || !content ? (
+        <ContentLoading label="Hikaye yazılıyor..." />
       ) : (
-        <div className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-7">
-          <p className="text-lg font-serif italic text-white leading-relaxed">
-            "{answered ? current.exampleSentence : blankSentence(current)}"
-          </p>
-          {answered && (
-            <p className="text-xs text-[#e3b553]/80 font-light mt-3">{current.word} — {current.turkishMeaning}</p>
-          )}
+        <div className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-6 sm:p-7 space-y-4">
+          <h3 className="text-xl font-serif italic text-white">{content.title}</h3>
+          {content.story.split(/\n+/).filter(Boolean).map((para, i) => (
+            <p key={i} className="text-[15px] leading-[1.85] font-light text-white">
+              <Highlighted text={para} word={current.word} />
+            </p>
+          ))}
+          <button
+            onClick={() => playPronunciation(content.story)}
+            className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer pt-1"
+          >
+            <Volume2 className="w-3.5 h-3.5" /> Hikayeyi dinle
+          </button>
         </div>
       )}
 
-      <div className="grid grid-cols-2 gap-3">
-        {options.map((opt, i) => {
-          const isCorrect = opt === current.word;
-          const isSelected = selected === opt;
-          let cls = 'bg-white/[0.01] border-white/[0.08] hover:border-[#e3b553]/50 text-white/85';
-          if (answered) {
-            if (isCorrect) cls = 'bg-[#e3b553]/10 border-[#e3b553] text-white';
-            else if (isSelected) cls = 'bg-red-950/20 border-red-500/80 text-red-200';
-            else cls = 'border-white/[0.03] opacity-30 text-white/30';
-          }
-          return (
-            <button
-              key={i}
-              disabled={answered}
-              onClick={() => {
-                setSelected(opt);
-                if (opt === current.word) setCorrectCount(c => c + 1);
-              }}
-              className={`p-3.5 rounded-xl border-2 text-sm font-serif italic transition-all ${cls} ${!answered ? 'cursor-pointer' : 'cursor-default'}`}
-            >
-              {opt}
-            </button>
-          );
-        })}
-      </div>
-
-      {answered && (
+      {!loading && (
         <div className="flex justify-end">
           <button
             onClick={() => {
-              if (idx + 1 < rounds.length) { setIdx(i => i + 1); setSelected(null); }
+              if (idx + 1 < rounds.length) setIdx(i => i + 1);
               else setFinished(true);
             }}
             className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer"
           >
-            {idx + 1 < rounds.length ? 'Sonraki' : 'Bitir'}
+            {idx + 1 < rounds.length ? 'Sonraki Hikaye' : 'Bitir'}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- Conversations: a two-person dialogue around the target word ---------- */
+
+function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
+  pool: Flashcard[];
+  playPronunciation: (w: string) => void;
+  recordQuizXp: (n: number) => void;
+  onExit: () => void;
+  onRestart: () => void;
+}) {
+  const rounds = useMemo(() => sample(pool, Math.min(3, pool.length)), [pool]);
+  const [idx, setIdx] = useState(0);
+  const [content, setContent] = useState<DialogueContent | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [finished, setFinished] = useState(false);
+
+  const current = rounds[idx];
+
+  useEffect(() => {
+    if (!current || finished) return;
+    let cancelled = false;
+    setLoading(true);
+    setContent(null);
+    fetchPracticeContent<DialogueContent>('dialogue', current)
+      .catch(() => fallbackDialogue(current))
+      .then(c => { if (!cancelled) { setContent(c); setLoading(false); } });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, finished]);
+
+  if (finished) {
+    return (
+      <ResultsPanel
+        correct={rounds.length}
+        total={rounds.length}
+        extraLine={`${rounds.length} diyalog okudun`}
+        recordQuizXp={recordQuizXp}
+        onExit={onExit}
+        onRestart={onRestart}
+      />
+    );
+  }
+  if (!current) return null;
+
+  return (
+    <div className="space-y-5">
+      <ProgressDots idx={idx} total={rounds.length} />
+
+      {/* Target word banner */}
+      <div className="flex items-center justify-between bg-[#e3b553]/[0.07] border border-[#e3b553]/25 rounded-2xl px-4 py-3">
+        <div>
+          <p className="text-base font-serif italic font-semibold text-[#e3b553]">{current.word}</p>
+          <p className="text-[11px] text-white/50 font-light">{current.turkishMeaning}</p>
+        </div>
+        <button
+          onClick={() => playPronunciation(current.word)}
+          className="p-2 text-[#e3b553] hover:bg-white/[0.04] rounded-xl transition-colors cursor-pointer"
+          aria-label="Kelimeyi dinle"
+        >
+          <Volume2 className="w-4 h-4" />
+        </button>
+      </div>
+
+      {loading || !content ? (
+        <ContentLoading label="Diyalog hazırlanıyor..." />
+      ) : (
+        <div className="space-y-3">
+          <h3 className="text-sm font-serif italic text-white/70 px-1">{content.title}</h3>
+          {content.lines.map((line, i) => {
+            const isA = (line.speaker || 'A').toUpperCase().startsWith('A');
+            return (
+              <div key={i} className={`flex items-end gap-2 ${isA ? '' : 'flex-row-reverse'}`}>
+                <span
+                  className={`w-7 h-7 rounded-full shrink-0 flex items-center justify-center text-[11px] font-bold ${
+                    isA ? 'bg-white/[0.06] text-white/70 border border-white/10' : 'bg-[#e3b553] text-[#0a0a0b]'
+                  }`}
+                >
+                  {isA ? 'A' : 'B'}
+                </span>
+                <div
+                  className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm font-light leading-relaxed ${
+                    isA
+                      ? 'bg-white/[0.04] border border-white/[0.06] text-white rounded-bl-md'
+                      : 'bg-[#e3b553]/10 border border-[#e3b553]/25 text-white rounded-br-md'
+                  }`}
+                >
+                  <Highlighted text={line.text} word={current.word} />
+                </div>
+              </div>
+            );
+          })}
+          <button
+            onClick={() => playPronunciation(content.lines.map(l => l.text).join('. '))}
+            className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer pt-1 px-1"
+          >
+            <Volume2 className="w-3.5 h-3.5" /> Diyaloğu dinle
+          </button>
+        </div>
+      )}
+
+      {!loading && (
+        <div className="flex justify-end">
+          <button
+            onClick={() => {
+              if (idx + 1 < rounds.length) setIdx(i => i + 1);
+              else setFinished(true);
+            }}
+            className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer"
+          >
+            {idx + 1 < rounds.length ? 'Sonraki Diyalog' : 'Bitir'}
           </button>
         </div>
       )}
