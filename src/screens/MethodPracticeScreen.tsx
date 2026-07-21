@@ -383,14 +383,12 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   onExit: () => void;
   onRestart: () => void;
 }) {
-  // Prefer words that have a fully designed card image; fill any remaining
-  // slots from the rest of the pool.
+  // If the category has designed card images, the session covers ALL of those
+  // words (shuffled). Categories without designed cards keep short 5-word sessions.
   const cards = useMemo(() => {
-    const count = Math.min(5, pool.length);
     const withCard = pool.filter(f => READY_MADE_CARD_SET.has(f.word.toLowerCase()));
-    const withoutCard = pool.filter(f => !READY_MADE_CARD_SET.has(f.word.toLowerCase()));
-    const picked = sample(withCard, Math.min(count, withCard.length));
-    return [...picked, ...sample(withoutCard, count - picked.length)];
+    if (withCard.length > 0) return shuffle(withCard);
+    return sample(pool, Math.min(5, pool.length));
   }, [pool]);
   const [idx, setIdx] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -467,16 +465,19 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
           </button>
         </div>
       ) : (
-        /* Composed vocabulary card: word details on the left, picture on the right */
+        /* Composed square vocabulary card in the designed-sheet style */
         <div
-          className="rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7"
-          style={{ background: 'linear-gradient(160deg, #0d0c08, #050403)' }}
+          className="aspect-square rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7 flex flex-col overflow-hidden"
+          style={{
+            background: 'linear-gradient(160deg, #0d0c08, #050403)',
+            boxShadow: '0 0 30px rgba(227,181,83,0.12)',
+          }}
         >
-          <div className="flex gap-4 sm:gap-6">
-            {/* Left: word details */}
-            <div className="flex-1 min-w-0 space-y-2.5">
+          {/* Top: word + details on the left, oval picture on the right */}
+          <div className="flex gap-3 sm:gap-5 flex-1 min-h-0">
+            <div className="flex-1 min-w-0 space-y-1.5 sm:space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="text-3xl sm:text-4xl font-serif italic font-bold text-[#e3b553] leading-tight break-words">
+                <h3 className="text-4xl sm:text-5xl font-serif font-bold text-[#e3b553] leading-tight break-words">
                   {current.word}
                 </h3>
                 <button
@@ -489,57 +490,63 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
               </div>
 
               {entry.ipa && (
-                <p className="text-sm font-mono text-white/90">{entry.ipa}</p>
+                <p className="text-base font-mono text-white/90">{entry.ipa}</p>
               )}
               {entry.reading && (
-                <p className="text-sm font-light text-[#e3b553]">({entry.reading})</p>
+                <p className="text-base font-light text-[#e3b553]">({entry.reading})</p>
               )}
 
               {meanings.length > 0 && (
-                <p className="text-xs font-light text-[#e3b553]/85 leading-relaxed">
-                  {meanings.join(' · ')}
-                </p>
-              )}
-
-              {entry.definition && (
-                <p className="text-sm font-light text-white leading-relaxed pt-1">
-                  {entry.definition}
-                </p>
-              )}
-
-              {example && (
-                <p className="text-xs text-white/60 italic font-light leading-relaxed pt-1">
-                  "<Highlighted text={example} word={current.word} />"
+                <p className="text-sm font-light text-[#e3b553]/90 leading-relaxed">
+                  {meanings.join(', ')}
                 </p>
               )}
             </div>
 
-            {/* Right: picture (or elegant placeholder) */}
-            <div className="shrink-0 self-start">
-              <div
-                className="w-[110px] h-[110px] sm:w-[170px] sm:h-[170px] rounded-2xl overflow-hidden border border-[#e3b553]/35"
-                style={{ boxShadow: '0 0 24px rgba(227,181,83,0.15)' }}
-              >
-                {slot ? (
-                  <img src={slot} alt={current.word} className="w-full h-full object-cover" />
-                ) : (
-                  <div
-                    className="w-full h-full flex flex-col items-center justify-center gap-1.5"
-                    style={{
-                      background:
-                        'radial-gradient(circle at 50% 40%, rgba(227,181,83,0.18), transparent 70%), linear-gradient(160deg, #14110a, #060504)',
-                    }}
-                  >
-                    <span className="text-4xl sm:text-5xl drop-shadow-[0_0_16px_rgba(227,181,83,0.5)]" aria-hidden="true">
-                      {visualFor(current.word)}
-                    </span>
-                    <span className="text-[9px] font-mono uppercase tracking-widest text-[#e3b553]/50">
-                      {current.word.slice(0, 12)}
-                    </span>
-                  </div>
-                )}
-              </div>
+            {/* Oval picture (already carries its gold ring) or elegant placeholder */}
+            <div className="w-[46%] shrink-0 flex items-center justify-center min-h-0">
+              {slot ? (
+                <img
+                  src={slot}
+                  alt={current.word}
+                  className="max-w-full max-h-full object-contain"
+                  style={{ filter: 'drop-shadow(0 0 18px rgba(227,181,83,0.15))' }}
+                />
+              ) : (
+                <div
+                  className="w-full aspect-[3/4] max-h-full rounded-[50%] border border-[#e3b553]/40 flex flex-col items-center justify-center gap-1.5"
+                  style={{
+                    background:
+                      'radial-gradient(circle at 50% 40%, rgba(227,181,83,0.18), transparent 70%), linear-gradient(160deg, #14110a, #060504)',
+                  }}
+                >
+                  <span className="text-4xl sm:text-5xl drop-shadow-[0_0_16px_rgba(227,181,83,0.5)]" aria-hidden="true">
+                    {visualFor(current.word)}
+                  </span>
+                </div>
+              )}
             </div>
+          </div>
+
+          {/* Gold divider with center diamond, like the designed cards */}
+          <div className="flex items-center gap-2 my-3 sm:my-4">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#e3b553]/60 to-[#e3b553]/60" />
+            <div className="w-1.5 h-1.5 rotate-45 bg-[#e3b553]" />
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent via-[#e3b553]/60 to-[#e3b553]/60" />
+          </div>
+
+          {/* Bottom: definition + example */}
+          <div className="space-y-2">
+            {entry.definition && (
+              <p className="text-sm sm:text-base font-light text-white leading-relaxed">
+                {entry.definition}
+              </p>
+            )}
+            {example && (
+              <p className="text-sm text-white/60 italic font-light leading-relaxed border-l-2 border-[#e3b553]/50 pl-3">
+                <Highlighted text={example} word={current.word} />
+              </p>
+            )}
           </div>
         </div>
       )}
