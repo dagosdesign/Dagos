@@ -21,7 +21,10 @@ const ai = new GoogleGenAI({
 const STYLE =
   'Cinematic photograph, very dark moody near-black background, black and gold color palette, ' +
   'warm golden accent lighting, luxurious editorial style, high detail, high resolution. ' +
-  'No text, no letters, no words, no watermark. Vertical portrait composition.';
+  'No text, no letters, no words, no watermark. Vertical portrait composition. ' +
+  'STRICT content rules: no alcohol or drinks that resemble alcohol, no weapons of any kind, ' +
+  'no compasses, no keys or locks, all people fully and modestly dressed. ' +
+  'Be original and varied — avoid cliché stock-photo concepts.';
 
 const SCENES = {
   poor: 'A weary homeless man sitting on a cracked curb in a run-down abandoned street at dusk, ruined old buildings behind him, one warm distant streetlight',
