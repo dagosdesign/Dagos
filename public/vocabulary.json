@@ -7376,5 +7376,1206 @@
   ],
   "definition": "By a large amount or to a great extent.",
   "example": "Temperatures dropped dramatically overnight."
+ },
+ "profoundly": {
+  "ipa": "/prəˈfaʊndli/",
+  "reading": "profaundli",
+  "meanings": [
+   "derinden",
+   "kapsamlı bir şekilde"
+  ],
+  "definition": "To a profound degree or deeply.",
+  "example": "She was profoundly affected by the book."
+ },
+ "vaguely": {
+  "ipa": "/ˈveɪɡli/",
+  "reading": "veyli",
+  "meanings": [
+   "belirsizce",
+   "hayal meyal"
+  ],
+  "definition": "In a way that is uncertain or unclear.",
+  "example": "I vaguely remember meeting him once."
+ },
+ "consequently": {
+  "ipa": "/ˈkɒnsɪkwəntli/",
+  "reading": "konsikwentli",
+  "meanings": [
+   "sonuç olarak",
+   "netekim"
+  ],
+  "definition": "As a result or consequence.",
+  "example": "He was ill and consequently missed the exam."
+ },
+ "densely": {
+  "ipa": "/ˈdensli/",
+  "reading": "densli",
+  "meanings": [
+   "yoğun bir şekilde"
+  ],
+  "definition": "In a dense or crowded manner.",
+  "example": "The area is densely populated with people."
+ },
+ "distinctly": {
+  "ipa": "/dɪˈstɪŋktli/",
+  "reading": "distinktli",
+  "meanings": [
+   "açıkça",
+   "net bir şekilde"
+  ],
+  "definition": "Clearly and unmistakably.",
+  "example": "I distinctly heard someone call my name."
+ },
+ "presently": {
+  "ipa": "/ˈprezəntli/",
+  "reading": "prezentli",
+  "meanings": [
+   "şu anda",
+   "yakında"
+  ],
+  "definition": "At this time or very soon.",
+  "example": "She is busy presently, but will help soon."
+ },
+ "chiefly": {
+  "ipa": "/ˈtʃiːfli/",
+  "reading": "çiifli",
+  "meanings": [
+   "başlıca",
+   "özellikle"
+  ],
+  "definition": "Most importantly or mainly.",
+  "example": "The success was chiefly due to teamwork."
+ },
+ "fortunately": {
+  "ipa": "/ˈfɔːtʃənətli/",
+  "reading": "foortşınatli",
+  "meanings": [
+   "neyse ki",
+   "iyi ki"
+  ],
+  "definition": "It is lucky that.",
+  "example": "Fortunately, nobody was hurt in the accident."
+ },
+ "exceptionally": {
+  "ipa": "/ɪkˈsepʃənəli/",
+  "reading": "iksepşonali",
+  "meanings": [
+   "olağanüstü bir şekilde"
+  ],
+  "definition": "To an unusual degree or remarkably.",
+  "example": "The weather was exceptionally warm for October."
+ },
+ "approximately": {
+  "ipa": "/əˈprɒksɪmətli/",
+  "reading": "aproksimatli",
+  "meanings": [
+   "yaklaşık olarak"
+  ],
+  "definition": "Close to a particular number or time.",
+  "example": "The trip took approximately two hours."
+ },
+ "lately": {
+  "ipa": "/ˈleɪtli/",
+  "reading": "leytli",
+  "meanings": [
+   "son zamanlarda",
+   "yakında"
+  ],
+  "definition": "Recently or in the recent past.",
+  "example": "Have you seen any good movies lately?"
+ },
+ "substantially": {
+  "ipa": "/səbˈstænʃəli/",
+  "reading": "sabstenşali",
+  "meanings": [
+   "önemli ölçüde",
+   "büyük oranda"
+  ],
+  "definition": "By a large amount or to a large extent.",
+  "example": "Profits have increased substantially this year."
+ },
+ "vehemently": {
+  "ipa": "/ˈviːəməntli/",
+  "reading": "viımantli",
+  "meanings": [
+   "şiddetle",
+   "hararetle"
+  ],
+  "definition": "In a forceful, passionate, or intense manner.",
+  "example": "He vehemently denied breaking the window."
+ },
+ "abruptly": {
+  "ipa": "/əˈbrʌptli/",
+  "reading": "abraptli",
+  "meanings": [
+   "aniden",
+   "birdenbire"
+  ],
+  "definition": "Suddenly and unexpectedly.",
+  "example": "The meeting ended abruptly when the fire alarm rang."
+ },
+ "indefinitely": {
+  "ipa": "/ɪnˈdefɪnətli/",
+  "reading": "indefinatli",
+  "meanings": [
+   "süresiz olarak",
+   "belirsiz bir süre için"
+  ],
+  "definition": "For an unlimited or unspecified period.",
+  "example": "The event was postponed indefinitely."
+ },
+ "sufficiently": {
+  "ipa": "/səˈfɪʃəntli/",
+  "reading": "safişantli",
+  "meanings": [
+   "yeterince",
+   "kâfi derecede"
+  ],
+  "definition": "To an adequate degree or enough.",
+  "example": "Make sure the meat is sufficiently cooked."
+ },
+ "casually": {
+  "ipa": "/ˈkæʒuəli/",
+  "reading": "kejuali",
+  "meanings": [
+   "gelişigüzel",
+   "sıradan bir şekilde"
+  ],
+  "definition": "In a relaxed or unconcerned manner.",
+  "example": "She dressed casually for the weekend party."
+ },
+ "reluctantly": {
+  "ipa": "/rɪˈlʌktəntli/",
+  "reading": "rilaktantli",
+  "meanings": [
+   "istemeye istemeye",
+   "gönülsüzce"
+  ],
+  "definition": "In an unwilling and hesitant way.",
+  "example": "He reluctantly agreed to help with the chores."
+ },
+ "scarcely": {
+  "ipa": "/ˈskeəsli/",
+  "reading": "skeəsli",
+  "meanings": [
+   "neredeyse hiç",
+   "ancak"
+  ],
+  "definition": "Almost not or only just.",
+  "example": "There was scarcely any food left in the fridge."
+ },
+ "abundantly": {
+  "ipa": "/əˈbʌndəntli/",
+  "reading": "abandantli",
+  "meanings": [
+   "bolca",
+   "fazlasıyla"
+  ],
+  "definition": "In large quantities or very clearly.",
+  "example": "It was abundantly clear that he was lying."
+ },
+ "repeatedly": {
+  "ipa": "/rɪˈpiːtɪdli/",
+  "reading": "ripiitıdli",
+  "meanings": [
+   "defalarca",
+   "tekrar tekrar"
+  ],
+  "definition": "Doing something many times.",
+  "example": "She repeatedly asked him to leave."
+ },
+ "severely": {
+  "ipa": "/sɪˈvɪəli/",
+  "reading": "siviyıli",
+  "meanings": [
+   "ciddi şekilde",
+   "şiddetle",
+   "ağır bir biçimde"
+  ],
+  "definition": "Very seriously or harshly.",
+  "example": "The storm severely damaged the local crops."
+ },
+ "accurately": {
+  "ipa": "/ˈækjərətli/",
+  "reading": "ekyurıtli",
+  "meanings": [
+   "doğru bir şekilde",
+   "tam olarak"
+  ],
+  "definition": "Correctly and without any mistakes.",
+  "example": "You must measure the ingredients accurately."
+ },
+ "voluntarily": {
+  "ipa": "/ˈvɒləntrəli/",
+  "reading": "volıntrıli",
+  "meanings": [
+   "gönüllü olarak",
+   "kendi isteğiyle"
+  ],
+  "definition": "By choice, without being forced.",
+  "example": "He decided to help them voluntarily."
+ },
+ "tightly": {
+  "ipa": "/ˈtaɪtli/",
+  "reading": "taytli",
+  "meanings": [
+   "sıkıca",
+   "sıkı bir şekilde"
+  ],
+  "definition": "Firmly or closely.",
+  "example": "Hold my hand tightly."
+ },
+ "continually": {
+  "ipa": "/kənˈtɪnjuəli/",
+  "reading": "kıntinyuıli",
+  "meanings": [
+   "sürekli olarak",
+   "durmaksızın"
+  ],
+  "definition": "Happening repeatedly or without interruption.",
+  "example": "They continually argue about money."
+ },
+ "effortlessly": {
+  "ipa": "/ˈefətləsli/",
+  "reading": "efırtlısli",
+  "meanings": [
+   "zahmetsizce",
+   "kolayca"
+  ],
+  "definition": "Easily, without any hard work.",
+  "example": "She solved the complex puzzle effortlessly."
+ },
+ "intentionally": {
+  "ipa": "/ɪnˈtenʃənəli/",
+  "reading": "intenşınıli",
+  "meanings": [
+   "kasten",
+   "bilerek"
+  ],
+  "definition": "On purpose or deliberately.",
+  "example": "He did not intentionally hurt your feelings."
+ },
+ "inconsiderately": {
+  "ipa": "/ˌɪnkənˈsɪdərətli/",
+  "reading": "inkınsidırıtli",
+  "meanings": [
+   "düşüncesizce",
+   "saygısızca"
+  ],
+  "definition": "Without thought for other people.",
+  "example": "He parked inconsiderately across two spaces."
+ },
+ "selectively": {
+  "ipa": "/sɪˈlektɪvli/",
+  "reading": "silektivli",
+  "meanings": [
+   "seçici bir şekilde",
+   "seçerek"
+  ],
+  "definition": "In a way that involves choosing.",
+  "example": "The company recruits selectively from top universities."
+ },
+ "confidentially": {
+  "ipa": "/ˌkɒnfɪˈdenʃəli/",
+  "reading": "konfidenşıli",
+  "meanings": [
+   "gizlice",
+   "güvenilir bir şekilde"
+  ],
+  "definition": "In a secret or private way.",
+  "example": "They discussed the matter confidentially."
+ },
+ "preferably": {
+  "ipa": "/ˈprefrəbli/",
+  "reading": "prefırıbli",
+  "meanings": [
+   "tercihen"
+  ],
+  "definition": "Ideally or if possible.",
+  "example": "We need a large room, preferably with a view."
+ },
+ "exceedingly": {
+  "ipa": "/ɪkˈsiːdɪŋli/",
+  "reading": "iksiidingli",
+  "meanings": [
+   "aşırı derecede",
+   "son derece"
+  ],
+  "definition": "Very or to an unusual degree.",
+  "example": "The exam was exceedingly difficult for everyone."
+ },
+ "plainly": {
+  "ipa": "/ˈpleɪnli/",
+  "reading": "pleynli",
+  "meanings": [
+   "açıkça",
+   "sade bir şekilde"
+  ],
+  "definition": "Clearly or simply.",
+  "example": "She stated her terms plainly."
+ },
+ "superficially": {
+  "ipa": "/ˌsuːpəˈfɪʃəli/",
+  "reading": "suupırfışılı",
+  "meanings": [
+   "yüzeysel olarak",
+   "üstünkörü"
+  ],
+  "definition": "Only on the surface level.",
+  "example": "He studied the topic superficially."
+ },
+ "urgently": {
+  "ipa": "/ˈɜːdʒəntli/",
+  "reading": "öocıntli",
+  "meanings": [
+   "acil bir şekilde",
+   "ivedilikle"
+  ],
+  "definition": "Needing quick attention or action.",
+  "example": "We urgently need a doctor."
+ },
+ "desperately": {
+  "ipa": "/ˈdespərətli/",
+  "reading": "despırıtli",
+  "meanings": [
+   "çaresizce",
+   "aşırı derecede"
+  ],
+  "definition": "In a hopeless or extreme way.",
+  "example": "She desperately wanted to find her lost dog."
+ },
+ "efficiently": {
+  "ipa": "/ɪˈfɪʃntli/",
+  "reading": "ifişıntli",
+  "meanings": [
+   "verimli bir şekilde",
+   "etkili bir biçimde"
+  ],
+  "definition": "Working well without wasting time.",
+  "example": "The team completed the project efficiently."
+ },
+ "excessively": {
+  "ipa": "/ɪkˈsesɪvli/",
+  "reading": "iksesivli",
+  "meanings": [
+   "aşırı derecede",
+   "fazlasıyla"
+  ],
+  "definition": "To a degree that is too much.",
+  "example": "He drinks coffee excessively during the day."
+ },
+ "uniquely": {
+  "ipa": "/juːˈniːkli/",
+  "reading": "yuuniikli",
+  "meanings": [
+   "benzersiz bir şekilde",
+   "yalnızca"
+  ],
+  "definition": "In a very special or unusual way.",
+  "example": "This artwork is uniquely designed."
+ },
+ "tremendously": {
+  "ipa": "/trɪˈmen.dəs.li/",
+  "reading": "trımendısli",
+  "meanings": [
+   "son derece",
+   "müthiş derecede",
+   "çok fazla"
+  ],
+  "definition": "To a very great degree or extent.",
+  "example": "She worked tremendously hard to win the race."
+ },
+ "progressively": {
+  "ipa": "/prəˈɡres.ɪv.li/",
+  "reading": "prıgresivli",
+  "meanings": [
+   "gittikçe",
+   "kademeli olarak",
+   "ilerleyen şekilde"
+  ],
+  "definition": "Steadily, step by step, or in stages.",
+  "example": "The weather became progressively colder during the evening."
+ },
+ "unfavourably": {
+  "ipa": "/unˈfeɪ.vər.ə.bli/",
+  "reading": "anfeyvırıbli",
+  "meanings": [
+   "olumsuz bir şekilde",
+   "istenmeyen biçimde"
+  ],
+  "definition": "In a negative or disadvantageous way.",
+  "example": "The critics reviewed his new movie unfavourably last week."
+ },
+ "enormously": {
+  "ipa": "/ɪˈnɔː.məs.li/",
+  "reading": "inoomısli",
+  "meanings": [
+   "muazzam derecede",
+   "aşırı derecede",
+   "son derece"
+  ],
+  "definition": "Extremely or to a very great degree.",
+  "example": "I enjoyed the concert enormously and would go again."
+ },
+ "protectively": {
+  "ipa": "/prəˈtek.tɪv.li/",
+  "reading": "prıtektivli",
+  "meanings": [
+   "koruyucu bir şekilde",
+   "esirgeyerek"
+  ],
+  "definition": "In a way that defends or protects someone.",
+  "example": "She put her arm protectively around her little sister."
+ },
+ "adequately": {
+  "ipa": "/ˈæd.ɪ.kwət.li/",
+  "reading": "edikvıtli",
+  "meanings": [
+   "yeterince",
+   "yeterli düzeyde"
+  ],
+  "definition": "In a satisfactory or sufficient way.",
+  "example": "You must prepare adequately before you take the final test."
+ },
+ "conscientiously": {
+  "ipa": "/ˌkɒn.ʃiˈen.ʃəs.li/",
+  "reading": "konşienşısli",
+  "meanings": [
+   "vicdanen",
+   "titizlikle",
+   "özenle"
+  ],
+  "definition": "With great care, effort, and honesty.",
+  "example": "He did his homework conscientiously every single day."
+ },
+ "fluently": {
+  "ipa": "/ˈfluː.ənt.li/",
+  "reading": "fluuntli",
+  "meanings": [
+   "akıcı bir şekilde",
+   "akıcı olarak"
+  ],
+  "definition": "In a smooth and easy way, especially speaking.",
+  "example": "She can speak French fluently after living in Paris."
+ },
+ "kindly": {
+  "ipa": "/ˈkaɪnd.li/",
+  "reading": "kayndli",
+  "meanings": [
+   "nazikçe",
+   "lütfen",
+   "iyilikle"
+  ],
+  "definition": "In a kind, friendly, or gentle manner.",
+  "example": "Please kindly close the door when you leave the room."
+ },
+ "equivalently": {
+  "ipa": "/ɪˈkwɪv.əl.ənt.li/",
+  "reading": "ikvivılıntli",
+  "meanings": [
+   "eş değer şekilde",
+   "eşit olarak"
+  ],
+  "definition": "In an equal or corresponding manner.",
+  "example": "Both groups were treated equivalently during the scientific experiment."
+ },
+ "potentially": {
+  "ipa": "/pəˈten.ʃəl.i/",
+  "reading": "pıtenşıli",
+  "meanings": [
+   "potansiyel olarak",
+   "muhtemelen",
+   "olası şekilde"
+  ],
+  "definition": "Possibly, but not yet realized.",
+  "example": "This new technology is potentially dangerous if used incorrectly."
+ },
+ "continuously": {
+  "ipa": "/kənˈtɪn.ju.əs.li/",
+  "reading": "kıntinyuısli",
+  "meanings": [
+   "kesintisiz olarak",
+   "sürekli",
+   "durmaksızın"
+  ],
+  "definition": "Without stopping or pausing.",
+  "example": "The rain fell continuously throughout the entire weekend."
+ },
+ "appropriately": {
+  "ipa": "/əˈprəʊ.pri.ət.li/",
+  "reading": "ıproopriıtli",
+  "meanings": [
+   "uygun şekilde",
+   "yerinde"
+  ],
+  "definition": "In a suitable or correct way.",
+  "example": "You must dress appropriately for a formal job interview."
+ },
+ "conveniently": {
+  "ipa": "/kənˈviː.ni.ənt.li/",
+  "reading": "kınviiniıntli",
+  "meanings": [
+   "kolayca",
+   "uygun şekilde",
+   "zahmetsizce"
+  ],
+  "definition": "In a useful, easy, or helpful way.",
+  "example": "The hotel is conveniently located near the main train station."
+ },
+ "partially": {
+  "ipa": "/ˈpɑː.ʃəl.i/",
+  "reading": "paaşıli",
+  "meanings": [
+   "kısmen",
+   "kısmi olarak"
+  ],
+  "definition": "Not completely; only to some extent.",
+  "example": "The road is partially blocked by a fallen tree."
+ },
+ "traditionally": {
+  "ipa": "/trəˈdɪʃ.ən.əl.i/",
+  "reading": "trıdışınıli",
+  "meanings": [
+   "geleneksel olarak",
+   "öteden beri"
+  ],
+  "definition": "According to tradition or long-established custom.",
+  "example": "People traditionally eat turkey on Thanksgiving Day."
+ },
+ "promptly": {
+  "ipa": "/ˈprɒmpt.li/",
+  "reading": "promptli",
+  "meanings": [
+   "derhal",
+   "hemen",
+   "vaktinde"
+  ],
+  "definition": "Quickly and without any delay.",
+  "example": "He arrived promptly at eight o'clock for the meeting."
+ },
+ "firmly": {
+  "ipa": "/ˈfɜːm.li/",
+  "reading": "föömli",
+  "meanings": [
+   "sıkıca",
+   "kesin olarak",
+   "kararlılıkla"
+  ],
+  "definition": "In a strong, steady, or secure way.",
+  "example": "Hold the handrail firmly as you walk down the stairs."
+ },
+ "instantly": {
+  "ipa": "/ˈɪn.stənt.li/",
+  "reading": "instıntli",
+  "meanings": [
+   "anında",
+   "hemen",
+   "bir anda"
+  ],
+  "definition": "Immediately or at once.",
+  "example": "The pain disappeared instantly after she took the medicine."
+ },
+ "inadequately": {
+  "ipa": "/ɪnˈæd.ɪ.kwət.li/",
+  "reading": "inedikvıtli",
+  "meanings": [
+   "yetersiz şekilde",
+   "yetersizce"
+  ],
+  "definition": "In a way that is not sufficient or good enough.",
+  "example": "The workers were inadequately trained for this difficult task."
+ },
+ "safely": {
+  "ipa": "/ˈseɪfli/",
+  "reading": "seyfli",
+  "meanings": [
+   "güvenli bir şekilde",
+   "sağ salim"
+  ],
+  "definition": "In a safe manner without risk.",
+  "example": "We arrived safely at our destination."
+ },
+ "independently": {
+  "ipa": "/ˌɪndɪˈpɛndəntli/",
+  "reading": "indipendentli",
+  "meanings": [
+   "bağımsız olarak",
+   "kendi başına"
+  ],
+  "definition": "Free from outside control or influence.",
+  "example": "She likes to work independently on her projects."
+ },
+ "reliably": {
+  "ipa": "/rɪˈlaɪəbli/",
+  "reading": "rilayabli",
+  "meanings": [
+   "güvenilir bir şekilde",
+   "istikrarlı olarak"
+  ],
+  "definition": "Consistently good in quality or performance.",
+  "example": "The train arrives reliably every morning."
+ },
+ "barely": {
+  "ipa": "/ˈbeəli/",
+  "reading": "berli",
+  "meanings": [
+   "neredeyse hiç",
+   "ancak",
+   "zorla"
+  ],
+  "definition": "Only just; almost not.",
+  "example": "He could barely hear the music."
+ },
+ "socially": {
+  "ipa": "/ˈsəʊʃəli/",
+  "reading": "sowşali",
+  "meanings": [
+   "sosyal olarak",
+   "toplumsal açıdan"
+  ],
+  "definition": "In relation to human society.",
+  "example": "It is important to act responsibly socially."
+ },
+ "fundamentally": {
+  "ipa": "/ˌfʌndəˈmɛntəli/",
+  "reading": "fandamentali",
+  "meanings": [
+   "esasen",
+   "temelde",
+   "kökten"
+  ],
+  "definition": "In every way that is central or primary.",
+  "example": "Their ideas are fundamentally different."
+ },
+ "consistently": {
+  "ipa": "/kənˈsɪstəntli/",
+  "reading": "kınsistıntli",
+  "meanings": [
+   "tutarlı bir şekilde",
+   "devamlı"
+  ],
+  "definition": "In every case or on every occasion.",
+  "example": "She performs consistently well in exams."
+ },
+ "immensely": {
+  "ipa": "/ɪˈmɛnsli/",
+  "reading": "imensli",
+  "meanings": [
+   "aşırı derecede",
+   "çok fazla"
+  ],
+  "definition": "To a great extent or degree.",
+  "example": "I enjoyed the book immensely."
+ },
+ "mentally": {
+  "ipa": "/ˈmɛntəli/",
+  "reading": "mentali",
+  "meanings": [
+   "zihinsel olarak",
+   "aketen"
+  ],
+  "definition": "Connected with or happening in the mind.",
+  "example": "Chess keeps you mentally sharp."
+ },
+ "arguably": {
+  "ipa": "/ˈɑːɡjuəbli/",
+  "reading": "argüyabli",
+  "meanings": [
+   "tartışılabilir bir şekilde",
+   "neredeyse"
+  ],
+  "definition": "It may be argued; plausibly.",
+  "example": "This is arguably the best movie of the year."
+ },
+ "conventionally": {
+  "ipa": "/kənˈvɛnʃənəli/",
+  "reading": "kınvenşonali",
+  "meanings": [
+   "geleneksel olarak",
+   "âdet olduğu üzere"
+  ],
+  "definition": "Based on what is generally done or believed.",
+  "example": "The house was decorated conventionally."
+ },
+ "unfairly": {
+  "ipa": "/ʌnˈfɛəli/",
+  "reading": "anferli",
+  "meanings": [
+   "haksız yere",
+   "adaletsizce"
+  ],
+  "definition": "In a way that is not based on fair principles.",
+  "example": "He felt he was treated unfairly."
+ },
+ "alternatively": {
+  "ipa": "/ɔːlˈtɜːnətɪvli/",
+  "reading": "oltativli",
+  "meanings": [
+   "alternatif olarak",
+   "başka bir deyişle"
+  ],
+  "definition": "As another option or possibility.",
+  "example": "We can walk, or alternatively, take a bus."
+ },
+ "legally": {
+  "ipa": "/ˈliːɡəli/",
+  "reading": "ligali",
+  "meanings": [
+   "yasal olarak",
+   "hukuken"
+  ],
+  "definition": "According to the law.",
+  "example": "You are legally required to pay taxes."
+ },
+ "broadly": {
+  "ipa": "/ˈbrɔːdli/",
+  "reading": "brodli",
+  "meanings": [
+   "genel olarak",
+   "geniş çapta"
+  ],
+  "definition": "In general terms; without details.",
+  "example": "I agree with your plan broadly."
+ },
+ "conclusively": {
+  "ipa": "/kənˈkluːsɪvli/",
+  "reading": "kınklusivli",
+  "meanings": [
+   "kesin bir şekilde",
+   "nihai olarak"
+  ],
+  "definition": "Serving to prove a case beyond doubt.",
+  "example": "The test results proved the theory conclusively."
+ },
+ "doubtfully": {
+  "ipa": "/ˈdaʊtfʊli/",
+  "reading": "dawtfuli",
+  "meanings": [
+   "şüpheyle",
+   "kuşkuyla"
+  ],
+  "definition": "In a way that shows uncertainty.",
+  "example": "He looked doubtfully at the broken watch."
+ },
+ "violently": {
+  "ipa": "/ˈvaɪələntli",
+  "reading": "vayolentli",
+  "meanings": [
+   "şiddetli bir şekilde",
+   "zorla"
+  ],
+  "definition": "Using or involving physical force.",
+  "example": "The door slammed shut violently."
+ },
+ "comfortably": {
+  "ipa": "/ˈkʌmfətəbli/",
+  "reading": "kamfıtabli",
+  "meanings": [
+   "rahatça",
+   "konforlu bir şekilde"
+  ],
+  "definition": "Providing physical ease and relaxation.",
+  "example": "She sat comfortably on the sofa."
+ },
+ "cautiously": {
+  "ipa": "/ˈkɔːʃəsli/",
+  "reading": "koşasli",
+  "meanings": [
+   "dikkatli bir şekilde",
+   "temkinli"
+  ],
+  "definition": "In a way that avoids potential problems or dangers.",
+  "example": "He walked cautiously across the icy road."
+ },
+ "consecutively": {
+  "ipa": "/kənˈsekjʊtɪvli/",
+  "reading": "kınsekutivli",
+  "meanings": [
+   "peş peşe",
+   "ard arda"
+  ],
+  "definition": "Following continuously without interruption.",
+  "example": "It rained for three days consecutively."
+ },
+ "convincingly": {
+  "ipa": "/kənˈvɪnsɪŋli/",
+  "reading": "kınvinsingli",
+  "meanings": [
+   "inandırıcı bir şekilde"
+  ],
+  "definition": "In a way that persuades people.",
+  "example": "She argued her case very convincingly."
+ },
+ "suitably": {
+  "ipa": "/ˈsuːtəbli/",
+  "reading": "sutabli",
+  "meanings": [
+   "uygun bir şekilde",
+   "gerektiği gibi"
+  ],
+  "definition": "In a manner appropriate to the situation.",
+  "example": "He was suitably dressed for the interview."
+ },
+ "abnormally": {
+  "ipa": "/æbˈnɔːməlwi/",
+  "reading": "ebnormali",
+  "meanings": [
+   "anormal bir şekilde"
+  ],
+  "definition": "In a way that differs from normal.",
+  "example": "The weather was abnormally warm today."
+ },
+ "brutally": {
+  "ipa": "/ˈbruːtəli/",
+  "reading": "brutali",
+  "meanings": [
+   "vahşice",
+   "acımasızca"
+  ],
+  "definition": "In a savagely violent way.",
+  "example": "The truth was brutally obvious."
+ },
+ "decisively": {
+  "ipa": "/dɪˈsaɪsɪvli/",
+  "reading": "disaysivli",
+  "meanings": [
+   "kararlı bir şekilde",
+   "kesin olarak"
+  ],
+  "definition": "In a manner that settles something.",
+  "example": "She acted decisively to solve the crisis."
+ },
+ "evenly": {
+  "ipa": "/ˈiːvənli/",
+  "reading": "ivinli",
+  "meanings": [
+   "eşit olarak",
+   "düzgün bir şekilde"
+  ],
+  "definition": "In equal amounts or parts.",
+  "example": "Distribute the candies evenly among the children."
+ },
+ "favourably": {
+  "ipa": "/ˈfeɪvərəbli/",
+  "reading": "feyvərabli",
+  "meanings": [
+   "olumlu bir şekilde",
+   "lehte"
+  ],
+  "definition": "To one's advantage or approval.",
+  "example": "The proposal was received favourably."
+ },
+ "generously": {
+  "ipa": "/ˈdʒenərəsli/",
+  "reading": "cenerəsli",
+  "meanings": [
+   "cömertçe"
+  ],
+  "definition": "Showing a readiness to give more.",
+  "example": "He donated money generously to the charity."
+ },
+ "inclusively": {
+  "ipa": "/ɪnˈkluːsɪvli/",
+  "reading": "inklusive-li",
+  "meanings": [
+   "dahil ederek"
+  ],
+  "definition": "Including all the stated limits.",
+  "example": "Dates are inclusive of travel days."
+ },
+ "indifferently": {
+  "ipa": "/ɪnˈdɪfrəntli/",
+  "reading": "indifrantli",
+  "meanings": [
+   "kayıtsızca",
+   "umursamazca"
+  ],
+  "definition": "Having no particular interest or sympathy.",
+  "example": "He shrugged his shoulders indifferently."
+ },
+ "mutually": {
+  "ipa": "/ˈmjuːtʃuəli/",
+  "reading": "myuçuali",
+  "meanings": [
+   "karşılıklı olarak"
+  ],
+  "definition": "Experienced or done by two or more parties.",
+  "example": "They reached a mutually beneficial agreement."
+ },
+ "sensitively": {
+  "ipa": "/ˈsensətɪvli/",
+  "reading": "sensitivli",
+  "meanings": [
+   "duyarlı bir şekilde",
+   "hassasiyetle"
+  ],
+  "definition": "With understanding and awareness of feelings.",
+  "example": "The teacher handled the sensitive issue delicately."
+ },
+ "anxiously": {
+  "ipa": "/ˈæŋkʃəsli/",
+  "reading": "enkşəsli",
+  "meanings": [
+   "endişeyle",
+   "kaygıyla"
+  ],
+  "definition": "In a manner resulting from anxiety.",
+  "example": "She waited anxiously for the test results."
+ },
+ "attentively": {
+  "ipa": "/əˈtentɪvli/",
+  "reading": "etentivli",
+  "meanings": [
+   "dikkatle"
+  ],
+  "definition": "While paying close attention.",
+  "example": "The students listened attentively to the lecture."
+ },
+ "sensibly": {
+  "ipa": "/ˈsensəbli/",
+  "reading": "sensabli",
+  "meanings": [
+   "akıllıca",
+   "mantıklı bir şekilde"
+  ],
+  "definition": "In a practical and wise way.",
+  "example": "She dressed sensibly for the cold weather."
+ },
+ "successively": {
+  "ipa": "/səkˈsesɪvli/",
+  "reading": "saksesivli",
+  "meanings": [
+   "ard arda",
+   "peş peşe"
+  ],
+  "definition": "Following one after the other.",
+  "example": "He won the championship three years successively."
+ },
+ "notoriously": {
+  "ipa": "/nəʊˈtɔːriəsli/",
+  "reading": "notoriousli",
+  "meanings": [
+   "kötü şöhretle",
+   "nam salmış şekilde"
+  ],
+  "definition": "Famous or well known for something bad.",
+  "example": "Traffic in this city is notoriously bad."
+ },
+ "flexibly": {
+  "ipa": "/ˈfleksəbli/",
+  "reading": "fleksabli",
+  "meanings": [
+   "esnek bir şekilde"
+  ],
+  "definition": "Able to be bent or changed easily.",
+  "example": "The schedule can be adapted flexibly."
+ },
+ "recklessly": {
+  "ipa": "/ˈrekləsli/",
+  "reading": "rekləsli",
+  "meanings": [
+   "düşüncesizce",
+   "bursuzca"
+  ],
+  "definition": "Without thinking or caring about the consequences.",
+  "example": "He drove recklessly on the icy road."
+ },
+ "plausibly": {
+  "ipa": "/ˈplɔːzəbli/",
+  "reading": "plözabli",
+  "meanings": [
+   "akla yatkın bir şekilde",
+   "inanılır şekilde"
+  ],
+  "definition": "Seeming reasonable or probable.",
+  "example": "He could plausibly explain the missing money."
+ },
+ "acutely": {
+  "ipa": "/əˈkjuːtli/",
+  "reading": "akyutli",
+  "meanings": [
+   "şiddetli bir şekilde",
+   "derinden",
+   "keskin bir şekilde"
+  ],
+  "definition": "In an intense or sharp manner.",
+  "example": "She was acutely aware of the danger."
+ },
+ "assertively": {
+  "ipa": "/əˈsɜːtɪvli/",
+  "reading": "əsörtivli",
+  "meanings": [
+   "iddialı bir şekilde",
+   "özgüvenle"
+  ],
+  "definition": "In a confident and forceful way.",
+  "example": "He spoke assertively during the meeting."
+ },
+ "blatantly": {
+  "ipa": "/ˈbleɪtəntli/",
+  "reading": "bleytantli",
+  "meanings": [
+   "açıkça",
+   "apaçık",
+   "utanmazca"
+  ],
+  "definition": "In an open and unashamed manner.",
+  "example": "She lied blatantly about the incident."
+ },
+ "coincidentally": {
+  "ipa": "/kəʊˌɪnsɪˈdentəli/",
+  "reading": "koynsidentali",
+  "meanings": [
+   "tesadüfen",
+   "rastlantı sonucu"
+  ],
+  "definition": "By chance or coincidence.",
+  "example": "We met coincidentally at the airport."
+ },
+ "consciously": {
+  "ipa": "/ˈkɒnʃəsli/",
+  "reading": "konşəsli",
+  "meanings": [
+   "bilinçli olarak"
+  ],
+  "definition": "In a deliberate and intentional way.",
+  "example": "He consciously chose to ignore the warning."
+ },
+ "distantly": {
+  "ipa": "/ˈdɪstəntli/",
+  "reading": "distantli",
+  "meanings": [
+   "uzaktan",
+   "mesafeli bir şekilde"
+  ],
+  "definition": "From a distance in space or time.",
+  "example": "They are related only distantly."
+ },
+ "externally": {
+  "ipa": "/ɪkˈstɜːnəli/",
+  "reading": "ikstörenali",
+  "meanings": [
+   "dışarıdan",
+   "harici olarak"
+  ],
+  "definition": "With respect to the outside.",
+  "example": "The building looks fine externally."
+ },
+ "ingeniously": {
+  "ipa": "/ɪnˈdʒiːniəsli/",
+  "reading": "injiniəsli",
+  "meanings": [
+   "dahiyane bir şekilde",
+   "ustalıkla"
+  ],
+  "definition": "In a clever and original manner.",
+  "example": "She ingeniously solved the complex puzzle."
+ },
+ "offensively": {
+  "ipa": "/əˈfensɪvli/",
+  "reading": "ofensivli",
+  "meanings": [
+   "kötü bir şekilde",
+   "rahatsız edici biçimde"
+  ],
+  "definition": "Causing someone to feel resentful.",
+  "example": "He behaved offensively toward the staff."
+ },
+ "painfully": {
+  "ipa": "/ˈpeɪnfəli/",
+  "reading": "peynfeli",
+  "meanings": [
+   "acı verici şekilde",
+   "zorlukla"
+  ],
+  "definition": "In a way that causes pain.",
+  "example": "The process was painfully slow."
+ },
+ "respectfully": {
+  "ipa": "/rɪˈspektfəli/",
+  "reading": "rispektfeli",
+  "meanings": [
+   "saygılı bir şekilde"
+  ],
+  "definition": "With deference and respect.",
+  "example": "Please listen respectfully when others speak."
+ },
+ "conditionally": {
+  "ipa": "/kənˈdɪʃənəli/",
+  "reading": "kondişenali",
+  "meanings": [
+   "şartlı olarak",
+   "koşullu"
+  ],
+  "definition": "Subject to certain conditions.",
+  "example": "He was released conditionally from prison."
+ },
+ "compulsively": {
+  "ipa": "/kəmˈpʌlsɪvli/",
+  "reading": "kampulsivli",
+  "meanings": [
+   "zorlayıcı bir şekilde",
+   "bağımlı olarak"
+  ],
+  "definition": "Resulting from or relating to an irresistible urge.",
+  "example": "She checks her phone compulsively."
+ },
+ "relevantly": {
+  "ipa": "/ˈreləvəntli/",
+  "reading": "reləvantli",
+  "meanings": [
+   "alakalı bir şekilde",
+   "ilgili olarak"
+  ],
+  "definition": "In a way that is closely connected.",
+  "example": "He spoke relevantly to the topic."
+ },
+ "suspiciously": {
+  "ipa": "/səˈspɪʃəsli/",
+  "reading": "səspişəsli",
+  "meanings": [
+   "şüpheli bir şekilde",
+   "kuşkuyla"
+  ],
+  "definition": "Showing suspicion or distrust.",
+  "example": "The man looked around suspiciously."
+ },
+ "dependently": {
+  "ipa": "/dɪˈpendəntli/",
+  "reading": "dipendentli",
+  "meanings": [
+   "bağımlı bir şekilde"
+  ],
+  "definition": "In a way that relies on others.",
+  "example": "He lived dependently on his parents."
+ },
+ "discouragingly": {
+  "ipa": "/dɪsˈkʌrɪdʒɪŋli/",
+  "reading": "diskarıcingli",
+  "meanings": [
+   "heves kırıcı bir şekilde"
+  ],
+  "definition": "Causing loss of confidence.",
+  "example": "Sales figures came in discouragingly low."
+ },
+ "accordingly": {
+  "ipa": "/əˈkɔːdɪŋli/",
+  "reading": "əkordingli",
+  "meanings": [
+   "uygun olarak",
+   "buna göre"
+  ],
+  "definition": "In a way that is appropriate.",
+  "example": "Read the rules and act accordingly."
+ },
+ "eventually": {
+  "ipa": "/ɪˈventʃuəli/",
+  "reading": "iventçuəli",
+  "meanings": [
+   "sonunda",
+   "neticede"
+  ],
+  "definition": "In the end, after a long time.",
+  "example": "She eventually found her lost keys."
  }
 }
