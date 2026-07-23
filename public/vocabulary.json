@@ -8577,5 +8577,997 @@
   ],
   "definition": "In the end, after a long time.",
   "example": "She eventually found her lost keys."
+ },
+ "abandon": {
+  "ipa": "/əˈbændən/",
+  "reading": "ıbendın",
+  "meanings": [
+   "terk etmek",
+   "bırakmak"
+  ],
+  "definition": "To leave someone or something forever",
+  "example": "Do not abandon your dreams when times get tough."
+ },
+ "abide": {
+  "ipa": "/əˈbaɪd/",
+  "reading": "ıbayd",
+  "meanings": [
+   "uymak",
+   "katlanmak"
+  ],
+  "definition": "To accept or act in accordance with a rule",
+  "example": "You must abide by the rules of this school."
+ },
+ "abolish": {
+  "ipa": "/əˈbɒlɪʃ/",
+  "reading": "ıboliş",
+  "meanings": [
+   "yürürlükten kaldırmak",
+   "iptal etmek"
+  ],
+  "definition": "To formally put an end to a system",
+  "example": "They want to abolish the tax on fresh food."
+ },
+ "absorb": {
+  "ipa": "/əbˈzɔːb/",
+  "reading": "ıbzoob",
+  "meanings": [
+   "emmek",
+   "soğurmak"
+  ],
+  "definition": "To take in liquid, gas, or information",
+  "example": "Plants absorb water through their roots in the ground."
+ },
+ "abuse": {
+  "ipa": "/əˈbjuːz/",
+  "reading": "ıbyuuz",
+  "meanings": [
+   "kötüye kullanmak",
+   "istismar etmek"
+  ],
+  "definition": "To use something in a harmful or wrong way",
+  "example": "Do not abuse the power that you have been given."
+ },
+ "accede": {
+  "ipa": "/ækˈsiːd/",
+  "reading": "ıksiid",
+  "meanings": [
+   "kabul etmek",
+   "onaylamak"
+  ],
+  "definition": "To agree to a demand, request, or treaty",
+  "example": "The leader decided to accede to the public demands."
+ },
+ "accelerate": {
+  "ipa": "/əkˈseləreɪt/",
+  "reading": "ıkselıreyt",
+  "meanings": [
+   "hızlandırmak",
+   "hızlanmak"
+  ],
+  "definition": "To move faster or make something happen quicker",
+  "example": "You need to accelerate the car to pass them."
+ },
+ "accommodate": {
+  "ipa": "/əˈkɒmədeɪt/",
+  "reading": "ıkomıdeyt",
+  "meanings": [
+   "barındırmak",
+   "yerleştirmek"
+  ],
+  "definition": "To provide lodging or space for someone",
+  "example": "This hotel can accommodate up to one hundred guests."
+ },
+ "accompany": {
+  "ipa": "/əˈkʌmpəni/",
+  "reading": "ıkampıni",
+  "meanings": [
+   "eşlik etmek",
+   "birlikte gitmek"
+  ],
+  "definition": "To go somewhere with someone as a companion",
+  "example": "I will accompany you to the train station today."
+ },
+ "accomplish": {
+  "ipa": "/əˈkʌmplɪʃ/",
+  "reading": "ıkampliş",
+  "meanings": [
+   "başarmak",
+   "tamamlamak"
+  ],
+  "definition": "To achieve or complete something successfully",
+  "example": "We can accomplish this task if we work together."
+ },
+ "accumulate": {
+  "ipa": "/əˈkjuːmjəleɪt/",
+  "reading": "ıkyuumyuleyt",
+  "meanings": [
+   "biriktirmek",
+   "çoğalmak"
+  ],
+  "definition": "To gather or acquire an increasing number of things",
+  "example": "Dust will accumulate on the shelves if you do not clean."
+ },
+ "accuse": {
+  "ipa": "/əˈkjuːz/",
+  "reading": "ıkyuuz",
+  "meanings": [
+   "suçlamak",
+   "itham etmek"
+  ],
+  "definition": "To say someone has done something wrong or illegal",
+  "example": "Do not accuse him without having any proof."
+ },
+ "achieve": {
+  "ipa": "/əˈtʃiːv/",
+  "reading": "ıçiiv",
+  "meanings": [
+   "elde etmek",
+   "başarmak"
+  ],
+  "definition": "To reach a goal through effort and skill",
+  "example": "You can achieve your goals with hard work."
+ },
+ "acknowledge": {
+  "ipa": "/əkˈnɒlɪdʒ/",
+  "reading": "ıknolic",
+  "meanings": [
+   "kabul etmek",
+   "itiraf etmek"
+  ],
+  "definition": "To accept that something is true or exists",
+  "example": "We must acknowledge the importance of this new discovery."
+ },
+ "acquaint": {
+  "ipa": "/əˈkweɪnt/",
+  "reading": "ıkweynt",
+  "meanings": [
+   "tanıtmak",
+   "aşina etmek"
+  ],
+  "definition": "To make someone aware of or familiar with something",
+  "example": "Let me acquaint you with the rules of the game."
+ },
+ "activate": {
+  "ipa": "/ˈæktɪveɪt/",
+  "reading": "ektivıyt",
+  "meanings": [
+   "aktifleştirmek",
+   "etkinleştirmek"
+  ],
+  "definition": "To make something start working or active",
+  "example": "You must activate your account online to use it."
+ },
+ "adapt": {
+  "ipa": "/əˈdæpt/",
+  "reading": "ıdept",
+  "meanings": [
+   "uyum sağlamak",
+   "uyarlamak"
+  ],
+  "definition": "To adjust to new conditions or situations",
+  "example": "Animals must adapt to live in cold climates."
+ },
+ "adhere": {
+  "ipa": "/ədˈhɪə/",
+  "reading": "ıdhiır",
+  "meanings": [
+   "yapışmak",
+   "bağlı kalmak"
+  ],
+  "definition": "To stick firmly to a surface or rule",
+  "example": "The tape will adhere to any clean surface."
+ },
+ "adjust": {
+  "ipa": "/əˈdʒʌst/",
+  "reading": "ıcast",
+  "meanings": [
+   "ayarlamak",
+   "uyum sağlamak"
+  ],
+  "definition": "To change something slightly to make it fit better",
+  "example": "You can adjust the seat height for more comfort."
+ },
+ "admire": {
+  "ipa": "/ədˈmaɪə/",
+  "reading": "edmayr",
+  "meanings": [
+   "hayran olmak",
+   "beğenmek"
+  ],
+  "definition": "Regard an object, quality, or person with respect.",
+  "example": "I admire her dedication to the work."
+ },
+ "admit": {
+  "ipa": "/ədˈmɪt/",
+  "reading": "edmit",
+  "meanings": [
+   "itiraf etmek",
+   "kabul etmek"
+  ],
+  "definition": "Confess to be true or to be the case.",
+  "example": "He had to admit his mistake."
+ },
+ "adopt": {
+  "ipa": "/əˈdɒpt/",
+  "reading": "edopt",
+  "meanings": [
+   "benimsemek",
+   "evlat edinmek"
+  ],
+  "definition": "Take up or start to use a course of action.",
+  "example": "The company decided to adopt a new strategy."
+ },
+ "adore": {
+  "ipa": "/əˈdɔː/",
+  "reading": "edoor",
+  "meanings": [
+   "çok sevmek",
+   "tapmak"
+  ],
+  "definition": "Love and respect deeply.",
+  "example": "Children adore playing in the park."
+ },
+ "advance": {
+  "ipa": "/ədˈvɑːns/",
+  "reading": "edvans",
+  "meanings": [
+   "ilerlemek",
+   "gelişmek"
+  ],
+  "definition": "Move forward in a purposeful way.",
+  "example": "Technology continues to advance rapidly."
+ },
+ "advertise": {
+  "ipa": "/ˈædvətaɪz/",
+  "reading": "edvörtaiz",
+  "meanings": [
+   "reklam yapmak",
+   "ilan vermek"
+  ],
+  "definition": "Notice or broadcast public information about a product.",
+  "example": "They plan to advertise the new product online."
+ },
+ "affect": {
+  "ipa": "/əˈfɛkt/",
+  "reading": "efekt",
+  "meanings": [
+   "etkilemek"
+  ],
+  "definition": "Have an effect on; make a difference to.",
+  "example": "The weather can affect your mood."
+ },
+ "afford": {
+  "ipa": "/əˈfɔːd/",
+  "reading": "eford",
+  "meanings": [
+   "gücü yetmek",
+   "karşılayabilmek"
+  ],
+  "definition": "Have enough money to pay for something.",
+  "example": "We cannot afford to buy a new car right now."
+ },
+ "aggravate": {
+  "ipa": "/ˈæɡrəveɪt/",
+  "reading": "egreveyت",
+  "meanings": [
+   "kötüleştirmek",
+   "öfkelendirmek"
+  ],
+  "definition": "Make a problem or injury worse.",
+  "example": "Lifting heavy objects can aggravate your back pain."
+ },
+ "aggregate": {
+  "ipa": "/ˈæɡrɪɡət/",
+  "reading": "egriget",
+  "meanings": [
+   "toplam",
+   "kümelemek"
+  ],
+  "definition": "Form a whole or amount to a total.",
+  "example": "The two companies aggregate their profits."
+ },
+ "aid": {
+  "ipa": "/eɪd/",
+  "reading": "eyd",
+  "meanings": [
+   "yardım etmek",
+   "destek"
+  ],
+  "definition": "Help, typically of a practical nature.",
+  "example": "Governments send food and medical aid to the region."
+ },
+ "alarm": {
+  "ipa": "/əˈlɑːm/",
+  "reading": "alarm",
+  "meanings": [
+   "alarm",
+   "korkutmak",
+   "telaşlandırmak"
+  ],
+  "definition": "An anxious awareness of danger.",
+  "example": "The loud noise caused sudden alarm."
+ },
+ "alienate": {
+  "ipa": "/ˈeɪliəneɪt/",
+  "reading": "eyliyneyt",
+  "meanings": [
+   "uzaklaştırmak",
+   "yabancılaştırmak"
+  ],
+  "definition": "Cause someone to feel isolated.",
+  "example": "His harsh words tend to alienate his friends."
+ },
+ "allocate": {
+  "ipa": "/ˈæləkeɪt/",
+  "reading": "elokeyt",
+  "meanings": [
+   "tahsis etmek",
+   "ayırmak"
+  ],
+  "definition": "Distribute resources for a particular purpose.",
+  "example": "The manager will allocate funds for the project."
+ },
+ "allot": {
+  "ipa": "/əˈlɒt/",
+  "reading": "elot",
+  "meanings": [
+   "paylaştırmak",
+   "tahsis etmek"
+  ],
+  "definition": "Give or apportion something to someone as a share.",
+  "example": "Each student is given time to allot for reading."
+ },
+ "alter": {
+  "ipa": "/ˈɔːltə/",
+  "reading": "oltör",
+  "meanings": [
+   "değiştirmek",
+   "başkalaşmak"
+  ],
+  "definition": "Change or cause to change in character.",
+  "example": "You should not alter your core values."
+ },
+ "alternate": {
+  "ipa": "/ɔːlˈtɜːnət/",
+  "reading": "oltörnät",
+  "meanings": [
+   "sırayla yapmak",
+   "nöbetleşe"
+  ],
+  "definition": "Occur in turn successively.",
+  "example": "The two teams alternate responsibilities each week."
+ },
+ "amaze": {
+  "ipa": "/əˈmeɪz/",
+  "reading": "emeyz",
+  "meanings": [
+   "şaşırtmak",
+   "hayrete düşürmek"
+  ],
+  "definition": "Surprise someone greatly.",
+  "example": "Her magic tricks never cease to amaze me."
+ },
+ "amuse": {
+  "ipa": "/əˈmjuːz/",
+  "reading": "emyüz",
+  "meanings": [
+   "eğlendirmek",
+   "güldürmek"
+  ],
+  "definition": "Provide someone with enjoyable entertainment.",
+  "example": "Funny movies always amuse the audience."
+ },
+ "analyze": {
+  "ipa": "/ˈænəlaɪz/",
+  "reading": "enalayz",
+  "meanings": [
+   "analiz etmek",
+   "incelemek"
+  ],
+  "definition": "Examine something in detail for explanation.",
+  "example": "Scientists analyze data to find patterns."
+ },
+ "anchor": {
+  "ipa": "/ˈæŋkə(r)/",
+  "reading": "enkır",
+  "meanings": [
+   "çapa",
+   "demirlemek",
+   "bağlamak"
+  ],
+  "definition": "Secure a ship with a heavy metal object.",
+  "example": "The ship will anchor in the bay."
+ },
+ "annex": {
+  "ipa": "/əˈneks/",
+  "reading": "eneks",
+  "meanings": [
+   "ilhak etmek",
+   "eklemek"
+  ],
+  "definition": "Add territory to an existing country.",
+  "example": "The country plans to annex the region."
+ },
+ "announce": {
+  "ipa": "/əˈnaʊns/",
+  "reading": "enauns",
+  "meanings": [
+   "duyurmak",
+   "açıklamak"
+  ],
+  "definition": "Make a public statement about something.",
+  "example": "The company will announce the new CEO tomorrow."
+ },
+ "annoy": {
+  "ipa": "/əˈnɔɪ/",
+  "reading": "enoy",
+  "meanings": [
+   "rahatsız etmek",
+   "sinirlendirmek"
+  ],
+  "definition": "Make someone slightly angry or impatient.",
+  "example": "Loud noises annoy me when I study."
+ },
+ "anticipate": {
+  "ipa": "/ænˈtɪsɪpeɪt/",
+  "reading": "entisipeyt",
+  "meanings": [
+   "öngörmek",
+   "beklemek"
+  ],
+  "definition": "Expect or predict something to happen.",
+  "example": "We anticipate a large crowd at the concert."
+ },
+ "appeal": {
+  "ipa": "/əˈpiːl/",
+  "reading": "apiil",
+  "meanings": [
+   "başvurmak",
+   "cezbetmek",
+   "temyiz etmek"
+  ],
+  "definition": "Make a serious or urgent request.",
+  "example": "The charity appeals for donations every winter."
+ },
+ "applaud": {
+  "ipa": "/əˈplɔːd/",
+  "reading": "eplod",
+  "meanings": [
+   "alkışlamak"
+  ],
+  "definition": "Show approval by clapping hands together.",
+  "example": "The audience will applaud after the performance."
+ },
+ "apply": {
+  "ipa": "/əˈplaɪ/",
+  "reading": "eplay",
+  "meanings": [
+   "başvurmak",
+   "uygulamak"
+  ],
+  "definition": "Make a formal request for something.",
+  "example": "Students apply for jobs before graduation."
+ },
+ "appoint": {
+  "ipa": "/əˈpɔɪnt/",
+  "reading": "epoynt",
+  "meanings": [
+   "atamak",
+   "görevlendirmek"
+  ],
+  "definition": "Assign a job or role to someone.",
+  "example": "The board will appoint a new director."
+ },
+ "appreciate": {
+  "ipa": "/əˈpriːʃieɪt/",
+  "reading": "eprişieyt",
+  "meanings": [
+   "takdir etmek",
+   "değerini bilmek"
+  ],
+  "definition": "Recognize the full worth of something.",
+  "example": "I appreciate your help with this project."
+ },
+ "approach": {
+  "ipa": "/əˈprəʊtʃ/",
+  "reading": "eprouç",
+  "meanings": [
+   "yaklaşmak",
+   "yanaşmak"
+  ],
+  "definition": "Come near or nearer to someone.",
+  "example": "Winter is coming as we approach December."
+ },
+ "approve": {
+  "ipa": "/əˈpruːv/",
+  "reading": "epruv",
+  "meanings": [
+   "onaylamak",
+   "tasvip etmek"
+  ],
+  "definition": "Officially agree to or accept something.",
+  "example": "The manager must approve the budget."
+ },
+ "argue": {
+  "ipa": "/ˈɑːɡjuː/",
+  "reading": "argyu",
+  "meanings": [
+   "tartışmak",
+   "savunmak"
+  ],
+  "definition": "Exchange angry or opposing views.",
+  "example": "Siblings often argue over trivial things."
+ },
+ "arise": {
+  "ipa": "/əˈraɪz/",
+  "reading": "erayz",
+  "meanings": [
+   "ortaya çıkmak",
+   "doğmak"
+  ],
+  "definition": "Start to happen or come into being.",
+  "example": "New problems can arise at any time."
+ },
+ "arouse": {
+  "ipa": "/əˈraʊz/",
+  "reading": "erauz",
+  "meanings": [
+   "uyandırmak",
+   "tahrik etmek"
+  ],
+  "definition": "Evoke or elicit a feeling or response.",
+  "example": "The mysterious noise will arouse suspicion."
+ },
+ "arrange": {
+  "ipa": "/əˈreɪndʒ/",
+  "reading": "ereynç",
+  "meanings": [
+   "düzenlemek",
+   "ayarlamak"
+  ],
+  "definition": "Organize or plan something in advance.",
+  "example": "Let us arrange a meeting for next week."
+ },
+ "arrest": {
+  "ipa": "/əˈrest/",
+  "reading": "erest",
+  "meanings": [
+   "tutuklamak",
+   "gözaltına almak"
+  ],
+  "definition": "Seize someone by legal authority.",
+  "example": "Police arrest suspects who break the law."
+ },
+ "ascend": {
+  "ipa": "/əˈsend/",
+  "reading": "esend",
+  "meanings": [
+   "yükselmek",
+   "tırmanmak"
+  ],
+  "definition": "Go up or climb something.",
+  "example": "Hikers ascend the mountain in the morning."
+ },
+ "ascertain": {
+  "ipa": "/ˌæsəˈteɪn/",
+  "reading": "eseteyn",
+  "meanings": [
+   "kesin olarak öğrenmek",
+   "tespit etmek"
+  ],
+  "definition": "Find something out for certain.",
+  "example": "Detectives try to ascertain the exact truth."
+ },
+ "ascribe": {
+  "ipa": "/əˈskraɪb/",
+  "reading": "əskrayb",
+  "meanings": [
+   "atfetmek",
+   "bağlamak"
+  ],
+  "definition": "To attribute something to a cause.",
+  "example": "They ascribe the success to hard work."
+ },
+ "assault": {
+  "ipa": "/əˈsɔːlt/",
+  "reading": "əsolt",
+  "meanings": [
+   "saldırı",
+   "darp"
+  ],
+  "definition": "A violent physical or verbal attack.",
+  "example": "The police reported a brutal assault downtown."
+ },
+ "assemble": {
+  "ipa": "/əˈsembəl/",
+  "reading": "esembel",
+  "meanings": [
+   "toplanmak",
+   "monte etmek"
+  ],
+  "definition": "To gather together in one place.",
+  "example": "Students assemble in the hall every morning."
+ },
+ "assert": {
+  "ipa": "/əˈsɜːt/",
+  "reading": "əsört",
+  "meanings": [
+   "ileri sürmek",
+   "savunmak"
+  ],
+  "definition": "To state a fact or belief with confidence.",
+  "example": "He tried to assert his authority."
+ },
+ "assess": {
+  "ipa": "/əˈses/",
+  "reading": "eses",
+  "meanings": [
+   "değerlendirmek",
+   "ölçmek"
+  ],
+  "definition": "To evaluate or estimate the nature of something.",
+  "example": "Teachers assess students at the end of term."
+ },
+ "assign": {
+  "ipa": "/əˈsaɪn/",
+  "reading": "əsayn",
+  "meanings": [
+   "atamak",
+   "görev vermek"
+  ],
+  "definition": "To allocate a task or duty.",
+  "example": "The manager will assign new tasks tomorrow."
+ },
+ "assist": {
+  "ipa": "/əˈsɪst/",
+  "reading": "əsist",
+  "meanings": [
+   "yardım etmek",
+   "destek olmak"
+  ],
+  "definition": "To help someone do something.",
+  "example": "She can assist you with your project."
+ },
+ "associate": {
+  "ipa": "/əˈsəʊʃiət/",
+  "reading": "əsöşiet",
+  "meanings": [
+   "bağdaştırmak",
+   "ilişkilendirmek"
+  ],
+  "definition": "To connect someone or something in one's mind.",
+  "example": "I associate summer with warm weather."
+ },
+ "assume": {
+  "ipa": "/əˈsjuːm/",
+  "reading": "esyum",
+  "meanings": [
+   "varsaymak",
+   "üstlenmek"
+  ],
+  "definition": "To accept something as true without proof.",
+  "example": "Do not assume things without clear evidence."
+ },
+ "assure": {
+  "ipa": "/əˈʃɔː/",
+  "reading": "əşor",
+  "meanings": [
+   "güvence vermek",
+   "inandırmak"
+  ],
+  "definition": "To tell someone positively to remove doubt.",
+  "example": "I assure you that everything is fine."
+ },
+ "astonish": {
+  "ipa": "/əˈstɒnɪʃ/",
+  "reading": "əstoniş",
+  "meanings": [
+   "şaşırtmak",
+   "hayrete düşürmek"
+  ],
+  "definition": "To surprise someone greatly.",
+  "example": "Her sudden success will astonish everyone."
+ },
+ "attach": {
+  "ipa": "/əˈtætʃ/",
+  "reading": "etaç",
+  "meanings": [
+   "bağlamak",
+   "iliştirmek"
+  ],
+  "definition": "To fasten or join one thing to another.",
+  "example": "Please attach the document to the email."
+ },
+ "attack": {
+  "ipa": "/əˈtæk/",
+  "reading": "etak",
+  "meanings": [
+   "saldırmak",
+   "hücum etmek"
+  ],
+  "definition": "To take aggressive action against someone.",
+  "example": "Wild animals rarely attack humans unprovoked."
+ },
+ "attain": {
+  "ipa": "/əˈteɪn/",
+  "reading": "eteyn",
+  "meanings": [
+   "elde etmek",
+   "ulaşmak"
+  ],
+  "definition": "To succeed in achieving something desired.",
+  "example": "Hard work helps you attain your goals."
+ },
+ "attempt": {
+  "ipa": "/əˈtempt/",
+  "reading": "etempt",
+  "meanings": [
+   "teşebbüs etmek",
+   "denemek"
+  ],
+  "definition": "To make an effort to achieve something.",
+  "example": "Do not attempt to fix this alone."
+ },
+ "attend": {
+  "ipa": "/əˈtend/",
+  "reading": "etend",
+  "meanings": [
+   "katılmak",
+   "devam etmek"
+  ],
+  "definition": "To be present at an event.",
+  "example": "Many people attend the annual festival."
+ },
+ "attract": {
+  "ipa": "/əˈtrækt/",
+  "reading": "etrekt",
+  "meanings": [
+   "çekmek",
+   "cezbetmek"
+  ],
+  "definition": "To evoke interest or liking from someone.",
+  "example": "Bright colors attract bees to flowers."
+ },
+ "attribute": {
+  "ipa": "/əˈtrɪbjuːt/",
+  "reading": "etribyut",
+  "meanings": [
+   "bağlamak",
+   "dayandırmak"
+  ],
+  "definition": "To regard something as being caused by.",
+  "example": "Experts attribute the growth to new technology."
+ },
+ "auction": {
+  "ipa": "/ˈɔːkʃən/",
+  "reading": "okşın",
+  "meanings": [
+   "açık artırma",
+   ", müzayede"
+  ],
+  "definition": "A public sale where items are sold to highest bidders.",
+  "example": "They will auction the old painting tonight."
+ },
+ "avoid": {
+  "ipa": "/əˈvɔɪd/",
+  "reading": "əvoyd",
+  "meanings": [
+   "kaçınmak",
+   "sakınmak"
+  ],
+  "definition": "To keep away from or prevent something.",
+  "example": "Try to avoid eating too much sugar."
+ },
+ "bake": {
+  "ipa": "/beɪk/",
+  "reading": "beyk",
+  "meanings": [
+   "fırında pişirmek",
+   "pişmek"
+  ],
+  "definition": "Cook food using dry heat in an oven",
+  "example": "I want to bake a fresh cake today."
+ },
+ "balance": {
+  "ipa": "/ˈbæləns/",
+  "reading": "balens",
+  "meanings": [
+   "denge",
+   "dengede tutmak"
+  ],
+  "definition": "Keep an upright position without falling over",
+  "example": "It is hard to balance on one foot."
+ },
+ "bang": {
+  "ipa": "/bæŋ/",
+  "reading": "beng",
+  "meanings": [
+   "patırtı",
+   "çarpmak",
+   "gürültü yapmak"
+  ],
+  "definition": "Make a sudden loud noise",
+  "example": "Do not bang the door so hard."
+ },
+ "bankrupt": {
+  "ipa": "/ˈbæŋkrʌpt/",
+  "reading": "bengkrapt",
+  "meanings": [
+   "iflas etmiş",
+   "iflas"
+  ],
+  "definition": "Unable to pay debts and out of money",
+  "example": "The small store went bankrupt last year."
+ },
+ "beam": {
+  "ipa": "/biːm/",
+  "reading": "biim",
+  "meanings": [
+   "ışın",
+   "kiriş",
+   "neşeyle gülümsemek"
+  ],
+  "definition": "A ray or shaft of light",
+  "example": "A bright beam of light pierced the dark."
+ },
+ "bear": {
+  "ipa": "/beə(r)/",
+  "reading": "beer",
+  "meanings": [
+   "ayı",
+   "katlanmak",
+   "taşımak"
+  ],
+  "definition": "Accept or endure a difficult situation",
+  "example": "I cannot bear the loud noise anymore."
+ },
+ "beat": {
+  "ipa": "/biːt/",
+  "reading": "biit",
+  "meanings": [
+   "vurmak",
+   "yenmek",
+   "kalp atışı"
+  ],
+  "definition": "Strike repeatedly or defeat someone in a game",
+  "example": "My heart starts to beat faster when running."
+ },
+ "behave": {
+  "ipa": "/bɪˈheɪv/",
+  "reading": "biheyv",
+  "meanings": [
+   "uslu durmak",
+   "davranmak"
+  ],
+  "definition": "Act in a polite or proper way",
+  "example": "Children should behave well at school."
+ },
+ "bend": {
+  "ipa": "/bend/",
+  "reading": "bend",
+  "meanings": [
+   "bükmek",
+   "eğilmek",
+   "kıvrım"
+  ],
+  "definition": "Shape something into a curve or angle",
+  "example": "Bend your knees before you jump."
+ },
+ "betray": {
+  "ipa": "/bɪˈtreɪ/",
+  "reading": "bitrey",
+  "meanings": [
+   "ihanet etmek",
+   "ele vermek"
+  ],
+  "definition": "Be disloyal to someone who trusts you",
+  "example": "Never betray a close friend's secret."
+ },
+ "bewilder": {
+  "ipa": "/bɪˈwɪldə(r)/",
+  "reading": "biwildır",
+  "meanings": [
+   "şaşırtmak",
+   "baştan çıkarmak",
+   "aklını karıştırmak"
+  ],
+  "definition": "Puzzle or confuse someone very much",
+  "example": "The complex puzzle will bewilder most players."
+ },
+ "bid": {
+  "ipa": "/bɪd/",
+  "reading": "bid",
+  "meanings": [
+   "teklif vermek",
+   "açık artırmada fiyat söylemek"
+  ],
+  "definition": "Offer a specific price for something",
+  "example": "He decided to bid for the old painting."
+ },
+ "bind": {
+  "ipa": "/baɪnd/",
+  "reading": "baynd",
+  "meanings": [
+   "bağlamak",
+   "ciltlemek",
+   "tutkal gibi yapıştırmak"
+  ],
+  "definition": "Tie or fasten something tightly together",
+  "example": "Use a strong rope to bind the wood."
+ },
+ "bite": {
+  "ipa": "/baɪt/",
+  "reading": "bayt",
+  "meanings": [
+   "ısırmak",
+   "lokma"
+  ],
+  "definition": "Use teeth to cut into something",
+  "example": "Be careful so the dog does not bite."
+ },
+ "blame": {
+  "ipa": "/bleɪm/",
+  "reading": "bleym",
+  "meanings": [
+   "suçlamak",
+   "suç",
+   "kabahat"
+  ],
+  "definition": "Say that someone is responsible for a fault",
+  "example": "Do not blame me for your mistakes."
+ },
+ "blaze": {
+  "ipa": "/bleɪz/",
+  "reading": "bleyz",
+  "meanings": [
+   "alev",
+   "parlamak",
+   "yangın"
+  ],
+  "definition": "Burn brightly and strongly with large flames",
+  "example": "The warm fire began to blaze brightly."
+ },
+ "bleed": {
+  "ipa": "/bliːd/",
+  "reading": "bliid",
+  "meanings": [
+   "kanamak"
+  ],
+  "definition": "Lose blood from a cut or injury",
+  "example": "His scrape began to bleed a little."
+ },
+ "blend": {
+  "ipa": "/blend/",
+  "reading": "blend",
+  "meanings": [
+   "karıştırmak",
+   "harmanlamak",
+   "karışım"
+  ],
+  "definition": "Mix different substances together thoroughly",
+  "example": "Blend the fruits to make a smooth smoothie."
+ },
+ "blossom": {
+  "ipa": "/ˈblɒsəm/",
+  "reading": "blasım",
+  "meanings": [
+   "çiçek açmak",
+   "çiçek",
+   "gelişmek"
+  ],
+  "definition": "Produce flowers or thrive happily",
+  "example": "The cherry trees blossom in spring."
+ },
+ "blunder": {
+  "ipa": "/ˈblʌndə(r)/",
+  "reading": "blandır",
+  "meanings": [
+   "büyük hata",
+   "gaf",
+   "körlemesine gitmek"
+  ],
+  "definition": "Make a careless or serious mistake",
+  "example": "That big blunder cost them the game."
  }
 }
