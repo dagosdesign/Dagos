@@ -6595,5 +6595,195 @@
   ],
   "definition": "Having a lot of money or resources",
   "example": "The country is rich in natural resources."
+ },
+ "initially": {
+  "ipa": "/ɪˈnɪʃəli/",
+  "reading": "inişıli",
+  "meanings": [
+   "başlangıçta",
+   "ilk başlarda"
+  ],
+  "definition": "At the beginning or start of something.",
+  "example": "We should initially focus on the main problem."
+ },
+ "absolutely": {
+  "ipa": "/ˈæbsəluːtli/",
+  "reading": "ebsılutli",
+  "meanings": [
+   "kesinlikle",
+   "tamamen"
+  ],
+  "definition": "With no qualification or restriction; completely.",
+  "example": "You are absolutely right about this plan."
+ },
+ "almost": {
+  "ipa": "/ˈɔːlməʊst/",
+  "reading": "olmoust",
+  "meanings": [
+   "neredeyse",
+   "hemen hemen"
+  ],
+  "definition": "Nearly but not quite.",
+  "example": "I almost forgot to call you today."
+ },
+ "apparently": {
+  "ipa": "/əˈpærəntli/",
+  "reading": "eperıntli",
+  "meanings": [
+   "görünüşe göre",
+   "anlaşılan"
+  ],
+  "definition": "As far as one can see or tell.",
+  "example": "They apparently decided to cancel the meeting."
+ },
+ "briefly": {
+  "ipa": "/ˈbriːfli/",
+  "reading": "brifli",
+  "meanings": [
+   "kısaca",
+   "kısa bir süre için"
+  ],
+  "definition": "For a short time or in few words.",
+  "example": "Let us briefly discuss the new project details."
+ },
+ "certainly": {
+  "ipa": "/ˈsɜːtənli/",
+  "reading": "sötınli",
+  "meanings": [
+   "kesinlikle",
+   "şüphesiz"
+  ],
+  "definition": "Without doubt; definitely.",
+  "example": "This decision will certainly change our future."
+ },
+ "clearly": {
+  "ipa": "/ˈklɪəli/",
+  "reading": "kliıli",
+  "meanings": [
+   "açıkça",
+   "net bir şekilde"
+  ],
+  "definition": "In a way that is easy to see or hear.",
+  "example": "You must clearly state your goals."
+ },
+ "closely": {
+  "ipa": "/ˈkləʊsli/",
+  "reading": "klousli",
+  "meanings": [
+   "yakından",
+   "dikkatle"
+  ],
+  "definition": "With little or no space or time in between.",
+  "example": "We need to work closely to finish this task."
+ },
+ "completely": {
+  "ipa": "/kəmˈpliːtli/",
+  "reading": "kımplitli",
+  "meanings": [
+   "tamamen",
+   "bütünüyle"
+  ],
+  "definition": "Totally and utterly.",
+  "example": "I completely agree with your proposal."
+ },
+ "considerably": {
+  "ipa": "/kənˈsɪdərəbli/",
+  "reading": "kınsidırıbli",
+  "meanings": [
+   "önemli ölçüde",
+   "oldukça"
+  ],
+  "definition": "By a notable or significant amount.",
+  "example": "Prices have risen considerably this year."
+ },
+ "constantly": {
+  "ipa": "/ˈkɒnstəntli/",
+  "reading": "konstıntli",
+  "meanings": [
+   "sürekli",
+   "durmaksızın"
+  ],
+  "definition": "All the time or regularly.",
+  "example": "The world is constantly changing around us."
+ },
+ "currently": {
+  "ipa": "/ˈkʌrəntli/",
+  "reading": "karıntli",
+  "meanings": [
+   "şu anda",
+   "mevcut durumda"
+  ],
+  "definition": "At the present time.",
+  "example": "We currently have no available positions."
+ },
+ "directly": {
+  "ipa": "/dɪˈrektli/",
+  "reading": "dırektli",
+  "meanings": [
+   "doğrudan",
+   "aracısız"
+  ],
+  "definition": "Without any intervening steps or people.",
+  "example": "Please speak directly to the manager."
+ },
+ "effectively": {
+  "ipa": "/ɪˈfektɪvli/",
+  "reading": "ifektivli",
+  "meanings": [
+   "etkili bir şekilde",
+   "etkili olarak"
+  ],
+  "definition": "In a way that produces a desired result.",
+  "example": "They must learn how to communicate effectively."
+ },
+ "entirely": {
+  "ipa": "/ɪnˈtaɪəli/",
+  "reading": "intayıli",
+  "meanings": [
+   "tamamen",
+   "bütünüyle"
+  ],
+  "definition": "Wholly; completely.",
+  "example": "This situation is entirely your responsibility."
+ },
+ "equally": {
+  "ipa": "/ˈiːkwəli/",
+  "reading": "ikwıli",
+  "meanings": [
+   "eşit derecede",
+   "aynı şekilde"
+  ],
+  "definition": "In the same manner or to the same degree.",
+  "example": "They should divide the work equally."
+ },
+ "especially": {
+  "ipa": "/ɪˈspeʃəli/",
+  "reading": "ispeşıli",
+  "meanings": [
+   "özellikle",
+   "bilhassa"
+  ],
+  "definition": "To a great extent; very much.",
+  "example": "I love music, especially jazz."
+ },
+ "essentially": {
+  "ipa": "/ɪˈsenʃəli/",
+  "reading": "isenşıli",
+  "meanings": [
+   "esas olarak",
+   "özünde"
+  ],
+  "definition": "Fundamentally or basically.",
+  "example": "Their argument is essentially correct."
+ },
+ "exactly": {
+  "ipa": "/ɪgˈzæktli/",
+  "reading": "igzektli",
+  "meanings": [
+   "tam olarak",
+   "kesinlikle"
+  ],
+  "definition": "In an accurate or precise manner.",
+  "example": "Tell me exactly what happened last night."
  }
 }

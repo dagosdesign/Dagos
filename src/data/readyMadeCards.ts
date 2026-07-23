@@ -121,6 +121,10 @@ export const READY_MADE_CARD_WORDS = [
   'inclusive', 'indecisive', 'obstructive', 'resentful', 'unaccountable',
   'negotiable', 'publicized', 'decadent', 'erroneous', 'refutable',
   'virtuous', 'untamed', 'impetuous', 'rich',
+  'initially', 'absolutely', 'almost', 'apparently', 'briefly',
+  'carefully', 'certainly', 'clearly', 'closely', 'completely',
+  'considerably', 'constantly', 'currently', 'directly', 'effectively',
+  'entirely', 'equally', 'especially', 'essentially', 'exactly',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);

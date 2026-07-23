@@ -36,7 +36,7 @@ const schema = {
 
 async function enrichBatch(batch) {
   const prompt =
-    `For each English adjective below, provide: British IPA, a Turkish-phonetic reading ` +
+    `For each English word below, provide: British IPA, a Turkish-phonetic reading ` +
     `(Turkish alphabet, like 'kınsistınt' for consistent), 1-3 Turkish meanings, a very short ` +
     `simple English definition, and one short natural example sentence that uses the word in its ` +
     `exact base form (so it can be highlighted).\n\nWords: ${batch.join(', ')}`;

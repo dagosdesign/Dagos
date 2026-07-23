@@ -4,10 +4,11 @@
 //  - src/data/readyMadeCards.ts (appends missing words)
 // and emits a scenes JSON for image generation (skipping words that already
 // have a photo in public/vocabulary/).
-// Usage: node scripts/merge-words.mjs <enriched.json> <scenes-out.json>
+// Usage: node scripts/merge-words.mjs <enriched.json> <scenes-out.json> [pos] [categoryConst] [idPrefix]
+//   e.g. ... adverb ADVERBS fc-adv     (defaults: adjective ADJECTIVES fc-adj)
 import fs from 'fs';
 
-const [enrichedFile, scenesOut] = process.argv.slice(2);
+const [enrichedFile, scenesOut, POS = 'adjective', CATEGORY = 'ADJECTIVES', ID_PREFIX = 'fc-adj'] = process.argv.slice(2);
 const enriched = JSON.parse(fs.readFileSync(enrichedFile, 'utf8'));
 
 const VOCAB = 'public/vocabulary.json';
@@ -27,18 +28,18 @@ fs.writeFileSync(VOCAB, JSON.stringify(vocab, null, 1), 'utf8');
 
 // --- flashcards.ts ---
 let flash = fs.readFileSync(FLASH, 'utf8');
-const adjWords = new Set(
-  [...flash.matchAll(/word: '([^']+)'[^\n]*category: FLASHCARD_CATEGORIES\.ADJECTIVES/g)].map(m => m[1].toLowerCase())
+const catWords = new Set(
+  [...flash.matchAll(new RegExp(`word: '([^']+)'[^\\n]*category: FLASHCARD_CATEGORIES\\.${CATEGORY}`, 'g'))].map(m => m[1].toLowerCase())
 );
-const maxId = Math.max(...[...flash.matchAll(/fc-adj(\d+)/g)].map(m => parseInt(m[1], 10)));
-const lastEntryRe = new RegExp(`(\\{ id: 'fc-adj${maxId}'[^\\n]*\\n)`);
+const maxId = Math.max(...[...flash.matchAll(new RegExp(`${ID_PREFIX}(\\d+)`, 'g'))].map(m => parseInt(m[1], 10)));
+const lastEntryRe = new RegExp(`(\\{ id: '${ID_PREFIX}${maxId}'[^\\n]*\\n)`);
 let nextId = maxId + 1;
 const newLines = [];
 for (const [word, e] of Object.entries(enriched)) {
-  if (adjWords.has(word)) continue;
+  if (catWords.has(word)) continue;
   const tm = e.meanings.join(', ').replace(/'/g, "\\'");
   const ex = e.example.replace(/'/g, "\\'");
-  newLines.push(`  { id: 'fc-adj${nextId++}', word: '${word}', partOfSpeech: 'adjective', turkishMeaning: '${tm}', exampleSentence: '${ex}', category: FLASHCARD_CATEGORIES.ADJECTIVES },`);
+  newLines.push(`  { id: '${ID_PREFIX}${nextId++}', word: '${word}', partOfSpeech: '${POS}', turkishMeaning: '${tm}', exampleSentence: '${ex}', category: FLASHCARD_CATEGORIES.${CATEGORY} },`);
 }
 if (newLines.length) {
   flash = flash.replace(lastEntryRe, `$1${newLines.join('\n')}\n`);
