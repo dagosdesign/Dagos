@@ -125,6 +125,18 @@ export const READY_MADE_CARD_WORDS = [
   'carefully', 'certainly', 'clearly', 'closely', 'completely',
   'considerably', 'constantly', 'currently', 'directly', 'effectively',
   'entirely', 'equally', 'especially', 'essentially', 'exactly',
+  'extremely', 'fairly', 'fully', 'generally', 'gradually',
+  'greatly', 'hardly', 'heavily', 'highly', 'hopefully',
+  'immediately', 'increasingly', 'incredibly', 'inevitably', 'largely',
+  'mainly', 'merely', 'nearly', 'necessarily', 'notably',
+  'obviously', 'occasionally', 'particularly', 'partly', 'precisely',
+  'previously', 'primarily', 'probably', 'properly', 'rapidly',
+  'rarely', 'reasonably', 'recently', 'regularly', 'relatively',
+  'respectively', 'roughly', 'seriously', 'significantly', 'similarly',
+  'simply', 'strongly', 'successfully', 'suddenly', 'together',
+  'truly', 'ultimately', 'usually', 'virtually', 'widely',
+  'additionally', 'commonly', 'randomly', 'adversely', 'formerly',
+  'solely', 'permanently', 'remarkably', 'conversely', 'dramatically',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);

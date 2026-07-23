@@ -6785,5 +6785,596 @@
   ],
   "definition": "In an accurate or precise manner.",
   "example": "Tell me exactly what happened last night."
+ },
+ "extremely": {
+  "ipa": "/ɪkˈstriːmli/",
+  "reading": "ikstriymli",
+  "meanings": [
+   "aşırı derecede",
+   "son derece"
+  ],
+  "definition": "To a very great degree.",
+  "example": "The weather today is extremely cold."
+ },
+ "fairly": {
+  "ipa": "/ˈfeəli/",
+  "reading": "ferli",
+  "meanings": [
+   "oldukça",
+   "nevi şahsına münhasır değil"
+  ],
+  "definition": "To a moderately high degree.",
+  "example": "She did a fairly good job."
+ },
+ "fully": {
+  "ipa": "/ˈfʊli/",
+  "reading": "fuli",
+  "meanings": [
+   "tamamen",
+   "bütünüyle"
+  ],
+  "definition": "Completely or entirely.",
+  "example": "I am fully aware of the situation."
+ },
+ "generally": {
+  "ipa": "/ˈdʒenrəli/",
+  "reading": "cenrali",
+  "meanings": [
+   "genellikle",
+   "genel olarak"
+  ],
+  "definition": "In most cases or by most people.",
+  "example": "Cats generally dislike getting wet."
+ },
+ "gradually": {
+  "ipa": "/ˈɡrædʒuəli/",
+  "reading": "gracuyli",
+  "meanings": [
+   "adım adım",
+   "yavaş yavaş"
+  ],
+  "definition": "Slowly over a period of time.",
+  "example": "The ice began to melt gradually."
+ },
+ "greatly": {
+  "ipa": "/ˈɡreɪtli/",
+  "reading": "greytli",
+  "meanings": [
+   "büyük ölçüde",
+   "çok fazla"
+  ],
+  "definition": "To a great extent.",
+  "example": "Your help is greatly appreciated."
+ },
+ "hardly": {
+  "ipa": "/ˈhɑːdli/",
+  "reading": "haadli",
+  "meanings": [
+   "neredeyse hiç",
+   "zorla"
+  ],
+  "definition": "Almost not at all.",
+  "example": "I could hardly hear the speaker."
+ },
+ "heavily": {
+  "ipa": "/ˈhevɪli/",
+  "reading": "hevili",
+  "meanings": [
+   "yoğun bir şekilde",
+   "ağır bir şekilde"
+  ],
+  "definition": "To a great degree or amount.",
+  "example": "It started to rain heavily."
+ },
+ "highly": {
+  "ipa": "/ˈhaɪli/",
+  "reading": "hayli",
+  "meanings": [
+   "oldukça",
+   "yüksek derecede"
+  ],
+  "definition": "To a high degree or standard.",
+  "example": "She is a highly skilled worker."
+ },
+ "hopefully": {
+  "ipa": "/ˈhəʊpfəli/",
+  "reading": "houpfli",
+  "meanings": [
+   "inşallah",
+   "ümit ederim ki"
+  ],
+  "definition": "It is hoped that.",
+  "example": "Hopefully, the flight will arrive on time."
+ },
+ "immediately": {
+  "ipa": "/ɪˈmiːdiətli/",
+  "reading": "imiydiatli",
+  "meanings": [
+   "derhal",
+   "hemen"
+  ],
+  "definition": "At once without any delay.",
+  "example": "Please reply to this email immediately."
+ },
+ "increasingly": {
+  "ipa": "/ɪnˈkriːsɪŋli/",
+  "reading": "inkriysingli",
+  "meanings": [
+   "giderek",
+   "artan bir şekilde"
+  ],
+  "definition": "More and more over time.",
+  "example": "Life has become increasingly expensive."
+ },
+ "incredibly": {
+  "ipa": "/ɪnˈkredəbli/",
+  "reading": "inkredibli",
+  "meanings": [
+   "inanılmaz derecede",
+   "çok"
+  ],
+  "definition": "To a great or extreme extent.",
+  "example": "The movie was incredibly boring."
+ },
+ "inevitably": {
+  "ipa": "/ɪnˈevɪtəbli/",
+  "reading": "inevitibli",
+  "meanings": [
+   "kaçınılmaz olarak",
+   "muhakkak"
+  ],
+  "definition": "As certain to happen.",
+  "example": "Mistakes will inevitably happen."
+ },
+ "largely": {
+  "ipa": "/ˈlɑːdʒli/",
+  "reading": "laacli",
+  "meanings": [
+   "büyük ölçüde",
+   "çoğunlukla"
+  ],
+  "definition": "Mostly or mainly.",
+  "example": "The success was largely due to teamwork."
+ },
+ "mainly": {
+  "ipa": "/ˈmeɪnli",
+  "reading": "meynli",
+  "meanings": [
+   "esasen",
+   "çoğunlukla"
+  ],
+  "definition": "For the most part.",
+  "example": "The diet consists mainly of vegetables."
+ },
+ "merely": {
+  "ipa": "/ˈmɪəli/",
+  "reading": "miyrli",
+  "meanings": [
+   "sadece",
+   "yalnızca"
+  ],
+  "definition": "Just or only.",
+  "example": "I was merely asking a question."
+ },
+ "nearly": {
+  "ipa": "/ˈnɪəli/",
+  "reading": "niyrli",
+  "meanings": [
+   "neredeyse",
+   "yaklaşık"
+  ],
+  "definition": "Almost but not quite.",
+  "example": "The job is nearly finished."
+ },
+ "necessarily": {
+  "ipa": "/ˌnesəˈserəli/",
+  "reading": "neseserali",
+  "meanings": [
+   "mutlaka",
+   "gerektiği gibi"
+  ],
+  "definition": "As a necessary result.",
+  "example": "Expensive does not necessarily mean better."
+ },
+ "notably": {
+  "ipa": "/ˈnəʊtəbli/",
+  "reading": "noutabli",
+  "meanings": [
+   "özellikle",
+   "dikkat çekici şekilde"
+  ],
+  "definition": "Especially or particularly.",
+  "example": "Prices have dropped, notably in electronics."
+ },
+ "obviously": {
+  "ipa": "/ˈɒbviəsli/",
+  "reading": "obviyasli",
+  "meanings": [
+   "açıkça",
+   "belli ki"
+  ],
+  "definition": "Clearly and easily seen or understood.",
+  "example": "He was obviously tired after the long trip."
+ },
+ "occasionally": {
+  "ipa": "/əˈkeɪʒnəli/",
+  "reading": "okejnalı",
+  "meanings": [
+   "ara sıra",
+   "nadiren"
+  ],
+  "definition": "Happening sometimes but not often.",
+  "example": "They occasionally go to the cinema on weekends."
+ },
+ "particularly": {
+  "ipa": "/pəˈtɪkjələli/",
+  "reading": "patikyulalili",
+  "meanings": [
+   "özellikle",
+   "özgü bir şekilde"
+  ],
+  "definition": "More than usual or to a great degree.",
+  "example": "She is particularly interested in modern art."
+ },
+ "partly": {
+  "ipa": "/ˈpɑːtli/",
+  "reading": "patli",
+  "meanings": [
+   "kısmen",
+   "bir ölçüde"
+  ],
+  "definition": "To some degree, but not completely.",
+  "example": "The delay was partly due to bad weather."
+ },
+ "precisely": {
+  "ipa": "/prɪˈsaɪsli/",
+  "reading": "prisaysli",
+  "meanings": [
+   "kesinlikle",
+   "tam olarak"
+  ],
+  "definition": "Exactly and accurately.",
+  "example": "The train leaves at precisely five o'clock."
+ },
+ "previously": {
+  "ipa": "/ˈpriːviəsli/",
+  "reading": "priviyasli",
+  "meanings": [
+   "önceden",
+   "daha önce"
+  ],
+  "definition": "At a time before the present.",
+  "example": "She had previously worked as a teacher."
+ },
+ "primarily": {
+  "ipa": "/ˈpraɪmərɪli/",
+  "reading": "praymərili",
+  "meanings": [
+   "öncelikle",
+   "başlıca"
+  ],
+  "definition": "Mainly or for the most part.",
+  "example": "The course is designed primarily for beginners."
+ },
+ "probably": {
+  "ipa": "/ˈprɒbəbli/",
+  "reading": "probabli",
+  "meanings": [
+   "muhtemelen",
+   "herhalde"
+  ],
+  "definition": "Likely to happen or be true.",
+  "example": "It will probably rain later this afternoon."
+ },
+ "properly": {
+  "ipa": "/ˈprɒpəli/",
+  "reading": "propali",
+  "meanings": [
+   "düzgün bir şekilde",
+   "uygun olarak"
+  ],
+  "definition": "Correctly or satisfactorily.",
+  "example": "Make sure the door is locked properly."
+ },
+ "rapidly": {
+  "ipa": "/ˈræpɪdli/",
+  "reading": "rapidli",
+  "meanings": [
+   "hızla",
+   "çabucak"
+  ],
+  "definition": "Very quickly or at a high rate.",
+  "example": "Technology is changing rapidly today."
+ },
+ "rarely": {
+  "ipa": "/ˈreəli/",
+  "reading": "reyli",
+  "meanings": [
+   "nadiren",
+   "çok az"
+  ],
+  "definition": "Not often; seldom.",
+  "example": "He rarely eats fast food."
+ },
+ "reasonably": {
+  "ipa": "/ˈriːznəbli/",
+  "reading": "riznabli",
+  "meanings": [
+   "makul bir şekilde",
+   "oldukça"
+  ],
+  "definition": "Fairly or to a satisfactory degree.",
+  "example": "The hotel was clean and reasonably priced."
+ },
+ "recently": {
+  "ipa": "/ˈriːsntli/",
+  "reading": "risantli",
+  "meanings": [
+   "son zamanlarda",
+   "yakında"
+  ],
+  "definition": "A short time ago.",
+  "example": "They recently moved to a new house."
+ },
+ "regularly": {
+  "ipa": "/ˈreɡjələli/",
+  "reading": "regyulali",
+  "meanings": [
+   "düzenli olarak",
+   "sık sık"
+  ],
+  "definition": "At uniform intervals of time.",
+  "example": "She exercises regularly to stay healthy."
+ },
+ "relatively": {
+  "ipa": "/ˈrelətɪvli/",
+  "reading": "relativli",
+  "meanings": [
+   "görece",
+   "nispeten"
+  ],
+  "definition": "Compared to other similar things.",
+  "example": "The test was relatively easy for everyone."
+ },
+ "respectively": {
+  "ipa": "/rɪˈspektɪvli/",
+  "reading": "rispektivli",
+  "meanings": [
+   "sırasıyla"
+  ],
+  "definition": "In the order previously mentioned.",
+  "example": "John and Mary are aged 10 and 12 respectively."
+ },
+ "roughly": {
+  "ipa": "/ˈrʌfli/",
+  "reading": "rafli",
+  "meanings": [
+   "yaklaşık olarak",
+   "kabaca"
+  ],
+  "definition": "Approximately, not exactly.",
+  "example": "The project will take roughly three weeks."
+ },
+ "seriously": {
+  "ipa": "/ˈsɪəriəsli/",
+  "reading": "siriyasli",
+  "meanings": [
+   "ciddi bir şekilde",
+   "ciddiyetle"
+  ],
+  "definition": "In a solemn or sincere manner.",
+  "example": "You need to take your studies seriously."
+ },
+ "significantly": {
+  "ipa": "/sɪɡˈnɪfɪkəntli/",
+  "reading": "signifikantli",
+  "meanings": [
+   "önemli ölçüde",
+   "anlamlı bir şekilde"
+  ],
+  "definition": "In a way that has a major effect.",
+  "example": "Sales increased significantly this month."
+ },
+ "similarly": {
+  "ipa": "/ˈsɪmɪləli/",
+  "reading": "similali",
+  "meanings": [
+   "benzer şekilde",
+   "aynı şekilde"
+  ],
+  "definition": "In a similar way.",
+  "example": "The second plan is similarly effective."
+ },
+ "simply": {
+  "ipa": "/ˈsɪmpli/",
+  "reading": "sımpli",
+  "meanings": [
+   "sadece",
+   "kolayca",
+   "basitçe"
+  ],
+  "definition": "Only or just; without complication.",
+  "example": "I simply want to know the truth."
+ },
+ "strongly": {
+  "ipa": "/ˈstrɒŋli/",
+  "reading": "sıtrongli",
+  "meanings": [
+   "kuvvetlice",
+   "şiddetle",
+   "güçlü bir şekilde"
+  ],
+  "definition": "With great force or power.",
+  "example": "She strongly disagreed with his opinion."
+ },
+ "successfully": {
+  "ipa": "/səkˈsesfəli/",
+  "reading": "saksesfuli",
+  "meanings": [
+   "başarıyla"
+  ],
+  "definition": "In a way that accomplishes a aim.",
+  "example": "He successfully completed the project on time."
+ },
+ "together": {
+  "ipa": "/təˈɡeðə(r)/",
+  "reading": "tügedö",
+  "meanings": [
+   "birlikte",
+   "beraber"
+  ],
+  "definition": "With or near each other.",
+  "example": "They worked together to finish the task."
+ },
+ "truly": {
+  "ipa": "/ˈtruːli",
+  "reading": "truli",
+  "meanings": [
+   "gerçekten",
+   "doğrudan"
+  ],
+  "definition": "In accordance with truth or fact.",
+  "example": "I am truly sorry for the mistake."
+ },
+ "ultimately": {
+  "ipa": "/ˈʌltɪmətli/",
+  "reading": "altimətli",
+  "meanings": [
+   "sonunda",
+   "en nihayetinde"
+  ],
+  "definition": "Finally; after a series of events.",
+  "example": "His hard work ultimately paid off."
+ },
+ "usually": {
+  "ipa": "/ˈjuːʒuəli/",
+  "reading": "yujuali",
+  "meanings": [
+   "genellikle",
+   "çoğunlukla"
+  ],
+  "definition": "Under normal conditions; most of the time.",
+  "example": "She usually drinks tea in the morning."
+ },
+ "virtually": {
+  "ipa": "/ˈvɜːtʃuəli/",
+  "reading": "vöçuali",
+  "meanings": [
+   "neredeyse",
+   "fiilen"
+  ],
+  "definition": "Nearly; almost completely.",
+  "example": "The stadium was virtually empty."
+ },
+ "widely": {
+  "ipa": "/ˈwaɪdli/",
+  "reading": "vaydli",
+  "meanings": [
+   "geniş ölçüde",
+   "yaygın olarak"
+  ],
+  "definition": "By a lot of people or in many places.",
+  "example": "English is widely spoken around the world."
+ },
+ "additionally": {
+  "ipa": "/əˈdɪʃənəli/",
+  "reading": "adişənli",
+  "meanings": [
+   "ek olarak",
+   "ayrıca"
+  ],
+  "definition": "As an extra factor or circumstance.",
+  "example": "Additionally, we offer free shipping on all orders."
+ },
+ "commonly": {
+  "ipa": "/ˈkɒmənli/",
+  "reading": "kamənli",
+  "meanings": [
+   "yaygın olarak",
+   "genellikle"
+  ],
+  "definition": "Frequently; most often.",
+  "example": "This plant is commonly found in wet areas."
+ },
+ "randomly": {
+  "ipa": "/ˈrændəmli/",
+  "reading": "randamli",
+  "meanings": [
+   "rastgele",
+   "gelişigüzel"
+  ],
+  "definition": "Without a definite aim or pattern.",
+  "example": "The computer picked a winner randomly."
+ },
+ "adversely": {
+  "ipa": "/ˈædvɜːsli/",
+  "reading": "advöśli",
+  "meanings": [
+   "olumsuz yönde",
+   "zararlı bir şekilde"
+  ],
+  "definition": "In a harmful way; negatively.",
+  "example": "Bad weather can adversely affect crop growth."
+ },
+ "formerly": {
+  "ipa": "/ˈfɔːməli/",
+  "reading": "fomali",
+  "meanings": [
+   "eskiden",
+   "önceden"
+  ],
+  "definition": "In the past; previously.",
+  "example": "Istanbul was formerly known as Constantinople."
+ },
+ "solely": {
+  "ipa": "/ˈsəʊlli/",
+  "reading": "souli",
+  "meanings": [
+   "yalnızca",
+   "sadece"
+  ],
+  "definition": "Not involving anyone or anything else.",
+  "example": "He is solely responsible for the project."
+ },
+ "permanently": {
+  "ipa": "/ˈpɜːmənəntli/",
+  "reading": "pömənəntli",
+  "meanings": [
+   "kalıcı olarak",
+   "daimi olarak"
+  ],
+  "definition": "For all time; without changing.",
+  "example": "She moved to London permanently."
+ },
+ "remarkably": {
+  "ipa": "/rɪˈmɑːkəbli/",
+  "reading": "rimakabli",
+  "meanings": [
+   "dikkat çekici biçimde",
+   "oldukça"
+  ],
+  "definition": "In a way that is worthy of attention.",
+  "example": "He recovered remarkably fast from the illness."
+ },
+ "conversely": {
+  "ipa": "/ˈkɒnvɜːsli/",
+  "reading": "konvöśli",
+  "meanings": [
+   "aksi takdirde",
+   "buna karşılık",
+   "tersine"
+  ],
+  "definition": "Introducing a statement that is the opposite.",
+  "example": "City life is fast; conversely, country life is slow."
+ },
+ "dramatically": {
+  "ipa": "/drəˈmætɪkli/",
+  "reading": "dramatikli",
+  "meanings": [
+   "önemli ölçüde",
+   "dramatik bir şekilde"
+  ],
+  "definition": "By a large amount or to a great extent.",
+  "example": "Temperatures dropped dramatically overnight."
  }
 }
