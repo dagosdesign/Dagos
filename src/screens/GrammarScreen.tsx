@@ -1,253 +1,201 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import {
-  GraduationCap,
-  ChevronRight,
-  ChevronLeft,
-  CheckCircle2,
-  XCircle,
-  ArrowRight,
-  BookMarked,
-  Trophy,
-} from 'lucide-react';
-import { GRAMMAR_TOPICS } from '../data/grammarLessons';
-import { GrammarProgressState, GrammarTopic } from '../types';
+import { GraduationCap, ChevronRight, ChevronLeft, BookOpen, Loader2 } from 'lucide-react';
+import GRAMMAR_CATEGORIES from '../data/grammarTopics.json';
+import Markdown from '../components/Markdown';
+import { GrammarProgressState } from '../types';
 
 interface GrammarScreenProps {
   grammarProgress: GrammarProgressState;
   recordGrammarQuizResult: (topicId: string, correctCount: number, totalCount: number) => void;
 }
 
-type ViewMode = 'list' | 'lesson' | 'quiz' | 'result';
+interface Category {
+  id: string;
+  title: string;
+  titleTr: string;
+  subtopics: { id: string; title: string }[];
+}
 
-export default function GrammarScreen({ grammarProgress, recordGrammarQuizResult }: GrammarScreenProps) {
-  const [view, setView] = useState<ViewMode>('list');
-  const [activeTopic, setActiveTopic] = useState<GrammarTopic | null>(null);
-  const [questionIdx, setQuestionIdx] = useState(0);
-  const [selectedOptionIdx, setSelectedOptionIdx] = useState<number | null>(null);
-  const [answers, setAnswers] = useState<{ correct: boolean }[]>([]);
+interface Lesson {
+  title: string;
+  en: string;
+  tr: string;
+}
 
-  const openTopic = (topic: GrammarTopic) => {
-    setActiveTopic(topic);
-    setView('lesson');
-  };
+type Lang = 'en' | 'tr';
 
-  const startQuiz = () => {
-    setQuestionIdx(0);
-    setSelectedOptionIdx(null);
-    setAnswers([]);
-    setView('quiz');
-  };
+const CATEGORIES = GRAMMAR_CATEGORIES as Category[];
 
-  const selectAnswer = (idx: number) => {
-    if (selectedOptionIdx !== null || !activeTopic) return;
-    setSelectedOptionIdx(idx);
-    const isCorrect = idx === activeTopic.questions[questionIdx].correctIndex;
-    setAnswers(prev => [...prev, { correct: isCorrect }]);
-  };
+// Per-category lesson JSON, fetched once and cached for the session.
+const lessonCache = new Map<string, Promise<Record<string, Lesson>>>();
+function loadCategory(id: string): Promise<Record<string, Lesson>> {
+  let p = lessonCache.get(id);
+  if (!p) {
+    p = fetch(`/grammar/${id}.json`).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
+    lessonCache.set(id, p);
+  }
+  return p;
+}
 
-  const nextQuestion = () => {
-    if (!activeTopic) return;
-    if (questionIdx + 1 < activeTopic.questions.length) {
-      setQuestionIdx(prev => prev + 1);
-      setSelectedOptionIdx(null);
-    } else {
-      const correctCount = answers.filter(a => a.correct).length;
-      recordGrammarQuizResult(activeTopic.id, correctCount, activeTopic.questions.length);
-      setView('result');
-    }
-  };
+export default function GrammarScreen(_props: GrammarScreenProps) {
+  const [category, setCategory] = useState<Category | null>(null);
+  const [subId, setSubId] = useState<string | null>(null);
+  const [lessons, setLessons] = useState<Record<string, Lesson> | null>(null);
+  const [lang, setLang] = useState<Lang>('en');
 
-  const backToList = () => {
-    setView('list');
-    setActiveTopic(null);
-  };
+  useEffect(() => {
+    if (!category) return;
+    let cancelled = false;
+    setLessons(null);
+    loadCategory(category.id).then(data => {
+      if (!cancelled) setLessons(data);
+    });
+    return () => { cancelled = true; };
+  }, [category]);
 
-  return (
-    <div className="space-y-6">
-      <>
-        {view === 'list' && (
-          <motion.div key="list" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="space-y-4">
-            <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
-              <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
-                <GraduationCap className="w-5 h-5" />
-              </div>
-              <div>
-                <h2 className="text-lg font-serif italic text-white">Grammar Lessons</h2>
-                <p className="text-xs text-white/40 font-mono">{GRAMMAR_TOPICS.length} topics available</p>
-              </div>
+  /* ---- Lesson view ---- */
+  if (category && subId) {
+    const lesson = lessons?.[subId];
+    const subIdx = category.subtopics.findIndex(s => s.id === subId);
+    const prev = category.subtopics[subIdx - 1];
+    const next = category.subtopics[subIdx + 1];
+
+    return (
+      <motion.div key={subId} initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <button
+            onClick={() => setSubId(null)}
+            className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
+          >
+            <ChevronLeft className="w-3.5 h-3.5" /> {category.title}
+          </button>
+
+          {/* EN / TR toggle */}
+          <div className="flex rounded-full border border-[#e3b553]/30 overflow-hidden text-[11px] font-bold">
+            {(['en', 'tr'] as Lang[]).map(l => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`px-4 py-1.5 uppercase tracking-widest transition-colors cursor-pointer ${
+                  lang === l ? 'bg-[#e3b553] text-[#0a0a0b]' : 'text-[#e3b553]/70 hover:text-[#e3b553]'
+                }`}
+              >
+                {l === 'en' ? 'English' : 'Türkçe'}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-5 sm:p-7 shadow-lg">
+          {!lessons ? (
+            <div className="flex items-center justify-center gap-2 py-16 text-white/40 text-xs font-mono">
+              <Loader2 className="w-4 h-4 animate-spin text-[#e3b553]" /> Yükleniyor…
             </div>
+          ) : !lesson ? (
+            <p className="text-center text-white/40 text-xs font-mono py-16">
+              Bu konu henüz hazırlanıyor. Lütfen daha sonra tekrar dene.
+            </p>
+          ) : (
+            <Markdown text={lang === 'en' ? lesson.en : lesson.tr} />
+          )}
+        </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {GRAMMAR_TOPICS.map(topic => {
-                const progress = grammarProgress[topic.id];
-                return (
-                  <button
-                    key={topic.id}
-                    onClick={() => openTopic(topic)}
-                    className="text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl p-5 transition-all cursor-pointer group"
-                  >
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="text-base font-serif italic text-white group-hover:text-[#e3b553] transition-colors">
-                          {topic.title}
-                        </h3>
-                        <p className="text-[11px] text-white/40 font-mono mt-0.5">{topic.titleTr}</p>
-                      </div>
-                      {progress?.completed && (
-                        <span className="flex items-center gap-1 text-[10px] font-mono text-[#e3b553] bg-[#e3b553]/10 border border-[#e3b553]/20 px-2 py-0.5 rounded-md shrink-0">
-                          <CheckCircle2 className="w-3 h-3" /> {progress.bestScore}%
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-xs text-white/50 mt-2.5 leading-relaxed font-light">{topic.description}</p>
-                    <div className="flex items-center justify-end mt-3">
-                      <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-[#e3b553] transition-colors" />
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
+        <div className="flex justify-between gap-3">
+          <button
+            onClick={() => prev && setSubId(prev.id)}
+            disabled={!prev}
+            className="flex-1 border border-[#e3b553]/40 text-[#e3b553] rounded-xl py-3 px-3 text-xs font-bold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#e3b553]/10 transition-colors truncate"
+          >
+            {prev ? `← ${prev.title}` : '←'}
+          </button>
+          <button
+            onClick={() => next && setSubId(next.id)}
+            disabled={!next}
+            className="flex-1 bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-3 text-xs font-bold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed truncate"
+          >
+            {next ? `${next.title} →` : '→'}
+          </button>
+        </div>
+      </motion.div>
+    );
+  }
 
-        {view === 'lesson' && activeTopic && (
-          <motion.div key="lesson" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-6 sm:p-8 shadow-lg space-y-6">
-            <button onClick={backToList} className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer">
-              <ChevronLeft className="w-3.5 h-3.5" /> All topics
-            </button>
+  /* ---- Subtopic list ---- */
+  if (category) {
+    return (
+      <motion.div key={category.id} initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} className="space-y-4">
+        <button
+          onClick={() => setCategory(null)}
+          className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
+        >
+          <ChevronLeft className="w-3.5 h-3.5" /> Tüm konular
+        </button>
 
-            <div>
-              <h2 className="text-2xl font-serif italic text-white tracking-wide">{activeTopic.title}</h2>
-              <p className="text-xs text-white/40 font-mono mt-1">{activeTopic.titleTr}</p>
-            </div>
+        <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
+          <h2 className="text-xl font-serif italic text-white">{category.title}</h2>
+          <p className="text-xs text-[#e3b553]/80 font-mono mt-0.5">{category.titleTr}</p>
+        </div>
 
-            <p className="text-sm text-white/70 leading-relaxed font-light">{activeTopic.explanation}</p>
-
-            <div className="space-y-2">
-              <p className="text-[10px] text-white/40 font-mono uppercase tracking-wider flex items-center gap-1.5">
-                <BookMarked className="w-3.5 h-3.5 text-[#e3b553]" /> Example Sentences
-              </p>
-              <ul className="space-y-1.5">
-                {activeTopic.examples.map((sentence, idx) => (
-                  <li key={idx} className="text-xs text-white/60 leading-relaxed italic border-l-2 border-[#e3b553]/40 pl-3 font-light">
-                    "{sentence}"
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+        <div className="space-y-2.5">
+          {category.subtopics.map((sub, idx) => (
             <button
-              onClick={startQuiz}
-              className="w-full bg-[#e3b553] text-[#0a0a0b] hover:bg-[#d2a442] font-bold rounded-xl py-3.5 px-4 text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
+              key={sub.id}
+              onClick={() => { setSubId(sub.id); setLang('en'); }}
+              className="w-full flex items-center gap-3.5 text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl px-4 py-3.5 transition-all cursor-pointer group"
             >
-              <span>Start Mini Test ({activeTopic.questions.length} questions)</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <span className="w-7 h-7 rounded-lg bg-[#e3b553]/10 border border-[#e3b553]/20 text-[#e3b553] text-[11px] font-bold flex items-center justify-center shrink-0">
+                {idx + 1}
+              </span>
+              <span className="text-sm text-white/85 font-light group-hover:text-[#e3b553] transition-colors flex-1">
+                {sub.title}
+              </span>
+              <ChevronRight className="w-4 h-4 text-white/25 group-hover:text-[#e3b553] transition-colors shrink-0" />
             </button>
-          </motion.div>
-        )}
+          ))}
+        </div>
+      </motion.div>
+    );
+  }
 
-        {view === 'quiz' && activeTopic && (
-          <motion.div key="quiz" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="bg-white/[0.02] rounded-3xl border border-white/[0.06] shadow-lg overflow-hidden">
-            <div className="h-1 bg-white/[0.04] w-full">
-              <div className="h-full bg-[#e3b553] transition-all duration-300" style={{ width: `${((questionIdx + 1) / activeTopic.questions.length) * 100}%` }} />
-            </div>
-            <div className="p-6 sm:p-8 space-y-6">
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono tracking-widest font-bold bg-[#e3b553]/10 border border-[#e3b553]/15 text-[#e3b553] px-2.5 py-1 rounded-lg uppercase">
-                  {activeTopic.title}
-                </span>
-                <span className="text-xs font-mono text-white/40">
-                  Question {questionIdx + 1} of {activeTopic.questions.length}
-                </span>
+  /* ---- Category grid ---- */
+  return (
+    <motion.div key="categories" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
+      <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
+        <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
+          <GraduationCap className="w-5 h-5" />
+        </div>
+        <div>
+          <h2 className="text-lg font-serif italic text-white">Grammar</h2>
+          <p className="text-xs text-white/40 font-mono">{CATEGORIES.length} kategori · İngilizce + Türkçe anlatım</p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {CATEGORIES.map((cat, idx) => (
+          <button
+            key={cat.id}
+            onClick={() => setCategory(cat)}
+            className="text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl p-4.5 p-5 transition-all cursor-pointer group"
+          >
+            <div className="flex items-center gap-3">
+              <span className="w-8 h-8 rounded-xl bg-[#e3b553]/10 border border-[#e3b553]/20 text-[#e3b553] text-[11px] font-bold flex items-center justify-center shrink-0">
+                {idx + 1}
+              </span>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-[15px] font-serif italic text-white group-hover:text-[#e3b553] transition-colors leading-tight">
+                  {cat.title}
+                </h3>
+                <p className="text-[11px] text-white/40 font-mono mt-0.5">{cat.titleTr}</p>
               </div>
-
-              <p className="text-lg font-serif italic text-white leading-relaxed">
-                {activeTopic.questions[questionIdx].prompt}
-              </p>
-
-              <div className="grid grid-cols-1 gap-3">
-                {activeTopic.questions[questionIdx].options.map((option, idx) => {
-                  const isSelected = selectedOptionIdx === idx;
-                  const isCorrectAnswer = idx === activeTopic.questions[questionIdx].correctIndex;
-                  const hasAnswered = selectedOptionIdx !== null;
-
-                  let tileClass = 'bg-white/[0.01] border-white/[0.08] hover:border-[#e3b553]/50 hover:bg-white/[0.03] text-white/80';
-                  if (hasAnswered) {
-                    if (isCorrectAnswer) tileClass = 'bg-[#e3b553]/10 border-[#e3b553] text-white';
-                    else if (isSelected) tileClass = 'bg-red-950/20 border-red-500/80 text-red-200';
-                    else tileClass = 'border-white/[0.03] opacity-30 text-white/30 bg-transparent';
-                  }
-
-                  return (
-                    <button
-                      key={idx}
-                      disabled={hasAnswered}
-                      onClick={() => selectAnswer(idx)}
-                      className={`w-full text-left p-4 rounded-2xl border-2 transition-all duration-200 flex items-center gap-3.5 ${tileClass} ${!hasAnswered ? 'cursor-pointer' : 'cursor-default'}`}
-                    >
-                      <span className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border ${
-                        hasAnswered && isCorrectAnswer
-                          ? 'bg-[#e3b553] text-[#0a0a0b] border-[#e3b553]'
-                          : hasAnswered && isSelected
-                            ? 'bg-red-500 text-white border-red-500'
-                            : 'bg-white/[0.02] text-white/40 border-white/[0.05]'
-                      }`}>
-                        {String.fromCharCode(65 + idx)}
-                      </span>
-                      <p className="text-sm font-light">{option}</p>
-                      {hasAnswered && isCorrectAnswer && <CheckCircle2 className="w-4 h-4 text-[#e3b553] ml-auto shrink-0" />}
-                      {hasAnswered && isSelected && !isCorrectAnswer && <XCircle className="w-4 h-4 text-red-400 ml-auto shrink-0" />}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {selectedOptionIdx !== null && (
-                <div className="flex justify-end pt-2">
-                  <button
-                    onClick={nextQuestion}
-                    className="bg-[#e3b553] text-[#0a0a0b] hover:bg-[#d2a442] rounded-xl py-3.5 px-6 text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <span>{questionIdx + 1 < activeTopic.questions.length ? 'Next Question' : 'Finish Test'}</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              )}
+              <ChevronRight className="w-4 h-4 text-white/25 group-hover:text-[#e3b553] transition-colors shrink-0" />
             </div>
-          </motion.div>
-        )}
-
-        {view === 'result' && activeTopic && (
-          <motion.div key="result" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="bg-white/[0.02] rounded-3xl border border-white/[0.06] p-6 sm:p-8 text-center shadow-lg space-y-6">
-            <div className="flex flex-col items-center justify-center space-y-3">
-              <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-full">
-                <Trophy className="w-8 h-8" />
-              </div>
-              <h2 className="text-2xl font-serif italic text-white tracking-wide">Mini Test Complete</h2>
-              <p className="text-xs text-white/40 font-mono uppercase tracking-widest">{activeTopic.title}</p>
-            </div>
-
-            <div className="bg-white/[0.01] border border-white/[0.03] rounded-2xl p-6 max-w-sm mx-auto">
-              <p className="text-3xl font-serif text-white">
-                {answers.filter(a => a.correct).length}/{activeTopic.questions.length}
-              </p>
-              <p className="text-xs text-white/40 font-mono uppercase tracking-widest mt-1">
-                {Math.round((answers.filter(a => a.correct).length / activeTopic.questions.length) * 100)}% Correct
-              </p>
-            </div>
-
-            <div className="pt-2 flex flex-col sm:flex-row justify-center gap-3">
-              <button onClick={startQuiz} className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3.5 px-6 text-xs font-bold cursor-pointer">
-                Retake Test
-              </button>
-              <button onClick={backToList} className="bg-white/[0.03] hover:bg-white/[0.06] text-white/90 border border-white/10 rounded-xl py-3.5 px-6 text-xs font-bold cursor-pointer">
-                Back to Topics
-              </button>
-            </div>
-          </motion.div>
-        )}
-      </>
-    </div>
+            <p className="text-[11px] text-white/35 font-mono mt-2.5 flex items-center gap-1.5">
+              <BookOpen className="w-3 h-3 text-[#e3b553]/60" /> {cat.subtopics.length} konu
+            </p>
+          </button>
+        ))}
+      </div>
+    </motion.div>
   );
 }
