@@ -134,7 +134,7 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
 
         <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
           <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">{category.title}</h2>
-          <p className="text-xs text-[#e3b553]/80 font-mono mt-0.5">{category.titleTr}</p>
+          <p className="text-[13px] text-white/75 font-mono mt-0.5">{category.titleTr}</p>
         </div>
 
         <div className="space-y-2.5">
@@ -167,7 +167,7 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
         </div>
         <div>
           <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Grammar</h2>
-          <p className="text-xs text-white/40 font-mono">{CATEGORIES.length} kategori · İngilizce + Türkçe anlatım</p>
+          <p className="text-[13px] text-white/75 font-mono">{CATEGORIES.length} kategori · İngilizce + Türkçe anlatım</p>
         </div>
       </div>
 
@@ -186,7 +186,7 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
                 <h3 className="text-[17px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors leading-tight">
                   {cat.title}
                 </h3>
-                <p className="text-[11px] text-white/40 font-mono mt-0.5">{cat.titleTr}</p>
+                <p className="text-[13px] text-white/75 font-mono mt-0.5">{cat.titleTr}</p>
               </div>
               <ChevronRight className="w-4 h-4 text-white/25 group-hover:text-[#e3b553] transition-colors shrink-0" />
             </div>
