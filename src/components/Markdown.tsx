@@ -73,8 +73,8 @@ export default function Markdown({ text }: { text: string }) {
     const h = line.match(/^(#{2,4})\s+(.*)$/);
     if (h) {
       const level = h[1].length;
-      if (level === 2) blocks.push(<h2 key={key++} className="text-xl font-serif text-[#e3b553] pt-2">{inline(h[2])}</h2>);
-      else if (level === 3) blocks.push(<h3 key={key++} className="text-[15px] font-semibold text-white tracking-wide pt-1.5">{inline(h[2])}</h3>);
+      if (level === 2) blocks.push(<h2 key={key++} className="text-2xl font-bold tracking-wide text-[#f2c463] pt-2">{inline(h[2])}</h2>);
+      else if (level === 3) blocks.push(<h3 key={key++} className="text-[16px] font-bold text-[#f2c463] tracking-wide pt-1.5">{inline(h[2])}</h3>);
       else blocks.push(<h4 key={key++} className="text-[13px] font-semibold text-white/90 uppercase tracking-wider">{inline(h[2])}</h4>);
       i++;
       continue;

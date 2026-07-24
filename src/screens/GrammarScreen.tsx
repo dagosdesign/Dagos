@@ -133,7 +133,7 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
         </button>
 
         <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
-          <h2 className="text-xl font-serif italic text-white">{category.title}</h2>
+          <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">{category.title}</h2>
           <p className="text-xs text-[#e3b553]/80 font-mono mt-0.5">{category.titleTr}</p>
         </div>
 
@@ -144,10 +144,10 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
               onClick={() => { setSubId(sub.id); setLang('en'); }}
               className="w-full flex items-center gap-3.5 text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl px-4 py-3.5 transition-all cursor-pointer group"
             >
-              <span className="w-7 h-7 rounded-lg bg-[#e3b553]/10 border border-[#e3b553]/20 text-[#e3b553] text-[11px] font-bold flex items-center justify-center shrink-0">
+              <span className="w-7 h-7 rounded-lg bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
                 {idx + 1}
               </span>
-              <span className="text-sm text-white/85 font-light group-hover:text-[#e3b553] transition-colors flex-1">
+              <span className="text-[15px] text-white/90 font-medium group-hover:text-[#ffd978] transition-colors flex-1">
                 {sub.title}
               </span>
               <ChevronRight className="w-4 h-4 text-white/25 group-hover:text-[#e3b553] transition-colors shrink-0" />
@@ -166,7 +166,7 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
           <GraduationCap className="w-5 h-5" />
         </div>
         <div>
-          <h2 className="text-lg font-serif italic text-white">Grammar</h2>
+          <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Grammar</h2>
           <p className="text-xs text-white/40 font-mono">{CATEGORIES.length} kategori · İngilizce + Türkçe anlatım</p>
         </div>
       </div>
@@ -179,11 +179,11 @@ export default function GrammarScreen(_props: GrammarScreenProps) {
             className="text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl p-4.5 p-5 transition-all cursor-pointer group"
           >
             <div className="flex items-center gap-3">
-              <span className="w-8 h-8 rounded-xl bg-[#e3b553]/10 border border-[#e3b553]/20 text-[#e3b553] text-[11px] font-bold flex items-center justify-center shrink-0">
+              <span className="w-8 h-8 rounded-xl bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
                 {idx + 1}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="text-[15px] font-serif italic text-white group-hover:text-[#e3b553] transition-colors leading-tight">
+                <h3 className="text-[17px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors leading-tight">
                   {cat.title}
                 </h3>
                 <p className="text-[11px] text-white/40 font-mono mt-0.5">{cat.titleTr}</p>
