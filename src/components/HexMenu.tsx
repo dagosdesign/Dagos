@@ -17,9 +17,9 @@ const NODES: [number, number][] = [
   [0.89, 0.46], // YDS
   [0.13, 0.66], // GRAMMAR
   [0.87, 0.66], // ADJECTIVES
-  [0.25, 0.85], // NOUNS
-  [0.50, 0.92], // ADVERBS
-  [0.75, 0.85], // IRREGULAR VERBS
+  [0.25, 0.82], // NOUNS
+  [0.50, 0.87], // ADVERBS
+  [0.75, 0.82], // IRREGULAR VERBS
 ];
 
 const VB_W = 760;
@@ -142,9 +142,9 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: He
         .een-n5  { left: 89%;  top: 46%; animation-delay: -2.8s; }
         .een-n6  { left: 13%;  top: 66%; animation-delay: -1.8s; }
         .een-n7  { left: 87%;  top: 66%; animation-delay: -3.4s; }
-        .een-n8  { left: 25%;  top: 85%; animation-delay: -2.5s; }
-        .een-n9  { left: 50%;  top: 92%; animation-delay: -1.1s; }
-        .een-n10 { left: 75%;  top: 85%; animation-delay: -3s; }
+        .een-n8  { left: 25%;  top: 82%; animation-delay: -2.5s; }
+        .een-n9  { left: 50%;  top: 87%; animation-delay: -1.1s; }
+        .een-n10 { left: 75%;  top: 82%; animation-delay: -3s; }
 
         @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
         @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
