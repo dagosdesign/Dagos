@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
-import { motion, useAnimation } from 'motion/react';
-import { Home, User, MessageCircle, Sparkles } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Home, User, Sparkles } from 'lucide-react';
 
 export type NavItem = 'home' | 'ai' | 'profile';
 
@@ -9,26 +8,48 @@ interface BottomNavProps {
   onSelect: (item: NavItem) => void;
 }
 
-const BAR_HEIGHT = 66;
+const GOLD = '#e3b553';
+const GOLD_BRIGHT = '#ffd978';
+const spring = { type: 'spring' as const, damping: 16, stiffness: 280 };
 
 export default function BottomNav({ active, onSelect }: BottomNavProps) {
   return (
-    <div data-bottom-nav className="fixed bottom-0 left-0 right-0 z-40 w-full pb-[env(safe-area-inset-bottom)]">
+    <div
+      data-bottom-nav
+      className="fixed bottom-0 left-0 right-0 z-40 w-full px-5 pb-[calc(env(safe-area-inset-bottom)+12px)] pointer-events-none"
+    >
+      {/* Gold hairline gradient frame around a floating glass capsule */}
       <div
-        className="relative mx-auto max-w-md flex items-center justify-around px-4"
+        className="mx-auto max-w-sm rounded-full p-px pointer-events-auto"
         style={{
-          height: BAR_HEIGHT,
-          background: 'rgba(16,16,16,0.97)',
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
-          borderTop: '1px solid rgba(255,255,255,0.06)',
-          borderRadius: '26px 26px 0 0',
-          boxShadow: '0 -6px 22px rgba(0,0,0,0.5)',
+          background:
+            'linear-gradient(180deg, rgba(227,181,83,0.45), rgba(227,181,83,0.08) 40%, rgba(227,181,83,0.25))',
+          boxShadow: '0 14px 34px rgba(0,0,0,0.65), 0 2px 10px rgba(227,181,83,0.07)',
         }}
       >
-        <SideTab icon={Home} label="Home" active={active === 'home'} onClick={() => onSelect('home')} />
-        <AiButton active={active === 'ai'} onClick={() => onSelect('ai')} />
-        <SideTab icon={User} label="Profile" active={active === 'profile'} onClick={() => onSelect('profile')} />
+        <div
+          className="relative flex items-center justify-between rounded-full px-3"
+          style={{
+            height: 64,
+            background: 'linear-gradient(180deg, rgba(24,22,17,0.92), rgba(10,10,11,0.96))',
+            backdropFilter: 'blur(18px)',
+            WebkitBackdropFilter: 'blur(18px)',
+          }}
+        >
+          {/* Ambient sheen along the top inner edge */}
+          <div
+            aria-hidden
+            className="absolute inset-x-8 top-0 h-px"
+            style={{
+              background:
+                'linear-gradient(90deg, transparent, rgba(255,217,120,0.55), transparent)',
+            }}
+          />
+
+          <SideTab icon={Home} label="Home" active={active === 'home'} onClick={() => onSelect('home')} />
+          <AiButton active={active === 'ai'} onClick={() => onSelect('ai')} />
+          <SideTab icon={User} label="Profile" active={active === 'profile'} onClick={() => onSelect('profile')} />
+        </div>
       </div>
     </div>
   );
@@ -45,89 +66,96 @@ function SideTab({
   active: boolean;
   onClick: () => void;
 }) {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    controls.start({
-      scale: active ? 1.08 : 1,
-      y: active ? -2 : 0,
-      transition: { type: 'spring', damping: 14, stiffness: 260 },
-    });
-  }, [active, controls]);
-
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label={label}
       aria-current={active ? 'page' : undefined}
-      className="relative flex flex-1 flex-col items-center justify-center gap-1 cursor-pointer h-full"
+      className="relative flex flex-1 items-center justify-center h-full cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#e3b553]/60 rounded-full"
     >
-      <motion.div animate={controls} className="flex flex-col items-center gap-1">
-        <div
-          className="p-1.5 rounded-xl transition-colors"
+      {/* Sliding golden halo shared between tabs */}
+      {active && (
+        <motion.span
+          layoutId="nav-halo"
+          transition={spring}
+          className="absolute w-[74px] h-[46px] rounded-full"
           style={{
-            background: active ? 'rgba(227,181,83,0.12)' : 'transparent',
-            boxShadow: active ? '0 0 14px rgba(227,181,83,0.35)' : 'none',
+            background:
+              'radial-gradient(60% 70% at 50% 45%, rgba(227,181,83,0.16), transparent 75%)',
+            border: '1px solid rgba(227,181,83,0.22)',
           }}
-        >
-          <Icon className="w-[22px] h-[22px]" strokeWidth={active ? 2.2 : 1.7} color={active ? '#ffd978' : '#858585'} />
-        </div>
-        <span className={`text-[11px] font-mono tracking-tight ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
-          {label}
-        </span>
-      </motion.div>
+        />
+      )}
 
       <motion.span
-        className="absolute bottom-1.5 h-[3px] rounded-full bg-[#ffd978]"
-        style={{ boxShadow: '0 0 8px rgba(255,217,120,0.9)' }}
-        initial={false}
-        animate={{ opacity: active ? 1 : 0, scaleX: active ? 1 : 0, width: 26 }}
-        transition={{ type: 'spring', damping: 14, stiffness: 260 }}
-      />
+        className="relative flex flex-col items-center gap-[3px]"
+        animate={{ y: active ? -1 : 0, scale: active ? 1.05 : 1 }}
+        transition={spring}
+      >
+        <Icon
+          className="w-[21px] h-[21px] transition-colors duration-300"
+          strokeWidth={active ? 2.1 : 1.6}
+          color={active ? GOLD_BRIGHT : 'rgba(255,255,255,0.42)'}
+          style={active ? { filter: 'drop-shadow(0 0 6px rgba(255,217,120,0.7))' } : undefined}
+        />
+        <span
+          className="text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
+          style={{ color: active ? GOLD_BRIGHT : 'rgba(255,255,255,0.35)' }}
+        >
+          {label}
+        </span>
+      </motion.span>
     </button>
   );
 }
 
 function AiButton({ active, onClick }: { active: boolean; onClick: () => void }) {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    controls.start({
-      scale: active ? 1.06 : 1,
-      y: active ? -3 : 0,
-      transition: { type: 'spring', damping: 13, stiffness: 240 },
-    });
-  }, [active, controls]);
-
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label="AI Coach"
       aria-current={active ? 'page' : undefined}
-      className="relative flex flex-1 flex-col items-center justify-center gap-1 cursor-pointer h-full"
+      className="relative flex flex-col items-center justify-center cursor-pointer -mt-9 outline-none focus-visible:ring-2 focus-visible:ring-[#e3b553]/60 rounded-full"
     >
       <motion.div
-        animate={controls}
-        className="relative w-[46px] h-[46px] rounded-full flex items-center justify-center -mt-1.5"
-        style={{
-          background: 'radial-gradient(circle at 50% 35%, #23201a, #0a0a0b 72%)',
-          border: `2px solid ${active ? '#ffd978' : '#8a6f34'}`,
-          boxShadow: active
-            ? '0 0 18px 2px rgba(227,181,83,0.6), inset 0 0 10px rgba(227,181,83,0.15)'
-            : '0 3px 12px rgba(227,181,83,0.28)',
-        }}
+        animate={{ y: active ? -2 : 0, scale: active ? 1.05 : 1 }}
+        whileTap={{ scale: 0.94 }}
+        transition={spring}
+        className="relative w-[58px] h-[58px] rounded-full"
       >
-        <div className="relative flex items-center justify-center">
-          <MessageCircle className="w-[26px] h-[26px]" color="#ffd978" strokeWidth={1.5} />
-          <span className="absolute text-[9px] font-bold text-[#ffd978] leading-none" style={{ marginTop: '-1px' }}>
-            AI
-          </span>
-          <Sparkles className="absolute -top-1 -right-2 w-2.5 h-2.5" color="#ffd978" />
-        </div>
+        {/* Slowly revolving gold ring */}
+        <motion.span
+          aria-hidden
+          className="absolute -inset-[2px] rounded-full"
+          style={{
+            background: `conic-gradient(from 0deg, ${GOLD}, #6b5424 30%, ${GOLD_BRIGHT} 52%, #6b5424 75%, ${GOLD})`,
+            filter: active ? 'drop-shadow(0 0 12px rgba(227,181,83,0.65))' : 'drop-shadow(0 0 6px rgba(227,181,83,0.35))',
+          }}
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 9, ease: 'linear' }}
+        />
+        {/* Dark face */}
+        <span
+          className="absolute inset-[2.5px] rounded-full flex items-center justify-center"
+          style={{
+            background: 'radial-gradient(circle at 50% 30%, #2a251b, #0a0a0b 75%)',
+            boxShadow: 'inset 0 1px 0 rgba(255,217,120,0.18), inset 0 -6px 14px rgba(0,0,0,0.6)',
+          }}
+        >
+          <Sparkles
+            className="w-[22px] h-[22px]"
+            color={GOLD_BRIGHT}
+            strokeWidth={1.6}
+            style={{ filter: 'drop-shadow(0 0 7px rgba(255,217,120,0.8))' }}
+          />
+        </span>
       </motion.div>
-      <span className={`text-[11px] font-mono tracking-tight ${active ? 'text-[#ffd978]' : 'text-white/40'}`}>
+      <span
+        className="mt-1 text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
+        style={{ color: active ? GOLD_BRIGHT : 'rgba(255,255,255,0.45)' }}
+      >
         AI Coach
       </span>
     </button>
