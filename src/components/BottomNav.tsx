@@ -130,8 +130,8 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
           aria-hidden
           className="absolute -inset-[2px] rounded-full"
           style={{
-            background: `conic-gradient(from 0deg, ${GOLD}, #6b5424 30%, ${GOLD_BRIGHT} 52%, #6b5424 75%, ${GOLD})`,
-            filter: active ? 'drop-shadow(0 0 3px rgba(227,181,83,0.15))' : 'drop-shadow(0 0 2px rgba(227,181,83,0.08))',
+            background: `conic-gradient(from 0deg, #a8863d, #57451e 30%, ${GOLD} 52%, #57451e 75%, #a8863d)`,
+            filter: active ? 'drop-shadow(0 0 2px rgba(227,181,83,0.07))' : 'none',
           }}
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
@@ -148,7 +148,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
             className="w-[22px] h-[22px]"
             color={GOLD_BRIGHT}
             strokeWidth={1.6}
-            style={{ filter: 'drop-shadow(0 0 2px rgba(255,217,120,0.15))' }}
+            style={{ opacity: 0.85 }}
           />
         </span>
       </motion.div>
