@@ -487,16 +487,19 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
               {entry.forms ? (
                 /* Irregular verb: the three forms replace IPA/reading */
                 <div className="space-y-1.5 pt-1">
-                  {(['V1', 'V2', 'V3'] as const).map((label, fi) => (
-                    <div key={label} className="flex items-center gap-2.5">
-                      <span className="w-7 shrink-0 text-[10px] font-mono font-bold tracking-widest text-[#e3b553]/60">
-                        {label}
-                      </span>
-                      <span className={`font-semibold leading-tight ${fi === 0 ? 'text-white' : 'text-[#ffd978]'} ${entry.forms![fi].length > 12 ? 'text-sm sm:text-base' : 'text-base sm:text-lg'}`}>
-                        {entry.forms![fi]}
-                      </span>
-                    </div>
-                  ))}
+                  {(['V1', 'V2', 'V3'] as const).map((label, fi) => {
+                    const formColor = fi === 0 ? 'text-white' : fi === 1 ? 'text-[#ffd978]' : 'text-[#b98f42]';
+                    return (
+                      <div key={label} className="flex items-center gap-2.5">
+                        <span className="w-7 shrink-0 text-[10px] font-mono font-bold tracking-widest text-[#e3b553]/60">
+                          {label}
+                        </span>
+                        <span className={`font-semibold leading-tight ${formColor} ${entry.forms![fi].length > 12 ? 'text-sm sm:text-base' : 'text-base sm:text-lg'}`}>
+                          {entry.forms![fi]}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
               ) : (
                 <>

@@ -268,7 +268,7 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-a89', word: 'bang', partOfSpeech: 'verb', turkishMeaning: 'patırtı, çarpmak, gürültü yapmak', exampleSentence: 'Do not bang the door so hard.', category: FLASHCARD_CATEGORIES.ACADEMIC },
   { id: 'fc-a90', word: 'bankrupt', partOfSpeech: 'verb', turkishMeaning: 'iflas etmiş, iflas', exampleSentence: 'The small store went bankrupt last year.', category: FLASHCARD_CATEGORIES.ACADEMIC },
   { id: 'fc-a91', word: 'beam', partOfSpeech: 'verb', turkishMeaning: 'ışın, kiriş, neşeyle gülümsemek', exampleSentence: 'A bright beam of light pierced the dark.', category: FLASHCARD_CATEGORIES.ACADEMIC },
-  { id: 'fc-a92', word: 'bear', partOfSpeech: 'verb', turkishMeaning: 'ayı, katlanmak, taşımak', exampleSentence: 'I cannot bear the loud noise anymore.', category: FLASHCARD_CATEGORIES.ACADEMIC },
+  { id: 'fc-a92', word: 'bear', partOfSpeech: 'verb', turkishMeaning: 'katlanmak, taşımak', exampleSentence: 'I cannot bear the loud noise anymore.', category: FLASHCARD_CATEGORIES.ACADEMIC },
   { id: 'fc-a93', word: 'beat', partOfSpeech: 'verb', turkishMeaning: 'vurmak, yenmek, kalp atışı', exampleSentence: 'My heart starts to beat faster when running.', category: FLASHCARD_CATEGORIES.ACADEMIC },
   { id: 'fc-a94', word: 'behave', partOfSpeech: 'verb', turkishMeaning: 'uslu durmak, davranmak', exampleSentence: 'Children should behave well at school.', category: FLASHCARD_CATEGORIES.ACADEMIC },
   { id: 'fc-a95', word: 'bend', partOfSpeech: 'verb', turkishMeaning: 'bükmek, eğilmek, kıvrım', exampleSentence: 'Bend your knees before you jump.', category: FLASHCARD_CATEGORIES.ACADEMIC },
