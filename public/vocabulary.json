@@ -2061,7 +2061,12 @@
    "kırmak"
   ],
   "definition": "To separate into pieces by force. (break – broke – broken)",
-  "example": "Be careful not to break the glass vase."
+  "example": "Be careful not to break the glass vase.",
+  "forms": [
+   "Break",
+   "Broke",
+   "Broken"
+  ]
  },
  "buy": {
   "ipa": "/baɪ/",
@@ -2070,7 +2075,12 @@
    "satın almak"
   ],
   "definition": "To get something by paying money. (buy – bought – bought)",
-  "example": "We buy fresh bread from the bakery every day."
+  "example": "We buy fresh bread from the bakery every day.",
+  "forms": [
+   "Buy",
+   "Bought",
+   "Bought"
+  ]
  },
  "loose": {
   "ipa": "/luːs/",
@@ -9107,7 +9117,12 @@
    "doğmak"
   ],
   "definition": "Start to happen or come into being.",
-  "example": "New problems can arise at any time."
+  "example": "New problems can arise at any time.",
+  "forms": [
+   "Arise",
+   "Arose",
+   "Arisen"
+  ]
  },
  "arouse": {
   "ipa": "/əˈraʊz/",
@@ -9420,7 +9435,12 @@
    "taşımak"
   ],
   "definition": "Accept or endure a difficult situation",
-  "example": "I cannot bear the loud noise anymore."
+  "example": "I cannot bear the loud noise anymore.",
+  "forms": [
+   "Bear",
+   "Bore",
+   "Borne / Born"
+  ]
  },
  "beat": {
   "ipa": "/biːt/",
@@ -9431,7 +9451,12 @@
    "kalp atışı"
   ],
   "definition": "Strike repeatedly or defeat someone in a game",
-  "example": "My heart starts to beat faster when running."
+  "example": "My heart starts to beat faster when running.",
+  "forms": [
+   "Beat",
+   "Beat",
+   "Beaten"
+  ]
  },
  "behave": {
   "ipa": "/bɪˈheɪv/",
@@ -9452,7 +9477,12 @@
    "kıvrım"
   ],
   "definition": "Shape something into a curve or angle",
-  "example": "Bend your knees before you jump."
+  "example": "Bend your knees before you jump.",
+  "forms": [
+   "Bend",
+   "Bent",
+   "Bent"
+  ]
  },
  "betray": {
   "ipa": "/bɪˈtreɪ/",
@@ -9483,7 +9513,12 @@
    "açık artırmada fiyat söylemek"
   ],
   "definition": "Offer a specific price for something",
-  "example": "He decided to bid for the old painting."
+  "example": "He decided to bid for the old painting.",
+  "forms": [
+   "Bid",
+   "Bid",
+   "Bid"
+  ]
  },
  "bind": {
   "ipa": "/baɪnd/",
@@ -9494,7 +9529,12 @@
    "tutkal gibi yapıştırmak"
   ],
   "definition": "Tie or fasten something tightly together",
-  "example": "Use a strong rope to bind the wood."
+  "example": "Use a strong rope to bind the wood.",
+  "forms": [
+   "Bind",
+   "Bound",
+   "Bound"
+  ]
  },
  "bite": {
   "ipa": "/baɪt/",
@@ -9504,7 +9544,12 @@
    "lokma"
   ],
   "definition": "Use teeth to cut into something",
-  "example": "Be careful so the dog does not bite."
+  "example": "Be careful so the dog does not bite.",
+  "forms": [
+   "Bite",
+   "Bit",
+   "Bitten"
+  ]
  },
  "blame": {
   "ipa": "/bleɪm/",
@@ -9535,7 +9580,12 @@
    "kanamak"
   ],
   "definition": "Lose blood from a cut or injury",
-  "example": "His scrape began to bleed a little."
+  "example": "His scrape began to bleed a little.",
+  "forms": [
+   "Bleed",
+   "Bled",
+   "Bled"
+  ]
  },
  "blend": {
   "ipa": "/blend/",
@@ -9716,7 +9766,12 @@
    "tür"
   ],
   "definition": "To keep animals to produce young.",
-  "example": "They want to breed horses on their farm."
+  "example": "They want to breed horses on their farm.",
+  "forms": [
+   "Breed",
+   "Bred",
+   "Bred"
+  ]
  },
  "bribe": {
   "ipa": "/braɪb/",
@@ -9736,7 +9791,12 @@
    "yayın"
   ],
   "definition": "To send out programs on radio or TV.",
-  "example": "They will broadcast the match live tonight."
+  "example": "They will broadcast the match live tonight.",
+  "forms": [
+   "Broadcast",
+   "Broadcast",
+   "Broadcast"
+  ]
  },
  "broaden": {
   "ipa": "/ˈbrɔː.dən/",
@@ -16341,5 +16401,153 @@
   ],
   "definition": "To produce or provide a natural product or result",
   "example": "These investments will yield a high profit next year."
+ },
+ "awake": {
+  "ipa": "/əˈweɪk/",
+  "reading": "ıveyk",
+  "meanings": [
+   "uyanmak",
+   "uyandırmak"
+  ],
+  "definition": "To stop sleeping or make someone stop sleeping.",
+  "example": "I usually awake at dawn.",
+  "forms": [
+   "Awake",
+   "Awoke",
+   "Awoken"
+  ]
+ },
+ "be": {
+  "ipa": "/biː/",
+  "reading": "bii",
+  "meanings": [
+   "olmak",
+   "var olmak"
+  ],
+  "definition": "To exist or live.",
+  "example": "It is good to be here today.",
+  "forms": [
+   "Be",
+   "Was / Were",
+   "Been"
+  ]
+ },
+ "become": {
+  "ipa": "/bɪˈkʌm/",
+  "reading": "bikam",
+  "meanings": [
+   "olmak",
+   "dönüşmek"
+  ],
+  "definition": "To begin to be something.",
+  "example": "It is easy to become a doctor here.",
+  "forms": [
+   "Become",
+   "Became",
+   "Become"
+  ]
+ },
+ "begin": {
+  "ipa": "/bɪˈɡɪn/",
+  "reading": "bigin",
+  "meanings": [
+   "başlamak"
+  ],
+  "definition": "To start doing something.",
+  "example": "Let us begin our meeting now.",
+  "forms": [
+   "Begin",
+   "Began",
+   "Begun"
+  ]
+ },
+ "bet": {
+  "ipa": "/bet/",
+  "reading": "bet",
+  "meanings": [
+   "bahis oynamak",
+   "iddiaya girmek"
+  ],
+  "definition": "To risk money on a future event.",
+  "example": "I bet ten dollars on this race.",
+  "forms": [
+   "Bet",
+   "Bet",
+   "Bet"
+  ]
+ },
+ "blow": {
+  "ipa": "/bləʊ/",
+  "reading": "blou",
+  "meanings": [
+   "üflemek",
+   "esmek"
+  ],
+  "definition": "To move or be moved by wind.",
+  "example": "The wind will blow the leaves away.",
+  "forms": [
+   "Blow",
+   "Blew",
+   "Blown"
+  ]
+ },
+ "bring": {
+  "ipa": "/brɪŋ/",
+  "reading": "bring",
+  "meanings": [
+   "getirmek"
+  ],
+  "definition": "To take someone or something to a place.",
+  "example": "Please bring a bottle of water.",
+  "forms": [
+   "Bring",
+   "Brought",
+   "Brought"
+  ]
+ },
+ "build": {
+  "ipa": "/bɪld/",
+  "reading": "bild",
+  "meanings": [
+   "inşa etmek",
+   "kurmak"
+  ],
+  "definition": "To make something by putting parts together.",
+  "example": "They plan to build a new house.",
+  "forms": [
+   "Build",
+   "Built",
+   "Built"
+  ]
+ },
+ "burn": {
+  "ipa": "/bɜːn/",
+  "reading": "börn",
+  "meanings": [
+   "yakmak",
+   "yanmak"
+  ],
+  "definition": "To damage or destroy by fire.",
+  "example": "Fire can burn wood very quickly.",
+  "forms": [
+   "Burn",
+   "Burnt / Burned",
+   "Burnt / Burned"
+  ]
+ },
+ "burst": {
+  "ipa": "/bɜːst/",
+  "reading": "börst",
+  "meanings": [
+   "patlamak",
+   "yarıp açılmak"
+  ],
+  "definition": "To break open suddenly and violently.",
+  "example": "The balloon will burst if you blow it up more.",
+  "forms": [
+   "Burst",
+   "Burst",
+   "Burst"
+  ]
  }
 }

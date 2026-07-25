@@ -331,6 +331,8 @@ interface VocabEntry {
   meanings?: string[];
   definition?: string;
   example?: string;
+  /* Irregular verbs: [base, past simple, past participle] */
+  forms?: string[];
 }
 
 let vocabPromise: Promise<Record<string, VocabEntry>> | null = null;
@@ -482,11 +484,29 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
                 </button>
               </div>
 
-              {entry.ipa && (
-                <p className="text-base font-mono text-white/90">{entry.ipa}</p>
-              )}
-              {entry.reading && (
-                <p className="text-base font-light text-[#e3b553]">({entry.reading})</p>
+              {entry.forms ? (
+                /* Irregular verb: the three forms replace IPA/reading */
+                <div className="space-y-1.5 pt-1">
+                  {(['V1', 'V2', 'V3'] as const).map((label, fi) => (
+                    <div key={label} className="flex items-center gap-2.5">
+                      <span className="w-7 shrink-0 text-[10px] font-mono font-bold tracking-widest text-[#e3b553]/60">
+                        {label}
+                      </span>
+                      <span className={`font-semibold leading-tight ${fi === 0 ? 'text-white' : 'text-[#ffd978]'} ${entry.forms![fi].length > 12 ? 'text-sm sm:text-base' : 'text-base sm:text-lg'}`}>
+                        {entry.forms![fi]}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <>
+                  {entry.ipa && (
+                    <p className="text-base font-mono text-white/90">{entry.ipa}</p>
+                  )}
+                  {entry.reading && (
+                    <p className="text-base font-light text-[#e3b553]">({entry.reading})</p>
+                  )}
+                </>
               )}
 
               {meanings.length > 0 && (

@@ -314,6 +314,9 @@ export const READY_MADE_CARD_WORDS = [
   'violate', 'vote', 'weave', 'whip', 'whistle',
   'withdraw', 'withstand', 'witness', 'yawn', 'yearn',
   'yield',
+  'awake', 'be', 'become', 'begin', 'bet',
+  'blow', 'bring', 'build', 'burn', 'burst',
+  'buy',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
