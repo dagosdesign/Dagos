@@ -24,8 +24,19 @@ const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-2.0-flash']
 const LEVELS = {
   basic: 'A2 (elementary): short simple sentences, core rule recognition, everyday vocabulary',
   intermediate: 'B1-B2 (intermediate): longer sentences, trickier contrasts with related structures, common exam traps',
-  advanced: 'C1 (advanced): nuanced usage, formal/academic contexts, subtle distinctions and exceptions',
+  advanced:
+    'C1 (advanced, YDS/YÖKDİL exam level — NOT C2): tests nuanced usage and subtle distinctions, ' +
+    'but in natural, fluent, real-world English',
 };
+
+const STYLE_RULES =
+  'Style rules for ALL questions:\n' +
+  '- Use ONLY standard multiple-choice test format: a gap-fill sentence with ____ or a best-completion question. No other question styles.\n' +
+  '- Use natural, common academic English; avoid rare, bookish or artificial-sounding words.\n' +
+  '- Keep natural sentence order; use inverted structures only when the subtopic itself requires them.\n' +
+  '- Do NOT start sentences with time expressions (Yesterday, Last week, This morning...); weave time expressions naturally INTO the sentence.\n' +
+  '- Sentences should be challenging but never needlessly complicated; the difficulty must come from the grammar point, not from convoluted wording.\n' +
+  '- Write fluent, realistic sentences one would meet in real life; avoid ornate, AI-sounding prose.';
 
 const schema = {
   type: Type.ARRAY,
@@ -47,8 +58,8 @@ async function generateLevel(category, sub, level) {
     `"${sub.title}" (category: ${category.title}).\n` +
     `Difficulty: ${LEVELS[level]}.\n` +
     `Rules: every question tests THIS subtopic specifically; 4 options each, exactly one correct; ` +
-    `distractors must be plausible; vary question formats (gap-fill, error spotting, best-completion); ` +
-    `no duplicate sentences; explanation is ONE short Turkish sentence.`;
+    `distractors must be plausible; no duplicate sentences; explanation is ONE short Turkish sentence.\n` +
+    STYLE_RULES;
   let lastErr;
   for (const model of MODELS) {
     try {
