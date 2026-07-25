@@ -23,7 +23,8 @@ const STYLE =
   'warm golden accent lighting, luxurious editorial style, high detail, high resolution. ' +
   'No text, no letters, no words, no watermark. Vertical portrait composition. ' +
   'STRICT content rules: no alcohol or drinks that resemble alcohol, no weapons of any kind, ' +
-  'no compasses, no keys or locks, no hourglasses, all people fully and modestly dressed. ' +
+  'no compasses, no hourglasses, all people fully and modestly dressed. ' +
+  'If a scene needs a person, use a MALE figure or preferably no people at all; do not depict women. ' +
   'Be original and varied — avoid cliché stock-photo concepts.';
 
 const SCENES = {
