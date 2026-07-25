@@ -131,7 +131,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
           className="absolute -inset-[2px] rounded-full"
           style={{
             background: `conic-gradient(from 0deg, ${GOLD}, #6b5424 30%, ${GOLD_BRIGHT} 52%, #6b5424 75%, ${GOLD})`,
-            filter: active ? 'drop-shadow(0 0 12px rgba(227,181,83,0.65))' : 'drop-shadow(0 0 6px rgba(227,181,83,0.35))',
+            filter: active ? 'drop-shadow(0 0 6px rgba(227,181,83,0.3))' : 'drop-shadow(0 0 3px rgba(227,181,83,0.15))',
           }}
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 9, ease: 'linear' }}
@@ -148,7 +148,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
             className="w-[22px] h-[22px]"
             color={GOLD_BRIGHT}
             strokeWidth={1.6}
-            style={{ filter: 'drop-shadow(0 0 7px rgba(255,217,120,0.8))' }}
+            style={{ filter: 'drop-shadow(0 0 3px rgba(255,217,120,0.35))' }}
           />
         </span>
       </motion.div>
