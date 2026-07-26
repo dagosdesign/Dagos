@@ -1730,7 +1730,12 @@
    "hafif"
   ],
   "definition": "Not weighing much.",
-  "example": "This bag is very light."
+  "example": "This bag is very light.",
+  "forms": [
+   "Light",
+   "Lit",
+   "Lit"
+  ]
  },
  "likely": {
   "ipa": "/ˈlaɪkli/",
@@ -1961,7 +1966,12 @@
    "hata"
   ],
   "definition": "Something done wrong; an error.",
-  "example": "Everyone makes a mistake from time to time."
+  "example": "Everyone makes a mistake from time to time.",
+  "forms": [
+   "Mistake",
+   "Mistook",
+   "Mistaken"
+  ]
  },
  "opportunity": {
   "ipa": "/ˌɒpəˈtjuːnəti/",
@@ -1989,7 +1999,12 @@
    "gitmek"
   ],
   "definition": "To move or travel to a place. (go – went – gone)",
-  "example": "We go to the gym twice a week."
+  "example": "We go to the gym twice a week.",
+  "forms": [
+   "Go",
+   "Went",
+   "Gone"
+  ]
  },
  "eat": {
   "ipa": "/iːt/",
@@ -1998,7 +2013,12 @@
    "yemek yemek"
   ],
   "definition": "To put food in your mouth and swallow it. (eat – ate – eaten)",
-  "example": "They usually eat breakfast at seven o'clock."
+  "example": "They usually eat breakfast at seven o'clock.",
+  "forms": [
+   "Eat",
+   "Ate",
+   "Eaten"
+  ]
  },
  "see": {
   "ipa": "/siː/",
@@ -2007,7 +2027,12 @@
    "görmek"
   ],
   "definition": "To notice with your eyes. (see – saw – seen)",
-  "example": "You can see the mountains from this window."
+  "example": "You can see the mountains from this window.",
+  "forms": [
+   "See",
+   "Saw",
+   "Seen"
+  ]
  },
  "drink": {
   "ipa": "/drɪŋk/",
@@ -2016,7 +2041,12 @@
    "içmek"
   ],
   "definition": "To take liquid into your mouth and swallow it. (drink – drank – drunk)",
-  "example": "I drink a glass of water every morning."
+  "example": "I drink a glass of water every morning.",
+  "forms": [
+   "Drink",
+   "Drank",
+   "Drunk"
+  ]
  },
  "write": {
   "ipa": "/raɪt/",
@@ -2025,7 +2055,12 @@
    "yazmak"
   ],
   "definition": "To form letters or words on paper or a screen. (write – wrote – written)",
-  "example": "Students write an essay every Friday."
+  "example": "Students write an essay every Friday.",
+  "forms": [
+   "Write",
+   "Wrote",
+   "Written"
+  ]
  },
  "speak": {
   "ipa": "/spiːk/",
@@ -2034,7 +2069,12 @@
    "konuşmak"
   ],
   "definition": "To say words; to talk. (speak – spoke – spoken)",
-  "example": "She can speak three languages fluently."
+  "example": "She can speak three languages fluently.",
+  "forms": [
+   "Speak",
+   "Spoke",
+   "Spoken"
+  ]
  },
  "swim": {
   "ipa": "/swɪm/",
@@ -2043,7 +2083,12 @@
    "yüzmek"
   ],
   "definition": "To move through water using your body. (swim – swam – swum)",
-  "example": "The children swim in the lake every summer."
+  "example": "The children swim in the lake every summer.",
+  "forms": [
+   "Swim",
+   "Swam",
+   "Swum"
+  ]
  },
  "fly": {
   "ipa": "/flaɪ/",
@@ -2052,7 +2097,12 @@
    "uçmak"
   ],
   "definition": "To move through the air. (fly – flew – flown)",
-  "example": "Some birds fly south for the winter."
+  "example": "Some birds fly south for the winter.",
+  "forms": [
+   "Fly",
+   "Flew",
+   "Flown"
+  ]
  },
  "break": {
   "ipa": "/breɪk/",
@@ -10080,7 +10130,12 @@
    "yapışmak"
   ],
   "definition": "To hold onto someone or something very tightly",
-  "example": "Wet clothes tend to cling to the skin."
+  "example": "Wet clothes tend to cling to the skin.",
+  "forms": [
+   "Cling",
+   "Clung",
+   "Clung"
+  ]
  },
  "clutch": {
   "ipa": "/klʌtʃ/",
@@ -10828,7 +10883,12 @@
    "sürünmek"
   ],
   "definition": "To move slowly and quietly to avoid being noticed.",
-  "example": "Cats like to creep up on birds in the garden."
+  "example": "Cats like to creep up on birds in the garden.",
+  "forms": [
+   "Creep",
+   "Crept",
+   "Crept"
+  ]
  },
  "cripple": {
   "ipa": "/ˈkrɪpl/",
@@ -11718,7 +11778,12 @@
    "cezbetmek"
   ],
   "definition": "To produce a picture with a pen or pencil.",
-  "example": "Children love to draw pictures of animals."
+  "example": "Children love to draw pictures of animals.",
+  "forms": [
+   "Draw",
+   "Drew",
+   "Drawn"
+  ]
  },
  "drift": {
   "ipa": "/drɪft/",
@@ -12549,7 +12614,12 @@
    "beslenmek"
   ],
   "definition": "To give food to a person or animal",
-  "example": "You must feed your dog twice a day."
+  "example": "You must feed your dog twice a day.",
+  "forms": [
+   "Feed",
+   "Fed",
+   "Fed"
+  ]
  },
  "fetch": {
   "ipa": "/fetʃ/",
@@ -12620,7 +12690,12 @@
    "terk etmek"
   ],
   "definition": "To run away from danger or trouble",
-  "example": "Wild animals flee when they sense a fire."
+  "example": "Wild animals flee when they sense a fire.",
+  "forms": [
+   "Flee",
+   "Fled",
+   "Fled"
+  ]
  },
  "fling": {
   "ipa": "/flɪŋ/",
@@ -12902,7 +12977,12 @@
    "ezmek"
   ],
   "definition": "To crush into small pieces or powder.",
-  "example": "You need to grind the coffee beans first."
+  "example": "You need to grind the coffee beans first.",
+  "forms": [
+   "Grind",
+   "Ground",
+   "Ground"
+  ]
  },
  "grip": {
   "ipa": "/ɡrɪp/",
@@ -12972,7 +13052,12 @@
    "asılı olmak"
   ],
   "definition": "To fasten something at the top.",
-  "example": "You can hang your coat in the closet."
+  "example": "You can hang your coat in the closet.",
+  "forms": [
+   "Hang",
+   "Hung",
+   "Hung"
+  ]
  },
  "harvest": {
   "ipa": "/ˈhɑːvɪst/",
@@ -13022,7 +13107,12 @@
    "saklanmak"
   ],
   "definition": "To put out of sight.",
-  "example": "You can hide the key under the mat."
+  "example": "You can hide the key under the mat.",
+  "forms": [
+   "Hide",
+   "Hid",
+   "Hidden"
+  ]
  },
  "hijack": {
   "ipa": "/ˈhaɪdʒæk/",
@@ -13062,7 +13152,12 @@
    "düzenlemek"
   ],
   "definition": "To carry or support with hands.",
-  "example": "Please hold this bag for a second."
+  "example": "Please hold this bag for a second.",
+  "forms": [
+   "Hold",
+   "Held",
+   "Held"
+  ]
  },
  "hop": {
   "ipa": "/hɒp/",
@@ -13141,7 +13236,12 @@
    "örmek (örgü)"
   ],
   "definition": "To make clothes from wool using long needles.",
-  "example": "She loves to knit warm sweaters for winter."
+  "example": "She loves to knit warm sweaters for winter.",
+  "forms": [
+   "Knit",
+   "Knit",
+   "Knit"
+  ]
  },
  "knot": {
   "ipa": "/nɒt/",
@@ -13183,7 +13283,12 @@
    "yumurtlamak"
   ],
   "definition": "To put something down carefully.",
-  "example": "Please lay the book on the table."
+  "example": "Please lay the book on the table.",
+  "forms": [
+   "Lay",
+   "Laid",
+   "Laid"
+  ]
  },
  "leak": {
   "ipa": "/liːk/",
@@ -13203,7 +13308,12 @@
    "sıçramak"
   ],
   "definition": "To jump a long distance or high jump.",
-  "example": "The deer can leap over the high fence."
+  "example": "The deer can leap over the high fence.",
+  "forms": [
+   "Leap",
+   "Leapt",
+   "Leapt"
+  ]
  },
  "lift": {
   "ipa": "/lɪft/",
@@ -13286,7 +13396,12 @@
    "yitirmek"
   ],
   "definition": "To be deprived of or cease to have something.",
-  "example": "Do not lose your keys in the dark forest."
+  "example": "Do not lose your keys in the dark forest.",
+  "forms": [
+   "Lose",
+   "Lost",
+   "Lost"
+  ]
  },
  "lubricate": {
   "ipa": "/ˈluː.brɪ.keɪt/",
@@ -13691,7 +13806,12 @@
    "yenmek"
   ],
   "definition": "To successfully deal with a problem or difficulty.",
-  "example": "Hard work helps students overcome difficult academic tests."
+  "example": "Hard work helps students overcome difficult academic tests.",
+  "forms": [
+   "Overcome",
+   "Overcame",
+   "Overcome"
+  ]
  },
  "overestimate": {
   "ipa": "/ˌəʊvərˈestɪmeɪt/",
@@ -15123,7 +15243,12 @@
    "ayağa kalkmak"
   ],
   "definition": "To move upwards or increase.",
-  "example": "Prices will continue to rise this year."
+  "example": "Prices will continue to rise this year.",
+  "forms": [
+   "Rise",
+   "Rose",
+   "Risen"
+  ]
  },
  "rotate": {
   "ipa": "/rəʊˈteɪt/",
@@ -15368,7 +15493,12 @@
    "ışık saçmak"
   ],
   "definition": "To produce or reflect light",
-  "example": "The stars shine brightly tonight."
+  "example": "The stars shine brightly tonight.",
+  "forms": [
+   "Shine",
+   "Shone",
+   "Shone"
+  ]
  },
  "shock": {
   "ipa": "/ʃɒk/",
@@ -15389,7 +15519,12 @@
    "çekmek"
   ],
   "definition": "To become smaller in size",
-  "example": "Hot water can shrink your woolen clothes."
+  "example": "Hot water can shrink your woolen clothes.",
+  "forms": [
+   "Shrink",
+   "Shrank",
+   "Shrunk"
+  ]
  },
  "shuttle": {
   "ipa": "/ˈʃʌtl/",
@@ -15439,7 +15574,12 @@
    "kaydırmak"
   ],
   "definition": "To move smoothly along a surface",
-  "example": "Children like to slide down the snowy hill."
+  "example": "Children like to slide down the snowy hill.",
+  "forms": [
+   "Slide",
+   "Slid",
+   "Slid"
+  ]
  },
  "smash": {
   "ipa": "/smæʃ/",
@@ -15533,7 +15673,12 @@
    "taşmak"
   ],
   "definition": "To flow or run over the edge of a container.",
-  "example": "Be careful not to spill the milk."
+  "example": "Be careful not to spill the milk.",
+  "forms": [
+   "Spill",
+   "Spilt / Spilled",
+   "Spilt / Spilled"
+  ]
  },
  "split": {
   "ipa": "/splɪt/",
@@ -15544,7 +15689,12 @@
    "yarmak"
   ],
   "definition": "To divide into two or more parts.",
-  "example": "They decided to split the cost of the meal."
+  "example": "They decided to split the cost of the meal.",
+  "forms": [
+   "Split",
+   "Split",
+   "Split"
+  ]
  },
  "spoil": {
   "ipa": "/spɔɪl/",
@@ -15555,7 +15705,12 @@
    "çürümek"
   ],
   "definition": "To damage or ruin the quality of something.",
-  "example": "Do not spoil the surprise for everyone."
+  "example": "Do not spoil the surprise for everyone.",
+  "forms": [
+   "Spoil",
+   "Spoilt / Spoiled",
+   "Spoilt / Spoiled"
+  ]
  },
  "squeeze": {
   "ipa": "/skwiːz/",
@@ -15629,7 +15784,12 @@
    "saplamak"
   ],
   "definition": "To attach or become attached to something.",
-  "example": "You should stick the poster on the wall."
+  "example": "You should stick the poster on the wall.",
+  "forms": [
+   "Stick",
+   "Stuck",
+   "Stuck"
+  ]
  },
  "stimulate": {
   "ipa": "/ˈstɪm.jə.leɪt/",
@@ -15683,7 +15843,12 @@
    "çarpmak"
   ],
   "definition": "To hit something with force.",
-  "example": "Lightning can strike the same place twice."
+  "example": "Lightning can strike the same place twice.",
+  "forms": [
+   "Strike",
+   "Struck",
+   "Struck"
+  ]
  },
  "strive": {
   "ipa": "/straɪv/",
@@ -15878,7 +16043,12 @@
    "temizlemek"
   ],
   "definition": "To clean a floor using a brush.",
-  "example": "Please sweep the kitchen floor after dinner."
+  "example": "Please sweep the kitchen floor after dinner.",
+  "forms": [
+   "Sweep",
+   "Swept",
+   "Swept"
+  ]
  },
  "swell": {
   "ipa": "/swel/",
@@ -15889,7 +16059,12 @@
    "kabarmak"
   ],
   "definition": "To become larger than normal.",
-  "example": "An ankle will swell if you sprain it."
+  "example": "An ankle will swell if you sprain it.",
+  "forms": [
+   "Swell",
+   "Swelled",
+   "Swollen"
+  ]
  },
  "tackle": {
   "ipa": "/ˈtækl/",
@@ -15986,7 +16161,12 @@
    "itme gücü"
   ],
   "definition": "To push suddenly or violently",
-  "example": "He decided to thrust the sword into the ground."
+  "example": "He decided to thrust the sword into the ground.",
+  "forms": [
+   "Thrust",
+   "Thrust",
+   "Thrust"
+  ]
  },
  "tilt": {
   "ipa": "/tɪlt/",
@@ -16137,7 +16317,12 @@
    "ameliyat olmak"
   ],
   "definition": "To experience or suffer something",
-  "example": "The patient must undergo a difficult medical examination."
+  "example": "The patient must undergo a difficult medical examination.",
+  "forms": [
+   "Undergo",
+   "Underwent",
+   "Undergone"
+  ]
  },
  "underline": {
   "ipa": "/ˌʌn.dəˈlaɪn/",
@@ -16169,7 +16354,12 @@
    "taahhüt etmek"
   ],
   "definition": "To commit oneself to and begin a task",
-  "example": "We will undertake the new project next week."
+  "example": "We will undertake the new project next week.",
+  "forms": [
+   "Undertake",
+   "Undertook",
+   "Undertaken"
+  ]
  },
  "uphold": {
   "ipa": "/ʌpˈhəʊld/",
@@ -16314,7 +16504,12 @@
    "örmek"
   ],
   "definition": "To make fabric by crossing threads together.",
-  "example": "They use old machines to weave beautiful carpets."
+  "example": "They use old machines to weave beautiful carpets.",
+  "forms": [
+   "Weave",
+   "Wove",
+   "Woven"
+  ]
  },
  "whip": {
   "ipa": "/wɪp/",
@@ -16345,7 +16540,12 @@
    "geri çekilmek"
   ],
   "definition": "To take money out of an account.",
-  "example": "I need to withdraw some cash from the bank."
+  "example": "I need to withdraw some cash from the bank.",
+  "forms": [
+   "Withdraw",
+   "Withdrew",
+   "Withdrawn"
+  ]
  },
  "withstand": {
   "ipa": "/wɪðˈstænd/",
@@ -16546,6 +16746,1307 @@
    "Burst",
    "Burst",
    "Burst"
+  ]
+ },
+ "cast": {
+  "ipa": "/kɑːst/",
+  "reading": "kast",
+  "meanings": [
+   "fırlatmak",
+   "rol vermek",
+   "dökmek"
+  ],
+  "definition": "To throw something or select actors for a play.",
+  "example": "The director will cast the actors for the new movie.",
+  "forms": [
+   "Cast",
+   "Cast",
+   "Cast"
+  ]
+ },
+ "catch": {
+  "ipa": "/kætʃ/",
+  "reading": "keç",
+  "meanings": [
+   "yakalamak",
+   "tutmak"
+  ],
+  "definition": "To take hold of something that is moving.",
+  "example": "Try to catch the ball with both hands.",
+  "forms": [
+   "Catch",
+   "Caught",
+   "Caught"
+  ]
+ },
+ "come": {
+  "ipa": "/kʌm/",
+  "reading": "kam",
+  "meanings": [
+   "gelmek"
+  ],
+  "definition": "To move toward or arrive at a place.",
+  "example": "Please come to my office tomorrow morning.",
+  "forms": [
+   "Come",
+   "Came",
+   "Come"
+  ]
+ },
+ "cost": {
+  "ipa": "/kɒst/",
+  "reading": "kost",
+  "meanings": [
+   "maliyetinde olmak",
+   "tutmak (fiyat)"
+  ],
+  "definition": "To have a specific price.",
+  "example": "These shoes cost too much money.",
+  "forms": [
+   "Cost",
+   "Cost",
+   "Cost"
+  ]
+ },
+ "cut": {
+  "ipa": "/kʌt/",
+  "reading": "kat",
+  "meanings": [
+   "kesmek",
+   "dilimlemek"
+  ],
+  "definition": "To divide or open something using a sharp tool.",
+  "example": "Please cut the bread into thick slices.",
+  "forms": [
+   "Cut",
+   "Cut",
+   "Cut"
+  ]
+ },
+ "choose": {
+  "ipa": "/tʃuːz/",
+  "reading": "çuuz",
+  "meanings": [
+   "seçmek",
+   "karar vermek"
+  ],
+  "definition": "To select from a number of possibilities.",
+  "example": "You must choose one option from the menu.",
+  "forms": [
+   "Choose",
+   "Chose",
+   "Chosen"
+  ]
+ },
+ "deal": {
+  "ipa": "/diːl/",
+  "reading": "diil",
+  "meanings": [
+   "kart dağıtmak",
+   "anlaşmak",
+   "ilgilenmek"
+  ],
+  "definition": "To distribute cards or take action on a matter.",
+  "example": "It is your turn to deal the cards.",
+  "forms": [
+   "Deal",
+   "Dealt",
+   "Dealt"
+  ]
+ },
+ "dig": {
+  "ipa": "/dɪɡ/",
+  "reading": "dig",
+  "meanings": [
+   "kazmak"
+  ],
+  "definition": "To break up and move soil or earth.",
+  "example": "The dogs love to dig holes in the garden.",
+  "forms": [
+   "Dig",
+   "Dug",
+   "Dug"
+  ]
+ },
+ "do": {
+  "ipa": "/duː/",
+  "reading": "duu",
+  "meanings": [
+   "yapmak",
+   "etmek"
+  ],
+  "definition": "To perform an action or activity.",
+  "example": "You must do your homework tonight.",
+  "forms": [
+   "Do",
+   "Did",
+   "Done"
+  ]
+ },
+ "dream": {
+  "ipa": "/driːm/",
+  "reading": "driim",
+  "meanings": [
+   "rüya görmek",
+   "hayal kurmak"
+  ],
+  "definition": "To experience thoughts or images during sleep.",
+  "example": "I often dream about flying.",
+  "forms": [
+   "Dream",
+   "Dreamt / Dreamed",
+   "Dreamt / Dreamed"
+  ]
+ },
+ "drive": {
+  "ipa": "/draɪv/",
+  "reading": "drayv",
+  "meanings": [
+   "sürmek",
+   "araba kullanmak"
+  ],
+  "definition": "To operate and control a motor vehicle.",
+  "example": "I want to drive a fast sports car.",
+  "forms": [
+   "Drive",
+   "Drove",
+   "Driven"
+  ]
+ },
+ "fall": {
+  "ipa": "/fɔːl/",
+  "reading": "fool",
+  "meanings": [
+   "düşmek"
+  ],
+  "definition": "To move downwards rapidly and uncontrollably.",
+  "example": "Leaves fall from the trees in autumn.",
+  "forms": [
+   "Fall",
+   "Fell",
+   "Fallen"
+  ]
+ },
+ "feel": {
+  "ipa": "/fiːl/",
+  "reading": "fiil",
+  "meanings": [
+   "hissetmek"
+  ],
+  "definition": "To experience an emotion or physical sensation.",
+  "example": "I feel very happy today.",
+  "forms": [
+   "Feel",
+   "Felt",
+   "Felt"
+  ]
+ },
+ "fight": {
+  "ipa": "/faɪt/",
+  "reading": "fayt",
+  "meanings": [
+   "dövüşmek",
+   "savaşmak",
+   "mücadele etmek"
+  ],
+  "definition": "To take part in a physical struggle or battle.",
+  "example": "Soldiers must fight for their country.",
+  "forms": [
+   "Fight",
+   "Fought",
+   "Fought"
+  ]
+ },
+ "find": {
+  "ipa": "/faɪnd/",
+  "reading": "faynd",
+  "meanings": [
+   "bulmak",
+   "tespit etmek"
+  ],
+  "definition": "Discover or locate something missing or lost.",
+  "example": "I need to find my keys.",
+  "forms": [
+   "Find",
+   "Found",
+   "Found"
+  ]
+ },
+ "forbid": {
+  "ipa": "/fəˈbɪd/",
+  "reading": "fobid",
+  "meanings": [
+   "yasaklamak",
+   "men etmek"
+  ],
+  "definition": "Refuse to allow something.",
+  "example": "The rules forbid parking here.",
+  "forms": [
+   "Forbid",
+   "Forbade",
+   "Forbidden"
+  ]
+ },
+ "forget": {
+  "ipa": "/fəˈɡet/",
+  "reading": "forget",
+  "meanings": [
+   "unutmak"
+  ],
+  "definition": "Fail to remember something.",
+  "example": "Do not forget your homework.",
+  "forms": [
+   "Forget",
+   "Forgot",
+   "Forgotten"
+  ]
+ },
+ "forgive": {
+  "ipa": "/fəˈɡɪv/",
+  "reading": "fogiv",
+  "meanings": [
+   "affetmek",
+   "bağışlamak"
+  ],
+  "definition": "Stop feeling angry towards someone for an offense.",
+  "example": "It is hard to forgive a lie.",
+  "forms": [
+   "Forgive",
+   "Forgave",
+   "Forgiven"
+  ]
+ },
+ "freeze": {
+  "ipa": "/friːz/",
+  "reading": "frîz",
+  "meanings": [
+   "donmak",
+   "dondurmak"
+  ],
+  "definition": "Turn into ice because of extreme cold.",
+  "example": "Water can freeze in winter.",
+  "forms": [
+   "Freeze",
+   "Froze",
+   "Frozen"
+  ]
+ },
+ "get": {
+  "ipa": "/ɡet/",
+  "reading": "get",
+  "meanings": [
+   "almak",
+   "elde etmek",
+   "varıncaya kadar"
+  ],
+  "definition": "Receive or obtain something.",
+  "example": "I want to get a new phone.",
+  "forms": [
+   "Get",
+   "Got",
+   "Got / Gotten"
+  ]
+ },
+ "give": {
+  "ipa": "/ɡɪv/",
+  "reading": "giv",
+  "meanings": [
+   "vermek",
+   "hediye etmek"
+  ],
+  "definition": "Freely transfer the possession of something to someone.",
+  "example": "She will give you a book.",
+  "forms": [
+   "Give",
+   "Gave",
+   "Given"
+  ]
+ },
+ "grow": {
+  "ipa": "/ɡrəʊ/",
+  "reading": "gro",
+  "meanings": [
+   "büyümek",
+   "yetiştirmek"
+  ],
+  "definition": "Increase in size or amount.",
+  "example": "Plants need water to grow.",
+  "forms": [
+   "Grow",
+   "Grew",
+   "Grown"
+  ]
+ },
+ "have": {
+  "ipa": "/hæv/",
+  "reading": "hev",
+  "meanings": [
+   "sahip olmak",
+   "var olmak"
+  ],
+  "definition": "Possess or hold something.",
+  "example": "I have a big family.",
+  "forms": [
+   "Have",
+   "Had",
+   "Had"
+  ]
+ },
+ "hear": {
+  "ipa": "/hɪə(r)/",
+  "reading": "hiır",
+  "meanings": [
+   "duymak",
+   "işitmek"
+  ],
+  "definition": "Perceive a sound with the ear.",
+  "example": "Can you hear the music?",
+  "forms": [
+   "Hear",
+   "Heard",
+   "Heard"
+  ]
+ },
+ "hit": {
+  "ipa": "/hɪt/",
+  "reading": "hit",
+  "meanings": [
+   "varmak",
+   "vurmak",
+   "çarpmak"
+  ],
+  "definition": "Bring one's hand or an object into contact with forcefully.",
+  "example": "Do not hit the wall.",
+  "forms": [
+   "Hit",
+   "Hit",
+   "Hit"
+  ]
+ },
+ "hurt": {
+  "ipa": "/hɜːt/",
+  "reading": "hööt",
+  "meanings": [
+   "acıtmak",
+   "yaralamak",
+   "incitmek"
+  ],
+  "definition": "Cause pain or injury to someone.",
+  "example": "Tight shoes can hurt your feet.",
+  "forms": [
+   "Hurt",
+   "Hurt",
+   "Hurt"
+  ]
+ },
+ "keep": {
+  "ipa": "/kiːp/",
+  "reading": "kîp",
+  "meanings": [
+   "tutmak",
+   "saklamak",
+   "muhafaza etmek"
+  ],
+  "definition": "Have or retain possession of something.",
+  "example": "Keep your room clean.",
+  "forms": [
+   "Keep",
+   "Kept",
+   "Kept"
+  ]
+ },
+ "know": {
+  "ipa": "/nəʊ/",
+  "reading": "nou",
+  "meanings": [
+   "bilmek",
+   "tanımak"
+  ],
+  "definition": "To have information or knowledge in your mind.",
+  "example": "I know the answer to your question.",
+  "forms": [
+   "Know",
+   "Knew",
+   "Known"
+  ]
+ },
+ "kneel": {
+  "ipa": "/niːl/",
+  "reading": "niil",
+  "meanings": [
+   "diz çökmek"
+  ],
+  "definition": "To support yourself on your knees.",
+  "example": "You must kneel on the floor during the prayer.",
+  "forms": [
+   "Kneel",
+   "Knelt",
+   "Knelt"
+  ]
+ },
+ "lead": {
+  "ipa": "/liːd/",
+  "reading": "liid",
+  "meanings": [
+   "yol göstermek",
+   "liderlik etmek"
+  ],
+  "definition": "To show the way by going ahead.",
+  "example": "She will lead the team to victory.",
+  "forms": [
+   "Lead",
+   "Led",
+   "Led"
+  ]
+ },
+ "lean": {
+  "ipa": "/liːn/",
+  "reading": "liin",
+  "meanings": [
+   "yaslanmak",
+   "eğilmek"
+  ],
+  "definition": "To slope or bend in a particular direction.",
+  "example": "Do not lean against the wet paint.",
+  "forms": [
+   "Lean",
+   "Leant",
+   "Leant"
+  ]
+ },
+ "learn": {
+  "ipa": "/lɜːn/",
+  "reading": "löön",
+  "meanings": [
+   "öğrenmek"
+  ],
+  "definition": "To get knowledge or skill in a subject.",
+  "example": "I want to learn how to drive a car.",
+  "forms": [
+   "Learn",
+   "Learnt / Learned",
+   "Learnt / Learned"
+  ]
+ },
+ "leave": {
+  "ipa": "/liːv/",
+  "reading": "liiv",
+  "meanings": [
+   "ayrılmak",
+   "bırakmak"
+  ],
+  "definition": "To go away from a place or person.",
+  "example": "We must leave the office before five o'clock.",
+  "forms": [
+   "Leave",
+   "Left",
+   "Left"
+  ]
+ },
+ "lend": {
+  "ipa": "/lend/",
+  "reading": "lend",
+  "meanings": [
+   "ödünç vermek"
+  ],
+  "definition": "To give something to someone for a short time.",
+  "example": "Can you lend me your pen for a minute?",
+  "forms": [
+   "Lend",
+   "Lent",
+   "Lent"
+  ]
+ },
+ "let": {
+  "ipa": "/let/",
+  "reading": "let",
+  "meanings": [
+   "izin vermek",
+   "bırakmak"
+  ],
+  "definition": "To allow something to happen.",
+  "example": "Please let me explain the situation.",
+  "forms": [
+   "Let",
+   "Let",
+   "Let"
+  ]
+ },
+ "lie": {
+  "ipa": "/laɪ/",
+  "reading": "lay",
+  "meanings": [
+   "yalan söylemek",
+   "uzanmak"
+  ],
+  "definition": "To be in a flat horizontal position.",
+  "example": "You should lie on your back to rest.",
+  "forms": [
+   "Lie",
+   "Lay",
+   "Lain"
+  ]
+ },
+ "make": {
+  "ipa": "/meɪk/",
+  "reading": "meyk",
+  "meanings": [
+   "yapmak",
+   "üretmek"
+  ],
+  "definition": "To create or produce something.",
+  "example": "We will make a delicious cake today.",
+  "forms": [
+   "Make",
+   "Made",
+   "Made"
+  ]
+ },
+ "mean": {
+  "ipa": "/miːn/",
+  "reading": "miin",
+  "meanings": [
+   "anlamına gelmek",
+   "demek istemek"
+  ],
+  "definition": "To have a particular significance or value.",
+  "example": "What does this difficult word mean?",
+  "forms": [
+   "Mean",
+   "Meant",
+   "Meant"
+  ]
+ },
+ "meet": {
+  "ipa": "/miːt/",
+  "reading": "miit",
+  "meanings": [
+   "buluşmak",
+   "karşılaşmak",
+   "tanışmak"
+  ],
+  "definition": "To come together with someone socially.",
+  "example": "We can meet at the cafe tomorrow.",
+  "forms": [
+   "Meet",
+   "Met",
+   "Met"
+  ]
+ },
+ "pay": {
+  "ipa": "/peɪ/",
+  "reading": "pey",
+  "meanings": [
+   "ödemek"
+  ],
+  "definition": "To give money for goods or services.",
+  "example": "I will pay for the coffee today.",
+  "forms": [
+   "Pay",
+   "Paid",
+   "Paid"
+  ]
+ },
+ "put": {
+  "ipa": "/pʊt/",
+  "reading": "put",
+  "meanings": [
+   "koymak",
+   "yerleştirmek"
+  ],
+  "definition": "To move something into a specific place",
+  "example": "Please put the keys on the table.",
+  "forms": [
+   "Put",
+   "Put",
+   "Put"
+  ]
+ },
+ "read": {
+  "ipa": "/riːd/",
+  "reading": "riid",
+  "meanings": [
+   "okumak"
+  ],
+  "definition": "To look at and understand written words",
+  "example": "I like to read books before sleeping.",
+  "forms": [
+   "Read",
+   "Read",
+   "Read"
+  ]
+ },
+ "ride": {
+  "ipa": "/raɪd/",
+  "reading": "rayd",
+  "meanings": [
+   "binmek",
+   "sürmek"
+  ],
+  "definition": "To travel on a bicycle, horse, or vehicle",
+  "example": "Children learn how to ride a bicycle.",
+  "forms": [
+   "Ride",
+   "Rode",
+   "Ridden"
+  ]
+ },
+ "ring": {
+  "ipa": "/rɪŋ/",
+  "reading": "riŋ",
+  "meanings": [
+   "çalmak",
+   "halka"
+  ],
+  "definition": "To make a clear sound like a bell",
+  "example": "I heard the phone ring in the kitchen.",
+  "forms": [
+   "Ring",
+   "Rang",
+   "Rung"
+  ]
+ },
+ "run": {
+  "ipa": "/rʌn/",
+  "reading": "ran",
+  "meanings": [
+   "koşmak",
+   "yönetmek"
+  ],
+  "definition": "To move fast on foot",
+  "example": "You must run to catch the bus.",
+  "forms": [
+   "Run",
+   "Ran",
+   "Run"
+  ]
+ },
+ "say": {
+  "ipa": "/seɪ/",
+  "reading": "sey",
+  "meanings": [
+   "söylemek",
+   "demek"
+  ],
+  "definition": "To speak words to express an idea",
+  "example": "What did you say to him?",
+  "forms": [
+   "Say",
+   "Said",
+   "Said"
+  ]
+ },
+ "sell": {
+  "ipa": "/sel/",
+  "reading": "sel",
+  "meanings": [
+   "satmak"
+  ],
+  "definition": "To give something in exchange for money",
+  "example": "They want to sell their old car.",
+  "forms": [
+   "Sell",
+   "Sold",
+   "Sold"
+  ]
+ },
+ "send": {
+  "ipa": "/send/",
+  "reading": "send",
+  "meanings": [
+   "göndermek",
+   "yollamak"
+  ],
+  "definition": "To cause something to go to a place",
+  "example": "I will send a message tomorrow.",
+  "forms": [
+   "Send",
+   "Sent",
+   "Sent"
+  ]
+ },
+ "set": {
+  "ipa": "/set/",
+  "reading": "set",
+  "meanings": [
+   "ayarlamak",
+   "hazırlamak"
+  ],
+  "definition": "To put something in a particular position",
+  "example": "Please help me set the dining table.",
+  "forms": [
+   "Set",
+   "Set",
+   "Set"
+  ]
+ },
+ "sew": {
+  "ipa": "/səʊ/",
+  "reading": "sow",
+  "meanings": [
+   "dikmek"
+  ],
+  "definition": "To join fabric using a needle and thread",
+  "example": "My grandmother taught me how to sew.",
+  "forms": [
+   "Sew",
+   "Sewed",
+   "Sewed / Sewn"
+  ]
+ },
+ "shake": {
+  "ipa": "/ʃeɪk/",
+  "reading": "şeyk",
+  "meanings": [
+   "sallamak",
+   "titremek"
+  ],
+  "definition": "To move quickly up and down or side to side",
+  "example": "Please shake the bottle well before opening.",
+  "forms": [
+   "Shake",
+   "Shook",
+   "Shaken"
+  ]
+ },
+ "shoot": {
+  "ipa": "/ʃuːt/",
+  "reading": "şuut",
+  "meanings": [
+   "ateş etmek",
+   "vurmak"
+  ],
+  "definition": "To fire a bullet or weapon",
+  "example": "Soldiers must practice to shoot accurately.",
+  "forms": [
+   "Shoot",
+   "Shot",
+   "Shot"
+  ]
+ },
+ "show": {
+  "ipa": "/ʃəʊ/",
+  "reading": "şow",
+  "meanings": [
+   "göstermek",
+   "sergilemek"
+  ],
+  "definition": "To let someone see something",
+  "example": "Can you show me the way?",
+  "forms": [
+   "Show",
+   "Showed",
+   "Shown"
+  ]
+ },
+ "shut": {
+  "ipa": "/ʃʌt/",
+  "reading": "şat",
+  "meanings": [
+   "kapatmak"
+  ],
+  "definition": "To close something",
+  "example": "Please shut the window, it is cold.",
+  "forms": [
+   "Shut",
+   "Shut",
+   "Shut"
+  ]
+ },
+ "sink": {
+  "ipa": "/sɪŋk/",
+  "reading": "sink",
+  "meanings": [
+   "batmak",
+   "lavabo"
+  ],
+  "definition": "To go down below the surface of water",
+  "example": "A heavy stone will sink in water.",
+  "forms": [
+   "Sink",
+   "Sank",
+   "Sunk"
+  ]
+ },
+ "sit": {
+  "ipa": "/sɪt/",
+  "reading": "sit",
+  "meanings": [
+   "oturmak"
+  ],
+  "definition": "To rest your body on a seat",
+  "example": "You can sit on this comfortable chair.",
+  "forms": [
+   "Sit",
+   "Sat",
+   "Sat"
+  ]
+ },
+ "sleep": {
+  "ipa": "/sliːp/",
+  "reading": "sliip",
+  "meanings": [
+   "uyumak",
+   "uyku"
+  ],
+  "definition": "To rest in a state of natural unconsciousness",
+  "example": "I need to sleep for eight hours tonight.",
+  "forms": [
+   "Sleep",
+   "Slept",
+   "Slept"
+  ]
+ },
+ "smell": {
+  "ipa": "/smel/",
+  "reading": "smel",
+  "meanings": [
+   "koklamak",
+   "kokmak",
+   "koku"
+  ],
+  "definition": "To perceive scent through the nose",
+  "example": "I love to smell fresh flowers in spring.",
+  "forms": [
+   "Smell",
+   "Smelt",
+   "Smelt"
+  ]
+ },
+ "speed": {
+  "ipa": "/spiːd/",
+  "reading": "spiid",
+  "meanings": [
+   "hızlanmak",
+   "hız"
+  ],
+  "definition": "To move quickly or accelerate",
+  "example": "Drivers must not speed in school zones.",
+  "forms": [
+   "Speed",
+   "Sped",
+   "Sped"
+  ]
+ },
+ "spell": {
+  "ipa": "/spel/",
+  "reading": "spel",
+  "meanings": [
+   "hecelemek",
+   "büyü"
+  ],
+  "definition": "To write or name letters of a word",
+  "example": "How do you spell your last name?",
+  "forms": [
+   "Spell",
+   "Spelt",
+   "Spelt"
+  ]
+ },
+ "spend": {
+  "ipa": "/spend/",
+  "reading": "spend",
+  "meanings": [
+   "harcamak",
+   "vakit geçirmek"
+  ],
+  "definition": "To use money to buy goods or services",
+  "example": "We plan to spend our holidays in Italy.",
+  "forms": [
+   "Spend",
+   "Spent",
+   "Spent"
+  ]
+ },
+ "spin": {
+  "ipa": "/spɪn/",
+  "reading": "spin",
+  "meanings": [
+   "döndürmek",
+   "dönmek"
+  ],
+  "definition": "To turn around quickly many times",
+  "example": "Watch the coin spin on the table.",
+  "forms": [
+   "Spin",
+   "Spun",
+   "Spun"
+  ]
+ },
+ "spit": {
+  "ipa": "/spɪt/",
+  "reading": "spit",
+  "meanings": [
+   "tükürmek",
+   "tükürük"
+  ],
+  "definition": "To eject saliva from the mouth",
+  "example": "Please do not spit on the ground.",
+  "forms": [
+   "Spit",
+   "Spat",
+   "Spat"
+  ]
+ },
+ "spread": {
+  "ipa": "/spred/",
+  "reading": "spred",
+  "meanings": [
+   "yaymak",
+   "yayılmak"
+  ],
+  "definition": "To cover a larger area or distribute widely",
+  "example": "You can spread the butter on the bread.",
+  "forms": [
+   "Spread",
+   "Spread",
+   "Spread"
+  ]
+ },
+ "spring": {
+  "ipa": "/sprɪŋ/",
+  "reading": "spring",
+  "meanings": [
+   "zıplamak",
+   "bahar",
+   "yay"
+  ],
+  "definition": "To jump or move upward suddenly",
+  "example": "Cats can spring high into the air.",
+  "forms": [
+   "Spring",
+   "Sprang",
+   "Sprung"
+  ]
+ },
+ "stand": {
+  "ipa": "/stænd/",
+  "reading": "stend",
+  "meanings": [
+   "ayakta durmak",
+   "katlanmak"
+  ],
+  "definition": "To support oneself on the feet in an upright position",
+  "example": "Please stand behind the yellow line.",
+  "forms": [
+   "Stand",
+   "Stood",
+   "Stood"
+  ]
+ },
+ "steal": {
+  "ipa": "/stiːl/",
+  "reading": "stiil",
+  "meanings": [
+   "çalmak",
+   "hırsızlık yapmak"
+  ],
+  "definition": "To take something without permission illegally",
+  "example": "It is wrong to steal from other people.",
+  "forms": [
+   "Steal",
+   "Stole",
+   "Stolen"
+  ]
+ },
+ "sting": {
+  "ipa": "/stɪŋ/",
+  "reading": "sting",
+  "meanings": [
+   "sokmak",
+   "acıtmak"
+  ],
+  "definition": "To prick painfully with a sharp point",
+  "example": "Bees will sting if they feel threatened.",
+  "forms": [
+   "Sting",
+   "Stung",
+   "Stung"
+  ]
+ },
+ "stink": {
+  "ipa": "/stɪŋk/",
+  "reading": "stink",
+  "meanings": [
+   "kötü kokmak",
+   "kokuşmak"
+  ],
+  "definition": "To have a strong, unpleasant smell",
+  "example": "Old garbage can stink if left outside.",
+  "forms": [
+   "Stink",
+   "Stank / Stunk",
+   "Stunk"
+  ]
+ },
+ "stride": {
+  "ipa": "/straɪd/",
+  "reading": "strayd",
+  "meanings": [
+   "uzun adımlarla yürümek",
+   "adım"
+  ],
+  "definition": "To walk with long, decisive steps",
+  "example": "He began to stride confidently down the street.",
+  "forms": [
+   "Stride",
+   "Strode",
+   "Stridden"
+  ]
+ },
+ "swear": {
+  "ipa": "/sweə/",
+  "reading": "sveı",
+  "meanings": [
+   "yemin etmek",
+   "küfretmek"
+  ],
+  "definition": "To make a solemn promise or use bad language.",
+  "example": "I swear to tell the complete truth.",
+  "forms": [
+   "Swear",
+   "Swore",
+   "Sworn"
+  ]
+ },
+ "sweat": {
+  "ipa": "/swet/",
+  "reading": "svet",
+  "meanings": [
+   "terlemek",
+   "ter"
+  ],
+  "definition": "To produce liquid through your skin.",
+  "example": "Heavy exercise will make you sweat a lot.",
+  "forms": [
+   "Sweat",
+   "Sweat",
+   "Sweat"
+  ]
+ },
+ "swing": {
+  "ipa": "/swɪŋ/",
+  "reading": "sviŋ",
+  "meanings": [
+   "sallanmak",
+   "sallamak"
+  ],
+  "definition": "To move backwards and forwards from a fixed point.",
+  "example": "Children love to swing high in the park.",
+  "forms": [
+   "Swing",
+   "Swung",
+   "Swung"
+  ]
+ },
+ "take": {
+  "ipa": "/teɪk/",
+  "reading": "teyk",
+  "meanings": [
+   "almak",
+   "götürmek"
+  ],
+  "definition": "To reach out for and hold something.",
+  "example": "Please take a seat and wait for your turn.",
+  "forms": [
+   "Take",
+   "Took",
+   "Taken"
+  ]
+ },
+ "teach": {
+  "ipa": "/tiːtʃ/",
+  "reading": "tiiç",
+  "meanings": [
+   "öğretmek",
+   "ders vermek"
+  ],
+  "definition": "To give someone knowledge or train them.",
+  "example": "She wants to teach English in Spain.",
+  "forms": [
+   "Teach",
+   "Taught",
+   "Taught"
+  ]
+ },
+ "tear": {
+  "ipa": "/teə/",
+  "reading": "teı",
+  "meanings": [
+   "yırtmak",
+   "koparmak"
+  ],
+  "definition": "To pull something apart into pieces.",
+  "example": "Be careful not to tear the thin paper.",
+  "forms": [
+   "Tear",
+   "Tore",
+   "Torn"
+  ]
+ },
+ "tell": {
+  "ipa": "/tel/",
+  "reading": "tel",
+  "meanings": [
+   "söylemek",
+   "anlatmak"
+  ],
+  "definition": "To communicate information to someone.",
+  "example": "You must tell the police what you saw.",
+  "forms": [
+   "Tell",
+   "Told",
+   "Told"
+  ]
+ },
+ "think": {
+  "ipa": "/θɪŋk/",
+  "reading": "fink",
+  "meanings": [
+   "düşünmek",
+   "sanmak"
+  ],
+  "definition": "To use your mind to consider something.",
+  "example": "I need some time to think about your offer.",
+  "forms": [
+   "Think",
+   "Thought",
+   "Thought"
+  ]
+ },
+ "throw": {
+  "ipa": "/θrəʊ/",
+  "reading": "frou",
+  "meanings": [
+   "atmak",
+   "fırlatmak"
+  ],
+  "definition": "To send something through the air with force.",
+  "example": "Can you throw the ball to me?",
+  "forms": [
+   "Throw",
+   "Threw",
+   "Thrown"
+  ]
+ },
+ "tread": {
+  "ipa": "/tred/",
+  "reading": "tred",
+  "meanings": [
+   "basmak",
+   "adımlamak"
+  ],
+  "definition": "To step or walk on something.",
+  "example": "Please tread carefully on the wet floor.",
+  "forms": [
+   "Tread",
+   "Trod",
+   "Trodden"
+  ]
+ },
+ "understand": {
+  "ipa": "/ˌʌndəˈstænd/",
+  "reading": "andırstend",
+  "meanings": [
+   "anlamak",
+   "kavramak"
+  ],
+  "definition": "To know the meaning of something.",
+  "example": "I do not understand this difficult question.",
+  "forms": [
+   "Understand",
+   "Understood",
+   "Understood"
+  ]
+ },
+ "wake": {
+  "ipa": "/weɪk/",
+  "reading": "veyk",
+  "meanings": [
+   "uyanmak",
+   "uyandırmak"
+  ],
+  "definition": "To stop sleeping or make someone stop sleeping.",
+  "example": "Please wake me before you leave the house.",
+  "forms": [
+   "Wake",
+   "Woke",
+   "Woken"
+  ]
+ },
+ "wear": {
+  "ipa": "/weə/",
+  "reading": "veı",
+  "meanings": [
+   "giymek",
+   "takmak"
+  ],
+  "definition": "To have clothing or jewelry on your body.",
+  "example": "You should wear a warm coat today.",
+  "forms": [
+   "Wear",
+   "Wore",
+   "Worn"
+  ]
+ },
+ "wet": {
+  "ipa": "/wet/",
+  "reading": "vet",
+  "meanings": [
+   "ıslatmak",
+   "nemlendirmek"
+  ],
+  "definition": "To make something wet with liquid.",
+  "example": "Do not wet your shoes in the water.",
+  "forms": [
+   "Wet",
+   "Wet",
+   "Wet"
+  ]
+ },
+ "win": {
+  "ipa": "/wɪn/",
+  "reading": "vin",
+  "meanings": [
+   "kazanmak",
+   "galip gelmek"
+  ],
+  "definition": "To be successful in a competition or game.",
+  "example": "They want to win the game today.",
+  "forms": [
+   "Win",
+   "Won",
+   "Won"
+  ]
+ },
+ "wind": {
+  "ipa": "/waɪnd/",
+  "reading": "vaynd",
+  "meanings": [
+   "sarmak",
+   "kurmak (saat vb.)"
+  ],
+  "definition": "To turn or twist something around.",
+  "example": "You must wind the clock every morning.",
+  "forms": [
+   "Wind",
+   "Wound",
+   "Wound"
+  ]
+ },
+ "wring": {
+  "ipa": "/rɪŋ/",
+  "reading": "ring",
+  "meanings": [
+   "sıkmak",
+   "bükmek"
+  ],
+  "definition": "To twist and squeeze to get water out.",
+  "example": "You should wring the wet cloth before wiping.",
+  "forms": [
+   "Wring",
+   "Wrung",
+   "Wrung"
   ]
  }
 }
