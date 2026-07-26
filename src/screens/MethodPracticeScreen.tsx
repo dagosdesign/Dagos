@@ -801,7 +801,9 @@ function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }:
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const rounds = useMemo(() => sample(pool, Math.min(3, pool.length)), [pool]);
+  // Session walks the ENTIRE category pool in random order; stories/dialogues
+  // are generated on demand per card, so the long session costs nothing upfront.
+  const rounds = useMemo(() => shuffle(pool), [pool]);
   const [idx, setIdx] = useState(0);
   const [content, setContent] = useState<StoryContent | null>(null);
   const [loading, setLoading] = useState(true);
@@ -899,7 +901,9 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const rounds = useMemo(() => sample(pool, Math.min(3, pool.length)), [pool]);
+  // Session walks the ENTIRE category pool in random order; stories/dialogues
+  // are generated on demand per card, so the long session costs nothing upfront.
+  const rounds = useMemo(() => shuffle(pool), [pool]);
   const [idx, setIdx] = useState(0);
   const [content, setContent] = useState<DialogueContent | null>(null);
   const [loading, setLoading] = useState(true);
