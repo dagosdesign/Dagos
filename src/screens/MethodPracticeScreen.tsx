@@ -143,7 +143,8 @@ function ListeningMode({ pool, playPronunciation, recordQuizXp, onExit, onRestar
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const rounds = useMemo(() => sample(pool, Math.min(5, pool.length)), [pool]);
+  // Session covers the ENTIRE category pool in random order.
+  const rounds = useMemo(() => shuffle(pool), [pool]);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
@@ -240,7 +241,8 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
   onExit: () => void;
   onRestart: () => void;
 }) {
-  const rounds = useMemo(() => sample(pool, Math.min(5, pool.length)), [pool]);
+  // Session covers the ENTIRE category pool in random order.
+  const rounds = useMemo(() => shuffle(pool), [pool]);
   const [idx, setIdx] = useState(0);
   const [input, setInput] = useState('');
   const [submitted, setSubmitted] = useState(false);
