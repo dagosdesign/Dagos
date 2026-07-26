@@ -43,10 +43,11 @@ const GEMINI_MODELS = [
 
 async function generateResilient(
   ai: GoogleGenAI,
-  params: { contents: any; config?: any }
+  params: { contents: any; config?: any },
+  models: string[] = GEMINI_MODELS
 ) {
   let lastErr: any;
-  for (const model of GEMINI_MODELS) {
+  for (const model of models) {
     try {
       return await ai.models.generateContent({ model, ...params });
     } catch (err: any) {
@@ -142,21 +143,57 @@ app.post("/api/practice-content", async (req, res) => {
 
     const systemInstruction =
       "You are an English-learning content writer for Turkish students (A2-B1 level). " +
-      "Use simple, natural English. Output must match the JSON schema exactly.";
+      "Use simple, natural, real-life English — never stiff or AI-sounding. " +
+      "Output must match the JSON schema exactly.";
+
+    // Random flavor seeds so every generation feels different.
+    const pick = <T,>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)];
+    const STORY_SETTINGS = [
+      "a busy restaurant kitchen", "a night train between two cities", "a small fishing harbor",
+      "a mountain village in winter", "a crowded street market", "a quiet public library",
+      "a startup office on launch day", "an old family farmhouse", "a football stadium",
+      "a long airport layover", "a neighborhood barbershop", "a university dormitory",
+      "a road trip on a rainy highway", "a tiny repair shop", "a summer camping trip",
+      "a hospital waiting room", "a music rehearsal studio", "a ferry crossing at dawn",
+      "a bakery before sunrise", "a museum after closing time",
+    ];
+    const STORY_STYLES = [
+      "start in the middle of the action", "start with a short line of dialogue",
+      "start with a surprising fact about the main character", "start with a small problem that needs solving",
+      "start with a sound or smell the character notices", "start with a decision the character just made",
+    ];
+    const DIALOGUE_SCENES = [
+      "two coworkers fixing a last-minute problem", "two friends planning a weekend trip",
+      "a customer and a shopkeeper", "two neighbors talking over the fence",
+      "two teammates after a match", "a student and a tutor between classes",
+      "two cousins cooking together", "two travelers waiting for a delayed bus",
+      "a mechanic and a car owner", "two flatmates deciding what to fix in the flat",
+      "a barista and a regular customer", "two colleagues stuck in an elevator",
+      "two old friends who met by chance at a market", "a landlord and a tenant",
+      "two hikers reading a trail map", "siblings organizing a surprise party",
+    ];
+
+    const STYLE_RULES =
+      `Style rules: never open with a time expression ("Last week", "Yesterday", "One day", "This morning"...); ` +
+      `weave any time references naturally into the middle of sentences. Vary sentence structures. ` +
+      `Use everyday vocabulary and realistic details. Avoid clichés and repeated formulas. ` +
+      `No ornate or artificial phrasing — it must read like something a real person would write or say.`;
 
     const prompt =
       kind === "story"
         ? `Write an engaging short story in simple English (130-170 words, 2-3 paragraphs separated by \\n\\n) ` +
-          `for a vocabulary learner. The story must naturally use the target word/phrase "${word}"` +
+          `for a vocabulary learner. Setting: ${pick(STORY_SETTINGS)}. Opening technique: ${pick(STORY_STYLES)}. ` +
+          `The story must naturally use the target word/phrase "${word}"` +
           (meaning ? ` (Turkish meaning: ${meaning})` : "") +
           ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
-          `Give the story a short catchy title (3-6 words). Do not translate the story.`
-        : `Write a natural two-person dialogue in simple English between two friends, A and B ` +
-          `(8-10 short lines, alternating speakers, starting with A). The dialogue must naturally use ` +
-          `the target word/phrase "${word}"` +
+          `${STYLE_RULES} Give the story a short catchy title (3-6 words). Do not translate the story.`
+        : `Write a natural two-person dialogue in simple English (8-10 short lines, alternating speakers A and B, ` +
+          `starting with A). Scene: ${pick(DIALOGUE_SCENES)}. Start mid-conversation — no greetings like ` +
+          `"Hey, how are you?" and no small-talk openers. The dialogue must naturally use the target ` +
+          `word/phrase "${word}"` +
           (meaning ? ` (Turkish meaning: ${meaning})` : "") +
           ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
-          `Give it a short title (2-5 words) describing the situation. Do not translate.`;
+          `${STYLE_RULES} Give it a short title (2-5 words) describing the situation. Do not translate.`;
 
     const responseSchema =
       kind === "story"
@@ -188,6 +225,7 @@ app.post("/api/practice-content", async (req, res) => {
             required: ["title", "lines"],
           };
 
+    // Latency-sensitive endpoint: lead with the fastest model.
     const response = await generateResilient(ai, {
       contents: prompt,
       config: {
@@ -195,7 +233,7 @@ app.post("/api/practice-content", async (req, res) => {
         responseMimeType: "application/json",
         responseSchema,
       },
-    });
+    }, ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.0-flash"]);
 
     const text = response.text;
     if (!text) throw new Error("Empty response received from the Gemini model.");

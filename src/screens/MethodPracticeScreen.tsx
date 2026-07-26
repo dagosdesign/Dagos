@@ -732,9 +732,9 @@ async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashca
     throw new Error('AI content temporarily unavailable (cooldown).');
   }
 
-  // Hard 12s cap so the loading screen can never hang; callers fall back to local content.
+  // Hard 25s cap so the loading screen can never hang; callers fall back to local content.
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 12000);
+  const timer = setTimeout(() => controller.abort(), 25000);
   try {
     const res = await fetch('/api/practice-content', {
       method: 'POST',
