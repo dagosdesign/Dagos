@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
@@ -64,6 +65,19 @@ async function generateResilient(
     }
   }
   throw lastErr;
+}
+
+// Word data (irregular verb forms etc.) from the public vocabulary file.
+let vocabCache: Record<string, { forms?: string[] }> | null = null;
+function getVocab(): Record<string, { forms?: string[] }> {
+  if (!vocabCache) {
+    try {
+      vocabCache = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "vocabulary.json"), "utf8"));
+    } catch {
+      vocabCache = {};
+    }
+  }
+  return vocabCache!;
 }
 
 // Endpoint to check if AI is configured
@@ -179,20 +193,41 @@ app.post("/api/practice-content", async (req, res) => {
       `Use everyday vocabulary and realistic details. Avoid clichés and repeated formulas. ` +
       `No ornate or artificial phrasing — it must read like something a real person would write or say.`;
 
+    // Irregular verbs get past/participle-focused usage rules.
+    const forms = getVocab()[word.toLowerCase()]?.forms;
+    let usageRule: string;
+    if (forms && forms.length === 3) {
+      const base = word.toLowerCase();
+      const v2 = forms[1].split("/")[0].trim();
+      const v3 = forms[2].split("/")[0].trim();
+      const wantNegative = Math.random() < 0.4;
+      const wantQuestion = Math.random() < 0.5;
+      usageRule =
+        kind === "story"
+          ? `The target is the irregular verb "${forms[0]} / ${forms[1]} / ${forms[2]}". Tell the story mostly in past ` +
+            `tense so its past form "${v2}" appears naturally at least twice (exact form, so it can be highlighted); ` +
+            `the base form "${base}" may also appear once.` +
+            (wantNegative ? ` Include exactly one natural negative past sentence using "didn't ${base}".` : "")
+          : `The target is the irregular verb "${forms[0]} / ${forms[1]} / ${forms[2]}". Use its past form "${v2}" at ` +
+            `least twice, and if it fits naturally use the perfect form "have/has ${v3}" once.` +
+            (wantQuestion ? ` Include one question that uses the verb.` : "") +
+            (wantNegative ? ` Include one natural negative form ("didn't ${base}" or "haven't ${v3}").` : "");
+    } else {
+      usageRule =
+        `The content must naturally use the target word/phrase "${word}"` +
+        (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+        ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted.`;
+    }
+
     const prompt =
       kind === "story"
         ? `Write an engaging short story in simple English (130-170 words, 2-3 paragraphs separated by \\n\\n) ` +
           `for a vocabulary learner. Setting: ${pick(STORY_SETTINGS)}. Opening technique: ${pick(STORY_STYLES)}. ` +
-          `The story must naturally use the target word/phrase "${word}"` +
-          (meaning ? ` (Turkish meaning: ${meaning})` : "") +
-          ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
+          `${usageRule} ` +
           `${STYLE_RULES} Give the story a short catchy title (3-6 words). Do not translate the story.`
         : `Write a natural two-person dialogue in simple English (8-10 short lines, alternating speakers A and B, ` +
           `starting with A). Scene: ${pick(DIALOGUE_SCENES)}. Start mid-conversation — no greetings like ` +
-          `"Hey, how are you?" and no small-talk openers. The dialogue must naturally use the target ` +
-          `word/phrase "${word}"` +
-          (meaning ? ` (Turkish meaning: ${meaning})` : "") +
-          ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted. ` +
+          `"Hey, how are you?" and no small-talk openers. ${usageRule} ` +
           `${STYLE_RULES} Give it a short title (2-5 words) describing the situation. Do not translate.`;
 
     const responseSchema =

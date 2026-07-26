@@ -696,11 +696,15 @@ function MatchingMode({ pool, recordQuizXp, onExit, onRestart }: {
 /* ---------- Shared: gold highlighting + Gemini practice content ---------- */
 
 // Renders text with every occurrence of the target word (plus simple suffixes) in gold.
-function Highlighted({ text, word }: { text: string; word: string }) {
+function Highlighted({ text, word, forms }: { text: string; word: string; forms?: string[] }) {
   const esc = escapeRegExp(word);
-  const re = word.includes(' ')
-    ? new RegExp(`(${esc})`, 'gi')
-    : new RegExp(`(\\b${esc}(?:s|es|ed|d|ing)?\\b)`, 'gi');
+  const base = word.includes(' ') ? esc : `\\b${esc}(?:s|es|ed|d|ing)?\\b`;
+  // Irregular verb forms ("Broke", "Was / Were"...) are highlighted as exact words too.
+  const extras = (forms ?? [])
+    .flatMap(f => f.split('/').map(x => x.trim()))
+    .filter(f => f && f.toLowerCase() !== word.toLowerCase())
+    .map(f => `\\b${escapeRegExp(f)}\\b`);
+  const re = new RegExp(`(${[base, ...extras].join('|')})`, 'gi');
   const parts = text.split(re);
   return (
     <>
@@ -724,7 +728,7 @@ let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc_${kind}_${card.id}`;
+  const cacheKey = `lex_pc2_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;
@@ -810,8 +814,12 @@ function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }:
   const [content, setContent] = useState<StoryContent | null>(null);
   const [loading, setLoading] = useState(true);
   const [finished, setFinished] = useState(false);
+  const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
 
   const current = rounds[idx];
+  const wordForms = (vocab && current && vocab[current.word.toLowerCase()]?.forms) || undefined;
+
+  useEffect(() => { loadVocabulary().then(setVocab); }, []);
 
   useEffect(() => {
     if (!current || finished) return;
@@ -865,7 +873,7 @@ function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }:
           <h3 className="text-xl font-serif italic text-white">{content.title}</h3>
           {content.story.split(/\n+/).filter(Boolean).map((para, i) => (
             <p key={i} className="text-[15px] leading-[1.85] font-light text-white">
-              <Highlighted text={para} word={current.word} />
+              <Highlighted text={para} word={current.word} forms={wordForms} />
             </p>
           ))}
           <button
@@ -910,8 +918,12 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
   const [content, setContent] = useState<DialogueContent | null>(null);
   const [loading, setLoading] = useState(true);
   const [finished, setFinished] = useState(false);
+  const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
 
   const current = rounds[idx];
+  const wordForms = (vocab && current && vocab[current.word.toLowerCase()]?.forms) || undefined;
+
+  useEffect(() => { loadVocabulary().then(setVocab); }, []);
 
   useEffect(() => {
     if (!current || finished) return;
@@ -981,7 +993,7 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
                       : 'bg-[#e3b553]/10 border border-[#e3b553]/25 text-white rounded-br-md'
                   }`}
                 >
-                  <Highlighted text={line.text} word={current.word} />
+                  <Highlighted text={line.text} word={current.word} forms={wordForms} />
                 </div>
               </div>
             );
