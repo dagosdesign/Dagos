@@ -462,14 +462,16 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
       ) : (
         /* Composed square vocabulary card in the designed-sheet style */
         <div
-          className="aspect-square rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7 flex flex-col overflow-hidden"
+          className="aspect-square rounded-3xl border border-[#e3b553]/45 p-5 sm:p-7 flex flex-col"
           style={{
             background: 'linear-gradient(160deg, #0d0c08, #050403)',
             boxShadow: '0 0 30px rgba(227,181,83,0.12)',
           }}
         >
-          {/* Top: word + details on the left, oval picture on the right */}
-          <div className="flex gap-3 sm:gap-5 flex-1 min-h-0">
+          {/* Top: word + details left, picture right. No min-h-0 / overflow
+              clipping — long words simply grow the card instead of spilling
+              past the divider. */}
+          <div className="flex gap-3 sm:gap-5 flex-1">
             <div className="flex-1 min-w-0 space-y-1.5 sm:space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className={`${current.word.length > 10 ? 'text-2xl sm:text-4xl' : 'text-4xl sm:text-5xl'} font-serif font-bold text-[#e3b553] leading-tight break-words`}>
