@@ -1727,7 +1727,7 @@
   "ipa": "/laɪt/",
   "reading": "layt",
   "meanings": [
-   "hafif"
+   "aydınlatmak"
   ],
   "definition": "Not weighing much.",
   "example": "This bag is very light.",
@@ -1963,7 +1963,7 @@
   "ipa": "/mɪˈsteɪk/",
   "reading": "misteyk",
   "meanings": [
-   "hata"
+   "hata yapmak"
   ],
   "definition": "Something done wrong; an error.",
   "example": "Everyone makes a mistake from time to time.",
@@ -9496,8 +9496,7 @@
   "reading": "biit",
   "meanings": [
    "vurmak",
-   "yenmek",
-   "kalp atışı"
+   "yenmek"
   ],
   "definition": "Strike repeatedly or defeat someone in a game",
   "example": "My heart starts to beat faster when running.",
@@ -9588,8 +9587,7 @@
   "ipa": "/baɪt/",
   "reading": "bayt",
   "meanings": [
-   "ısırmak",
-   "lokma"
+   "ısırmak"
   ],
   "definition": "Use teeth to cut into something",
   "example": "Be careful so the dog does not bite.",
@@ -9810,8 +9808,7 @@
   "reading": "briid",
   "meanings": [
    "üretmek",
-   "yetiştirmek",
-   "tür"
+   "yetiştirmek"
   ],
   "definition": "To keep animals to produce young.",
   "example": "They want to breed horses on their farm.",
@@ -9835,8 +9832,7 @@
   "ipa": "/ˈbrɔːd.kɑːst/",
   "reading": "broodkaast",
   "meanings": [
-   "yayınlamak",
-   "yayın"
+   "yayınlamak"
   ],
   "definition": "To send out programs on radio or TV.",
   "example": "They will broadcast the match live tonight.",
@@ -16157,8 +16153,7 @@
   "reading": "srast",
   "meanings": [
    "itmek",
-   "saplamak",
-   "itme gücü"
+   "saplamak"
   ],
   "definition": "To push suddenly or violently",
   "example": "He decided to thrust the sword into the ground.",
@@ -16313,7 +16308,7 @@
   "reading": "andırgov",
   "meanings": [
    "maruz kalmak",
-   "başından geçmek",
+   "bir süreçten geçmek",
    "ameliyat olmak"
   ],
   "definition": "To experience or suffer something",
@@ -16619,8 +16614,7 @@
   "ipa": "/biː/",
   "reading": "bii",
   "meanings": [
-   "olmak",
-   "var olmak"
+   "olmak"
   ],
   "definition": "To exist or live.",
   "example": "It is good to be here today.",
@@ -16634,8 +16628,7 @@
   "ipa": "/bɪˈkʌm/",
   "reading": "bikam",
   "meanings": [
-   "olmak",
-   "dönüşmek"
+   "olmak"
   ],
   "definition": "To begin to be something.",
   "example": "It is easy to become a doctor here.",
@@ -16707,8 +16700,7 @@
   "ipa": "/bɪld/",
   "reading": "bild",
   "meanings": [
-   "inşa etmek",
-   "kurmak"
+   "inşa etmek"
   ],
   "definition": "To make something by putting parts together.",
   "example": "They plan to build a new house.",
@@ -16797,8 +16789,7 @@
   "ipa": "/kɒst/",
   "reading": "kost",
   "meanings": [
-   "maliyetinde olmak",
-   "tutmak (fiyat)"
+   "değer biçmek"
   ],
   "definition": "To have a specific price.",
   "example": "These shoes cost too much money.",
@@ -16812,8 +16803,7 @@
   "ipa": "/kʌt/",
   "reading": "kat",
   "meanings": [
-   "kesmek",
-   "dilimlemek"
+   "kesmek"
   ],
   "definition": "To divide or open something using a sharp tool.",
   "example": "Please cut the bread into thick slices.",
@@ -16842,9 +16832,9 @@
   "ipa": "/diːl/",
   "reading": "diil",
   "meanings": [
-   "kart dağıtmak",
+   "ilgilenmek",
    "anlaşmak",
-   "ilgilenmek"
+   "kart dağıtmak"
   ],
   "definition": "To distribute cards or take action on a matter.",
   "example": "It is your turn to deal the cards.",
@@ -16872,8 +16862,7 @@
   "ipa": "/duː/",
   "reading": "duu",
   "meanings": [
-   "yapmak",
-   "etmek"
+   "yapmak"
   ],
   "definition": "To perform an action or activity.",
   "example": "You must do your homework tonight.",
@@ -16902,8 +16891,7 @@
   "ipa": "/draɪv/",
   "reading": "drayv",
   "meanings": [
-   "sürmek",
-   "araba kullanmak"
+   "sürmek"
   ],
   "definition": "To operate and control a motor vehicle.",
   "example": "I want to drive a fast sports car.",
@@ -17036,8 +17024,7 @@
   "reading": "get",
   "meanings": [
    "almak",
-   "elde etmek",
-   "varıncaya kadar"
+   "elde etmek"
   ],
   "definition": "Receive or obtain something.",
   "example": "I want to get a new phone.",
@@ -17081,8 +17068,7 @@
   "ipa": "/hæv/",
   "reading": "hev",
   "meanings": [
-   "sahip olmak",
-   "var olmak"
+   "sahip olmak"
   ],
   "definition": "Possess or hold something.",
   "example": "I have a big family.",
@@ -17111,9 +17097,7 @@
   "ipa": "/hɪt/",
   "reading": "hit",
   "meanings": [
-   "varmak",
-   "vurmak",
-   "çarpmak"
+   "vurmak"
   ],
   "definition": "Bring one's hand or an object into contact with forcefully.",
   "example": "Do not hit the wall.",
@@ -17291,8 +17275,7 @@
   "ipa": "/meɪk/",
   "reading": "meyk",
   "meanings": [
-   "yapmak",
-   "üretmek"
+   "yapmak"
   ],
   "definition": "To create or produce something.",
   "example": "We will make a delicious cake today.",
@@ -17395,8 +17378,7 @@
   "ipa": "/rɪŋ/",
   "reading": "riŋ",
   "meanings": [
-   "çalmak",
-   "halka"
+   "çalmak"
   ],
   "definition": "To make a clear sound like a bell",
   "example": "I heard the phone ring in the kitchen.",
@@ -17557,8 +17539,7 @@
   "ipa": "/sɪŋk/",
   "reading": "sink",
   "meanings": [
-   "batmak",
-   "lavabo"
+   "batmak"
   ],
   "definition": "To go down below the surface of water",
   "example": "A heavy stone will sink in water.",
@@ -17586,8 +17567,7 @@
   "ipa": "/sliːp/",
   "reading": "sliip",
   "meanings": [
-   "uyumak",
-   "uyku"
+   "uyumak"
   ],
   "definition": "To rest in a state of natural unconsciousness",
   "example": "I need to sleep for eight hours tonight.",
@@ -17602,8 +17582,7 @@
   "reading": "smel",
   "meanings": [
    "koklamak",
-   "kokmak",
-   "koku"
+   "kokmak"
   ],
   "definition": "To perceive scent through the nose",
   "example": "I love to smell fresh flowers in spring.",
@@ -17617,8 +17596,7 @@
   "ipa": "/spiːd/",
   "reading": "spiid",
   "meanings": [
-   "hızlanmak",
-   "hız"
+   "hızlanmak"
   ],
   "definition": "To move quickly or accelerate",
   "example": "Drivers must not speed in school zones.",
@@ -17632,8 +17610,7 @@
   "ipa": "/spel/",
   "reading": "spel",
   "meanings": [
-   "hecelemek",
-   "büyü"
+   "hecelemek"
   ],
   "definition": "To write or name letters of a word",
   "example": "How do you spell your last name?",
@@ -17677,8 +17654,7 @@
   "ipa": "/spɪt/",
   "reading": "spit",
   "meanings": [
-   "tükürmek",
-   "tükürük"
+   "tükürmek"
   ],
   "definition": "To eject saliva from the mouth",
   "example": "Please do not spit on the ground.",
@@ -17707,9 +17683,7 @@
   "ipa": "/sprɪŋ/",
   "reading": "spring",
   "meanings": [
-   "zıplamak",
-   "bahar",
-   "yay"
+   "zıplamak"
   ],
   "definition": "To jump or move upward suddenly",
   "example": "Cats can spring high into the air.",
@@ -17753,8 +17727,7 @@
   "ipa": "/stɪŋ/",
   "reading": "sting",
   "meanings": [
-   "sokmak",
-   "acıtmak"
+   "sokmak"
   ],
   "definition": "To prick painfully with a sharp point",
   "example": "Bees will sting if they feel threatened.",
@@ -17783,8 +17756,7 @@
   "ipa": "/straɪd/",
   "reading": "strayd",
   "meanings": [
-   "uzun adımlarla yürümek",
-   "adım"
+   "uzun adımlarla yürümek"
   ],
   "definition": "To walk with long, decisive steps",
   "example": "He began to stride confidently down the street.",
@@ -17813,8 +17785,7 @@
   "ipa": "/swet/",
   "reading": "svet",
   "meanings": [
-   "terlemek",
-   "ter"
+   "terlemek"
   ],
   "definition": "To produce liquid through your skin.",
   "example": "Heavy exercise will make you sweat a lot.",
