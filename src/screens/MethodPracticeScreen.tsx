@@ -484,12 +484,17 @@ function probeImage(candidates: string[]): Promise<string | null> {
 }
 
 const IMG_EXTS = ['webp', 'png', 'jpg'];
+// Photo filenames are slugs so phrases ("alone / feel alone") map to safe names.
+// Single words slugify to themselves, so all existing files keep working.
+function wordSlug(word: string): string {
+  return word.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
 function slotImageCandidates(word: string): string[] {
-  const w = encodeURIComponent(word.toLowerCase());
+  const w = wordSlug(word);
   return IMG_EXTS.map(ext => `/vocabulary/${w}.${ext}`);
 }
 function fullCardCandidates(word: string): string[] {
-  const w = encodeURIComponent(word.toLowerCase());
+  const w = wordSlug(word);
   return IMG_EXTS.map(ext => `/vocabulary/cards/${w}.${ext}`);
 }
 

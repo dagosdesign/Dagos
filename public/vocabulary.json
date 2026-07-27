@@ -18019,5 +18019,2984 @@
    "Wrung",
    "Wrung"
   ]
+ },
+ "about": {
+  "ipa": "/əˈbaʊt/",
+  "reading": "ebaunt",
+  "meanings": [
+   "hakkında"
+  ],
+  "definition": "On the subject of or regarding something.",
+  "example": "We are talking about the new project."
+ },
+ "action": {
+  "ipa": "/ˈækʃn/",
+  "reading": "ekşın",
+  "meanings": [
+   "aksiyon"
+  ],
+  "definition": "The process of doing something to achieve a purpose.",
+  "example": "We need to take action right now."
+ },
+ "adventurous": {
+  "ipa": "/ədˈventʃərəs/",
+  "reading": "edventçrıs",
+  "meanings": [
+   "maceracı"
+  ],
+  "definition": "Willing to try new or risky things.",
+  "example": "He is an adventurous traveler who loves mountains."
+ },
+ "advice": {
+  "ipa": "/ədˈvaɪs/",
+  "reading": "edvais",
+  "meanings": [
+   "tavsiye"
+  ],
+  "definition": "Guidance or recommendations offered about future action.",
+  "example": "Thank you for your valuable advice."
+ },
+ "alley": {
+  "ipa": "/ˈæli/",
+  "reading": "eli",
+  "meanings": [
+   "bovling oynanan yer"
+  ],
+  "definition": "A narrow passageway between buildings.",
+  "example": "The cat ran down the dark alley."
+ },
+ "also": {
+  "ipa": "/ˈɔːlsəʊ/",
+  "reading": "olsou",
+  "meanings": [
+   "ayrıca"
+  ],
+  "definition": "In addition or too.",
+  "example": "He can speak French and he also knows Spanish."
+ },
+ "although": {
+  "ipa": "/ɔːlˈðəʊ/",
+  "reading": "oldou",
+  "meanings": [
+   "rağmen"
+  ],
+  "definition": "In spite of the fact that.",
+  "example": "Although it was cold, we went outside."
+ },
+ "amusing": {
+  "ipa": "/əˈmjuːzɪŋ/",
+  "reading": "emyuzing",
+  "meanings": [
+   "zevkli",
+   "eğlenceli"
+  ],
+  "definition": "Causing laughter and providing entertainment.",
+  "example": "The clown put on an amusing show."
+ },
+ "animation": {
+  "ipa": "/ˌænɪˈmeɪʃn/",
+  "reading": "enimeyşın",
+  "meanings": [
+   "animasyon"
+  ],
+  "definition": "The technique of photographing drawings to create movement.",
+  "example": "Children love watching computer animation movies."
+ },
+ "apologize": {
+  "ipa": "/əˈpɒlədʒaɪz/",
+  "reading": "apolocayz",
+  "meanings": [
+   "özür dilemek"
+  ],
+  "definition": "Express regret for something that one has done.",
+  "example": "You need to apologize to your brother."
+ },
+ "around": {
+  "ipa": "/əˈraʊnd/",
+  "reading": "eraunt",
+  "meanings": [
+   "civarında",
+   "etrafında"
+  ],
+  "definition": "Located on every side or surrounding.",
+  "example": "We sat around the campfire."
+ },
+ "as soon as possible": {
+  "ipa": "/æz suːn æz ˈpɒsəbl/",
+  "reading": "ez sün ez posibl",
+  "meanings": [
+   "mümkün olan en kısa sürede",
+   "bir an önce"
+  ],
+  "definition": "At the earliest possible time.",
+  "example": "Please reply as soon as possible."
+ },
+ "ask": {
+  "ipa": "/ɑːsk/",
+  "reading": "ask",
+  "meanings": [
+   "sormak",
+   "istemek"
+  ],
+  "definition": "To inquire or request something.",
+  "example": "You can ask me any question."
+ },
+ "attach great importance": {
+  "ipa": "/əˈtætʃ ɡreɪt ɪmˈpɔːtəns/",
+  "reading": "eteç greyt importans",
+  "meanings": [
+   "çok önem vermek"
+  ],
+  "definition": "To value something very highly.",
+  "example": "I attach great importance to honesty."
+ },
+ "attract (attention)": {
+  "ipa": "/əˈtrækt əˈtenʃn/",
+  "reading": "etrekt etenşın",
+  "meanings": [
+   "cezbetmek",
+   "çekmek",
+   "dikkat çekmek"
+  ],
+  "definition": "To cause people to notice something.",
+  "example": "Bright colors attract attention easily."
+ },
+ "aunt": {
+  "ipa": "/ɑːnt/",
+  "reading": "ant",
+  "meanings": [
+   "teyze",
+   "hala"
+  ],
+  "definition": "The sister of your parent.",
+  "example": "My aunt lives in London."
+ },
+ "awesome": {
+  "ipa": "/ˈɔːsəm/",
+  "reading": "orsım",
+  "meanings": [
+   "mükemmel",
+   "harika",
+   "müthiş"
+  ],
+  "definition": "Extremely good or impressive.",
+  "example": "That was an awesome movie."
+ },
+ "back up": {
+  "ipa": "/bæk ʌp/",
+  "reading": "bek ap",
+  "meanings": [
+   "desteklemek",
+   "arka çıkmak"
+  ],
+  "definition": "To support or make a copy of data.",
+  "example": "Always back up your files."
+ },
+ "bad tempered": {
+  "ipa": "/ˌbæd ˈtempəd/",
+  "reading": "bed tempırd",
+  "meanings": [
+   "kötü huylu"
+  ],
+  "definition": "Easily annoyed or made angry.",
+  "example": "He is often bad tempered in the morning."
+ },
+ "best friend": {
+  "ipa": "/best frend/",
+  "reading": "best frend",
+  "meanings": [
+   "en iyi arkadaş"
+  ],
+  "definition": "Your favorite and closest friend.",
+  "example": "He is my best friend."
+ },
+ "beverage": {
+  "ipa": "/ˈbevərɪdʒ/",
+  "reading": "beveric",
+  "meanings": [
+   "meşrubat",
+   "içecek"
+  ],
+  "definition": "A drink other than water.",
+  "example": "Choose a hot beverage for winter."
+ },
+ "book fair": {
+  "ipa": "/bʊk feə/",
+  "reading": "buk fer",
+  "meanings": [
+   "kitap fuarı"
+  ],
+  "definition": "An exhibition to promote books.",
+  "example": "We visited the local book fair."
+ },
+ "bored": {
+  "ipa": "/bɔːd/",
+  "reading": "bord",
+  "meanings": [
+   "sıkılmış"
+  ],
+  "definition": "Feeling weary because of lack of interest.",
+  "example": "The children look bored today."
+ },
+ "boring": {
+  "ipa": "/ˈbɔːrɪŋ/",
+  "reading": "boring",
+  "meanings": [
+   "sıkıcı"
+  ],
+  "definition": "Not interesting or tedious.",
+  "example": "The lecture was very boring."
+ },
+ "both": {
+  "ipa": "/bəʊθ/",
+  "reading": "bout",
+  "meanings": [
+   "her ikisi de"
+  ],
+  "definition": "The two together.",
+  "example": "Both of them passed the test."
+ },
+ "bowling tournament": {
+  "ipa": "/ˈbəʊlɪŋ ˈtʊənəmənt/",
+  "reading": "bouling turnament",
+  "meanings": [
+   "bovling turnuvası"
+  ],
+  "definition": "A series of bowling games.",
+  "example": "They won the bowling tournament."
+ },
+ "break promise": {
+  "ipa": "/breɪk ˈprɒmɪs/",
+  "reading": "breyk promis",
+  "meanings": [
+   "sözünden dönmek"
+  ],
+  "definition": "To fail to keep a pledge.",
+  "example": "Never break promise to your friends."
+ },
+ "buddy": {
+  "ipa": "/ˈbʌdi/",
+  "reading": "badi",
+  "meanings": [
+   "kanka",
+   "dost"
+  ],
+  "definition": "A close friend.",
+  "example": "He is my best buddy."
+ },
+ "call": {
+  "ipa": "/kɔːl/",
+  "reading": "kool",
+  "meanings": [
+   "aramak",
+   "çağırmak",
+   "adlandırmak"
+  ],
+  "definition": "To use a phone to speak to someone.",
+  "example": "I will call my mother later."
+ },
+ "calm": {
+  "ipa": "/kɑːm/",
+  "reading": "kaam",
+  "meanings": [
+   "sakin",
+   "rahat"
+  ],
+  "definition": "Not showing or feeling nervousness or anger.",
+  "example": "Try to stay calm during the test."
+ },
+ "caring": {
+  "ipa": "/ˈkeərɪŋ/",
+  "reading": "keerینگ",
+  "meanings": [
+   "şefkatli",
+   "ilgili",
+   "yardımsever"
+  ],
+  "definition": "Displaying kindness and concern for others.",
+  "example": "She is a very caring teacher."
+ },
+ "chance": {
+  "ipa": "/tʃɑːns/",
+  "reading": "çaans",
+  "meanings": [
+   "fırsat"
+  ],
+  "definition": "A possibility of something happening.",
+  "example": "Take a chance and try something new."
+ },
+ "cheerful": {
+  "ipa": "/ˈtʃɪəfl/",
+  "reading": "çirful",
+  "meanings": [
+   "neşeli"
+  ],
+  "definition": "Noticeably happy and optimistic.",
+  "example": "He has a cheerful personality."
+ },
+ "cheers": {
+  "ipa": "/tʃɪəz/",
+  "reading": "çirz",
+  "meanings": [
+   "hoşçakal"
+  ],
+  "definition": "An expression of good wishes when drinking.",
+  "example": "He raised his glass and said cheers."
+ },
+ "city hall": {
+  "ipa": "/ˈsɪti hɔːl/",
+  "reading": "siti hool",
+  "meanings": [
+   "belediye binası"
+  ],
+  "definition": "The principal administrative building of a city.",
+  "example": "The protest took place outside city hall."
+ },
+ "city park": {
+  "ipa": "/ˈsɪti pɑːk/",
+  "reading": "siti paak",
+  "meanings": [
+   "şehir parkı"
+  ],
+  "definition": "A public park located within a city.",
+  "example": "We like to walk in the city park."
+ },
+ "closing": {
+  "ipa": "/ˈkləʊzɪŋ/",
+  "reading": "klouzing",
+  "meanings": [
+   "kapanış"
+  ],
+  "definition": "The act of shutting or bringing to an end.",
+  "example": "The closing of the store is at ten."
+ },
+ "coffee": {
+  "ipa": "/ˈkɒfi/",
+  "reading": "kofi",
+  "meanings": [
+   "kahve"
+  ],
+  "definition": "A hot drink made from roasted coffee beans.",
+  "example": "I drink a cup of coffee every morning."
+ },
+ "combination": {
+  "ipa": "/ˌkɒmbɪˈneɪʃən/",
+  "reading": "kombineyşın",
+  "meanings": [
+   "birleşim"
+  ],
+  "definition": "Joining two or more things together.",
+  "example": "This soup is a delicious combination of vegetables."
+ },
+ "come into our lives": {
+  "ipa": "/kʌm ˈɪntuː ˈaʊə lɪvz/",
+  "reading": "kam intu avır livz",
+  "meanings": [
+   "hayatına girmek"
+  ],
+  "definition": "To become part of someone's life.",
+  "example": "Cats can bring so much joy when they come into our lives."
+ },
+ "come over": {
+  "ipa": "/kʌm ˈəʊvə/",
+  "reading": "kam ovır",
+  "meanings": [
+   "uğramak",
+   "ziyaret etmek"
+  ],
+  "definition": "To visit someone at their home.",
+  "example": "Would you like to come over for dinner tonight?"
+ },
+ "comedy": {
+  "ipa": "/ˈkɒmədi/",
+  "reading": "komedi",
+  "meanings": [
+   "komedi"
+  ],
+  "definition": "Entertainment intended to make people laugh.",
+  "example": "We watched a funny comedy film last night."
+ },
+ "concept": {
+  "ipa": "/ˈkɒnsept/",
+  "reading": "konsept",
+  "meanings": [
+   "konsept",
+   "kavram"
+  ],
+  "definition": "An abstract idea or a plan.",
+  "example": "The concept of time is fascinating to study."
+ },
+ "concert hall": {
+  "ipa": "/ˈkɒnsət hɔːl/",
+  "reading": "konsat hol",
+  "meanings": [
+   "konser salonu"
+  ],
+  "definition": "A large building for musical performances.",
+  "example": "The orchestra played brilliantly in the concert hall."
+ },
+ "cool": {
+  "ipa": "/kuːl/",
+  "reading": "kul",
+  "meanings": [
+   "havalı"
+  ],
+  "definition": "Of or at a fairly low temperature, or fashionable.",
+  "example": "Let us sit in the shade and enjoy the cool breeze."
+ },
+ "count on": {
+  "ipa": "/kaʊnt ɒn/",
+  "reading": "kaunt on",
+  "meanings": [
+   "güvenmek"
+  ],
+  "definition": "To rely or depend on someone.",
+  "example": "You can always count on me for help."
+ },
+ "cousin": {
+  "ipa": "/ˈkʌzn/",
+  "reading": "kazın",
+  "meanings": [
+   "kuzen"
+  ],
+  "definition": "A child of your uncle or aunt.",
+  "example": "My cousin is visiting us this weekend."
+ },
+ "crazy": {
+  "ipa": "/ˈkreɪzi/",
+  "reading": "kreyzi",
+  "meanings": [
+   "çılgın"
+  ],
+  "definition": "Mad or extremely foolish and wild.",
+  "example": "It is crazy to drive without wearing a seatbelt."
+ },
+ "customer": {
+  "ipa": "/ˈkʌstəmə/",
+  "reading": "kastımır",
+  "meanings": [
+   "müşteri"
+  ],
+  "definition": "A person who buys goods or services.",
+  "example": "The shop assistant greeted the customer with a smile."
+ },
+ "cycling": {
+  "ipa": "/ˈsaɪklɪŋ/",
+  "reading": "sayklin",
+  "meanings": [
+   "bisiklete binme"
+  ],
+  "definition": "The sport or activity of riding a bicycle.",
+  "example": "Cycling is a great way to stay fit."
+ },
+ "daily matters": {
+  "ipa": "/ˈdeɪli ˈmætəz/",
+  "reading": "deyli matız",
+  "meanings": [
+   "günlük konular"
+  ],
+  "definition": "Routine issues or tasks of everyday life.",
+  "example": "She focuses on daily matters like cooking and cleaning."
+ },
+ "date": {
+  "ipa": "/deɪt/",
+  "reading": "deyt",
+  "meanings": [
+   "tarih"
+  ],
+  "definition": "A particular day of the month or a romantic meeting.",
+  "example": "What is the date today?"
+ },
+ "day": {
+  "ipa": "/deɪ/",
+  "reading": "dey",
+  "meanings": [
+   "gün"
+  ],
+  "definition": "A period of twenty-four hours.",
+  "example": "It was a warm and sunny day."
+ },
+ "deadline": {
+  "ipa": "/ˈdedlaɪn/",
+  "reading": "dedlayn",
+  "meanings": [
+   "son teslim tarihi",
+   "son gün"
+  ],
+  "definition": "The latest time or date by which something should be completed.",
+  "example": "I need to finish this report before the Friday deadline."
+ },
+ "decide": {
+  "ipa": "/dɪˈsaɪd/",
+  "reading": "disayd",
+  "meanings": [
+   "karar vermek"
+  ],
+  "definition": "To make a choice about something.",
+  "example": "I need to decide what to wear."
+ },
+ "definition": {
+  "ipa": "/ˌdefɪˈnɪʃn/",
+  "reading": "definişın",
+  "meanings": [
+   "tanım"
+  ],
+  "definition": "The exact meaning of a word.",
+  "example": "Read the definition in the dictionary."
+ },
+ "depend on": {
+  "ipa": "/dɪˈpend ɒn/",
+  "reading": "dipend on",
+  "meanings": [
+   "güvenmek",
+   "bağlı olmak"
+  ],
+  "definition": "To be controlled or decided by something.",
+  "example": "Plans depend on the weather."
+ },
+ "describe": {
+  "ipa": "/dɪˈskraɪb/",
+  "reading": "diskrayb",
+  "meanings": [
+   "tanımlamak"
+  ],
+  "definition": "To say what someone or something is like.",
+  "example": "Can you describe the missing bag?"
+ },
+ "dessert": {
+  "ipa": "/dɪˈzɜːt/",
+  "reading": "dizöt",
+  "meanings": [
+   "tatlı"
+  ],
+  "definition": "Sweet food eaten at the end of a meal.",
+  "example": "We had ice cream for dessert."
+ },
+ "details about the event": {
+  "ipa": "/ˈdiːteɪlz əˈbaʊt ði ɪˈvent/",
+  "reading": "di̇teylz əbawt di ivent",
+  "meanings": [
+   "etkinlikle ilgili detaylar"
+  ],
+  "definition": "Specific facts regarding a particular happening.",
+  "example": "Send me details about the event."
+ },
+ "different (from)": {
+  "ipa": "/ˈdɪfrənt (frɒm)/",
+  "reading": "difrınt (from)",
+  "meanings": [
+   "farklı",
+   "-den farklı"
+  ],
+  "definition": "Not the same as another person or thing.",
+  "example": "This book is different from that one."
+ },
+ "dinner": {
+  "ipa": "/ˈdɪnə(r)/",
+  "reading": "dinır",
+  "meanings": [
+   "akşam yemeği"
+  ],
+  "definition": "The main meal of the day eaten in the evening.",
+  "example": "We eat dinner at seven o'clock."
+ },
+ "discuss": {
+  "ipa": "/dɪˈskʌs/",
+  "reading": "diskas",
+  "meanings": [
+   "tartışmak"
+  ],
+  "definition": "To talk about something with someone.",
+  "example": "Let us discuss the problem together."
+ },
+ "dish": {
+  "ipa": "/dɪʃ/",
+  "reading": "diş",
+  "meanings": [
+   "yemek"
+  ],
+  "definition": "Food prepared as part of a meal.",
+  "example": "Pasta is my favorite dish."
+ },
+ "dishonesty": {
+  "ipa": "/dɪsˈɒnɪsti/",
+  "reading": "disonisti",
+  "meanings": [
+   "sahtekarlık",
+   "dürüst olmama"
+  ],
+  "definition": "Behavior that is deceitful or untruthful.",
+  "example": "Dishonesty ruins trust in relationships."
+ },
+ "divide into": {
+  "ipa": "/dɪˈvaɪd ˈɪntuː/",
+  "reading": "divayd intu",
+  "meanings": [
+   "bölmek"
+  ],
+  "definition": "To separate into smaller parts or groups.",
+  "example": "Divide the class into four groups."
+ },
+ "do the same things": {
+  "ipa": "/duː ðə seɪm θɪŋz/",
+  "reading": "du dı seym tiŋz",
+  "meanings": [
+   "aynı şeyleri yapmak"
+  ],
+  "definition": "To perform identical actions as someone else.",
+  "example": "Friends often do the same things."
+ },
+ "do you want": {
+  "ipa": "/duː juː wɒnt/",
+  "reading": "du yu vont",
+  "meanings": [
+   "ister misin"
+  ],
+  "definition": "Asking about someone's desire or preference.",
+  "example": "Do you want some coffee?"
+ },
+ "drama": {
+  "ipa": "/ˈdrɑːmə/",
+  "reading": "dramə",
+  "meanings": [
+   "dram"
+  ],
+  "definition": "An exciting, emotional, or unexpected series of events.",
+  "example": "She loves watching television drama."
+ },
+ "drawing": {
+  "ipa": "/ˈdrɔːɪŋ/",
+  "reading": "droiŋ",
+  "meanings": [
+   "resim çizme"
+  ],
+  "definition": "A picture made with a pencil or pen.",
+  "example": "The child made a drawing of a cat."
+ },
+ "dress": {
+  "ipa": "/dres/",
+  "reading": "dres",
+  "meanings": [
+   "kıyafet"
+  ],
+  "definition": "A one-piece garment for women and girls.",
+  "example": "She wore a red dress to the party."
+ },
+ "duty": {
+  "ipa": "/ˈdjuːti/",
+  "reading": "dyuti",
+  "meanings": [
+   "görev"
+  ],
+  "definition": "A moral or legal obligation.",
+  "example": "It is our duty to protect nature."
+ },
+ "each other": {
+  "ipa": "/iːtʃ ˈʌðə(r)/",
+  "reading": "iç adır",
+  "meanings": [
+   "birbirini",
+   "birbirine"
+  ],
+  "definition": "Mutually; used to indicate a reciprocal relationship.",
+  "example": "They really love each other."
+ },
+ "eat out": {
+  "ipa": "/iːt aʊt/",
+  "reading": "iyt avt",
+  "meanings": [
+   "dışarıda yemek"
+  ],
+  "definition": "To have a meal at a restaurant.",
+  "example": "We usually eat out on Fridays."
+ },
+ "empty": {
+  "ipa": "/ˈempti/",
+  "reading": "empti",
+  "meanings": [
+   "boş"
+  ],
+  "definition": "Containing nothing; not filled.",
+  "example": "The bottle is completely empty."
+ },
+ "enemy": {
+  "ipa": "/ˈenəmi/",
+  "reading": "enömi",
+  "meanings": [
+   "düşman"
+  ],
+  "definition": "A person who is actively opposed to someone.",
+  "example": "They became friends instead of remaining enemy."
+ },
+ "event": {
+  "ipa": "/ɪˈvent/",
+  "reading": "ivent",
+  "meanings": [
+   "etkinlik",
+   "olay"
+  ],
+  "definition": "A thing that happens, especially an important one.",
+  "example": "The wedding is a major event."
+ },
+ "everything": {
+  "ipa": "/ˈevriθɪŋ/",
+  "reading": "evrithing",
+  "meanings": [
+   "her şey"
+  ],
+  "definition": "All things of a group or situation.",
+  "example": "She knows everything about computers."
+ },
+ "exam": {
+  "ipa": "/ɪɡˈzæm/",
+  "reading": "igzem",
+  "meanings": [
+   "sınav"
+  ],
+  "definition": "A formal test of a person's knowledge.",
+  "example": "He is studying hard for the exam."
+ },
+ "exciting": {
+  "ipa": "/ɪkˈsaɪtɪŋ/",
+  "reading": "iksaytīng",
+  "meanings": [
+   "heyecan verici"
+  ],
+  "definition": "Causing great enthusiasm and eagerness.",
+  "example": "The football match was very exciting."
+ },
+ "exhibition": {
+  "ipa": "/ˌeksɪˈbɪʃn/",
+  "reading": "eksibişın",
+  "meanings": [
+   "sergi"
+  ],
+  "definition": "A public display of works of art.",
+  "example": "We visited the modern art exhibition."
+ },
+ "expect": {
+  "ipa": "/ɪkˈspekt/",
+  "reading": "ikspekt",
+  "meanings": [
+   "ummak",
+   "beklemek"
+  ],
+  "definition": "To regard something as likely to happen.",
+  "example": "I expect to finish work early today."
+ },
+ "experience": {
+  "ipa": "/ɪkˈspɪəriəns/",
+  "reading": "ikspiriens",
+  "meanings": [
+   "deneyimlemek"
+  ],
+  "definition": "Practical contact with and observation of facts.",
+  "example": "She has a lot of teaching experience."
+ },
+ "explain": {
+  "ipa": "/ɪkˈspleɪn/",
+  "reading": "ikspleyn",
+  "meanings": [
+   "açıklamak"
+  ],
+  "definition": "To make something clear by describing it.",
+  "example": "Can you explain this grammar rule?"
+ },
+ "fair": {
+  "ipa": "/feə(r)/",
+  "reading": "feyr",
+  "meanings": [
+   "adil",
+   "dürüst",
+   "fuar"
+  ],
+  "definition": "Treating people equally without favouritism.",
+  "example": "The teacher made a fair decision."
+ },
+ "family ties": {
+  "ipa": "/ˈfæməli taɪz/",
+  "reading": "femeli tayz",
+  "meanings": [
+   "aile bağları"
+  ],
+  "definition": "The connections between members of a family.",
+  "example": "They have strong family ties."
+ },
+ "fashionable": {
+  "ipa": "/ˈfæʃnəbl/",
+  "reading": "feşnǝbl",
+  "meanings": [
+   "şık",
+   "modaya uygun"
+  ],
+  "definition": "Characteristic of, influenced by, or current style.",
+  "example": "She wears very fashionable clothes."
+ },
+ "feast": {
+  "ipa": "/fiːst/",
+  "reading": "fiyst",
+  "meanings": [
+   "bayram",
+   "festival",
+   "şölen"
+  ],
+  "definition": "A large meal, typically one in celebration.",
+  "example": "They prepared a great feast for the guests."
+ },
+ "features": {
+  "ipa": "/ˈfiːtʃəz/",
+  "reading": "fiçəz",
+  "meanings": [
+   "özellikler"
+  ],
+  "definition": "A distinctive attribute or aspect of something.",
+  "example": "This phone has many new features."
+ },
+ "fee": {
+  "ipa": "/fiː/",
+  "reading": "fiy",
+  "meanings": [
+   "ücret"
+  ],
+  "definition": "A payment made for professional advice or services.",
+  "example": "The university application fee is high."
+ },
+ "feeling": {
+  "ipa": "/ˈfiːlɪŋ/",
+  "reading": "fiyling",
+  "meanings": [
+   "hissetmek",
+   "his",
+   "duygu"
+  ],
+  "definition": "An emotional state or reaction.",
+  "example": "I have a good feeling about this."
+ },
+ "find (interesting)": {
+  "ipa": "/faɪnd ˈɪntrəstɪŋ/",
+  "reading": "faynd intrəsting",
+  "meanings": [
+   "bulmak (ilginç bulmak)"
+  ],
+  "definition": "To discover something to be engaging.",
+  "example": "I find history very interesting."
+ },
+ "fish": {
+  "ipa": "/fɪʃ/",
+  "reading": "fiş",
+  "meanings": [
+   "balık"
+  ],
+  "definition": "An animal that lives in water and breathes with gills.",
+  "example": "I like to eat fish for dinner."
+ },
+ "follow": {
+  "ipa": "/ˈfɒləʊ/",
+  "reading": "folo",
+  "meanings": [
+   "takip etmek"
+  ],
+  "definition": "To come after someone or go in the same direction.",
+  "example": "Please follow me to the office."
+ },
+ "forever": {
+  "ipa": "/fəˈrɛvə/",
+  "reading": "forevır",
+  "meanings": [
+   "sonsuza kadar"
+  ],
+  "definition": "For all time without ending.",
+  "example": "I will remember this day forever."
+ },
+ "fun": {
+  "ipa": "/fʌn/",
+  "reading": "fan",
+  "meanings": [
+   "eğlence",
+   "eğlenceli"
+  ],
+  "definition": "Enjoyable and entertaining time.",
+  "example": "We had a lot of fun at the park."
+ },
+ "funny": {
+  "ipa": "/ˈfʌni/",
+  "reading": "fani",
+  "meanings": [
+   "eğlenceli",
+   "komik"
+  ],
+  "definition": "Causing laughter or amusement.",
+  "example": "That is a very funny joke."
+ },
+ "generation": {
+  "ipa": "/ˌdʒɛnəˈreɪʃən/",
+  "reading": "cenereyşın",
+  "meanings": [
+   "nesil"
+  ],
+  "definition": "People born and living around the same time.",
+  "example": "Each generation has different ideas."
+ },
+ "get information": {
+  "ipa": "/ɡɛt ˌɪnfəˈmeɪʃən/",
+  "reading": "get infomeyşın",
+  "meanings": [
+   "bilgi almak"
+  ],
+  "definition": "To find out facts about something.",
+  "example": "I need to get information about the project."
+ },
+ "get on well with": {
+  "ipa": "/ɡɛt ɒn wɛl wɪð/",
+  "reading": "get on vel viz",
+  "meanings": [
+   "iyi anlaşmak",
+   "iyi geçinmek"
+  ],
+  "definition": "To have a friendly relationship with someone.",
+  "example": "I get on well with my colleagues."
+ },
+ "gift": {
+  "ipa": "/ɡɪft/",
+  "reading": "gift",
+  "meanings": [
+   "hediye"
+  ],
+  "definition": "Something given willingly to someone.",
+  "example": "She bought me a nice gift."
+ },
+ "give advice": {
+  "ipa": "/ɡɪv ədˈvaɪs/",
+  "reading": "giv advays",
+  "meanings": [
+   "tavsiye vermek"
+  ],
+  "definition": "To offer an opinion or recommendation.",
+  "example": "Teachers often give advice to students."
+ },
+ "giving explanations": {
+  "ipa": "/ˈɡɪvɪŋ ˌɛkspləˈneɪʃənz/",
+  "reading": "giving ekspleneyşınz",
+  "meanings": [
+   "açıklama yapmak"
+  ],
+  "definition": "Providing details to make something clear.",
+  "example": "Giving explanations helps people understand better."
+ },
+ "gloves": {
+  "ipa": "/ɡlʌvz/",
+  "reading": "glavz",
+  "meanings": [
+   "eldiven"
+  ],
+  "definition": "Coverings for the hands with separate fingers.",
+  "example": "Wear your gloves in the snow."
+ },
+ "go for a walk": {
+  "ipa": "/ɡəʊ fɔːr ə wɔːk/",
+  "reading": "go for e vok",
+  "meanings": [
+   "yürüyüşe çıkmak"
+  ],
+  "definition": "To take a short walk for pleasure.",
+  "example": "Let us go for a walk in the park."
+ },
+ "go on holiday": {
+  "ipa": "/ɡəʊ ɒn ˈhɒlədeɪ/",
+  "reading": "go on holidey",
+  "meanings": [
+   "tatile gitmek"
+  ],
+  "definition": "To travel away for a vacation.",
+  "example": "We will go on holiday next week."
+ },
+ "graduation": {
+  "ipa": "/ˌɡradʒʊˈeɪʃən/",
+  "reading": "gracueyşın",
+  "meanings": [
+   "mezuniyet"
+  ],
+  "definition": "The receiving of an academic degree or diploma.",
+  "example": "All my family attended my graduation."
+ },
+ "greeting": {
+  "ipa": "/ˈɡriːtɪŋ/",
+  "reading": "griytink",
+  "meanings": [
+   "selamlama"
+  ],
+  "definition": "A polite word or sign of welcome.",
+  "example": "A warm greeting makes everyone feel welcome."
+ },
+ "grilled chicken": {
+  "ipa": "/ɡrɪld ˈtʃɪkɪn/",
+  "reading": "grild çikin",
+  "meanings": [
+   "tavuk ızgara"
+  ],
+  "definition": "Chicken cooked on a grill.",
+  "example": "I would like to order grilled chicken for dinner."
+ },
+ "guest": {
+  "ipa": "/ɡest/",
+  "reading": "gest",
+  "meanings": [
+   "misafir"
+  ],
+  "definition": "A person who is visiting someone.",
+  "example": "We have a guest staying at our house tonight."
+ },
+ "happiness": {
+  "ipa": "/ˈhæpinəs/",
+  "reading": "hepinıs",
+  "meanings": [
+   "mutluluk"
+  ],
+  "definition": "The state of feeling happy.",
+  "example": "Money cannot buy true happiness."
+ },
+ "have a good relationship": {
+  "ipa": "/hæv ə ɡʊd rɪˈleɪʃnʃɪp/",
+  "reading": "hev e gud rileyşınşip",
+  "meanings": [
+   "iyi ilişkisi olmak"
+  ],
+  "definition": "To get along well with someone.",
+  "example": "I have a good relationship with my coworkers."
+ },
+ "have a lot in common": {
+  "ipa": "/hæv ə lɒt ɪn ˈkɒmən/",
+  "reading": "hev e lot in komın",
+  "meanings": [
+   "birçok ortak noktası olmak"
+  ],
+  "definition": "To share similar interests or traits.",
+  "example": "We have a lot in common and became fast friends."
+ },
+ "have a rest": {
+  "ipa": "/hæv ə rest/",
+  "reading": "hev e rest",
+  "meanings": [
+   "dinlenmek"
+  ],
+  "definition": "To relax and stop working for a time.",
+  "example": "You look tired, you should have a rest."
+ },
+ "have an exam": {
+  "ipa": "/hæv ən ɪɡˈzæm/",
+  "reading": "hev ən igzem",
+  "meanings": [
+   "yazılı olmak"
+  ],
+  "definition": "To take a formal test.",
+  "example": "I have an exam in mathematics tomorrow morning."
+ },
+ "have fun": {
+  "ipa": "/hæv fʌn/",
+  "reading": "hev fan",
+  "meanings": [
+   "eğlenmek"
+  ],
+  "definition": "To enjoy oneself.",
+  "example": "I hope you have fun at the party tonight."
+ },
+ "have nothing to do": {
+  "ipa": "/hæv ˈnʌθɪŋ tuː duː/",
+  "reading": "hev natink tu du",
+  "meanings": [
+   "yapacak bir şeyi olmamak"
+  ],
+  "definition": "To be completely free or bored.",
+  "example": "I have nothing to do this lazy Sunday afternoon."
+ },
+ "having a party": {
+  "ipa": "/ˈhævɪŋ ə ˈpɑːti/",
+  "reading": "hevink e pati",
+  "meanings": [
+   "parti yapmak"
+  ],
+  "definition": "Hosting a social gathering.",
+  "example": "They are having a party to celebrate graduation."
+ },
+ "helpful": {
+  "ipa": "/ˈhelpfl/",
+  "reading": "helpful",
+  "meanings": [
+   "yardımsever"
+  ],
+  "definition": "Giving help or ready to assist.",
+  "example": "The hotel receptionist was very helpful."
+ },
+ "here": {
+  "ipa": "/hɪə(r)/",
+  "reading": "hiır",
+  "meanings": [
+   "burada"
+  ],
+  "definition": "In, at, or to this place.",
+  "example": "Please come here and look at this picture."
+ },
+ "hidden knowledge": {
+  "ipa": "/ˈhɪdn ˈnɒlɪdʒ/",
+  "reading": "hidın noliç",
+  "meanings": [
+   "gizli bilgi"
+  ],
+  "definition": "Information kept secret from general people.",
+  "example": "He searched the ancient library for hidden knowledge."
+ },
+ "hometown": {
+  "ipa": "/ˈhəʊmtaʊn/",
+  "reading": "homtaun",
+  "meanings": [
+   "memleket"
+  ],
+  "definition": "The city or town where one was born.",
+  "example": "I always visit my hometown during the summer."
+ },
+ "honest": {
+  "ipa": "/ˈɒnɪst/",
+  "reading": "onist",
+  "meanings": [
+   "dürüst"
+  ],
+  "definition": "Sincere and truthful in character.",
+  "example": "It is always best to be honest with your friends."
+ },
+ "hope": {
+  "ipa": "/həʊp/",
+  "reading": "hop",
+  "meanings": [
+   "ummak"
+  ],
+  "definition": "A feeling of expectation for something to happen.",
+  "example": "I hope we can meet again very soon."
+ },
+ "how about": {
+  "ipa": "/haʊ əˈbaʊt/",
+  "reading": "hau ebaut",
+  "meanings": [
+   "ne dersin",
+   "peki ya"
+  ],
+  "definition": "Used to make a suggestion or proposal.",
+  "example": "How about going to the cinema tonight?"
+ },
+ "how is it going": {
+  "ipa": "/ˈhaʊ ɪz ɪt ˈɡəʊɪŋ/",
+  "reading": "hau iz it goying",
+  "meanings": [
+   "nasıl gidiyor"
+  ],
+  "definition": "A friendly casual greeting asking about someone.",
+  "example": "Hi, how is it going today?"
+ },
+ "hungry": {
+  "ipa": "/ˈhʌŋɡri/",
+  "reading": "hangri",
+  "meanings": [
+   "aç"
+  ],
+  "definition": "Feeling a need or desire for food.",
+  "example": "I am very hungry now."
+ },
+ "hurry": {
+  "ipa": "/ˈhʌri/",
+  "reading": "hari",
+  "meanings": [
+   "acele etmek"
+  ],
+  "definition": "To move or act with great speed.",
+  "example": "Please hurry to catch the bus."
+ },
+ "i'm afraid": {
+  "ipa": "/aɪm əˈfreɪd/",
+  "reading": "aym əfreyd",
+  "meanings": [
+   "korkarım ki"
+  ],
+  "definition": "Used to politely give bad news.",
+  "example": "I'm afraid I cannot help you."
+ },
+ "i would like to": {
+  "ipa": "/aɪ wʊd ˈlaɪk tuː/",
+  "reading": "ay vud layk tu",
+  "meanings": [
+   "isterim",
+   "çok isterim"
+  ],
+  "definition": "Expressing a polite desire to do something.",
+  "example": "I would like to order coffee."
+ },
+ "ice cream": {
+  "ipa": "/ˈaɪs kriːm/",
+  "reading": "ays kriim",
+  "meanings": [
+   "dondurma"
+  ],
+  "definition": "A sweet frozen dessert made from milk.",
+  "example": "She loves eating ice cream."
+ },
+ "ideal friend": {
+  "ipa": "/aɪˈdɪəl frend/",
+  "reading": "aydiıl frend",
+  "meanings": [
+   "ideal arkadaş"
+  ],
+  "definition": "A perfect and supportive companion.",
+  "example": "An ideal friend is always honest."
+ },
+ "imagine": {
+  "ipa": "/ɪˈmædʒɪn/",
+  "reading": "imacın",
+  "meanings": [
+   "hayal etmek"
+  ],
+  "definition": "To form a mental image of something.",
+  "example": "Can you imagine living there?"
+ },
+ "in advance": {
+  "ipa": "/ɪn ədˈvɑːns/",
+  "reading": "in advans",
+  "meanings": [
+   "önceden"
+  ],
+  "definition": "Before a particular time or event.",
+  "example": "Please book your tickets in advance."
+ },
+ "in the dark": {
+  "ipa": "/ɪn ðə dɑːk/",
+  "reading": "in dı daak",
+  "meanings": [
+   "karanlıkta"
+  ],
+  "definition": "Lacking illumination or specific information.",
+  "example": "We were left in the dark."
+ },
+ "in times of trouble": {
+  "ipa": "/ɪn taɪmz ɒv ˈtrʌbl/",
+  "reading": "in taymz ov trabl",
+  "meanings": [
+   "kötü zamanlarda"
+  ],
+  "definition": "During periods of difficulty or crisis.",
+  "example": "True friends help in times of trouble."
+ },
+ "including transportation": {
+  "ipa": "/ɪnˈkluːdɪŋ ˌtrænspɔːˈteɪʃn/",
+  "reading": "inkluuding transporteşın",
+  "meanings": [
+   "ulaşım dahil"
+  ],
+  "definition": "Containing travel costs or arrangements.",
+  "example": "The tour package is including transportation."
+ },
+ "inform": {
+  "ipa": "/ɪnˈfɔːm/",
+  "reading": "inform",
+  "meanings": [
+   "bilgilendirmek"
+  ],
+  "definition": "To give someone facts or information.",
+  "example": "Please inform me about any changes."
+ },
+ "informal conversation": {
+  "ipa": "/ɪnˈfɔːml ˌkɒnvəˈseɪʃn/",
+  "reading": "informal konverseşın",
+  "meanings": [
+   "resmi olmayan konuşma"
+  ],
+  "definition": "A relaxed and unofficial chat.",
+  "example": "They had an informal conversation outside."
+ },
+ "instead": {
+  "ipa": "/ɪnˈsted/",
+  "reading": "insted",
+  "meanings": [
+   "yerine"
+  ],
+  "definition": "As an alternative or substitute.",
+  "example": "I will stay home instead."
+ },
+ "interested in": {
+  "ipa": "/ˈɪntrəstɪd ɪn/",
+  "reading": "intrıstid in",
+  "meanings": [
+   "ilgili olmak",
+   "ilgilenmek"
+  ],
+  "definition": "Showing curiosity or concern about something.",
+  "example": "She is interested in art."
+ },
+ "introduce": {
+  "ipa": "/ˌɪntrəˈdjuːs/",
+  "reading": "intrıdyus",
+  "meanings": [
+   "tanıştırmak",
+   "tanıtmak"
+  ],
+  "definition": "To present someone by name to another.",
+  "example": "Let me introduce my new colleague."
+ },
+ "invitation card": {
+  "ipa": "/ˌɪnvɪˈteɪʃn kɑːd/",
+  "reading": "inviteşın kaad",
+  "meanings": [
+   "davetiye"
+  ],
+  "definition": "A printed card requesting attendance at an event.",
+  "example": "He sent me a wedding invitation card."
+ },
+ "invite": {
+  "ipa": "/ɪnˈvaɪt/",
+  "reading": "invayt",
+  "meanings": [
+   "davet etmek"
+  ],
+  "definition": "Ask someone to come to an event.",
+  "example": "I want to invite my friends to dinner."
+ },
+ "invitee": {
+  "ipa": "/ˌɪn.vaɪˈtiː/",
+  "reading": "invayti",
+  "meanings": [
+   "davetli"
+  ],
+  "definition": "A person who has been invited.",
+  "example": "Every invitee must confirm their attendance."
+ },
+ "inviter": {
+  "ipa": "/ɪnˈvaɪ.tər/",
+  "reading": "invaytör",
+  "meanings": [
+   "davet sahibi",
+   "davet eden"
+  ],
+  "definition": "The person who issues an invitation.",
+  "example": "The inviter welcomed all guests at the door."
+ },
+ "involve": {
+  "ipa": "/ɪnˈvɒlv/",
+  "reading": "involv",
+  "meanings": [
+   "katılmak",
+   "yer almak"
+  ],
+  "definition": "Include someone or something as a necessary part.",
+  "example": "This project will involve a lot of research."
+ },
+ "it doesn't matter": {
+  "ipa": "/ɪt ˈdʌz.ənt ˈmæt.ər/",
+  "reading": "it dazınt metör",
+  "meanings": [
+   "fark etmez",
+   "ne önemi var"
+  ],
+  "definition": "Used to say something is not important.",
+  "example": "If you are late, it doesn't matter."
+ },
+ "jealous": {
+  "ipa": "/ˈdʒel.əs/",
+  "reading": "celıs",
+  "meanings": [
+   "kıskanç"
+  ],
+  "definition": "Feeling envious of someone else's achievements.",
+  "example": "He felt jealous of his brother's new car."
+ },
+ "jump": {
+  "ipa": "/dʒʌmp/",
+  "reading": "camp",
+  "meanings": [
+   "atlamak",
+   "sıçramak"
+  ],
+  "definition": "Push yourself off the ground using your legs.",
+  "example": "The cat can jump very high."
+ },
+ "keep promise": {
+  "ipa": "/kiːp ˈprɒm.ɪs/",
+  "reading": "kip promis",
+  "meanings": [
+   "sözünü tutmak"
+  ],
+  "definition": "Fulfill a commitment you have made.",
+  "example": "It is important to keep promise to friends."
+ },
+ "keep secret": {
+  "ipa": "/kiːp ˈsiː.krət/",
+  "reading": "kip sikrit",
+  "meanings": [
+   "sır tutmak"
+  ],
+  "definition": "Not tell information to anyone else.",
+  "example": "Can you keep secret about this surprise?"
+ },
+ "laid-back": {
+  "ipa": "/ˌleɪdˈbæk/",
+  "reading": "leyd bek",
+  "meanings": [
+   "rahat",
+   "sakin",
+   "gamsız"
+  ],
+  "definition": "Relaxed and easy-going in manner.",
+  "example": "My teacher is very laid-back and calm."
+ },
+ "lasagna": {
+  "ipa": "/ləˈzæn.jə/",
+  "reading": "lazanya",
+  "meanings": [
+   "lazanya"
+  ],
+  "definition": "Baked pasta dish with layers of meat and cheese.",
+  "example": "We ordered lasagna for dinner tonight."
+ },
+ "lemonade": {
+  "ipa": "/ˌlem.əˈneɪd/",
+  "reading": "lemoneyd",
+  "meanings": [
+   "limonata"
+  ],
+  "definition": "Sweetened drink made from lemon juice.",
+  "example": "I drank cold lemonade on a hot day."
+ },
+ "lentil soup": {
+  "ipa": "/ˈlen.tɪl suːp/",
+  "reading": "lentil sup",
+  "meanings": [
+   "mercimek çorbası"
+  ],
+  "definition": "Soup made primarily with lentils.",
+  "example": "Lentil soup is a popular starter in Turkey."
+ },
+ "letter": {
+  "ipa": "/ˈlet.ər/",
+  "reading": "letör",
+  "meanings": [
+   "mektup"
+  ],
+  "definition": "Written message sent to someone via post.",
+  "example": "She wrote a letter to her grandmother."
+ },
+ "like": {
+  "ipa": "/laɪk/",
+  "reading": "layk",
+  "meanings": [
+   "gibi",
+   "sevmek"
+  ],
+  "definition": "To find something pleasant or satisfactory.",
+  "example": "I like reading books in my free time."
+ },
+ "location": {
+  "ipa": "/ləʊˈkeɪʃn/",
+  "reading": "lōkeyşn",
+  "meanings": [
+   "yer"
+  ],
+  "definition": "A particular place or position.",
+  "example": "The new office is in a great location."
+ },
+ "look after": {
+  "ipa": "/lʊk ˈɑːftə(r)/",
+  "reading": "luk aftır",
+  "meanings": [
+   "ilgilenmek",
+   "bakmak"
+  ],
+  "definition": "To take care of someone or something.",
+  "example": "Can you look after my cat this weekend?"
+ },
+ "loyalty": {
+  "ipa": "/ˈlɔɪəlti/",
+  "reading": "loyulti",
+  "meanings": [
+   "sadakat"
+  ],
+  "definition": "The quality of being loyal.",
+  "example": "He values loyalty above all else in friendship."
+ },
+ "main course": {
+  "ipa": "/ˌmeɪn ˈkɔːs/",
+  "reading": "meyn kors",
+  "meanings": [
+   "ana yemek"
+  ],
+  "definition": "The primary dish of a meal.",
+  "example": "I ordered grilled salmon for the main course."
+ },
+ "make excuse": {
+  "ipa": "/meɪk ɪkˈskjuːz/",
+  "reading": "meyk ikskyüz",
+  "meanings": [
+   "bahane belirtmek"
+  ],
+  "definition": "To give a reason for poor behavior.",
+  "example": "Stop trying to make excuse for your lateness."
+ },
+ "make smile": {
+  "ipa": "/meɪk smaɪl/",
+  "reading": "meyk smayl",
+  "meanings": [
+   "gülümsetmek"
+  ],
+  "definition": "To cause someone to smile.",
+  "example": "His funny joke always manage to make smile."
+ },
+ "make sculpture": {
+  "ipa": "/meɪk ˈskʌlptʃə(r)/",
+  "reading": "meyk skalpçır",
+  "meanings": [
+   "heykel yapmak"
+  ],
+  "definition": "To create a three-dimensional piece of art.",
+  "example": "She wants to make sculpture using clay."
+ },
+ "match": {
+  "ipa": "/mætʃ/",
+  "reading": "maç",
+  "meanings": [
+   "maç",
+   "eşleştirmek",
+   "kibrit"
+  ],
+  "definition": "A sports competition or a pair of things.",
+  "example": "We watched a great football match last night."
+ },
+ "mate": {
+  "ipa": "/meɪt/",
+  "reading": "meyt",
+  "meanings": [
+   "arkadaş",
+   "dost"
+  ],
+  "definition": "A friend or companion.",
+  "example": "He is my best mate from high school."
+ },
+ "meatballs": {
+  "ipa": "/ˈmiːtbɔːlz/",
+  "reading": "miytbolz",
+  "meanings": [
+   "köfte"
+  ],
+  "definition": "Small balls of minced meat.",
+  "example": "Turkish meatballs are delicious with yogurt."
+ },
+ "meet up": {
+  "ipa": "/miːt ˈʌp/",
+  "reading": "miyt ap",
+  "meanings": [
+   "buluşmak",
+   "bir araya gelmek"
+  ],
+  "definition": "To come together with someone socially.",
+  "example": "Let us meet up for coffee tomorrow afternoon."
+ },
+ "meeting with friends": {
+  "ipa": "/ˈmiːtɪŋ wɪð frendz/",
+  "reading": "miytin vid frenz",
+  "meanings": [
+   "arkadaşlarla buluşmak"
+  ],
+  "definition": "A gathering involving people you know well.",
+  "example": "I have a fun meeting with friends tonight."
+ },
+ "mind (others)": {
+  "ipa": "/maɪnd/",
+  "reading": "maynd",
+  "meanings": [
+   "önemsemek",
+   "kafaya takmak"
+  ],
+  "definition": "To care about or pay attention to others.",
+  "example": "Always mind others and be polite."
+ },
+ "miss (opportunity)": {
+  "ipa": "/mɪs/",
+  "reading": "mis",
+  "meanings": [
+   "kaçırmak (fırsatı)",
+   "özlemek"
+  ],
+  "definition": "To fail to take advantage of a chance.",
+  "example": "Do not miss this great opportunity to travel."
+ },
+ "mixed kebab": {
+  "ipa": "/mɪkst kɪˈbæb/",
+  "reading": "mikst kıbeb",
+  "meanings": [
+   "karışık kebap"
+  ],
+  "definition": "A dish containing a variety of grilled meats.",
+  "example": "He ordered a mixed kebab for dinner."
+ },
+ "more information": {
+  "ipa": "/mɔːr ˌɪnfəˈmeɪʃən/",
+  "reading": "mor infomeysın",
+  "meanings": [
+   "daha fazla bilgi"
+  ],
+  "definition": "Additional details or facts about something.",
+  "example": "Please contact us if you need more information."
+ },
+ "movie theatre": {
+  "ipa": "/ˈmuːvi ˈθɪətə/",
+  "reading": "muvi tiyَتر",
+  "meanings": [
+   "sinema"
+  ],
+  "definition": "A building where films are shown to the public.",
+  "example": "They went to the movie theatre on Friday."
+ },
+ "music band": {
+  "ipa": "/ˈmjuːzɪk bænd/",
+  "reading": "myuzik bend",
+  "meanings": [
+   "müzik grubu"
+  ],
+  "definition": "A group of musicians who play music together.",
+  "example": "The music band played great songs all night."
+ },
+ "mutual respect": {
+  "ipa": "/ˈmjuːtʃuəl rɪˈspekt/",
+  "reading": "myuçual rispekt",
+  "meanings": [
+   "karşılıklı saygı"
+  ],
+  "definition": "Polite behavior shown by both people to each other.",
+  "example": "A good friendship requires mutual respect."
+ },
+ "need to": {
+  "ipa": "/niːd tuː/",
+  "reading": "nid tu",
+  "meanings": [
+   "ihtiyaç duymak",
+   "gerekmek"
+  ],
+  "definition": "Required to do something.",
+  "example": "You need to finish your homework now."
+ },
+ "neighbour": {
+  "ipa": "/ˈneɪbə/",
+  "reading": "neybır",
+  "meanings": [
+   "komşu"
+  ],
+  "definition": "A person who lives near you.",
+  "example": "Our neighbour helped us carry the heavy boxes."
+ },
+ "next time": {
+  "ipa": "/nekst taɪm/",
+  "reading": "nekst taym",
+  "meanings": [
+   "sonraki sefere"
+  ],
+  "definition": "On the subsequent occasion.",
+  "example": "We will try harder next time."
+ },
+ "no matter": {
+  "ipa": "/nəʊ ˈmætə/",
+  "reading": "no metır",
+  "meanings": [
+   "önemi yok"
+  ],
+  "definition": "It is not important or it changes nothing.",
+  "example": "No matter what happens, I will support you."
+ },
+ "not at all": {
+  "ipa": "/nɒt ət ɔːl/",
+  "reading": "not at ol",
+  "meanings": [
+   "hiç de değil",
+   "pek değil"
+  ],
+  "definition": "Used as a polite reply to thanks.",
+  "example": "Thank you for your help. Not at all."
+ },
+ "nothing": {
+  "ipa": "/ˈnʌθɪŋ/",
+  "reading": "nathing",
+  "meanings": [
+   "hiçbir şey"
+  ],
+  "definition": "Not anything.",
+  "example": "There is nothing in the fridge."
+ },
+ "occupied": {
+  "ipa": "/ˈɒkjʊpaɪd/",
+  "reading": "okyupayd",
+  "meanings": [
+   "meşgul",
+   "dolu"
+  ],
+  "definition": "Busy or already in use.",
+  "example": "This seat is occupied."
+ },
+ "of course": {
+  "ipa": "/əv kɔːs/",
+  "reading": "ov kors",
+  "meanings": [
+   "elbette",
+   "tabii ki"
+  ],
+  "definition": "Certainly or naturally.",
+  "example": "Of course you can come with us."
+ },
+ "opinion": {
+  "ipa": "/əˈpɪnjən/",
+  "reading": "opinyın",
+  "meanings": [
+   "fikir",
+   "düşünce"
+  ],
+  "definition": "A view or judgment formed about something.",
+  "example": "What is your opinion on this matter?"
+ },
+ "order": {
+  "ipa": "/ˈɔːdə/",
+  "reading": "ordır",
+  "meanings": [
+   "sipariş etmek"
+  ],
+  "definition": "To request food or goods to be supplied.",
+  "example": "We are ready to order our food now."
+ },
+ "organise": {
+  "ipa": "/ˈɔːɡənaɪz/",
+  "reading": "orgənayz",
+  "meanings": [
+   "düzenlemek"
+  ],
+  "definition": "To arrange or plan an event or activity.",
+  "example": "She will organise a surprise party for him."
+ },
+ "organizer": {
+  "ipa": "/ˈɔːɡənaɪzə/",
+  "reading": "orgənayzır",
+  "meanings": [
+   "düzenleyen"
+  ],
+  "definition": "A person who coordinates an event or group.",
+  "example": "The organizer welcomed all the guests at the door."
+ },
+ "others": {
+  "ipa": "/ˈʌðəz/",
+  "reading": "adhız",
+  "meanings": [
+   "diğerleri"
+  ],
+  "definition": "Other people or things.",
+  "example": "Respect the rights of others."
+ },
+ "outgoing": {
+  "ipa": "/ˈaʊtɡəʊɪŋ/",
+  "reading": "autgöying",
+  "meanings": [
+   "sosyal",
+   "dışa dönük"
+  ],
+  "definition": "Friendly and socially confident.",
+  "example": "She has an outgoing personality."
+ },
+ "own": {
+  "ipa": "/əʊn/",
+  "reading": "ovn",
+  "meanings": [
+   "kendi"
+  ],
+  "definition": "Belonging to oneself.",
+  "example": "I want to own a house."
+ },
+ "painting": {
+  "ipa": "/ˈpeɪntɪŋ/",
+  "reading": "peynting",
+  "meanings": [
+   "boyama"
+  ],
+  "definition": "A painted picture or the act of painting.",
+  "example": "He likes painting landscapes."
+ },
+ "parents": {
+  "ipa": "/ˈpeərənts/",
+  "reading": "pearents",
+  "meanings": [
+   "anne baba",
+   "ebeveyn"
+  ],
+  "definition": "A father or mother.",
+  "example": "My parents live in London."
+ },
+ "part": {
+  "ipa": "/pɑːt/",
+  "reading": "pat",
+  "meanings": [
+   "bölüm"
+  ],
+  "definition": "A piece or section of something.",
+  "example": "This is my favourite part."
+ },
+ "partner": {
+  "ipa": "/ˈpɑːtnə(r)/",
+  "reading": "patnır",
+  "meanings": [
+   "eş"
+  ],
+  "definition": "A person who shares in an activity.",
+  "example": "Choose a partner for the game."
+ },
+ "pasta": {
+  "ipa": "/ˈpæstə/",
+  "reading": "pasta",
+  "meanings": [
+   "makarna"
+  ],
+  "definition": "An Italian dish made from flour and water.",
+  "example": "We eat pasta on Sundays."
+ },
+ "patience": {
+  "ipa": "/ˈpeɪʃns/",
+  "reading": "peyshnç",
+  "meanings": [
+   "sabır"
+  ],
+  "definition": "The capacity to accept delay without getting angry.",
+  "example": "Teaching requires a lot of patience."
+ },
+ "per person": {
+  "ipa": "/pɜː ˈpɜːsn/",
+  "reading": "pör pörsın",
+  "meanings": [
+   "kişi başı"
+  ],
+  "definition": "For each individual person.",
+  "example": "Tickets cost ten pounds per person."
+ },
+ "personal traits": {
+  "ipa": "/ˈpɜːsənl treɪts/",
+  "reading": "pörsınl treyts",
+  "meanings": [
+   "kişilik özellikleri"
+  ],
+  "definition": "Distinctive personal characteristics.",
+  "example": "Honesty is one of his personal traits."
+ },
+ "personality": {
+  "ipa": "/ˌpɜːsəˈnæləti/",
+  "reading": "pörsınaliti",
+  "meanings": [
+   "kişilik",
+   "karakter"
+  ],
+  "definition": "The combination of characteristics forming a person's character.",
+  "example": "He has a very cheerful personality."
+ },
+ "pessimistic": {
+  "ipa": "/ˌpesɪˈmɪstɪk/",
+  "reading": "pesimistik",
+  "meanings": [
+   "kötümser"
+  ],
+  "definition": "Tending to see the worst aspect of things.",
+  "example": "Try not to be so pessimistic."
+ },
+ "pick up": {
+  "ipa": "/pɪk ʌp/",
+  "reading": "pik ap",
+  "meanings": [
+   "bir yerden almak"
+  ],
+  "definition": "To lift something up or collect someone.",
+  "example": "Pick up that pen from the floor."
+ },
+ "place": {
+  "ipa": "/pleɪs/",
+  "reading": "pleys",
+  "meanings": [
+   "yer",
+   "mekân"
+  ],
+  "definition": "A particular position or point.",
+  "example": "This is a quiet place."
+ },
+ "playing sports": {
+  "ipa": "/ˈpleɪɪŋ spɔːts/",
+  "reading": "pleyینگ sports",
+  "meanings": [
+   "spor yapmak"
+  ],
+  "definition": "Participating in athletic games.",
+  "example": "Playing sports keeps you healthy."
+ },
+ "prefer": {
+  "ipa": "/prɪˈfɜː(r)/",
+  "reading": "priför",
+  "meanings": [
+   "tercih etmek"
+  ],
+  "definition": "To like one thing better than another.",
+  "example": "I prefer tea over coffee."
+ },
+ "priceless treasure": {
+  "ipa": "/ˈpraɪsləs ˈtrɛʒə/",
+  "reading": "prayスles trezır",
+  "meanings": [
+   "paha biçilemez hazine"
+  ],
+  "definition": "An extremely valuable and precious item.",
+  "example": "The old painting is a priceless treasure."
+ },
+ "punctual": {
+  "ipa": "/ˈpʌŋktʃuəl/",
+  "reading": "pankçual",
+  "meanings": [
+   "dakik"
+  ],
+  "definition": "Happening or doing something at the agreed time.",
+  "example": "She is always punctual for her meetings."
+ },
+ "reason": {
+  "ipa": "/ˈriːzn/",
+  "reading": "rizın",
+  "meanings": [
+   "sebep"
+  ],
+  "definition": "A cause or justification for an action.",
+  "example": "What is the reason for this delay?"
+ },
+ "receiver": {
+  "ipa": "/rɪˈsiːvə/",
+  "reading": "risivır",
+  "meanings": [
+   "alıcı"
+  ],
+  "definition": "A person who gets something.",
+  "example": "She was the receiver of the award."
+ },
+ "refer": {
+  "ipa": "/rɪˈfɜː/",
+  "reading": "riför",
+  "meanings": [
+   "kastetmek"
+  ],
+  "definition": "Mention or direct someone to a source.",
+  "example": "Please refer to the manual for instructions."
+ },
+ "refuse": {
+  "ipa": "/rɪˈfjuːz/",
+  "reading": "rifyüz",
+  "meanings": [
+   "reddetmek"
+  ],
+  "definition": "Indicate unwillingness to do something.",
+  "example": "He will refuse to accept the offer."
+ },
+ "relationship": {
+  "ipa": "/rɪˈleɪʃnʃɪp/",
+  "reading": "rileşınşip",
+  "meanings": [
+   "ilişki",
+   "bağ",
+   "yakınlık"
+  ],
+  "definition": "The way in which two people are connected.",
+  "example": "They have a good working relationship."
+ },
+ "relaxing": {
+  "ipa": "/rɪˈlæksɪŋ/",
+  "reading": "rilaksing",
+  "meanings": [
+   "dinlendirici"
+  ],
+  "definition": "Offering relaxation; reducing tension.",
+  "example": "Listening to music can be very relaxing."
+ },
+ "rely on": {
+  "ipa": "/rɪˈlaɪ ɒn/",
+  "reading": "rilay on",
+  "meanings": [
+   "güvenmek"
+  ],
+  "definition": "Depend on with full trust.",
+  "example": "You can always rely on your friends."
+ },
+ "remain": {
+  "ipa": "/rɪˈmeɪn/",
+  "reading": "rimeyn",
+  "meanings": [
+   "kalmak"
+  ],
+  "definition": "Continue to exist or stay in the same place.",
+  "example": "Please remain in your seats."
+ },
+ "reply": {
+  "ipa": "/rɪˈplaɪ/",
+  "reading": "riplay",
+  "meanings": [
+   "cevap"
+  ],
+  "definition": "Say something in response to something.",
+  "example": "I will reply to your email tomorrow."
+ },
+ "respectful": {
+  "ipa": "/rɪˈspɛktfl/",
+  "reading": "rispektful",
+  "meanings": [
+   "saygılı"
+  ],
+  "definition": "Showing deference and respect.",
+  "example": "Always be respectful to your teachers."
+ },
+ "reunion": {
+  "ipa": "/riːˈjuːniən/",
+  "reading": "riyyunyan",
+  "meanings": [
+   "yeniden bir araya gelme"
+  ],
+  "definition": "An act of reuniting or the state of being reunited.",
+  "example": "We are planning a family reunion."
+ },
+ "romance": {
+  "ipa": "/ˈrəʊmæns/",
+  "reading": "romens",
+  "meanings": [
+   "romantik film"
+  ],
+  "definition": "A love affair or romantic story.",
+  "example": "Their romance began in college."
+ },
+ "rude": {
+  "ipa": "/ruːd/",
+  "reading": "ruud",
+  "meanings": [
+   "kaba"
+  ],
+  "definition": "Impolite and lacking manners.",
+  "example": "It is rude to interrupt others."
+ },
+ "salad": {
+  "ipa": "/ˈsæləd/",
+  "reading": "salad",
+  "meanings": [
+   "salata"
+  ],
+  "definition": "A dish of mixed raw vegetables.",
+  "example": "I eat a green salad every day."
+ },
+ "same opinion": {
+  "ipa": "/seɪm əˈpɪnjən/",
+  "reading": "seym əpinyən",
+  "meanings": [
+   "aynı fikir"
+  ],
+  "definition": "Sharing the exact same view.",
+  "example": "We have the same opinion on this issue."
+ },
+ "school subject": {
+  "ipa": "/skuːl ˈsʌbdʒɪkt/",
+  "reading": "skuul sabcıkt",
+  "meanings": [
+   "ders"
+  ],
+  "definition": "A branch of knowledge studied in school.",
+  "example": "Math is my favourite school subject."
+ },
+ "science fair": {
+  "ipa": "/ˈsaɪəns feə(r)/",
+  "reading": "sayens feer",
+  "meanings": [
+   "bilim fuarı"
+  ],
+  "definition": "An exhibition of student science projects.",
+  "example": "She won a prize at the science fair."
+ },
+ "science fiction": {
+  "ipa": "/ˈsaɪəns ˈfɪkʃn/",
+  "reading": "sayens fikşın",
+  "meanings": [
+   "bilim kurgu"
+  ],
+  "definition": "Fiction based on imagined future scientific advances.",
+  "example": "He loves reading science fiction books."
+ },
+ "secret": {
+  "ipa": "/ˈsiːkrət/",
+  "reading": "siikrit",
+  "meanings": [
+   "sır",
+   "giz"
+  ],
+  "definition": "Something kept hidden from others.",
+  "example": "Can you keep a secret?"
+ },
+ "see you": {
+  "ipa": "/siː juː/",
+  "reading": "sii yuu",
+  "meanings": [
+   "görüşürüz"
+  ],
+  "definition": "A friendly farewell greeting.",
+  "example": "Goodbye for now and see you tomorrow."
+ },
+ "self-centered": {
+  "ipa": "/ˌself ˈsentəd/",
+  "reading": "self sentırd",
+  "meanings": [
+   "bencil"
+  ],
+  "definition": "Preoccupied with oneself and one's own affairs.",
+  "example": "He is too self-centered to care."
+ },
+ "self-disciplined": {
+  "ipa": "/ˌself ˈdɪsəplɪnd/",
+  "reading": "self disiplind",
+  "meanings": [
+   "öz disiplinli"
+  ],
+  "definition": "Able to control one's feelings and overcome weaknesses.",
+  "example": "She is self-disciplined with her diet."
+ },
+ "sender": {
+  "ipa": "/ˈsendə(r)/",
+  "reading": "sendır",
+  "meanings": [
+   "gönderen"
+  ],
+  "definition": "A person who sends something.",
+  "example": "Check the sender's address on the letter."
+ },
+ "serve": {
+  "ipa": "/sɜːv/",
+  "reading": "sörv",
+  "meanings": [
+   "servis yapmak"
+  ],
+  "definition": "Present food or drink to someone.",
+  "example": "They serve breakfast at seven."
+ },
+ "share (secret)": {
+  "ipa": "/ʃeə(r) ˈsiːkrət/",
+  "reading": "şeer siikrit",
+  "meanings": [
+   "paylaşmak"
+  ],
+  "definition": "To tell private information to someone else.",
+  "example": "Do not share a secret with him."
+ },
+ "sharing": {
+  "ipa": "/ˈʃeərɪŋ/",
+  "reading": "şeerin",
+  "meanings": [
+   "paylaşım"
+  ],
+  "definition": "The practice of joint use of something.",
+  "example": "Sharing is an important value to learn."
+ },
+ "shopping mall": {
+  "ipa": "/ˈʃɒpɪŋ mɔːl/",
+  "reading": "şopin mol",
+  "meanings": [
+   "alışveriş merkezi"
+  ],
+  "definition": "A large indoor shopping center.",
+  "example": "We spent the afternoon at the shopping mall."
+ },
+ "shout": {
+  "ipa": "/ʃaʊt/",
+  "reading": "şaut",
+  "meanings": [
+   "bağırmak"
+  ],
+  "definition": "To utter a loud cry.",
+  "example": "There is no need to shout at me."
+ },
+ "show love": {
+  "ipa": "/ʃəʊ lʌv/",
+  "reading": "şou luv",
+  "meanings": [
+   "sevgisini göstermek"
+  ],
+  "definition": "To express affection or care for someone.",
+  "example": "Always show love to your family."
+ },
+ "side": {
+  "ipa": "/saɪd/",
+  "reading": "sayd",
+  "meanings": [
+   "taraf",
+   "yan"
+  ],
+  "definition": "A particular part or surface of an object.",
+  "example": "Write your name on this side of the paper."
+ },
+ "similar interests": {
+  "ipa": "/ˈsɪmɪlə ˈɪntrəsts/",
+  "reading": "similər intrésts",
+  "meanings": [
+   "benzer ilgiler"
+  ],
+  "definition": "Sharing the same hobbies or passions.",
+  "example": "They became friends because they have similar interests."
+ },
+ "singer": {
+  "ipa": "/ˈsɪŋə/",
+  "reading": "singır",
+  "meanings": [
+   "şarkıcı"
+  ],
+  "definition": "A person who sings songs.",
+  "example": "She wants to be a famous singer."
+ },
+ "skating": {
+  "ipa": "/ˈskeɪtɪŋ/",
+  "reading": "skeyting",
+  "meanings": [
+   "paten yapma"
+  ],
+  "definition": "The sport or activity of gliding on ice or wheels.",
+  "example": "Ice skating is fun in the winter."
+ },
+ "slumber party": {
+  "ipa": "/ˈslʌmbə ˈpɑːti/",
+  "reading": "slambır pati",
+  "meanings": [
+   "pijama partisi"
+  ],
+  "definition": "A party where children sleep at a friend's house.",
+  "example": "She is invited to a slumber party tonight."
+ },
+ "smile": {
+  "ipa": "/smaɪl/",
+  "reading": "smayl",
+  "meanings": [
+   "gülümsemek",
+   "gülmek"
+  ],
+  "definition": "To curve your mouth upwards when happy.",
+  "example": "Please smile for the camera."
+ },
+ "snacks": {
+  "ipa": "/snæks/",
+  "reading": "sneks",
+  "meanings": [
+   "atıştırmalıklar"
+  ],
+  "definition": "Small amounts of food eaten between meals.",
+  "example": "We bought some snacks for the movie."
+ },
+ "sneaky": {
+  "ipa": "/ˈsniːki/",
+  "reading": "sniki",
+  "meanings": [
+   "sinsi"
+  ],
+  "definition": "Doing things in a secret and unfair way.",
+  "example": "That was a sneaky thing to do."
+ },
+ "soccer match": {
+  "ipa": "/ˈsɒkə mætʃ/",
+  "reading": "sokır maç",
+  "meanings": [
+   "futbol maçı"
+  ],
+  "definition": "A game of football between two teams.",
+  "example": "We are going to watch a soccer match."
+ },
+ "solemn": {
+  "ipa": "/ˈsɒləm/",
+  "reading": "solım",
+  "meanings": [
+   "ciddi",
+   "ağırbaşlı"
+  ],
+  "definition": "Serious and formal in manner or appearance.",
+  "example": "He had a solemn expression on his face."
+ },
+ "something to drink": {
+  "ipa": "/ˈsʌmθɪŋ tuː drɪŋk/",
+  "reading": "samting tu drink",
+  "meanings": [
+   "içecek bir şeyler"
+  ],
+  "definition": "A beverage to quench thirst.",
+  "example": "Would you like something to drink?"
+ },
+ "sounds great": {
+  "ipa": "/saʊndz ɡreɪt/",
+  "reading": "saundz greyt",
+  "meanings": [
+   "kulağa harika geliyor"
+  ],
+  "definition": "An expression of enthusiastic agreement.",
+  "example": "Going to the beach sounds great."
+ },
+ "soup": {
+  "ipa": "/suːp/",
+  "reading": "sup",
+  "meanings": [
+   "çorba"
+  ],
+  "definition": "A liquid food made by boiling meat or vegetables.",
+  "example": "Hot soup is comforting on a cold day."
+ },
+ "space": {
+  "ipa": "/speɪs/",
+  "reading": "speys",
+  "meanings": [
+   "yer"
+  ],
+  "definition": "The boundless expanse outside the Earth's atmosphere.",
+  "example": "Astronauts travel into space in rockets."
+ },
+ "spend time together": {
+  "ipa": "/spend taɪm təˈɡeðə/",
+  "reading": "spend taym tugedır",
+  "meanings": [
+   "birlikte vakit geçirmek"
+  ],
+  "definition": "To be in each other's company for a while.",
+  "example": "Families should spend time together every day."
+ },
+ "steak": {
+  "ipa": "/steɪk/",
+  "reading": "steyk",
+  "meanings": [
+   "biftek",
+   "et"
+  ],
+  "definition": "A high-quality slice of meat, usually beef.",
+  "example": "He likes his steak cooked medium-rare."
+ },
+ "still": {
+  "ipa": "/stɪl/",
+  "reading": "stil",
+  "meanings": [
+   "hala"
+  ],
+  "definition": "Continuing up to the present moment.",
+  "example": "She is still waiting for the bus."
+ },
+ "stingy": {
+  "ipa": "/ˈstɪndʒi/",
+  "reading": "stinci",
+  "meanings": [
+   "cimri"
+  ],
+  "definition": "Unwilling to give or spend money.",
+  "example": "He is too stingy to buy a coffee."
+ },
+ "street": {
+  "ipa": "/striːt/",
+  "reading": "striit",
+  "meanings": [
+   "cadde",
+   "sokak"
+  ],
+  "definition": "A public road in a city or town.",
+  "example": "Children are playing on the street."
+ },
+ "strong bond": {
+  "ipa": "/strɒŋ bɒnd/",
+  "reading": "istrong bond",
+  "meanings": [
+   "güçlü bağ"
+  ],
+  "definition": "A powerful connection between people.",
+  "example": "Twins often share a strong bond."
+ },
+ "stubborn": {
+  "ipa": "/ˈstʌbən/",
+  "reading": "stabın",
+  "meanings": [
+   "inatçı"
+  ],
+  "definition": "Refusing to change your ideas or behavior.",
+  "example": "She is as stubborn as a mule."
+ },
+ "stuffed": {
+  "ipa": "/stʌft/",
+  "reading": "staft",
+  "meanings": [
+   "tıka basa dolu",
+   "tok"
+  ],
+  "definition": "Filled with something or completely full.",
+  "example": "I am completely stuffed after dinner."
+ },
+ "support each other": {
+  "ipa": "/səˈpɔːt iːtʃ ˈʌðə/",
+  "reading": "saport iç adır",
+  "meanings": [
+   "birbirini desteklemek"
+  ],
+  "definition": "To help one another through difficult times.",
+  "example": "Good friends always support each other."
+ },
+ "supportive": {
+  "ipa": "/səˈpɔːtɪv/",
+  "reading": "saportiv",
+  "meanings": [
+   "destekleyici",
+   "yardımsever"
+  ],
+  "definition": "Providing encouragement or emotional help.",
+  "example": "My family is very supportive of my career."
+ },
+ "synonym": {
+  "ipa": "/ˈsɪnənɪm/",
+  "reading": "sinonim",
+  "meanings": [
+   "eş anlamlı"
+  ],
+  "definition": "A word with the same meaning as another.",
+  "example": "Big is a synonym for large."
+ },
+ "tactful": {
+  "ipa": "/ˈtæktfʊl/",
+  "reading": "taktful",
+  "meanings": [
+   "ince düşünceli",
+   "nazik"
+  ],
+  "definition": "Showing skill in dealing with people without offending.",
+  "example": "It was tactful of her not to mention it."
+ },
+ "take care": {
+  "ipa": "/teɪk keə/",
+  "reading": "teyk ker",
+  "meanings": [
+   "kendine iyi bak"
+  ],
+  "definition": "To look after someone or something safely.",
+  "example": "Please take care of my dog."
+ },
+ "take order": {
+  "ipa": "/teɪk ˈɔːdə/",
+  "reading": "teyk ordır",
+  "meanings": [
+   "sipariş almak"
+  ],
+  "definition": "To record what a customer wants to buy.",
+  "example": "The waiter is ready to take order."
+ },
+ "take place": {
+  "ipa": "/teɪk pleɪs/",
+  "reading": "teyk pleys",
+  "meanings": [
+   "meydana gelmek",
+   "gerçekleşmek"
+  ],
+  "definition": "To happen or occur.",
+  "example": "The meeting will take place tomorrow."
+ },
+ "take things serious": {
+  "ipa": "/teɪk θɪŋz ˈsɪəriəs/",
+  "reading": "teyk tings siriyus",
+  "meanings": [
+   "ciddiye almak"
+  ],
+  "definition": "To treat matters with proper importance.",
+  "example": "You need to take things serious now."
+ },
+ "talk about": {
+  "ipa": "/tɔːk əˈbaʊt/",
+  "reading": "tok abaut",
+  "meanings": [
+   "hakkında konuşmak"
+  ],
+  "definition": "To discuss a particular subject.",
+  "example": "We need to talk about our future."
+ },
+ "tall": {
+  "ipa": "/tɔːl/",
+  "reading": "tol",
+  "meanings": [
+   "uzun"
+  ],
+  "definition": "Of great height.",
+  "example": "He is very tall for his age."
+ },
+ "tea": {
+  "ipa": "/tiː/",
+  "reading": "tii",
+  "meanings": [
+   "çay"
+  ],
+  "definition": "A hot drink made by boiling leaves.",
+  "example": "I drink tea every morning."
+ },
+ "tell the truth": {
+  "ipa": "/tel ðə truːθ/",
+  "reading": "tel dı truut",
+  "meanings": [
+   "doğruyu söylemek"
+  ],
+  "definition": "To speak honestly without lying.",
+  "example": "Always tell the truth to your parents."
+ },
+ "text": {
+  "ipa": "/tekst/",
+  "reading": "tekst",
+  "meanings": [
+   "mesaj yazmak",
+   "paragraf"
+  ],
+  "definition": "Written words or a digital message.",
+  "example": "Send me a text when you arrive."
+ },
+ "that would be great": {
+  "ipa": "/ðæt wʊd bi ɡreɪt/",
+  "reading": "ðat vud bi greyt",
+  "meanings": [
+   "harika olurdu"
+  ],
+  "definition": "Expressing enthusiastic agreement or acceptance.",
+  "example": "That would be great if you could help me."
+ },
+ "that's why": {
+  "ipa": "/ðæts waɪ/",
+  "reading": "ðets vay",
+  "meanings": [
+   "bu yüzden"
+  ],
+  "definition": "For this reason.",
+  "example": "He was busy, and that's why he didn't come."
+ },
+ "there": {
+  "ipa": "/ðeə(r)/",
+  "reading": "ðer",
+  "meanings": [
+   "orada"
+  ],
+  "definition": "In or at that place.",
+  "example": "Please put the box over there."
+ },
+ "thing": {
+  "ipa": "/θɪŋ/",
+  "reading": "ting",
+  "meanings": [
+   "şey"
+  ],
+  "definition": "An object, matter, or idea.",
+  "example": "What is that thing on the table?"
+ },
+ "thirsty": {
+  "ipa": "/ˈθɜːsti/",
+  "reading": "tösti",
+  "meanings": [
+   "susamış",
+   "susuz"
+  ],
+  "definition": "Feeling a need to drink something.",
+  "example": "Running makes me very thirsty."
+ },
+ "thriller": {
+  "ipa": "/ˈθrɪlə(r)/",
+  "reading": "trilır",
+  "meanings": [
+   "gerilim filmi"
+  ],
+  "definition": "An exciting book or movie about crime.",
+  "example": "I love watching a good psychological thriller."
+ },
+ "thrilling": {
+  "ipa": "/ˈθrɪlɪŋ/",
+  "reading": "triling",
+  "meanings": [
+   "heyecan verici",
+   "nefes kesici"
+  ],
+  "definition": "Causing excitement and great pleasure.",
+  "example": "The roller coaster ride was truly thrilling."
+ },
+ "ticket": {
+  "ipa": "/ˈtɪkɪt/",
+  "reading": "tikit",
+  "meanings": [
+   "bilet"
+  ],
+  "definition": "A pass for travel or admission.",
+  "example": "I need to buy a train ticket to London."
+ },
+ "time": {
+  "ipa": "/taɪm/",
+  "reading": "taym",
+  "meanings": [
+   "saat",
+   "zaman"
+  ],
+  "definition": "The indefinite continued progress of existence.",
+  "example": "We have plenty of time before the meeting."
+ },
+ "tired": {
+  "ipa": "/ˈtaɪəd/",
+  "reading": "tayırd",
+  "meanings": [
+   "yorgun"
+  ],
+  "definition": "In need of sleep or rest.",
+  "example": "I feel tired after working all day."
+ },
+ "to me": {
+  "ipa": "/tuː miː/",
+  "reading": "tu mi",
+  "meanings": [
+   "bence"
+  ],
+  "definition": "In my opinion.",
+  "example": "To me, this movie is a masterpiece."
+ },
+ "today's soup": {
+  "ipa": "/təˈdeɪz suːp/",
+  "reading": "todeyz sup",
+  "meanings": [
+   "günün çorbası"
+  ],
+  "definition": "The special soup prepared for the day.",
+  "example": "What is today's soup?"
+ },
+ "tomato salad": {
+  "ipa": "/təˈmɑːtəʊ ˈsæləd/",
+  "reading": "tomato salad",
+  "meanings": [
+   "domates salatası"
+  ],
+  "definition": "A salad made primarily with tomatoes.",
+  "example": "I ordered a fresh tomato salad for lunch."
+ },
+ "tomorrow": {
+  "ipa": "/təˈmɒrəʊ/",
+  "reading": "tomoro",
+  "meanings": [
+   "yarın"
+  ],
+  "definition": "The day after today.",
+  "example": "We will travel to Paris tomorrow."
+ },
+ "tonight": {
+  "ipa": "/təˈnaɪt/",
+  "reading": "tonayt",
+  "meanings": [
+   "bu gece"
+  ],
+  "definition": "The evening or night of the present day.",
+  "example": "Are you going out tonight?"
+ },
+ "topic": {
+  "ipa": "/ˈtɒpɪk/",
+  "reading": "topik",
+  "meanings": [
+   "konu"
+  ],
+  "definition": "A matter dealt with in a text or discussion.",
+  "example": "The topic of the meeting is marketing."
+ },
+ "treasure": {
+  "ipa": "/ˈtreʒə(r)/",
+  "reading": "trejır",
+  "meanings": [
+   "hazine"
+  ],
+  "definition": "A quantity of precious metals or gems.",
+  "example": "Pirates buried their treasure on the island."
+ },
+ "trouble": {
+  "ipa": "/ˈtrʌbl/",
+  "reading": "trabl",
+  "meanings": [
+   "sorun"
+  ],
+  "definition": "Difficulty or problems.",
+  "example": "I am having trouble with my computer."
+ },
+ "true friend": {
+  "ipa": "/truː frɛnd/",
+  "reading": "tru frend",
+  "meanings": [
+   "gerçek arkadaş"
+  ],
+  "definition": "A loyal and supportive person.",
+  "example": "A true friend is always there for you."
+ },
+ "trust": {
+  "ipa": "/trʌst/",
+  "reading": "trast",
+  "meanings": [
+   "güvenmek",
+   "güven"
+  ],
+  "definition": "Firm belief in reliability or truth.",
+  "example": "You must trust your team members."
+ },
+ "truthful": {
+  "ipa": "/ˈtruːθfʊl/",
+  "reading": "truuthful",
+  "meanings": [
+   "dürüst",
+   "doğrucu"
+  ],
+  "definition": "Telling or expressing the truth.",
+  "example": "Always be truthful in your answers."
+ },
+ "trustworthy": {
+  "ipa": "/ˈtrʌstwɜːði/",
+  "reading": "trastvördi",
+  "meanings": [
+   "güvenilir"
+  ],
+  "definition": "Able to be relied on as honest.",
+  "example": "He is a trustworthy employee."
+ },
+ "twirl": {
+  "ipa": "/twɜːl/",
+  "reading": "tvörl",
+  "meanings": [
+   "döndürmek"
+  ],
+  "definition": "Spin quickly round and round.",
+  "example": "She likes to twirl in her new dress."
+ },
+ "unconditional": {
+  "ipa": "/ˌʌnkənˈdɪʃənəl/",
+  "reading": "ankondişönel",
+  "meanings": [
+   "koşulsuz",
+   "şartsız"
+  ],
+  "definition": "Not subject to any conditions.",
+  "example": "Parents offer unconditional love."
+ },
+ "understanding": {
+  "ipa": "/ˌʌndəˈstændɪŋ/",
+  "reading": "anderstending",
+  "meanings": [
+   "anlamak",
+   "anlayışlı"
+  ],
+  "definition": "Able to understand others well.",
+  "example": "She was very understanding about the delay."
+ },
+ "waiter": {
+  "ipa": "/ˈweɪtə/",
+  "reading": "veytır",
+  "meanings": [
+   "garson"
+  ],
+  "definition": "A man who serves food in a restaurant.",
+  "example": "The waiter brought our drinks quickly."
+ },
+ "waitress": {
+  "ipa": "/ˈweɪtrəs/",
+  "reading": "veytrıs",
+  "meanings": [
+   "kadın garson"
+  ],
+  "definition": "A woman who serves food in a restaurant.",
+  "example": "The waitress handed us the menu."
+ },
+ "walk beside": {
+  "ipa": "/wɔːk bɪˈsaɪd/",
+  "reading": "vok bisaid",
+  "meanings": [
+   "yanında yürümek"
+  ],
+  "definition": "Walk next to someone.",
+  "example": "I like to walk beside the river."
+ },
+ "want": {
+  "ipa": "/wɒnt/",
+  "reading": "vont",
+  "meanings": [
+   "istemek"
+  ],
+  "definition": "Have a desire for something.",
+  "example": "I want a glass of water."
+ },
+ "welcome": {
+  "ipa": "/ˈwɛlkəm/",
+  "reading": "velkım",
+  "meanings": [
+   "karşılamak"
+  ],
+  "definition": "Greet a newcomer politely.",
+  "example": "We welcome all new students."
+ },
+ "why not": {
+  "ipa": "/waɪ nɒt/",
+  "reading": "vay not",
+  "meanings": [
+   "neden olmasın"
+  ],
+  "definition": "Used to make a suggestion.",
+  "example": "Why not try it again?"
+ },
+ "with": {
+  "ipa": "/wɪð/",
+  "reading": "viz",
+  "meanings": [
+   "ile"
+  ],
+  "definition": "Accompanied by.",
+  "example": "I went to the cinema with my friend."
+ },
+ "would you like to": {
+  "ipa": "/wʊd juː laɪk tuː/",
+  "reading": "vud yu layk tu",
+  "meanings": [
+   "ister misin"
+  ],
+  "definition": "Polite invitation or offer.",
+  "example": "Would you like to join us for dinner?"
+ },
+ "your own": {
+  "ipa": "/jɔːr əʊn/",
+  "reading": "yor ovn",
+  "meanings": [
+   "kendinin",
+   "kendin"
+  ],
+  "definition": "Belonging to oneself.",
+  "example": "You should make your own decisions."
+ },
+ "yummy": {
+  "ipa": "/ˈjʌmi/",
+  "reading": "yami",
+  "meanings": [
+   "lezzetli",
+   "nefis"
+  ],
+  "definition": "Very pleasant to taste.",
+  "example": "This chocolate cake is so yummy."
+ },
+ "accept (invitation / offer)": {
+  "ipa": "",
+  "reading": "eksept",
+  "meanings": [
+   "kabul etmek"
+  ],
+  "definition": "To say yes to an invitation or offer.",
+  "example": "I accept your invitation with pleasure."
+ },
+ "alone / feel alone": {
+  "ipa": "",
+  "reading": "ıloun",
+  "meanings": [
+   "yalnız",
+   "yalnız hissetmek"
+  ],
+  "definition": "Being by yourself; feeling lonely.",
+  "example": "He doesn't want to feel alone at the party."
+ },
+ "always in a hurry": {
+  "ipa": "",
+  "reading": "olveyz in ı höri",
+  "meanings": [
+   "her zaman acele içinde"
+  ],
+  "definition": "Never having enough time; always rushing.",
+  "example": "My cousin is always in a hurry in the mornings."
+ },
+ "always there for me": {
+  "ipa": "",
+  "reading": "olveyz der for mi",
+  "meanings": [
+   "her zaman yanımda"
+  ],
+  "definition": "Ready to help and support me at any time.",
+  "example": "A true friend is always there for me."
+ },
+ "anything (to eat)": {
+  "ipa": "",
+  "reading": "eniting",
+  "meanings": [
+   "herhangi bir şey (yiyecek)"
+  ],
+  "definition": "Any kind of food.",
+  "example": "Would you like anything to eat?"
+ },
+ "bring (orders)": {
+  "ipa": "",
+  "reading": "bring",
+  "meanings": [
+   "getirmek (siparişleri getirmek)"
+  ],
+  "definition": "To carry something to a place; to serve orders.",
+  "example": "The waiter will bring your orders soon."
+ },
+ "care (about)": {
+  "ipa": "",
+  "reading": "keyr",
+  "meanings": [
+   "önemsemek",
+   "ilgilenmek"
+  ],
+  "definition": "To feel that someone or something is important.",
+  "example": "Real friends care about your feelings."
+ },
+ "casual / casually": {
+  "ipa": "",
+  "reading": "kejuil",
+  "meanings": [
+   "günlük kıyafet",
+   "tesadüfen"
+  ],
+  "definition": "Comfortable everyday clothes; in a relaxed way.",
+  "example": "You can wear casual clothes to the picnic."
+ },
+ "chat / chit-chat": {
+  "ipa": "",
+  "reading": "çet",
+  "meanings": [
+   "sohbet etmek",
+   "muhabbet etmek"
+  ],
+  "definition": "A friendly informal talk.",
+  "example": "We usually chat about movies after school."
+ },
+ "close (friend)": {
+  "ipa": "",
+  "reading": "klous",
+  "meanings": [
+   "yakın (arkadaş)"
+  ],
+  "definition": "A friend you know and trust very well.",
+  "example": "Elif is my close friend from primary school."
+ },
+ "join (event)": {
+  "ipa": "",
+  "reading": "coyn",
+  "meanings": [
+   "katılmak (etkinliğe katılmak)"
+  ],
+  "definition": "To take part in an event or activity.",
+  "example": "Everyone can join the event this weekend."
+ },
+ "prepare (snack)": {
+  "ipa": "",
+  "reading": "pripeyr",
+  "meanings": [
+   "hazırlamak (atıştırmalık)"
+  ],
+  "definition": "To make something ready, like food.",
+  "example": "Let's prepare some snacks for the guests."
+ },
+ "sorry, i can't": {
+  "ipa": "",
+  "reading": "sori ay kent",
+  "meanings": [
+   "üzgünüm",
+   "yapamam"
+  ],
+  "definition": "A polite way to refuse an invitation.",
+  "example": "Sorry, I can't come to your party tonight."
+ },
+ "visit (grandparents)": {
+  "ipa": "",
+  "reading": "vizit",
+  "meanings": [
+   "ziyaret etmek"
+  ],
+  "definition": "To go and see someone.",
+  "example": "We visit our grandparents every weekend."
  }
 }

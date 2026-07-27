@@ -37,9 +37,12 @@ interface LearningOrbsTransitionProps {
 }
 
 export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
-  // LGS units get a TEST orb instead of the AI orb.
+  // LGS units: the AI orb becomes Test, and the Games orb is hidden.
   const methods = categoryLabel.startsWith('LGS')
-    ? learningMethods.map(m => (m.label === 'AI' ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck } : m))
+    ? learningMethods
+        .filter(m => m.label !== 'Games')
+        .map(m => (m.label === 'AI' ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck } : m))
+        .map((m, i) => ({ ...m, className: `orb-${i + 1}` }))
     : learningMethods;
   return (
     <div className="fixed inset-0 z-50">

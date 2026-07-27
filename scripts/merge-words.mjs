@@ -39,7 +39,8 @@ for (const [word, e] of Object.entries(enriched)) {
   if (catWords.has(word)) continue;
   const tm = e.meanings.join(', ').replace(/'/g, "\\'");
   const ex = e.example.replace(/'/g, "\\'");
-  newLines.push(`  { id: '${ID_PREFIX}${nextId++}', word: '${word}', partOfSpeech: '${POS}', turkishMeaning: '${tm}', exampleSentence: '${ex}', category: FLASHCARD_CATEGORIES.${CATEGORY} },`);
+  const wEsc = word.replace(/'/g, "\\'");
+  newLines.push(`  { id: '${ID_PREFIX}${nextId++}', word: '${wEsc}', partOfSpeech: '${POS}', turkishMeaning: '${tm}', exampleSentence: '${ex}', category: FLASHCARD_CATEGORIES.${CATEGORY} },`);
 }
 if (newLines.length) {
   flash = flash.replace(lastEntryRe, `$1${newLines.join('\n')}\n`);
@@ -53,7 +54,7 @@ const readyNew = Object.keys(enriched).filter(w => !readyWords.has(w));
 if (readyNew.length) {
   const lines = [];
   for (let i = 0; i < readyNew.length; i += 5) {
-    lines.push('  ' + readyNew.slice(i, i + 5).map(w => `'${w}'`).join(', ') + ',');
+    lines.push('  ' + readyNew.slice(i, i + 5).map(w => `'${w.replace(/'/g, "\\'")}'`).join(', ') + ',');
   }
   ready = ready.replace(/\n\];/, `\n${lines.join('\n')}\n];`);
   fs.writeFileSync(READY, ready, 'utf8');
