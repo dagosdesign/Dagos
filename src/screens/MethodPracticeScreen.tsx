@@ -99,7 +99,17 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
             <VisualMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Games' && (
-            <MatchingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            category?.startsWith('LGS') ? (
+              /* Games stays word-free for LGS units for now. */
+              <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-10 text-center space-y-3">
+                <p className="text-xl font-bold text-[#f2c463]">Games</p>
+                <p className="text-sm text-white/60 font-light leading-relaxed">
+                  Bu bölüm çok yakında burada olacak.
+                </p>
+              </div>
+            ) : (
+              <MatchingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            )
           )}
           {method === 'Stories' && (
             <StoryMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
