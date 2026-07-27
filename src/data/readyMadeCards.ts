@@ -399,6 +399,11 @@ export const READY_MADE_CARD_WORDS = [
   'truthful', 'trustworthy', 'twirl', 'unconditional', 'understanding',
   'waiter', 'waitress', 'walk beside', 'want', 'welcome',
   'why not', 'with', 'would you like to', 'your own', 'yummy',
+  'accept (invitation / offer)', 'alone / feel alone', 'always in a hurry',
+  'always there for me', 'anything (to eat)', 'bring (orders)',
+  'care (about)', 'casual / casually', 'chat / chit-chat',
+  'close (friend)', 'join (event)', 'prepare (snack)',
+  'sorry, i can\'t', 'visit (grandparents)',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
