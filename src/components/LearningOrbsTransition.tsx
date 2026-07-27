@@ -18,7 +18,7 @@ export type LearningMethodLabel =
   | 'Stories'
   | 'Conversations'
   | 'AI'
-  | 'TEST';
+  | 'Test';
 
 const learningMethods: { label: LearningMethodLabel; Icon: typeof Headphones; className: string }[] = [
   { label: 'Listening', Icon: Headphones, className: 'orb-1' },
@@ -39,7 +39,7 @@ interface LearningOrbsTransitionProps {
 export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
   // LGS units get a TEST orb instead of the AI orb.
   const methods = categoryLabel.startsWith('LGS')
-    ? learningMethods.map(m => (m.label === 'AI' ? { ...m, label: 'TEST' as LearningMethodLabel, Icon: ClipboardCheck } : m))
+    ? learningMethods.map(m => (m.label === 'AI' ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck } : m))
     : learningMethods;
   return (
     <div className="fixed inset-0 z-50">
