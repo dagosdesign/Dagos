@@ -5,9 +5,10 @@ interface HomeScreenProps {
   onPractice: (category: string, label: string) => void;
   onOpenGrammar: () => void;
   onOpenQuizHub: () => void;
+  onOpenLgs: () => void;
 }
 
-export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub }: HomeScreenProps) {
+export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs }: HomeScreenProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub }:
           onPractice={onPractice}
           onOpenGrammar={onOpenGrammar}
           onOpenQuizHub={onOpenQuizHub}
+          onOpenLgs={onOpenLgs}
         />
       </div>
     </>

@@ -46,6 +46,30 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
     [category]
   );
 
+  // Units whose word batches haven't been imported yet get a friendly notice
+  // instead of an empty session.
+  if (pool.length === 0) {
+    return (
+      <div className="fixed inset-0 z-50 bg-[#0a0a0b] text-[#dcdcdc] overflow-y-auto">
+        <div className="max-w-xl mx-auto p-5 pb-16 space-y-6">
+          <button
+            onClick={onExit}
+            className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl cursor-pointer"
+            aria-label="Ana menüye dön"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-10 text-center space-y-3">
+            <p className="text-xl font-bold text-[#f2c463]">{categoryLabel}</p>
+            <p className="text-sm text-white/60 font-light leading-relaxed">
+              Bu ünitenin kelimeleri henüz hazırlanıyor. Çok yakında burada olacak.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="fixed inset-0 z-50 bg-[#0a0a0b] text-[#dcdcdc] overflow-y-auto">
       <div className="max-w-xl mx-auto p-5 pb-16">

@@ -12,6 +12,7 @@ import FlashcardsScreen from './screens/FlashcardsScreen';
 import AiCoachScreen from './screens/AiCoachScreen';
 import QuizScreen from './screens/QuizScreen';
 import GrammarScreen from './screens/GrammarScreen';
+import LgsUnitsScreen from './screens/LgsUnitsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 
 interface PracticeHistoryItem {
@@ -134,8 +135,11 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
+  const [showLgs, setShowLgs] = useState(false);
+
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
+    setShowLgs(false);
     setActiveTab(tab);
   };
 
@@ -145,6 +149,7 @@ export default function App() {
   const handleNavSelect = (item: NavItem) => {
     if (item === 'home') {
       setShowProgress(false);
+      setShowLgs(false);
       setActiveTab('home');
     } else if (item === 'ai') {
       setShowProgress(false);
@@ -188,11 +193,18 @@ export default function App() {
           />
         ) : (
           <>
-            {activeTab === 'home' && (
+            {activeTab === 'home' && showLgs && (
+              <LgsUnitsScreen
+                onBack={() => setShowLgs(false)}
+                onSelectUnit={(category, label) => setOrbFlow({ category, label })}
+              />
+            )}
+            {activeTab === 'home' && !showLgs && (
               <HomeScreen
                 onPractice={(category, label) => setOrbFlow({ category, label })}
                 onOpenGrammar={() => handleNavigate('grammar')}
                 onOpenQuizHub={() => setOrbFlow({ category: null, label: 'General English' })}
+                onOpenLgs={() => setShowLgs(true)}
               />
             )}
             {activeTab === 'cards' && (

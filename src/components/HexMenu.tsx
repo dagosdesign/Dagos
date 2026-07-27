@@ -5,6 +5,7 @@ interface HexMenuProps {
   onPractice: (category: string, label: string) => void;
   onOpenGrammar: () => void;
   onOpenQuizHub: () => void;
+  onOpenLgs: () => void;
 }
 
 // Satellite node centers as fractions of the field (also drives the SVG link endpoints
@@ -26,9 +27,9 @@ const VB_W = 760;
 const VB_H = 920;
 const links = NODES.map(([fx, fy]) => [Math.round(fx * VB_W), Math.round(fy * VB_H)] as [number, number]);
 
-export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub }: HexMenuProps) {
+export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs }: HexMenuProps) {
   const topics = [
-    { label: 'LGS', className: 'een-n1', onClick: () => onPractice(FLASHCARD_CATEGORIES.EVERYDAY, 'LGS') },
+    { label: 'LGS', className: 'een-n1', onClick: onOpenLgs },
     { label: 'YDT', className: 'een-n2', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
     { label: 'YÖK-DİL', className: 'een-n3', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'YÖK-DİL') },
     { label: 'IELTS', className: 'een-n4', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
