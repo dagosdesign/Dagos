@@ -165,6 +165,8 @@ export default function App() {
     setOrbFlow(null);
     if (method === 'Visual Learning') {
       setMethodSession({ method: 'Visual', category, label });
+    } else if (method === 'TEST') {
+      setMethodSession({ method: 'Test', category, label });
     } else if (method === 'AI') {
       // The "AI" orb opens the conversational AI Coach.
       handleNavigate('ai');

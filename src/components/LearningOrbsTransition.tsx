@@ -1,6 +1,7 @@
 import {
   Bot,
   BookOpen,
+  ClipboardCheck,
   ChevronLeft,
   Eye,
   Gamepad2,
@@ -16,7 +17,8 @@ export type LearningMethodLabel =
   | 'Games'
   | 'Stories'
   | 'Conversations'
-  | 'AI';
+  | 'AI'
+  | 'TEST';
 
 const learningMethods: { label: LearningMethodLabel; Icon: typeof Headphones; className: string }[] = [
   { label: 'Listening', Icon: Headphones, className: 'orb-1' },
@@ -35,6 +37,10 @@ interface LearningOrbsTransitionProps {
 }
 
 export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
+  // LGS units get a TEST orb instead of the AI orb.
+  const methods = categoryLabel.startsWith('LGS')
+    ? learningMethods.map(m => (m.label === 'AI' ? { ...m, label: 'TEST' as LearningMethodLabel, Icon: ClipboardCheck } : m))
+    : learningMethods;
   return (
     <div className="fixed inset-0 z-50">
       <section className="learning-orbits" aria-labelledby="learning-orbits-title">
@@ -219,7 +225,7 @@ export default function LearningOrbsTransition({ categoryLabel, onSelect, onClos
         </p>
 
         <div className="learning-orbits__field">
-          {learningMethods.map(({ label, Icon, className }) => (
+          {methods.map(({ label, Icon, className }) => (
             <button
               type="button"
               className={`learning-orbits__orb ${className}`}

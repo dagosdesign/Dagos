@@ -4,7 +4,7 @@ import { FLASHCARDS } from '../data/flashcards';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 
-export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations';
+export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
 const METHOD_TITLES: Record<PracticeMethod, { title: string; hint: string }> = {
   Listening: { title: 'Listening', hint: 'Kelimeyi dinle, doğru Türkçe anlamı seç.' },
@@ -13,6 +13,7 @@ const METHOD_TITLES: Record<PracticeMethod, { title: string; hint: string }> = {
   Games: { title: 'Games', hint: 'Kelimeleri Türkçe anlamlarıyla eşleştir.' },
   Stories: { title: 'Stories', hint: 'Hikayeyi oku, sarı kelimelere dikkat et.' },
   Conversations: { title: 'Conversations', hint: 'Diyaloğu oku, hedef kelimeyi yakala.' },
+  Test: { title: 'Test', hint: 'Kelimenin doğru anlamını seç.' },
 };
 
 function shuffle<T>(arr: T[]): T[] {
@@ -105,6 +106,9 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
           )}
           {method === 'Conversations' && (
             <DialogueMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+          )}
+          {method === 'Test' && (
+            <TestMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
         </Fragment>
       </div>
@@ -209,6 +213,92 @@ function ListeningMode({ pool, playPronunciation, recordQuizXp, onExit, onRestar
         <p className="text-xs text-white/40 font-mono">Dinlemek için dokun</p>
         {answered && (
           <p className="text-xl font-serif italic text-white">{current.word}</p>
+        )}
+      </div>
+
+      <div className="grid grid-cols-1 gap-3">
+        {options.map((opt, i) => {
+          const isCorrect = opt === current.turkishMeaning;
+          const isSelected = selected === opt;
+          let cls = 'bg-white/[0.01] border-white/[0.08] hover:border-[#e3b553]/50 text-white/80';
+          if (answered) {
+            if (isCorrect) cls = 'bg-[#e3b553]/10 border-[#e3b553] text-white';
+            else if (isSelected) cls = 'bg-red-950/20 border-red-500/80 text-red-200';
+            else cls = 'border-white/[0.03] opacity-30 text-white/30';
+          }
+          return (
+            <button
+              key={i}
+              disabled={answered}
+              onClick={() => {
+                setSelected(opt);
+                if (opt === current.turkishMeaning) setCorrectCount(c => c + 1);
+              }}
+              className={`w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-3 ${cls} ${!answered ? 'cursor-pointer' : 'cursor-default'}`}
+            >
+              <p className="text-sm font-light flex-1">{opt}</p>
+              {answered && isCorrect && <CheckCircle2 className="w-4 h-4 text-[#e3b553] shrink-0" />}
+              {answered && isSelected && !isCorrect && <XCircle className="w-4 h-4 text-red-400 shrink-0" />}
+            </button>
+          );
+        })}
+      </div>
+
+      {answered && (
+        <div className="flex justify-end">
+          <button
+            onClick={() => {
+              if (idx + 1 < rounds.length) { setIdx(i => i + 1); setSelected(null); }
+              else setFinished(true);
+            }}
+            className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3 px-6 text-xs font-bold cursor-pointer"
+          >
+            {idx + 1 < rounds.length ? 'Sonraki' : 'Bitir'}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- Test: read the word, pick the Turkish meaning ---------- */
+
+function TestMode({ pool, recordQuizXp, onExit, onRestart }: {
+  pool: Flashcard[];
+  recordQuizXp: (n: number) => void;
+  onExit: () => void;
+  onRestart: () => void;
+}) {
+  // Session covers the ENTIRE category pool in random order.
+  const rounds = useMemo(() => shuffle(pool), [pool]);
+  const [idx, setIdx] = useState(0);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [finished, setFinished] = useState(false);
+
+  const current = rounds[idx];
+
+  const options = useMemo(() => {
+    if (!current) return [];
+    const others = sample(pool.filter(f => f.id !== current.id), 3).map(f => f.turkishMeaning);
+    return shuffle([current.turkishMeaning, ...others]);
+  }, [current, pool]);
+
+  if (finished) {
+    return <ResultsPanel correct={correctCount} total={rounds.length} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={onRestart} />;
+  }
+  if (!current) return null;
+
+  const answered = selected !== null;
+
+  return (
+    <div className="space-y-5">
+      <ProgressDots idx={idx} total={rounds.length} />
+
+      <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-8 text-center space-y-2">
+        <p className="text-3xl font-bold text-[#f2c463]">{current.word}</p>
+        {answered && (
+          <p className="text-xs text-white/50 italic font-light">"{current.exampleSentence}"</p>
         )}
       </div>
 
