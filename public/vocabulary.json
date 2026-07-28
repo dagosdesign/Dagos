@@ -9388,8 +9388,9 @@
   "ipa": "/əˈtrækt/",
   "reading": "etrekt",
   "meanings": [
+   "cezbetmek",
    "çekmek",
-   "cezbetmek"
+   "dikkat çekmek"
   ],
   "definition": "To evoke interest or liking from someone.",
   "example": "Bright colors attract bees to flowers."
@@ -18056,15 +18057,6 @@
   "definition": "Guidance or recommendations offered about future action.",
   "example": "Thank you for your valuable advice."
  },
- "alley": {
-  "ipa": "/ˈæli/",
-  "reading": "eli",
-  "meanings": [
-   "bovling oynanan yer"
-  ],
-  "definition": "A narrow passageway between buildings.",
-  "example": "The cat ran down the dark alley."
- },
  "also": {
   "ipa": "/ˈɔːlsəʊ/",
   "reading": "olsou",
@@ -18149,17 +18141,6 @@
   ],
   "definition": "To value something very highly.",
   "example": "I attach great importance to honesty."
- },
- "attract (attention)": {
-  "ipa": "/əˈtrækt əˈtenʃn/",
-  "reading": "etrekt etenşın",
-  "meanings": [
-   "cezbetmek",
-   "çekmek",
-   "dikkat çekmek"
-  ],
-  "definition": "To cause people to notice something.",
-  "example": "Bright colors attract attention easily."
  },
  "aunt": {
   "ipa": "/ɑːnt/",
@@ -18334,15 +18315,6 @@
   "definition": "Noticeably happy and optimistic.",
   "example": "He has a cheerful personality."
  },
- "cheers": {
-  "ipa": "/tʃɪəz/",
-  "reading": "çirz",
-  "meanings": [
-   "hoşçakal"
-  ],
-  "definition": "An expression of good wishes when drinking.",
-  "example": "He raised his glass and said cheers."
- },
  "city hall": {
   "ipa": "/ˈsɪti hɔːl/",
   "reading": "siti hool",
@@ -18387,15 +18359,6 @@
   ],
   "definition": "Joining two or more things together.",
   "example": "This soup is a delicious combination of vegetables."
- },
- "come into our lives": {
-  "ipa": "/kʌm ˈɪntuː ˈaʊə lɪvz/",
-  "reading": "kam intu avır livz",
-  "meanings": [
-   "hayatına girmek"
-  ],
-  "definition": "To become part of someone's life.",
-  "example": "Cats can bring so much joy when they come into our lives."
  },
  "come over": {
   "ipa": "/kʌm ˈəʊvə/",
@@ -18645,15 +18608,6 @@
   ],
   "definition": "To perform identical actions as someone else.",
   "example": "Friends often do the same things."
- },
- "do you want": {
-  "ipa": "/duː juː wɒnt/",
-  "reading": "du yu vont",
-  "meanings": [
-   "ister misin"
-  ],
-  "definition": "Asking about someone's desire or preference.",
-  "example": "Do you want some coffee?"
  },
  "drama": {
   "ipa": "/ˈdrɑːmə/",
@@ -19535,15 +19489,6 @@
   "definition": "To give a reason for poor behavior.",
   "example": "Stop trying to make excuse for your lateness."
  },
- "make smile": {
-  "ipa": "/meɪk smaɪl/",
-  "reading": "meyk smayl",
-  "meanings": [
-   "gülümsetmek"
-  ],
-  "definition": "To cause someone to smile.",
-  "example": "His funny joke always manage to make smile."
- },
  "make sculpture": {
   "ipa": "/meɪk ˈskʌlptʃə(r)/",
   "reading": "meyk skalpçır",
@@ -19558,8 +19503,7 @@
   "reading": "maç",
   "meanings": [
    "maç",
-   "eşleştirmek",
-   "kibrit"
+   "eşleştirmek"
   ],
   "definition": "A sports competition or a pair of things.",
   "example": "We watched a great football match last night."
@@ -19573,15 +19517,6 @@
   ],
   "definition": "A friend or companion.",
   "example": "He is my best mate from high school."
- },
- "meatballs": {
-  "ipa": "/ˈmiːtbɔːlz/",
-  "reading": "miytbolz",
-  "meanings": [
-   "köfte"
-  ],
-  "definition": "Small balls of minced meat.",
-  "example": "Turkish meatballs are delicious with yogurt."
  },
  "meet up": {
   "ipa": "/miːt ˈʌp/",
@@ -19611,16 +19546,6 @@
   ],
   "definition": "To care about or pay attention to others.",
   "example": "Always mind others and be polite."
- },
- "miss (opportunity)": {
-  "ipa": "/mɪs/",
-  "reading": "mis",
-  "meanings": [
-   "kaçırmak (fırsatı)",
-   "özlemek"
-  ],
-  "definition": "To fail to take advantage of a chance.",
-  "example": "Do not miss this great opportunity to travel."
  },
  "mixed kebab": {
   "ipa": "/mɪkst kɪˈbæb/",
@@ -20033,7 +19958,7 @@
   "ipa": "/rɪˈplaɪ/",
   "reading": "riplay",
   "meanings": [
-   "cevap"
+   "cevap vermek"
   ],
   "definition": "Say something in response to something.",
   "example": "I will reply to your email tomorrow."
@@ -20060,7 +19985,7 @@
   "ipa": "/ˈrəʊmæns/",
   "reading": "romens",
   "meanings": [
-   "romantik film"
+   "romantik"
   ],
   "definition": "A love affair or romantic story.",
   "example": "Their romance began in college."
@@ -20173,15 +20098,6 @@
   ],
   "definition": "Present food or drink to someone.",
   "example": "They serve breakfast at seven."
- },
- "share (secret)": {
-  "ipa": "/ʃeə(r) ˈsiːkrət/",
-  "reading": "şeer siikrit",
-  "meanings": [
-   "paylaşmak"
-  ],
-  "definition": "To tell private information to someone else.",
-  "example": "Do not share a secret with him."
  },
  "sharing": {
   "ipa": "/ˈʃeərɪŋ/",
@@ -20905,15 +20821,6 @@
   "definition": "Ready to help and support me at any time.",
   "example": "A true friend is always there for me."
  },
- "anything (to eat)": {
-  "ipa": "",
-  "reading": "eniting",
-  "meanings": [
-   "herhangi bir şey (yiyecek)"
-  ],
-  "definition": "Any kind of food.",
-  "example": "Would you like anything to eat?"
- },
  "bring (orders)": {
   "ipa": "",
   "reading": "bring",
@@ -20998,5 +20905,23 @@
   ],
   "definition": "To go and see someone.",
   "example": "We visit our grandparents every weekend."
+ },
+ "meatball": {
+  "ipa": "/ˈmiːtbɔːlz/",
+  "reading": "miytbolz",
+  "meanings": [
+   "köfte"
+  ],
+  "definition": "Small balls of minced meat.",
+  "example": "Turkish meatballs are delicious with yogurt."
+ },
+ "share": {
+  "ipa": "/ʃeə(r) ˈsiːkrət/",
+  "reading": "şeer siikrit",
+  "meanings": [
+   "paylaşmak"
+  ],
+  "definition": "To tell private information to someone else.",
+  "example": "Do not share a secret with him."
  }
 }
