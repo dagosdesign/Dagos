@@ -20923,5 +20923,1616 @@
   ],
   "definition": "To tell private information to someone else.",
   "example": "Do not share a secret with him."
+ },
+ "agree": {
+  "ipa": "/əˈɡriː/",
+  "reading": "egrii",
+  "meanings": [
+   "aynı fikirde olmak"
+  ],
+  "definition": "To have the same opinion about something",
+  "example": "We all agree on this plan."
+ },
+ "alone": {
+  "ipa": "/əˈləʊn/",
+  "reading": "elovn",
+  "meanings": [
+   "yalnız"
+  ],
+  "definition": "Having no one else present",
+  "example": "She likes to walk alone at night."
+ },
+ "amazing": {
+  "ipa": "/əˈmeɪzɪŋ/",
+  "reading": "emeziing",
+  "meanings": [
+   "şaşırtıcı",
+   "inanılmaz"
+  ],
+  "definition": "Causing great surprise or wonder",
+  "example": "That was an amazing performance."
+ },
+ "am/is/are afraid of": {
+  "ipa": "/əm ɪz ɑːr əˈfreɪd ɒv/",
+  "reading": "em iz ar efreyd ov",
+  "meanings": [
+   "-den korkmak"
+  ],
+  "definition": "Feeling fear about something",
+  "example": "Children are often afraid of the dark."
+ },
+ "am/is/are bad at": {
+  "ipa": "/əm ɪz ɑːr bæd ət/",
+  "reading": "em iz ar bed et",
+  "meanings": [
+   "-de kötü olmak"
+  ],
+  "definition": "Not skilled at doing something",
+  "example": "I am bad at math."
+ },
+ "am/is/are crazy about": {
+  "ipa": "/əm ɪz ɑːr ˈkreɪzi əˈbaʊt/",
+  "reading": "em iz ar kreyzi ebaut",
+  "meanings": [
+   "bayılmak",
+   "çok sevmek"
+  ],
+  "definition": "Very enthusiastic about someone or something",
+  "example": "They are crazy about football."
+ },
+ "am/is/are fond of": {
+  "ipa": "/əm ɪz ɑːr fɒnd ɒv/",
+  "reading": "em iz ar fond ov",
+  "meanings": [
+   "düşkün olmak"
+  ],
+  "definition": "Having a liking for someone or something",
+  "example": "She is fond of classical music."
+ },
+ "am/is/are good at": {
+  "ipa": "/əm ɪz ɑːr ɡʊd ət/",
+  "reading": "em iz ar gud et",
+  "meanings": [
+   "bir şeyde iyi olmak"
+  ],
+  "definition": "Having the skill to do something well",
+  "example": "You are good at painting."
+ },
+ "am/is/are in a hurry": {
+  "ipa": "/əm ɪz ɑːr ɪn ə ˈhʌri/",
+  "reading": "em iz ar in e hari",
+  "meanings": [
+   "acelesi olmak"
+  ],
+  "definition": "Acting or moving with great speed",
+  "example": "We are in a hurry to catch the train."
+ },
+ "am/is/are interested in": {
+  "ipa": "/əm ɪz ɑːr ˈɪntrəstɪd ɪn/",
+  "reading": "em iz ar intrıstıd in",
+  "meanings": [
+   "ilgi duymak"
+  ],
+  "definition": "Showing curiosity or concern about something",
+  "example": "He is interested in ancient history."
+ },
+ "am/is/are keen on": {
+  "ipa": "/əm ɪz ɑːr kiːn ɒn/",
+  "reading": "em iz ar kiin on",
+  "meanings": [
+   "meraklı",
+   "hevesli olmak"
+  ],
+  "definition": "Highly interested or enthusiastic about something",
+  "example": "She is keen on learning Spanish."
+ },
+ "am/is/are skilled at": {
+  "ipa": "/əm ɪz ɑːr skɪld ət/",
+  "reading": "em iz ar skıld et",
+  "meanings": [
+   "-de yetenekli olmak"
+  ],
+  "definition": "Having much ability or proficiency",
+  "example": "He is skilled at fixing cars."
+ },
+ "among": {
+  "ipa": "/əˈmʌŋ/",
+  "reading": "emang",
+  "meanings": [
+   "arasında"
+  ],
+  "definition": "Surrounded by something",
+  "example": "The house is hidden among the trees."
+ },
+ "arrive": {
+  "ipa": "/əˈraɪv/",
+  "reading": "erayv",
+  "meanings": [
+   "varmak",
+   "gitmek"
+  ],
+  "definition": "To reach a destination",
+  "example": "We will arrive in London by noon."
+ },
+ "author": {
+  "ipa": "/ˈɔːθər/",
+  "reading": "oother",
+  "meanings": [
+   "yazar"
+  ],
+  "definition": "A writer of a book or article",
+  "example": "The author signed copies of his novel."
+ },
+ "awful": {
+  "ipa": "/ˈɔːfəl/",
+  "reading": "oofal",
+  "meanings": [
+   "berbat"
+  ],
+  "definition": "Very bad or unpleasant.",
+  "example": "The weather was awful yesterday."
+ },
+ "backpack": {
+  "ipa": "/ˈbækpæk/",
+  "reading": "bekpek",
+  "meanings": [
+   "sırt çantası"
+  ],
+  "definition": "A bag carried on the back.",
+  "example": "He put his laptop in his backpack."
+ },
+ "band": {
+  "ipa": "/bænd/",
+  "reading": "bend",
+  "meanings": [
+   "müzik grubu"
+  ],
+  "definition": "A small group of musicians.",
+  "example": "The band played their most famous song."
+ },
+ "basic equipments": {
+  "ipa": "/ˈbeɪsɪk ɪˈkwɪpmənts/",
+  "reading": "beysik ikvipmınts",
+  "meanings": [
+   "temel ekipmanlar"
+  ],
+  "definition": "Essential tools needed for a task.",
+  "example": "Always pack basic equipments for camping."
+ },
+ "be late": {
+  "ipa": "/biː leɪt/",
+  "reading": "bi leyt",
+  "meanings": [
+   "geç kalmak"
+  ],
+  "definition": "Arrive after the scheduled time.",
+  "example": "Try not to be late for the meeting."
+ },
+ "beauty": {
+  "ipa": "/ˈbjuːti/",
+  "reading": "byuti",
+  "meanings": [
+   "güzellik"
+  ],
+  "definition": "The quality of being pleasing to look at.",
+  "example": "She admires the beauty of nature."
+ },
+ "behave fairly": {
+  "ipa": "/bɪˈheɪv ˈfɛəli/",
+  "reading": "biheyv ferli",
+  "meanings": [
+   "eşit davranmak"
+  ],
+  "definition": "Treat people equally and honestly.",
+  "example": "Teachers should behave fairly to all students."
+ },
+ "behavior": {
+  "ipa": "/bɪˈheɪvjə/",
+  "reading": "biheyvyır",
+  "meanings": [
+   "davranış"
+  ],
+  "definition": "The way someone acts.",
+  "example": "His behavior at the dinner was rude."
+ },
+ "biographical": {
+  "ipa": "/ˌbaɪəˈɡrɒfɪkəl/",
+  "reading": "bayografikıl",
+  "meanings": [
+   "biyografik"
+  ],
+  "definition": "Dealing with the life of a person.",
+  "example": "She read a biographical book about Einstein."
+ },
+ "book genre": {
+  "ipa": "/bʊk ˈʒɒnrə/",
+  "reading": "buk jonra",
+  "meanings": [
+   "kitap türü"
+  ],
+  "definition": "A category of literary composition.",
+  "example": "Science fiction is my favorite book genre."
+ },
+ "brush teeth": {
+  "ipa": "/brʌʃ tiːθ/",
+  "reading": "brash tiith",
+  "meanings": [
+   "diş fırçalamak"
+  ],
+  "definition": "Clean teeth with a toothbrush.",
+  "example": "Remember to brush teeth before sleeping."
+ },
+ "burn campfire": {
+  "ipa": "/bɜːn ˈkæmpfaɪə/",
+  "reading": "börn kempfayıır",
+  "meanings": [
+   "kamp ateşi yakmak"
+  ],
+  "definition": "Start a fire at a campsite.",
+  "example": "They gather around to burn campfire at night."
+ },
+ "can't stand": {
+  "ipa": "/kɑːnt stænd/",
+  "reading": "kaant stend",
+  "meanings": [
+   "katlanamamak",
+   "dayanamamak"
+  ],
+  "definition": "Dislike someone or something very much.",
+  "example": "I can't stand loud noises in the morning."
+ },
+ "cell phone": {
+  "ipa": "/sel fəʊn/",
+  "reading": "sel foon",
+  "meanings": [
+   "cep telefonu"
+  ],
+  "definition": "A portable telephone.",
+  "example": "He left his cell phone on the table."
+ },
+ "chat online": {
+  "ipa": "/tʃæt ˈɒnlaɪn/",
+  "reading": "çat onlayn",
+  "meanings": [
+   "online sohbet etmek"
+  ],
+  "definition": "Talk with someone over the internet",
+  "example": "I chat online with my friends every evening."
+ },
+ "class": {
+  "ipa": "/klɑːs/",
+  "reading": "klaas",
+  "meanings": [
+   "ders",
+   "sınıf"
+  ],
+  "definition": "A period of teaching or a group of students",
+  "example": "We have a math class at nine o'clock."
+ },
+ "compass": {
+  "ipa": "/ˈkʌmpəs/",
+  "reading": "kampas",
+  "meanings": [
+   "pusula"
+  ],
+  "definition": "An instrument used for finding direction",
+  "example": "She used a compass to find north in the woods."
+ },
+ "concert": {
+  "ipa": "/ˈkɒnsət/",
+  "reading": "konsat",
+  "meanings": [
+   "konser"
+  ],
+  "definition": "A live music performance",
+  "example": "We went to a great rock concert last night."
+ },
+ "cooking class": {
+  "ipa": "/ˈkʊkɪŋ klɑːs/",
+  "reading": "kukin klaas",
+  "meanings": [
+   "yemek kursu"
+  ],
+  "definition": "A lesson on how to prepare and cook food",
+  "example": "I want to join a cooking class to learn Italian dishes."
+ },
+ "countryside": {
+  "ipa": "/ˈkʌntrisɑɪd/",
+  "reading": "kantrisayd",
+  "meanings": [
+   "kırsal bölge"
+  ],
+  "definition": "Land away from towns and cities",
+  "example": "They love walking in the peaceful countryside."
+ },
+ "detective": {
+  "ipa": "/dɪˈtektɪv/",
+  "reading": "ditektiv",
+  "meanings": [
+   "dedektif"
+  ],
+  "definition": "Someone who solves crimes",
+  "example": "The detective looked for clues at the crime scene."
+ },
+ "dislike": {
+  "ipa": "/dɪsˈlɑɪk/",
+  "reading": "dislayk",
+  "meanings": [
+   "sevmemek"
+  ],
+  "definition": "Not like something",
+  "example": "I dislike waking up early on cold mornings."
+ },
+ "do for fun": {
+  "ipa": "/duː fɔː fʌn/",
+  "reading": "du for fan",
+  "meanings": [
+   "eğlence için yapmak"
+  ],
+  "definition": "Engage in an activity for enjoyment",
+  "example": "What do you like to do for fun on weekends?"
+ },
+ "do the laundry": {
+  "ipa": "/duː ðə ˈlɔːndri/",
+  "reading": "du dı londri",
+  "meanings": [
+   "çamaşır yıkamak"
+  ],
+  "definition": "Wash dirty clothes",
+  "example": "I need to do the laundry this afternoon."
+ },
+ "documentary": {
+  "ipa": "/ˌdɒkjʊˈmentəri/",
+  "reading": "dokyümentari",
+  "meanings": [
+   "belgesel"
+  ],
+  "definition": "A film or TV show providing factual information",
+  "example": "We watched an interesting documentary about whales."
+ },
+ "draw pictures": {
+  "ipa": "/drɔː ˈpɪktʃəz/",
+  "reading": "dro pıkçız",
+  "meanings": [
+   "resimler çizmek"
+  ],
+  "definition": "Create images with a pencil or pen",
+  "example": "The little girl loves to draw pictures of animals."
+ },
+ "drummer": {
+  "ipa": "/ˈdrʌmə(r)/",
+  "reading": "drâmı",
+  "meanings": [
+   "baterist",
+   "davulcu"
+  ],
+  "definition": "A person who plays the drums.",
+  "example": "The drummer played a great solo."
+ },
+ "educational": {
+  "ipa": "/ˌedʒuˈkeɪʃənl/",
+  "reading": "ecukeyşınl",
+  "meanings": [
+   "eğitici"
+  ],
+  "definition": "Providing education or instruction.",
+  "example": "This book is very educational."
+ },
+ "elderly relatives": {
+  "ipa": "/ˈeldəli ˈrelətɪvz/",
+  "reading": "eldarlı relativz",
+  "meanings": [
+   "yaşlı akrabalar"
+  ],
+  "definition": "Older members of your family.",
+  "example": "We should visit our elderly relatives often."
+ },
+ "energetic": {
+  "ipa": "/ˌenəˈdʒetɪk/",
+  "reading": "enercetik",
+  "meanings": [
+   "enerjik"
+  ],
+  "definition": "Having a lot of energy.",
+  "example": "Puppies are very energetic animals."
+ },
+ "enjoy": {
+  "ipa": "/ɪnˈdʒɔɪ/",
+  "reading": "incoy",
+  "meanings": [
+   "sevmek",
+   "zevk almak",
+   "hoşlanmak"
+  ],
+  "definition": "To take pleasure in something.",
+  "example": "I enjoy listening to music."
+ },
+ "enjoy nature": {
+  "ipa": "/ɪnˈdʒɔɪ ˈneɪtʃə(r)/",
+  "reading": "incoy neyçır",
+  "meanings": [
+   "doğanın tadını çıkarmak"
+  ],
+  "definition": "To appreciate the natural outdoors.",
+  "example": "We love to walk and enjoy nature."
+ },
+ "enjoyable": {
+  "ipa": "/ɪnˈdʒɔɪəbl/",
+  "reading": "incoyəbl",
+  "meanings": [
+   "eğlenceli",
+   "zevkli"
+  ],
+  "definition": "Giving pleasure or delight.",
+  "example": "We had a very enjoyable evening."
+ },
+ "everybody": {
+  "ipa": "/ˈevribɒdi/",
+  "reading": "evribodi",
+  "meanings": [
+   "herkes"
+  ],
+  "definition": "All people.",
+  "example": "Everybody enjoyed the party."
+ },
+ "excellent": {
+  "ipa": "/ˈeksələnt/",
+  "reading": "ekselant",
+  "meanings": [
+   "mükemmel"
+  ],
+  "definition": "Extremely good.",
+  "example": "She did an excellent job."
+ },
+ "exercise": {
+  "ipa": "/ˈeksəsaɪz/",
+  "reading": "eksırsayz",
+  "meanings": [
+   "egzersiz yapmak"
+  ],
+  "definition": "Physical activity to stay healthy.",
+  "example": "I exercise three times a week."
+ },
+ "fantasy": {
+  "ipa": "/ˈfæntəsi/",
+  "reading": "fæntəsi",
+  "meanings": [
+   "hayal ürünü"
+  ],
+  "definition": "An imagined impossible situation.",
+  "example": "She loves reading fantasy books."
+ },
+ "fascinating": {
+  "ipa": "/ˈfæsɪneɪtɪŋ/",
+  "reading": "fasineyting",
+  "meanings": [
+   "büyüleyici"
+  ],
+  "definition": "Extremely interesting.",
+  "example": "That documentary was simply fascinating."
+ },
+ "fashion": {
+  "ipa": "/ˈfæʃn/",
+  "reading": "feşn",
+  "meanings": [
+   "moda"
+  ],
+  "definition": "A popular style of clothes or behavior.",
+  "example": "She is very interested in fashion."
+ },
+ "fizzy drinks": {
+  "ipa": "/ˈfɪzi drɪŋks/",
+  "reading": "fizi drinks",
+  "meanings": [
+   "asitli içecekler"
+  ],
+  "definition": "Sweet beverages containing carbon dioxide bubbles.",
+  "example": "Children often love drinking fizzy drinks."
+ },
+ "folk music": {
+  "ipa": "/fəʊk ˈmjuːzɪk/",
+  "reading": "fouk müzik",
+  "meanings": [
+   "halk müziği"
+  ],
+  "definition": "Traditional music of a particular region.",
+  "example": "She enjoys listening to local folk music."
+ },
+ "follow rules": {
+  "ipa": "/ˈfɒləʊ ruːlz/",
+  "reading": "folo ruls",
+  "meanings": [
+   "kurallara uymak"
+  ],
+  "definition": "To obey established regulations.",
+  "example": "Everyone must follow rules at school."
+ },
+ "follow the news": {
+  "ipa": "/ˈfɒləʊ ðə njuːz/",
+  "reading": "folo dı nyuz",
+  "meanings": [
+   "haberleri takip etmek"
+  ],
+  "definition": "To stay informed about current events.",
+  "example": "I follow the news every morning."
+ },
+ "fond of": {
+  "ipa": "/fɒnd ɒv/",
+  "reading": "fond ov",
+  "meanings": [
+   "düşkün olmak"
+  ],
+  "definition": "Having a affection or liking for someone or something.",
+  "example": "He is very fond of cats."
+ },
+ "form": {
+  "ipa": "/fɔːm/",
+  "reading": "foom",
+  "meanings": [
+   "kurmak",
+   "oluşturmak"
+  ],
+  "definition": "The visible shape or configuration of something.",
+  "example": "Water can take the form of ice."
+ },
+ "free time": {
+  "ipa": "/friː taɪm/",
+  "reading": "fri taym",
+  "meanings": [
+   "boş zaman"
+  ],
+  "definition": "Time available for relaxation or hobbies.",
+  "example": "She reads books in her free time."
+ },
+ "gain rewards": {
+  "ipa": "/ɡeɪn rɪˈwɔːdz/",
+  "reading": "geyn rivoords",
+  "meanings": [
+   "ödül kazanmak"
+  ],
+  "definition": "To receive prizes for good performance.",
+  "example": "Hard work helps students gain rewards."
+ },
+ "get dressed": {
+  "ipa": "/ɡet drest/",
+  "reading": "get drest",
+  "meanings": [
+   "giyinmek"
+  ],
+  "definition": "To put on clothes.",
+  "example": "I wash my face and get dressed."
+ },
+ "get high grades": {
+  "ipa": "/ɡet haɪ ɡreɪdz/",
+  "reading": "get hay greydz",
+  "meanings": [
+   "yüksek not almak"
+  ],
+  "definition": "To achieve excellent marks in exams.",
+  "example": "She studies hard to get high grades."
+ },
+ "get on the bus": {
+  "ipa": "/ɡet ɒn ðə bʌs/",
+  "reading": "get on dı bas",
+  "meanings": [
+   "otobüse binmek"
+  ],
+  "definition": "To board a bus for travel.",
+  "example": "We need to get on the bus now."
+ },
+ "get up": {
+  "ipa": "/ɡet ʌp/",
+  "reading": "get ap",
+  "meanings": [
+   "uyanmak",
+   "kalkmak"
+  ],
+  "definition": "To rise from bed after sleeping.",
+  "example": "I usually get up at seven o'clock."
+ },
+ "give food": {
+  "ipa": "/ɡɪv fuːd/",
+  "reading": "giv fuud",
+  "meanings": [
+   "yiyecek vermek"
+  ],
+  "definition": "To provide food to someone or something.",
+  "example": "Please give food to the hungry street dogs."
+ },
+ "give homework": {
+  "ipa": "/ɡɪv ˈhəʊm.wɜːk/",
+  "reading": "giv höymvörk",
+  "meanings": [
+   "ödev vermek"
+  ],
+  "definition": "To assign school tasks to be done at home.",
+  "example": "Teachers usually give homework to students on Fridays."
+ },
+ "go on vacation": {
+  "ipa": "/ɡəʊ ɒn vəˈkeɪ.ʃən/",
+  "reading": "göu on veykeyşın",
+  "meanings": [
+   "tatile gitmek"
+  ],
+  "definition": "To take a trip for pleasure or relaxation.",
+  "example": "We plan to go on vacation to Spain this summer."
+ },
+ "go trekking": {
+  "ipa": "/ɡəʊ ˈtrek.ɪŋ/",
+  "reading": "göu treking",
+  "meanings": [
+   "yürüyüşe gitmek"
+  ],
+  "definition": "To go on a long difficult journey on foot.",
+  "example": "They want to go trekking in the mountains next week."
+ },
+ "greet": {
+  "ipa": "/ɡriːt/",
+  "reading": "griit",
+  "meanings": [
+   "selamlamak"
+  ],
+  "definition": "To welcome someone with words or actions.",
+  "example": "I always greet my neighbors when I see them."
+ },
+ "growing flowers": {
+  "ipa": "/ˈɡrəʊ.ɪŋ ˈflaʊ.əz/",
+  "reading": "gröu-ing flavırz",
+  "meanings": [
+   "çiçek yetiştirmek"
+  ],
+  "definition": "The activity of planting and nurturing flowers.",
+  "example": "She spends her free time growing flowers."
+ },
+ "gym": {
+  "ipa": "/dʒɪm/",
+  "reading": "cim",
+  "meanings": [
+   "spor salonu"
+  ],
+  "definition": "A room or building equipped for physical exercise.",
+  "example": "I go to the gym three times a week."
+ },
+ "hang out": {
+  "ipa": "/hæŋ aʊt/",
+  "reading": "heng aut",
+  "meanings": [
+   "gezmek",
+   "takılmak"
+  ],
+  "definition": "To spend time relaxing with friends.",
+  "example": "Teenagers like to hang out at the shopping mall."
+ },
+ "hate": {
+  "ipa": "/heɪt/",
+  "reading": "heyt",
+  "meanings": [
+   "nefret etmek"
+  ],
+  "definition": "To dislike something or someone intensely.",
+  "example": "I hate cold weather during the winter."
+ },
+ "have breakfast": {
+  "ipa": "/hæv ˈbrek.fəst/",
+  "reading": "hev brekfıst",
+  "meanings": [
+   "kahvaltı yapmak"
+  ],
+  "definition": "To eat the first meal of the day.",
+  "example": "We usually have breakfast at eight in the morning."
+ },
+ "have dinner": {
+  "ipa": "/hæv ˈdɪn.ər/",
+  "reading": "hev dınır",
+  "meanings": [
+   "akşam yemeği yemek"
+  ],
+  "definition": "To eat the main meal of the day.",
+  "example": "They usually have dinner together as a family."
+ },
+ "have enormous breakfast": {
+  "ipa": "/hæv ɪˈnɔː.məs ˈbrek.fəst/",
+  "reading": "hev inormıs brekfıst",
+  "meanings": [
+   "büyük kahvaltı yapmak"
+  ],
+  "definition": "To eat a very large morning meal.",
+  "example": "They like to have enormous breakfast plates on Sundays."
+ },
+ "have lunch": {
+  "ipa": "/hæv lʌntʃ/",
+  "reading": "hev lanç",
+  "meanings": [
+   "öğle yemeği yemek"
+  ],
+  "definition": "To eat a meal in the middle of day.",
+  "example": "Let's have lunch at that new Italian restaurant."
+ },
+ "high school": {
+  "ipa": "/ˈhaɪ .skuːl/",
+  "reading": "hay skuul",
+  "meanings": [
+   "lise"
+  ],
+  "definition": "A school for students aged 14 to 18.",
+  "example": "My brother will start high school next term."
+ },
+ "hiking": {
+  "ipa": "/ˈhaɪkɪŋ/",
+  "reading": "hayking",
+  "meanings": [
+   "doğa yürüyüşü"
+  ],
+  "definition": "Walking for long distances in the countryside.",
+  "example": "We love hiking in the mountains during autumn."
+ },
+ "history": {
+  "ipa": "/ˈhɪstəri/",
+  "reading": "histöri",
+  "meanings": [
+   "tarih"
+  ],
+  "definition": "The study of past events.",
+  "example": "She enjoys reading books about European history."
+ },
+ "horizon": {
+  "ipa": "/həˈraɪzn/",
+  "reading": "hərayzın",
+  "meanings": [
+   "ufuk"
+  ],
+  "definition": "The line where the earth and sky meet.",
+  "example": "The sun slowly sank below the horizon."
+ },
+ "housework": {
+  "ipa": "/ˈhaʊswɜːk/",
+  "reading": "hausvörk",
+  "meanings": [
+   "ev işi"
+  ],
+  "definition": "Work done around the house, like cleaning.",
+  "example": "They divide the housework evenly between them."
+ },
+ "how often": {
+  "ipa": "/haʊ ˈɒfn/",
+  "reading": "hau ofın",
+  "meanings": [
+   "ne sıklıkla"
+  ],
+  "definition": "Asking about the frequency of an action.",
+  "example": "How often do you visit your grandparents?"
+ },
+ "in my opinion": {
+  "ipa": "/ɪn maɪ əˈpɪnjən/",
+  "reading": "in may əpinyın",
+  "meanings": [
+   "benim fikrimce"
+  ],
+  "definition": "Used to express one's personal view.",
+  "example": "In my opinion, this is the best restaurant in town."
+ },
+ "indoor activity": {
+  "ipa": "/ˈɪndɔː ækˈtɪvəti/",
+  "reading": "indor aktiviti",
+  "meanings": [
+   "içeride yapılan aktiviteler"
+  ],
+  "definition": "An activity done inside a building.",
+  "example": "Chess is a great indoor activity for rainy days."
+ },
+ "interview": {
+  "ipa": "/ˈɪntəvjuː/",
+  "reading": "intörvyü",
+  "meanings": [
+   "röportaj",
+   "görüşme"
+  ],
+  "definition": "A formal meeting where someone is questioned.",
+  "example": "He has a job interview tomorrow morning."
+ },
+ "item": {
+  "ipa": "/ˈaɪtəm/",
+  "reading": "aytım",
+  "meanings": [
+   "eşya"
+  ],
+  "definition": "An individual article or unit.",
+  "example": "Please check every item on your shopping list."
+ },
+ "join": {
+  "ipa": "/dʒɔɪn/",
+  "reading": "coyn",
+  "meanings": [
+   "katılmak"
+  ],
+  "definition": "To come together or become a member.",
+  "example": "Would you like to join our club?"
+ },
+ "joke": {
+  "ipa": "/dʒəʊk/",
+  "reading": "cök",
+  "meanings": [
+   "şaka"
+  ],
+  "definition": "A thing that someone says to cause amusement.",
+  "example": "He told a funny joke that made everyone laugh."
+ },
+ "keep up with": {
+  "ipa": "/kiːp ʌp wɪð/",
+  "reading": "kip ap viz",
+  "meanings": [
+   "ayak uydurmak",
+   "takip etmek"
+  ],
+  "definition": "To move or make progress at the same rate.",
+  "example": "It is hard to keep up with the latest fashion trends."
+ },
+ "knitting": {
+  "ipa": "/ˈnɪtɪŋ/",
+  "reading": "niting",
+  "meanings": [
+   "örgü"
+  ],
+  "definition": "Making fabric from yarn using needles.",
+  "example": "She enjoys knitting warm sweaters for winter."
+ },
+ "language center": {
+  "ipa": "/ˈlæŋɡwɪdʒ ˈsentə(r)/",
+  "reading": "længwij sentır",
+  "meanings": [
+   "dil merkezi"
+  ],
+  "definition": "An institution where foreign languages are taught.",
+  "example": "He enrolled in a local language center to learn Spanish."
+ },
+ "laughable": {
+  "ipa": "/ˈlɑːfəbl/",
+  "reading": "lafebl",
+  "meanings": [
+   "gülünç",
+   "komik"
+  ],
+  "definition": "So foolish or ridiculous as to be amusing.",
+  "example": "His excuse for being late was simply laughable."
+ },
+ "lazy": {
+  "ipa": "/ˈleɪzi/",
+  "reading": "leyzi",
+  "meanings": [
+   "tembel"
+  ],
+  "definition": "Unwilling to work or use energy.",
+  "example": "He is too lazy to clean his room."
+ },
+ "learn new things": {
+  "ipa": "/lɜːn njuː θɪŋz/",
+  "reading": "lörn nyu tingz",
+  "meanings": [
+   "yeni şeyler öğrenmek"
+  ],
+  "definition": "Acquire fresh knowledge or experiences.",
+  "example": "Reading books is a great way to learn new things."
+ },
+ "loud": {
+  "ipa": "/laʊd/",
+  "reading": "laud",
+  "meanings": [
+   "sesli",
+   "gürültülü"
+  ],
+  "definition": "Producing much noise.",
+  "example": "The music was too loud to sleep."
+ },
+ "martial arts": {
+  "ipa": "/ˌmɑːʃl ˈɑːts/",
+  "reading": "marşal arts",
+  "meanings": [
+   "dövüş sanatları"
+  ],
+  "definition": "Various sports of combat and self-defense.",
+  "example": "He studies martial arts to improve his focus."
+ },
+ "miss": {
+  "ipa": "/mɪs/",
+  "reading": "mis",
+  "meanings": [
+   "kaçırmak",
+   "özlemek"
+  ],
+  "definition": "Feel regret at the absence of someone or something.",
+  "example": "I miss my family when I travel."
+ },
+ "nature": {
+  "ipa": "/ˈneɪtʃə(r)/",
+  "reading": "neyçö",
+  "meanings": [
+   "doğa"
+  ],
+  "definition": "The physical world and all living things in it.",
+  "example": "She loves spending time in nature during weekends."
+ },
+ "newspaper": {
+  "ipa": "/ˈnjuːzpeɪpə(r)/",
+  "reading": "nyuzpeypö",
+  "meanings": [
+   "gazete"
+  ],
+  "definition": "A printed publication containing news and articles.",
+  "example": "My grandfather reads the newspaper every morning."
+ },
+ "no way": {
+  "ipa": "/nəʊ ˈweɪ/",
+  "reading": "no wey",
+  "meanings": [
+   "mümkün değil"
+  ],
+  "definition": "Used to strongly express refusal or disbelief.",
+  "example": "No way am I jumping out of that airplane."
+ },
+ "on foot": {
+  "ipa": "/ɒn fʊt/",
+  "reading": "on fut",
+  "meanings": [
+   "yürüyerek"
+  ],
+  "definition": "Walking rather than using a vehicle.",
+  "example": "It is faster to get there on foot during traffic."
+ },
+ "once": {
+  "ipa": "/wʌns/",
+  "reading": "wans",
+  "meanings": [
+   "bir kez"
+  ],
+  "definition": "One single time or on one occasion.",
+  "example": "I visit my grandparents at least once a month."
+ },
+ "outdoor activity": {
+  "ipa": "/ˈaʊtdɔː ækˈtɪvɪti/",
+  "reading": "avtdoor aktiviti",
+  "meanings": [
+   "dışarıda yapılan aktiviteler"
+  ],
+  "definition": "An activity done outside.",
+  "example": "Hiking is a popular outdoor activity."
+ },
+ "pay attention": {
+  "ipa": "/peɪ əˈtɛnʃən/",
+  "reading": "pey atenşın",
+  "meanings": [
+   "dikkat etmek",
+   "önem vermek"
+  ],
+  "definition": "Focus on someone or something.",
+  "example": "Please pay attention to the teacher."
+ },
+ "patriot": {
+  "ipa": "/ˈpætriət/",
+  "reading": "petriyot",
+  "meanings": [
+   "vatansever kişi"
+  ],
+  "definition": "A person who loves their country.",
+  "example": "He is a true patriot."
+ },
+ "play": {
+  "ipa": "/pleɪ/",
+  "reading": "pley",
+  "meanings": [
+   "tiyatro oyunu"
+  ],
+  "definition": "Engage in games or recreation.",
+  "example": "Children love to play outside."
+ },
+ "pleasure": {
+  "ipa": "/ˈplɛʒə/",
+  "reading": "plejır",
+  "meanings": [
+   "zevk"
+  ],
+  "definition": "A feeling of happy satisfaction.",
+  "example": "It was a pleasure to meet you."
+ },
+ "practice skating": {
+  "ipa": "/ˈpræktɪs ˈskeɪtɪŋ/",
+  "reading": "praktis skeyting",
+  "meanings": [
+   "paten çalışmak"
+  ],
+  "definition": "Do skating repeatedly to improve.",
+  "example": "I practice skating every weekend."
+ },
+ "prepare": {
+  "ipa": "/prɪˈpɛə/",
+  "reading": "pripeer",
+  "meanings": [
+   "hazırlamak"
+  ],
+  "definition": "Make something ready for use.",
+  "example": "We need to prepare for the test."
+ },
+ "prepare dinner": {
+  "ipa": "/prɪˈpɛə ˈdɪnə/",
+  "reading": "pripeer dinır",
+  "meanings": [
+   "akşam yemeğini hazırlamak"
+  ],
+  "definition": "Cook and make the evening meal ready.",
+  "example": "I will prepare dinner tonight."
+ },
+ "pretty good": {
+  "ipa": "/ˈprɪti gʊd/",
+  "reading": "priti gud",
+  "meanings": [
+   "oldukça iyi"
+  ],
+  "definition": "Fairly good or satisfactory.",
+  "example": "His English is pretty good."
+ },
+ "primary school": {
+  "ipa": "/ˈpraɪməri skuːl/",
+  "reading": "praymari skul",
+  "meanings": [
+   "ilkokul"
+  ],
+  "definition": "School for young children aged 5 to 11.",
+  "example": "She works as a primary school teacher."
+ },
+ "protect cultural heritage": {
+  "ipa": "/prəˈtɛkt ˈkʌltʃərəl ˈhɛrɪtɪdʒ/",
+  "reading": "protekt kültçərəl heritij",
+  "meanings": [
+   "kültürel mirası korumak"
+  ],
+  "definition": "Safeguard historical traditions and monuments.",
+  "example": "We must protect cultural heritage for future generations."
+ },
+ "rainbow": {
+  "ipa": "/ˈreɪnbəʊ/",
+  "reading": "reynbo",
+  "meanings": [
+   "gökkuşağı"
+  ],
+  "definition": "A colorful arch in the sky.",
+  "example": "A rainbow appeared after the rain."
+ },
+ "realistic": {
+  "ipa": "/rɪəˈlɪstɪk/",
+  "reading": "riyalistik",
+  "meanings": [
+   "gerçekçi"
+  ],
+  "definition": "Having a sensible idea of what is possible.",
+  "example": "We need to set realistic goals."
+ },
+ "recipe": {
+  "ipa": "/ˈrɛsɪpi/",
+  "reading": "resipi",
+  "meanings": [
+   "yemek tarifi"
+  ],
+  "definition": "Instructions for cooking a dish.",
+  "example": "Can you give me this cake recipe?"
+ },
+ "rest": {
+  "ipa": "/rest/",
+  "reading": "rest",
+  "meanings": [
+   "dinlenmek"
+  ],
+  "definition": "Cease work or movement in order to relax.",
+  "example": "You need to rest after such a long journey."
+ },
+ "result": {
+  "ipa": "/rɪˈzʌlt/",
+  "reading": "rizalt",
+  "meanings": [
+   "sonuç"
+  ],
+  "definition": "A consequence of an action or event.",
+  "example": "Hard work brings a good result in the exam."
+ },
+ "riding bike": {
+  "ipa": "/ˈraɪdɪŋ baɪk/",
+  "reading": "rayding bayk",
+  "meanings": [
+   "bisiklet sürme"
+  ],
+  "definition": "Traveling on a bicycle for fun or transport.",
+  "example": "Riding bike is great exercise for your legs."
+ },
+ "rope": {
+  "ipa": "/rəʊp/",
+  "reading": "roup",
+  "meanings": [
+   "ip"
+  ],
+  "definition": "A length of thick strong cord.",
+  "example": "He used a strong rope to tie the box."
+ },
+ "routine": {
+  "ipa": "/ruːˈtiːn/",
+  "reading": "rutin",
+  "meanings": [
+   "rutin",
+   "sıradan"
+  ],
+  "definition": "A sequence of actions regularly followed.",
+  "example": "Morning exercise is part of my daily routine."
+ },
+ "save money": {
+  "ipa": "/seɪv ˈmʌni/",
+  "reading": "seyv mani",
+  "meanings": [
+   "para biriktirmek"
+  ],
+  "definition": "To keep money for future use.",
+  "example": "I want to save money to buy a new car."
+ },
+ "scuba diving": {
+  "ipa": "/ˈskuːbə ˈdaɪvɪŋ/",
+  "reading": "skuba dayving",
+  "meanings": [
+   "sualtı dalışı"
+  ],
+  "definition": "Swimming underwater with breathing equipment.",
+  "example": "Scuba diving lets you see amazing sea creatures."
+ },
+ "seldom": {
+  "ipa": "/ˈseldəm/",
+  "reading": "seldım",
+  "meanings": [
+   "nadiren"
+  ],
+  "definition": "Not often; rarely.",
+  "example": "They seldom eat fast food during the week."
+ },
+ "set goal": {
+  "ipa": "/set ɡəʊl/",
+  "reading": "set goul",
+  "meanings": [
+   "hedef belirlemek"
+  ],
+  "definition": "To decide on something you want to achieve.",
+  "example": "You must set goal to succeed in your career."
+ },
+ "shake hands": {
+  "ipa": "/ʃeɪk hændz/",
+  "reading": "şeyk hendz",
+  "meanings": [
+   "el sıkışmak"
+  ],
+  "definition": "Grasp each other's hands as a greeting.",
+  "example": "The two managers agreed to shake hands on the deal."
+ },
+ "share duties": {
+  "ipa": "/ʃeə ˈdjuːtiz/",
+  "reading": "şer dyutiz",
+  "meanings": [
+   "görevleri paylaşmak"
+  ],
+  "definition": "To divide tasks between people.",
+  "example": "Family members should share duties at home."
+ },
+ "shop in stores": {
+  "ipa": "/ʃɒp ɪn stɔːz/",
+  "reading": "şop in storz",
+  "meanings": [
+   "mağazada alışveriş yapmak"
+  ],
+  "definition": "To buy things physically in shops.",
+  "example": "I prefer to shop in stores rather than online."
+ },
+ "sing a song": {
+  "ipa": "/sɪŋ ə sɒŋ/",
+  "reading": "sing e song",
+  "meanings": [
+   "şarkı söylemek"
+  ],
+  "definition": "To produce musical sounds with your voice.",
+  "example": "She loves to sing a song at parties."
+ },
+ "skydiving": {
+  "ipa": "/ˈskaɪdaɪvɪŋ/",
+  "reading": "skaydayving",
+  "meanings": [
+   "gökyüzü dalışı"
+  ],
+  "definition": "Jumping from an airplane with a parachute.",
+  "example": "Skydiving is an extreme and thrilling sport."
+ },
+ "snob": {
+  "ipa": "/snɒb/",
+  "reading": "snob",
+  "meanings": [
+   "burnu havada",
+   "züppe"
+  ],
+  "definition": "Someone who looks down on others.",
+  "example": "He acts like a snob toward poor people."
+ },
+ "snowboard": {
+  "ipa": "/ˈsnəʊbɔːd/",
+  "reading": "snowbord",
+  "meanings": [
+   "kayak"
+  ],
+  "definition": "To slide down snow on a board.",
+  "example": "They love to snowboard in the winter."
+ },
+ "soap opera": {
+  "ipa": "/ˈsəʊp ɒprə/",
+  "reading": "sop opra",
+  "meanings": [
+   "dizi film"
+  ],
+  "definition": "A serial television drama about daily lives.",
+  "example": "My grandmother watches every soap opera on TV."
+ },
+ "soccer": {
+  "ipa": "/ˈsɒkə/",
+  "reading": "sokır",
+  "meanings": [
+   "futbol"
+  ],
+  "definition": "A team game played with a round ball.",
+  "example": "The children play soccer in the park."
+ },
+ "spend time": {
+  "ipa": "/spend taɪm/",
+  "reading": "spend taym",
+  "meanings": [
+   "zaman geçirmek"
+  ],
+  "definition": "To pass time doing something.",
+  "example": "We spend time reading books together."
+ },
+ "spend time with relatives": {
+  "ipa": "/spend taɪm wɪð ˈrelətɪvz/",
+  "reading": "spend taym vid relativz",
+  "meanings": [
+   "akrabalarla zaman geçirmek"
+  ],
+  "definition": "To socialize with family members.",
+  "example": "I like to spend time with relatives on weekends."
+ },
+ "store": {
+  "ipa": "/stɔː/",
+  "reading": "stor",
+  "meanings": [
+   "mağaza"
+  ],
+  "definition": "A shop where goods are sold.",
+  "example": "She works in a clothing store downtown."
+ },
+ "study": {
+  "ipa": "/ˈstʌdi/",
+  "reading": "stadi",
+  "meanings": [
+   "çalışmak",
+   "okumak"
+  ],
+  "definition": "To learn about a subject.",
+  "example": "Students study hard for their exams."
+ },
+ "surf on the internet": {
+  "ipa": "/sɜːf ɒn ði ˈɪntənet/",
+  "reading": "sörf on di internet",
+  "meanings": [
+   "internette gezinmek"
+  ],
+  "definition": "To browse websites on the web.",
+  "example": "He likes to surf on the internet every night."
+ },
+ "take a bath": {
+  "ipa": "/teɪk ə bɑːθ/",
+  "reading": "teyk e baat",
+  "meanings": [
+   "banyo yapmak"
+  ],
+  "definition": "To wash your body in a tub.",
+  "example": "The baby loves to take a bath with toys."
+ },
+ "take a nap": {
+  "ipa": "/teɪk ə næp/",
+  "reading": "teyk e nap",
+  "meanings": [
+   "şekerleme yapmak",
+   "kestirmek"
+  ],
+  "definition": "To sleep for a short time.",
+  "example": "I usually take a nap after lunch."
+ },
+ "take classes": {
+  "ipa": "/teɪk ˈklɑːsɪz/",
+  "reading": "teyk klasiz",
+  "meanings": [
+   "ders almak"
+  ],
+  "definition": "To attend lessons to learn a subject.",
+  "example": "I want to take classes to learn Spanish."
+ },
+ "take good marks": {
+  "ipa": "/teɪk ɡʊd mɑːks/",
+  "reading": "teyk gud maks",
+  "meanings": [
+   "iyi not almak"
+  ],
+  "definition": "To achieve high grades in school.",
+  "example": "She studies hard to take good marks."
+ },
+ "talent": {
+  "ipa": "/ˈtælənt/",
+  "reading": "talent",
+  "meanings": [
+   "kabiliyet",
+   "yetenek"
+  ],
+  "definition": "A natural ability to do something well.",
+  "example": "He has a great talent for music."
+ },
+ "teen life": {
+  "ipa": "/tiːn laɪf/",
+  "reading": "tiin layf",
+  "meanings": [
+   "genç yaşamı",
+   "ergen yaşamı"
+  ],
+  "definition": "The lifestyle and experiences of teenagers.",
+  "example": "Teen life can be very stressful sometimes."
+ },
+ "teenager": {
+  "ipa": "/ˈtiːneɪdʒə(r)/",
+  "reading": "tiineycer",
+  "meanings": [
+   "genç",
+   "ergen"
+  ],
+  "definition": "A person aged between 13 and 19.",
+  "example": "Every teenager faces new challenges today."
+ },
+ "tent": {
+  "ipa": "/tent/",
+  "reading": "tent",
+  "meanings": [
+   "çadır"
+  ],
+  "definition": "A shelter made of canvas for camping.",
+  "example": "We pitched our tent near the lake."
+ },
+ "terrible": {
+  "ipa": "/ˈterəbl/",
+  "reading": "terebul",
+  "meanings": [
+   "berbat",
+   "çok kötü"
+  ],
+  "definition": "Extremely bad or serious.",
+  "example": "The weather was terrible during our trip."
+ },
+ "terrific": {
+  "ipa": "/təˈrɪfɪk/",
+  "reading": "terifik",
+  "meanings": [
+   "müthiş"
+  ],
+  "definition": "Of great size, amount, or intensity, or excellent.",
+  "example": "We had a terrific time at the party."
+ },
+ "tidying the room": {
+  "ipa": "/ˈtaɪdiɪŋ ðə ruːm/",
+  "reading": "tayding dı rum",
+  "meanings": [
+   "odayı toplamak"
+  ],
+  "definition": "Making a room neat and clean.",
+  "example": "She spends her morning tidying the room."
+ },
+ "to be honest": {
+  "ipa": "/tuː biː ˈɒnɪst/",
+  "reading": "tu bi onist",
+  "meanings": [
+   "dürüst olmak gerekirse"
+  ],
+  "definition": "Used to express one's true feelings frankly.",
+  "example": "To be honest, I did not like the movie."
+ },
+ "top": {
+  "ipa": "/tɒp/",
+  "reading": "top",
+  "meanings": [
+   "zirve",
+   "en çok"
+  ],
+  "definition": "The highest part or point of something.",
+  "example": "We reached the top of the mountain."
+ },
+ "torch": {
+  "ipa": "/tɔːtʃ/",
+  "reading": "torç",
+  "meanings": [
+   "el feneri"
+  ],
+  "definition": "A portable battery-powered electric lamp.",
+  "example": "Turn on the torch in the dark."
+ },
+ "traditional meal": {
+  "ipa": "/trəˈdɪʃənl miːl/",
+  "reading": "tradişonıl miil",
+  "meanings": [
+   "geleneksel yemek"
+  ],
+  "definition": "A customary dish of a culture.",
+  "example": "We ate a traditional meal at the restaurant."
+ },
+ "training": {
+  "ipa": "/ˈtreɪnɪŋ/",
+  "reading": "treyning",
+  "meanings": [
+   "eğitim",
+   "antrenman"
+  ],
+  "definition": "The action of teaching or learning a skill.",
+  "example": "Athletes need daily training to win."
+ },
+ "travel": {
+  "ipa": "/ˈtrævl/",
+  "reading": "trevul",
+  "meanings": [
+   "seyahat"
+  ],
+  "definition": "To make a journey, typically abroad.",
+  "example": "I love to travel to new countries."
+ },
+ "trekking": {
+  "ipa": "/ˈtrekɪŋ/",
+  "reading": "treking",
+  "meanings": [
+   "doğa yürüyüşü"
+  ],
+  "definition": "Going on a long, arduous journey on foot.",
+  "example": "They went trekking in the mountains."
+ },
+ "trendy": {
+  "ipa": "/ˈtrendi/",
+  "reading": "trendi",
+  "meanings": [
+   "moda",
+   "tarz",
+   "son moda"
+  ],
+  "definition": "Very fashionable and modern.",
+  "example": "She always wears trendy clothes."
+ },
+ "try": {
+  "ipa": "/traɪ/",
+  "reading": "tray",
+  "meanings": [
+   "denemek",
+   "çabalamak"
+  ],
+  "definition": "To attempt to do something.",
+  "example": "I will try to finish this work today."
+ },
+ "twice": {
+  "ipa": "/twaɪs/",
+  "reading": "tways",
+  "meanings": [
+   "iki kez"
+  ],
+  "definition": "Two times.",
+  "example": "I visit my parents twice a week."
+ },
+ "types of music": {
+  "ipa": "/taɪps əv ˈmjuːzɪk/",
+  "reading": "tayps ov müzik",
+  "meanings": [
+   "müzik türleri"
+  ],
+  "definition": "Different categories or genres of music.",
+  "example": "What types of music do you like?"
+ },
+ "typical day": {
+  "ipa": "/ˈtɪpɪkl deɪ/",
+  "reading": "tipik dey",
+  "meanings": [
+   "sıradan gün"
+  ],
+  "definition": "A normal day with routine activities.",
+  "example": "My typical day starts at seven in the morning."
+ },
+ "unbearable": {
+  "ipa": "/ʌnˈbeərəbl/",
+  "reading": "anberebl",
+  "meanings": [
+   "katlanılmaz",
+   "tahammül edilemez"
+  ],
+  "definition": "Too unpleasant or painful to endure.",
+  "example": "The heat today is unbearable."
+ },
+ "visit": {
+  "ipa": "/ˈvɪzɪt/",
+  "reading": "vizit",
+  "meanings": [
+   "ziyaret etmek"
+  ],
+  "definition": "To go to see someone or somewhere.",
+  "example": "We plan to visit our grandparents this weekend."
+ },
+ "vocalist": {
+  "ipa": "/ˈvəʊkəlɪst/",
+  "reading": "vokalist",
+  "meanings": [
+   "şarkıcı",
+   "vokalist"
+  ],
+  "definition": "A singer in a band or music group.",
+  "example": "The lead vocalist has a powerful voice."
+ },
+ "voice": {
+  "ipa": "/vɔɪs/",
+  "reading": "voys",
+  "meanings": [
+   "ses"
+  ],
+  "definition": "The sound made in a person's throat.",
+  "example": "She has a soft and pleasant voice."
+ },
+ "wake up": {
+  "ipa": "/weɪk ʌp/",
+  "reading": "weyk ap",
+  "meanings": [
+   "uyanmak",
+   "kalkmak"
+  ],
+  "definition": "To stop sleeping.",
+  "example": "I wake up early every morning."
+ },
+ "weekdays": {
+  "ipa": "/ˈwiːkdeɪz/",
+  "reading": "wiykdeyz",
+  "meanings": [
+   "hafta içi günler"
+  ],
+  "definition": "Monday to Friday.",
+  "example": "I go to work on weekdays."
+ },
+ "weekend": {
+  "ipa": "/ˌwiːkˈend/",
+  "reading": "wiykend",
+  "meanings": [
+   "hafta sonu"
+  ],
+  "definition": "Saturday and Sunday.",
+  "example": "We like to relax at the weekend."
+ },
+ "what kind": {
+  "ipa": "/wɒt kaɪnd/",
+  "reading": "wat kaynd",
+  "meanings": [
+   "ne tür",
+   "ne çeşit"
+  ],
+  "definition": "Asking about the type of something.",
+  "example": "What kind of car do you drive?"
+ },
+ "wonderful": {
+  "ipa": "/ˈwʌndəfl/",
+  "reading": "wandafl",
+  "meanings": [
+   "harika"
+  ],
+  "definition": "Extremely good or marvelous.",
+  "example": "We had a wonderful time on holiday."
+ },
+ "work out": {
+  "ipa": "/wɜːk aʊt/",
+  "reading": "wörk aut",
+  "meanings": [
+   "antrenman yapmak"
+  ],
+  "definition": "To exercise to keep fit.",
+  "example": "I work out at the gym three times a week."
  }
 }
