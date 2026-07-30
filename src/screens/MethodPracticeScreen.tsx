@@ -890,32 +890,88 @@ async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashca
   }
 }
 
-// Offline/no-key fallbacks so the modes are never dead.
+// Offline/no-key fallbacks so the modes are never dead. English only, no
+// time-expression openers, several rotating templates so sessions feel varied.
+function templateIndex(card: Flashcard, count: number): number {
+  let h = 0;
+  for (const ch of card.id + card.word) h = (h * 31 + ch.charCodeAt(0)) % 997;
+  return h % count;
+}
+
 function fallbackStory(card: Flashcard): StoryContent {
-  return {
-    title: `A day with "${card.word}"`,
-    story:
-      `Last week, my friend Ali sent me a message about English class. ` +
-      `Our teacher taught us a new word: "${card.word}". At first, I did not understand it, ` +
-      `so I opened my notebook and wrote it down.\n\n` +
-      `Then the teacher gave us an example: "${card.exampleSentence}" ` +
-      `Suddenly everything was clear! Now I try to use "${card.word}" every day, ` +
-      `because using a word many times is the best way to remember it.`,
-  };
+  const w = card.word;
+  const ex = card.exampleSentence;
+  const templates: StoryContent[] = [
+    {
+      title: 'The Word on the Whiteboard',
+      story:
+        `Mert walked into class and saw "${w}" written in big letters on the whiteboard. ` +
+        `The teacher smiled and asked if anyone could use it in a sentence. The room went quiet.\n\n` +
+        `Mert raised his hand slowly and said: "${ex}" The teacher nodded, clearly pleased, ` +
+        `and the whole class wrote "${w}" into their notebooks. On the way home, Mert repeated ` +
+        `"${w}" to himself three more times, because words you say out loud are words you keep.`,
+    },
+    {
+      title: 'A Note Inside a Book',
+      story:
+        `Inside a second-hand book, Emre found a small note left by a stranger. At the top of the ` +
+        `note someone had written "${w}" and underlined it twice.\n\n` +
+        `Below it, in careful handwriting, was a single sentence: "${ex}" Emre read it a few times ` +
+        `and smiled. Someone else had once worked hard to learn "${w}", just like him. He kept the ` +
+        `note as a bookmark, and after that day "${w}" was a word he never forgot.`,
+    },
+    {
+      title: 'The Vocabulary Match',
+      story:
+        `The English club was holding its weekly vocabulary match, and the final card said "${w}". ` +
+        `Two teams stared at it, whispering possible sentences to each other.\n\n` +
+        `Deniz stood up for the blue team and said calmly: "${ex}" The judges exchanged a look and ` +
+        `raised their score cards — full points. Everyone clapped, and even the losing team agreed ` +
+        `that nobody in school would ever misuse "${w}" again. Learning "${w}" had never felt so exciting.`,
+    },
+  ];
+  return templates[templateIndex(card, templates.length)];
 }
 
 function fallbackDialogue(card: Flashcard): DialogueContent {
-  return {
-    title: `Talking about "${card.word}"`,
-    lines: [
-      { speaker: 'A', text: `Hey! Do you know the word "${card.word}"?` },
-      { speaker: 'B', text: `Hmm, I've heard it, but I'm not sure what it means.` },
-      { speaker: 'A', text: `It means "${card.turkishMeaning}" in Turkish.` },
-      { speaker: 'B', text: `Oh, nice! Can you use "${card.word}" in a sentence?` },
-      { speaker: 'A', text: card.exampleSentence },
-      { speaker: 'B', text: `Great example! Now I will remember "${card.word}" forever.` },
-    ],
-  };
+  const w = card.word;
+  const ex = card.exampleSentence;
+  const templates: DialogueContent[] = [
+    {
+      title: 'Before the Quiz',
+      lines: [
+        { speaker: 'A', text: `Our vocabulary quiz starts in ten minutes and I'm still not sure about "${w}".` },
+        { speaker: 'B', text: `That one is easier than it looks. I made a sentence for it last night.` },
+        { speaker: 'A', text: `Go on then, let me hear it.` },
+        { speaker: 'B', text: ex },
+        { speaker: 'A', text: `Nice, that actually makes "${w}" simple to remember.` },
+        { speaker: 'B', text: `Write your own sentence with "${w}" and you'll be ready before the bell.` },
+      ],
+    },
+    {
+      title: 'Homework Help',
+      lines: [
+        { speaker: 'A', text: `I'm stuck on question four — it wants a sentence with "${w}".` },
+        { speaker: 'B', text: `Let me see your notebook. You already wrote a good one in class.` },
+        { speaker: 'A', text: `Really? Which one?` },
+        { speaker: 'B', text: ex },
+        { speaker: 'A', text: `Oh right, I completely forgot about that example.` },
+        { speaker: 'B', text: `Use "${w}" once more in your own words and it will stick this time.` },
+      ],
+    },
+    {
+      title: 'The Flashcard Game',
+      lines: [
+        { speaker: 'A', text: `Your turn — the card says "${w}". One sentence, ten seconds.` },
+        { speaker: 'B', text: `Easy. ${ex}` },
+        { speaker: 'A', text: `Not bad. That's exactly how our teacher used "${w}" yesterday.` },
+        { speaker: 'B', text: `Told you I studied. Give me a harder card next time.` },
+        { speaker: 'A', text: `Fine, but first say "${w}" one more time so I remember it too.` },
+        { speaker: 'B', text: `Deal — and after this round, the loser buys the juice.` },
+      ],
+    },
+  ];
+  return templates[templateIndex(card, templates.length)];
 }
 
 function ContentLoading({ label }: { label: string }) {
