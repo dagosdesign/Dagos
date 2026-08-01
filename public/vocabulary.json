@@ -19846,7 +19846,7 @@
  },
  "playing sports": {
   "ipa": "/ˈpleɪɪŋ spɔːts/",
-  "reading": "pleyینگ sports",
+  "reading": "pleying sports",
   "meanings": [
    "spor yapmak"
   ],
@@ -21634,7 +21634,7 @@
   "ipa": "/hæv ɪˈnɔː.məs ˈbrek.fəst/",
   "reading": "hev inormıs brekfıst",
   "meanings": [
-   "büyük kahvaltı yapmak"
+   "doyurucu kahvaltı yapmak"
   ],
   "definition": "To eat a very large morning meal.",
   "example": "They like to have enormous breakfast plates on Sundays."
@@ -21706,7 +21706,7 @@
   "ipa": "/ɪn maɪ əˈpɪnjən/",
   "reading": "in may əpinyın",
   "meanings": [
-   "benim fikrimce"
+   "bence"
   ],
   "definition": "Used to express one's personal view.",
   "example": "In my opinion, this is the best restaurant in town."
@@ -22036,7 +22036,7 @@
   "ipa": "/ˈraɪdɪŋ baɪk/",
   "reading": "rayding bayk",
   "meanings": [
-   "bisiklet sürme"
+   "bisiklete binmek"
   ],
   "definition": "Traveling on a bicycle for fun or transport.",
   "example": "Riding bike is great exercise for your legs."
@@ -22164,7 +22164,7 @@
   "ipa": "/ˈsəʊp ɒprə/",
   "reading": "sop opra",
   "meanings": [
-   "dizi film"
+   "pembe dizi"
   ],
   "definition": "A serial television drama about daily lives.",
   "example": "My grandmother watches every soap opera on TV."
@@ -22493,7 +22493,7 @@
   "ipa": "/ˈwiːkdeɪz/",
   "reading": "wiykdeyz",
   "meanings": [
-   "hafta içi günler"
+   "hafta içi"
   ],
   "definition": "Monday to Friday.",
   "example": "I go to work on weekdays."
@@ -22653,8 +22653,7 @@
   "ipa": "/tʃɒp/",
   "reading": "çop",
   "meanings": [
-   "doramak",
-   "kesmek"
+   "doğramak"
   ],
   "definition": "To cut something into small pieces with a knife.",
   "example": "Chop the onions into small pieces."
@@ -22924,7 +22923,7 @@
   "ipa": "/ləˈzɑːnjə ʃiːt/",
   "reading": "lazanya şiyt",
   "meanings": [
-   "lაზanya yaprağı"
+   "lazanya yaprağı"
   ],
   "definition": "Flat pasta sheets used to make lasagna.",
   "example": "Boil the lasagna sheet until it is soft."
@@ -23110,8 +23109,7 @@
   "ipa": "/pɪntʃ/",
   "reading": "pinç",
   "meanings": [
-   "bir tutam",
-   "çimdiklemek"
+   "bir tutam"
   ],
   "definition": "A small amount of an ingredient you can take between fingers.",
   "example": "Add a pinch of salt to the soup."
@@ -23187,7 +23185,6 @@
   "ipa": "/slaɪs/",
   "reading": "slais",
   "meanings": [
-   "dilim",
    "dilimlemek"
   ],
   "definition": "A thin, flat piece cut from something larger.",
@@ -23926,15 +23923,6 @@
   "definition": "A thin flat corn or wheat bread.",
   "example": "He made a burrito with a warm tortilla."
  },
- "vegetables": {
-  "ipa": "/ˈvedʒtəblz/",
-  "reading": "vecitablız",
-  "meanings": [
-   "sebzeler"
-  ],
-  "definition": "Plants eaten as food.",
-  "example": "You should eat more fresh vegetables."
- },
  "wrap": {
   "ipa": "/ræp/",
   "reading": "rep",
@@ -24047,8 +24035,7 @@
   "ipa": "/tʃɒpt/",
   "reading": "çopt",
   "meanings": [
-   "doranmış",
-   "kesilmiş"
+   "doğranmış"
   ],
   "definition": "Cut into small pieces.",
   "example": "Add the chopped onions to the pan."
@@ -24130,7 +24117,7 @@
   "ipa": "/daɪst/",
   "reading": "dayst",
   "meanings": [
-   "küp doğranmış"
+   "küp küp doğranmış"
   ],
   "definition": "Cut into small cubes.",
   "example": "Add diced tomatoes to the pan."
@@ -24555,5 +24542,1915 @@
   ],
   "definition": "Oil obtained from plants.",
   "example": "Fry the onions in vegetable oil."
+ },
+ "account": {
+  "ipa": "/əˈkaʊnt/",
+  "reading": "ıkaunt",
+  "meanings": [
+   "hesap"
+  ],
+  "definition": "An arrangement with a bank to keep money.",
+  "example": "I want to open a bank account today."
+ },
+ "again": {
+  "ipa": "/əˈɡen/",
+  "reading": "ıgen",
+  "meanings": [
+   "tekrar",
+   "yeniden"
+  ],
+  "definition": "One more time or once more.",
+  "example": "Please read the text again carefully."
+ },
+ "answer": {
+  "ipa": "/ˈɑːn.sər/",
+  "reading": "aansır",
+  "meanings": [
+   "cevap",
+   "cevaplamak",
+   "yanıt"
+  ],
+  "definition": "To reply to a question or phone call.",
+  "example": "Please answer the phone when it rings."
+ },
+ "appetiser": {
+  "ipa": "/ˈæp.ə.taɪ.zər/",
+  "reading": "epıtayzır",
+  "meanings": [
+   "iştah açıcı",
+   "meze"
+  ],
+  "definition": "A small dish eaten before a meal.",
+  "example": "We ordered a delicious appetiser before the main course."
+ },
+ "application": {
+  "ipa": "/ˌæp.lɪˈkeɪ.ʃən/",
+  "reading": "eplikeyşın",
+  "meanings": [
+   "başvuru",
+   "uygulama"
+  ],
+  "definition": "An official request for something like a job.",
+  "example": "You must submit your application by Friday."
+ },
+ "appointment": {
+  "ipa": "/əˈpɔɪnt.mənt/",
+  "reading": "ıpoyntmınt",
+  "meanings": [
+   "randevu"
+  ],
+  "definition": "An arrangement to meet someone at a specific time.",
+  "example": "I have a dental appointment tomorrow morning."
+ },
+ "bad line": {
+  "ipa": "/ˌbæd ˈlaɪn/",
+  "reading": "bed layn",
+  "meanings": [
+   "hat bozukluğu",
+   "kötü hat"
+  ],
+  "definition": "A poor telephone connection.",
+  "example": "I cannot hear you well because of a bad line."
+ },
+ "beg your pardon": {
+  "ipa": "/ˌbeɡ jɔː ˈpɑː.dən/",
+  "reading": "beg yor paadın",
+  "meanings": [
+   "afedersiniz",
+   "efendim?"
+  ],
+  "definition": "A polite way to ask someone to repeat something.",
+  "example": "I beg your pardon, did you say seventy or seventeen?"
+ },
+ "book": {
+  "ipa": "/bʊk/",
+  "reading": "buk",
+  "meanings": [
+   "rezervasyon yapmak",
+   "kitap"
+  ],
+  "definition": "To arrange to have something in the future.",
+  "example": "You should book a table in advance."
+ },
+ "call back": {
+  "ipa": "/ˈkɔːl.bæk/",
+  "reading": "kool bek",
+  "meanings": [
+   "geri aramak"
+  ],
+  "definition": "To telephone someone again or in return.",
+  "example": "I will call back in ten minutes."
+ },
+ "caller": {
+  "ipa": "/ˈkɔː.lər/",
+  "reading": "koolır",
+  "meanings": [
+   "arayan kişi"
+  ],
+  "definition": "A person who makes a telephone call.",
+  "example": "The caller did not leave a message."
+ },
+ "communication": {
+  "ipa": "/kəˌmjuː.nɪˈkeɪ.ʃən/",
+  "reading": "kımyunikeyşın",
+  "meanings": [
+   "iletişim",
+   "haberleşme"
+  ],
+  "definition": "The act of sharing information with others.",
+  "example": "Clear communication is important in a business."
+ },
+ "company": {
+  "ipa": "/ˈkʌm.pə.ni/",
+  "reading": "kampıni",
+  "meanings": [
+   "şirket",
+   "ortaklık"
+  ],
+  "definition": "An organization that sells goods or services.",
+  "example": "She works for a large technology company."
+ },
+ "connection": {
+  "ipa": "/kəˈnekʃn/",
+  "reading": "kınekşın",
+  "meanings": [
+   "bağlantı",
+   "ilişki"
+  ],
+  "definition": "A state of being joined or associated.",
+  "example": "There is a poor internet connection in this room."
+ },
+ "conversation": {
+  "ipa": "/ˌkɒnvəˈseɪʃn/",
+  "reading": "konvırseyşın",
+  "meanings": [
+   "sohbet",
+   "konuşma"
+  ],
+  "definition": "An informal talk between people.",
+  "example": "We had a long conversation about our future plans."
+ },
+ "delivery": {
+  "ipa": "/dɪˈlɪvəri/",
+  "reading": "dilivıri",
+  "meanings": [
+   "teslimat",
+   "dağıtım"
+  ],
+  "definition": "The act of bringing goods to a place.",
+  "example": "We offer free delivery for orders over fifty dollars."
+ },
+ "dial": {
+  "ipa": "/ˈdaɪəl/",
+  "reading": "dayıl",
+  "meanings": [
+   "numara çevirmek",
+   "aramak"
+  ],
+  "definition": "To call a telephone number.",
+  "example": "You must dial nine to get an outside line."
+ },
+ "emergency": {
+  "ipa": "/ɪˈmɜːdʒənsi/",
+  "reading": "imörcınsi",
+  "meanings": [
+   "acil durum"
+  ],
+  "definition": "A serious situation requiring immediate action.",
+  "example": "In case of emergency, please call this number immediately."
+ },
+ "engaged": {
+  "ipa": "/ɪnˈɡeɪdʒd/",
+  "reading": "ingeyçt",
+  "meanings": [
+   "meşgul",
+   "nişanlı"
+  ],
+  "definition": "Busy or occupied, especially a telephone line.",
+  "example": "I tried to call, but the line was engaged."
+ },
+ "extension": {
+  "ipa": "/ɪkˈstenʃn/",
+  "reading": "ikstenşın",
+  "meanings": [
+   "dahili hat",
+   "uzatma"
+  ],
+  "definition": "An extra telephone line connected to a main line.",
+  "example": "Please call me back on extension four."
+ },
+ "face to face": {
+  "ipa": "/ˌfeɪs tə ˈfeɪs/",
+  "reading": "feys tı feys",
+  "meanings": [
+   "yüz yüze"
+  ],
+  "definition": "Directly meeting or looking at each other.",
+  "example": "It is much better to talk face to face."
+ },
+ "giving a reason": {
+  "ipa": "/ˈɡɪvɪŋ ə ˈriːzn/",
+  "reading": "giving e rizın",
+  "meanings": [
+   "gerekçe göstermek",
+   "sebep belirtmek"
+  ],
+  "definition": "Explaining why something is done or true.",
+  "example": "She left early without giving a reason."
+ },
+ "hang on": {
+  "ipa": "/ˌhæŋ ˈɒn/",
+  "reading": "heng on",
+  "meanings": [
+   "beklemek",
+   "hattı bekletmek"
+  ],
+  "definition": "To wait for a short time.",
+  "example": "Can you hang on for a moment, please?"
+ },
+ "hang up": {
+  "ipa": "/ˌhæŋ ˈʌp/",
+  "reading": "heng ap",
+  "meanings": [
+   "telefonu kapatmak"
+  ],
+  "definition": "To end a telephone call.",
+  "example": "Please do not hang up on me."
+ },
+ "hold on": {
+  "ipa": "/ˌhəʊld ˈɒn/",
+  "reading": "hould on",
+  "meanings": [
+   "beklemek",
+   "hattı beklemek"
+  ],
+  "definition": "To wait for a short time.",
+  "example": "Please hold on for a moment."
+ },
+ "in cash": {
+  "ipa": "/ɪn kæʃ/",
+  "reading": "in keş",
+  "meanings": [
+   "nakit olarak",
+   "peşin"
+  ],
+  "definition": "Using paper money or coins.",
+  "example": "You can pay in cash at the counter."
+ },
+ "keep in touch": {
+  "ipa": "/ˌkiːp ɪn ˈtʌtʃ/",
+  "reading": "kiip in taç",
+  "meanings": [
+   "iletişimde kalmak",
+   "irtibatı koparmamak"
+  ],
+  "definition": "To maintain contact with someone.",
+  "example": "We should keep in touch after the conference."
+ },
+ "later": {
+  "ipa": "/ˈleɪtə/",
+  "reading": "leytı",
+  "meanings": [
+   "daha sonra",
+   "sonra"
+  ],
+  "definition": "At a time in the future.",
+  "example": "I will call you later this afternoon."
+ },
+ "leave a message": {
+  "ipa": "/ˌliːv ə ˈmesɪdʒ/",
+  "reading": "liiv e mesıc",
+  "meanings": [
+   "mesaj bırakmak"
+  ],
+  "definition": "To record or write a message.",
+  "example": "You can leave a message after the beep."
+ },
+ "line": {
+  "ipa": "/laɪn/",
+  "reading": "layn",
+  "meanings": [
+   "telefon hattı",
+   "satır"
+  ],
+  "definition": "A phone connection or long mark.",
+  "example": "The telephone line is busy at the moment."
+ },
+ "memo": {
+  "ipa": "/ˈmeməʊ/",
+  "reading": "memou",
+  "meanings": [
+   "not",
+   "bilgi notu"
+  ],
+  "definition": "A short written official note.",
+  "example": "Please read the memo from the manager."
+ },
+ "moment": {
+  "ipa": "/ˈməʊmənt/",
+  "reading": "moumınt",
+  "meanings": [
+   "an",
+   "saniye"
+  ],
+  "definition": "A very brief period of time.",
+  "example": "I will be back in a moment."
+ },
+ "news": {
+  "ipa": "/njuːz/",
+  "reading": "nyuuz",
+  "meanings": [
+   "haber",
+   "haberler"
+  ],
+  "definition": "Information about recent events.",
+  "example": "I have some good news for you."
+ },
+ "pastry": {
+  "ipa": "/ˈpeɪstri/",
+  "reading": "peystri",
+  "meanings": [
+   "hamur işi",
+   "börek"
+  ],
+  "definition": "Baked food made of flour.",
+  "example": "I bought a fresh pastry for breakfast."
+ },
+ "phone": {
+  "ipa": "/fəʊn/",
+  "reading": "foun",
+  "meanings": [
+   "telefon",
+   "telefon etmek"
+  ],
+  "definition": "A device used to talk.",
+  "example": "Please answer the phone if it rings."
+ },
+ "preference": {
+  "ipa": "/ˈprefrəns/",
+  "reading": "prefrıns",
+  "meanings": [
+   "tercih"
+  ],
+  "definition": "A greater liking for something.",
+  "example": "Do you have a preference for tea or coffee?"
+ },
+ "purpose": {
+  "ipa": "/ˈpɜːpəs/",
+  "reading": "pööpıs",
+  "meanings": [
+   "amaç",
+   "gaye"
+  ],
+  "definition": "The reason for doing something.",
+  "example": "What is the main purpose of this meeting?"
+ },
+ "put through": {
+  "ipa": "/ˌpʊt ˈθruː/",
+  "reading": "put thruu",
+  "meanings": [
+   "bağlamak",
+   "telefonda bağlamak"
+  ],
+  "definition": "To connect someone on phone.",
+  "example": "Please put through my call to the manager."
+ },
+ "receipt": {
+  "ipa": "/rɪˈsiːt/",
+  "reading": "risiit",
+  "meanings": [
+   "fiş",
+   "makbuz"
+  ],
+  "definition": "A document showing payment received.",
+  "example": "Always ask for a receipt when you buy something."
+ },
+ "refund": {
+  "ipa": "/ˈriːfʌnd/",
+  "reading": "rifand",
+  "meanings": [
+   "para iadesi",
+   "iade etmek"
+  ],
+  "definition": "Money given back to a customer.",
+  "example": "Can I get a refund for this broken toy?"
+ },
+ "repeat": {
+  "ipa": "/rɪˈpiːt/",
+  "reading": "ripit",
+  "meanings": [
+   "tekrarlamak",
+   "tekrar etmek"
+  ],
+  "definition": "To say or do something again.",
+  "example": "Please repeat the question."
+ },
+ "report": {
+  "ipa": "/rɪˈpɔːt/",
+  "reading": "ripoot",
+  "meanings": [
+   "rapor",
+   "bildirmek",
+   "rapor etmek"
+  ],
+  "definition": "To give a spoken or written account of something.",
+  "example": "You must report the accident to the police."
+ },
+ "return": {
+  "ipa": "/rɪˈtɜːn/",
+  "reading": "ritöön",
+  "meanings": [
+   "geri dönmek",
+   "geri vermek"
+  ],
+  "definition": "To go or come back to a place.",
+  "example": "I will return to my home tomorrow."
+ },
+ "reward": {
+  "ipa": "/rɪˈwɔːd/",
+  "reading": "rivood",
+  "meanings": [
+   "ödül",
+   "ödüllendirmek"
+  ],
+  "definition": "Something given in return for good work.",
+  "example": "They will reward the honest finder of the wallet."
+ },
+ "smartphone": {
+  "ipa": "/ˈsmɑːtfəʊn/",
+  "reading": "smaatfoun",
+  "meanings": [
+   "akıllı telefon"
+  ],
+  "definition": "A mobile phone that performs many computer functions.",
+  "example": "She bought a new smartphone yesterday."
+ },
+ "social network": {
+  "ipa": "/ˈsəʊʃl ˈnetwɜːk/",
+  "reading": "souşıl netvöök",
+  "meanings": [
+   "sosyal ağ"
+  ],
+  "definition": "A website used to connect with friends.",
+  "example": "Facebook is a very popular social network."
+ },
+ "suggest": {
+  "ipa": "/səˈdʒest/",
+  "reading": "sacest",
+  "meanings": [
+   "önermek",
+   "tavsiye etmek"
+  ],
+  "definition": "To mention an idea or plan for consideration.",
+  "example": "What do you suggest we do tonight?"
+ },
+ "talk": {
+  "ipa": "/tɔːk/",
+  "reading": "took",
+  "meanings": [
+   "konuşmak",
+   "sohbet etmek"
+  ],
+  "definition": "To speak in order to give information.",
+  "example": "We need to talk about our future."
+ },
+ "telegraph": {
+  "ipa": "/ˈtelɪɡrɑːf/",
+  "reading": "telıgraaf",
+  "meanings": [
+   "telgraf"
+  ],
+  "definition": "An old system for sending coded messages.",
+  "example": "People used the telegraph to send urgent news."
+ },
+ "text message": {
+  "ipa": "/ˈtekst ˌmesɪdʒ/",
+  "reading": "tekst mesıc",
+  "meanings": [
+   "kısa mesaj",
+   "sms"
+  ],
+  "definition": "A written message sent from a mobile phone.",
+  "example": "I received a text message from her."
+ },
+ "wait": {
+  "ipa": "/weɪt/",
+  "reading": "veyt",
+  "meanings": [
+   "beklemek"
+  ],
+  "definition": "To stay in one place until something happens.",
+  "example": "I will wait for you at the station."
+ },
+ "weather forecast": {
+  "ipa": "/ˈweðə ˈfɔːkɑːst/",
+  "reading": "vedı fookaast",
+  "meanings": [
+   "hava durumu tahmini"
+  ],
+  "definition": "A description of what the weather will be like.",
+  "example": "The weather forecast predicts heavy rain tomorrow."
+ },
+ "worth": {
+  "ipa": "/wɜːθ/",
+  "reading": "vööth",
+  "meanings": [
+   "değer",
+   "değmek",
+   "değerinde"
+  ],
+  "definition": "Having a particular value.",
+  "example": "This ancient coin is worth a lot of money."
+ },
+ "addiction": {
+  "ipa": "/əˈdɪkʃn/",
+  "reading": "adıkşın",
+  "meanings": [
+   "bağımlılık"
+  ],
+  "definition": "The state of being unable to stop doing something.",
+  "example": "Video game addiction is a serious problem."
+ },
+ "arrangement": {
+  "ipa": "/əˈreɪndʒmənt/",
+  "reading": "ıreyncmınt",
+  "meanings": [
+   "düzenleme",
+   "anlaşma",
+   "plan"
+  ],
+  "definition": "An agreement or plan made for the future",
+  "example": "They made a special arrangement to share the costs."
+ },
+ "badline": {
+  "ipa": "/ˌbæd ˈlaɪn/",
+  "reading": "bed layn",
+  "meanings": [
+   "cızırtılı hat",
+   "kötü telefon bağlantısı"
+  ],
+  "definition": "A poor telephone connection that is hard to hear",
+  "example": "We have a badline so I will call you back."
+ },
+ "call center": {
+  "ipa": "/ˈkɔːl ˌsentə/",
+  "reading": "kol sentır",
+  "meanings": [
+   "çağrı merkezi"
+  ],
+  "definition": "An office where telephone calls are handled for customers",
+  "example": "She works in a busy call center in Istanbul."
+ },
+ "calm down": {
+  "ipa": "/ˌkɑːm ˈdaʊn/",
+  "reading": "kaam dawn",
+  "meanings": [
+   "sakinleşmek",
+   "yatışmak"
+  ],
+  "definition": "To become quiet and peaceful after being excited",
+  "example": "Please calm down and tell me what happened."
+ },
+ "change": {
+  "ipa": "/tʃeɪndʒ/",
+  "reading": "ceync",
+  "meanings": [
+   "değiştirmek",
+   "değişmek",
+   "bozuk para"
+  ],
+  "definition": "To make or become different",
+  "example": "You cannot change the past so focus on today."
+ },
+ "customer service": {
+  "ipa": "/ˌkʌstəmə ˈsɜːvɪs/",
+  "reading": "kastımır sörvis",
+  "meanings": [
+   "müşteri hizmetleri"
+  ],
+  "definition": "Assistance provided by a company to customers",
+  "example": "Good customer service is important for business growth."
+ },
+ "device": {
+  "ipa": "/dɪˈvaɪs/",
+  "reading": "divays",
+  "meanings": [
+   "cihaz",
+   "alet",
+   "mekanizma"
+  ],
+  "definition": "An object or tool made for a specific purpose",
+  "example": "This small device can measure your heart rate."
+ },
+ "discovery": {
+  "ipa": "/dɪˈskʌvəri/",
+  "reading": "diskavıri",
+  "meanings": [
+   "buluş",
+   "keşif"
+  ],
+  "definition": "The act of finding something for the first time",
+  "example": "The discovery of new lands changed world history."
+ },
+ "easy way": {
+  "ipa": "/ˈiːzi weɪ/",
+  "reading": "iizi wey",
+  "meanings": [
+   "kolay yol",
+   "kolay yöntem"
+  ],
+  "definition": "A simple or effortless method to do something",
+  "example": "There is no easy way to learn a language."
+ },
+ "examine": {
+  "ipa": "/ɪɡˈzæmɪn/",
+  "reading": "igzemin",
+  "meanings": [
+   "incelemek",
+   "muayene etmek",
+   "sınamak"
+  ],
+  "definition": "To look at something closely and carefully",
+  "example": "The doctor must examine you before giving medicine."
+ },
+ "express": {
+  "ipa": "/ɪkˈspres/",
+  "reading": "ikspres",
+  "meanings": [
+   "ifade etmek",
+   "hızlı (tren/posta)"
+  ],
+  "definition": "To show a feeling or opinion by words or actions",
+  "example": "Artists often express their emotions through paintings."
+ },
+ "get back": {
+  "ipa": "/ˌɡet ˈbæk/",
+  "reading": "get bek",
+  "meanings": [
+   "geri dönmek",
+   "geri almak"
+  ],
+  "definition": "To return to a place or state.",
+  "example": "I need to get back to my work now."
+ },
+ "get somebody": {
+  "ipa": "/ˌɡet ˈsʌmbədi/",
+  "reading": "get sambadi",
+  "meanings": [
+   "birini anlamak",
+   "birini yakalamak"
+  ],
+  "definition": "To understand or capture someone.",
+  "example": "I will get somebody to help us with this task."
+ },
+ "get well soon": {
+  "ipa": "/ˌɡet wel ˈsuːn/",
+  "reading": "get vel suun",
+  "meanings": [
+   "geçmiş olsun"
+  ],
+  "definition": "An expression wishing someone a quick recovery from illness.",
+  "example": "I hope you get well soon after your surgery."
+ },
+ "headquarter": {
+  "ipa": "/hedˈkwɔːtə/",
+  "reading": "hedkuootır",
+  "meanings": [
+   "merkezini kurmak",
+   "ana merkez yapmak"
+  ],
+  "definition": "To establish a main office or center.",
+  "example": "The company decided to headquarter their operations in London."
+ },
+ "information": {
+  "ipa": "/ˌɪnfəˈmeɪʃn/",
+  "reading": "infımeyşın",
+  "meanings": [
+   "bilgi",
+   "danışma"
+  ],
+  "definition": "Facts provided or learned about something.",
+  "example": "Please give me more information about the course."
+ },
+ "invention": {
+  "ipa": "/ɪnˈvenʃn/",
+  "reading": "invenşın",
+  "meanings": [
+   "buluş",
+   "icat"
+  ],
+  "definition": "A unique or new device or process.",
+  "example": "The internet is a great invention of modern times."
+ },
+ "keep calm": {
+  "ipa": "/ˌkiːp ˈkɑːm/",
+  "reading": "kiip kaam",
+  "meanings": [
+   "sakin kalmak",
+   "sakinliğini korumak"
+  ],
+  "definition": "To remain quiet and not get excited or angry.",
+  "example": "You must keep calm during an emergency."
+ },
+ "leave message": {
+  "ipa": "/ˌliːv ˈmesɪdʒ/",
+  "reading": "liiv mesıc",
+  "meanings": [
+   "mesaj bırakmak"
+  ],
+  "definition": "To record a message for someone who is unavailable.",
+  "example": "Do not leave message notes on my desk."
+ },
+ "listen": {
+  "ipa": "/ˈlɪsn/",
+  "reading": "lısın",
+  "meanings": [
+   "dinlemek"
+  ],
+  "definition": "To give attention to sound or action.",
+  "example": "Please listen carefully to the instructions."
+ },
+ "meeting": {
+  "ipa": "/ˈmiːtɪŋ/",
+  "reading": "miiting",
+  "meanings": [
+   "toplantı",
+   "buluşma"
+  ],
+  "definition": "An assembly of people for a particular purpose.",
+  "example": "I have an important meeting at nine o'clock."
+ },
+ "message": {
+  "ipa": "/ˈmesɪdʒ/",
+  "reading": "mesıc",
+  "meanings": [
+   "mesaj",
+   "ileti"
+  ],
+  "definition": "A written or spoken piece of information.",
+  "example": "I sent a short message to my mother."
+ },
+ "minute": {
+  "ipa": "/ˈmɪnɪt/",
+  "reading": "mınıt",
+  "meanings": [
+   "dakika"
+  ],
+  "definition": "A unit of time equal to sixty seconds.",
+  "example": "I will be ready in just one minute."
+ },
+ "misunderstanding": {
+  "ipa": "/ˌmɪsʌndəˈstændɪŋ/",
+  "reading": "misandıstendink",
+  "meanings": [
+   "yanlış anlaşılma",
+   "anlaşmazlık"
+  ],
+  "definition": "A failure to understand something correctly.",
+  "example": "There was a misunderstanding about the meeting time."
+ },
+ "mobile phone": {
+  "ipa": "/ˌməʊbaɪl ˈfəʊn/",
+  "reading": "mowbayl fown",
+  "meanings": [
+   "cep telefonu"
+  ],
+  "definition": "A portable telephone.",
+  "example": "I need to buy a new mobile phone."
+ },
+ "mouthpiece": {
+  "ipa": "/ˈmaʊθpiːs/",
+  "reading": "mautfpis",
+  "meanings": [
+   "ahize ağızlığı",
+   "ağızlık"
+  ],
+  "definition": "The part of a phone placed near the mouth.",
+  "example": "Please speak directly into the mouthpiece."
+ },
+ "once upon a time": {
+  "ipa": "/ˌwʌns əpɒn ə ˈtaɪm/",
+  "reading": "vans apan e taym",
+  "meanings": [
+   "bir varmış bir yokmuş",
+   "evvel zaman içinde"
+  ],
+  "definition": "A phrase used to start a traditional fairy tale.",
+  "example": "Once upon a time, there lived a beautiful princess."
+ },
+ "overseas": {
+  "ipa": "/ˌəʊvəˈsiːz/",
+  "reading": "owvısiiz",
+  "meanings": [
+   "yurt dışı",
+   "denizaşırı"
+  ],
+  "definition": "In or to a foreign country across the sea.",
+  "example": "Many students want to study overseas."
+ },
+ "polite": {
+  "ipa": "/pəˈlaɪt/",
+  "reading": "pılayt",
+  "meanings": [
+   "kibar",
+   "nazik"
+  ],
+  "definition": "Having good manners and showing respect.",
+  "example": "It is important to be polite to everyone."
+ },
+ "put somebody through": {
+  "ipa": "/pʊt ˈsʌmbədi θruː/",
+  "reading": "put sambadi tru",
+  "meanings": [
+   "birini telefona bağlamak"
+  ],
+  "definition": "To connect a phone caller to someone else.",
+  "example": "The receptionist will put somebody through if they call."
+ },
+ "reservation": {
+  "ipa": "/ˌrezəˈveɪʃn/",
+  "reading": "rezıveyşın",
+  "meanings": [
+   "rezervasyon",
+   "yer ayırtma"
+  ],
+  "definition": "An arrangement to secure a seat or room.",
+  "example": "I would like to make a reservation for tonight."
+ },
+ "response": {
+  "ipa": "/rɪˈspɒns/",
+  "reading": "rispons",
+  "meanings": [
+   "cevap",
+   "yanıt"
+  ],
+  "definition": "A verbal or written answer.",
+  "example": "We are waiting for a response to our letter."
+ },
+ "revolution": {
+  "ipa": "/ˌrevəˈluːʃn/",
+  "reading": "revıluuşın",
+  "meanings": [
+   "devrim",
+   "ihtilal"
+  ],
+  "definition": "A major change in government or system.",
+  "example": "The digital revolution changed our daily lives."
+ },
+ "solve": {
+  "ipa": "/sɒlv/",
+  "reading": "solv",
+  "meanings": [
+   "çözmek",
+   "halletmek"
+  ],
+  "definition": "To find an answer to a problem.",
+  "example": "We need to solve this math problem quickly."
+ },
+ "soon": {
+  "ipa": "/suːn/",
+  "reading": "suun",
+  "meanings": [
+   "yakında",
+   "az sonra"
+  ],
+  "definition": "In or after a short time.",
+  "example": "The train will arrive soon at the station."
+ },
+ "sorry to hear that": {
+  "ipa": "/ˈsɒri tuː hɪə ðæt/",
+  "reading": "sori tu hiır det",
+  "meanings": [
+   "bunu duyduğuma üzüldüm"
+  ],
+  "definition": "An expression of sympathy for someone's bad news.",
+  "example": "Oh, sorry to hear that your cat is sick."
+ },
+ "take message": {
+  "ipa": "/teɪk ˈmesɪdʒ/",
+  "reading": "teyk mesıc",
+  "meanings": [
+   "mesaj almak",
+   "not almak"
+  ],
+  "definition": "To write down a phone message for someone.",
+  "example": "The assistant will take message details during the call."
+ },
+ "text a message": {
+  "ipa": "/tekst ə ˈmesɪdʒ/",
+  "reading": "tekst e mesıc",
+  "meanings": [
+   "mesaj göndermek",
+   "mesaj atmak"
+  ],
+  "definition": "To send a written message by phone",
+  "example": "I will text a message to my friend."
+ },
+ "via": {
+  "ipa": "/ˈvaɪə/",
+  "reading": "vaya",
+  "meanings": [
+   "aracılığıyla",
+   "yoluyla",
+   "üzerinden"
+  ],
+  "definition": "By going through a place or using something",
+  "example": "We sent the files via email."
+ },
+ "what's up?": {
+  "ipa": "/wɒts ʌp/",
+  "reading": "vats ap",
+  "meanings": [
+   "ne haber?",
+   "ne var ne yok?"
+  ],
+  "definition": "An informal way to ask how someone is",
+  "example": "Hey, what's up?"
+ },
+ "wonder": {
+  "ipa": "/ˈwʌndə/",
+  "reading": "vandır",
+  "meanings": [
+   "merak etmek"
+  ],
+  "definition": "To want to know something",
+  "example": "I wonder if it will rain today."
+ },
+ "wrong number": {
+  "ipa": "/rɒŋ ˈnʌmbə/",
+  "reading": "rong nambır",
+  "meanings": [
+   "yanlış numara"
+  ],
+  "definition": "An incorrect telephone number",
+  "example": "Sorry, I think you have a wrong number."
+ },
+ "angry": {
+  "ipa": "/ˈæŋɡri/",
+  "reading": "engri",
+  "meanings": [
+   "kızgın",
+   "öfkeli"
+  ],
+  "definition": "Having a strong feeling of displeasure",
+  "example": "Please do not make me angry."
+ },
+ "another": {
+  "ipa": "/əˈnʌðə/",
+  "reading": "enadır",
+  "meanings": [
+   "başka",
+   "diğer bir"
+  ],
+  "definition": "One more or a different thing",
+  "example": "Can I have another cup of tea?"
+ },
+ "answer the questions": {
+  "ipa": "/ˈɑːnsə ðə ˈkwestʃənz/",
+  "reading": "ansır dı kvesçınz",
+  "meanings": [
+   "soruları cevaplamak"
+  ],
+  "definition": "To provide replies to queries",
+  "example": "You must answer the questions on the paper."
+ },
+ "ask for a service": {
+  "ipa": "/ɑːsk fɔːr ə ˈsɜːvɪs/",
+  "reading": "ask for e sörvis",
+  "meanings": [
+   "hizmet talep etmek"
+  ],
+  "definition": "To request professional help or assistance",
+  "example": "You can ask for a service at the reception."
+ },
+ "be there": {
+  "ipa": "/bi ðeə/",
+  "reading": "bi deer",
+  "meanings": [
+   "orada olmak",
+   "hazır bulunmak"
+  ],
+  "definition": "To attend or exist at a location",
+  "example": "I promise to be there on time."
+ },
+ "become more popular": {
+  "ipa": "/bɪˈkʌm mɔː ˈpɒpjʊlə/",
+  "reading": "bikam mor popyulır",
+  "meanings": [
+   "daha popüler olmak",
+   "gözdeleşmek"
+  ],
+  "definition": "To be liked by more people over time",
+  "example": "Social media apps become more popular every day."
+ },
+ "believe": {
+  "ipa": "/bɪˈliːv/",
+  "reading": "biliiv",
+  "meanings": [
+   "inanmak"
+  ],
+  "definition": "To accept something as true",
+  "example": "I believe your story."
+ },
+ "belonging": {
+  "ipa": "/bɪˈlɒŋɪŋ/",
+  "reading": "bilonging",
+  "meanings": [
+   "aidiyet",
+   "ait olma"
+  ],
+  "definition": "A feeling of being happy in a group",
+  "example": "He felt a strong sense of belonging here."
+ },
+ "best way": {
+  "ipa": "/best weɪ/",
+  "reading": "'best vey'",
+  "meanings": [
+   "en iyi yol",
+   "en iyi yöntem"
+  ],
+  "definition": "The most effective method to do something.",
+  "example": "What is the best way to learn English?"
+ },
+ "bill": {
+  "ipa": "/bɪl/",
+  "reading": "'bil'",
+  "meanings": [
+   "fatura",
+   "hesap"
+  ],
+  "definition": "A statement of money owed for goods or services.",
+  "example": "Can I have the bill, please?"
+ },
+ "book a room": {
+  "ipa": "/bʊk ə ruːm/",
+  "reading": "'buk e ruum'",
+  "meanings": [
+   "oda ayırtmak",
+   "rezervasyon yapmak"
+  ],
+  "definition": "To reserve a hotel room in advance.",
+  "example": "I want to book a room for tonight."
+ },
+ "book flight ticket": {
+  "ipa": "/bʊk flaɪt ˈtɪk.ɪt/",
+  "reading": "'buk flayt tıkıt'",
+  "meanings": [
+   "uçak bileti almak",
+   "uçak bileti ayırtmak"
+  ],
+  "definition": "To buy or reserve a ticket for a flight.",
+  "example": "I need to book flight ticket options online today."
+ },
+ "burglary": {
+  "ipa": "/ˈbɜː.ɡlər.i/",
+  "reading": "'böglıri'",
+  "meanings": [
+   "hırsızlık",
+   "haneye tecavüz"
+  ],
+  "definition": "The crime of illegally entering a building to steal.",
+  "example": "The police are investigating a burglary in our street."
+ },
+ "buy something online": {
+  "ipa": "/baɪ ˈsʌm.θɪŋ ˌɒnˈlaɪn/",
+  "reading": "'bay samtıng onlayn'",
+  "meanings": [
+   "internetten bir şey satın almak"
+  ],
+  "definition": "To purchase goods using the internet.",
+  "example": "I want to buy something online for my sister."
+ },
+ "calm down / keep calm": {
+  "ipa": "/kɑːm daʊn / kiːp kɑːm/",
+  "reading": "'kaam davn / kiip kaam'",
+  "meanings": [
+   "sakinleşmek",
+   "sakinliğini korumak"
+  ],
+  "definition": "To become quiet and relaxed after being angry.",
+  "example": "You should calm down / keep calm during the test."
+ },
+ "change product": {
+  "ipa": "/tʃeɪndʒ ˈprɒd.ʌkt/",
+  "reading": "'çeync pradakt'",
+  "meanings": [
+   "ürün değiştirmek"
+  ],
+  "definition": "To exchange an item for another one.",
+  "example": "Customers can change product choices within ten days."
+ },
+ "collect garbage": {
+  "ipa": "/kəˈlekt ˈɡɑː.bɪdʒ/",
+  "reading": "'kılekt garbıc'",
+  "meanings": [
+   "çöp toplamak"
+  ],
+  "definition": "To gather waste from streets or houses.",
+  "example": "They collect garbage every Tuesday morning."
+ },
+ "come first": {
+  "ipa": "/kʌm fɜːst/",
+  "reading": "'kam först'",
+  "meanings": [
+   "birinci olmak",
+   "en başta gelmek"
+  ],
+  "definition": "To win a race or be most important.",
+  "example": "My family will always come first for me."
+ },
+ "come second": {
+  "ipa": "/kʌm ˈsek.ənd/",
+  "reading": "'kam sekınd'",
+  "meanings": [
+   "ikinci olmak"
+  ],
+  "definition": "To finish in second place in a competition.",
+  "example": "I do not want to come second in this race."
+ },
+ "continue": {
+  "ipa": "/kənˈtɪn.juː/",
+  "reading": "'kıntinyu'",
+  "meanings": [
+   "devam etmek",
+   "sürdürmek"
+  ],
+  "definition": "To keep doing something without stopping.",
+  "example": "We will continue our meeting after the lunch break."
+ },
+ "development": {
+  "ipa": "/dɪˈvel.əp.mənt/",
+  "reading": "'divelıpmınt'",
+  "meanings": [
+   "gelişme",
+   "gelişim"
+  ],
+  "definition": "The process of growing or changing positively.",
+  "example": "This new project is a great development for us."
+ },
+ "disabled children": {
+  "ipa": "/dɪsˈeɪ.bəld ˈtʃɪl.drən/",
+  "reading": "'diseybıld çıldrın'",
+  "meanings": [
+   "engelli çocuklar"
+  ],
+  "definition": "Children who have physical or mental limitations.",
+  "example": "This park is designed for disabled children to play."
+ },
+ "distant places": {
+  "ipa": "/ˈdɪs.tənt ˈpleɪs.ɪz/",
+  "reading": "'distınt pleysız'",
+  "meanings": [
+   "uzak yerler"
+  ],
+  "definition": "Locations that are far away.",
+  "example": "She loves to travel to distant places around the world."
+ },
+ "donate clothes": {
+  "ipa": "/dəʊˈneɪt kləʊðz/",
+  "reading": "'doneyt klouz'",
+  "meanings": [
+   "kıyafet bağışlamak"
+  ],
+  "definition": "To give garments to people in need.",
+  "example": "We should donate clothes to the local charity."
+ },
+ "ease of technology": {
+  "ipa": "/iːz əv tekˈnɒlədʒi/",
+  "reading": "iizıv teknolıci",
+  "meanings": [
+   "teknoloji kolaylığı",
+   "teknolojik kolaylık"
+  ],
+  "definition": "The convenience provided by modern technological tools.",
+  "example": "We enjoy the ease of technology in our daily lives."
+ },
+ "easy to carry": {
+  "ipa": "/ˈiːzi tə ˈkæri/",
+  "reading": "iizi tu keri",
+  "meanings": [
+   "taşıması kolay",
+   "taşınabilir"
+  ],
+  "definition": "Light or small enough to be moved easily.",
+  "example": "This small laptop is very easy to carry."
+ },
+ "educative game": {
+  "ipa": "/ˈedʒukeɪtɪv ɡeɪm/",
+  "reading": "ecıkeytiv geym",
+  "meanings": [
+   "eğitici oyun"
+  ],
+  "definition": "A game designed to teach children useful skills.",
+  "example": "Chess is an educative game that improves your mind."
+ },
+ "embarrassed": {
+  "ipa": "/ɪmˈbærəst/",
+  "reading": "imberıst",
+  "meanings": [
+   "utanmış",
+   "utangaç",
+   "mahcup"
+  ],
+  "definition": "Feeling ashamed, shy, or uncomfortable.",
+  "example": "I feel embarrassed when I make a public mistake."
+ },
+ "engage in": {
+  "ipa": "/ɪnˈɡeɪdʒ ɪn/",
+  "reading": "ingeyç in",
+  "meanings": [
+   "ile meşgul olmak",
+   "katılmak",
+   "yapmak"
+  ],
+  "definition": "To take part in a particular activity.",
+  "example": "Many students engage in sports after school."
+ },
+ "face to face communication": {
+  "ipa": "/feɪs tə feɪs kəˌmjuːnɪˈkeɪʃn/",
+  "reading": "feys tu feys komyunikeyşın",
+  "meanings": [
+   "yüz yüze iletişim"
+  ],
+  "definition": "Talking directly to someone in person.",
+  "example": "We prefer face to face communication over text messages."
+ },
+ "find way": {
+  "ipa": "/faɪnd weɪ/",
+  "reading": "faynd wey",
+  "meanings": [
+   "yolunu bulmak",
+   "çözüm bulmak"
+  ],
+  "definition": "To discover the correct path or method.",
+  "example": "We must find way to make them happy."
+ },
+ "foreign language": {
+  "ipa": "/ˈfɒrən ˈlæŋɡwɪdʒ/",
+  "reading": "forın lengviç",
+  "meanings": [
+   "yabancı dil"
+  ],
+  "definition": "A language from a country other than your own.",
+  "example": "It is useful to learn a foreign language today."
+ },
+ "get driving license": {
+  "ipa": "/ɡet ˈdraɪvɪŋ ˈlaɪsns/",
+  "reading": "get drayving laysıns",
+  "meanings": [
+   "ehliyet almak"
+  ],
+  "definition": "To obtain an official document to drive.",
+  "example": "You can get driving license after the test."
+ },
+ "get information about an issue": {
+  "ipa": "/ɡet ˌɪnfəˈmeɪʃn əˈbaʊt ən ˈɪʃuː/",
+  "reading": "get infımeyşın ebaut en işyu",
+  "meanings": [
+   "bir konu hakkında bilgi edinmek"
+  ],
+  "definition": "To learn facts or details about a topic.",
+  "example": "You must get information about an issue before deciding."
+ },
+ "get married": {
+  "ipa": "/ɡet ˈmærid/",
+  "reading": "get merid",
+  "meanings": [
+   "evlenmek"
+  ],
+  "definition": "To become husband and wife.",
+  "example": "They plan to get married next summer."
+ },
+ "give medical care": {
+  "ipa": "/ɡɪv ˈmedɪkl keə/",
+  "reading": "giv medikıl keyı",
+  "meanings": [
+   "tıbbi bakım sağlamak",
+   "tedavi etmek"
+  ],
+  "definition": "To provide treatment to a sick person.",
+  "example": "Doctors always give medical care to people in need."
+ },
+ "give tips": {
+  "ipa": "/ɡɪv tɪps/",
+  "reading": "giv tips",
+  "meanings": [
+   "ipucu vermek",
+   "tavsiye vermek"
+  ],
+  "definition": "To offer useful advice or information.",
+  "example": "Teachers often give tips to help students study."
+ },
+ "go on": {
+  "ipa": "/ɡəʊ ɒn/",
+  "reading": "gou on",
+  "meanings": [
+   "devam etmek",
+   "sürdürmek"
+  ],
+  "definition": "To continue doing something.",
+  "example": "Please go on with your speech."
+ },
+ "graduate from university": {
+  "ipa": "/ˈɡrædʒueɪt frəm ˌjuːnɪˈvɜːsəti/",
+  "reading": "grecueyt frım yunivörsiti",
+  "meanings": [
+   "üniversiteden mezun olmak"
+  ],
+  "definition": "To complete studies at a university successfully.",
+  "example": "I want to graduate from university next year."
+ },
+ "have an operation": {
+  "ipa": "/hæv ən ˌɒpəˈreɪʃn/",
+  "reading": "hev ən opıreyşın",
+  "meanings": [
+   "ameliyat olmak"
+  ],
+  "definition": "To undergo a medical surgery.",
+  "example": "The patient will have an operation on his knee tomorrow."
+ },
+ "have camp by the lake": {
+  "ipa": "/hæv kæmp baɪ ðə leɪk/",
+  "reading": "hev kemp bay dı leyk",
+  "meanings": [
+   "göl kenarında kamp kurmak",
+   "göl kenarında kamp yapmak"
+  ],
+  "definition": "To set up a tent and stay near a lake.",
+  "example": "We decided to have camp by the lake this weekend."
+ },
+ "improve foreign language": {
+  "ipa": "/ɪmˈpruːv ˈfɒrən ˈlæŋɡwɪdʒ/",
+  "reading": "imprüv forın lengwiç",
+  "meanings": [
+   "yabancı dili geliştirmek"
+  ],
+  "definition": "To make one's skills in another language better.",
+  "example": "You can improve foreign language skills by reading books."
+ },
+ "interaction": {
+  "ipa": "/ˌɪntərˈækʃn/",
+  "reading": "intırekşın",
+  "meanings": [
+   "etkileşim",
+   "iletişim"
+  ],
+  "definition": "An occasion where people communicate or work together.",
+  "example": "Social interaction is important for young children."
+ },
+ "invent": {
+  "ipa": "/ɪnˈvent/",
+  "reading": "invent",
+  "meanings": [
+   "icat etmek",
+   "bulmak"
+  ],
+  "definition": "To design or create something that did not exist before.",
+  "example": "Scientists try to invent new technologies every day."
+ },
+ "keep phone calls short": {
+  "ipa": "/kiːp fəʊn kɔːlz ʃɔːt/",
+  "reading": "kiip fown kols şort",
+  "meanings": [
+   "telefon görüşmelerini kısa tutmak"
+  ],
+  "definition": "To talk briefly on the telephone.",
+  "example": "At work, you should keep phone calls short and professional."
+ },
+ "learn lyrics of songs": {
+  "ipa": "/lɜːn ˈlɪrɪks ɒv sɒŋz/",
+  "reading": "lörn liriks ov songs",
+  "meanings": [
+   "şarkı sözlerini öğrenmek"
+  ],
+  "definition": "To memorize the words of musical pieces.",
+  "example": "I like to learn lyrics of songs that I enjoy."
+ },
+ "make a complaint": {
+  "ipa": "/meɪk ə kəmˈpleɪnt/",
+  "reading": "meyk e kımpleynt",
+  "meanings": [
+   "şikayette bulunmak",
+   "şikayet etmek"
+  ],
+  "definition": "To state officially that you are not satisfied.",
+  "example": "Customers can make a complaint if the service is bad."
+ },
+ "make phone call": {
+  "ipa": "/meɪk fəʊn kɔːl/",
+  "reading": "meyk fown kol",
+  "meanings": [
+   "telefon araması yapmak",
+   "telefon etmek"
+  ],
+  "definition": "To dial and speak to someone on a telephone.",
+  "example": "Please make phone call contact with the office today."
+ },
+ "make reservation": {
+  "ipa": "/meɪk ˌrezəˈveɪʃn/",
+  "reading": "meyk rezırveyşın",
+  "meanings": [
+   "rezervasyon yaptırmak",
+   "yer ayırtmak"
+  ],
+  "definition": "To arrange to have a room, seat, or table.",
+  "example": "You must make reservation before visiting this popular restaurant."
+ },
+ "make sense": {
+  "ipa": "/meɪk sens/",
+  "reading": "meyk sens",
+  "meanings": [
+   "anlamlı gelmek",
+   "mantıklı olmak"
+  ],
+  "definition": "To be easy to understand or be practical.",
+  "example": "His explanation does not make sense to me."
+ },
+ "messenger bird": {
+  "ipa": "/ˈmesɪndʒə(r) bɜːd/",
+  "reading": "mesıncır börd",
+  "meanings": [
+   "haberci kuş",
+   "posta güvercini"
+  ],
+  "definition": "A bird used to carry written messages.",
+  "example": "In the past, people used a messenger bird to send letters."
+ },
+ "old fashioned": {
+  "ipa": "/ˌəʊld ˈfæʃnd/",
+  "reading": "owld feşınd",
+  "meanings": [
+   "eski moda",
+   "demode"
+  ],
+  "definition": "Not modern or fashionable anymore.",
+  "example": "He wears an old fashioned suit to the party."
+ },
+ "online communication": {
+  "ipa": "/ˌɒnlaɪn kəˌmjuːnɪˈkeɪʃn/",
+  "reading": "onlayn kemyunikeyşın",
+  "meanings": [
+   "çevrimiçi iletişim",
+   "online iletişim"
+  ],
+  "definition": "Sharing information or messages using the internet",
+  "example": "We use online communication to talk to our remote teams."
+ },
+ "order something to eat": {
+  "ipa": "/ˈɔːdə ˌsʌmθɪŋ tu iːt/",
+  "reading": "oodır samtink tu iit",
+  "meanings": [
+   "yiyecek bir şeyler sipariş etmek"
+  ],
+  "definition": "To request food from a restaurant",
+  "example": "Let us order something to eat from the local diner."
+ },
+ "participant": {
+  "ipa": "/pɑːˈtɪsɪpənt/",
+  "reading": "patisipınt",
+  "meanings": [
+   "katılımcı"
+  ],
+  "definition": "A person who takes part in something",
+  "example": "Each participant must sign the registration form."
+ },
+ "people in need": {
+  "ipa": "/ˈpiːpl ɪn niːd/",
+  "reading": "piypıl in niyd",
+  "meanings": [
+   "ihtiyaç sahipleri",
+   "muhtaç insanlar"
+  ],
+  "definition": "Individuals who require help or support",
+  "example": "Our charity collects warm clothes for people in need."
+ },
+ "percent": {
+  "ipa": "/pəˈsent/",
+  "reading": "pısent",
+  "meanings": [
+   "yüzde"
+  ],
+  "definition": "One part in every hundred",
+  "example": "Only ten percent of the students missed the class."
+ },
+ "practice lesson": {
+  "ipa": "/ˈpræktɪs ˈlesn/",
+  "reading": "praktis lesın",
+  "meanings": [
+   "uygulama dersi",
+   "pratik dersi"
+  ],
+  "definition": "A class session used to train a skill",
+  "example": "We will have a practice lesson tomorrow morning."
+ },
+ "press nine for english": {
+  "ipa": "/pres naɪn fɔːr ˈɪŋɡlɪʃ/",
+  "reading": "pres nayn for ingliş",
+  "meanings": [
+   "İngilizce için dokuza basın"
+  ],
+  "definition": "Instruction to select English in a phone menu",
+  "example": "Please press nine for english to speak with our agent."
+ },
+ "previous generation": {
+  "ipa": "/ˈpriːviəs ˌdʒenəˈreɪʃn/",
+  "reading": "priyviıs cenıreyşın",
+  "meanings": [
+   "önceki nesil",
+   "önceki kuşak"
+  ],
+  "definition": "The people born before the current group",
+  "example": "The previous generation had limited access to modern computers."
+ },
+ "pros and cons": {
+  "ipa": "/prəʊz ænd kɒnz/",
+  "reading": "proyz end konz",
+  "meanings": [
+   "artılar ve eksiler",
+   "avantaj ve dezavantajlar"
+  ],
+  "definition": "The advantages and disadvantages of something",
+  "example": "We must weigh the pros and cons of moving."
+ },
+ "raise awareness": {
+  "ipa": "/reɪz əˈweənəs/",
+  "reading": "reyz eveyrnıs",
+  "meanings": [
+   "farkındalık yaratmak",
+   "bilinçlendirmek"
+  ],
+  "definition": "To increase knowledge about an issue",
+  "example": "They run campaigns to raise awareness about healthy eating."
+ },
+ "range": {
+  "ipa": "/reɪndʒ/",
+  "reading": "reynç",
+  "meanings": [
+   "çeşitlilik",
+   "aralık"
+  ],
+  "definition": "A variety of different things",
+  "example": "The store offers a wide range of organic foods."
+ },
+ "rank": {
+  "ipa": "/ræŋk/",
+  "reading": "renk",
+  "meanings": [
+   "sıra",
+   "rütbe",
+   "derece"
+  ],
+  "definition": "A position in a hierarchy",
+  "example": "The soldier achieved a high rank in the army."
+ },
+ "reach": {
+  "ipa": "/riːtʃ/",
+  "reading": "riiyç",
+  "meanings": [
+   "ulaşmak",
+   "erişmek"
+  ],
+  "definition": "To arrive at a place or destination",
+  "example": "We will reach the hotel by midnight."
+ },
+ "real life experience": {
+  "ipa": "/rɪəl laɪf ɪkˈspɪəriəns/",
+  "reading": "riıl layf ikspiriyıns",
+  "meanings": [
+   "gerçek hayat deneyimi"
+  ],
+  "definition": "Knowledge gained from actual life events",
+  "example": "This training provides valuable real life experience for students."
+ },
+ "receive invitation": {
+  "ipa": "/rɪˈsiːv ˌɪnvɪˈteɪʃn/",
+  "reading": "risiyv inviteyşın",
+  "meanings": [
+   "davetiye almak"
+  ],
+  "definition": "To get a request to attend an event",
+  "example": "You need to receive invitation before attending the private event."
+ },
+ "refugee": {
+  "ipa": "/ˌrefjuˈdʒiː/",
+  "reading": "refyucii",
+  "meanings": [
+   "mülteci",
+   "sığınmacı"
+  ],
+  "definition": "A person forced to leave their country",
+  "example": "The kind family helped a refugee adjust to life."
+ },
+ "return product": {
+  "ipa": "/rɪˈtɜːn ˈprɒdʌkt/",
+  "reading": "ritörn pradakt",
+  "meanings": [
+   "ürün iade etmek",
+   "iade edilen ürün"
+  ],
+  "definition": "To send back an item to a shop.",
+  "example": "You can return product orders if you are not happy."
+ },
+ "return ticket": {
+  "ipa": "/rɪˈtɜːn ˈtɪkɪt/",
+  "reading": "ritörn tikit",
+  "meanings": [
+   "gidiş-dönüş bileti",
+   "iade bileti"
+  ],
+  "definition": "A ticket for a journey to a place and back.",
+  "example": "I bought a return ticket to London."
+ },
+ "sad": {
+  "ipa": "/sæd/",
+  "reading": "sed",
+  "meanings": [
+   "üzgün",
+   "mutsuz"
+  ],
+  "definition": "Feeling or showing sorrow or unhappiness.",
+  "example": "She felt very sad after hearing the news."
+ },
+ "same age": {
+  "ipa": "/seɪm eɪdʒ/",
+  "reading": "seym eyc",
+  "meanings": [
+   "aynı yaşta",
+   "yaşıt"
+  ],
+  "definition": "Having the same number of years of life.",
+  "example": "We are the same age and go to school together."
+ },
+ "scared": {
+  "ipa": "/skeəd/",
+  "reading": "skeırd",
+  "meanings": [
+   "korkmuş",
+   "ürkek"
+  ],
+  "definition": "Fearful, frightened, or worried.",
+  "example": "The little dog is scared of loud noises."
+ },
+ "security": {
+  "ipa": "/sɪˈkjʊərəti/",
+  "reading": "sekyuriti",
+  "meanings": [
+   "güvenlik",
+   "emniyet"
+  ],
+  "definition": "The state of being free from danger.",
+  "example": "The building has excellent security at the main gate."
+ },
+ "share ideas and opinions": {
+  "ipa": "/ʃeər aɪˈdɪəz ænd əˈpɪnjənz/",
+  "reading": "şeyr aydiyaz end epinyınz",
+  "meanings": [
+   "fikir ve düşünceleri paylaşmak"
+  ],
+  "definition": "To exchange thoughts and views with others.",
+  "example": "We meet to share ideas and opinions about the project."
+ },
+ "share opinion": {
+  "ipa": "/ʃeər əˈpɪnjən/",
+  "reading": "şeyr epinyın",
+  "meanings": [
+   "fikrini paylaşmak",
+   "görüşünü belirtmek"
+  ],
+  "definition": "To tell others what you think about something.",
+  "example": "This blog is a great place to share opinion articles."
+ },
+ "single ticket": {
+  "ipa": "/ˈsɪŋɡl ˈtɪkɪt/",
+  "reading": "singıl tikit",
+  "meanings": [
+   "tek yön bilet",
+   "tek kişilik bilet"
+  ],
+  "definition": "A ticket for a one-way journey.",
+  "example": "I need a single ticket to Manchester, please."
+ },
+ "smart": {
+  "ipa": "/smɑːt/",
+  "reading": "smaat",
+  "meanings": [
+   "zeki",
+   "akıllı",
+   "şık"
+  ],
+  "definition": "Intelligent, clever, or neat in appearance.",
+  "example": "She is a very smart student who learns quickly."
+ },
+ "smoke signals": {
+  "ipa": "/sməʊk ˈsɪɡnəlz/",
+  "reading": "smouk signılz",
+  "meanings": [
+   "duman işaretleri",
+   "dumanla haberleşme"
+  ],
+  "definition": "Messages sent using puffs of smoke.",
+  "example": "Ancient tribes used smoke signals to communicate from afar."
+ },
+ "solve problem": {
+  "ipa": "/sɒlv ˈprɒbləm/",
+  "reading": "solv problım",
+  "meanings": [
+   "sorun çözmek",
+   "problem çözmek"
+  ],
+  "definition": "To find an answer to a difficulty.",
+  "example": "Our team exists to solve problem issues for clients."
+ },
+ "solve puzzle": {
+  "ipa": "/sɒlv ˈpʌzl/",
+  "reading": "solv pazıl",
+  "meanings": [
+   "bulmaca çözmek"
+  ],
+  "definition": "To find the correct solution to a game.",
+  "example": "She helped me solve puzzle games yesterday."
+ },
+ "something": {
+  "ipa": "/ˈsʌmθɪŋ/",
+  "reading": "samting",
+  "meanings": [
+   "bir şey",
+   "herhangi bir şey"
+  ],
+  "definition": "A thing that is not known or named.",
+  "example": "I need something warm to drink right now."
+ },
+ "speak louder": {
+  "ipa": "/spiːk ˈlaʊdə/",
+  "reading": "spiik laudır",
+  "meanings": [
+   "yüksek sesle konuşmak",
+   "daha yüksek sesle konuşmak"
+  ],
+  "definition": "To talk with more volume.",
+  "example": "Please speak louder because I cannot hear you well."
+ },
+ "stay": {
+  "ipa": "/steɪ/",
+  "reading": "stey",
+  "meanings": [
+   "kalmak",
+   "konaklamak"
+  ],
+  "definition": "To remain in a place or state.",
+  "example": "You should stay at home until you feel better."
+ },
+ "stranger": {
+  "ipa": "/ˈstreɪndʒə/",
+  "reading": "streyncır",
+  "meanings": [
+   "yabancı"
+  ],
+  "definition": "A person whom one does not know.",
+  "example": "Do not talk to a stranger on the street."
+ },
+ "take a memo/a note": {
+  "ipa": "/teɪk ə ˈmeməʊ/",
+  "reading": "teyk e memo",
+  "meanings": [
+   "not almak",
+   "not tutmak"
+  ],
+  "definition": "To write down information quickly.",
+  "example": "Please take a memo/a note of this message."
+ },
+ "take university exam": {
+  "ipa": "/teɪk ˌjuːnɪˈvɜːsəti ɪɡˈzæm/",
+  "reading": "teyk yunivörsiti igzem",
+  "meanings": [
+   "üniversite sınavına girmek"
+  ],
+  "definition": "To sit for a college entrance test.",
+  "example": "Students must register to take university exam this year."
+ },
+ "talk face to face": {
+  "ipa": "/tɔːk feɪs tə feɪs/",
+  "reading": "took feys tu feys",
+  "meanings": [
+   "yüz yüze konuşmak"
+  ],
+  "definition": "To speak directly in person.",
+  "example": "We should talk face to face about this issue."
+ },
+ "talk on the phone": {
+  "ipa": "/tɔːk ɒn ðə fəʊn/",
+  "reading": "took on dı fön",
+  "meanings": [
+   "telefonda konuşmak"
+  ],
+  "definition": "To speak using a telephone.",
+  "example": "I often talk on the phone with my mother."
+ },
+ "technological development": {
+  "ipa": "/ˌteknəˈlɒdʒɪkl dɪˈveləpmənt/",
+  "reading": "teknolocikıl divelopmınt",
+  "meanings": [
+   "teknolojik gelişme"
+  ],
+  "definition": "Growth or advancement in technology.",
+  "example": "We must adapt to every technological development."
+ },
+ "tool": {
+  "ipa": "/tuːl/",
+  "reading": "tuul",
+  "meanings": [
+   "alet",
+   "araç"
+  ],
+  "definition": "A device used to do a manual job.",
+  "example": "A hammer is a useful tool for building."
+ },
+ "typically": {
+  "ipa": "/ˈtɪpɪkli/",
+  "reading": "tipikli",
+  "meanings": [
+   "tipik olarak",
+   "genellikle"
+  ],
+  "definition": "In a way that is usual or expected.",
+  "example": "The weather is typically warm during July."
+ },
+ "use social network": {
+  "ipa": "/juːz ˈsəʊʃl ˈnetwɜːk/",
+  "reading": "yuuz şoşıl netvörk",
+  "meanings": [
+   "sosyal ağ kullanmak"
+  ],
+  "definition": "To access online platforms to connect.",
+  "example": "Many young people use social network apps daily."
+ },
+ "wait for response": {
+  "ipa": "/weɪt fɔː rɪˈspɒns/",
+  "reading": "veyt foo rispons",
+  "meanings": [
+   "cevap beklemek",
+   "yanıt beklemek"
+  ],
+  "definition": "To stay inactive until an answer arrives.",
+  "example": "I will wait for response before taking action."
+ },
+ "war": {
+  "ipa": "/wɔː(r)/",
+  "reading": "voo",
+  "meanings": [
+   "savaş",
+   "harp"
+  ],
+  "definition": "Armed conflict between countries or groups.",
+  "example": "Nobody wants to start a nuclear war."
+ },
+ "warn": {
+  "ipa": "/wɔːn/",
+  "reading": "voon",
+  "meanings": [
+   "uyarmak",
+   "ikaz etmek"
+  ],
+  "definition": "To tell someone about possible danger.",
+  "example": "Teachers always warn students about cheating."
+ },
+ "work hard": {
+  "ipa": "/wɜːk hɑːd/",
+  "reading": "vörk haad",
+  "meanings": [
+   "çok çalışmak",
+   "sıkı çalışmak"
+  ],
+  "definition": "To put a lot of effort into a job.",
+  "example": "You must work hard to pass the final exam."
+ },
+ "worried": {
+  "ipa": "/ˈwʌrid/",
+  "reading": "vörid",
+  "meanings": [
+   "endişeli",
+   "kaygılı"
+  ],
+  "definition": "Unhappy because you think something bad might happen.",
+  "example": "She feels very worried about her upcoming exam."
+ },
+ "write down": {
+  "ipa": "/raɪt daʊn/",
+  "reading": "rayt daun",
+  "meanings": [
+   "not etmek",
+   "yazıya dökmek"
+  ],
+  "definition": "To write something on paper to remember it.",
+  "example": "Please write down your phone number on this paper."
+ },
+ "write letter": {
+  "ipa": "/raɪt ˈletə/",
+  "reading": "rayt letır",
+  "meanings": [
+   "mektup yazmak"
+  ],
+  "definition": "To create a written message for someone.",
+  "example": "I will write letter templates for the office tomorrow."
  }
 }
