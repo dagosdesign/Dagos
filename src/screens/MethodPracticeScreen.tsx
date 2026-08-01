@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'lucide-react';
-import { FLASHCARDS } from '../data/flashcards';
+import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 
@@ -617,7 +617,7 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
                 </button>
               </div>
 
-              {entry.forms ? (
+              {entry.forms && current.category === FLASHCARD_CATEGORIES.IRREGULAR_VERBS ? (
                 /* Irregular verb: the three forms replace IPA/reading */
                 <div className="space-y-1.5 pt-1">
                   {(['V1', 'V2', 'V3'] as const).map((label, fi) => {

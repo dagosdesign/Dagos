@@ -24,7 +24,9 @@ const STYLE =
   'No text, no letters, no words, no watermark. Vertical portrait composition. ' +
   'STRICT content rules: no alcohol or drinks that resemble alcohol, no weapons of any kind, ' +
   'no compasses, no hourglasses, all people fully and modestly dressed. ' +
-  'If a scene needs a person, use a MALE figure or preferably no people at all; do not depict women. ' +
+  'NO PEOPLE: express the concept through objects, still-life, environments and symbols only. ' +
+  'If a human presence is truly unavoidable, show at most ONE male figure, preferably only hands or a distant silhouette; never women, never crowds. ' +
+  'The scene must clearly and directly express the meaning of the word — no vague generic imagery. ' +
   'Be original and varied — avoid cliché stock-photo concepts.';
 
 const SCENES = {
@@ -40,9 +42,9 @@ const SCENES = {
 };
 
 const MODELS = [
+  'gemini-3-pro-image',
   'gemini-3.1-flash-image',
   'gemini-3.1-flash-lite-image',
-  'gemini-3-pro-image',
   'gemini-2.5-flash-image',
 ];
 
