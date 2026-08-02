@@ -19172,16 +19172,6 @@
   "definition": "Used to politely give bad news.",
   "example": "I'm afraid I cannot help you."
  },
- "i would like to": {
-  "ipa": "/aɪ wʊd ˈlaɪk tuː/",
-  "reading": "ay vud layk tu",
-  "meanings": [
-   "isterim",
-   "çok isterim"
-  ],
-  "definition": "Expressing a polite desire to do something.",
-  "example": "I would like to order coffee."
- },
  "ice cream": {
   "ipa": "/ˈaɪs kriːm/",
   "reading": "ays kriim",
@@ -19253,15 +19243,6 @@
   ],
   "definition": "To give someone facts or information.",
   "example": "Please inform me about any changes."
- },
- "informal conversation": {
-  "ipa": "/ɪnˈfɔːml ˌkɒnvəˈseɪʃn/",
-  "reading": "informal konverseşın",
-  "meanings": [
-   "resmi olmayan konuşma"
-  ],
-  "definition": "A relaxed and unofficial chat.",
-  "example": "They had an informal conversation outside."
  },
  "instead": {
   "ipa": "/ɪnˈsted/",
@@ -19682,7 +19663,7 @@
   "ipa": "/ˈɔːdə/",
   "reading": "ordır",
   "meanings": [
-   "sipariş etmek"
+   "sipariş vermek"
   ],
   "definition": "To request food or goods to be supplied.",
   "example": "We are ready to order our food now."
@@ -26414,5 +26395,23 @@
   ],
   "definition": "To create a written message for someone.",
   "example": "I will write letter templates for the office tomorrow."
+ },
+ "would like": {
+  "ipa": "",
+  "reading": "vud layk",
+  "meanings": [
+   "istemek"
+  ],
+  "definition": "Expressing a polite desire to do something.",
+  "example": "I would like to order coffee."
+ },
+ "informal": {
+  "ipa": "/ɪnˈfɔːml/",
+  "reading": "inföıml",
+  "meanings": [
+   "resmi olmayan"
+  ],
+  "definition": "Relaxed and casual; not official.",
+  "example": "He wore informal clothes at the picnic."
  }
 }

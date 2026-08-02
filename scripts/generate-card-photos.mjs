@@ -18,16 +18,27 @@ const ai = new GoogleGenAI({
   httpOptions: { headers: { 'User-Agent': 'aistudio-build' } },
 });
 
-const STYLE =
+const STYLE_BASE =
   'Cinematic photograph, very dark moody near-black background, black and gold color palette, ' +
   'warm golden accent lighting, luxurious editorial style, high detail, high resolution. ' +
-  'No text, no letters, no words, no watermark. Vertical portrait composition. ' +
+  'No watermark. Vertical portrait composition. ' +
   'STRICT content rules: no alcohol or drinks that resemble alcohol, no weapons of any kind, ' +
   'no compasses, no hourglasses, all people fully and modestly dressed. ' +
-  'NO PEOPLE: express the concept through objects, still-life, environments and symbols only. ' +
-  'If a human presence is truly unavoidable, show at most ONE male figure, preferably only hands or a distant silhouette; never women, never crowds. ' +
   'The scene must clearly and directly express the meaning of the word — no vague generic imagery. ' +
   'Be original and varied — avoid cliché stock-photo concepts.';
+
+// Default: people-free, no text. Scenes containing OVERRIDE/EXCEPTION opt out:
+// the scene description is authoritative and MUST be followed exactly.
+const STYLE_NO_PEOPLE =
+  'No text, no letters, no words. ' +
+  'NO PEOPLE: express the concept through objects, still-life, environments and symbols only. ' +
+  'If a human presence is truly unavoidable, show at most ONE male figure, preferably only hands or a distant silhouette; never women, never crowds. ' +
+  STYLE_BASE;
+const STYLE_SCENE_WINS =
+  'IMPORTANT: the scene description above is authoritative and overrides all default composition rules — ' +
+  'if it asks for people, clearly show those people; if it asks for written words, render exactly those words legibly. ' +
+  'Unless the scene explicitly says otherwise, any people shown are male and modestly dressed. ' +
+  STYLE_BASE;
 
 const SCENES = {
   poor: 'A weary homeless man sitting on a cracked curb in a run-down abandoned street at dusk, ruined old buildings behind him, one warm distant streetlight',
@@ -49,7 +60,8 @@ const MODELS = [
 ];
 
 async function generateOne(word, scene) {
-  const prompt = `${scene}. ${STYLE}`;
+  const style = /OVERRIDE|EXCEPTION/i.test(scene) ? STYLE_SCENE_WINS : STYLE_NO_PEOPLE;
+  const prompt = `${scene}. ${style}`;
   let lastErr;
   for (const model of MODELS) {
     for (const config of [
