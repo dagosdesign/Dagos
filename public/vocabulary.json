@@ -9511,7 +9511,6 @@
   "ipa": "/bɪˈheɪv/",
   "reading": "biheyv",
   "meanings": [
-   "uslu durmak",
    "davranmak"
   ],
   "definition": "Act in a polite or proper way",
@@ -25300,16 +25299,6 @@
   "definition": "Having good manners and showing respect.",
   "example": "It is important to be polite to everyone."
  },
- "reservation": {
-  "ipa": "/ˌrezəˈveɪʃn/",
-  "reading": "rezıveyşın",
-  "meanings": [
-   "rezervasyon",
-   "yer ayırtma"
-  ],
-  "definition": "An arrangement to secure a seat or room.",
-  "example": "I would like to make a reservation for tonight."
- },
  "response": {
   "ipa": "/rɪˈspɒns/",
   "reading": "rispons",
@@ -25682,9 +25671,7 @@
   "ipa": "/ɪnˈɡeɪdʒ ɪn/",
   "reading": "ingeyç in",
   "meanings": [
-   "ile meşgul olmak",
-   "katılmak",
-   "yapmak"
+   "bir şeyle meşgul olmak"
   ],
   "definition": "To take part in a particular activity.",
   "example": "Many students engage in sports after school."
@@ -25965,15 +25952,6 @@
   ],
   "definition": "A class session used to train a skill",
   "example": "We will have a practice lesson tomorrow morning."
- },
- "press nine for english": {
-  "ipa": "/pres naɪn fɔːr ˈɪŋɡlɪʃ/",
-  "reading": "pres nayn for ingliş",
-  "meanings": [
-   "İngilizce için dokuza basın"
-  ],
-  "definition": "Instruction to select English in a phone menu",
-  "example": "Please press nine for english to speak with our agent."
  },
  "previous generation": {
   "ipa": "/ˈpriːviəs ˌdʒenəˈreɪʃn/",
