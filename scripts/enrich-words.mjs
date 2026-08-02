@@ -9,7 +9,11 @@ dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
 
 const [wordsFile, outFile] = process.argv.slice(2);
 const raw = fs.readFileSync(wordsFile, 'utf8');
-const words = [...new Set(raw.split(',').map(w => w.trim().toLowerCase()).filter(Boolean))];
+// Newline-separated preferred (phrases may contain commas); falls back to commas.
+const words = [...new Set(
+  (raw.includes('\n') ? raw.split(/\r?\n/) : raw.split(','))
+    .map(w => w.trim().toLowerCase()).filter(Boolean)
+)];
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,

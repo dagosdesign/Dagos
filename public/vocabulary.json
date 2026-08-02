@@ -26389,5 +26389,1240 @@
   ],
   "definition": "Divide something into smaller sections.",
   "example": "Cut into piece to cook faster."
+ },
+ "advantage": {
+  "ipa": "/ədˈvɑːntɪdʒ/",
+  "reading": "ıdvaantıc",
+  "meanings": [
+   "avantaj",
+   "yarar",
+   "üstünlük"
+  ],
+  "definition": "A condition that puts one in a favorable position.",
+  "example": "A good education gives you a huge advantage."
+ },
+ "adventure": {
+  "ipa": "/ədˈventʃə/",
+  "reading": "ıdvençır",
+  "meanings": [
+   "macera",
+   "serüven"
+  ],
+  "definition": "An unusual and exciting or daring experience.",
+  "example": "They went to the mountains to seek adventure."
+ },
+ "attachment": {
+  "ipa": "/əˈtætʃmənt/",
+  "reading": "ıteçmınt",
+  "meanings": [
+   "ek",
+   "bağlılık",
+   "ilişik"
+  ],
+  "definition": "An extra part or document added to something.",
+  "example": "Please open the email attachment to view the report."
+ },
+ "blogger": {
+  "ipa": "/ˈblɒɡə/",
+  "reading": "blogır",
+  "meanings": [
+   "blogger",
+   "blog yazarı"
+  ],
+  "definition": "A person who writes material for a blog.",
+  "example": "She works as a professional travel blogger now."
+ },
+ "booking": {
+  "ipa": "/ˈbʊkɪŋ/",
+  "reading": "buking",
+  "meanings": [
+   "rezervasyon",
+   "yer ayırtma"
+  ],
+  "definition": "An act of reserving accommodation or a ticket.",
+  "example": "I would like to make a booking for tonight."
+ },
+ "broken": {
+  "ipa": "/ˈbrəʊkən/",
+  "reading": "broukın",
+  "meanings": [
+   "kırık",
+   "bozuk",
+   "hasarlı"
+  ],
+  "definition": "Damaged or no longer working.",
+  "example": "The screen of my phone is completely broken."
+ },
+ "browser": {
+  "ipa": "/ˈbraʊzə/",
+  "reading": "brauzır",
+  "meanings": [
+   "tarayıcı",
+   "web tarayıcısı"
+  ],
+  "definition": "A program used to view websites on the Internet.",
+  "example": "You should update your web browser for security."
+ },
+ "careful": {
+  "ipa": "/ˈkeəfl/",
+  "reading": "keerful",
+  "meanings": [
+   "dikkatli",
+   "özenli"
+  ],
+  "definition": "Making sure of avoiding danger or mistakes.",
+  "example": "Please be careful when you cross the street."
+ },
+ "click": {
+  "ipa": "/klɪk/",
+  "reading": "klik",
+  "meanings": [
+   "tıklamak",
+   "tıklama",
+   "klik sesi"
+  ],
+  "definition": "To press a button on a computer mouse.",
+  "example": "Just click on the link to start."
+ },
+ "diary": {
+  "ipa": "/ˈdaɪəri/",
+  "reading": "dayıri",
+  "meanings": [
+   "günlük",
+   "ajanda"
+  ],
+  "definition": "A book for recording daily events.",
+  "example": "I write in my diary every night."
+ },
+ "download": {
+  "ipa": "/ˌdaʊnˈləʊd/",
+  "reading": "daunloud",
+  "meanings": [
+   "indirmek"
+  ],
+  "definition": "To copy data from the internet.",
+  "example": "You can download the game for free."
+ },
+ "education": {
+  "ipa": "/ˌedʒuˈkeɪʃn/",
+  "reading": "ecıkeyşın",
+  "meanings": [
+   "eğitim",
+   "öğrenim"
+  ],
+  "definition": "The process of teaching and learning.",
+  "example": "Every child has a right to education."
+ },
+ "habit": {
+  "ipa": "/ˈhæbɪt/",
+  "reading": "hebit",
+  "meanings": [
+   "alışkanlık",
+   "huy"
+  ],
+  "definition": "Something you do regularly.",
+  "example": "Reading is a very good habit."
+ },
+ "icon": {
+  "ipa": "/ˈaɪkɒn/",
+  "reading": "aykon",
+  "meanings": [
+   "simge",
+   "ikon"
+  ],
+  "definition": "A small picture on a computer screen.",
+  "example": "Click on the icon to open it."
+ },
+ "influencer": {
+  "ipa": "/ˈɪnfluənsə(r)/",
+  "reading": "influınsır",
+  "meanings": [
+   "etkileyici kişi",
+   "fenomen"
+  ],
+  "definition": "Someone who affects others' buying choices.",
+  "example": "She works as a social media influencer."
+ },
+ "learn language": {
+  "ipa": "/lɜːn ˈlæŋɡwɪdʒ/",
+  "reading": "löön lengviç",
+  "meanings": [
+   "dil öğrenmek"
+  ],
+  "definition": "To acquire the ability to speak another tongue.",
+  "example": "It is easy to learn language skills online."
+ },
+ "log in": {
+  "ipa": "/ˌlɒɡ ˈɪn/",
+  "reading": "log in",
+  "meanings": [
+   "giriş yapmak",
+   "oturum açmak"
+  ],
+  "definition": "To enter a computer system with a username.",
+  "example": "You must log in to access your account."
+ },
+ "log on": {
+  "ipa": "/ˌlɒɡ ˈɒn/",
+  "reading": "log on",
+  "meanings": [
+   "bağlanmak",
+   "oturum açmak"
+  ],
+  "definition": "To connect to a computer network or system.",
+  "example": "Please log on to start the online test."
+ },
+ "offline": {
+  "ipa": "/ˌɒfˈlaɪn/",
+  "reading": "oflayn",
+  "meanings": [
+   "çevrimdışı"
+  ],
+  "definition": "Not connected to the internet or computer.",
+  "example": "The system is currently offline for repairs."
+ },
+ "online": {
+  "ipa": "/ˌɒnˈlaɪn/",
+  "reading": "onlayn",
+  "meanings": [
+   "çevrimiçi",
+   "internete bağlı"
+  ],
+  "definition": "Connected to a computer or the internet.",
+  "example": "I love to play games online with friends."
+ },
+ "password": {
+  "ipa": "/ˈpɑːswɜːd/",
+  "reading": "paasvörd",
+  "meanings": [
+   "şifre",
+   "parola"
+  ],
+  "definition": "A secret word to access a system.",
+  "example": "Do not tell your password to anyone else."
+ },
+ "post": {
+  "ipa": "/pəʊst/",
+  "reading": "poust",
+  "meanings": [
+   "göndermek",
+   "paylaşmak",
+   "posta"
+  ],
+  "definition": "To publish content on the internet.",
+  "example": "I will post the photos on my blog."
+ },
+ "safety rules": {
+  "ipa": "/ˈseɪfti ruːlz/",
+  "reading": "seyfti ruulz",
+  "meanings": [
+   "güvenlik kuralları"
+  ],
+  "definition": "Rules to prevent harm or injury.",
+  "example": "Please follow all safety rules in the lab."
+ },
+ "screen": {
+  "ipa": "/skriːn/",
+  "reading": "skriin",
+  "meanings": [
+   "ekran",
+   "ekran görüntülemek"
+  ],
+  "definition": "The flat surface of a display device.",
+  "example": "The phone screen is cracked and broken."
+ },
+ "search engine": {
+  "ipa": "/ˈsɜːtʃ ˌendʒɪn/",
+  "reading": "sööç encin",
+  "meanings": [
+   "arama motoru"
+  ],
+  "definition": "An online tool to find web pages.",
+  "example": "Which search engine do you prefer to use?"
+ },
+ "sign in": {
+  "ipa": "/saɪn ɪn/",
+  "reading": "sayn in",
+  "meanings": [
+   "oturum açmak",
+   "giriş yapmak"
+  ],
+  "definition": "To enter a website or system using credentials.",
+  "example": "Please sign in to your account."
+ },
+ "sign up": {
+  "ipa": "/saɪn ʌp/",
+  "reading": "sayn ap",
+  "meanings": [
+   "kaydolmak",
+   "üye olmak"
+  ],
+  "definition": "To register or join an organization or website.",
+  "example": "You need to sign up to use the service."
+ },
+ "social networking site": {
+  "ipa": "/ˈsəʊʃl ˈnetwɜːkɪŋ saɪt/",
+  "reading": "souşıl netvörking sayt",
+  "meanings": [
+   "sosyal ağ sitesi"
+  ],
+  "definition": "A website for connecting with other people.",
+  "example": "Facebook is a famous social networking site."
+ },
+ "story": {
+  "ipa": "/ˈstɔːri/",
+  "reading": "stori",
+  "meanings": [
+   "hikaye",
+   "öykü"
+  ],
+  "definition": "A description of connected events or people.",
+  "example": "She likes to tell a funny story to children."
+ },
+ "upload": {
+  "ipa": "/ˌʌpˈləʊd/",
+  "reading": "aploud",
+  "meanings": [
+   "yüklemek",
+   "karşıya yüklemek"
+  ],
+  "definition": "To transfer data to another computer system.",
+  "example": "You can upload your photo to the website."
+ },
+ "waste": {
+  "ipa": "/weɪst/",
+  "reading": "veyst",
+  "meanings": [
+   "israf etmek",
+   "boşa harcamak"
+  ],
+  "definition": "To use resource carelessly or uselessly.",
+  "example": "Do not waste water when you wash dishes."
+ },
+ "website": {
+  "ipa": "/ˈwebsaɪt/",
+  "reading": "vebsayt",
+  "meanings": [
+   "internet sitesi",
+   "web sitesi"
+  ],
+  "definition": "A set of pages on the internet.",
+  "example": "I often visit this website for news."
+ },
+ "addict": {
+  "ipa": "/ˈædɪkt/",
+  "reading": "edikt",
+  "meanings": [
+   "bağımlı",
+   "tiryaki"
+  ],
+  "definition": "A person who cannot stop doing something harmful.",
+  "example": "He is a video game addict who plays all night."
+ },
+ "blog": {
+  "ipa": "/blɒɡ/",
+  "reading": "blog",
+  "meanings": [
+   "blog",
+   "günlük"
+  ],
+  "definition": "An online journal where someone writes about topics.",
+  "example": "I write a blog about travel and food."
+ },
+ "browse": {
+  "ipa": "/braʊz/",
+  "reading": "bırauz",
+  "meanings": [
+   "göz gezdirmek",
+   "internette gezinmek"
+  ],
+  "definition": "To look through information or websites casually",
+  "example": "I like to browse the internet for new ideas."
+ },
+ "command": {
+  "ipa": "/kəˈmɑːnd/",
+  "reading": "kımand",
+  "meanings": [
+   "komut",
+   "emir vermek"
+  ],
+  "definition": "An order given to a person or computer",
+  "example": "You must enter a command to start the program."
+ },
+ "develop": {
+  "ipa": "/dɪˈveləp/",
+  "reading": "divelıp",
+  "meanings": [
+   "geliştirmek",
+   "gelişmek"
+  ],
+  "definition": "To grow or change into a more advanced form",
+  "example": "We want to develop a new mobile application."
+ },
+ "friend request": {
+  "ipa": "/frend rɪˈkwest/",
+  "reading": "frend rikwest",
+  "meanings": [
+   "arkadaşlık isteği"
+  ],
+  "definition": "An invitation to be friends on social media",
+  "example": "I received a friend request from an old classmate."
+ },
+ "ignore": {
+  "ipa": "/ɪɡˈnɔː/",
+  "reading": "ignôr",
+  "meanings": [
+   "göz ardı etmek",
+   "görmezden gelmek"
+  ],
+  "definition": "To pay no attention to someone or something",
+  "example": "Please do not ignore my advice this time."
+ },
+ "improve": {
+  "ipa": "/ɪmˈpruːv/",
+  "reading": "imprüv",
+  "meanings": [
+   "geliştirmek",
+   "iyileştirmek"
+  ],
+  "definition": "To make or become better",
+  "example": "You must practice daily to improve your speaking skills."
+ },
+ "instant": {
+  "ipa": "/ˈɪnstənt/",
+  "reading": "instınt",
+  "meanings": [
+   "ani",
+   "hemen olan",
+   "hazır"
+  ],
+  "definition": "Happening or coming immediately",
+  "example": "The system provides an instant response to your search."
+ },
+ "isolated": {
+  "ipa": "/ˈaɪsəleɪtɪd/",
+  "reading": "aysıleytid",
+  "meanings": [
+   "izole",
+   "yalnız"
+  ],
+  "definition": "Single, separated, or far away from others",
+  "example": "The village is very isolated in the winter months."
+ },
+ "just": {
+  "ipa": "/dʒʌst/",
+  "reading": "cast",
+  "meanings": [
+   "sadece",
+   "henüz",
+   "adil"
+  ],
+  "definition": "Only, simply, or a very short time ago",
+  "example": "I just need a few minutes to finish this."
+ },
+ "log off": {
+  "ipa": "/lɒɡ ɒf/",
+  "reading": "log of",
+  "meanings": [
+   "oturumu kapatmak",
+   "çıkış yapmak"
+  ],
+  "definition": "To end a connection to a computer system",
+  "example": "Always remember to log off before leaving your desk."
+ },
+ "log out": {
+  "ipa": "/lɒɡ aʊt/",
+  "reading": "log aut",
+  "meanings": [
+   "çıkış yapmak"
+  ],
+  "definition": "To sign out of a computer account",
+  "example": "You should log out of your social media account."
+ },
+ "look for": {
+  "ipa": "/lʊk fɔː/",
+  "reading": "luk fôr",
+  "meanings": [
+   "aramak"
+  ],
+  "definition": "To search for someone or something",
+  "example": "I will look for my keys in the kitchen."
+ },
+ "nickname": {
+  "ipa": "/ˈnɪkneɪm/",
+  "reading": "nikneym",
+  "meanings": [
+   "takma ad",
+   "lakap"
+  ],
+  "definition": "An informal name used instead of real name",
+  "example": "Do you have a nickname that your friends use?"
+ },
+ "obey": {
+  "ipa": "/əˈbeɪ/",
+  "reading": "ıbey",
+  "meanings": [
+   "itaat etmek",
+   "uymak"
+  ],
+  "definition": "To do what you are told to do",
+  "example": "Drivers must obey the traffic laws at all times."
+ },
+ "practice": {
+  "ipa": "/ˈpræktɪs/",
+  "reading": "'präktis'",
+  "meanings": [
+   "pratik",
+   "uygulama",
+   "alıştırma"
+  ],
+  "definition": "Doing something repeatedly to improve",
+  "example": "You need regular practice to learn English."
+ },
+ "precaution": {
+  "ipa": "/prɪˈkɔːʃn/",
+  "reading": "'prikooşın'",
+  "meanings": [
+   "önlem",
+   "tedbir"
+  ],
+  "definition": "An action taken to prevent danger",
+  "example": "We must take a precaution against the cold."
+ },
+ "protect": {
+  "ipa": "/prəˈtekt/",
+  "reading": "'prıtekt'",
+  "meanings": [
+   "korumak"
+  ],
+  "definition": "To keep someone or something safe",
+  "example": "We must protect our planet from pollution."
+ },
+ "safety": {
+  "ipa": "/ˈseɪfti/",
+  "reading": "'seyfti'",
+  "meanings": [
+   "güvenlik",
+   "emniyet"
+  ],
+  "definition": "The state of being safe from danger",
+  "example": "Road safety is very important for children."
+ },
+ "sign": {
+  "ipa": "/saɪn/",
+  "reading": "'sayn'",
+  "meanings": [
+   "tabela",
+   "işaret",
+   "imzalamak"
+  ],
+  "definition": "A notice or gesture that gives information",
+  "example": "Please look at the sign on the wall."
+ },
+ "username": {
+  "ipa": "/ˈjuːzəneɪm/",
+  "reading": "'yuuzırneym'",
+  "meanings": [
+   "kullanıcı adı"
+  ],
+  "definition": "A name used to log into a system",
+  "example": "You must enter a unique username here."
+ },
+ "web browser": {
+  "ipa": "/web ˈbraʊzə/",
+  "reading": "'veb bıravzır'",
+  "meanings": [
+   "internet tarayıcısı",
+   "web tarayıcı"
+  ],
+  "definition": "A program used to view websites",
+  "example": "Which web browser do you usually use?"
+ },
+ "access": {
+  "ipa": "/ˈækses/",
+  "reading": "'ekses'",
+  "meanings": [
+   "erişim",
+   "erişmek"
+  ],
+  "definition": "The right or ability to enter somewhere",
+  "example": "Only students have access to this library."
+ },
+ "aim": {
+  "ipa": "/eɪm/",
+  "reading": "eym",
+  "meanings": [
+   "hedeflemek",
+   "amaçlamak",
+   "amaç"
+  ],
+  "definition": "To plan or hope to achieve something.",
+  "example": "We aim to improve our services this year."
+ },
+ "attach a file": {
+  "ipa": "/əˈtætʃ ə faɪl/",
+  "reading": "eteç e fayl",
+  "meanings": [
+   "dosya eklemek"
+  ],
+  "definition": "To join a computer document to an email.",
+  "example": "Please attach a file to your job application."
+ },
+ "avoid using dangerous sites": {
+  "ipa": "/əˈvɔɪd ˈjuːz.ɪŋ ˈdeɪn.dʒər.əs saɪts/",
+  "reading": "evoyd yuuzing deyncırıs sayts",
+  "meanings": [
+   "tehlikeli siteleri kullanmaktan kaçınmak"
+  ],
+  "definition": "To stay away from unsafe websites on the internet.",
+  "example": "You must avoid using dangerous sites to stay safe online."
+ },
+ "browse articles": {
+  "ipa": "/braʊz ˈɑː.tɪ.kəlz/",
+  "reading": "bravz aatıkılz",
+  "meanings": [
+   "makalelere göz atmak"
+  ],
+  "definition": "To look through written pieces of work casually.",
+  "example": "I like to browse articles during my free time."
+ },
+ "browse internet": {
+  "ipa": "/braʊz ˈɪn.tə.net/",
+  "reading": "bravz intırnet",
+  "meanings": [
+   "internette gezinmek"
+  ],
+  "definition": "To look at information on the World Wide Web.",
+  "example": "Students often browse internet databases for research."
+ },
+ "buy ticket": {
+  "ipa": "/baɪ ˈtɪk.ɪt/",
+  "reading": "bay tikıt",
+  "meanings": [
+   "bilet satın almak"
+  ],
+  "definition": "To purchase a pass for travel or an event.",
+  "example": "Where can I buy ticket packages for the concert?"
+ },
+ "check notifications": {
+  "ipa": "/tʃek ˌnəʊ.tɪ.fɪˈkeɪ.ʃənz/",
+  "reading": "çek nōtifikheyşınz",
+  "meanings": [
+   "bildirimleri kontrol etmek"
+  ],
+  "definition": "To look at alerts on a device.",
+  "example": "Remember to check notifications on your phone regularly."
+ },
+ "click button": {
+  "ipa": "/klɪk ˈbʌt.ən/",
+  "reading": "klik batın",
+  "meanings": [
+   "butona tıklamak"
+  ],
+  "definition": "To press a key on a computer screen.",
+  "example": "Please click button icons to activate the feature."
+ },
+ "complaint": {
+  "ipa": "/kəmˈpleɪnt/",
+  "reading": "kımpleynt",
+  "meanings": [
+   "şikayet",
+   "yakınma"
+  ],
+  "definition": "A statement that something is wrong or unsatisfactory.",
+  "example": "I want to file a formal complaint about this."
+ },
+ "connection sign": {
+  "ipa": "/kəˈnek.ʃən saɪn/",
+  "reading": "kınekşın sayn",
+  "meanings": [
+   "bağlantı simgesi",
+   "bağlantı işareti"
+  ],
+  "definition": "An icon showing the status of a network link.",
+  "example": "Please check if the connection sign is green."
+ },
+ "copyright issues": {
+  "ipa": "/ˈkɒp.i.raɪt ˈɪʃ.uːz/",
+  "reading": "kopirayt işuuz",
+  "meanings": [
+   "telif hakkı sorunları"
+  ],
+  "definition": "Problems related to legal rights of creative work.",
+  "example": "Using this music might cause copyright issues for you."
+ },
+ "departure time": {
+  "ipa": "/dɪˈpɑː.tʃər taɪm/",
+  "reading": "dipaaçır taym",
+  "meanings": [
+   "kalkış saati",
+   "hareket vakti"
+  ],
+  "definition": "The time at which a plane or train leaves.",
+  "example": "What is the official departure time of your flight?"
+ },
+ "desktop": {
+  "ipa": "/ˈdesk.tɒp/",
+  "reading": "desktop",
+  "meanings": [
+   "masaüstü"
+  ],
+  "definition": "The main screen area on a computer.",
+  "example": "You can save the file directly to your desktop."
+ },
+ "disadvantage": {
+  "ipa": "/ˌdɪs.ədˈvɑːn.tɪdʒ/",
+  "reading": "disıdvaantıc",
+  "meanings": [
+   "dezavantaj",
+   "zarar"
+  ],
+  "definition": "A condition or situation that causes problems.",
+  "example": "The main disadvantage of this system is its high cost."
+ },
+ "do online shopping": {
+  "ipa": "/duː ˌɒn.laɪn ˈʃɒp.ɪŋ/",
+  "reading": "du onlayn şoping",
+  "meanings": [
+   "internetten alışveriş yapmak",
+   "online alışveriş yapmak"
+  ],
+  "definition": "To buy things over the internet.",
+  "example": "I like to do online shopping on weekends."
+ },
+ "do research": {
+  "ipa": "/duː rɪˈsɜːtʃ/",
+  "reading": "du risörç",
+  "meanings": [
+   "araştırma yapmak"
+  ],
+  "definition": "To study a subject to find new facts.",
+  "example": "Students need to do research for projects."
+ },
+ "engaged in": {
+  "ipa": "/ɪnˈɡeɪdʒd ɪn/",
+  "reading": "ingeyçt in",
+  "meanings": [
+   "ile meşgul olmak",
+   "girişmek"
+  ],
+  "definition": "Busy or involved in an activity.",
+  "example": "They are actively engaged in this project."
+ },
+ "enter settings": {
+  "ipa": "/ˈen.tər ˈset.ɪŋz/",
+  "reading": "entır setingz",
+  "meanings": [
+   "ayarlara girmek"
+  ],
+  "definition": "To open the control menu of a device.",
+  "example": "You can enter settings to change the volume."
+ },
+ "enter": {
+  "ipa": "/ˈen.tər/",
+  "reading": "entır",
+  "meanings": [
+   "girmek",
+   "içeri girmek"
+  ],
+  "definition": "To go or come into a place.",
+  "example": "Please enter through the front door."
+ },
+ "expert": {
+  "ipa": "/ˈek.spɜːt/",
+  "reading": "ekspört",
+  "meanings": [
+   "uzman",
+   "bilirkişi"
+  ],
+  "definition": "A person with high knowledge or skill.",
+  "example": "You should ask an expert for financial advice."
+ },
+ "expiry date": {
+  "ipa": "/ɪkˈspaɪə.ri deɪt/",
+  "reading": "ikspayri deyt",
+  "meanings": [
+   "son kullanma tarihi"
+  ],
+  "definition": "The date when something is no longer valid.",
+  "example": "Please check the expiry date on the milk."
+ },
+ "find local events": {
+  "ipa": "/faɪnd ˈləʊ.kəl ɪˈvents/",
+  "reading": "faynd lokıl ivents",
+  "meanings": [
+   "yerel etkinlikleri bulmak"
+  ],
+  "definition": "To locate activities happening nearby.",
+  "example": "I use this app to find local events."
+ },
+ "follow news": {
+  "ipa": "/ˈfɒl.əʊ njuːz/",
+  "reading": "folov nyuz",
+  "meanings": [
+   "haberleri takip etmek"
+  ],
+  "definition": "To keep updated on current affairs.",
+  "example": "It is important to follow news every day."
+ },
+ "follower": {
+  "ipa": "/ˈfɒl.əʊ.ər/",
+  "reading": "folovır",
+  "meanings": [
+   "takipçi"
+  ],
+  "definition": "Someone who supports or follows a person.",
+  "example": "He is a loyal follower of our art club."
+ },
+ "free offer": {
+  "ipa": "/friː ˈɒf.ər/",
+  "reading": "fri ofır",
+  "meanings": [
+   "ücretsiz teklif"
+  ],
+  "definition": "A promotion or deal with no cost.",
+  "example": "They gave us a special free offer today."
+ },
+ "get angry with": {
+  "ipa": "/ɡet ˈæŋ.ɡri wɪð/",
+  "reading": "get engri vid",
+  "meanings": [
+   "-e kızmak",
+   "öfkelenmek"
+  ],
+  "definition": "To become upset or mad at someone.",
+  "example": "I try not to get angry with my brother."
+ },
+ "graduate ceremony": {
+  "ipa": "/ˈɡrædʒ.u.ət ˈser.ɪ.mə.ni/",
+  "reading": "grecuıt seremoni",
+  "meanings": [
+   "mezuniyet töreni"
+  ],
+  "definition": "A formal event celebrating academic graduation.",
+  "example": "We will attend the graduate ceremony tomorrow."
+ },
+ "happen": {
+  "ipa": "/ˈhæp.ən/",
+  "reading": "hepın",
+  "meanings": [
+   "olmak",
+   "meydana gelmek"
+  ],
+  "definition": "To take place or occur.",
+  "example": "Many strange things can happen at night."
+ },
+ "increase": {
+  "ipa": "/ɪnˈkriːs/",
+  "reading": "inkriis",
+  "meanings": [
+   "artırmak",
+   "artmak",
+   "çoğalmak"
+  ],
+  "definition": "To become larger in size, amount, or degree.",
+  "example": "We need to increase our daily sales."
+ },
+ "keep in touch with friends": {
+  "ipa": "/kiːp ɪn tʌtʃ wɪð frendz/",
+  "reading": "kiip in taç vid firends",
+  "meanings": [
+   "arkadaşlarla iletişimde kalmak"
+  ],
+  "definition": "To maintain contact with your friends.",
+  "example": "I use social media to keep in touch with friends."
+ },
+ "live music": {
+  "ipa": "/laɪv ˈmjuːzɪk/",
+  "reading": "layv müzik",
+  "meanings": [
+   "canlı müzik"
+  ],
+  "definition": "Music played in front of an audience.",
+  "example": "The cafe offers live music every Friday night."
+ },
+ "make change": {
+  "ipa": "/meɪk tʃeɪndʒ/",
+  "reading": "meyk çeync",
+  "meanings": [
+   "değişiklik yapmak",
+   "para bozmak"
+  ],
+  "definition": "To create a difference or exchange money.",
+  "example": "Can you make change for a dollar bill?"
+ },
+ "make comment": {
+  "ipa": "/meɪk ˈkɒment/",
+  "reading": "meyk kamınt",
+  "meanings": [
+   "yorum yapmak"
+  ],
+  "definition": "To express an opinion about something.",
+  "example": "The lawyer declined to make comment on the case."
+ },
+ "make friends from other countries": {
+  "ipa": "/meɪk frendz frəm ˈʌðə ˈkʌntriz/",
+  "reading": "meyk firends fırom adır kantriis",
+  "meanings": [
+   "başka ülkelerden arkadaşlar edinmek"
+  ],
+  "definition": "To form friendships with people from foreign nations.",
+  "example": "I want to make friends from other countries to learn languages."
+ },
+ "make new friends": {
+  "ipa": "/meɪk njuː frendz/",
+  "reading": "meyk nyu firends",
+  "meanings": [
+   "yeni arkadaşlar edinmek"
+  ],
+  "definition": "To meet and become friends with new people.",
+  "example": "It is easy to make new friends at summer camp."
+ },
+ "make travel arrangement": {
+  "ipa": "/meɪk ˈtrævl əˈreɪndʒmənt/",
+  "reading": "meyk tırevıl ireyncmınt",
+  "meanings": [
+   "seyahat planı yapmak"
+  ],
+  "definition": "To plan and organize a trip.",
+  "example": "You must make travel arrangement before booking flights."
+ },
+ "obey internet safety rules": {
+  "ipa": "/əˈbeɪ ˈɪntənet ˈseɪfti ruːlz/",
+  "reading": "obey internet seyfti ruuls",
+  "meanings": [
+   "internet güvenlik kurallarına uymak"
+  ],
+  "definition": "To follow the guidelines for safe online behavior.",
+  "example": "Children should always obey internet safety rules."
+ },
+ "one way ticket": {
+  "ipa": "/wʌn weɪ ˈtɪkɪt/",
+  "reading": "van vey tikıt",
+  "meanings": [
+   "tek yön bilet"
+  ],
+  "definition": "A ticket for a trip to a place only.",
+  "example": "I bought a one way ticket to Paris."
+ },
+ "outside": {
+  "ipa": "/ˌaʊtˈsaɪd/",
+  "reading": "autsayd",
+  "meanings": [
+   "dışarıda",
+   "dışarı",
+   "dışarısı"
+  ],
+  "definition": "Not inside a building or room.",
+  "example": "Let's go outside and play football."
+ },
+ "pay bill": {
+  "ipa": "/peɪ bɪl/",
+  "reading": "pey bil",
+  "meanings": [
+   "fatura ödemek"
+  ],
+  "definition": "To give money for a service or product.",
+  "example": "You can pay bill at any kiosk."
+ },
+ "pay less": {
+  "ipa": "/peɪ les/",
+  "reading": "pey les",
+  "meanings": [
+   "daha az ödemek"
+  ],
+  "definition": "To spend a smaller amount of money.",
+  "example": "With this coupon, you will pay less for the meal."
+ },
+ "personal information": {
+  "ipa": "/ˈpɜːsənl ˌɪnfəˈmeɪʃn/",
+  "reading": "pörsınıl infımeyşın",
+  "meanings": [
+   "kişisel bilgi",
+   "kişisel veriler"
+  ],
+  "definition": "Details about a specific person's private life.",
+  "example": "Never share your personal information with strangers."
+ },
+ "practice english": {
+  "ipa": "/ˈpræk.tɪs ˈɪŋ.ɡlɪʃ/",
+  "reading": "prektis ingliş",
+  "meanings": [
+   "İngilizce pratik yapmak"
+  ],
+  "definition": "To perform activities to improve your English.",
+  "example": "You should practice english every day to improve."
+ },
+ "press button": {
+  "ipa": "/pres ˈbʌt.ən/",
+  "reading": "pres batın",
+  "meanings": [
+   "düğmeye basmak"
+  ],
+  "definition": "To push a small key to operate something.",
+  "example": "Please press button A to start the machine."
+ },
+ "price": {
+  "ipa": "/praɪs/",
+  "reading": "prays",
+  "meanings": [
+   "fiyat",
+   "bedel"
+  ],
+  "definition": "The amount of money needed to buy something.",
+  "example": "The price of this book is very reasonable."
+ },
+ "product discount": {
+  "ipa": "/ˈprɒd.ʌkt ˈdaɪs.kaʊnt/",
+  "reading": "prodakt dayskaunt",
+  "meanings": [
+   "ürün indirimi"
+  ],
+  "definition": "A reduction in the price of an item.",
+  "example": "The store offers a product discount during the holiday season."
+ },
+ "read online magazine": {
+  "ipa": "/riːd ˌɒn.laɪn ˌmæɡ.əˈziːn/",
+  "reading": "riid onlayn megaziin",
+  "meanings": [
+   "çevrimiçi dergi okumak"
+  ],
+  "definition": "To view a digital periodical on the internet.",
+  "example": "You can read online magazine articles on your phone."
+ },
+ "recognition": {
+  "ipa": "/ˌrek.əɡˈnɪʃ.ən/",
+  "reading": "rekıgnişın",
+  "meanings": [
+   "tanıma",
+   "takdir",
+   "fark etme"
+  ],
+  "definition": "Agreement that something is true or legal.",
+  "example": "He received recognition for his hard work."
+ },
+ "refundable": {
+  "ipa": "/rɪˈfʌn.də.bəl/",
+  "reading": "rifandabıl",
+  "meanings": [
+   "iade edilebilir",
+   "geri ödenebilir"
+  ],
+  "definition": "Able to be returned for money.",
+  "example": "This ticket is not refundable after purchase."
+ },
+ "regulate yourself": {
+  "ipa": "/ˈreɡ.jə.leɪt jɔːˈself/",
+  "reading": "regyuleyt yorself",
+  "meanings": [
+   "kendini kontrol etmek",
+   "kendini düzenlemek"
+  ],
+  "definition": "To control your own behavior and emotions.",
+  "example": "You must learn to regulate yourself under pressure."
+ },
+ "reliable source": {
+  "ipa": "/rɪˈlaɪ.ə.bəl sɔːs/",
+  "reading": "rilayabıl sors",
+  "meanings": [
+   "güvenilir kaynak"
+  ],
+  "definition": "A trustworthy provider of information.",
+  "example": "Always get your news from a reliable source."
+ },
+ "rights of others": {
+  "ipa": "/raɪts ɒv ˈʌð.əz/",
+  "reading": "rayts ov adırz",
+  "meanings": [
+   "başkalarının hakları"
+  ],
+  "definition": "The moral or legal entitlements of other people.",
+  "example": "We must respect the rights of others at all times."
+ },
+ "round trip": {
+  "ipa": "/ˌraʊnd ˈtrɪp/",
+  "reading": "raund trip",
+  "meanings": [
+   "gidiş-dönüş"
+  ],
+  "definition": "A journey to a place and back again.",
+  "example": "I bought a round trip ticket to London."
+ },
+ "school assignment": {
+  "ipa": "/skuːl əˈsaɪn.mənt/",
+  "reading": "skuul esayn-mınt",
+  "meanings": [
+   "okul ödevi"
+  ],
+  "definition": "Work given to students by teachers.",
+  "example": "I need to finish this school assignment tonight."
+ },
+ "search for information": {
+  "ipa": "/sɜːtʃ fɔːr ˌɪn.fəˈmeɪ.ʃən/",
+  "reading": "sörç for infırmeyşın",
+  "meanings": [
+   "bilgi aramak"
+  ],
+  "definition": "To look for facts or data.",
+  "example": "Students often search for information on the internet."
+ },
+ "search for recipe": {
+  "ipa": "/sɜːtʃ fɔː ˈres.ɪ.pi/",
+  "reading": "sörç for resipi",
+  "meanings": [
+   "tarif aramak"
+  ],
+  "definition": "To look for instructions to cook food.",
+  "example": "You can search for recipe options on this app."
+ },
+ "seen": {
+  "ipa": "/siːn/",
+  "reading": "siin",
+  "meanings": [
+   "görülmüş",
+   "görülen"
+  ],
+  "definition": "Past participle of the verb see.",
+  "example": "I have seen that movie three times already."
+ },
+ "share content": {
+  "ipa": "/ʃeər ˈkɒn.tent/",
+  "reading": "şeır kontent",
+  "meanings": [
+   "içerik paylaşmak"
+  ],
+  "definition": "To distribute information or media online.",
+  "example": "Users love to share content on social media."
+ },
+ "share files": {
+  "ipa": "/ʃeər faɪlz/",
+  "reading": "şeır faylz",
+  "meanings": [
+   "dosya paylaşmak"
+  ],
+  "definition": "To send documents or media to others.",
+  "example": "You can share files easily using this network."
+ },
+ "spend too much time": {
+  "ipa": "/spend tuː mʌtʃ taɪm/",
+  "reading": "spend tu maç taym",
+  "meanings": [
+   "çok fazla zaman harcamak"
+  ],
+  "definition": "To use excessive hours doing an activity.",
+  "example": "You should not spend too much time on social media."
+ },
+ "stand for": {
+  "ipa": "/stænd fɔː/",
+  "reading": "stend foo",
+  "meanings": [
+   "temsil etmek",
+   "anlamına gelmek"
+  ],
+  "definition": "To represent or mean something.",
+  "example": "What does the abbreviation CEO stand for in business?"
+ },
+ "subscriber": {
+  "ipa": "/səbˈskraɪ.bər/",
+  "reading": "sabsıraybır",
+  "meanings": [
+   "abone"
+  ],
+  "definition": "A person who pays to receive a service.",
+  "example": "Every new subscriber receives a free newsletter."
+ },
+ "ticket price": {
+  "ipa": "/ˈtɪk.ɪt praɪs/",
+  "reading": "tikıt prays",
+  "meanings": [
+   "bilet fiyatı"
+  ],
+  "definition": "The cost of entry or travel.",
+  "example": "The ticket price for the museum is ten dollars."
+ },
+ "turn on": {
+  "ipa": "/tɜːn ɒn/",
+  "reading": "töön on",
+  "meanings": [
+   "açmak (cihaz)"
+  ],
+  "definition": "To start a device by activating a switch.",
+  "example": "Please turn on the lights in this dark room."
+ },
+ "type": {
+  "ipa": "/taɪp/",
+  "reading": "tayp",
+  "meanings": [
+   "yazmak (klavyeyle)",
+   "tür",
+   "tip"
+  ],
+  "definition": "To write explanations using a keyboard.",
+  "example": "I need to type this report quickly."
+ },
+ "unknown people": {
+  "ipa": "/ʌnˈnəʊn ˈpiː.pəl/",
+  "reading": "announ piypıl",
+  "meanings": [
+   "tanınmayan insanlar",
+   "bilinmeyen kişiler"
+  ],
+  "definition": "Strangers or individuals who are not recognized.",
+  "example": "Do not accept friend requests from unknown people online."
+ },
+ "upload photo": {
+  "ipa": "/ʌpˈləʊd ˈfəʊ.təʊ/",
+  "reading": "aploud foutou",
+  "meanings": [
+   "fotoğraf yüklemek"
+  ],
+  "definition": "To transfer an image to the internet.",
+  "example": "Please upload photo files to complete the registration."
+ },
+ "usage": {
+  "ipa": "/ˈjuː.sɪdʒ/",
+  "reading": "yuusıc",
+  "meanings": [
+   "kullanım",
+   "kullanım miktarı"
+  ],
+  "definition": "The act or manner of using something.",
+  "example": "Internet usage has increased dramatically this year."
+ },
+ "use search engine": {
+  "ipa": "/juːz sɜːtʃ ˈen.dʒɪn/",
+  "reading": "yuuz sööç encin",
+  "meanings": [
+   "arama motoru kullanmak"
+  ],
+  "definition": "To look for information on the internet.",
+  "example": "Many students use search engine services for research."
+ },
+ "valuable information": {
+  "ipa": "/ˈvæl.jə.bəl ˌɪn.fəˈmeɪ.ʃən/",
+  "reading": "velyubıl infımeyşın",
+  "meanings": [
+   "değerli bilgi"
+  ],
+  "definition": "Very useful or important data.",
+  "example": "The book contains valuable information about local history."
+ },
+ "visit useful website": {
+  "ipa": "/ˈvɪz.ɪt ˈjuːs.fəl ˈweb.saɪt/",
+  "reading": "vizit yuusfıl vebsayt",
+  "meanings": [
+   "faydalı web sitesini ziyaret etmek"
+  ],
+  "definition": "To go to a helpful internet page.",
+  "example": "Students should visit useful website pages for study tips."
+ },
+ "work properly": {
+  "ipa": "/wɜːk ˈprɒp.əl.i/",
+  "reading": "vöök propıli",
+  "meanings": [
+   "düzgün çalışmak"
+  ],
+  "definition": "To function correctly without errors.",
+  "example": "This new printer does not work properly."
  }
 }
