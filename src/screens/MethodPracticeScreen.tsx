@@ -499,9 +499,16 @@ const IMG_EXTS = ['webp', 'png', 'jpg'];
 function wordSlug(word: string): string {
   return word.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
-function slotImageCandidates(word: string): string[] {
+function slotImageCandidates(word: string, category?: string | null): string[] {
   const w = wordSlug(word);
-  return IMG_EXTS.map(ext => `/vocabulary/${w}.${ext}`);
+  const shared = IMG_EXTS.map(ext => `/vocabulary/${w}.${ext}`);
+  // Words shared across units can carry a unit-specific photo under
+  // /vocabulary/u/<category-slug>/ which wins over the shared one.
+  if (category) {
+    const c = wordSlug(category);
+    return [...IMG_EXTS.map(ext => `/vocabulary/u/${c}/${w}.${ext}`), ...shared];
+  }
+  return shared;
 }
 function fullCardCandidates(word: string): string[] {
   const w = wordSlug(word);
@@ -545,7 +552,7 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
     probeImage(fullCardCandidates(current.word)).then(src => {
       if (!cancelled) setFullCardSrc(prev => ({ ...prev, [current.id]: src }));
     });
-    probeImage(slotImageCandidates(current.word)).then(src => {
+    probeImage(slotImageCandidates(current.word, current.category)).then(src => {
       if (!cancelled) setSlotSrc(prev => ({ ...prev, [current.id]: src }));
     });
     return () => { cancelled = true; };

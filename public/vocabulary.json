@@ -22777,15 +22777,6 @@
   "definition": "A hard, clear container for drinking liquids.",
   "example": "Fill the glass with cold water."
  },
- "grapes": {
-  "ipa": "/ɡreɪps/",
-  "reading": "greylps",
-  "meanings": [
-   "üzüm"
-  ],
-  "definition": "Small green or purple fruit growing in clusters.",
-  "example": "She likes to eat sweet grapes as a snack."
- },
  "grate": {
   "ipa": "/ɡreɪt/",
   "reading": "greyt",
@@ -24085,15 +24076,6 @@
   "definition": "Divide something into two equal parts.",
   "example": "Cut into half before serving."
  },
- "cut into piece": {
-  "ipa": "/kʌt ˈɪntuː piːs/",
-  "reading": "kat intu pis",
-  "meanings": [
-   "parçalara ayırmak"
-  ],
-  "definition": "Divide something into smaller sections.",
-  "example": "Cut into piece to cook faster."
- },
  "diced": {
   "ipa": "/daɪst/",
   "reading": "dayst",
@@ -24481,9 +24463,7 @@
   "ipa": "/tɪp/",
   "reading": "tip",
   "meanings": [
-   "uç",
-   "bahşiş",
-   "tüyo"
+   "ipucu"
   ],
   "definition": "The pointed end of something.",
   "example": "He touched the tip of his nose."
@@ -26413,5 +26393,23 @@
   ],
   "definition": "Relaxed and casual; not official.",
   "example": "He wore informal clothes at the picnic."
+ },
+ "grape": {
+  "ipa": "/ɡreɪps/",
+  "reading": "greyp",
+  "meanings": [
+   "üzüm"
+  ],
+  "definition": "Small green or purple fruit growing in clusters.",
+  "example": "She likes to eat sweet grapes as a snack."
+ },
+ "cut into pieces": {
+  "ipa": "/kʌt ˈɪntuː piːs/",
+  "reading": "kat intu pis",
+  "meanings": [
+   "parçalara ayırmak"
+  ],
+  "definition": "Divide something into smaller sections.",
+  "example": "Cut into piece to cook faster."
  }
 }
