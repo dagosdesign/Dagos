@@ -3270,7 +3270,7 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-lgsi175', word: 'one way ticket', partOfSpeech: 'word', turkishMeaning: 'tek yön bilet', exampleSentence: 'I bought a one way ticket to Paris.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
   { id: 'fc-lgsi176', word: 'outside', partOfSpeech: 'word', turkishMeaning: 'dışarıda, dışarı, dışarısı', exampleSentence: 'Let\'s go outside and play football.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
   { id: 'fc-lgsi177', word: 'pay attention', partOfSpeech: 'word', turkishMeaning: 'dikkat etmek, odaklanmak', exampleSentence: 'You must pay attention during the safety lecture.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
-  { id: 'fc-lgsi178', word: 'pay bill', partOfSpeech: 'word', turkishMeaning: 'fatura ödemek', exampleSentence: 'You can pay bill at any kiosk.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
+  { id: 'fc-lgsi178', word: 'pay bill', partOfSpeech: 'word', turkishMeaning: 'hesap ödemek, fatura ödemek', exampleSentence: 'You can pay bill at any kiosk.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
   { id: 'fc-lgsi179', word: 'pay less', partOfSpeech: 'word', turkishMeaning: 'daha az ödemek', exampleSentence: 'With this coupon, you will pay less for the meal.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
   { id: 'fc-lgsi180', word: 'percent', partOfSpeech: 'word', turkishMeaning: 'yüzde', exampleSentence: 'The store offers a ten percent discount.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
   { id: 'fc-lgsi181', word: 'personal information', partOfSpeech: 'word', turkishMeaning: 'kişisel bilgi, kişisel veriler', exampleSentence: 'Never share your personal information with strangers.', category: FLASHCARD_CATEGORIES.LGS_INTERNET },
