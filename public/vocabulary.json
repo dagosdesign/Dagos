@@ -27625,5 +27625,1665 @@
   ],
   "definition": "To function correctly without errors.",
   "example": "This new printer does not work properly."
+ },
+ "adrenaline": {
+  "ipa": "/əˈdren.əl.ɪn/",
+  "reading": "ıdrenılın",
+  "meanings": [
+   "adrenalin"
+  ],
+  "definition": "A hormone produced in response to stress or excitement.",
+  "example": "The scary movie gave me a sudden rush of adrenaline."
+ },
+ "adrenaline seeker": {
+  "ipa": "/əˈdren.əl.ɪn ˈsiː.kər/",
+  "reading": "ıdrenılın siikır",
+  "meanings": [
+   "macera tutkunu",
+   "adrenalin tutkunu"
+  ],
+  "definition": "A person who enjoys doing exciting or dangerous activities.",
+  "example": "My brother is a true adrenaline seeker who loves skydiving."
+ },
+ "adventurer": {
+  "ipa": "/ədˈven.tʃər.ər/",
+  "reading": "ıdvençırır",
+  "meanings": [
+   "maceracı",
+   "serüvenci"
+  ],
+  "definition": "A person who seeks adventure.",
+  "example": "The famous adventurer explored the deep caves."
+ },
+ "afraid": {
+  "ipa": "/əˈfreɪd/",
+  "reading": "ıfreyd",
+  "meanings": [
+   "korkmuş",
+   "korkan"
+  ],
+  "definition": "Feeling fear or anxiety.",
+  "example": "Do not be afraid of the dark."
+ },
+ "age": {
+  "ipa": "/eɪdʒ/",
+  "reading": "eyc",
+  "meanings": [
+   "yaş",
+   "çağ"
+  ],
+  "definition": "The length of time a person has existed.",
+  "example": "Please state your name and age on this form."
+ },
+ "air": {
+  "ipa": "/eər/",
+  "reading": "eır",
+  "meanings": [
+   "hava"
+  ],
+  "definition": "The mixture of gases that surrounds the Earth.",
+  "example": "Let us go outside for some fresh air."
+ },
+ "aircraft": {
+  "ipa": "/ˈeə.krɑːft/",
+  "reading": "eıkraaft",
+  "meanings": [
+   "hava taşıtı",
+   "uçak"
+  ],
+  "definition": "Any vehicle that can fly in the air.",
+  "example": "The pilot landed the aircraft safely during the storm."
+ },
+ "ambitious": {
+  "ipa": "/æmˈbɪʃ.əs/",
+  "reading": "embişıs",
+  "meanings": [
+   "hırslı",
+   "iddialı"
+  ],
+  "definition": "Having a strong desire for success or achievement.",
+  "example": "He has an ambitious plan to start his own company."
+ },
+ "archery": {
+  "ipa": "/ˈɑː.tʃər.i/",
+  "reading": "aaçıri",
+  "meanings": [
+   "okçuluk"
+  ],
+  "definition": "The sport of shooting arrows with a bow.",
+  "example": "He practices archery every weekend at the club."
+ },
+ "barefoot": {
+  "ipa": "/ˈbeə.fʊt/",
+  "reading": "beırfut",
+  "meanings": [
+   "yalınayak",
+   "çıplak ayakla"
+  ],
+  "definition": "Wearing nothing on the feet.",
+  "example": "The children love to walk barefoot on the warm sand."
+ },
+ "base jumping": {
+  "ipa": "/ˈbeɪs ˌdʒʌm.pɪŋ/",
+  "reading": "beys campıŋ",
+  "meanings": [
+   "serbest düşüş",
+   "binalardan paraşütle atlama"
+  ],
+  "definition": "The sport of jumping from fixed objects with a parachute.",
+  "example": "Many people consider base jumping to be an extreme sport."
+ },
+ "be interested in": {
+  "ipa": "/bi ˈɪn.trest.ɪd ɪn/",
+  "reading": "bi intrıstıd in",
+  "meanings": [
+   "ilgilenmek",
+   "ilgi duymak"
+  ],
+  "definition": "To want to know or learn more about something.",
+  "example": "You must be interested in art to enjoy this museum."
+ },
+ "benefit": {
+  "ipa": "/ˈbenɪfɪt/",
+  "reading": "benefit",
+  "meanings": [
+   "fayda",
+   "yarar",
+   "yarar sağlamak"
+  ],
+  "definition": "An advantage or profit gained from something.",
+  "example": "Regular exercise will benefit your health."
+ },
+ "boat": {
+  "ipa": "/bəʊt/",
+  "reading": "bowt",
+  "meanings": [
+   "tekne",
+   "bot",
+   "kayık"
+  ],
+  "definition": "A small vehicle for travelling on water.",
+  "example": "We can rent a boat to cross the lake."
+ },
+ "boots": {
+  "ipa": "/buːts/",
+  "reading": "buuts",
+  "meanings": [
+   "bot",
+   "çizme"
+  ],
+  "definition": "Strong shoes that cover the foot and ankle.",
+  "example": "You should wear warm boots in the winter."
+ },
+ "boxing": {
+  "ipa": "/ˈbɒksɪŋ/",
+  "reading": "baksing",
+  "meanings": [
+   "boks"
+  ],
+  "definition": "A sport of fighting with fists wearing gloves.",
+  "example": "He trains hard for his boxing match."
+ },
+ "bridge": {
+  "ipa": "/brɪdʒ/",
+  "reading": "bric",
+  "meanings": [
+   "köprü"
+  ],
+  "definition": "A structure built over a river or road.",
+  "example": "They will build a new bridge over the river."
+ },
+ "building": {
+  "ipa": "/ˈbɪldɪŋ/",
+  "reading": "bilding",
+  "meanings": [
+   "bina",
+   "yapı"
+  ],
+  "definition": "A structure with a roof and walls.",
+  "example": "This tall building has fifty floors."
+ },
+ "bungee jumping": {
+  "ipa": "/ˈbʌndʒi ˌdʒʌmpɪŋ/",
+  "reading": "banci camping",
+  "meanings": [
+   "bungee jumping",
+   "ipli serbest atlayış"
+  ],
+  "definition": "Jumping from a high place connected to an elastic cord.",
+  "example": "I want to try bungee jumping this weekend."
+ },
+ "canoeing": {
+  "ipa": "/kəˈnuːɪŋ/",
+  "reading": "kınuiing",
+  "meanings": [
+   "kano sporu",
+   "kano ile gitme"
+  ],
+  "definition": "The sport of traveling in a canoe.",
+  "example": "We enjoyed canoeing down the quiet river."
+ },
+ "caving": {
+  "ipa": "/ˈkeɪvɪŋ/",
+  "reading": "keyving",
+  "meanings": [
+   "mağaracılık"
+  ],
+  "definition": "The sport of exploring caves.",
+  "example": "They went caving in the deep mountains."
+ },
+ "climbing": {
+  "ipa": "/ˈklaɪmɪŋ/",
+  "reading": "klayming",
+  "meanings": [
+   "tırmanış",
+   "tırmanma"
+  ],
+  "definition": "The sport of scaling rocks or mountains.",
+  "example": "They love climbing in the Alps."
+ },
+ "cliff": {
+  "ipa": "/klɪf/",
+  "reading": "klif",
+  "meanings": [
+   "uçurum",
+   "falez"
+  ],
+  "definition": "A steep high face of rock or soil.",
+  "example": "Do not stand too close to the cliff."
+ },
+ "climb mountain": {
+  "ipa": "/klaɪm ˈmaʊntɪn/",
+  "reading": "klaym mauntın",
+  "meanings": [
+   "dağa tırmanmak",
+   "dağ tırmanışı yapmak"
+  ],
+  "definition": "To ascend a high steep hill.",
+  "example": "He wants to climb mountain peaks in Nepal."
+ },
+ "competition": {
+  "ipa": "/ˌkɒmpəˈtɪʃn/",
+  "reading": "kompıtışın",
+  "meanings": [
+   "yarışma",
+   "rekabet"
+  ],
+  "definition": "An event where people compete to win.",
+  "example": "She entered a cooking competition."
+ },
+ "country": {
+  "ipa": "/ˈkʌntri/",
+  "reading": "kantri",
+  "meanings": [
+   "ülke",
+   "kırsal"
+  ],
+  "definition": "A nation with its own government.",
+  "example": "Spain is a beautiful country."
+ },
+ "creativity": {
+  "ipa": "/ˌkriːeɪˈtɪvəti/",
+  "reading": "krieytiviti",
+  "meanings": [
+   "yaratıcılık"
+  ],
+  "definition": "The use of imagination to create things.",
+  "example": "Art requires a lot of creativity."
+ },
+ "craziest": {
+  "ipa": "/ˈkreɪziɪst/",
+  "reading": "kreyziist",
+  "meanings": [
+   "en çılgın"
+  ],
+  "definition": "Most wild or extremely unusual.",
+  "example": "That is the craziest idea I have heard."
+ },
+ "danger": {
+  "ipa": "/ˈdeɪndʒə(r)/",
+  "reading": "deyndcer",
+  "meanings": [
+   "tehlike"
+  ],
+  "definition": "The possibility of suffering harm or injury.",
+  "example": "They were in great danger during the storm."
+ },
+ "darkness": {
+  "ipa": "/ˈdɑːknəs/",
+  "reading": "daarknes",
+  "meanings": [
+   "karanlık"
+  ],
+  "definition": "The partial or total absence of light.",
+  "example": "He was afraid of the darkness."
+ },
+ "desert": {
+  "ipa": "/ˈdezət/",
+  "reading": "dezat",
+  "meanings": [
+   "çöl"
+  ],
+  "definition": "A dry, sandy area with little rain.",
+  "example": "Camels can live in the desert."
+ },
+ "destination": {
+  "ipa": "/ˌdestɪˈneɪʃn/",
+  "reading": "destineyşın",
+  "meanings": [
+   "varış yeri",
+   "hedef"
+  ],
+  "definition": "The place to which someone is going.",
+  "example": "Paris is our final holiday destination."
+ },
+ "disappointing": {
+  "ipa": "/ˌdɪsəˈpɔɪntɪŋ/",
+  "reading": "disapoyntin",
+  "meanings": [
+   "hayal kırıklığı yaratan"
+  ],
+  "definition": "Failing to meet expectations.",
+  "example": "The test results were very disappointing."
+ },
+ "diving": {
+  "ipa": "/ˈdaɪvɪŋ/",
+  "reading": "dayvin",
+  "meanings": [
+   "dalış",
+   "dalma"
+  ],
+  "definition": "The sport of swimming underwater with equipment.",
+  "example": "Scuba diving is popular in this region."
+ },
+ "diving suit": {
+  "ipa": "/ˈdaɪvɪŋ suːt/",
+  "reading": "dayvin suut",
+  "meanings": [
+   "dalgıç kıyafeti"
+  ],
+  "definition": "A garment worn for working underwater.",
+  "example": "The diver put on his heavy diving suit."
+ },
+ "dry suit": {
+  "ipa": "/draɪ suːt/",
+  "reading": "dray süt",
+  "meanings": [
+   "kuru elbise"
+  ],
+  "definition": "Waterproof clothing worn for diving in cold water.",
+  "example": "Divers often wear a dry suit in icy water."
+ },
+ "elbow pads": {
+  "ipa": "/ˈelbəʊ pædz/",
+  "reading": "elbov pehz",
+  "meanings": [
+   "dirseklik"
+  ],
+  "definition": "Protective gear worn on elbows.",
+  "example": "Always wear elbow pads when skateboarding."
+ },
+ "entertaining": {
+  "ipa": "/ˌentəˈteɪnɪŋ/",
+  "reading": "enterteynin",
+  "meanings": [
+   "eğlenceli"
+  ],
+  "definition": "Providing amusement and enjoyment.",
+  "example": "The clown put on an entertaining show."
+ },
+ "equipment": {
+  "ipa": "/ɪˈkwɪpmənt/",
+  "reading": "ikwipment",
+  "meanings": [
+   "ekipman",
+   "donanım"
+  ],
+  "definition": "The necessary items for a particular purpose.",
+  "example": "Camping equipment can be quite expensive."
+ },
+ "experienced": {
+  "ipa": "/ɪkˈspɪəriənst/",
+  "reading": "ikspirienst",
+  "meanings": [
+   "deneyimli",
+   "tecrübeli"
+  ],
+  "definition": "Having much knowledge or skill in a field.",
+  "example": "She is an experienced mountain climber."
+ },
+ "extreme sport": {
+  "ipa": "/ɪkˈstriːm spɔːt/",
+  "reading": "ikstriim sport",
+  "meanings": [
+   "ekstrem spor",
+   "tehlikeli spor"
+  ],
+  "definition": "A sporting activity perceived as involving high risk.",
+  "example": "Skydiving is a popular extreme sport."
+ },
+ "extreme sports": {
+  "ipa": "/ɪkˈstriːm spɔːts/",
+  "reading": "ikstriim sports",
+  "meanings": [
+   "ekstrem sporlar"
+  ],
+  "definition": "Activities perceived as involving high physical risk.",
+  "example": "He enjoys trying out new extreme sports."
+ },
+ "feel the freedom": {
+  "ipa": "/fiːl ðə ˈfriːdəm/",
+  "reading": "fiil dı friidım",
+  "meanings": [
+   "özgürlüğü hissetmek"
+  ],
+  "definition": "To experience a sense of being free.",
+  "example": "When you ride a motorcycle, you feel the freedom."
+ },
+ "fighting": {
+  "ipa": "/ˈfaɪtɪŋ/",
+  "reading": "faytink",
+  "meanings": [
+   "kavga",
+   "dövüş",
+   "mücadele"
+  ],
+  "definition": "The action of fighting; violence or conflict.",
+  "example": "They want to stop the fighting."
+ },
+ "flashlight": {
+  "ipa": "/ˈflæʃlaɪt/",
+  "reading": "fleşlayt",
+  "meanings": [
+   "el feneri"
+  ],
+  "definition": "A small portable electric lamp.",
+  "example": "Please turn on the flashlight."
+ },
+ "fly in a hot air balloon": {
+  "ipa": "/flaɪ ɪn ə hɒt eə bəˈluːn/",
+  "reading": "flay in e hot eyır beluun",
+  "meanings": [
+   "balonla uçmak",
+   "sıcak hava balonuna binmek"
+  ],
+  "definition": "To travel in a large balloon heated by air.",
+  "example": "I want to fly in a hot air balloon."
+ },
+ "footwear": {
+  "ipa": "/ˈfʊtweə/",
+  "reading": "futveyır",
+  "meanings": [
+   "ayakkabı",
+   "ayak giyeceği"
+  ],
+  "definition": "Outer coverings for the feet, such as shoes.",
+  "example": "Please remove your footwear at the door."
+ },
+ "forest": {
+  "ipa": "/ˈfɒrɪst/",
+  "reading": "forıst",
+  "meanings": [
+   "orman"
+  ],
+  "definition": "A large area covered chiefly with trees.",
+  "example": "We went for a walk in the forest."
+ },
+ "free fall": {
+  "ipa": "/friː fɔːl/",
+  "reading": "frii fool",
+  "meanings": [
+   "serbest düşüş"
+  ],
+  "definition": "Downward movement under the force of gravity.",
+  "example": "The skydiver enjoyed the free fall."
+ },
+ "freedom": {
+  "ipa": "/ˈfriːdəm/",
+  "reading": "friidım",
+  "meanings": [
+   "özgürlük",
+   "hürriyet"
+  ],
+  "definition": "The power or right to act as one wants.",
+  "example": "Everyone deserves to have freedom."
+ },
+ "frightening": {
+  "ipa": "/ˈfraɪtnɪŋ/",
+  "reading": "fraytınink",
+  "meanings": [
+   "korkutucu",
+   "ürkütücü"
+  ],
+  "definition": "Making someone afraid or anxious.",
+  "example": "The horror movie was very frightening."
+ },
+ "frozen": {
+  "ipa": "/ˈfrəʊzn/",
+  "reading": "frouzın",
+  "meanings": [
+   "donmuş",
+   "buz tutmuş"
+  ],
+  "definition": "Turned into ice or affected by extreme cold.",
+  "example": "The lake is completely frozen."
+ },
+ "gain": {
+  "ipa": "/ɡeɪn/",
+  "reading": "geyn",
+  "meanings": [
+   "kazanmak",
+   "elde etmek"
+  ],
+  "definition": "To obtain or secure something wanted.",
+  "example": "You can gain experience by working here."
+ },
+ "get frost bite": {
+  "ipa": "/ɡet frɒst baɪt/",
+  "reading": "get frost bayt",
+  "meanings": [
+   "soğuk ısırması olmak",
+   "donmak"
+  ],
+  "definition": "To suffer injury to body parts from freezing cold.",
+  "example": "Wear gloves so you do not get frost bite."
+ },
+ "get there": {
+  "ipa": "/ɡet ðeə/",
+  "reading": "get deyır",
+  "meanings": [
+   "oraya varmak",
+   "ulaşmak"
+  ],
+  "definition": "To arrive at a specific destination.",
+  "example": "We need to get there before dark."
+ },
+ "glacier": {
+  "ipa": "/ˈɡlæsiə/",
+  "reading": "glesiyı",
+  "meanings": [
+   "buzul"
+  ],
+  "definition": "A large mass of ice moving slowly",
+  "example": "They hiked up to see the ancient glacier."
+ },
+ "goggle": {
+  "ipa": "/ˈɡɒɡl/",
+  "reading": "gogıl",
+  "meanings": [
+   "gözleri fal taşı gibi açmak",
+   "şaşkınlıkla bakmak"
+  ],
+  "definition": "To look with wide, amazed eyes",
+  "example": "The children goggle at the beautiful magic show."
+ },
+ "goal": {
+  "ipa": "/ɡəʊl/",
+  "reading": "goul",
+  "meanings": [
+   "hedef",
+   "amaç",
+   "gol"
+  ],
+  "definition": "Something you want to achieve",
+  "example": "My main goal is to learn English."
+ },
+ "go rafting": {
+  "ipa": "/ɡəʊ ˈrɑːftɪŋ/",
+  "reading": "gou rafting",
+  "meanings": [
+   "rafting yapmaya gitmek",
+   "rafting yapmak"
+  ],
+  "definition": "To travel down a river on a raft",
+  "example": "We want to go rafting on the river this summer."
+ },
+ "grow up": {
+  "ipa": "/ɡrəʊ ʌp/",
+  "reading": "grou ap",
+  "meanings": [
+   "büyümek",
+   "yetişmek"
+  ],
+  "definition": "To gradually become an adult",
+  "example": "Children grow up very quickly these days."
+ },
+ "hang gliding": {
+  "ipa": "/ˈhæŋ ˌɡlaɪdɪŋ/",
+  "reading": "heng glayding",
+  "meanings": [
+   "yelkenkanat uçuşu",
+   "delta kanatla uçma"
+  ],
+  "definition": "The sport of flying using a light glider",
+  "example": "He loves hang gliding over the mountains."
+ },
+ "heli skiing": {
+  "ipa": "/ˈheli ˌʃiːɪŋ/",
+  "reading": "heli şiing",
+  "meanings": [
+   "helikopterli kayak"
+  ],
+  "definition": "Downhill skiing reached by a helicopter",
+  "example": "They want to try heli skiing in Canada."
+ },
+ "helmet": {
+  "ipa": "/ˈhelmɪt/",
+  "reading": "helmit",
+  "meanings": [
+   "kask",
+   "miğfer"
+  ],
+  "definition": "A hard hat that protects your head",
+  "example": "Always wear a helmet when riding a bike."
+ },
+ "height": {
+  "ipa": "/haɪt/",
+  "reading": "hayt",
+  "meanings": [
+   "boy",
+   "yükseklik"
+  ],
+  "definition": "The measurement of how tall someone is",
+  "example": "What is the height of that building?"
+ },
+ "highlining": {
+  "ipa": "/ˈhaɪˌlaɪnɪŋ/",
+  "reading": "haylayning",
+  "meanings": [
+   "ip üstünde yürüme",
+   "yüksekte ip yürüyüşü"
+  ],
+  "definition": "Slacklining at a great height between two points",
+  "example": "Extreme athletes enjoy highlining across deep canyons."
+ },
+ "hill": {
+  "ipa": "/hɪl/",
+  "reading": "hil",
+  "meanings": [
+   "tepe"
+  ],
+  "definition": "An area of land higher than surrounding land",
+  "example": "They walked up the hill to see the sunset."
+ },
+ "historic places": {
+  "ipa": "/hɪˈstɒrɪk ˈpleɪsɪz/",
+  "reading": "historik pleysız",
+  "meanings": [
+   "tarihi yerler"
+  ],
+  "definition": "Locations that are important in history",
+  "example": "We love visiting historic places during our holidays."
+ },
+ "historical sites": {
+  "ipa": "/hɪˈstɒrɪkl saɪts/",
+  "reading": "historikıl sayts",
+  "meanings": [
+   "tarihi alanlar",
+   "tarihi sit alanları"
+  ],
+  "definition": "Places where history is preserved",
+  "example": "The tour guide showed us several historical sites."
+ },
+ "hot air balloon": {
+  "ipa": "/hɒt eə bəˈluːn/",
+  "reading": "hot eer baluun",
+  "meanings": [
+   "sıcak hava balonu"
+  ],
+  "definition": "A large balloon carrying passengers in a basket",
+  "example": "We flew in a hot air balloon over Cappadocia."
+ },
+ "ice climbing": {
+  "ipa": "/aɪs ˈklaɪmɪŋ/",
+  "reading": "ays klayming",
+  "meanings": [
+   "buz tırmanışı"
+  ],
+  "definition": "The sport of climbing frozen waterfalls or glaciers",
+  "example": "Professional adventurers enjoy ice climbing in winter."
+ },
+ "ice screw": {
+  "ipa": "/ˈaɪs skruː/",
+  "reading": "'ays skru'",
+  "meanings": [
+   "buz vidası"
+  ],
+  "definition": "A metal screw used in ice climbing",
+  "example": "You must use an ice screw to secure the rope."
+ },
+ "ice skating": {
+  "ipa": "/ˈaɪs skeɪtɪŋ/",
+  "reading": "'ays skeytiŋ'",
+  "meanings": [
+   "buz pateni",
+   "buz pateni yapmak"
+  ],
+  "definition": "Moving on ice using boots with blades",
+  "example": "Ice skating is a very popular winter sport."
+ },
+ "include": {
+  "ipa": "/ɪnˈkluːd/",
+  "reading": "'inklud'",
+  "meanings": [
+   "içermek",
+   "dahil etmek"
+  ],
+  "definition": "To contain as part of a whole",
+  "example": "Does the price include breakfast?"
+ },
+ "incredible": {
+  "ipa": "/ɪnˈkredəbl/",
+  "reading": "'inkredıbıl'",
+  "meanings": [
+   "inanılmaz",
+   "harika"
+  ],
+  "definition": "Impossible to believe or extraordinary",
+  "example": "The view from the top is incredible."
+ },
+ "individual sports": {
+  "ipa": "/ˌɪndɪˈvɪdʒuəl spɔːts/",
+  "reading": "'indivicııl sports'",
+  "meanings": [
+   "bireysel sporlar"
+  ],
+  "definition": "Sports played by single players, not teams",
+  "example": "Tennis and golf are common individual sports."
+ },
+ "individually": {
+  "ipa": "/ˌɪndɪˈvɪdʒuəli/",
+  "reading": "'indivicııli'",
+  "meanings": [
+   "bireysel olarak",
+   "teker teker"
+  ],
+  "definition": "One by one; personally",
+  "example": "The teacher spoke to each student individually."
+ },
+ "indoor": {
+  "ipa": "/ˈɪndɔː/",
+  "reading": "'indor'",
+  "meanings": [
+   "kapalı alan",
+   "bina içi"
+  ],
+  "definition": "Done, used, or situated inside a building",
+  "example": "We can play indoor tennis when it rains."
+ },
+ "inexperienced": {
+  "ipa": "/ˌɪnɪkˈspɪəriənst/",
+  "reading": "'inikspiriyınst'",
+  "meanings": [
+   "deneyimsiz",
+   "tecrübesiz"
+  ],
+  "definition": "Having little knowledge or experience",
+  "example": "An inexperienced driver can cause accidents."
+ },
+ "instructor": {
+  "ipa": "/ɪnˈstrʌktə/",
+  "reading": "'instraktı'",
+  "meanings": [
+   "eğitmen",
+   "öğretici"
+  ],
+  "definition": "A person who teaches something",
+  "example": "Our driving instructor is very patient."
+ },
+ "jogging": {
+  "ipa": "/ˈdʒɒɡɪŋ/",
+  "reading": "'coɡiŋ'",
+  "meanings": [
+   "tempolu yürüyüş",
+   "koşu"
+  ],
+  "definition": "Running at a steady, gentle pace",
+  "example": "Jogging is great for your health."
+ },
+ "join a tour": {
+  "ipa": "/dʒɔɪn ə tʊə/",
+  "reading": "'coyn e tuı'",
+  "meanings": [
+   "tura katılmak"
+  ],
+  "definition": "To participate in an organized trip",
+  "example": "You should join a tour to see the city."
+ },
+ "jump off": {
+  "ipa": "/dʒʌmp ɒf/",
+  "reading": "'camp of'",
+  "meanings": [
+   "aşağı atlamak",
+   "den atlamak"
+  ],
+  "definition": "To leap downwards from a high place",
+  "example": "He decided to jump off the diving board."
+ },
+ "kayaking": {
+  "ipa": "/ˈkaɪækɪŋ/",
+  "reading": "kayakinğ",
+  "meanings": [
+   "kano sporu",
+   "kayak sporu"
+  ],
+  "definition": "The activity of travelling in a kayak",
+  "example": "I love kayaking on the quiet lake."
+ },
+ "kite surfing": {
+  "ipa": "/ˈkaɪtsɜːfɪŋ/",
+  "reading": "kayt sörfinğ",
+  "meanings": [
+   "uçurtma sörfü"
+  ],
+  "definition": "Riding a surfboard while pulled by a kite",
+  "example": "You can try kite surfing on this windy beach."
+ },
+ "kneepad": {
+  "ipa": "/ˈniːpæd/",
+  "reading": "niiped",
+  "meanings": [
+   "dizlik"
+  ],
+  "definition": "A protective guard worn on the knee",
+  "example": "Wear a kneepad to protect your joint."
+ },
+ "knee pads": {
+  "ipa": "/ˈniː pædz/",
+  "reading": "nii pedz",
+  "meanings": [
+   "dizlikler"
+  ],
+  "definition": "Protective guards worn on the knees",
+  "example": "You should wear knee pads when you skate."
+ },
+ "lake": {
+  "ipa": "/leɪk/",
+  "reading": "leyk",
+  "meanings": [
+   "göl"
+  ],
+  "definition": "A large body of water surrounded by land",
+  "example": "We can swim in the clean lake."
+ },
+ "land": {
+  "ipa": "/lænd/",
+  "reading": "lend",
+  "meanings": [
+   "kara",
+   "toprak",
+   "arazi"
+  ],
+  "definition": "The solid surface of the earth",
+  "example": "They bought a piece of land to build a house."
+ },
+ "lifestyle": {
+  "ipa": "/ˈlaɪfstaɪl/",
+  "reading": "layfstayl",
+  "meanings": [
+   "yaşam tarzı",
+   "hayat tarzı"
+  ],
+  "definition": "The way in which a person lives",
+  "example": "They want to live a healthy lifestyle."
+ },
+ "magazine": {
+  "ipa": "/ˌmæɡəˈziːn/",
+  "reading": "megaziin",
+  "meanings": [
+   "dergi"
+  ],
+  "definition": "A thin book with articles and pictures",
+  "example": "I read an interesting fashion magazine yesterday."
+ },
+ "magnificent": {
+  "ipa": "/mæɡˈnɪfɪsnt/",
+  "reading": "meğnifısınt",
+  "meanings": [
+   "muhteşem",
+   "görkemli",
+   "harika"
+  ],
+  "definition": "Extremely beautiful or impressive",
+  "example": "The palace has a magnificent view of the city."
+ },
+ "medal": {
+  "ipa": "/ˈmedl/",
+  "reading": "medıl",
+  "meanings": [
+   "madalya"
+  ],
+  "definition": "A metal disc given as an award",
+  "example": "She won a gold medal in the race."
+ },
+ "member": {
+  "ipa": "/ˈmembə(r)/",
+  "reading": "membır",
+  "meanings": [
+   "üye"
+  ],
+  "definition": "A person belonging to a group",
+  "example": "He is a member of the local gym."
+ },
+ "motor racing": {
+  "ipa": "/ˈməʊtə ˌreɪsɪŋ/",
+  "reading": "motır reysinğ",
+  "meanings": [
+   "araba yarışı",
+   "motor sporları"
+  ],
+  "definition": "The sport of racing fast cars",
+  "example": "He loves watching motor racing on television."
+ },
+ "mountain biking": {
+  "ipa": "/ˈmaʊntən ˌbaɪkɪŋ/",
+  "reading": "mauntın baykinğ",
+  "meanings": [
+   "dağ bisikletçiliği"
+  ],
+  "definition": "Riding bicycles off-road over rough terrain",
+  "example": "We enjoy mountain biking on the weekend."
+ },
+ "mountainous road": {
+  "ipa": "/ˈmaʊntənəs rəʊd/",
+  "reading": "mauntınus roud",
+  "meanings": [
+   "dağlık yol"
+  ],
+  "definition": "A steep road passing through mountains",
+  "example": "Drive carefully on this winding mountainous road."
+ },
+ "move on the rope": {
+  "ipa": "/muːv ɒn ðə rəʊp/",
+  "reading": "muuv on dı roup",
+  "meanings": [
+   "ip üzerinde ilerlemek"
+  ],
+  "definition": "To progress along a tightrope or safety line",
+  "example": "The acrobats move on the rope with ease."
+ },
+ "mysterious": {
+  "ipa": "/mɪˈstɪəriəs/",
+  "reading": "mistiriıs",
+  "meanings": [
+   "gizemli",
+   "esrarengiz"
+  ],
+  "definition": "Difficult or impossible to understand",
+  "example": "They found a mysterious key in the garden."
+ },
+ "need": {
+  "ipa": "/niːd/",
+  "reading": "niid",
+  "meanings": [
+   "ihtiyaç duymak",
+   "gerekmek"
+  ],
+  "definition": "To require something because it is essential.",
+  "example": "I need some water right now."
+ },
+ "northern lights": {
+  "ipa": "/ˌnɔː.ðən ˈlaɪts/",
+  "reading": "noozın layts",
+  "meanings": [
+   "kuzey ışıkları"
+  ],
+  "definition": "Colorful lights in the northern sky.",
+  "example": "Many tourists travel to see the northern lights."
+ },
+ "occupation": {
+  "ipa": "/ˌɒk.juˈpeɪ.ʃən/",
+  "reading": "okyupeyşın",
+  "meanings": [
+   "meslek",
+   "iş"
+  ],
+  "definition": "A person's job or profession.",
+  "example": "Please state your name and occupation on this form."
+ },
+ "ocean": {
+  "ipa": "/ˈəʊ.ʃən/",
+  "reading": "ouşın",
+  "meanings": [
+   "okyanus"
+  ],
+  "definition": "A very large expanse of sea.",
+  "example": "Ships travel across the wide ocean."
+ },
+ "outdoor": {
+  "ipa": "/ˈaʊt.dɔːr/",
+  "reading": "autdoor",
+  "meanings": [
+   "açık hava",
+   "dışarıda yapılan"
+  ],
+  "definition": "Done, situated, or used out of doors.",
+  "example": "Hiking is a popular outdoor activity."
+ },
+ "paddle": {
+  "ipa": "/ˈpæd.əl/",
+  "reading": "pedıl",
+  "meanings": [
+   "kürek çekmek",
+   "kürek"
+  ],
+  "definition": "A short pole with a broad blade.",
+  "example": "You can use a paddle to steer the kayak."
+ },
+ "parachutist": {
+  "ipa": "/ˈpær.ə.ʃuː.tɪst/",
+  "reading": "perəşutist",
+  "meanings": [
+   "paraşütçü"
+  ],
+  "definition": "A person who jumps with a parachute.",
+  "example": "The experienced parachutist landed safely on the field."
+ },
+ "paragliding": {
+  "ipa": "/ˈpær.ə.ɡlaɪ.dɪŋ/",
+  "reading": "peraglayding",
+  "meanings": [
+   "yamaç paraşütü"
+  ],
+  "definition": "A sport of jumping from heights with a glider.",
+  "example": "I want to try paragliding this summer."
+ },
+ "parasailing": {
+  "ipa": "/ˈpær.ə.seɪ.lɪŋ/",
+  "reading": "peraseyling",
+  "meanings": [
+   "deniz paraşütü"
+  ],
+  "definition": "Gliding through the air towed by a boat.",
+  "example": "We enjoyed parasailing over the blue sea."
+ },
+ "parkour": {
+  "ipa": "/pɑːˈkʊər/",
+  "reading": "pakuur",
+  "meanings": [
+   "serbest koşu",
+   "parkur"
+  ],
+  "definition": "Activity of moving rapidly through an area.",
+  "example": "He performs amazing jumps when practicing parkour."
+ },
+ "qualifications": {
+  "ipa": "/ˌkwɒl.ɪ.fɪˈkeɪ.ʃənz/",
+  "reading": "kvolifikeyşınz",
+  "meanings": [
+   "nitelikler",
+   "vasıflar",
+   "diplomalar"
+  ],
+  "definition": "Official records of achievement or skills.",
+  "example": "You have the perfect qualifications for this job."
+ },
+ "rafting": {
+  "ipa": "/ˈrɑːftɪŋ/",
+  "reading": "rafting",
+  "meanings": [
+   "rafting",
+   "bot yarışı"
+  ],
+  "definition": "The sport of traveling down a river on a raft.",
+  "example": "They want to try rafting on their vacation next week."
+ },
+ "rate of death": {
+  "ipa": "/reɪt ɒv deθ/",
+  "reading": "reyt ov det",
+  "meanings": [
+   "ölüm oranı"
+  ],
+  "definition": "The number of deaths in a particular population.",
+  "example": "The hospital managed to reduce the rate of death."
+ },
+ "repair": {
+  "ipa": "/rɪˈpeə(r)/",
+  "reading": "ripeyr",
+  "meanings": [
+   "tamir etmek",
+   "onarmak"
+  ],
+  "definition": "To fix something that is damaged or broken.",
+  "example": "He needs to repair his broken bicycle today."
+ },
+ "require": {
+  "ipa": "/rɪˈkwaɪə(r)/",
+  "reading": "rikwayır",
+  "meanings": [
+   "gerektirmek",
+   "ihtiyacı olmak"
+  ],
+  "definition": "To need something or make it necessary.",
+  "example": "Some jobs require a lot of physical effort."
+ },
+ "river": {
+  "ipa": "/ˈrɪvə(r)/",
+  "reading": "rivır",
+  "meanings": [
+   "nehir",
+   "ırmak"
+  ],
+  "definition": "A large natural flow of water.",
+  "example": "We can swim in the river near our house."
+ },
+ "risky": {
+  "ipa": "/ˈrɪski/",
+  "reading": "riski",
+  "meanings": [
+   "riskli",
+   "tehlikeli"
+  ],
+  "definition": "Involving the possibility of danger or failure.",
+  "example": "It is risky to walk alone in the dark."
+ },
+ "rock climbing": {
+  "ipa": "/ˈrɒk klaɪmɪŋ/",
+  "reading": "rok klayming",
+  "meanings": [
+   "kaya tırmanışı"
+  ],
+  "definition": "The sport of climbing rock faces.",
+  "example": "She loves to do rock climbing on weekends."
+ },
+ "rocky": {
+  "ipa": "/ˈrɒki/",
+  "reading": "roki",
+  "meanings": [
+   "kayalık",
+   "taşlık"
+  ],
+  "definition": "Full of rocks or stones.",
+  "example": "They walked slowly along the rocky path."
+ },
+ "rollerblading": {
+  "ipa": "/ˈrəʊləbleɪdɪŋ/",
+  "reading": "rolırbleyding",
+  "meanings": [
+   "paten yapma",
+   "patenle kayma"
+  ],
+  "definition": "The sport of riding on rollerblades.",
+  "example": "I enjoy rollerblading in the park on sunny days."
+ },
+ "row": {
+  "ipa": "/rəʊ/",
+  "reading": "row",
+  "meanings": [
+   "kürek çekmek"
+  ],
+  "definition": "To move a boat using oars.",
+  "example": "We decided to row across the lake."
+ },
+ "safe": {
+  "ipa": "/seɪf/",
+  "reading": "seyf",
+  "meanings": [
+   "güvenli",
+   "emin"
+  ],
+  "definition": "Not in danger or likely to be hurt.",
+  "example": "Is it safe to travel to this city alone?"
+ },
+ "safe landing": {
+  "ipa": "/seɪf ˈlændɪŋ/",
+  "reading": "seyf landing",
+  "meanings": [
+   "güvenli iniş"
+  ],
+  "definition": "An act of landing an aircraft safely.",
+  "example": "The pilot made a safe landing in the storm."
+ },
+ "safety equipment": {
+  "ipa": "/ˈseɪfti ɪˈkwɪpmənt/",
+  "reading": "seyfti ikwipmınt",
+  "meanings": [
+   "güvenlik ekipmanı",
+   "koruyucu ekipman"
+  ],
+  "definition": "Gear used to protect someone from danger.",
+  "example": "Always wear your safety equipment at the construction site."
+ },
+ "sailing": {
+  "ipa": "/ˈseɪlɪŋ/",
+  "reading": "seyling",
+  "meanings": [
+   "yelkencilik",
+   "yelkenli sporu"
+  ],
+  "definition": "The sport of using boats with sails.",
+  "example": "They go sailing every summer in the Aegean sea."
+ },
+ "sand kiting": {
+  "ipa": "/sænd ˈkaɪtɪŋ/",
+  "reading": "send kayting",
+  "meanings": [
+   "kum uçurtma sörfü",
+   "sand kiting"
+  ],
+  "definition": "Riding across sand powered by a large kite.",
+  "example": "You need a windy day to practice sand kiting."
+ },
+ "sandboarding": {
+  "ipa": "/ˈsændˌbɔːdɪŋ/",
+  "reading": "sendbording",
+  "meanings": [
+   "kum sörfü",
+   "kum kayağı"
+  ],
+  "definition": "Riding down sand dunes on a board",
+  "example": "You can try sandboarding in the desert dunes."
+ },
+ "scenery": {
+  "ipa": "/ˈsiːnəri/",
+  "reading": "siıniri",
+  "meanings": [
+   "manzara",
+   "görünüm"
+  ],
+  "definition": "The natural features of a landscape",
+  "example": "They stopped to admire the beautiful mountain scenery."
+ },
+ "sea": {
+  "ipa": "/siȐ/",
+  "reading": "sii",
+  "meanings": [
+   "deniz"
+  ],
+  "definition": "The large body of salty water",
+  "example": "They love to swim in the warm sea."
+ },
+ "sea creatures": {
+  "ipa": "/siȐ ȘkriȐtʃəz/",
+  "reading": "sii kıriiçırz",
+  "meanings": [
+   "deniz canlıları",
+   "deniz yaratıkları"
+  ],
+  "definition": "Animals that live in the ocean",
+  "example": "We saw many colorful sea creatures in the aquarium."
+ },
+ "silence": {
+  "ipa": "/Șsaɠləns/",
+  "reading": "saylıns",
+  "meanings": [
+   "sessizlik",
+   "sükut"
+  ],
+  "definition": "The complete absence of sound",
+  "example": "They enjoyed the peace and silence of the forest."
+ },
+ "skateboarding": {
+  "ipa": "/ȘskeɠtbɔȐdɠŋ/",
+  "reading": "skeytbording",
+  "meanings": [
+   "kaykay yapma",
+   "kaykay sporu"
+  ],
+  "definition": "The sport of riding on a skateboard",
+  "example": "He practices skateboarding at the park every afternoon."
+ },
+ "ski": {
+  "ipa": "/skiȐ/",
+  "reading": "skii",
+  "meanings": [
+   "kayak yapmak",
+   "kayak"
+  ],
+  "definition": "To slide over snow on long flat runners",
+  "example": "Many tourists visit the resort to ski every winter."
+ },
+ "skiing": {
+  "ipa": "/ȘskiȐɠŋ/",
+  "reading": "skiiyng",
+  "meanings": [
+   "kayak yapma",
+   "kayak sporu"
+  ],
+  "definition": "The sport of sliding on snow with skis",
+  "example": "She loves skiing down the steep mountain slopes."
+ },
+ "skill": {
+  "ipa": "/skɠl/",
+  "reading": "skil",
+  "meanings": [
+   "beceri",
+   "yetenek",
+   "ustalık"
+  ],
+  "definition": "The ability to do something well",
+  "example": "Learning a new skill requires time and practice."
+ },
+ "skyscraper": {
+  "ipa": "/ȘskaɠȘskreɠpə/",
+  "reading": "skayskreypır",
+  "meanings": [
+   "gökdelen"
+  ],
+  "definition": "A very tall modern building",
+  "example": "This tall skyscraper dominates the city skyline."
+ },
+ "special axe": {
+  "ipa": "/Șspeʃl æks/",
+  "reading": "speşıl eks",
+  "meanings": [
+   "özel balta"
+  ],
+  "definition": "A unique tool designed for specific cutting tasks",
+  "example": "The carpenter used a special axe to carve the wood."
+ },
+ "structure": {
+  "ipa": "/Șstrʃktʃə/",
+  "reading": "strakçır",
+  "meanings": [
+   "yapı",
+   "bina"
+  ],
+  "definition": "Something that has been built",
+  "example": "The ancient structure was made of large stones."
+ },
+ "support": {
+  "ipa": "/səˈpɔːt/",
+  "reading": "sıpoot",
+  "meanings": [
+   "desteklemek",
+   "destek",
+   "yardım etmek"
+  ],
+  "definition": "To help or encourage someone or something.",
+  "example": "I will support you in your new project."
+ },
+ "swimming": {
+  "ipa": "/ˈswɪm.ɪŋ/",
+  "reading": "sviming",
+  "meanings": [
+   "yüzme"
+  ],
+  "definition": "The sport or activity of moving through water.",
+  "example": "I go swimming every Saturday morning."
+ },
+ "take a photo": {
+  "ipa": "/teɪk ə ˈfəʊ.təʊ/",
+  "reading": "teyk e fotou",
+  "meanings": [
+   "fotoğraf çekmek"
+  ],
+  "definition": "To use a camera to record an image.",
+  "example": "Please take a photo of us by the lake."
+ },
+ "take lesson": {
+  "ipa": "/teɪk ˈles.ən/",
+  "reading": "teyk lesın",
+  "meanings": [
+   "ders almak"
+  ],
+  "definition": "To attend a class to learn something.",
+  "example": "I plan to take lesson packages next semester."
+ },
+ "take risk": {
+  "ipa": "/teɪk rɪsk/",
+  "reading": "teyk risk",
+  "meanings": [
+   "risk almak"
+  ],
+  "definition": "To do something that might have a bad result.",
+  "example": "I do not want to take risk right now."
+ },
+ "take risks": {
+  "ipa": "/teɪk rɪsks/",
+  "reading": "teyk risks",
+  "meanings": [
+   "riskler almak",
+   "göze almak"
+  ],
+  "definition": "To do things that involve danger or uncertainty.",
+  "example": "Successful entrepreneurs always take risks."
+ },
+ "talented": {
+  "ipa": "/ˈtæl.ən.tɪd/",
+  "reading": "telıntıd",
+  "meanings": [
+   "yetenekli",
+   "kabiliyetli"
+  ],
+  "definition": "Having a natural ability to do something well.",
+  "example": "She is a very talented young musician."
+ },
+ "team sports": {
+  "ipa": "/tiːm spɔːts/",
+  "reading": "tiim spoots",
+  "meanings": [
+   "takım sporları"
+  ],
+  "definition": "Sports played by groups of players against each other.",
+  "example": "I prefer team sports like basketball and soccer."
+ },
+ "temple": {
+  "ipa": "/ˈtem.pəl/",
+  "reading": "tempıl",
+  "meanings": [
+   "tapınak",
+   "mabet"
+  ],
+  "definition": "A building used for the worship of a god.",
+  "example": "They visited an ancient temple during their trip."
+ },
+ "the others": {
+  "ipa": "/ði ˈʌð.əz/",
+  "reading": "di adırz",
+  "meanings": [
+   "diğerleri",
+   "ötekiler"
+  ],
+  "definition": "The remaining people or things in a group.",
+  "example": "Two people arrived, but where are the others?"
+ },
+ "tournament": {
+  "ipa": "/ˈtɔː.nə.mənt/",
+  "reading": "toonımınt",
+  "meanings": [
+   "turnuva"
+  ],
+  "definition": "A competition with many players or teams.",
+  "example": "Our school won the local chess tournament."
+ },
+ "tower": {
+  "ipa": "/ˈtaʊ.ər/",
+  "reading": "tavır",
+  "meanings": [
+   "kule"
+  ],
+  "definition": "A tall, narrow building or structure.",
+  "example": "The old castle has a stone tower."
+ },
+ "track": {
+  "ipa": "/træk/",
+  "reading": "trek",
+  "meanings": [
+   "pist",
+   "patika",
+   "iz"
+  ],
+  "definition": "A path, route, or rough road.",
+  "example": "We followed a muddy track through the forest."
+ },
+ "traditional food": {
+  "ipa": "/trəˈdɪʃ.ən.əl fuːd/",
+  "reading": "tredışınıl fuud",
+  "meanings": [
+   "geleneksel yemek"
+  ],
+  "definition": "Food eaten by a group for a long time.",
+  "example": "I love to try local traditional food when travelling."
+ },
+ "train": {
+  "ipa": "/treɪn/",
+  "reading": "treyn",
+  "meanings": [
+   "tren",
+   "eğitmek",
+   "antrenman yapmak"
+  ],
+  "definition": "A railway carriage or to practice a sport.",
+  "example": "Athletes must train for hours every day."
+ },
+ "transportation": {
+  "ipa": "/ˌtrænspɔːˈteɪʃn/",
+  "reading": "trensporteyşın",
+  "meanings": [
+   "ulaşım",
+   "taşımacılık"
+  ],
+  "definition": "The activity of moving people or things",
+  "example": "Public transportation is very cheap in this city."
+ },
+ "trekking route": {
+  "ipa": "/ˈtrekɪŋ ruːt/",
+  "reading": "treking ruut",
+  "meanings": [
+   "yürüyüş rotası",
+   "doğa yürüyüşü yolu"
+  ],
+  "definition": "A path used for long-distance walking in nature",
+  "example": "We followed a beautiful trekking route through the mountains."
+ },
+ "underwater hockey": {
+  "ipa": "/ˌʌndəˈwɔːtə ˈhɒki/",
+  "reading": "andırvotır haki",
+  "meanings": [
+   "sualtı hokeyi"
+  ],
+  "definition": "A sport played at the bottom of a pool",
+  "example": "He plays underwater hockey every weekend with his team."
+ },
+ "unforgettable": {
+  "ipa": "/ˌʌnfəˈgetəbl/",
+  "reading": "anfıgetıbıl",
+  "meanings": [
+   "unutulmaz"
+  ],
+  "definition": "Impossible to forget because it is very special",
+  "example": "Our trip to Paris was an unforgettable experience."
+ },
+ "view": {
+  "ipa": "/vjuː/",
+  "reading": "vyuu",
+  "meanings": [
+   "manzara",
+   "görünüş"
+  ],
+  "definition": "What you can see from a particular place",
+  "example": "The hotel room has a beautiful view of the sea."
+ },
+ "volcano surfing": {
+  "ipa": "/vɒlˈkeɪnəʊ ˈsɜːfɪŋ/",
+  "reading": "volkeyno sörfiŋ",
+  "meanings": [
+   "yanardağ sörfü"
+  ],
+  "definition": "An extreme sport of sliding down a volcano",
+  "example": "Many tourists go to Nicaragua to try volcano surfing."
+ },
+ "walk in the space": {
+  "ipa": "/wɔːk ɪn ðə speɪs/",
+  "reading": "vook in dı speys",
+  "meanings": [
+   "uzay yürüyüşü yapmak"
+  ],
+  "definition": "To move around in open space outside a spacecraft",
+  "example": "Astronauts must wear special suits to walk in the space."
+ },
+ "waterfall": {
+  "ipa": "/ˈwɔːtəfɔːl/",
+  "reading": "vootıfool",
+  "meanings": [
+   "şelale",
+   "çağlayan"
+  ],
+  "definition": "A stream of water falling from a high place",
+  "example": "We walked up the mountain to see the waterfall."
+ },
+ "waves": {
+  "ipa": "/weɪvz/",
+  "reading": "veyvz",
+  "meanings": [
+   "dalgalar"
+  ],
+  "definition": "Raised lines of water moving across the sea",
+  "example": "The large waves crashed against the rocks."
+ },
+ "wet suit": {
+  "ipa": "/ˈwet suːt/",
+  "reading": "vet suut",
+  "meanings": [
+   "dalış elbisesi",
+   "ıslak elbise"
+  ],
+  "definition": "A tight rubber suit worn for water sports",
+  "example": "You need a thick wet suit to swim in cold water."
+ },
+ "wind surfing": {
+  "ipa": "/ˈwɪnd sɜːfɪŋ/",
+  "reading": "vind sörfiŋ",
+  "meanings": [
+   "rüzgar sörfü"
+  ],
+  "definition": "A sport of riding a sailboard on water",
+  "example": "This beach is a popular spot for wind surfing."
+ },
+ "wing": {
+  "ipa": "/wɪŋ/",
+  "reading": "viŋ",
+  "meanings": [
+   "kanat"
+  ],
+  "definition": "Part of a bird or plane used for flying",
+  "example": "The bird has a broken wing and cannot fly."
+ },
+ "wing suit": {
+  "ipa": "/ˈwɪŋ suːt/",
+  "reading": "viŋ suut",
+  "meanings": [
+   "yarasa elbisesi",
+   "kanatlı elbise"
+  ],
+  "definition": "A jumpsuit with fabric under the arms used for gliding",
+  "example": "He jumped from the cliff wearing a wing suit."
+ },
+ "wings": {
+  "ipa": "/wɪŋz/",
+  "reading": "viŋz",
+  "meanings": [
+   "kanatlar"
+  ],
+  "definition": "Parts of a bird or plane used for flying",
+  "example": "An eagle has large wings that help it glide."
+ },
+ "winter": {
+  "ipa": "/ˈwɪntə(r)/",
+  "reading": "vintır",
+  "meanings": [
+   "kış"
+  ],
+  "definition": "The coldest season of the year",
+  "example": "It snows a lot here during the winter."
+ },
+ "worse": {
+  "ipa": "/wɜːs/",
+  "reading": "vörs",
+  "meanings": [
+   "daha kötü",
+   "daha fena"
+  ],
+  "definition": "More unpleasant, bad, or severe than before.",
+  "example": "The weather is getting worse by the hour."
+ },
+ "would rather": {
+  "ipa": "/wʊd ˈrɑːðə/",
+  "reading": "vud radır",
+  "meanings": [
+   "tercih etmek",
+   "istemek"
+  ],
+  "definition": "To prefer to do or have something.",
+  "example": "I would rather stay at home tonight."
+ },
+ "wrestling": {
+  "ipa": "/ˈreslɪŋ/",
+  "reading": "resliŋ",
+  "meanings": [
+   "güreş"
+  ],
+  "definition": "A sport where two people grapple and fight.",
+  "example": "He loves to watch professional wrestling on TV."
+ },
+ "wrist guard": {
+  "ipa": "/ˈrɪst ɡɑːd/",
+  "reading": "rist gard",
+  "meanings": [
+   "bilek koruyucu"
+  ],
+  "definition": "Protective gear worn to prevent wrist injury.",
+  "example": "You must wear a wrist guard while skating."
+ },
+ "zip lining": {
+  "ipa": "/ˈzɪp ˌlaɪnɪŋ/",
+  "reading": "zip layniŋ",
+  "meanings": [
+   "ipli kayma",
+   "zipline sporu"
+  ],
+  "definition": "An outdoor activity of sliding down a cable.",
+  "example": "They want to try zip lining in the mountains."
+ },
+ "zorbing": {
+  "ipa": "/ˈzɔːbɪŋ/",
+  "reading": "zorbiŋ",
+  "meanings": [
+   "zorbing",
+   "küre içinde yuvarlanma"
+  ],
+  "definition": "Rolling down a hill inside a large transparent ball.",
+  "example": "We tried zorbing during our holiday in New Zealand."
  }
 }
