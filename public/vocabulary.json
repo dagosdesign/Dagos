@@ -29917,5 +29917,747 @@
   ],
   "definition": "To reserve a room, table or ticket in advance.",
   "example": "I want to book a hotel room for July."
+ },
+ "foreign food": {
+  "ipa": "/ˈfɒrɪn fuːd/",
+  "reading": "forin fuud",
+  "meanings": [
+   "yabancı yemek",
+   "dünya mutfağı"
+  ],
+  "definition": "Food from a country different from your own.",
+  "example": "I love trying foreign food when I travel."
+ },
+ "fountain": {
+  "ipa": "/ˈfaʊntɪn/",
+  "reading": "fauntin",
+  "meanings": [
+   "çeşme",
+   "fıskiye"
+  ],
+  "definition": "A structure that shoots water into the air.",
+  "example": "There is a beautiful fountain in the city square."
+ },
+ "get lost": {
+  "ipa": "/ɡet lɒst/",
+  "reading": "get lost",
+  "meanings": [
+   "kaybolmak"
+  ],
+  "definition": "To not know where you are.",
+  "example": "It is easy to get lost in a big city."
+ },
+ "go abroad": {
+  "ipa": "/ɡəʊ əˈbrɔːd/",
+  "reading": "go abroad",
+  "meanings": [
+   "yurt dışına çıkmak",
+   "yurt dışına gitmek"
+  ],
+  "definition": "To travel or go to a foreign country.",
+  "example": "Many students want to go abroad for university."
+ },
+ "golden sand beach": {
+  "ipa": "/ˈɡəʊldən sænd biːtʃ/",
+  "reading": "goldın send biç",
+  "meanings": [
+   "altın kumlu plaj"
+  ],
+  "definition": "A beach with yellow, sand-like gold.",
+  "example": "They walked along the golden sand beach at sunset."
+ },
+ "guide visitors": {
+  "ipa": "/ɡaɪd ˈvɪzɪtəz/",
+  "reading": "gayd vizitöz",
+  "meanings": [
+   "ziyaretçilere rehberlik etmek"
+  ],
+  "definition": "To show people around a place.",
+  "example": "Local people often guide visitors through the ancient city."
+ },
+ "handcrafts": {
+  "ipa": "/ˈhændkrɑːfts/",
+  "reading": "hendkrafts",
+  "meanings": [
+   "el sanatları"
+  ],
+  "definition": "Things made skillfully with your hands.",
+  "example": "The local market sells many traditional handcrafts."
+ },
+ "heritage": {
+  "ipa": "/ˈherɪtɪdʒ/",
+  "reading": "heritic",
+  "meanings": [
+   "miras",
+   "tarihi miras"
+  ],
+  "definition": "Traditions and qualities passed down from history.",
+  "example": "The town is proud of its rich cultural heritage."
+ },
+ "highlands": {
+  "ipa": "/ˈhaɪləndz/",
+  "reading": "haylandz",
+  "meanings": [
+   "yaylalar",
+   "dağlık bölge"
+  ],
+  "definition": "An area of high or mountainous land.",
+  "example": "The green highlands are wonderful for hiking."
+ },
+ "historic site": {
+  "ipa": "/hɪˈstɒrɪk saɪt/",
+  "reading": "historik sayt",
+  "meanings": [
+   "tarihi sit alanı",
+   "tarihi yer"
+  ],
+  "definition": "A place with important historical value.",
+  "example": "We visited an important historic site yesterday."
+ },
+ "historical architecture": {
+  "ipa": "/hɪˈstɒrɪkl ˈɑːkɪtektʃə(r)/",
+  "reading": "historikl arkitektçır",
+  "meanings": [
+   "tarihi mimari"
+  ],
+  "definition": "Buildings and styles from past eras.",
+  "example": "European cities are famous for their historical architecture."
+ },
+ "holiday": {
+  "ipa": "/ˈhɒlədeɪ/",
+  "reading": "holidey",
+  "meanings": [
+   "tatil"
+  ],
+  "definition": "A time for recreation and travel.",
+  "example": "Where are you going for your summer holiday?"
+ },
+ "honesty": {
+  "ipa": "/ˈɒnəsti/",
+  "reading": "onisti",
+  "meanings": [
+   "dürüstlük"
+  ],
+  "definition": "The quality of being truthful and sincere.",
+  "example": "Honesty is the most important policy."
+ },
+ "hospitable": {
+  "ipa": "/hɒˈspɪtəbl/",
+  "reading": "hospitabl",
+  "meanings": [
+   "misafirperver"
+  ],
+  "definition": "Friendly and welcoming to guests and strangers.",
+  "example": "The local villagers are very hospitable to tourists."
+ },
+ "hospitality": {
+  "ipa": "/ˌhɒspɪˈtælɪti/",
+  "reading": "hospiteliti",
+  "meanings": [
+   "misafirperverlik",
+   "konukseverlik"
+  ],
+  "definition": "Friendly and generous treatment of guests",
+  "example": "We enjoyed the warm hospitality of the local people."
+ },
+ "i guess": {
+  "ipa": "/aɪ ɡes/",
+  "reading": "ay ges",
+  "meanings": [
+   "sanırım",
+   "galiba"
+  ],
+  "definition": "Used to express a tentative opinion",
+  "example": "It will rain later, i guess."
+ },
+ "i have been to": {
+  "ipa": "/aɪ hæv biːn tuː/",
+  "reading": "ay hev biin tu",
+  "meanings": [
+   "bulundum",
+   "gittim"
+  ],
+  "definition": "Used to say you visited a place",
+  "example": "I can say i have been to Paris twice."
+ },
+ "i suppose": {
+  "ipa": "/aɪ səˈpəʊz/",
+  "reading": "ay sıpouz",
+  "meanings": [
+   "sanırım",
+   "bence"
+  ],
+  "definition": "Used to show you think something is true",
+  "example": "It is time to leave, i suppose."
+ },
+ "invasion": {
+  "ipa": "/ɪnˈveɪʒn/",
+  "reading": "inveyjın",
+  "meanings": [
+   "istila",
+   "işgal"
+  ],
+  "definition": "Entering a country with force to conquer it",
+  "example": "The old castle survived a foreign invasion."
+ },
+ "island": {
+  "ipa": "/ˈaɪlənd/",
+  "reading": "aylınd",
+  "meanings": [
+   "ada"
+  ],
+  "definition": "A piece of land surrounded by water",
+  "example": "We spent our summer holiday on a quiet island."
+ },
+ "justice": {
+  "ipa": "/ˈdʒʌstɪs/",
+  "reading": "castis",
+  "meanings": [
+   "adalet"
+  ],
+  "definition": "Fair treatment under the law",
+  "example": "Everyone must fight for truth and justice."
+ },
+ "landmark": {
+  "ipa": "/ˈlændmɑːk/",
+  "reading": "lendmaak",
+  "meanings": [
+   "tarihi yapı",
+   "simge",
+   "işaret"
+  ],
+  "definition": "An easily recognized object or building",
+  "example": "The Eiffel Tower is a famous landmark in Paris."
+ },
+ "landscape": {
+  "ipa": "/ˈlændskeɪp/",
+  "reading": "lendskeyp",
+  "meanings": [
+   "manzara",
+   "peyzaj"
+  ],
+  "definition": "Everything you can see across an area",
+  "example": "The artist painted a beautiful mountain landscape."
+ },
+ "local dishes": {
+  "ipa": "/ˈləʊ.kəl ˈdɪʃ.ɪz/",
+  "reading": "loukıl dişiz",
+  "meanings": [
+   "yerel yemekler",
+   "yöresel yemekler"
+  ],
+  "definition": "Traditional food from a specific area.",
+  "example": "We love to try local dishes when traveling."
+ },
+ "located": {
+  "ipa": "/ləʊˈkeɪ.tɪd/",
+  "reading": "loukeytıd",
+  "meanings": [
+   "yerleşik",
+   "bulunan",
+   "yer alan"
+  ],
+  "definition": "Situated in a particular place.",
+  "example": "The hotel is located near the beautiful beach."
+ },
+ "mercifulness": {
+  "ipa": "/ˈmɜː.sɪ.fəl.nəs/",
+  "reading": "mörsifılnıs",
+  "meanings": [
+   "merhamet",
+   "şefkat"
+  ],
+  "definition": "The quality of showing mercy or forgiveness.",
+  "example": "We admire the king for his great mercifulness."
+ },
+ "monument": {
+  "ipa": "/ˈmɒn.jə.mənt/",
+  "reading": "monyumınt",
+  "meanings": [
+   "anıt",
+   "abide"
+  ],
+  "definition": "A statue or building that honors someone.",
+  "example": "Tourists visit the ancient monument every year."
+ },
+ "mosque": {
+  "ipa": "/mɒsk/",
+  "reading": "mosk",
+  "meanings": [
+   "cami"
+  ],
+  "definition": "A building where Muslims worship.",
+  "example": "There is a historic mosque in the city center."
+ },
+ "most of": {
+  "ipa": "/məʊst ɒv/",
+  "reading": "moust ov",
+  "meanings": [
+   "çoğu",
+   "büyük kısmı"
+  ],
+  "definition": "Nearly all of something.",
+  "example": "I spend most of my free time reading books."
+ },
+ "museum": {
+  "ipa": "/mjuːˈziː.əm/",
+  "reading": "myuziym",
+  "meanings": [
+   "müze"
+  ],
+  "definition": "A place where historical objects are displayed.",
+  "example": "We want to visit the national museum tomorrow."
+ },
+ "national park": {
+  "ipa": "/ˈnæʃ.ən.əl pɑːk/",
+  "reading": "neşınıl paak",
+  "meanings": [
+   "milli park",
+   "ulusal park"
+  ],
+  "definition": "An area of countryside protected by government.",
+  "example": "We love to camp in the national park."
+ },
+ "natural heritage": {
+  "ipa": "/ˈnætʃ.ər.əl ˈher.ɪ.tɪdʒ/",
+  "reading": "neçırıl herıtıc",
+  "meanings": [
+   "doğal miras"
+  ],
+  "definition": "Natural features of outstanding universal value.",
+  "example": "We must protect this unique natural heritage."
+ },
+ "palace": {
+  "ipa": "/ˈpæl.ɪs/",
+  "reading": "pelıs",
+  "meanings": [
+   "saray"
+  ],
+  "definition": "The official home of a king or queen",
+  "example": "The royal family lives in a beautiful palace."
+ },
+ "pass": {
+  "ipa": "/pɑːs/",
+  "reading": "paas",
+  "meanings": [
+   "geçmek",
+   "geçirmek",
+   "geçiş belgesi"
+  ],
+  "definition": "To go past something or succeed in a test",
+  "example": "Please let me pass through the crowd."
+ },
+ "per year": {
+  "ipa": "/pɜː jɪər/",
+  "reading": "pör yiır",
+  "meanings": [
+   "yılda",
+   "yıllık",
+   "yıl başına"
+  ],
+  "definition": "Happening or calculated for each twelve-month period",
+  "example": "How much money do you earn per year?"
+ },
+ "perfect": {
+  "ipa": "/ˈpɜː.fekt/",
+  "reading": "pörfekt",
+  "meanings": [
+   "kusursuz",
+   "mükemmel",
+   "harika"
+  ],
+  "definition": "Complete and correct in every way without any mistakes",
+  "example": "The weather today is perfect for a picnic."
+ },
+ "place to stay": {
+  "ipa": "/pleɪs tuː steɪ/",
+  "reading": "pleys tu stey",
+  "meanings": [
+   "konaklama yeri",
+   "kalacak yer"
+  ],
+  "definition": "A location where someone can sleep or live temporarily",
+  "example": "We need to find a safe place to stay."
+ },
+ "plane": {
+  "ipa": "/pleɪn/",
+  "reading": "pleyn",
+  "meanings": [
+   "uçak"
+  ],
+  "definition": "A vehicle with wings that flies through the air",
+  "example": "I like to travel by plane because it is fast."
+ },
+ "plateaus": {
+  "ipa": "/ˈplæt.əʊz/",
+  "reading": "pletouz",
+  "meanings": [
+   "platolar",
+   "yaylalar"
+  ],
+  "definition": "Large areas of high, flat land",
+  "example": "There are many dry plateaus in this region."
+ },
+ "population": {
+  "ipa": "/ˌpɒp.jəˈleɪ.ʃən/",
+  "reading": "popyuleyşın",
+  "meanings": [
+   "nüfus",
+   "halk"
+  ],
+  "definition": "All the people living in a particular area",
+  "example": "The total population of the city is growing rapidly."
+ },
+ "port": {
+  "ipa": "/pɔːt/",
+  "reading": "port",
+  "meanings": [
+   "liman"
+  ],
+  "definition": "An area by the water where ships load cargo",
+  "example": "The ship arrived safely at the port this morning."
+ },
+ "product": {
+  "ipa": "/ˈpɒd.ʌkt/",
+  "reading": "prodakt",
+  "meanings": [
+   "ürün",
+   "mahsul"
+  ],
+  "definition": "Something that is made to be sold",
+  "example": "This new product is designed to save energy."
+ },
+ "prophet": {
+  "ipa": "/ˈprɒf.ɪt/",
+  "reading": "profıt",
+  "meanings": [
+   "peygamber",
+   "haberci"
+  ],
+  "definition": "A person who is believed to speak for God",
+  "example": "Moses is a highly respected prophet in several religions."
+ },
+ "province": {
+  "ipa": "/ˈpɒv.ɪns/",
+  "reading": "provins",
+  "meanings": [
+   "vilayet",
+   "il",
+   "eyalet"
+  ],
+  "definition": "An administrative division of a country",
+  "example": "He lives in a quiet province far from the capital."
+ },
+ "rediscover": {
+  "ipa": "/ˌriːdɪˈskʌvə(r)/",
+  "reading": "riidıskavır",
+  "meanings": [
+   "yeniden keşfetmek"
+  ],
+  "definition": "To find or learn about something again.",
+  "example": "I want to rediscover my love for painting."
+ },
+ "resort": {
+  "ipa": "/rɪˈzɔːt/",
+  "reading": "rizoot",
+  "meanings": [
+   "tatil yeri",
+   "belde"
+  ],
+  "definition": "A place where people go for holidays.",
+  "example": "We stayed at a beautiful beach resort."
+ },
+ "rich tradition": {
+  "ipa": "/rɪtʃ trəˈdɪʃn/",
+  "reading": "riç trıdişın",
+  "meanings": [
+   "zengin gelenek"
+  ],
+  "definition": "A history filled with many valuable customs.",
+  "example": "This country has a rich tradition of storytelling."
+ },
+ "rock structure": {
+  "ipa": "/rɒk ˈstrʌktʃə(r)/",
+  "reading": "rok strakçır",
+  "meanings": [
+   "kaya yapısı"
+  ],
+  "definition": "The physical arrangement or composition of rocks.",
+  "example": "Scientists studied the unique rock structure in the cave."
+ },
+ "search": {
+  "ipa": "/sɜːtʃ/",
+  "reading": "sööç",
+  "meanings": [
+   "aramak",
+   "araştırmak",
+   "arama"
+  ],
+  "definition": "To look carefully to find something.",
+  "example": "You can search for information online."
+ },
+ "seaside": {
+  "ipa": "/ˈsiːsaɪd/",
+  "reading": "siisayd",
+  "meanings": [
+   "deniz kenarı",
+   "sahil"
+  ],
+  "definition": "An area that is next to the sea.",
+  "example": "We spent our holiday at the seaside."
+ },
+ "self confidence": {
+  "ipa": "/ˌself ˈkɒnfɪdəns/",
+  "reading": "self konfidıns",
+  "meanings": [
+   "özgüven",
+   "kendine güven"
+  ],
+  "definition": "Trust in one's own abilities and judgment.",
+  "example": "You need self confidence to speak in public."
+ },
+ "ship": {
+  "ipa": "/ʃɪp/",
+  "reading": "şip",
+  "meanings": [
+   "gemi"
+  ],
+  "definition": "A large boat for transporting people or goods.",
+  "example": "We will travel by ship across the ocean."
+ },
+ "sightseeing tour": {
+  "ipa": "/ˈsaɪtsiːɪŋ tʊə/",
+  "reading": "saytsiing tuı",
+  "meanings": [
+   "şehir turu",
+   "turistik gezi"
+  ],
+  "definition": "A trip to visit famous and interesting places.",
+  "example": "We booked a sightseeing tour of London."
+ },
+ "soil": {
+  "ipa": "/sɔɪl/",
+  "reading": "soyl",
+  "meanings": [
+   "toprak"
+  ],
+  "definition": "The top layer of earth where plants grow.",
+  "example": "Good soil is necessary for growing healthy vegetables."
+ },
+ "souvenir": {
+  "ipa": "/ˌsuːvəˈnɪə/",
+  "reading": "suvıniı",
+  "meanings": [
+   "hediyelik eşya",
+   "hatıra"
+  ],
+  "definition": "Something kept as a reminder of a place.",
+  "example": "I bought a small souvenir from Paris."
+ },
+ "spectator": {
+  "ipa": "/spekˈteɪtə/",
+  "reading": "spekteytı",
+  "meanings": [
+   "seyirci",
+   "izleyici"
+  ],
+  "definition": "A person who watches a show, game, or event.",
+  "example": "As a spectator, I enjoyed the game immensely."
+ },
+ "square": {
+  "ipa": "/skweə/",
+  "reading": "skweı",
+  "meanings": [
+   "meydan",
+   "kare"
+  ],
+  "definition": "An open area in a town with buildings around.",
+  "example": "People gather in the town square every evening."
+ },
+ "state guest house": {
+  "ipa": "/steɪt ɡest haʊs/",
+  "reading": "steyt gest haus",
+  "meanings": [
+   "devlet konukevi"
+  ],
+  "definition": "A residence for official visitors of a government.",
+  "example": "The state guest house is ready for the president."
+ },
+ "sunset": {
+  "ipa": "/ˈsʌnset/",
+  "reading": "sanset",
+  "meanings": [
+   "gün batımı"
+  ],
+  "definition": "The time when the sun goes down.",
+  "example": "We walked on the beach at sunset."
+ },
+ "the most": {
+  "ipa": "/ðə məʊst/",
+  "reading": "dı moust",
+  "meanings": [
+   "en çok",
+   "en fazla"
+  ],
+  "definition": "To the greatest extent or degree.",
+  "example": "This is the most beautiful flower in the garden."
+ },
+ "tiles": {
+  "ipa": "/taɪlz/",
+  "reading": "taylz",
+  "meanings": [
+   "fayans",
+   "kiremit"
+  ],
+  "definition": "Thin blocks used for covering roofs, floors, or walls.",
+  "example": "The blue tiles on the kitchen wall look nice."
+ },
+ "tomb": {
+  "ipa": "/tuːm/",
+  "reading": "tuum",
+  "meanings": [
+   "mezar",
+   "türbe",
+   "lahit"
+  ],
+  "definition": "A large grave, especially one built of stone.",
+  "example": "They visited the ancient tomb of the king."
+ },
+ "tourist attraction": {
+  "ipa": "/ˈtʊərɪst əˈtrækʃn/",
+  "reading": "turist etrekşın",
+  "meanings": [
+   "turistik yer",
+   "turistik cazibe merkezi"
+  ],
+  "definition": "A place people visit for pleasure and interest.",
+  "example": "The Eiffel Tower is a popular tourist attraction."
+ },
+ "trade": {
+  "ipa": "/treɪd/",
+  "reading": "treyd",
+  "meanings": [
+   "ticaret",
+   "ticaret yapmak",
+   "takas etmek"
+  ],
+  "definition": "The activity of buying and selling goods and services.",
+  "example": "The two countries agree to trade."
+ },
+ "trade route": {
+  "ipa": "/treɪd ruːt/",
+  "reading": "treyd ruut",
+  "meanings": [
+   "ticaret yolu"
+  ],
+  "definition": "A route used by merchants for transporting goods.",
+  "example": "The Silk Road was an important trade route."
+ },
+ "tradition": {
+  "ipa": "/trəˈdɪʃn/",
+  "reading": "trıdişın",
+  "meanings": [
+   "gelenek",
+   "görenek",
+   "adet"
+  ],
+  "definition": "A belief or custom passed down through generations.",
+  "example": "It is a tradition to wear white on this day."
+ },
+ "traditions": {
+  "ipa": "/trəˈdɪʃnz/",
+  "reading": "trıdişınz",
+  "meanings": [
+   "gelenekler",
+   "adetler"
+  ],
+  "definition": "Customs or beliefs handed down from the past.",
+  "example": "Many cultures have unique traditions to celebrate spring."
+ },
+ "train station": {
+  "ipa": "/ˈtreɪn ˌsteɪʃn/",
+  "reading": "treyn steyşın",
+  "meanings": [
+   "tren istasyonu"
+  ],
+  "definition": "A place where trains stop for passengers.",
+  "example": "We will meet you at the train station."
+ },
+ "trip": {
+  "ipa": "/trɪp/",
+  "reading": "trip",
+  "meanings": [
+   "gezi",
+   "seyahat",
+   "yolculuk"
+  ],
+  "definition": "A journey to a place and back again.",
+  "example": "We enjoyed our weekend trip to the mountains."
+ },
+ "unbelievable": {
+  "ipa": "/ˌʌnbɪˈliːvəbl/",
+  "reading": "anbiliyvıbıl",
+  "meanings": [
+   "inanılmaz"
+  ],
+  "definition": "Extremely difficult to believe; amazing.",
+  "example": "The view from the top of the mountain is unbelievable."
+ },
+ "vacation": {
+  "ipa": "/vəˈkeɪʃn/",
+  "reading": "vıkeyşın",
+  "meanings": [
+   "tatil"
+  ],
+  "definition": "A period of time spent away from work or school.",
+  "example": "We are planning a summer vacation to Spain."
+ },
+ "village": {
+  "ipa": "/ˈvɪlɪdʒ/",
+  "reading": "vılıc",
+  "meanings": [
+   "köy"
+  ],
+  "definition": "A very small town in the countryside",
+  "example": "They live in a quiet country village."
+ },
+ "visitor": {
+  "ipa": "/ˈvɪzɪtə/",
+  "reading": "vızitır",
+  "meanings": [
+   "ziyaretçi",
+   "konuk"
+  ],
+  "definition": "Someone who visits a person or place",
+  "example": "The museum welcomes every visitor with a guide."
+ },
+ "weigh": {
+  "ipa": "/weɪ/",
+  "reading": "vey",
+  "meanings": [
+   "ağırlığında olmak",
+   "tartmak"
+  ],
+  "definition": "To measure how heavy something is",
+  "example": "How much does the luggage weigh?"
+ },
+ "wildlife": {
+  "ipa": "/ˈwaɪldlaɪf/",
+  "reading": "vayldlayf",
+  "meanings": [
+   "yaban hayatı",
+   "vahşi yaşam"
+  ],
+  "definition": "Animals and plants living in nature",
+  "example": "We went to Africa to see the wildlife."
+ },
+ "worth seeing": {
+  "ipa": "/ˌwɜːθ ˈsiːɪŋ/",
+  "reading": "vörs siing",
+  "meanings": [
+   "görülmeye değer"
+  ],
+  "definition": "Deserving to be visited or looked at",
+  "example": "This historic castle is definitely worth seeing."
  }
 }
