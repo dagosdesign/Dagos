@@ -592,6 +592,20 @@ export const READY_MADE_CARD_WORDS = [
   'worse', 'would rather', 'wrestling', 'wrist guard', 'zip lining',
   'zorbing',
   'horse riding', 'fearless', 'spectacular', 'brave',
+  'abandoned', 'abroad', 'accommodation', 'all-inclusive', 'amazing',
+  'amphitheater', 'ancient city', 'architecture', 'artificial', 'artificial waterway',
+  'attract visitor', 'attraction', 'autumn', 'average temperature', 'bazaar',
+  'beach', 'bed and breakfast', 'bed and breakfast hotels', 'been', 'believe',
+  'big', 'black sea region', 'boat tour', 'border', 'bosphorus',
+  'bridge', 'budget', 'bull fighting', 'bungalow', 'buy gift/souvenir',
+  'camel', 'capital', 'castle', 'cathedral', 'cave',
+  'centre', 'century', 'city sightseeing', 'clean', 'climate',
+  'conquest', 'construction', 'continent', 'cooperation', 'crowded',
+  'cruise holiday', 'cultural diversity', 'culture', 'date back', 'desert',
+  'destination', 'detail', 'determination', 'dirty', 'dishes',
+  'emperor', 'empire', 'end', 'ephesus', 'equality',
+  'ever', 'example', 'exotic', 'extreme sports', 'fairy chimneys',
+  'farming', 'folk dance', 'book (reserve)',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);

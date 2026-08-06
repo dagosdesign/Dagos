@@ -29315,5 +29315,607 @@
   ],
   "definition": "Very impressive to look at",
   "example": "The sunset offered a spectacular view over the ocean."
+ },
+ "abandoned": {
+  "ipa": "/əˈbændənd/",
+  "reading": "ıbændınd",
+  "meanings": [
+   "terk edilmiş",
+   "ıssız"
+  ],
+  "definition": "Left empty or no longer used.",
+  "example": "The old house remained abandoned for years."
+ },
+ "abroad": {
+  "ipa": "/əˈbrɔːd/",
+  "reading": "ıbrɔd",
+  "meanings": [
+   "yurtdışı",
+   "yurtdışında"
+  ],
+  "definition": "In or to a foreign country.",
+  "example": "She loves traveling abroad every summer."
+ },
+ "accommodation": {
+  "ipa": "/əˌkɒməˈdeɪʃn/",
+  "reading": "ıkamədeyşın",
+  "meanings": [
+   "konaklama",
+   "yerleşme yeri"
+  ],
+  "definition": "A place to live or stay.",
+  "example": "Hotel accommodation is included in the price."
+ },
+ "all-inclusive": {
+  "ipa": "/ˌɔːl ɪnˈkluːsɪv/",
+  "reading": "ɔl inklusiv",
+  "meanings": [
+   "her şey dahil"
+  ],
+  "definition": "Including all costs and services in the price.",
+  "example": "They booked an all-inclusive holiday by the sea."
+ },
+ "amphitheater": {
+  "ipa": "/ˈæmfɪθɪətə(r)/",
+  "reading": "emfifiytatır",
+  "meanings": [
+   "amfitiyatro",
+   "tiyatro alanı"
+  ],
+  "definition": "An open circular or oval building with tiered seats.",
+  "example": "The ancient amphitheater hosted many great shows."
+ },
+ "ancient city": {
+  "ipa": "/ˈeɪnʃənt ˈsɪti/",
+  "reading": "eynşent siti",
+  "meanings": [
+   "antik kent",
+   "eski şehir"
+  ],
+  "definition": "A historical city from the distant past.",
+  "example": "Ephesus is a famous ancient city in Turkey."
+ },
+ "architecture": {
+  "ipa": "/ˈɑːkɪtektʃə(r)/",
+  "reading": "arkitektçır",
+  "meanings": [
+   "mimari",
+   "mimarlık"
+  ],
+  "definition": "The art or practice of designing buildings.",
+  "example": "The city is famous for its Gothic architecture."
+ },
+ "artificial": {
+  "ipa": "/ˌɑːtɪˈfɪʃl/",
+  "reading": "artifişl",
+  "meanings": [
+   "yapay",
+   "suni"
+  ],
+  "definition": "Made by humans, not occurring naturally.",
+  "example": "The park has a large artificial lake."
+ },
+ "artificial waterway": {
+  "ipa": "/ˌɑːtɪˈfɪʃl ˈwɔːtəweɪ/",
+  "reading": "artifişl votəvey",
+  "meanings": [
+   "yapay su yolu",
+   "kanal"
+  ],
+  "definition": "A man-made channel for water transport.",
+  "example": "The canal is an important artificial waterway."
+ },
+ "attract visitor": {
+  "ipa": "/əˈtrækt ˈvɪzɪtə(r)/",
+  "reading": "ıtrekt vizitır",
+  "meanings": [
+   "ziyaretçi çekmek"
+  ],
+  "definition": "To draw tourists or guests to a place.",
+  "example": "Museums attract visitor numbers from around the world."
+ },
+ "attraction": {
+  "ipa": "/əˈtrækʃn/",
+  "reading": "ıtrekşın",
+  "meanings": [
+   "cazibe merkezi",
+   "turistik yer",
+   "ilgi çekici şey"
+  ],
+  "definition": "A place or thing that draws interest.",
+  "example": "The Eiffel Tower is a major tourist attraction."
+ },
+ "autumn": {
+  "ipa": "/ˈɔːtəm/",
+  "reading": "otım",
+  "meanings": [
+   "sonbahar",
+   "güz"
+  ],
+  "definition": "The season between summer and winter.",
+  "example": "The leaves turn red and fall in autumn."
+ },
+ "average temperature": {
+  "ipa": "/ˈævərɪdʒ ˈtemprətʃə(r)/",
+  "reading": "evprij tempratçır",
+  "meanings": [
+   "ortalama sıcaklık"
+  ],
+  "definition": "The typical or mean level of heat.",
+  "example": "The average temperature here in July is high."
+ },
+ "bazaar": {
+  "ipa": "/bəˈzɑː/",
+  "reading": "bızaa",
+  "meanings": [
+   "pazar",
+   "çarşı"
+  ],
+  "definition": "A market selling different kinds of goods.",
+  "example": "We went to the local bazaar to buy spices."
+ },
+ "beach": {
+  "ipa": "/biːtʃ/",
+  "reading": "biiç",
+  "meanings": [
+   "plaj",
+   "sahil",
+   "kumsal"
+  ],
+  "definition": "A sandy area of land next to the sea.",
+  "example": "We can walk along the beach in the evening."
+ },
+ "bed and breakfast": {
+  "ipa": "/ˌbed ən ˈbrekfəst/",
+  "reading": "bed en brekfıst",
+  "meanings": [
+   "oda kahvaltı pansiyon",
+   "yarım pansiyon"
+  ],
+  "definition": "A private house providing lodging and breakfast.",
+  "example": "We stayed at a cozy bed and breakfast."
+ },
+ "bed and breakfast hotels": {
+  "ipa": "/ˌbed ən ˈbrekfəst həuˈtelz/",
+  "reading": "bed en brekfıst hotels",
+  "meanings": [
+   "oda kahvaltı oteller"
+  ],
+  "definition": "Hotels that offer a room and morning meal.",
+  "example": "We prefer bed and breakfast hotels when we travel."
+ },
+ "been": {
+  "ipa": "/biːn/",
+  "reading": "biin",
+  "meanings": [
+   "oldu",
+   "bulundu"
+  ],
+  "definition": "The past participle of the verb 'to be'.",
+  "example": "I have been to London twice."
+ },
+ "big": {
+  "ipa": "/bɪɡ/",
+  "reading": "bik",
+  "meanings": [
+   "büyük",
+   "iri"
+  ],
+  "definition": "Large in size, degree, or amount.",
+  "example": "They live in a big house."
+ },
+ "black sea region": {
+  "ipa": "/ˌblæk ˈsiː ˌriːdʒən/",
+  "reading": "blek sii ricın",
+  "meanings": [
+   "Karadeniz Bölgesi"
+  ],
+  "definition": "A geographical area in northern Turkey.",
+  "example": "I want to visit the black sea region next year."
+ },
+ "boat tour": {
+  "ipa": "/ˈbəʊt tʊə/",
+  "reading": "bout tuır",
+  "meanings": [
+   "tekne turu",
+   "tekne gezisi"
+  ],
+  "definition": "A short journey on water for pleasure.",
+  "example": "We will take a boat tour tomorrow."
+ },
+ "border": {
+  "ipa": "/ˈbɔːdə/",
+  "reading": "boodı",
+  "meanings": [
+   "sınır",
+   "hudut"
+  ],
+  "definition": "The line that separates two countries.",
+  "example": "We crossed the border into Canada."
+ },
+ "bosphorus": {
+  "ipa": "/ˈbɒsfərəs/",
+  "reading": "bosforıs",
+  "meanings": [
+   "Boğaziçi",
+   "İstanbul Boğazı"
+  ],
+  "definition": "A famous strait located in Istanbul.",
+  "example": "We took a ferry across the bosphorus."
+ },
+ "budget": {
+  "ipa": "/ˈbʌdʒɪt/",
+  "reading": "bacıt",
+  "meanings": [
+   "bütçe"
+  ],
+  "definition": "An estimate of income and expenditure.",
+  "example": "We need to plan our budget for next month."
+ },
+ "bull fighting": {
+  "ipa": "/ˈbʊl faɪtɪŋ/",
+  "reading": "bul fayting",
+  "meanings": [
+   "boğa güreşi"
+  ],
+  "definition": "A traditional sport of fighting bulls.",
+  "example": "Many people do not support bull fighting anymore."
+ },
+ "bungalow": {
+  "ipa": "/ˈbʌŋɡələʊ/",
+  "reading": "bangılou",
+  "meanings": [
+   "bungalov",
+   "tek katlı ahşap ev"
+  ],
+  "definition": "A low house with only one story.",
+  "example": "We rented a small bungalow by the forest."
+ },
+ "buy gift/souvenir": {
+  "ipa": "/baɪ ɡɪft ˌsuːvəˈnɪə/",
+  "reading": "bay gift suvınir",
+  "meanings": [
+   "hediye/hediyelik eşya almak"
+  ],
+  "definition": "To purchase presents or items to remember a place.",
+  "example": "Tourists always stop to buy gift/souvenir items here."
+ },
+ "camel": {
+  "ipa": "/ˈkæm.əl/",
+  "reading": "kemıl",
+  "meanings": [
+   "deve"
+  ],
+  "definition": "A large animal with one or two humps",
+  "example": "A camel can survive in the desert for days."
+ },
+ "capital": {
+  "ipa": "/ˈkæp.ɪ.təl/",
+  "reading": "kepıtıl",
+  "meanings": [
+   "başkent",
+   "sermaye"
+  ],
+  "definition": "The city where a government is located",
+  "example": "London is the capital of the United Kingdom."
+ },
+ "castle": {
+  "ipa": "/ˈkɑː.səl/",
+  "reading": "kaasıl",
+  "meanings": [
+   "kale",
+   "şato"
+  ],
+  "definition": "A large strong building built to protect people",
+  "example": "They visited an old castle on the hill."
+ },
+ "cathedral": {
+  "ipa": "/kəˈθiː.drəl/",
+  "reading": "kıtiidrıl",
+  "meanings": [
+   "katedral",
+   "büyük kilise"
+  ],
+  "definition": "The main church of a district",
+  "example": "The historic cathedral attracts many visitors every year."
+ },
+ "cave": {
+  "ipa": "/keɪv/",
+  "reading": "keyv",
+  "meanings": [
+   "mağara"
+  ],
+  "definition": "A large natural hole in the side of a cliff",
+  "example": "The explorers decided to enter the dark cave."
+ },
+ "centre": {
+  "ipa": "/ˈsen.tə/",
+  "reading": "sentı",
+  "meanings": [
+   "merkez",
+   "orta"
+  ],
+  "definition": "The middle point or part of something",
+  "example": "The shopping centre is very busy today."
+ },
+ "century": {
+  "ipa": "/ˈsen.tʃər.i/",
+  "reading": "sençuri",
+  "meanings": [
+   "yüzyıl",
+   "asır"
+  ],
+  "definition": "A period of one hundred years",
+  "example": "The museum has art from the last century."
+ },
+ "city sightseeing": {
+  "ipa": "/ˌsɪt.i ˈsaɪtˌʃiː.ɪŋ/",
+  "reading": "siti saytşiiŋ",
+  "meanings": [
+   "şehir turu",
+   "şehir gezisi"
+  ],
+  "definition": "Visiting interesting places in a city",
+  "example": "They enjoy city sightseeing when they travel."
+ },
+ "clean": {
+  "ipa": "/kliːn/",
+  "reading": "kliin",
+  "meanings": [
+   "temiz",
+   "temizlemek"
+  ],
+  "definition": "Free from dirt or marks",
+  "example": "Please keep your bedroom clean and tidy."
+ },
+ "climate": {
+  "ipa": "/ˈklaɪ.mət/",
+  "reading": "klaymıt",
+  "meanings": [
+   "iklim"
+  ],
+  "definition": "The general weather conditions of a place",
+  "example": "This region has a dry climate in summer."
+ },
+ "conquest": {
+  "ipa": "/ˈkɒŋ.kwest/",
+  "reading": "koŋkwest",
+  "meanings": [
+   "fetih",
+   "istila"
+  ],
+  "definition": "The act of taking control of a country",
+  "example": "The conquest of the city took many months."
+ },
+ "construction": {
+  "ipa": "/kənˈstrʌk.ʃən/",
+  "reading": "kınstrakşın",
+  "meanings": [
+   "inşaat",
+   "yapım"
+  ],
+  "definition": "The work of building something large",
+  "example": "The construction of the new bridge will start tomorrow."
+ },
+ "continent": {
+  "ipa": "/ˈhɒntɪnənt/",
+  "reading": "kontınınt",
+  "meanings": [
+   "kıta",
+   "anakara"
+  ],
+  "definition": "One of the world's main landmasses",
+  "example": "Africa is a very large continent."
+ },
+ "cooperation": {
+  "ipa": "/kəʊˌɒpəˈreɪʃn/",
+  "reading": "koopeyreyşın",
+  "meanings": [
+   "işbirliği",
+   "yardımlaşma"
+  ],
+  "definition": "Working together to achieve a goal",
+  "example": "We need close cooperation to finish this project."
+ },
+ "crowded": {
+  "ipa": "/ˈkraʊdɪd/",
+  "reading": "kıravdid",
+  "meanings": [
+   "kalabalık"
+  ],
+  "definition": "Full of people or things",
+  "example": "The train station was very crowded today."
+ },
+ "cruise holiday": {
+  "ipa": "/kruːz ˈhɒlədeɪ/",
+  "reading": "kruz holıdey",
+  "meanings": [
+   "gemi tatili",
+   "kruvaziyer tatili"
+  ],
+  "definition": "A vacation spent traveling on a ship",
+  "example": "They booked a cruise holiday for the summer."
+ },
+ "cultural diversity": {
+  "ipa": "/ˈkʌltʃərəl daɪˈvɜːsəti/",
+  "reading": "kalçırıl dayvörsiti",
+  "meanings": [
+   "kültürel çeşitlilik"
+  ],
+  "definition": "The existence of a variety of cultural groups",
+  "example": "The festival celebrates cultural diversity in our city."
+ },
+ "culture": {
+  "ipa": "/ˈkʌltʃə(r)/",
+  "reading": "kalçır",
+  "meanings": [
+   "kültür"
+  ],
+  "definition": "The ideas and customs of a society",
+  "example": "We want to learn about Japanese culture."
+ },
+ "date back": {
+  "ipa": "/deɪt bæk/",
+  "reading": "deyt bek",
+  "meanings": [
+   "-e dayanmak",
+   "geçmişe uzanmak"
+  ],
+  "definition": "To have existed since a specific time",
+  "example": "These ancient ruins date back to Roman times."
+ },
+ "detail": {
+  "ipa": "/ˈdiːteɪl/",
+  "reading": "diiteyl",
+  "meanings": [
+   "detay",
+   "ayrıntı"
+  ],
+  "definition": "An individual fact or item",
+  "example": "Please tell me every detail of the plan."
+ },
+ "determination": {
+  "ipa": "/dɪˌtɜːmɪˈneɪʃn/",
+  "reading": "ditörmineyşın",
+  "meanings": [
+   "kararlılık",
+   "azim"
+  ],
+  "definition": "Firmness of purpose to achieve something",
+  "example": "Her determination helped her win the race."
+ },
+ "dirty": {
+  "ipa": "/ˈdɜːti/",
+  "reading": "dööti",
+  "meanings": [
+   "kirli",
+   "pis"
+  ],
+  "definition": "Not clean",
+  "example": "Please put your dirty clothes in the basket."
+ },
+ "dishes": {
+  "ipa": "/ˈdɪʃɪz/",
+  "reading": "dişiz",
+  "meanings": [
+   "bulaşıklar",
+   "yemekler"
+  ],
+  "definition": "Plates, bowls, and cups used for food",
+  "example": "She always washes the dishes after dinner."
+ },
+ "emperor": {
+  "ipa": "/ˈempərə/",
+  "reading": "empırır",
+  "meanings": [
+   "imparator"
+  ],
+  "definition": "The male ruler of an empire",
+  "example": "The emperor ruled over many lands."
+ },
+ "empire": {
+  "ipa": "/ˈempaɪə/",
+  "reading": "empayır",
+  "meanings": [
+   "imparatorluk"
+  ],
+  "definition": "A group of countries ruled by a single monarch",
+  "example": "History classes often teach about the Roman empire."
+ },
+ "end": {
+  "ipa": "/end/",
+  "reading": "end",
+  "meanings": [
+   "son",
+   "bitirmek",
+   "sona ermek"
+  ],
+  "definition": "The final part of something",
+  "example": "We stayed until the end of the movie."
+ },
+ "ephesus": {
+  "ipa": "/ˈefəsəs/",
+  "reading": "efesıs",
+  "meanings": [
+   "Efes"
+  ],
+  "definition": "An ancient Greek city in modern Turkey",
+  "example": "Many tourists visit Ephesus every year."
+ },
+ "equality": {
+  "ipa": "/ɪˈkwɒləti/",
+  "reading": "ikualıti",
+  "meanings": [
+   "eşitlik"
+  ],
+  "definition": "The state of being equal in status and rights",
+  "example": "They are fighting for gender equality."
+ },
+ "ever": {
+  "ipa": "/ˈevə/",
+  "reading": "evır",
+  "meanings": [
+   "hiç",
+   "her zaman"
+  ],
+  "definition": "At any time",
+  "example": "Have you ever been to Paris?"
+ },
+ "example": {
+  "ipa": "/ɪɡˈzɑːmpl/",
+  "reading": "igzampıl",
+  "meanings": [
+   "örnek"
+  ],
+  "definition": "Something that shows or explains a rule",
+  "example": "Can you give me an example of this?"
+ },
+ "exotic": {
+  "ipa": "/ɪɡˈzɒtɪk/",
+  "reading": "igzotik",
+  "meanings": [
+   "egzotik",
+   "yabancı ve ilginç"
+  ],
+  "definition": "Unusual and exciting, from another country",
+  "example": "She loves to travel to exotic places."
+ },
+ "fairy chimneys": {
+  "ipa": "/ˈfeəri ˈtʃɪmniz/",
+  "reading": "feyri çimniz",
+  "meanings": [
+   "peri bacaları"
+  ],
+  "definition": "Tall, thin spires of rock in Cappadocia",
+  "example": "Cappadocia is famous for its unique fairy chimneys."
+ },
+ "farming": {
+  "ipa": "/ˈfɑːmɪŋ/",
+  "reading": "farming",
+  "meanings": [
+   "çiftçilik",
+   "tarım"
+  ],
+  "definition": "The activity of growing crops and raising animals",
+  "example": "Modern farming uses advanced technology."
+ },
+ "folk dance": {
+  "ipa": "/ˈfəʊk dɑːns/",
+  "reading": "fouk dans",
+  "meanings": [
+   "halk oyunu"
+  ],
+  "definition": "A traditional dance of a specific country or region",
+  "example": "The students performed a traditional folk dance."
+ },
+ "book (reserve)": {
+  "ipa": "/bʊk/",
+  "reading": "buk",
+  "meanings": [
+   "rezervasyon yapmak",
+   "yer ayırtmak"
+  ],
+  "definition": "To reserve a room, table or ticket in advance.",
+  "example": "I want to book a hotel room for July."
  }
 }
