@@ -8,3 +8,4 @@ coverage/
 !.env.example
 settings.json
 settings_1.json
+.claude/
