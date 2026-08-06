@@ -28167,16 +28167,6 @@
   "definition": "A large mass of ice moving slowly",
   "example": "They hiked up to see the ancient glacier."
  },
- "goggle": {
-  "ipa": "/ˈɡɒɡl/",
-  "reading": "gogıl",
-  "meanings": [
-   "gözleri fal taşı gibi açmak",
-   "şaşkınlıkla bakmak"
-  ],
-  "definition": "To look with wide, amazed eyes",
-  "example": "The children goggle at the beautiful magic show."
- },
  "goal": {
   "ipa": "/ɡəʊl/",
   "reading": "goul",
@@ -29285,5 +29275,45 @@
   ],
   "definition": "Rolling down a hill inside a large transparent ball.",
   "example": "We tried zorbing during our holiday in New Zealand."
+ },
+ "protective goggles": {
+  "ipa": "",
+  "reading": "prıtektiv gagılz",
+  "meanings": [
+   "koruyucu gözlük"
+  ],
+  "definition": "To look with wide, amazed eyes",
+  "example": "The children goggle at the beautiful magic show."
+ },
+ "horse riding": {
+  "ipa": "/ˈhɔːs ˌraɪdɪŋ/",
+  "reading": "hoos rayding",
+  "meanings": [
+   "binicilik",
+   "ata binme"
+  ],
+  "definition": "The sport or activity of riding horses",
+  "example": "She loves horse riding and goes every weekend."
+ },
+ "fearless": {
+  "ipa": "/ˈfɪələs/",
+  "reading": "fiılıs",
+  "meanings": [
+   "korkusuz",
+   "cesur"
+  ],
+  "definition": "Having no fear; brave",
+  "example": "The fearless climber reached the top of the mountain."
+ },
+ "spectacular": {
+  "ipa": "/spekˈtækjələ/",
+  "reading": "spektekyulı",
+  "meanings": [
+   "muhteşem",
+   "göz alıcı",
+   "olağanüstü"
+  ],
+  "definition": "Very impressive to look at",
+  "example": "The sunset offered a spectacular view over the ocean."
  }
 }

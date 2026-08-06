@@ -565,7 +565,7 @@ export const READY_MADE_CARD_WORDS = [
   'equipment', 'experienced', 'expert', 'extreme sport', 'extreme sports',
   'feel the freedom', 'fighting', 'flashlight', 'fly in a hot air balloon', 'footwear',
   'forest', 'free fall', 'freedom', 'frightening', 'frozen',
-  'gain', 'get frost bite', 'get there', 'glacier', 'goggle',
+  'gain', 'get frost bite', 'get there', 'glacier', 'protective goggles',
   'goal', 'go rafting', 'grow up', 'hang gliding', 'heli skiing',
   'helmet', 'height', 'highlining', 'hill', 'historic places',
   'historical sites', 'hot air balloon', 'ice climbing', 'ice screw', 'ice skating',
@@ -591,6 +591,7 @@ export const READY_MADE_CARD_WORDS = [
   'wind surfing', 'wing', 'wing suit', 'wings', 'winter',
   'worse', 'would rather', 'wrestling', 'wrist guard', 'zip lining',
   'zorbing',
+  'horse riding', 'fearless', 'spectacular', 'brave',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
