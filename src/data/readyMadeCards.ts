@@ -583,7 +583,7 @@ export const READY_MADE_CARD_WORDS = [
   'sand kiting', 'sandboarding', 'scenery', 'sea', 'sea creatures',
   'silence', 'skateboarding', 'ski', 'skiing', 'skill',
   'skyscraper', 'special axe', 'structure', 'support', 'swimming',
-  'take a photo', 'take lesson', 'take risk', 'take risks', 'talented',
+  'take a photo', 'take lesson', 'take risk', 'talented',
   'team sports', 'temple', 'the others', 'thrilling', 'to me',
   'tournament', 'tower', 'track', 'traditional food', 'train',
   'transportation', 'trekking route', 'underwater hockey', 'unforgettable', 'view',
