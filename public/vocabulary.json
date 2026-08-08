@@ -30649,5 +30649,1594 @@
   ],
   "definition": "Deserving to be visited or looked at",
   "example": "This historic castle is definitely worth seeing."
+ },
+ "annoyed": {
+  "ipa": "/əˈnɔɪd/",
+  "reading": "enoyd",
+  "meanings": [
+   "sinirlenmiş",
+   "rahatsız olmuş"
+  ],
+  "definition": "Feeling slightly angry or irritated.",
+  "example": "She felt annoyed when the train was late."
+ },
+ "arrive on time": {
+  "ipa": "/əˈraɪv ɒn taɪm/",
+  "reading": "erayv on taym",
+  "meanings": [
+   "vaktinde varmak",
+   "zamanında gelmek"
+  ],
+  "definition": "To reach a place at the planned hour.",
+  "example": "You must arrive on time for the meeting."
+ },
+ "borrow": {
+  "ipa": "/ˈbɒr.əʊ/",
+  "reading": "borov",
+  "meanings": [
+   "ödünç almak",
+   "borç almak"
+  ],
+  "definition": "To take and use something with permission.",
+  "example": "Can I borrow your pen for a minute?"
+ },
+ "break the rules": {
+  "ipa": "/breɪk ðə ruːlz/",
+  "reading": "breyk dı ruulz",
+  "meanings": [
+   "kuralları çiğnemek",
+   "kurallara uymamak"
+  ],
+  "definition": "To do something that is not allowed.",
+  "example": "If you break the rules, you will get punished."
+ },
+ "chores": {
+  "ipa": "/tʃɔːz/",
+  "reading": "çooz",
+  "meanings": [
+   "ev işleri",
+   "günlük rutin işler"
+  ],
+  "definition": "Routine tasks, especially household ones.",
+  "example": "I must do my daily chores before playing."
+ },
+ "clean the windows": {
+  "ipa": "/kliːn ðə ˈwɪn.dəʊz/",
+  "reading": "kliin dı vindovz",
+  "meanings": [
+   "camları silmek",
+   "pencereleri temizlemek"
+  ],
+  "definition": "To wash and wipe glass window panes.",
+  "example": "I need to clean the windows this weekend."
+ },
+ "clean up": {
+  "ipa": "/kliːn ʌp/",
+  "reading": "kliin ap",
+  "meanings": [
+   "temizlemek",
+   "toparlamak"
+  ],
+  "definition": "To make a place clean and tidy.",
+  "example": "We should clean up the living room now."
+ },
+ "do the ironing": {
+  "ipa": "/duː ðə ˈaɪə.nɪŋ/",
+  "reading": "duu dı ayonink",
+  "meanings": [
+   "ütü yapmak"
+  ],
+  "definition": "To press clothes with a hot iron.",
+  "example": "I will do the ironing on Sunday night."
+ },
+ "do the shopping": {
+  "ipa": "/duː ðə ˈʃɒp.ɪŋ/",
+  "reading": "duu dı şoping",
+  "meanings": [
+   "alışveriş yapmak"
+  ],
+  "definition": "To buy food and daily goods.",
+  "example": "She likes to do the shopping on Saturdays."
+ },
+ "dry the dishes": {
+  "ipa": "/draɪ ðə ˈdɪʃ.ɪz/",
+  "reading": "dray dı dişiz",
+  "meanings": [
+   "bulaşıkları kurulamak"
+  ],
+  "definition": "To make wet plates dry using a cloth.",
+  "example": "You wash and I will dry the dishes."
+ },
+ "dust the furniture": {
+  "ipa": "/dʌst ðə ˈfɜː.nɪ.tʃə/",
+  "reading": "dast dı fööniçö",
+  "meanings": [
+   "toz almak",
+   "mobilyaların tozunu almak"
+  ],
+  "definition": "To remove dust from tables and chairs.",
+  "example": "Please dust the furniture before the guests arrive."
+ },
+ "empty the dishwasher": {
+  "ipa": "/ˈemp.ti ðə ˈdɪʃˌwɒʃ.ər/",
+  "reading": "empti dı dişvoşır",
+  "meanings": [
+   "bulaşık makinesini boşaltmak"
+  ],
+  "definition": "To take clean plates out of the machine.",
+  "example": "Can you empty the dishwasher after dinner?"
+ },
+ "fold the clothes": {
+  "ipa": "/fəʊld ðə kləʊðz/",
+  "reading": "fold dı kloʊdz",
+  "meanings": [
+   "çamaşırları katlamak"
+  ],
+  "definition": "To bend and tidy garments neatly.",
+  "example": "I always fold the clothes after doing the laundry."
+ },
+ "garden": {
+  "ipa": "/ˈɡɑːd.ən/",
+  "reading": "gaadın",
+  "meanings": [
+   "bahçe"
+  ],
+  "definition": "An outdoor area with plants and flowers.",
+  "example": "We like to sit in the garden during summer."
+ },
+ "grocery shopping": {
+  "ipa": "/ˈɡrəʊ.sər.i ˈʃɒp.ɪŋ/",
+  "reading": "grosıri şoping",
+  "meanings": [
+   "mutfak alışverişi",
+   "market alışverişi"
+  ],
+  "definition": "Buying food and household goods.",
+  "example": "We usually do grocery shopping on Saturdays."
+ },
+ "hang up the clothes": {
+  "ipa": "/hæŋ ʌp ðə kləʊðz/",
+  "reading": "heng ap dı kloʊdz",
+  "meanings": [
+   "çamaşırları asmak"
+  ],
+  "definition": "To place clothing on a line or hanger.",
+  "example": "Please hang up the clothes to dry outside."
+ },
+ "help the parents": {
+  "ipa": "/help ðə ˈpeə.rənts/",
+  "reading": "help dı perınts",
+  "meanings": [
+   "anne babaya yardım etmek",
+   "ebeveynlere yardım etmek"
+  ],
+  "definition": "To assist your mother and father.",
+  "example": "Good children often help the parents with chores."
+ },
+ "household chores": {
+  "ipa": "/ˈhaʊs.həʊld tʃɔːz/",
+  "reading": "haushold çooz",
+  "meanings": [
+   "ev işleri"
+  ],
+  "definition": "Regular tasks done to keep a home clean.",
+  "example": "Everyone must share the household chores at home."
+ },
+ "hurry up": {
+  "ipa": "/ˈhʌr.i ʌp/",
+  "reading": "hari ap",
+  "meanings": [
+   "acele etmek"
+  ],
+  "definition": "To do something more quickly.",
+  "example": "We must hurry up or we will miss the bus."
+ },
+ "in charge of": {
+  "ipa": "/ɪn tʃɑːdʒ ɒv/",
+  "reading": "in caac ov",
+  "meanings": [
+   "-den sorumlu",
+   "sorumluluğunda"
+  ],
+  "definition": "Having control or responsibility for something.",
+  "example": "He is in charge of managing the new project."
+ },
+ "in turns": {
+  "ipa": "/ɪn tɜːnz/",
+  "reading": "in töönz",
+  "meanings": [
+   "sırayla",
+   "nöbetleşe"
+  ],
+  "definition": "One after another in a regular order.",
+  "example": "We clean the kitchen in turns every week."
+ },
+ "keep quiet": {
+  "ipa": "/kiːp ˈkwaɪ.ət/",
+  "reading": "kiip kwayıt",
+  "meanings": [
+   "sessiz olmak",
+   "sessizliğini korumak"
+  ],
+  "definition": "To make no noise or remain silent.",
+  "example": "Please keep quiet during the test."
+ },
+ "library rules": {
+  "ipa": "/ˈlaɪ.brər.i ruːlz/",
+  "reading": "laybrıri ruulz",
+  "meanings": [
+   "kütüphane kuralları"
+  ],
+  "definition": "Regulations to follow in a library.",
+  "example": "You must obey the library rules at all times."
+ },
+ "load the dishwasher": {
+  "ipa": "/ləʊd ðə ˈdɪʃˌwɒʃ.ər/",
+  "reading": "loud dı dişvoşır",
+  "meanings": [
+   "bulaşık makinesini doldurmak"
+  ],
+  "definition": "To put dirty dishes into the dishwasher.",
+  "example": "It is your turn to load the dishwasher tonight."
+ },
+ "make the bed": {
+  "ipa": "/meɪk ðə bed/",
+  "reading": "meyk dı bed",
+  "meanings": [
+   "yatağı düzeltmek",
+   "yatağı toplamak"
+  ],
+  "definition": "To tidy the sheets and blankets on a bed",
+  "example": "You must make the bed every morning."
+ },
+ "mop the floor": {
+  "ipa": "/mɒp ðə flɔː/",
+  "reading": "mop dı floo",
+  "meanings": [
+   "yerleri paspaslamak",
+   "yerleri silmek"
+  ],
+  "definition": "To clean the floor using a wet mop",
+  "example": "Please mop the floor after spilling the milk."
+ },
+ "obey the rules": {
+  "ipa": "/əˈbeɪ ðə ruːlz/",
+  "reading": "ıbey dı rulz",
+  "meanings": [
+   "kurallara uymak",
+   "kurallara itaat etmek"
+  ],
+  "definition": "To follow official instructions or laws",
+  "example": "Good drivers always obey the rules of the road."
+ },
+ "pay the bills": {
+  "ipa": "/peɪ ðə bɪlz/",
+  "reading": "pey dı bılz",
+  "meanings": [
+   "faturaları ödemek"
+  ],
+  "definition": "To pay for services like electricity or water",
+  "example": "I need to pay the bills at the end of the month."
+ },
+ "responsibility": {
+  "ipa": "/rɪˌspɒnsəˈbɪləti/",
+  "reading": "risponsıbılıti",
+  "meanings": [
+   "sorumluluk"
+  ],
+  "definition": "A duty to deal with something",
+  "example": "It is your responsibility to feed the cat."
+ },
+ "responsible for": {
+  "ipa": "/rɪˈspɒnsəbl̩ fɔː/",
+  "reading": "risponsıbıl foo",
+  "meanings": [
+   "-den sorumlu olmak"
+  ],
+  "definition": "Having the duty of taking care of something",
+  "example": "The pilot is responsible for the safety of passengers."
+ },
+ "return the books": {
+  "ipa": "/rɪˈtɜːn ðə bʊks/",
+  "reading": "ritön dı buks",
+  "meanings": [
+   "kitapları geri vermek",
+   "kitapları iade etmek"
+  ],
+  "definition": "To give back books to the library",
+  "example": "You must return the books before Friday."
+ },
+ "set the table": {
+  "ipa": "/set ðə ˈteɪbl̩/",
+  "reading": "set dı teybıl",
+  "meanings": [
+   "masayı kurmak",
+   "masayı hazırlamak"
+  ],
+  "definition": "To put plates, knives, and forks on a table",
+  "example": "Can you please set the table for dinner?"
+ },
+ "sweep the leaves": {
+  "ipa": "/swiːp ðə liːvz/",
+  "reading": "swiip dı liivz",
+  "meanings": [
+   "yaprakları süpürmek"
+  ],
+  "definition": "To clean fallen leaves using a broom",
+  "example": "We need to sweep the leaves in the garden."
+ },
+ "take out the garbage": {
+  "ipa": "/teɪk aʊt ðə ˈɡɑːbɪdʒ/",
+  "reading": "teyk aut dı gaabıç",
+  "meanings": [
+   "çöpü dışarı çıkarmak",
+   "çöpü atmak"
+  ],
+  "definition": "To carry trash outside the house",
+  "example": "Please take out the garbage tonight."
+ },
+ "take the dog for a walk": {
+  "ipa": "/teɪk ðə dɒɡ fɔːr ə wɔːk/",
+  "reading": "teyk dı dog forı vook",
+  "meanings": [
+   "köpeği yürüyüşe çıkarmak"
+  ],
+  "definition": "To go walking outside with a dog",
+  "example": "I always take the dog for a walk after school."
+ },
+ "take turns": {
+  "ipa": "/teɪk tɜːnz/",
+  "reading": "teyk tönz",
+  "meanings": [
+   "sırayla yapmak",
+   "sıra almak"
+  ],
+  "definition": "To do something one after another in order",
+  "example": "We take turns to wash the dishes."
+ },
+ "task": {
+  "ipa": "/tɑːsk/",
+  "reading": "taask",
+  "meanings": [
+   "görev",
+   "iş"
+  ],
+  "definition": "A piece of work to be done.",
+  "example": "Please complete this task before you leave today."
+ },
+ "tidy": {
+  "ipa": "/ˈtaɪdi/",
+  "reading": "taydi",
+  "meanings": [
+   "düzenli",
+   "temiz",
+   "derli toplu"
+  ],
+  "definition": "Having everything in the right place.",
+  "example": "Keep your desk tidy so you can work better."
+ },
+ "tidy up the room": {
+  "ipa": "/ˌtaɪdi ʌp ðə ruːm/",
+  "reading": "taydi ap dı rum",
+  "meanings": [
+   "odayı toplamak",
+   "odayı düzeltmek"
+  ],
+  "definition": "To make a bedroom neat and organized.",
+  "example": "I need to tidy up the room before guests arrive."
+ },
+ "to do list": {
+  "ipa": "/tə ˈduː lɪst/",
+  "reading": "tu du list",
+  "meanings": [
+   "yapılacaklar listesi"
+  ],
+  "definition": "A list of tasks that need writing down.",
+  "example": "Make sure to write a to do list today."
+ },
+ "trash": {
+  "ipa": "/træʃ/",
+  "reading": "treş",
+  "meanings": [
+   "çöp",
+   "atık"
+  ],
+  "definition": "Things that are dirty or no longer useful.",
+  "example": "Please throw that plastic cup into the trash."
+ },
+ "upset": {
+  "ipa": "/ʌpˈset/",
+  "reading": "apset",
+  "meanings": [
+   "üzgün",
+   "üzmek",
+   "keyfini kaçırmak"
+  ],
+  "definition": "Unhappy, disappointed, or worried about something.",
+  "example": "I do not want to upset you."
+ },
+ "vacuum the carpet": {
+  "ipa": "/ˌvækjuːm ðə ˈkɑːpɪt/",
+  "reading": "vekyum dı kaapıt",
+  "meanings": [
+   "halıyı süpürmek",
+   "halıyı elektrikli süpürgeyle temizlemek"
+  ],
+  "definition": "To clean a floor rug using a machine.",
+  "example": "You should vacuum the carpet to remove the dust."
+ },
+ "wash the dishes": {
+  "ipa": "/wɒʃ ðə ˈdɪʃɪz/",
+  "reading": "voş dı dişiz",
+  "meanings": [
+   "bulaşıkları yıkamak"
+  ],
+  "definition": "To clean plates and bowls after a meal.",
+  "example": "It is your turn to wash the dishes tonight."
+ },
+ "water the flowers": {
+  "ipa": "/ˈwɔːtə ðə ˈflaʊəz/",
+  "reading": "vootı dı flauırz",
+  "meanings": [
+   "çiçekleri sulamak"
+  ],
+  "definition": "To pour water onto plants in a garden.",
+  "example": "I always water the flowers in the morning."
+ },
+ "you're right": {
+  "ipa": "/jɔː raɪt/",
+  "reading": "yoor rayt",
+  "meanings": [
+   "haklısın"
+  ],
+  "definition": "Expression used to agree with someone's opinion.",
+  "example": "I think you're right about this difficult choice."
+ },
+ "carpet": {
+  "ipa": "/ˈkɑːpɪt/",
+  "reading": "kaapıt",
+  "meanings": [
+   "halı"
+  ],
+  "definition": "A heavy fabric covering for a floor.",
+  "example": "We need a red carpet for the living room."
+ },
+ "children": {
+  "ipa": "/ˈtʃɪldrən/",
+  "reading": "çıldrın",
+  "meanings": [
+   "çocuklar"
+  ],
+  "definition": "Young human beings below the age of puberty.",
+  "example": "The children love to play outside in the park."
+ },
+ "clothes": {
+  "ipa": "/kləʊðz/",
+  "reading": "kloğdz",
+  "meanings": [
+   "giysiler",
+   "kıyafetler"
+  ],
+  "definition": "Items worn to cover the human body.",
+  "example": "I need to buy some warm clothes for winter."
+ },
+ "complaining": {
+  "ipa": "/kəmˈpleɪnɪŋ/",
+  "reading": "kımpleynin",
+  "meanings": [
+   "şikayet etme",
+   "yakınma"
+  ],
+  "definition": "Expressing dissatisfaction or annoyance about something.",
+  "example": "Stop complaining and help me with this difficult job."
+ },
+ "cook the meal": {
+  "ipa": "/kʊk ðə miːl/",
+  "reading": "kuk dı miıl",
+  "meanings": [
+   "yemek pişirmek",
+   "yemek yapmak"
+  ],
+  "definition": "To prepare and heat food for eating.",
+  "example": "I always cook the meal for my family on Sundays."
+ },
+ "do the errands": {
+  "ipa": "/duː ðiː ˈer.əndz/",
+  "reading": "du di erındz",
+  "meanings": [
+   "ayak işlerini yapmak",
+   "getir götür işlerini yapmak"
+  ],
+  "definition": "To complete short tasks or trips for daily needs.",
+  "example": "I must do the errands before the shops close."
+ },
+ "doing chores": {
+  "ipa": "/ˈduː.ɪŋ tʃɔːz/",
+  "reading": "duing çorz",
+  "meanings": [
+   "ev işleri yapmak",
+   "görevleri yerine getirmek"
+  ],
+  "definition": "Performing routine tasks, especially around the house.",
+  "example": "I dislike doing chores on the weekend."
+ },
+ "dust": {
+  "ipa": "/dʌst/",
+  "reading": "dast",
+  "meanings": [
+   "toz almak",
+   "tozunu almak"
+  ],
+  "definition": "To clean fine dirt from surfaces.",
+  "example": "Please dust the wooden table in the living room."
+ },
+ "elder": {
+  "ipa": "/ˈel.dər/",
+  "reading": "eldır",
+  "meanings": [
+   "yaşça büyük",
+   "büyük",
+   "yaşlı"
+  ],
+  "definition": "An older person or relative.",
+  "example": "We must respect each elder in our community."
+ },
+ "family": {
+  "ipa": "/ˈfæm.əl.i/",
+  "reading": "femıli",
+  "meanings": [
+   "aile"
+  ],
+  "definition": "A group of people related by blood or marriage.",
+  "example": "I love spending time with my family."
+ },
+ "garbage": {
+  "ipa": "/ˈɡɑː.bɪdʒ/",
+  "reading": "garbiç",
+  "meanings": [
+   "çöp",
+   "atık"
+  ],
+  "definition": "Waste material that is thrown away.",
+  "example": "Please throw the garbage into the blue bin."
+ },
+ "help": {
+  "ipa": "/help/",
+  "reading": "help",
+  "meanings": [
+   "yardım etmek",
+   "yardım"
+  ],
+  "definition": "To make it easier for someone to do something.",
+  "example": "I can help you carry those heavy bags."
+ },
+ "household": {
+  "ipa": "/ˈhaʊs.həʊld/",
+  "reading": "havshold",
+  "meanings": [
+   "ev halkı",
+   "hane"
+  ],
+  "definition": "A house and the people living in it.",
+  "example": "Every household should recycle plastic bottles."
+ },
+ "iron": {
+  "ipa": "/ˈaɪən/",
+  "reading": "ayırn",
+  "meanings": [
+   "ütü yapmak",
+   "ütülemek"
+  ],
+  "definition": "To make clothes smooth using a warm tool.",
+  "example": "You need to iron your shirt before the interview."
+ },
+ "make life easier": {
+  "ipa": "/meɪk laɪf ˈiː.zi.ər/",
+  "reading": "meyk layf iiziyır",
+  "meanings": [
+   "hayatı kolaylaştırmak"
+  ],
+  "definition": "To reduce effort or difficulty in daily living.",
+  "example": "Smart devices can make life easier for busy people."
+ },
+ "mess": {
+  "ipa": "/mes/",
+  "reading": "mes",
+  "meanings": [
+   "dağınıklık",
+   "kargaşa",
+   "pislik"
+  ],
+  "definition": "A dirty or untidy state.",
+  "example": "Please clean up this mess in your room."
+ },
+ "obligation": {
+  "ipa": "/ˌɒb.lɪˈɡeɪ.ʃən/",
+  "reading": "obligeyşın",
+  "meanings": [
+   "zorunluluk",
+   "yükümlülük"
+  ],
+  "definition": "Something you must do because of a law or rule.",
+  "example": "We have an obligation to help others in need."
+ },
+ "pocket money": {
+  "ipa": "/ˈpɒk.ɪt ˌmʌn.i/",
+  "reading": "pakıt mani",
+  "meanings": [
+   "harçlık"
+  ],
+  "definition": "A small amount of money given to children.",
+  "example": "My father gives me pocket money every week."
+ },
+ "strong ties": {
+  "ipa": "/strɒŋ taɪz/",
+  "reading": "strong tayz",
+  "meanings": [
+   "güçlü bağlar",
+   "sıkı ilişkiler"
+  ],
+  "definition": "Deep and close connections between people",
+  "example": "We share strong ties with our close family members."
+ },
+ "take care of": {
+  "ipa": "/teɪk keər ɒv/",
+  "reading": "teyk keyır ov",
+  "meanings": [
+   "ilgilenmek",
+   "bakmak"
+  ],
+  "definition": "To look after someone or something",
+  "example": "Please take care of the plants while I am away."
+ },
+ "tidy up": {
+  "ipa": "/ˈtaɪ.di ʌp/",
+  "reading": "taydi ap",
+  "meanings": [
+   "toparlamak",
+   "düzenlemek"
+  ],
+  "definition": "To make a place neat and organized",
+  "example": "You must tidy up your room before you go out."
+ },
+ "vacuum the floor": {
+  "ipa": "/ˈvæk.juːm ðə flɔːr/",
+  "reading": "vekyuym dı flor",
+  "meanings": [
+   "yerleri süpürmek",
+   "halıyı süpürmek"
+  ],
+  "definition": "To clean the floor with a vacuum cleaner",
+  "example": "Can you vacuum the floor in the living room?"
+ },
+ "walking the dog": {
+  "ipa": "/ˈwɔː.kɪŋ ðə dɒɡ/",
+  "reading": "voking dı dog",
+  "meanings": [
+   "köpek gezdirmek"
+  ],
+  "definition": "Taking a dog for a walk for exercise",
+  "example": "Walking the dog is my favourite outdoor activity."
+ },
+ "advise": {
+  "ipa": "/ədˈvaɪz/",
+  "reading": "edvayz",
+  "meanings": [
+   "tavsiye etmek",
+   "öğüt vermek"
+  ],
+  "definition": "To offer suggestions about what to do",
+  "example": "Doctors advise patients to drink plenty of water."
+ },
+ "allow": {
+  "ipa": "/əˈlaʊ/",
+  "reading": "elau",
+  "meanings": [
+   "izin vermek",
+   "müsaade etmek"
+  ],
+  "definition": "To give permission to do something",
+  "example": "Most parents allow their children to play outside."
+ },
+ "assignment": {
+  "ipa": "/əˈsaɪn.mənt/",
+  "reading": "esaynmınt",
+  "meanings": [
+   "ödev",
+   "görev"
+  ],
+  "definition": "A piece of work given to someone",
+  "example": "I need to complete this homework assignment tonight."
+ },
+ "be in charge of": {
+  "ipa": "/bi ɪn tʃɑːdʒ ɒv/",
+  "reading": "bii in çaarc ov",
+  "meanings": [
+   "sorumlu olmak",
+   "yönetmek"
+  ],
+  "definition": "To have control or responsibility for something",
+  "example": "You will be in charge of organizing the project."
+ },
+ "be responsible for": {
+  "ipa": "/bi rɪˈspɒn.sə.bəl fɔːr/",
+  "reading": "bii risponsıbıl for",
+  "meanings": [
+   "sorumlu olmak",
+   "yükümlü olmak"
+  ],
+  "definition": "Having a duty to deal with something",
+  "example": "You must be responsible for your own actions."
+ },
+ "bookcase": {
+  "ipa": "/ˈbʊkkeɪs/",
+  "reading": "bukkeys",
+  "meanings": [
+   "kitaplık",
+   "kitap rafı"
+  ],
+  "definition": "A piece of furniture with shelves for holding books.",
+  "example": "I bought a new bookcase for my bedroom."
+ },
+ "borrow book": {
+  "ipa": "/ˈbɒrəʊ bʊk/",
+  "reading": "borou buk",
+  "meanings": [
+   "kitap ödünç almak"
+  ],
+  "definition": "To take a book to read and return later.",
+  "example": "I always borrow book volumes from the public library."
+ },
+ "boss": {
+  "ipa": "/bɒs/",
+  "reading": "bos",
+  "meanings": [
+   "patron",
+   "şef"
+  ],
+  "definition": "A person who is in charge of work.",
+  "example": "My boss gave me a new task today."
+ },
+ "brilliant idea": {
+  "ipa": "/ˈbrɪliənt aɪˈdɪə/",
+  "reading": "brilyınt aydiyı",
+  "meanings": [
+   "harika fikir",
+   "parlak fikir"
+  ],
+  "definition": "An extremely clever or smart thought.",
+  "example": "She had a brilliant idea for the project."
+ },
+ "clean the floor": {
+  "ipa": "/kliːn ðə flɔː/",
+  "reading": "klin dı floo",
+  "meanings": [
+   "yerleri temizlemek",
+   "yeri silmek"
+  ],
+  "definition": "To remove dirt from the ground surface.",
+  "example": "I have to clean the floor every Saturday morning."
+ },
+ "clean up the house": {
+  "ipa": "/kliːn ʌp ðə haʊs/",
+  "reading": "klin ap dı haus",
+  "meanings": [
+   "evi temizlemek",
+   "evi çekip çevirmek"
+  ],
+  "definition": "To make the entire home neat and tidy.",
+  "example": "We should clean up the house before guests arrive."
+ },
+ "clear the table": {
+  "ipa": "/klɪə ðə ˈteɪbl/",
+  "reading": "kliyı dı teybıl",
+  "meanings": [
+   "masayı toplamak",
+   "masayı boşaltmak"
+  ],
+  "definition": "To remove plates and dishes after a meal.",
+  "example": "Can you help me clear the table after dinner?"
+ },
+ "cook meals": {
+  "ipa": "/kʊk miːlz/",
+  "reading": "kuk miılz",
+  "meanings": [
+   "yemek pişirmek",
+   "yemek yapmak"
+  ],
+  "definition": "To prepare food for eating by heating it.",
+  "example": "I like to cook meals for my family."
+ },
+ "cooperate with people": {
+  "ipa": "/kəʊˈɒpəreɪt wɪð ˈpiːpl/",
+  "reading": "kooperayt vid piıpıl",
+  "meanings": [
+   "insanlarla işbirliği yapmak"
+  ],
+  "definition": "To work together with others to achieve a goal.",
+  "example": "It is important to cooperate with people at work."
+ },
+ "daily chores": {
+  "ipa": "/ˈdeɪli tʃɔːz/",
+  "reading": "deyli çooz",
+  "meanings": [
+   "günlük ev işleri",
+   "günlük işler"
+  ],
+  "definition": "Tasks that you do every day around the house.",
+  "example": "Doing the laundry is one of my daily chores."
+ },
+ "damage": {
+  "ipa": "/ˈdæmɪdʒ/",
+  "reading": "demiç",
+  "meanings": [
+   "zarar vermek",
+   "hasar vermek"
+  ],
+  "definition": "To harm or break something physically.",
+  "example": "Strong winds can damage the trees in our garden."
+ },
+ "daughter": {
+  "ipa": "/ˈdɔːtə/",
+  "reading": "dootı",
+  "meanings": [
+   "kız evlat",
+   "kız çocuk"
+  ],
+  "definition": "A female child in relation to her parents.",
+  "example": "Their daughter is studying medicine at university."
+ },
+ "do best": {
+  "ipa": "/duː best/",
+  "reading": "du best",
+  "meanings": [
+   "en iyisini yapmak",
+   "en iyi performansı göstermek"
+  ],
+  "definition": "To perform at one's highest level.",
+  "example": "These plants will do best in direct sunlight."
+ },
+ "do the grocery shopping": {
+  "ipa": "/duː ðə ˈɡrəʊsəri ˈʃɒpɪŋ/",
+  "reading": "du dı gröusıri şoping",
+  "meanings": [
+   "market alışverişi yapmak"
+  ],
+  "definition": "To buy food and household items.",
+  "example": "I usually do the grocery shopping on Saturdays."
+ },
+ "do the washing up": {
+  "ipa": "/duː ðə ˈwɒʃɪŋ ʌp/",
+  "reading": "du dı voşing ap",
+  "meanings": [
+   "bulaşıkları yıkamak"
+  ],
+  "definition": "To wash the dirty dishes after a meal.",
+  "example": "We should do the washing up after dinner."
+ },
+ "do the washing": {
+  "ipa": "/duː ðə ˈwɒʃɪŋ/",
+  "reading": "du dı voşing",
+  "meanings": [
+   "çamaşır yıkamak"
+  ],
+  "definition": "To wash dirty clothes.",
+  "example": "My father will do the washing today."
+ },
+ "do your best": {
+  "ipa": "/duː jɔː best/",
+  "reading": "du yoor best",
+  "meanings": [
+   "elinden gelenin en iyisini yapmak"
+  ],
+  "definition": "To try as hard as you can.",
+  "example": "Just do your best in the exam."
+ },
+ "dust the shelves": {
+  "ipa": "/dʌst ðə ʃelvz/",
+  "reading": "dast dı şelvz",
+  "meanings": [
+   "rafların tozunu almak"
+  ],
+  "definition": "To remove dust from flat storage surfaces.",
+  "example": "Please dust the shelves in the living room."
+ },
+ "elder brother": {
+  "ipa": "/ˈeldə ˈbrʌðə/",
+  "reading": "eldı bıradı",
+  "meanings": [
+   "ağabey",
+   "büyük erkek kardeş"
+  ],
+  "definition": "An older brother.",
+  "example": "My elder brother lives in London."
+ },
+ "elder sister": {
+  "ipa": "/ˈeldə ˈsɪstə/",
+  "reading": "eldı sistı",
+  "meanings": [
+   "abla",
+   "büyük kız kardeş"
+  ],
+  "definition": "An older sister.",
+  "example": "I always ask my elder sister for advice."
+ },
+ "empty rubbish": {
+  "ipa": "/ˈempti ˈrʌbɪʃ/",
+  "reading": "empti rabiş",
+  "meanings": [
+   "çöpü boşaltmak"
+  ],
+  "definition": "To clear out waste materials.",
+  "example": "You should empty rubbish before it smells bad."
+ },
+ "equal": {
+  "ipa": "/ˈiːkwəl/",
+  "reading": "iikvıl",
+  "meanings": [
+   "eşit"
+  ],
+  "definition": "Being the same in quantity or value.",
+  "example": "All men are born equal and free."
+ },
+ "excited": {
+  "ipa": "/ɪkˈsaɪtɪd/",
+  "reading": "ıksayıtıd",
+  "meanings": [
+   "heyecanlı"
+  ],
+  "definition": "Feeling very happy and enthusiastic.",
+  "example": "The children are excited about the trip."
+ },
+ "family member": {
+  "ipa": "/ˈfæmɪli ˈmembə/",
+  "reading": "femıli membı",
+  "meanings": [
+   "aile üyesi"
+  ],
+  "definition": "A relative belonging to your family.",
+  "example": "Every family member attended the holiday dinner."
+ },
+ "feed the pet": {
+  "ipa": "/fiːd ðə pet/",
+  "reading": "'fiid dı pet'",
+  "meanings": [
+   "evcil hayvanı beslemek"
+  ],
+  "definition": "To give food to a domestic animal",
+  "example": "Please do not forget to feed the pet tonight."
+ },
+ "female": {
+  "ipa": "/ˈfiːmeɪl/",
+  "reading": "'fiimeyl'",
+  "meanings": [
+   "dişi",
+   "kadın"
+  ],
+  "definition": "Belonging to the sex that produces eggs or offspring",
+  "example": "This bird is a female."
+ },
+ "fix furniture": {
+  "ipa": "/fɪks ˈfɜːnɪtʃə/",
+  "reading": "'fiks förniçır'",
+  "meanings": [
+   "mobilya tamir etmek"
+  ],
+  "definition": "To repair chairs, tables, or other household items",
+  "example": "My father likes to fix furniture in his free time."
+ },
+ "get angry": {
+  "ipa": "/ɡet ˈæŋɡri/",
+  "reading": "'get engri'",
+  "meanings": [
+   "sinirlenmek",
+   "kızmak"
+  ],
+  "definition": "To become mad or annoyed",
+  "example": "Try not to get angry over small problems."
+ },
+ "get too annoyed": {
+  "ipa": "/ɡet tuː əˈnɔɪd/",
+  "reading": "'get tuı enoyd'",
+  "meanings": [
+   "çok sinirlenmek",
+   "aşırı rahatsız olmak"
+  ],
+  "definition": "To become extremely irritated or bothered",
+  "example": "You might get too annoyed if they make constant noise."
+ },
+ "give responsibility": {
+  "ipa": "/ɡɪv rɪˌspɒnsəˈbɪləti/",
+  "reading": "'giv risponsıbılıti'",
+  "meanings": [
+   "sorumluluk vermek"
+  ],
+  "definition": "To assign a duty or task to someone",
+  "example": "Teachers often give responsibility to students to help them grow."
+ },
+ "gloom": {
+  "ipa": "/ɡluːm/",
+  "reading": "'gluım'",
+  "meanings": [
+   "kasvet",
+   "hüzün",
+   "karanlık"
+  ],
+  "definition": "A state of near darkness or feeling of sadness",
+  "example": "The heavy rain brought a sense of gloom to town."
+ },
+ "hang out clothes": {
+  "ipa": "/hæŋ aʊt kləʊðz/",
+  "reading": "'heng aut kloudz'",
+  "meanings": [
+   "çamaşırları asmak"
+  ],
+  "definition": "To put wet laundry on a line to dry",
+  "example": "She will hang out clothes in the sunny garden."
+ },
+ "hang out the washing": {
+  "ipa": "/hæŋ aʊt ðə ˈwɒʃɪŋ/",
+  "reading": "'heng aut dı voşing'",
+  "meanings": [
+   "çamaşırları asmak"
+  ],
+  "definition": "To hang wet clothes outside to dry",
+  "example": "I always hang out the washing after lunch."
+ },
+ "have a shower": {
+  "ipa": "/hæv ə ˈʃaʊə/",
+  "reading": "'hev e şauır'",
+  "meanings": [
+   "duş almak"
+  ],
+  "definition": "To wash your body under a spray of water",
+  "example": "I like to have a shower in the morning."
+ },
+ "help … with …": {
+  "ipa": "/help ... wɪð/",
+  "reading": "'help ... vid'",
+  "meanings": [
+   "yardım etmek",
+   "bir konuda yardımcı olmak"
+  ],
+  "definition": "To assist someone in doing something",
+  "example": "I can help you with your heavy bags."
+ },
+ "importance": {
+  "ipa": "/ɪmˈpɔːtns/",
+  "reading": "'impootıns'",
+  "meanings": [
+   "önem"
+  ],
+  "definition": "The quality of being valuable or significant",
+  "example": "He explained the importance of learning a new language."
+ },
+ "iron the clothes": {
+  "ipa": "/ˈaɪən ðə kləʊðz/",
+  "reading": "'ayın dı kloudz'",
+  "meanings": [
+   "çamaşırları ütülemek"
+  ],
+  "definition": "To make clothes smooth using a warm iron",
+  "example": "I need to iron the clothes before the interview."
+ },
+ "keep clean": {
+  "ipa": "/kiːp kliːn/",
+  "reading": "'kiip kliin'",
+  "meanings": [
+   "temiz tutmak"
+  ],
+  "definition": "To maintain a state of neatness and hygiene",
+  "example": "You must keep clean your hands before eating."
+ },
+ "keep diary": {
+  "ipa": "/kiːp ˈdaɪəri/",
+  "reading": "'kiip dayıri'",
+  "meanings": [
+   "günlük tutmak"
+  ],
+  "definition": "To write regular records of personal experiences",
+  "example": "It is a great hobby to keep diary every day."
+ },
+ "keep tidy": {
+  "ipa": "/kiːp ˈtaɪdi/",
+  "reading": "'kiip taydi'",
+  "meanings": [
+   "düzenli tutmak",
+   "derli toplu tutmak"
+  ],
+  "definition": "To maintain order and neatness in a place",
+  "example": "We must keep tidy our desks at school."
+ },
+ "kid": {
+  "ipa": "/kɪd/",
+  "reading": "'kid'",
+  "meanings": [
+   "çocuk",
+   "velet"
+  ],
+  "definition": "A child or young person",
+  "example": "The little kid wants some chocolate."
+ },
+ "know the responsibilities": {
+  "ipa": "/nəʊ ðə rɪˌspɒnsəˈbɪlətiz/",
+  "reading": "'nöu dı risponsıbılıtiz'",
+  "meanings": [
+   "sorumlulukları bilmek"
+  ],
+  "definition": "To be aware of one's duties",
+  "example": "You must know the responsibilities of this job."
+ },
+ "living room": {
+  "ipa": "/ˈlɪvɪŋ ruːm/",
+  "reading": "'livin ruum'",
+  "meanings": [
+   "oturma odası",
+   "salon"
+  ],
+  "definition": "A room in a house for relaxing",
+  "example": "We watch television in the living room."
+ },
+ "make a fuss": {
+  "ipa": "/meɪk ə fʌs/",
+  "reading": "'meyk e fas'",
+  "meanings": [
+   "gürültü patırtı koparmak",
+   "telaşlanmak"
+  ],
+  "definition": "To worry or complain about small things",
+  "example": "Please do not make a fuss about the delay."
+ },
+ "make desserts": {
+  "ipa": "/meɪk dɪˈzɜːts/",
+  "reading": "'meyk dizörts'",
+  "meanings": [
+   "tatlı yapmak"
+  ],
+  "definition": "To prepare sweet dishes at the end of a meal",
+  "example": "I love to make desserts for my family."
+ },
+ "male": {
+  "ipa": "/meɪl/",
+  "reading": "'meyl'",
+  "meanings": [
+   "erkek",
+   "eril"
+  ],
+  "definition": "Belonging to the sex that cannot give birth",
+  "example": "The male lion has a very large mane."
+ },
+ "messy": {
+  "ipa": "/ˈmesi/",
+  "reading": "'mesi'",
+  "meanings": [
+   "dağınık",
+   "karışık",
+   "kirli"
+  ],
+  "definition": "Dirty or untidy",
+  "example": "My bedroom is always very messy on weekends."
+ },
+ "mow the lawn": {
+  "ipa": "/məʊ ðə lɔːn/",
+  "reading": "'möu dı loon'",
+  "meanings": [
+   "çimleri biçmek"
+  ],
+  "definition": "To cut the grass in a garden",
+  "example": "He likes to mow the lawn on Sundays."
+ },
+ "neat": {
+  "ipa": "/niːt/",
+  "reading": "'niit'",
+  "meanings": [
+   "düzenli",
+   "temiz",
+   "derli toplu"
+  ],
+  "definition": "Tidy and in good order",
+  "example": "She likes to keep her desk very neat."
+ },
+ "nursery school": {
+  "ipa": "/ˈnɜːsəri skuːl/",
+  "reading": "'nörsıri skuul'",
+  "meanings": [
+   "anaokulu",
+   "kreş"
+  ],
+  "definition": "A school for very young children",
+  "example": "Children learn to play together at nursery school."
+ },
+ "on time": {
+  "ipa": "/ɒn taɪm/",
+  "reading": "'on taym'",
+  "meanings": [
+   "tam zamanında",
+   "vaktinde"
+  ],
+  "definition": "At the correct or planned time",
+  "example": "Please try to arrive on time for the meeting."
+ },
+ "prepare breakfast": {
+  "ipa": "/prɪˈpeə(r) ˈbrekfəst/",
+  "reading": "'pripeır brekfıst'",
+  "meanings": [
+   "kahvaltı hazırlamak"
+  ],
+  "definition": "To make the morning meal ready",
+  "example": "I always prepare breakfast before everyone wakes up."
+ },
+ "put the rubbish out": {
+  "ipa": "/pʊt ðə ˈrʌbɪʃ aʊt/",
+  "reading": "'put dı rabiş aut'",
+  "meanings": [
+   "çöpü dışarı çıkarmak",
+   "çöpü atmak"
+  ],
+  "definition": "To place waste outside the house",
+  "example": "Can you please put the rubbish out tonight?"
+ },
+ "questionnaire": {
+  "ipa": "/ˌkwestʃəˈneə(r)/",
+  "reading": "'kuesçıneır'",
+  "meanings": [
+   "anket",
+   "soru formu"
+  ],
+  "definition": "A list of questions to collect information",
+  "example": "Please complete this short questionnaire about our service."
+ },
+ "raise hand before speaking": {
+  "ipa": "/reɪz hænd bɪˈfɔː(r) ˈspiːkɪŋ/",
+  "reading": "'reyz hend bifoor spiikin'",
+  "meanings": [
+   "konuşmadan önce el kaldırmak"
+  ],
+  "definition": "To lift one's hand to get permission to talk",
+  "example": "Please raise hand before speaking in this classroom."
+ },
+ "raise your hand": {
+  "ipa": "/reɪz jɔː hænd/",
+  "reading": "reyz yoor hænd",
+  "meanings": [
+   "el kaldırmak",
+   "parmak kaldırmak"
+  ],
+  "definition": "Lift your arm to ask or answer a question.",
+  "example": "You must raise your hand if you want to speak."
+ },
+ "sacrifice feast": {
+  "ipa": "/ˈsækrɪfaɪs fiːst/",
+  "reading": "sekrifays fiist",
+  "meanings": [
+   "Kurban Bayramı"
+  ],
+  "definition": "A religious holiday involving animal sacrifice.",
+  "example": "Our family celebrates the sacrifice feast every year."
+ },
+ "share housework": {
+  "ipa": "/ʃeə ˈhaʊswɜːk/",
+  "reading": "şeır havsvöök",
+  "meanings": [
+   "ev işlerini paylaşmak"
+  ],
+  "definition": "Divide domestic chores among family members.",
+  "example": "We should share housework to keep the home clean."
+ },
+ "share responsibility": {
+  "ipa": "/ʃeə rɪˌspɒnsəˈbɪləti/",
+  "reading": "şeır risponsıbılıti",
+  "meanings": [
+   "sorumluluğu paylaşmak"
+  ],
+  "definition": "Divide duties or blame among several people.",
+  "example": "In a team, all members must share responsibility equally."
+ },
+ "sibling": {
+  "ipa": "/ˈsɪblɪŋ/",
+  "reading": "siblin",
+  "meanings": [
+   "kardeş"
+  ],
+  "definition": "A brother or a sister.",
+  "example": "Do you have a sibling or are you alone?"
+ },
+ "silent": {
+  "ipa": "/ˈsaɪlənt/",
+  "reading": "saylınt",
+  "meanings": [
+   "sessiz",
+   "suskun"
+  ],
+  "definition": "Making no sound or noise.",
+  "example": "The library is a very silent place to study."
+ },
+ "son": {
+  "ipa": "/sʌn/",
+  "reading": "san",
+  "meanings": [
+   "erkek evlat",
+   "oğul"
+  ],
+  "definition": "A male child.",
+  "example": "They have one daughter and one son."
+ },
+ "state hospital": {
+  "ipa": "/steɪt ˈhɒspɪtl/",
+  "reading": "steyt hospitıl",
+  "meanings": [
+   "devlet hastanesi"
+  ],
+  "definition": "A public hospital run by the government.",
+  "example": "My uncle works as a doctor at the state hospital."
+ },
+ "suggestion": {
+  "ipa": "/səˈdʒestʃən/",
+  "reading": "sıcesticın",
+  "meanings": [
+   "öneri",
+   "teklif"
+  ],
+  "definition": "An idea or plan put forward for consideration.",
+  "example": "I have a good suggestion for our weekend plans."
+ },
+ "take … to …": {
+  "ipa": "/teɪk … tuː …/",
+  "reading": "teyk ... tu ...",
+  "meanings": [
+   "götürmek"
+  ],
+  "definition": "Carry or lead someone to a place.",
+  "example": "Please take this book to the library."
+ },
+ "take care of the dog": {
+  "ipa": "/teɪk keər əv ðə dɒɡ/",
+  "reading": "teyk keır ov dı dog",
+  "meanings": [
+   "köpeğe bakmak",
+   "köpekle ilgilenmek"
+  ],
+  "definition": "Look after and feed a pet dog.",
+  "example": "It is your job to take care of the dog."
+ },
+ "talk noisily": {
+  "ipa": "/tɔːk ˈnɔɪzɪli/",
+  "reading": "took noyzili",
+  "meanings": [
+   "gürültülü konuşmak"
+  ],
+  "definition": "Speak in a very loud and disruptive way.",
+  "example": "Students should not talk noisily during the exam."
+ },
+ "throw rubbish": {
+  "ipa": "/θrəʊ ˈrʌbɪʃ/",
+  "reading": "tırou rabiş",
+  "meanings": [
+   "çöp atmak"
+  ],
+  "definition": "Discard waste or garbage in a place.",
+  "example": "Do not throw rubbish on the street."
+ },
+ "tidy up toys": {
+  "ipa": "/ˈtaɪdi ʌp tɔɪz/",
+  "reading": "taydi ap toyz",
+  "meanings": [
+   "oyuncakları toplamak"
+  ],
+  "definition": "Put children's playthings back in their proper place.",
+  "example": "You must tidy up toys after you finish playing."
+ },
+ "untidy": {
+  "ipa": "/ʌnˈtaɪdi/",
+  "reading": "antaydi",
+  "meanings": [
+   "dağınık",
+   "düzensiz"
+  ],
+  "definition": "Not neat or well organized.",
+  "example": "His bedroom is always untidy."
+ },
+ "water the plants": {
+  "ipa": "/ˈwɔːtə ðə plɑːnts/",
+  "reading": "vootı dı plaants",
+  "meanings": [
+   "çiçekleri sulamak",
+   "bitkileri sulamak"
+  ],
+  "definition": "To pour water on growing flora.",
+  "example": "I usually water the plants in the evening."
+ },
+ "weed the garden": {
+  "ipa": "/wiːd ðə ˈɡɑːdn/",
+  "reading": "viid dı gaadn",
+  "meanings": [
+   "bahçeyi yabani otlardan temizlemek",
+   "bahçe ayıklamak"
+  ],
+  "definition": "To remove wild plants from the soil.",
+  "example": "You should weed the garden to help flowers grow."
+ },
+ "by the way": {
+  "ipa": "/baɪ ðə weɪ/",
+  "reading": "bay dı vey",
+  "meanings": [
+   "bu arada",
+   "aklıma gelmişken"
+  ],
+  "definition": "Used to introduce a new topic.",
+  "example": "By the way, where is my book?"
+ },
+ "during": {
+  "ipa": "/ˈdjʊərɪŋ/",
+  "reading": "dyuring",
+  "meanings": [
+   "boyunca",
+   "esnasında",
+   "sırasında"
+  ],
+  "definition": "All through a period of time.",
+  "example": "Do not talk during the exam."
+ },
+ "i don't mind": {
+  "ipa": "/aɪ dəʊnt maɪnd/",
+  "reading": "ay dount maynd",
+  "meanings": [
+   "bence fark etmez",
+   "benim için sakıncası yok",
+   "önemli değil"
+  ],
+  "definition": "Expression used to say you do not care.",
+  "example": "You can choose the movie, I don't mind."
+ },
+ "in your opinion": {
+  "ipa": "/ɪn jɔːr əˈpɪnjən/",
+  "reading": "in yoor opinyın",
+  "meanings": [
+   "sence",
+   "senin fikrine göre"
+  ],
+  "definition": "According to what you think.",
+  "example": "In your opinion, which team will win?"
+ },
+ "it is necessary to": {
+  "ipa": "/ɪt ɪz ˈnesəsəri tuː/",
+  "reading": "it iz nesesıri tu",
+  "meanings": [
+   "gerekir",
+   "yapılması zorunludur"
+  ],
+  "definition": "Used to express what must be done.",
+  "example": "It is necessary to study before an exam."
+ },
+ "it is time to": {
+  "ipa": "/ɪt ɪz taɪm tuː/",
+  "reading": "it iz taym tu",
+  "meanings": [
+   "zamanı geldi",
+   "vaktidir"
+  ],
+  "definition": "The correct moment to do something.",
+  "example": "Wake up, it is time to go now."
+ },
+ "it takes minutes": {
+  "ipa": "/ɪt teɪks ˈmɪnɪts/",
+  "reading": "it teyks minits",
+  "meanings": [
+   "dakikalar alır",
+   "birkaç dakika sürer"
+  ],
+  "definition": "Requiring a small amount of time.",
+  "example": "If you drive fast, it takes minutes to arrive."
+ },
+ "must": {
+  "ipa": "/mʌst/",
+  "reading": "mast",
+  "meanings": [
+   "-meli",
+   "-malı",
+   "zorunda olmak"
+  ],
+  "definition": "Used to express a strong obligation.",
+  "example": "You must wear a helmet on a bike."
+ },
+ "should": {
+  "ipa": "/ʃʊd/",
+  "reading": "şud",
+  "meanings": [
+   "-meli",
+   "-malı",
+   "gerekir"
+  ],
+  "definition": "Used to give advice or opinions.",
+  "example": "We should eat more vegetables every day."
+ },
+ "step by step": {
+  "ipa": "/step baɪ step/",
+  "reading": "step bay step",
+  "meanings": [
+   "adım adım",
+   "yavaş yavaş"
+  ],
+  "definition": "Gradually and in a regular order.",
+  "example": "You must learn English step by step."
+ },
+ "waste of time": {
+  "ipa": "/weɪst ɒv taɪm/",
+  "reading": "veyst ov taym",
+  "meanings": [
+   "zaman kaybı"
+  ],
+  "definition": "A bad use of valuable hours.",
+  "example": "Watching that bad movie is a waste of time."
+ },
+ "what about you?": {
+  "ipa": "/wɒt əˈbaʊt juː/",
+  "reading": "votıbaut yu",
+  "meanings": [
+   "ya sen?",
+   "senin fikrin ne?"
+  ],
+  "definition": "Used to ask for someone else's situation.",
+  "example": "I am very tired, what about you?"
+ },
+ "what kind of": {
+  "ipa": "/wɒt kaɪnd ɒv/",
+  "reading": "vot kaynd ov",
+  "meanings": [
+   "ne tür",
+   "ne çeşit"
+  ],
+  "definition": "Asking about the category of something.",
+  "example": "What kind of music do you like?"
+ },
+ "prepare the meal": {
+  "ipa": "/prɪˈpeə ðə miːl/",
+  "reading": "pıripeır dı miil",
+  "meanings": [
+   "yemek hazırlamak",
+   "yemek yapmak"
+  ],
+  "definition": "To cook or make food ready to eat",
+  "example": "I always prepare the meal before my guests arrive."
+ },
+ "take out the rubbish": {
+  "ipa": "/teɪk aʊt ðə ˈrʌbɪʃ/",
+  "reading": "teyk aut dı rabiş",
+  "meanings": [
+   "çöpü dışarı çıkarmak",
+   "çöpü atmak"
+  ],
+  "definition": "To take waste outside to the bin",
+  "example": "Please take out the rubbish before you go to sleep."
+ },
+ "take out the trash": {
+  "ipa": "/teɪk aʊt ðə træʃ/",
+  "reading": "teyk aut dı treş",
+  "meanings": [
+   "çöpü dışarı çıkarmak",
+   "çöpü atmak"
+  ],
+  "definition": "To move garbage outside of the house",
+  "example": "It is your turn to take out the trash tonight."
+ },
+ "sweep the floor": {
+  "ipa": "/swiːp ðə flɔː/",
+  "reading": "swiip dı floo",
+  "meanings": [
+   "yeri süpürmek",
+   "zemini süpürmek"
+  ],
+  "definition": "To clean the ground with a broom",
+  "example": "I need to sweep the floor because it is dirty."
+ },
+ "walk the dog": {
+  "ipa": "/wɔːk ðə dɒɡ/",
+  "reading": "vook dı dog",
+  "meanings": [
+   "köpeği gezdirmek",
+   "köpeği yürüyüşe çıkarmak"
+  ],
+  "definition": "To take a dog outside for exercise",
+  "example": "I usually walk the dog in the local park."
  }
 }
