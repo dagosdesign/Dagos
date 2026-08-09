@@ -30813,15 +30813,6 @@
   "definition": "To assist your mother and father.",
   "example": "Good children often help the parents with chores."
  },
- "household chores": {
-  "ipa": "/ˈhaʊs.həʊld tʃɔːz/",
-  "reading": "haushold çooz",
-  "meanings": [
-   "ev işleri"
-  ],
-  "definition": "Regular tasks done to keep a home clean.",
-  "example": "Everyone must share the household chores at home."
- },
  "hurry up": {
   "ipa": "/ˈhʌr.i ʌp/",
   "reading": "hari ap",
@@ -30830,16 +30821,6 @@
   ],
   "definition": "To do something more quickly.",
   "example": "We must hurry up or we will miss the bus."
- },
- "in charge of": {
-  "ipa": "/ɪn tʃɑːdʒ ɒv/",
-  "reading": "in caac ov",
-  "meanings": [
-   "-den sorumlu",
-   "sorumluluğunda"
-  ],
-  "definition": "Having control or responsibility for something.",
-  "example": "He is in charge of managing the new project."
  },
  "in turns": {
   "ipa": "/ɪn tɜːnz/",
@@ -30974,15 +30955,6 @@
   ],
   "definition": "To carry trash outside the house",
   "example": "Please take out the garbage tonight."
- },
- "take the dog for a walk": {
-  "ipa": "/teɪk ðə dɒɡ fɔːr ə wɔːk/",
-  "reading": "teyk dı dog forı vook",
-  "meanings": [
-   "köpeği yürüyüşe çıkarmak"
-  ],
-  "definition": "To go walking outside with a dog",
-  "example": "I always take the dog for a walk after school."
  },
  "take turns": {
   "ipa": "/teɪk tɜːnz/",
@@ -31150,16 +31122,6 @@
   "definition": "To complete short tasks or trips for daily needs.",
   "example": "I must do the errands before the shops close."
  },
- "doing chores": {
-  "ipa": "/ˈduː.ɪŋ tʃɔːz/",
-  "reading": "duing çorz",
-  "meanings": [
-   "ev işleri yapmak",
-   "görevleri yerine getirmek"
-  ],
-  "definition": "Performing routine tasks, especially around the house.",
-  "example": "I dislike doing chores on the weekend."
- },
  "dust": {
   "ipa": "/dʌst/",
   "reading": "dast",
@@ -31189,16 +31151,6 @@
   ],
   "definition": "A group of people related by blood or marriage.",
   "example": "I love spending time with my family."
- },
- "garbage": {
-  "ipa": "/ˈɡɑː.bɪdʒ/",
-  "reading": "garbiç",
-  "meanings": [
-   "çöp",
-   "atık"
-  ],
-  "definition": "Waste material that is thrown away.",
-  "example": "Please throw the garbage into the blue bin."
  },
  "help": {
   "ipa": "/help/",
@@ -31299,25 +31251,6 @@
   "definition": "To make a place neat and organized",
   "example": "You must tidy up your room before you go out."
  },
- "vacuum the floor": {
-  "ipa": "/ˈvæk.juːm ðə flɔːr/",
-  "reading": "vekyuym dı flor",
-  "meanings": [
-   "yerleri süpürmek",
-   "halıyı süpürmek"
-  ],
-  "definition": "To clean the floor with a vacuum cleaner",
-  "example": "Can you vacuum the floor in the living room?"
- },
- "walking the dog": {
-  "ipa": "/ˈwɔː.kɪŋ ðə dɒɡ/",
-  "reading": "voking dı dog",
-  "meanings": [
-   "köpek gezdirmek"
-  ],
-  "definition": "Taking a dog for a walk for exercise",
-  "example": "Walking the dog is my favourite outdoor activity."
- },
  "advise": {
   "ipa": "/ədˈvaɪz/",
   "reading": "edvayz",
@@ -31357,16 +31290,6 @@
   ],
   "definition": "To have control or responsibility for something",
   "example": "You will be in charge of organizing the project."
- },
- "be responsible for": {
-  "ipa": "/bi rɪˈspɒn.sə.bəl fɔːr/",
-  "reading": "bii risponsıbıl for",
-  "meanings": [
-   "sorumlu olmak",
-   "yükümlü olmak"
-  ],
-  "definition": "Having a duty to deal with something",
-  "example": "You must be responsible for your own actions."
  },
  "bookcase": {
   "ipa": "/ˈbʊkkeɪs/",
@@ -31437,16 +31360,6 @@
   "definition": "To remove plates and dishes after a meal.",
   "example": "Can you help me clear the table after dinner?"
  },
- "cook meals": {
-  "ipa": "/kʊk miːlz/",
-  "reading": "kuk miılz",
-  "meanings": [
-   "yemek pişirmek",
-   "yemek yapmak"
-  ],
-  "definition": "To prepare food for eating by heating it.",
-  "example": "I like to cook meals for my family."
- },
  "cooperate with people": {
   "ipa": "/kəʊˈɒpəreɪt wɪð ˈpiːpl/",
   "reading": "kooperayt vid piıpıl",
@@ -31496,33 +31409,6 @@
   "definition": "To perform at one's highest level.",
   "example": "These plants will do best in direct sunlight."
  },
- "do the grocery shopping": {
-  "ipa": "/duː ðə ˈɡrəʊsəri ˈʃɒpɪŋ/",
-  "reading": "du dı gröusıri şoping",
-  "meanings": [
-   "market alışverişi yapmak"
-  ],
-  "definition": "To buy food and household items.",
-  "example": "I usually do the grocery shopping on Saturdays."
- },
- "do the washing up": {
-  "ipa": "/duː ðə ˈwɒʃɪŋ ʌp/",
-  "reading": "du dı voşing ap",
-  "meanings": [
-   "bulaşıkları yıkamak"
-  ],
-  "definition": "To wash the dirty dishes after a meal.",
-  "example": "We should do the washing up after dinner."
- },
- "do the washing": {
-  "ipa": "/duː ðə ˈwɒʃɪŋ/",
-  "reading": "du dı voşing",
-  "meanings": [
-   "çamaşır yıkamak"
-  ],
-  "definition": "To wash dirty clothes.",
-  "example": "My father will do the washing today."
- },
  "do your best": {
   "ipa": "/duː jɔː best/",
   "reading": "du yoor best",
@@ -31560,15 +31446,6 @@
   ],
   "definition": "An older sister.",
   "example": "I always ask my elder sister for advice."
- },
- "empty rubbish": {
-  "ipa": "/ˈempti ˈrʌbɪʃ/",
-  "reading": "empti rabiş",
-  "meanings": [
-   "çöpü boşaltmak"
-  ],
-  "definition": "To clear out waste materials.",
-  "example": "You should empty rubbish before it smells bad."
  },
  "equal": {
   "ipa": "/ˈiːkwəl/",
@@ -31665,24 +31542,6 @@
   "definition": "A state of near darkness or feeling of sadness",
   "example": "The heavy rain brought a sense of gloom to town."
  },
- "hang out clothes": {
-  "ipa": "/hæŋ aʊt kləʊðz/",
-  "reading": "'heng aut kloudz'",
-  "meanings": [
-   "çamaşırları asmak"
-  ],
-  "definition": "To put wet laundry on a line to dry",
-  "example": "She will hang out clothes in the sunny garden."
- },
- "hang out the washing": {
-  "ipa": "/hæŋ aʊt ðə ˈwɒʃɪŋ/",
-  "reading": "'heng aut dı voşing'",
-  "meanings": [
-   "çamaşırları asmak"
-  ],
-  "definition": "To hang wet clothes outside to dry",
-  "example": "I always hang out the washing after lunch."
- },
  "have a shower": {
   "ipa": "/hæv ə ˈʃaʊə/",
   "reading": "'hev e şauır'",
@@ -31710,15 +31569,6 @@
   ],
   "definition": "The quality of being valuable or significant",
   "example": "He explained the importance of learning a new language."
- },
- "iron the clothes": {
-  "ipa": "/ˈaɪən ðə kləʊðz/",
-  "reading": "'ayın dı kloudz'",
-  "meanings": [
-   "çamaşırları ütülemek"
-  ],
-  "definition": "To make clothes smooth using a warm iron",
-  "example": "I need to iron the clothes before the interview."
  },
  "keep clean": {
   "ipa": "/kiːp kliːn/",
@@ -31826,17 +31676,6 @@
   "definition": "To cut the grass in a garden",
   "example": "He likes to mow the lawn on Sundays."
  },
- "neat": {
-  "ipa": "/niːt/",
-  "reading": "'niit'",
-  "meanings": [
-   "düzenli",
-   "temiz",
-   "derli toplu"
-  ],
-  "definition": "Tidy and in good order",
-  "example": "She likes to keep her desk very neat."
- },
  "nursery school": {
   "ipa": "/ˈnɜːsəri skuːl/",
   "reading": "'nörsıri skuul'",
@@ -31866,16 +31705,6 @@
   "definition": "To make the morning meal ready",
   "example": "I always prepare breakfast before everyone wakes up."
  },
- "put the rubbish out": {
-  "ipa": "/pʊt ðə ˈrʌbɪʃ aʊt/",
-  "reading": "'put dı rabiş aut'",
-  "meanings": [
-   "çöpü dışarı çıkarmak",
-   "çöpü atmak"
-  ],
-  "definition": "To place waste outside the house",
-  "example": "Can you please put the rubbish out tonight?"
- },
  "questionnaire": {
   "ipa": "/ˌkwestʃəˈneə(r)/",
   "reading": "'kuesçıneır'",
@@ -31894,16 +31723,6 @@
   ],
   "definition": "To lift one's hand to get permission to talk",
   "example": "Please raise hand before speaking in this classroom."
- },
- "raise your hand": {
-  "ipa": "/reɪz jɔː hænd/",
-  "reading": "reyz yoor hænd",
-  "meanings": [
-   "el kaldırmak",
-   "parmak kaldırmak"
-  ],
-  "definition": "Lift your arm to ask or answer a question.",
-  "example": "You must raise your hand if you want to speak."
  },
  "sacrifice feast": {
   "ipa": "/ˈsækrɪfaɪs fiːst/",
@@ -32025,26 +31844,6 @@
   ],
   "definition": "Put children's playthings back in their proper place.",
   "example": "You must tidy up toys after you finish playing."
- },
- "untidy": {
-  "ipa": "/ʌnˈtaɪdi/",
-  "reading": "antaydi",
-  "meanings": [
-   "dağınık",
-   "düzensiz"
-  ],
-  "definition": "Not neat or well organized.",
-  "example": "His bedroom is always untidy."
- },
- "water the plants": {
-  "ipa": "/ˈwɔːtə ðə plɑːnts/",
-  "reading": "vootı dı plaants",
-  "meanings": [
-   "çiçekleri sulamak",
-   "bitkileri sulamak"
-  ],
-  "definition": "To pour water on growing flora.",
-  "example": "I usually water the plants in the evening."
  },
  "weed the garden": {
   "ipa": "/wiːd ðə ˈɡɑːdn/",
@@ -32198,26 +31997,6 @@
   ],
   "definition": "To cook or make food ready to eat",
   "example": "I always prepare the meal before my guests arrive."
- },
- "take out the rubbish": {
-  "ipa": "/teɪk aʊt ðə ˈrʌbɪʃ/",
-  "reading": "teyk aut dı rabiş",
-  "meanings": [
-   "çöpü dışarı çıkarmak",
-   "çöpü atmak"
-  ],
-  "definition": "To take waste outside to the bin",
-  "example": "Please take out the rubbish before you go to sleep."
- },
- "take out the trash": {
-  "ipa": "/teɪk aʊt ðə træʃ/",
-  "reading": "teyk aut dı treş",
-  "meanings": [
-   "çöpü dışarı çıkarmak",
-   "çöpü atmak"
-  ],
-  "definition": "To move garbage outside of the house",
-  "example": "It is your turn to take out the trash tonight."
  },
  "sweep the floor": {
   "ipa": "/swiːp ðə flɔː/",
