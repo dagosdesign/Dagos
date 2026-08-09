@@ -32017,5 +32017,1605 @@
   ],
   "definition": "To take a dog outside for exercise",
   "example": "I usually walk the dog in the local park."
+ },
+ "accident": {
+  "ipa": "/ˈæksɪdənt/",
+  "reading": "eksidınt",
+  "meanings": [
+   "kaza",
+   "tesadüf"
+  ],
+  "definition": "An unexpected event that causes damage or injury.",
+  "example": "Drive slowly to avoid a car accident."
+ },
+ "achievement": {
+  "ipa": "/əˈtʃiːvmənt/",
+  "reading": "eçiivmınt",
+  "meanings": [
+   "başarı",
+   "kazanım"
+  ],
+  "definition": "Something done successfully, especially through effort or skill.",
+  "example": "Winning the prize was a great achievement."
+ },
+ "air conditioner": {
+  "ipa": "/ˈeə kənˌdɪʃənə/",
+  "reading": "eır kındışınır",
+  "meanings": [
+   "klima"
+  ],
+  "definition": "A machine that keeps the air in a room cool.",
+  "example": "Please turn on the air conditioner in this room."
+ },
+ "award": {
+  "ipa": "/əˈwɔːd/",
+  "reading": "ıvood",
+  "meanings": [
+   "ödül"
+  ],
+  "definition": "A prize given for an achievement or merit.",
+  "example": "She hopes to win an award for her book."
+ },
+ "barcode": {
+  "ipa": "/ˈbɑːkəʊd/",
+  "reading": "baakoud",
+  "meanings": [
+   "barkod"
+  ],
+  "definition": "A series of printed lines representing data.",
+  "example": "The cashier must scan the barcode on the package."
+ },
+ "born": {
+  "ipa": "/bɔːn/",
+  "reading": "boon",
+  "meanings": [
+   "doğmuş",
+   "doğmak"
+  ],
+  "definition": "Brought into life by birth.",
+  "example": "Some people are born with a musical talent."
+ },
+ "carriage": {
+  "ipa": "/ˈkærɪdʒ/",
+  "reading": "kerıc",
+  "meanings": [
+   "vagon",
+   "fayton",
+   "taşıma"
+  ],
+  "definition": "A vehicle with wheels, often pulled by horses.",
+  "example": "They rode in a horse-drawn carriage through the park."
+ },
+ "cell": {
+  "ipa": "/sel/",
+  "reading": "sel",
+  "meanings": [
+   "hücre"
+  ],
+  "definition": "The smallest basic unit of living matter.",
+  "example": "Every living thing is made of at least one cell."
+ },
+ "chemistry": {
+  "ipa": "/ˈkemɪstri/",
+  "reading": "kemistri",
+  "meanings": [
+   "kimya"
+  ],
+  "definition": "The scientific study of substances and their reactions.",
+  "example": "We learned about atoms in our chemistry class."
+ },
+ "childhood": {
+  "ipa": "/ˈtʃaɪldhʊd/",
+  "reading": "çayldhud",
+  "meanings": [
+   "çocukluk"
+  ],
+  "definition": "The period of time when a person is a child.",
+  "example": "She spent her childhood in a small village."
+ },
+ "diabetes": {
+  "ipa": "/ˌdaɪ.əˈbiː.tiːz/",
+  "reading": "'dayabitiiz'",
+  "meanings": [
+   "diyabet",
+   "şeker hastalığı"
+  ],
+  "definition": "A disease where the body cannot control sugar levels",
+  "example": "He must avoid sugar because he has diabetes."
+ },
+ "discover": {
+  "ipa": "/dɪˈskʌv.ər/",
+  "reading": "'diskavır'",
+  "meanings": [
+   "keşfetmek",
+   "bulmak"
+  ],
+  "definition": "To find something for the first time",
+  "example": "Scientists hope to discover new life on Mars."
+ },
+ "discoverer": {
+  "ipa": "/dɪˈskʌv.ər.ər/",
+  "reading": "'diskavırır'",
+  "meanings": [
+   "kaşif",
+   "keşfeden kişi"
+  ],
+  "definition": "A person who finds something first",
+  "example": "He is famous as the discoverer of this island."
+ },
+ "disease": {
+  "ipa": "/dɪˈziːz/",
+  "reading": "'diziiz'",
+  "meanings": [
+   "hastalık",
+   "rahatsızlık"
+  ],
+  "definition": "An illness affecting humans, animals, or plants",
+  "example": "Eating healthy food helps prevent heart disease."
+ },
+ "elevator": {
+  "ipa": "/ˈel.ɪ.veɪ.tər/",
+  "reading": "'elıveytır'",
+  "meanings": [
+   "asansör"
+  ],
+  "definition": "A machine that carries people up and down",
+  "example": "We took the elevator to the tenth floor."
+ },
+ "entertainment": {
+  "ipa": "/ˌen.təˈteɪn.mənt/",
+  "reading": "'entıteynmınt'",
+  "meanings": [
+   "eğlence"
+  ],
+  "definition": "Shows, films, or games that give pleasure",
+  "example": "The city offers many options for evening entertainment."
+ },
+ "experiment": {
+  "ipa": "/ɪkˈsper.ɪ.mənt/",
+  "reading": "'eksperimınt'",
+  "meanings": [
+   "deney",
+   "deney yapmak"
+  ],
+  "definition": "A test done to learn or prove something",
+  "example": "They conducted a scientific experiment in the lab."
+ },
+ "factory": {
+  "ipa": "/ˈfæk.tər.i/",
+  "reading": "'fektıri'",
+  "meanings": [
+   "fabrika"
+  ],
+  "definition": "A building where things are made by machines",
+  "example": "He works in a large car factory nearby."
+ },
+ "finding direction": {
+  "ipa": "/ˌfaɪnd.ɪŋ daɪˈrek.ʃən/",
+  "reading": "'faynding dayrekşın'",
+  "meanings": [
+   "yön bulma"
+  ],
+  "definition": "The act of locating the correct path or way",
+  "example": "A compass is useful for finding direction in forests."
+ },
+ "fossil": {
+  "ipa": "/ˈfɒs.əl/",
+  "reading": "'fosıl'",
+  "meanings": [
+   "fosil"
+  ],
+  "definition": "The remains of an ancient plant or animal",
+  "example": "They found an ancient dinosaur fossil in the desert."
+ },
+ "genius": {
+  "ipa": "/ˈdʒiː.ni.əs/",
+  "reading": "'ciiniyıs'",
+  "meanings": [
+   "deha",
+   "dahi"
+  ],
+  "definition": "A person with very great intelligence or skill",
+  "example": "Einstein is widely known as a genius of physics."
+ },
+ "headphone": {
+  "ipa": "/ˈhedfəʊn/",
+  "reading": "'hedfoun'",
+  "meanings": [
+   "kulaklık"
+  ],
+  "definition": "A device worn on the head to hear sound",
+  "example": "She lost her right headphone yesterday."
+ },
+ "high-tech": {
+  "ipa": "/ˌhaɪˈtek/",
+  "reading": "'hay-tek'",
+  "meanings": [
+   "yüksek teknoloji",
+   "ileri teknoloji"
+  ],
+  "definition": "Using the most advanced technology available",
+  "example": "They opened a new high-tech office in Tokyo."
+ },
+ "human": {
+  "ipa": "/ˈhjuːmən/",
+  "reading": "'hyumın'",
+  "meanings": [
+   "insan",
+   "insani"
+  ],
+  "definition": "A person or relating to people",
+  "example": "Every human needs clean water to survive."
+ },
+ "illness": {
+  "ipa": "/ˈɪlnəs/",
+  "reading": "'ilnıs'",
+  "meanings": [
+   "hastalık",
+   "rahatsızlık"
+  ],
+  "definition": "A state of being poor in health",
+  "example": "She missed school due to a sudden illness."
+ },
+ "industry": {
+  "ipa": "/ˈɪndəstri/",
+  "reading": "'indıstri'",
+  "meanings": [
+   "sanayi",
+   "endüstri"
+  ],
+  "definition": "The production of goods in factories",
+  "example": "The car industry is growing very fast."
+ },
+ "inventor": {
+  "ipa": "/ɪnˈventə/",
+  "reading": "'inventı'",
+  "meanings": [
+   "mucit",
+   "icat eden kimse"
+  ],
+  "definition": "A person who creates new things",
+  "example": "Thomas Edison was a famous inventor."
+ },
+ "lab": {
+  "ipa": "/læb/",
+  "reading": "'leb'",
+  "meanings": [
+   "laboratuvar"
+  ],
+  "definition": "A room for scientific experiments",
+  "example": "They conduct experiments in the chemistry lab."
+ },
+ "light bulb": {
+  "ipa": "/ˈlaɪt bʌlb/",
+  "reading": "'layt balb'",
+  "meanings": [
+   "ampul"
+  ],
+  "definition": "A glass object that produces light",
+  "example": "We need to replace the broken light bulb."
+ },
+ "medicine": {
+  "ipa": "/ˈmedsn/",
+  "reading": "'medsin'",
+  "meanings": [
+   "ilaç",
+   "tıp"
+  ],
+  "definition": "Substance used to treat illness or disease",
+  "example": "Take this medicine twice a day."
+ },
+ "microbe": {
+  "ipa": "/ˈmaɪkrəʊb/",
+  "reading": "'maykroub'",
+  "meanings": [
+   "mikrop"
+  ],
+  "definition": "A very small living thing causing disease",
+  "example": "A single microbe can make you very sick."
+ },
+ "microscope": {
+  "ipa": "/ˈmaɪkrəskəʊp/",
+  "reading": "'maykrıskoup'",
+  "meanings": [
+   "mikroskop"
+  ],
+  "definition": "Device used to see very small objects",
+  "example": "Look at the cells under the microscope."
+ },
+ "nobel prize": {
+  "ipa": "/nəʊˌbel ˈpraɪz/",
+  "reading": "'nobel prayz'",
+  "meanings": [
+   "Nobel ödülü"
+  ],
+  "definition": "An international award given for outstanding work",
+  "example": "To win a nobel prize is his ultimate goal."
+ },
+ "physics": {
+  "ipa": "/ˈfɪzɪks/",
+  "reading": "fiziks",
+  "meanings": [
+   "fizik"
+  ],
+  "definition": "The scientific study of matter and energy",
+  "example": "She wants to study physics at university."
+ },
+ "pill": {
+  "ipa": "/pɪl/",
+  "reading": "pil",
+  "meanings": [
+   "hap",
+   "tablet"
+  ],
+  "definition": "A small round piece of medicine to swallow",
+  "example": "You need to swallow this pill with water."
+ },
+ "printer": {
+  "ipa": "/ˈprɪntə(r)/",
+  "reading": "pirıntır",
+  "meanings": [
+   "yazıcı"
+  ],
+  "definition": "A machine that prints words on paper",
+  "example": "Please connect the printer to your computer."
+ },
+ "printing press": {
+  "ipa": "/ˈprɪntɪŋ pres/",
+  "reading": "pirinting pres",
+  "meanings": [
+   "matbaa",
+   "baskı makinesi"
+  ],
+  "definition": "A machine for printing books in large numbers",
+  "example": "The invention of the printing press changed history."
+ },
+ "provide": {
+  "ipa": "/prəˈvaɪd/",
+  "reading": "pırovayd",
+  "meanings": [
+   "sağlamak",
+   "temin etmek"
+  ],
+  "definition": "To give what is needed",
+  "example": "They provide free food for the guests."
+ },
+ "quill pen": {
+  "ipa": "/kwɪl pen/",
+  "reading": "kuvil pen",
+  "meanings": [
+   "tüy kalem"
+  ],
+  "definition": "A pen made from a bird's feather",
+  "example": "He wrote the letter with a quill pen."
+ },
+ "receive": {
+  "ipa": "/rɪˈsiːv/",
+  "reading": "risiiv",
+  "meanings": [
+   "almak",
+   "teslim almak"
+  ],
+  "definition": "To get or accept something given",
+  "example": "Did you receive my email yesterday?"
+ },
+ "remote control": {
+  "ipa": "/rɪˈməʊt kənˈtrəʊl/",
+  "reading": "rimout kıntrol",
+  "meanings": [
+   "uzaktan kumanda"
+  ],
+  "definition": "A device used to control machines from afar",
+  "example": "The remote control is on the sofa."
+ },
+ "science": {
+  "ipa": "/ˈsaɪəns/",
+  "reading": "sayıns",
+  "meanings": [
+   "bilim",
+   "ilim"
+  ],
+  "definition": "Knowledge about the physical world based on facts",
+  "example": "I always loved science when I was at school."
+ },
+ "scientist": {
+  "ipa": "/ˈsaɪəntɪst/",
+  "reading": "sayıntist",
+  "meanings": [
+   "bilim insanı"
+  ],
+  "definition": "A person who studies or works in science",
+  "example": "A famous scientist discovered the new cure."
+ },
+ "telescope": {
+  "ipa": "/ˈtelɪskəʊp/",
+  "reading": "teliskoup",
+  "meanings": [
+   "teleskop"
+  ],
+  "definition": "A device used to look at distant objects",
+  "example": "He looked at the stars through a telescope."
+ },
+ "test tube": {
+  "ipa": "/ˈtest ˌtjuːb/",
+  "reading": "test tyub",
+  "meanings": [
+   "deney tüpü"
+  ],
+  "definition": "A glass tube used for laboratory tests.",
+  "example": "She put the liquid into a test tube."
+ },
+ "theory of relativity": {
+  "ipa": "/ˌθɪə.ri əv ˌrel.əˈtɪv.ə.ti/",
+  "reading": "tiıri ov relativiti",
+  "meanings": [
+   "görelilik kuramı",
+   "rölativite teorisi"
+  ],
+  "definition": "Einstein's theory about space, time, and gravity.",
+  "example": "Scientists still study the theory of relativity today."
+ },
+ "treat": {
+  "ipa": "/triːt/",
+  "reading": "triit",
+  "meanings": [
+   "tedavi etmek",
+   "davranmak",
+   "ikram etmek"
+  ],
+  "definition": "To give medical care or behave towards someone.",
+  "example": "Doctors try to treat patients with great care."
+ },
+ "treatment": {
+  "ipa": "/ˈtriːt.mənt/",
+  "reading": "triitmınt",
+  "meanings": [
+   "tedavi",
+   "davranış"
+  ],
+  "definition": "Medical care given to a patient.",
+  "example": "This new treatment is very effective for the illness."
+ },
+ "vaccination": {
+  "ipa": "/ˌvæk.sɪˈneɪ.ʃən/",
+  "reading": "veksineyşın",
+  "meanings": [
+   "aşı",
+   "aşılama"
+  ],
+  "definition": "Giving a vaccine to prevent a disease.",
+  "example": "Regular vaccination protects children from dangerous diseases."
+ },
+ "washing machine": {
+  "ipa": "/ˈwɒʃ.ɪŋ məˌʃiːn/",
+  "reading": "voşing maşiin",
+  "meanings": [
+   "çamaşır makinesi"
+  ],
+  "definition": "A machine used for washing clothes.",
+  "example": "Our washing machine is broken."
+ },
+ "water screw": {
+  "ipa": "/ˈwɔː.tər skruː/",
+  "reading": "vôtır skruu",
+  "meanings": [
+   "Arşimet vidası",
+   "su vidası"
+  ],
+  "definition": "A device used for raising water.",
+  "example": "Farmers use a water screw to irrigate fields."
+ },
+ "wearable heart chip": {
+  "ipa": "/ˌweə.rə.bəl ˈhɑːt ˌtʃɪp/",
+  "reading": "veırıbıl haat çip",
+  "meanings": [
+   "giyilebilir kalp çipi"
+  ],
+  "definition": "A microchip worn to monitor heart health.",
+  "example": "The doctor recommended a wearable heart chip for him."
+ },
+ "weather changes": {
+  "ipa": "/ˈweð.ər ˈtʃeɪn.dʒɪz/",
+  "reading": "vedır çeynciz",
+  "meanings": [
+   "hava değişimleri",
+   "hava durumu değişiklikleri"
+  ],
+  "definition": "Variations in atmospheric conditions.",
+  "example": "Sudden weather changes can make people sick easily."
+ },
+ "wheel": {
+  "ipa": "/wiːl/",
+  "reading": "viil",
+  "meanings": [
+   "tekerlek",
+   "çark"
+  ],
+  "definition": "A circular object that rolls.",
+  "example": "The front wheel of the bicycle is loose."
+ },
+ "x-ray": {
+  "ipa": "/ˈeks.reɪ/",
+  "reading": "eksrey",
+  "meanings": [
+   "röntgen",
+   "röntgen filmi çekmek"
+  ],
+  "definition": "A photograph of the inside of the body.",
+  "example": "The dentist took an x-ray of my teeth."
+ },
+ "alien": {
+  "ipa": "/ˈeɪ.li.ən/",
+  "reading": "eyliyın",
+  "meanings": [
+   "uzaylı",
+   "yabancı"
+  ],
+  "definition": "A creature from another planet.",
+  "example": "Many people believe that an alien visited Earth."
+ },
+ "axis": {
+  "ipa": "/ˈæksɪs/",
+  "reading": "eksis",
+  "meanings": [
+   "eksen"
+  ],
+  "definition": "An imaginary line through the center of an object",
+  "example": "The Earth rotates on its axis once a day."
+ },
+ "branch": {
+  "ipa": "/brɑːntʃ/",
+  "reading": "braanç",
+  "meanings": [
+   "dal",
+   "şube"
+  ],
+  "definition": "A part of a tree or an organization",
+  "example": "We can sit under this thick branch of the tree."
+ },
+ "calculator": {
+  "ipa": "/ˈkælkjʊleɪtə/",
+  "reading": "kelküleytır",
+  "meanings": [
+   "hesap makinesi"
+  ],
+  "definition": "A small electronic device used for math",
+  "example": "You can use a calculator to solve the math problem."
+ },
+ "condition": {
+  "ipa": "/kənˈdɪʃn/",
+  "reading": "kındışın",
+  "meanings": [
+   "durum",
+   "koşul",
+   "şart"
+  ],
+  "definition": "The state of something or someone",
+  "example": "The car is still in good condition after many years."
+ },
+ "die": {
+  "ipa": "/daɪ/",
+  "reading": "day",
+  "meanings": [
+   "ölmek"
+  ],
+  "definition": "To stop living",
+  "example": "Plants will die without water."
+ },
+ "do an experiment": {
+  "ipa": "/duː ən ɪkˈsperɪmənt/",
+  "reading": "du en eksperımınt",
+  "meanings": [
+   "deney yapmak"
+  ],
+  "definition": "To perform a scientific test",
+  "example": "Students will do an experiment in science class today."
+ },
+ "explosion": {
+  "ipa": "/ɪkˈspləʊʒn/",
+  "reading": "iksploujın",
+  "meanings": [
+   "patlama"
+  ],
+  "definition": "A sudden violent bursting",
+  "example": "We heard a loud explosion from the street."
+ },
+ "facts": {
+  "ipa": "/fækts/",
+  "reading": "fekts",
+  "meanings": [
+   "gerçekler",
+   "olgular"
+  ],
+  "definition": "Information that is known to be true.",
+  "example": "You must present the facts clearly."
+ },
+ "goldsmith": {
+  "ipa": "/ˈɡəʊld.smɪθ/",
+  "reading": "gouldsmit",
+  "meanings": [
+   "kuyumcu",
+   "sarraf"
+  ],
+  "definition": "A person who makes objects of gold.",
+  "example": "The goldsmith made a beautiful ring."
+ },
+ "gravity of the matter": {
+  "ipa": "/ˈɡræv.ə.ti ɒv ðə ˈmæt.ər/",
+  "reading": "gireviti ov dı medır",
+  "meanings": [
+   "meselenin ciddiyeti",
+   "durumun önemi"
+  ],
+  "definition": "The extreme importance of a situation.",
+  "example": "They did not understand the gravity of the matter."
+ },
+ "healthcare": {
+  "ipa": "/ˈhelθ.keər/",
+  "reading": "heltkeyır",
+  "meanings": [
+   "sağlık hizmetleri",
+   "sağlık sektörü"
+  ],
+  "definition": "Services provided to maintain physical health.",
+  "example": "The country needs a better healthcare system."
+ },
+ "improvement": {
+  "ipa": "/ɪmˈpruːv.mənt/",
+  "reading": "impruvmınt",
+  "meanings": [
+   "gelişme",
+   "iyileşme",
+   "ilerleme"
+  ],
+  "definition": "The process of making something better.",
+  "example": "There is room for improvement in your report."
+ },
+ "infection": {
+  "ipa": "/ɪnˈfek.ʃən/",
+  "reading": "infekşın",
+  "meanings": [
+   "enfeksiyon",
+   "bulaşma"
+  ],
+  "definition": "A disease caused by germs or bacteria.",
+  "example": "The doctor treated the infection with antibiotics."
+ },
+ "ink": {
+  "ipa": "/ɪŋk/",
+  "reading": "ink",
+  "meanings": [
+   "mürekkep"
+  ],
+  "definition": "Colored liquid used for writing or printing.",
+  "example": "The pen has run out of ink."
+ },
+ "journalist": {
+  "ipa": "/ˈdʒɜː.nə.lɪst/",
+  "reading": "cörnılist",
+  "meanings": [
+   "gazeteci"
+  ],
+  "definition": "A person who writes news reports.",
+  "example": "She works as a journalist for a newspaper."
+ },
+ "manuscript": {
+  "ipa": "/ˈmæn.jə.skrɪpt/",
+  "reading": "menyuskript",
+  "meanings": [
+   "el yazması",
+   "taslak"
+  ],
+  "definition": "The original copy of a book.",
+  "example": "He sent the final manuscript to the publisher."
+ },
+ "masterpieces": {
+  "ipa": "/ˈmɑː.stə.piː.sɪz/",
+  "reading": "mastıpısız",
+  "meanings": [
+   "şaheserler",
+   "başyapıtlar"
+  ],
+  "definition": "Extremely good paintings, books, or works.",
+  "example": "The museum displays many masterpieces of modern art."
+ },
+ "merchant": {
+  "ipa": "/ˈmɜː.tʃənt/",
+  "reading": "mörçınt",
+  "meanings": [
+   "tüccar",
+   "esnaf"
+  ],
+  "definition": "A person who buys and sells goods.",
+  "example": "He is a wealthy merchant in the town."
+ },
+ "milestone": {
+  "ipa": "/ˈmaɪl.stəʊn/",
+  "reading": "maylstoun",
+  "meanings": [
+   "mil taşı",
+   "dönüm noktası"
+  ],
+  "definition": "An important event in development.",
+  "example": "Graduation is a major milestone in life."
+ },
+ "mind": {
+  "ipa": "/maɪnd/",
+  "reading": "maynd",
+  "meanings": [
+   "zihin",
+   "akıl",
+   "önemsemek"
+  ],
+  "definition": "The part of a person that thinks.",
+  "example": "She had a clear mind during the exam."
+ },
+ "moveable": {
+  "ipa": "/ˈmuː.və.bəl/",
+  "reading": "muvıbıl",
+  "meanings": [
+   "taşınabilir",
+   "hareket ettirilebilir"
+  ],
+  "definition": "Capable of being moved or changed.",
+  "example": "They printed books using moveable type."
+ },
+ "operate": {
+  "ipa": "/ˈɒp.ər.eɪt/",
+  "reading": "opıreyt",
+  "meanings": [
+   "çalıştırmak",
+   "işletmek",
+   "ameliyat etmek"
+  ],
+  "definition": "To control the functioning of a machine.",
+  "example": "He knows how to operate this complex machine."
+ },
+ "orbit": {
+  "ipa": "/ˈɔː.bɪt/",
+  "reading": "orbit",
+  "meanings": [
+   "yörünge",
+   "yörüngede dönmek"
+  ],
+  "definition": "The curved path of an object around a star.",
+  "example": "The Earth has a stable orbit around the Sun."
+ },
+ "pass away": {
+  "ipa": "/ˌpɑːs əˈweɪ/",
+  "reading": "paas ıvey",
+  "meanings": [
+   "vefat etmek",
+   "ölmek"
+  ],
+  "definition": "A polite expression meaning to die.",
+  "example": "Many old people pass away peacefully in their sleep."
+ },
+ "planet": {
+  "ipa": "/ˈplæn.ɪt/",
+  "reading": "plenıt",
+  "meanings": [
+   "gezegen"
+  ],
+  "definition": "A large round object that orbits a star.",
+  "example": "Mars is known as the red planet."
+ },
+ "realize": {
+  "ipa": "/rɪə.laɪz/",
+  "reading": "riyılayz",
+  "meanings": [
+   "fark etmek",
+   "gerçekleştirmek"
+  ],
+  "definition": "To understand or become aware of something.",
+  "example": "You must realize that this is important."
+ },
+ "record": {
+  "ipa": "/ˈrek.ɔːd/",
+  "reading": "rekord",
+  "meanings": [
+   "kayıt",
+   "rekor"
+  ],
+  "definition": "Information written down or stored for the future.",
+  "example": "Keep a written record of all your expenses."
+ },
+ "replaced": {
+  "ipa": "/rɪˈpleɪst/",
+  "reading": "ripleyst",
+  "meanings": [
+   "yenisiyle değiştirilmiş",
+   "yerini almış"
+  ],
+  "definition": "Put in place of something else.",
+  "example": "The broken window was replaced with a new one."
+ },
+ "revolutionary": {
+  "ipa": "/ˌrev.əˈluː.ʃən.ər.i/",
+  "reading": "revıluuşınəri",
+  "meanings": [
+   "devrimsel",
+   "devrimci"
+  ],
+  "definition": "Involving a complete and dramatic change.",
+  "example": "The new technology had a revolutionary impact on medicine."
+ },
+ "servant": {
+  "ipa": "/ˈsɜː.vənt/",
+  "reading": "sörvınt",
+  "meanings": [
+   "hizmetçi",
+   "uşak"
+  ],
+  "definition": "A person who works in another's house.",
+  "example": "The wealthy family employed a loyal servant."
+ },
+ "solar system": {
+  "ipa": "/ˈsəʊ.lə ˌsɪs.təm/",
+  "reading": "solır sistım",
+  "meanings": [
+   "güneş sistemi"
+  ],
+  "definition": "The sun and all the planets around it.",
+  "example": "There are eight planets in our solar system."
+ },
+ "struggles": {
+  "ipa": "/ˈstrʌɡ.lz/",
+  "reading": "stragılz",
+  "meanings": [
+   "mücadeleler",
+   "çabalar",
+   "zorluklar"
+  ],
+  "definition": "Difficult efforts to achieve or overcome something.",
+  "example": "Her struggles with math ended when she got a tutor."
+ },
+ "succeed": {
+  "ipa": "/səkˈsiːd/",
+  "reading": "saksîd",
+  "meanings": [
+   "başarmak",
+   "başarılı olmak"
+  ],
+  "definition": "To achieve a desired aim or result.",
+  "example": "Hard work will help you succeed in life."
+ },
+ "telegram": {
+  "ipa": "/ˈtel.ɪ.ɡræm/",
+  "reading": "teligram",
+  "meanings": [
+   "telgraf"
+  ],
+  "definition": "A message sent by telegraph and delivered in written form.",
+  "example": "He sent an urgent telegram to his family."
+ },
+ "typewriter": {
+  "ipa": "/ˈtaɪpˌraɪ.tər/",
+  "reading": "taypraytır",
+  "meanings": [
+   "daktilo"
+  ],
+  "definition": "A manual machine with keys for typing documents.",
+  "example": "The old author still writes novels on a typewriter."
+ },
+ "unfortunately": {
+  "ipa": "/ʌnˈfɔː.tʃən.ət.li/",
+  "reading": "anforçınıtli",
+  "meanings": [
+   "maalesef",
+   "ne yazık ki"
+  ],
+  "definition": "It is regrettable or sad that.",
+  "example": "Unfortunately, the museum is closed on Mondays."
+ },
+ "universe": {
+  "ipa": "/ˈjuː.nɪ.vɜːs/",
+  "reading": "yunivörs",
+  "meanings": [
+   "evren",
+   "kainat"
+  ],
+  "definition": "All existing matter, space, and time as a whole.",
+  "example": "Scientists study the origin of the universe."
+ },
+ "wave": {
+  "ipa": "/weɪv/",
+  "reading": "veyv",
+  "meanings": [
+   "dalga",
+   "el sallamak"
+  ],
+  "definition": "A moving ridge of water on the sea surface.",
+  "example": "A huge wave crashed against the sandy beach."
+ },
+ "widen": {
+  "ipa": "/ˈwaɪ.dən/",
+  "reading": "vaydın",
+  "meanings": [
+   "genişletmek",
+   "genişlemek"
+  ],
+  "definition": "To make or become wider.",
+  "example": "They plan to widen the main road next month."
+ },
+ "writer": {
+  "ipa": "/ˈraɪ.tər/",
+  "reading": "raytır",
+  "meanings": [
+   "yazar"
+  ],
+  "definition": "A person who writes books, stories, or articles.",
+  "example": "She wants to become a famous writer one day."
+ },
+ "scientific achievement": {
+  "ipa": "/ˌsaɪənˈtɪfɪk əˈtʃiːvmənt/",
+  "reading": "sayıntifik açîvmınt",
+  "meanings": [
+   "bilimsel başarı"
+  ],
+  "definition": "A significant accomplishment in the field of science.",
+  "example": "The eradication of polio was a great scientific achievement."
+ },
+ "vaccine": {
+  "ipa": "/ˈvæk.siːn/",
+  "reading": "veksîn",
+  "meanings": [
+   "aşı"
+  ],
+  "definition": "A substance used to stimulate immunity against disease.",
+  "example": "The doctor gave the child a vaccine against measles."
+ },
+ "stage": {
+  "ipa": "/steɪdʒ/",
+  "reading": "steyc",
+  "meanings": [
+   "aşama",
+   "sahne"
+  ],
+  "definition": "A point, period, or step in a process.",
+  "example": "We are in the final stage of the project."
+ },
+ "dna structure": {
+  "ipa": "/ˌdiː.enˈeɪ ˈstrʌk.tʃər/",
+  "reading": "dî-en-ey strakçır",
+  "meanings": [
+   "DNA yapısı"
+  ],
+  "definition": "The double helix shape of genetic material.",
+  "example": "The team mapped the dna structure of the virus."
+ },
+ "genetics": {
+  "ipa": "/dʒəˈnet.ɪks/",
+  "reading": "cenetiks",
+  "meanings": [
+   "genetik",
+   "kalıtım bilimi"
+  ],
+  "definition": "The study of heredity and inherited characteristics.",
+  "example": "She is doing research in the field of genetics."
+ },
+ "spacecraft": {
+  "ipa": "/ˈspeɪs.krɑːft/",
+  "reading": "speyskraft",
+  "meanings": [
+   "uzay aracı"
+  ],
+  "definition": "A vehicle used for traveling in space.",
+  "example": "The spacecraft landed safely on the moon."
+ },
+ "print": {
+  "ipa": "/prɪnt/",
+  "reading": "print",
+  "meanings": [
+   "yazdırmak",
+   "basmak"
+  ],
+  "definition": "To produce books or documents using ink.",
+  "example": "Can you help me print this document?"
+ },
+ "impact": {
+  "ipa": "/ˈɪm.pækt/",
+  "reading": "impakt",
+  "meanings": [
+   "etki",
+   "darbe"
+  ],
+  "definition": "A powerful effect on someone or something.",
+  "example": "Her speech had a huge impact on the crowd."
+ },
+ "evidence": {
+  "ipa": "/ˈevɪdəns/",
+  "reading": "evidıns",
+  "meanings": [
+   "kanıt",
+   "delil"
+  ],
+  "definition": "Facts or information showing whether something is true.",
+  "example": "There is no evidence to support your claim."
+ },
+ "actually": {
+  "ipa": "/ˈæktʃuəli/",
+  "reading": "ekçuıli",
+  "meanings": [
+   "gerçekten",
+   "aslında"
+  ],
+  "definition": "Used to emphasize a fact or comment.",
+  "example": "I actually prefer tea over coffee."
+ },
+ "airbag": {
+  "ipa": "/ˈeəbæɡ/",
+  "reading": "eyırbeg",
+  "meanings": [
+   "hava yastığı"
+  ],
+  "definition": "A safety device in a car that fills with air.",
+  "example": "The airbag will inflate during a crash."
+ },
+ "artificial eye": {
+  "ipa": "/ˌɑːtɪˈfɪʃl aɪ/",
+  "reading": "artifişıl ay",
+  "meanings": [
+   "yapay göz",
+   "takma göz"
+  ],
+  "definition": "A prosthetic device that replaces a missing natural eye.",
+  "example": "The doctor designed an artificial eye for the patient."
+ },
+ "belong to": {
+  "ipa": "/bɪˈlɒŋ tuː/",
+  "reading": "biloŋ tu",
+  "meanings": [
+   "ait olmak"
+  ],
+  "definition": "To be the property of someone.",
+  "example": "Does this book belong to you?"
+ },
+ "blind": {
+  "ipa": "/blaɪnd/",
+  "reading": "blaynd",
+  "meanings": [
+   "kör",
+   "görme engelli"
+  ],
+  "definition": "Unable to see.",
+  "example": "He has been blind since birth."
+ },
+ "build model": {
+  "ipa": "/bɪld ˈmɒdl/",
+  "reading": "bild modıl",
+  "meanings": [
+   "model yapmak",
+   "maket yapmak"
+  ],
+  "definition": "To construct a small copy of an object.",
+  "example": "He wants to build model cars as a hobby."
+ },
+ "but": {
+  "ipa": "/bʌt/",
+  "reading": "bat",
+  "meanings": [
+   "ama",
+   "fakat",
+   "ancak"
+  ],
+  "definition": "Used to introduce a contrasting statement.",
+  "example": "I like fruit but I do not like apples."
+ },
+ "called": {
+  "ipa": "/kɔːld/",
+  "reading": "kold",
+  "meanings": [
+   "adlandırılan",
+   "adında"
+  ],
+  "definition": "Having a specific name.",
+  "example": "I have a dog called Max."
+ },
+ "chemical substance": {
+  "ipa": "/ˈkemɪkl ˈsʌbstəns/",
+  "reading": "kemikıl sabstıns",
+  "meanings": [
+   "kimyasal madde"
+  ],
+  "definition": "A material with a specific chemical composition.",
+  "example": "Water is a safe chemical substance."
+ },
+ "chemist": {
+  "ipa": "/ˈkemɪst/",
+  "reading": "kemist",
+  "meanings": [
+   "kimyager",
+   "eczacı"
+  ],
+  "definition": "A person who studies or works in chemistry.",
+  "example": "The chemist is working on a new experiment."
+ },
+ "clever": {
+  "ipa": "/ˈklevə(r)/",
+  "reading": "klevır",
+  "meanings": [
+   "zeki",
+   "akıllı"
+  ],
+  "definition": "Quick to understand, learn, and devise ideas.",
+  "example": "She is a very clever student."
+ },
+ "competitor": {
+  "ipa": "/kəmˈpet.ɪ.tə/",
+  "reading": "kampetitı",
+  "meanings": [
+   "rakip",
+   "yarışmacı"
+  ],
+  "definition": "A person or organization that competes against others",
+  "example": "The young competitor won the gold medal."
+ },
+ "contribution": {
+  "ipa": "/ˌkɒn.trɪˈbjuː.ʃən/",
+  "reading": "kontribyûşın",
+  "meanings": [
+   "katkı",
+   "bağış"
+  ],
+  "definition": "Something given or done to help",
+  "example": "She made a significant contribution to the project."
+ },
+ "correct": {
+  "ipa": "/kəˈrekt/",
+  "reading": "kərekt",
+  "meanings": [
+   "doğru",
+   "düzeltmek"
+  ],
+  "definition": "Free from error or accurate",
+  "example": "Please correct the mistakes on the board."
+ },
+ "dangerous conditions": {
+  "ipa": "/ˌdeɪn.dʒər.əs kənˈdɪʃ.ənz/",
+  "reading": "deyncırıs kındışınz",
+  "meanings": [
+   "tehlikeli koşullar",
+   "tehlikeli şartlar"
+  ],
+  "definition": "Unsafe states or situations in an environment",
+  "example": "Workers must avoid dangerous conditions at all times."
+ },
+ "design a tool": {
+  "ipa": "/dɪˈzaɪn ə tuːl/",
+  "reading": "dizayn e tuul",
+  "meanings": [
+   "bir araç tasarlamak"
+  ],
+  "definition": "To plan and make a new instrument",
+  "example": "Engineers want to design a tool for cleaning water."
+ },
+ "discover planet": {
+  "ipa": "/dɪˈskʌv.ə ˈplæn.ɪt/",
+  "reading": "diskavır plenıt",
+  "meanings": [
+   "gezegen keşfetmek"
+  ],
+  "definition": "To find a new celestial body",
+  "example": "Astronomers hope to discover planet Nine one day."
+ },
+ "dna repair": {
+  "ipa": "/ˌdiː.enˈeɪ rɪˈpeər/",
+  "reading": "di en ey ripeyr",
+  "meanings": [
+   "dna onarımı"
+  ],
+  "definition": "The process of fixing damaged genetic material",
+  "example": "Scientists study how cells perform dna repair so well."
+ },
+ "engineer": {
+  "ipa": "/ˌen.dʒɪˈnɪər/",
+  "reading": "enciniır",
+  "meanings": [
+   "mühendis"
+  ],
+  "definition": "A person who designs or builds machines",
+  "example": "She wants to become an engineer in the future."
+ },
+ "equation": {
+  "ipa": "/ɪˈkweɪʒn/",
+  "reading": "ikveyjın",
+  "meanings": [
+   "denklem",
+   "eşitlik"
+  ],
+  "definition": "A mathematical statement showing that two expressions are equal.",
+  "example": "Can you solve this simple equation?"
+ },
+ "examine patient": {
+  "ipa": "/ɪɡˈzæmɪn ˈpeɪʃnt/",
+  "reading": "igzemin peyşınt",
+  "meanings": [
+   "hastayı muayene etmek"
+  ],
+  "definition": "To check a sick person's body and health.",
+  "example": "Doctors must examine patient records carefully."
+ },
+ "except": {
+  "ipa": "/ɪkˈsept/",
+  "reading": "iksept",
+  "meanings": [
+   "hariç",
+   "dışında",
+   "başka"
+  ],
+  "definition": "Not including; other than.",
+  "example": "Everyone arrived on time except John."
+ },
+ "famous for": {
+  "ipa": "/ˈfeɪməs fɔː(r)/",
+  "reading": "feymıs for",
+  "meanings": [
+   "ile ünlü",
+   "ile tanınan"
+  ],
+  "definition": "Known by many people for a specific thing.",
+  "example": "The city is famous for its delicious food."
+ },
+ "field": {
+  "ipa": "/fiːld/",
+  "reading": "fiild",
+  "meanings": [
+   "alan",
+   "tarla",
+   "saha"
+  ],
+  "definition": "An area of open land or a subject.",
+  "example": "They are playing football in the field."
+ },
+ "give lecture": {
+  "ipa": "/ɡɪv ˈlektʃə(r)/",
+  "reading": "giv lekçır",
+  "meanings": [
+   "ders vermek",
+   "konferans vermek"
+  ],
+  "definition": "To deliver an educational speech to an audience.",
+  "example": "They will give lecture presentations on Mondays."
+ },
+ "gravity": {
+  "ipa": "/ˈɡrævəti/",
+  "reading": "greviti",
+  "meanings": [
+   "yerçekimi",
+   "çekim kuvveti"
+  ],
+  "definition": "The force that pulls objects toward the earth.",
+  "example": "Earth has stronger gravity than the moon."
+ },
+ "however": {
+  "ipa": "/haʊˈevə(r)/",
+  "reading": "havıvır",
+  "meanings": [
+   "ancak",
+   "yine de",
+   "bununla birlikte"
+  ],
+  "definition": "In spite of that; nevertheless.",
+  "example": "He was tired; however, he kept working."
+ },
+ "in addition": {
+  "ipa": "/ɪn əˈdɪʃn/",
+  "reading": "in edışın",
+  "meanings": [
+   "ek olarak",
+   "ayrıca"
+  ],
+  "definition": "As well; additionally.",
+  "example": "In addition, we need to buy some milk."
+ },
+ "incredible advance": {
+  "ipa": "/ɪnˈkredəbl ədˈvɑːns/",
+  "reading": "inkredıbıl edvans",
+  "meanings": [
+   "inanılmaz ilerleme",
+   "müthiş gelişme"
+  ],
+  "definition": "An amazing progress or development.",
+  "example": "This technology is an incredible advance for science."
+ },
+ "law of gravity": {
+  "ipa": "/ˌlɔː əv ˈɡrævəti/",
+  "reading": "lov ov grevıti",
+  "meanings": [
+   "yerçekimi kanunu"
+  ],
+  "definition": "The scientific rule explaining how objects attract each other.",
+  "example": "The law of gravity explains why objects fall to earth."
+ },
+ "layer": {
+  "ipa": "/ˈleɪə/",
+  "reading": "leyır",
+  "meanings": [
+   "tabaka",
+   "katman"
+  ],
+  "definition": "A sheet or quantity of material covering a surface.",
+  "example": "Add a layer of cream to the cake."
+ },
+ "luckily": {
+  "ipa": "/ˈlʌkɪli/",
+  "reading": "lakıli",
+  "meanings": [
+   "şans eseri",
+   "neyse ki"
+  ],
+  "definition": "By good fortune.",
+  "example": "Luckily, we arrived just in time."
+ },
+ "manage": {
+  "ipa": "/ˈmænɪdʒ/",
+  "reading": "menıc",
+  "meanings": [
+   "yönetmek",
+   "başarmak"
+  ],
+  "definition": "To be in charge of or succeed in doing.",
+  "example": "Can you manage this difficult project?"
+ },
+ "mold": {
+  "ipa": "/məʊld/",
+  "reading": "mould",
+  "meanings": [
+   "kalıp",
+   "küf"
+  ],
+  "definition": "A hollow container used to shape a substance.",
+  "example": "Pour the warm chocolate into the mold to set."
+ },
+ "moreover": {
+  "ipa": "/mɔːrˈəʊvə/",
+  "reading": "morovır",
+  "meanings": [
+   "dahası",
+   "ayrıca"
+  ],
+  "definition": "In addition to what has been said.",
+  "example": "The house is beautiful; moreover, it is cheap."
+ },
+ "physicist": {
+  "ipa": "/ˈfɪzɪsɪst/",
+  "reading": "fizisist",
+  "meanings": [
+   "fizikçi"
+  ],
+  "definition": "A scientist who studies physics.",
+  "example": "The brilliant physicist explained his theory."
+ },
+ "prevent": {
+  "ipa": "/prɪˈvent/",
+  "reading": "privent",
+  "meanings": [
+   "önlemek",
+   "engel olmak"
+  ],
+  "definition": "To stop something from happening.",
+  "example": "We must prevent the virus from spreading."
+ },
+ "prize": {
+  "ipa": "/praɪz/",
+  "reading": "prayz",
+  "meanings": [
+   "ödül"
+  ],
+  "definition": "A reward given to a winner.",
+  "example": "She won first prize in the art contest."
+ },
+ "prototype": {
+  "ipa": "/ˈprəʊtətaɪp/",
+  "reading": "prototayp",
+  "meanings": [
+   "prototip",
+   "ilk örnek"
+  ],
+  "definition": "A first model of something from which others develop.",
+  "example": "They built a working prototype of the new car."
+ },
+ "publish article": {
+  "ipa": "/ˈpʌblɪʃ ˈɑːtɪkl/",
+  "reading": "pabliş aatıkıl",
+  "meanings": [
+   "makale yayınlamak"
+  ],
+  "definition": "To print or put an article online for people.",
+  "example": "Students can publish article reviews in the local paper."
+ },
+ "really": {
+  "ipa": "/ˈrɪəli/",
+  "reading": "riyıli",
+  "meanings": [
+   "gerçekten",
+   "aslında"
+  ],
+  "definition": "In fact or to a high degree.",
+  "example": "I really want to visit Japan next year."
+ },
+ "refine uranium": {
+  "ipa": "/rɪˈfaɪn jʊˈreɪniəm/",
+  "reading": "rifayn yureyniyım",
+  "meanings": [
+   "uranyum arıtmak",
+   "uranyum zenginleştirmek"
+  ],
+  "definition": "To process and purify uranium for use.",
+  "example": "The facility does not have the power to refine uranium."
+ },
+ "sample": {
+  "ipa": "/ˈsɑːmpl/",
+  "reading": "saampıl",
+  "meanings": [
+   "örnek",
+   "numune"
+  ],
+  "definition": "A small part that shows what the whole is.",
+  "example": "Please give me a sample of that fabric."
+ },
+ "self-confidence": {
+  "ipa": "/ˌself ˈkɒnfɪdəns/",
+  "reading": "self konfidıns",
+  "meanings": [
+   "özgüven",
+   "kendine güven"
+  ],
+  "definition": "Belief in your own abilities and value.",
+  "example": "Speaking in public can help build your self-confidence."
+ },
+ "sight disabled": {
+  "ipa": "/saɪt dɪsˈeɪbld/",
+  "reading": "sayt diseybıld",
+  "meanings": [
+   "görme engelli"
+  ],
+  "definition": "Having an illness or injury that makes seeing difficult.",
+  "example": "The school supports sight disabled children with special books."
+ },
+ "solve engineering problem": {
+  "ipa": "/sɒlv ˌendʒɪˈnɪərɪŋ ˈprɒbləm/",
+  "reading": "solv enciniyıring problım",
+  "meanings": [
+   "mühendislik problemini çözmek"
+  ],
+  "definition": "To find a solution to a technical issue.",
+  "example": "They must solve engineering problem tasks to pass the test."
+ },
+ "space travel": {
+  "ipa": "/speɪs ˈtrævl/",
+  "reading": "speys trevıl",
+  "meanings": [
+   "uzay seyahati",
+   "uzay yolculuğu"
+  ],
+  "definition": "Travel through the area beyond the Earth's atmosphere.",
+  "example": "Many companies are now investing in space travel."
+ },
+ "study medicine": {
+  "ipa": "/ˈstʌdi ˈmedsn/",
+  "reading": "stadi medsin",
+  "meanings": [
+   "tıp okumak"
+  ],
+  "definition": "To learn how to treat sick people at university.",
+  "example": "My dream is to study medicine and become a doctor."
+ },
+ "such as": {
+  "ipa": "/sʌtʃ æz/",
+  "reading": "saç ez",
+  "meanings": [
+   "gibi",
+   "örneğin"
+  ],
+  "definition": "Used to introduce examples.",
+  "example": "I like sweet fruits such as apples and oranges."
+ },
+ "sunlight": {
+  "ipa": "/ˈsʌnlaɪt/",
+  "reading": "sanlayt",
+  "meanings": [
+   "güneş ışığı"
+  ],
+  "definition": "The natural light that comes from the sun.",
+  "example": "Plants need sunlight and water to grow."
+ },
+ "surface": {
+  "ipa": "/ˈsɜːfɪs/",
+  "reading": "sörfıs",
+  "meanings": [
+   "yüzey",
+   "yeryüzü"
+  ],
+  "definition": "The outside layer or top part of something.",
+  "example": "The surface of the lake was very calm."
+ },
+ "surgery": {
+  "ipa": "/ˈsɜːdʒəri/",
+  "reading": "sörcıri",
+  "meanings": [
+   "ameliyat",
+   "cerrahi"
+  ],
+  "definition": "Medical treatment by cutting open the body.",
+  "example": "The doctor said she needs surgery on her knee."
+ },
+ "take to": {
+  "ipa": "/teɪk tuː/",
+  "reading": "teyk tu",
+  "meanings": [
+   "başlamak",
+   "sevmeye başlamak",
+   "alışmak"
+  ],
+  "definition": "To begin to like or do something.",
+  "example": "You will take to this new hobby quickly."
+ },
+ "take place of": {
+  "ipa": "/teɪk pleɪs ɒv/",
+  "reading": "teyk pleys ov",
+  "meanings": [
+   "yerini almak",
+   "yerine geçmek"
+  ],
+  "definition": "To replace someone or something.",
+  "example": "New machines will take place of old ones."
+ },
+ "thanks to": {
+  "ipa": "/θæŋks tuː/",
+  "reading": "tenks tu",
+  "meanings": [
+   "sayesinde",
+   "yüzünden"
+  ],
+  "definition": "Because of someone or something.",
+  "example": "We finished early thanks to your help."
+ },
+ "time travel": {
+  "ipa": "/taɪm ˈtrævl/",
+  "reading": "taym trævıl",
+  "meanings": [
+   "zamanda yolculuk"
+  ],
+  "definition": "Moving between different points in time.",
+  "example": "Many science fiction movies feature time travel."
+ },
+ "tyre": {
+  "ipa": "/ˈtaɪə/",
+  "reading": "tayır",
+  "meanings": [
+   "lastik",
+   "tekerlek lastiği"
+  ],
+  "definition": "A rubber ring around a wheel.",
+  "example": "The bicycle needs a new front tyre."
+ },
+ "weapon": {
+  "ipa": "/ˈwepən/",
+  "reading": "vepın",
+  "meanings": [
+   "silah"
+  ],
+  "definition": "An object used to fight or hurt someone.",
+  "example": "A sword is an ancient weapon."
+ },
+ "wheelchair": {
+  "ipa": "/ˈwiːltʃeə/",
+  "reading": "viilçeır",
+  "meanings": [
+   "tekerlekli sandalye"
+  ],
+  "definition": "A chair with wheels for disabled people.",
+  "example": "He uses a wheelchair to move around."
+ },
+ "windshield wiper": {
+  "ipa": "/ˈwɪndʃiːld ˈwaɪpə/",
+  "reading": "vindşiild vaypır",
+  "meanings": [
+   "cam sileceği"
+  ],
+  "definition": "A blade that clears rain from a car window.",
+  "example": "I need to replace the broken windshield wiper."
  }
 }
