@@ -674,7 +674,7 @@ export const READY_MADE_CARD_WORDS = [
   'protect', 'provide', 'quill pen', 'receive', 'remote control',
   'science', 'scientist', 'search', 'soil', 'telescope',
   'test tube', 'theory of relativity', 'transportation', 'treat', 'treatment',
-  'vaccination', 'warn', 'washing machine', 'water screw', 'wearable heart chip',
+  'vaccination', 'warn', 'washing machine', 'water screw', 
   'weather changes', 'wheel', 'x-ray', 'alien', 'allow',
   'axis', 'branch', 'calculator', 'condition', 'continent',
   'die', 'do an experiment', 'education', 'explosion', 'facts',
