@@ -115,7 +115,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
     <button
       type="button"
       onClick={onClick}
-      aria-label="AI Coach"
+      aria-label="AI LEX"
       aria-current={active ? 'page' : undefined}
       className="relative flex flex-col items-center justify-center cursor-pointer -mt-9 outline-none focus-visible:ring-2 focus-visible:ring-[#e3b553]/60 rounded-full"
     >
@@ -156,7 +156,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
         className="mt-1 text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
         style={{ color: active ? GOLD_BRIGHT : 'rgba(255,255,255,0.45)' }}
       >
-        AI Coach
+        AI LEX
       </span>
     </button>
   );
