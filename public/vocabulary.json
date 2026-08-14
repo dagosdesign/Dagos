@@ -2452,6 +2452,7 @@
   "ipa": "/ˈpeɪʃnt/",
   "reading": "peyşınt",
   "meanings": [
+   "hasta",
    "sabırlı"
   ],
   "definition": "Able to wait without becoming angry.",
@@ -12769,8 +12770,7 @@
   "ipa": "/faʊnd/",
   "reading": "faund",
   "meanings": [
-   "kurmak",
-   "temelini atmak"
+   "buldu"
   ],
   "definition": "To establish an organization or institution.",
   "example": "They plan to found a new charity next year."
@@ -32859,17 +32859,6 @@
   "definition": "The sun and all the planets around it.",
   "example": "There are eight planets in our solar system."
  },
- "struggles": {
-  "ipa": "/ˈstrʌɡ.lz/",
-  "reading": "stragılz",
-  "meanings": [
-   "mücadeleler",
-   "çabalar",
-   "zorluklar"
-  ],
-  "definition": "Difficult efforts to achieve or overcome something.",
-  "example": "Her struggles with math ended when she got a tutor."
- },
  "succeed": {
   "ipa": "/səkˈsiːd/",
   "reading": "saksîd",
@@ -33261,9 +33250,8 @@
   "ipa": "/fiːld/",
   "reading": "fiild",
   "meanings": [
-   "alan",
    "tarla",
-   "saha"
+   "alan"
   ],
   "definition": "An area of open land or a subject.",
   "example": "They are playing football in the field."
@@ -33617,5 +33605,15 @@
   ],
   "definition": "A blade that clears rain from a car window.",
   "example": "I need to replace the broken windshield wiper."
+ },
+ "struggle": {
+  "ipa": "/ˈstrʌɡ.lz/",
+  "reading": "stragılz",
+  "meanings": [
+   "mücadele etmek",
+   "çabalamak"
+  ],
+  "definition": "Difficult efforts to achieve or overcome something.",
+  "example": "Her struggles with math ended when she got a tutor."
  }
 }

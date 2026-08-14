@@ -38,6 +38,8 @@ const STYLE_SCENE_WINS =
   'IMPORTANT: the scene description above is authoritative and overrides all default composition rules — ' +
   'if it asks for people, clearly show those people; if it asks for written words, render exactly those words legibly. ' +
   'Unless the scene explicitly says otherwise, any people shown are male and modestly dressed. ' +
+  'TEXT RULE: prefer completely text-free images. Never render long sentences or paragraphs anywhere in the image; ' +
+  'only when the scene explicitly requires text, render at most one or two short words. ' +
   STYLE_BASE;
 
 const SCENES = {

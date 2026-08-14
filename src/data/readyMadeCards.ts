@@ -683,7 +683,7 @@ export const READY_MADE_CARD_WORDS = [
   'knowledge', 'manuscript', 'masterpieces', 'merchant', 'milestone',
   'mind', 'moveable', 'operate', 'orbit', 'pass away',
   'planet', 'reach', 'realize', 'record', 'replaced',
-  'revolutionary', 'safety', 'servant', 'solar system', 'struggles',
+  'revolutionary', 'safety', 'servant', 'solar system', 'struggle',
   'succeed', 'telegram', 'typewriter', 'unfortunately', 'universe',
   'wave', 'widen', 'writer', 'scientific achievement', 'vaccine',
   'stage', 'dna structure', 'genetics', 'spacecraft', 'print',
