@@ -1563,8 +1563,7 @@
   "ipa": "/ˌɪndɪˈvɪdʒuəl/",
   "reading": "individuıl",
   "meanings": [
-   "bireysel",
-   "tek"
+   "birey"
   ],
   "definition": "Considered separately; single.",
   "example": "Each individual student gets a book."
@@ -2583,9 +2582,7 @@
   "ipa": "/ˈprez.ənt/",
   "reading": "prezınt",
   "meanings": [
-   "mevcut",
-   "şimdiki",
-   "hazır"
+   "hediye"
   ],
   "definition": "Existing or occurring now.",
   "example": "The whole team is present at the meeting."
@@ -2636,8 +2633,8 @@
   "ipa": "/ˈpʌb.lɪk/",
   "reading": "pablik",
   "meanings": [
-   "halka açık",
-   "kamusal"
+   "halk",
+   "kamu"
   ],
   "definition": "Relating to or available to people in general.",
   "example": "You can find information in the public library."
@@ -2787,9 +2784,7 @@
   "ipa": "/raɪt/",
   "reading": "rayt",
   "meanings": [
-   "doğru",
-   "haklı",
-   "sağ"
+   "hak"
   ],
   "definition": "Correct or morally good.",
   "example": "I hope we made the right decision today."
@@ -3160,9 +3155,7 @@
   "ipa": "/ˈtəʊtl/",
   "reading": "toutıl",
   "meanings": [
-   "toplam",
-   "tam",
-   "bütün"
+   "toplam"
   ],
   "definition": "Complete or absolute.",
   "example": "The project was a total failure."
@@ -5445,9 +5438,7 @@
   "ipa": "/ˈrelətɪv/",
   "reading": "relıtiv",
   "meanings": [
-   "göreceli",
-   "göreli",
-   "nispi"
+   "akraba"
   ],
   "definition": "True only when compared to something else.",
   "example": "The relative merits of the two plans are clear."
@@ -6094,9 +6085,8 @@
   "ipa": "/əbˈdʒek.tɪv/",
   "reading": "objektiv",
   "meanings": [
-   "tarafsız",
-   "nesnel",
-   "objektif"
+   "amaç",
+   "hedef"
   ],
   "definition": "Based on facts, not personal feelings.",
   "example": "A judge must give an objective decision."
@@ -8860,8 +8850,7 @@
   "ipa": "/ədˈvɑːns/",
   "reading": "edvans",
   "meanings": [
-   "ilerlemek",
-   "gelişmek"
+   "ilerleme"
   ],
   "definition": "Move forward in a purposeful way.",
   "example": "Technology continues to advance rapidly."
@@ -9121,8 +9110,8 @@
   "ipa": "/əˈprəʊtʃ/",
   "reading": "eprouç",
   "meanings": [
-   "yaklaşmak",
-   "yanaşmak"
+   "yaklaşım",
+   "yöntem"
   ],
   "definition": "Come near or nearer to someone.",
   "example": "Winter is coming as we approach December."
@@ -9356,8 +9345,8 @@
   "ipa": "/əˈtempt/",
   "reading": "etempt",
   "meanings": [
-   "teşebbüs etmek",
-   "denemek"
+   "girişim",
+   "deneme"
   ],
   "definition": "To make an effort to achieve something.",
   "example": "Do not attempt to fix this alone."
@@ -9427,8 +9416,7 @@
   "ipa": "/ˈbæləns/",
   "reading": "balens",
   "meanings": [
-   "denge",
-   "dengede tutmak"
+   "denge"
   ],
   "definition": "Keep an upright position without falling over",
   "example": "It is hard to balance on one foot."
@@ -9906,7 +9894,7 @@
   "ipa": "/kɔːz/",
   "reading": "kooz",
   "meanings": [
-   "sebep olmak",
+   "sebep",
    "neden"
   ],
   "definition": "To make something happen.",
@@ -9947,7 +9935,7 @@
   "ipa": "/ˈtʃælɪndʒ/",
   "reading": "çelınc",
   "meanings": [
-   "meydan okumak",
+   "zorluk",
    "meydan okuma"
   ],
   "definition": "To invite someone to compete or fight.",
@@ -10070,8 +10058,7 @@
   "ipa": "/kleɪm/",
   "reading": "kleym",
   "meanings": [
-   "iddia etmek",
-   "talep etmek"
+   "iddia"
   ],
   "definition": "To state that something is true",
   "example": "You can claim your prize at the desk."
@@ -10164,8 +10151,7 @@
   "ipa": "/kəˈlæps/",
   "reading": "kıleps",
   "meanings": [
-   "çökmek",
-   "yıkılmak"
+   "çökme"
   ],
   "definition": "To fall down suddenly",
   "example": "The old building might collapse at any moment."
@@ -10798,9 +10784,8 @@
   "ipa": "/ˈkaʊntə/",
   "reading": "kayntır",
   "meanings": [
-   "tezgah",
-   "sayaç",
-   "karşı koymak"
+   "tezgâh",
+   "banko"
   ],
   "definition": "A long flat surface over which goods are sold.",
   "example": "He left his keys on the kitchen counter this morning."
@@ -10964,8 +10949,8 @@
   "ipa": "/dɪˈbeɪt/",
   "reading": "dibeyt",
   "meanings": [
-   "tartışmak",
-   "müzakere etmek"
+   "münazara",
+   "tartışma"
   ],
   "definition": "To discuss a subject formally.",
   "example": "Politicians will debate the new tax law tomorrow."
@@ -11546,8 +11531,8 @@
   "ipa": "/dɪˈspleɪ/",
   "reading": "displey",
   "meanings": [
-   "sergilemek",
-   "göstermek"
+   "sergi",
+   "teşhir"
   ],
   "definition": "Make something evident or put it in view.",
   "example": "The museum will display ancient Roman art."
@@ -12803,8 +12788,7 @@
   "ipa": "/ˈfʌŋk.ʃən/",
   "reading": "fankşın",
   "meanings": [
-   "işlev görmek",
-   "çalışmak"
+   "işlev"
   ],
   "definition": "To work or operate in a proper way.",
   "example": "The machine cannot function without power."
@@ -13042,8 +13026,7 @@
   "ipa": "/ˈhɑːvɪst/",
   "reading": "harvist",
   "meanings": [
-   "hasat etmek",
-   "ürün toplamak"
+   "hasat"
   ],
   "definition": "To gather crops from the fields.",
   "example": "Farmers harvest the wheat in late summer."
@@ -13298,8 +13281,7 @@
   "ipa": "/lɪft/",
   "reading": "lift",
   "meanings": [
-   "kaldırmak",
-   "asansör"
+   "kaldırma"
   ],
   "definition": "To raise to a higher position.",
   "example": "He can lift heavy boxes with ease."
@@ -13308,8 +13290,6 @@
   "ipa": "/lɪŋk/",
   "reading": "link",
   "meanings": [
-   "bağlamak",
-   "ilişkilendirmek",
    "bağlantı"
   ],
   "definition": "A connection between two or more things.",
@@ -13449,7 +13429,8 @@
   "ipa": "/ˈmeʒ.ər/",
   "reading": "mejır",
   "meanings": [
-   "ölçmek"
+   "ölçme",
+   "önlem"
   ],
   "definition": "To ascertain the size, amount, or degree of something.",
   "example": "Please measure the length of this table."
@@ -13590,8 +13571,8 @@
   "ipa": "/nɪˈɡlekt/",
   "reading": "niglekt",
   "meanings": [
-   "ihmal etmek",
-   "önemsememek"
+   "ihmal",
+   "ilgisizlik"
   ],
   "definition": "To fail to care for someone or something properly.",
   "example": "Do not neglect your daily homework tasks."
@@ -14252,8 +14233,7 @@
   "ipa": "/prəˈɡres/",
   "reading": "prıgres",
   "meanings": [
-   "gelişmek",
-   "ilerlemek"
+   "ilerleme"
   ],
   "definition": "To move forward or develop",
   "example": "We hope to progress with the project."
@@ -14282,8 +14262,7 @@
   "ipa": "/ˈprɒm.ɪs/",
   "reading": "promis",
   "meanings": [
-   "söz vermek",
-   "vaat etmek"
+   "söz"
   ],
   "definition": "To say you will definitely do something",
   "example": "I promise to help you tomorrow."
@@ -14401,7 +14380,6 @@
   "ipa": "/ˈpɜː.tʃəs/",
   "reading": "pööçıs",
   "meanings": [
-   "satın almak",
    "satın alma"
   ],
   "definition": "To buy something",
@@ -14929,9 +14907,8 @@
   "ipa": "/rɪˈkwest/",
   "reading": "rikwest",
   "meanings": [
-   "rica etmek",
-   "talep etmek",
-   "istemek"
+   "rica",
+   "talep"
   ],
   "definition": "To ask for something politely",
   "example": "You can request a refund if you are not happy."
@@ -14949,8 +14926,7 @@
   "ipa": "/rɪˈsɜːtʃ/",
   "reading": "risööç",
   "meanings": [
-   "araştırmak",
-   "araştırma yapmak"
+   "araştırma"
   ],
   "definition": "To study a subject in detail",
   "example": "Scientists research new cures for diseases."
@@ -15259,8 +15235,7 @@
   "ipa": "/ruːl/",
   "reading": "rul",
   "meanings": [
-   "kural",
-   "yönetmek"
+   "kural"
   ],
   "definition": "An official instruction that controls how people behave.",
   "example": "You must follow every rule in this school."
@@ -15390,9 +15365,7 @@
   "ipa": "/sens/",
   "reading": "sens",
   "meanings": [
-   "hissetmek",
-   "duyu",
-   "anlam"
+   "duyu"
   ],
   "definition": "A faculty by which the body perceives things.",
   "example": "Humans have five basic senses."
@@ -15813,9 +15786,7 @@
   "ipa": "/straɪk/",
   "reading": "strayk",
   "meanings": [
-   "vurmak",
-   "grev yapmak",
-   "çarpmak"
+   "grev"
   ],
   "definition": "To hit something with force.",
   "example": "Lightning can strike the same place twice.",
@@ -15938,9 +15909,8 @@
   "ipa": "/səˈveɪ/",
   "reading": "sırvey",
   "meanings": [
-   "incelemek",
-   "anket yapmak",
-   "araştırmak"
+   "anket",
+   "araştırma"
   ],
   "definition": "To examine or look at something carefully.",
   "example": "We need to survey the area before building."
@@ -16768,7 +16738,8 @@
   "ipa": "/kɒst/",
   "reading": "kost",
   "meanings": [
-   "değer biçmek"
+   "maliyet",
+   "ücret"
   ],
   "definition": "To have a specific price.",
   "example": "These shoes cost too much money.",
@@ -16912,9 +16883,8 @@
   "ipa": "/faɪt/",
   "reading": "fayt",
   "meanings": [
-   "dövüşmek",
-   "savaşmak",
-   "mücadele etmek"
+   "kavga",
+   "mücadele"
   ],
   "definition": "To take part in a physical struggle or battle.",
   "example": "Soldiers must fight for their country.",
@@ -18332,7 +18302,8 @@
   "ipa": "/ˌkɒmbɪˈneɪʃən/",
   "reading": "kombineyşın",
   "meanings": [
-   "birleşim"
+   "birleşim",
+   "kombinasyon"
   ],
   "definition": "Joining two or more things together.",
   "example": "This soup is a delicious combination of vegetables."
@@ -18360,7 +18331,6 @@
   "ipa": "/ˈkɒnsept/",
   "reading": "konsept",
   "meanings": [
-   "konsept",
    "kavram"
   ],
   "definition": "An abstract idea or a plan.",
@@ -18617,7 +18587,8 @@
   "ipa": "/ˈdjuːti/",
   "reading": "dyuti",
   "meanings": [
-   "görev"
+   "görev",
+   "sorumluluk"
   ],
   "definition": "A moral or legal obligation.",
   "example": "It is our duty to protect nature."
@@ -18864,7 +18835,8 @@
   "ipa": "/ˌdʒɛnəˈreɪʃən/",
   "reading": "cenereyşın",
   "meanings": [
-   "nesil"
+   "nesil",
+   "kuşak"
   ],
   "definition": "People born and living around the same time.",
   "example": "Each generation has different ideas."
@@ -19461,8 +19433,8 @@
   "ipa": "/mætʃ/",
   "reading": "maç",
   "meanings": [
-   "maç",
-   "eşleştirmek"
+   "eşleşme",
+   "eş"
   ],
   "definition": "A sports competition or a pair of things.",
   "example": "We watched a great football match last night."
@@ -19641,7 +19613,7 @@
   "ipa": "/ˈɔːdə/",
   "reading": "ordır",
   "meanings": [
-   "sipariş vermek"
+   "sipariş"
   ],
   "definition": "To request food or goods to be supplied.",
   "example": "We are ready to order our food now."
@@ -19715,6 +19687,7 @@
   "ipa": "/pɑːt/",
   "reading": "pat",
   "meanings": [
+   "parça",
    "bölüm"
   ],
   "definition": "A piece or section of something.",
@@ -19769,8 +19742,7 @@
   "ipa": "/ˌpɜːsəˈnæləti/",
   "reading": "pörsınaliti",
   "meanings": [
-   "kişilik",
-   "karakter"
+   "kişilik"
   ],
   "definition": "The combination of characteristics forming a person's character.",
   "example": "He has a very cheerful personality."
@@ -19909,7 +19881,8 @@
   "ipa": "/rɪˈmeɪn/",
   "reading": "rimeyn",
   "meanings": [
-   "kalmak"
+   "kalan",
+   "geriye kalan"
   ],
   "definition": "Continue to exist or stay in the same place.",
   "example": "Please remain in your seats."
@@ -20497,7 +20470,6 @@
   "ipa": "/taɪm/",
   "reading": "taym",
   "meanings": [
-   "saat",
    "zaman"
   ],
   "definition": "The indefinite continued progress of existence.",
@@ -20878,7 +20850,8 @@
   "ipa": "/ʃeə(r) ˈsiːkrət/",
   "reading": "şeer siikrit",
   "meanings": [
-   "paylaşmak"
+   "pay",
+   "paylaşım"
   ],
   "definition": "To tell private information to someone else.",
   "example": "Do not share a secret with him."
@@ -21887,7 +21860,8 @@
   "ipa": "/ˈplɛʒə/",
   "reading": "plejır",
   "meanings": [
-   "zevk"
+   "zevk",
+   "keyif"
   ],
   "definition": "A feeling of happy satisfaction.",
   "example": "It was a pleasure to meet you."
@@ -22797,8 +22771,8 @@
   "ipa": "/hiːt/",
   "reading": "hiyt",
   "meanings": [
-   "sıcaklık",
-   "ısı"
+   "ısı",
+   "sıcaklık"
   ],
   "definition": "To make something warm or hot.",
   "example": "Heat the soup in a small saucepan."
@@ -24189,8 +24163,7 @@
   "ipa": "/ɪnˈɡriːdiənt/",
   "reading": "ingridiyent",
   "meanings": [
-   "malzeme",
-   "içerik"
+   "malzeme"
   ],
   "definition": "A food item used in a recipe.",
   "example": "Flour is a key ingredient in bread."
@@ -24523,8 +24496,7 @@
   "ipa": "/ˌæp.lɪˈkeɪ.ʃən/",
   "reading": "eplikeyşın",
   "meanings": [
-   "başvuru",
-   "uygulama"
+   "başvuru"
   ],
   "definition": "An official request for something like a job.",
   "example": "You must submit your application by Friday."
@@ -24620,8 +24592,8 @@
   "ipa": "/ˌkɒnvəˈseɪʃn/",
   "reading": "konvırseyşın",
   "meanings": [
-   "sohbet",
-   "konuşma"
+   "konuşma",
+   "sohbet"
   ],
   "definition": "An informal talk between people.",
   "example": "We had a long conversation about our future plans."
@@ -24669,8 +24641,8 @@
   "ipa": "/ɪkˈstenʃn/",
   "reading": "ikstenşın",
   "meanings": [
-   "dahili hat",
-   "uzatma"
+   "uzatma",
+   "genişletme"
   ],
   "definition": "An extra telephone line connected to a main line.",
   "example": "Please call me back on extension four."
@@ -24835,8 +24807,7 @@
   "ipa": "/ˈpɜːpəs/",
   "reading": "pööpıs",
   "meanings": [
-   "amaç",
-   "gaye"
+   "amaç"
   ],
   "definition": "The reason for doing something.",
   "example": "What is the main purpose of this meeting?"
@@ -24906,8 +24877,7 @@
   "ipa": "/rɪˈwɔːd/",
   "reading": "rivood",
   "meanings": [
-   "ödül",
-   "ödüllendirmek"
+   "ödül"
   ],
   "definition": "Something given in return for good work.",
   "example": "They will reward the honest finder of the wallet."
@@ -25012,8 +24982,7 @@
   "reading": "ıreyncmınt",
   "meanings": [
    "düzenleme",
-   "anlaşma",
-   "plan"
+   "düzen"
   ],
   "definition": "An agreement or plan made for the future",
   "example": "They made a special arrangement to share the costs."
@@ -25041,9 +25010,7 @@
   "ipa": "/tʃeɪndʒ/",
   "reading": "ceync",
   "meanings": [
-   "değiştirmek",
-   "değişmek",
-   "bozuk para"
+   "değişim"
   ],
   "definition": "To make or become different",
   "example": "You cannot change the past so focus on today."
@@ -25061,9 +25028,7 @@
   "ipa": "/dɪˈvaɪs/",
   "reading": "divays",
   "meanings": [
-   "cihaz",
-   "alet",
-   "mekanizma"
+   "cihaz"
   ],
   "definition": "An object or tool made for a specific purpose",
   "example": "This small device can measure your heart rate."
@@ -25072,7 +25037,6 @@
   "ipa": "/dɪˈskʌvəri/",
   "reading": "diskavıri",
   "meanings": [
-   "buluş",
    "keşif"
   ],
   "definition": "The act of finding something for the first time",
@@ -25152,8 +25116,7 @@
   "ipa": "/ˌɪnfəˈmeɪʃn/",
   "reading": "infımeyşın",
   "meanings": [
-   "bilgi",
-   "danışma"
+   "bilgi"
   ],
   "definition": "Facts provided or learned about something.",
   "example": "Please give me more information about the course."
@@ -25162,7 +25125,6 @@
   "ipa": "/ɪnˈvenʃn/",
   "reading": "invenşın",
   "meanings": [
-   "buluş",
    "icat"
   ],
   "definition": "A unique or new device or process.",
@@ -25279,8 +25241,8 @@
   "ipa": "/rɪˈspɒns/",
   "reading": "rispons",
   "meanings": [
-   "cevap",
-   "yanıt"
+   "yanıt",
+   "tepki"
   ],
   "definition": "A verbal or written answer.",
   "example": "We are waiting for a response to our letter."
@@ -25369,7 +25331,8 @@
   "ipa": "/ˈwʌndə/",
   "reading": "vandır",
   "meanings": [
-   "merak etmek"
+   "merak",
+   "hayret"
   ],
   "definition": "To want to know something",
   "example": "I wonder if it will rain today."
@@ -25570,7 +25533,6 @@
   "ipa": "/dɪˈvel.əp.mənt/",
   "reading": "'divelıpmınt'",
   "meanings": [
-   "gelişme",
    "gelişim"
   ],
   "definition": "The process of growing or changing positively.",
@@ -25778,8 +25740,7 @@
   "ipa": "/ˌɪntərˈækʃn/",
   "reading": "intırekşın",
   "meanings": [
-   "etkileşim",
-   "iletişim"
+   "etkileşim"
   ],
   "definition": "An occasion where people communicate or work together.",
   "example": "Social interaction is important for young children."
@@ -26274,8 +26235,7 @@
   "ipa": "/wɔː(r)/",
   "reading": "voo",
   "meanings": [
-   "savaş",
-   "harp"
+   "savaş"
   ],
   "definition": "Armed conflict between countries or groups.",
   "example": "Nobody wants to start a nuclear war."
@@ -26368,9 +26328,7 @@
   "ipa": "/ədˈvɑːntɪdʒ/",
   "reading": "ıdvaantıc",
   "meanings": [
-   "avantaj",
-   "yarar",
-   "üstünlük"
+   "avantaj"
   ],
   "definition": "A condition that puts one in a favorable position.",
   "example": "A good education gives you a huge advantage."
@@ -26389,9 +26347,8 @@
   "ipa": "/əˈtætʃmənt/",
   "reading": "ıteçmınt",
   "meanings": [
-   "ek",
    "bağlılık",
-   "ilişik"
+   "bağ"
   ],
   "definition": "An extra part or document added to something.",
   "example": "Please open the email attachment to view the report."
@@ -26481,8 +26438,7 @@
   "ipa": "/ˌedʒuˈkeɪʃn/",
   "reading": "ecıkeyşın",
   "meanings": [
-   "eğitim",
-   "öğrenim"
+   "eğitim"
   ],
   "definition": "The process of teaching and learning.",
   "example": "Every child has a right to education."
@@ -26913,8 +26869,7 @@
   "ipa": "/ˈækses/",
   "reading": "'ekses'",
   "meanings": [
-   "erişim",
-   "erişmek"
+   "erişim"
   ],
   "definition": "The right or ability to enter somewhere",
   "example": "Only students have access to this library."
@@ -26923,9 +26878,8 @@
   "ipa": "/eɪm/",
   "reading": "eym",
   "meanings": [
-   "hedeflemek",
-   "amaçlamak",
-   "amaç"
+   "amaç",
+   "hedef"
   ],
   "definition": "To plan or hope to achieve something.",
   "example": "We aim to improve our services this year."
@@ -26997,8 +26951,7 @@
   "ipa": "/kəmˈpleɪnt/",
   "reading": "kımpleynt",
   "meanings": [
-   "şikayet",
-   "yakınma"
+   "şikâyet"
   ],
   "definition": "A statement that something is wrong or unsatisfactory.",
   "example": "I want to file a formal complaint about this."
@@ -27045,8 +26998,7 @@
   "ipa": "/ˌdɪs.ədˈvɑːn.tɪdʒ/",
   "reading": "disıdvaantıc",
   "meanings": [
-   "dezavantaj",
-   "zarar"
+   "dezavantaj"
   ],
   "definition": "A condition or situation that causes problems.",
   "example": "The main disadvantage of this system is its high cost."
@@ -27187,7 +27139,7 @@
   "ipa": "/ɪnˈkriːs/",
   "reading": "inkriis",
   "meanings": [
-   "artmak"
+   "artış"
   ],
   "definition": "To become larger in size, amount, or degree.",
   "example": "We need to increase our daily sales."
@@ -27336,8 +27288,7 @@
   "ipa": "/praɪs/",
   "reading": "prays",
   "meanings": [
-   "fiyat",
-   "bedel"
+   "fiyat"
   ],
   "definition": "The amount of money needed to buy something.",
   "example": "The price of this book is very reasonable."
@@ -27365,7 +27316,6 @@
   "reading": "rekıgnişın",
   "meanings": [
    "tanıma",
-   "takdir",
    "fark etme"
   ],
   "definition": "Agreement that something is true or legal.",
@@ -27638,8 +27588,7 @@
   "ipa": "/eɪdʒ/",
   "reading": "eyc",
   "meanings": [
-   "yaş",
-   "çağ"
+   "yaş"
   ],
   "definition": "The length of time a person has existed.",
   "example": "Please state your name and age on this form."
@@ -27845,8 +27794,7 @@
   "ipa": "/ˈkʌntri/",
   "reading": "kantri",
   "meanings": [
-   "ülke",
-   "kırsal"
+   "ülke"
   ],
   "definition": "A nation with its own government.",
   "example": "Spain is a beautiful country."
@@ -27900,8 +27848,7 @@
   "ipa": "/ˌdestɪˈneɪʃn/",
   "reading": "destineyşın",
   "meanings": [
-   "varış yeri",
-   "hedef"
+   "varış noktası"
   ],
   "definition": "The place to which someone is going.",
   "example": "Paris is our final holiday destination."
@@ -28140,9 +28087,7 @@
   "ipa": "/ɡəʊl/",
   "reading": "goul",
   "meanings": [
-   "hedef",
-   "amaç",
-   "gol"
+   "hedef"
   ],
   "definition": "Something you want to achieve",
   "example": "My main goal is to learn English."
@@ -28534,8 +28479,7 @@
   "ipa": "/niːd/",
   "reading": "niid",
   "meanings": [
-   "ihtiyaç duymak",
-   "gerekmek"
+   "ihtiyaç"
   ],
   "definition": "To require something because it is essential.",
   "example": "I need some water right now."
@@ -28893,8 +28837,7 @@
   "ipa": "/Șstrʃktʃə/",
   "reading": "strakçır",
   "meanings": [
-   "yapı",
-   "bina"
+   "yapı"
   ],
   "definition": "Something that has been built",
   "example": "The ancient structure was made of large stones."
@@ -28903,9 +28846,7 @@
   "ipa": "/səˈpɔːt/",
   "reading": "sıpoot",
   "meanings": [
-   "desteklemek",
-   "destek",
-   "yardım etmek"
+   "destek"
   ],
   "definition": "To help or encourage someone or something.",
   "example": "I will support you in your new project."
@@ -29077,7 +29018,7 @@
   "reading": "vyuu",
   "meanings": [
    "manzara",
-   "görünüş"
+   "görünüm"
   ],
   "definition": "What you can see from a particular place",
   "example": "The hotel room has a beautiful view of the sea."
@@ -29598,8 +29539,7 @@
   "ipa": "/ˈsen.tʃər.i/",
   "reading": "sençuri",
   "meanings": [
-   "yüzyıl",
-   "asır"
+   "yüzyıl"
   ],
   "definition": "A period of one hundred years",
   "example": "The museum has art from the last century."
@@ -29647,8 +29587,7 @@
   "ipa": "/kənˈstrʌk.ʃən/",
   "reading": "kınstrakşın",
   "meanings": [
-   "inşaat",
-   "yapım"
+   "inşaat"
   ],
   "definition": "The work of building something large",
   "example": "The construction of the new bridge will start tomorrow."
@@ -29666,8 +29605,7 @@
   "ipa": "/kəʊˌɒpəˈreɪʃn/",
   "reading": "koopeyreyşın",
   "meanings": [
-   "işbirliği",
-   "yardımlaşma"
+   "iş birliği"
   ],
   "definition": "Working together to achieve a goal",
   "example": "We need close cooperation to finish this project."
@@ -29733,8 +29671,7 @@
   "ipa": "/dɪˌtɜːmɪˈneɪʃn/",
   "reading": "ditörmineyşın",
   "meanings": [
-   "kararlılık",
-   "azim"
+   "kararlılık"
   ],
   "definition": "Firmness of purpose to achieve something",
   "example": "Her determination helped her win the race."
@@ -30273,8 +30210,7 @@
   "ipa": "/ˈpɒd.ʌkt/",
   "reading": "prodakt",
   "meanings": [
-   "ürün",
-   "mahsul"
+   "ürün"
   ],
   "definition": "Something that is made to be sold",
   "example": "This new product is designed to save energy."
@@ -30293,9 +30229,8 @@
   "ipa": "/ˈpɒv.ɪns/",
   "reading": "provins",
   "meanings": [
-   "vilayet",
    "il",
-   "eyalet"
+   "vilayet"
   ],
   "definition": "An administrative division of a country",
   "example": "He lives in a quiet province far from the capital."
@@ -30341,8 +30276,6 @@
   "ipa": "/sɜːtʃ/",
   "reading": "sööç",
   "meanings": [
-   "aramak",
-   "araştırmak",
    "arama"
   ],
   "definition": "To look carefully to find something.",
@@ -30488,9 +30421,7 @@
   "ipa": "/treɪd/",
   "reading": "treyd",
   "meanings": [
-   "ticaret",
-   "ticaret yapmak",
-   "takas etmek"
+   "ticaret"
   ],
   "definition": "The activity of buying and selling goods and services.",
   "example": "The two countries agree to trade."
@@ -30508,9 +30439,7 @@
   "ipa": "/trəˈdɪʃn/",
   "reading": "trıdişın",
   "meanings": [
-   "gelenek",
-   "görenek",
-   "adet"
+   "gelenek"
   ],
   "definition": "A belief or custom passed down through generations.",
   "example": "It is a tradition to wear white on this day."
@@ -30929,8 +30858,7 @@
   "ipa": "/tɑːsk/",
   "reading": "taask",
   "meanings": [
-   "görev",
-   "iş"
+   "görev"
   ],
   "definition": "A piece of work to be done.",
   "example": "Please complete this task before you leave today."
@@ -31115,7 +31043,6 @@
   "ipa": "/help/",
   "reading": "help",
   "meanings": [
-   "yardım etmek",
    "yardım"
   ],
   "definition": "To make it easier for someone to do something.",
@@ -31989,8 +31916,7 @@
   "ipa": "/əˈtʃiːvmənt/",
   "reading": "eçiivmınt",
   "meanings": [
-   "başarı",
-   "kazanım"
+   "başarı"
   ],
   "definition": "Something done successfully, especially through effort or skill.",
   "example": "Winning the prize was a great achievement."
@@ -32104,8 +32030,7 @@
   "ipa": "/dɪˈziːz/",
   "reading": "'diziiz'",
   "meanings": [
-   "hastalık",
-   "rahatsızlık"
+   "hastalık"
   ],
   "definition": "An illness affecting humans, animals, or plants",
   "example": "Eating healthy food helps prevent heart disease."
@@ -32132,8 +32057,7 @@
   "ipa": "/ɪkˈsper.ɪ.mənt/",
   "reading": "'eksperimınt'",
   "meanings": [
-   "deney",
-   "deney yapmak"
+   "deney"
   ],
   "definition": "A test done to learn or prove something",
   "example": "They conducted a scientific experiment in the lab."
@@ -32207,8 +32131,7 @@
   "ipa": "/ˈɪlnəs/",
   "reading": "'ilnıs'",
   "meanings": [
-   "hastalık",
-   "rahatsızlık"
+   "hastalık"
   ],
   "definition": "A state of being poor in health",
   "example": "She missed school due to a sudden illness."
@@ -32368,8 +32291,7 @@
   "ipa": "/ˈsaɪəns/",
   "reading": "sayıns",
   "meanings": [
-   "bilim",
-   "ilim"
+   "bilim"
   ],
   "definition": "Knowledge about the physical world based on facts",
   "example": "I always loved science when I was at school."
@@ -32426,8 +32348,7 @@
   "ipa": "/ˈtriːt.mənt/",
   "reading": "triitmınt",
   "meanings": [
-   "tedavi",
-   "davranış"
+   "tedavi"
   ],
   "definition": "Medical care given to a patient.",
   "example": "This new treatment is very effective for the illness."
@@ -32534,8 +32455,7 @@
   "reading": "kındışın",
   "meanings": [
    "durum",
-   "koşul",
-   "şart"
+   "koşul"
   ],
   "definition": "The state of something or someone",
   "example": "The car is still in good condition after many years."
@@ -32650,8 +32570,7 @@
   "ipa": "/ˈmæn.jə.skrɪpt/",
   "reading": "menyuskript",
   "meanings": [
-   "el yazması",
-   "taslak"
+   "el yazması"
   ],
   "definition": "The original copy of a book.",
   "example": "He sent the final manuscript to the publisher."
@@ -32761,8 +32680,7 @@
   "ipa": "/ˈrek.ɔːd/",
   "reading": "rekord",
   "meanings": [
-   "kayıt",
-   "rekor"
+   "kayıt"
   ],
   "definition": "Information written down or stored for the future.",
   "example": "Keep a written record of all your expenses."
@@ -32961,8 +32879,7 @@
   "ipa": "/ˈevɪdəns/",
   "reading": "evidıns",
   "meanings": [
-   "kanıt",
-   "delil"
+   "kanıt"
   ],
   "definition": "Facts or information showing whether something is true.",
   "example": "There is no evidence to support your claim."
@@ -33089,8 +33006,7 @@
   "ipa": "/ˌkɒn.trɪˈbjuː.ʃən/",
   "reading": "kontribyûşın",
   "meanings": [
-   "katkı",
-   "bağış"
+   "katkı"
   ],
   "definition": "Something given or done to help",
   "example": "She made a significant contribution to the project."
@@ -33263,7 +33179,6 @@
   "ipa": "/ˈleɪə/",
   "reading": "leyır",
   "meanings": [
-   "tabaka",
    "katman"
   ],
   "definition": "A sheet or quantity of material covering a surface.",
@@ -33464,8 +33379,7 @@
   "ipa": "/ˈsɜːdʒəri/",
   "reading": "sörcıri",
   "meanings": [
-   "ameliyat",
-   "cerrahi"
+   "ameliyat"
   ],
   "definition": "Medical treatment by cutting open the body.",
   "example": "The doctor said she needs surgery on her knee."
@@ -33551,8 +33465,8 @@
   "ipa": "/ˈstrʌɡ.lz/",
   "reading": "stragılz",
   "meanings": [
-   "mücadele etmek",
-   "çabalamak"
+   "mücadele",
+   "çabalama"
   ],
   "definition": "Difficult efforts to achieve or overcome something.",
   "example": "Her struggles with math ended when she got a tutor."
@@ -33907,7 +33821,7 @@
   "reading": "şortic",
   "meanings": [
    "kıtlık",
-   "yetersizlik"
+   "eksiklik"
   ],
   "definition": "A state where something needed is not available.",
   "example": "There is a water shortage in the village."
@@ -34164,8 +34078,8 @@
   "ipa": "/ɪˈrʌp.ʃən/",
   "reading": "irapşın",
   "meanings": [
-   "patlama",
-   "püskürme"
+   "püskürme",
+   "patlama"
   ],
   "definition": "A sudden explosion of a volcano.",
   "example": "The sudden volcanic eruption caused panic in the city."
@@ -34183,7 +34097,8 @@
   "ipa": "/fɔːs/",
   "reading": "foos",
   "meanings": [
-   "zorlamak"
+   "kuvvet",
+   "güç"
   ],
   "definition": "Physical power or strength.",
   "example": "The strong wind can force the doors open."
@@ -34201,7 +34116,7 @@
   "ipa": "/hɑːm/",
   "reading": "haam",
   "meanings": [
-   "zarar vermek"
+   "zarar"
   ],
   "definition": "To cause hurt or damage.",
   "example": "Pollution can harm wild animals in the forest."
@@ -34264,6 +34179,7 @@
   "ipa": "/stɑːˈveɪʃən/",
   "reading": "starveyşın",
   "meanings": [
+   "açlık",
    "şiddetli açlık"
   ],
   "definition": "Suffering or death caused by lack of food.",
@@ -34518,7 +34434,7 @@
   "reading": "viktim",
   "meanings": [
    "mağdur",
-   "afetzede"
+   "kurban"
   ],
   "definition": "A person harmed or killed as a result of crime.",
   "example": "She was the victim of a clever internet scam."
@@ -34559,5 +34475,3685 @@
   ],
   "definition": "To put young trees into the ground to grow",
   "example": "Volunteers gather every spring to plant trees in the park."
+ },
+ "affection": {
+  "ipa": "/əˈfek.ʃən/",
+  "reading": "ıfekşın",
+  "meanings": [
+   "sevgi",
+   "şefkat"
+  ],
+  "definition": "A feeling of liking or loving someone.",
+  "example": "She felt deep affection for her old friend."
+ },
+ "ability": {
+  "ipa": "/əˈbɪl.ə.ti/",
+  "reading": "ebiliti",
+  "meanings": [
+   "yetenek",
+   "beceri"
+  ],
+  "definition": "The physical or mental power to do something.",
+  "example": "He has the ability to speak three languages."
+ },
+ "addition": {
+  "ipa": "/əˈdɪʃ.ən/",
+  "reading": "ıdişın",
+  "meanings": [
+   "ekleme",
+   "ilave"
+  ],
+  "definition": "The act of adding something to something else.",
+  "example": "The new room is a great addition to our house."
+ },
+ "admission": {
+  "ipa": "/ədˈmɪʃ.ən/",
+  "reading": "ıdmişın",
+  "meanings": [
+   "giriş",
+   "kabul"
+  ],
+  "definition": "Permission to enter a place or join an group.",
+  "example": "The museum charges a high admission fee."
+ },
+ "advertising": {
+  "ipa": "/ˈæd.və.taɪ.zɪŋ/",
+  "reading": "edvıtayzing",
+  "meanings": [
+   "reklamcılık",
+   "reklam"
+  ],
+  "definition": "The business of trying to persuade people to buy products.",
+  "example": "Good advertising can increase sales significantly."
+ },
+ "affair": {
+  "ipa": "/əˈfeər/",
+  "reading": "ıfeer",
+  "meanings": [
+   "mesele",
+   "olay"
+  ],
+  "definition": "A situation or subject that is being dealt with.",
+  "example": "The business meeting was a quiet affair."
+ },
+ "agency": {
+  "ipa": "/ˈeɪ.dʒən.si/",
+  "reading": "eycınsi",
+  "meanings": [
+   "ajans",
+   "kurum"
+  ],
+  "definition": "A business that provides a particular service.",
+  "example": "They booked their holiday through a local travel agency."
+ },
+ "agent": {
+  "ipa": "/ˈeɪ.dʒənt/",
+  "reading": "eycınt",
+  "meanings": [
+   "temsilci",
+   "acente görevlisi"
+  ],
+  "definition": "A person who acts for another person.",
+  "example": "You should speak to our real estate agent."
+ },
+ "allowance": {
+  "ipa": "/əˈlaʊ.əns/",
+  "reading": "ılauns",
+  "meanings": [
+   "harçlık",
+   "ödenek"
+  ],
+  "definition": "An amount of money given regularly.",
+  "example": "My parents give me a weekly allowance for school."
+ },
+ "ambition": {
+  "ipa": "/æmˈbɪʃ.ən/",
+  "reading": "embişın",
+  "meanings": [
+   "hırs",
+   "büyük hedef"
+  ],
+  "definition": "A strong desire to achieve something.",
+  "example": "Her lifelong ambition is to become a famous doctor."
+ },
+ "animal": {
+  "ipa": "/ˈæn.ɪ.məl/",
+  "reading": "enimıl",
+  "meanings": [
+   "hayvan"
+  ],
+  "definition": "A living creature that is not a plant",
+  "example": "A dog is a very friendly animal."
+ },
+ "apology": {
+  "ipa": "/əˈpɒl.ə.dʒi/",
+  "reading": "ıpolıci",
+  "meanings": [
+   "özür"
+  ],
+  "definition": "An expression of regret for a mistake",
+  "example": "Please accept my sincere apology."
+ },
+ "appearance": {
+  "ipa": "/əˈpɪə.rəns/",
+  "reading": "ıpiyırıns",
+  "meanings": [
+   "görünüş",
+   "dış görünüş"
+  ],
+  "definition": "The way that someone or something looks",
+  "example": "He cared a lot about his physical appearance."
+ },
+ "approval": {
+  "ipa": "/əˈpruː.vəl/",
+  "reading": "ıpruuvıl",
+  "meanings": [
+   "onay"
+  ],
+  "definition": "The feeling of praising or agreeing with something",
+  "example": "The project received official approval from the boss."
+ },
+ "area": {
+  "ipa": "/ˈeə.ri.ə/",
+  "reading": "eeryı",
+  "meanings": [
+   "alan",
+   "bölge"
+  ],
+  "definition": "A particular part of a place or piece of land",
+  "example": "There is a play area for children nearby."
+ },
+ "arrival": {
+  "ipa": "/əˈraɪ.vəl/",
+  "reading": "ırayvıl",
+  "meanings": [
+   "varış",
+   "geliş"
+  ],
+  "definition": "The act of coming to a place",
+  "example": "The arrival of the train was delayed."
+ },
+ "art": {
+  "ipa": "/ɑːt/",
+  "reading": "aat",
+  "meanings": [
+   "sanat"
+  ],
+  "definition": "The creation of beautiful or expressive things",
+  "example": "She loves to study modern art."
+ },
+ "article": {
+  "ipa": "/ˈɑː.tɪ.kəl/",
+  "reading": "aatıkıl",
+  "meanings": [
+   "makale"
+  ],
+  "definition": "A piece of writing in a newspaper or magazine",
+  "example": "I read an interesting article about technology."
+ },
+ "aspect": {
+  "ipa": "/ˈæs.pekt/",
+  "reading": "espekt",
+  "meanings": [
+   "yön",
+   "özellik",
+   "boyut"
+  ],
+  "definition": "One part of a situation, problem, or subject",
+  "example": "Safety is the most important aspect of this job."
+ },
+ "assessment": {
+  "ipa": "/əˈses.mənt/",
+  "reading": "ısesmınt",
+  "meanings": [
+   "değerlendirme"
+  ],
+  "definition": "An opinion or judgment about something",
+  "example": "The teacher made an assessment of the students."
+ },
+ "assistance": {
+  "ipa": "/əˈsɪs.təns/",
+  "reading": "ısistıns",
+  "meanings": [
+   "yardım"
+  ],
+  "definition": "Help or support given to someone",
+  "example": "Do you need any assistance with those bags?"
+ },
+ "association": {
+  "ipa": "/əˌsəʊ.siˈeɪ.ʃən/",
+  "reading": "ısousieyşın",
+  "meanings": [
+   "dernek",
+   "birlik"
+  ],
+  "definition": "An organization of people with a common purpose",
+  "example": "He is a member of the football association."
+ },
+ "assumption": {
+  "ipa": "/əˈsʌmp.ʃən/",
+  "reading": "ısampşın",
+  "meanings": [
+   "varsayım"
+  ],
+  "definition": "Something you accept as true without proof",
+  "example": "Your plan is based on a false assumption."
+ },
+ "attention": {
+  "ipa": "/əˈten.ʃən/",
+  "reading": "ıtenşın",
+  "meanings": [
+   "dikkat"
+  ],
+  "definition": "Notice, thought, or consideration",
+  "example": "Please pay close attention to the instructions."
+ },
+ "audience": {
+  "ipa": "/ˈɔː.di.əns/",
+  "reading": "oodiyıns",
+  "meanings": [
+   "seyirci",
+   "izleyici"
+  ],
+  "definition": "The group of people watching or listening to something",
+  "example": "The audience clapped loudly at the end."
+ },
+ "awareness": {
+  "ipa": "/əˈweənəs/",
+  "reading": "əveyrnəs",
+  "meanings": [
+   "farkındalık"
+  ],
+  "definition": "Knowledge or perception of a situation.",
+  "example": "Public awareness of climate change is growing."
+ },
+ "behaviour": {
+  "ipa": "/bɪˈheɪvjə/",
+  "reading": "biheyvyö",
+  "meanings": [
+   "davranış"
+  ],
+  "definition": "The way in which one acts.",
+  "example": "The teacher praised the good behaviour of the class."
+ },
+ "belief": {
+  "ipa": "/bɪˈliːf/",
+  "reading": "biliif",
+  "meanings": [
+   "inanç",
+   "inanış"
+  ],
+  "definition": "An acceptance that something is true.",
+  "example": "She has a strong belief in human kindness."
+ },
+ "body": {
+  "ipa": "/ˈbɒdi/",
+  "reading": "bodi",
+  "meanings": [
+   "vücut"
+  ],
+  "definition": "The physical structure of a person or animal.",
+  "example": "Exercise keeps the human body strong."
+ },
+ "business": {
+  "ipa": "/ˈbɪznəs/",
+  "reading": "biznəs",
+  "meanings": [
+   "işletme",
+   "iş"
+  ],
+  "definition": "A commercial activity or organization.",
+  "example": "He wants to start his own software business."
+ },
+ "candidate": {
+  "ipa": "/ˈkændɪdət/",
+  "reading": "kændidət",
+  "meanings": [
+   "aday"
+  ],
+  "definition": "A person applying for a job or election.",
+  "example": "There are three strong candidates for the position."
+ },
+ "care": {
+  "ipa": "/keə/",
+  "reading": "keyö",
+  "meanings": [
+   "bakım",
+   "özen"
+  ],
+  "definition": "The provision of what is needed for health.",
+  "example": "Patients require good medical care in hospitals."
+ },
+ "case": {
+  "ipa": "/keɪs/",
+  "reading": "keys",
+  "meanings": [
+   "vaka",
+   "durum"
+  ],
+  "definition": "An instance of a particular situation.",
+  "example": "In this case, we must act immediately."
+ },
+ "characteristic": {
+  "ipa": "/ˌkærəktəˈrɪstɪk/",
+  "reading": "kərəktəristik",
+  "meanings": [
+   "özellik"
+  ],
+  "definition": "A feature or quality belonging typically to a person or thing.",
+  "example": "Patience is a key characteristic of a good teacher."
+ },
+ "circumstance": {
+  "ipa": "/ˈsɜːkəmstəns/",
+  "reading": "sörkəmstəns",
+  "meanings": [
+   "koşul",
+   "durum"
+  ],
+  "definition": "A fact or condition connected to an event.",
+  "example": "We can adapt to almost any circumstance."
+ },
+ "citizen": {
+  "ipa": "/ˈsɪtɪzn/",
+  "reading": "sitizn",
+  "meanings": [
+   "vatandaş"
+  ],
+  "definition": "A legally recognized subject or national of a state.",
+  "example": "Every citizen has the right to vote."
+ },
+ "city": {
+  "ipa": "/ˈsɪti/",
+  "reading": "siti",
+  "meanings": [
+   "şehir"
+  ],
+  "definition": "A large town.",
+  "example": "London is a very busy and historic city."
+ },
+ "clue": {
+  "ipa": "/kluː/",
+  "reading": "klu",
+  "meanings": [
+   "ipucu"
+  ],
+  "definition": "A piece of information that helps solve a puzzle.",
+  "example": "The police found a clue at the scene."
+ },
+ "colleague": {
+  "ipa": "/ˈkɒliːɡ/",
+  "reading": "kolig",
+  "meanings": [
+   "iş arkadaşı"
+  ],
+  "definition": "A person you work with.",
+  "example": "I like to work with my colleague on this."
+ },
+ "collection": {
+  "ipa": "/kəˈlekʃn/",
+  "reading": "kılekşın",
+  "meanings": [
+   "koleksiyon"
+  ],
+  "definition": "A group of accumulated objects.",
+  "example": "She has a beautiful stamp collection."
+ },
+ "commission": {
+  "ipa": "/kəˈmɪʃn/",
+  "reading": "komişın",
+  "meanings": [
+   "komisyon",
+   "kurul"
+  ],
+  "definition": "A group of people given an official task.",
+  "example": "The government created a special commission to investigate."
+ },
+ "commitment": {
+  "ipa": "/kəˈmɪtmənt/",
+  "reading": "komitmınt",
+  "meanings": [
+   "bağlılık",
+   "taahhüt"
+  ],
+  "definition": "A promise or decision to do something.",
+  "example": "Marriage is a lifetime commitment."
+ },
+ "comparison": {
+  "ipa": "/kəmˈpærɪsn/",
+  "reading": "kımpærısın",
+  "meanings": [
+   "karşılaştırma"
+  ],
+  "definition": "An act of examining similarities or differences.",
+  "example": "They made a direct comparison between the two cars."
+ },
+ "component": {
+  "ipa": "/kəmˈpəʊnənt/",
+  "reading": "kımpoonınt",
+  "meanings": [
+   "bileşen",
+   "parça"
+  ],
+  "definition": "One of the parts of something.",
+  "example": "Trust is a key component of friendship."
+ },
+ "concentration": {
+  "ipa": "/ˌkɒnsnˈtreɪʃn/",
+  "reading": "konsıntreyşın",
+  "meanings": [
+   "konsantrasyon",
+   "odaklanma"
+  ],
+  "definition": "The ability to direct all attention to something.",
+  "example": "Chess requires deep concentration for hours."
+ },
+ "concern": {
+  "ipa": "/kənˈsɜːn/",
+  "reading": "kınsörn",
+  "meanings": [
+   "endişe",
+   "kaygı"
+  ],
+  "definition": "A feeling of worry or care about something.",
+  "example": "Her main concern is the health of her children."
+ },
+ "conclusion": {
+  "ipa": "/kənˈkluːʒn/",
+  "reading": "kınkluujın",
+  "meanings": [
+   "sonuç",
+   "çıkarım"
+  ],
+  "definition": "An opinion or decision reached after thinking.",
+  "example": "We came to a logical conclusion after the discussion."
+ },
+ "confidence": {
+  "ipa": "/ˈkɒnfɪdəns/",
+  "reading": "konfidıns",
+  "meanings": [
+   "özgüven"
+  ],
+  "definition": "A feeling of trust or belief in oneself.",
+  "example": "He speaks with high confidence on stage."
+ },
+ "conflict": {
+  "ipa": "/ˈkɒnflɪkt/",
+  "reading": "konflikt",
+  "meanings": [
+   "çatışma",
+   "anlaşmazlık"
+  ],
+  "definition": "A serious disagreement or argument.",
+  "example": "There was a major conflict between the two countries."
+ },
+ "consequence": {
+  "ipa": "/ˈkɒnsɪkwəns/",
+  "reading": "konsikvıns",
+  "meanings": [
+   "sonuç",
+   "netice"
+  ],
+  "definition": "A result or effect of an action.",
+  "example": "Every action has a natural consequence."
+ },
+ "consideration": {
+  "ipa": "/kənˌsɪdəˈreɪʃn/",
+  "reading": "kınsidıreyşın",
+  "meanings": [
+   "değerlendirme",
+   "dikkate alma"
+  ],
+  "definition": "Careful thought before making a decision.",
+  "example": "This proposal deserves careful consideration by the board."
+ },
+ "consumption": {
+  "ipa": "/kənˈsʌmp.ʃən/",
+  "reading": "kınsampşın",
+  "meanings": [
+   "tüketim"
+  ],
+  "definition": "The act of using energy, food, or resources.",
+  "example": "We need to reduce our energy consumption."
+ },
+ "contest": {
+  "ipa": "/ˈkɒn.test/",
+  "reading": "kantest",
+  "meanings": [
+   "yarışma"
+  ],
+  "definition": "A competition to decide the winner.",
+  "example": "She decided to enter the beauty contest."
+ },
+ "conviction": {
+  "ipa": "/kənˈvɪk.ʃən/",
+  "reading": "kınvikşın",
+  "meanings": [
+   "güçlü inanç",
+   "kanaat"
+  ],
+  "definition": "A strong belief or opinion.",
+  "example": "She spoke with deep conviction about her ideas."
+ },
+ "course": {
+  "ipa": "/kɔːs/",
+  "reading": "koos",
+  "meanings": [
+   "kurs",
+   "ders"
+  ],
+  "definition": "A series of lessons in a particular subject.",
+  "example": "He decided to take an English course."
+ },
+ "creature": {
+  "ipa": "/ˈkriː.tʃər/",
+  "reading": "kriiçır",
+  "meanings": [
+   "canlı",
+   "yaratık"
+  ],
+  "definition": "Any living thing that can move.",
+  "example": "The forest is home to a strange creature."
+ },
+ "crew": {
+  "ipa": "/kruː/",
+  "reading": "krû",
+  "meanings": [
+   "ekip",
+   "mürettebat"
+  ],
+  "definition": "A group of people who work together on a ship.",
+  "example": "The entire crew worked hard to save the ship."
+ },
+ "custom": {
+  "ipa": "/ˈkʌs.təm/",
+  "reading": "kastım",
+  "meanings": [
+   "gelenek",
+   "görenek"
+  ],
+  "definition": "An accepted way of behaving or doing things.",
+  "example": "It is a local custom to welcome guests with tea."
+ },
+ "decision": {
+  "ipa": "/dɪˈsɪʒ.ən/",
+  "reading": "disijın",
+  "meanings": [
+   "karar"
+  ],
+  "definition": "A choice made after thinking.",
+  "example": "It is time to make a final decision."
+ },
+ "degree": {
+  "ipa": "/dɪˈɡriː/",
+  "reading": "digrii",
+  "meanings": [
+   "derece",
+   "diploma"
+  ],
+  "definition": "A unit of measurement for temperature or angles.",
+  "example": "The temperature dropped by one degree."
+ },
+ "illusion": {
+  "ipa": "/ɪˈluː.ʒən/",
+  "reading": "ilûjın",
+  "meanings": [
+   "yanılsama"
+  ],
+  "definition": "Something that seems real but is not.",
+  "example": "The mirror creates an illusion of space."
+ },
+ "demonstration": {
+  "ipa": "/ˌdem.ənˈstreɪ.ʃən/",
+  "reading": "demınstreyşın",
+  "meanings": [
+   "gösteri",
+   "gösterme"
+  ],
+  "definition": "An act of showing how something works.",
+  "example": "She gave a quick demonstration of the new software."
+ },
+ "department": {
+  "ipa": "/dɪˈpɑːtmənt/",
+  "reading": "dipatmınt",
+  "meanings": [
+   "bölüm",
+   "departman"
+  ],
+  "definition": "A specialized division of a large organization.",
+  "example": "She works in the marketing department of our company."
+ },
+ "departure": {
+  "ipa": "/dɪˈpɑːtʃə/",
+  "reading": "dipaçı",
+  "meanings": [
+   "ayrılış",
+   "hareket"
+  ],
+  "definition": "The act of leaving a place.",
+  "example": "Please check the scheduled departure time on your ticket."
+ },
+ "depression": {
+  "ipa": "/dɪˈpreʃn/",
+  "reading": "dipreşın",
+  "meanings": [
+   "ekonomik çöküş",
+   "bunalım"
+  ],
+  "definition": "A mental state of extreme sadness.",
+  "example": "Exercise can help reduce symptoms of depression."
+ },
+ "description": {
+  "ipa": "/dɪˈskrɪpʃn/",
+  "reading": "diskripşın",
+  "meanings": [
+   "betimleme",
+   "açıklama"
+  ],
+  "definition": "A statement that details what something is like.",
+  "example": "Please write a brief description of your experience."
+ },
+ "difference": {
+  "ipa": "/ˈdɪfrəns/",
+  "reading": "difrıns",
+  "meanings": [
+   "fark"
+  ],
+  "definition": "A way in which things are different.",
+  "example": "Is there any major difference between these models?"
+ },
+ "discussion": {
+  "ipa": "/dɪˈskʌʃn/",
+  "reading": "diskaşın",
+  "meanings": [
+   "tartışma",
+   "görüşme"
+  ],
+  "definition": "A conversation about a specific topic.",
+  "example": "We had a long discussion about the project."
+ },
+ "distinction": {
+  "ipa": "/dɪˈstɪŋkʃn/",
+  "reading": "distinkşın",
+  "meanings": [
+   "ayrım",
+   "farklılık"
+  ],
+  "definition": "A clear difference or contrast.",
+  "example": "We must make a distinction between these two concepts."
+ },
+ "distribution": {
+  "ipa": "/ˌdɪstrɪˈbjuːʃn/",
+  "reading": "distribyuşın",
+  "meanings": [
+   "dağıtım"
+  ],
+  "definition": "The action of sharing things out.",
+  "example": "The charity organizes the distribution of food."
+ },
+ "edition": {
+  "ipa": "/ɪˈdɪʃn/",
+  "reading": "idişın",
+  "meanings": [
+   "baskı",
+   "edisyon"
+  ],
+  "definition": "A particular version of a book or magazine.",
+  "example": "I bought the latest edition of the dictionary."
+ },
+ "efficiency": {
+  "ipa": "/ɪˈfɪʃnsi/",
+  "reading": "ifişınsi",
+  "meanings": [
+   "verimlilik"
+  ],
+  "definition": "The quality of doing something well without wasting time.",
+  "example": "We need to improve the efficiency of our system."
+ },
+ "effort": {
+  "ipa": "/ˈefət/",
+  "reading": "efıt",
+  "meanings": [
+   "çaba"
+  ],
+  "definition": "Physical or mental energy needed to do something.",
+  "example": "It takes a lot of effort to learn Chinese."
+ },
+ "emotion": {
+  "ipa": "/ɪˈməʊʃn/",
+  "reading": "imouşın",
+  "meanings": [
+   "duygu"
+  ],
+  "definition": "A strong feeling such as love, anger, or fear.",
+  "example": "He tried to hide his emotion during the meeting."
+ },
+ "emphasis": {
+  "ipa": "/ˈemfəsɪs/",
+  "reading": "emfasis",
+  "meanings": [
+   "vurgu"
+  ],
+  "definition": "Special importance or value given to something.",
+  "example": "The school puts great emphasis on practical skills."
+ },
+ "employment": {
+  "ipa": "/ɪmˈplɔɪmənt/",
+  "reading": "imploymınt",
+  "meanings": [
+   "istihdam",
+   "çalışma"
+  ],
+  "definition": "The state of having paid work.",
+  "example": "It is hard to find full-time employment here."
+ },
+ "enthusiasm": {
+  "ipa": "/ɪnˈθjuːziæzəm/",
+  "reading": "intüzyezım",
+  "meanings": [
+   "coşku",
+   "heves"
+  ],
+  "definition": "A feeling of energetic interest and eagerness.",
+  "example": "She showed great enthusiasm for her new project."
+ },
+ "entrance": {
+  "ipa": "/ˈentrəns/",
+  "reading": "entrıns",
+  "meanings": [
+   "giriş"
+  ],
+  "definition": "An opening or door that allows access to a place.",
+  "example": "Please wait for me near the main entrance."
+ },
+ "escape": {
+  "ipa": "/ɪˈskeɪp/",
+  "reading": "iskeyp",
+  "meanings": [
+   "kaçış"
+  ],
+  "definition": "To get free from danger or confinement.",
+  "example": "The prisoners planned to escape tonight."
+ },
+ "establishment": {
+  "ipa": "/ɪˈstæblɪʃmənt/",
+  "reading": "isteblişmınt",
+  "meanings": [
+   "kuruluş",
+   "kurum"
+  ],
+  "definition": "An organization, large business, or public institution.",
+  "example": "The hotel is a well-known establishment in the city."
+ },
+ "examination": {
+  "ipa": "/ɪɡˌzæmɪˈneɪʃn/",
+  "reading": "igzemineyşın",
+  "meanings": [
+   "sınav",
+   "inceleme"
+  ],
+  "definition": "A formal test of knowledge or ability.",
+  "example": "Students must pass this examination to graduate."
+ },
+ "exception": {
+  "ipa": "/ɪkˈsepʃn/",
+  "reading": "iksepşın",
+  "meanings": [
+   "istisna"
+  ],
+  "definition": "A person or thing excluded from a general statement.",
+  "example": "We usually close early, but we can make an exception."
+ },
+ "existence": {
+  "ipa": "/ɪɡˈzɪstəns/",
+  "reading": "igzistıns",
+  "meanings": [
+   "varoluş",
+   "varlık"
+  ],
+  "definition": "The state of living or being real.",
+  "example": "Scientists believe in the existence of other planets."
+ },
+ "expansion": {
+  "ipa": "/ɪkˈspænʃn/",
+  "reading": "ikspenşın",
+  "meanings": [
+   "genişleme",
+   "büyüme"
+  ],
+  "definition": "The action of becoming larger or more extensive.",
+  "example": "The company plans a rapid expansion into foreign markets."
+ },
+ "expectation": {
+  "ipa": "/ˌekspekˈteɪʃn/",
+  "reading": "ekspekteyşın",
+  "meanings": [
+   "beklenti"
+  ],
+  "definition": "A strong belief that something will happen.",
+  "example": "The student worked hard to meet every expectation of his teacher."
+ },
+ "expenditure": {
+  "ipa": "/ɪkˈspendɪtʃə(r)/",
+  "reading": "ikspendıçır",
+  "meanings": [
+   "harcama"
+  ],
+  "definition": "An amount of money spent.",
+  "example": "The government plans to reduce public expenditure this year."
+ },
+ "expense": {
+  "ipa": "/ɪkˈspens/",
+  "reading": "ikspens",
+  "meanings": [
+   "masraf",
+   "gider"
+  ],
+  "definition": "The cost required for something.",
+  "example": "He saved money to cover the expense of his trip."
+ },
+ "explanation": {
+  "ipa": "/ˌekspləˈneɪʃn/",
+  "reading": "eksplıneyşın",
+  "meanings": [
+   "açıklama"
+  ],
+  "definition": "A statement that makes something clear.",
+  "example": "He gave a clear explanation of the rules."
+ },
+ "expression": {
+  "ipa": "/ɪkˈspreʃn/",
+  "reading": "ikspreşın",
+  "meanings": [
+   "ifade",
+   "yüz ifadesi"
+  ],
+  "definition": "The action of making thoughts or feelings known.",
+  "example": "Her face showed an expression of pure joy."
+ },
+ "extent": {
+  "ipa": "/ɪkˈstent/",
+  "reading": "ikstent",
+  "meanings": [
+   "boyut",
+   "kapsam"
+  ],
+  "definition": "The size or scale of something.",
+  "example": "We do not know the full extent of the damage."
+ },
+ "fact": {
+  "ipa": "/fækt/",
+  "reading": "fekt",
+  "meanings": [
+   "gerçek"
+  ],
+  "definition": "A thing that is known to be true.",
+  "example": "It is a well-known fact that water boils at 100 degrees."
+ },
+ "failure": {
+  "ipa": "/ˈfeɪljə(r)/",
+  "reading": "feylyır",
+  "meanings": [
+   "başarısızlık"
+  ],
+  "definition": "Lack of success in doing something.",
+  "example": "Their plan ended in failure because of poor planning."
+ },
+ "feature": {
+  "ipa": "/ˈfiːtʃə(r)/",
+  "reading": "fiiçır",
+  "meanings": [
+   "özellik"
+  ],
+  "definition": "An important part or characteristic of something.",
+  "example": "The main feature of the phone is its high-quality camera."
+ },
+ "gap": {
+  "ipa": "/ɡæp/",
+  "reading": "gep",
+  "meanings": [
+   "boşluk",
+   "aralık"
+  ],
+  "definition": "A space or opening in something.",
+  "example": "There is a small gap between the wall and the desk."
+ },
+ "growth": {
+  "ipa": "/ɡrəʊθ/",
+  "reading": "grouf",
+  "meanings": [
+   "büyüme"
+  ],
+  "definition": "An increase in size, amount, or importance.",
+  "example": "The company plans to invest in rapid growth."
+ },
+ "guide": {
+  "ipa": "/ɡaɪd/",
+  "reading": "gayd",
+  "meanings": [
+   "rehber"
+  ],
+  "definition": "A person or book that shows the way.",
+  "example": "The local guide showed us around the old town."
+ },
+ "idea": {
+  "ipa": "/aɪˈdɪə/",
+  "reading": "aydiyı",
+  "meanings": [
+   "fikir"
+  ],
+  "definition": "A suggestion or plan for doing something.",
+  "example": "That is a brilliant idea for the party."
+ },
+ "identity": {
+  "ipa": "/aɪˈden.tə.ti/",
+  "reading": "aydentiti",
+  "meanings": [
+   "kimlik"
+  ],
+  "definition": "Who or what a person or thing is.",
+  "example": "They struggled to protect their national identity."
+ },
+ "implication": {
+  "ipa": "/ˌɪm.plɪˈkeɪ.ʃən/",
+  "reading": "implikeyşın",
+  "meanings": [
+   "ima",
+   "olası sonuç"
+  ],
+  "definition": "An occasion when you suggest something without saying it.",
+  "example": "I do not like the implication of his words."
+ },
+ "impression": {
+  "ipa": "/ɪmˈpreʃ.ən/",
+  "reading": "impreşın",
+  "meanings": [
+   "izlenim"
+  ],
+  "definition": "An idea or opinion that you form about someone.",
+  "example": "She wanted to make a good impression at work."
+ },
+ "incident": {
+  "ipa": "/ˈɪn.sɪ.dənt/",
+  "reading": "insidınt",
+  "meanings": [
+   "olay",
+   "hadise"
+  ],
+  "definition": "An event, especially one that is unusual or unpleasant.",
+  "example": "The police are investigating the incident."
+ },
+ "indication": {
+  "ipa": "/ˌɪn.dɪˈkeɪ.ʃən/",
+  "reading": "indikeyşın",
+  "meanings": [
+   "belirti",
+   "işaret"
+  ],
+  "definition": "A sign that something exists or is true.",
+  "example": "Dark clouds are a clear indication of rain."
+ },
+ "infant": {
+  "ipa": "/ˈɪnfənt/",
+  "reading": "infınt",
+  "meanings": [
+   "bebek"
+  ],
+  "definition": "A very young child or baby.",
+  "example": "She took care of the infant while its mother rested."
+ },
+ "initiative": {
+  "ipa": "/ɪˈnɪʃətɪv/",
+  "reading": "inişıtiv",
+  "meanings": [
+   "inisiyatif",
+   "girişim"
+  ],
+  "definition": "The ability to assess and initiate things independently.",
+  "example": "Employees are encouraged to show initiative in their work."
+ },
+ "innovation": {
+  "ipa": "/ˌɪnəˈveɪʃn/",
+  "reading": "ınoveyşın",
+  "meanings": [
+   "yenilik"
+  ],
+  "definition": "A new method, idea, or product.",
+  "example": "Technological innovation can improve our daily lives."
+ },
+ "instance": {
+  "ipa": "/ˈɪnstəns/",
+  "reading": "instıns",
+  "meanings": [
+   "örnek",
+   "durum"
+  ],
+  "definition": "An example or single occurrence of something.",
+  "example": "This is a rare instance of cooperation between them."
+ },
+ "insurance": {
+  "ipa": "/ɪnˈʃɔːrəns/",
+  "reading": "inşurıns",
+  "meanings": [
+   "sigorta"
+  ],
+  "definition": "Protection against financial loss or damage.",
+  "example": "You must buy insurance before you drive this car."
+ },
+ "intention": {
+  "ipa": "/ɪnˈtenʃn/",
+  "reading": "intenşın",
+  "meanings": [
+   "niyet"
+  ],
+  "definition": "An aim or plan.",
+  "example": "I have no intention of changing my mind now."
+ },
+ "interest": {
+  "ipa": "/ˈɪntrest/",
+  "reading": "intrıst",
+  "meanings": [
+   "ilgi"
+  ],
+  "definition": "The feeling of wanting to know about something.",
+  "example": "She showed a great interest in learning ancient history."
+ },
+ "interpretation": {
+  "ipa": "/ɪnˌtɜːprɪˈteɪʃn/",
+  "reading": "intörpriteyşın",
+  "meanings": [
+   "yorumlama"
+  ],
+  "definition": "The action of explaining the meaning of something.",
+  "example": "His interpretation of the poem was very unique."
+ },
+ "interval": {
+  "ipa": "/ˈɪntəvl/",
+  "reading": "intıvıl",
+  "meanings": [
+   "ara",
+   "aralık"
+  ],
+  "definition": "An intervening time or space.",
+  "example": "There will be a short interval between the plays."
+ },
+ "intervention": {
+  "ipa": "/ˌɪntəˈvenʃn/",
+  "reading": "intıvenşın",
+  "meanings": [
+   "müdahale"
+  ],
+  "definition": "Action taken to improve a difficult situation.",
+  "example": "Direct government intervention was necessary to save the market."
+ },
+ "investigation": {
+  "ipa": "/ɪnˌvestɪˈɡeɪʃn/",
+  "reading": "investıgeyşın",
+  "meanings": [
+   "soruşturma",
+   "araştırma"
+  ],
+  "definition": "A formal inquiry or systematic study.",
+  "example": "The police launched an investigation into the robbery."
+ },
+ "investment": {
+  "ipa": "/ɪnˈvestmənt/",
+  "reading": "investmınt",
+  "meanings": [
+   "yatırım"
+  ],
+  "definition": "The action of investing money for profit.",
+  "example": "Buying a house is usually a safe investment."
+ },
+ "involvement": {
+  "ipa": "/ɪnˈvɒlvmənt/",
+  "reading": "involvment",
+  "meanings": [
+   "katılım",
+   "dahil olma"
+  ],
+  "definition": "The act of taking part in an activity.",
+  "example": "She denied any involvement in the political scandal."
+ },
+ "issue": {
+  "ipa": "/ˈɪʃuː/",
+  "reading": "işu",
+  "meanings": [
+   "sorun",
+   "mesele"
+  ],
+  "definition": "An important topic or problem for discussion.",
+  "example": "Climate change is a major issue facing the world."
+ },
+ "job": {
+  "ipa": "/dʒɒb/",
+  "reading": "cab",
+  "meanings": [
+   "iş",
+   "meslek"
+  ],
+  "definition": "A paid position of regular employment.",
+  "example": "He is looking for a new job in London."
+ },
+ "judgment": {
+  "ipa": "/ˈdʒʌdʒ.mənt/",
+  "reading": "cacmınt",
+  "meanings": [
+   "yargı",
+   "değerlendirme"
+  ],
+  "definition": "An opinion or decision made after careful thought.",
+  "example": "You must use your own judgment in this situation."
+ },
+ "language": {
+  "ipa": "/ˈlæŋ.ɡwɪdʒ/",
+  "reading": "lengwic",
+  "meanings": [
+   "dil"
+  ],
+  "definition": "A system of communication used by humans.",
+  "example": "It is difficult to learn a new language."
+ },
+ "law": {
+  "ipa": "/lɔː/",
+  "reading": "loo",
+  "meanings": [
+   "yasa",
+   "hukuk"
+  ],
+  "definition": "A rule made by a government.",
+  "example": "You must not break the law."
+ },
+ "level": {
+  "ipa": "/ˈlev.əl/",
+  "reading": "levıl",
+  "meanings": [
+   "seviye"
+  ],
+  "definition": "A height, position, or standard.",
+  "example": "We need to reach a high level of security."
+ },
+ "life": {
+  "ipa": "/laɪf/",
+  "reading": "layf",
+  "meanings": [
+   "yaşam",
+   "hayat"
+  ],
+  "definition": "The condition that distinguishes active organisms from inorganic matter.",
+  "example": "She wants to live a long and happy life."
+ },
+ "maintenance": {
+  "ipa": "/ˈmeɪn.tən.əns/",
+  "reading": "meyntınıns",
+  "meanings": [
+   "bakım"
+  ],
+  "definition": "The work of keeping something in good condition.",
+  "example": "The car requires regular maintenance to run well."
+ },
+ "manner": {
+  "ipa": "/ˈmæn.ər/",
+  "reading": "menır",
+  "meanings": [
+   "biçim",
+   "tarz"
+  ],
+  "definition": "The way in which something is done or happens.",
+  "example": "He answered the question in a polite manner."
+ },
+ "means": {
+  "ipa": "/miːnz/",
+  "reading": "miinz",
+  "meanings": [
+   "araç",
+   "yöntem"
+  ],
+  "definition": "A method or way of doing something.",
+  "example": "Regular exercise is a means to stay healthy."
+ },
+ "measurement": {
+  "ipa": "/ˈmeʒ.ə.mənt/",
+  "reading": "mejırmınt",
+  "meanings": [
+   "ölçüm"
+  ],
+  "definition": "The size, amount, or single unit of measuring.",
+  "example": "Take a careful measurement before you cut the wood."
+ },
+ "method": {
+  "ipa": "/ˈmeθ.əd/",
+  "reading": "metıd",
+  "meanings": [
+   "yöntem"
+  ],
+  "definition": "A systematic way of doing something.",
+  "example": "This is the best method to solve the problem."
+ },
+ "mystery": {
+  "ipa": "/ˈmɪs.tər.i/",
+  "reading": "mistıri",
+  "meanings": [
+   "gizem"
+  ],
+  "definition": "Something that is difficult or impossible to understand.",
+  "example": "The cause of the fire remains a mystery."
+ },
+ "nation": {
+  "ipa": "/ˈneɪ.ʃən/",
+  "reading": "neyşın",
+  "meanings": [
+   "millet",
+   "ulus"
+  ],
+  "definition": "A large body of people united by common descent.",
+  "example": "The president addressed the entire nation on television."
+ },
+ "negotiation": {
+  "ipa": "/nɪˌɡəʊʃiˈeɪʃn/",
+  "reading": "nigouşiyeyşın",
+  "meanings": [
+   "müzakere"
+  ],
+  "definition": "Discussion aimed at reaching an agreement.",
+  "example": "The negotiation lasted for several hours."
+ },
+ "neighbourhood": {
+  "ipa": "/ˈneɪbəhʊd/",
+  "reading": "neybıhud",
+  "meanings": [
+   "mahalle"
+  ],
+  "definition": "A district or area within a town.",
+  "example": "I live in a quiet neighbourhood."
+ },
+ "notice": {
+  "ipa": "/ˈnəʊtɪs/",
+  "reading": "noutis",
+  "meanings": [
+   "fark etme"
+  ],
+  "definition": "To become aware of something.",
+  "example": "Did you notice any change in his behavior?"
+ },
+ "number": {
+  "ipa": "/ˈnʌmbə(r)/",
+  "reading": "nambır",
+  "meanings": [
+   "sayı"
+  ],
+  "definition": "An arithmetical value used for counting.",
+  "example": "Write down your phone number here."
+ },
+ "objection": {
+  "ipa": "/əbˈdʒekʃn/",
+  "reading": "öbcekşın",
+  "meanings": [
+   "itiraz"
+  ],
+  "definition": "An expression or feeling of disapproval.",
+  "example": "She raised an objection to the plan."
+ },
+ "observation": {
+  "ipa": "/ˌɒbzəˈveɪʃn/",
+  "reading": "obzırveyşın",
+  "meanings": [
+   "gözlem"
+  ],
+  "definition": "The action of observing something carefully.",
+  "example": "The patient is under medical observation."
+ },
+ "occasion": {
+  "ipa": "/əˈkeɪʒn/",
+  "reading": "ökeyjın",
+  "meanings": [
+   "özel gün",
+   "vesile"
+  ],
+  "definition": "A particular time or event.",
+  "example": "We met on a few occasions."
+ },
+ "opposition": {
+  "ipa": "/ˌɒpəˈzɪʃn/",
+  "reading": "opozişın",
+  "meanings": [
+   "karşı çıkma",
+   "muhalefet"
+  ],
+  "definition": "Resistance or dissent, expressed in action.",
+  "example": "There is strong opposition to the new law."
+ },
+ "option": {
+  "ipa": "/ˈɒpʃn/",
+  "reading": "opşın",
+  "meanings": [
+   "seçenek"
+  ],
+  "definition": "A thing that is or may be chosen.",
+  "example": "We have no other option left."
+ },
+ "origin": {
+  "ipa": "/ˈɒrɪdʒɪn/",
+  "reading": "oricin",
+  "meanings": [
+   "köken",
+   "başlangıç noktası"
+  ],
+  "definition": "The point or place where something begins.",
+  "example": "The origin of the problem is unknown."
+ },
+ "outcome": {
+  "ipa": "/ˈaʊtkʌm/",
+  "reading": "autkam",
+  "meanings": [
+   "sonuç"
+  ],
+  "definition": "The way a thing turns out; a result.",
+  "example": "We are waiting for the outcome of the election."
+ },
+ "output": {
+  "ipa": "/ˈaʊtpʊt/",
+  "reading": "autput",
+  "meanings": [
+   "çıktı",
+   "üretim miktarı"
+  ],
+  "definition": "The amount of something produced.",
+  "example": "Factory output has increased this month."
+ },
+ "pattern": {
+  "ipa": "/ˈpætən/",
+  "reading": "patın",
+  "meanings": [
+   "desen",
+   "düzen"
+  ],
+  "definition": "A repeated decorative design or regular form.",
+  "example": "She likes dresses with a floral pattern."
+ },
+ "payment": {
+  "ipa": "/ˈpeɪ.mənt/",
+  "reading": "peymınt",
+  "meanings": [
+   "ödeme"
+  ],
+  "definition": "An amount of money paid.",
+  "example": "You must make the payment by tomorrow."
+ },
+ "peace": {
+  "ipa": "/piːs/",
+  "reading": "piis",
+  "meanings": [
+   "barış"
+  ],
+  "definition": "Freedom from war or violence.",
+  "example": "They signed a treaty to bring peace to the region."
+ },
+ "people": {
+  "ipa": "/ˈpiː.pəl/",
+  "reading": "piipıl",
+  "meanings": [
+   "insanlar"
+  ],
+  "definition": "Humans in general or as a group.",
+  "example": "Many people prefer to travel by train."
+ },
+ "performance": {
+  "ipa": "/pəˈfɔː.məns/",
+  "reading": "pırformıns",
+  "meanings": [
+   "performans"
+  ],
+  "definition": "How well a person or machine does something.",
+  "example": "Her performance on stage was absolutely wonderful."
+ },
+ "period": {
+  "ipa": "/ˈpɪə.ri.əd/",
+  "reading": "piriyıd",
+  "meanings": [
+   "dönem",
+   "süre"
+  ],
+  "definition": "A length of time.",
+  "example": "This historic period lasted for fifty years."
+ },
+ "phase": {
+  "ipa": "/feɪz/",
+  "reading": "feyz",
+  "meanings": [
+   "aşama",
+   "evre"
+  ],
+  "definition": "A stage in a process of change or development.",
+  "example": "This phase of the project is almost complete."
+ },
+ "point": {
+  "ipa": "/pɔɪnt/",
+  "reading": "poynt",
+  "meanings": [
+   "nokta"
+  ],
+  "definition": "An idea, opinion, or specific detail.",
+  "example": "He made an interesting point during the meeting."
+ },
+ "policy": {
+  "ipa": "/ˈpɒl.ə.si/",
+  "reading": "polisi",
+  "meanings": [
+   "politika",
+   "kural"
+  ],
+  "definition": "A set of ideas or plans used for decisions.",
+  "example": "The company has a strict safety policy."
+ },
+ "possession": {
+  "ipa": "/pəˈzeʃ.ən/",
+  "reading": "pızeşın",
+  "meanings": [
+   "sahip olunan şey",
+   "mülkiyet"
+  ],
+  "definition": "The state of having or owning something.",
+  "example": "This old watch is my favorite possession."
+ },
+ "problem": {
+  "ipa": "/ˈprɒb.ləm/",
+  "reading": "problım",
+  "meanings": [
+   "sorun"
+  ],
+  "definition": "A matter or situation that needs to be solved.",
+  "example": "We need to find a solution to this problem."
+ },
+ "production": {
+  "ipa": "/prəˈdʌk.ʃən/",
+  "reading": "prıdakşın",
+  "meanings": [
+   "üretim"
+  ],
+  "definition": "The process of making or growing goods.",
+  "example": "Factory production has increased this month."
+ },
+ "promotion": {
+  "ipa": "/prəˈməʊʃn/",
+  "reading": "'prımouşın'",
+  "meanings": [
+   "terfi"
+  ],
+  "definition": "An upgrade to a higher position or rank",
+  "example": "She received a promotion after working hard."
+ },
+ "property": {
+  "ipa": "/ˈprɒpəti/",
+  "reading": "'propıti'",
+  "meanings": [
+   "mülk"
+  ],
+  "definition": "Things that are owned by someone",
+  "example": "This land is private property."
+ },
+ "proportion": {
+  "ipa": "/prəˈpɔːʃn/",
+  "reading": "'pırporşın'",
+  "meanings": [
+   "oran"
+  ],
+  "definition": "A part or share of a whole",
+  "example": "A large proportion of the population voted."
+ },
+ "proposal": {
+  "ipa": "/prəˈpəʊzl/",
+  "reading": "'prıpouzıl'",
+  "meanings": [
+   "teklif",
+   "öneri"
+  ],
+  "definition": "A formal plan or suggestion",
+  "example": "The committee accepted our new proposal."
+ },
+ "protection": {
+  "ipa": "/prəˈtekʃn/",
+  "reading": "'pırtekşın'",
+  "meanings": [
+   "koruma"
+  ],
+  "definition": "The act of keeping something safe",
+  "example": "Wear sunscreen for protection against the sun."
+ },
+ "provision": {
+  "ipa": "/prəˈvɪʒn/",
+  "reading": "'prıvijın'",
+  "meanings": [
+   "tedarik",
+   "erzak"
+  ],
+  "definition": "The act of providing or supplying something",
+  "example": "The provision of food is essential."
+ },
+ "punishment": {
+  "ipa": "/ˈpʌnɪʃmənt/",
+  "reading": "'panişmınt'",
+  "meanings": [
+   "ceza"
+  ],
+  "definition": "A penalty for doing something wrong",
+  "example": "The judge decided on a fair punishment."
+ },
+ "quality": {
+  "ipa": "/ˈkwɒləti/",
+  "reading": "'kwolıti'",
+  "meanings": [
+   "kalite"
+  ],
+  "definition": "How good or bad something is",
+  "example": "They focus on the quality of their service."
+ },
+ "question": {
+  "ipa": "/ˈkwestʃən/",
+  "reading": "'kwesçın'",
+  "meanings": [
+   "soru"
+  ],
+  "definition": "A sentence that asks for information",
+  "example": "Please answer this simple question."
+ },
+ "race": {
+  "ipa": "/reɪs/",
+  "reading": "'reys'",
+  "meanings": [
+   "yarış"
+  ],
+  "definition": "A competition to see who is fastest",
+  "example": "She won the running race."
+ },
+ "rate": {
+  "ipa": "/reɪt/",
+  "reading": "'reyt'",
+  "meanings": [
+   "oran",
+   "hız"
+  ],
+  "definition": "The speed or frequency of something",
+  "example": "The economic growth rate is increasing."
+ },
+ "recommendation": {
+  "ipa": "/ˌrekəmenˈdeɪʃn/",
+  "reading": "'rekımındeyşın'",
+  "meanings": [
+   "tavsiye",
+   "öneri"
+  ],
+  "definition": "A suggestion or advice",
+  "example": "I bought the book on your recommendation."
+ },
+ "recovery": {
+  "ipa": "/rɪˈkʌvəri/",
+  "reading": "'rikavıri'",
+  "meanings": [
+   "iyileşme",
+   "toparlanma"
+  ],
+  "definition": "The process of becoming well again",
+  "example": "We hope for her quick recovery."
+ },
+ "reduction": {
+  "ipa": "/rɪˈdʌkʃn/",
+  "reading": "ridakşın",
+  "meanings": [
+   "azalma"
+  ],
+  "definition": "The act of making something smaller or less.",
+  "example": "There is a significant reduction in the price of fuel."
+ },
+ "reference": {
+  "ipa": "/ˈrefrəns/",
+  "reading": "refırıns",
+  "meanings": [
+   "kaynak",
+   "referans"
+  ],
+  "definition": "A mention of a source of information.",
+  "example": "Please write down a reference for your claims."
+ },
+ "regulation": {
+  "ipa": "/ˌreɡjuˈleɪʃn/",
+  "reading": "regyuleyşın",
+  "meanings": [
+   "yönetmelik",
+   "düzenleme"
+  ],
+  "definition": "An official rule or law.",
+  "example": "We must follow every regulation of the school."
+ },
+ "relief": {
+  "ipa": "/rɪˈliːf/",
+  "reading": "rilif",
+  "meanings": [
+   "rahatlama"
+  ],
+  "definition": "A feeling of comfort when pain or worry stops.",
+  "example": "It was a great relief to hear the good news."
+ },
+ "replacement": {
+  "ipa": "/rɪˈpleɪsmənt/",
+  "reading": "ripleysmınt",
+  "meanings": [
+   "yerine geçme",
+   "değiştirme"
+  ],
+  "definition": "A person or thing that takes the place of another.",
+  "example": "We need a quick replacement for the broken computer."
+ },
+ "representation": {
+  "ipa": "/ˌreprɪzenˈteɪʃn/",
+  "reading": "reprizenteyşın",
+  "meanings": [
+   "temsil"
+  ],
+  "definition": "The act of acting or speaking for someone.",
+  "example": "The workers demanded better representation in the company."
+ },
+ "reputation": {
+  "ipa": "/ˌrepjuˈteɪʃn/",
+  "reading": "repyuteyşın",
+  "meanings": [
+   "itibar",
+   "ün"
+  ],
+  "definition": "The general opinion that people have about someone.",
+  "example": "The restaurant has a good reputation for fresh food."
+ },
+ "requirement": {
+  "ipa": "/rɪˈkwaɪəmənt/",
+  "reading": "rikuayırmınt",
+  "meanings": [
+   "gereklilik",
+   "şart"
+  ],
+  "definition": "Something that is needed or demanded.",
+  "example": "A degree is a basic requirement for this job."
+ },
+ "resignation": {
+  "ipa": "/ˌrezɪɡˈneɪʃn/",
+  "reading": "rezigneyşın",
+  "meanings": [
+   "istifa"
+  ],
+  "definition": "An act of giving up a job or position.",
+  "example": "The manager accepted her sudden resignation yesterday."
+ },
+ "resistance": {
+  "ipa": "/rɪˈzɪstəns/",
+  "reading": "rizistıns",
+  "meanings": [
+   "direnç",
+   "direnme"
+  ],
+  "definition": "The refusal to accept or comply with something.",
+  "example": "They met a lot of resistance from local residents."
+ },
+ "resolution": {
+  "ipa": "/ˌrezəˈluːʃn/",
+  "reading": "rezıluşın",
+  "meanings": [
+   "çözüm"
+  ],
+  "definition": "A firm decision to do or not do something.",
+  "example": "My new year resolution is to exercise every day."
+ },
+ "resource": {
+  "ipa": "/rɪˈsɔːs/",
+  "reading": "risoos",
+  "meanings": [
+   "kaynak"
+  ],
+  "definition": "A useful supply or source of help.",
+  "example": "Water is a vital natural resource for all life."
+ },
+ "restriction": {
+  "ipa": "/rɪˈstrɪkʃn/",
+  "reading": "ristrikşın",
+  "meanings": [
+   "kısıtlama"
+  ],
+  "definition": "A rule that limits what you can do.",
+  "example": "The government imposed a strict restriction on travel."
+ },
+ "retirement": {
+  "ipa": "/rɪˈtaɪəmənt/",
+  "reading": "ritayırmınt",
+  "meanings": [
+   "emeklilik"
+  ],
+  "definition": "The state of stopping work due to age.",
+  "example": "He looks forward to his retirement next year."
+ },
+ "risk": {
+  "ipa": "/rɪsk/",
+  "reading": "risk",
+  "meanings": [
+   "risk"
+  ],
+  "definition": "The possibility of something bad happening.",
+  "example": "There is a high risk of rain today."
+ },
+ "sale": {
+  "ipa": "/seɪl/",
+  "reading": "seyl",
+  "meanings": [
+   "satış",
+   "indirimli satış"
+  ],
+  "definition": "The act of selling something.",
+  "example": "This beautiful house is now up for sale."
+ },
+ "school": {
+  "ipa": "/skuːl/",
+  "reading": "skuul",
+  "meanings": [
+   "okul"
+  ],
+  "definition": "A place where children go to learn.",
+  "example": "Children walk to school every morning."
+ },
+ "section": {
+  "ipa": "/ˈsekʃən/",
+  "reading": "sekşın",
+  "meanings": [
+   "bölüm",
+   "kısım"
+  ],
+  "definition": "One of the parts that something is divided into.",
+  "example": "Please read the first section of the book."
+ },
+ "selection": {
+  "ipa": "/sɪˈlekʃən/",
+  "reading": "silekşın",
+  "meanings": [
+   "seçim",
+   "seçki"
+  ],
+  "definition": "A choice or range of different things.",
+  "example": "The shop has a great selection of shoes."
+ },
+ "service": {
+  "ipa": "/ˈsɜːvɪs/",
+  "reading": "söörvis",
+  "meanings": [
+   "hizmet"
+  ],
+  "definition": "The action of helping or doing work for someone.",
+  "example": "The restaurant is famous for its excellent service."
+ },
+ "settlement": {
+  "ipa": "/ˈsetəlmənt/",
+  "reading": "setılmınt",
+  "meanings": [
+   "yerleşim yeri"
+  ],
+  "definition": "An official agreement or a place where people live.",
+  "example": "They reached a peaceful settlement after the argument."
+ },
+ "signal": {
+  "ipa": "/ˈsɪɡnəl/",
+  "reading": "signıl",
+  "meanings": [
+   "sinyal",
+   "işaret"
+  ],
+  "definition": "An action, sound, or light that sends information.",
+  "example": "A red light is a signal to stop."
+ },
+ "significance": {
+  "ipa": "/sɪɡˈnɪfɪkəns/",
+  "reading": "signifikıns",
+  "meanings": [
+   "önem"
+  ],
+  "definition": "The quality of being important or significant.",
+  "example": "Nobody understood the true significance of his words."
+ },
+ "situation": {
+  "ipa": "/ˌsɪtʃuˈeɪʃn/",
+  "reading": "siçuyeışın",
+  "meanings": [
+   "durum"
+  ],
+  "definition": "The set of conditions in which one finds oneself",
+  "example": "We need to analyze the situation before making a decision."
+ },
+ "size": {
+  "ipa": "/saɪz/",
+  "reading": "sayz",
+  "meanings": [
+   "boyut"
+  ],
+  "definition": "How large or small something is",
+  "example": "This jacket is the perfect size for you."
+ },
+ "society": {
+  "ipa": "/səˈsaɪəti/",
+  "reading": "sısayıti",
+  "meanings": [
+   "toplum"
+  ],
+  "definition": "People living together in a ordered community",
+  "example": "Technology has a huge impact on modern society."
+ },
+ "solution": {
+  "ipa": "/səˈluːʃn/",
+  "reading": "sılûşın",
+  "meanings": [
+   "çözüm"
+  ],
+  "definition": "A means of solving a problem",
+  "example": "We must find a quick solution to this problem."
+ },
+ "species": {
+  "ipa": "/ˈspiːʃiːz/",
+  "reading": "spişiiz",
+  "meanings": [
+   "tür"
+  ],
+  "definition": "A group of living organisms consisting of similar individuals",
+  "example": "Scientists discovered a new species of frog in the forest."
+ },
+ "state": {
+  "ipa": "/steɪt/",
+  "reading": "steyt",
+  "meanings": [
+   "durum",
+   "hâl"
+  ],
+  "definition": "The particular condition that someone or something is in",
+  "example": "The old house was in a terrible state of repair."
+ },
+ "stone": {
+  "ipa": "/stəʊn/",
+  "reading": "stoun",
+  "meanings": [
+   "taş"
+  ],
+  "definition": "Hard solid non-metallic mineral matter",
+  "example": "He threw a small stone into the calm lake."
+ },
+ "subject": {
+  "ipa": "/ˈsʌbdʒɪkt/",
+  "reading": "sabcıkt",
+  "meanings": [
+   "konu",
+   "ders"
+  ],
+  "definition": "A person or thing that is being discussed",
+  "example": "History is my absolute favorite subject in high school."
+ },
+ "substance": {
+  "ipa": "/ˈsʌbstəns/",
+  "reading": "sabstıns",
+  "meanings": [
+   "madde"
+  ],
+  "definition": "A particular kind of matter with uniform properties",
+  "example": "Water is a vital substance for all living things."
+ },
+ "suspicion": {
+  "ipa": "/səˈspɪʃn/",
+  "reading": "sıspışın",
+  "meanings": [
+   "şüphe"
+  ],
+  "definition": "A feeling or belief that something is possible or true",
+  "example": "Her sudden departure aroused a strong suspicion among her colleagues."
+ },
+ "system": {
+  "ipa": "/ˈsɪstəm/",
+  "reading": "sistım",
+  "meanings": [
+   "sistem"
+  ],
+  "definition": "A set of things working together as a whole",
+  "example": "Our company installed a new security system yesterday."
+ },
+ "thought": {
+  "ipa": "/θɔːt/",
+  "reading": "soot",
+  "meanings": [
+   "düşünce"
+  ],
+  "definition": "An idea or opinion produced by thinking.",
+  "example": "The thought of losing his job worried him."
+ },
+ "title": {
+  "ipa": "/ˈtaɪ.təl/",
+  "reading": "taytıl",
+  "meanings": [
+   "başlık",
+   "unvan"
+  ],
+  "definition": "The name of a book, composition, or position.",
+  "example": "What is the title of your new book?"
+ },
+ "treaty": {
+  "ipa": "/ˈtriː.ti/",
+  "reading": "triiti",
+  "meanings": [
+   "antlaşma"
+  ],
+  "definition": "A formally concluded and ratified agreement.",
+  "example": "The two nations signed a peace treaty yesterday."
+ },
+ "trial": {
+  "ipa": "/ˈtraɪ.əl/",
+  "reading": "trayıl",
+  "meanings": [
+   "duruşma",
+   "yargılama"
+  ],
+  "definition": "A formal examination of evidence in court.",
+  "example": "The murder trial lasted for three weeks."
+ },
+ "troop": {
+  "ipa": "/truːp/",
+  "reading": "truup",
+  "meanings": [
+   "askerî birlik"
+  ],
+  "definition": "A group of soldiers.",
+  "example": "The commander ordered the troop to move forward."
+ },
+ "unemployment": {
+  "ipa": "/ˌʌn.ɪmˈplɔɪ.mənt/",
+  "reading": "anımploymınt",
+  "meanings": [
+   "işsizlik"
+  ],
+  "definition": "The state of not having a job.",
+  "example": "The rate of unemployment is rising this year."
+ },
+ "union": {
+  "ipa": "/ˈjuː.ni.ən/",
+  "reading": "yuuniyın",
+  "meanings": [
+   "birlik",
+   "birleşme"
+  ],
+  "definition": "The action of joining together.",
+  "example": "Workers decided to form a strong union."
+ },
+ "variety": {
+  "ipa": "/vəˈraɪ.ə.ti/",
+  "reading": "vırayıti",
+  "meanings": [
+   "çeşitlilik"
+  ],
+  "definition": "The quality of being different or diverse.",
+  "example": "This shop sells a wide variety of toys."
+ },
+ "wage": {
+  "ipa": "/weɪdʒ/",
+  "reading": "weyç",
+  "meanings": [
+   "ücret",
+   "maaş"
+  ],
+  "definition": "A regular payment earned for work.",
+  "example": "The company agreed to raise the minimum wage."
+ },
+ "way": {
+  "ipa": "/weɪ/",
+  "reading": "wey",
+  "meanings": [
+   "yol",
+   "yöntem"
+  ],
+  "definition": "A method, style, or route.",
+  "example": "There is no other way to solve this problem."
+ },
+ "wealth": {
+  "ipa": "/ˈwelθ/",
+  "reading": "velt",
+  "meanings": [
+   "zenginlik",
+   "servet"
+  ],
+  "definition": "A large amount of money or valuable possessions",
+  "example": "He used his wealth to build a new hospital."
+ },
+ "welfare": {
+  "ipa": "/ˈwel.feə(r)/",
+  "reading": "velfeer",
+  "meanings": [
+   "refah",
+   "iyi yaşam"
+  ],
+  "definition": "The health, happiness, and fortunes of a group",
+  "example": "The government must protect the public welfare."
+ },
+ "work": {
+  "ipa": "/wɜːk/",
+  "reading": "vöök",
+  "meanings": [
+   "iş",
+   "çalışma"
+  ],
+  "definition": "Activity involving mental or physical effort done for a purpose",
+  "example": "I have to work every day this week."
+ },
+ "worker": {
+  "ipa": "/ˈwɜː.kə(r)/",
+  "reading": "vöökır",
+  "meanings": [
+   "işçi",
+   "çalışan"
+  ],
+  "definition": "A person who does a specified type of work",
+  "example": "Every factory worker should wear a safety helmet."
+ },
+ "year": {
+  "ipa": "/jɪə(r)/",
+  "reading": "yiır",
+  "meanings": [
+   "yıl"
+  ],
+  "definition": "A period of three hundred and sixty-five days",
+  "example": "They plan to visit Europe next year."
+ },
+ "indifference": {
+  "ipa": "/ɪnˈdɪf.ər.əns/",
+  "reading": "indifrıns",
+  "meanings": [
+   "kayıtsızlık",
+   "ilgisizlik"
+  ],
+  "definition": "Lack of interest, concern, or sympathy",
+  "example": "His cold indifference made her feel very lonely."
+ },
+ "prosperity": {
+  "ipa": "/prɒsˈper.ə.ti/",
+  "reading": "prosprıti",
+  "meanings": [
+   "refah",
+   "bolluk"
+  ],
+  "definition": "The state of being successful and having money",
+  "example": "Education is essential for the future prosperity of our country."
+ },
+ "excavation": {
+  "ipa": "/ˌeks.kəˈveɪ.ʃən/",
+  "reading": "ekskıveyşın",
+  "meanings": [
+   "kazı"
+  ],
+  "definition": "The action of excavating an archaeological site",
+  "example": "The team began the excavation of the ancient ruins."
+ },
+ "civilization": {
+  "ipa": "/ˌsɪv.əl.aɪˈzeɪ.ʃən/",
+  "reading": "sivılayzeyşın",
+  "meanings": [
+   "medeniyet",
+   "uygarlık"
+  ],
+  "definition": "The stage of human social development and organization",
+  "example": "We must protect our modern civilization from climate change."
+ },
+ "progression": {
+  "ipa": "/prəˈɡreʃ.ən/",
+  "reading": "progreşın",
+  "meanings": [
+   "ilerleme",
+   "aşamalı gelişim"
+  ],
+  "definition": "A gradual movement or development toward a destination",
+  "example": "We observed a clear progression in her learning skills."
+ },
+ "advancement": {
+  "ipa": "/ədˈvɑːns.mənt/",
+  "reading": "edvaansmınt",
+  "meanings": [
+   "ilerleme",
+   "gelişme"
+  ],
+  "definition": "The promotion of a cause or career; progress",
+  "example": "Technology has led to rapid advancement in medicine."
+ },
+ "profit": {
+  "ipa": "/ˈprɒf.ɪt/",
+  "reading": "profit",
+  "meanings": [
+   "kâr"
+  ],
+  "definition": "A financial gain from a transaction or activity",
+  "example": "The company made a huge profit this year."
+ },
+ "recession": {
+  "ipa": "/rɪˈseʃ.ən/",
+  "reading": "riseşın",
+  "meanings": [
+   "ekonomik durgunluk"
+  ],
+  "definition": "A period of temporary economic decline",
+  "example": "Many small businesses closed during the last economic recession."
+ },
+ "dedication": {
+  "ipa": "/ˌded.ɪˈkeɪ.ʃən/",
+  "reading": "dedikeyşın",
+  "meanings": [
+   "adanmışlık",
+   "özveri"
+  ],
+  "definition": "The quality of being dedicated to a task",
+  "example": "Success in music requires years of hard work and dedication."
+ },
+ "diversity": {
+  "ipa": "/daɪˈvɜː.sə.ti/",
+  "reading": "dayvöösiti",
+  "meanings": [
+   "çeşitlilik",
+   "farklılık"
+  ],
+  "definition": "The state of being diverse; variety",
+  "example": "Cultural diversity makes our society much stronger."
+ },
+ "fertility": {
+  "ipa": "/fəˈtɪl.ə.ti/",
+  "reading": "fötiliti",
+  "meanings": [
+   "verimlilik"
+  ],
+  "definition": "The quality of being fertile; ability to produce offspring",
+  "example": "They used organic fertilizer to increase soil fertility."
+ },
+ "participation": {
+  "ipa": "/pɑːˌtɪs.ɪˈpeɪ.ʃən/",
+  "reading": "paatisipeyşın",
+  "meanings": [
+   "katılım"
+  ],
+  "definition": "The action of taking part in something",
+  "example": "We encourage active participation in all school projects."
+ },
+ "detriment": {
+  "ipa": "/ˈdet.rɪ.mənt/",
+  "reading": "detrımınt",
+  "meanings": [
+   "zarar",
+   "olumsuz etki"
+  ],
+  "definition": "The state of being harmed or damaged",
+  "example": "He worked long hours to the detriment of his health."
+ },
+ "acquisition": {
+  "ipa": "/ˌækwɪˈzɪʃn/",
+  "reading": "ekvizişın",
+  "meanings": [
+   "edinme",
+   "elde etme"
+  ],
+  "definition": "The act of obtaining or buying something",
+  "example": "The language acquisition process starts at a very young age."
+ },
+ "certainty": {
+  "ipa": "/ˈsɜːtnti/",
+  "reading": "sörtınti",
+  "meanings": [
+   "kesinlik",
+   "emin olma"
+  ],
+  "definition": "The state of being completely confident or sure",
+  "example": "I cannot say with certainty when the package will arrive."
+ },
+ "corruption": {
+  "ipa": "/kəˈrʌpʃn/",
+  "reading": "kırapşın",
+  "meanings": [
+   "yolsuzluk"
+  ],
+  "definition": "Dishonest or illegal behavior by people in power",
+  "example": "The government promised to fight political corruption at all levels."
+ },
+ "asset": {
+  "ipa": "/ˈæset/",
+  "reading": "eset",
+  "meanings": [
+   "varlık",
+   "değerli mülk"
+  ],
+  "definition": "A useful or valuable quality, person, or thing",
+  "example": "Her ability to speak three languages is a great asset."
+ },
+ "commodity": {
+  "ipa": "/kəˈmɒdəti/",
+  "reading": "kımodıti",
+  "meanings": [
+   "ticari mal"
+  ],
+  "definition": "A substance or product that can be traded",
+  "example": "Water is becoming a very precious commodity in dry regions."
+ },
+ "conservation": {
+  "ipa": "/ˌkɒnsəˈveɪʃn/",
+  "reading": "konsıveyşın",
+  "meanings": [
+   "koruma"
+  ],
+  "definition": "The protection of plants, animals, and natural areas",
+  "example": "Local groups are working on the conservation of the forest."
+ },
+ "dependence": {
+  "ipa": "/dɪˈpendəns/",
+  "reading": "dipendıns",
+  "meanings": [
+   "bağımlılık",
+   "bağlı olma"
+  ],
+  "definition": "The state of relying on or needing something",
+  "example": "The country wants to reduce its dependence on foreign oil."
+ },
+ "exploitation": {
+  "ipa": "/ˌeksplɔɪˈteɪʃn/",
+  "reading": "ekspiloyteyşın",
+  "meanings": [
+   "sömürü",
+   "kötüye kullanma"
+  ],
+  "definition": "The unfair use of someone or something for profit",
+  "example": "The treaty prohibits the exploitation of resources in Antarctica."
+ },
+ "susceptibility": {
+  "ipa": "/səˌseptəˈbɪləti/",
+  "reading": "saseptıbiliti",
+  "meanings": [
+   "yatkınlık",
+   "hassasiyet"
+  ],
+  "definition": "The state of being easily influenced or harmed",
+  "example": "A lack of sleep increases your susceptibility to common infections."
+ },
+ "abundance": {
+  "ipa": "/əˈbʌndəns/",
+  "reading": "ebandıns",
+  "meanings": [
+   "bolluk"
+  ],
+  "definition": "A very large quantity of something",
+  "example": "There is an abundance of fresh water in this region."
+ },
+ "alteration": {
+  "ipa": "/ˌɔːltəˈreɪʃn/",
+  "reading": "oltıreyşın",
+  "meanings": [
+   "değişiklik"
+  ],
+  "definition": "A small change made to something",
+  "example": "We made a minor alteration to the original building plans."
+ },
+ "discrimination": {
+  "ipa": "/dɪˌskrɪmɪˈneɪʃn/",
+  "reading": "diskrimineyşın",
+  "meanings": [
+   "ayrımcılık"
+  ],
+  "definition": "Unfair treatment based on categories like race or sex",
+  "example": "Laws exist to prevent discrimination in the workplace."
+ },
+ "counterpart": {
+  "ipa": "/ˈkaʊntəpɑːt/",
+  "reading": "kauntıpaat",
+  "meanings": [
+   "muadil",
+   "karşılık"
+  ],
+  "definition": "A person or thing holding a similar position elsewhere",
+  "example": "The minister met with his French counterpart to discuss trade."
+ },
+ "declaration": {
+  "ipa": "/ˌdekləˈreɪʃn/",
+  "reading": "deklıreyşın",
+  "meanings": [
+   "ilan",
+   "bildiri"
+  ],
+  "definition": "An official or formal public statement",
+  "example": "They signed a joint declaration of peace after the war."
+ },
+ "deception": {
+  "ipa": "/dɪˈsepʃn/",
+  "reading": "disepşın",
+  "meanings": [
+   "aldatma",
+   "kandırma"
+  ],
+  "definition": "The act of hiding the truth or misleading someone",
+  "example": "He was found guilty of using deception to obtain money."
+ },
+ "disorder": {
+  "ipa": "/dɪsˈɔːdə(r)/",
+  "reading": "disoodı",
+  "meanings": [
+   "düzensizlik",
+   "bozukluk"
+  ],
+  "definition": "An illness of the mind or body",
+  "example": "Many people suffer from a sleep disorder without realizing it."
+ },
+ "prediction": {
+  "ipa": "/prɪˈdɪkʃn/",
+  "reading": "predikşın",
+  "meanings": [
+   "tahmin",
+   "öngörü"
+  ],
+  "definition": "A statement about what will happen in the future",
+  "example": "It is difficult to make a reliable prediction about weather."
+ },
+ "exposure": {
+  "ipa": "/ɪkˈspəʊʒə/",
+  "reading": "ikspoujı",
+  "meanings": [
+   "maruz kalma"
+  ],
+  "definition": "The state of having no protection from something.",
+  "example": "Prolonged exposure to the sun can damage your skin."
+ },
+ "incentive": {
+  "ipa": "/ɪnˈsentɪv/",
+  "reading": "insentiv",
+  "meanings": [
+   "teşvik"
+  ],
+  "definition": "Something that encourages you to do something.",
+  "example": "The company offers a cash incentive to hard workers."
+ },
+ "outbreak": {
+  "ipa": "/ˈaʊtbreɪk/",
+  "reading": "autbreyk",
+  "meanings": [
+   "salgın",
+   "ani yayılma"
+  ],
+  "definition": "A sudden start of something unpleasant, like a disease.",
+  "example": "The sudden outbreak of flu worried the local doctors."
+ },
+ "quotation": {
+  "ipa": "/kwəʊˈteɪʃn/",
+  "reading": "kwouteyşın",
+  "meanings": [
+   "alıntı"
+  ],
+  "definition": "A phrase or passage from a book or speech.",
+  "example": "You must include a quotation from the original text."
+ },
+ "surplus": {
+  "ipa": "/ˈsɜːpləs/",
+  "reading": "sööplıs",
+  "meanings": [
+   "fazlalık"
+  ],
+  "definition": "An amount that is more than what is needed.",
+  "example": "The country has a massive surplus of wheat this year."
+ },
+ "deficit": {
+  "ipa": "/ˈdefɪsɪt/",
+  "reading": "defisit",
+  "meanings": [
+   "açık",
+   "eksiklik"
+  ],
+  "definition": "The amount by which money spent is too high.",
+  "example": "The government must reduce its annual budget deficit now."
+ },
+ "deficiency": {
+  "ipa": "/dɪˈfɪʃnsi/",
+  "reading": "difişınsi",
+  "meanings": [
+   "eksiklik",
+   "yetersizlik"
+  ],
+  "definition": "A state of not having enough of something necessary.",
+  "example": "A vitamin deficiency can cause various health problems."
+ },
+ "utilization": {
+  "ipa": "/ˌjuːtəlaɪˈzeɪʃn/",
+  "reading": "yuutilayzeyşın",
+  "meanings": [
+   "kullanım",
+   "yararlanma"
+  ],
+  "definition": "The act of using something effectively.",
+  "example": "We need to improve our utilization of solar energy."
+ },
+ "admiration": {
+  "ipa": "/ˌædməˈreɪʃn/",
+  "reading": "admıreyşın",
+  "meanings": [
+   "hayranlık"
+  ],
+  "definition": "A feeling of respect and warm approval.",
+  "example": "I have great admiration for her dedication to teaching."
+ },
+ "extinction": {
+  "ipa": "/ɪkˈstɪŋkʃn/",
+  "reading": "ikstinkşın",
+  "meanings": [
+   "neslin tükenmesi"
+  ],
+  "definition": "The state of a species being completely died out.",
+  "example": "Many rare animals are now facing extinction."
+ },
+ "duration": {
+  "ipa": "/djuˈreɪʃn/",
+  "reading": "dyureyşın",
+  "meanings": [
+   "süre"
+  ],
+  "definition": "The length of time that something continues.",
+  "example": "You must remain seated for the duration of the flight."
+ },
+ "defect": {
+  "ipa": "/ˈdiːfekt/",
+  "reading": "diifekt",
+  "meanings": [
+   "kusur",
+   "hata"
+  ],
+  "definition": "A physical problem or flaw in something.",
+  "example": "There is a minor defect in this camera lens."
+ },
+ "discrepancy": {
+  "ipa": "/dɪˈskrepənsi/",
+  "reading": "diskrepınsi",
+  "meanings": [
+   "uyuşmazlık",
+   "tutarsızlık"
+  ],
+  "definition": "A difference between two things that should be the same.",
+  "example": "There is a major discrepancy between the two bank reports."
+ },
+ "separation": {
+  "ipa": "/ˌsepəˈreɪʃn/",
+  "reading": "sepıreyşın",
+  "meanings": [
+   "ayrılma"
+  ],
+  "definition": "The act of dividing or keeping things apart.",
+  "example": "The child cried because of the separation from his parents."
+ },
+ "scarcity": {
+  "ipa": "/ˈskeəsəti/",
+  "reading": "skeesıti",
+  "meanings": [
+   "kıtlık",
+   "azlık"
+  ],
+  "definition": "A situation in which something is not easy to find.",
+  "example": "The war caused a severe scarcity of fresh water."
+ },
+ "correlation": {
+  "ipa": "/ˌkɒrəˈleɪʃn/",
+  "reading": "korıleyşın",
+  "meanings": [
+   "ilişki",
+   "bağlantı"
+  ],
+  "definition": "A connection or link between two or more things.",
+  "example": "Scientists found a strong correlation between smoking and disease."
+ },
+ "productivity": {
+  "ipa": "/ˌprɒdʌkˈtɪvəti/",
+  "reading": "prodaktivıti",
+  "meanings": [
+   "üretkenlik",
+   "verimlilik"
+  ],
+  "definition": "The rate at which goods are produced.",
+  "example": "New computers helped to increase the productivity of the team."
+ },
+ "redundancy": {
+  "ipa": "/rɪˈdʌndənsi/",
+  "reading": "ridandensi",
+  "meanings": [
+   "gereksizlik",
+   "fazlalık"
+  ],
+  "definition": "The state of being no longer needed.",
+  "example": "Many workers face redundancy due to the factory closure."
+ },
+ "vacancy": {
+  "ipa": "/ˈveɪkəsi/",
+  "reading": "veykəsi",
+  "meanings": [
+   "boş pozisyon",
+   "boş yer"
+  ],
+  "definition": "An available job or empty space.",
+  "example": "There is a vacancy for a receptionist in our office."
+ },
+ "withdrawal": {
+  "ipa": "/wɪðˈdrɔːəl/",
+  "reading": "vizdroəl",
+  "meanings": [
+   "para çekme",
+   "geri çekilme"
+  ],
+  "definition": "The act of taking away or removing something.",
+  "example": "She made a cash withdrawal from the ATM."
+ },
+ "linkage": {
+  "ipa": "/ˈlɪŋkɪdʒ/",
+  "reading": "lingic",
+  "meanings": [
+   "bağlantı"
+  ],
+  "definition": "A connection between two or more things.",
+  "example": "Scientists found a linkage between diet and health."
+ },
+ "rejection": {
+  "ipa": "/rɪˈdʒekʃn/",
+  "reading": "richekşın",
+  "meanings": [
+   "reddetme"
+  ],
+  "definition": "The act of refusing to accept something.",
+  "example": "His application met with immediate rejection."
+ },
+ "detection": {
+  "ipa": "/dɪˈtekʃn/",
+  "reading": "ditekşın",
+  "meanings": [
+   "tespit etme"
+  ],
+  "definition": "The discovery or identification of something.",
+  "example": "Early detection of the disease saves lives."
+ },
+ "dismissal": {
+  "ipa": "/dɪsˈmɪsl/",
+  "reading": "dismisl",
+  "meanings": [
+   "işten çıkarılma"
+  ],
+  "definition": "The act of officially removing someone from employment.",
+  "example": "He faced unfair dismissal from his job."
+ },
+ "advent": {
+  "ipa": "/ˈædvent/",
+  "reading": "advent",
+  "meanings": [
+   "ortaya çıkış",
+   "gelişi"
+  ],
+  "definition": "The arrival of a notable person or thing.",
+  "example": "The advent of the internet changed the world."
+ },
+ "sensation": {
+  "ipa": "/senˈseɪʃn/",
+  "reading": "senseyşın",
+  "meanings": [
+   "his",
+   "duyum"
+  ],
+  "definition": "A physical feeling or a cause of great excitement.",
+  "example": "She felt a sharp sensation of pain in her knee."
+ },
+ "conversion": {
+  "ipa": "/kənˈvɜːʃn/",
+  "reading": "kınvörşın",
+  "meanings": [
+   "dönüşüm"
+  ],
+  "definition": "The process of changing into a different form.",
+  "example": "The conversion of the old warehouse took a year."
+ },
+ "manifestation": {
+  "ipa": "/ˌmænɪfeˈsteɪʃn/",
+  "reading": "manifesteyşın",
+  "meanings": [
+   "belirti",
+   "görünür hâle gelme"
+  ],
+  "definition": "An event or action that shows something clearly.",
+  "example": "Fever is a common manifestation of the flu."
+ },
+ "episode": {
+  "ipa": "/ˈepɪsəʊd/",
+  "reading": "episud",
+  "meanings": [
+   "bölüm"
+  ],
+  "definition": "An event or a single part of a series.",
+  "example": "I watched the first episode of the new show."
+ },
+ "rainfall": {
+  "ipa": "/ˈreɪnfɔːl/",
+  "reading": "reynfol",
+  "meanings": [
+   "yağış",
+   "yağmur miktarı"
+  ],
+  "definition": "The fall of rain or the amount of rain.",
+  "example": "The region receives high rainfall every spring."
+ },
+ "ancestor": {
+  "ipa": "/ˈænsestə(r)/",
+  "reading": "ansestör",
+  "meanings": [
+   "ata"
+  ],
+  "definition": "A person from whom one is descended.",
+  "example": "His ancestors came from Scotland."
+ },
+ "occurrence": {
+  "ipa": "/əˈkʌrəns/",
+  "reading": "akarante",
+  "meanings": [
+   "meydana gelme",
+   "olay"
+  ],
+  "definition": "An incident or event that happens.",
+  "example": "Traffic jams are a daily occurrence here."
+ },
+ "recreation": {
+  "ipa": "/ˌrekriˈeɪʃn/",
+  "reading": "rekrieyşın",
+  "meanings": [
+   "dinlenme",
+   "eğlence etkinliği"
+  ],
+  "definition": "Activity done for enjoyment when not working.",
+  "example": "Reading is her favorite form of recreation."
+ },
+ "legitimacy": {
+  "ipa": "/lɪˈdʒɪtɪməsi/",
+  "reading": "lijitiməsi",
+  "meanings": [
+   "meşruluk",
+   "geçerlilik"
+  ],
+  "definition": "The quality of being in accordance with law.",
+  "example": "The government questioned the legitimacy of the election."
+ },
+ "reservation": {
+  "ipa": "/ˌrezəˈveɪʃn/",
+  "reading": "rezrveyşın",
+  "meanings": [
+   "rezervasyon"
+  ],
+  "definition": "An arrangement to secure something in advance.",
+  "example": "I made a table reservation for two at the restaurant."
+ },
+ "reassessment": {
+  "ipa": "/ˌriːəˈsesmənt/",
+  "reading": "riiasesment",
+  "meanings": [
+   "yeniden değerlendirme"
+  ],
+  "definition": "The act of assessing something again.",
+  "example": "The situation requires careful reassessment by the board."
+ },
+ "compensation": {
+  "ipa": "/ˌkɒmpenˈseɪʃən/",
+  "reading": "kompenseyşın",
+  "meanings": [
+   "tazminat",
+   "telafi"
+  ],
+  "definition": "Something, typically money, awarded for loss or suffering.",
+  "example": "He demanded financial compensation for his injury at work."
+ },
+ "conformity": {
+  "ipa": "/kənˈfɔːməti/",
+  "reading": "konfömati",
+  "meanings": [
+   "uyum",
+   "kurallara uyma"
+  ],
+  "definition": "Compliance with standards, rules, or laws.",
+  "example": "Conformity to company rules is mandatory for everyone."
+ },
+ "obsession": {
+  "ipa": "/əbˈseʃən/",
+  "reading": "obseşın",
+  "meanings": [
+   "takıntı"
+  ],
+  "definition": "An idea or thought that continually preoccupies someone.",
+  "example": "His obsession with cleanliness affects his daily life."
+ },
+ "collaboration": {
+  "ipa": "/kəˌlæbəˈreɪʃən/",
+  "reading": "kolabereyşın",
+  "meanings": [
+   "iş birliği"
+  ],
+  "definition": "The action of working with someone to produce something.",
+  "example": "This project is a successful collaboration between two teams."
+ },
+ "abolition": {
+  "ipa": "/ˌæbəˈlɪʃən/",
+  "reading": "ebolişın",
+  "meanings": [
+   "kaldırılma",
+   "yürürlükten kaldırma"
+  ],
+  "definition": "The action of abolishing a system or practice.",
+  "example": "They campaigned for the abolition of the death penalty."
+ },
+ "scholarship": {
+  "ipa": "/ˈskɒləʃɪp/",
+  "reading": "skolaşip",
+  "meanings": [
+   "burs"
+  ],
+  "definition": "A grant or payment made to support a student.",
+  "example": "She won a scholarship to study at Oxford University."
+ },
+ "essence": {
+  "ipa": "/ˈesns/",
+  "reading": "esens",
+  "meanings": [
+   "öz",
+   "temel"
+  ],
+  "definition": "The intrinsic nature or indispensable quality of something.",
+  "example": "Time is of the essence in this urgent matter."
+ },
+ "integration": {
+  "ipa": "/ˌɪntɪˈɡreɪʃən/",
+  "reading": "intigreyşın",
+  "meanings": [
+   "bütünleşme",
+   "entegrasyon"
+  ],
+  "definition": "The action or process of integrating.",
+  "example": "Successful integration of new technology takes time."
+ },
+ "prevalence": {
+  "ipa": "/ˈprevələns/",
+  "reading": "prevelens",
+  "meanings": [
+   "yaygınlık"
+  ],
+  "definition": "The fact or condition of being prevalent.",
+  "example": "Doctors are worried about the prevalence of the disease."
+ },
+ "settler": {
+  "ipa": "/ˈsetlə/",
+  "reading": "setlö",
+  "meanings": [
+   "yerleşimci"
+  ],
+  "definition": "A person who has moved to a new country.",
+  "example": "Early settler families faced many hardships in the valley."
+ },
+ "inhabitant": {
+  "ipa": "/ɪnˈhæbɪtənt/",
+  "reading": "inhabitınt",
+  "meanings": [
+   "bölge sakini"
+  ],
+  "definition": "A person or animal that lives in a place.",
+  "example": "Every inhabitant of the village welcomed the spring festival."
+ },
+ "functionality": {
+  "ipa": "/ˌfʌŋkʃəˈnæləti/",
+  "reading": "fankşonalati",
+  "meanings": [
+   "işlevsellik"
+  ],
+  "definition": "The quality of being suited to serve a purpose.",
+  "example": "The new smartphone offers improved functionality and speed."
+ },
+ "disturbance": {
+  "ipa": "/dɪˈstɜːbəns/",
+  "reading": "distöbens",
+  "meanings": [
+   "rahatsızlık",
+   "bozulma"
+  ],
+  "definition": "An interruption of a settled and peaceful condition.",
+  "example": "Police were called to investigate a loud disturbance outside."
+ },
+ "framework": {
+  "ipa": "/ˈfreɪmwɜːk/",
+  "reading": "freymwörk",
+  "meanings": [
+   "çerçeve",
+   "temel yapı"
+  ],
+  "definition": "An essential supporting structure of a building or system.",
+  "example": "We need a strong framework for our new business plan."
+ },
+ "accumulation": {
+  "ipa": "/əˌkjuːmjʊˈleɪʃən/",
+  "reading": "ekyumuleyşın",
+  "meanings": [
+   "birikme"
+  ],
+  "definition": "The acquisition or gathering of something over time.",
+  "example": "The accumulation of dust on the shelf was visible."
+ },
+ "conductivity": {
+  "ipa": "/ˌkɒndʌkˈtɪvəti/",
+  "reading": "kondaktivati",
+  "meanings": [
+   "iletkenlik"
+  ],
+  "definition": "The rate at which a substance transfers heat or electricity.",
+  "example": "Copper has high electrical conductivity compared to other metals."
+ },
+ "reversal": {
+  "ipa": "/rɪˈvɜːsl/",
+  "reading": "rivösıl",
+  "meanings": [
+   "tersine dönme"
+  ],
+  "definition": "A change to an opposite direction, position, or course.",
+  "example": "The sudden reversal of policy surprised all the investors."
+ },
+ "symptom": {
+  "ipa": "/ˈsɪmptəm/",
+  "reading": "simptım",
+  "meanings": [
+   "belirti"
+  ],
+  "definition": "A sign of an illness or physical problem",
+  "example": "A high fever is a common symptom of the flu."
+ },
+ "influence": {
+  "ipa": "/ˈɪnfluəns/",
+  "reading": "influıns",
+  "meanings": [
+   "etki"
+  ],
+  "definition": "The power to affect someone's beliefs or actions",
+  "example": "Peer pressure can have a strong influence on teenagers."
+ },
+ "belongings": {
+  "ipa": "/bɪˈlɒŋɪŋz/",
+  "reading": "bilongingz",
+  "meanings": [
+   "kişisel eşyalar"
+  ],
+  "definition": "The things that a person owns",
+  "example": "Please pack your belongings before leaving the room."
+ },
+ "diagnosis": {
+  "ipa": "/ˌdaɪəɡˈnəʊsɪs/",
+  "reading": "dayıgnoosis",
+  "meanings": [
+   "teşhis"
+  ],
+  "definition": "The identification of an illness or problem",
+  "example": "The doctor made a quick diagnosis after the test."
+ },
+ "removal": {
+  "ipa": "/rɪˈmuːvəl/",
+  "reading": "rimuuvıl",
+  "meanings": [
+   "kaldırma",
+   "çıkarma"
+  ],
+  "definition": "The act of taking something away",
+  "example": "The removal of the old tree took three hours."
+ },
+ "descendant": {
+  "ipa": "/dɪˈsendənt/",
+  "reading": "disendınt",
+  "meanings": [
+   "soyundan gelen",
+   "torun"
+  ],
+  "definition": "A person related to someone from the past",
+  "example": "He claims to be a descendant of the king."
+ },
+ "indicator": {
+  "ipa": "/ˈɪndɪkeɪtə(r)/",
+  "reading": "indikeytır",
+  "meanings": [
+   "gösterge",
+   "belirti"
+  ],
+  "definition": "A sign that shows the state of something",
+  "example": "A high temperature is a clear indicator of fever."
+ },
+ "intake": {
+  "ipa": "/ˈɪnteɪk/",
+  "reading": "inteyk",
+  "meanings": [
+   "alım",
+   "tüketilen miktar"
+  ],
+  "definition": "The amount of food or drink you take in",
+  "example": "You should reduce your daily salt intake for better health."
+ },
+ "supplement": {
+  "ipa": "/ˈsʌplɪmənt/",
+  "reading": "saplımınt",
+  "meanings": [
+   "ek",
+   "takviye"
+  ],
+  "definition": "Something added to complete or improve something else",
+  "example": "She takes a vitamin supplement every morning."
+ },
+ "acceptance": {
+  "ipa": "/əkˈseptəns/",
+  "reading": "ıkseptıns",
+  "meanings": [
+   "kabul"
+  ],
+  "definition": "The act of agreeing to receive or accept something",
+  "example": "Her acceptance of the job offer made everyone happy."
+ },
+ "habitat": {
+  "ipa": "/ˈhæbɪtæt/",
+  "reading": "hebitet",
+  "meanings": [
+   "yaşam alanı"
+  ],
+  "definition": "The natural home of an animal or plant",
+  "example": "The forest is the natural habitat of the bear."
+ },
+ "disruption": {
+  "ipa": "/dɪsˈrʌpʃən/",
+  "reading": "disrapşın",
+  "meanings": [
+   "aksama",
+   "bozulma"
+  ],
+  "definition": "An interruption in the usual progress of something",
+  "example": "The heavy snow caused a major disruption to traffic."
+ },
+ "encouragement": {
+  "ipa": "/ɪnˈkʌrɪdʒmənt/",
+  "reading": "inkarîcmınt",
+  "meanings": [
+   "teşvik",
+   "cesaretlendirme"
+  ],
+  "definition": "Words or behavior that give someone confidence",
+  "example": "She succeeded thanks to the encouragement of her family."
+ },
+ "pollutant": {
+  "ipa": "/pəˈluːtənt/",
+  "reading": "pıluutınt",
+  "meanings": [
+   "kirletici madde"
+  ],
+  "definition": "A substance that makes air or water dirty",
+  "example": "Plastic is a major pollutant in the oceans today."
+ },
+ "preservation": {
+  "ipa": "/ˌprezəˈveɪʃən/",
+  "reading": "prezıveyşın",
+  "meanings": [
+   "koruma",
+   "muhafaza"
+  ],
+  "definition": "The act of keeping something safe from harm",
+  "example": "The preservation of historic buildings is very important."
+ },
+ "nutrient": {
+  "ipa": "/ˈnjuːtriənt/",
+  "reading": "nyutriyınt",
+  "meanings": [
+   "besin maddesi"
+  ],
+  "definition": "A substance that plants or animals need to grow",
+  "example": "Calcium is an essential nutrient for strong bones."
+ },
+ "predator": {
+  "ipa": "/ˈpredətə(r)/",
+  "reading": "predıtır",
+  "meanings": [
+   "yırtıcı hayvan"
+  ],
+  "definition": "An animal that hunts and kills other animals",
+  "example": "The lion is a fierce predator in the savanna."
+ },
+ "adoption": {
+  "ipa": "/əˈdɒpʃən/",
+  "reading": "ıdopşın",
+  "meanings": [
+   "evlat edinme",
+   "benimseme"
+  ],
+  "definition": "The legal process of taking another's child as own",
+  "example": "They decided to choose adoption to start a family."
+ },
+ "complexity": {
+  "ipa": "/kəmˈplek.sə.ti/",
+  "reading": "kımpleksıti",
+  "meanings": [
+   "karmaşıklık"
+  ],
+  "definition": "The state of being difficult to understand.",
+  "example": "We must reduce the complexity of this computer system."
+ },
+ "falsehood": {
+  "ipa": "/ˈfɔːls.hʊd/",
+  "reading": "foolshud",
+  "meanings": [
+   "yalan",
+   "gerçek dışı bilgi"
+  ],
+  "definition": "A statement or belief that is not true.",
+  "example": "It is a complete falsehood designed to deceive people."
+ },
+ "enlargement": {
+  "ipa": "/ɪnˈlɑːdʒ.mənt/",
+  "reading": "inlaacmınt",
+  "meanings": [
+   "büyütme"
+  ],
+  "definition": "The act of making something larger.",
+  "example": "We need an enlargement of our current offices."
+ },
+ "emergence": {
+  "ipa": "/ɪˈmɜː.dʒəns/",
+  "reading": "imööcıns",
+  "meanings": [
+   "ortaya çıkma"
+  ],
+  "definition": "The process of coming into view or existence.",
+  "example": "The emergence of new technology changed the market."
+ },
+ "fluctuation": {
+  "ipa": "/ˌflʌk.tʃuˈeɪ.ʃən/",
+  "reading": "flakçueyşın",
+  "meanings": [
+   "dalgalanma"
+  ],
+  "definition": "An irregular rising and falling in number or amount.",
+  "example": "The market shows frequent fluctuation in prices."
+ },
+ "remedy": {
+  "ipa": "/ˈrem.ə.di/",
+  "reading": "remıdi",
+  "meanings": [
+   "çare",
+   "çözüm"
+  ],
+  "definition": "A successful way of curing an illness or problem.",
+  "example": "Sleep is often the best remedy for a headache."
+ },
+ "restoration": {
+  "ipa": "/ˌres.təˈreɪ.ʃən/",
+  "reading": "restıreyşın",
+  "meanings": [
+   "eski hâline getirme",
+   "restorasyon"
+  ],
+  "definition": "The act of returning something to its former condition.",
+  "example": "The old building is undergoing a complete restoration."
+ },
+ "solidarity": {
+  "ipa": "/ˌsɒl.ɪˈdær.ə.ti/",
+  "reading": "solidarıti",
+  "meanings": [
+   "dayanışma"
+  ],
+  "definition": "Agreement and support between members of a group.",
+  "example": "National unity shows true solidarity during a crisis."
+ },
+ "sustainability": {
+  "ipa": "/səˌsteɪ.nəˈbɪl.ə.ti/",
+  "reading": "sısteynibılıti",
+  "meanings": [
+   "sürdürülebilirlik"
+  ],
+  "definition": "The quality of being able to continue over time.",
+  "example": "Environmental sustainability is a major goal for the company."
+ },
+ "clarity": {
+  "ipa": "/ˈklær.ə.ti/",
+  "reading": "klerıti",
+  "meanings": [
+   "açıklık",
+   "netlik"
+  ],
+  "definition": "The quality of being clear and easy to understand.",
+  "example": "We need more clarity on this complex issue."
+ },
+ "credibility": {
+  "ipa": "/ˌkred.əˈbɪl.ə.ti/",
+  "reading": "kredıbılıti",
+  "meanings": [
+   "güvenilirlik",
+   "inanılırlık"
+  ],
+  "definition": "The quality of being trusted and believed in.",
+  "example": "The scandal seriously damaged his personal credibility."
+ },
+ "emission": {
+  "ipa": "/iˈmɪʃ.ən/",
+  "reading": "imişın",
+  "meanings": [
+   "salım"
+  ],
+  "definition": "The production and discharge of something, especially gas.",
+  "example": "The factory must reduce its daily carbon emission."
+ },
+ "endurance": {
+  "ipa": "/ɪnˈdjʊə.rəns/",
+  "reading": "indyurıns",
+  "meanings": [
+   "dayanıklılık"
+  ],
+  "definition": "The ability to withstand hardship or adversity.",
+  "example": "Running a marathon requires great physical endurance."
+ },
+ "absorption": {
+  "ipa": "/əbˈzɔːp.ʃən/",
+  "reading": "ıbzoopşın",
+  "meanings": [
+   "emilim"
+  ],
+  "definition": "The process of taking in liquid, heat, or energy.",
+  "example": "The sponge has a high rate of water absorption."
+ },
+ "immunity": {
+  "ipa": "/ɪˈmjuː.nə.ti/",
+  "reading": "imyunıti",
+  "meanings": [
+   "bağışıklık"
+  ],
+  "definition": "Protection against a disease or legal action.",
+  "example": "The vaccine provides effective immunity against the virus."
+ },
+ "complication": {
+  "ipa": "/ˌkɒm.plɪˈkeɪ.ʃən/",
+  "reading": "komplikeyşın",
+  "meanings": [
+   "komplikasyon",
+   "ek sorun"
+  ],
+  "definition": "An extra problem that makes a situation more difficult.",
+  "example": "There was an unexpected complication in the medical procedure."
+ },
+ "consultation": {
+  "ipa": "/ˌkɒn.sʌlˈteɪ.ʃən/",
+  "reading": "konsılteyşın",
+  "meanings": [
+   "danışma",
+   "görüşme"
+  ],
+  "definition": "A meeting with an expert to seek advice.",
+  "example": "You should schedule a professional consultation before deciding."
+ },
+ "demand": {
+  "ipa": "/dɪˈmɑːnd/",
+  "reading": "dimaand",
+  "meanings": [
+   "talep"
+  ],
+  "definition": "A strong request for something to be done.",
+  "example": "There is a growing demand for organic food."
+ },
+ "composition": {
+  "ipa": "/ˌkɒmpəˈzɪʃn/",
+  "reading": "kompozisyon",
+  "meanings": [
+   "bileşim",
+   "oluşum"
+  ],
+  "definition": "The nature of something's ingredients or constituents.",
+  "example": "The chemical composition of the rock was unusual."
+ },
+ "supplier": {
+  "ipa": "/səˈplaɪə(r)/",
+  "reading": "suplayır",
+  "meanings": [
+   "tedarikçi"
+  ],
+  "definition": "A person or organization that provides goods.",
+  "example": "We need to find a new supplier for office furniture."
+ },
+ "reliance": {
+  "ipa": "/rɪˈlaɪəns/",
+  "reading": "rilayıns",
+  "meanings": [
+   "güvenme",
+   "bağımlılık"
+  ],
+  "definition": "Dependence on someone or something.",
+  "example": "Our reliance on fossil fuels must decrease."
+ },
+ "appreciation": {
+  "ipa": "/əˌpriːʃiˈeɪʃn/",
+  "reading": "aprişieyşın",
+  "meanings": [
+   "takdir"
+  ],
+  "definition": "Recognition and enjoyment of the good qualities of someone.",
+  "example": "She showed her appreciation with a small gift."
+ },
+ "arousal": {
+  "ipa": "/əˈraʊzl/",
+  "reading": "arawzıl",
+  "meanings": [
+   "uyarılma",
+   "harekete geçme"
+  ],
+  "definition": "The action or result of awakening or triggering.",
+  "example": "Music can cause emotional arousal in listeners."
+ },
+ "predictor": {
+  "ipa": "/prɪˈdɪktə(r)/",
+  "reading": "pridiktor",
+  "meanings": [
+   "öngörü göstergesi"
+  ],
+  "definition": "A thing that helps predict what will happen.",
+  "example": "Good health is a strong predictor of longevity."
+ },
+ "deceit": {
+  "ipa": "/dɪˈsiːt/",
+  "reading": "disiit",
+  "meanings": [
+   "hile",
+   "aldatma"
+  ],
+  "definition": "The action of misleading someone to hide the truth.",
+  "example": "His career was built on lies and deceit."
+ },
+ "destiny": {
+  "ipa": "/ˈdestəni/",
+  "reading": "destini",
+  "meanings": [
+   "kader"
+  ],
+  "definition": "The events that will necessarily happen to a person.",
+  "example": "She believed it was her destiny to help others."
+ },
+ "expectancy": {
+  "ipa": "/ɪkˈspektənsi/",
+  "reading": "ikspektansi",
+  "meanings": [
+   "beklenti"
+  ],
+  "definition": "The state of thinking that something will happen.",
+  "example": "There was an air of eager expectancy in the room."
+ },
+ "imitation": {
+  "ipa": "/ˌɪmɪˈteɪʃn/",
+  "reading": "imiteyşın",
+  "meanings": [
+   "taklit"
+  ],
+  "definition": "The action of using someone or something as a model.",
+  "example": "The bag was a cheap imitation of a designer brand."
+ },
+ "similarity": {
+  "ipa": "/ˌsɪməˈlærəti/",
+  "reading": "simılariti",
+  "meanings": [
+   "benzerlik"
+  ],
+  "definition": "The state or fact of being similar.",
+  "example": "There is a strong similarity between the two brothers."
+ },
+ "relevance": {
+  "ipa": "/ˈreləvəns/",
+  "reading": "relavens",
+  "meanings": [
+   "ilgililik",
+   "bağlantılı olma"
+  ],
+  "definition": "The quality of being closely connected to the matter.",
+  "example": "The teacher questioned the relevance of my example."
+ },
+ "frequency": {
+  "ipa": "/ˈfriːkwənsi/",
+  "reading": "friikwensi",
+  "meanings": [
+   "sıklık"
+  ],
+  "definition": "The rate at which something occurs over a period.",
+  "example": "They visit the museum with increasing frequency."
+ },
+ "verse": {
+  "ipa": "/vɜːs/",
+  "reading": "vörs",
+  "meanings": [
+   "dize",
+   "kıta"
+  ],
+  "definition": "Writing arranged with a metrical rhythm, typically poetry.",
+  "example": "He recited a verse from his favorite poem."
+ },
+ "attentiveness": {
+  "ipa": "/əˈtentɪvnəs/",
+  "reading": "atentivnıs",
+  "meanings": [
+   "dikkatlilik"
+  ],
+  "definition": "The quality of paying close attention to someone.",
+  "example": "The dog showed great attentiveness to its owner."
+ },
+ "completion": {
+  "ipa": "/kəmˈpliːʃn/",
+  "reading": "kompliitşın",
+  "meanings": [
+   "tamamlama"
+  ],
+  "definition": "The action of finishing something.",
+  "example": "The project is nearing completion next week."
+ },
+ "contradiction": {
+  "ipa": "/ˌkɒntrəˈdɪkʃn/",
+  "reading": "kontradikşın",
+  "meanings": [
+   "çelişki"
+  ],
+  "definition": "A combination of statements that are opposed to each other.",
+  "example": "His statement contains a clear contradiction."
+ },
+ "disappointment": {
+  "ipa": "/ˌdɪsəˈpɔɪntmənt/",
+  "reading": "disapointmınt",
+  "meanings": [
+   "hayal kırıklığı"
+  ],
+  "definition": "Sadness caused by the non-fulfillment of hopes.",
+  "example": "To my great disappointment, the show was canceled."
+ },
+ "familiarity": {
+  "ipa": "/fəˌmɪliˈærəti/",
+  "reading": "familiyarıti",
+  "meanings": [
+   "aşinalık",
+   "tanıdıklık"
+  ],
+  "definition": "Close knowledge of or acquaintance with something.",
+  "example": "Her familiarity with the city helped us navigate."
+ },
+ "disobedience": {
+  "ipa": "/ˌdɪsəˈbiːdiəns/",
+  "reading": "disıbîdiyıns",
+  "meanings": [
+   "itaatsizlik"
+  ],
+  "definition": "Refusal to obey rules or authority.",
+  "example": "They were punished for their disobedience."
+ },
+ "rotation": {
+  "ipa": "/rəʊˈteɪʃn/",
+  "reading": "röyteyşın",
+  "meanings": [
+   "dönme",
+   "dönüş"
+  ],
+  "definition": "The action of rotating around an axis.",
+  "example": "The Earth completes one rotation every twenty-four hours."
+ },
+ "limit": {
+  "ipa": "/ˈlɪmɪt/",
+  "reading": "limit",
+  "meanings": [
+   "sınır"
+  ],
+  "definition": "The greatest amount or level allowed.",
+  "example": "You must not exceed the speed limit."
+ },
+ "allocation": {
+  "ipa": "/ˌæləˈkeɪʃn/",
+  "reading": "elıkeyşın",
+  "meanings": [
+   "paylaştırma",
+   "tahsis"
+  ],
+  "definition": "An amount of resource officially given to someone.",
+  "example": "The annual budget allocation for research is very small."
+ },
+ "bargain": {
+  "ipa": "/ˈbɑːɡən/",
+  "reading": "baagın",
+  "meanings": [
+   "pazarlık",
+   "uygun alışveriş"
+  ],
+  "definition": "Something bought for less than its usual price.",
+  "example": "This cheap computer is a real bargain."
+ },
+ "cavity": {
+  "ipa": "/ˈkævəti/",
+  "reading": "kevitî",
+  "meanings": [
+   "boşluk",
+   "oyuk"
+  ],
+  "definition": "A hollow space or hole in something.",
+  "example": "The dentist found a small cavity in my tooth."
+ },
+ "cohesion": {
+  "ipa": "/kəʊˈhiːʒn/",
+  "reading": "köuhiyjın",
+  "meanings": [
+   "bütünlük",
+   "birbirine bağlılık"
+  ],
+  "definition": "The state of sticking together or working well.",
+  "example": "The team lacks cohesion and cannot win."
+ },
+ "concession": {
+  "ipa": "/kənˈseʃn/",
+  "reading": "kınseşın",
+  "meanings": [
+   "taviz"
+  ],
+  "definition": "Something granted in response to demands.",
+  "example": "The company made a concession to the strikers."
+ },
+ "conscience": {
+  "ipa": "/ˈkɒnʃəns/",
+  "reading": "konşıns",
+  "meanings": [
+   "vicdan"
+  ],
+  "definition": "An inner feeling of right and wrong.",
+  "example": "My conscience did not allow me to lie."
+ },
+ "constraint": {
+  "ipa": "/kənˈstreɪnt/",
+  "reading": "kınstreynt",
+  "meanings": [
+   "kısıtlama",
+   "engel"
+  ],
+  "definition": "A limitation or restriction.",
+  "example": "Time is a major constraint for our team."
+ },
+ "cruise": {
+  "ipa": "/kruːz/",
+  "reading": "kruuz",
+  "meanings": [
+   "gemi seyahati"
+  ],
+  "definition": "A pleasure voyage on a ship.",
+  "example": "We want to take a cruise next summer."
+ },
+ "slavery": {
+  "ipa": "/ˈsleɪvəri/",
+  "reading": "sleyvırî",
+  "meanings": [
+   "kölelik"
+  ],
+  "definition": "The state of being owned by another person.",
+  "example": "History shows that slavery was a terrible practice."
+ },
+ "inadequacy": {
+  "ipa": "/ɪnˈædɪkwəsi/",
+  "reading": "inedıkvısî",
+  "meanings": [
+   "yetersizlik"
+  ],
+  "definition": "The state of not being good enough.",
+  "example": "His feeling of inadequacy made him quiet."
+ },
+ "recurrence": {
+  "ipa": "/rɪˈkʌrəns/",
+  "reading": "rikorıns",
+  "meanings": [
+   "tekrarlama"
+  ],
+  "definition": "The fact of happening again.",
+  "example": "Doctors want to prevent a recurrence of the illness."
+ },
+ "refusal": {
+  "ipa": "/rɪˈfjuːzl/",
+  "reading": "rifyuuzıl",
+  "meanings": [
+   "reddetme"
+  ],
+  "definition": "An act of saying no to something.",
+  "example": "Their refusal to help shocked everyone."
+ },
+ "allusion": {
+  "ipa": "/əˈluːʒn/",
+  "reading": "ıluujın",
+  "meanings": [
+   "ima",
+   "gönderme"
+  ],
+  "definition": "An indirect reference to something.",
+  "example": "She made an allusion to her past mistakes."
+ },
+ "amplification": {
+  "ipa": "/ˌæmplɪfɪˈkeɪʃn/",
+  "reading": "emplifikéyşın",
+  "meanings": [
+   "güçlendirme",
+   "artırma"
+  ],
+  "definition": "The process of increasing strength or volume.",
+  "example": "The signal needs amplification to be clear."
+ },
+ "apprehension": {
+  "ipa": "/ˌæprɪˈhenʃn/",
+  "reading": "eprihenşın",
+  "meanings": [
+   "endişe",
+   "kaygı"
+  ],
+  "definition": "Anxiety or fear about the future.",
+  "example": "She felt some apprehension before the exam."
+ },
+ "avoidance": {
+  "ipa": "/əˈvɔɪ.dəns/",
+  "reading": "ıvoydıns",
+  "meanings": [
+   "kaçınma"
+  ],
+  "definition": "The act of keeping away from something.",
+  "example": "Honest communication helps with conflict avoidance in relationships."
+ },
+ "compression": {
+  "ipa": "/kəmˈpreʃ.ən/",
+  "reading": "kımpreşın",
+  "meanings": [
+   "sıkıştırma"
+  ],
+  "definition": "The process of pressing things together.",
+  "example": "You can save space on your computer using file compression."
+ },
+ "face": {
+  "ipa": "/feɪs/",
+  "reading": "feys",
+  "meanings": [
+   "yüz"
+  ],
+  "definition": "To deal with a difficult situation.",
+  "example": "You must face your fears to grow."
+ },
+ "reinforcement": {
+  "ipa": "/ˌriː.ɪnˈfɔːs.mənt/",
+  "reading": "riinforsmınt",
+  "meanings": [
+   "güçlendirme",
+   "takviye"
+  ],
+  "definition": "The act of making something stronger.",
+  "example": "Positive reinforcement can help motivate students in class."
+ },
+ "permanence": {
+  "ipa": "/ˈpɜː.mə.nəns/",
+  "reading": "pömınıns",
+  "meanings": [
+   "kalıcılık"
+  ],
+  "definition": "The state of lasting forever.",
+  "example": "The artist wanted to give a sense of permanence to her work."
+ },
+ "excess": {
+  "ipa": "/ɪkˈses/",
+  "reading": "ikses",
+  "meanings": [
+   "fazlalık",
+   "aşırılık"
+  ],
+  "definition": "An amount that is more than necessary.",
+  "example": "You should avoid eating an excess of salt."
+ },
+ "fury": {
+  "ipa": "/ˈfjʊə.ri/",
+  "reading": "fyuri",
+  "meanings": [
+   "büyük öfke"
+  ],
+  "definition": "Extreme anger or wild rage.",
+  "example": "She could not control her fury during the argument."
+ },
+ "coincidence": {
+  "ipa": "/kəʊˈɪn.sɪ.dəns/",
+  "reading": "kouinsidıns",
+  "meanings": [
+   "tesadüf"
+  ],
+  "definition": "Two things happening together by chance.",
+  "example": "Meeting you here is a strange coincidence indeed."
+ },
+ "liability": {
+  "ipa": "/ˌlaɪ.əˈbɪl.ə.ti/",
+  "reading": "layıbiliti",
+  "meanings": [
+   "yükümlülük",
+   "sorumluluk"
+  ],
+  "definition": "The state of being legally responsible.",
+  "example": "The company accepts no liability for any lost items."
+ },
+ "make-up": {
+  "ipa": "/ˈmeɪk.ʌp/",
+  "reading": "meykap",
+  "meanings": [
+   "makyaj"
+  ],
+  "definition": "Cosmetics applied to the face.",
+  "example": "She likes to wear simple make-up for work."
+ },
+ "impairment": {
+  "ipa": "/ɪmˈpeə.mənt/",
+  "reading": "impeəmınt",
+  "meanings": [
+   "bozukluk",
+   "işlev kaybı"
+  ],
+  "definition": "A loss or damage of physical function.",
+  "example": "He did not let his visual impairment stop him."
+ },
+ "instinct": {
+  "ipa": "/ˈɪn.stɪŋkt/",
+  "reading": "instinkt",
+  "meanings": [
+   "içgüdü"
+  ],
+  "definition": "A natural way of acting without thinking.",
+  "example": "Trust your instinct when making important decisions."
+ },
+ "ignorance": {
+  "ipa": "/ˈɪɡ.nər.əns/",
+  "reading": "ignırıns",
+  "meanings": [
+   "bilgisizlik",
+   "habersizlik"
+  ],
+  "definition": "Lack of knowledge or information.",
+  "example": "People behave badly out of pure ignorance sometimes."
+ },
+ "adaption": {
+  "ipa": "/əˈdæp.ʃən/",
+  "reading": "ıdepşın",
+  "meanings": [
+   "uyarlama"
+  ],
+  "definition": "The process of changing to suit conditions.",
+  "example": "The book is open to easy adaption for television."
+ },
+ "suitability": {
+  "ipa": "/ˌsuː.təˈbɪl.ə.ti/",
+  "reading": "suutıbiliti",
+  "meanings": [
+   "uygunluk"
+  ],
+  "definition": "The quality of being appropriate.",
+  "example": "They will test the suitability of the soil first."
+ },
+ "negligence": {
+  "ipa": "/ˈneɡ.lɪ.dʒəns/",
+  "reading": "neglıcıns",
+  "meanings": [
+   "ihmalkârlık"
+  ],
+  "definition": "Failure to take proper care.",
+  "example": "The accident was caused by pure negligence of safety."
+ },
+ "repetition": {
+  "ipa": "/ˌrep.ɪˈtɪʃ.ən/",
+  "reading": "repitişın",
+  "meanings": [
+   "tekrar"
+  ],
+  "definition": "The act of doing something again.",
+  "example": "Constant repetition helps you learn new vocabulary."
  }
 }
