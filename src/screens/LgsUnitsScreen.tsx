@@ -31,7 +31,12 @@ export default function LgsUnitsScreen({ onBack, onSelectUnit }: LgsUnitsScreenP
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {LGS_UNITS.map((unit, idx) => {
-          const wordCount = FLASHCARDS.filter(f => f.category === unit.category).length;
+          const wordCount =
+            unit.category === 'LGS · All Units'
+              ? new Set(
+                  FLASHCARDS.filter(f => f.category.startsWith('LGS · ')).map(f => f.word.toLowerCase())
+                ).size
+              : FLASHCARDS.filter(f => f.category === unit.category).length;
           return (
             <button
               key={unit.id}

@@ -33766,16 +33766,6 @@
   "definition": "Harm done to a person's body.",
   "example": "He suffered a minor injury."
  },
- "killed": {
-  "ipa": "/kɪld/",
-  "reading": "kild",
-  "meanings": [
-   "öldürüldü",
-   "hayatını kaybetti"
-  ],
-  "definition": "Caused to die.",
-  "example": "The storm killed many plants."
- },
  "landslide": {
   "ipa": "/ˈlændslaɪd/",
   "reading": "lendslayd",
@@ -33839,15 +33829,6 @@
   ],
   "definition": "A chemical used to kill pests",
   "example": "Farmers use pesticide to protect their crops."
- },
- "plant trees": {
-  "ipa": "/plɑːnt triːz/",
-  "reading": "plaant triiz",
-  "meanings": [
-   "ağaç dikmek"
-  ],
-  "definition": "To put young trees into the ground to grow",
-  "example": "Volunteers gather every spring to plant trees in the park."
  },
  "pollution": {
   "ipa": "/pəˈluːʃn/",
@@ -34202,8 +34183,7 @@
   "ipa": "/fɔːs/",
   "reading": "foos",
   "meanings": [
-   "güç",
-   "kuvvet"
+   "zorlamak"
   ],
   "definition": "Physical power or strength.",
   "example": "The strong wind can force the doors open."
@@ -34570,5 +34550,14 @@
   ],
   "definition": "A severe snowstorm with high winds.",
   "example": "The strong blizzard lasted for three days."
+ },
+ "plant tree": {
+  "ipa": "/plɑːnt triːz/",
+  "reading": "plaant triiz",
+  "meanings": [
+   "ağaç dikmek"
+  ],
+  "definition": "To put young trees into the ground to grow",
+  "example": "Volunteers gather every spring to plant trees in the park."
  }
 }

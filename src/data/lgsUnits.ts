@@ -18,4 +18,5 @@ export const LGS_UNITS: LgsUnit[] = [
   { id: 'chores', title: 'Chores', titleTr: 'Ev İşleri', category: 'LGS · Chores' },
   { id: 'science', title: 'Science', titleTr: 'Bilim', category: 'LGS · Science' },
   { id: 'natural-forces', title: 'Natural Forces', titleTr: 'Doğa Güçleri', category: 'LGS · Natural Forces' },
+  { id: 'all-units', title: 'All Units', titleTr: 'Genel Kelime Havuzu', category: 'LGS · All Units' },
 ];

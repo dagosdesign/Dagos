@@ -43,7 +43,21 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
   const categoryLabel = label ?? category ?? 'Genel İngilizce';
 
   const pool = useMemo(
-    () => (category ? FLASHCARDS.filter(f => f.category === category) : FLASHCARDS),
+    () => {
+      // "All Units": every LGS word in one pool, each word once (first unit's
+      // card wins, so it keeps that unit's photo and meaning untouched).
+      if (category === 'LGS · All Units') {
+        const seen = new Set<string>();
+        return FLASHCARDS.filter(f => {
+          if (!f.category.startsWith('LGS · ')) return false;
+          const key = f.word.toLowerCase();
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+      }
+      return category ? FLASHCARDS.filter(f => f.category === category) : FLASHCARDS;
+    },
     [category]
   );
 
