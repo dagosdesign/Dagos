@@ -21,7 +21,7 @@ const STARTERS = [
 const GREETING: ChatMessage = {
   role: 'assistant',
   content:
-    "Hi! I'm your AI Coach. 👋 I can help you practice English — fix your sentences, explain grammar, or just chat. Tap the mic and talk to me, or type below!",
+    "Hi! I'm your AI LEX. 👋 I can help you practice English — fix your sentences, explain grammar, or just chat. Tap the mic and talk to me, or type below!",
 };
 
 // Strip light markdown so spoken text sounds natural.
@@ -95,7 +95,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         body: JSON.stringify({ messages: nextMessages.filter(m => m !== GREETING) }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'AI Coach is unavailable.');
+      if (!res.ok) throw new Error(data.message || 'AI LEX is unavailable.');
       setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
       if (speakReply || voiceModeRef.current) speak(data.reply);
     } catch (err: any) {
@@ -173,7 +173,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         <div className="mb-3 flex items-start gap-2 bg-[#e3b553]/5 border border-[#e3b553]/15 rounded-xl p-3 shrink-0">
           <AlertCircle className="w-4 h-4 text-[#e3b553] shrink-0 mt-0.5" />
           <p className="text-[11px] text-white/60 leading-relaxed font-light">
-            <strong>AI Coach devre dışı:</strong> Canlı sohbet için sunucuda <code>GEMINI_API_KEY</code> tanımlı olmalı.
+            <strong>AI LEX devre dışı:</strong> Canlı sohbet için sunucuda <code>GEMINI_API_KEY</code> tanımlı olmalı.
           </p>
         </div>
       )}

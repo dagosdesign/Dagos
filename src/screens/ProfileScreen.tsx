@@ -44,7 +44,7 @@ const PLANS: Plan[] = [
     name: 'Ücretsiz',
     price: '₺0',
     icon: ShieldCheck,
-    features: ['Temel kelime desteleri', 'Günde 5 AI Coach mesajı', 'Standart testler'],
+    features: ['Temel kelime desteleri', 'Günde 5 AI LEX mesajı', 'Standart testler'],
   },
   {
     id: 'premium',
@@ -52,7 +52,7 @@ const PLANS: Plan[] = [
     price: '₺49/ay',
     icon: Sparkles,
     highlight: true,
-    features: ['Sınırsız AI Coach sohbeti', 'Tüm kelime desteleri', 'Reklamsız deneyim', 'Detaylı ilerleme analizi'],
+    features: ['Sınırsız AI LEX sohbeti', 'Tüm kelime desteleri', 'Reklamsız deneyim', 'Detaylı ilerleme analizi'],
   },
   {
     id: 'pro',

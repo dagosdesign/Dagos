@@ -86,7 +86,7 @@ app.get("/api/config", (req, res) => {
   res.json({ isConfigured });
 });
 
-// AI Coach chat endpoint — a conversational English-learning tutor.
+// AI LEX chat endpoint — a conversational English-learning tutor.
 app.post("/api/chat", async (req, res) => {
   const { messages } = req.body as {
     messages?: { role: "user" | "assistant"; content: string }[];
@@ -100,7 +100,7 @@ app.post("/api/chat", async (req, res) => {
     const ai = getAIClient();
 
     const systemInstruction =
-      "You are 'AI Coach', a warm, encouraging English-learning tutor for Turkish speakers. " +
+      "You are 'AI LEX', a warm, encouraging English-learning tutor for Turkish speakers. " +
       "Help the student practice English: explain vocabulary and grammar, correct their mistakes gently, " +
       "give example sentences, and hold simple conversations to build fluency. " +
       "Keep replies concise (2-5 sentences). When the student writes in Turkish, you may briefly answer in " +
@@ -125,7 +125,7 @@ app.post("/api/chat", async (req, res) => {
 
     res.json({ reply: text.trim() });
   } catch (err: any) {
-    console.error("Gemini AI Coach Chat Error:", err);
+    console.error("Gemini AI LEX Chat Error:", err);
     if (err.message && err.message.includes("GEMINI_API_KEY")) {
       return res.status(403).json({
         error: "api_key_missing",
@@ -134,7 +134,7 @@ app.post("/api/chat", async (req, res) => {
     }
     res.status(500).json({
       error: "chat_failed",
-      message: "Could not reach the AI Coach right now. Please try again.",
+      message: "Could not reach the AI LEX right now. Please try again.",
       details: err.message,
     });
   }
