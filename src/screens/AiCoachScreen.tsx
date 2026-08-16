@@ -147,7 +147,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
           <Sparkles className="w-3 h-3 absolute -top-1 -right-1 text-[#ffd978]" />
         </div>
         <div className="flex-1">
-          <h1 className="text-lg font-serif italic text-white">AI Coach</h1>
+          <h1 className="text-lg font-serif italic text-white">AI LEX</h1>
           <p className="text-[11px] text-white/40 font-mono">Gemini destekli İngilizce koçun</p>
         </div>
         {ttsSupported && (
