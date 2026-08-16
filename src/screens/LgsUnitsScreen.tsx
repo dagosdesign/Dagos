@@ -25,7 +25,6 @@ export default function LgsUnitsScreen({ onBack, onSelectUnit }: LgsUnitsScreenP
         </div>
         <div>
           <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">LGS</h2>
-          <p className="text-[13px] text-white/75 font-mono">{LGS_UNITS.length} ünite · Kelime pratiği</p>
         </div>
       </div>
 
