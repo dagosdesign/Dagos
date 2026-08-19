@@ -6,9 +6,10 @@ interface HomeScreenProps {
   onOpenGrammar: () => void;
   onOpenQuizHub: () => void;
   onOpenLgs: () => void;
+  onOpenPrepositions: () => void;
 }
 
-export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs }: HomeScreenProps) {
+export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs, onOpenPrepositions }: HomeScreenProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub, o
           onOpenGrammar={onOpenGrammar}
           onOpenQuizHub={onOpenQuizHub}
           onOpenLgs={onOpenLgs}
+          onOpenPrepositions={onOpenPrepositions}
         />
       </div>
     </>

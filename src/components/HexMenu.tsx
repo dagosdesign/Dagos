@@ -6,6 +6,7 @@ interface HexMenuProps {
   onOpenGrammar: () => void;
   onOpenQuizHub: () => void;
   onOpenLgs: () => void;
+  onOpenPrepositions: () => void;
 }
 
 // Satellite node centers as fractions of the field (also drives the SVG link endpoints
@@ -29,7 +30,7 @@ const VB_W = 760;
 const VB_H = 920;
 const links = NODES.map(([fx, fy]) => [Math.round(fx * VB_W), Math.round(fy * VB_H)] as [number, number]);
 
-export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs }: HexMenuProps) {
+export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs, onOpenPrepositions }: HexMenuProps) {
   const topics = [
     { label: 'LGS', className: 'een-n1', onClick: onOpenLgs },
     { label: 'YÖK-DİL', className: 'een-n2', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'YÖK-DİL') },
@@ -40,7 +41,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     { label: 'ADVERBS', className: 'een-n7', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVERBS, 'Adverbs') },
     { label: 'NOUNS', className: 'een-n8', onClick: () => onPractice(FLASHCARD_CATEGORIES.NOUNS, 'Nouns') },
     { label: 'GRAMMAR', className: 'een-n9', onClick: onOpenGrammar },
-    { label: 'PREPOSITIONS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.PREPOSITIONS, 'Prepositions') },
+    { label: 'PREPOSITIONS', className: 'een-n10', onClick: onOpenPrepositions },
     { label: 'YDT', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
     { label: 'IELTS', className: 'een-n12', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
   ];
