@@ -9,19 +9,20 @@ interface HexMenuProps {
 }
 
 // Satellite node centers as fractions of the field (also drives the SVG link endpoints
-// so lines always connect to hex centers). Order matches `topics` / een-n1..n11.
+// so lines always connect to hex centers). Order matches `topics` / een-n1..n12 (saat düzeni).
 const NODES: [number, number][] = [
-  [0.50, 0.15], // LGS
-  [0.20, 0.27], // YDT
-  [0.80, 0.27], // YÖK-DİL
-  [0.11, 0.46], // IELTS
-  [0.89, 0.46], // YDS
-  [0.13, 0.66], // GRAMMAR
-  [0.87, 0.66], // ADJECTIVES
-  [0.14, 0.81], // NOUNS
-  [0.37, 0.90], // ADVERBS
-  [0.63, 0.90], // PHRASAL VERBS
-  [0.86, 0.81], // IRREGULAR VERBS
+  [0.50, 0.12],  // LGS (saat 12)
+  [0.735, 0.21], // YÖK-DİL
+  [0.855, 0.355], // YDS
+  [0.88, 0.51],  // ADJECTIVES
+  [0.855, 0.665], // IRREGULAR VERBS
+  [0.735, 0.81], // PHRASAL VERBS
+  [0.50, 0.90],  // ADVERBS (saat 6)
+  [0.265, 0.81], // NOUNS
+  [0.145, 0.665], // GRAMMAR
+  [0.12, 0.51],  // IELTS
+  [0.145, 0.355], // YDT
+  [0.265, 0.21], // PREPOSITIONS
 ];
 
 const VB_W = 760;
@@ -31,16 +32,17 @@ const links = NODES.map(([fx, fy]) => [Math.round(fx * VB_W), Math.round(fy * VB
 export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOpenLgs }: HexMenuProps) {
   const topics = [
     { label: 'LGS', className: 'een-n1', onClick: onOpenLgs },
-    { label: 'YDT', className: 'een-n2', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
-    { label: 'YÖK-DİL', className: 'een-n3', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'YÖK-DİL') },
-    { label: 'IELTS', className: 'een-n4', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
-    { label: 'YDS', className: 'een-n5', onClick: () => onPractice(FLASHCARD_CATEGORIES.PHRASAL_VERBS, 'YDS') },
-    { label: 'GRAMMAR', className: 'een-n6', onClick: onOpenGrammar },
-    { label: 'ADJECTIVES', className: 'een-n7', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADJECTIVES, 'Adjectives') },
+    { label: 'YÖK-DİL', className: 'een-n2', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'YÖK-DİL') },
+    { label: 'YDS', className: 'een-n3', onClick: () => onPractice(FLASHCARD_CATEGORIES.PHRASAL_VERBS, 'YDS') },
+    { label: 'ADJECTIVES', className: 'een-n4', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADJECTIVES, 'Adjectives') },
+    { label: 'IRREGULAR VERBS', className: 'een-n5', onClick: () => onPractice(FLASHCARD_CATEGORIES.IRREGULAR_VERBS, 'Irregular Verbs') },
+    { label: 'PHRASAL VERBS', className: 'een-n6', onClick: () => onPractice(FLASHCARD_CATEGORIES.PHRASAL_VERBS, 'Phrasal Verbs') },
+    { label: 'ADVERBS', className: 'een-n7', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVERBS, 'Adverbs') },
     { label: 'NOUNS', className: 'een-n8', onClick: () => onPractice(FLASHCARD_CATEGORIES.NOUNS, 'Nouns') },
-    { label: 'ADVERBS', className: 'een-n9', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVERBS, 'Adverbs') },
-    { label: 'PHRASAL VERBS', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.PHRASAL_VERBS, 'Phrasal Verbs') },
-    { label: 'IRREGULAR VERBS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.IRREGULAR_VERBS, 'Irregular Verbs') },
+    { label: 'GRAMMAR', className: 'een-n9', onClick: onOpenGrammar },
+    { label: 'IELTS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
+    { label: 'YDT', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
+    { label: 'PREPOSITIONS', className: 'een-n12', onClick: () => onPractice(FLASHCARD_CATEGORIES.PREPOSITIONS, 'Prepositions') },
   ];
 
   return (
@@ -95,16 +97,16 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           position: absolute;
           display: grid;
           place-items: center;
-          width: clamp(86px, 23vw, 150px);
+          width: clamp(78px, 21vw, 140px);
           aspect-ratio: 1.12;
-          padding: 14px;
+          padding: 6px;
           border: 0;
           transform: translate(-50%, -50%);
           clip-path: polygon(25% 2%, 75% 2%, 100% 50%, 75% 98%, 25% 98%, 0 50%);
           background: var(--gold);
           color: #f7f7f7;
           font: inherit;
-          font-size: clamp(0.72rem, 3vw, 0.92rem);
+          font-size: clamp(0.66rem, 2.8vw, 0.9rem);
           cursor: pointer;
           filter: drop-shadow(0 0 12px rgba(244,184,47,.38));
           animation: een-breathe 4.8s ease-in-out infinite;
@@ -117,6 +119,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           background: #050403;
           z-index: -1;
         }
+        .een-hex--tight { font-size: clamp(0.54rem, 2.35vw, 0.78rem); letter-spacing: -0.02em; }
         .een-hex span {
           max-width: 100%;
           text-align: center;
@@ -132,23 +135,24 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           left: 50%;
           top: 50%;
-          width: clamp(150px, 42vw, 236px);
+          width: clamp(140px, 38vw, 220px);
           animation: een-center-pulse 4s ease-in-out infinite;
         }
         .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); }
         .een-center strong { color: var(--gold); font-weight: 500; }
 
-        .een-n1  { left: 50%;  top: 15%; animation-delay: -.6s; }
-        .een-n2  { left: 20%;  top: 27%; animation-delay: -1.5s; }
-        .een-n3  { left: 80%;  top: 27%; animation-delay: -2.2s; }
-        .een-n4  { left: 11%;  top: 46%; animation-delay: -.9s; }
-        .een-n5  { left: 89%;  top: 46%; animation-delay: -2.8s; }
-        .een-n6  { left: 13%;  top: 66%; animation-delay: -1.8s; }
-        .een-n7  { left: 87%;  top: 66%; animation-delay: -3.4s; }
-        .een-n8  { left: 14%;  top: 81%; animation-delay: -2.5s; }
-        .een-n9  { left: 37%;  top: 90%; animation-delay: -1.1s; }
-        .een-n11 { left: 63%;  top: 90%; animation-delay: -2s; }
-        .een-n10 { left: 86%;  top: 81%; animation-delay: -3s; }
+        .een-n1  { left: 50%;   top: 12%;   animation-delay: -.6s; }
+        .een-n2  { left: 73.5%; top: 21%; animation-delay: -1.5s; }
+        .een-n3  { left: 85.5%; top: 35.5%;   animation-delay: -2.2s; }
+        .een-n4  { left: 88%;   top: 51%;   animation-delay: -.9s; }
+        .een-n5  { left: 85.5%; top: 66.5%;   animation-delay: -2.8s; }
+        .een-n6  { left: 73.5%; top: 81%; animation-delay: -1.8s; }
+        .een-n7  { left: 50%;   top: 90%;   animation-delay: -3.4s; }
+        .een-n8  { left: 26.5%; top: 81%; animation-delay: -2.5s; }
+        .een-n9  { left: 14.5%; top: 66.5%;   animation-delay: -1.1s; }
+        .een-n10 { left: 12%;   top: 51%;   animation-delay: -3s; }
+        .een-n11 { left: 14.5%; top: 35.5%;   animation-delay: -2s; }
+        .een-n12 { left: 26.5%; top: 21%; animation-delay: -.3s; }
 
         @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
         @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
@@ -203,7 +207,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           <button
             type="button"
             key={topic.label}
-            className={`een-hex ${topic.className}`}
+            className={`een-hex ${topic.className}${Math.max(...topic.label.split(' ').map(w => w.length)) >= 10 ? ' een-hex--tight' : ''}`}
             onClick={topic.onClick}
             aria-label={topic.label}
           >

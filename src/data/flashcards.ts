@@ -2,6 +2,7 @@ import { Flashcard } from '../types';
 
 export const FLASHCARD_CATEGORIES = {
   PHRASAL_VERBS: 'Phrasal Verbs',
+  PREPOSITIONS: 'Prepositions',
   EVERYDAY: 'Everyday Words',
   ACADEMIC: 'Academic & IELTS',
   ADVANCED: 'Advanced & GRE/SAT',
