@@ -9,7 +9,7 @@ interface HexMenuProps {
 }
 
 // Satellite node centers as fractions of the field (also drives the SVG link endpoints
-// so lines always connect to hex centers). Order matches `topics` / een-n1..n10.
+// so lines always connect to hex centers). Order matches `topics` / een-n1..n11.
 const NODES: [number, number][] = [
   [0.50, 0.15], // LGS
   [0.20, 0.27], // YDT
@@ -18,9 +18,10 @@ const NODES: [number, number][] = [
   [0.89, 0.46], // YDS
   [0.13, 0.66], // GRAMMAR
   [0.87, 0.66], // ADJECTIVES
-  [0.25, 0.82], // NOUNS
-  [0.50, 0.87], // ADVERBS
-  [0.75, 0.82], // IRREGULAR VERBS
+  [0.14, 0.81], // NOUNS
+  [0.37, 0.90], // ADVERBS
+  [0.63, 0.90], // PHRASAL VERBS
+  [0.86, 0.81], // IRREGULAR VERBS
 ];
 
 const VB_W = 760;
@@ -38,6 +39,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     { label: 'ADJECTIVES', className: 'een-n7', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADJECTIVES, 'Adjectives') },
     { label: 'NOUNS', className: 'een-n8', onClick: () => onPractice(FLASHCARD_CATEGORIES.NOUNS, 'Nouns') },
     { label: 'ADVERBS', className: 'een-n9', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVERBS, 'Adverbs') },
+    { label: 'PHRASAL VERBS', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.PHRASAL_VERBS, 'Phrasal Verbs') },
     { label: 'IRREGULAR VERBS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.IRREGULAR_VERBS, 'Irregular Verbs') },
   ];
 
@@ -93,7 +95,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           position: absolute;
           display: grid;
           place-items: center;
-          width: clamp(96px, 25vw, 150px);
+          width: clamp(86px, 23vw, 150px);
           aspect-ratio: 1.12;
           padding: 14px;
           border: 0;
@@ -143,9 +145,10 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-n5  { left: 89%;  top: 46%; animation-delay: -2.8s; }
         .een-n6  { left: 13%;  top: 66%; animation-delay: -1.8s; }
         .een-n7  { left: 87%;  top: 66%; animation-delay: -3.4s; }
-        .een-n8  { left: 25%;  top: 82%; animation-delay: -2.5s; }
-        .een-n9  { left: 50%;  top: 87%; animation-delay: -1.1s; }
-        .een-n10 { left: 75%;  top: 82%; animation-delay: -3s; }
+        .een-n8  { left: 14%;  top: 81%; animation-delay: -2.5s; }
+        .een-n9  { left: 37%;  top: 90%; animation-delay: -1.1s; }
+        .een-n11 { left: 63%;  top: 90%; animation-delay: -2s; }
+        .een-n10 { left: 86%;  top: 81%; animation-delay: -3s; }
 
         @keyframes een-energy-flow { to { stroke-dashoffset: -72; } }
         @keyframes een-wave-flow { to { stroke-dashoffset: -120; } }
