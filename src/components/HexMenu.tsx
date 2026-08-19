@@ -20,9 +20,9 @@ const NODES: [number, number][] = [
   [0.50, 0.90],  // ADVERBS (saat 6)
   [0.265, 0.81], // NOUNS
   [0.145, 0.665], // GRAMMAR
-  [0.12, 0.51],  // IELTS
+  [0.12, 0.51],  // PREPOSITIONS
   [0.145, 0.355], // YDT
-  [0.265, 0.21], // PREPOSITIONS
+  [0.265, 0.21], // IELTS
 ];
 
 const VB_W = 760;
@@ -40,9 +40,9 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     { label: 'ADVERBS', className: 'een-n7', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVERBS, 'Adverbs') },
     { label: 'NOUNS', className: 'een-n8', onClick: () => onPractice(FLASHCARD_CATEGORIES.NOUNS, 'Nouns') },
     { label: 'GRAMMAR', className: 'een-n9', onClick: onOpenGrammar },
-    { label: 'IELTS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
+    { label: 'PREPOSITIONS', className: 'een-n10', onClick: () => onPractice(FLASHCARD_CATEGORIES.PREPOSITIONS, 'Prepositions') },
     { label: 'YDT', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
-    { label: 'PREPOSITIONS', className: 'een-n12', onClick: () => onPractice(FLASHCARD_CATEGORIES.PREPOSITIONS, 'Prepositions') },
+    { label: 'IELTS', className: 'een-n12', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
   ];
 
   return (
