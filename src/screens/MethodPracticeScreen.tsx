@@ -553,7 +553,14 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
   const current = cards[idx];
   const entry: VocabEntry = (vocab && current && vocab[current.word.toLowerCase()]) || {};
   const example = entry.example || current?.exampleSentence || '';
-  const meanings = entry.meanings ?? (current ? current.turkishMeaning.split(',').map(s => s.trim()) : []);
+  // Card meaning is authoritative per category (multi-meaning words differ
+  // between categories); vocab meanings only back irregular verbs, whose card
+  // meaning embeds the V2/V3 forms redundantly.
+  const meanings = current
+    ? current.category === FLASHCARD_CATEGORIES.IRREGULAR_VERBS
+      ? (entry.meanings ?? current.turkishMeaning.split(',').map(s => s.trim()))
+      : current.turkishMeaning.split(',').map(s => s.trim())
+    : (entry.meanings ?? []);
 
   useEffect(() => {
     loadVocabulary().then(setVocab);
