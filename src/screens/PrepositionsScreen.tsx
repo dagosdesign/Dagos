@@ -10,6 +10,50 @@ interface PrepExample { en: string; tr: string }
 interface PrepItem { phrase: string; meanings: string[]; examples: PrepExample[] }
 interface PrepCategory { no: number; en: string; tr: string; items: PrepItem[] }
 
+// Highlights every occurrence of the structure (incl. "a / b" and "(s)"
+// variants) inside an example sentence in gold.
+function phraseVariants(phrase: string): string[] {
+  const base = phrase.split('/').map(part => part.trim()).filter(Boolean);
+  const out: string[] = [];
+  for (const b of base) {
+    if (b.includes('(s)')) {
+      out.push(b.replace('(s)', ''), b.replace('(s)', 's'));
+    } else {
+      out.push(b);
+    }
+  }
+  // "in contrast to / with" -> second variant is only the last word; rebuild it
+  // from the first variant's prefix ("in contrast with").
+  if (base.length > 1) {
+    const first = base[0].split(' ');
+    for (let i = 1; i < base.length; i++) {
+      if (!base[i].includes(' ') && first.length > 1) {
+        out.push([...first.slice(0, -1), base[i]].join(' '));
+      }
+    }
+  }
+  return [...new Set(out)].sort((a, b) => b.length - a.length);
+}
+
+function HighlightPhrase({ text, phrase }: { text: string; phrase: string }) {
+  const variants = phraseVariants(phrase).map(v => v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  if (!variants.length) return <>{text}</>;
+  const re = new RegExp(`(${variants.join('|')})`, 'gi');
+  // split with a capture group: odd indices are the matched phrase parts.
+  const parts = text.split(re);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <span key={i} className="text-[#f2c463] font-semibold">{part}</span>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 let prepPromise: Promise<PrepCategory[]> | null = null;
 function loadPrepositions(): Promise<PrepCategory[]> {
   if (!prepPromise) {
@@ -68,7 +112,7 @@ export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) 
         {item.examples.map((ex, i) => (
           <div key={i} className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 space-y-3">
             <p className="text-xs font-mono tracking-widest text-[#e3b553]/70 uppercase">Example {i + 1}</p>
-            <p className="text-[15px] text-white leading-relaxed">{ex.en}</p>
+            <p className="text-[15px] text-white leading-relaxed"><HighlightPhrase text={ex.en} phrase={item.phrase} /></p>
             <button
               onClick={() => setShown(s => ({ ...s, [i]: !s[i] }))}
               className="flex items-center gap-1.5 text-[13px] font-semibold text-[#e3b553] hover:text-[#ffd978] transition-colors cursor-pointer"
