@@ -18114,8 +18114,7 @@
   "ipa": "/bæk ʌp/",
   "reading": "bek ap",
   "meanings": [
-   "desteklemek",
-   "arka çıkmak"
+   "desteklemek"
   ],
   "definition": "To support or make a copy of data.",
   "example": "Always back up your files."
@@ -18458,7 +18457,6 @@
   "ipa": "/dɪˈpend ɒn/",
   "reading": "dipend on",
   "meanings": [
-   "güvenmek",
    "bağlı olmak"
   ],
   "definition": "To be controlled or decided by something.",
@@ -19387,8 +19385,7 @@
   "ipa": "/lʊk ˈɑːftə(r)/",
   "reading": "luk aftır",
   "meanings": [
-   "ilgilenmek",
-   "bakmak"
+   "ilgilenmek"
   ],
   "definition": "To take care of someone or something.",
   "example": "Can you look after my cat this weekend?"
@@ -19872,7 +19869,8 @@
   "ipa": "/rɪˈlaɪ ɒn/",
   "reading": "rilay on",
   "meanings": [
-   "güvenmek"
+   "güvenmek",
+   "dayanmak"
   ],
   "definition": "Depend on with full trust.",
   "example": "You can always rely on your friends."
@@ -21693,8 +21691,7 @@
   "ipa": "/kiːp ʌp wɪð/",
   "reading": "kip ap viz",
   "meanings": [
-   "ayak uydurmak",
-   "takip etmek"
+   "ayak uydurmak"
   ],
   "definition": "To move or make progress at the same rate.",
   "example": "It is hard to keep up with the latest fashion trends."
@@ -22463,7 +22460,7 @@
   "ipa": "/wɜːk aʊt/",
   "reading": "wörk aut",
   "meanings": [
-   "antrenman yapmak"
+   "çözmek"
   ],
   "definition": "To exercise to keep fit.",
   "example": "I work out at the gym three times a week."
@@ -25077,8 +25074,7 @@
   "ipa": "/ˌɡet ˈbæk/",
   "reading": "get bek",
   "meanings": [
-   "geri dönmek",
-   "geri almak"
+   "geri dönmek"
   ],
   "definition": "To return to a place or state.",
   "example": "I need to get back to my work now."
@@ -25609,7 +25605,7 @@
   "ipa": "/ɪnˈɡeɪdʒ ɪn/",
   "reading": "ingeyç in",
   "meanings": [
-   "bir şeyle meşgul olmak"
+   "bir faaliyette bulunmak"
   ],
   "definition": "To take part in a particular activity.",
   "example": "Many students engage in sports after school."
@@ -27436,8 +27432,7 @@
   "ipa": "/stænd fɔː/",
   "reading": "stend foo",
   "meanings": [
-   "temsil etmek",
-   "anlamına gelmek"
+   "temsil etmek"
   ],
   "definition": "To represent or mean something.",
   "example": "What does the abbreviation CEO stand for in business?"
@@ -28106,8 +28101,7 @@
   "ipa": "/ɡrəʊ ʌp/",
   "reading": "grou ap",
   "meanings": [
-   "büyümek",
-   "yetişmek"
+   "büyümek"
   ],
   "definition": "To gradually become an adult",
   "example": "Children grow up very quickly these days."
@@ -34003,8 +33997,8 @@
   "ipa": "/diːl wɪð/",
   "reading": "diil vid",
   "meanings": [
-   "başa çıkmak",
-   "ilgilenmek"
+   "ele almak",
+   "başa çıkmak"
   ],
   "definition": "To take action to solve a problem.",
   "example": "Teachers must deal with many student problems daily."
@@ -38155,5 +38149,805 @@
   ],
   "definition": "The act of doing something again.",
   "example": "Constant repetition helps you learn new vocabulary."
+ },
+ "account for": {
+  "ipa": "/əˈkaʊnt fɔː/",
+  "reading": "ıkaunt foo",
+  "meanings": [
+   "açıklamak"
+  ],
+  "definition": "to explain the cause of something",
+  "example": "You must account for the missing money."
+ },
+ "act on": {
+  "ipa": "/ækt ɒn/",
+  "reading": "ekt on",
+  "meanings": [
+   "doğrultusunda hareket etmek"
+  ],
+  "definition": "to take action because of something",
+  "example": "We need to act on this advice immediately."
+ },
+ "add up to": {
+  "ipa": "/æd ʌp tuː/",
+  "reading": "ed ap tu",
+  "meanings": [
+   "toplamı etmek"
+  ],
+  "definition": "to result in a particular total or effect",
+  "example": "These small expenses add up to a large sum."
+ },
+ "agree with": {
+  "ipa": "/əˈɡriː wɪð/",
+  "reading": "ıgrii wid",
+  "meanings": [
+   "aynı fikirde olmak"
+  ],
+  "definition": "to have the same opinion as someone",
+  "example": "I agree with your plan to start early."
+ },
+ "aim at": {
+  "ipa": "/eɪm æt/",
+  "reading": "eym et",
+  "meanings": [
+   "hedeflemek"
+  ],
+  "definition": "to point or direct towards a target",
+  "example": "We must aim at reducing waste this year."
+ },
+ "allow for": {
+  "ipa": "/əˈlaʊ fɔː/",
+  "reading": "ılau foo",
+  "meanings": [
+   "hesaba katmak"
+  ],
+  "definition": "to consider something when making plans",
+  "example": "Always allow for traffic delays when travelling."
+ },
+ "apply for": {
+  "ipa": "/əˈplaɪ fɔː/",
+  "reading": "ıplay foo",
+  "meanings": [
+   "başvurmak"
+  ],
+  "definition": "to make a formal request for something",
+  "example": "She decided to apply for the new job."
+ },
+ "base on": {
+  "ipa": "/beɪs ɒn/",
+  "reading": "beys on",
+  "meanings": [
+   "dayandırmak"
+  ],
+  "definition": "to use something as a foundation",
+  "example": "We base on facts rather than assumptions."
+ },
+ "bear out": {
+  "ipa": "/beə aʊt/",
+  "reading": "bee aut",
+  "meanings": [
+   "doğrulamak"
+  ],
+  "definition": "to support or confirm a statement",
+  "example": "These facts will bear out my story."
+ },
+ "break down": {
+  "ipa": "/breɪk daʊn/",
+  "reading": "breyk daun",
+  "meanings": [
+   "bozulmak"
+  ],
+  "definition": "to stop working or lose control",
+  "example": "Old cars often break down on long trips."
+ },
+ "break out": {
+  "ipa": "/breɪk aʊt/",
+  "reading": "breyk aut",
+  "meanings": [
+   "aniden başlamak"
+  ],
+  "definition": "to start suddenly, especially something dangerous",
+  "example": "War can break out at any moment here."
+ },
+ "bring about": {
+  "ipa": "/brɪŋ əˈbaʊt/",
+  "reading": "brin ıbaut",
+  "meanings": [
+   "sebep olmak"
+  ],
+  "definition": "to cause something to happen",
+  "example": "We hope to bring about positive change soon."
+ },
+ "bring up": {
+  "ipa": "/brɪŋ ʌp/",
+  "reading": "briŋ ap",
+  "meanings": [
+   "gündeme getirmek"
+  ],
+  "definition": "to raise a child or mention a topic",
+  "example": "Please do not bring up that topic again."
+ },
+ "build up": {
+  "ipa": "/bɪld ʌp/",
+  "reading": "bild ap",
+  "meanings": [
+   "geliştirmek"
+  ],
+  "definition": "to increase or strengthen something gradually",
+  "example": "You can build up your confidence by practicing."
+ },
+ "call for": {
+  "ipa": "/kɔːl fɔː/",
+  "reading": "kol foo",
+  "meanings": [
+   "gerektirmek"
+  ],
+  "definition": "to need or publicly demand something",
+  "example": "This difficult situation will call for immediate action."
+ },
+ "call off": {
+  "ipa": "/kɔːl ɒf/",
+  "reading": "kol of",
+  "meanings": [
+   "iptal etmek"
+  ],
+  "definition": "to decide to cancel an event",
+  "example": "They might call off the game due to rain."
+ },
+ "carry on": {
+  "ipa": "/ˈkæri ɒn/",
+  "reading": "keri on",
+  "meanings": [
+   "devam etmek"
+  ],
+  "definition": "to continue doing something",
+  "example": "You must carry on despite the challenges."
+ },
+ "carry out": {
+  "ipa": "/ˈkæri aʊt/",
+  "reading": "keri aut",
+  "meanings": [
+   "gerçekleştirmek"
+  ],
+  "definition": "to perform or complete a task",
+  "example": "We will carry out the plan tomorrow morning."
+ },
+ "come about": {
+  "ipa": "/kʌm əˈbaʊt/",
+  "reading": "kam ıbaut",
+  "meanings": [
+   "meydana gelmek"
+  ],
+  "definition": "to happen or take place",
+  "example": "How did this strange situation come about?"
+ },
+ "come across": {
+  "ipa": "/ˌkʌm əˈkrɒs/",
+  "reading": "kam ıkros",
+  "meanings": [
+   "rastlamak"
+  ],
+  "definition": "To find or meet by chance",
+  "example": "I hope I do not come across any problems today."
+ },
+ "come down to": {
+  "ipa": "/kʌm daʊn tuː/",
+  "reading": "kam daun tu",
+  "meanings": [
+   "özünde olmak"
+  ],
+  "definition": "To be recognized as the most important element",
+  "example": "Success will come down to your effort in the end."
+ },
+ "come from": {
+  "ipa": "/kʌm frɒm/",
+  "reading": "kam fırom",
+  "meanings": [
+   "kaynaklanmak"
+  ],
+  "definition": "To originate in some place or source",
+  "example": "Many delicious fruits come from tropical countries."
+ },
+ "come up": {
+  "ipa": "/kʌm ʌp/",
+  "reading": "kam ap",
+  "meanings": [
+   "ortaya çıkmak"
+  ],
+  "definition": "To arise or happen unexpectedly",
+  "example": "New opportunities often come up when you least expect them."
+ },
+ "come up with": {
+  "ipa": "/kʌm ʌp wɪð/",
+  "reading": "kam ap wid",
+  "meanings": [
+   "fikir bulmak",
+   "çözüm bulmak"
+  ],
+  "definition": "To suggest or think of an idea",
+  "example": "We need to come up with a new plan quickly."
+ },
+ "concentrate on": {
+  "ipa": "/ˈkɒnsəntreɪt ɒn/",
+  "reading": "konsıntreyt on",
+  "meanings": [
+   "yoğunlaşmak"
+  ],
+  "definition": "To direct your attention to one thing",
+  "example": "You must concentrate on your studies to pass."
+ },
+ "consist of": {
+  "ipa": "/kənˈsɪst ɒv/",
+  "reading": "kınsist ov",
+  "meanings": [
+   "-den oluşmak"
+  ],
+  "definition": "To be made up of something",
+  "example": "Healthy meals should consist of vegetables and proteins."
+ },
+ "contribute to": {
+  "ipa": "/kənˈtrɪbjuːt tuː/",
+  "reading": "kıntribyut tu",
+  "meanings": [
+   "katkıda bulunmak"
+  ],
+  "definition": "To help to cause or provide something",
+  "example": "Regular exercise can contribute to a healthier lifestyle."
+ },
+ "cope with": {
+  "ipa": "/kəʊp wɪð/",
+  "reading": "koup wid",
+  "meanings": [
+   "başa çıkmak"
+  ],
+  "definition": "To deal successfully with a difficult situation",
+  "example": "Young students often struggle to cope with exam stress."
+ },
+ "cut back on": {
+  "ipa": "/kʌt bæk ɒn/",
+  "reading": "kat bek on",
+  "meanings": [
+   "azaltmak"
+  ],
+  "definition": "To consume or spend less of something",
+  "example": "We need to cut back on unnecessary expenses now."
+ },
+ "cut down on": {
+  "ipa": "/kʌt daʊn ɒn/",
+  "reading": "kat daun on",
+  "meanings": [
+   "azaltmak"
+  ],
+  "definition": "To reduce the amount or consumption of something",
+  "example": "You should cut down on sugar for your health."
+ },
+ "derive from": {
+  "ipa": "/dɪˈraɪv frɒm/",
+  "reading": "dirayv fırom",
+  "meanings": [
+   "kaynaklanmak"
+  ],
+  "definition": "To come from or originate in something",
+  "example": "Many English words derive from Latin roots."
+ },
+ "do away with": {
+  "ipa": "/duː əˈweɪ wɪð/",
+  "reading": "duıvey wid",
+  "meanings": [
+   "ortadan kaldırmak"
+  ],
+  "definition": "To get rid of or abolish something",
+  "example": "The government wants to do away with these old laws."
+ },
+ "draw on": {
+  "ipa": "/drɔː ɒn/",
+  "reading": "dro on",
+  "meanings": [
+   "yararlanmak"
+  ],
+  "definition": "To use experience or knowledge for a purpose",
+  "example": "Writers often draw on their own lives for inspiration."
+ },
+ "end up": {
+  "ipa": "/end ʌp/",
+  "reading": "end ap",
+  "meanings": [
+   "sonunda bir durumda olmak"
+  ],
+  "definition": "To reach a final state or place eventually",
+  "example": "If you do not plan, you might end up lost."
+ },
+ "figure out": {
+  "ipa": "/ˈfɪɡər aʊt/",
+  "reading": "figır aut",
+  "meanings": [
+   "çözmek",
+   "anlamak"
+  ],
+  "definition": "To understand or find a solution to something",
+  "example": "I can not figure out how to solve this puzzle."
+ },
+ "find out": {
+  "ipa": "/faɪnd aʊt/",
+  "reading": "faynd aut",
+  "meanings": [
+   "öğrenmek",
+   "ortaya çıkarmak"
+  ],
+  "definition": "To discover information or facts about something",
+  "example": "Please call the office to find out the truth."
+ },
+ "focus on": {
+  "ipa": "/ˈfəʊkəs ɒn/",
+  "reading": "foukıs on",
+  "meanings": [
+   "odaklanmak"
+  ],
+  "definition": "To give all your attention to something",
+  "example": "We need to focus on this important project today."
+ },
+ "get across": {
+  "ipa": "/ɡet əˈkrɒs/",
+  "reading": "get ıkros",
+  "meanings": [
+   "anlatmak",
+   "iletmek"
+  ],
+  "definition": "To make people understand something",
+  "example": "I want to get across my message clearly."
+ },
+ "get along with": {
+  "ipa": "/ɡet əˈlɒŋ wɪð/",
+  "reading": "get elong wid",
+  "meanings": [
+   "iyi geçinmek"
+  ],
+  "definition": "To have a friendly relationship with someone",
+  "example": "You should try to get along with your new classmates."
+ },
+ "get around": {
+  "ipa": "/ɡet əˈraʊnd/",
+  "reading": "get ıraund",
+  "meanings": [
+   "engeli aşmak"
+  ],
+  "definition": "To travel or move from place to place",
+  "example": "It is easy to get around the city by bus."
+ },
+ "get away with": {
+  "ipa": "/ɡet əˈweɪ wɪð/",
+  "reading": "get evey wid",
+  "meanings": [
+   "ceza almadan kurtulmak"
+  ],
+  "definition": "To escape punishment for doing something wrong",
+  "example": "You cannot get away with lying to me."
+ },
+ "get over": {
+  "ipa": "/ɡet ˈəʊvə/",
+  "reading": "get ouvı",
+  "meanings": [
+   "atlatmak"
+  ],
+  "definition": "To recover from an illness or difficult situation",
+  "example": "It took him a long time to get over the flu."
+ },
+ "get rid of": {
+  "ipa": "/ɡet rɪd ɒv/",
+  "reading": "get rid ov",
+  "meanings": [
+   "kurtulmak"
+  ],
+  "definition": "To throw away or destroy something unwanted",
+  "example": "I need to get rid of these old clothes."
+ },
+ "get through": {
+  "ipa": "/ɡet θruː/",
+  "reading": "get sru",
+  "meanings": [
+   "tamamlamak"
+  ],
+  "definition": "To finish or survive a difficult situation",
+  "example": "We can get through this tough week together."
+ },
+ "give rise to": {
+  "ipa": "/ɡɪv raɪz tuː/",
+  "reading": "giv rayz tu",
+  "meanings": [
+   "yol açmak"
+  ],
+  "definition": "To cause something to happen",
+  "example": "Heavy rain can give rise to sudden floods."
+ },
+ "give up": {
+  "ipa": "/ɡɪv ʌp/",
+  "reading": "giv ap",
+  "meanings": [
+   "vazgeçmek"
+  ],
+  "definition": "To stop trying or stop doing something",
+  "example": "You must never give up on your dreams."
+ },
+ "go against": {
+  "ipa": "/ɡəʊ əˈɡenst/",
+  "reading": "gou ıgenst",
+  "meanings": [
+   "karşı gelmek"
+  ],
+  "definition": "To oppose or disagree with something",
+  "example": "I do not want to go against my father's wishes."
+ },
+ "go through": {
+  "ipa": "/ɡəʊ θruː/",
+  "reading": "gou sru",
+  "meanings": [
+   "yaşamak"
+  ],
+  "definition": "To experience a difficult situation",
+  "example": "I have to go through a difficult training process."
+ },
+ "keep on": {
+  "ipa": "/kiːp ɒn/",
+  "reading": "kiip on",
+  "meanings": [
+   "devam etmek"
+  ],
+  "definition": "To continue doing something",
+  "example": "You should keep on studying for your exams."
+ },
+ "lead to": {
+  "ipa": "/liːd tuː/",
+  "reading": "liid tu",
+  "meanings": [
+   "yol açmak"
+  ],
+  "definition": "To cause or result in something",
+  "example": "Lack of sleep can lead to serious health problems."
+ },
+ "leave out": {
+  "ipa": "/liːv aʊt/",
+  "reading": "liiv aut",
+  "meanings": [
+   "dahil etmemek"
+  ],
+  "definition": "To omit or not include someone or something",
+  "example": "Do not leave out any details in your report."
+ },
+ "live up to": {
+  "ipa": "/lɪv ʌp tuː/",
+  "reading": "liv ap tu",
+  "meanings": [
+   "beklentiyi karşılamak"
+  ],
+  "definition": "To achieve what is expected or promised",
+  "example": "I hope to live up to my parents' expectations."
+ },
+ "look at": {
+  "ipa": "/lʊk æt/",
+  "reading": "luk et",
+  "meanings": [
+   "incelemek"
+  ],
+  "definition": "To direct your eyes towards something",
+  "example": "Please look at the board during the lesson."
+ },
+ "look forward to": {
+  "ipa": "/lʊk ˈfɔːwəd tuː/",
+  "reading": "luk fooıd tu",
+  "meanings": [
+   "dört gözle beklemek"
+  ],
+  "definition": "To feel excited about something in the future.",
+  "example": "I look forward to your visit next week."
+ },
+ "look into": {
+  "ipa": "/lʊk ˈɪntuː/",
+  "reading": "luk intu",
+  "meanings": [
+   "araştırmak"
+  ],
+  "definition": "To investigate or examine something.",
+  "example": "The police will look into the matter."
+ },
+ "make up": {
+  "ipa": "/meɪk ʌp/",
+  "reading": "meyk ap",
+  "meanings": [
+   "barışmak"
+  ],
+  "definition": "To invent a story or excuse.",
+  "example": "Do not make up stories to excuse yourself."
+ },
+ "make up for": {
+  "ipa": "/meɪk ʌp fɔː(r)/",
+  "reading": "meyk ap foor",
+  "meanings": [
+   "telafi etmek"
+  ],
+  "definition": "To compensate for something bad.",
+  "example": "I want to make up for my late arrival."
+ },
+ "occur to": {
+  "ipa": "/əˈkɜː(r) tuː/",
+  "reading": "aköör tu",
+  "meanings": [
+   "aklına gelmek"
+  ],
+  "definition": "To come into someone's mind.",
+  "example": "Did it ever occur to you to ask?"
+ },
+ "point out": {
+  "ipa": "/pɔɪnt aʊt/",
+  "reading": "poynt aut",
+  "meanings": [
+   "dikkat çekmek",
+   "belirtmek"
+  ],
+  "definition": "To direct attention to something.",
+  "example": "He will point out the errors in the text."
+ },
+ "put forward": {
+  "ipa": "/pʊt ˈfɔːwəd/",
+  "reading": "put fooıd",
+  "meanings": [
+   "öne sürmek"
+  ],
+  "definition": "To propose an idea or plan.",
+  "example": "You should put forward your idea at the meeting."
+ },
+ "put off": {
+  "ipa": "/pʊt ɒf/",
+  "reading": "put of",
+  "meanings": [
+   "ertelemek"
+  ],
+  "definition": "To delay doing something until later.",
+  "example": "Never put off what you can do today."
+ },
+ "put up with": {
+  "ipa": "/pʊt ʌp wɪð/",
+  "reading": "put ap vid",
+  "meanings": [
+   "katlanmak"
+  ],
+  "definition": "To tolerate an unpleasant situation.",
+  "example": "I cannot put up with this noise anymore."
+ },
+ "refer to": {
+  "ipa": "/rɪˈfɜː(r) tuː/",
+  "reading": "riföör tu",
+  "meanings": [
+   "atıfta bulunmak"
+  ],
+  "definition": "To mention or speak about something.",
+  "example": "Please refer to the manual for instructions."
+ },
+ "result from": {
+  "ipa": "/rɪˈzʌlt frɒm/",
+  "reading": "rizalt fram",
+  "meanings": [
+   "kaynaklanmak"
+  ],
+  "definition": "To be caused by something else.",
+  "example": "Many health issues result from poor diet."
+ },
+ "result in": {
+  "ipa": "/rɪˈzʌlt ɪn/",
+  "reading": "rizalt in",
+  "meanings": [
+   "ile sonuçlanmak"
+  ],
+  "definition": "To cause or lead to a situation.",
+  "example": "These actions will result in serious damage."
+ },
+ "rule out": {
+  "ipa": "/ruːl aʊt/",
+  "reading": "ruul aut",
+  "meanings": [
+   "elemek"
+  ],
+  "definition": "To exclude or reject a possibility.",
+  "example": "We cannot rule out this option yet."
+ },
+ "run into": {
+  "ipa": "/rʌn ˈɪntuː/",
+  "reading": "ran intu",
+  "meanings": [
+   "karşılaşmak"
+  ],
+  "definition": "To meet someone by chance.",
+  "example": "I always run into him at the library."
+ },
+ "run out of": {
+  "ipa": "/rʌn aʊt ɒv/",
+  "reading": "ran aut ov",
+  "meanings": [
+   "tükenmek"
+  ],
+  "definition": "To use up all of something.",
+  "example": "We might run out of milk very soon."
+ },
+ "set off": {
+  "ipa": "/set ɒf/",
+  "reading": "set of",
+  "meanings": [
+   "yola çıkmak"
+  ],
+  "definition": "To start a journey.",
+  "example": "We must set off early in the morning."
+ },
+ "set out": {
+  "ipa": "/set aʊt/",
+  "reading": "set aut",
+  "meanings": [
+   "yola çıkmak"
+  ],
+  "definition": "To start a journey with a purpose.",
+  "example": "We plan to set out tomorrow morning."
+ },
+ "set up": {
+  "ipa": "/set ʌp/",
+  "reading": "set ap",
+  "meanings": [
+   "kurmak",
+   "oluşturmak"
+  ],
+  "definition": "To establish or arrange something.",
+  "example": "They want to set up a new company."
+ },
+ "stem from": {
+  "ipa": "/stem frɒm/",
+  "reading": "stem fırom",
+  "meanings": [
+   "kaynaklanmak"
+  ],
+  "definition": "To develop or come from something.",
+  "example": "These issues stem from a simple mistake."
+ },
+ "take after": {
+  "ipa": "/teɪk ˈɑːftə/",
+  "reading": "teyk aaftı",
+  "meanings": [
+   "birine benzemek"
+  ],
+  "definition": "To resemble a family member.",
+  "example": "Children often take after their parents in personality."
+ },
+ "take into account": {
+  "ipa": "/teɪk ˈɪntuː əˈkaʊnt/",
+  "reading": "teyk intu ekaunt",
+  "meanings": [
+   "hesaba katmak",
+   "dikkate almak"
+  ],
+  "definition": "To consider something when making a decision.",
+  "example": "You must take into account his lack of experience."
+ },
+ "take on": {
+  "ipa": "/teɪk ɒn/",
+  "reading": "teyk on",
+  "meanings": [
+   "üstlenmek"
+  ],
+  "definition": "To accept a job or responsibility.",
+  "example": "I cannot take on any more work right now."
+ },
+ "take over": {
+  "ipa": "/teɪk ˈəʊvə/",
+  "reading": "teyk ouvı",
+  "meanings": [
+   "devralmak"
+  ],
+  "definition": "To take control of something.",
+  "example": "A larger company wants to take over our business."
+ },
+ "take part in": {
+  "ipa": "/teɪk pɑːt ɪn/",
+  "reading": "teyk paat in",
+  "meanings": [
+   "katılmak"
+  ],
+  "definition": "To participate in an activity.",
+  "example": "Many students want to take part in the tournament."
+ },
+ "take up": {
+  "ipa": "/teɪk ʌp/",
+  "reading": "teyk ap",
+  "meanings": [
+   "başlamak"
+  ],
+  "definition": "To start a new hobby or activity.",
+  "example": "He decided to take up painting in his free time."
+ },
+ "think over": {
+  "ipa": "/θɪŋk ˈəʊvə/",
+  "reading": "fink ouvı",
+  "meanings": [
+   "etraflıca düşünmek"
+  ],
+  "definition": "To consider something carefully before deciding.",
+  "example": "Please take your time and think over the offer."
+ },
+ "turn down": {
+  "ipa": "/tɜːn daʊn/",
+  "reading": "töön daun",
+  "meanings": [
+   "reddetmek"
+  ],
+  "definition": "To refuse an offer or request.",
+  "example": "It is difficult to turn down such a great job."
+ },
+ "turn into": {
+  "ipa": "/tɜːn ˈɪntuː/",
+  "reading": "töön intu",
+  "meanings": [
+   "dönüşmek"
+  ],
+  "definition": "To change and become something else.",
+  "example": "Caterpillars eventually turn into beautiful butterflies."
+ },
+ "turn out": {
+  "ipa": "/tɜːn aʊt/",
+  "reading": "töön aut",
+  "meanings": [
+   "sonuçlanmak"
+  ],
+  "definition": "To happen in a particular way.",
+  "example": "The party might turn out to be a great success."
+ },
+ "use up": {
+  "ipa": "/juːz ʌp/",
+  "reading": "yuuz ap",
+  "meanings": [
+   "tamamen tüketmek"
+  ],
+  "definition": "To finish the entire supply of something.",
+  "example": "Please do not use up all the milk today."
+ },
+ "work on": {
+  "ipa": "/wɜːk ɒn/",
+  "reading": "vöök on",
+  "meanings": [
+   "üzerinde çalışmak"
+  ],
+  "definition": "To spend time repairing or improving something.",
+  "example": "Designers must work on the new project tomorrow."
+ },
+ "bring out": {
+  "ipa": "/brɪŋ aʊt/",
+  "reading": "bring aut",
+  "meanings": [
+   "piyasaya sürmek"
+  ],
+  "definition": "To produce or publish something new.",
+  "example": "The publisher plans to bring out a new book."
+ },
+ "come into effect": {
+  "ipa": "/kʌm ˈɪntuː ɪˈfekt/",
+  "reading": "kam intu ifekt",
+  "meanings": [
+   "yürürlüğe girmek"
+  ],
+  "definition": "To start to apply as a law.",
+  "example": "The new tax law will come into effect tomorrow."
+ },
+ "look down on": {
+  "ipa": "/lʊk daʊn ɒn/",
+  "reading": "luk daun on",
+  "meanings": [
+   "küçümsemek"
+  ],
+  "definition": "To think that you are better than someone.",
+  "example": "You should not look down on people who are poor."
+ },
+ "make use of": {
+  "ipa": "/meɪk juːs ɒv/",
+  "reading": "meyk yuus ov",
+  "meanings": [
+   "yararlanmak",
+   "kullanmak"
+  ],
+  "definition": "To use something that is available.",
+  "example": "We can make use of this old computer now."
  }
 }
