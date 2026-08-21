@@ -13,7 +13,7 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
   httpOptions: { headers: { 'User-Agent': 'aistudio-build' } },
 });
-const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-2.0-flash'];
+const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite'];
 
 const vocab = JSON.parse(fs.readFileSync('C:/Users/Dagos/Desktop/PROJE/LEX/public/vocabulary.json', 'utf8'));
 const flash = fs.readFileSync('C:/Users/Dagos/Desktop/PROJE/LEX/src/data/flashcards.ts', 'utf8');

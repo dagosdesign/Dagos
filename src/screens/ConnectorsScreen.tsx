@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, BookOpen, Compass } from 'lucide-react';
 
-// Prepositions guide, styled after the Grammar section: 19 meaning categories
+// Connectors guide, styled after the Grammar section: 19 meaning categories
 // -> structure list -> detail with meanings and 3 B1 examples whose Turkish
 // translations stay hidden behind a "Türkçesini Göster" toggle.
 
-interface PrepExample { en: string; tr: string }
-interface PrepItem { phrase: string; meanings: string[]; examples: PrepExample[] }
-interface PrepCategory { no: number; en: string; tr: string; items: PrepItem[] }
+interface ConnExample { en: string; tr: string }
+interface ConnItem { phrase: string; meanings: string[]; examples: ConnExample[] }
+interface ConnCategory { no: number; en: string; tr: string; items: ConnItem[] }
 
 // Highlights every occurrence of the structure (incl. "a / b" and "(s)"
 // variants) inside an example sentence in gold.
@@ -54,28 +54,28 @@ function HighlightPhrase({ text, phrase }: { text: string; phrase: string }) {
   );
 }
 
-let prepPromise: Promise<PrepCategory[]> | null = null;
-function loadPrepositions(): Promise<PrepCategory[]> {
-  if (!prepPromise) {
-    prepPromise = fetch('/prepositions.json')
+let connPromise: Promise<ConnCategory[]> | null = null;
+function loadConnectors(): Promise<ConnCategory[]> {
+  if (!connPromise) {
+    connPromise = fetch('/connectors.json')
       .then(r => (r.ok ? r.json() : []))
       .catch(() => []);
   }
-  return prepPromise;
+  return connPromise;
 }
 
-interface PrepositionsScreenProps {
+interface ConnectorsScreenProps {
   onBack: () => void;
 }
 
-export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) {
-  const [cats, setCats] = useState<PrepCategory[]>([]);
-  const [cat, setCat] = useState<PrepCategory | null>(null);
-  const [item, setItem] = useState<PrepItem | null>(null);
+export default function ConnectorsScreen({ onBack }: ConnectorsScreenProps) {
+  const [cats, setCats] = useState<ConnCategory[]>([]);
+  const [cat, setCat] = useState<ConnCategory | null>(null);
+  const [item, setItem] = useState<ConnItem | null>(null);
   const [shown, setShown] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
-    loadPrepositions().then(setCats);
+    loadConnectors().then(setCats);
   }, []);
 
   const backButton = (label: string, onClick: () => void) => (
@@ -90,7 +90,7 @@ export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) 
   /* ---------- Detail: one structure ---------- */
   if (cat && item) {
     return (
-      <motion.div key={`prep-item-${item.phrase}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
+      <motion.div key={`conn-item-${item.phrase}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
         {backButton(cat.en, () => { setItem(null); setShown({}); })}
 
         <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md">
@@ -134,8 +134,8 @@ export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) 
   /* ---------- Structure list of one category ---------- */
   if (cat) {
     return (
-      <motion.div key={`prep-cat-${cat.no}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
-        {backButton('Prepositions', () => setCat(null))}
+      <motion.div key={`conn-cat-${cat.no}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
+        {backButton('Connectors', () => setCat(null))}
 
         <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
           <span className="w-8 h-8 rounded-xl bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
@@ -168,7 +168,7 @@ export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) 
 
   /* ---------- Category grid ---------- */
   return (
-    <motion.div key="prep-cats" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
+    <motion.div key="conn-cats" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 pb-6">
       {backButton('Ana sayfa', onBack)}
 
       <div className="bg-white/[0.02] rounded-2xl border border-white/[0.06] p-5 shadow-md flex items-center gap-3">
@@ -176,8 +176,8 @@ export default function PrepositionsScreen({ onBack }: PrepositionsScreenProps) 
           <Compass className="w-5 h-5" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Prepositions</h2>
-          <p className="text-[13px] text-white/75 font-mono">{cats.length} anlam kategorisi · Edatlar ve yapılar</p>
+          <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Connectors</h2>
+          <p className="text-[13px] text-white/75 font-mono">{cats.length} anlam kategorisi · Bağlaçlar ve bağlayıcı yapılar</p>
         </div>
       </div>
 

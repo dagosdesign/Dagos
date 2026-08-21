@@ -8,7 +8,7 @@ import BottomNav, { NavItem } from './components/BottomNav';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
-import PrepositionsScreen from './screens/PrepositionsScreen';
+import ConnectorsScreen from './screens/ConnectorsScreen';
 import FlashcardsScreen from './screens/FlashcardsScreen';
 import AiCoachScreen from './screens/AiCoachScreen';
 import QuizScreen from './screens/QuizScreen';
@@ -137,7 +137,7 @@ export default function App() {
   }, []);
 
   const [showLgs, setShowLgs] = useState(false);
-  const [showPrepositions, setShowPrepositions] = useState(false);
+  const [showConnectors, setShowConnectors] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -197,22 +197,22 @@ export default function App() {
           />
         ) : (
           <>
-            {activeTab === 'home' && showPrepositions && (
-              <PrepositionsScreen onBack={() => setShowPrepositions(false)} />
+            {activeTab === 'home' && showConnectors && (
+              <ConnectorsScreen onBack={() => setShowConnectors(false)} />
             )}
-            {activeTab === 'home' && !showPrepositions && showLgs && (
+            {activeTab === 'home' && !showConnectors && showLgs && (
               <LgsUnitsScreen
                 onBack={() => setShowLgs(false)}
                 onSelectUnit={(category, label) => setOrbFlow({ category, label })}
               />
             )}
-            {activeTab === 'home' && !showPrepositions && !showLgs && (
+            {activeTab === 'home' && !showConnectors && !showLgs && (
               <HomeScreen
                 onPractice={(category, label) => setOrbFlow({ category, label })}
                 onOpenGrammar={() => handleNavigate('grammar')}
                 onOpenQuizHub={() => setOrbFlow({ category: null, label: 'General English' })}
                 onOpenLgs={() => setShowLgs(true)}
-                onOpenPrepositions={() => setShowPrepositions(true)}
+                onOpenConnectors={() => setShowConnectors(true)}
               />
             )}
             {activeTab === 'cards' && (

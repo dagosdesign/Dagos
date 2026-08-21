@@ -18,7 +18,7 @@ const ai = new GoogleGenAI({
   httpOptions: { headers: { 'User-Agent': 'aistudio-build' } },
 });
 
-const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-2.0-flash'];
+const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite'];
 
 const schema = {
   type: Type.OBJECT,

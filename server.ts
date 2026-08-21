@@ -268,7 +268,7 @@ app.post("/api/practice-content", async (req, res) => {
         responseMimeType: "application/json",
         responseSchema,
       },
-    }, ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.0-flash"]);
+    }, ["gemini-3.5-flash-lite", "gemini-3.5-flash"]);
 
     const text = response.text;
     if (!text) throw new Error("Empty response received from the Gemini model.");
