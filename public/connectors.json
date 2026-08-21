@@ -1,0 +1,5871 @@
+[
+ {
+  "no": 1,
+  "en": "CAUSE & REASON",
+  "tr": "SEBEP & NEDEN",
+  "items": [
+   {
+    "phrase": "because",
+    "meanings": [
+     "çünkü"
+    ],
+    "examples": [
+     {
+      "en": "I stayed at home because it was raining heavily.",
+      "tr": "Evde kaldım çünkü çok yağmur yağıyordu."
+     },
+     {
+      "en": "She works hard because she wants to buy a new car.",
+      "tr": "Yeni bir araba almak istediği için çok çalışıyor."
+     },
+     {
+      "en": "We ordered a pizza because we were very hungry.",
+      "tr": "Çok aç olduğumuz için pizza sipariş ettik."
+     }
+    ]
+   },
+   {
+    "phrase": "as",
+    "meanings": [
+     "çünkü",
+     "-dığı için"
+    ],
+    "examples": [
+     {
+      "en": "I turned off the TV as the movie was very boring.",
+      "tr": "Film çok sıkıcı olduğu için televizyonu kapattım."
+     },
+     {
+      "en": "She didn't come to school as she was sick.",
+      "tr": "Hasta olduğu için okula gelmedi."
+     },
+     {
+      "en": "We walked carefully as the floor was wet.",
+      "tr": "Yer ıslak olduğu için dikkatlice yürüdük."
+     }
+    ]
+   },
+   {
+    "phrase": "since",
+    "meanings": [
+     "çünkü",
+     "-dığı için"
+    ],
+    "examples": [
+     {
+      "en": "We should go home since it is getting dark.",
+      "tr": "Hava karardığı için eve gitmeliyiz."
+     },
+     {
+      "en": "I cannot buy this phone since I don't have enough money.",
+      "tr": "Yeterli param olmadığı için bu telefonu satın alamıyorum."
+     },
+     {
+      "en": "She chose the red dress since it was cheaper.",
+      "tr": "Kırmızı elbiseyi daha ucuz olduğu için seçti."
+     }
+    ]
+   },
+   {
+    "phrase": "inasmuch as",
+    "meanings": [
+     "çünkü",
+     "-dığı için"
+    ],
+    "examples": [
+     {
+      "en": "The project was successful inasmuch as we met all our goals.",
+      "tr": "Bütün hedeflerimize ulaştığımız için proje başarılı oldu."
+     },
+     {
+      "en": "He is a good manager inasmuch as he listens to his team.",
+      "tr": "Ekibini dinlediği için iyi bir yöneticidir."
+     },
+     {
+      "en": "This book is useful inasmuch as it explains English grammar simply.",
+      "tr": "Bu kitap İngilizce dil bilgisini sade bir şekilde açıkladığı için faydalıdır."
+     }
+    ]
+   },
+   {
+    "phrase": "seeing that",
+    "meanings": [
+     "mademki",
+     "-dığı için"
+    ],
+    "examples": [
+     {
+      "en": "We can go for a walk seeing that the weather is nice.",
+      "tr": "Hava güzel olduğuna göre yürüyüşe çıkabiliriz."
+     },
+     {
+      "en": "I will help you seeing that you are very busy.",
+      "tr": "Mademki çok meşgulsün, sana yardım edeceğim."
+     },
+     {
+      "en": "She stayed at home seeing that she felt tired.",
+      "tr": "Kendini yorgun hissettiği için evde kaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "seeing as",
+    "meanings": [
+     "mademki",
+     "-dığı için"
+    ],
+    "examples": [
+     {
+      "en": "You should rest seeing as you have a headache.",
+      "tr": "Mademki başın ağrıyor, dinlenmelisin."
+     },
+     {
+      "en": "We can eat outside seeing as there is no food at home.",
+      "tr": "Evde yemek olmadığı için dışarıda yiyebiliriz."
+     },
+     {
+      "en": "I invited him seeing as he is your friend.",
+      "tr": "Senin arkadaşın olduğu için onu davet ettim."
+     }
+    ]
+   },
+   {
+    "phrase": "now that",
+    "meanings": [
+     "mademki",
+     "artık ... olduğuna göre"
+    ],
+    "examples": [
+     {
+      "en": "We can start the meeting now that everyone is here.",
+      "tr": "Artık herkes burada olduğuna göre toplantıya başlayabiliriz."
+     },
+     {
+      "en": "I can relax now that my exams are finished.",
+      "tr": "Sınavlarım bittiğine göre artık rahatlayabilirim."
+     },
+     {
+      "en": "You can drive a car now that you have a license.",
+      "tr": "Artık ehliyetin olduğuna göre araba sürebilirsin."
+     }
+    ]
+   },
+   {
+    "phrase": "because of",
+    "meanings": [
+     "nedeniyle",
+     "yüzünden"
+    ],
+    "examples": [
+     {
+      "en": "We cancelled the picnic because of the bad weather.",
+      "tr": "Kötü hava yüzünden pikniği iptal ettik."
+     },
+     {
+      "en": "He was late because of the heavy traffic.",
+      "tr": "Yoğun trafik nedeniyle geç kaldı."
+     },
+     {
+      "en": "I couldn't sleep because of the noise.",
+      "tr": "Gürültü yüzünden uyuyamadım."
+     }
+    ]
+   },
+   {
+    "phrase": "due to",
+    "meanings": [
+     "nedeniyle",
+     "-den dolayı"
+    ],
+    "examples": [
+     {
+      "en": "The flight was delayed due to thick fog.",
+      "tr": "Uçuş yoğun sis nedeniyle ertelendi."
+     },
+     {
+      "en": "She missed the meeting due to an unexpected problem.",
+      "tr": "Beklenmedik bir sorun yüzünden toplantıyı kaçırdı."
+     },
+     {
+      "en": "The shop is closed due to repairs.",
+      "tr": "Dükkan tadilat nedeniyle kapalı."
+     }
+    ]
+   },
+   {
+    "phrase": "owing to",
+    "meanings": [
+     "nedeniyle",
+     "-den dolayı"
+    ],
+    "examples": [
+     {
+      "en": "He succeeded owing to his hard work.",
+      "tr": "Sıkı çalışması sayesinde başarılı oldu."
+     },
+     {
+      "en": "The game was cancelled owing to heavy rain.",
+      "tr": "Maç şiddetli yağmur nedeniyle iptal edildi."
+     },
+     {
+      "en": "The company lost money owing to poor planning.",
+      "tr": "Şirket kötü planlama yüzünden para kaybetti."
+     }
+    ]
+   },
+   {
+    "phrase": "on account of",
+    "meanings": [
+     "nedeniyle",
+     "yüzünden"
+    ],
+    "examples": [
+     {
+      "en": "We stayed indoors on account of the extreme heat.",
+      "tr": "Aşırı sıcak nedeniyle içeride kaldık."
+     },
+     {
+      "en": "She wears glasses on account of her poor eyesight.",
+      "tr": "Gözlerinin zayıf olması yüzünden gözlük takıyor."
+     },
+     {
+      "en": "The trains are running late on account of the snow.",
+      "tr": "Trenler kar nedeniyle geç çalışıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "by reason of",
+    "meanings": [
+     "nedeniyle",
+     "sebebiyle"
+    ],
+    "examples": [
+     {
+      "en": "He was allowed to enter by reason of his special permit.",
+      "tr": "Özel izni olması sebebiyle içeri girmesine izin verildi."
+     },
+     {
+      "en": "They won the match by reason of their great teamwork.",
+      "tr": "Harika takım çalışmaları sayesinde maçı kazandılar."
+     },
+     {
+      "en": "The museum is closed by reason of national holiday.",
+      "tr": "Müze resmi tatil nedeniyle kapalı."
+     }
+    ]
+   },
+   {
+    "phrase": "thanks to",
+    "meanings": [
+     "sayesinde"
+    ],
+    "examples": [
+     {
+      "en": "We finished the project on time thanks to your help.",
+      "tr": "Senin yardımın sayesinde projeyi zamanında bitirdik."
+     },
+     {
+      "en": "She speaks English very well thanks to her online teacher.",
+      "tr": "Çevrimiçi öğretmeni sayesinde çok iyi İngilizce konuşuyor."
+     },
+     {
+      "en": "Thanks to the sunny weather, we had a wonderful picnic.",
+      "tr": "Güneşli hava sayesinde harika bir piknik yaptık."
+     }
+    ]
+   },
+   {
+    "phrase": "for lack of",
+    "meanings": [
+     "eksikliğinden dolayı"
+    ],
+    "examples": [
+     {
+      "en": "The team lost the game for lack of practice.",
+      "tr": "Takım, antrenman eksikliğinden dolayı maçı kaybetti."
+     },
+     {
+      "en": "We canceled the trip for lack of money.",
+      "tr": "Para eksikliğinden dolayı geziyi iptal ettik."
+     },
+     {
+      "en": "The plan failed for lack of support from the manager.",
+      "tr": "Plan, müdürün destek eksikliğinden dolayı başarısız oldu."
+     }
+    ]
+   },
+   {
+    "phrase": "for want of",
+    "meanings": [
+     "yokluğundan dolayı"
+    ],
+    "examples": [
+     {
+      "en": "Many old houses are ruined for want of care.",
+      "tr": "Birçok eski ev, bakım yokluğundan dolayı harap oluyor."
+     },
+     {
+      "en": "The engine stopped working for want of oil.",
+      "tr": "Motor, yağ yokluğundan dolayı çalışmayı durdurdu."
+     },
+     {
+      "en": "They had to sleep in the car for want of a hotel room.",
+      "tr": "Otel odası yokluğundan dolayı arabada uyumak zorunda kaldılar."
+     }
+    ]
+   },
+   {
+    "phrase": "out of",
+    "meanings": [
+     "nedeniyle"
+    ],
+    "examples": [
+     {
+      "en": "She asked the question out of curiosity.",
+      "tr": "Merakı nedeniyle soruyu sordu."
+     },
+     {
+      "en": "He helped the old woman out of kindness.",
+      "tr": "Yaşlı kadına nezaketi nedeniyle yardım etti."
+     },
+     {
+      "en": "They stayed home out of fear of the wild animals.",
+      "tr": "Vahşi hayvan korkusu nedeniyle evde kaldılar."
+     }
+    ]
+   },
+   {
+    "phrase": "in view of",
+    "meanings": [
+     "göz önüne alındığında",
+     "nedeniyle"
+    ],
+    "examples": [
+     {
+      "en": "In view of the heavy rain, the match was postponed.",
+      "tr": "Sağanak yağmur göz önüne alındığında, maç ertelendi."
+     },
+     {
+      "en": "We should change our plans in view of these new problems.",
+      "tr": "Bu yeni sorunlar göz önüne alındığında planlarımızı değiştirmeliyiz."
+     },
+     {
+      "en": "In view of his bad health, he decided to retire early.",
+      "tr": "Kötü sağlığı göz önüne alındığında, erken emekli olmaya karar verdi."
+     }
+    ]
+   },
+   {
+    "phrase": "in light of",
+    "meanings": [
+     "ışığında",
+     "göz önüne alındığında"
+    ],
+    "examples": [
+     {
+      "en": "We changed our decision in light of the new report.",
+      "tr": "Yeni raporun ışığında kararımızı değiştirdik."
+     },
+     {
+      "en": "In light of these facts, we must be very careful.",
+      "tr": "Bu gerçeklerin ışığında çok dikkatli olmalıyız."
+     },
+     {
+      "en": "The school changed the rules in light of the students' feedback.",
+      "tr": "Okul, öğrencilerin geri bildirimleri ışığında kuralları değiştirdi."
+     }
+    ]
+   },
+   {
+    "phrase": "considering",
+    "meanings": [
+     "göz önüne alındığında"
+    ],
+    "examples": [
+     {
+      "en": "He did very well in the exam, considering his illness.",
+      "tr": "Hastalığı göz önüne alındığında, sınavda çok başarılı oldu."
+     },
+     {
+      "en": "Considering her age, she plays the piano wonderfully.",
+      "tr": "Yaşı göz önüne alındığında, harika piyano çalıyor."
+     },
+     {
+      "en": "The hotel was cheap, considering its great location.",
+      "tr": "Harika konumu göz önüne alındığında otel ucuzdu."
+     }
+    ]
+   },
+   {
+    "phrase": "because of the fact that",
+    "meanings": [
+     "... gerçeğinden dolayı"
+    ],
+    "examples": [
+     {
+      "en": "She didn't buy the dress because of the fact that it was too expensive.",
+      "tr": "Elbiseyi çok pahalı olduğu gerçeğinden dolayı satın almadı."
+     },
+     {
+      "en": "We stayed at home because of the fact that we had no money left.",
+      "tr": "Hiç paramız kalmadığı gerçeğinden dolayı evde kaldık."
+     },
+     {
+      "en": "He got the job because of the fact that he speaks three languages.",
+      "tr": "Üç dil konuştuğu gerçeğinden dolayı işi aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "due to the fact that",
+    "meanings": [
+     "... gerçeğinden dolayı"
+    ],
+    "examples": [
+     {
+      "en": "The flight was delayed due to the fact that the weather was terrible.",
+      "tr": "Uçuş, havanın berbat olduğu gerçeğinden dolayı ertelendi."
+     },
+     {
+      "en": "He cannot play today due to the fact that he is injured.",
+      "tr": "Sakat olduğu gerçeğinden dolayı bugün oynayamaz."
+     },
+     {
+      "en": "She is successful due to the fact that she works hard every day.",
+      "tr": "Her gün çok çalıştığı gerçeğinden dolayı başarılı."
+     }
+    ]
+   },
+   {
+    "phrase": "owing to the fact that",
+    "meanings": [
+     "... gerçeğinden dolayı"
+    ],
+    "examples": [
+     {
+      "en": "We arrived late owing to the fact that the traffic was very heavy.",
+      "tr": "Trafiğin çok yoğun olduğu gerçeğinden dolayı geç vardık."
+     },
+     {
+      "en": "The shop closed down owing to the fact that it lost many customers.",
+      "tr": "Mağaza, birçok müşteri kaybettiği gerçeğinden dolayı kapandı."
+     },
+     {
+      "en": "He cannot drive owing to the fact that he has no license.",
+      "tr": "Ehliyeti olmadığı gerçeğinden dolayı araba kullanamaz."
+     }
+    ]
+   },
+   {
+    "phrase": "on account of the fact that",
+    "meanings": [
+     "... gerçeğinden dolayı"
+    ],
+    "examples": [
+     {
+      "en": "She got a high grade on account of the fact that she studied all night.",
+      "tr": "Bütün gece çalıştığı gerçeğinden dolayı yüksek bir not aldı."
+     },
+     {
+      "en": "They cancelled the picnic on account of the fact that it started to rain.",
+      "tr": "Yağmur yağmaya başladığı gerçeğinden dolayı pikniği iptal ettiler."
+     },
+     {
+      "en": "I can't go to the concert on account of the fact that I don't have a ticket.",
+      "tr": "Biletim olmadığı gerçeğinden dolayı konsere gidemiyorum."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 2,
+  "en": "RESULT & CONSEQUENCE",
+  "tr": "SONUÇ",
+  "items": [
+   {
+    "phrase": "so",
+    "meanings": [
+     "bu yüzden",
+     "dolayısıyla"
+    ],
+    "examples": [
+     {
+      "en": "It was raining, so we took an umbrella.",
+      "tr": "Yağmur yağıyordu, bu yüzden şemsiye aldık."
+     },
+     {
+      "en": "She was very tired, so she went to bed early.",
+      "tr": "Çok yorgundu, bu yüzden erken yattı."
+     },
+     {
+      "en": "The restaurant was full, so we went to another place.",
+      "tr": "Restoran doluydu, bu yüzden başka bir yere gittik."
+     }
+    ]
+   },
+   {
+    "phrase": "therefore",
+    "meanings": [
+     "bu nedenle"
+    ],
+    "examples": [
+     {
+      "en": "She worked very hard; therefore, she passed the exam easily.",
+      "tr": "Çok sıkı çalıştı; bu nedenle sınavı kolayca geçti."
+     },
+     {
+      "en": "The shop was closed; therefore, we could not buy any bread.",
+      "tr": "Dükkan kapalıydı; bu nedenle hiç ekmek alamadık."
+     },
+     {
+      "en": "He lost his wallet and therefore had to walk home.",
+      "tr": "Cüzdanını kaybetti ve bu nedenle eve yürümek zorunda kaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "consequently",
+    "meanings": [
+     "sonuç olarak",
+     "dolayısıyla"
+    ],
+    "examples": [
+     {
+      "en": "The weather was terrible; consequently, the flight was canceled.",
+      "tr": "Hava berbattı; sonuç olarak uçuş iptal edildi."
+     },
+     {
+      "en": "He did not save any money and consequently could not buy the car.",
+      "tr": "Hiç para biriktirmedi ve dolayısıyla arabayı satın alamadı."
+     },
+     {
+      "en": "The power went out; consequently, we had to eat dinner in the dark.",
+      "tr": "Elektrikler kesildi; sonuç olarak akşam yemeğini karanlıkta yemek zorunda kaldık."
+     }
+    ]
+   },
+   {
+    "phrase": "as a result",
+    "meanings": [
+     "sonuç olarak"
+    ],
+    "examples": [
+     {
+      "en": "He practiced every day and, as a result, won the match.",
+      "tr": "Her gün antrenman yaptı ve sonuç olarak maçı kazandı."
+     },
+     {
+      "en": "The bus broke down and we were late as a result.",
+      "tr": "Otobüs bozuldu ve sonuç olarak geç kaldık."
+     },
+     {
+      "en": "She missed many classes; as a result, she did not understand the homework.",
+      "tr": "Birçok dersi kaçırdı; sonuç olarak ödevi anlamadı."
+     }
+    ]
+   },
+   {
+    "phrase": "thus",
+    "meanings": [
+     "böylece",
+     "dolayısıyla"
+    ],
+    "examples": [
+     {
+      "en": "He lowered the price, thus attracting more customers.",
+      "tr": "Fiyatı düşürdü, böylece daha fazla müşteri çekti."
+     },
+     {
+      "en": "The team trained hard, thus winning the championship.",
+      "tr": "Takım sıkı çalıştı, böylece şampiyonluğu kazandı."
+     },
+     {
+      "en": "We took a shortcut and thus arrived ten minutes early.",
+      "tr": "Kısa bir yoldan gittik ve böylece on dakika erken vardık."
+     }
+    ]
+   },
+   {
+    "phrase": "hence",
+    "meanings": [
+     "bu nedenle",
+     "dolayısıyla"
+    ],
+    "examples": [
+     {
+      "en": "The company grew rapidly, hence the need for more workers.",
+      "tr": "Şirket hızla büyüdü, bu nedenle daha fazla işçiye ihtiyaç duyuldu."
+     },
+     {
+      "en": "He was born in France, hence his accent.",
+      "tr": "Fransa'da doğdu, dolayısıyla aksanı oradan geliyor."
+     },
+     {
+      "en": "The paths are wet, hence you must walk carefully.",
+      "tr": "Yollar ıslak, bu nedenle dikkatli yürümelisiniz."
+     }
+    ]
+   },
+   {
+    "phrase": "accordingly",
+    "meanings": [
+     "buna göre",
+     "dolayısıyla"
+    ],
+    "examples": [
+     {
+      "en": "The rules have changed and we must act accordingly.",
+      "tr": "Kurallar değişti ve buna göre hareket etmeliyiz."
+     },
+     {
+      "en": "She knew it was a formal dinner and dressed accordingly.",
+      "tr": "Bunun resmi bir akşam yemeği olduğunu biliyordu ve buna göre giyindi."
+     },
+     {
+      "en": "Prices are rising; accordingly, we should reduce our spending.",
+      "tr": "Fiyatlar yükseliyor; dolayısıyla harcamalarımızı azaltmalıyız."
+     }
+    ]
+   },
+   {
+    "phrase": "as a result of",
+    "meanings": [
+     "sonucunda"
+    ],
+    "examples": [
+     {
+      "en": "The match was delayed as a result of the heavy rain.",
+      "tr": "Maç, şiddetli yağmur sonucunda ertelendi."
+     },
+     {
+      "en": "He got a promotion as a result of his hard work.",
+      "tr": "Sıkı çalışmasının sonucunda terfi aldı."
+     },
+     {
+      "en": "The lake dried up as a result of the dry summer.",
+      "tr": "Kurak yaz sonucunda göl kurudu."
+     }
+    ]
+   },
+   {
+    "phrase": "as a consequence of",
+    "meanings": [
+     "sonucunda",
+     "neticesinde"
+    ],
+    "examples": [
+     {
+      "en": "She lost her keys as a consequence of her carelessness.",
+      "tr": "Dikkatsizliğinin bir sonucu olarak anahtarlarını kaybetti."
+     },
+     {
+      "en": "The crop failed as a consequence of the severe frost.",
+      "tr": "Şiddetli don neticesinde ürünler zarar gördü."
+     },
+     {
+      "en": "Many shops closed as a consequence of the economic crisis.",
+      "tr": "Ekonomik krizin sonucunda birçok dükkan kapandı."
+     }
+    ]
+   },
+   {
+    "phrase": "consequent upon",
+    "meanings": [
+     "sonucunda"
+    ],
+    "examples": [
+     {
+      "en": "The difficulties consequent upon the change of system were solved.",
+      "tr": "Sistem değişikliği sonucunda ortaya çıkan zorluklar çözüldü."
+     },
+     {
+      "en": "We had to face many problems consequent upon the storm.",
+      "tr": "Fırtına sonucunda oluşan birçok sorunla yüzleşmek zorunda kaldık."
+     },
+     {
+      "en": "The delays consequent upon the road works frustrated the drivers.",
+      "tr": "Yol çalışmaları sonucunda yaşanan gecikmeler sürücüleri hayal kırıklığına uğrattı."
+     }
+    ]
+   },
+   {
+    "phrase": "in the wake of",
+    "meanings": [
+     "ardından",
+     "sonucu olarak"
+    ],
+    "examples": [
+     {
+      "en": "The government built new houses in the wake of the earthquake.",
+      "tr": "Hükümet, depremin ardından yeni evler inşa etti."
+     },
+     {
+      "en": "Prices went up in the wake of the oil shortage.",
+      "tr": "Petrol sıkıntısının sonucu olarak fiyatlar yükseldi."
+     },
+     {
+      "en": "The country faced deep changes in the wake of the war.",
+      "tr": "Ülke, savaşın ardından derin değişikliklerle karşı karşıya kaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "following",
+    "meanings": [
+     "ardından",
+     "sonrasında"
+    ],
+    "examples": [
+     {
+      "en": "They had a party following their graduation ceremony.",
+      "tr": "Mezuniyet törenlerinin ardından bir parti verdiler."
+     },
+     {
+      "en": "The police made an arrest following the investigation.",
+      "tr": "Polis, soruşturmanın ardından bir tutuklama yaptı."
+     },
+     {
+      "en": "The restaurant opened again following a complete repair.",
+      "tr": "Restoran, tamamen tamir edilmesinin sonrasında tekrar açıldı."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 3,
+  "en": "PURPOSE & INTENTION",
+  "tr": "AMAÇ & NİYET",
+  "items": [
+   {
+    "phrase": "for",
+    "meanings": [
+     "için"
+    ],
+    "examples": [
+     {
+      "en": "She went to the supermarket for some fresh milk.",
+      "tr": "Taze süt almak için süpermarkete gitti."
+     },
+     {
+      "en": "We bought a beautiful gift for our teacher's birthday.",
+      "tr": "Öğretmenimizin doğum günü için güzel bir hediye aldık."
+     },
+     {
+      "en": "He runs every morning for his health.",
+      "tr": "Sağlığı için her sabah koşar."
+     }
+    ]
+   },
+   {
+    "phrase": "so that",
+    "meanings": [
+     "...mesi için"
+    ],
+    "examples": [
+     {
+      "en": "He is saving money so that he can buy a new bike.",
+      "tr": "Yeni bir bisiklet alabilmesi için para biriktiriyor."
+     },
+     {
+      "en": "I spoke slowly so that everyone could understand me.",
+      "tr": "Herkesin beni anlayabilmesi için yavaş konuştum."
+     },
+     {
+      "en": "She left the door open so that her cat could go out.",
+      "tr": "Kedisinin dışarı çıkabilmesi için kapıyı açık bıraktı."
+     }
+    ]
+   },
+   {
+    "phrase": "in order that",
+    "meanings": [
+     "...mesi için"
+    ],
+    "examples": [
+     {
+      "en": "We arrived early in order that we might get good seats.",
+      "tr": "İyi koltuklar bulabilmemiz için erken geldik."
+     },
+     {
+      "en": "The teacher wrote the rules on the board in order that students would remember them.",
+      "tr": "Öğrencilerin hatırlaması için öğretmen kuralları tahtaya yazdı."
+     },
+     {
+      "en": "He wears a coat in order that he does not catch a cold.",
+      "tr": "Soğuk almaması için mont giyiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "for the purpose that",
+    "meanings": [
+     "...mesi amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "He joined the gym for the purpose that he would get healthy.",
+      "tr": "Sağlıklı olması amacıyla spor salonuna katıldı."
+     },
+     {
+      "en": "She bought a laptop for the purpose that she could study anywhere.",
+      "tr": "Her yerde ders çalışabilmesi amacıyla bir dizüstü bilgisayar satın aldı."
+     },
+     {
+      "en": "They built a fence for the purpose that their dog would stay safe.",
+      "tr": "Köpeklerinin güvende kalması amacıyla bir çit inşa ettiler."
+     }
+    ]
+   },
+   {
+    "phrase": "for fear that",
+    "meanings": [
+     "... korkusuyla"
+    ],
+    "examples": [
+     {
+      "en": "She stayed inside for fear that she would get wet in the rain.",
+      "tr": "Yağmurda ıslanma korkusuyla içeride kaldı."
+     },
+     {
+      "en": "He did not say anything for fear that he might make her angry.",
+      "tr": "Onu kızdırma korkusuyla hiçbir şey söylemedi."
+     },
+     {
+      "en": "They locked the door for fear that someone might break in.",
+      "tr": "Birinin içeri girmesi korkusuyla kapıyı kilitlediler."
+     }
+    ]
+   },
+   {
+    "phrase": "for fear of",
+    "meanings": [
+     "... korkusuyla"
+    ],
+    "examples": [
+     {
+      "en": "He did not climb the tree for fear of falling down.",
+      "tr": "Aşağı düşme korkusuyla ağaca tırmanmadı."
+     },
+     {
+      "en": "She never travels by plane for fear of flying.",
+      "tr": "Uçuş korkusuyla asla uçakla seyahat etmez."
+     },
+     {
+      "en": "They walked quietly for fear of waking the baby.",
+      "tr": "Bebeği uyandırma korkusuyla sessizce yürüdüler."
+     }
+    ]
+   },
+   {
+    "phrase": "lest",
+    "meanings": [
+     "...mesin diye"
+    ],
+    "examples": [
+     {
+      "en": "He took an umbrella lest it should rain.",
+      "tr": "Yağmur yağar diye şemsiye aldı."
+     },
+     {
+      "en": "She spoke in a whisper lest she wake the baby.",
+      "tr": "Bebeği uyandırmasın diye fısıltıyla konuştu."
+     },
+     {
+      "en": "We wrote down the address lest we should forget it.",
+      "tr": "Unutmayalım diye adresi yazdık."
+     }
+    ]
+   },
+   {
+    "phrase": "to",
+    "meanings": [
+     "...mek için"
+    ],
+    "examples": [
+     {
+      "en": "I went to the supermarket to buy some milk.",
+      "tr": "Biraz süt almak için süpermarkete gittim."
+     },
+     {
+      "en": "She is studying hard to pass the English exam.",
+      "tr": "İngilizce sınavını geçmek için çok çalışıyor."
+     },
+     {
+      "en": "He called his friend to ask for some help.",
+      "tr": "Yardım istemek için arkadaşını aradı."
+     }
+    ]
+   },
+   {
+    "phrase": "in order to",
+    "meanings": [
+     "...mek için"
+    ],
+    "examples": [
+     {
+      "en": "He woke up early in order to catch the first train.",
+      "tr": "İlk treni yakalamak için erken uyandı."
+     },
+     {
+      "en": "She uses a map in order to find her way around the city.",
+      "tr": "Şehirde yolunu bulmak için harita kullanıyor."
+     },
+     {
+      "en": "They are practicing every day in order to win the match.",
+      "tr": "Maçı kazanmak için her gün antrenman yapıyorlar."
+     }
+    ]
+   },
+   {
+    "phrase": "so as to",
+    "meanings": [
+     "...mek için"
+    ],
+    "examples": [
+     {
+      "en": "We wore warm clothes so as to keep warm.",
+      "tr": "Sıcak kalmak için kalın kıyafetler giydik."
+     },
+     {
+      "en": "She took a taxi so as to arrive on time.",
+      "tr": "Zamanında varmak için taksiye bindi."
+     },
+     {
+      "en": "He turned off the TV so as to study quietly.",
+      "tr": "Sessizce ders çalışmak için televizyonu kapattı."
+     }
+    ]
+   },
+   {
+    "phrase": "in order not to",
+    "meanings": [
+     "...memek için"
+    ],
+    "examples": [
+     {
+      "en": "He wrote down the password in order not to forget it.",
+      "tr": "Şifreyi unutmamak için yazdı."
+     },
+     {
+      "en": "She walked carefully in order not to slip on the ice.",
+      "tr": "Buzda kaymamak için dikkatlice yürüdü."
+     },
+     {
+      "en": "They spoke softly in order not to disturb the neighbors.",
+      "tr": "Komşuları rahatsız etmemek için alçak sesle konuştular."
+     }
+    ]
+   },
+   {
+    "phrase": "so as not to",
+    "meanings": [
+     "...memek için"
+    ],
+    "examples": [
+     {
+      "en": "I left early so as not to be late for work.",
+      "tr": "İşe geç kalmamak için erken çıktım."
+     },
+     {
+      "en": "He wore gloves so as not to leave any fingerprints.",
+      "tr": "Parmak izi bırakmamak için eldiven giydi."
+     },
+     {
+      "en": "She drove slowly so as not to cause an accident.",
+      "tr": "Kaza yapmamak için yavaş sürdü."
+     }
+    ]
+   },
+   {
+    "phrase": "for the purpose of",
+    "meanings": [
+     "amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "She joined the course for the purpose of learning Spanish.",
+      "tr": "İspanyolca öğrenmek amacıyla kursa katıldı."
+     },
+     {
+      "en": "He saved money for the purpose of buying a computer.",
+      "tr": "Bilgisayar satın almak amacıyla para biriktirdi."
+     },
+     {
+      "en": "They visited the museum for the purpose of doing research.",
+      "tr": "Araştırma yapmak amacıyla müzeyi ziyaret ettiler."
+     }
+    ]
+   },
+   {
+    "phrase": "with the purpose of",
+    "meanings": [
+     "amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "He bought a new laptop with the purpose of starting his own blog.",
+      "tr": "Kendi blogunu başlatmak amacıyla yeni bir dizüstü bilgisayar satın aldı."
+     },
+     {
+      "en": "They joined the local club with the purpose of meeting new people.",
+      "tr": "Yeni insanlarla tanışmak amacıyla yerel kulübe katıldılar."
+     },
+     {
+      "en": "We saved some money with the purpose of buying a second-hand car.",
+      "tr": "İkinci el bir araba satın almak amacıyla biraz para biriktirdik."
+     }
+    ]
+   },
+   {
+    "phrase": "with the intention of",
+    "meanings": [
+     "niyetiyle"
+    ],
+    "examples": [
+     {
+      "en": "She called her old friend with the intention of planning a weekend trip.",
+      "tr": "Bir hafta sonu gezisi planlamak niyetiyle eski arkadaşını aradı."
+     },
+     {
+      "en": "I went to the store with the intention of buying only bread but bought cake too.",
+      "tr": "Sadece ekmek almak niyetiyle mağazaya gittim ama pasta da aldım."
+     },
+     {
+      "en": "He joined the gym with the intention of losing some weight before summer.",
+      "tr": "Yazdan önce biraz kilo vermek niyetiyle spor salonuna yazıldı."
+     }
+    ]
+   },
+   {
+    "phrase": "with a view to",
+    "meanings": [
+     "amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "The company hired a new manager with a view to improving their sales.",
+      "tr": "Şirket, satışlarını artırmak amacıyla yeni bir müdür işe aldı."
+     },
+     {
+      "en": "She is studying hard with a view to getting a scholarship next year.",
+      "tr": "Gelecek yıl burs almak amacıyla sıkı çalışıyor."
+     },
+     {
+      "en": "He moved to London with a view to finding a job in IT.",
+      "tr": "Bilişim sektöründe bir iş bulmak amacıyla Londra'ya taşındı."
+     }
+    ]
+   },
+   {
+    "phrase": "for the sake of",
+    "meanings": [
+     "uğruna"
+    ],
+    "examples": [
+     {
+      "en": "They moved to the countryside for the sake of their children's health.",
+      "tr": "Çocuklarının sağlığı uğruna kırsala taşındılar."
+     },
+     {
+      "en": "I stopped arguing with him just for the sake of peace at home.",
+      "tr": "Sırf evdeki huzur uğruna onunla tartışmayı bıraktım."
+     },
+     {
+      "en": "She decided to stay in her job for the sake of financial stability.",
+      "tr": "Finansal istikrar uğruna işinde kalmaya karar verdi."
+     }
+    ]
+   },
+   {
+    "phrase": "in pursuit of",
+    "meanings": [
+     "peşinde",
+     "amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "Many young people move to big cities in pursuit of better career opportunities.",
+      "tr": "Birçok genç, daha iyi kariyer fırsatları peşinde büyük şehirlere taşınıyor."
+     },
+     {
+      "en": "He traveled around the world in pursuit of adventure.",
+      "tr": "Macera peşinde dünyayı dolaştı."
+     },
+     {
+      "en": "She spent hours in the library in pursuit of knowledge.",
+      "tr": "Bilgi peşinde kütüphanede saatler geçirdi."
+     }
+    ]
+   },
+   {
+    "phrase": "in preparation for",
+    "meanings": [
+     "hazırlık amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "We are buying extra food in preparation for the winter storms.",
+      "tr": "Kış fırtınalarına hazırlık amacıyla fazladan yiyecek alıyoruz."
+     },
+     {
+      "en": "He practices every day in preparation for the upcoming tournament.",
+      "tr": "Yaklaşan turnuvaya hazırlık amacıyla her gün antrenman yapıyor."
+     },
+     {
+      "en": "She read several books in preparation for her university interview.",
+      "tr": "Üniversite mülakatına hazırlık amacıyla birkaç kitap okudu."
+     }
+    ]
+   },
+   {
+    "phrase": "preparatory to",
+    "meanings": [
+     "hazırlık olarak"
+    ],
+    "examples": [
+     {
+      "en": "He did some warm-up exercises preparatory to the long run.",
+      "tr": "Uzun koşuya hazırlık olarak bazı ısınma egzersizleri yaptı."
+     },
+     {
+      "en": "She packed her bags preparatory to her departure.",
+      "tr": "Ayrılışına hazırlık olarak çantalarını topladı."
+     },
+     {
+      "en": "The team met preparatory to the final match.",
+      "tr": "Takım, final maçına hazırlık olarak toplandı."
+     }
+    ]
+   },
+   {
+    "phrase": "for the benefit of",
+    "meanings": [
+     "yararına"
+    ],
+    "examples": [
+     {
+      "en": "The teacher explained the rules again for the benefit of the new students.",
+      "tr": "Öğretmen, yeni öğrencilerin yararına kuralları tekrar açıkladı."
+     },
+     {
+      "en": "They organized a charity concert for the benefit of local shelters.",
+      "tr": "Yerel barınakların yararına bir yardım konseri düzenlediler."
+     },
+     {
+      "en": "She spoke very slowly for the benefit of the tourists.",
+      "tr": "Turistlerin yararına çok yavaş konuştu."
+     }
+    ]
+   },
+   {
+    "phrase": "in the interest(s) of",
+    "meanings": [
+     "yararına",
+     "çıkarına"
+    ],
+    "examples": [
+     {
+      "en": "The office was closed early in the interest of safety during the storm.",
+      "tr": "Fırtına sırasında güvenlik yararına ofis erken kapatıldı."
+     },
+     {
+      "en": "We decided to cancel the meeting in the interests of saving time.",
+      "tr": "Zaman tasarrufu yararına toplantıyı iptal etmeye karar verdik."
+     },
+     {
+      "en": "The rules were changed in the interest of fair competition.",
+      "tr": "Kurallar, adil rekabet yararına değiştirildi."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 4,
+  "en": "CONTRAST & CONCESSION",
+  "tr": "ZITLIK & TAVİZ",
+  "items": [
+   {
+    "phrase": "although",
+    "meanings": [
+     "rağmen",
+     "-mesine rağmen"
+    ],
+    "examples": [
+     {
+      "en": "Although it was raining, they went for a walk in the park.",
+      "tr": "Yağmur yağmasına rağmen parkta yürüyüşe çıktılar."
+     },
+     {
+      "en": "He decided to buy the car although it was very expensive.",
+      "tr": "Çok pahalı olmasına rağmen arabayı satın almaya karar verdi."
+     },
+     {
+      "en": "Although she was tired, she finished her homework before sleeping.",
+      "tr": "Yorgun olmasına rağmen uyumadan önce ödevini bitirdi."
+     }
+    ]
+   },
+   {
+    "phrase": "though",
+    "meanings": [
+     "rağmen",
+     "gerçi"
+    ],
+    "examples": [
+     {
+      "en": "Though she lives nearby, we rarely see her.",
+      "tr": "Yakınlarda yaşamasına rağmen onu nadiren görüyoruz."
+     },
+     {
+      "en": "The food was cheap, though it did not taste very good.",
+      "tr": "Yemek ucuzdu, gerçi tadı çok güzel değildi."
+     },
+     {
+      "en": "He didn't win the race though he ran very fast.",
+      "tr": "Çok hızlı koşmasına rağmen yarışı kazanamadı."
+     }
+    ]
+   },
+   {
+    "phrase": "even though",
+    "meanings": [
+     "...olmasına rağmen"
+    ],
+    "examples": [
+     {
+      "en": "She went to work even though she had a cold.",
+      "tr": "Soğuk algınlığı olmasına rağmen işe gitti."
+     },
+     {
+      "en": "Even though they are brothers, they look very different.",
+      "tr": "Erkek kardeş olmalarına rağmen çok farklı görünüyorlar."
+     },
+     {
+      "en": "He passed the exam even though he did not study much.",
+      "tr": "Çok çalışmamasına rağmen sınavı geçti."
+     }
+    ]
+   },
+   {
+    "phrase": "despite",
+    "meanings": [
+     "rağmen"
+    ],
+    "examples": [
+     {
+      "en": "We enjoyed our picnic despite the cold weather.",
+      "tr": "Soğuk havaya rağmen pikniğimizin tadını çıkardık."
+     },
+     {
+      "en": "She passed the exam despite her illness.",
+      "tr": "Hastalığına rağmen sınavı geçti."
+     },
+     {
+      "en": "He went for a run despite feeling very tired.",
+      "tr": "Çok yorgun hissetmesine rağmen koşuya çıktı."
+     }
+    ]
+   },
+   {
+    "phrase": "in spite of",
+    "meanings": [
+     "rağmen"
+    ],
+    "examples": [
+     {
+      "en": "They arrived on time in spite of the heavy traffic.",
+      "tr": "Yoğun trafiğe rağmen zamanında vardılar."
+     },
+     {
+      "en": "In spite of the rain, the kids played in the garden.",
+      "tr": "Yağmura rağmen çocuklar bahçede oynadı."
+     },
+     {
+      "en": "He bought the car in spite of its high price.",
+      "tr": "Yüksek fiyatına rağmen arabayı satın aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "notwithstanding",
+    "meanings": [
+     "rağmen"
+    ],
+    "examples": [
+     {
+      "en": "Notwithstanding the bad luck, he remained cheerful.",
+      "tr": "Şanssızlığa rağmen neşeli kalmaya devam etti."
+     },
+     {
+      "en": "We continued our walk, notwithstanding the light rain.",
+      "tr": "Hafif yağmura rağmen yürüyüşümüze devam ettik."
+     },
+     {
+      "en": "Notwithstanding his lack of experience, he got the job.",
+      "tr": "Deneyim eksikliğine rağmen işi aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "much as",
+    "meanings": [
+     "her ne kadar"
+    ],
+    "examples": [
+     {
+      "en": "Much as I love chocolate, I cannot eat it every day.",
+      "tr": "Çikolatayı her ne kadar çok sevsem de her gün yiyemem."
+     },
+     {
+      "en": "Much as they wanted to come, they had no time.",
+      "tr": "Her ne kadar gelmek isteseler de zamanları yoktu."
+     },
+     {
+      "en": "Much as she dislikes cooking, she makes great soup.",
+      "tr": "Yemek yapmaktan her ne kadar hoşlanmasa da harika çorba yapar."
+     }
+    ]
+   },
+   {
+    "phrase": "however + adjective/adverb",
+    "meanings": [
+     "ne kadar ... olursa olsun"
+    ],
+    "examples": [
+     {
+      "en": "You cannot open this door, however hard you try.",
+      "tr": "Ne kadar çok denersen dene bu kapıyı açamazsın."
+     },
+     {
+      "en": "However cold it is, he always wears a T-shirt.",
+      "tr": "Hava ne kadar soğuk olursa olsun her zaman tişört giyer."
+     },
+     {
+      "en": "We must finish the project, however difficult it seems.",
+      "tr": "Ne kadar zor görünürse görünsün projeyi bitirmeliyiz."
+     }
+    ]
+   },
+   {
+    "phrase": "no matter + question word",
+    "meanings": [
+     "her ne/kim/nasıl ... olursa olsun"
+    ],
+    "examples": [
+     {
+      "en": "No matter what you say, I will not change my mind.",
+      "tr": "Ne söylersen söyle fikrimi değiştirmeyeceğim."
+     },
+     {
+      "en": "She always smiles, no matter how hard life gets.",
+      "tr": "Hayat ne kadar zorlaşırsa zorlaşsın her zaman gülümser."
+     },
+     {
+      "en": "You can call me no matter who you are with.",
+      "tr": "Yanında kim olursa olsun beni arayabilirsin."
+     }
+    ]
+   },
+   {
+    "phrase": "however",
+    "meanings": [
+     "ancak",
+     "bununla birlikte"
+    ],
+    "examples": [
+     {
+      "en": "The hotel was very expensive. However, the service was bad.",
+      "tr": "Otel çok pahalıydı. Ancak servis kötüydü."
+     },
+     {
+      "en": "She wanted to buy the dress; however, she did not have enough money.",
+      "tr": "Elbiseyi satın almak istiyordu; ancak yeterli parası yoktu."
+     },
+     {
+      "en": "This route is shorter. It is, however, more dangerous.",
+      "tr": "Bu rota daha kısa. Bununla birlikte daha tehlikeli."
+     }
+    ]
+   },
+   {
+    "phrase": "nevertheless",
+    "meanings": [
+     "yine de",
+     "buna rağmen"
+    ],
+    "examples": [
+     {
+      "en": "The test was very difficult; nevertheless, she got a high score.",
+      "tr": "Sınav çok zordu; yine de yüksek bir puan aldı."
+     },
+     {
+      "en": "I was extremely tired. Nevertheless, I helped my brother.",
+      "tr": "Aşırı derecede yorgundum. Buna rağmen erkek kardeşime yardım ettim."
+     },
+     {
+      "en": "There was no internet, but they enjoyed their holiday nevertheless.",
+      "tr": "İnternet yoktu ama yine de tatillerinin tadını çıkardılar."
+     }
+    ]
+   },
+   {
+    "phrase": "nonetheless",
+    "meanings": [
+     "yine de",
+     "buna rağmen"
+    ],
+    "examples": [
+     {
+      "en": "The film was very long, but it was nonetheless exciting.",
+      "tr": "Film çok uzundu ama yine de heyecan vericiydi."
+     },
+     {
+      "en": "We had some minor problems. Nonetheless, the party was a success.",
+      "tr": "Bazı küçük sorunlar yaşadık. Buna rağmen parti başarılı geçti."
+     },
+     {
+      "en": "She knew the risk but decided to go nonetheless.",
+      "tr": "Riski biliyordu ama yine de gitmeye karar verdi."
+     }
+    ]
+   },
+   {
+    "phrase": "even so",
+    "meanings": [
+     "öyle olsa bile",
+     "yine de"
+    ],
+    "examples": [
+     {
+      "en": "The train was delayed, but even so, we arrived on time.",
+      "tr": "Tren gecikti ama yine de zamanında vardık."
+     },
+     {
+      "en": "I know you are busy. Even so, you should call your mother.",
+      "tr": "Meşgul olduğunu biliyorum. Öyle olsa bile anneni aramalısın."
+     },
+     {
+      "en": "The phone is expensive, but even so, I want to buy it.",
+      "tr": "Telefon pahalı ama yine de onu satın almak istiyorum."
+     }
+    ]
+   },
+   {
+    "phrase": "all the same",
+    "meanings": [
+     "yine de"
+    ],
+    "examples": [
+     {
+      "en": "He apologized for his mistake, but I was angry all the same.",
+      "tr": "Hatası için özür diledi ama yine de kızgındım."
+     },
+     {
+      "en": "The map was simple, but we got lost all the same.",
+      "tr": "Harita basitti ama yine de kaybolduk."
+     },
+     {
+      "en": "Thank you for the offer, but I will walk all the same.",
+      "tr": "Teklif için teşekkür ederim ama yine de yürüyeceğim."
+     }
+    ]
+   },
+   {
+    "phrase": "anyway",
+    "meanings": [
+     "yine de"
+    ],
+    "examples": [
+     {
+      "en": "It was raining, but we went to the beach anyway.",
+      "tr": "Yağmur yağıyordu ama yine de plaja gittik."
+     },
+     {
+      "en": "She does not like meat, but she ate the soup anyway.",
+      "tr": "Eti sevmez ama yine de çorbayı içti."
+     },
+     {
+      "en": "I lost my ticket, but they let me enter anyway.",
+      "tr": "Biletimi kaybettim ama yine de girmeme izin verdiler."
+     }
+    ]
+   },
+   {
+    "phrase": "contrary to",
+    "meanings": [
+     "aksine",
+     "aykırı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Contrary to popular belief, cats can be very friendly.",
+      "tr": "Yaygın inanışın aksine, kediler çok cana yakın olabilir."
+     },
+     {
+      "en": "He acted contrary to his doctor's advice.",
+      "tr": "Doktorunun tavsiyesine aykırı olarak hareket etti."
+     },
+     {
+      "en": "Contrary to expectations, the test was quite easy.",
+      "tr": "Beklentilerin aksine, sınav oldukça kolaydı."
+     }
+    ]
+   },
+   {
+    "phrase": "in contrast to / with",
+    "meanings": [
+     "aksine",
+     "zıt olarak"
+    ],
+    "examples": [
+     {
+      "en": "In contrast to his sister, Mark is very quiet.",
+      "tr": "Kız kardeşinin aksine, Mark çok sessizdir."
+     },
+     {
+      "en": "The village is very peaceful in contrast with the busy city.",
+      "tr": "Hareketli şehrin aksine, köy çok huzurludur."
+     },
+     {
+      "en": "In contrast to the blue car, the red one is very fast.",
+      "tr": "Mavi arabanın aksine, kırmızı olanı çok hızlıdır."
+     }
+    ]
+   },
+   {
+    "phrase": "in contrast",
+    "meanings": [
+     "aksine",
+     "buna karşılık"
+    ],
+    "examples": [
+     {
+      "en": "My brother loves football. In contrast, I prefer basketball.",
+      "tr": "Erkek kardeşim futbolu çok sever. Buna karşılık, ben basketbolu tercih ederim."
+     },
+     {
+      "en": "The first hotel was dirty. In contrast, this one is very clean.",
+      "tr": "İlk otel kirliydi. Aksine, bu otel çok temiz."
+     },
+     {
+      "en": "Some people learn languages quickly. In contrast, others need more time.",
+      "tr": "Bazı insanlar dilleri hızlı öğrenir. Buna karşılık, diğerlerinin daha fazla zamana ihtiyacı vardır."
+     }
+    ]
+   },
+   {
+    "phrase": "on the contrary",
+    "meanings": [
+     "tam tersine"
+    ],
+    "examples": [
+     {
+      "en": "The exam was not difficult; on the contrary, it was very easy.",
+      "tr": "Sınav zor değildi; tam tersine, çok kolaydı."
+     },
+     {
+      "en": "I am not tired. On the contrary, I feel full of energy.",
+      "tr": "Yorgun değilim. Tam tersine, kendimi enerji dolu hissediyorum."
+     },
+     {
+      "en": "He did not look sad; on the contrary, he was smiling.",
+      "tr": "Üzgün görünmüyordu; tam tersine, gülümsüyordu."
+     }
+    ]
+   },
+   {
+    "phrase": "as opposed to",
+    "meanings": [
+     "aksine",
+     "karşıt olarak"
+    ],
+    "examples": [
+     {
+      "en": "We chose to travel by train as opposed to flying.",
+      "tr": "Uçmanın aksine, trenle seyahat etmeyi seçtik."
+     },
+     {
+      "en": "He prefers cold drinks as opposed to hot tea.",
+      "tr": "Sıcak çayın aksine, soğuk içecekleri tercih eder."
+     },
+     {
+      "en": "The book focuses on real facts as opposed to fiction.",
+      "tr": "Kitap, kurgunun aksine gerçek gerçeklere odaklanıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "in opposition to",
+    "meanings": [
+     "karşı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Many people marched in opposition to the new law.",
+      "tr": "Birçok insan yeni yasaya karşı olarak yürüdü."
+     },
+     {
+      "en": "He spoke in opposition to the company's plan.",
+      "tr": "Şirketin planına karşı olarak konuştu."
+     },
+     {
+      "en": "They voted in opposition to the proposed budget.",
+      "tr": "Önerilen bütçeye karşı olarak oy kullandılar."
+     }
+    ]
+   },
+   {
+    "phrase": "unlike",
+    "meanings": [
+     "-den farklı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Unlike his friends, Jack does not like video games.",
+      "tr": "Arkadaşlarından farklı olarak, Jack video oyunlarını sevmez."
+     },
+     {
+      "en": "Unlike dogs, cats do not need daily walks.",
+      "tr": "Köpeklerden farklı olarak, kedilerin günlük yürüyüşlere ihtiyacı yoktur."
+     },
+     {
+      "en": "The new model is very cheap, unlike the previous one.",
+      "tr": "Yeni model, öncekinden farklı olarak çok ucuz."
+     }
+    ]
+   },
+   {
+    "phrase": "as distinct from",
+    "meanings": [
+     "-den farklı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Dogs are pack animals, as distinct from solitary cats.",
+      "tr": "Yalnız yaşayan kedilerden farklı olarak, köpekler sürü hayvanlarıdır."
+     },
+     {
+      "en": "We need real actions, as distinct from empty promises.",
+      "tr": "Boş vaatlerden farklı olarak, gerçek eylemlere ihtiyacımız var."
+     },
+     {
+      "en": "She teaches conversational English, as distinct from academic grammar.",
+      "tr": "Akademik dil bilgisinden farklı olarak, konuşma İngilizcesi öğretiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "against",
+    "meanings": [
+     "karşı",
+     "aleyhine"
+    ],
+    "examples": [
+     {
+      "en": "We played a match against the school team.",
+      "tr": "Okul takımına karşı bir maç yaptık."
+     },
+     {
+      "en": "Stealing is against the law.",
+      "tr": "Hırsızlık yasaya karşıdır."
+     },
+     {
+      "en": "She decided to speak out against the unfair decision.",
+      "tr": "Adaletsiz karara karşı konuşmaya karar verdi."
+     }
+    ]
+   },
+   {
+    "phrase": "at odds with",
+    "meanings": [
+     "ile çelişen"
+    ],
+    "examples": [
+     {
+      "en": "His actions are at odds with his words.",
+      "tr": "Onun davranışları sözleriyle çelişiyor."
+     },
+     {
+      "en": "The two reports are at odds with each other.",
+      "tr": "İki rapor birbiriyle çelişiyor."
+     },
+     {
+      "en": "Her opinion is at odds with the rest of the team.",
+      "tr": "Onun fikri takımın geri kalanıyla çelişiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "at variance with",
+    "meanings": [
+     "ile uyuşmayan"
+    ],
+    "examples": [
+     {
+      "en": "His lifestyle is at variance with his religious beliefs.",
+      "tr": "Onun yaşam tarzı dini inançlarıyla uyuşmuyor."
+     },
+     {
+      "en": "These statistics are at variance with the official results.",
+      "tr": "Bu istatistikler resmi sonuçlarla uyuşmuyor."
+     },
+     {
+      "en": "Her version of the story is at variance with the facts.",
+      "tr": "Onun hikaye versiyonu gerçeklerle uyuşmuyor."
+     }
+    ]
+   },
+   {
+    "phrase": "whereas",
+    "meanings": [
+     "oysa",
+     "halbuki"
+    ],
+    "examples": [
+     {
+      "en": "I like tea, whereas my sister prefers coffee.",
+      "tr": "Ben çay severim, oysa kız kardeşim kahveyi tercih eder."
+     },
+     {
+      "en": "She lives in a small village, whereas her brother lives in a big city.",
+      "tr": "O küçük bir köyde yaşıyor, halbuki erkek kardeşi büyük bir şehirde yaşıyor."
+     },
+     {
+      "en": "The red bag is cheap, whereas the black one is expensive.",
+      "tr": "Kırmızı çanta ucuz, oysa siyah olanı pahalıdır."
+     }
+    ]
+   },
+   {
+    "phrase": "while",
+    "meanings": [
+     "oysa",
+     "halbuki"
+    ],
+    "examples": [
+     {
+      "en": "My sister loves horror movies, while I prefer comedies.",
+      "tr": "Kız kardeşim korku filmlerini çok sever, oysa ben komedileri tercih ederim."
+     },
+     {
+      "en": "You say you have no money, while you just bought a new phone.",
+      "tr": "Hiç paran olmadığını söylüyorsun, halbuki daha yeni yeni bir telefon aldın."
+     },
+     {
+      "en": "Some people love hot weather, while others hate it.",
+      "tr": "Bazı insanlar sıcak havayı sever, oysa diğerleri ondan nefret eder."
+     }
+    ]
+   },
+   {
+    "phrase": "on the one hand",
+    "meanings": [
+     "bir yandan"
+    ],
+    "examples": [
+     {
+      "en": "On the one hand, this job pays well.",
+      "tr": "Bir yandan, bu işin maaşı iyi."
+     },
+     {
+      "en": "I want to go to the party on the one hand, but I am very tired.",
+      "tr": "Bir yandan partiye gitmek istiyorum ama çok yorgunum."
+     },
+     {
+      "en": "On the one hand, we need to save money for our future.",
+      "tr": "Bir yandan, geleceğimiz için para biriktirmemiz gerekiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "on the other hand",
+    "meanings": [
+     "diğer yandan"
+    ],
+    "examples": [
+     {
+      "en": "This car is very cheap; on the other hand, it uses too much fuel.",
+      "tr": "Bu araba çok ucuz; diğer yandan, çok fazla yakıt tüketiyor."
+     },
+     {
+      "en": "I like living in the city, but on the other hand, it is very noisy.",
+      "tr": "Şehirde yaşamayı seviyorum ama diğer yandan çok gürültülü."
+     },
+     {
+      "en": "Online classes are easy; on the other hand, you cannot meet your friends.",
+      "tr": "Çevrimiçi dersler kolay; diğer yandan, arkadaşlarınla buluşamıyorsun."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 5,
+  "en": "COMPARISON & SIMILARITY",
+  "tr": "KARŞILAŞTIRMA & BENZERLİK",
+  "items": [
+   {
+    "phrase": "like",
+    "meanings": [
+     "gibi"
+    ],
+    "examples": [
+     {
+      "en": "She sings beautifully like a professional artist.",
+      "tr": "Profesyonel bir sanatçı gibi güzel şarkı söylüyor."
+     },
+     {
+      "en": "I want to visit a quiet country like Norway.",
+      "tr": "Norveç gibi sessiz bir ülkeyi ziyaret etmek istiyorum."
+     },
+     {
+      "en": "My brother looks exactly like our father.",
+      "tr": "Erkek kardeşim tıpkı babamıza benziyor."
+     }
+    ]
+   },
+   {
+    "phrase": "unlike",
+    "meanings": [
+     "aksine",
+     "-den farklı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Unlike his brother, Tom is very shy.",
+      "tr": "Erkek kardeşinin aksine, Tom çok utangaçtır."
+     },
+     {
+      "en": "This new exam is quite easy, unlike the last one.",
+      "tr": "Bu yeni sınav, sonuncusundan farklı olarak oldukça kolay."
+     },
+     {
+      "en": "Unlike most cats, our cat loves playing in water.",
+      "tr": "Çoğu kedinin aksine, bizim kedimiz suda oynamayı çok sever."
+     }
+    ]
+   },
+   {
+    "phrase": "in comparison with / to",
+    "meanings": [
+     "ile karşılaştırıldığında"
+    ],
+    "examples": [
+     {
+      "en": "The price of food is high in comparison to last year.",
+      "tr": "Gıda fiyatları geçen yılla karşılaştırıldığında yüksek."
+     },
+     {
+      "en": "In comparison with our old house, this apartment is very small.",
+      "tr": "Eski evimizle karşılaştırıldığında, bu daire çok küçük."
+     },
+     {
+      "en": "English grammar is simple in comparison to Russian grammar.",
+      "tr": "İngilizce dil bilgisi Rusça dil bilgisi ile karşılaştırıldığında basittir."
+     }
+    ]
+   },
+   {
+    "phrase": "by comparison with",
+    "meanings": [
+     "ile kıyaslandığında"
+    ],
+    "examples": [
+     {
+      "en": "Our school is very small by comparison with the city university.",
+      "tr": "Okulumuz şehir üniversitesi ile kıyaslandığında çok küçük."
+     },
+     {
+      "en": "By comparison with other sports, tennis is quite expensive.",
+      "tr": "Diğer sporlarla kıyaslandığında, tenis oldukça pahalı."
+     },
+     {
+      "en": "The train is very slow by comparison with the plane.",
+      "tr": "Tren uçakla kıyaslandığında çok yavaş."
+     }
+    ]
+   },
+   {
+    "phrase": "in contrast with / to",
+    "meanings": [
+     "ile karşılaştırıldığında",
+     "aksine"
+    ],
+    "examples": [
+     {
+      "en": "In contrast to her sister, she is very tall.",
+      "tr": "Kız kardeşinin aksine, o çok uzundur."
+     },
+     {
+      "en": "The weather today is warm, in contrast with yesterday's cold rain.",
+      "tr": "Dünkü soğuk yağmurla karşılaştırıldığında, bugün hava sıcak."
+     },
+     {
+      "en": "In contrast to the noisy city, this village is very peaceful.",
+      "tr": "Gürültülü şehrin aksine, bu köy çok huzurlu."
+     }
+    ]
+   },
+   {
+    "phrase": "versus",
+    "meanings": [
+     "karşı",
+     "kıyasla"
+    ],
+    "examples": [
+     {
+      "en": "We need to discuss the advantages of trains versus cars.",
+      "tr": "Trenlerin arabalara kıyasla avantajlarını tartışmamız gerekiyor."
+     },
+     {
+      "en": "The final match is Real Madrid versus Barcelona.",
+      "tr": "Final maçı Real Madrid'e karşı Barcelona."
+     },
+     {
+      "en": "He weighed the benefits of renting versus buying a house.",
+      "tr": "Ev kiralamanın satın almaya kıyasla faydalarını tarttı."
+     }
+    ]
+   },
+   {
+    "phrase": "vis-à-vis",
+    "meanings": [
+     "karşısında",
+     "kıyasla"
+    ],
+    "examples": [
+     {
+      "en": "The company needs to improve its position vis-à-vis its competitors.",
+      "tr": "Şirketin rakipleri karşısındaki konumunu geliştirmesi gerekiyor."
+     },
+     {
+      "en": "We need to think about our costs vis-à-vis our actual budget.",
+      "tr": "Maliyetlerimizi mevcut bütçemizle kıyasla düşünmemiz gerekiyor."
+     },
+     {
+      "en": "What is the value of the Lira vis-à-vis the Dollar?",
+      "tr": "Lira'nın Dolar karşısındaki değeri nedir?"
+     }
+    ]
+   },
+   {
+    "phrase": "in proportion to",
+    "meanings": [
+     "oranla",
+     "orantılı olarak"
+    ],
+    "examples": [
+     {
+      "en": "Our success is usually in proportion to our hard work.",
+      "tr": "Başarımız genellikle çok çalışmamızla orantılıdır."
+     },
+     {
+      "en": "His salary is small in proportion to the hours he works.",
+      "tr": "Maaşı, çalıştığı saatlere oranla düşük."
+     },
+     {
+      "en": "The punishment must be in proportion to the crime.",
+      "tr": "Ceza, suçla orantılı olmalıdır."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 6,
+  "en": "ADDITION & COORDINATION",
+  "tr": "EKLEME & BAĞLAMA",
+  "items": [
+   {
+    "phrase": "and",
+    "meanings": [
+     "ve"
+    ],
+    "examples": [
+     {
+      "en": "I bought some fresh bread and delicious milk from the market.",
+      "tr": "Marketten taze ekmek ve lezzetli süt aldım."
+     },
+     {
+      "en": "We walked along the beach and watched the beautiful sunset.",
+      "tr": "Sahil boyunca yürüdük ve güzel gün batımını izledik."
+     },
+     {
+      "en": "She speaks English fluently and she also knows some German.",
+      "tr": "Akıcı bir şekilde İngilizce konuşuyor ve ayrıca biraz Almanca biliyor."
+     }
+    ]
+   },
+   {
+    "phrase": "but",
+    "meanings": [
+     "ama",
+     "fakat"
+    ],
+    "examples": [
+     {
+      "en": "I want to go to the party, but I am very tired.",
+      "tr": "Partiye gitmek istiyorum ama çok yorgunum."
+     },
+     {
+      "en": "She bought a beautiful dress but it was too big.",
+      "tr": "Güzel bir elbise satın aldı ama çok büyüktü."
+     },
+     {
+      "en": "The hotel was cheap but the food was delicious.",
+      "tr": "Otel ucuzdu ama yemekler lezzetliydi."
+     }
+    ]
+   },
+   {
+    "phrase": "yet",
+    "meanings": [
+     "ama",
+     "yine de"
+    ],
+    "examples": [
+     {
+      "en": "He is very rich, yet he lives in a tiny apartment.",
+      "tr": "O çok zengin, yine de küçük bir apartman dairesinde yaşıyor."
+     },
+     {
+      "en": "It was a very simple game, yet we had a lot of fun.",
+      "tr": "Çok basit bir oyundu ama yine de çok eğlendik."
+     },
+     {
+      "en": "The water was cold, yet they went swimming.",
+      "tr": "Su soğuktu, yine de yüzmeye gittiler."
+     }
+    ]
+   },
+   {
+    "phrase": "or",
+    "meanings": [
+     "veya",
+     "ya da"
+    ],
+    "examples": [
+     {
+      "en": "Would you like tea or coffee?",
+      "tr": "Çay veya kahve ister misiniz?"
+     },
+     {
+      "en": "You can take the bus or walk to the museum.",
+      "tr": "Otobüse binebilir veya müzeye yürüyebilirsiniz."
+     },
+     {
+      "en": "We can study biology or watch a movie.",
+      "tr": "Biyoloji çalışabilir veya bir film izleyebiliriz."
+     }
+    ]
+   },
+   {
+    "phrase": "for",
+    "meanings": [
+     "çünkü"
+    ],
+    "examples": [
+     {
+      "en": "She decided to stay home, for she felt sick.",
+      "tr": "Evde kalmaya karar verdi, çünkü kendini hasta hissediyordu."
+     },
+     {
+      "en": "We must hurry, for the train leaves in ten minutes.",
+      "tr": "Acele etmeliyiz, çünkü tren on dakika içinde kalkıyor."
+     },
+     {
+      "en": "He bought a new coat, for the winter was very cold.",
+      "tr": "Yeni bir palto aldı, çünkü kış çok soğuktu."
+     }
+    ]
+   },
+   {
+    "phrase": "both ... and",
+    "meanings": [
+     "hem ... hem de"
+    ],
+    "examples": [
+     {
+      "en": "She speaks both English and French.",
+      "tr": "O hem İngilizce hem de Fransızca konuşuyor."
+     },
+     {
+      "en": "The book was both cheap and useful.",
+      "tr": "Kitap hem ucuz hem de faydalıydı."
+     },
+     {
+      "en": "Both my mother and my sister love cooking.",
+      "tr": "Hem annem hem de kız kardeşim yemek yapmayı sever."
+     }
+    ]
+   },
+   {
+    "phrase": "either ... or",
+    "meanings": [
+     "ya ... ya da"
+    ],
+    "examples": [
+     {
+      "en": "You can have either ice cream or cake.",
+      "tr": "Ya dondurma ya da pasta yiyebilirsin."
+     },
+     {
+      "en": "We can meet either at the park or at the cafe.",
+      "tr": "Ya parkta ya da kafede buluşabiliriz."
+     },
+     {
+      "en": "Either you do your homework or you cannot watch TV.",
+      "tr": "Ya ödevini yaparsın ya da televizyon izleyemezsin."
+     }
+    ]
+   },
+   {
+    "phrase": "neither ... nor",
+    "meanings": [
+     "ne ... ne de"
+    ],
+    "examples": [
+     {
+      "en": "The hotel was neither clean nor cheap.",
+      "tr": "Otel ne temiz ne de ucuzdu."
+     },
+     {
+      "en": "He speaks neither Spanish nor German.",
+      "tr": "O ne İspanyolca ne de Almanca konuşuyor."
+     },
+     {
+      "en": "Neither David nor his friends came to the party.",
+      "tr": "Partiye ne David ne de arkadaşları geldi."
+     }
+    ]
+   },
+   {
+    "phrase": "not only ... but also",
+    "meanings": [
+     "sadece ... değil",
+     "aynı zamanda"
+    ],
+    "examples": [
+     {
+      "en": "She is not only smart but also very hard-working.",
+      "tr": "O sadece akıllı değil, aynı zamanda çok çalışkan."
+     },
+     {
+      "en": "The city has not only beautiful museums but also great parks.",
+      "tr": "Şehir sadece güzel müzelere değil, aynı zamanda harika parklara da sahip."
+     },
+     {
+      "en": "He bought not only a new phone but also a laptop.",
+      "tr": "Sadece yeni bir telefon değil, aynı zamanda bir dizüstü bilgisayar da satın aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "not ... but",
+    "meanings": [
+     "... değil",
+     "fakat"
+    ],
+    "examples": [
+     {
+      "en": "He is not my brother but my cousin.",
+      "tr": "O benim erkek kardeşim değil, kuzenim."
+     },
+     {
+      "en": "We need not a car but a bicycle.",
+      "tr": "Bizim bir arabaya değil, bir bisiklete ihtiyacımız var."
+     },
+     {
+      "en": "The dress is not blue but green.",
+      "tr": "Elbise mavi değil, yeşil."
+     }
+    ]
+   },
+   {
+    "phrase": "not because ... but because",
+    "meanings": [
+     "... olduğu için değil",
+     "... olduğu için"
+    ],
+    "examples": [
+     {
+      "en": "I called you not because I was bored but because I missed you.",
+      "tr": "Seni canım sıkıldığı için değil, seni özlediğim için aradım."
+     },
+     {
+      "en": "She works not because she needs money but because she loves her job.",
+      "tr": "Paraya ihtiyacı olduğu için değil, işini sevdiği için çalışıyor."
+     },
+     {
+      "en": "We stayed inside not because it was late but because it started raining.",
+      "tr": "Geç olduğu için değil, yağmur yağmaya başladığı için içeride kaldık."
+     }
+    ]
+   },
+   {
+    "phrase": "in addition to",
+    "meanings": [
+     "yanı sıra",
+     "ek olarak"
+    ],
+    "examples": [
+     {
+      "en": "In addition to the guitar, she plays the piano.",
+      "tr": "Gitarın yanı sıra piyano da çalıyor."
+     },
+     {
+      "en": "In addition to speaking English, he knows Spanish.",
+      "tr": "İngilizce konuşmanın yanı sıra İspanyolca da biliyor."
+     },
+     {
+      "en": "We bought some apples in addition to the bread.",
+      "tr": "Ekmeğin yanı sıra biraz da elma aldık."
+     }
+    ]
+   },
+   {
+    "phrase": "including",
+    "meanings": [
+     "dahil olmak üzere"
+    ],
+    "examples": [
+     {
+      "en": "The price is fifty dollars, including tax.",
+      "tr": "Fiyat, vergi dahil olmak üzere elli dolardır."
+     },
+     {
+      "en": "Everyone was happy, including the teacher.",
+      "tr": "Öğretmen dahil olmak üzere herkes mutluydu."
+     },
+     {
+      "en": "They visited many countries, including Italy and Spain.",
+      "tr": "İtalya ve İspanya dahil olmak üzere birçok ülkeyi ziyaret ettiler."
+     }
+    ]
+   },
+   {
+    "phrase": "alongside",
+    "meanings": [
+     "yanı sıra",
+     "ile birlikte"
+    ],
+    "examples": [
+     {
+      "en": "She works as a teacher alongside her sister at the school.",
+      "tr": "Okulda kız kardeşiyle birlikte öğretmen olarak çalışıyor."
+     },
+     {
+      "en": "We need to learn grammar alongside vocabulary to speak well.",
+      "tr": "İyi konuşmak için kelime bilgisinin yanı sıra dil bilgisi de öğrenmemiz gerekiyor."
+     },
+     {
+      "en": "The new park was built alongside the old river.",
+      "tr": "Yeni park eski nehrin yanına inşa edildi."
+     }
+    ]
+   },
+   {
+    "phrase": "in conjunction with",
+    "meanings": [
+     "ile birlikte"
+    ],
+    "examples": [
+     {
+      "en": "The police are working in conjunction with local schools to stop bullying.",
+      "tr": "Polis, zorbalığı durdurmak için yerel okullarla birlikte çalışıyor."
+     },
+     {
+      "en": "You should take this medicine in conjunction with a healthy diet.",
+      "tr": "Bu ilacı sağlıklı bir diyetle birlikte almalısınız."
+     },
+     {
+      "en": "The website was developed in conjunction with a team of designers.",
+      "tr": "Web sitesi bir tasarımcı ekibiyle birlikte geliştirildi."
+     }
+    ]
+   },
+   {
+    "phrase": "with",
+    "meanings": [
+     "ile",
+     "birlikte"
+    ],
+    "examples": [
+     {
+      "en": "I usually drink my coffee with milk and sugar.",
+      "tr": "Kahvemi genellikle süt ve şekerle içerim."
+     },
+     {
+      "en": "She went to the shopping mall with her friends.",
+      "tr": "Arkadaşlarıyla birlikte alışveriş merkezine gitti."
+     },
+     {
+      "en": "You can cut the paper easily with these scissors.",
+      "tr": "Bu makasla kağıdı kolayca kesebilirsin."
+     }
+    ]
+   },
+   {
+    "phrase": "among",
+    "meanings": [
+     "arasında",
+     "içerisinde"
+    ],
+    "examples": [
+     {
+      "en": "There is a beautiful house among the green trees.",
+      "tr": "Yeşil ağaçların arasında güzel bir ev var."
+     },
+     {
+      "en": "She is very popular among her classmates.",
+      "tr": "Sınıf arkadaşları arasında çok popülerdir."
+     },
+     {
+      "en": "We discussed the new plan among ourselves first.",
+      "tr": "Yeni planı önce kendi aramızda tartıştık."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 7,
+  "en": "EXCLUSION & SUBSTITUTION",
+  "tr": "HARİÇ TUTMA & YERİNE KOYMA",
+  "items": [
+   {
+    "phrase": "except",
+    "meanings": [
+     "hariç"
+    ],
+    "examples": [
+     {
+      "en": "The shop is open every day except Sunday.",
+      "tr": "Mağaza Pazar hariç her gün açıktır."
+     },
+     {
+      "en": "Everyone passed the English test except John.",
+      "tr": "John hariç herkes İngilizce sınavını geçti."
+     },
+     {
+      "en": "I like all kinds of fruit except bananas.",
+      "tr": "Muz hariç her türlü meyveyi severim."
+     }
+    ]
+   },
+   {
+    "phrase": "except for",
+    "meanings": [
+     "hariç",
+     "dışında"
+    ],
+    "examples": [
+     {
+      "en": "The street was completely empty except for a parked car.",
+      "tr": "Park edilmiş bir araba dışında sokak tamamen boştu."
+     },
+     {
+      "en": "I cleaned the whole house except for the kitchen.",
+      "tr": "Mutfak hariç bütün evi temizledim."
+     },
+     {
+      "en": "The exam was very easy except for the last question.",
+      "tr": "Son soru dışında sınav çok kolaydı."
+     }
+    ]
+   },
+   {
+    "phrase": "excluding",
+    "meanings": [
+     "hariç tutarak"
+    ],
+    "examples": [
+     {
+      "en": "The total price is fifty dollars, excluding tax.",
+      "tr": "Vergi hariç toplam fiyat elli dolardır."
+     },
+     {
+      "en": "The hotel has ten rooms, excluding the lobby.",
+      "tr": "Lobi hariç otelde on oda bulunuyor."
+     },
+     {
+      "en": "We invite all family members, excluding cousins.",
+      "tr": "Kuzenleri hariç tutarak tüm aile üyelerini davet ediyoruz."
+     }
+    ]
+   },
+   {
+    "phrase": "apart from",
+    "meanings": [
+     "dışında",
+     "hariç"
+    ],
+    "examples": [
+     {
+      "en": "Apart from the cold weather, the holiday was great.",
+      "tr": "Soğuk hava dışında tatil harikaydı."
+     },
+     {
+      "en": "Do you play any other sports apart from football?",
+      "tr": "Futbol dışında başka bir spor yapıyor musun?"
+     },
+     {
+      "en": "I have no plans for the weekend apart from resting.",
+      "tr": "Dinlenmek dışında hafta sonu için hiçbir planım yok."
+     }
+    ]
+   },
+   {
+    "phrase": "save for",
+    "meanings": [
+     "hariç"
+    ],
+    "examples": [
+     {
+      "en": "The park was completely quiet save for the birds.",
+      "tr": "Kuşlar hariç park tamamen sessizdi."
+     },
+     {
+      "en": "She answered all the questions save for one.",
+      "tr": "Biri hariç tüm soruları cevapladı."
+     },
+     {
+      "en": "The room was dark save for a single candle.",
+      "tr": "Tek bir mum hariç oda karanlıktı."
+     }
+    ]
+   },
+   {
+    "phrase": "with the exception of",
+    "meanings": [
+     "hariç"
+    ],
+    "examples": [
+     {
+      "en": "All students went to the museum with the exception of Tom.",
+      "tr": "Tom hariç tüm öğrenciler müzeye gitti."
+     },
+     {
+      "en": "I enjoyed all the meals with the exception of the soup.",
+      "tr": "Çorba hariç tüm yemekleri beğendim."
+     },
+     {
+      "en": "The museum is open daily with the exception of national holidays.",
+      "tr": "Müze, resmi tatiller hariç her gün açıktır."
+     }
+    ]
+   },
+   {
+    "phrase": "barring",
+    "meanings": [
+     "dışında",
+     "hariç"
+    ],
+    "examples": [
+     {
+      "en": "Barring any delays, the flight will land at noon.",
+      "tr": "Gecikmeler dışında, uçak öğle vaktinde inecek."
+     },
+     {
+      "en": "Barring a sudden illness, she will run in the race.",
+      "tr": "Ani bir hastalık dışında, yarışta koşacak."
+     },
+     {
+      "en": "Barring bad weather, we will have a picnic tomorrow.",
+      "tr": "Kötü hava dışında, yarın piknik yapacağız."
+     }
+    ]
+   },
+   {
+    "phrase": "instead of",
+    "meanings": [
+     "yerine"
+    ],
+    "examples": [
+     {
+      "en": "I ordered water instead of soda with my meal.",
+      "tr": "Yemeğimin yanında gazoz yerine su sipariş ettim."
+     },
+     {
+      "en": "We can walk to the cinema instead of taking the bus.",
+      "tr": "Otobüse binmek yerine sinemaya yürüyebiliriz."
+     },
+     {
+      "en": "Please write your name instead of signing.",
+      "tr": "Lütfen imza atmak yerine adınızı yazın."
+     }
+    ]
+   },
+   {
+    "phrase": "in place of",
+    "meanings": [
+     "yerine"
+    ],
+    "examples": [
+     {
+      "en": "She used honey in place of sugar for the cake.",
+      "tr": "Kek için şeker yerine bal kullandı."
+     },
+     {
+      "en": "We hired a new teacher in place of Mr. Smith.",
+      "tr": "Bay Smith'in yerine yeni bir öğretmen işe aldık."
+     },
+     {
+      "en": "You can play video games in place of watching TV.",
+      "tr": "Televizyon izlemek yerine video oyunları oynayabilirsin."
+     }
+    ]
+   },
+   {
+    "phrase": "in lieu of",
+    "meanings": [
+     "yerine"
+    ],
+    "examples": [
+     {
+      "en": "The company gave us extra time off in lieu of payment.",
+      "tr": "Şirket ödeme yerine bize fazladan izin verdi."
+     },
+     {
+      "en": "They accepted a donation in lieu of an entry fee.",
+      "tr": "Giriş ücreti yerine bağış kabul ettiler."
+     },
+     {
+      "en": "I received a gift card in lieu of a cash refund.",
+      "tr": "Nakit para iadesi yerine bir hediye kartı aldım."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 8,
+  "en": "TIME & DURATION",
+  "tr": "ZAMAN & SÜRE",
+  "items": [
+   {
+    "phrase": "at",
+    "meanings": [
+     "saatinde"
+    ],
+    "examples": [
+     {
+      "en": "The train leaves at eight o'clock.",
+      "tr": "Tren saat sekizde kalkıyor."
+     },
+     {
+      "en": "We always have lunch at noon.",
+      "tr": "Öğle yemeğini her zaman öğleyin yeriz."
+     },
+     {
+      "en": "I usually wake up at sunrise.",
+      "tr": "Genellikle gün doğumunda uyanırım."
+     }
+    ]
+   },
+   {
+    "phrase": "on",
+    "meanings": [
+     "gün/tarihte"
+    ],
+    "examples": [
+     {
+      "en": "We have an English exam on Monday.",
+      "tr": "Pazartesi günü İngilizce sınavımız var."
+     },
+     {
+      "en": "Her birthday is on the fifth of May.",
+      "tr": "Onun doğum günü mayısın beşindedir."
+     },
+     {
+      "en": "I visited my grandparents on Christmas Day.",
+      "tr": "Noel gününde büyükanne ve büyükbabamı ziyaret ettim."
+     }
+    ]
+   },
+   {
+    "phrase": "in",
+    "meanings": [
+     "ay",
+     "yıl",
+     "dönem içinde"
+    ],
+    "examples": [
+     {
+      "en": "My family loves to travel in summer.",
+      "tr": "Ailem yazın seyahat etmeyi sever."
+     },
+     {
+      "en": "The new school term starts in September.",
+      "tr": "Yeni okul dönemi eylülde başlıyor."
+     },
+     {
+      "en": "This beautiful house was built in 1995.",
+      "tr": "Bu güzel ev 1995'te inşa edildi."
+     }
+    ]
+   },
+   {
+    "phrase": "since",
+    "meanings": [
+     "-den beri",
+     "-diğinden beri"
+    ],
+    "examples": [
+     {
+      "en": "He has been living here since last year.",
+      "tr": "Geçen yıldan beri burada yaşıyor."
+     },
+     {
+      "en": "I haven't seen my cousin since we graduated.",
+      "tr": "Mezun olduğumuzdan beri kuzenimi görmedim."
+     },
+     {
+      "en": "She has played the piano since she was a child.",
+      "tr": "Çocukluğundan beri piyano çalıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "for",
+    "meanings": [
+     "boyunca"
+    ],
+    "examples": [
+     {
+      "en": "They walked in the park for two hours.",
+      "tr": "Parkta iki saat boyunca yürüdüler."
+     },
+     {
+      "en": "I have lived in this city for five years.",
+      "tr": "Beş yıldır bu şehirde yaşıyorum."
+     },
+     {
+      "en": "She studied for her exam all night.",
+      "tr": "Bütün gece boyunca sınavına çalıştı."
+     }
+    ]
+   },
+   {
+    "phrase": "during",
+    "meanings": [
+     "sırasında"
+    ],
+    "examples": [
+     {
+      "en": "No one is allowed to speak during the exam.",
+      "tr": "Sınav sırasında kimsenin konuşmasına izin verilmez."
+     },
+     {
+      "en": "We saw many beautiful birds during our trip.",
+      "tr": "Gezimiz sırasında çok sayıda güzel kuş gördük."
+     },
+     {
+      "en": "The power went out during the storm.",
+      "tr": "Fırtına sırasında elektrikler kesildi."
+     }
+    ]
+   },
+   {
+    "phrase": "throughout",
+    "meanings": [
+     "boyunca"
+    ],
+    "examples": [
+     {
+      "en": "It rained heavily throughout the night.",
+      "tr": "Gece boyunca şiddetli yağmur yağdı."
+     },
+     {
+      "en": "The museum is open throughout the year.",
+      "tr": "Müze yıl boyunca açıktır."
+     },
+     {
+      "en": "He remained calm throughout the difficult meeting.",
+      "tr": "Zor toplantı boyunca sakin kaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "until / till",
+    "meanings": [
+     "-e kadar"
+    ],
+    "examples": [
+     {
+      "en": "You should wait here until the bus arrives.",
+      "tr": "Otobüs gelene kadar burada beklemelisin."
+     },
+     {
+      "en": "The shop is open till nine in the evening.",
+      "tr": "Dükkan akşam saat dokuza kadar açıktır."
+     },
+     {
+      "en": "I stayed awake until midnight to study.",
+      "tr": "Ders çalışmak için gece yarısına kadar uyanık kaldım."
+     }
+    ]
+   },
+   {
+    "phrase": "before",
+    "meanings": [
+     "önce",
+     "-meden önce"
+    ],
+    "examples": [
+     {
+      "en": "Please wash your hands before dinner.",
+      "tr": "Lütfen akşam yemeğinden önce ellerini yıka."
+     },
+     {
+      "en": "We should lock the doors before we leave.",
+      "tr": "Ayrılmadan önce kapıları kilitlemeliyiz."
+     },
+     {
+      "en": "He checked his passport before the flight.",
+      "tr": "Uçuştan önce pasaportunu kontrol etti."
+     }
+    ]
+   },
+   {
+    "phrase": "after",
+    "meanings": [
+     "sonra",
+     "-dikten sonra"
+    ],
+    "examples": [
+     {
+      "en": "They went for a walk after lunch.",
+      "tr": "Öğle yemeğinden sonra yürüyüşe çıktılar."
+     },
+     {
+      "en": "She fell asleep after watching the movie.",
+      "tr": "Filmi izledikten sonra uyuyakaldı."
+     },
+     {
+      "en": "I will call you after I finish my work.",
+      "tr": "İşimi bitirdikten sonra seni arayacağım."
+     }
+    ]
+   },
+   {
+    "phrase": "when",
+    "meanings": [
+     "-dığında"
+    ],
+    "examples": [
+     {
+      "en": "I always drink tea when I read a book.",
+      "tr": "Kitap okuduğumda her zaman çay içerim."
+     },
+     {
+      "en": "We will go to the park when the rain stops.",
+      "tr": "Yağmur durduğunda parka gideceğiz."
+     },
+     {
+      "en": "She was very happy when she passed the exam.",
+      "tr": "Sınavı geçtiğinde çok mutluydu."
+     }
+    ]
+   },
+   {
+    "phrase": "while",
+    "meanings": [
+     "iken"
+    ],
+    "examples": [
+     {
+      "en": "The phone rang while I was taking a shower.",
+      "tr": "Ben duş alırken telefon çaldı."
+     },
+     {
+      "en": "My sister listened to music while she cleaned her room.",
+      "tr": "Kız kardeşim odasını temizlerken müzik dinledi."
+     },
+     {
+      "en": "You should not use your phone while you are driving.",
+      "tr": "Araba sürerken telefonunu kullanmamalısın."
+     }
+    ]
+   },
+   {
+    "phrase": "as",
+    "meanings": [
+     "iken"
+    ],
+    "examples": [
+     {
+      "en": "I saw my old teacher as I was walking down the street.",
+      "tr": "Caddede yürürken eski öğretmenimi gördüm."
+     },
+     {
+      "en": "She dropped her keys as she got out of the car.",
+      "tr": "Arabadan inerken anahtarlarını düşürdü."
+     },
+     {
+      "en": "We laughed a lot as we watched the funny movie.",
+      "tr": "Komik filmi izlerken çok güldük."
+     }
+    ]
+   },
+   {
+    "phrase": "by the time",
+    "meanings": [
+     "...dığı zamana kadar"
+    ],
+    "examples": [
+     {
+      "en": "The train had already left by the time we arrived at the station.",
+      "tr": "Biz istasyona vardığımız zamana kadar tren çoktan kalkmıştı."
+     },
+     {
+      "en": "She will finish her homework by the time her parents come home.",
+      "tr": "Anne babası eve geldiği zamana kadar ödevini bitirmiş olacak."
+     },
+     {
+      "en": "I was very tired by the time the meeting ended.",
+      "tr": "Toplantı bittiği zamana kadar çok yorulmuştum."
+     }
+    ]
+   },
+   {
+    "phrase": "as soon as",
+    "meanings": [
+     "...ır ...maz"
+    ],
+    "examples": [
+     {
+      "en": "I will call you as soon as I arrive at the hotel.",
+      "tr": "Otele varır varmaz seni arayacağım."
+     },
+     {
+      "en": "He opened his presents as soon as he woke up.",
+      "tr": "Uyanır uyanmaz hediyelerini açtı."
+     },
+     {
+      "en": "Please let me know as soon as you get the results.",
+      "tr": "Lütfen sonuçları alır almaz bana haber ver."
+     }
+    ]
+   },
+   {
+    "phrase": "once",
+    "meanings": [
+     "...ınca"
+    ],
+    "examples": [
+     {
+      "en": "We can start the meeting once everyone is here.",
+      "tr": "Herkes buraya gelince toplantıya başlayabiliriz."
+     },
+     {
+      "en": "You will feel much better once you take a hot bath.",
+      "tr": "Sıcak bir banyo yapınca kendini çok daha iyi hissedeceksin."
+     },
+     {
+      "en": "I will buy a new laptop once I save enough money.",
+      "tr": "Yeterince para biriktirince yeni bir dizüstü bilgisayar alacağım."
+     }
+    ]
+   },
+   {
+    "phrase": "the moment",
+    "meanings": [
+     "...dığı anda"
+    ],
+    "examples": [
+     {
+      "en": "I knew she was right the moment she spoke.",
+      "tr": "Konuştuğu anda onun haklı olduğunu anladım."
+     },
+     {
+      "en": "The dog started barking the moment the bell rang.",
+      "tr": "Zil çaldığı anda köpek havlamaya başladı."
+     },
+     {
+      "en": "Please call me the moment you get home.",
+      "tr": "Eve vardığın anda lütfen beni ara."
+     }
+    ]
+   },
+   {
+    "phrase": "immediately",
+    "meanings": [
+     "...dığı anda"
+    ],
+    "examples": [
+     {
+      "en": "He left the office immediately he finished his work.",
+      "tr": "İşini bitirdiği anda ofisten çıktı."
+     },
+     {
+      "en": "I recognized her immediately she walked into the cafe.",
+      "tr": "Kafeye girdiği anda onu tanıdım."
+     },
+     {
+      "en": "The children started playing immediately the rain stopped.",
+      "tr": "Yağmur durduğu anda çocuklar oynamaya başladı."
+     }
+    ]
+   },
+   {
+    "phrase": "as long as",
+    "meanings": [
+     "...dığı sürece"
+    ],
+    "examples": [
+     {
+      "en": "You can borrow my car as long as you drive carefully.",
+      "tr": "Dikkatli sürdüğün sürece arabamı ödünç alabilirsin."
+     },
+     {
+      "en": "We will stay at home as long as it rains.",
+      "tr": "Yağmur yağdığı sürece evde kalacağız."
+     },
+     {
+      "en": "You can stay with us as long as you want.",
+      "tr": "İstediğin sürece bizimle kalabilirsin."
+     }
+    ]
+   },
+   {
+    "phrase": "so long as",
+    "meanings": [
+     "...dığı sürece"
+    ],
+    "examples": [
+     {
+      "en": "I don't mind the cold so long as it doesn't rain.",
+      "tr": "Yağmur yağmadığı sürece soğuk olmasını dert etmem."
+     },
+     {
+      "en": "You will pass the exam so long as you study hard.",
+      "tr": "Sıkı çalıştığın sürece sınavı geçersin."
+     },
+     {
+      "en": "Children can play here so long as they are quiet.",
+      "tr": "Sessiz oldukları sürece çocuklar burada oynayabilir."
+     }
+    ]
+   },
+   {
+    "phrase": "whenever",
+    "meanings": [
+     "her ne zaman"
+    ],
+    "examples": [
+     {
+      "en": "You can call me whenever you need help.",
+      "tr": "Ne zaman yardıma ihtiyacın olursa beni arayabilirsin."
+     },
+     {
+      "en": "My grandmother smiles whenever she sees us.",
+      "tr": "Büyükannem bizi her ne zaman görse gülümser."
+     },
+     {
+      "en": "I visit that nice cafe whenever I go to the city center.",
+      "tr": "Şehir merkezine her ne zaman gitsem o güzel kafeyi ziyaret ederim."
+     }
+    ]
+   },
+   {
+    "phrase": "every time",
+    "meanings": [
+     "her ...dığında"
+    ],
+    "examples": [
+     {
+      "en": "I think of my childhood every time I hear this song.",
+      "tr": "Bu şarkıyı her duyduğumda çocukluğumu düşünürüm."
+     },
+     {
+      "en": "She gets nervous every time she speaks in public.",
+      "tr": "Topluluk önünde her konuştuğunda gerginleşir."
+     },
+     {
+      "en": "It rains every time we plan a picnic.",
+      "tr": "Piknik planladığımız her seferinde yağmur yağar."
+     }
+    ]
+   },
+   {
+    "phrase": "hardly ... when",
+    "meanings": [
+     "henüz ... olmuştu ki"
+    ],
+    "examples": [
+     {
+      "en": "I had hardly sat down when the phone rang.",
+      "tr": "Telefon çaldığında henüz yeni oturmuştum."
+     },
+     {
+      "en": "She had hardly finished her homework when her friends arrived.",
+      "tr": "Arkadaşları geldiğinde ödevini henüz yeni bitirmişti."
+     },
+     {
+      "en": "We had hardly started our walk when it began to rain.",
+      "tr": "Yağmur yağmaya başladığında yürüyüşümüze henüz yeni başlamıştık."
+     }
+    ]
+   },
+   {
+    "phrase": "scarcely ... when",
+    "meanings": [
+     "henüz ... olmuştu ki"
+    ],
+    "examples": [
+     {
+      "en": "He had scarcely closed his eyes when the alarm went off.",
+      "tr": "Alarm çaldığında gözlerini henüz yeni kapamıştı."
+     },
+     {
+      "en": "The train had scarcely left the station when it stopped suddenly.",
+      "tr": "Tren aniden durduğunda istasyondan henüz yeni ayrılmıştı."
+     },
+     {
+      "en": "I had scarcely entered the room when everyone looked at me.",
+      "tr": "Herkes bana baktığında odaya henüz yeni girmiştim."
+     }
+    ]
+   },
+   {
+    "phrase": "barely ... when",
+    "meanings": [
+     "henüz ... olmuştu ki"
+    ],
+    "examples": [
+     {
+      "en": "We had barely arrived at the beach when the sun went down.",
+      "tr": "Güneş battığında plaja henüz yeni varmıştık."
+     },
+     {
+      "en": "She had barely opened her book when her mother called her.",
+      "tr": "Annesi onu çağırdığında kitabını henüz yeni açmıştı."
+     },
+     {
+      "en": "They had barely started the meeting when the power went out.",
+      "tr": "Elektrik kesildiğinde toplantıya henüz yeni başlamışlardı."
+     }
+    ]
+   },
+   {
+    "phrase": "no sooner ... than",
+    "meanings": [
+     "... olur olmaz"
+    ],
+    "examples": [
+     {
+      "en": "I had no sooner stepped outside than it started to pour.",
+      "tr": "Dışarı adım atar atmaz sağanak yağmur başladı."
+     },
+     {
+      "en": "He had no sooner bought the phone than he dropped it.",
+      "tr": "Telefonu alır almaz yere düşürdü."
+     },
+     {
+      "en": "We had no sooner sat down for dinner than the doorbell rang.",
+      "tr": "Akşam yemeği için masaya oturur oturmaz kapı zili çaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "afterwards",
+    "meanings": [
+     "sonrasında"
+    ],
+    "examples": [
+     {
+      "en": "We went to the cinema and had dinner afterwards.",
+      "tr": "Sinemaya gittik ve sonrasında akşam yemeği yedik."
+     },
+     {
+      "en": "He cleaned his room and watched TV afterwards.",
+      "tr": "Odasını temizledi ve sonrasında televizyon izledi."
+     },
+     {
+      "en": "She completed the course and got a certificate afterwards.",
+      "tr": "Kursu tamamladı ve sonrasında bir sertifika aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "prior to",
+    "meanings": [
+     "öncesinde"
+    ],
+    "examples": [
+     {
+      "en": "Please wash your hands prior to eating.",
+      "tr": "Lütfen yemek yemeden öncesinde ellerinizi yıkayın."
+     },
+     {
+      "en": "You should read the rules prior to the game.",
+      "tr": "Oyun öncesinde kuralları okumalısınız."
+     },
+     {
+      "en": "She felt very nervous prior to her presentation.",
+      "tr": "Sunumunun öncesinde çok gergin hissediyordu."
+     }
+    ]
+   },
+   {
+    "phrase": "subsequent to",
+    "meanings": [
+     "sonrasında"
+    ],
+    "examples": [
+     {
+      "en": "He found a job subsequent to his graduation.",
+      "tr": "Mezuniyetinin sonrasında bir iş buldu."
+     },
+     {
+      "en": "The hotel was built subsequent to the war.",
+      "tr": "Otel, savaşın sonrasında inşa edildi."
+     },
+     {
+      "en": "Changes were made subsequent to your feedback.",
+      "tr": "Geri bildiriminizin sonrasında değişiklikler yapıldı."
+     }
+    ]
+   },
+   {
+    "phrase": "following",
+    "meanings": [
+     "ardından"
+    ],
+    "examples": [
+     {
+      "en": "There was a short discussion following the presentation.",
+      "tr": "Sunumun ardından kısa bir tartışma oldu."
+     },
+     {
+      "en": "Many people lost their jobs following the economic crisis.",
+      "tr": "Ekonomik krizin ardından birçok insan işini kaybetti."
+     },
+     {
+      "en": "We went for a walk following our lunch.",
+      "tr": "Öğle yemeğimizin ardından yürüyüşe çıktık."
+     }
+    ]
+   },
+   {
+    "phrase": "pending",
+    "meanings": [
+     "sonuçlanana kadar"
+    ],
+    "examples": [
+     {
+      "en": "The decision is on hold pending the manager's approval.",
+      "tr": "Karar, yöneticinin onayı sonuçlanana kadar beklemede."
+     },
+     {
+      "en": "You cannot start the project pending the contract details.",
+      "tr": "Sözleşme detayları sonuçlanana kadar projeye başlayamazsınız."
+     },
+     {
+      "en": "He was released from prison pending his trial.",
+      "tr": "Mahkemesi sonuçlanana kadar hapishaneden serbest bırakıldı."
+     }
+    ]
+   },
+   {
+    "phrase": "within",
+    "meanings": [
+     "belirli bir süre içinde"
+    ],
+    "examples": [
+     {
+      "en": "You must finish this task within an hour.",
+      "tr": "Bu görevi bir saat içinde bitirmelisiniz."
+     },
+     {
+      "en": "The delivery should arrive within three days.",
+      "tr": "Teslimat üç gün içinde ulaşmalıdır."
+     },
+     {
+      "en": "We will reply to your email within 24 hours.",
+      "tr": "E-postanıza 24 saat içinde cevap vereceğiz."
+     }
+    ]
+   },
+   {
+    "phrase": "upon",
+    "meanings": [
+     "-ince",
+     "hemen ardından"
+    ],
+    "examples": [
+     {
+      "en": "Upon hearing the news, she started to cry.",
+      "tr": "Haberleri duyunca hemen ağlamaya başladı."
+     },
+     {
+      "en": "Please sign the document upon receipt.",
+      "tr": "Lütfen belgeyi teslim alınca hemen imzalayın."
+     },
+     {
+      "en": "Upon arrival at the hotel, we checked in immediately.",
+      "tr": "Otele varınca hemen giriş yaptık."
+     }
+    ]
+   },
+   {
+    "phrase": "in the course of",
+    "meanings": [
+     "sırasında"
+    ],
+    "examples": [
+     {
+      "en": "He made many friends in the course of his journey.",
+      "tr": "Yolculuğu sırasında birçok arkadaş edindi."
+     },
+     {
+      "en": "We learned a lot in the course of the project.",
+      "tr": "Proje sırasında çok şey öğrendik."
+     },
+     {
+      "en": "The weather changed several times in the course of the day.",
+      "tr": "Gün içerisinde hava birkaç kez değişti."
+     }
+    ]
+   },
+   {
+    "phrase": "for the duration of",
+    "meanings": [
+     "süresince"
+    ],
+    "examples": [
+     {
+      "en": "You must keep your seatbelt fastened for the duration of the flight.",
+      "tr": "Uçuş süresince emniyet kemerinizi bağlı tutmalısınız."
+     },
+     {
+      "en": "The museum is closed for the duration of the renovation.",
+      "tr": "Müze, yenileme süresince kapalıdır."
+     },
+     {
+      "en": "We stayed in a small hotel for the duration of our holiday.",
+      "tr": "Tatilimiz süresince küçük bir otelde kaldık."
+     }
+    ]
+   },
+   {
+    "phrase": "in anticipation of",
+    "meanings": [
+     "beklentisiyle"
+    ],
+    "examples": [
+     {
+      "en": "They bought extra food in anticipation of the heavy storm.",
+      "tr": "Şiddetli fırtına beklentisiyle fazladan yiyecek aldılar."
+     },
+     {
+      "en": "She saved some money in anticipation of her upcoming trip.",
+      "tr": "Yaklaşan seyahati beklentisiyle biraz para biriktirdi."
+     },
+     {
+      "en": "The shop ordered more toys in anticipation of the holiday season.",
+      "tr": "Mağaza, tatil sezonu beklentisiyle daha fazla oyuncak sipariş etti."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 9,
+  "en": "PLACE & POSITION",
+  "tr": "YER & KONUM",
+  "items": [
+   {
+    "phrase": "in",
+    "meanings": [
+     "içinde"
+    ],
+    "examples": [
+     {
+      "en": "My keys are in my backpack.",
+      "tr": "Anahtarlarım sırt çantamın içinde."
+     },
+     {
+      "en": "We live in a small apartment.",
+      "tr": "Küçük bir dairede yaşıyoruz."
+     },
+     {
+      "en": "There is fresh milk in the fridge.",
+      "tr": "Buzdolabında taze süt var."
+     }
+    ]
+   },
+   {
+    "phrase": "on",
+    "meanings": [
+     "üzerinde"
+    ],
+    "examples": [
+     {
+      "en": "The book is on the kitchen table.",
+      "tr": "Kitap mutfak masasının üzerinde."
+     },
+     {
+      "en": "There is a beautiful painting on the wall.",
+      "tr": "Duvarda güzel bir tablo var."
+     },
+     {
+      "en": "He sat on the grass to eat his lunch.",
+      "tr": "Öğle yemeğini yemek için çimin üzerine oturdu."
+     }
+    ]
+   },
+   {
+    "phrase": "at",
+    "meanings": [
+     "belirli bir noktada"
+    ],
+    "examples": [
+     {
+      "en": "I will meet you at the bus stop.",
+      "tr": "Seninle otobüs durağında buluşacağım."
+     },
+     {
+      "en": "They are waiting at the entrance of the cinema.",
+      "tr": "Sinemanın girişinde bekliyorlar."
+     },
+     {
+      "en": "She works at a local library.",
+      "tr": "Yerel bir kütüphanede çalışıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "under",
+    "meanings": [
+     "altında"
+    ],
+    "examples": [
+     {
+      "en": "The cat is sleeping under the bed.",
+      "tr": "Kedi yatağın altında uyuyor."
+     },
+     {
+      "en": "We sat under a tree to get some shade.",
+      "tr": "Biraz gölge almak için bir ağacın altında oturduk."
+     },
+     {
+      "en": "She hid the key under the doormat.",
+      "tr": "Anahtarı kapı paspasının altına sakladı."
+     }
+    ]
+   },
+   {
+    "phrase": "above",
+    "meanings": [
+     "yukarısında"
+    ],
+    "examples": [
+     {
+      "en": "The plane flew above the clouds.",
+      "tr": "Uçak bulutların yukarısında uçtu."
+     },
+     {
+      "en": "My apartment is just above the grocery store.",
+      "tr": "Dairem marketin hemen yukarısında."
+     },
+     {
+      "en": "They hung a clock above the fireplace.",
+      "tr": "Şöminenin yukarısına bir saat astılar."
+     }
+    ]
+   },
+   {
+    "phrase": "below",
+    "meanings": [
+     "aşağısında"
+    ],
+    "examples": [
+     {
+      "en": "The temperature is below zero today.",
+      "tr": "Sıcaklık bugün sıfırın altında."
+     },
+     {
+      "en": "We looked down at the river below the bridge.",
+      "tr": "Köprünün aşağısındaki nehre aşağı doğru baktık."
+     },
+     {
+      "en": "Please sign your name below this line.",
+      "tr": "Lütfen adınızı bu çizginin aşağısına imzalayın."
+     }
+    ]
+   },
+   {
+    "phrase": "over",
+    "meanings": [
+     "üzerinde"
+    ],
+    "examples": [
+     {
+      "en": "A beautiful bridge goes over the river.",
+      "tr": "Nehrin üzerinde güzel bir köprü uzanıyor."
+     },
+     {
+      "en": "She put a warm blanket over the sleeping child.",
+      "tr": "Uyuyan çocuğun üzerine sıcak bir battaniye örttü."
+     },
+     {
+      "en": "He jumped over the fence to catch the ball.",
+      "tr": "Topu yakalamak için çitin üzerinden atladı."
+     }
+    ]
+   },
+   {
+    "phrase": "beneath",
+    "meanings": [
+     "altında"
+    ],
+    "examples": [
+     {
+      "en": "The valley lay beneath the thick fog.",
+      "tr": "Vadi, yoğun sisin altında uzanıyordu."
+     },
+     {
+      "en": "They found ancient ruins beneath the city streets.",
+      "tr": "Şehir sokaklarının altında antik kalıntılar buldular."
+     },
+     {
+      "en": "He felt the soft sand beneath his feet.",
+      "tr": "Ayaklarının altında yumuşak kumu hissetti."
+     }
+    ]
+   },
+   {
+    "phrase": "underneath",
+    "meanings": [
+     "altında"
+    ],
+    "examples": [
+     {
+      "en": "The dog hid its favorite toy underneath the sofa.",
+      "tr": "Köpek en sevdiği oyuncağını kanepenin altına sakladı."
+     },
+     {
+      "en": "He wore a blue t-shirt underneath his heavy coat.",
+      "tr": "Kalın paltosunun altına mavi bir tişört giymişti."
+     },
+     {
+      "en": "You can find the spare key underneath the flower pot.",
+      "tr": "Yedek anahtarı saksının altında bulabilirsiniz."
+     }
+    ]
+   },
+   {
+    "phrase": "behind",
+    "meanings": [
+     "arkasında"
+    ],
+    "examples": [
+     {
+      "en": "The post office is behind the supermarket.",
+      "tr": "Postane süpermarketin arkasındadır."
+     },
+     {
+      "en": "He hid behind the door to surprise his sister.",
+      "tr": "Kız kardeşine sürpriz yapmak için kapının arkasına saklandı."
+     },
+     {
+      "en": "Our garden is located behind the house.",
+      "tr": "Bahçemiz evin arkasında yer almaktadır."
+     }
+    ]
+   },
+   {
+    "phrase": "in front of",
+    "meanings": [
+     "önünde"
+    ],
+    "examples": [
+     {
+      "en": "She parked her car in front of the school.",
+      "tr": "Arabasını okulun önüne park etti."
+     },
+     {
+      "en": "There is a beautiful garden in front of our house.",
+      "tr": "Evimizin önünde güzel bir bahçe var."
+     },
+     {
+      "en": "Please don't stand in front of the television.",
+      "tr": "Lütfen televizyonun önünde durma."
+     }
+    ]
+   },
+   {
+    "phrase": "next to",
+    "meanings": [
+     "yanında"
+    ],
+    "examples": [
+     {
+      "en": "The bakery is next to the post office.",
+      "tr": "Fırın, postanenin yanındadır."
+     },
+     {
+      "en": "My dog always sleeps next to my bed.",
+      "tr": "Köpeğim her zaman yatağımın yanında uyur."
+     },
+     {
+      "en": "Who is that boy sitting next to Sarah?",
+      "tr": "Sarah'nın yanında oturan o şu çocuk kim?"
+     }
+    ]
+   },
+   {
+    "phrase": "beside",
+    "meanings": [
+     "yanında"
+    ],
+    "examples": [
+     {
+      "en": "I sat beside my best friend during the movie.",
+      "tr": "Film boyunca en yakın arkadaşımın yanında oturdum."
+     },
+     {
+      "en": "She placed the letter beside her keys.",
+      "tr": "Mektubu anahtarlarının yanına koydu."
+     },
+     {
+      "en": "The hotel is located beside a peaceful lake.",
+      "tr": "Otel, huzurlu bir gölün yanında yer alıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "between",
+    "meanings": [
+     "arasında"
+    ],
+    "examples": [
+     {
+      "en": "The library is between the cafe and the bank.",
+      "tr": "Kütüphane, kafe ile bankanın arasındadır."
+     },
+     {
+      "en": "I cannot choose between these two shirts.",
+      "tr": "Bu iki gömlek arasında seçim yapamıyorum."
+     },
+     {
+      "en": "We parked our car between two large trucks.",
+      "tr": "Arabamızı iki büyük kamyonun arasına park ettik."
+     }
+    ]
+   },
+   {
+    "phrase": "among",
+    "meanings": [
+     "arasında"
+    ],
+    "examples": [
+     {
+      "en": "He was very happy to be among old friends again.",
+      "tr": "Yeniden eski arkadaşlarının arasında olmaktan çok mutluydu."
+     },
+     {
+      "en": "She found her missing ring among the books.",
+      "tr": "Kayıp yüzüğünü kitapların arasında buldu."
+     },
+     {
+      "en": "The cottage is hidden among the trees.",
+      "tr": "Kulübe ağaçların arasında gizlenmiştir."
+     }
+    ]
+   },
+   {
+    "phrase": "opposite",
+    "meanings": [
+     "karşısında"
+    ],
+    "examples": [
+     {
+      "en": "The supermarket is opposite the bus station.",
+      "tr": "Süpermarket otobüs durağının karşısındadır."
+     },
+     {
+      "en": "We sat opposite each other at the dinner table.",
+      "tr": "Yemek masasında birbirimizin karşısında oturduk."
+     },
+     {
+      "en": "There is a small park opposite our school building.",
+      "tr": "Okul binamızın karşısında küçük bir park var."
+     }
+    ]
+   },
+   {
+    "phrase": "near",
+    "meanings": [
+     "yakınında"
+    ],
+    "examples": [
+     {
+      "en": "We live near a train station, so it is loud.",
+      "tr": "Bir tren istasyonunun yakınında yaşıyoruz, bu yüzden gürültülü."
+     },
+     {
+      "en": "Is there a good supermarket near your house?",
+      "tr": "Evinizin yakınında iyi bir süpermarket var mı?"
+     },
+     {
+      "en": "The children like to play near the river.",
+      "tr": "Çocuklar nehrin yakınında oynamayı severler."
+     }
+    ]
+   },
+   {
+    "phrase": "inside",
+    "meanings": [
+     "içerisinde"
+    ],
+    "examples": [
+     {
+      "en": "Please go inside the house because it is starting to rain.",
+      "tr": "Lütfen evin içerisine gir çünkü yağmur başlıyor."
+     },
+     {
+      "en": "I found your wallet inside my backpack.",
+      "tr": "Cüzdanını sırt çantamın içerisinde buldum."
+     },
+     {
+      "en": "We could hear voices inside the dark room.",
+      "tr": "Karanlık odanın içerisinden sesler duyabiliyorduk."
+     }
+    ]
+   },
+   {
+    "phrase": "outside",
+    "meanings": [
+     "dışında"
+    ],
+    "examples": [
+     {
+      "en": "The dog is waiting outside the door.",
+      "tr": "Köpek kapının dışında bekliyor."
+     },
+     {
+      "en": "We cannot go outside the school during lunch break.",
+      "tr": "Öğle arasında okulun dışına çıkamayız."
+     },
+     {
+      "en": "There is a wooden bench outside the cabin.",
+      "tr": "Kulübenin dışında ahşap bir bank var."
+     }
+    ]
+   },
+   {
+    "phrase": "around",
+    "meanings": [
+     "etrafında"
+    ],
+    "examples": [
+     {
+      "en": "The earth moves around the sun.",
+      "tr": "Dünya, güneşin etrafında döner."
+     },
+     {
+      "en": "We walked around the lake to get some fresh air.",
+      "tr": "Temiz hava almak için gölün etrafında yürüdük."
+     },
+     {
+      "en": "A group of tourists gathered around the tour guide.",
+      "tr": "Bir grup turist tur rehberinin etrafında toplandı."
+     }
+    ]
+   },
+   {
+    "phrase": "in the vicinity of",
+    "meanings": [
+     "civarında"
+    ],
+    "examples": [
+     {
+      "en": "There are several nice cafes in the vicinity of the museum.",
+      "tr": "Müzenin civarında birkaç güzel kafe var."
+     },
+     {
+      "en": "The police are looking for a suspect in the vicinity of the park.",
+      "tr": "Polis, parkın civarında bir şüpheliyi arıyor."
+     },
+     {
+      "en": "No parking is allowed in the vicinity of the airport.",
+      "tr": "Havalimanının civarında park etmeye izin verilmez."
+     }
+    ]
+   },
+   {
+    "phrase": "in proximity to",
+    "meanings": [
+     "yakınında"
+    ],
+    "examples": [
+     {
+      "en": "Our new apartment is in proximity to the subway.",
+      "tr": "Yeni dairemiz metro istasyonunun yakınındadır."
+     },
+     {
+      "en": "Do not leave children in proximity to hot ovens.",
+      "tr": "Çocukları sıcak fırınların yakınında bırakmayın."
+     },
+     {
+      "en": "Wild animals usually avoid living in proximity to humans.",
+      "tr": "Vahşi hayvanlar genellikle insanların yakınında yaşamaktan kaçınırlar."
+     }
+    ]
+   },
+   {
+    "phrase": "amid / amidst",
+    "meanings": [
+     "ortasında"
+    ],
+    "examples": [
+     {
+      "en": "He found his keys amid the mess on his desk.",
+      "tr": "Masaüstündeki karmaşanın ortasında anahtarlarını buldu."
+     },
+     {
+      "en": "The small cabin stood amidst tall pine trees.",
+      "tr": "Küçük kulübe uzun çam ağaçlarının ortasında duruyordu."
+     },
+     {
+      "en": "She stayed calm amidst all the noise.",
+      "tr": "Tüm o gürültünün ortasında sakin kalmayı başardı."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 10,
+  "en": "MOVEMENT & DIRECTION",
+  "tr": "HAREKET & YÖN",
+  "items": [
+   {
+    "phrase": "to",
+    "meanings": [
+     "-e",
+     "-a"
+    ],
+    "examples": [
+     {
+      "en": "We walk to school to stay active.",
+      "tr": "Aktif kalmak için okula yürürüz."
+     },
+     {
+      "en": "She is flying to London for a business trip.",
+      "tr": "İş seyahati için Londra'ya uçuyor."
+     },
+     {
+      "en": "Send this email to the manager, please.",
+      "tr": "Lütfen bu e-postayı müdüre gönderin."
+     }
+    ]
+   },
+   {
+    "phrase": "from",
+    "meanings": [
+     "-den",
+     "-dan"
+    ],
+    "examples": [
+     {
+      "en": "The train from Paris is on platform four.",
+      "tr": "Paris'ten gelen tren dördüncü peronda."
+     },
+     {
+      "en": "I took a book from the shelf.",
+      "tr": "Raftan bir kitap aldım."
+     },
+     {
+      "en": "She walked home from the library.",
+      "tr": "Kütüphaneden eve yürüdü."
+     }
+    ]
+   },
+   {
+    "phrase": "into",
+    "meanings": [
+     "içine"
+    ],
+    "examples": [
+     {
+      "en": "The children ran into the classroom when the bell rang.",
+      "tr": "Zil çalınca çocuklar sınıfın içine koştular."
+     },
+     {
+      "en": "He poured the water into a blue glass.",
+      "tr": "Suyu mavi bir bardağın içine doldurdu."
+     },
+     {
+      "en": "She put her phone into her bag.",
+      "tr": "Telefonunu çantasının içine koydu."
+     }
+    ]
+   },
+   {
+    "phrase": "onto",
+    "meanings": [
+     "üzerine"
+    ],
+    "examples": [
+     {
+      "en": "The cat jumped onto the kitchen table.",
+      "tr": "Kedi mutfak masasının üzerine atladı."
+     },
+     {
+      "en": "They loaded the heavy boxes onto the truck.",
+      "tr": "Ağır kutuları kamyonun üzerine yüklediler."
+     },
+     {
+      "en": "Step onto the scale, please.",
+      "tr": "Lütfen tartının üzerine çıkın."
+     }
+    ]
+   },
+   {
+    "phrase": "out of",
+    "meanings": [
+     "dışına"
+    ],
+    "examples": [
+     {
+      "en": "She walked out of the office in a hurry.",
+      "tr": "Ofisin dışına aceleyle çıktı."
+     },
+     {
+      "en": "The dog ran out of the garden.",
+      "tr": "Köpek bahçenin dışına kaçtı."
+     },
+     {
+      "en": "He stepped out of the room to answer his phone.",
+      "tr": "Telefonunu açmak için odanın dışına çıktı."
+     }
+    ]
+   },
+   {
+    "phrase": "through",
+    "meanings": [
+     "içinden"
+    ],
+    "examples": [
+     {
+      "en": "We drove through a long tunnel.",
+      "tr": "Uzun bir tünelin içinden geçtik."
+     },
+     {
+      "en": "Light comes through the big window.",
+      "tr": "Işık büyük pencerenin içinden geliyor."
+     },
+     {
+      "en": "The river flows through the quiet town.",
+      "tr": "Nehir sakin kasabanın içinden akıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "across",
+    "meanings": [
+     "karşıya"
+    ],
+    "examples": [
+     {
+      "en": "He swam across the cold river.",
+      "tr": "Soğuk nehrin karşı tarafına yüzdü."
+     },
+     {
+      "en": "They walked across the street to the supermarket.",
+      "tr": "Süpermarkete gitmek için sokağın karşısına geçtiler."
+     },
+     {
+      "en": "A bridge goes across the valley.",
+      "tr": "Vadinin karşı tarafına uzanan bir köprü var."
+     }
+    ]
+   },
+   {
+    "phrase": "along",
+    "meanings": [
+     "boyunca"
+    ],
+    "examples": [
+     {
+      "en": "We walked along the beach at sunset.",
+      "tr": "Gün batımında sahil boyunca yürüdük."
+     },
+     {
+      "en": "There are beautiful trees along the road.",
+      "tr": "Yol boyunca güzel ağaçlar var."
+     },
+     {
+      "en": "Follow the path along the river.",
+      "tr": "Nehir boyunca uzanan yolu takip et."
+     }
+    ]
+   },
+   {
+    "phrase": "towards",
+    "meanings": [
+     "-e doğru"
+    ],
+    "examples": [
+     {
+      "en": "The young man walked towards the bus stop.",
+      "tr": "Genç adam otobüs durağına doğru yürüdü."
+     },
+     {
+      "en": "Run towards the light if you get lost.",
+      "tr": "Kaybolursan ışığa doğru koş."
+     },
+     {
+      "en": "The dark clouds are moving towards us.",
+      "tr": "Kara bulutlar bize doğru hareket ediyor."
+     }
+    ]
+   },
+   {
+    "phrase": "away from",
+    "meanings": [
+     "-den uzağa"
+    ],
+    "examples": [
+     {
+      "en": "Walk away from the dangerous dog.",
+      "tr": "Tehlikeli köpekten uzağa yürü."
+     },
+     {
+      "en": "He moved away from his hometown for a new job.",
+      "tr": "Yeni bir iş için memleketinden uzağa taşındı."
+     },
+     {
+      "en": "She turned her face away from the camera.",
+      "tr": "Yüzünü kameradan uzağa çevirdi."
+     }
+    ]
+   },
+   {
+    "phrase": "past",
+    "meanings": [
+     "yanından geçerek"
+    ],
+    "examples": [
+     {
+      "en": "Go past the library and turn left.",
+      "tr": "Kütüphanenin yanından geçerek sola dönün."
+     },
+     {
+      "en": "He walked past the bank on his way to work.",
+      "tr": "İşe giderken bankanın yanından geçti."
+     },
+     {
+      "en": "She walked past me without saying a word.",
+      "tr": "Tek bir kelime bile etmeden yanımdan geçip gitti."
+     }
+    ]
+   },
+   {
+    "phrase": "over",
+    "meanings": [
+     "üzerinden"
+    ],
+    "examples": [
+     {
+      "en": "The bird flew over the house.",
+      "tr": "Kuş evin üzerinden uçtu."
+     },
+     {
+      "en": "She jumped over the small fence.",
+      "tr": "Küçük çitin üzerinden atladı."
+     },
+     {
+      "en": "We walked over the old bridge.",
+      "tr": "Eski köprünün üzerinden yürüdük."
+     }
+    ]
+   },
+   {
+    "phrase": "up",
+    "meanings": [
+     "yukarı doğru"
+    ],
+    "examples": [
+     {
+      "en": "The cat ran up the tree.",
+      "tr": "Kedi ağaca doğru koştu."
+     },
+     {
+      "en": "They walked up the hill to see the view.",
+      "tr": "Manzarayı görmek için tepeden yukarı doğru yürüdüler."
+     },
+     {
+      "en": "Please climb up the ladder carefully.",
+      "tr": "Lütfen merdivenden yukarı doğru dikkatlice tırman."
+     }
+    ]
+   },
+   {
+    "phrase": "down",
+    "meanings": [
+     "aşağı doğru"
+    ],
+    "examples": [
+     {
+      "en": "Water flowed down the mountain.",
+      "tr": "Su dağdan aşağı doğru aktı."
+     },
+     {
+      "en": "He ran down the stairs to open the door.",
+      "tr": "Kapıyı açmak için merdivenlerden aşağı doğru koştu."
+     },
+     {
+      "en": "The sun went down behind the hills.",
+      "tr": "Güneş tepelerin arkasından aşağı doğru battı."
+     }
+    ]
+   },
+   {
+    "phrase": "around",
+    "meanings": [
+     "etrafından"
+    ],
+    "examples": [
+     {
+      "en": "They walked around the lake to get some fresh air.",
+      "tr": "Temiz hava almak için gölün etrafından yürüdüler."
+     },
+     {
+      "en": "The kids ran around the big tree.",
+      "tr": "Çocuklar büyük ağacın etrafından koştular."
+     },
+     {
+      "en": "We had to drive around the construction site.",
+      "tr": "Şantiye alanının etrafından arabayla geçmek zorunda kaldık."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 11,
+  "en": "MEANS & METHOD",
+  "tr": "ARAÇ, YÖNTEM & VASITA",
+  "items": [
+   {
+    "phrase": "by",
+    "meanings": [
+     "ile",
+     "aracılığıyla"
+    ],
+    "examples": [
+     {
+      "en": "She prefers to travel by train.",
+      "tr": "Tren ile seyahat etmeyi tercih eder."
+     },
+     {
+      "en": "You can activate the account by clicking this link.",
+      "tr": "Bu bağlantıya tıklayarak hesabı aktif hale getirebilirsiniz."
+     },
+     {
+      "en": "We paid for the tickets by credit card.",
+      "tr": "Biletlerin ödemesini kredi kartı ile yaptık."
+     }
+    ]
+   },
+   {
+    "phrase": "with",
+    "meanings": [
+     "ile",
+     "kullanarak"
+    ],
+    "examples": [
+     {
+      "en": "He opened the locked door with a key.",
+      "tr": "Kilitli kapıyı bir anahtar ile açtı."
+     },
+     {
+      "en": "You can clean the screen with a soft cloth.",
+      "tr": "Ekranı yumuşak bir bez ile temizleyebilirsiniz."
+     },
+     {
+      "en": "She wrote the note with a red pen.",
+      "tr": "Notu kırmızı bir kalem ile yazdı."
+     }
+    ]
+   },
+   {
+    "phrase": "via",
+    "meanings": [
+     "yoluyla"
+    ],
+    "examples": [
+     {
+      "en": "I will send you the document via email.",
+      "tr": "Belgeyi size e-posta yoluyla göndereceğim."
+     },
+     {
+      "en": "They traveled to London via Paris.",
+      "tr": "Londra'ya Paris yoluyla seyahat ettiler."
+     },
+     {
+      "en": "We received the latest news via social media.",
+      "tr": "Son haberleri sosyal medya yoluyla aldık."
+     }
+    ]
+   },
+   {
+    "phrase": "by means of",
+    "meanings": [
+     "aracılığıyla"
+    ],
+    "examples": [
+     {
+      "en": "The heavy box was lifted by means of a crane.",
+      "tr": "Ağır kutu bir vinç aracılığıyla kaldırıldı."
+     },
+     {
+      "en": "They solved the math problem by means of a simple formula.",
+      "tr": "Matematik problemini basit bir formül aracılığıyla çözdüler."
+     },
+     {
+      "en": "He communicates with his friends by means of video calls.",
+      "tr": "Arkadaşlarıyla görüntülü aramalar aracılığıyla iletişim kuruyor."
+     }
+    ]
+   },
+   {
+    "phrase": "by way of",
+    "meanings": [
+     "yoluyla"
+    ],
+    "examples": [
+     {
+      "en": "She explained her idea by way of a simple diagram.",
+      "tr": "Fikrini basit bir şema yoluyla açıkladı."
+     },
+     {
+      "en": "The teacher introduced the topic by way of a short video.",
+      "tr": "Öğretmen konuyu kısa bir video yoluyla tanıttı."
+     },
+     {
+      "en": "They offered an apology by way of a small gift.",
+      "tr": "Küçük bir hediye yoluyla özürlerini sundular."
+     }
+    ]
+   },
+   {
+    "phrase": "with the aid of",
+    "meanings": [
+     "yardımıyla"
+    ],
+    "examples": [
+     {
+      "en": "He completed the project with the aid of his teacher.",
+      "tr": "Projeyi öğretmeninin yardımıyla tamamladı."
+     },
+     {
+      "en": "She climbed the mountain with the aid of special tools.",
+      "tr": "Dağa özel aletlerin yardımıyla tırmandı."
+     },
+     {
+      "en": "You can read the small text with the aid of a magnifying glass.",
+      "tr": "Küçük yazıyı büyüteç yardımıyla okuyabilirsiniz."
+     }
+    ]
+   },
+   {
+    "phrase": "with the help of",
+    "meanings": [
+     "yardımıyla"
+    ],
+    "examples": [
+     {
+      "en": "I built this table with the help of my brother.",
+      "tr": "Bu masayı erkek kardeşimin yardımıyla yaptım."
+     },
+     {
+      "en": "They found the correct street with the help of a map.",
+      "tr": "Doğru sokağı bir haritanın yardımıyla buldular."
+     },
+     {
+      "en": "She learned Spanish with the help of a mobile app.",
+      "tr": "İspanyolcayı bir mobil uygulamanın yardımıyla öğrendi."
+     }
+    ]
+   },
+   {
+    "phrase": "with the assistance of",
+    "meanings": [
+     "yardımıyla"
+    ],
+    "examples": [
+     {
+      "en": "The patient walked to the door with the assistance of a nurse.",
+      "tr": "Hasta, bir hemşirenin yardımıyla kapıya kadar yürüdü."
+     },
+     {
+      "en": "We organized the school festival with the assistance of volunteers.",
+      "tr": "Okul festivalini gönüllülerin yardımıyla düzenledik."
+     },
+     {
+      "en": "He filled out the complex visa form with the assistance of an agent.",
+      "tr": "Karmaşık vize formunu bir acentenin yardımıyla doldurdu."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 12,
+  "en": "TOPIC & RELATION",
+  "tr": "KONU & İLİŞKİ",
+  "items": [
+   {
+    "phrase": "about",
+    "meanings": [
+     "hakkında"
+    ],
+    "examples": [
+     {
+      "en": "Tell me about your new house.",
+      "tr": "Bana yeni evin hakkında bilgi ver."
+     },
+     {
+      "en": "I am reading a book about space travel.",
+      "tr": "Uzay yolculuğu hakkında bir kitap okuyorum."
+     },
+     {
+      "en": "She is very excited about the trip.",
+      "tr": "Gezi hakkında çok heyecanlı."
+     }
+    ]
+   },
+   {
+    "phrase": "regarding",
+    "meanings": [
+     "hakkında"
+    ],
+    "examples": [
+     {
+      "en": "I received an email regarding the meeting.",
+      "tr": "Toplantı hakkında bir e-posta aldım."
+     },
+     {
+      "en": "We need to make a decision regarding our budget.",
+      "tr": "Bütçemiz hakkında bir karar vermemiz gerekiyor."
+     },
+     {
+      "en": "Do you have any questions regarding the project?",
+      "tr": "Proje hakkında herhangi bir sorunuz var mı?"
+     }
+    ]
+   },
+   {
+    "phrase": "concerning",
+    "meanings": [
+     "ile ilgili"
+    ],
+    "examples": [
+     {
+      "en": "The teacher wrote a note concerning his progress.",
+      "tr": "Öğretmen, onun gelişimi ile ilgili bir not yazdı."
+     },
+     {
+      "en": "There are new rules concerning classroom behavior.",
+      "tr": "Sınıf içi davranışlar ile ilgili yeni kurallar var."
+     },
+     {
+      "en": "We discussed some issues concerning the schedule.",
+      "tr": "Program ile ilgili bazı konuları tartıştık."
+     }
+    ]
+   },
+   {
+    "phrase": "as to",
+    "meanings": [
+     "konusunda"
+    ],
+    "examples": [
+     {
+      "en": "There is no doubt as to his honesty.",
+      "tr": "Onun dürüstlüğü konusunda hiçbir şüphe yok."
+     },
+     {
+      "en": "She is still confused as to what to do next.",
+      "tr": "Bundan sonra ne yapacağı konusunda hâlâ kafası karışık."
+     },
+     {
+      "en": "They made a choice as to where they wanted to live.",
+      "tr": "Nerede yaşamak istedikleri konusunda bir seçim yaptılar."
+     }
+    ]
+   },
+   {
+    "phrase": "as for",
+    "meanings": [
+     "-e gelince"
+    ],
+    "examples": [
+     {
+      "en": "My sister loves tea, but as for me, I prefer coffee.",
+      "tr": "Kız kardeşim çayı çok sever ama bana gelince, ben kahveyi tercih ederim."
+     },
+     {
+      "en": "The food was great, and as for the service, it was fast.",
+      "tr": "Yemek harikaydı, servise gelince, o da hızlıydı."
+     },
+     {
+      "en": "Tom passed the exam, but as for Sarah, she failed.",
+      "tr": "Tom sınavı geçti, Sarah'ya gelince, o kaldı."
+     }
+    ]
+   },
+   {
+    "phrase": "with regard to",
+    "meanings": [
+     "ile ilgili olarak"
+    ],
+    "examples": [
+     {
+      "en": "I am writing with regard to your application.",
+      "tr": "Başvurunuz ile ilgili olarak yazıyorum."
+     },
+     {
+      "en": "He has some suggestions with regard to the new design.",
+      "tr": "Yeni tasarım ile ilgili olarak bazı önerileri var."
+     },
+     {
+      "en": "We need more information with regard to the price.",
+      "tr": "Fiyat ile ilgili olarak daha fazla bilgiye ihtiyacımız var."
+     }
+    ]
+   },
+   {
+    "phrase": "with respect to",
+    "meanings": [
+     "ile ilgili olarak"
+    ],
+    "examples": [
+     {
+      "en": "The school has strict rules with respect to phone use.",
+      "tr": "Okulun, telefon kullanımı ile ilgili olarak katı kuralları var."
+     },
+     {
+      "en": "They made some changes with respect to the project plan.",
+      "tr": "Proje planı ile ilgili olarak bazı değişiklikler yaptılar."
+     },
+     {
+      "en": "This laptop is better with respect to battery life.",
+      "tr": "Bu dizüstü bilgisayar, pil ömrü ile ilgili olarak daha iyi."
+     }
+    ]
+   },
+   {
+    "phrase": "with reference to",
+    "meanings": [
+     "ile ilgili olarak"
+    ],
+    "examples": [
+     {
+      "en": "I am calling with reference to your job advertisement.",
+      "tr": "İş ilanınız ile ilgili olarak arıyorum."
+     },
+     {
+      "en": "Please fill out this form with reference to your skills.",
+      "tr": "Lütfen bu formu becerileriniz ile ilgili olarak doldurun."
+     },
+     {
+      "en": "The manager spoke with reference to the company goals.",
+      "tr": "Müdür, şirket hedefleri ile ilgili olarak konuştu."
+     }
+    ]
+   },
+   {
+    "phrase": "in reference to",
+    "meanings": [
+     "ile ilgili"
+    ],
+    "examples": [
+     {
+      "en": "She sent an email in reference to the mistake.",
+      "tr": "Hata ile ilgili bir e-posta gönderdi."
+     },
+     {
+      "en": "I have a question in reference to your presentation.",
+      "tr": "Sunumunuz ile ilgili bir sorum var."
+     },
+     {
+      "en": "He wrote a letter in reference to his lost bag.",
+      "tr": "Kayıp çantası ile ilgili bir mektup yazdı."
+     }
+    ]
+   },
+   {
+    "phrase": "in respect of",
+    "meanings": [
+     "konusunda"
+    ],
+    "examples": [
+     {
+      "en": "The company is very successful in respect of sales.",
+      "tr": "Şirket, satışlar konusunda çok başarılı."
+     },
+     {
+      "en": "We have some doubts in respect of the new system.",
+      "tr": "Yeni sistem konusunda bazı şüphelerimiz var."
+     },
+     {
+      "en": "She has high standards in respect of cleanliness.",
+      "tr": "Temizlik konusunda yüksek standartları var."
+     }
+    ]
+   },
+   {
+    "phrase": "in relation to",
+    "meanings": [
+     "ile ilgili olarak"
+    ],
+    "examples": [
+     {
+      "en": "He asked some questions in relation to the new policy.",
+      "tr": "Yeni politika ile ilgili olarak bazı sorular sordu."
+     },
+     {
+      "en": "The study shows facts in relation to health.",
+      "tr": "Çalışma, sağlık ile ilgili olarak gerçekleri gösteriyor."
+     },
+     {
+      "en": "I need advice in relation to my career options.",
+      "tr": "Kariyer seçeneklerim ile ilgili olarak tavsiyeye ihtiyacım var."
+     }
+    ]
+   },
+   {
+    "phrase": "in connection with",
+    "meanings": [
+     "ile bağlantılı olarak"
+    ],
+    "examples": [
+     {
+      "en": "The police want to speak to him in connection with the crime.",
+      "tr": "Polis, suç ile bağlantılı olarak onunla konuşmak istiyor."
+     },
+     {
+      "en": "She is visiting Berlin in connection with her work.",
+      "tr": "İşi ile bağlantılı olarak Berlin'i ziyaret ediyor."
+     },
+     {
+      "en": "Many people were interviewed in connection with the accident.",
+      "tr": "Kaza ile bağlantılı olarak birçok kişiyle görüşüldü."
+     }
+    ]
+   },
+   {
+    "phrase": "in terms of",
+    "meanings": [
+     "açısından"
+    ],
+    "examples": [
+     {
+      "en": "The new phone is great in terms of battery life.",
+      "tr": "Yeni telefon pil ömrü açısından harika."
+     },
+     {
+      "en": "We need to think in terms of the future.",
+      "tr": "Gelecek açısından düşünmemiz gerekiyor."
+     },
+     {
+      "en": "This job is not very good in terms of salary.",
+      "tr": "Bu iş maaş açısından çok iyi değil."
+     }
+    ]
+   },
+   {
+    "phrase": "in the context of",
+    "meanings": [
+     "bağlamında"
+    ],
+    "examples": [
+     {
+      "en": "We should discuss this problem in the context of our school rules.",
+      "tr": "Bu sorunu okul kurallarımız bağlamında tartışmalıyız."
+     },
+     {
+      "en": "You must read the sentence in the context of the whole paragraph.",
+      "tr": "Cümleyi paragrafın bütünü bağlamında okumalısın."
+     },
+     {
+      "en": "His behavior makes sense in the context of his difficult week.",
+      "tr": "Zor geçen haftası bağlamında onun davranışı mantıklı geliyor."
+     }
+    ]
+   },
+   {
+    "phrase": "by reference to",
+    "meanings": [
+     "referans alarak"
+    ],
+    "examples": [
+     {
+      "en": "You can find the correct answer by reference to the textbook.",
+      "tr": "Doğru cevabı ders kitabını referans alarak bulabilirsiniz."
+     },
+     {
+      "en": "The map shows the main road by reference to the river.",
+      "tr": "Harita ana yolu nehri referans alarak gösteriyor."
+     },
+     {
+      "en": "She explained the new words by reference to simple examples.",
+      "tr": "Yeni kelimeleri basit örnekleri referans alarak açıkladı."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 13,
+  "en": "RULE, COMPLIANCE & BASIS",
+  "tr": "KURAL, UYUM & DAYANAK",
+  "items": [
+   {
+    "phrase": "according to",
+    "meanings": [
+     "-e göre"
+    ],
+    "examples": [
+     {
+      "en": "According to the weather forecast, it will rain tomorrow.",
+      "tr": "Hava durumuna göre yarın yağmur yağacak."
+     },
+     {
+      "en": "Teachers group students according to their English levels.",
+      "tr": "Öğretmenler öğrencileri İngilizce seviyelerine göre gruplandırır."
+     },
+     {
+      "en": "Everything is going according to plan.",
+      "tr": "Her şey plana göre gidiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "in accordance with",
+    "meanings": [
+     "uyarınca"
+    ],
+    "examples": [
+     {
+      "en": "We must behave in accordance with the school safety rules.",
+      "tr": "Okul güvenlik kuralları uyarınca davranmalıyız."
+     },
+     {
+      "en": "The package was delivered in accordance with your instructions.",
+      "tr": "Paket talimatlarınız uyarınca teslim edildi."
+     },
+     {
+      "en": "They built the house in accordance with the local laws.",
+      "tr": "Evi yerel yasalar uyarınca inşa ettiler."
+     }
+    ]
+   },
+   {
+    "phrase": "in compliance with",
+    "meanings": [
+     "gereğince",
+     "uygun olarak"
+    ],
+    "examples": [
+     {
+      "en": "All food must be prepared in compliance with health regulations.",
+      "tr": "Tüm yiyecekler sağlık yönetmeliklerine uygun olarak hazırlanmalıdır."
+     },
+     {
+      "en": "The factory operates in compliance with environmental laws.",
+      "tr": "Fabrika çevre yasaları gereğince faaliyet göstermektedir."
+     },
+     {
+      "en": "He wore a helmet in compliance with the safety policy.",
+      "tr": "Güvenlik politikası gereğince kask taktı."
+     }
+    ]
+   },
+   {
+    "phrase": "in keeping with",
+    "meanings": [
+     "uyumlu olarak"
+    ],
+    "examples": [
+     {
+      "en": "The new furniture is in keeping with the style of the house.",
+      "tr": "Yeni mobilyalar evin tarzıyla uyumlu olarak seçildi."
+     },
+     {
+      "en": "We decorated the classroom in keeping with the holiday theme.",
+      "tr": "Sınıfı tatil temasıyla uyumlu olarak süsledik."
+     },
+     {
+      "en": "His simple lifestyle is in keeping with his personal beliefs.",
+      "tr": "Onun sade yaşam tarzı kişisel inançlarıyla uyumlu."
+     }
+    ]
+   },
+   {
+    "phrase": "in line with",
+    "meanings": [
+     "doğrultusunda"
+    ],
+    "examples": [
+     {
+      "en": "The company increased wages in line with inflation.",
+      "tr": "Şirket ücretleri enflasyon doğrultusunda artırdı."
+     },
+     {
+      "en": "Our final decision is in line with the customer's wishes.",
+      "tr": "Son kararımız müşterinin istekleri doğrultusundadır."
+     },
+     {
+      "en": "We organized the event in line with your suggestions.",
+      "tr": "Etkinliği önerileriniz doğrultusunda düzenledik."
+     }
+    ]
+   },
+   {
+    "phrase": "pursuant to",
+    "meanings": [
+     "uyarınca"
+    ],
+    "examples": [
+     {
+      "en": "Pursuant to the agreement, we will pay you tomorrow.",
+      "tr": "Anlaşma uyarınca size yarın ödeme yapacağız."
+     },
+     {
+      "en": "The police closed the road pursuant to an official order.",
+      "tr": "Polis resmi bir emir uyarınca yolu kapattı."
+     },
+     {
+      "en": "We can use this room pursuant to our contract.",
+      "tr": "Sözleşmemiz uyarınca bu odayı kullanabiliriz."
+     }
+    ]
+   },
+   {
+    "phrase": "on the basis of",
+    "meanings": [
+     "temelinde"
+    ],
+    "examples": [
+     {
+      "en": "They chose the winner on the basis of their exam scores.",
+      "tr": "Kazananı sınav puanları temelinde seçtiler."
+     },
+     {
+      "en": "We cannot make a decision on the basis of these rumors.",
+      "tr": "Bu dedikodular temelinde bir karar veremeyiz."
+     },
+     {
+      "en": "Teachers help students on the basis of their individual needs.",
+      "tr": "Öğretmenler öğrencilere bireysel ihtiyaçları temelinde yardımcı olur."
+     }
+    ]
+   },
+   {
+    "phrase": "by virtue of",
+    "meanings": [
+     "gereğince",
+     "sayesinde"
+    ],
+    "examples": [
+     {
+      "en": "She got the job by virtue of her great experience.",
+      "tr": "Harika deneyimi sayesinde işe girdi."
+     },
+     {
+      "en": "He has a key to the building by virtue of his role as manager.",
+      "tr": "Müdürlük rolü gereğince binanın anahtarına sahip."
+     },
+     {
+      "en": "They won the match by virtue of their hard work.",
+      "tr": "Sıkı çalışmaları sayesinde maçı kazandılar."
+     }
+    ]
+   },
+   {
+    "phrase": "on the authority of",
+    "meanings": [
+     "yetkisine dayanarak"
+    ],
+    "examples": [
+     {
+      "en": "The doctor closed the school on the authority of the health board.",
+      "tr": "Doktor sağlık kurulunun yetkisine dayanarak okulu kapattı."
+     },
+     {
+      "en": "He changed the schedule on the authority of the manager.",
+      "tr": "Müdürün yetkisine dayanarak programı değiştirdi."
+     },
+     {
+      "en": "The police stopped the cars on the authority of the court.",
+      "tr": "Polis mahkemenin yetkisine dayanarak arabaları durdurdu."
+     }
+    ]
+   },
+   {
+    "phrase": "by order of",
+    "meanings": [
+     "emriyle"
+    ],
+    "examples": [
+     {
+      "en": "The park was closed by order of the mayor.",
+      "tr": "Park, belediye başkanının emriyle kapatıldı."
+     },
+     {
+      "en": "We stopped the construction by order of the court.",
+      "tr": "Mahkemenin emriyle inşaatı durdurduk."
+     },
+     {
+      "en": "Soldiers blocked the road by order of the general.",
+      "tr": "Askerler, generalin emriyle yolu kapattı."
+     }
+    ]
+   },
+   {
+    "phrase": "on the recommendation of",
+    "meanings": [
+     "tavsiyesi üzerine"
+    ],
+    "examples": [
+     {
+      "en": "I bought this book on the recommendation of my teacher.",
+      "tr": "Bu kitabı öğretmenimin tavsiyesi üzerine aldım."
+     },
+     {
+      "en": "She visited the museum on the recommendation of a friend.",
+      "tr": "Bir arkadaşının tavsiyesi üzerine müzeyi ziyaret etti."
+     },
+     {
+      "en": "We changed our hotel on the recommendation of the travel guide.",
+      "tr": "Seyahat rehberinin tavsiyesi üzerine otelimizi değiştirdik."
+     }
+    ]
+   },
+   {
+    "phrase": "at the request of",
+    "meanings": [
+     "talebi üzerine"
+    ],
+    "examples": [
+     {
+      "en": "The manager changed the meeting time at the request of the team.",
+      "tr": "Müdür, ekibin talebi üzerine toplantı saatini değiştirdi."
+     },
+     {
+      "en": "They played my favorite song at the request of my sister.",
+      "tr": "Kız kardeşimin talebi üzerine en sevdiğim şarkıyı çaldılar."
+     },
+     {
+      "en": "The school organized a trip at the request of the students.",
+      "tr": "Okul, öğrencilerin talebi üzerine bir gezi düzenledi."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 14,
+  "en": "CONDITION & CIRCUMSTANCE",
+  "tr": "KOŞUL & DURUM",
+  "items": [
+   {
+    "phrase": "if",
+    "meanings": [
+     "eğer",
+     "-se/-sa"
+    ],
+    "examples": [
+     {
+      "en": "We will go to the park if the weather is nice.",
+      "tr": "Hava güzel olursa parka gideceğiz."
+     },
+     {
+      "en": "You can pass the exam if you study regularly.",
+      "tr": "Düzenli çalışırsan sınavı geçebilirsin."
+     },
+     {
+      "en": "Call me if you need any help with your homework.",
+      "tr": "Ödevinle ilgili yardıma ihtiyacın olursa beni ara."
+     }
+    ]
+   },
+   {
+    "phrase": "unless",
+    "meanings": [
+     "-medikçe",
+     "olmadığı sürece"
+    ],
+    "examples": [
+     {
+      "en": "We cannot go out unless it stops raining.",
+      "tr": "Yağmur durmadıkça dışarı çıkamayız."
+     },
+     {
+      "en": "You will fail the class unless you study harder.",
+      "tr": "Daha çok çalışmadıkça sınıfta kalacaksın."
+     },
+     {
+      "en": "I do not drink coffee unless I am very tired.",
+      "tr": "Çok yorgun olmadığım sürece kahve içmem."
+     }
+    ]
+   },
+   {
+    "phrase": "provided / provided that",
+    "meanings": [
+     "şartıyla"
+    ],
+    "examples": [
+     {
+      "en": "You can borrow my car provided that you drive carefully.",
+      "tr": "Dikkatli sürmen şartıyla arabamı ödünç alabilirsin."
+     },
+     {
+      "en": "She will accept the job provided the salary is good.",
+      "tr": "Maaşın iyi olması şartıyla işi kabul edecek."
+     },
+     {
+      "en": "We can have a picnic provided that it does not rain.",
+      "tr": "Yağmur yağmaması şartıyla piknik yapabiliriz."
+     }
+    ]
+   },
+   {
+    "phrase": "even if",
+    "meanings": [
+     "olsa bile"
+    ],
+    "examples": [
+     {
+      "en": "I will go to the party even if I am tired.",
+      "tr": "Yorgun olsam bile partiye gideceğim."
+     },
+     {
+      "en": "We must finish this project even if it is difficult.",
+      "tr": "Zor olsa bile bu projeyi bitirmeliyiz."
+     },
+     {
+      "en": "She will not buy that expensive dress even if she has enough money.",
+      "tr": "Yeterli parası olsa bile o pahalı elbiseyi almayacak."
+     }
+    ]
+   },
+   {
+    "phrase": "as long as",
+    "meanings": [
+     "olduğu sürece"
+    ],
+    "examples": [
+     {
+      "en": "You can stay here as long as you want.",
+      "tr": "İstediğin sürece burada kalabilirsin."
+     },
+     {
+      "en": "My parents do not mind as long as I do my homework.",
+      "tr": "Ödevimi yaptığım sürece ailem sorun etmez."
+     },
+     {
+      "en": "You will stay healthy as long as you eat good food.",
+      "tr": "İyi yemek yediğin sürece sağlıklı kalırsın."
+     }
+    ]
+   },
+   {
+    "phrase": "so long as",
+    "meanings": [
+     "olduğu sürece"
+    ],
+    "examples": [
+     {
+      "en": "You can watch TV so long as you finish your dinner first.",
+      "tr": "Önce akşam yemeğini bitirdiğin sürece televizyon izleyebilirsin."
+     },
+     {
+      "en": "We can win the game so long as we play together.",
+      "tr": "Birlikte oynadığımız sürece maçı kazanabiliriz."
+     },
+     {
+      "en": "The dog is very quiet so long as it is not hungry.",
+      "tr": "Köpek aç olmadığı sürece çok sessizdir."
+     }
+    ]
+   },
+   {
+    "phrase": "whether ... or",
+    "meanings": [
+     "ister ... ister",
+     "olup olmadığı"
+    ],
+    "examples": [
+     {
+      "en": "We are going to the beach whether it is sunny or cloudy.",
+      "tr": "Hava ister güneşli ister bulutlu olsun sahile gidiyoruz."
+     },
+     {
+      "en": "I will buy this computer whether you like it or not.",
+      "tr": "Sen beğensen de beğenmesen de bu bilgisayarı alacağım."
+     },
+     {
+      "en": "She does not know whether to go by bus or train.",
+      "tr": "Otobüsle mi yoksa trenle mi gideceğini bilmiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "in case of",
+    "meanings": [
+     "durumunda"
+    ],
+    "examples": [
+     {
+      "en": "Please call this number in case of emergency.",
+      "tr": "Acil durum durumunda lütfen bu numarayı arayın."
+     },
+     {
+      "en": "Take an umbrella with you in case of rain.",
+      "tr": "Yağmur yağması durumunda yanına bir şemsiye al."
+     },
+     {
+      "en": "Use the stairs instead of the elevator in case of fire.",
+      "tr": "Yangın durumunda asansör yerine merdivenleri kullanın."
+     }
+    ]
+   },
+   {
+    "phrase": "in the event of",
+    "meanings": [
+     "olması durumunda"
+    ],
+    "examples": [
+     {
+      "en": "The school will close in the event of a heavy snowstorm.",
+      "tr": "Yoğun kar fırtınası olması durumunda okul tatil edilecektir."
+     },
+     {
+      "en": "Passengers must follow the safety instructions in the event of an accident.",
+      "tr": "Yolcular bir kaza olması durumunda güvenlik talimatlarına uymalıdır."
+     },
+     {
+      "en": "The concert will be canceled in the event of bad weather.",
+      "tr": "Kötü hava koşulları olması durumunda konser iptal edilecektir."
+     }
+    ]
+   },
+   {
+    "phrase": "in the absence of",
+    "meanings": [
+     "yokluğunda"
+    ],
+    "examples": [
+     {
+      "en": "We cannot make a final decision in the absence of our manager.",
+      "tr": "Yöneticimizin yokluğunda kesin bir karar veremeyiz."
+     },
+     {
+      "en": "Plants cannot grow properly in the absence of sunlight.",
+      "tr": "Bitkiler güneş ışığının yokluğunda düzgün bir şekilde büyüyemezler."
+     },
+     {
+      "en": "The police released the suspect in the absence of clear evidence.",
+      "tr": "Polis, açık kanıt yokluğunda şüpheliyi serbest bıraktı."
+     }
+    ]
+   },
+   {
+    "phrase": "in the face of",
+    "meanings": [
+     "karşısında"
+    ],
+    "examples": [
+     {
+      "en": "She stayed very calm in the face of danger.",
+      "tr": "Tehlike karşısında çok sakin kaldı."
+     },
+     {
+      "en": "We must work together in the face of these difficulties.",
+      "tr": "Bu zorluklar karşısında birlikte çalışmalıyız."
+     },
+     {
+      "en": "The small shop closed down in the face of rising costs.",
+      "tr": "Küçük dükkan artan maliyetler karşısında kapandı."
+     }
+    ]
+   },
+   {
+    "phrase": "under",
+    "meanings": [
+     "koşullar altında"
+    ],
+    "examples": [
+     {
+      "en": "He works much better under pressure.",
+      "tr": "Baskı altında çok daha iyi çalışıyor."
+     },
+     {
+      "en": "The bridge is safe under normal conditions.",
+      "tr": "Köprü normal koşullar altında güvenlidir."
+     },
+     {
+      "en": "You cannot drive a car under the influence of medicine.",
+      "tr": "İlaç etkisi altında araba kullanamazsınız."
+     }
+    ]
+   },
+   {
+    "phrase": "without",
+    "meanings": [
+     "olmadan"
+    ],
+    "examples": [
+     {
+      "en": "You cannot enter the building without an ID card.",
+      "tr": "Kimlik kartı olmadan binaya giremezsiniz."
+     },
+     {
+      "en": "He left the house without saying goodbye.",
+      "tr": "Hoşça kal demeden evden çıktı."
+     },
+     {
+      "en": "She can solve this math problem without any help.",
+      "tr": "Bu matematik problemini hiçbir yardım almadan çözebilir."
+     }
+    ]
+   },
+   {
+    "phrase": "regardless of",
+    "meanings": [
+     "bakılmaksızın"
+    ],
+    "examples": [
+     {
+      "en": "Everyone can join the club regardless of their age.",
+      "tr": "Yaşına bakılmaksızın herkes kulübe katılabilir."
+     },
+     {
+      "en": "We will go for a walk regardless of the weather.",
+      "tr": "Havaya bakılmaksızın yürüyüşe çıkacağız."
+     },
+     {
+      "en": "She bought the shoes regardless of the high price.",
+      "tr": "Yüksek fiyatına bakılmaksızın ayakkabıları satın aldı."
+     }
+    ]
+   },
+   {
+    "phrase": "irrespective of",
+    "meanings": [
+     "dikkate almaksızın"
+    ],
+    "examples": [
+     {
+      "en": "The rules apply to all students irrespective of their grade.",
+      "tr": "Kurallar, sınıfları dikkate almaksızın tüm öğrenciler için geçerlidir."
+     },
+     {
+      "en": "We accept applications irrespective of nationality.",
+      "tr": "Uyruğu dikkate almaksızın başvuruları kabul ediyoruz."
+     },
+     {
+      "en": "He was determined to win irrespective of the risks.",
+      "tr": "Riskleri dikkate almaksızın kazanmaya kararlıydı."
+     }
+    ]
+   },
+   {
+    "phrase": "barring",
+    "meanings": [
+     "olmadığı takdirde"
+    ],
+    "examples": [
+     {
+      "en": "Barring any bad weather, the match will start on time.",
+      "tr": "Kötü bir hava olmadığı takdirde maç zamanında başlayacak."
+     },
+     {
+      "en": "We will finish the project today, barring any sudden problems.",
+      "tr": "Ani bir problem olmadığı takdirde projeyi bugün bitireceğiz."
+     },
+     {
+      "en": "Barring an emergency, I will see you tomorrow morning.",
+      "tr": "Acil bir durum olmadığı takdirde yarın sabah görüşürüz."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 15,
+  "en": "SUPPORT, PREFERENCE & OPPOSITION",
+  "tr": "DESTEK, TERCİH & KARŞITLIK",
+  "items": [
+   {
+    "phrase": "in favour of",
+    "meanings": [
+     "lehine"
+    ],
+    "examples": [
+     {
+      "en": "Most of the teachers voted in favour of the new school rules.",
+      "tr": "Öğretmenlerin çoğu yeni okul kurallarının lehine oy kullandı."
+     },
+     {
+      "en": "I decided to leave my job in favour of starting my own business.",
+      "tr": "Kendi işimi kurmak lehine işimden ayrılmaya karar verdim."
+     },
+     {
+      "en": "The court decided in favour of the young family.",
+      "tr": "Mahkeme genç ailenin lehine karar verdi."
+     }
+    ]
+   },
+   {
+    "phrase": "in support of",
+    "meanings": [
+     "desteklemek amacıyla"
+    ],
+    "examples": [
+     {
+      "en": "They organized a concert in support of the local charity.",
+      "tr": "Yerel hayır kurumunu desteklemek amacıyla bir konser düzenlediler."
+     },
+     {
+      "en": "Many people marched in support of animal rights.",
+      "tr": "Birçok insan hayvan haklarını desteklemek amacıyla yürüdü."
+     },
+     {
+      "en": "She spoke in support of her coworker during the meeting.",
+      "tr": "Toplantıda meslektaşını desteklemek amacıyla konuştu."
+     }
+    ]
+   },
+   {
+    "phrase": "in defence of",
+    "meanings": [
+     "savunmasında"
+    ],
+    "examples": [
+     {
+      "en": "The lawyer spoke in defence of his client.",
+      "tr": "Avukat, müvekkilinin savunmasında konuştu."
+     },
+     {
+      "en": "He wrote an article in defence of free speech.",
+      "tr": "İfade özgürlüğünün savunmasında bir makale yazdı."
+     },
+     {
+      "en": "I have nothing to say in defence of my bad behaviour.",
+      "tr": "Kötü davranışımın savunmasında söyleyecek hiçbir şeyim yok."
+     }
+    ]
+   },
+   {
+    "phrase": "against",
+    "meanings": [
+     "aleyhine"
+    ],
+    "examples": [
+     {
+      "en": "This decision was completely against my interests.",
+      "tr": "Bu karar tamamen benim aleyhimeydi."
+     },
+     {
+      "en": "The evidence in court was strong against the suspect.",
+      "tr": "Mahkemedeki kanıtlar şüphelinin aleyhine güçlüydü."
+     },
+     {
+      "en": "Writing that letter might work against you in the future.",
+      "tr": "O mektubu yazmak gelecekte sizin aleyhinize işleyebilir."
+     }
+    ]
+   },
+   {
+    "phrase": "in opposition to",
+    "meanings": [
+     "karşı"
+    ],
+    "examples": [
+     {
+      "en": "Local people are protesting in opposition to the new highway.",
+      "tr": "Yerel halk yeni otoyola karşı protesto gösterisi yapıyor."
+     },
+     {
+      "en": "He voted in opposition to the proposed budget.",
+      "tr": "Önerilen bütçeye karşı oy kullandı."
+     },
+     {
+      "en": "She acted in opposition to her parents' advice.",
+      "tr": "Anne babasının tavsiyesine karşı hareket etti."
+     }
+    ]
+   },
+   {
+    "phrase": "in preference to",
+    "meanings": [
+     "tercih ederek"
+    ],
+    "examples": [
+     {
+      "en": "She chose a quiet life in the countryside in preference to the noisy city.",
+      "tr": "Gürültülü şehri tercih etmek yerine kırsalda sakin bir yaşamı seçti."
+     },
+     {
+      "en": "He decided to study art in preference to law.",
+      "tr": "Hukuku tercih etmek yerine sanat okumaya karar verdi."
+     },
+     {
+      "en": "Many people use trains in preference to buses for long trips.",
+      "tr": "Birçok insan uzun yolculuklar için otobüsü tercih etmek yerine treni kullanıyor."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 16,
+  "en": "EXCHANGE & RETURN",
+  "tr": "DEĞİŞİM & KARŞILIK",
+  "items": [
+   {
+    "phrase": "in exchange for",
+    "meanings": [
+     "karşılığında"
+    ],
+    "examples": [
+     {
+      "en": "I gave him my old phone in exchange for his bicycle.",
+      "tr": "Onun bisikleti karşılığında ona eski telefonumu verdim."
+     },
+     {
+      "en": "He washed my car in exchange for a free lunch.",
+      "tr": "Bedava bir öğle yemeği karşılığında arabamı yıkadı."
+     },
+     {
+      "en": "She teaches me French in exchange for English lessons.",
+      "tr": "İngilizce dersleri karşılığında bana Fransızca öğretiyor."
+     }
+    ]
+   },
+   {
+    "phrase": "in return for",
+    "meanings": [
+     "karşılığında"
+    ],
+    "examples": [
+     {
+      "en": "He helped me move in return for a free dinner.",
+      "tr": "Bedava bir akşam yemeği karşılığında taşınmama yardım etti."
+     },
+     {
+      "en": "I cleaned the kitchen in return for her help with my homework.",
+      "tr": "Ödevime yardım etmesi karşılığında mutfağı temizledim."
+     },
+     {
+      "en": "They gave us a nice gift in return for our hospitality.",
+      "tr": "Misafirperverliğimiz karşılığında bize güzel bir hediye verdiler."
+     }
+    ]
+   },
+   {
+    "phrase": "for",
+    "meanings": [
+     "karşılığında"
+    ],
+    "examples": [
+     {
+      "en": "I bought this lovely book for five dollars.",
+      "tr": "Bu güzel kitabı beş dolar karşılığında satın aldım."
+     },
+     {
+      "en": "You can trade your old phone for a new one here.",
+      "tr": "Burada eski telefonunuzu yenisi karşılığında takas edebilirsiniz."
+     },
+     {
+      "en": "They worked all day for a very small amount of money.",
+      "tr": "Çok küçük bir miktar para karşılığında bütün gün çalıştılar."
+     }
+    ]
+   },
+   {
+    "phrase": "at the expense of",
+    "meanings": [
+     "pahasına"
+    ],
+    "examples": [
+     {
+      "en": "He got the high-paying job at the expense of his health.",
+      "tr": "Sağlığı pahasına yüksek maaşlı işi aldı."
+     },
+     {
+      "en": "She played video games all weekend at the expense of her exam grades.",
+      "tr": "Sınav notları pahasına bütün hafta sonu video oyunları oynadı."
+     },
+     {
+      "en": "The company built the bridge quickly at the expense of safety.",
+      "tr": "Şirket, güvenlik pahasına köprüyü hızlıca inşa etti."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 17,
+  "en": "REPRESENTATION, PERMISSION & SUPPORT",
+  "tr": "TEMSİL, İZİN & DESTEK",
+  "items": [
+   {
+    "phrase": "on behalf of",
+    "meanings": [
+     "adına",
+     "temsilen"
+    ],
+    "examples": [
+     {
+      "en": "I am speaking on behalf of my entire class today.",
+      "tr": "Bugün bütün sınıfım adına konuşuyorum."
+     },
+     {
+      "en": "My assistant signed the contract on behalf of the manager.",
+      "tr": "Asistanım sözleşmeyi müdür adına imzaladı."
+     },
+     {
+      "en": "She accepted the award on behalf of her sister.",
+      "tr": "Ödülü kız kardeşi adına kabul etti."
+     }
+    ]
+   },
+   {
+    "phrase": "with the consent of",
+    "meanings": [
+     "rızasıyla"
+    ],
+    "examples": [
+     {
+      "en": "The teenagers went on the camping trip with the consent of their parents.",
+      "tr": "Gençler, anne babalarının rızasıyla kamp gezisine çıktılar."
+     },
+     {
+      "en": "The doctor performed the surgery with the consent of the patient.",
+      "tr": "Doktor, hastanın rızasıyla ameliyatı gerçekleştirdi."
+     },
+     {
+      "en": "We painted the apartment with the consent of the landlord.",
+      "tr": "Evi, ev sahibinin rızasıyla boyadık."
+     }
+    ]
+   },
+   {
+    "phrase": "with the approval of",
+    "meanings": [
+     "onayıyla"
+    ],
+    "examples": [
+     {
+      "en": "We started the new project with the approval of our manager.",
+      "tr": "Yeni projeye yöneticimizin onayıyla başladık."
+     },
+     {
+      "en": "He bought a new computer with the approval of his parents.",
+      "tr": "Anne babasının onayıyla yeni bir bilgisayar satın aldı."
+     },
+     {
+      "en": "They changed the wedding plans with the approval of the family.",
+      "tr": "Düğün planlarını ailenin onayıyla değiştirdiler."
+     }
+    ]
+   },
+   {
+    "phrase": "with the support of",
+    "meanings": [
+     "desteğiyle"
+    ],
+    "examples": [
+     {
+      "en": "She finished college with the support of her family.",
+      "tr": "Üniversiteyi ailesinin desteğiyle bitirdi."
+     },
+     {
+      "en": "They opened the community center with the support of local charities.",
+      "tr": "Toplum merkezini yerel hayır kurumlarının desteğiyle açtılar."
+     },
+     {
+      "en": "I passed the difficult English exam with the support of my teacher.",
+      "tr": "Zor İngilizce sınavını öğretmenimin desteğiyle geçtim."
+     }
+    ]
+   },
+   {
+    "phrase": "on the part of",
+    "meanings": [
+     "tarafından"
+    ],
+    "examples": [
+     {
+      "en": "There was a small mistake on the part of the hotel staff.",
+      "tr": "Otel personeli tarafından yapılan küçük bir hata vardı."
+     },
+     {
+      "en": "Success requires hard work on the part of the students.",
+      "tr": "Başarı, öğrenciler tarafından gösterilecek sıkı çalışma gerektirir."
+     },
+     {
+      "en": "The argument was due to a misunderstanding on the part of both friends.",
+      "tr": "Tartışma, her iki arkadaş tarafından yapılan bir yanlış anlaşılmadan kaynaklandı."
+     }
+    ]
+   },
+   {
+    "phrase": "at the hands of",
+    "meanings": [
+     "tarafından",
+     "elinden"
+    ],
+    "examples": [
+     {
+      "en": "The team suffered a terrible defeat at the hands of their rivals.",
+      "tr": "Takım, rakiplerinin elinden feci bir yenilgi aldı."
+     },
+     {
+      "en": "Many innocent people suffered at the hands of the cruel king.",
+      "tr": "Birçok masum insan, zalim kralın elinden acı çekti."
+     },
+     {
+      "en": "They experienced bad treatment at the hands of the rude staff.",
+      "tr": "Kaba personelin elinden kötü bir muamele gördüler."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 18,
+  "en": "QUANTITY, LIMIT & MEASURE",
+  "tr": "MİKTAR, SINIR & ÖLÇÜ",
+  "items": [
+   {
+    "phrase": "over",
+    "meanings": [
+     "-den fazla"
+    ],
+    "examples": [
+     {
+      "en": "There are over fifty students in the classroom.",
+      "tr": "Sınıfta elliden fazla öğrenci var."
+     },
+     {
+      "en": "He lived in London for over ten years.",
+      "tr": "On yıldan fazla bir süre Londra'da yaşadı."
+     },
+     {
+      "en": "The new laptop costs over a thousand dollars.",
+      "tr": "Yeni dizüstü bilgisayar bin dolardan fazla tutuyor."
+     }
+    ]
+   },
+   {
+    "phrase": "under",
+    "meanings": [
+     "-den az"
+    ],
+    "examples": [
+     {
+      "en": "Children under ten cannot watch this movie.",
+      "tr": "On yaşın altındaki çocuklar bu filmi izleyemez."
+     },
+     {
+      "en": "You can buy this shirt for under twenty dollars.",
+      "tr": "Bu gömleği yirmi doların altına satın alabilirsiniz."
+     },
+     {
+      "en": "The train was completed in under two years.",
+      "tr": "Tren iki yıldan az bir sürede tamamlandı."
+     }
+    ]
+   },
+   {
+    "phrase": "above",
+    "meanings": [
+     "-den fazla",
+     "üzerinde"
+    ],
+    "examples": [
+     {
+      "en": "Temperatures this week are above thirty degrees.",
+      "tr": "Bu hafta sıcaklıklar otuz derecenin üzerinde."
+     },
+     {
+      "en": "You must get a score above eighty to pass the exam.",
+      "tr": "Sınavı geçmek için seksenin üzerinde bir puan almalısınız."
+     },
+     {
+      "en": "The plane is flying above the clouds right now.",
+      "tr": "Uçak şu anda bulutların üzerinde uçuyor."
+     }
+    ]
+   },
+   {
+    "phrase": "below",
+    "meanings": [
+     "-den az",
+     "altında"
+    ],
+    "examples": [
+     {
+      "en": "The temperature dropped below freezing last night.",
+      "tr": "Dün gece sıcaklık donma noktasının altına düştü."
+     },
+     {
+      "en": "Students below the average mark need extra help.",
+      "tr": "Ortalamanın altındaki öğrencilerin ekstra yardıma ihtiyacı var."
+     },
+     {
+      "en": "You can see the beautiful valley below the hill.",
+      "tr": "Tepenin altındaki güzel vadiyi görebilirsiniz."
+     }
+    ]
+   },
+   {
+    "phrase": "within",
+    "meanings": [
+     "sınırları içinde"
+    ],
+    "examples": [
+     {
+      "en": "You must finish the test within one hour.",
+      "tr": "Testi bir saat içinde bitirmelisiniz."
+     },
+     {
+      "en": "We need to stay within our budget for this trip.",
+      "tr": "Bu seyahat için bütçemiz dahilinde kalmalıyız."
+     },
+     {
+      "en": "Delivery is free within five miles of the shop.",
+      "tr": "Mağazanın beş mil yakınındaki teslimatlar ücretsizdir."
+     }
+    ]
+   },
+   {
+    "phrase": "beyond",
+    "meanings": [
+     "sınırlarının ötesinde"
+    ],
+    "examples": [
+     {
+      "en": "The task was beyond my ability, so I asked for help.",
+      "tr": "Görev yeteneğimin ötesindeydi, bu yüzden yardım istedim."
+     },
+     {
+      "en": "Do not walk beyond the safety fence.",
+      "tr": "Güvenlik çitinin ötesine yürümeyin."
+     },
+     {
+      "en": "The small village lies just beyond the mountains.",
+      "tr": "Küçük köy dağların hemen ötesinde yer alıyor."
+     }
+    ]
+   },
+   {
+    "phrase": "in excess of",
+    "meanings": [
+     "-den fazla"
+    ],
+    "examples": [
+     {
+      "en": "The company made profits in excess of one million dollars.",
+      "tr": "Şirket bir milyon doların üzerinde kar elde etti."
+     },
+     {
+      "en": "Cars cannot drive at speeds in excess of fifty miles per hour here.",
+      "tr": "Arabalar burada saatte elli milin üzerindeki hızlarda gidemez."
+     },
+     {
+      "en": "He owns a collection in excess of five hundred books.",
+      "tr": "Beş yüzün üzerinde kitaptan oluşan bir koleksiyona sahip."
+     }
+    ]
+   },
+   {
+    "phrase": "per",
+    "meanings": [
+     "başına"
+    ],
+    "examples": [
+     {
+      "en": "The hotel costs ninety dollars per night.",
+      "tr": "Otelin gecelik fiyatı doksan dolardır."
+     },
+     {
+      "en": "You should drink eight glasses of water per day.",
+      "tr": "Günde sekiz bardak su içmelisiniz."
+     },
+     {
+      "en": "Tickets are limited to two per person.",
+      "tr": "Biletler kişi başına iki adet ile sınırlıdır."
+     }
+    ]
+   },
+   {
+    "phrase": "by",
+    "meanings": [
+     "miktarında",
+     "farkla"
+    ],
+    "examples": [
+     {
+      "en": "Our team won the basketball game by ten points.",
+      "tr": "Takımımız basketbol maçını on sayılık farkla kazandı."
+     },
+     {
+      "en": "House prices increased by five percent this year.",
+      "tr": "Ev fiyatları bu yıl yüzde beş oranında arttı."
+     },
+     {
+      "en": "You missed the target by only a few inches.",
+      "tr": "Hedefi sadece birkaç inç farkla kaçırdınız."
+     }
+    ]
+   },
+   {
+    "phrase": "in proportion to",
+    "meanings": [
+     "oranla"
+    ],
+    "examples": [
+     {
+      "en": "Your salary will increase in proportion to your work hours.",
+      "tr": "Maaşınız çalışma saatlerinize oranla artacaktır."
+     },
+     {
+      "en": "The rooms are very small in proportion to the big house.",
+      "tr": "Odalar büyük eve oranla çok küçük."
+     },
+     {
+      "en": "Success is usually in proportion to the effort you make.",
+      "tr": "Başarı genellikle gösterdiğiniz çabaya oranladır."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 19,
+  "en": "MANNER, STAGE & APPROACHING SITUATION",
+  "tr": "TARZ, EŞİK & YAKLAŞAN DURUM",
+  "items": [
+   {
+    "phrase": "as if",
+    "meanings": [
+     "sanki"
+    ],
+    "examples": [
+     {
+      "en": "He talks as if he knows everything about the topic.",
+      "tr": "Konu hakkında her şeyi biliyormuş gibi konuşuyor."
+     },
+     {
+      "en": "She looked at me as if she wanted to say something.",
+      "tr": "Bana sanki bir şey söylemek istiyormuş gibi baktı."
+     },
+     {
+      "en": "It looks as if it is going to rain soon.",
+      "tr": "Yakında yağmur yağacakmış gibi görünüyor."
+     }
+    ]
+   },
+   {
+    "phrase": "as though",
+    "meanings": [
+     "sanki"
+    ],
+    "examples": [
+     {
+      "en": "They greeted us as though we were old friends.",
+      "tr": "Bizi sanki eski arkadaşmışız gibi karşıladılar."
+     },
+     {
+      "en": "He behaves as though nothing happened yesterday.",
+      "tr": "Sanki dün hiçbir şey olmamış gibi davranıyor."
+     },
+     {
+      "en": "She felt as though she was dreaming.",
+      "tr": "Kendini sanki rüya görüyormuş gibi hissetti."
+     }
+    ]
+   },
+   {
+    "phrase": "just as",
+    "meanings": [
+     "tıpkı ... gibi"
+    ],
+    "examples": [
+     {
+      "en": "Just as you love music, your sister loves painting.",
+      "tr": "Tıpkı senin müziği sevdiğin gibi, kız kardeşin de resim yapmayı seviyor."
+     },
+     {
+      "en": "The second movie was great, just as the first one was.",
+      "tr": "İkinci film, tıpkı birincisi gibi harikaydı."
+     },
+     {
+      "en": "Vegetables are good for you, just as fruits are.",
+      "tr": "Sebzeler, tıpkı meyveler gibi sizin için iyidir."
+     }
+    ]
+   },
+   {
+    "phrase": "like",
+    "meanings": [
+     "gibi"
+    ],
+    "examples": [
+     {
+      "en": "She sings like a professional artist.",
+      "tr": "Profesyonel bir sanatçı gibi şarkı söylüyor."
+     },
+     {
+      "en": "You look like your big sister.",
+      "tr": "Ablana benziyorsun."
+     },
+     {
+      "en": "I want a smart phone like yours.",
+      "tr": "Seninki gibi akıllı bir telefon istiyorum."
+     }
+    ]
+   },
+   {
+    "phrase": "on the verge of",
+    "meanings": [
+     "eşiğinde",
+     "yapmak üzere"
+    ],
+    "examples": [
+     {
+      "en": "The company is on the verge of bankruptcy.",
+      "tr": "Şirket iflasın eşiğinde."
+     },
+     {
+      "en": "Scientists are on the verge of finding a cure.",
+      "tr": "Bilim insanları bir tedavi bulmanın eşiğinde."
+     },
+     {
+      "en": "She was on the verge of tears during the movie.",
+      "tr": "Film sırasında ağlamak üzereydi."
+     }
+    ]
+   },
+   {
+    "phrase": "on the brink of",
+    "meanings": [
+     "eşiğinde"
+    ],
+    "examples": [
+     {
+      "en": "Many wild animals are on the brink of extinction.",
+      "tr": "Birçok vahşi hayvan neslinin tükenmesi eşiğinde."
+     },
+     {
+      "en": "The two countries are on the brink of war.",
+      "tr": "İki ülke savaşın eşiğinde."
+     },
+     {
+      "en": "He felt like he was on the brink of a great discovery.",
+      "tr": "Büyük bir keşfin eşiğinde olduğunu hissetti."
+     }
+    ]
+   },
+   {
+    "phrase": "about to",
+    "meanings": [
+     "yapmak üzere"
+    ],
+    "examples": [
+     {
+      "en": "We are about to leave the house.",
+      "tr": "Evden çıkmak üzereyiz."
+     },
+     {
+      "en": "The movie is about to start.",
+      "tr": "Film başlamak üzere."
+     },
+     {
+      "en": "I was about to call you when you messaged me.",
+      "tr": "Bana mesaj attığında seni aramak üzereydim."
+     }
+    ]
+   },
+   {
+    "phrase": "in preparation for",
+    "meanings": [
+     "hazırlığında"
+    ],
+    "examples": [
+     {
+      "en": "They are painting the rooms in preparation for the baby.",
+      "tr": "Bebek hazırlığı olarak odaları boyuyorlar."
+     },
+     {
+      "en": "Students are studying hard in preparation for the exam.",
+      "tr": "Öğrenciler sınav hazırlığı olarak çok çalışıyorlar."
+     },
+     {
+      "en": "We bought extra food in preparation for the cold winter.",
+      "tr": "Soğuk kış hazırlığında fazladan yiyecek aldık."
+     }
+    ]
+   },
+   {
+    "phrase": "preliminary to",
+    "meanings": [
+     "öncesinde",
+     "hazırlık niteliğinde"
+    ],
+    "examples": [
+     {
+      "en": "They had a short meeting preliminary to the big project.",
+      "tr": "Büyük proje öncesinde hazırlık olarak kısa bir toplantı yaptılar."
+     },
+     {
+      "en": "We did some basic exercises preliminary to the main training.",
+      "tr": "Ana antrenman öncesinde hazırlık niteliğinde bazı temel egzersizler yaptık."
+     },
+     {
+      "en": "The doctor ordered a blood test preliminary to the operation.",
+      "tr": "Doktor ameliyat öncesinde hazırlık olarak kan testi istedi."
+     }
+    ]
+   },
+   {
+    "phrase": "preparatory to",
+    "meanings": [
+     "hazırlık olarak"
+    ],
+    "examples": [
+     {
+      "en": "The athletes did warm-up exercises preparatory to the race.",
+      "tr": "Sporcular yarışa hazırlık olarak ısınma egzersizleri yaptılar."
+     },
+     {
+      "en": "She read the instructions carefully preparatory to building the desk.",
+      "tr": "Masayı kurmaya hazırlık olarak talimatları dikkatlice okudu."
+     },
+     {
+      "en": "We gathered all the ingredients preparatory to cooking the meal.",
+      "tr": "Yemeği pişirmeye hazırlık olarak tüm malzemeleri topladık."
+     }
+    ]
+   }
+  ]
+ }
+]
