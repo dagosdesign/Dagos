@@ -43,9 +43,11 @@ export default function LgsUnitsScreen({ onBack, onSelectUnit }: LgsUnitsScreenP
               className="text-left bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-[#e3b553]/30 rounded-2xl p-5 transition-all cursor-pointer group"
             >
               <div className="flex items-center gap-3">
-                <span className="w-8 h-8 rounded-xl bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
-                  {idx + 1}
-                </span>
+                {unit.category !== 'LGS · All Units' && (
+                  <span className="w-8 h-8 rounded-xl bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
+                    {idx + 1}
+                  </span>
+                )}
                 <div className="flex-1 min-w-0">
                   <h3 className="text-[17px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors leading-tight">
                     {unit.title}
