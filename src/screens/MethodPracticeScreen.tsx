@@ -885,7 +885,7 @@ let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc2_${kind}_${card.id}`;
+  const cacheKey = `lex_pc3_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;

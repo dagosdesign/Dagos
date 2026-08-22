@@ -156,8 +156,10 @@ app.post("/api/practice-content", async (req, res) => {
     const ai = getAIClient();
 
     const systemInstruction =
-      "You are an English-learning content writer for Turkish students (A2-B1 level). " +
-      "Use simple, natural, real-life English — never stiff or AI-sounding. " +
+      "You are an English-learning content writer for Turkish students at CEFR A2 level. " +
+      "Write ONLY at A2 level: short simple sentences, high-frequency everyday vocabulary, " +
+      "basic tenses (present simple/continuous, past simple, 'going to'), no advanced grammar, " +
+      "no rare words or idioms. Natural, real-life English — never stiff or AI-sounding. " +
       "Output must match the JSON schema exactly.";
 
     // Random flavor seeds so every generation feels different.
@@ -177,21 +179,35 @@ app.post("/api/practice-content", async (req, res) => {
       "start with a sound or smell the character notices", "start with a decision the character just made",
     ];
     const DIALOGUE_SCENES = [
-      "two coworkers fixing a last-minute problem", "two friends planning a weekend trip",
-      "a customer and a shopkeeper", "two neighbors talking over the fence",
-      "two teammates after a match", "a student and a tutor between classes",
-      "two cousins cooking together", "two travelers waiting for a delayed bus",
-      "a mechanic and a car owner", "two flatmates deciding what to fix in the flat",
-      "a barista and a regular customer", "two colleagues stuck in an elevator",
-      "two old friends who met by chance at a market", "a landlord and a tenant",
-      "two hikers reading a trail map", "siblings organizing a surprise party",
+      "two friends choosing what to eat for lunch", "a customer asking for help in a clothes shop",
+      "two classmates talking about homework before class", "a father and son getting ready for school",
+      "two neighbors talking about the weather and the garden", "a customer ordering at a cafe counter",
+      "two friends deciding which film to watch", "a boy calling his friend to play football",
+      "a student asking the teacher about tomorrow's test", "two cousins talking about a birthday present",
+      "a passenger asking the bus driver about the route", "two friends talking about a new phone",
+      "two roommates sharing the housework", "a tourist asking a local for directions",
+      "a patient and a pharmacist at the pharmacy", "two friends planning a picnic",
+      "a boy asking his grandfather about his childhood", "two colleagues talking about the weekend",
+      "a customer returning a broken item to a shop", "two friends talking about a lost key",
+      "two teammates talking before a match", "a hotel guest asking at the reception",
+      "a student and a librarian looking for a book", "two friends comparing their favourite foods",
+      "a man buying vegetables at the market", "two friends talking about learning English",
+      "a boy and his uncle fixing a bicycle", "two friends talking about pets",
+      "a customer asking about train times at the station", "two friends talking about a trip to the seaside",
+    ];
+    const DIALOGUE_MOODS = [
+      "friendly and relaxed", "a little hurried", "curious and surprised", "slightly worried but hopeful",
+      "funny and playful", "polite and practical", "excited", "tired but cheerful",
     ];
 
     const STYLE_RULES =
       `Style rules: never open with a time expression ("Last week", "Yesterday", "One day", "This morning"...); ` +
       `weave any time references naturally into the middle of sentences. Vary sentence structures. ` +
       `Use everyday vocabulary and realistic details. Avoid clichés and repeated formulas. ` +
-      `No ornate or artificial phrasing — it must read like something a real person would write or say.`;
+      `No ornate or artificial phrasing — it must read like something a real person would write or say. ` +
+      `LEVEL: strictly CEFR A2 — short simple sentences (max about 12 words), common daily words, basic tenses only; ` +
+      `a Turkish 13-14-year-old learner must understand it easily. ` +
+      `Do not reuse the same lines, jokes, names or situations you would typically produce; make this piece clearly different from a generic one.`;
 
     // Irregular verbs get past/participle-focused usage rules.
     const forms = getVocab()[word.toLowerCase()]?.forms;
@@ -221,13 +237,15 @@ app.post("/api/practice-content", async (req, res) => {
 
     const prompt =
       kind === "story"
-        ? `Write an engaging short story in simple English (130-170 words, 2-3 paragraphs separated by \\n\\n) ` +
+        ? `Write an engaging short story in simple A2-level English (100-140 words, 2-3 short paragraphs separated by \\n\\n) ` +
           `for a vocabulary learner. Setting: ${pick(STORY_SETTINGS)}. Opening technique: ${pick(STORY_STYLES)}. ` +
           `${usageRule} ` +
           `${STYLE_RULES} Give the story a short catchy title (3-6 words). Do not translate the story.`
-        : `Write a natural two-person dialogue in simple English (8-10 short lines, alternating speakers A and B, ` +
-          `starting with A). Scene: ${pick(DIALOGUE_SCENES)}. Start mid-conversation — no greetings like ` +
-          `"Hey, how are you?" and no small-talk openers. ${usageRule} ` +
+        : `Write a natural everyday two-person dialogue in simple A2-level English (8-10 short lines, alternating speakers A and B, ` +
+          `starting with A). Scene: ${pick(DIALOGUE_SCENES)}. Mood: ${pick(DIALOGUE_MOODS)}. ` +
+          `It must sound like a real daily conversation between ordinary people, with concrete details of that scene. ` +
+          `Start mid-conversation — no greetings like "Hey, how are you?" and no small-talk openers. ` +
+          `Do not follow a template: vary how the lines start, mix questions, answers, short reactions and suggestions. ${usageRule} ` +
           `${STYLE_RULES} Give it a short title (2-5 words) describing the situation. Do not translate.`;
 
     const responseSchema =
