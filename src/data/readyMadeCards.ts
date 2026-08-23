@@ -906,6 +906,23 @@ export const READY_MADE_CARD_WORDS = [
   'blister', 'blockade', 'blouse', 'bodyguard', 'boiler',
   'bolt', 'bonnet', 'bony', 'booklet', 'boot',
   'boundary',
+  'brake', 'brand', 'brand-new', 'break-out', 'breast',
+  'bride', 'briefcase', 'brochure', 'broken', 'broker',
+  'brooch', 'brother-in-law', 'brow', 'bucket', 'bull',
+  'bullet', 'bureau', 'bureaucracy', 'by the way', 'cabbage',
+  'cabin', 'cabinet', 'calf', 'camel', 'canary',
+  'cancellation', 'cannon', 'carbon paper', 'carefree', 'careful',
+  'careless', 'cargo', 'carrier', 'carryover', 'cartridge',
+  'cash register', 'caterpillar', 'cauliflower', 'caution', 'cave',
+  'cease-fire', 'celebration', 'cement', 'centre', 'cereal',
+  'chamber', 'champagne', 'channel', 'chapter', 'charity',
+  'charlatan', 'chart', 'charter', 'cheek', 'cheeky',
+  'chef', 'cheque', 'chest', 'chest of drawers', 'chestnut',
+  'chilli', 'chilly', 'chimney', 'china', 'chip',
+  'chocolate', 'choice', 'choke', 'chuckle', 'cigar',
+  'circuit', 'claimant', 'clap', 'clay', 'client',
+  'clinic', 'clip', 'cloth', 'clown', 'co.',
+  'co-operate', 'coast', 'cock', 'cocoa',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);

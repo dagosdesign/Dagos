@@ -42194,5 +42194,733 @@
   ],
   "definition": "A line that marks the limit of an area.",
   "example": "The river forms a natural boundary between the two countries."
+ },
+ "brake": {
+  "ipa": "/breɪk/",
+  "reading": "breyk",
+  "meanings": [
+   "fren"
+  ],
+  "definition": "A device for slowing or stopping a vehicle.",
+  "example": "You must press the brake to stop the car."
+ },
+ "brand": {
+  "ipa": "/brænd/",
+  "reading": "brend",
+  "meanings": [
+   "marka"
+  ],
+  "definition": "A type of product made by a particular company.",
+  "example": "This brand is famous for making high-quality shoes."
+ },
+ "brand-new": {
+  "ipa": "/ˌbrænd ˈnjuː/",
+  "reading": "brend-nyu",
+  "meanings": [
+   "yepyeni"
+  ],
+  "definition": "Completely new and unused.",
+  "example": "He bought a brand-new car yesterday."
+ },
+ "break-out": {
+  "ipa": "/ˈbreɪkaʊt/",
+  "reading": "breyk-awt",
+  "meanings": [
+   "kaçış",
+   "patlak verme"
+  ],
+  "definition": "An escape from a prison or confined area.",
+  "example": "The police prevented a major break-out last night."
+ },
+ "breast": {
+  "ipa": "/brest/",
+  "reading": "brest",
+  "meanings": [
+   "göğüs"
+  ],
+  "definition": "The upper front part of the human body.",
+  "example": "She held the baby close to her breast."
+ },
+ "bride": {
+  "ipa": "/braɪd/",
+  "reading": "brayd",
+  "meanings": [
+   "gelin"
+  ],
+  "definition": "A woman who is getting married.",
+  "example": "The beautiful bride walked down the aisle."
+ },
+ "briefcase": {
+  "ipa": "/ˈbriːfkeɪs/",
+  "reading": "brifkeys",
+  "meanings": [
+   "evrak çantası"
+  ],
+  "definition": "A flat case used for carrying papers.",
+  "example": "He carried his laptop in a leather briefcase."
+ },
+ "brochure": {
+  "ipa": "/ˈbrəʊʃə(r)//",
+  "reading": "broşır",
+  "meanings": [
+   "broşür"
+  ],
+  "definition": "A small booklet containing information or advertising.",
+  "example": "Please read this colorful brochure for more details."
+ },
+ "broker": {
+  "ipa": "/ˈbrəʊkə(r)//",
+  "reading": "broukır",
+  "meanings": [
+   "komisyoncu",
+   "aracı"
+  ],
+  "definition": "A person who buys and sells for others.",
+  "example": "You should talk to a licensed insurance broker."
+ },
+ "brooch": {
+  "ipa": "/brəʊtʃ/",
+  "reading": "brouç",
+  "meanings": [
+   "broş"
+  ],
+  "definition": "An ornament pinned to clothing.",
+  "example": "She wore a silver brooch on her jacket."
+ },
+ "brother-in-law": {
+  "ipa": "/ˈbrʌðər ɪn lɔː/",
+  "reading": "bradır in lo",
+  "meanings": [
+   "kayınbirader",
+   "enişte"
+  ],
+  "definition": "The brother of one's husband or wife.",
+  "example": "My brother-in-law lives in London."
+ },
+ "brow": {
+  "ipa": "/braʊ/",
+  "reading": "braw",
+  "meanings": [
+   "kaş",
+   "alın bölgesi"
+  ],
+  "definition": "The forehead or the eyebrow.",
+  "example": "He wiped the sweat from his hot brow."
+ },
+ "bucket": {
+  "ipa": "/ˈbʌkɪt/",
+  "reading": "bakıt",
+  "meanings": [
+   "kova"
+  ],
+  "definition": "An open container with a handle for carrying liquids.",
+  "example": "Fill the plastic bucket with warm water."
+ },
+ "bull": {
+  "ipa": "/bʊl/",
+  "reading": "bul",
+  "meanings": [
+   "boğa"
+  ],
+  "definition": "An adult male animal of the cattle family.",
+  "example": "The angry bull charged across the field."
+ },
+ "bullet": {
+  "ipa": "/ˈbʊlɪt/",
+  "reading": "bulıt",
+  "meanings": [
+   "mermi"
+  ],
+  "definition": "A small metal projectile fired from a gun.",
+  "example": "The police found a single bullet on the floor."
+ },
+ "bureau": {
+  "ipa": "/ˈbjʊə.rəʊ/",
+  "reading": "byuro",
+  "meanings": [
+   "büro",
+   "ofis"
+  ],
+  "definition": "An office or a desk with drawers.",
+  "example": "She kept her documents inside the old bureau."
+ },
+ "bureaucracy": {
+  "ipa": "/bjʊəˈrɒk.rə.si/",
+  "reading": "byurokrısi",
+  "meanings": [
+   "bürokrasi"
+  ],
+  "definition": "A system of government with many complicated rules.",
+  "example": "We must reduce the amount of bureaucracy in our company."
+ },
+ "cabbage": {
+  "ipa": "/ˈkæb.ɪdʒ/",
+  "reading": "kebıc",
+  "meanings": [
+   "lahana"
+  ],
+  "definition": "A large round vegetable with green or purple leaves.",
+  "example": "I like to eat fresh cabbage in winter."
+ },
+ "cabin": {
+  "ipa": "/ˈkæb.ɪn/",
+  "reading": "kebın",
+  "meanings": [
+   "kulübe",
+   "kabin"
+  ],
+  "definition": "A small wooden house or a room on a ship.",
+  "example": "They built a small wooden cabin in the forest."
+ },
+ "cabinet": {
+  "ipa": "/ˈkæb.ɪ.nət/",
+  "reading": "kebınat",
+  "meanings": [
+   "dolap",
+   "kabine"
+  ],
+  "definition": "A piece of furniture with shelves or a government committee.",
+  "example": "Please put the clean cups back in the cabinet."
+ },
+ "calf": {
+  "ipa": "/kɑːf/",
+  "reading": "kaaf",
+  "meanings": [
+   "buzağı"
+  ],
+  "definition": "A young cow or the back of the lower leg.",
+  "example": "The young calf followed its mother across the field."
+ },
+ "canary": {
+  "ipa": "/kəˈneə.ri/",
+  "reading": "kıneyri",
+  "meanings": [
+   "kanarya"
+  ],
+  "definition": "A small yellow songbird.",
+  "example": "She has a bright yellow canary in a cage."
+ },
+ "cancellation": {
+  "ipa": "/ˌkæn.səlˈeɪ.ʃən/",
+  "reading": "kensıleyşın",
+  "meanings": [
+   "iptal"
+  ],
+  "definition": "The act of deciding that an event will not happen.",
+  "example": "We received a late cancellation for the hotel room."
+ },
+ "cannon": {
+  "ipa": "/ˈkæn.ən/",
+  "reading": "kenın",
+  "meanings": [
+   "top (silah)"
+  ],
+  "definition": "A large, heavy gun usually on wheels.",
+  "example": "They fired a historic cannon during the ceremony."
+ },
+ "carbon paper": {
+  "ipa": "/ˈkɑː.bən ˌpeɪ.pər/",
+  "reading": "kaabın peypır",
+  "meanings": [
+   "karbon kâğıdı"
+  ],
+  "definition": "Thin paper used to make copies of writing.",
+  "example": "He used a sheet of carbon paper to copy the letter."
+ },
+ "carefree": {
+  "ipa": "/ˈkeə.friː/",
+  "reading": "keerfrii",
+  "meanings": [
+   "tasasız",
+   "kaygısız"
+  ],
+  "definition": "Having no worries or responsibilities.",
+  "example": "The children spent a happy and carefree summer by the sea."
+ },
+ "careless": {
+  "ipa": "/ˈkeə.ləs/",
+  "reading": "keerlıs",
+  "meanings": [
+   "dikkatsiz"
+  ],
+  "definition": "Not taking enough care or attention.",
+  "example": "It was a careless mistake to leave the door unlocked."
+ },
+ "cargo": {
+  "ipa": "/ˈkɑː.ɡəʊ/",
+  "reading": "kaagou",
+  "meanings": [
+   "yük"
+  ],
+  "definition": "Goods carried by a ship, aircraft, or motor vehicle.",
+  "example": "The ship carries a heavy cargo of coal."
+ },
+ "carrier": {
+  "ipa": "/ˈkær.i.ər/",
+  "reading": "keriır",
+  "meanings": [
+   "taşıyıcı"
+  ],
+  "definition": "A person or company that transports goods.",
+  "example": "The mail carrier delivered the letters this morning."
+ },
+ "carryover": {
+  "ipa": "/ˈkær.iˌəʊ.vər/",
+  "reading": "keriouvir",
+  "meanings": [
+   "devreden",
+   "sonraki döneme aktarılan"
+  ],
+  "definition": "Something that is carried over from one situation to another.",
+  "example": "The high budget surplus is a carryover from last year."
+ },
+ "cartridge": {
+  "ipa": "/ˈkɑːtrɪdʒ/",
+  "reading": "kaatrıc",
+  "meanings": [
+   "kartuş"
+  ],
+  "definition": "A container holding ink or gunpowder",
+  "example": "You need to replace the ink cartridge."
+ },
+ "cash register": {
+  "ipa": "/ˈkæʃ ˌredʒɪstə/",
+  "reading": "keş recistır",
+  "meanings": [
+   "yazarkasa"
+  ],
+  "definition": "A machine used for recording sales and holding money",
+  "example": "The shopkeeper opened the cash register to give change."
+ },
+ "caterpillar": {
+  "ipa": "/ˈkætəpɪlə/",
+  "reading": "ketırpilır",
+  "meanings": [
+   "tırtıl"
+  ],
+  "definition": "The insect larva that develops into a butterfly",
+  "example": "The green caterpillar crawled slowly along the leaf."
+ },
+ "cauliflower": {
+  "ipa": "/ˈkɒlɪflaʊə/",
+  "reading": "koliflavır",
+  "meanings": [
+   "karnabahar"
+  ],
+  "definition": "A vegetable with a large white head",
+  "example": "She decided to steam some cauliflower for dinner."
+ },
+ "caution": {
+  "ipa": "/ˈkɔːʃn/",
+  "reading": "kooşın",
+  "meanings": [
+   "dikkat",
+   "tedbir"
+  ],
+  "definition": "Care taken to avoid danger or mistakes",
+  "example": "Please proceed with caution on the wet floor."
+ },
+ "cease-fire": {
+  "ipa": "/ˈsiːsfaɪə/",
+  "reading": "siisfayır",
+  "meanings": [
+   "ateşkes"
+  ],
+  "definition": "An agreement to stop fighting a war",
+  "example": "Both nations agreed to a temporary cease-fire."
+ },
+ "celebration": {
+  "ipa": "/ˌselɪˈbreɪʃn/",
+  "reading": "selibreyşın",
+  "meanings": [
+   "kutlama"
+  ],
+  "definition": "A joyful occasion for special events",
+  "example": "The whole family joined the birthday celebration."
+ },
+ "cement": {
+  "ipa": "/sɪˈment/",
+  "reading": "siment",
+  "meanings": [
+   "çimento"
+  ],
+  "definition": "A grey powder used in building to make concrete",
+  "example": "Workers poured cement to build the new sidewalk."
+ },
+ "cereal": {
+  "ipa": "/ˈsɪərɪəl/",
+  "reading": "siriyıl",
+  "meanings": [
+   "kahvaltılık gevrek",
+   "tahıl"
+  ],
+  "definition": "A food made from grain, eaten with milk",
+  "example": "I usually eat a bowl of cereal for breakfast."
+ },
+ "chamber": {
+  "ipa": "/ˈtʃeɪmbə/",
+  "reading": "çeymbır",
+  "meanings": [
+   "oda",
+   "bölme"
+  ],
+  "definition": "A large room used for official purposes",
+  "example": "The council met in the main chamber to vote."
+ },
+ "champagne": {
+  "ipa": "/ʃæmˈpeɪn/",
+  "reading": "şempeyn",
+  "meanings": [
+   "şampanya"
+  ],
+  "definition": "A sparkling white wine from France",
+  "example": "We opened a bottle of champagne to celebrate."
+ },
+ "channel": {
+  "ipa": "/ˈtʃænl/",
+  "reading": "çenıl",
+  "meanings": [
+   "kanal"
+  ],
+  "definition": "A television station or path for water",
+  "example": "What program is on this channel tonight?"
+ },
+ "chapter": {
+  "ipa": "/ˈtʃæptə/",
+  "reading": "çeptır",
+  "meanings": [
+   "bölüm"
+  ],
+  "definition": "A main division of a book",
+  "example": "I am reading the first chapter of the novel."
+ },
+ "charity": {
+  "ipa": "/ˈtʃærəti/",
+  "reading": "çeriti",
+  "meanings": [
+   "hayır kurumu",
+   "yardım"
+  ],
+  "definition": "An organization that helps people in need",
+  "example": "She donated money to a local charity."
+ },
+ "charlatan": {
+  "ipa": "/ˈʃɑːlətən/",
+  "reading": "şaalatın",
+  "meanings": [
+   "şarlatan",
+   "sahtekâr"
+  ],
+  "definition": "A person claiming to have special knowledge or skill",
+  "example": "The dishonest doctor was exposed as a charlatan."
+ },
+ "chart": {
+  "ipa": "/tʃɑːt/",
+  "reading": "çaat",
+  "meanings": [
+   "grafik",
+   "çizelge"
+  ],
+  "definition": "A map, graph, or diagram showing information.",
+  "example": "You need to look at this sales chart."
+ },
+ "charter": {
+  "ipa": "/ˈtʃɑːtə/",
+  "reading": "çaatı",
+  "meanings": [
+   "tüzük",
+   "imtiyaz belgesi"
+  ],
+  "definition": "A formal document describing rights or a leased vehicle.",
+  "example": "You can charter a private jet for your trip."
+ },
+ "cheek": {
+  "ipa": "/tʃiːk/",
+  "reading": "çiik",
+  "meanings": [
+   "yanak"
+  ],
+  "definition": "The soft part of the face below the eye.",
+  "example": "She kissed the baby on the cheek."
+ },
+ "cheeky": {
+  "ipa": "/ˈtʃiːki/",
+  "reading": "çiiki",
+  "meanings": [
+   "küstah",
+   "arsız"
+  ],
+  "definition": "Slightly rude but in a funny or playful way.",
+  "example": "The cheeky child made everyone laugh with his joke."
+ },
+ "chef": {
+  "ipa": "/ʃef/",
+  "reading": "şef",
+  "meanings": [
+   "aşçı",
+   "şef"
+  ],
+  "definition": "A professional cook in a restaurant.",
+  "example": "The chef prepared a delicious meal for us."
+ },
+ "cheque": {
+  "ipa": "/tʃek/",
+  "reading": "çek",
+  "meanings": [
+   "çek"
+  ],
+  "definition": "A printed paper used to pay money from a bank.",
+  "example": "I wrote a cheque to pay the rent."
+ },
+ "chest": {
+  "ipa": "/tʃest/",
+  "reading": "çest",
+  "meanings": [
+   "göğüs"
+  ],
+  "definition": "The upper front part of the body.",
+  "example": "He felt a sudden pain in his chest."
+ },
+ "chest of drawers": {
+  "ipa": "/ˌtʃest əv ˈdrɔːz/",
+  "reading": "çestıv dırooz",
+  "meanings": [
+   "şifonyer"
+  ],
+  "definition": "A piece of furniture with drawers for keeping clothes.",
+  "example": "Put your socks inside the chest of drawers."
+ },
+ "chestnut": {
+  "ipa": "/ˈtʃesnʌt/",
+  "reading": "çesnat",
+  "meanings": [
+   "kestane"
+  ],
+  "definition": "A reddish-brown nut that can be eaten.",
+  "example": "He gave me a chestnut to eat."
+ },
+ "chilli": {
+  "ipa": "/ˈtʃɪli/",
+  "reading": "çili",
+  "meanings": [
+   "acı biber"
+  ],
+  "definition": "A small hot-tasting red or green pepper.",
+  "example": "I like to add chilli to my pasta."
+ },
+ "chilly": {
+  "ipa": "/ˈtʃɪli/",
+  "reading": "çili",
+  "meanings": [
+   "serin",
+   "soğuk"
+  ],
+  "definition": "Uncomfortably cold.",
+  "example": "It is a chilly morning so wear a coat."
+ },
+ "chimney": {
+  "ipa": "/ˈtʃɪmni/",
+  "reading": "çimni",
+  "meanings": [
+   "baca"
+  ],
+  "definition": "A pipe that carries smoke out of a building.",
+  "example": "Smoke is coming out of the chimney."
+ },
+ "china": {
+  "ipa": "/ˈtʃaɪnə/",
+  "reading": "çaynı",
+  "meanings": [
+   "Çin"
+  ],
+  "definition": "High-quality clay used to make cups and plates.",
+  "example": "This plate is made of high-quality china."
+ },
+ "chip": {
+  "ipa": "/tʃɪp/",
+  "reading": "çip",
+  "meanings": [
+   "çip"
+  ],
+  "definition": "A small thin piece of food or electronic component.",
+  "example": "He put a computer chip into the machine."
+ },
+ "chocolate": {
+  "ipa": "/ˈtʃɒklət/",
+  "reading": "çoklıt",
+  "meanings": [
+   "çikolata"
+  ],
+  "definition": "A sweet food made from cocoa beans.",
+  "example": "I love to eat dark chocolate after dinner."
+ },
+ "choice": {
+  "ipa": "/tʃɔɪs/",
+  "reading": "çoys",
+  "meanings": [
+   "seçim",
+   "tercih"
+  ],
+  "definition": "An act of choosing between two or more possibilities.",
+  "example": "You have a difficult choice to make."
+ },
+ "choke": {
+  "ipa": "/tʃəʊk/",
+  "reading": "çouk",
+  "meanings": [
+   "boğulmak",
+   "nefesi tıkanmak"
+  ],
+  "definition": "To stop breathing because of something in the throat.",
+  "example": "Eat slowly or you might choke on your food."
+ },
+ "chuckle": {
+  "ipa": "/ˈtʃʌk.əl/",
+  "reading": "çakıl",
+  "meanings": [
+   "kıkırdamak"
+  ],
+  "definition": "To laugh quietly or inwardly.",
+  "example": "I always chuckle when I remember that funny joke."
+ },
+ "cigar": {
+  "ipa": "/sɪˈɡɑːr/",
+  "reading": "sigaar",
+  "meanings": [
+   "puro"
+  ],
+  "definition": "A cylinder of tobacco rolled in tobacco leaves for smoking.",
+  "example": "He decided to smoke a cigar after the dinner."
+ },
+ "circuit": {
+  "ipa": "/ˈsɜː.kɪt/",
+  "reading": "sörkıt",
+  "meanings": [
+   "devre"
+  ],
+  "definition": "A complete path around which an electric current flows.",
+  "example": "The electric current flows through the circuit."
+ },
+ "claimant": {
+  "ipa": "/ˈkleɪ.mənt/",
+  "reading": "kleymınt",
+  "meanings": [
+   "hak talep eden",
+   "davacı"
+  ],
+  "definition": "A person who claims a right to something.",
+  "example": "The claimant must prove their right to the property."
+ },
+ "clap": {
+  "ipa": "/klæp/",
+  "reading": "klep",
+  "meanings": [
+   "alkışlamak"
+  ],
+  "definition": "To hit your open hands together to show approval.",
+  "example": "The audience will clap at the end of the show."
+ },
+ "clay": {
+  "ipa": "/kleɪ/",
+  "reading": "kley",
+  "meanings": [
+   "kil"
+  ],
+  "definition": "Heavy, sticky earth that is used for making pots.",
+  "example": "Artists use natural clay to make beautiful pots."
+ },
+ "client": {
+  "ipa": "/ˈklaɪ.ənt/",
+  "reading": "klayınt",
+  "meanings": [
+   "müşteri",
+   "müvekkil"
+  ],
+  "definition": "A person who receives professional services.",
+  "example": "The lawyer met with an important client today."
+ },
+ "clinic": {
+  "ipa": "/ˈklɪn.ɪk/",
+  "reading": "klinik",
+  "meanings": [
+   "klinik"
+  ],
+  "definition": "A place where people receive medical treatment.",
+  "example": "She works as a doctor at the local clinic."
+ },
+ "clip": {
+  "ipa": "/klɪp/",
+  "reading": "klip",
+  "meanings": [
+   "ataş",
+   "klips"
+  ],
+  "definition": "A small object used to hold things together.",
+  "example": "Use a metal clip to hold the papers together."
+ },
+ "cloth": {
+  "ipa": "/klɒθ/",
+  "reading": "kloth",
+  "meanings": [
+   "kumaş",
+   "bez"
+  ],
+  "definition": "Material made by weaving cotton, wool, or other threads.",
+  "example": "Clean the table with a soft piece of cloth."
+ },
+ "clown": {
+  "ipa": "/klaʊn/",
+  "reading": "klavn",
+  "meanings": [
+   "palyaço"
+  ],
+  "definition": "A performer who wears funny clothes and makes people laugh.",
+  "example": "The funny clown entertained the children at the party."
+ },
+ "co.": {
+  "ipa": "/kəʊ/",
+  "reading": "ko",
+  "meanings": [
+   "şirket"
+  ],
+  "definition": "Abbreviation for company, used in business names.",
+  "example": "He works for Smith & co. in London."
+ },
+ "co-operate": {
+  "ipa": "/kəʊˈɒp.ər.eɪt/",
+  "reading": "ko-apıreyt",
+  "meanings": [
+   "iş birliği yapmak"
+  ],
+  "definition": "To work together to achieve a shared goal.",
+  "example": "Countries must co-operate to protect the environment."
+ },
+ "coast": {
+  "ipa": "/kəʊst/",
+  "reading": "koust",
+  "meanings": [
+   "sahil",
+   "kıyı"
+  ],
+  "definition": "The land next to or close to the sea.",
+  "example": "We went for a long walk along the coast."
+ },
+ "cock": {
+  "ipa": "/kɒk/",
+  "reading": "kok",
+  "meanings": [
+   "horoz"
+  ],
+  "definition": "An adult male chicken.",
+  "example": "The loud cock woke us up early in the morning."
+ },
+ "cocoa": {
+  "ipa": "/ˈkəʊ.kəʊ/",
+  "reading": "koukou",
+  "meanings": [
+   "kakao"
+  ],
+  "definition": "A chocolate powder made from roasted cacao seeds.",
+  "example": "Drink a warm cup of cocoa before you sleep."
  }
 }
