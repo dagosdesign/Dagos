@@ -42922,5 +42922,427 @@
   ],
   "definition": "A chocolate powder made from roasted cacao seeds.",
   "example": "Drink a warm cup of cocoa before you sleep."
+ },
+ "commute": {
+  "ipa": "/kəˈmjuːt/",
+  "reading": "komyut",
+  "meanings": [
+   "işe gidip gelmek"
+  ],
+  "definition": "To travel regularly between home and work.",
+  "example": "Many people commute to London daily."
+ },
+ "components": {
+  "ipa": "/kəmˈpəʊnənts/",
+  "reading": "kımponınts",
+  "meanings": [
+   "bileşenler",
+   "parçalar"
+  ],
+  "definition": "Parts that combine to make a whole system.",
+  "example": "Trust and honesty are key components of a good relationship."
+ },
+ "computer": {
+  "ipa": "/kəmˈpjuːtə/",
+  "reading": "kompyutır",
+  "meanings": [
+   "bilgisayar"
+  ],
+  "definition": "An electronic device for storing and processing data.",
+  "example": "I use a computer to do my homework."
+ },
+ "cone": {
+  "ipa": "/kəʊn/",
+  "reading": "koun",
+  "meanings": [
+   "koni"
+  ],
+  "definition": "A solid shape with a round base pointing to a vertex.",
+  "example": "The ice cream was served in a waffle cone."
+ },
+ "conference": {
+  "ipa": "/ˈkɒnfərəns/",
+  "reading": "konfırıns",
+  "meanings": [
+   "konferans"
+  ],
+  "definition": "A formal meeting for discussion.",
+  "example": "They will attend a business conference next week."
+ },
+ "consign": {
+  "ipa": "/kənˈsaɪn/",
+  "reading": "kınsayn",
+  "meanings": [
+   "göndermek",
+   "teslim etmek"
+  ],
+  "definition": "To deliver something to someone's custody.",
+  "example": "You can consign the goods to our agent."
+ },
+ "constitution": {
+  "ipa": "/ˌkɒnstɪˈtjuːʃn/",
+  "reading": "konstityuşın",
+  "meanings": [
+   "anayasa"
+  ],
+  "definition": "The basic laws of a nation.",
+  "example": "The country wrote a new constitution last year."
+ },
+ "cope": {
+  "ipa": "/kəʊp/",
+  "reading": "koup",
+  "meanings": [
+   "başa çıkmak"
+  ],
+  "definition": "To deal effectively with something difficult.",
+  "example": "She knows how to cope with high stress."
+ },
+ "cordon": {
+  "ipa": "/ˈkɔː.dən/",
+  "reading": "koodın",
+  "meanings": [
+   "güvenlik şeridi",
+   "kordon"
+  ],
+  "definition": "A line of police or soldiers guarding an area.",
+  "example": "Police officers form a cordon around the crime scene."
+ },
+ "cork": {
+  "ipa": "/kɔːk/",
+  "reading": "kook",
+  "meanings": [
+   "mantar tıpa"
+  ],
+  "definition": "A light substance used to close bottles.",
+  "example": "Please use a cork to seal the wine bottle."
+ },
+ "corpse": {
+  "ipa": "/kɔːps/",
+  "reading": "koops",
+  "meanings": [
+   "ceset"
+  ],
+  "definition": "A dead body, especially of a human.",
+  "example": "Investigators found the corpse in the old abandoned house."
+ },
+ "correspondent": {
+  "ipa": "/ˌkɒr.ɪˈspɒn.dənt/",
+  "reading": "korispondınt",
+  "meanings": [
+   "muhabir"
+  ],
+  "definition": "A person who writes letters or reports news.",
+  "example": "She works as a foreign correspondent for a newspaper."
+ },
+ "corridor": {
+  "ipa": "/ˈkɒr.ɪ.dɔː/",
+  "reading": "koridoo",
+  "meanings": [
+   "koridor"
+  ],
+  "definition": "A long passage in a building.",
+  "example": "You must walk slowly down the school corridor."
+ },
+ "cosmetic": {
+  "ipa": "/kɒzˈmet.ɪk/",
+  "reading": "kozmetik",
+  "meanings": [
+   "kozmetik"
+  ],
+  "definition": "A substance used to improve appearance.",
+  "example": "This brand sells natural cosmetic products for skin."
+ },
+ "costume": {
+  "ipa": "/ˈkɒs.tʃuːm/",
+  "reading": "kostyum",
+  "meanings": [
+   "kostüm"
+  ],
+  "definition": "Clothes worn by an actor or for a party.",
+  "example": "You need a scary costume for the Halloween party."
+ },
+ "coupe": {
+  "ipa": "/kuːˈpeɪ/",
+  "reading": "kuupey",
+  "meanings": [
+   "iki kapılı otomobil"
+  ],
+  "definition": "A car with a fixed roof and two doors.",
+  "example": "He wants to buy a fast coupe with two seats."
+ },
+ "coupon": {
+  "ipa": "/ˈkuː.pɒn/",
+  "reading": "kuupon",
+  "meanings": [
+   "kupon"
+  ],
+  "definition": "A piece of paper that gives a discount.",
+  "example": "Use this coupon to get a free drink."
+ },
+ "cracker": {
+  "ipa": "/ˈkræk.ər/",
+  "reading": "krekır",
+  "meanings": [
+   "kraker"
+  ],
+  "definition": "A thin, crisp biscuit.",
+  "example": "I like to eat a salty cracker with cheese."
+ },
+ "cramp": {
+  "ipa": "/kræmp/",
+  "reading": "kremp",
+  "meanings": [
+   "kramp"
+  ],
+  "definition": "A sudden, painful tightening of a muscle.",
+  "example": "I often get a cramp in my leg when swimming."
+ },
+ "crane": {
+  "ipa": "/kreɪn/",
+  "reading": "kreyn",
+  "meanings": [
+   "vinç"
+  ],
+  "definition": "A tall machine used for lifting heavy things.",
+  "example": "They use a huge crane to lift the steel beams."
+ },
+ "credit": {
+  "ipa": "/ˈkred.ɪt/",
+  "reading": "kredit",
+  "meanings": [
+   "kredi"
+  ],
+  "definition": "An agreement to pay later for goods.",
+  "example": "The store will give you credit to buy the furniture."
+ },
+ "crisp": {
+  "ipa": "/krɪsp/",
+  "reading": "krisp",
+  "meanings": [
+   "çıtır",
+   "gevrek",
+   "canlı",
+   "net"
+  ],
+  "definition": "Pleasingly firm, dry, and brittle.",
+  "example": "I love eating a crisp apple in the morning."
+ },
+ "crocodile": {
+  "ipa": "/ˈkrɒk.ə.daɪl/",
+  "reading": "krokodayl",
+  "meanings": [
+   "timsah"
+  ],
+  "definition": "A large tropical reptile with hard skin and big jaws.",
+  "example": "A green crocodile swam slowly in the river."
+ },
+ "crossword": {
+  "ipa": "/ˈkrɒs.wɜːd/",
+  "reading": "krosvööd",
+  "meanings": [
+   "bulmaca"
+  ],
+  "definition": "A word puzzle with black and white squares.",
+  "example": "He likes to solve a crossword in the morning paper."
+ },
+ "crow": {
+  "ipa": "/krəʊ/",
+  "reading": "krov",
+  "meanings": [
+   "karga"
+  ],
+  "definition": "A large black bird with a loud call.",
+  "example": "A black crow sat on the fence."
+ },
+ "crude": {
+  "ipa": "/kruːd/",
+  "reading": "'kruud'",
+  "meanings": [
+   "ham",
+   "işlenmemiş"
+  ],
+  "definition": "In a natural or raw state.",
+  "example": "The factory processes crude oil into fuel."
+ },
+ "curry": {
+  "ipa": "/ˈkʌri/",
+  "reading": "'kari'",
+  "meanings": [
+   "köri"
+  ],
+  "definition": "A dish cooked with spicy sauce.",
+  "example": "I love to eat spicy curry with rice."
+ },
+ "cushion": {
+  "ipa": "/ˈkʊʃn/",
+  "reading": "'kuşın'",
+  "meanings": [
+   "minder",
+   "yastık"
+  ],
+  "definition": "A soft bag filled with feathers or foam.",
+  "example": "Place a soft cushion behind your back."
+ },
+ "cylinder": {
+  "ipa": "/ˈsɪlɪndə(r)/",
+  "reading": "'silındır'",
+  "meanings": [
+   "silindir"
+  ],
+  "definition": "A solid or hollow body with circular ends.",
+  "example": "The engine has a metal cylinder inside."
+ },
+ "daisy": {
+  "ipa": "/ˈdeɪzi/",
+  "reading": "'deyzi'",
+  "meanings": [
+   "papatya"
+  ],
+  "definition": "A small flower with white petals.",
+  "example": "She picked a beautiful daisy from the garden."
+ },
+ "darling": {
+  "ipa": "/ˈdɑːlɪŋ/",
+  "reading": "'daalın'",
+  "meanings": [
+   "sevgili",
+   "canım"
+  ],
+  "definition": "A person who is dearly loved.",
+  "example": "Goodbye, my darling, have a safe trip."
+ },
+ "deadlock": {
+  "ipa": "/ˈdedlɒk/",
+  "reading": "'dedlok'",
+  "meanings": [
+   "çıkmaz",
+   "kilitlenme"
+  ],
+  "definition": "A situation where no progress can be made.",
+  "example": "The negotiators reached a deadlock over the price."
+ },
+ "deaf": {
+  "ipa": "/def/",
+  "reading": "'def'",
+  "meanings": [
+   "sağır",
+   "işitme engelli"
+  ],
+  "definition": "Unable to hear anything or hear well.",
+  "example": "He is deaf and uses sign language."
+ },
+ "debatable": {
+  "ipa": "/dɪˈbeɪtəbl/",
+  "reading": "'dibeytıbıl'",
+  "meanings": [
+   "tartışmaya açık"
+  ],
+  "definition": "Not certain because people have different opinions.",
+  "example": "Whether this is the best plan is debatable."
+ },
+ "debt": {
+  "ipa": "/det/",
+  "reading": "'det'",
+  "meanings": [
+   "borç"
+  ],
+  "definition": "Money that is owed to someone else.",
+  "example": "He worked hard to pay off his debt."
+ },
+ "default": {
+  "ipa": "/dɪˈfɔːlt/",
+  "reading": "'difoolt'",
+  "meanings": [
+   "temerrüt",
+   "borcu ödememe"
+  ],
+  "definition": "A preselected option or choice on a computer.",
+  "example": "The default language on this phone is English."
+ },
+ "deliberately": {
+  "ipa": "/dɪˈlɪbərətli/",
+  "reading": "dilibırıtli",
+  "meanings": [
+   "kasıtlı olarak",
+   "bilerek"
+  ],
+  "definition": "Done in a way that was planned or intended.",
+  "example": "He did not break the vase deliberately."
+ },
+ "demoralize": {
+  "ipa": "/dɪˈmɒrəlaɪz/",
+  "reading": "dimoralayz",
+  "meanings": [
+   "moralini bozmak"
+  ],
+  "definition": "To lose confidence or hope.",
+  "example": "Bad news can demoralize the team quickly."
+ },
+ "deputation": {
+  "ipa": "/ˌdepjuˈteɪʃn/",
+  "reading": "depyuteyşın",
+  "meanings": [
+   "heyet",
+   "delegasyon"
+  ],
+  "definition": "A group of people sent to speak for others.",
+  "example": "The local deputation met with the mayor yesterday."
+ },
+ "deputy": {
+  "ipa": "/ˈdepjuti/",
+  "reading": "depyuti",
+  "meanings": [
+   "yardımcı",
+   "vekil"
+  ],
+  "definition": "A person who is the assistant to a leader.",
+  "example": "She works as a deputy manager at the bank."
+ },
+ "despite": {
+  "ipa": "/dɪˈspaɪt/",
+  "reading": "dispait",
+  "meanings": [
+   "rağmen"
+  ],
+  "definition": "Without being affected by something.",
+  "example": "They walked outside despite the cold rain."
+ },
+ "dew": {
+  "ipa": "/djuː/",
+  "reading": "dyu",
+  "meanings": [
+   "çiy"
+  ],
+  "definition": "Tiny drops of water that form on grass.",
+  "example": "The green grass was covered in fresh dew."
+ },
+ "diagram": {
+  "ipa": "/ˈdaɪəɡræm/",
+  "reading": "dayıgrem",
+  "meanings": [
+   "diyagram",
+   "şema"
+  ],
+  "definition": "A simple drawing showing how something works.",
+  "example": "Please look at the diagram on page five."
+ },
+ "diameter": {
+  "ipa": "/daɪˈæmɪtər/",
+  "reading": "dayemıtır",
+  "meanings": [
+   "çap"
+  ],
+  "definition": "The distance across the center of a circle.",
+  "example": "Measure the diameter of the circle first."
+ },
+ "diet": {
+  "ipa": "/ˈdaɪət/",
+  "reading": "dayıt",
+  "meanings": [
+   "diyet",
+   "beslenme düzeni"
+  ],
+  "definition": "The food that a person or animal usually eats.",
+  "example": "A healthy diet includes fruits and vegetables."
  }
 }

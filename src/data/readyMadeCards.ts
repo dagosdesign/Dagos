@@ -923,6 +923,15 @@ export const READY_MADE_CARD_WORDS = [
   'circuit', 'claimant', 'clap', 'clay', 'client',
   'clinic', 'clip', 'cloth', 'clown', 'co.',
   'co-operate', 'coast', 'cock', 'cocoa',
+  'commute', 'components', 'computer', 'cone', 'conference',
+  'consign', 'constitution', 'cope', 'cordon', 'cork',
+  'corpse', 'correspondent', 'corridor', 'cosmetic', 'costume',
+  'coupe', 'coupon', 'cracker', 'cramp', 'crane',
+  'credit', 'crisp', 'crocodile', 'crossword', 'crow',
+  'crude', 'curry', 'cushion', 'cylinder', 'daisy',
+  'darling', 'deadlock', 'deaf', 'debatable', 'debt',
+  'default', 'deliberately', 'demoralize', 'deputation', 'deputy',
+  'despite', 'dew', 'diagram', 'diameter', 'diet',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);
