@@ -892,6 +892,20 @@ export const READY_MADE_CARD_WORDS = [
   'set in', 'show around', 'stand up to', 'take out', 'take through',
   'turn against', 'walk out on', 'wear off', 'work toward', 'write down',
   'write off', 'carry through', 'bring forth',
+  'academic', 'accelerator', 'accent', 'accessible', 'accounting',
+  'accused', 'accustom', 'accustomed', 'acid', 'addict',
+  'admiral', 'airport', 'album', 'alcohol', 'allocations',
+  'ally', 'alphabet', 'alternative', 'amateur', 'ambulance',
+  'amend', 'ample', 'angel', 'anger', 'angle',
+  'antique', 'apartment', 'article of association', 'assurance', 'assured',
+  'attendant', 'augment', 'augmentation', 'author', 'authority',
+  'awkward', 'babysitter', 'bachelor', 'backbone', 'bale',
+  'banal', 'bandage', 'baneful', 'banish', 'barbarous',
+  'barber', 'basin', 'bastardize', 'battery', 'bawl',
+  'beforehand', 'bias', 'birthday', 'bladder', 'blade',
+  'blister', 'blockade', 'blouse', 'bodyguard', 'boiler',
+  'bolt', 'bonnet', 'bony', 'booklet', 'boot',
+  'boundary',
 ];
 
 export const READY_MADE_CARD_SET = new Set(READY_MADE_CARD_WORDS);

@@ -41594,5 +41594,605 @@
   ],
   "definition": "To produce or give rise to something",
   "example": "These trees will bring forth beautiful flowers in spring."
+ },
+ "academic": {
+  "ipa": "/ˌækəˈdemɪk/",
+  "reading": "ekıdemik",
+  "meanings": [
+   "akademik",
+   "akademisyen"
+  ],
+  "definition": "Related to education, schools, and universities.",
+  "example": "She achieved high academic success this year."
+ },
+ "accelerator": {
+  "ipa": "/əkˈseləreɪtə(r)/",
+  "reading": "ıkselıreytı",
+  "meanings": [
+   "gaz pedalı",
+   "hızlandırıcı"
+  ],
+  "definition": "A pedal that makes a vehicle go faster.",
+  "example": "Press the accelerator to speed up the car."
+ },
+ "accent": {
+  "ipa": "/ˈæksent/",
+  "reading": "eksent",
+  "meanings": [
+   "aksan"
+  ],
+  "definition": "A distinctive way of pronouncing a language.",
+  "example": "She speaks English with a strong French accent."
+ },
+ "accessible": {
+  "ipa": "/əkˈsesəbl/",
+  "reading": "ıksesıbıl",
+  "meanings": [
+   "erişilebilir"
+  ],
+  "definition": "Easy to approach, reach, or enter.",
+  "example": "The building is accessible to wheelchair users."
+ },
+ "accounting": {
+  "ipa": "/əˈkaʊntɪŋ/",
+  "reading": "ıkauntin",
+  "meanings": [
+   "muhasebe"
+  ],
+  "definition": "The keeping of financial accounts.",
+  "example": "He decided to study accounting at university."
+ },
+ "accused": {
+  "ipa": "/əˈkjuːzd/",
+  "reading": "ıkyuuzd",
+  "meanings": [
+   "suçlanan",
+   "sanık"
+  ],
+  "definition": "A person charged with a crime.",
+  "example": "The accused stood silently before the judge."
+ },
+ "accustom": {
+  "ipa": "/əˈkʌstəm/",
+  "reading": "ıkastım",
+  "meanings": [
+   "alıştırmak"
+  ],
+  "definition": "To make someone familiar with something.",
+  "example": "You must accustom yourself to the cold weather."
+ },
+ "accustomed": {
+  "ipa": "/əˈkʌstəmd/",
+  "reading": "ıkastımd",
+  "meanings": [
+   "alışkın"
+  ],
+  "definition": "Familiar with something so it seems normal.",
+  "example": "She is accustomed to waking up early."
+ },
+ "acid": {
+  "ipa": "/ˈæsɪd/",
+  "reading": "esid",
+  "meanings": [
+   "asit"
+  ],
+  "definition": "A sour chemical substance.",
+  "example": "Lemon juice contains a natural acid."
+ },
+ "admiral": {
+  "ipa": "/ˈæd.mər.əl/",
+  "reading": "edmirıl",
+  "meanings": [
+   "amiral"
+  ],
+  "definition": "A very high-ranking officer in the navy.",
+  "example": "The admiral led the fleet into battle."
+ },
+ "airport": {
+  "ipa": "/ˈeə.pɔːt/",
+  "reading": "eyıpoot",
+  "meanings": [
+   "havalimanı"
+  ],
+  "definition": "A place where aircraft land and take off.",
+  "example": "We arrived at the airport two hours before our flight."
+ },
+ "album": {
+  "ipa": "/ˈæl.bəm/",
+  "reading": "elbım",
+  "meanings": [
+   "albüm"
+  ],
+  "definition": "A collection of music tracks or photos.",
+  "example": "The band released their new album last week."
+ },
+ "alcohol": {
+  "ipa": "/ˈæl.kə.hɒl/",
+  "reading": "elkohol",
+  "meanings": [
+   "alkol"
+  ],
+  "definition": "Drunk-making drinks like beer or wine.",
+  "example": "You must not drive after drinking alcohol."
+ },
+ "allocations": {
+  "ipa": "/ˌæl.əˈkeɪ.ʃənz/",
+  "reading": "elıkeyşınz",
+  "meanings": [
+   "tahsisatlar",
+   "ayrılan paylar"
+  ],
+  "definition": "Amounts of money or resources given for specific purposes.",
+  "example": "The annual budget allocations were announced yesterday."
+ },
+ "ally": {
+  "ipa": "/ˈæl.aɪ/",
+  "reading": "elay",
+  "meanings": [
+   "müttefik"
+  ],
+  "definition": "A country or person that helps you in a fight.",
+  "example": "France was a close ally of Britain during the war."
+ },
+ "alphabet": {
+  "ipa": "/ˈæl.fə.bet/",
+  "reading": "elfabet",
+  "meanings": [
+   "alfabe"
+  ],
+  "definition": "A set of letters used for writing a language.",
+  "example": "The English alphabet has twenty-six letters."
+ },
+ "alternative": {
+  "ipa": "/ɒlˈtɜː.nə.tɪv/",
+  "reading": "ooltörnıtiv",
+  "meanings": [
+   "alternatif"
+  ],
+  "definition": "One of two or more available possibilities.",
+  "example": "We have no alternative but to wait."
+ },
+ "amateur": {
+  "ipa": "/ˈæm.ə.tər/",
+  "reading": "emetör",
+  "meanings": [
+   "amatör"
+  ],
+  "definition": "Doing something for pleasure rather than as a job.",
+  "example": "He is an amateur photographer who takes beautiful pictures."
+ },
+ "ambulance": {
+  "ipa": "/ˈæm.bjə.ləns/",
+  "reading": "embyulıns",
+  "meanings": [
+   "ambulans"
+  ],
+  "definition": "A vehicle for taking sick people to the hospital.",
+  "example": "Call an ambulance immediately."
+ },
+ "amend": {
+  "ipa": "/əˈmend/",
+  "reading": "emend",
+  "meanings": [
+   "düzeltmek",
+   "değişiklik yapmak"
+  ],
+  "definition": "To change the words of a text or law.",
+  "example": "The MPs voted to amend the law."
+ },
+ "ample": {
+  "ipa": "/ˈæm.pəl/",
+  "reading": "empıl",
+  "meanings": [
+   "bol",
+   "geniş",
+   "yeterinden fazla"
+  ],
+  "definition": "More than enough.",
+  "example": "There is ample time to finish the project."
+ },
+ "angel": {
+  "ipa": "/ˈeɪndʒəl/",
+  "reading": "eyncl",
+  "meanings": [
+   "melek"
+  ],
+  "definition": "A spiritual being acting as an attendant of God.",
+  "example": "She believes that a guardian angel protects her."
+ },
+ "anger": {
+  "ipa": "/ˈæŋɡə/",
+  "reading": "engır",
+  "meanings": [
+   "öfke"
+  ],
+  "definition": "A strong feeling of annoyance or displeasure.",
+  "example": "It is hard to control your anger sometimes."
+ },
+ "angle": {
+  "ipa": "/ˈæŋɡəl/",
+  "reading": "engıl",
+  "meanings": [
+   "açı"
+  ],
+  "definition": "The space between two intersecting lines.",
+  "example": "You must measure the angle of the triangle."
+ },
+ "antique": {
+  "ipa": "/ænˈtiːk/",
+  "reading": "entiyk",
+  "meanings": [
+   "antika"
+  ],
+  "definition": "An object having high value because of its age.",
+  "example": "She bought an antique table at the shop."
+ },
+ "apartment": {
+  "ipa": "/əˈpɑːtmənt/",
+  "reading": "ıpâtmınt",
+  "meanings": [
+   "apartman dairesi"
+  ],
+  "definition": "A suite of rooms forming one residence.",
+  "example": "They want to rent a small apartment in London."
+ },
+ "article of association": {
+  "ipa": "/ˈɑːtɪkl əv əˌsəʊsiˈeɪʃn/",
+  "reading": "âtıkıl ıv ısousieyşın",
+  "meanings": [
+   "şirket ana sözleşmesi"
+  ],
+  "definition": "A document outlining a company's internal regulations.",
+  "example": "We need to amend this article of association before signing."
+ },
+ "assurance": {
+  "ipa": "/əˈʃɔːrəns/",
+  "reading": "ışuorıns",
+  "meanings": [
+   "güvence"
+  ],
+  "definition": "A positive declaration intended to give confidence.",
+  "example": "We need some assurance that the project is safe."
+ },
+ "assured": {
+  "ipa": "/əˈʃɔːd/",
+  "reading": "ışuord",
+  "meanings": [
+   "kendinden emin",
+   "garantili"
+  ],
+  "definition": "Protected against change or guaranteed to happen.",
+  "example": "Her victory was assured from the very beginning."
+ },
+ "attendant": {
+  "ipa": "/əˈtendənt/",
+  "reading": "ıtendınt",
+  "meanings": [
+   "görevli"
+  ],
+  "definition": "A person who provides service or helps visitors.",
+  "example": "The flight attendant served drinks to the passengers."
+ },
+ "augment": {
+  "ipa": "/ɔːɡˈment/",
+  "reading": "oogment",
+  "meanings": [
+   "artırmak"
+  ],
+  "definition": "To make something greater by adding to it.",
+  "example": "He took a second job to augment his income."
+ },
+ "augmentation": {
+  "ipa": "/ˌɔːɡmenˈteɪʃn/",
+  "reading": "oogmenteyşın",
+  "meanings": [
+   "artış",
+   "çoğalma"
+  ],
+  "definition": "The action of making something larger or greater.",
+  "example": "The company plans a budget augmentation next year."
+ },
+ "authority": {
+  "ipa": "/ɔːˈθɒrəti/",
+  "reading": "ootoriti",
+  "meanings": [
+   "otorite",
+   "yetki"
+  ],
+  "definition": "The power or right to give orders.",
+  "example": "Only the manager has the authority to sign this."
+ },
+ "awkward": {
+  "ipa": "/ˈɔːkwəd/",
+  "reading": "ookvıd",
+  "meanings": [
+   "garip",
+   "beceriksiz",
+   "rahatsız edici"
+  ],
+  "definition": "Causing or feeling embarrassed or inconvenient.",
+  "example": "There was an awkward silence after his comment."
+ },
+ "babysitter": {
+  "ipa": "/ˈbeɪbisɪtə(r)/",
+  "reading": "beybisitır",
+  "meanings": [
+   "çocuk bakıcısı"
+  ],
+  "definition": "A person who looks after children temporarily.",
+  "example": "We need to hire a babysitter for tonight."
+ },
+ "bachelor": {
+  "ipa": "/ˈbætʃələ(r)/",
+  "reading": "beçılır",
+  "meanings": [
+   "bekâr erkek"
+  ],
+  "definition": "A man who is not and has never been married.",
+  "example": "He decided to remain a bachelor all his life."
+ },
+ "backbone": {
+  "ipa": "/ˈbækbəʊn/",
+  "reading": "bekboun",
+  "meanings": [
+   "omurga"
+  ],
+  "definition": "The spine, or the main support of something.",
+  "example": "Agriculture is the backbone of the country's economy."
+ },
+ "bale": {
+  "ipa": "/beɪl/",
+  "reading": "beyl",
+  "meanings": [
+   "balya"
+  ],
+  "definition": "A large bundle of paper or hay bound together.",
+  "example": "A heavy bale of cotton fell off the truck."
+ },
+ "banal": {
+  "ipa": "/bəˈnɑːl/",
+  "reading": "bınaal",
+  "meanings": [
+   "sıradan",
+   "basmakalıp"
+  ],
+  "definition": "Lacking originality; boring or obvious.",
+  "example": "He made a banal comment about the weather."
+ },
+ "bandage": {
+  "ipa": "/ˈbændɪdʒ/",
+  "reading": "bendidc",
+  "meanings": [
+   "bandaj"
+  ],
+  "definition": "A strip of material used to bind a wound.",
+  "example": "Please wrap a clean bandage around the wound."
+ },
+ "baneful": {
+  "ipa": "/ˈbeɪnfl/",
+  "reading": "beynful",
+  "meanings": [
+   "zararlı",
+   "yıkıcı"
+  ],
+  "definition": "Causing ruin or great harm.",
+  "example": "Drug abuse has a baneful effect on a community."
+ },
+ "banish": {
+  "ipa": "/ˈbænɪʃ/",
+  "reading": "beniş",
+  "meanings": [
+   "sürgün etmek",
+   "kovmak"
+  ],
+  "definition": "To send someone away as an official punishment.",
+  "example": "The king decided to banish the traitor from the land."
+ },
+ "barbarous": {
+  "ipa": "/ˈbɑːbərəs/",
+  "reading": "baabırıs",
+  "meanings": [
+   "barbarca",
+   "vahşi"
+  ],
+  "definition": "Extremely brutal or uncivilized.",
+  "example": "They condemned the barbarous treatment of the prisoners."
+ },
+ "barber": {
+  "ipa": "/ˈbɑːbə(r)/",
+  "reading": "baabır",
+  "meanings": [
+   "berber"
+  ],
+  "definition": "A person whose business is cutting hair.",
+  "example": "I need to visit the barber today for a haircut."
+ },
+ "basin": {
+  "ipa": "/ˈbeɪsn/",
+  "reading": "beysın",
+  "meanings": [
+   "lavabo",
+   "leğen"
+  ],
+  "definition": "A bowl for washing, typically attached to a wall.",
+  "example": "She filled the basin with warm water."
+ },
+ "bastardize": {
+  "ipa": "/ˈbɑːstədaɪz/",
+  "reading": "baastırdayz",
+  "meanings": [
+   "bozmak",
+   "aslını kötüleştirmek"
+  ],
+  "definition": "To corrupt or debase something.",
+  "example": "They tried to bastardize the original meaning of the text."
+ },
+ "battery": {
+  "ipa": "/ˈbætri/",
+  "reading": "betri",
+  "meanings": [
+   "pil",
+   "batarya"
+  ],
+  "definition": "A container in which chemical energy converts into electricity.",
+  "example": "My phone needs a new battery to work properly."
+ },
+ "bawl": {
+  "ipa": "/bɔːl/",
+  "reading": "bool",
+  "meanings": [
+   "bağıra bağıra ağlamak"
+  ],
+  "definition": "To shout or cry out loudly.",
+  "example": "The child began to bawl when he fell down."
+ },
+ "beforehand": {
+  "ipa": "/bɪˈfɔːhænd/",
+  "reading": "bifoohend",
+  "meanings": [
+   "önceden"
+  ],
+  "definition": "Before an action or event; in advance.",
+  "example": "It is best to prepare your speech beforehand."
+ },
+ "bias": {
+  "ipa": "/ˈbaɪəs/",
+  "reading": "bayıs",
+  "meanings": [
+   "önyargı",
+   "taraflılık"
+  ],
+  "definition": "A strong feeling in favor of one group.",
+  "example": "Media bias can influence how people vote in elections."
+ },
+ "birthday": {
+  "ipa": "/ˈbɜːθdeɪ/",
+  "reading": "börfdey",
+  "meanings": [
+   "doğum günü"
+  ],
+  "definition": "The anniversary of the day a person was born.",
+  "example": "I received a beautiful gift on my birthday last year."
+ },
+ "bladder": {
+  "ipa": "/ˈblædə/",
+  "reading": "bledı",
+  "meanings": [
+   "mesane"
+  ],
+  "definition": "An organ in the body that holds urine.",
+  "example": "Drinking water helps keep your bladder healthy."
+ },
+ "blade": {
+  "ipa": "/bleɪd/",
+  "reading": "bıleyd",
+  "meanings": [
+   "bıçak ağzı",
+   "kesici ağız"
+  ],
+  "definition": "The flat, sharp part of a knife or tool.",
+  "example": "You must keep the knife blade clean and sharp."
+ },
+ "blister": {
+  "ipa": "/ˈblɪstə/",
+  "reading": "blistı",
+  "meanings": [
+   "su toplaması"
+  ],
+  "definition": "A small bubble on the skin filled with liquid.",
+  "example": "A tight shoe can cause a painful blister on your foot."
+ },
+ "blockade": {
+  "ipa": "/blɒˈkeɪd/",
+  "reading": "blokeyd",
+  "meanings": [
+   "abluka"
+  ],
+  "definition": "Act of sealing off a place to prevent goods entering.",
+  "example": "The navy decided to establish a blockade around the port."
+ },
+ "blouse": {
+  "ipa": "/blaʊz/",
+  "reading": "bılauz",
+  "meanings": [
+   "bluz"
+  ],
+  "definition": "A loose shirt worn by women.",
+  "example": "She chose to wear a white silk blouse for the interview."
+ },
+ "bodyguard": {
+  "ipa": "/ˈbɒdiɡɑːd/",
+  "reading": "bodigard",
+  "meanings": [
+   "koruma"
+  ],
+  "definition": "A person employed to protect someone.",
+  "example": "The famous singer always travels with a personal bodyguard."
+ },
+ "boiler": {
+  "ipa": "/ˈbɔɪlə/",
+  "reading": "boylı",
+  "meanings": [
+   "kazan",
+   "kombi"
+  ],
+  "definition": "A device used to heat water.",
+  "example": "We need to repair the old boiler before winter starts."
+ },
+ "bolt": {
+  "ipa": "/bəʊlt/",
+  "reading": "boult",
+  "meanings": [
+   "cıvata"
+  ],
+  "definition": "A metal bar or screw used to fasten things.",
+  "example": "Please slide the bolt to lock the heavy door."
+ },
+ "bonnet": {
+  "ipa": "/ˈbɒnɪt/",
+  "reading": "bonıt",
+  "meanings": [
+   "kaput"
+  ],
+  "definition": "The metal cover over the engine of a car.",
+  "example": "He opened the car bonnet to check the oil level."
+ },
+ "bony": {
+  "ipa": "/ˈbəʊni/",
+  "reading": "bouni",
+  "meanings": [
+   "kemikli",
+   "çok zayıf"
+  ],
+  "definition": "Very thin so that the bones show.",
+  "example": "He had a bony face and very long fingers."
+ },
+ "booklet": {
+  "ipa": "/ˈbʊklət/",
+  "reading": "buklıt",
+  "meanings": [
+   "kitapçık"
+  ],
+  "definition": "A very thin book with a paper cover.",
+  "example": "The instruction booklet explains how to use the machine."
+ },
+ "boot": {
+  "ipa": "/buːt/",
+  "reading": "buut",
+  "meanings": [
+   "bot",
+   "çizme"
+  ],
+  "definition": "A sturdy shoe that covers the foot and ankle.",
+  "example": "The hiker lost one heavy boot in the deep mud."
+ },
+ "boundary": {
+  "ipa": "/ˈbaʊndri/",
+  "reading": "baundri",
+  "meanings": [
+   "sınır"
+  ],
+  "definition": "A line that marks the limit of an area.",
+  "example": "The river forms a natural boundary between the two countries."
  }
 }
