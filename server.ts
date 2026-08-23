@@ -140,6 +140,18 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
+// Rolling memory of recent openings per kind, so consecutive generations don't
+// fall back into the same first-sentence template. Stories and dialogues are
+// tracked separately — their opening logic must not resemble each other.
+const recentOpenings: { story: string[]; dialogue: string[] } = { story: [], dialogue: [] };
+const rememberOpening = (kind: "story" | "dialogue", opening: string) => {
+  const list = recentOpenings[kind];
+  const clean = opening.replace(/\s+/g, " ").trim().slice(0, 110);
+  if (!clean) return;
+  list.push(clean);
+  if (list.length > 12) list.shift();
+};
+
 // Generates practice content for a target word: a short story or a two-person dialogue.
 app.post("/api/practice-content", async (req, res) => {
   const { kind, word, meaning } = req.body as {
@@ -174,9 +186,17 @@ app.post("/api/practice-content", async (req, res) => {
       "a bakery before sunrise", "a museum after closing time",
     ];
     const STORY_STYLES = [
-      "start in the middle of the action", "start with a short line of dialogue",
+      "start in the middle of the action", "start with a short line of dialogue spoken by a character",
       "start with a surprising fact about the main character", "start with a small problem that needs solving",
-      "start with a sound or smell the character notices", "start with a decision the character just made",
+      "start with a sound, smell or movement the character notices", "start with a decision the character just made",
+      "start with a question the character asks themselves", "start with an unexpected event",
+      "start with a short description of the place", "start with the character's thought or feeling",
+      "start with something that happened in the past that still matters now",
+      "start with a curious piece of information", "start with an ordinary daily moment that suddenly changes",
+    ];
+    const STORY_VOICES = [
+      "third person, past tense", "first person ('I'), past tense",
+      "third person, present tense (as if it happens now)", "first person ('I'), present tense",
     ];
     const DIALOGUE_SCENES = [
       "two friends choosing what to eat for lunch", "a customer asking for help in a clothes shop",
@@ -198,6 +218,18 @@ app.post("/api/practice-content", async (req, res) => {
     const DIALOGUE_MOODS = [
       "friendly and relaxed", "a little hurried", "curious and surprised", "slightly worried but hopeful",
       "funny and playful", "polite and practical", "excited", "tired but cheerful",
+    ];
+    const DIALOGUE_OPENERS = [
+      "the first line jumps straight into the middle of the situation",
+      "the first line is a direct question about the situation",
+      "the first line states a small problem",
+      "the first line shows surprise about something just noticed",
+      "the first line is a polite request",
+      "the first line announces a decision",
+      "the first line makes a suggestion",
+      "the first line is a misunderstanding that gets cleared up later",
+      "the first line is an observation about something nearby",
+      "the first line reacts to something unexpected that just happened",
     ];
 
     const STYLE_RULES =
@@ -235,18 +267,37 @@ app.post("/api/practice-content", async (req, res) => {
         ` at least 3 times, in its exact base form "${word}" each time so it can be highlighted.`;
     }
 
+    // Anti-repetition: show the model the openings it produced recently and
+    // force the new piece to differ from them in structure, not just wording.
+    const avoidList = recentOpenings[kind];
+    const avoidRule = avoidList.length
+      ? ` CRITICAL — these are the openings of recently generated ${kind === "story" ? "stories" : "dialogues"}: ` +
+        avoidList.map((o) => `"${o}"`).join(" | ") +
+        `. Your opening must be clearly different from ALL of them in structure, first words and situation — ` +
+        `rewording the same pattern does not count as different.`
+      : "";
+
+    const firstSpeaker = Math.random() < 0.5 ? "A" : "B";
+    const lineCount = pick(["6-8", "8-10", "10-12"]);
+
     const prompt =
       kind === "story"
         ? `Write an engaging short story in simple A2-level English (100-140 words, 2-3 short paragraphs separated by \\n\\n) ` +
           `for a vocabulary learner. Setting: ${pick(STORY_SETTINGS)}. Opening technique: ${pick(STORY_STYLES)}. ` +
+          `Narration: ${pick(STORY_VOICES)} (keep the grammar strictly A2 either way). ` +
+          `Banned openings: never start with "One day", "It was a sunny morning", "Last weekend", "[Name] woke up" ` +
+          `or any similar templated first sentence. This is a narrative, not a conversation — build atmosphere, ` +
+          `a small plot and a character, and do not open it like a dialogue would. ` +
           `${usageRule} ` +
-          `${STYLE_RULES} Give the story a short catchy title (3-6 words). Do not translate the story.`
-        : `Write a natural everyday two-person dialogue in simple A2-level English (8-10 short lines, alternating speakers A and B, ` +
-          `starting with A). Scene: ${pick(DIALOGUE_SCENES)}. Mood: ${pick(DIALOGUE_MOODS)}. ` +
+          `${STYLE_RULES}${avoidRule} Give the story a short catchy title (3-6 words). Do not translate the story.`
+        : `Write a natural everyday two-person dialogue in simple A2-level English (${lineCount} short lines, alternating ` +
+          `speakers A and B, and the FIRST line is spoken by ${firstSpeaker}). Scene: ${pick(DIALOGUE_SCENES)}. ` +
+          `Mood: ${pick(DIALOGUE_MOODS)}. Opening: ${pick(DIALOGUE_OPENERS)}. ` +
           `It must sound like a real daily conversation between ordinary people, with concrete details of that scene. ` +
-          `Start mid-conversation — no greetings like "Hey, how are you?" and no small-talk openers. ` +
-          `Do not follow a template: vary how the lines start, mix questions, answers, short reactions and suggestions. ${usageRule} ` +
-          `${STYLE_RULES} Give it a short title (2-5 words) describing the situation. Do not translate.`;
+          `Never open with greetings or small talk ("Hi", "Hello", "Good morning", "How are you?", "Excuse me"). ` +
+          `Do not follow a template: vary how the lines start, mix questions, answers, short reactions, suggestions ` +
+          `and small surprises; vary the rhythm — some replies can be very short. ${usageRule} ` +
+          `${STYLE_RULES}${avoidRule} Give it a short title (2-5 words) describing the situation. Do not translate.`;
 
     const responseSchema =
       kind === "story"
@@ -291,7 +342,13 @@ app.post("/api/practice-content", async (req, res) => {
     const text = response.text;
     if (!text) throw new Error("Empty response received from the Gemini model.");
 
-    res.json(JSON.parse(text.trim()));
+    const parsed = JSON.parse(text.trim());
+    if (kind === "story" && typeof parsed.story === "string") {
+      rememberOpening("story", parsed.story.split(/[.!?\n]/)[0] || "");
+    } else if (kind === "dialogue" && Array.isArray(parsed.lines) && parsed.lines[0]?.text) {
+      rememberOpening("dialogue", String(parsed.lines[0].text));
+    }
+    res.json(parsed);
   } catch (err: any) {
     console.error("Gemini practice-content error:", err);
     if (err.message && err.message.includes("GEMINI_API_KEY")) {

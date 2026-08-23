@@ -879,13 +879,21 @@ function Highlighted({ text, word, forms }: { text: string; word: string; forms?
 interface StoryContent { title: string; story: string; }
 interface DialogueContent { title: string; lines: { speaker: string; text: string }[]; }
 
+// Fully cancel any ongoing text-to-speech; pausing is not enough — two contents
+// must never play at once, and leaving/changing a story or dialogue kills audio.
+function stopSpeech() {
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+}
+
 // After a failed generation attempt, skip straight to local fallbacks for a
 // while instead of making every subsequent round wait out its own timeout.
 let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc3_${kind}_${card.id}`;
+  const cacheKey = `lex_pc4_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;
@@ -1034,6 +1042,10 @@ function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }:
 
   useEffect(() => { loadVocabulary().then(setVocab); }, []);
 
+  // Stop any active narration the moment the story changes or the mode unmounts.
+  useEffect(() => { stopSpeech(); }, [idx, finished]);
+  useEffect(() => () => stopSpeech(), []);
+
   useEffect(() => {
     if (!current || finished) return;
     let cancelled = false;
@@ -1137,6 +1149,10 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
   const wordForms = (vocab && current && vocab[current.word.toLowerCase()]?.forms) || undefined;
 
   useEffect(() => { loadVocabulary().then(setVocab); }, []);
+
+  // Stop any active narration the moment the dialogue changes or the mode unmounts.
+  useEffect(() => { stopSpeech(); }, [idx, finished]);
+  useEffect(() => () => stopSpeech(), []);
 
   useEffect(() => {
     if (!current || finished) return;
