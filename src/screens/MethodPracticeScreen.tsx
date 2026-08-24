@@ -893,7 +893,7 @@ let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc4_${kind}_${card.id}`;
+  const cacheKey = `lex_pc5_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;
@@ -972,38 +972,95 @@ function fallbackStory(card: Flashcard): StoryContent {
 function fallbackDialogue(card: Flashcard): DialogueContent {
   const w = card.word;
   const ex = card.exampleSentence;
+  // Structurally different situations so even offline sessions don't feel templated:
+  // mid-action, problem, surprise, bet, misunderstanding, request, decision, discovery.
   const templates: DialogueContent[] = [
     {
-      title: 'Before the Quiz',
+      title: 'The Wrong Notebook',
       lines: [
-        { speaker: 'A', text: `Our vocabulary quiz starts in ten minutes and I'm still not sure about "${w}".` },
-        { speaker: 'B', text: `That one is easier than it looks. I made a sentence for it last night.` },
-        { speaker: 'A', text: `Go on then, let me hear it.` },
-        { speaker: 'B', text: ex },
-        { speaker: 'A', text: `Nice, that actually makes "${w}" simple to remember.` },
-        { speaker: 'B', text: `Write your own sentence with "${w}" and you'll be ready before the bell.` },
+        { speaker: 'B', text: `Wait — this is not my notebook. Whose is this?` },
+        { speaker: 'A', text: `Let me see. Oh, it's Deniz's. Look, he wrote "${w}" on every page.` },
+        { speaker: 'B', text: `Every page? Why?` },
+        { speaker: 'A', text: `He says writing a word many times helps. He even wrote this: ${ex}` },
+        { speaker: 'B', text: `Hmm. Maybe he is right. Give me a pen.` },
+        { speaker: 'A', text: `Not in HIS notebook! Use your own for "${w}".` },
       ],
     },
     {
-      title: 'Homework Help',
+      title: 'Poster Problem',
       lines: [
-        { speaker: 'A', text: `I'm stuck on question four — it wants a sentence with "${w}".` },
-        { speaker: 'B', text: `Let me see your notebook. You already wrote a good one in class.` },
-        { speaker: 'A', text: `Really? Which one?` },
-        { speaker: 'B', text: ex },
-        { speaker: 'A', text: `Oh right, I completely forgot about that example.` },
-        { speaker: 'B', text: `Use "${w}" once more in your own words and it will stick this time.` },
+        { speaker: 'A', text: `The poster is ready, but something looks wrong on it.` },
+        { speaker: 'B', text: `You wrote "${w}" with a spelling mistake. Right there.` },
+        { speaker: 'A', text: `Oh no. And I printed twenty copies!` },
+        { speaker: 'B', text: `Relax. We can fix it with a marker. What does it mean again?` },
+        { speaker: 'A', text: ex },
+        { speaker: 'B', text: `Good. Now nobody will forget "${w}" — or your mistake.` },
       ],
     },
     {
-      title: 'The Flashcard Game',
+      title: 'A Bet at Lunch',
       lines: [
-        { speaker: 'A', text: `Your turn — the card says "${w}". One sentence, ten seconds.` },
-        { speaker: 'B', text: `Easy. ${ex}` },
-        { speaker: 'A', text: `Not bad. That's exactly how our teacher used "${w}" yesterday.` },
-        { speaker: 'B', text: `Told you I studied. Give me a harder card next time.` },
-        { speaker: 'A', text: `Fine, but first say "${w}" one more time so I remember it too.` },
-        { speaker: 'B', text: `Deal — and after this round, the loser buys the juice.` },
+        { speaker: 'B', text: `I bet you my dessert you can't use "${w}" in a sentence.` },
+        { speaker: 'A', text: `That's a dangerous bet. I love your desserts.` },
+        { speaker: 'B', text: `Then show me. Ten seconds.` },
+        { speaker: 'A', text: ex },
+        { speaker: 'B', text: `No way. You said that too fast. Did you practise "${w}" before?` },
+        { speaker: 'A', text: `Maybe. Now hand over the dessert.` },
+      ],
+    },
+    {
+      title: 'Message from Grandpa',
+      lines: [
+        { speaker: 'A', text: `Grandpa sent me a message in English again.` },
+        { speaker: 'B', text: `Your grandpa writes in English? That's great.` },
+        { speaker: 'A', text: `He is learning online. But today he used "${w}" and I didn't understand.` },
+        { speaker: 'B', text: `Ha! The student needs help. He probably meant something like this: ${ex}` },
+        { speaker: 'A', text: `Ohh, now his message makes sense.` },
+        { speaker: 'B', text: `Answer him with "${w}" too. He will be so proud.` },
+      ],
+    },
+    {
+      title: 'Not That Word',
+      lines: [
+        { speaker: 'B', text: `You keep saying that word, but I think it means something else.` },
+        { speaker: 'A', text: `What? "${w}"? I'm sure I'm using it right.` },
+        { speaker: 'B', text: `Let's check the app then. Loser carries both school bags tomorrow.` },
+        { speaker: 'A', text: `Fine. Look — here's the example: ${ex}` },
+        { speaker: 'B', text: `Okay, okay. You were right about "${w}".` },
+        { speaker: 'A', text: `Two bags. Tomorrow. Don't be late.` },
+      ],
+    },
+    {
+      title: 'The Radio Question',
+      lines: [
+        { speaker: 'A', text: `Turn the radio up — they're giving a prize!` },
+        { speaker: 'B', text: `What's the question?` },
+        { speaker: 'A', text: `They want a sentence with the English word "${w}". Quick, call them!` },
+        { speaker: 'B', text: `Calm down, I know one: ${ex}` },
+        { speaker: 'A', text: `Perfect, say exactly that. I'm dialing now.` },
+        { speaker: 'B', text: `If we win, remember: "${w}" was MY word.` },
+      ],
+    },
+    {
+      title: 'Little Sister’s Homework',
+      lines: [
+        { speaker: 'B', text: `Can you help me? My teacher wants "${w}" in a sentence and Mum is busy.` },
+        { speaker: 'A', text: `Sure. Do you know what it means first?` },
+        { speaker: 'B', text: `A little. But I can't make a sentence.` },
+        { speaker: 'A', text: `Start from an example, like this one: ${ex}` },
+        { speaker: 'B', text: `Oh, that's easier than I thought.` },
+        { speaker: 'A', text: `Now write your own with "${w}" — and tell Mum I helped, not the phone.` },
+      ],
+    },
+    {
+      title: 'Found on the Bus',
+      lines: [
+        { speaker: 'A', text: `Someone left a vocabulary book on this seat.` },
+        { speaker: 'B', text: `Open it. Maybe the owner's name is inside.` },
+        { speaker: 'A', text: `No name. But the word "${w}" is underlined three times.` },
+        { speaker: 'B', text: `Three times? They really wanted to learn it. What's the example?` },
+        { speaker: 'A', text: ex },
+        { speaker: 'B', text: `Nice. Leave the book with the driver — and keep "${w}" for yourself.` },
       ],
     },
   ];

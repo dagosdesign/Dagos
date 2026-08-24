@@ -219,6 +219,21 @@ app.post("/api/practice-content", async (req, res) => {
       "friendly and relaxed", "a little hurried", "curious and surprised", "slightly worried but hopeful",
       "funny and playful", "polite and practical", "excited", "tired but cheerful",
     ];
+    // Structural skeletons: the whole flow of moves varies, not just the first line.
+    const DIALOGUE_SHAPES = [
+      "complaint -> playful reply -> suggestion -> agreement",
+      "surprising news -> disbelief -> explanation -> excited reaction",
+      "request -> hesitation -> persuasion -> acceptance",
+      "misunderstanding -> confusion -> correction -> laughter",
+      "decision announced -> objection -> short argument -> compromise",
+      "problem discovered -> mild blame -> practical solution -> relief",
+      "observation -> curiosity -> short story -> final comment",
+      "urgent warning -> question -> explanation -> quick action",
+      "offer -> polite refusal -> reason -> counter-offer -> deal",
+      "shared memory -> question -> funny detail -> plan for later",
+      "disagreement about a fact -> checking -> one admits being wrong",
+      "asking for a favour -> conditions -> negotiation -> thanks",
+    ];
     const DIALOGUE_OPENERS = [
       "the first line jumps straight into the middle of the situation",
       "the first line is a direct question about the situation",
@@ -293,10 +308,12 @@ app.post("/api/practice-content", async (req, res) => {
         : `Write a natural everyday two-person dialogue in simple A2-level English (${lineCount} short lines, alternating ` +
           `speakers A and B, and the FIRST line is spoken by ${firstSpeaker}). Scene: ${pick(DIALOGUE_SCENES)}. ` +
           `Mood: ${pick(DIALOGUE_MOODS)}. Opening: ${pick(DIALOGUE_OPENERS)}. ` +
+          `Conversation shape to follow loosely (these moves, in this order): ${pick(DIALOGUE_SHAPES)}. ` +
           `It must sound like a real daily conversation between ordinary people, with concrete details of that scene. ` +
-          `Never open with greetings or small talk ("Hi", "Hello", "Good morning", "How are you?", "Excuse me"). ` +
-          `Do not follow a template: vary how the lines start, mix questions, answers, short reactions, suggestions ` +
-          `and small surprises; vary the rhythm — some replies can be very short. ${usageRule} ` +
+          `ABSOLUTE BANS: never open with greetings or small talk ("Hi", "Hello", "Hey", "Good morning", "How are you?", ` +
+          `"Excuse me"); never use the pattern question -> answer -> "thanks"; never have one speaker only ask and the ` +
+          `other only answer — both must push the conversation with reactions, objections, jokes or new information. ` +
+          `Vary the rhythm: some replies are a few words, one can be two sentences. ${usageRule} ` +
           `${STYLE_RULES}${avoidRule} Give it a short title (2-5 words) describing the situation. Do not translate.`;
 
     const responseSchema =
@@ -330,12 +347,14 @@ app.post("/api/practice-content", async (req, res) => {
           };
 
     // Latency-sensitive endpoint: lead with the fastest model.
+    // High temperature: variety between generations matters more than precision here.
     const response = await generateResilient(ai, {
       contents: prompt,
       config: {
         systemInstruction,
         responseMimeType: "application/json",
         responseSchema,
+        temperature: 1.2,
       },
     }, ["gemini-3.5-flash-lite", "gemini-3.5-flash"]);
 
