@@ -1294,7 +1294,17 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
       )}
 
       {!loading && (
-        <div className="flex justify-end">
+        <div className="flex justify-between gap-3">
+          {idx > 0 ? (
+            <button
+              onClick={() => setIdx(i => i - 1)}
+              className="border border-white/15 text-white/70 hover:text-white hover:border-white/30 rounded-xl py-3 px-6 text-xs font-bold cursor-pointer transition-colors"
+            >
+              Önceki Diyalog
+            </button>
+          ) : (
+            <span />
+          )}
           <button
             onClick={() => {
               if (idx + 1 < rounds.length) setIdx(i => i + 1);
