@@ -44492,5 +44492,1717 @@
   ],
   "definition": "To explain or decorate using pictures.",
   "example": "She wants to illustrate books for young children."
+ },
+ "imagination": {
+  "ipa": "/ɪˌmædʒɪˈneɪʃn/",
+  "reading": "imadjineyşın",
+  "meanings": [
+   "hayal gücü"
+  ],
+  "definition": "The ability to create mental images or ideas.",
+  "example": "Children have a very active imagination."
+ },
+ "imitate": {
+  "ipa": "/ˈɪmɪteɪt/",
+  "reading": "imiteyt",
+  "meanings": [
+   "taklit etmek"
+  ],
+  "definition": "To copy someone or something.",
+  "example": "Parrots can imitate human speech."
+ },
+ "immoral": {
+  "ipa": "/ɪˈmɒrəl/",
+  "reading": "imoral",
+  "meanings": [
+   "ahlaka aykırı"
+  ],
+  "definition": "Not conforming to accepted standards of morality.",
+  "example": "Stealing from the poor is completely immoral."
+ },
+ "impair": {
+  "ipa": "/ɪmˈpeə(r)/",
+  "reading": "impeer",
+  "meanings": [
+   "zarar vermek",
+   "zayıflatmak"
+  ],
+  "definition": "To damage or weaken something.",
+  "example": "Loud noises can impair your hearing."
+ },
+ "implement": {
+  "ipa": "/ˈɪmplɪment/",
+  "reading": "impliment",
+  "meanings": [
+   "uygulamak"
+  ],
+  "definition": "To put a plan or system into operation.",
+  "example": "The company will implement new safety rules."
+ },
+ "imply": {
+  "ipa": "/ɪmˈplaɪ/",
+  "reading": "implay",
+  "meanings": [
+   "ima etmek"
+  ],
+  "definition": "To suggest something without stating it directly.",
+  "example": "Her words seem to imply that I am wrong."
+ },
+ "impress": {
+  "ipa": "/ɪmˈpres/",
+  "reading": "impres",
+  "meanings": [
+   "etkilemek"
+  ],
+  "definition": "To make someone feel admiration and respect.",
+  "example": "He tried to impress her with his cooking skills."
+ },
+ "incidentally": {
+  "ipa": "/ˌɪnsɪˈdentəli/",
+  "reading": "insidentali",
+  "meanings": [
+   "bu arada",
+   "yeri gelmişken"
+  ],
+  "definition": "Used to add a related point to a conversation.",
+  "example": "Incidentally, did you see that movie last night?"
+ },
+ "indemnify": {
+  "ipa": "/ɪnˈdemnɪfaɪ/",
+  "reading": "indemnifay",
+  "meanings": [
+   "tazmin etmek"
+  ],
+  "definition": "To compensate someone for harm or loss.",
+  "example": "The insurance policy will indemnify you against theft."
+ },
+ "indemnity": {
+  "ipa": "/ɪnˈdemnəti/",
+  "reading": "indemnati",
+  "meanings": [
+   "tazminat",
+   "güvence"
+  ],
+  "definition": "Security or protection against a loss or financial burden.",
+  "example": "They demanded indemnity for the damage caused."
+ },
+ "index": {
+  "ipa": "/ˈɪndeks/",
+  "reading": "indeks",
+  "meanings": [
+   "dizin",
+   "indeks"
+  ],
+  "definition": "An alphabetical list of names, subjects, etc.",
+  "example": "You can find the topic at the back index."
+ },
+ "indorse": {
+  "ipa": "/ɪnˈdɔːs/",
+  "reading": "indors",
+  "meanings": [
+   "ciro etmek",
+   "onaylamak"
+  ],
+  "definition": "To give official approval or support to something.",
+  "example": "The committee decided to indorse the new policy."
+ },
+ "endorsement": {
+  "ipa": "/ɪnˈdɔːsmənt/",
+  "reading": "indorsment",
+  "meanings": [
+   "onay",
+   "destek",
+   "ciro"
+  ],
+  "definition": "An act of giving public approval or support.",
+  "example": "The mayor gave her full endorsement to the project."
+ },
+ "inflammable": {
+  "ipa": "/ɪnˈflæməbl/",
+  "reading": "inflamebl",
+  "meanings": [
+   "yanıcı"
+  ],
+  "definition": "Easily set on fire.",
+  "example": "Keep this material away from inflammable substances."
+ },
+ "inflate": {
+  "ipa": "/ɪnˈfleɪt/",
+  "reading": "infileyt",
+  "meanings": [
+   "şişirmek"
+  ],
+  "definition": "Fill with air or gas to make larger.",
+  "example": "We need to inflate the tires before the trip."
+ },
+ "inflation": {
+  "ipa": "/ɪnˈfleɪʃn/",
+  "reading": "infleyşn",
+  "meanings": [
+   "enflasyon"
+  ],
+  "definition": "A general increase in prices over time.",
+  "example": "High inflation reduces the value of money."
+ },
+ "inflexible": {
+  "ipa": "/ɪnˈfleksəbl/",
+  "reading": "infleksebl",
+  "meanings": [
+   "esnek olmayan",
+   "katı"
+  ],
+  "definition": "Unwilling to change or compromise.",
+  "example": "The company has very inflexible rules."
+ },
+ "inject": {
+  "ipa": "/ɪnˈdʒekt/",
+  "reading": "incjekt",
+  "meanings": [
+   "enjekte etmek"
+  ],
+  "definition": "Force fluid into a body with a syringe.",
+  "example": "Doctors inject the vaccine into the arm."
+ },
+ "insecure": {
+  "ipa": "/ˌɪnsɪˈkjʊə(r)/",
+  "reading": "insikyur",
+  "meanings": [
+   "güvensiz",
+   "kendine güvenmeyen"
+  ],
+  "definition": "Not confident or firmly fixed.",
+  "example": "He feels insecure about his new job."
+ },
+ "insolvent": {
+  "ipa": "/ɪnˈsɒlvənt/",
+  "reading": "insolvent",
+  "meanings": [
+   "borçlarını ödeyemeyen"
+  ],
+  "definition": "Unable to pay debts owed.",
+  "example": "The small business went insolvent last year."
+ },
+ "inspire": {
+  "ipa": "/ɪnˈspaɪə(r)/",
+  "reading": "inspayır",
+  "meanings": [
+   "ilham vermek"
+  ],
+  "definition": "Fill someone with the urge to do something.",
+  "example": "Great teachers inspire their students every day."
+ },
+ "insulate": {
+  "ipa": "/ˈɪnsuleɪt/",
+  "reading": "insuleyt",
+  "meanings": [
+   "yalıtmak"
+  ],
+  "definition": "Protect something by interposing material.",
+  "example": "We need to insulate the roof before winter."
+ },
+ "insult": {
+  "ipa": "/ˈɪnsʌlt/",
+  "reading": "insalt",
+  "meanings": [
+   "hakaret etmek"
+  ],
+  "definition": "A disrespectful or scornful remark or act.",
+  "example": "His rude comment felt like a personal insult."
+ },
+ "intangible": {
+  "ipa": "/ɪnˈtændʒəbl/",
+  "reading": "intancebl",
+  "meanings": [
+   "soyut",
+   "elle tutulamayan"
+  ],
+  "definition": "Unable to be touched or grasped; lacking physical presence.",
+  "example": "Goodwill is an intangible asset for a company."
+ },
+ "intense": {
+  "ipa": "/ɪnˈtens/",
+  "reading": "intens",
+  "meanings": [
+   "yoğun",
+   "şiddetli"
+  ],
+  "definition": "Of extreme force, degree, or strength.",
+  "example": "They faced intense heat during the desert hike."
+ },
+ "interfere": {
+  "ipa": "/ˌɪntəˈfɪə(r)/",
+  "reading": "intafir",
+  "meanings": [
+   "müdahale etmek",
+   "karışmak"
+  ],
+  "definition": "Prevent a process from continuing properly.",
+  "example": "Do not interfere in personal matters."
+ },
+ "intestines": {
+  "ipa": "/ɪnˈtestɪnz/",
+  "reading": "intıstinz",
+  "meanings": [
+   "bağırsaklar"
+  ],
+  "definition": "The tube in the body that digests food.",
+  "example": "Food passes through your intestines after the stomach."
+ },
+ "invade": {
+  "ipa": "/ɪnˈveɪd/",
+  "reading": "inveyd",
+  "meanings": [
+   "istila etmek",
+   "işgal etmek"
+  ],
+  "definition": "To enter a country by force with an army.",
+  "example": "The army plans to invade the neighboring country."
+ },
+ "invoice": {
+  "ipa": "/ˈɪnvɔɪs/",
+  "reading": "invoyis",
+  "meanings": [
+   "fatura"
+  ],
+  "definition": "A document listing goods and services with prices.",
+  "example": "She sent the invoice to the client today."
+ },
+ "ironically": {
+  "ipa": "/aɪˈrɒnɪkli/",
+  "reading": "ayronikli",
+  "meanings": [
+   "ironik biçimde"
+  ],
+  "definition": "In a way that is contrary to expectations.",
+  "example": "Ironically, he arrived late to his own party."
+ },
+ "irritate": {
+  "ipa": "/ˈɪrɪteɪt/",
+  "reading": "iriteyt",
+  "meanings": [
+   "rahatsız etmek",
+   "sinirlendirmek"
+  ],
+  "definition": "To make someone angry or annoyed.",
+  "example": "Loud noises always irritate my sensitive ears."
+ },
+ "itch": {
+  "ipa": "/ɪtʃ/",
+  "reading": "iç",
+  "meanings": [
+   "kaşınmak",
+   "kaşıntı"
+  ],
+  "definition": "An uncomfortable sensation on the skin.",
+  "example": "Mosquito bites often cause an annoying itch."
+ },
+ "jack": {
+  "ipa": "/dʒæk/",
+  "reading": "Cek",
+  "meanings": [
+   "kriko"
+  ],
+  "definition": "A device used for lifting heavy objects.",
+  "example": "He used a jack to lift the car."
+ },
+ "jackal": {
+  "ipa": "/ˈdʒækəl/",
+  "reading": "Cekal",
+  "meanings": [
+   "çakal"
+  ],
+  "definition": "A wild dog-like animal found in Africa and Asia.",
+  "example": "A lonely jackal howled in the dark night."
+ },
+ "jacket": {
+  "ipa": "/ˈdʒækɪt/",
+  "reading": "Cekit",
+  "meanings": [
+   "ceket"
+  ],
+  "definition": "A short coat worn for warmth or style.",
+  "example": "Put on your jacket before going outside."
+ },
+ "jaguar": {
+  "ipa": "/ˈdʒæɡwɑː(r)/",
+  "reading": "Cegvar",
+  "meanings": [
+   "jaguar"
+  ],
+  "definition": "A large spotted wild cat from the Americas.",
+  "example": "A jaguar hides in the dense jungle trees."
+ },
+ "jar": {
+  "ipa": "/dʒɑː(r)/",
+  "reading": "Car",
+  "meanings": [
+   "kavanoz"
+  ],
+  "definition": "A wide-mouthed glass container for food.",
+  "example": "She opened a jar of strawberry jam."
+ },
+ "jeans": {
+  "ipa": "/dʒiːnz/",
+  "reading": "Cinz",
+  "meanings": [
+   "kot pantolon"
+  ],
+  "definition": "Trousers made of denim fabric.",
+  "example": "He wears comfortable blue jeans on weekends."
+ },
+ "jelly": {
+  "ipa": "/ˈdʒeli/",
+  "reading": "Celi",
+  "meanings": [
+   "jöle"
+  ],
+  "definition": "A sweet, soft, semi-solid fruit spread.",
+  "example": "Children love eating sweet fruit jelly."
+ },
+ "jellyfish": {
+  "ipa": "/ˈdʒelifɪʃ/",
+  "reading": "Celifiş",
+  "meanings": [
+   "denizanası"
+  ],
+  "definition": "A soft-bodied sea animal that can sting.",
+  "example": "Be careful not to touch a jellyfish in the sea."
+ },
+ "jockey": {
+  "ipa": "/ˈdʒɒki/",
+  "reading": "Coki",
+  "meanings": [
+   "jokey"
+  ],
+  "definition": "A person who rides horses in races.",
+  "example": "The winning jockey proudly held the trophy."
+ },
+ "jubilee": {
+  "ipa": "/ˈdʒuːbɪliː/",
+  "reading": "Cubili",
+  "meanings": [
+   "yıldönümü kutlaması"
+  ],
+  "definition": "A special anniversary celebration.",
+  "example": "The queen celebrated her golden jubilee."
+ },
+ "ketchup": {
+  "ipa": "/ˈketʃəp/",
+  "reading": "Keçap",
+  "meanings": [
+   "ketçap"
+  ],
+  "definition": "A cold sauce made from tomatoes and spices.",
+  "example": "He puts ketchup on his french fries."
+ },
+ "kidney": {
+  "ipa": "/ˈkɪdni/",
+  "reading": "kidni",
+  "meanings": [
+   "böbrek"
+  ],
+  "definition": "An organ that cleans blood in the body.",
+  "example": "Humans have two kidneys inside their body."
+ },
+ "kin": {
+  "ipa": "/kɪn/",
+  "reading": "kin",
+  "meanings": [
+   "akraba",
+   "aile"
+  ],
+  "definition": "One's family and relations.",
+  "example": "He invited all his kin to the wedding."
+ },
+ "knight": {
+  "ipa": "/naɪt/",
+  "reading": "nayt",
+  "meanings": [
+   "şövalye"
+  ],
+  "definition": "A medieval soldier of high rank.",
+  "example": "The brave knight fought for his king."
+ },
+ "knob": {
+  "ipa": "/nɒb/",
+  "reading": "nob",
+  "meanings": [
+   "düğme",
+   "kapı topuzu"
+  ],
+  "definition": "A round handle or control switch.",
+  "example": "Turn the knob to open the door."
+ },
+ "laboratory": {
+  "ipa": "/ləˈbɒrətri/",
+  "reading": "labəratri",
+  "meanings": [
+   "laboratuvar"
+  ],
+  "definition": "A room used for scientific research.",
+  "example": "Scientists work in the laboratory every day."
+ },
+ "ladle": {
+  "ipa": "/ˈleɪdl/",
+  "reading": "leydl",
+  "meanings": [
+   "kepçe"
+  ],
+  "definition": "A large long-handled spoon for soup.",
+  "example": "Use a ladle to serve the hot soup."
+ },
+ "lamppost": {
+  "ipa": "/ˈlæmpˌpəʊst/",
+  "reading": "lamp پوست",
+  "meanings": [
+   "sokak lambası direği"
+  ],
+  "definition": "A tall post supporting an outdoor light.",
+  "example": "A cat was sitting near the lamppost."
+ },
+ "lampshade": {
+  "ipa": "/ˈlæmpʃeɪd/",
+  "reading": "lampşeyd",
+  "meanings": [
+   "abajur",
+   "lamba başlığı"
+  ],
+  "definition": "A cover over a light bulb.",
+  "example": "She bought a red lampshade for her bedroom."
+ },
+ "lane": {
+  "ipa": "/leɪn/",
+  "reading": "leyn",
+  "meanings": [
+   "şerit",
+   "dar yol"
+  ],
+  "definition": "A narrow road or path.",
+  "example": "Cars drove fast in the left lane."
+ },
+ "lash": {
+  "ipa": "/læʃ/",
+  "reading": "laş",
+  "meanings": [
+   "kirpik"
+  ],
+  "definition": "An eyelash or a whip stroke.",
+  "example": "She has a long eyelash on her cheek."
+ },
+ "laundry basket": {
+  "ipa": "/ˈlɔːndri ˈbɑːskɪt/",
+  "reading": "londri baskit",
+  "meanings": [
+   "çamaşır sepeti"
+  ],
+  "definition": "A container for dirty clothes.",
+  "example": "Put your dirty clothes in the laundry basket."
+ },
+ "league": {
+  "ipa": "/liːɡ/",
+  "reading": "liig",
+  "meanings": [
+   "lig"
+  ],
+  "definition": "A group of sports teams playing each other.",
+  "example": "Their team won the national football league."
+ },
+ "lease": {
+  "ipa": "/liːs/",
+  "reading": "liis",
+  "meanings": [
+   "kiralamak",
+   "kira sözleşmesi"
+  ],
+  "definition": "A legal contract to rent property.",
+  "example": "They signed a lease for the new apartment."
+ },
+ "lecture": {
+  "ipa": "/ˈlektʃə(r)/",
+  "reading": "lekçır",
+  "meanings": [
+   "ders",
+   "konferans"
+  ],
+  "definition": "An educational talk to an audience.",
+  "example": "The professor gave a fascinating lecture on history."
+ },
+ "length": {
+  "ipa": "/leŋθ/",
+  "reading": "length",
+  "meanings": [
+   "uzunluk"
+  ],
+  "definition": "The measurement of something from end to end.",
+  "example": "Measure the length of the wooden table."
+ },
+ "lettuce": {
+  "ipa": "/ˈletɪs/",
+  "reading": "letis",
+  "meanings": [
+   "marul"
+  ],
+  "definition": "A leafy green vegetable used in salads.",
+  "example": "Wash the fresh lettuce before making salad."
+ },
+ "lever": {
+  "ipa": "/ˈliːvə(r)/",
+  "reading": "livır",
+  "meanings": [
+   "kaldıraç"
+  ],
+  "definition": "A rigid bar used to lift things.",
+  "example": "Pull the lever to open the door."
+ },
+ "liar": {
+  "ipa": "/ˈlaɪə(r)/",
+  "reading": "layır",
+  "meanings": [
+   "yalancı"
+  ],
+  "definition": "A person who tells lies.",
+  "example": "He is a notorious liar."
+ },
+ "lick": {
+  "ipa": "/lɪk/",
+  "reading": "lik",
+  "meanings": [
+   "yalamak"
+  ],
+  "definition": "To pass the tongue over something.",
+  "example": "The dog likes to lick my hand."
+ },
+ "lid": {
+  "ipa": "/lɪd/",
+  "reading": "lid",
+  "meanings": [
+   "kapak"
+  ],
+  "definition": "A cover for a container.",
+  "example": "Put the lid back on the jar."
+ },
+ "lighter": {
+  "ipa": "/ˈlaɪtə(r)/",
+  "reading": "laytır",
+  "meanings": [
+   "çakmak"
+  ],
+  "definition": "A device for lighting cigarettes.",
+  "example": "Do you have a lighter?"
+ },
+ "liquidate": {
+  "ipa": "/ˈlɪkwɪdeɪt/",
+  "reading": "likvideyt",
+  "meanings": [
+   "tasfiye etmek"
+  ],
+  "definition": "To close a business and sell assets.",
+  "example": "The company had to liquidate its assets."
+ },
+ "literature": {
+  "ipa": "/ˈlɪtrətʃə(r)/",
+  "reading": "litriçır",
+  "meanings": [
+   "edebiyat"
+  ],
+  "definition": "Written works of artistic value.",
+  "example": "She studies English literature at university."
+ },
+ "litter": {
+  "ipa": "/ˈlɪtə(r)/",
+  "reading": "litır",
+  "meanings": [
+   "çöp",
+   "etrafa çöp atmak"
+  ],
+  "definition": "Rubbish left lying in a public place.",
+  "example": "Please do not drop litter in the park."
+ },
+ "liver": {
+  "ipa": "/ˈlɪvə(r)/",
+  "reading": "livır",
+  "meanings": [
+   "karaciğer"
+  ],
+  "definition": "A large internal organ in humans and animals.",
+  "example": "The liver filters toxins from the blood."
+ },
+ "loaf": {
+  "ipa": "/ləʊf/",
+  "reading": "loof",
+  "meanings": [
+   "somun"
+  ],
+  "definition": "A shaped mass of baked bread.",
+  "example": "I want to buy a loaf of bread."
+ },
+ "loan": {
+  "ipa": "/ləʊn/",
+  "reading": "loon",
+  "meanings": [
+   "kredi",
+   "borç"
+  ],
+  "definition": "Money borrowed that must be repaid.",
+  "example": "He applied for a bank loan."
+ },
+ "lobster": {
+  "ipa": "/ˈlɒbstə(r)/",
+  "reading": "lobstır",
+  "meanings": [
+   "ıstakoz"
+  ],
+  "definition": "A large marine crustacean with claws.",
+  "example": "We had fresh lobster for dinner."
+ },
+ "lorry": {
+  "ipa": "/ˈlɒri/",
+  "reading": "lori",
+  "meanings": [
+   "kamyon"
+  ],
+  "definition": "A large heavy motor vehicle for transporting goods.",
+  "example": "The lorry delivered the goods on time."
+ },
+ "magnet": {
+  "ipa": "/ˈmæɡnət/",
+  "reading": "mğnit",
+  "meanings": [
+   "mıknatıs"
+  ],
+  "definition": "An object that attracts iron.",
+  "example": "Attach the note to the fridge with a magnet."
+ },
+ "magnifying glass": {
+  "ipa": "/ˈmæɡnɪfaɪɪŋ ɡlɑːs/",
+  "reading": "mègnifayın glas",
+  "meanings": [
+   "büyüteç"
+  ],
+  "definition": "A lens that makes things look larger.",
+  "example": "He used a magnifying glass to read the tiny print."
+ },
+ "maid": {
+  "ipa": "/meɪd/",
+  "reading": "meyd",
+  "meanings": [
+   "hizmetçi",
+   "oda görevlisi"
+  ],
+  "definition": "A female domestic servant.",
+  "example": "The hotel maid cleaned our room every morning."
+ },
+ "majority": {
+  "ipa": "/məˈdʒɒrəti/",
+  "reading": "macoriti",
+  "meanings": [
+   "çoğunluk"
+  ],
+  "definition": "The greater number or part of something.",
+  "example": "The majority of students passed the final exam."
+ },
+ "maniac": {
+  "ipa": "/ˈmæniæk/",
+  "reading": "meniæk",
+  "meanings": [
+   "manyak",
+   "çılgın kişi"
+  ],
+  "definition": "A person exhibiting extreme wild behavior.",
+  "example": "He drove down the narrow street like a maniac."
+ },
+ "manual": {
+  "ipa": "/ˈmænjuəl/",
+  "reading": "menyüal",
+  "meanings": [
+   "kullanım kılavuzu",
+   "elle yapılan"
+  ],
+  "definition": "Done or operated with the hands.",
+  "example": "She prefers manual work to sitting at a desk."
+ },
+ "margin": {
+  "ipa": "/ˈmɑːdʒɪn/",
+  "reading": "marcın",
+  "meanings": [
+   "kenar boşluğu",
+   "marj"
+  ],
+  "definition": "The edge or border of something.",
+  "example": "Please write your notes in the margin."
+ },
+ "marmalade": {
+  "ipa": "/ˈmɑːməleɪd/",
+  "reading": "marmaleyd",
+  "meanings": [
+   "marmelat"
+  ],
+  "definition": "A jam made from citrus fruits like oranges.",
+  "example": "I like to eat toast with orange marmalade for breakfast."
+ },
+ "massive": {
+  "ipa": "/ˈmæsɪv/",
+  "reading": "mesiv",
+  "meanings": [
+   "devasa",
+   "çok büyük"
+  ],
+  "definition": "Large and heavy or solid.",
+  "example": "They discovered a massive cave beneath the city."
+ },
+ "mat": {
+  "ipa": "/mæt/",
+  "reading": "met",
+  "meanings": [
+   "paspas",
+   "küçük kilim"
+  ],
+  "definition": "A small piece of material placed on a floor.",
+  "example": "Wipe your muddy shoes on the mat before entering."
+ },
+ "mathematics": {
+  "ipa": "/ˌmæθəˈmætɪks/",
+  "reading": "mesemetiks",
+  "meanings": [
+   "matematik"
+  ],
+  "definition": "The study of numbers, quantities, and shapes.",
+  "example": "Mathematics is her favourite subject at school."
+ },
+ "mattress": {
+  "ipa": "/ˈmætrəs/",
+  "reading": "metrıs",
+  "meanings": [
+   "yatak",
+   "şilte"
+  ],
+  "definition": "A large pad for sleeping on, placed on a bed.",
+  "example": "This new mattress is very firm and comfortable."
+ },
+ "maturity": {
+  "ipa": "/məˈtʃʊərəti/",
+  "reading": "maçuriti",
+  "meanings": [
+   "olgunluk"
+  ],
+  "definition": "The state of being fully grown or developed.",
+  "example": "He showed great maturity in handling the crisis."
+ },
+ "maximum": {
+  "ipa": "/ˈmæksɪməm/",
+  "reading": "meksimım",
+  "meanings": [
+   "maksimum",
+   "en yüksek"
+  ],
+  "definition": "As much or as large as possible.",
+  "example": "The speed limit on this road is a maximum of fifty miles per hour."
+ },
+ "meadow": {
+  "ipa": "/ˈmedəʊ/",
+  "reading": "medo",
+  "meanings": [
+   "çayır"
+  ],
+  "definition": "A piece of grassland used for pasture or hay.",
+  "example": "Cows were grazing peacefully in the green meadow."
+ },
+ "mechanic": {
+  "ipa": "/məˈkænɪk/",
+  "reading": "mekanik",
+  "meanings": [
+   "tamirci",
+   "teknisyen"
+  ],
+  "definition": "A person who repairs machines and vehicles.",
+  "example": "The mechanic fixed my car engine."
+ },
+ "merit": {
+  "ipa": "/ˈmɛrɪt/",
+  "reading": "merit",
+  "meanings": [
+   "değer",
+   "liyakat"
+  ],
+  "definition": "The quality of being particularly good.",
+  "example": "Her proposal has a lot of merit."
+ },
+ "might": {
+  "ipa": "/maɪt/",
+  "reading": "mait",
+  "meanings": [
+   "güç",
+   "kudret"
+  ],
+  "definition": "Expressing possibility or past permission.",
+  "example": "It might rain later today."
+ },
+ "mike": {
+  "ipa": "/maɪk/",
+  "reading": "maik",
+  "meanings": [
+   "mikrofon"
+  ],
+  "definition": "An instrument for converting sound into electrical signals.",
+  "example": "Please speak closer to the mike."
+ },
+ "mild": {
+  "ipa": "/maɪld/",
+  "reading": "maıld",
+  "meanings": [
+   "hafif",
+   "ılıman"
+  ],
+  "definition": "Gentle and not severe or harsh.",
+  "example": "We had a very mild winter."
+ },
+ "millet": {
+  "ipa": "/ˈmɪlɪt/",
+  "reading": "milit",
+  "meanings": [
+   "darı"
+  ],
+  "definition": "A cereal grain grown for food and fodder.",
+  "example": "Birds love to eat millet seeds."
+ },
+ "millionaire": {
+  "ipa": "/ˌmɪliəˈnɛə/",
+  "reading": "milyoner",
+  "meanings": [
+   "milyoner"
+  ],
+  "definition": "A person whose assets are worth a million dollars.",
+  "example": "He became a millionaire at age thirty."
+ },
+ "miracle": {
+  "ipa": "/ˈmɪrəkəl/",
+  "reading": "mirakıl",
+  "meanings": [
+   "mucize"
+  ],
+  "definition": "An extraordinary and welcome event.",
+  "example": "Her recovery was nothing short of a miracle."
+ },
+ "miser": {
+  "ipa": "/ˈmaɪzə/",
+  "reading": "maızır",
+  "meanings": [
+   "cimri"
+  ],
+  "definition": "A person who hoards wealth and spends as little as possible.",
+  "example": "The old miser never shared his money."
+ },
+ "miserable": {
+  "ipa": "/ˈmɪzərəbəl/",
+  "reading": "mizarabıl",
+  "meanings": [
+   "perişan",
+   "çok mutsuz"
+  ],
+  "definition": "Wretchedly unhappy or uncomfortable.",
+  "example": "He felt miserable after the bad news."
+ },
+ "misery": {
+  "ipa": "/ˈmɪzəri/",
+  "reading": "mizeri",
+  "meanings": [
+   "sefalet",
+   "büyük mutsuzluk"
+  ],
+  "definition": "A state of great physical or mental distress.",
+  "example": "Poverty often leads to misery."
+ },
+ "mislay": {
+  "ipa": "/mɪsˈleɪ/",
+  "reading": "mısley",
+  "meanings": [
+   "yanlış yere koymak"
+  ],
+  "definition": "To lose something temporarily by forgetting where it was put.",
+  "example": "I always mislay my reading glasses."
+ },
+ "mobile": {
+  "ipa": "/ˈməʊbaɪl/",
+  "reading": "mobayl",
+  "meanings": [
+   "hareketli",
+   "mobil"
+  ],
+  "definition": "Able to move or be moved freely.",
+  "example": "Most people use a mobile phone today."
+ },
+ "moisture": {
+  "ipa": "/ˈmɔɪstʃə/",
+  "reading": "moystçır",
+  "meanings": [
+   "nem"
+  ],
+  "definition": "Water or other liquid diffused in a small quantity.",
+  "example": "Plants need moisture to grow well."
+ },
+ "mole": {
+  "ipa": "/məʊl/",
+  "reading": "mol",
+  "meanings": [
+   "köstebek"
+  ],
+  "definition": "A small dark spot on human skin.",
+  "example": "She has a tiny mole on her cheek."
+ },
+ "mood": {
+  "ipa": "/muːd/",
+  "reading": "muud",
+  "meanings": [
+   "ruh hâli"
+  ],
+  "definition": "A temporary state of mind or feeling.",
+  "example": "She is in a good mood today."
+ },
+ "moral": {
+  "ipa": "/ˈmɒrəl/",
+  "reading": "moral",
+  "meanings": [
+   "ahlaki",
+   "ahlak"
+  ],
+  "definition": "Concerning right and wrong or good behavior.",
+  "example": "It is a complex moral question."
+ },
+ "morale": {
+  "ipa": "/məˈrɑːl/",
+  "reading": "moral",
+  "meanings": [
+   "moral",
+   "motivasyon"
+  ],
+  "definition": "The confidence and enthusiasm of a group.",
+  "example": "The team's morale is very high."
+ },
+ "mortgage": {
+  "ipa": "/ˈmɔːɡɪdʒ/",
+  "reading": "morgic",
+  "meanings": [
+   "konut kredisi",
+   "ipotek"
+  ],
+  "definition": "A legal loan to buy a house.",
+  "example": "They took out a mortgage to buy a home."
+ },
+ "mosquito": {
+  "ipa": "/məˈskiːtəʊ/",
+  "reading": "moskito",
+  "meanings": [
+   "sivrisinek"
+  ],
+  "definition": "A small flying insect that bites.",
+  "example": "A mosquito bit me last night."
+ },
+ "moss": {
+  "ipa": "/mɒs/",
+  "reading": "mos",
+  "meanings": [
+   "yosun"
+  ],
+  "definition": "Small green plants growing on damp surfaces.",
+  "example": "Moss grows on the north side of trees."
+ },
+ "motion": {
+  "ipa": "/ˈməʊʃn/",
+  "reading": "moşın",
+  "meanings": [
+   "hareket"
+  ],
+  "definition": "The action or process of moving.",
+  "example": "The motion of the ship made her sick."
+ },
+ "motive": {
+  "ipa": "/ˈməʊtɪv/",
+  "reading": "motiv",
+  "meanings": [
+   "güdü",
+   "neden"
+  ],
+  "definition": "A reason for doing something.",
+  "example": "The police are looking for a motive."
+ },
+ "mudguard": {
+  "ipa": "/ˈmʌdɡɑːd/",
+  "reading": "madgard",
+  "meanings": [
+   "çamurluk"
+  ],
+  "definition": "A curved guard over a bicycle or car wheel.",
+  "example": "The mudguard protects the bike from dirt."
+ },
+ "murmur": {
+  "ipa": "/ˈmɜːmə(r)/",
+  "reading": "mürmür",
+  "meanings": [
+   "mırıldanmak",
+   "fısıltılı konuşmak"
+  ],
+  "definition": "A soft, quiet voice or sound.",
+  "example": "I heard a murmur of voices outside."
+ },
+ "muscle": {
+  "ipa": "/ˈmʌsl/",
+  "reading": "masl",
+  "meanings": [
+   "kas"
+  ],
+  "definition": "Body tissue that can tighten and relax.",
+  "example": "He tore a muscle in his leg."
+ },
+ "muslim": {
+  "ipa": "/ˈmʊzlɪm/",
+  "reading": "muzlim",
+  "meanings": [
+   "Müslüman"
+  ],
+  "definition": "A follower of the religion of Islam.",
+  "example": "He is a devout Muslim."
+ },
+ "mustard": {
+  "ipa": "/ˈmʌstəd/",
+  "reading": "mastard",
+  "meanings": [
+   "hardal"
+  ],
+  "definition": "A yellow hot-tasting sauce made from seeds.",
+  "example": "Do you want mustard on your hot dog?"
+ },
+ "mute": {
+  "ipa": "/mjuːt/",
+  "reading": "myut",
+  "meanings": [
+   "sessiz",
+   "sesi kapalı"
+  ],
+  "definition": "Silent or unable to speak.",
+  "example": "Please mute your microphone during the meeting."
+ },
+ "mutter": {
+  "ipa": "/ˈmʌtə(r)/",
+  "reading": "matır",
+  "meanings": [
+   "söylenmek",
+   "mırıldanmak"
+  ],
+  "definition": "To say something quietly and unclearly.",
+  "example": "He began to mutter in anger."
+ },
+ "napkin": {
+  "ipa": "/ˈnæpkɪn/",
+  "reading": "nepkin",
+  "meanings": [
+   "peçete"
+  ],
+  "definition": "A piece of cloth or paper used at meals.",
+  "example": "He wiped his mouth with a napkin."
+ },
+ "narrate": {
+  "ipa": "/nəˈreɪt/",
+  "reading": "nerreyt",
+  "meanings": [
+   "anlatmak"
+  ],
+  "definition": "To tell a story or describe events.",
+  "example": "He will narrate the documentary."
+ },
+ "needless": {
+  "ipa": "/ˈniːdləs/",
+  "reading": "niydləs",
+  "meanings": [
+   "gereksiz"
+  ],
+  "definition": "Unnecessary or not needed.",
+  "example": "That was needless worry."
+ },
+ "network": {
+  "ipa": "/ˈnetwɜːk/",
+  "reading": "netvök",
+  "meanings": [
+   "ağ"
+  ],
+  "definition": "A connected system of people or things.",
+  "example": "The company has a global network."
+ },
+ "nightmare": {
+  "ipa": "/ˈnaɪtmeə(r)/",
+  "reading": "naytmer",
+  "meanings": [
+   "kâbus"
+  ],
+  "definition": "A very frightening or unpleasant dream.",
+  "example": "I had a terrible nightmare last night."
+ },
+ "nonsense": {
+  "ipa": "/ˈnɒnsns/",
+  "reading": "nonsens",
+  "meanings": [
+   "saçmalık",
+   "anlamsız şey"
+  ],
+  "definition": "Ideas or behavior that make no sense.",
+  "example": "Stop talking such nonsense."
+ },
+ "nylon": {
+  "ipa": "/ˈnaɪlɒn/",
+  "reading": "naylon",
+  "meanings": [
+   "naylon"
+  ],
+  "definition": "A strong synthetic artificial fabric.",
+  "example": "This jacket is made of nylon."
+ },
+ "oar": {
+  "ipa": "/ɔː(r)/",
+  "reading": "or",
+  "meanings": [
+   "kürek"
+  ],
+  "definition": "A long pole used to row a boat.",
+  "example": "He lost one oar in the river."
+ },
+ "oasis": {
+  "ipa": "/əʊˈeɪsɪs/",
+  "reading": "ōeyzis",
+  "meanings": [
+   "vaha"
+  ],
+  "definition": "A fertile spot in a desert with water.",
+  "example": "The travelers found a green oasis."
+ },
+ "odd": {
+  "ipa": "/ɒd/",
+  "reading": "od",
+  "meanings": [
+   "tuhaf",
+   "tek"
+  ],
+  "definition": "Strange or unusual.",
+  "example": "That is a very odd coincidence."
+ },
+ "okay": {
+  "ipa": "/ˌəʊˈkeɪ/",
+  "reading": "ōkey",
+  "meanings": [
+   "tamam",
+   "uygun"
+  ],
+  "definition": "Satisfactory or acceptable.",
+  "example": "Everything will be okay."
+ },
+ "old-fashioned": {
+  "ipa": "/ˌəʊld ˈfæʃnd/",
+  "reading": "ōld feşnd",
+  "meanings": [
+   "eski moda"
+  ],
+  "definition": "No longer modern or fashionable.",
+  "example": "She loves old-fashioned furniture."
+ },
+ "omelette": {
+  "ipa": "/ˈɒmlət/",
+  "reading": "omlit",
+  "meanings": [
+   "omlet"
+  ],
+  "definition": "A dish made from beaten eggs cooked in a pan.",
+  "example": "She made a cheese omelette for breakfast."
+ },
+ "oral": {
+  "ipa": "/ˈɔːrəl/",
+  "reading": "orul",
+  "meanings": [
+   "sözlü",
+   "ağızla ilgili"
+  ],
+  "definition": "Spoken rather than written.",
+  "example": "The teacher gave us an oral exam."
+ },
+ "orchard": {
+  "ipa": "/ˈɔːtʃəd/",
+  "reading": "orçad",
+  "meanings": [
+   "meyve bahçesi"
+  ],
+  "definition": "A piece of land planted with fruit trees.",
+  "example": "They picked fresh apples from the orchard."
+ },
+ "oval": {
+  "ipa": "/ˈəʊvl/",
+  "reading": "ovul",
+  "meanings": [
+   "oval"
+  ],
+  "definition": "Having the shape of an egg.",
+  "example": "The mirror has a nice oval shape."
+ },
+ "overdo": {
+  "ipa": "/ˌəʊvəˈduː/",
+  "reading": "ovudü",
+  "meanings": [
+   "aşırıya kaçmak"
+  ],
+  "definition": "To do something to an excessive degree.",
+  "example": "Do not overdo your exercise routine."
+ },
+ "overdue": {
+  "ipa": "/ˌəʊvəˈdjuː/",
+  "reading": "ovudyü",
+  "meanings": [
+   "gecikmiş",
+   "süresi geçmiş"
+  ],
+  "definition": "Not paid or arrived when expected.",
+  "example": "This library book is overdue by two weeks."
+ },
+ "overtake": {
+  "ipa": "/ˌəʊvəˈteɪk/",
+  "reading": "ovuteyk",
+  "meanings": [
+   "sollamak"
+  ],
+  "definition": "To catch up with and pass something.",
+  "example": "Never overtake another car on a sharp bend."
+ },
+ "overtime": {
+  "ipa": "/ˈəʊvətaɪm/",
+  "reading": "ovutaym",
+  "meanings": [
+   "fazla mesai"
+  ],
+  "definition": "Time spent working in addition to normal hours.",
+  "example": "He had to work overtime to finish the report."
+ },
+ "overwork": {
+  "ipa": "/ˌəʊvəˈwɜːk/",
+  "reading": "ovuwörk",
+  "meanings": [
+   "aşırı çalışmak"
+  ],
+  "definition": "To work too hard or cause someone to work too hard.",
+  "example": "You will get sick if you overwork yourself."
+ },
+ "owl": {
+  "ipa": "/aʊl/",
+  "reading": "avl",
+  "meanings": [
+   "baykuş"
+  ],
+  "definition": "A nocturnal bird of prey with large eyes.",
+  "example": "We heard an owl hooting in the night."
+ },
+ "oxygen": {
+  "ipa": "/ˈɒksɪdʒən/",
+  "reading": "oksicın",
+  "meanings": [
+   "oksijen"
+  ],
+  "definition": "A gas that living things need to breathe.",
+  "example": "Plants produce oxygen during the day."
+ },
+ "oyster": {
+  "ipa": "/ˈɔɪstə(r)/",
+  "reading": "oystır",
+  "meanings": [
+   "istiridye"
+  ],
+  "definition": "A shellfish that can produce pearls.",
+  "example": "He found a small pearl inside the oyster."
+ },
+ "packed": {
+  "ipa": "/pækt/",
+  "reading": "pakt",
+  "meanings": [
+   "tıklım tıklım",
+   "dolu"
+  ],
+  "definition": "Filled very tightly with things or people.",
+  "example": "The train was completely packed this morning."
+ },
+ "palm": {
+  "ipa": "/pɑːm/",
+  "reading": "pam",
+  "meanings": [
+   "avuç içi"
+  ],
+  "definition": "The inner surface of the hand between the fingers and wrist.",
+  "example": "She held the coin firmly in her palm."
+ },
+ "panel": {
+  "ipa": "/ˈpænl/",
+  "reading": "penıl",
+  "meanings": [
+   "panel",
+   "kurul"
+  ],
+  "definition": "A flat board or a group of experts.",
+  "example": "A panel of judges will review the artwork."
+ },
+ "pants": {
+  "ipa": "/pænts/",
+  "reading": "pents",
+  "meanings": [
+   "pantolon"
+  ],
+  "definition": "An outer garment covering each leg separately.",
+  "example": "He wore a blue shirt and black pants."
+ },
+ "parachute": {
+  "ipa": "/ˈpærəʃuːt/",
+  "reading": "parafut",
+  "meanings": [
+   "paraşüt"
+  ],
+  "definition": "Cloth device used to fall safely from aircraft.",
+  "example": "The pilot opened his parachute just in time."
+ },
+ "parade": {
+  "ipa": "/pəˈreɪd/",
+  "reading": "pareyd",
+  "meanings": [
+   "geçit töreni"
+  ],
+  "definition": "Public procession celebrating a special day.",
+  "example": "They watched the colorful parade in the street."
+ },
+ "passive": {
+  "ipa": "/ˈpæsɪv/",
+  "reading": "pesiv",
+  "meanings": [
+   "pasif",
+   "edilgen"
+  ],
+  "definition": "Accepting what happens without active response.",
+  "example": "She played a passive role in the discussion."
+ },
+ "paste": {
+  "ipa": "/peɪst/",
+  "reading": "peyst",
+  "meanings": [
+   "yapıştırmak",
+   "macun"
+  ],
+  "definition": "A thick, soft, moist mixture.",
+  "example": "Use a little paste to fix the broken toy."
+ },
+ "pastime": {
+  "ipa": "/ˈpɑːstaɪm/",
+  "reading": "pastaym",
+  "meanings": [
+   "boş zaman etkinliği",
+   "hobi"
+  ],
+  "definition": "An activity done for enjoyment.",
+  "example": "Reading is her favorite pastime on weekends."
+ },
+ "path": {
+  "ipa": "/pɑːθ/",
+  "reading": "pas",
+  "meanings": [
+   "patika",
+   "yol"
+  ],
+  "definition": "A track created for walking.",
+  "example": "They followed the narrow path through the woods."
+ },
+ "patrol": {
+  "ipa": "/pəˈtrəʊl/",
+  "reading": "patrol",
+  "meanings": [
+   "devriye",
+   "devriye gezmek"
+  ],
+  "definition": "To monitor an area for security.",
+  "example": "Police officers patrol the neighborhood every night."
+ },
+ "patron": {
+  "ipa": "/ˈpeɪtrən/",
+  "reading": "peytron",
+  "meanings": [
+   "müşteri",
+   "destekçi"
+  ],
+  "definition": "A regular customer or supporter of an artist.",
+  "example": "He is a loyal patron of this local coffee shop."
+ },
+ "pause": {
+  "ipa": "/pɔːz/",
+  "reading": "poz",
+  "meanings": [
+   "duraklamak",
+   "ara vermek"
+  ],
+  "definition": "A temporary stop in action or speech.",
+  "example": "She took a brief pause before answering."
+ },
+ "paw": {
+  "ipa": "/pɔː/",
+  "reading": "po",
+  "meanings": [
+   "pati"
+  ],
+  "definition": "The foot of an animal with claws.",
+  "example": "The dog hurt its front paw while running."
+ },
+ "pea": {
+  "ipa": "/piː/",
+  "reading": "pi",
+  "meanings": [
+   "bezelye"
+  ],
+  "definition": "A small round green vegetable seed.",
+  "example": "He pushed every green pea to the side."
+ },
+ "peach": {
+  "ipa": "/piːtʃ/",
+  "reading": "piç",
+  "meanings": [
+   "şeftali"
+  ],
+  "definition": "A round juicy fruit with sweet yellow flesh.",
+  "example": "She bit into a sweet, ripe peach."
+ },
+ "peak": {
+  "ipa": "/piːk/",
+  "reading": "pik",
+  "meanings": [
+   "zirve"
+  ],
+  "definition": "The pointed top of a mountain.",
+  "example": "They reached the snowy peak by noon."
+ },
+ "peanut": {
+  "ipa": "/ˈpiːnʌt/",
+  "reading": "pinat",
+  "meanings": [
+   "yer fıstığı"
+  ],
+  "definition": "An edible nut growing in underground pods.",
+  "example": "He bought a bag of roasted peanut snacks."
+ },
+ "pearl": {
+  "ipa": "/pɜːl/",
+  "reading": "pörl",
+  "meanings": [
+   "inci"
+  ],
+  "definition": "A smooth hard gem formed inside oysters.",
+  "example": "She wore a delicate pearl necklace."
+ },
+ "peasant": {
+  "ipa": "/ˈpeznt/",
+  "reading": "pezınt",
+  "meanings": [
+   "köylü",
+   "çiftçi"
+  ],
+  "definition": "A poor smallholder or agricultural laborer.",
+  "example": "The medieval peasant worked long hours."
+ },
+ "pedal": {
+  "ipa": "/ˈpedl/",
+  "reading": "pedal",
+  "meanings": [
+   "pedal"
+  ],
+  "definition": "A foot-operated lever for vehicles or machines.",
+  "example": "Press the brake pedal to slow down."
+ },
+ "pedestrian": {
+  "ipa": "/pəˈdestriən/",
+  "reading": "pıdestriyan",
+  "meanings": [
+   "yaya"
+  ],
+  "definition": "A person walking rather than travelling in a vehicle.",
+  "example": "The pedestrian crossed the busy street safely."
+ },
+ "penknife": {
+  "ipa": "/ˈpennaɪf/",
+  "reading": "pennayf",
+  "meanings": [
+   "çakı"
+  ],
+  "definition": "A small pocket knife with one or more blades.",
+  "example": "He used his penknife to sharpen the wooden stick."
+ },
+ "pension": {
+  "ipa": "/ˈpenʃn/",
+  "reading": "penşın",
+  "meanings": [
+   "emekli maaşı"
+  ],
+  "definition": "Regular payment made to someone during retirement.",
+  "example": "My grandfather lives on his pension now."
+ },
+ "perfume": {
+  "ipa": "/ˈpɜːfjuːm/",
+  "reading": "pörfyum",
+  "meanings": [
+   "parfüm"
+  ],
+  "definition": "A fragrant liquid sprayed on the body.",
+  "example": "She bought a new bottle of floral perfume."
+ },
+ "peril": {
+  "ipa": "/ˈperəl/",
+  "reading": "perıl",
+  "meanings": [
+   "büyük tehlike"
+  ],
+  "definition": "Serious and immediate danger.",
+  "example": "The climbers faced great peril on the mountain."
+ },
+ "pessimist": {
+  "ipa": "/ˈpesɪmɪst/",
+  "reading": "pesimist",
+  "meanings": [
+   "kötümser"
+  ],
+  "definition": "A person who tends to see the worst aspect.",
+  "example": "The pessimist expects things to go wrong."
+ },
+ "petrol station": {
+  "ipa": "/ˈpetrəl ˈsteɪʃn/",
+  "reading": "petrol steyşın",
+  "meanings": [
+   "benzin istasyonu"
+  ],
+  "definition": "A retail place that sells fuel for motor vehicles.",
+  "example": "We need to stop at the petrol station soon."
+ },
+ "philosophy": {
+  "ipa": "/fɪˈlɒsəfi/",
+  "reading": "filosofi",
+  "meanings": [
+   "felsefe"
+  ],
+  "definition": "The study of the fundamental nature of knowledge.",
+  "example": "She is reading a book on ancient philosophy."
+ },
+ "physical": {
+  "ipa": "/ˈfɪzɪkl/",
+  "reading": "fizikıl",
+  "meanings": [
+   "fiziksel"
+  ],
+  "definition": "Relating to the body rather than the mind.",
+  "example": "Regular physical exercise is good for health."
+ },
+ "picket": {
+  "ipa": "/ˈpɪkɪt/",
+  "reading": "pikit",
+  "meanings": [
+   "protestocu grup",
+   "grev gözcüsü"
+  ],
+  "definition": "A protester outside a workplace or event.",
+  "example": "Workers formed a picket line outside the factory."
+ },
+ "pickle": {
+  "ipa": "/ˈpɪkl/",
+  "reading": "pikl",
+  "meanings": [
+   "turşu"
+  ],
+  "definition": "A vegetable preserved in vinegar or brine.",
+  "example": "I like to add a pickle to my burger."
+ },
+ "pillow": {
+  "ipa": "/ˈpɪləʊ/",
+  "reading": "pilo",
+  "meanings": [
+   "yastık"
+  ],
+  "definition": "A cushion used to support the head in bed.",
+  "example": "She rested her head on the soft pillow."
+ },
+ "pillowcase": {
+  "ipa": "/ˈpɪləʊkeɪs/",
+  "reading": "pilokeys",
+  "meanings": [
+   "yastık kılıfı"
+  ],
+  "definition": "A removable cover for a pillow.",
+  "example": "Wash the pillowcase in hot water."
+ },
+ "pincers": {
+  "ipa": "/ˈpɪnsəz/",
+  "reading": "pinsız",
+  "meanings": [
+   "kerpeten",
+   "kıskaç"
+  ],
+  "definition": "A tool made of two hinged arms for gripping.",
+  "example": "He used the pincers to pull out the nail."
+ },
+ "pity": {
+  "ipa": "/ˈpɪti/",
+  "reading": "piti",
+  "meanings": [
+   "acıma",
+   "merhamet"
+  ],
+  "definition": "A feeling of sorrow for another's suffering.",
+  "example": "It is a great pity that you missed the party."
+ },
+ "plastic": {
+  "ipa": "/ˈplæstɪk/",
+  "reading": "plastik",
+  "meanings": [
+   "plastik"
+  ],
+  "definition": "A synthetic material made from polymers.",
+  "example": "Try to avoid using single-use plastic bags."
+ },
+ "platform": {
+  "ipa": "/ˈplætfɔːm/",
+  "reading": "platfom",
+  "meanings": [
+   "peron",
+   "platform"
+  ],
+  "definition": "A raised flooring or station train area.",
+  "example": "The train for London will depart from platform three."
+ },
+ "playground": {
+  "ipa": "/ˈpleɪɡraʊnd/",
+  "reading": "pleygraund",
+  "meanings": [
+   "oyun alanı"
+  ],
+  "definition": "An outdoor area for children to play.",
+  "example": "The children are running around the school playground."
+ },
+ "plum": {
+  "ipa": "/plʌm/",
+  "reading": "plam",
+  "meanings": [
+   "erik"
+  ],
+  "definition": "A sweet juicy fruit with a stone.",
+  "example": "She picked a ripe plum from the tree."
+ },
+ "plumber": {
+  "ipa": "/ˈplʌmə(r)/",
+  "reading": "plamur",
+  "meanings": [
+   "tesisatçı"
+  ],
+  "definition": "A person who installs and repairs water pipes.",
+  "example": "We need to call a plumber to fix the leak."
+ },
+ "pole": {
+  "ipa": "/pəʊl/",
+  "reading": "poul",
+  "meanings": [
+   "direk",
+   "kutup"
+  ],
+  "definition": "A long slender piece of wood or metal.",
+  "example": "A flag was flying high on the metal pole."
  }
 }
