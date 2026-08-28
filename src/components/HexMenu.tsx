@@ -84,11 +84,14 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-wave:nth-child(2) { opacity: .55; animation-duration: 18s; }
         .een-wave:nth-child(3) { opacity: .3; animation-duration: 22s; }
         .een-link {
-          stroke: var(--gold);
-          stroke-width: 2;
-          opacity: .72;
-          stroke-dasharray: 10 8;
-          animation: een-energy-flow 5s linear infinite;
+          stroke: url(#een-link-grad);
+          stroke-width: 5;
+          stroke-linecap: round;
+          opacity: .9;
+        }
+        .een-joint {
+          fill: #fff7df;
+          filter: drop-shadow(0 0 6px var(--gold-bright)) drop-shadow(0 0 14px var(--gold));
         }
         .een-dot {
           fill: var(--gold-bright);
@@ -98,28 +101,36 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           position: absolute;
           display: grid;
           place-items: center;
-          width: clamp(78px, 21vw, 140px);
-          aspect-ratio: 1.12;
-          padding: 6px;
+          width: clamp(84px, 22vw, 148px);
+          aspect-ratio: 1;
+          padding: 12px;
           border: 0;
+          border-radius: 50%;
           transform: translate(-50%, -50%);
-          clip-path: polygon(25% 2%, 75% 2%, 100% 50%, 75% 98%, 25% 98%, 0 50%);
-          background: var(--gold);
+          background:
+            radial-gradient(circle at 32% 24%, #fff2c4 0%, #ffd66b 18%, #f4b82f 42%, #b87f14 72%, #8a5c0c 100%);
           color: #f7f7f7;
           font: inherit;
-          font-size: clamp(0.66rem, 2.8vw, 0.9rem);
+          font-size: clamp(0.62rem, 2.6vw, 0.86rem);
           cursor: pointer;
-          filter: drop-shadow(0 0 12px rgba(244,184,47,.38));
+          box-shadow:
+            0 0 14px rgba(244,184,47,.55),
+            0 0 34px rgba(244,184,47,.28),
+            inset 0 0 6px rgba(255,244,200,.9);
           animation: een-breathe 4.8s ease-in-out infinite;
         }
         .een-hex::before {
           content: "";
           position: absolute;
-          inset: 3px;
-          clip-path: inherit;
-          background: #050403;
-          z-index: -1;
+          inset: clamp(5px, 1.4vw, 8px);
+          border-radius: 50%;
+          background: radial-gradient(circle at 50% 38%, #16120a 0%, #050403 68%);
+          box-shadow:
+            inset 0 0 10px rgba(244,184,47,.35),
+            0 0 4px rgba(255,214,107,.85);
+          z-index: 0;
         }
+        .een-hex > span { position: relative; z-index: 1; }
         .een-hex--tight { font-size: clamp(0.54rem, 2.35vw, 0.78rem); letter-spacing: -0.02em; }
         .een-hex span {
           max-width: 100%;
@@ -128,8 +139,10 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           line-height: 1.15;
         }
         .een-hex:hover {
-          background: var(--gold-bright);
-          filter: drop-shadow(0 0 22px rgba(244,184,47,.75));
+          box-shadow:
+            0 0 20px rgba(255,214,107,.8),
+            0 0 48px rgba(244,184,47,.45),
+            inset 0 0 8px rgba(255,244,200,1);
         }
         .een-hex:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
 
@@ -180,19 +193,35 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         </svg>
 
         <svg className="een-lines" viewBox="0 0 760 920" preserveAspectRatio="none" aria-hidden="true">
-          {links.map(([x, y], index) => (
-            <g key={`${x}-${y}`}>
-              <line className="een-link" x1="380" y1="460" x2={x} y2={y} />
-              <circle className="een-dot" r="5">
-                <animateMotion
-                  dur={`${4.8 + (index % 5) * 0.35}s`}
-                  begin={`-${index * 0.45}s`}
-                  repeatCount="indefinite"
-                  path={`M380 460 L${x} ${y}`}
-                />
-              </circle>
-            </g>
-          ))}
+          <defs>
+            <linearGradient id="een-link-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="920">
+              <stop offset="0" stopColor="#ffd66b" />
+              <stop offset="1" stopColor="#b87f14" />
+            </linearGradient>
+          </defs>
+          {links.map(([x, y], index) => {
+            // Bright joints sit where the line meets each circle's rim.
+            const dx = x - 380, dy = y - 460;
+            const len = Math.hypot(dx, dy);
+            const cR = 108, nR = 62; // approx center / node radii in viewBox units
+            const jc: [number, number] = [380 + (dx / len) * cR, 460 + (dy / len) * cR];
+            const jn: [number, number] = [x - (dx / len) * nR, y - (dy / len) * nR];
+            return (
+              <g key={`${x}-${y}`}>
+                <line className="een-link" x1="380" y1="460" x2={x} y2={y} />
+                <circle className="een-joint" cx={jc[0]} cy={jc[1]} r="6" />
+                <circle className="een-joint" cx={jn[0]} cy={jn[1]} r="5" />
+                <circle className="een-dot" r="5">
+                  <animateMotion
+                    dur={`${4.8 + (index % 5) * 0.35}s`}
+                    begin={`-${index * 0.45}s`}
+                    repeatCount="indefinite"
+                    path={`M380 460 L${x} ${y}`}
+                  />
+                </circle>
+              </g>
+            );
+          })}
         </svg>
 
         <button
