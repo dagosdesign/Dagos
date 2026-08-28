@@ -83,6 +83,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         }
         .een-wave:nth-child(2) { opacity: .55; animation-duration: 18s; }
         .een-wave:nth-child(3) { opacity: .3; animation-duration: 22s; }
+        .een-wave:nth-child(4) { opacity: .18; animation-duration: 26s; }
         .een-link {
           stroke: url(#een-link-grad);
           stroke-width: 6;
@@ -204,6 +205,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           <path className="een-wave" d="M-30 80 C150 0 250 155 405 82 S650 10 810 100" />
           <path className="een-wave" d="M-40 105 C130 25 270 180 415 105 S650 40 800 125" />
           <path className="een-wave" d="M-30 825 C140 740 270 900 410 820 S650 760 805 850" />
+          <path className="een-wave" d="M-40 852 C130 770 270 925 415 848 S650 788 800 872" />
         </svg>
 
         <svg className="een-lines" viewBox="0 0 760 920" preserveAspectRatio="none" aria-hidden="true">
