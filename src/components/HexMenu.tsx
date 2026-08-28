@@ -12,13 +12,13 @@ interface HexMenuProps {
 // Satellite node centers as fractions of the field (also drives the SVG link endpoints
 // so lines always connect to hex centers). Order matches `topics` / een-n1..n12 (saat düzeni).
 const NODES: [number, number][] = [
-  [0.50, 0.12],  // LGS (saat 12)
+  [0.50, 0.145],  // LGS (saat 12)
   [0.735, 0.21], // YÖK-DİL
   [0.855, 0.355], // YDS
   [0.88, 0.51],  // ADJECTIVES
   [0.855, 0.665], // IRREGULAR VERBS
   [0.735, 0.81], // PHRASAL VERBS
-  [0.50, 0.90],  // ADVERBS (saat 6)
+  [0.50, 0.875],  // ADVERBS (saat 6)
   [0.265, 0.81], // NOUNS
   [0.145, 0.665], // GRAMMAR
   [0.12, 0.51],  // CONNECTORS
@@ -108,7 +108,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           border-radius: 50%;
           transform: translate(-50%, -50%);
           background:
-            radial-gradient(circle at 32% 24%, #fff2c4 0%, #ffd66b 18%, #f4b82f 42%, #b87f14 72%, #8a5c0c 100%);
+            linear-gradient(135deg, #fff0b8 0%, #ffd66b 22%, #f2a900 55%, #e08e00 78%, #9a6605 100%);
           color: #f7f7f7;
           font: inherit;
           font-size: clamp(0.62rem, 2.6vw, 0.86rem);
@@ -122,7 +122,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-hex::before {
           content: "";
           position: absolute;
-          inset: clamp(5px, 1.4vw, 8px);
+          inset: clamp(3px, 0.8vw, 4.5px);
           border-radius: 50%;
           background: radial-gradient(circle at 50% 38%, #16120a 0%, #050403 68%);
           box-shadow:
@@ -155,13 +155,13 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); }
         .een-center strong { color: var(--gold); font-weight: 500; }
 
-        .een-n1  { left: 50%;   top: 12%;   animation-delay: -.6s; }
+        .een-n1  { left: 50%;   top: 14.5%;   animation-delay: -.6s; }
         .een-n2  { left: 73.5%; top: 21%; animation-delay: -1.5s; }
         .een-n3  { left: 85.5%; top: 35.5%;   animation-delay: -2.2s; }
         .een-n4  { left: 88%;   top: 51%;   animation-delay: -.9s; }
         .een-n5  { left: 85.5%; top: 66.5%;   animation-delay: -2.8s; }
         .een-n6  { left: 73.5%; top: 81%; animation-delay: -1.8s; }
-        .een-n7  { left: 50%;   top: 90%;   animation-delay: -3.4s; }
+        .een-n7  { left: 50%;   top: 87.5%;   animation-delay: -3.4s; }
         .een-n8  { left: 26.5%; top: 81%; animation-delay: -2.5s; }
         .een-n9  { left: 14.5%; top: 66.5%;   animation-delay: -1.1s; }
         .een-n10 { left: 12%;   top: 51%;   animation-delay: -3s; }
