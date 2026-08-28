@@ -8,8 +8,8 @@ interface BottomNavProps {
   onSelect: (item: NavItem) => void;
 }
 
-const GOLD = '#e3b553';
-const GOLD_BRIGHT = '#ffd978';
+const GOLD = '#f5a516';
+const GOLD_BRIGHT = '#ffce4f';
 const spring = { type: 'spring' as const, damping: 16, stiffness: 280 };
 
 export default function BottomNav({ active, onSelect }: BottomNavProps) {
@@ -23,8 +23,8 @@ export default function BottomNav({ active, onSelect }: BottomNavProps) {
         className="mx-auto max-w-sm rounded-full p-px pointer-events-auto"
         style={{
           background:
-            'linear-gradient(180deg, rgba(227,181,83,0.45), rgba(227,181,83,0.08) 40%, rgba(227,181,83,0.25))',
-          boxShadow: '0 14px 34px rgba(0,0,0,0.65), 0 2px 10px rgba(227,181,83,0.07)',
+            'linear-gradient(180deg, rgba(245,165,22,0.45), rgba(245,165,22,0.08) 40%, rgba(245,165,22,0.25))',
+          boxShadow: '0 14px 34px rgba(0,0,0,0.65), 0 2px 10px rgba(245,165,22,0.07)',
         }}
       >
         <div
@@ -42,7 +42,7 @@ export default function BottomNav({ active, onSelect }: BottomNavProps) {
             className="absolute inset-x-8 top-0 h-px"
             style={{
               background:
-                'linear-gradient(90deg, transparent, rgba(255,217,120,0.55), transparent)',
+                'linear-gradient(90deg, transparent, rgba(255,206,79,0.55), transparent)',
             }}
           />
 
@@ -72,7 +72,7 @@ function SideTab({
       onClick={onClick}
       aria-label={label}
       aria-current={active ? 'page' : undefined}
-      className="relative flex flex-1 items-center justify-center h-full cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#e3b553]/60 rounded-full"
+      className="relative flex flex-1 items-center justify-center h-full cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f5a516]/60 rounded-full"
     >
       {/* Sliding golden halo shared between tabs */}
       {active && (
@@ -82,8 +82,8 @@ function SideTab({
           className="absolute w-[74px] h-[46px] rounded-full"
           style={{
             background:
-              'radial-gradient(60% 70% at 50% 45%, rgba(227,181,83,0.16), transparent 75%)',
-            border: '1px solid rgba(227,181,83,0.22)',
+              'radial-gradient(60% 70% at 50% 45%, rgba(245,165,22,0.16), transparent 75%)',
+            border: '1px solid rgba(245,165,22,0.22)',
           }}
         />
       )}
@@ -97,7 +97,7 @@ function SideTab({
           className="w-[21px] h-[21px] transition-colors duration-300"
           strokeWidth={active ? 2.1 : 1.6}
           color={active ? GOLD_BRIGHT : 'rgba(255,255,255,0.42)'}
-          style={active ? { filter: 'drop-shadow(0 0 6px rgba(255,217,120,0.7))' } : undefined}
+          style={active ? { filter: 'drop-shadow(0 0 6px rgba(255,206,79,0.7))' } : undefined}
         />
         <span
           className="text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
@@ -117,7 +117,7 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
       onClick={onClick}
       aria-label="AI LEX"
       aria-current={active ? 'page' : undefined}
-      className="relative flex flex-col items-center justify-center cursor-pointer -mt-9 outline-none focus-visible:ring-2 focus-visible:ring-[#e3b553]/60 rounded-full"
+      className="relative flex flex-col items-center justify-center cursor-pointer -mt-9 outline-none focus-visible:ring-2 focus-visible:ring-[#f5a516]/60 rounded-full"
     >
       <motion.div
         animate={{ y: active ? -2 : 0, scale: active ? 1.05 : 1 }}
@@ -130,8 +130,8 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
           aria-hidden
           className="absolute -inset-[2px] rounded-full"
           style={{
-            background: `conic-gradient(from 0deg, #a8863d, #57451e 30%, ${GOLD} 52%, #57451e 75%, #a8863d)`,
-            filter: active ? 'drop-shadow(0 0 2px rgba(227,181,83,0.07))' : 'none',
+            background: `conic-gradient(from 0deg, #c68a12, #5f4506 30%, ${GOLD} 52%, #5f4506 75%, #c68a12)`,
+            filter: active ? 'drop-shadow(0 0 2px rgba(245,165,22,0.07))' : 'none',
           }}
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
@@ -140,8 +140,8 @@ function AiButton({ active, onClick }: { active: boolean; onClick: () => void })
         <span
           className="absolute inset-[2.5px] rounded-full flex items-center justify-center"
           style={{
-            background: 'radial-gradient(circle at 50% 30%, #2a251b, #0a0a0b 75%)',
-            boxShadow: 'inset 0 1px 0 rgba(255,217,120,0.18), inset 0 -6px 14px rgba(0,0,0,0.6)',
+            background: 'radial-gradient(circle at 50% 30%, #2a2012, #0a0a0b 75%)',
+            boxShadow: 'inset 0 1px 0 rgba(255,206,79,0.18), inset 0 -6px 14px rgba(0,0,0,0.6)',
           }}
         >
           <Sparkles

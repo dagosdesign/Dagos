@@ -102,7 +102,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           position: absolute;
           display: grid;
           place-items: center;
-          width: clamp(84px, 22vw, 148px);
+          width: clamp(74px, 19.5vw, 130px);
           aspect-ratio: 1;
           padding: 12px;
           border: 0;
@@ -204,7 +204,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
             // Bright joints sit where the line meets each circle's rim.
             const dx = x - 380, dy = y - 460;
             const len = Math.hypot(dx, dy);
-            const cR = 108, nR = 62; // approx center / node radii in viewBox units
+            const cR = 108, nR = 55; // approx center / node radii in viewBox units
             const jc: [number, number] = [380 + (dx / len) * cR, 460 + (dy / len) * cR];
             const jn: [number, number] = [x - (dx / len) * nR, y - (dy / len) * nR];
             return (
