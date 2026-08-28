@@ -189,8 +189,8 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           50%     { transform: translate(-50%, calc(-50% + 5px)) scale(1.015); }
         }
         @keyframes een-center-pulse {
-          0%,100% { transform: translate(-50%,-50%) scale(.99); filter: drop-shadow(0 0 13px rgba(244,184,47,.4)); }
-          50%     { transform: translate(-50%,-50%) scale(1.02); filter: drop-shadow(0 0 25px rgba(244,184,47,.68)); }
+          0%,100% { transform: translate(-50%,-50%); filter: drop-shadow(0 0 13px rgba(232,147,12,.4)); }
+          50%     { transform: translate(-50%,-50%); filter: drop-shadow(0 0 28px rgba(232,147,12,.7)); }
         }
         @media (prefers-reduced-motion: reduce) {
           .een-hex { animation: none; transform: translate(-50%, -50%); }
