@@ -855,7 +855,37 @@ function MatchingMode({ pool, recordQuizXp, onExit, onRestart }: {
 // Renders text with every occurrence of the target word (plus simple suffixes) in gold.
 function Highlighted({ text, word, forms }: { text: string; word: string; forms?: string[] }) {
   const esc = escapeRegExp(word);
-  const base = word.includes(' ') ? esc : `\\b${esc}(?:s|es|ed|d|ing)?\\b`;
+  // Single words match simple suffixes; multi-word phrases match with their verb
+  // conjugated: "be" phrases accept am/is/are/was/were/been/being (and contractions),
+  // other phrasal verbs accept an inflected first verb ("calls off", "making up").
+  const IRREGULAR: Record<string, string[]> = {
+    break: ['broke', 'broken'], take: ['took', 'taken'], give: ['gave', 'given'],
+    get: ['got', 'gotten'], go: ['went', 'gone'], come: ['came'], run: ['ran'],
+    fall: ['fell', 'fallen'], bring: ['brought'], catch: ['caught'], keep: ['kept'],
+    make: ['made'], pay: ['paid'], show: ['shown'], speak: ['spoke', 'spoken'],
+    stand: ['stood'], tear: ['tore', 'torn'], throw: ['threw', 'thrown'],
+    wear: ['wore', 'worn'], blow: ['blew', 'blown'], grow: ['grew', 'grown'],
+    hold: ['held'], hang: ['hung'], sit: ['sat'], see: ['saw', 'seen'],
+    do: ['did', 'done'], write: ['wrote', 'written'], find: ['found'],
+    think: ['thought'], leave: ['left'], stick: ['stuck'],
+  };
+  const inflected = (t: string) => {
+    const e = escapeRegExp(t);
+    const noE = t.endsWith('e') ? escapeRegExp(t.slice(0, -1)) : null;
+    const noY = t.endsWith('y') ? escapeRegExp(t.slice(0, -1)) : null;
+    const irr = (IRREGULAR[t.toLowerCase()] ?? []).map(escapeRegExp);
+    return `(?:${e}(?:s|es|ed|d|ing)?${noE ? `|${noE}(?:ing|ed)` : ''}${noY ? `|${noY}(?:ies|ied)` : ''}${irr.length ? `|${irr.join('|')}` : ''})`;
+  };
+  let base: string;
+  if (!word.includes(' ')) {
+    base = `\\b${esc}(?:s|es|ed|d|ing)?\\b`;
+  } else {
+    const tokens = word.split(/\s+/);
+    const rest = tokens.slice(1).map(escapeRegExp).join('\\s+');
+    base = tokens[0].toLowerCase() === 'be'
+      ? `(?:\\b(?:be|am|is|are|was|were|been|being)|'m|'re|'s)\\s+${rest}\\b`
+      : `\\b${inflected(tokens[0])}\\s+${rest}\\b`;
+  }
   // Irregular verb forms ("Broke", "Was / Were"...) are highlighted as exact words too.
   const extras = (forms ?? [])
     .flatMap(f => f.split('/').map(x => x.trim()))
@@ -893,7 +923,7 @@ let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc5_${kind}_${card.id}`;
+  const cacheKey = `lex_pc6_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;

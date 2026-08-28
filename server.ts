@@ -275,6 +275,29 @@ app.post("/api/practice-content", async (req, res) => {
             `least twice, and if it fits naturally use the perfect form "have/has ${v3}" once.` +
             (wantQuestion ? ` Include one question that uses the verb.` : "") +
             (wantNegative ? ` Include one natural negative form ("didn't ${base}" or "haven't ${v3}").` : "");
+    } else if (/^be\s/i.test(word)) {
+      // "be fed up with", "be involved in"... — "be" must be conjugated, never pasted bare.
+      const rest = word.replace(/^be\s+/i, "");
+      usageRule =
+        `The target is the phrase "${word}"` +
+        (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+        `. Use it at least 3 times, but NEVER paste the dictionary form into a sentence as-is: ` +
+        `conjugate "be" correctly for each subject and tense (am/is/are/was/were, or contractions like I'm/she's/they're; ` +
+        `keep bare "be" only after a modal such as must/can/will/should or after "to"), ` +
+        `and keep the rest "${rest}" exactly as written. ` +
+        `Examples: "I am ${rest}", "she was ${rest}", "you must be ${rest}". ` +
+        `A sentence like "I be ${rest}" is a hard error — every sentence must be correct, natural English.`;
+    } else if (word.includes(" ")) {
+      // Multi-word phrasal verbs: the verb inflects naturally, particles stay unchanged.
+      const [head, ...tail] = word.split(/\s+/);
+      usageRule =
+        `The target is the phrasal verb "${word}"` +
+        (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+        `. Use it at least 3 times, conjugating the verb "${head}" naturally for subject and tense ` +
+        `(e.g. "${head}s ${tail.join(" ")}", "${head}ed ${tail.join(" ")}" if regular, or its correct irregular form) ` +
+        `while keeping "${tail.join(" ")}" exactly as written and never changing the word order. ` +
+        `Do not force the bare dictionary form into a sentence where grammar requires a conjugated form; ` +
+        `every sentence must be correct, natural English.`;
     } else {
       usageRule =
         `The content must naturally use the target word/phrase "${word}"` +
