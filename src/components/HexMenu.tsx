@@ -156,12 +156,12 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           border-radius: 50%;
           background:
-            radial-gradient(circle, #ffdf7a 55%, #ffc63c 66%, #f59d0a 80%, #d97b00 92%, #a65e00 100%);
+            radial-gradient(circle, #f2ac1e 55%, #e8930c 66%, #d67c02 80%, #ad5c00 92%, #7d4200 100%);
           box-shadow:
-            0 0 18px rgba(255,198,60,.75),
-            0 0 46px rgba(245,157,10,.5),
-            0 0 90px rgba(245,157,10,.28),
-            inset 0 0 8px rgba(255,236,170,.9);
+            0 0 18px rgba(232,147,12,.7),
+            0 0 46px rgba(214,124,2,.45),
+            0 0 90px rgba(214,124,2,.25),
+            inset 0 0 8px rgba(245,180,60,.8);
         }
         .een-center::before {
           inset: clamp(7px, 1.9vw, 10px);
