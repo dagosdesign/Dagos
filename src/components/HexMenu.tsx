@@ -108,7 +108,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           border-radius: 50%;
           transform: translate(-50%, -50%);
           background:
-            linear-gradient(135deg, #fff0b8 0%, #ffd66b 22%, #f2a900 55%, #e08e00 78%, #9a6605 100%);
+            linear-gradient(135deg, #fdf0c0 0%, #f2d174 22%, #dfaf2b 55%, #c6971f 78%, #8d6a12 100%);
           color: #f7f7f7;
           font: inherit;
           font-size: clamp(0.62rem, 2.6vw, 0.86rem);
