@@ -50,8 +50,8 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     <section className="een" aria-label="Genel İngilizce konu ağı">
       <style>{`
         .een {
-          --gold: #f4b82f;
-          --gold-bright: #ffd66b;
+          --gold: #f5a516;
+          --gold-bright: #ffce4f;
           position: relative;
           width: 100%;
           height: 100%;
@@ -85,9 +85,10 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-wave:nth-child(3) { opacity: .3; animation-duration: 22s; }
         .een-link {
           stroke: url(#een-link-grad);
-          stroke-width: 5;
+          stroke-width: 6;
           stroke-linecap: round;
-          opacity: .9;
+          opacity: .95;
+          filter: drop-shadow(0 0 4px rgba(245,157,10,.6));
         }
         .een-joint {
           fill: #fff7df;
@@ -108,15 +109,15 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           border-radius: 50%;
           transform: translate(-50%, -50%);
           background:
-            linear-gradient(135deg, #dfaf2b 0%, #c1921c 30%, #a67c14 55%, #8a650e 78%, #5f4506 100%);
+            linear-gradient(135deg, #ffe27a 0%, #ffc63c 22%, #f59d0a 50%, #d97b00 74%, #8a4d00 100%);
           color: #f7f7f7;
           font: inherit;
           font-size: clamp(0.62rem, 2.6vw, 0.86rem);
           cursor: pointer;
           box-shadow:
-            0 0 12px rgba(223,175,43,.4),
-            0 0 28px rgba(166,124,20,.25),
-            inset 0 0 5px rgba(223,175,43,.5);
+            0 0 14px rgba(255,176,32,.55),
+            0 0 34px rgba(245,157,10,.3),
+            inset 0 0 6px rgba(255,220,120,.8);
           animation: een-breathe 4.8s ease-in-out infinite;
         }
         .een-hex::before {
@@ -127,7 +128,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           background: radial-gradient(circle at 50% 38%, #16120a 0%, #050403 68%);
           box-shadow:
             inset 0 0 10px rgba(244,184,47,.35),
-            0 0 3px rgba(223,175,43,.6);
+            0 0 4px rgba(255,198,60,.8);
           z-index: 0;
         }
         .een-hex > span { position: relative; z-index: 1; }
@@ -195,8 +196,8 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         <svg className="een-lines" viewBox="0 0 760 920" preserveAspectRatio="none" aria-hidden="true">
           <defs>
             <linearGradient id="een-link-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="920">
-              <stop offset="0" stopColor="#ffd66b" />
-              <stop offset="1" stopColor="#b87f14" />
+              <stop offset="0" stopColor="#ffd24d" />
+              <stop offset="1" stopColor="#c96f00" />
             </linearGradient>
           </defs>
           {links.map(([x, y], index) => {
