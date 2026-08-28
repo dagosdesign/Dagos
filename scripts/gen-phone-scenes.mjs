@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 
-dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
+dotenv.config({ path: '.env' });
 const [OLD_SCENES, OUT_FILE] = process.argv.slice(2);
 
 const ai = new GoogleGenAI({
@@ -13,8 +13,8 @@ const ai = new GoogleGenAI({
 });
 const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite'];
 
-const vocab = JSON.parse(fs.readFileSync('C:/Users/Dagos/Desktop/PROJE/LEX/public/vocabulary.json', 'utf8'));
-const flash = fs.readFileSync('C:/Users/Dagos/Desktop/PROJE/LEX/src/data/flashcards.ts', 'utf8');
+const vocab = JSON.parse(fs.readFileSync('public/vocabulary.json', 'utf8'));
+const flash = fs.readFileSync('src/data/flashcards.ts', 'utf8');
 const slugOf = w => w.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 
 // Current unit words -> slug map (dupes already removed from flashcards)

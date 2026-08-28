@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 
-dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
+dotenv.config({ path: '.env' });
 
 const TOPICS = JSON.parse(fs.readFileSync('src/data/grammarTopics.json', 'utf8'));
 const OUT_DIR = 'public/grammar-tests';

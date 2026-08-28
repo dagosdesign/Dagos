@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 
-dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
+dotenv.config({ path: '.env' });
 
 // Usage: node scripts/generate-card-photos.mjs <out_dir> [scenes.json]
 // scenes.json: { "word": "scene description", ... } — falls back to built-in SCENES.

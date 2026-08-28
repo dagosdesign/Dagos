@@ -42,7 +42,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     { label: 'NOUNS', className: 'een-n8', onClick: () => onPractice(FLASHCARD_CATEGORIES.NOUNS, 'Nouns') },
     { label: 'GRAMMAR', className: 'een-n9', onClick: onOpenGrammar },
     { label: 'CONNECTORS', className: 'een-n10', onClick: onOpenConnectors },
-    { label: 'YDT', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.ADVANCED, 'YDT') },
+    { label: 'YDT', className: 'een-n11', onClick: () => onPractice(FLASHCARD_CATEGORIES.YDT, 'YDT') },
     { label: 'IELTS', className: 'een-n12', onClick: () => onPractice(FLASHCARD_CATEGORIES.ACADEMIC, 'IELTS') },
   ];
 

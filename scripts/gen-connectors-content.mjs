@@ -4,7 +4,7 @@ import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 
-dotenv.config({ path: 'C:/Users/Dagos/Desktop/PROJE/LEX/.env' });
+dotenv.config({ path: '.env' });
 const [RAW_FILE, OUT_FILE] = process.argv.slice(2);
 
 const ai = new GoogleGenAI({
