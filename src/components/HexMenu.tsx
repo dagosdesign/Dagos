@@ -151,21 +151,21 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           left: 50%;
           top: 50%;
-          width: clamp(126px, 34vw, 198px);
+          width: clamp(140px, 38vw, 220px);
           animation: een-center-pulse 4s ease-in-out infinite;
         }
         .een-center {
           border-radius: 50%;
           background:
-            radial-gradient(circle, #d99811 55%, #c9840c 68%, #d69a1c 82%, #e0ab35 93%, #e6b84e 100%);
+            radial-gradient(circle, #f0ab1e 55%, #e29414 70%, #c47c08 85%, #a05f02 94%, #7d4900 100%);
           box-shadow:
-            0 0 14px rgba(190,120,8,.5),
-            0 0 38px rgba(170,98,2,.32),
-            0 0 72px rgba(170,98,2,.16),
-            inset 0 0 6px rgba(200,140,20,.5);
+            0 0 16px rgba(209,127,6,.55),
+            0 0 42px rgba(189,106,1,.35),
+            0 0 80px rgba(189,106,1,.18),
+            inset 0 0 8px rgba(226,152,18,.7);
         }
         .een-center::before {
-          inset: clamp(7px, 1.9vw, 10px);
+          inset: clamp(5px, 1.3vw, 7px);
         }
         .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); }
         .een-center strong { color: var(--gold); font-weight: 500; }
@@ -219,7 +219,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
             // Bright joints sit where the line meets each circle's rim.
             const dx = x - 380, dy = y - 460;
             const len = Math.hypot(dx, dy);
-            const cR = 97, nR = 55; // approx center / node radii in viewBox units
+            const cR = 108, nR = 55; // approx center / node radii in viewBox units
             const jc: [number, number] = [380 + (dx / len) * cR, 460 + (dy / len) * cR];
             const jn: [number, number] = [x - (dx / len) * nR, y - (dy / len) * nR];
             return (
