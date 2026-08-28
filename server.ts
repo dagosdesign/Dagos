@@ -544,7 +544,9 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  // No host argument: Node binds dual-stack (IPv6 + IPv4), so browsers that
+  // resolve localhost to ::1 can connect too.
+  app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 }
