@@ -157,7 +157,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           border-radius: 50%;
           background:
-            radial-gradient(circle, #e29812 55%, #d1830a 68%, #e8a51f 82%, #f4bd45 93%, #f9d06a 100%);
+            radial-gradient(circle, #f0ab1e 55%, #e29414 68%, #f0b32e 82%, #f8c85a 93%, #fbd97e 100%);
           box-shadow:
             0 0 18px rgba(209,127,6,.65),
             0 0 46px rgba(189,106,1,.42),
