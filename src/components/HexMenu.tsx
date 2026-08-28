@@ -82,8 +82,8 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           animation: een-wave-flow 14s linear infinite;
         }
         .een-wave:nth-child(2) { opacity: .55; animation-duration: 18s; }
-        .een-wave:nth-child(3) { opacity: .3; animation-duration: 22s; }
-        .een-wave:nth-child(4) { opacity: .18; animation-duration: 26s; }
+        .een-wave:nth-child(3) { animation-duration: 22s; }
+        .een-wave:nth-child(4) { opacity: .55; animation-duration: 26s; }
         .een-link {
           stroke: url(#een-link-grad);
           stroke-width: 6;
