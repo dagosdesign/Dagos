@@ -151,18 +151,18 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           left: 50%;
           top: 50%;
-          width: clamp(140px, 38vw, 220px);
+          width: clamp(126px, 34vw, 198px);
           animation: een-center-pulse 4s ease-in-out infinite;
         }
         .een-center {
           border-radius: 50%;
           background:
-            radial-gradient(circle, #f0ab1e 55%, #e29414 68%, #f0b32e 82%, #f8c85a 93%, #fbd97e 100%);
+            radial-gradient(circle, #d99811 55%, #c9840c 68%, #d69a1c 82%, #e0ab35 93%, #e6b84e 100%);
           box-shadow:
-            0 0 18px rgba(209,127,6,.65),
-            0 0 46px rgba(189,106,1,.42),
-            0 0 90px rgba(189,106,1,.22),
-            inset 0 0 8px rgba(226,152,18,.75);
+            0 0 14px rgba(190,120,8,.5),
+            0 0 38px rgba(170,98,2,.32),
+            0 0 72px rgba(170,98,2,.16),
+            inset 0 0 6px rgba(200,140,20,.5);
         }
         .een-center::before {
           inset: clamp(7px, 1.9vw, 10px);
@@ -219,7 +219,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
             // Bright joints sit where the line meets each circle's rim.
             const dx = x - 380, dy = y - 460;
             const len = Math.hypot(dx, dy);
-            const cR = 108, nR = 55; // approx center / node radii in viewBox units
+            const cR = 97, nR = 55; // approx center / node radii in viewBox units
             const jc: [number, number] = [380 + (dx / len) * cR, 460 + (dy / len) * cR];
             const jn: [number, number] = [x - (dx / len) * nR, y - (dy / len) * nR];
             return (
