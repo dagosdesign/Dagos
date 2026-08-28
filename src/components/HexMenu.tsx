@@ -108,15 +108,15 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           border-radius: 50%;
           transform: translate(-50%, -50%);
           background:
-            linear-gradient(135deg, #fdf0c0 0%, #f2d174 22%, #dfaf2b 55%, #c6971f 78%, #8d6a12 100%);
+            linear-gradient(135deg, #dfaf2b 0%, #c1921c 30%, #a67c14 55%, #8a650e 78%, #5f4506 100%);
           color: #f7f7f7;
           font: inherit;
           font-size: clamp(0.62rem, 2.6vw, 0.86rem);
           cursor: pointer;
           box-shadow:
-            0 0 14px rgba(244,184,47,.55),
-            0 0 34px rgba(244,184,47,.28),
-            inset 0 0 6px rgba(255,244,200,.9);
+            0 0 12px rgba(223,175,43,.4),
+            0 0 28px rgba(166,124,20,.25),
+            inset 0 0 5px rgba(223,175,43,.5);
           animation: een-breathe 4.8s ease-in-out infinite;
         }
         .een-hex::before {
@@ -127,7 +127,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           background: radial-gradient(circle at 50% 38%, #16120a 0%, #050403 68%);
           box-shadow:
             inset 0 0 10px rgba(244,184,47,.35),
-            0 0 4px rgba(255,214,107,.85);
+            0 0 3px rgba(223,175,43,.6);
           z-index: 0;
         }
         .een-hex > span { position: relative; z-index: 1; }
