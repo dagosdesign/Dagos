@@ -23775,16 +23775,6 @@
   "definition": "A sweet hollow pepper.",
   "example": "Cut the bell pepper into small strips."
  },
- "breadcrumbs": {
-  "ipa": "/ˈbredkrʌmz/",
-  "reading": "bredkramz",
-  "meanings": [
-   "galeta unu",
-   "ekmek kırıntısı"
-  ],
-  "definition": "Crushed dry bread used in cooking.",
-  "example": "Coat the chicken in breadcrumbs before frying."
- },
  "bunch": {
   "ipa": "/bʌntʃ/",
   "reading": "banç",
@@ -23852,15 +23842,6 @@
   "definition": "Fresh leaves of the coriander plant.",
   "example": "Top the tacos with fresh cilantro."
  },
- "cookies": {
-  "ipa": "/ˈkʊkiːz/",
-  "reading": "kukiys",
-  "meanings": [
-   "kurabiyeler"
-  ],
-  "definition": "Sweet baked biscuits.",
-  "example": "The children love eating warm cookies."
- },
  "corn starch": {
   "ipa": "/kɔːn stɑːtʃ/",
   "reading": "korn starç",
@@ -23869,15 +23850,6 @@
   ],
   "definition": "Starch made from corn used for thickening.",
   "example": "Use corn starch to thicken the sauce."
- },
- "crack egg": {
-  "ipa": "/kræk eɡ/",
-  "reading": "krak eg",
-  "meanings": [
-   "yumurta kırmak"
-  ],
-  "definition": "Break an egg's shell open.",
-  "example": "Crack egg into a bowl and whisk well."
  },
  "cucumber": {
   "ipa": "/ˈkjuːkʌmbə(r)/",
@@ -24012,15 +23984,6 @@
   "definition": "Cooked on a metal grill over heat.",
   "example": "She ordered a grilled chicken sandwich."
  },
- "have sweet tooth": {
-  "ipa": "/hæv swiːt tuːθ/",
-  "reading": "hev svit tuut",
-  "meanings": [
-   "tatlı düşkünü olmak"
-  ],
-  "definition": "To love eating sweet foods.",
-  "example": "I always have sweet tooth after dinner."
- },
  "have to": {
   "ipa": "/hæv tuː/",
   "reading": "hev tu",
@@ -24147,15 +24110,6 @@
   "definition": "Inflated heated corn kernels.",
   "example": "We ate popcorn while watching a movie."
  },
- "press firmly": {
-  "ipa": "/pres ˈfɜːmli/",
-  "reading": "pres förmli",
-  "meanings": [
-   "sıkıca bastırmak"
-  ],
-  "definition": "Push down hard and steadily.",
-  "example": "Press firmly on the dough."
- },
  "ready": {
   "ipa": "/ˈredi/",
   "reading": "redi",
@@ -24241,15 +24195,6 @@
   "definition": "Cut into slices.",
   "example": "Add sliced tomatoes to the salad."
  },
- "squeeze lemon": {
-  "ipa": "/skwiːz ˈlemən/",
-  "reading": "skwiiz lemın",
-  "meanings": [
-   "limon sıkmak"
-  ],
-  "definition": "Extract juice from a lemon.",
-  "example": "Squeeze lemon over the fish."
- },
  "step of preparing": {
   "ipa": "/step əv prɪˈpeərɪŋ/",
   "reading": "step ov pripering",
@@ -24314,15 +24259,6 @@
   ],
   "definition": "To employ something for a purpose.",
   "example": "You can use my laptop for your homework."
- },
- "various colours": {
-  "ipa": "/ˈveə.ri.əs ˈkʌl.əz/",
-  "reading": "veriyus kalız",
-  "meanings": [
-   "çeşitli renkler"
-  ],
-  "definition": "Different types of colors.",
-  "example": "The flowers come in various colours."
  },
  "vegetable oil": {
   "ipa": "/ˈvedʒ.tɪ.bəl ɔɪl/",
@@ -55475,5 +55411,1030 @@
   "definition": "To feel that someone or something is important.",
   "example": "Real friends care about your feelings.",
   "word": "care about"
+ },
+ "basil": {
+  "word": "basil",
+  "ipa": "/ˈbæz.əl/",
+  "reading": "bezıl",
+  "meanings": [
+   "fesleğen"
+  ],
+  "definition": "An aromatic herb used in cooking",
+  "example": "You can add fresh basil to the tomato sauce."
+ },
+ "blueberry": {
+  "word": "blueberry",
+  "ipa": "/ˈbluː.bər.i/",
+  "reading": "bluberi",
+  "meanings": [
+   "yaban mersini"
+  ],
+  "definition": "A small round sweet blue fruit",
+  "example": "He put a fresh blueberry on the pancake."
+ },
+ "coconut": {
+  "word": "coconut",
+  "ipa": "/ˈkəʊ.kə.nʌt/",
+  "reading": "koukınat",
+  "meanings": [
+   "hindistan cevizi"
+  ],
+  "definition": "A large nut with a hairy shell and white flesh",
+  "example": "You need a sharp knife to open a coconut."
+ },
+ "cranberry": {
+  "word": "cranberry",
+  "ipa": "/ˈkræn.bər.i/",
+  "reading": "krenberi",
+  "meanings": [
+   "kızılcık"
+  ],
+  "definition": "A small sour red berry",
+  "example": "He added a dried cranberry to his salad."
+ },
+ "chocolate chips": {
+  "word": "chocolate chips",
+  "ipa": "/ˈtʃɒk.lət tʃɪps/",
+  "reading": "çaklıt çips",
+  "meanings": [
+   "damla çikolata"
+  ],
+  "definition": "Small pieces of chocolate used in baking",
+  "example": "I always put chocolate chips in my cookie dough."
+ },
+ "baking soda": {
+  "word": "baking soda",
+  "ipa": "/ˈbeɪ.kɪŋ ˌsəʊ.də/",
+  "reading": "beyking souda",
+  "meanings": [
+   "karbonat"
+  ],
+  "definition": "A white powder used to make cakes rise",
+  "example": "You need to add a teaspoon of baking soda."
+ },
+ "greasy": {
+  "word": "greasy",
+  "ipa": "/ˈɡriː.si/",
+  "reading": "grisi",
+  "meanings": [
+   "yağlı"
+  ],
+  "definition": "Covered with or containing a lot of oil",
+  "example": "The pizza was very greasy and messy."
+ },
+ "flavor": {
+  "word": "flavor",
+  "ipa": "/ˈfleɪ.vər/",
+  "reading": "fleyvır",
+  "meanings": [
+   "lezzet",
+   "tat"
+  ],
+  "definition": "The distinctive taste of a food or drink",
+  "example": "This spice will add great flavor to the soup."
+ },
+ "croissant": {
+  "word": "croissant",
+  "ipa": "/ˈkrwæs.ɒ̃/",
+  "reading": "kruasan",
+  "meanings": [
+   "kruvasan"
+  ],
+  "definition": "A flaky French pastry shaped like a crescent",
+  "example": "I bought a fresh croissant from the bakery."
+ },
+ "pie": {
+  "word": "pie",
+  "ipa": "/paɪ/",
+  "reading": "pay",
+  "meanings": [
+   "turta"
+  ],
+  "definition": "A baked dish of fruit or meat with pastry",
+  "example": "She baked a delicious apple pie for dessert."
+ },
+ "cheese": {
+  "word": "cheese",
+  "ipa": "/tʃiːz/",
+  "reading": "çiiz",
+  "meanings": [
+   "peynir"
+  ],
+  "definition": "A food made from milk curds",
+  "example": "I like to melt cheese on my toast."
+ },
+ "cheddar cheese": {
+  "word": "cheddar cheese",
+  "ipa": "/ˌtʃed.ə ˈtʃiːz/",
+  "reading": "çedır çiiz",
+  "meanings": [
+   "cheddar peyniri"
+  ],
+  "definition": "A firm yellow or white English cheese",
+  "example": "We need some cheddar cheese for the burgers."
+ },
+ "chicken wings": {
+  "word": "chicken wings",
+  "ipa": "/ˈtʃɪk.ɪn wɪŋz/",
+  "reading": "çıkın wingz",
+  "meanings": [
+   "tavuk kanadı"
+  ],
+  "definition": "The wings of a chicken used as food",
+  "example": "They ordered spicy chicken wings for the party."
+ },
+ "cocoa bean": {
+  "word": "cocoa bean",
+  "ipa": "/ˈkəʊ.kəʊ biːn/",
+  "reading": "koukou biin",
+  "meanings": [
+   "kakao çekirdeği"
+  ],
+  "definition": "The seed from which cocoa and chocolate are made",
+  "example": "They crush the cocoa bean to make chocolate."
+ },
+ "black beans": {
+  "word": "black beans",
+  "ipa": "/blæk biːnz/",
+  "reading": "blek biinz",
+  "meanings": [
+   "siyah fasulye"
+  ],
+  "definition": "Small, shiny black seeds used in cooking",
+  "example": "I love to put black beans in my salad."
+ },
+ "corn tortilla": {
+  "word": "corn tortilla",
+  "ipa": "/kɔːn tɔːˈtiː.jə/",
+  "reading": "korn tortiya",
+  "meanings": [
+   "mısır tortillası"
+  ],
+  "definition": "A thin flatbread made from corn meal",
+  "example": "You can wrap the meat in a corn tortilla."
+ },
+ "boiling water": {
+  "word": "boiling water",
+  "ipa": "/ˈbɔɪ.lɪŋ ˌwɔː.tər/",
+  "reading": "boyling votır",
+  "meanings": [
+   "kaynar su"
+  ],
+  "definition": "Water heated to the point of boiling",
+  "example": "Pour the boiling water over the tea bag."
+ },
+ "cake tin": {
+  "word": "cake tin",
+  "ipa": "/ˈkeɪk tɪn/",
+  "reading": "keyk tin",
+  "meanings": [
+   "kek kalıbı"
+  ],
+  "definition": "A metal container used for baking cakes",
+  "example": "Please grease the cake tin before pouring the batter."
+ },
+ "chocolate bar": {
+  "word": "chocolate bar",
+  "ipa": "/ˈtʃɒk.lət bɑːr/",
+  "reading": "çaklıt bar",
+  "meanings": [
+   "kalıp çikolata"
+  ],
+  "definition": "A sweet block of chocolate",
+  "example": "He bought a big chocolate bar from the shop."
+ },
+ "milk": {
+  "word": "milk",
+  "ipa": "/mɪlk/",
+  "reading": "milk",
+  "meanings": [
+   "süt"
+  ],
+  "definition": "A white liquid produced by cows",
+  "example": "She poured cold milk into her cereal bowl."
+ },
+ "egg": {
+  "word": "egg",
+  "ipa": "/eɡ/",
+  "reading": "eg",
+  "meanings": [
+   "yumurta"
+  ],
+  "definition": "An oval object produced by a female bird or insect",
+  "example": "You need to boil an egg for breakfast."
+ },
+ "potato": {
+  "word": "potato",
+  "ipa": "/pəˈteɪtəʊ/",
+  "reading": "pıteyto",
+  "meanings": [
+   "patates"
+  ],
+  "definition": "A round vegetable with white flesh and brown skin",
+  "example": "I like to bake a potato in the oven."
+ },
+ "lemon": {
+  "word": "lemon",
+  "ipa": "/ˈlemən/",
+  "reading": "lemın",
+  "meanings": [
+   "limon"
+  ],
+  "definition": "A sour yellow citrus fruit",
+  "example": "I always squeeze fresh lemon into my tea."
+ },
+ "mint": {
+  "word": "mint",
+  "ipa": "/mɪnt/",
+  "reading": "mint",
+  "meanings": [
+   "nane"
+  ],
+  "definition": "A green plant with a fresh taste and smell",
+  "example": "Add a leaf of fresh mint to the water."
+ },
+ "thyme": {
+  "word": "thyme",
+  "ipa": "/taɪm/",
+  "reading": "taym",
+  "meanings": [
+   "kekik"
+  ],
+  "definition": "An aromatic herb used in cooking",
+  "example": "She added a pinch of dry thyme to the soup."
+ },
+ "honey": {
+  "word": "honey",
+  "ipa": "/ˈhʌni/",
+  "reading": "hani",
+  "meanings": [
+   "bal"
+  ],
+  "definition": "A sweet sticky liquid made by bees",
+  "example": "I like to eat sweet honey on my bread."
+ },
+ "jam": {
+  "word": "jam",
+  "ipa": "/dʒæm/",
+  "reading": "cem",
+  "meanings": [
+   "reçel"
+  ],
+  "definition": "A sweet food made by boiling fruit with sugar",
+  "example": "She spread strawberry jam on her toast."
+ },
+ "mayonnaise": {
+  "word": "mayonnaise",
+  "ipa": "/ˌmeɪəˈneɪz/",
+  "reading": "meyıneyz",
+  "meanings": [
+   "mayonez"
+  ],
+  "definition": "A thick white sauce made from oil and egg yolks",
+  "example": "I always put some mayonnaise on my sandwich."
+ },
+ "cream": {
+  "word": "cream",
+  "ipa": "/kriːm/",
+  "reading": "kriim",
+  "meanings": [
+   "krema"
+  ],
+  "definition": "The thick white fat on top of milk",
+  "example": "Would you like some cream in your coffee?"
+ },
+ "yogurt": {
+  "word": "yogurt",
+  "ipa": "/ˈjɒɡət/",
+  "reading": "yogıt",
+  "meanings": [
+   "yoğurt"
+  ],
+  "definition": "A thick liquid food made from fermented milk",
+  "example": "She likes to eat Greek yogurt with honey."
+ },
+ "spinach": {
+  "word": "spinach",
+  "ipa": "/ˈspɪnɪtʃ/",
+  "reading": "spiniç",
+  "meanings": [
+   "ıspanak"
+  ],
+  "definition": "A vegetable with wide dark green leaves",
+  "example": "I want to cook fresh spinach for dinner."
+ },
+ "zucchini": {
+  "word": "zucchini",
+  "ipa": "/zʊˈkiːni/",
+  "reading": "zukiini",
+  "meanings": [
+   "kabak"
+  ],
+  "definition": "A long green vegetable with wet white flesh",
+  "example": "He loves to fry zucchini with some garlic."
+ },
+ "broccoli": {
+  "word": "broccoli",
+  "ipa": "/ˈbrɒkəli/",
+  "reading": "brokıli",
+  "meanings": [
+   "brokoli"
+  ],
+  "definition": "A green vegetable with compact flower heads",
+  "example": "You should steam the broccoli for five minutes."
+ },
+ "lamb": {
+  "word": "lamb",
+  "ipa": "/læm/",
+  "reading": "lem",
+  "meanings": [
+   "kuzu eti"
+  ],
+  "definition": "A young sheep, or its meat eaten as food",
+  "example": "They served roasted lamb at the dinner party."
+ },
+ "shrimp": {
+  "word": "shrimp",
+  "ipa": "/ʃrɪmp/",
+  "reading": "şrimp",
+  "meanings": [
+   "karides"
+  ],
+  "definition": "A small edible shellfish with many legs",
+  "example": "She decided to grill some fresh shrimp today."
+ },
+ "turkey": {
+  "word": "turkey",
+  "ipa": "/ˈtɜːki/",
+  "reading": "tööki",
+  "meanings": [
+   "hindi"
+  ],
+  "definition": "A large bird, or its meat eaten as food",
+  "example": "They usually cook a whole turkey for Christmas."
+ },
+ "microwave": {
+  "word": "microwave",
+  "ipa": "/ˈmaɪkrəweɪv/",
+  "reading": "maykroweiv",
+  "meanings": [
+   "mikrodalga fırın"
+  ],
+  "definition": "An oven that cooks food quickly using waves",
+  "example": "You can heat the soup in the microwave."
+ },
+ "kettle": {
+  "word": "kettle",
+  "ipa": "/ˈketl/",
+  "reading": "ketıl",
+  "meanings": [
+   "su ısıtıcısı"
+  ],
+  "definition": "A container with a lid used for boiling water",
+  "example": "Please boil some water in the kettle."
+ },
+ "toaster": {
+  "word": "toaster",
+  "ipa": "/ˈtəʊstə/",
+  "reading": "toustır",
+  "meanings": [
+   "ekmek kızartma makinesi"
+  ],
+  "definition": "A machine used to make toast.",
+  "example": "Please put the bread in the toaster."
+ },
+ "blender": {
+  "word": "blender",
+  "ipa": "/ˈblendə/",
+  "reading": "blendır",
+  "meanings": [
+   "blender"
+  ],
+  "definition": "An electric machine used for mixing liquids and soft foods.",
+  "example": "Use a blender to make a smooth soup."
+ },
+ "mixer": {
+  "word": "mixer",
+  "ipa": "/ˈmɪksə/",
+  "reading": "miksır",
+  "meanings": [
+   "mikser"
+  ],
+  "definition": "A tool or machine used for mixing ingredients.",
+  "example": "You need a mixer to make this cake."
+ },
+ "cutting board": {
+  "word": "cutting board",
+  "ipa": "/ˈkʌtɪŋ bɔːd/",
+  "reading": "katink bood",
+  "meanings": [
+   "kesme tahtası"
+  ],
+  "definition": "A wooden or plastic board for cutting food on.",
+  "example": "Put the vegetables on the cutting board."
+ },
+ "spatula": {
+  "word": "spatula",
+  "ipa": "/ˈspætʃʊlə/",
+  "reading": "spetçula",
+  "meanings": [
+   "spatula"
+  ],
+  "definition": "A tool with a broad, flat, flexible blade.",
+  "example": "Use a spatula to flip the pancakes."
+ },
+ "tongs": {
+  "word": "tongs",
+  "ipa": "/tɒŋz/",
+  "reading": "tongz",
+  "meanings": [
+   "maşa"
+  ],
+  "definition": "A tool used for gripping and lifting things.",
+  "example": "Use the tongs to turn the meat over."
+ },
+ "colander": {
+  "word": "colander",
+  "ipa": "/ˈkʌləndə/",
+  "reading": "kalındır",
+  "meanings": [
+   "süzgeç"
+  ],
+  "definition": "A bowl with holes used for draining water from food.",
+  "example": "Pour the pasta into a colander to drain it."
+ },
+ "measuring cup": {
+  "word": "measuring cup",
+  "ipa": "/ˈmeʒərɪŋ kʌp/",
+  "reading": "mejırink kap",
+  "meanings": [
+   "ölçü kabı"
+  ],
+  "definition": "A cup marked with lines to measure ingredients.",
+  "example": "Fill the measuring cup with fresh milk."
+ },
+ "measuring spoon": {
+  "word": "measuring spoon",
+  "ipa": "/ˈmeʒərɪŋ spuːn/",
+  "reading": "mejırink spuun",
+  "meanings": [
+   "ölçü kaşığı"
+  ],
+  "definition": "A spoon used to measure small amounts of ingredients.",
+  "example": "Use a measuring spoon to add the salt."
+ },
+ "kitchen scale": {
+  "word": "kitchen scale",
+  "ipa": "/ˈkɪtʃɪn skeɪl/",
+  "reading": "kiçın skeyl",
+  "meanings": [
+   "mutfak terazisi"
+  ],
+  "definition": "A device used to weigh food ingredients.",
+  "example": "Weigh the flour on the kitchen scale."
+ },
+ "apron": {
+  "word": "apron",
+  "ipa": "/ˈeɪprən/",
+  "reading": "eyprın",
+  "meanings": [
+   "önlük"
+  ],
+  "definition": "A piece of clothing worn to protect your clothes.",
+  "example": "She tied an apron around her waist."
+ },
+ "oven glove": {
+  "word": "oven glove",
+  "ipa": "/ˈʌvn ɡlʌv/",
+  "reading": "avın glav",
+  "meanings": [
+   "fırın eldiveni"
+  ],
+  "definition": "A padded glove used for handling hot dishes.",
+  "example": "Always wear an oven glove when touching hot pans."
+ },
+ "grill rack": {
+  "word": "grill rack",
+  "ipa": "/ɡrɪl ræk/",
+  "reading": "gril rek",
+  "meanings": [
+   "ızgara teli"
+  ],
+  "definition": "A metal framework used for holding food during grilling.",
+  "example": "Place the meat on the grill rack now."
+ },
+ "serving plate": {
+  "word": "serving plate",
+  "ipa": "/ˈsɜːvɪŋ pleɪt/",
+  "reading": "söövink pleyt",
+  "meanings": [
+   "servis tabağı"
+  ],
+  "definition": "A large plate used to serve food.",
+  "example": "Arrange the food on a large serving plate."
+ },
+ "mix together": {
+  "word": "mix together",
+  "ipa": "/mɪks təˈɡeðə/",
+  "reading": "miks tıgedır",
+  "meanings": [
+   "birlikte karıştırmak"
+  ],
+  "definition": "To combine two or more ingredients into one mass.",
+  "example": "You should mix together the flour and sugar."
+ },
+ "stir well": {
+  "word": "stir well",
+  "ipa": "/stɜː wel/",
+  "reading": "stöör vel",
+  "meanings": [
+   "iyice karıştırmak"
+  ],
+  "definition": "To mix ingredients thoroughly with a spoon.",
+  "example": "Add the sauce and stir well to combine."
+ },
+ "deep-fry": {
+  "word": "deep-fry",
+  "ipa": "/ˌdiːp ˈfraɪ/",
+  "reading": "diip fray",
+  "meanings": [
+   "bol yağda kızartmak"
+  ],
+  "definition": "To cook food in a large amount of hot oil.",
+  "example": "You can deep-fry the chicken wings for extra crunch."
+ },
+ "stir-fry": {
+  "word": "stir-fry",
+  "ipa": "/ˈstɜː fraɪ/",
+  "reading": "stöör fray",
+  "meanings": [
+   "az yağda karıştırarak kızartmak"
+  ],
+  "definition": "To fry quickly over high heat while stirring constantly.",
+  "example": "We can stir-fry the vegetables for dinner."
+ },
+ "toast": {
+  "word": "toast",
+  "ipa": "/təʊst/",
+  "reading": "toust",
+  "meanings": [
+   "kızartmak"
+  ],
+  "definition": "To make bread brown and crisp using heat.",
+  "example": "I like to toast the bread before eating it."
+ },
+ "simmer": {
+  "word": "simmer",
+  "ipa": "/ˈsɪmə/",
+  "reading": "simır",
+  "meanings": [
+   "kısık ateşte pişirmek"
+  ],
+  "definition": "To cook gently in liquid just below boiling point.",
+  "example": "Let the soup simmer for twenty minutes."
+ },
+ "season with": {
+  "word": "season with",
+  "ipa": "/ˈsiːzən wɪð/",
+  "reading": "siizın wid",
+  "meanings": [
+   "ile tatlandırmak",
+   "baharat katmak"
+  ],
+  "definition": "To add salt, pepper, or spices to food.",
+  "example": "You can season with salt and black pepper."
+ },
+ "garnish": {
+  "word": "garnish",
+  "ipa": "/ˈɡɑːnɪʃ/",
+  "reading": "gaaniş",
+  "meanings": [
+   "süslemek"
+  ],
+  "definition": "To decorate food with something small and colorful.",
+  "example": "Please garnish the soup with fresh parsley."
+ },
+ "serve immediately": {
+  "word": "serve immediately",
+  "ipa": "/sɜːv ɪˈmiːdiətli/",
+  "reading": "sööv imiidiyıtli",
+  "meanings": [
+   "hemen servis etmek"
+  ],
+  "definition": "To present food to eat right after cooking.",
+  "example": "Pour the sauce and serve immediately."
+ },
+ "cool down": {
+  "word": "cool down",
+  "ipa": "/kuːl daʊn/",
+  "reading": "kuul daun",
+  "meanings": [
+   "soğumak",
+   "soğutmak"
+  ],
+  "definition": "To become or make less hot.",
+  "example": "Let the cake cool down before slicing it."
+ },
+ "heat up": {
+  "word": "heat up",
+  "ipa": "/hiːt ʌp/",
+  "reading": "hiit ap",
+  "meanings": [
+   "ısıtmak"
+  ],
+  "definition": "To make something hot or warm.",
+  "example": "You can heat up the soup on the stove."
+ },
+ "preheat": {
+  "word": "preheat",
+  "ipa": "/ˌpriːˈhiːt/",
+  "reading": "priihiit",
+  "meanings": [
+   "önceden ısıtmak"
+  ],
+  "definition": "To heat an oven before using it.",
+  "example": "You must preheat the oven to 180 degrees."
+ },
+ "fill": {
+  "word": "fill",
+  "ipa": "/fɪl/",
+  "reading": "fil",
+  "meanings": [
+   "doldurmak"
+  ],
+  "definition": "To make something full.",
+  "example": "Please fill the glass with cold water."
+ },
+ "place on": {
+  "word": "place on",
+  "ipa": "/pleɪs ɒn/",
+  "reading": "pleys on",
+  "meanings": [
+   "üzerine koymak"
+  ],
+  "definition": "To put something on a surface.",
+  "example": "Please place on a flat surface before starting."
+ },
+ "put into": {
+  "word": "put into",
+  "ipa": "/pʊt ˈɪntuː/",
+  "reading": "put intuu",
+  "meanings": [
+   "içine koymak"
+  ],
+  "definition": "To place something inside another thing.",
+  "example": "Please put into the warm oven immediately."
+ },
+ "before": {
+  "word": "before",
+  "ipa": "/bɪˈfɔː/",
+  "reading": "bifoo",
+  "meanings": [
+   "önce"
+  ],
+  "definition": "At an earlier time.",
+  "example": "Wash your hands before you start cooking."
+ },
+ "meanwhile": {
+  "word": "meanwhile",
+  "ipa": "/ˈmiːnwaɪl/",
+  "reading": "miinvayl",
+  "meanings": [
+   "bu sırada"
+  ],
+  "definition": "At the same time.",
+  "example": "Melt the butter; meanwhile, whisk the eggs."
+ },
+ "as soon as": {
+  "word": "as soon as",
+  "ipa": "/æz suːn æz/",
+  "reading": "ez suun ez",
+  "meanings": [
+   "olur olmaz",
+   "-er -mez"
+  ],
+  "definition": "At the same moment that.",
+  "example": "Serve the dish as soon as it is ready."
+ },
+ "both sides": {
+  "word": "both sides",
+  "ipa": "/bəʊθ saɪdz/",
+  "reading": "bouth saydz",
+  "meanings": [
+   "her iki taraf"
+  ],
+  "definition": "Two opposing surfaces of an object.",
+  "example": "Cook the meat on both sides until brown."
+ },
+ "a few": {
+  "word": "a few",
+  "ipa": "/ə fjuː/",
+  "reading": "e fyuu",
+  "meanings": [
+   "birkaç"
+  ],
+  "definition": "A small number of things.",
+  "example": "Add a few drops of lemon juice."
+ },
+ "a little": {
+  "word": "a little",
+  "ipa": "/ə ˈlɪt.əl/",
+  "reading": "e litıl",
+  "meanings": [
+   "biraz",
+   "az miktarda"
+  ],
+  "definition": "A small amount of something.",
+  "example": "Add a little salt to the dough."
+ },
+ "cooking method": {
+  "word": "cooking method",
+  "ipa": "/ˈkʊkɪŋ ˈmeθəd/",
+  "reading": "kukin methıd",
+  "meanings": [
+   "pişirme yöntemi"
+  ],
+  "definition": "A way of preparing food with heat.",
+  "example": "Baking is a very healthy cooking method."
+ },
+ "utensil": {
+  "word": "utensil",
+  "ipa": "/juːˈtensəl/",
+  "reading": "yuutensıl",
+  "meanings": [
+   "mutfak gereci"
+  ],
+  "definition": "A tool used in the kitchen.",
+  "example": "A wooden spoon is a useful utensil."
+ },
+ "a pinch of": {
+  "word": "a pinch of",
+  "ipa": "/ə pɪntʃ ɒv/",
+  "reading": "e pinç ov",
+  "meanings": [
+   "bir tutam"
+  ],
+  "definition": "A very small amount of a powder.",
+  "example": "Add a pinch of salt for flavor."
+ },
+ "a teaspoon of": {
+  "word": "a teaspoon of",
+  "ipa": "/ə ˈtiːspuːn ɒv/",
+  "reading": "e tiispuun ov",
+  "meanings": [
+   "bir çay kaşığı"
+  ],
+  "definition": "A small spoon measure of an ingredient.",
+  "example": "Add a teaspoon of sugar to the tea."
+ },
+ "a tablespoon of": {
+  "word": "a tablespoon of",
+  "ipa": "/ə ˈteɪblspuːn ɒv/",
+  "reading": "e teybılspuun ov",
+  "meanings": [
+   "bir yemek kaşığı"
+  ],
+  "definition": "A large spoon measure of an ingredient.",
+  "example": "Add a tablespoon of olive oil to the pan."
+ },
+ "a cup of": {
+  "word": "a cup of",
+  "ipa": "/ə ˈkʌp əv/",
+  "reading": "e kap ov",
+  "meanings": [
+   "bir fincan"
+  ],
+  "definition": "The amount that a cup can hold.",
+  "example": "I usually drink a cup of coffee every morning."
+ },
+ "a glass of": {
+  "word": "a glass of",
+  "ipa": "/ə ˈɡlɑːs əv/",
+  "reading": "e glaas ov",
+  "meanings": [
+   "bir bardak"
+  ],
+  "definition": "The amount that a glass can hold.",
+  "example": "He drank a glass of water after his run."
+ },
+ "a bowl of": {
+  "word": "a bowl of",
+  "ipa": "/ə ˈbəʊl əv/",
+  "reading": "e boul ov",
+  "meanings": [
+   "bir kase"
+  ],
+  "definition": "The amount that a bowl can hold.",
+  "example": "I usually eat a bowl of soup for lunch."
+ },
+ "a handful of": {
+  "word": "a handful of",
+  "ipa": "/ə ˈhændfʊl əv/",
+  "reading": "e hendful ov",
+  "meanings": [
+   "bir avuç"
+  ],
+  "definition": "A small number or amount of something.",
+  "example": "She gave me a handful of nuts to eat."
+ },
+ "a piece of": {
+  "word": "a piece of",
+  "ipa": "/ə ˈpiːs əv/",
+  "reading": "e piis ov",
+  "meanings": [
+   "bir parça"
+  ],
+  "definition": "A single portion or part of something.",
+  "example": "Can I have a piece of cake, please?"
+ },
+ "a slice of": {
+  "word": "a slice of",
+  "ipa": "/ə ˈslaɪs əv/",
+  "reading": "e slays ov",
+  "meanings": [
+   "bir dilim"
+  ],
+  "definition": "A flat, thin piece cut from something.",
+  "example": "I want to eat a slice of pizza now."
+ },
+ "a loaf of": {
+  "word": "a loaf of",
+  "ipa": "/ə ˈləʊf əv/",
+  "reading": "e louf ov",
+  "meanings": [
+   "bir somun"
+  ],
+  "definition": "A shaped mass of bread baked as one piece.",
+  "example": "Please buy a loaf of bread from the bakery."
+ },
+ "a clove of": {
+  "word": "a clove of",
+  "ipa": "/ə ˈkləʊv əv/",
+  "reading": "e klouv ov",
+  "meanings": [
+   "bir diş (sarımsak)"
+  ],
+  "definition": "One segment of a garlic bulb.",
+  "example": "You need to chop a clove of garlic for this."
+ },
+ "a bunch of": {
+  "word": "a bunch of",
+  "ipa": "/ə ˈbʌntʃ əv/",
+  "reading": "e banç ov",
+  "meanings": [
+   "bir demet"
+  ],
+  "definition": "A group of things growing or tied together.",
+  "example": "He bought a bunch of bananas from the market."
+ },
+ "a bar of": {
+  "word": "a bar of",
+  "ipa": "/ə ˈbɑː r əv/",
+  "reading": "e baar ov",
+  "meanings": [
+   "bir kalıp"
+  ],
+  "definition": "A solid rectangular block of something.",
+  "example": "I bought a bar of chocolate for the children."
+ },
+ "a packet of": {
+  "word": "a packet of",
+  "ipa": "/ə ˈpækɪt əv/",
+  "reading": "e pekit ov",
+  "meanings": [
+   "bir paket"
+  ],
+  "definition": "A small paper or plastic container of something.",
+  "example": "I bought a packet of biscuits today."
+ },
+ "a carton of": {
+  "word": "a carton of",
+  "ipa": "/ə ˈkɑːtən əv/",
+  "reading": "e kaartın ov",
+  "meanings": [
+   "bir kutu (karton)"
+  ],
+  "definition": "A cardboard box or container for liquid.",
+  "example": "We need a carton of milk from the shop."
+ },
+ "a bottle of": {
+  "word": "a bottle of",
+  "ipa": "/ə ˈbɒtəl əv/",
+  "reading": "e botıl ov",
+  "meanings": [
+   "bir şişe"
+  ],
+  "definition": "The liquid contained inside a bottle.",
+  "example": "Please buy a bottle of water."
+ },
+ "a can of": {
+  "word": "a can of",
+  "ipa": "/ə ˈkæn əv/",
+  "reading": "e ken ov",
+  "meanings": [
+   "bir konserve kutusu"
+  ],
+  "definition": "A metal container filled with food or drink.",
+  "example": "He drank a can of soda after dinner."
+ },
+ "a jar of": {
+  "word": "a jar of",
+  "ipa": "/ə ˈdʒɑː r əv/",
+  "reading": "e caar ov",
+  "meanings": [
+   "bir kavanoz"
+  ],
+  "definition": "A glass container with a wide mouth.",
+  "example": "I bought a jar of honey yesterday."
+ },
+ "a kilo of": {
+  "word": "a kilo of",
+  "ipa": "/ə ˈkiːləʊ əv/",
+  "reading": "e kiilou ov",
+  "meanings": [
+   "bir kilo"
+  ],
+  "definition": "A unit of weight equal to one kilogram.",
+  "example": "I need a kilo of apples to make pie."
+ },
+ "a gram of": {
+  "word": "a gram of",
+  "ipa": "/ə ˈɡræm əv/",
+  "reading": "e grem ov",
+  "meanings": [
+   "bir gram"
+  ],
+  "definition": "A small unit of weight.",
+  "example": "Add just a gram of salt to the mixture."
+ },
+ "a litre of": {
+  "word": "a litre of",
+  "ipa": "/ə ˈliːtə r əv/",
+  "reading": "e liitır ov",
+  "meanings": [
+   "bir litre"
+  ],
+  "definition": "A unit of liquid volume.",
+  "example": "Can you buy a litre of juice, please?"
+ },
+ "a drop of": {
+  "word": "a drop of",
+  "ipa": "/ə ˈdrɒp əv/",
+  "reading": "e drop ov",
+  "meanings": [
+   "bir damla"
+  ],
+  "definition": "A very small amount of liquid.",
+  "example": "Put a drop of oil on the squeaky door."
+ },
+ "half a cup of": {
+  "word": "half a cup of",
+  "ipa": "/ˌhɑːf ə ˈkʌp ɒv/",
+  "reading": "haf e kap ov",
+  "meanings": [
+   "yarım fincan"
+  ],
+  "definition": "An amount equal to half of a cup",
+  "example": "You need half a cup of sugar for the cake."
+ },
+ "half a glass of": {
+  "word": "half a glass of",
+  "ipa": "/ˌhɑːf ə ˈɡlɑːs ɒv/",
+  "reading": "haf e glas ov",
+  "meanings": [
+   "yarım bardak"
+  ],
+  "definition": "An amount equal to half of a glass",
+  "example": "Please pour me half a glass of water."
+ },
+ "half a teaspoon of": {
+  "word": "half a teaspoon of",
+  "ipa": "/ˌhɑːf ə ˈtiːspuːn ɒv/",
+  "reading": "haf e tiyspuun ov",
+  "meanings": [
+   "yarım çay kaşığı"
+  ],
+  "definition": "An amount equal to half of a teaspoon",
+  "example": "Add half a teaspoon of salt to the mixture."
+ },
+ "half a tablespoon of": {
+  "word": "half a tablespoon of",
+  "ipa": "/ˌhɑːf ə ˈteɪblspuːn ɒv/",
+  "reading": "haf e teybılspuun ov",
+  "meanings": [
+   "yarım yemek kaşığı"
+  ],
+  "definition": "An amount equal to half of a tablespoon",
+  "example": "Use half a tablespoon of honey in your tea."
+ },
+ "half a kilo of": {
+  "word": "half a kilo of",
+  "ipa": "/ˌhɑːf ə ˈkiːləʊ ɒv/",
+  "reading": "haf e kilou ov",
+  "meanings": [
+   "yarım kilo"
+  ],
+  "definition": "An amount equal to half of a kilogram",
+  "example": "I want to buy half a kilo of fresh strawberries."
  }
 }
