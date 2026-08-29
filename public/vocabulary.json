@@ -21188,15 +21188,6 @@
   "definition": "A film or TV show providing factual information",
   "example": "We watched an interesting documentary about whales."
  },
- "draw pictures": {
-  "ipa": "/drɔː ˈpɪktʃəz/",
-  "reading": "dro pıkçız",
-  "meanings": [
-   "resimler çizmek"
-  ],
-  "definition": "Create images with a pencil or pen",
-  "example": "The little girl loves to draw pictures of animals."
- },
  "drummer": {
   "ipa": "/ˈdrʌmə(r)/",
   "reading": "drâmı",
@@ -21381,15 +21372,6 @@
   ],
   "definition": "Time available for relaxation or hobbies.",
   "example": "She reads books in her free time."
- },
- "gain rewards": {
-  "ipa": "/ɡeɪn rɪˈwɔːdz/",
-  "reading": "geyn rivoords",
-  "meanings": [
-   "ödül kazanmak"
-  ],
-  "definition": "To receive prizes for good performance.",
-  "example": "Hard work helps students gain rewards."
  },
  "get dressed": {
   "ipa": "/ɡet drest/",
@@ -22011,15 +21993,6 @@
   "definition": "To divide tasks between people.",
   "example": "Family members should share duties at home."
  },
- "shop in stores": {
-  "ipa": "/ʃɒp ɪn stɔːz/",
-  "reading": "şop in storz",
-  "meanings": [
-   "mağazada alışveriş yapmak"
-  ],
-  "definition": "To buy things physically in shops.",
-  "example": "I prefer to shop in stores rather than online."
- },
  "sing a song": {
   "ipa": "/sɪŋ ə sɒŋ/",
   "reading": "sing e song",
@@ -22148,15 +22121,6 @@
   ],
   "definition": "To attend lessons to learn a subject.",
   "example": "I want to take classes to learn Spanish."
- },
- "take good marks": {
-  "ipa": "/teɪk ɡʊd mɑːks/",
-  "reading": "teyk gud maks",
-  "meanings": [
-   "iyi not almak"
-  ],
-  "definition": "To achieve high grades in school.",
-  "example": "She studies hard to take good marks."
  },
  "talent": {
   "ipa": "/ˈtælənt/",
@@ -55356,5 +55320,176 @@
   ],
   "definition": "Something that you do for interest or pleasure.",
   "example": "Swimming is a healthy outdoor activity."
+ },
+ "draw picture": {
+  "ipa": "/drɔː ˈpɪktʃəz/",
+  "reading": "dro pıkçız",
+  "meanings": [
+   "resim çizmek"
+  ],
+  "definition": "Create images with a pencil or pen",
+  "example": "The little girl loves to draw pictures of animals.",
+  "word": "draw picture"
+ },
+ "take good mark": {
+  "ipa": "/teɪk ɡʊd mɑːks/",
+  "reading": "teyk gud maks",
+  "meanings": [
+   "iyi not almak"
+  ],
+  "definition": "To achieve high grades in school.",
+  "example": "She studies hard to take good marks.",
+  "word": "take good mark"
+ },
+ "gain reward": {
+  "ipa": "/ɡeɪn rɪˈwɔːdz/",
+  "reading": "geyn rivoords",
+  "meanings": [
+   "ödül kazanmak"
+  ],
+  "definition": "To receive prizes for good performance.",
+  "example": "Hard work helps students gain rewards.",
+  "word": "gain reward"
+ },
+ "shop in store": {
+  "ipa": "/ʃɒp ɪn stɔːz/",
+  "reading": "şop in storz",
+  "meanings": [
+   "mağazada alışveriş yapmak"
+  ],
+  "definition": "To buy things physically in shops.",
+  "example": "I prefer to shop in stores rather than online.",
+  "word": "shop in store"
+ },
+ "outfit": {
+  "word": "outfit",
+  "ipa": "/ˈaʊt.fɪt/",
+  "reading": "autfit",
+  "meanings": [
+   "kıyafet",
+   "kombin"
+  ],
+  "definition": "A set of clothes worn together.",
+  "example": "She chose a nice outfit for her job interview."
+ },
+ "social media": {
+  "word": "social media",
+  "ipa": "/ˌsəʊ.ʃəl ˈmiː.di.ə/",
+  "reading": "sovşıl midya",
+  "meanings": [
+   "sosyal medya"
+  ],
+  "definition": "Websites and apps used for sharing content and networking.",
+  "example": "Many people use social media to stay in touch."
+ },
+ "computer game": {
+  "word": "computer game",
+  "ipa": "/kəmˈpjuː.tə ˌɡeɪm/",
+  "reading": "kompyutır geym",
+  "meanings": [
+   "bilgisayar oyunu"
+  ],
+  "definition": "A game played on a personal computer.",
+  "example": "He likes to play a computer game after dinner."
+ },
+ "go camping": {
+  "word": "go camping",
+  "ipa": "/ɡəʊ ˈkæm.pɪŋ/",
+  "reading": "gov kemping",
+  "meanings": [
+   "kamp yapmaya gitmek"
+  ],
+  "definition": "To stay in a tent for holiday.",
+  "example": "We often go camping in the mountains during summer."
+ },
+ "attend a concert": {
+  "word": "attend a concert",
+  "ipa": "/əˈtend ə ˈkɒn.sət/",
+  "reading": "etend e konsıt",
+  "meanings": [
+   "konsere katılmak"
+  ],
+  "definition": "To go to a live music performance.",
+  "example": "They plan to attend a concert this weekend."
+ },
+ "type of music": {
+  "word": "type of music",
+  "ipa": "/taɪp ɒv ˈmjuː.zɪk/",
+  "reading": "tayp ov müzik",
+  "meanings": [
+   "müzik türü"
+  ],
+  "definition": "A specific category or style of music.",
+  "example": "What type of music do you like most?"
+ },
+ "play an instrument": {
+  "word": "play an instrument",
+  "ipa": "/pleɪ ən ˈɪn.strə.mənt/",
+  "reading": "pley en instrımınt",
+  "meanings": [
+   "enstrüman çalmak"
+  ],
+  "definition": "To make music with a musical tool.",
+  "example": "Children should learn to play an instrument early."
+ },
+ "watch a series": {
+  "word": "watch a series",
+  "ipa": "/wɒtʃ ə ˈsɪə.riːz/",
+  "reading": "voç e siriz",
+  "meanings": [
+   "dizi izlemek"
+  ],
+  "definition": "To view a set of television episodes.",
+  "example": "I want to watch a series before going to sleep."
+ },
+ "read a magazine": {
+  "word": "read a magazine",
+  "ipa": "/riːd ə ˌmæɡ.əˈziːn/",
+  "reading": "riid e megıziin",
+  "meanings": [
+   "dergi okumak"
+  ],
+  "definition": "To look at and understand a periodic publication.",
+  "example": "She likes to read a magazine while drinking tea."
+ },
+ "do chores": {
+  "word": "do chores",
+  "ipa": "/duː tʃɔːz/",
+  "reading": "du çorz",
+  "meanings": [
+   "ev işleri yapmak"
+  ],
+  "definition": "To perform routine domestic tasks.",
+  "example": "They always do chores together on Saturday morning."
+ },
+ "hardly ever": {
+  "word": "hardly ever",
+  "ipa": "/ˌhɑːd.li ˈev.ər/",
+  "reading": "hardli evır",
+  "meanings": [
+   "neredeyse hiç"
+  ],
+  "definition": "Almost never; very rarely.",
+  "example": "I hardly ever watch television in the morning."
+ },
+ "frequently": {
+  "word": "frequently",
+  "ipa": "/ˈfriː.kwənt.li/",
+  "reading": "frikwıntli",
+  "meanings": [
+   "sık sık"
+  ],
+  "definition": "Often; many times.",
+  "example": "They frequently visit their grandparents during holidays."
+ },
+ "daily routine": {
+  "word": "daily routine",
+  "ipa": "/ˌdeɪ.li ruːˈtiːn/",
+  "reading": "deyli rutiin",
+  "meanings": [
+   "günlük rutin"
+  ],
+  "definition": "The usual things you do every day.",
+  "example": "Exercise is an important part of my daily routine."
  }
 }
