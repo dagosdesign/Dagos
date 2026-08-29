@@ -18206,7 +18206,7 @@
   "reading": "badi",
   "meanings": [
    "kanka",
-   "dost"
+   "arkadaş"
   ],
   "definition": "A close friend.",
   "example": "He is my best buddy."
@@ -18715,15 +18715,6 @@
   ],
   "definition": "Treating people equally without favouritism.",
   "example": "The teacher made a fair decision."
- },
- "family ties": {
-  "ipa": "/ˈfæməli taɪz/",
-  "reading": "femeli tayz",
-  "meanings": [
-   "aile bağları"
-  ],
-  "definition": "The connections between members of a family.",
-  "example": "They have strong family ties."
  },
  "fashionable": {
   "ipa": "/ˈfæʃnəbl/",
@@ -19458,15 +19449,6 @@
   "definition": "To come together with someone socially.",
   "example": "Let us meet up for coffee tomorrow afternoon."
  },
- "meeting with friends": {
-  "ipa": "/ˈmiːtɪŋ wɪð frendz/",
-  "reading": "miytin vid frenz",
-  "meanings": [
-   "arkadaşlarla buluşmak"
-  ],
-  "definition": "A gathering involving people you know well.",
-  "example": "I have a fun meeting with friends tonight."
- },
  "mind (others)": {
   "ipa": "/maɪnd/",
   "reading": "maynd",
@@ -20019,7 +20001,7 @@
   "ipa": "/ˈsendə(r)/",
   "reading": "sendır",
   "meanings": [
-   "gönderen"
+   "gönderici"
   ],
   "definition": "A person who sends something.",
   "example": "Check the sender's address on the letter."
@@ -20443,7 +20425,7 @@
   "ipa": "/ˈθrɪlə(r)/",
   "reading": "trilır",
   "meanings": [
-   "gerilim filmi"
+   "gerilim"
   ],
   "definition": "An exciting book or movie about crime.",
   "example": "I love watching a good psychological thriller."
@@ -20552,7 +20534,8 @@
   "ipa": "/ˈtrʌbl/",
   "reading": "trabl",
   "meanings": [
-   "sorun"
+   "sorun",
+   "bela"
   ],
   "definition": "Difficulty or problems.",
   "example": "I am having trouble with my computer."
@@ -20716,15 +20699,6 @@
   "definition": "Very pleasant to taste.",
   "example": "This chocolate cake is so yummy."
  },
- "accept (invitation / offer)": {
-  "ipa": "",
-  "reading": "eksept",
-  "meanings": [
-   "kabul etmek"
-  ],
-  "definition": "To say yes to an invitation or offer.",
-  "example": "I accept your invitation with pleasure."
- },
  "alone / feel alone": {
   "ipa": "",
   "reading": "ıloun",
@@ -20734,15 +20708,6 @@
   ],
   "definition": "Being by yourself; feeling lonely.",
   "example": "He doesn't want to feel alone at the party."
- },
- "always in a hurry": {
-  "ipa": "",
-  "reading": "olveyz in ı höri",
-  "meanings": [
-   "her zaman acele içinde"
-  ],
-  "definition": "Never having enough time; always rushing.",
-  "example": "My cousin is always in a hurry in the mornings."
  },
  "always there for me": {
   "ipa": "",
@@ -53384,5 +53349,2012 @@
   ],
   "definition": "To make something more attractive by adding decoration.",
   "example": "They adorn the Christmas tree with bright lights."
+ },
+ "zenith": {
+  "ipa": "/ˈzenɪθ/",
+  "reading": "zenit",
+  "meanings": [
+   "Zirve",
+   "en yüksek nokta"
+  ],
+  "definition": "The highest point of power or success.",
+  "example": "She reached the zenith of her career as an actress."
+ },
+ "beautify": {
+  "ipa": "/ˈbjuːtɪfaɪ/",
+  "reading": "byutifay",
+  "meanings": [
+   "Güzelleştirmek"
+  ],
+  "definition": "To make something beautiful.",
+  "example": "They want to beautify the park with some new flowers."
+ },
+ "satiety": {
+  "ipa": "/səˈtaɪ.ə.ti/",
+  "reading": "sıtayiti",
+  "meanings": [
+   "Tokluk hissi"
+  ],
+  "definition": "The state of being completely full or satisfied.",
+  "example": "A high-protein diet can increase the feeling of satiety."
+ },
+ "skeletal": {
+  "ipa": "/ˈskel.ə.təl/",
+  "reading": "skelıtıl",
+  "meanings": [
+   "İskeletle ilgili"
+  ],
+  "definition": "Relating to or functioning as a skeleton.",
+  "example": "The disease can cause severe damage to the skeletal system."
+ },
+ "retard": {
+  "ipa": "/rɪˈtɑːd/",
+  "reading": "ritard",
+  "meanings": [
+   "Yavaşlatmak",
+   "geciktirmek ⚠️"
+  ],
+  "definition": "To make something slow down or happen later.",
+  "example": "Lack of sunlight will retard the growth of these plants."
+ },
+ "complicate": {
+  "ipa": "/ˈkɒm.plɪ.keɪt/",
+  "reading": "komplikeyt",
+  "meanings": [
+   "Karmaşıklaştırmak"
+  ],
+  "definition": "To make something more difficult to understand.",
+  "example": "Please do not complicate the situation any further."
+ },
+ "pinnacle": {
+  "ipa": "/ˈpɪn.ə.kəl/",
+  "reading": "pinıkıl",
+  "meanings": [
+   "Zirve",
+   "en üst seviye"
+  ],
+  "definition": "The most successful point of something.",
+  "example": "Winning the award was the pinnacle of her artistic career."
+ },
+ "hereditary": {
+  "ipa": "/hɪˈred.ɪ.tər.i/",
+  "reading": "hirediteri",
+  "meanings": [
+   "Kalıtsal"
+  ],
+  "definition": "Passed from parent to child through genes.",
+  "example": "Some forms of blindness are known to be hereditary."
+ },
+ "architectural": {
+  "ipa": "/ˌɑː.kɪˈtek.tʃər.əl/",
+  "reading": "arkitekçırıl",
+  "meanings": [
+   "Mimariyle ilgili"
+  ],
+  "definition": "Relating to the design of buildings.",
+  "example": "The city is famous for its unique architectural style."
+ },
+ "congest": {
+  "ipa": "/kənˈdʒest/",
+  "reading": "kıncest",
+  "meanings": [
+   "Yoğunlaştırmak",
+   "sıkışıklık oluşturmak"
+  ],
+  "definition": "To crowd or block a passage with traffic.",
+  "example": "Heavy trucks can easily congest the narrow city streets."
+ },
+ "incorporate": {
+  "ipa": "/ɪnˈkɔː.pər.eɪt/",
+  "reading": "inkorpıreyt",
+  "meanings": [
+   "Dahil etmek",
+   "içine katmak"
+  ],
+  "definition": "To include something as part of a larger group.",
+  "example": "You should incorporate more fresh vegetables into your daily diet."
+ },
+ "viewpoint": {
+  "ipa": "/ˈvjuː.pɔɪnt/",
+  "reading": "vyupoynt",
+  "meanings": [
+   "Bakış açısı"
+  ],
+  "definition": "A way of thinking about something; a perspective.",
+  "example": "From my viewpoint, this decision seems to be very fair."
+ },
+ "temper": {
+  "ipa": "/ˈtem.pər/",
+  "reading": "tempır",
+  "meanings": [
+   "Hafifletmek",
+   "yumuşatmak"
+  ],
+  "definition": "A person's state of mind seen in terms of anger.",
+  "example": "He has a very short temper when he is tired."
+ },
+ "lethal": {
+  "ipa": "/ˈliː.θəl/",
+  "reading": "liisıl",
+  "meanings": [
+   "Ölümcül ⚠️"
+  ],
+  "definition": "Able to cause death; deadly.",
+  "example": "The snake has a lethal venom to protect itself."
+ },
+ "volatile": {
+  "ipa": "/ˈvɒl.ə.taɪl/",
+  "reading": "volatayl",
+  "meanings": [
+   "Kolayca değişen",
+   "istikrarsız"
+  ],
+  "definition": "Likely to change suddenly and unexpectedly.",
+  "example": "The stock market is highly volatile these days."
+ },
+ "formaldehyde": {
+  "ipa": "/fɔːˈmæl.də.haɪd/",
+  "reading": "formaldehayt",
+  "meanings": [
+   "Formaldehit ⚠️"
+  ],
+  "definition": "A strong-smelling gas used to preserve specimens.",
+  "example": "Scientists use formaldehyde to preserve biological samples."
+ },
+ "airtight": {
+  "ipa": "/ˈeə.taɪt/",
+  "reading": "eyıtayt",
+  "meanings": [
+   "Hava geçirmez"
+  ],
+  "definition": "Closed so tightly that no air can enter.",
+  "example": "Keep the cookies in an airtight container."
+ },
+ "meaningful": {
+  "ipa": "/ˈmiː.nɪŋ.fəl/",
+  "reading": "miiningful",
+  "meanings": [
+   "Anlamlı",
+   "değer taşıyan"
+  ],
+  "definition": "Useful, serious, or important.",
+  "example": "We had a meaningful discussion about our future plans."
+ },
+ "blast": {
+  "ipa": "/blɑːst/",
+  "reading": "bılast",
+  "meanings": [
+   "Güçlü hava patlaması",
+   "ani basınç dalgası ⚠️"
+  ],
+  "definition": "A sudden loud noise or explosion.",
+  "example": "The loud blast frightened everyone in the building."
+ },
+ "drawback": {
+  "ipa": "/ˈdrɔː.bæk/",
+  "reading": "dırobek",
+  "meanings": [
+   "Dezavantaj",
+   "olumsuz yön"
+  ],
+  "definition": "A disadvantage or negative feature of something.",
+  "example": "The main drawback of this car is its high price."
+ },
+ "scope": {
+  "ipa": "/skəʊp/",
+  "reading": "ıskop",
+  "meanings": [
+   "Kapsam"
+  ],
+  "definition": "The range of things that a subject deals with.",
+  "example": "This issue is outside the scope of our investigation."
+ },
+ "fodder": {
+  "ipa": "/ˈfɒd.ər/",
+  "reading": "fodır",
+  "meanings": [
+   "Hayvan yemi"
+  ],
+  "definition": "Food given to cows, horses, and other farm animals.",
+  "example": "Farmers store dried hay as fodder for the winter."
+ },
+ "foodstuff": {
+  "ipa": "/ˈfuːd.stʌf/",
+  "reading": "fuudstaf",
+  "meanings": [
+   "Gıda maddesi"
+  ],
+  "definition": "Any substance that is used as food.",
+  "example": "Rice is an essential foodstuff for millions of people."
+ },
+ "livestock": {
+  "ipa": "/ˈlaɪv.stɒk/",
+  "reading": "layvstok",
+  "meanings": [
+   "Çiftlik hayvanları"
+  ],
+  "definition": "Animals kept on a farm for use or profit.",
+  "example": "The farmer sells livestock to earn a living."
+ },
+ "temperate": {
+  "ipa": "/ˈtem.pər.ət/",
+  "reading": "tempırıt",
+  "meanings": [
+   "Ilıman"
+  ],
+  "definition": "Having a climate that is never extremely hot or cold.",
+  "example": "This region enjoys a mild and temperate climate."
+ },
+ "criterion": {
+  "ipa": "/kraɪˈtɪəriən/",
+  "reading": "kraytıriyın",
+  "meanings": [
+   "Ölçüt",
+   "kriter"
+  ],
+  "definition": "A principle or standard by which something may be judged.",
+  "example": "Academic achievement is not the only criterion for success."
+ },
+ "chronological": {
+  "ipa": "/ˌkrɒnəˈlɒdʒɪkl/",
+  "reading": "kronolocıkıl",
+  "meanings": [
+   "Kronolojik",
+   "zaman sırasına göre"
+  ],
+  "definition": "Arranged in the order of time.",
+  "example": "Please put these historical events in chronological order."
+ },
+ "retrieve": {
+  "ipa": "/rɪˈtriːv/",
+  "reading": "ritriiv",
+  "meanings": [
+   "Geri almak",
+   "yeniden erişmek"
+  ],
+  "definition": "To get or bring something back from somewhere.",
+  "example": "The dog will retrieve the ball from the water."
+ },
+ "synesthesia": {
+  "ipa": "/ˌsɪnəsˈθiːziə/",
+  "reading": "sinestizya",
+  "meanings": [
+   "Sinestezi"
+  ],
+  "definition": "A condition where one sense is perceived as another.",
+  "example": "She experiences synesthesia when she listens to classical music."
+ },
+ "couple": {
+  "ipa": "/ˈkʌpl/",
+  "reading": "kapıl",
+  "meanings": [
+   "Çift",
+   "iki şey"
+  ],
+  "definition": "Two people or things of the same sort.",
+  "example": "I saw a young couple walking in the park."
+ },
+ "supernatural": {
+  "ipa": "/ˌsuːpəˈnætʃrəl/",
+  "reading": "suupırneçırıl",
+  "meanings": [
+   "Doğaüstü"
+  ],
+  "definition": "Beyond the laws of nature.",
+  "example": "Some people believe in supernatural creatures like ghosts."
+ },
+ "gratitude": {
+  "ipa": "/ˈɡrætɪtjuːd/",
+  "reading": "gretityuud",
+  "meanings": [
+   "Minnettarlık",
+   "şükran"
+  ],
+  "definition": "The quality of being thankful.",
+  "example": "I want to express my gratitude for your kind help."
+ },
+ "combat": {
+  "ipa": "/ˈkɒmbæt/",
+  "reading": "kombet",
+  "meanings": [
+   "Mücadele etmek"
+  ],
+  "definition": "Fighting between armed forces or active opposition.",
+  "example": "The soldiers are trained for close combat situations."
+ },
+ "dismissive": {
+  "ipa": "/dɪsˈmɪsɪv/",
+  "reading": "dismisiv",
+  "meanings": [
+   "Küçümseyici",
+   "önemsemeyen"
+  ],
+  "definition": "Showing that something is not worthy of consideration.",
+  "example": "He made a dismissive wave of his hand."
+ },
+ "dissatisfaction": {
+  "ipa": "/ˌdɪsˌsætɪsˈfækʃn/",
+  "reading": "dis-setisfekşın",
+  "meanings": [
+   "Memnuniyetsizlik"
+  ],
+  "definition": "Lack of satisfaction or contentment.",
+  "example": "The customer expressed deep dissatisfaction with our service."
+ },
+ "waterlogged": {
+  "ipa": "/ˈwɔːtəlɒɡd/",
+  "reading": "vootırlogd",
+  "meanings": [
+   "Suya doymuş",
+   "aşırı ıslanmış"
+  ],
+  "definition": "Saturated with or full of water.",
+  "example": "The heavy rain made the playing field completely waterlogged."
+ },
+ "antidote": {
+  "ipa": "/ˈæntidəʊt/",
+  "reading": "entidout",
+  "meanings": [
+   "Panzehir ⚠️"
+  ],
+  "definition": "A medicine taken to counteract a particular poison.",
+  "example": "Doctors administered the antidote just in time."
+ },
+ "exalted": {
+  "ipa": "/ɪɡˈzɔːltɪd/",
+  "reading": "igzooltıd",
+  "meanings": [
+   "Çok yüce",
+   "yüksek itibarlı"
+  ],
+  "definition": "Placed at a high or powerful level.",
+  "example": "She holds an exalted position in the company."
+ },
+ "vague": {
+  "ipa": "/veɪɡ/",
+  "reading": "veyg",
+  "meanings": [
+   "Belirsiz",
+   "net olmayan"
+  ],
+  "definition": "Not clear or specific in meaning.",
+  "example": "His explanation of the plan was very vague."
+ },
+ "serene": {
+  "ipa": "/səˈriːn/",
+  "reading": "siriyn",
+  "meanings": [
+   "Huzurlu",
+   "sakin"
+  ],
+  "definition": "Calm, peaceful, and untroubled.",
+  "example": "She looked at the serene lake and relaxed."
+ },
+ "pacify": {
+  "ipa": "/ˈpæsɪfaɪ/",
+  "reading": "pasıfay",
+  "meanings": [
+   "Sakinleştirmek"
+  ],
+  "definition": "To bring peace or calm down.",
+  "example": "They tried to pacify the angry crowd."
+ },
+ "praise": {
+  "ipa": "/preɪz/",
+  "reading": "preyz",
+  "meanings": [
+   "Övmek",
+   "takdir etmek"
+  ],
+  "definition": "Expressing warm approval or admiration.",
+  "example": "The teacher had nothing but praise for her students."
+ },
+ "adjacent": {
+  "ipa": "/əˈdʒeɪsənt/",
+  "reading": "ecéyınt",
+  "meanings": [
+   "Bitişik",
+   "hemen yanında"
+  ],
+  "definition": "Next to or adjoining something else.",
+  "example": "Their house is adjacent to the park."
+ },
+ "plateau": {
+  "ipa": "/ˈplætəʊ/",
+  "reading": "platō",
+  "meanings": [
+   "Plato",
+   "yüksek düzlük"
+  ],
+  "definition": "A large flat area of high land.",
+  "example": "The city is built on a high plateau."
+ },
+ "colonial": {
+  "ipa": "/kəˈləʊniəl/",
+  "reading": "kolōniyal",
+  "meanings": [
+   "Sömürge dönemine ait"
+  ],
+  "definition": "Relating to a colony or colonialism.",
+  "example": "The museum exhibits historical colonial artifacts."
+ },
+ "capitalism": {
+  "ipa": "/ˈkæpɪtəlɪzəm/",
+  "reading": "kapitalizm",
+  "meanings": [
+   "Kapitalizm"
+  ],
+  "definition": "An economic and political system based on private ownership.",
+  "example": "Capitalism relies on free markets and competition."
+ },
+ "unpack": {
+  "ipa": "/ʌnˈpæk/",
+  "reading": "anpak",
+  "meanings": [
+   "Paketten çıkarmak"
+  ],
+  "definition": "To take goods out of a container or luggage.",
+  "example": "I need to unpack my suitcase after the trip."
+ },
+ "storehouse": {
+  "ipa": "/ˈstɔːhaʊs/",
+  "reading": "storhaus",
+  "meanings": [
+   "Depo",
+   "ambar"
+  ],
+  "definition": "A building for storing goods.",
+  "example": "The old factory was converted into a storehouse."
+ },
+ "hybrid": {
+  "ipa": "/ˈhaɪbrɪd/",
+  "reading": "haybrid",
+  "meanings": [
+   "Melez",
+   "iki farklı türün birleşiminden oluşan"
+  ],
+  "definition": "A thing made by combining two different elements.",
+  "example": "They decided to buy a hybrid car."
+ },
+ "enumerate": {
+  "ipa": "/ɪˈnjuːməreɪt/",
+  "reading": "inyümereyt",
+  "meanings": [
+   "Tek tek saymak",
+   "sıralamak"
+  ],
+  "definition": "To mention a number of things one by one.",
+  "example": "Let me enumerate the reasons for my decision."
+ },
+ "anonymous": {
+  "ipa": "/əˈnɒnɪməs/",
+  "reading": "anonimıs",
+  "meanings": [
+   "İsimsiz",
+   "kimliği belirtilmeyen"
+  ],
+  "definition": "Not identified by name or unknown source.",
+  "example": "She made an anonymous donation to the charity."
+ },
+ "accountable": {
+  "ipa": "/əˈkaʊntəbl/",
+  "reading": "akauntebl",
+  "meanings": [
+   "Sorumlu",
+   "hesap verebilir"
+  ],
+  "definition": "Required to justify actions or decisions.",
+  "example": "Leaders must be accountable for their mistakes."
+ },
+ "extrasolar": {
+  "ipa": "/ˌekstrəˈsəʊlə(r)/",
+  "reading": "ekstrasolar",
+  "meanings": [
+   "Güneş Sistemi dışındaki"
+  ],
+  "definition": "Located outside the solar system.",
+  "example": "Astronomers discovered a new extrasolar planet recently."
+ },
+ "inception": {
+  "ipa": "/ɪnˈsepʃn/",
+  "reading": "insepsşın",
+  "meanings": [
+   "Başlangıç",
+   "ortaya çıkış"
+  ],
+  "definition": "The establishment or starting point of an organization.",
+  "example": "The club has grown a lot since its inception."
+ },
+ "slope": {
+  "ipa": "/sləʊp/",
+  "reading": "slop",
+  "meanings": [
+   "Eğim",
+   "yamaç"
+  ],
+  "definition": "A surface of high ground that is slanted.",
+  "example": "They walked up the steep slope together."
+ },
+ "constrain": {
+  "ipa": "/kənˈstreɪn/",
+  "reading": "konstreyn",
+  "meanings": [
+   "Sınırlamak"
+  ],
+  "definition": "To severely restrict or limit someone's actions.",
+  "example": "Lack of money will constrain our research plans."
+ },
+ "inanimate": {
+  "ipa": "/ɪnˈænɪmət/",
+  "reading": "inanimat",
+  "meanings": [
+   "Cansız"
+  ],
+  "definition": "Not alive, showing no signs of life.",
+  "example": "Rocks and stones are inanimate objects."
+ },
+ "segregate": {
+  "ipa": "/ˈseɡrɪɡeɪt/",
+  "reading": "segrigeyt",
+  "meanings": [
+   "Ayırmak",
+   "ayrı gruplara bölmek ⚠️"
+  ],
+  "definition": "To set apart from the rest.",
+  "example": "You should segregate the recyclables from trash."
+ },
+ "superficial": {
+  "ipa": "/ˌsuːpəˈfɪʃl/",
+  "reading": "süperfişıl",
+  "meanings": [
+   "Yüzeysel"
+  ],
+  "definition": "Existing or occurring at or on the surface.",
+  "example": "He only suffered superficial cuts and bruises."
+ },
+ "eccentric": {
+  "ipa": "/ɪkˈsentrɪk/",
+  "reading": "iksentrik",
+  "meanings": [
+   "Alışılmadık",
+   "sıra dışı"
+  ],
+  "definition": "Unconventional and slightly strange behavior.",
+  "example": "The old man is known for his eccentric habits."
+ },
+ "equator": {
+  "ipa": "/ɪˈkweɪtə(r)/",
+  "reading": "ikweytor",
+  "meanings": [
+   "Ekvator"
+  ],
+  "definition": "An imaginary line dividing the earth into hemispheres.",
+  "example": "Countries near the equator have warm weather."
+ },
+ "spectrum": {
+  "ipa": "/ˈspektrəm/",
+  "reading": "spektrüm",
+  "meanings": [
+   "Spektrum",
+   "tayf"
+  ],
+  "definition": "A band of colors or a wide range.",
+  "example": "Rainbows show a full spectrum of colors."
+ },
+ "baboon": {
+  "ipa": "/bəˈbuːn/",
+  "reading": "babun",
+  "meanings": [
+   "Babun"
+  ],
+  "definition": "A large African monkey with a dog-like face.",
+  "example": "A baboon climbed up the tree branches."
+ },
+ "roam": {
+  "ipa": "/rəʊm/",
+  "reading": "rom",
+  "meanings": [
+   "Dolaşmak",
+   "serbestçe gezmek"
+  ],
+  "definition": "To move about aimlessly or without a destination.",
+  "example": "Wild animals roam freely in this national park."
+ },
+ "residential": {
+  "ipa": "/ˌrezɪˈdenʃl/",
+  "reading": "rezidentşıl",
+  "meanings": [
+   "Yerleşim bölgesine ait"
+  ],
+  "definition": "Designed for people to live in.",
+  "example": "It is a quiet residential area."
+ },
+ "deem": {
+  "ipa": "/diːm/",
+  "reading": "diim",
+  "meanings": [
+   "Olarak değerlendirmek",
+   "kabul etmek"
+  ],
+  "definition": "To consider or judge something in a way.",
+  "example": "The committee will deem the plan suitable."
+ },
+ "juvenile": {
+  "ipa": "/ˈdʒuːvənaɪl/",
+  "reading": "cuuvənayl",
+  "meanings": [
+   "Genç",
+   "henüz yetişkin olmayan"
+  ],
+  "definition": "Relating to young people who are not adults.",
+  "example": "The law protects juvenile offenders."
+ },
+ "savvy": {
+  "ipa": "/ˈsævi/",
+  "reading": "sevi",
+  "meanings": [
+   "Bilgili ve pratik zekâlı"
+  ],
+  "definition": "Having practical knowledge and good judgment.",
+  "example": "She is a tech-savvy manager."
+ },
+ "imprison": {
+  "ipa": "/ɪmˈprɪzn/",
+  "reading": "imprızın",
+  "meanings": [
+   "Hapse atmak",
+   "özgürlüğünü kısıtlamak ⚠️"
+  ],
+  "definition": "To put someone in prison.",
+  "example": "The judge will imprison the criminal."
+ },
+ "undetermined": {
+  "ipa": "/ˌʌndɪˈtɜːmɪnd/",
+  "reading": "anditörmind",
+  "meanings": [
+   "Belirlenmemiş",
+   "kesinleşmemiş"
+  ],
+  "definition": "Not fixed, decided, or known yet.",
+  "example": "The exact cost remains undetermined."
+ },
+ "resurgence": {
+  "ipa": "/rɪˈsɜːdʒəns/",
+  "reading": "risörcens",
+  "meanings": [
+   "Yeniden yükseliş",
+   "yeniden canlanma"
+  ],
+  "definition": "A return or growth of something active.",
+  "example": "There is a resurgence of vinyl records."
+ },
+ "suite": {
+  "ipa": "/swiːt/",
+  "reading": "swiit",
+  "meanings": [
+   "Birbirine bağlı oda grubu"
+  ],
+  "definition": "A set of rooms designated for one person.",
+  "example": "They booked a luxury hotel suite."
+ },
+ "discourse": {
+  "ipa": "/ˈdɪskɔːs/",
+  "reading": "diskors",
+  "meanings": [
+   "Söylem",
+   "kapsamlı konuşma/tartışma"
+  ],
+  "definition": "Written or spoken communication or debate.",
+  "example": "Political discourse is essential for democracy."
+ },
+ "abstract": {
+  "ipa": "/ˈæbstrækt/",
+  "reading": "ebstrekt",
+  "meanings": [
+   "Soyut"
+  ],
+  "definition": "Existing in thought rather than a physical reality.",
+  "example": "Art can sometimes be very abstract."
+ },
+ "turmoil": {
+  "ipa": "/ˈtɜːmɔɪl/",
+  "reading": "törmoyl",
+  "meanings": [
+   "Karmaşa",
+   "çalkantı"
+  ],
+  "definition": "A state of great disturbance or uncertainty.",
+  "example": "The country is in political turmoil."
+ },
+ "matriarch": {
+  "ipa": "/ˈmeɪtriɑːk/",
+  "reading": "meytriark",
+  "meanings": [
+   "Ailenin/topluluğun kadın lideri"
+  ],
+  "definition": "A woman who is the head of a family.",
+  "example": "She is the beloved matriarch of the family."
+ },
+ "natal": {
+  "ipa": "/ˈneɪtl/",
+  "reading": "neytıl",
+  "meanings": [
+   "Doğumla ilgili"
+  ],
+  "definition": "Relating to the place or time of birth.",
+  "example": "Natal care is crucial for newborns."
+ },
+ "redeem": {
+  "ipa": "/rɪˈdiːm/",
+  "reading": "ridiim",
+  "meanings": [
+   "Telafi etmek",
+   "hatasını düzeltmek"
+  ],
+  "definition": "To gain or regain possession of something.",
+  "example": "He can redeem his ticket online."
+ },
+ "plaque": {
+  "ipa": "/plɑːk/",
+  "reading": "plak",
+  "meanings": [
+   "Diş plağı ⚠️"
+  ],
+  "definition": "An ornamental tablet on a wall or teeth layer.",
+  "example": "There is a commemorative plaque on the wall."
+ },
+ "inhibit": {
+  "ipa": "/ɪnˈhɪbɪt/",
+  "reading": "inhibgit",
+  "meanings": [
+   "Engellemek",
+   "yavaşlatmak"
+  ],
+  "definition": "To hinder, restrain, or prevent an action.",
+  "example": "Cold weather can inhibit plant growth."
+ },
+ "underscore": {
+  "ipa": "/ˌʌndəˈskɔː/",
+  "reading": "andıskor",
+  "meanings": [
+   "Vurgulamak"
+  ],
+  "definition": "To emphasize or show the importance of something.",
+  "example": "The report helps to underscore the need for immediate action."
+ },
+ "payoff": {
+  "ipa": "/ˈpeɪɒf/",
+  "reading": "peyof",
+  "meanings": [
+   "Emeğin karşılığı",
+   "olumlu sonuç"
+  ],
+  "definition": "A positive result from a hard work or investment.",
+  "example": "Hard work and patience will eventually bring a good payoff."
+ },
+ "hurdle": {
+  "ipa": "/ˈhɜːdl/",
+  "reading": "hürdıl",
+  "meanings": [
+   "Engel",
+   "aşılması gereken zorluk"
+  ],
+  "definition": "A problem or difficulty that must be overcome.",
+  "example": "Financial shortage was the biggest hurdle they had to face."
+ },
+ "culprit": {
+  "ipa": "/ˈkʌlprɪt/",
+  "reading": "kalprit",
+  "meanings": [
+   "Soruna neden olan unsur ⚠️"
+  ],
+  "definition": "The person responsible for a crime or problem.",
+  "example": "Police finally caught the culprit behind the robbery."
+ },
+ "inconclusive": {
+  "ipa": "/ˌɪnkənˈkluːsɪv/",
+  "reading": "inkonklusiv",
+  "meanings": [
+   "Kesin sonuca varmayan"
+  ],
+  "definition": "Not giving a clear or definite result.",
+  "example": "The test results were inconclusive, so doctors ran more checks."
+ },
+ "vantage": {
+  "ipa": "/ˈvɑːntɪdʒ/",
+  "reading": "vantic",
+  "meanings": [
+   "Avantajlı görüş noktası"
+  ],
+  "definition": "A place or position giving a good view.",
+  "example": "From this vantage point, we can see the entire valley."
+ },
+ "scrutiny": {
+  "ipa": "/ˈskruːtəni/",
+  "reading": "skrutini",
+  "meanings": [
+   "Çok dikkatli inceleme"
+  ],
+  "definition": "Critical observation or examination of something.",
+  "example": "The company accounts came under close scrutiny."
+ },
+ "utopia": {
+  "ipa": "/juːˈtəʊpiə/",
+  "reading": "yutopya",
+  "meanings": [
+   "Kusursuz toplum hayali"
+  ],
+  "definition": "An imagined place where everything is perfect.",
+  "example": "He dreams of building a political utopia for everyone."
+ },
+ "thorny": {
+  "ipa": "/ˈθɔːni/",
+  "reading": "thorni",
+  "meanings": [
+   "Dikenli"
+  ],
+  "definition": "Causing difficulty or disagreement.",
+  "example": "Tax reform remains a thorny issue for the government."
+ },
+ "jurisdiction": {
+  "ipa": "/ˌdʒʊərɪsˈdɪkʃn/",
+  "reading": "curisdikşın",
+  "meanings": [
+   "Yetki alanı"
+  ],
+  "definition": "The official power to make legal decisions.",
+  "example": "This matter falls outside the jurisdiction of local police."
+ },
+ "albeit": {
+  "ipa": "/ɔːlˈbiːɪt/",
+  "reading": "olbiit",
+  "meanings": [
+   "Her ne kadar",
+   "-e rağmen"
+  ],
+  "definition": "Though or although something is the case.",
+  "example": "He accepted the job, albeit with some hesitation."
+ },
+ "altitude": {
+  "ipa": "/ˈæltɪtjuːd/",
+  "reading": "altityud",
+  "meanings": [
+   "Rakım",
+   "yükseklik"
+  ],
+  "definition": "The height of an object above sea level.",
+  "example": "The plane flew at an altitude of thirty thousand feet."
+ },
+ "inborn": {
+  "ipa": "/ˌɪnˈbɔːn/",
+  "reading": "inborn",
+  "meanings": [
+   "Doğuştan gelen"
+  ],
+  "definition": "Existing from birth rather than learned later.",
+  "example": "She has an inborn talent for playing the piano."
+ },
+ "plague": {
+  "ipa": "/pleɪɡ/",
+  "reading": "pleyg",
+  "meanings": [
+   "Salgın hastalık ⚠️"
+  ],
+  "definition": "To cause constant trouble or suffering to someone.",
+  "example": "Bad injuries continue to plague his football career."
+ },
+ "afflict": {
+  "ipa": "/əˈflɪkt/",
+  "reading": "aflikt",
+  "meanings": [
+   "Sıkıntı vermek",
+   "olumsuz etkilemek ⚠️"
+  ],
+  "definition": "To cause pain or suffering to someone or something.",
+  "example": "A rare skin condition began to afflict the elderly man."
+ },
+ "fluorescent": {
+  "ipa": "/flʊˈɒrəsənt/",
+  "reading": "flüoresnt",
+  "meanings": [
+   "Floresan",
+   "ışık altında parlak görünen"
+  ],
+  "definition": "Emitting bright light when exposed to radiation.",
+  "example": "The office was lit by fluorescent tubes."
+ },
+ "tinge": {
+  "ipa": "/tɪndʒ/",
+  "reading": "tinc",
+  "meanings": [
+   "Hafif renk tonu"
+  ],
+  "definition": "A small amount of a color or feeling.",
+  "example": "Her voice had a tinge of sadness."
+ },
+ "senile": {
+  "ipa": "/ˈsiːnaɪl/",
+  "reading": "siinayl",
+  "meanings": [
+   "Yaşlılığa bağlı zihinsel gerileme gösteren ⚠️"
+  ],
+  "definition": "Showing poor mental ability because of old age.",
+  "example": "The senile man often forgot where he lived."
+ },
+ "congenital": {
+  "ipa": "/kənˈdʒenɪtəl/",
+  "reading": "koncenitıl",
+  "meanings": [
+   "Doğuştan mevcut"
+  ],
+  "definition": "Present from birth, usually a medical condition.",
+  "example": "He was born with a congenital heart defect."
+ },
+ "inherit": {
+  "ipa": "/ɪnˈherɪt/",
+  "reading": "inherrit",
+  "meanings": [
+   "Miras almak",
+   "kalıtsal olarak edinmek"
+  ],
+  "definition": "Receive money or property from someone who has died.",
+  "example": "She will inherit a large fortune from her uncle."
+ },
+ "ultraviolet": {
+  "ipa": "/ˌʌltrəˈvaɪələt/",
+  "reading": "altrəvayolıt",
+  "meanings": [
+   "Morötesi",
+   "ultraviyole"
+  ],
+  "definition": "Electromagnetic radiation beyond the violet end of the spectrum.",
+  "example": "Sunscreen protects your skin from ultraviolet rays."
+ },
+ "pivotal": {
+  "ipa": "/ˈpɪvətəl/",
+  "reading": "pivitıl",
+  "meanings": [
+   "Çok önemli",
+   "belirleyici"
+  ],
+  "definition": "Of vital or critical importance to the success of something.",
+  "example": "This meeting is pivotal for our new project."
+ },
+ "terrestrial": {
+  "ipa": "/təˈrestriəl/",
+  "reading": "terestriyıl",
+  "meanings": [
+   "Karasal",
+   "Dünya'ya ait"
+  ],
+  "definition": "Living on or relating to land rather than water.",
+  "example": "Lions and elephants are terrestrial animals."
+ },
+ "bloodthirsty": {
+  "ipa": "/ˈblʌdθɜːsti/",
+  "reading": "bladthösti",
+  "meanings": [
+   "Kana susamış",
+   "aşırı saldırgan ⚠️"
+  ],
+  "definition": "Eager for bloodshed, violence, or cruelty.",
+  "example": "The tyrant had a bloodthirsty army."
+ },
+ "pillage": {
+  "ipa": "/ˈpɪlɪdʒ/",
+  "reading": "pilic",
+  "meanings": [
+   "Yağmalamak ⚠️"
+  ],
+  "definition": "Steal goods using violence, especially in wartime.",
+  "example": "The invaders came to pillage the small village."
+ },
+ "phonetic": {
+  "ipa": "/fəˈnetɪk/",
+  "reading": "fonetik",
+  "meanings": [
+   "Ses bilgisiyle ilgili",
+   "fonetik"
+  ],
+  "definition": "Relating to the speech sounds of a language.",
+  "example": "The dictionary provides a phonetic spelling for every word."
+ },
+ "syllable": {
+  "ipa": "/ˈsɪləbəl/",
+  "reading": "silabıl",
+  "meanings": [
+   "Hece"
+  ],
+  "definition": "A unit of pronunciation having one vowel sound.",
+  "example": "The word 'cat' has only one syllable."
+ },
+ "inept": {
+  "ipa": "/ɪnˈept/",
+  "reading": "inept",
+  "meanings": [
+   "Beceriksiz",
+   "yeterli beceriye sahip olmayan"
+  ],
+  "definition": "Having or showing no skill; clumsy.",
+  "example": "He was completely inept at fixing cars."
+ },
+ "pinpoint": {
+  "ipa": "/ˈpɪnpɔɪnt/",
+  "reading": "pinpoynt",
+  "meanings": [
+   "Tam yerini belirlemek"
+  ],
+  "definition": "Find or identify something with great accuracy.",
+  "example": "Scientists can pinpoint the exact source of the earthquake."
+ },
+ "determinable": {
+  "ipa": "/dɪˈtɜːmɪnəbl/",
+  "reading": "ditörminbıl",
+  "meanings": [
+   "Belirlenebilir"
+  ],
+  "definition": "Able to be definitely ascertained or decided.",
+  "example": "The exact cost of the project is determinable."
+ },
+ "seclude": {
+  "ipa": "/sɪˈkluːd/",
+  "reading": "sikuud",
+  "meanings": [
+   "Gözlerden uzak tutmak",
+   "ayırmak"
+  ],
+  "definition": "Keep someone away from other people.",
+  "example": "She likes to seclude herself in her room to read."
+ },
+ "ascendancy": {
+  "ipa": "/əˈsendənsi/",
+  "reading": "esendânsi",
+  "meanings": [
+   "Üstünlük",
+   "baskın konum"
+  ],
+  "definition": "Occupation of a position of dominant power.",
+  "example": "The political party gained ascendancy after the election."
+ },
+ "frenzy": {
+  "ipa": "/ˈfrenzi/",
+  "reading": "frenzi",
+  "meanings": [
+   "Kontrolsüz yoğun hareketlilik ⚠️"
+  ],
+  "definition": "A state or period of uncontrolled excitement.",
+  "example": "Shopping malls were in a frenzy before the holiday."
+ },
+ "taunt": {
+  "ipa": "/tɔːnt/",
+  "reading": "tont",
+  "meanings": [
+   "Alay ederek kışkırtmak ⚠️"
+  ],
+  "definition": "A remark made in order to anger someone.",
+  "example": "The bullies would taunt him every day at school."
+ },
+ "undeveloped": {
+  "ipa": "/ˌʌndɪˈveləpt/",
+  "reading": "andivelopt",
+  "meanings": [
+   "Gelişmemiş",
+   "henüz gelişimini tamamlamamış"
+  ],
+  "definition": "Not advanced or fully elaborated.",
+  "example": "This area remains largely undeveloped and wild."
+ },
+ "disparaging": {
+  "ipa": "/dɪˈspærɪdʒɪŋ/",
+  "reading": "dispericing",
+  "meanings": [
+   "Küçümseyici",
+   "aşağılayıcı ⚠️"
+  ],
+  "definition": "Expressing the opinion that something is of little worth.",
+  "example": "He made disparaging remarks about her work."
+ },
+ "disrupt": {
+  "ipa": "/dɪsˈrʌpt/",
+  "reading": "disrapt",
+  "meanings": [
+   "Düzenini bozmak",
+   "aksatmak"
+  ],
+  "definition": "Interrupt an event or process by causing a disturbance.",
+  "example": "The loud noise could disrupt the whole class."
+ },
+ "reconnaissance": {
+  "ipa": "/rɪˈkɒnɪsəns/",
+  "reading": "rikonisns",
+  "meanings": [
+   "Keşif",
+   "ön inceleme"
+  ],
+  "definition": "Military observation of a region to locate an enemy.",
+  "example": "They sent a drone for aerial reconnaissance."
+ },
+ "creamy": {
+  "ipa": "/ˈkriːmi/",
+  "reading": "kriymi",
+  "meanings": [
+   "Kremamsı",
+   "yumuşak kıvamlı"
+  ],
+  "definition": "Resembling cream in color or texture.",
+  "example": "This soup has a rich and creamy texture."
+ },
+ "crispy": {
+  "ipa": "/ˈkrɪspi/",
+  "reading": "krispi",
+  "meanings": [
+   "Çıtır",
+   "gevrek"
+  ],
+  "definition": "Firm, dry, and brittle, especially pleasantly so.",
+  "example": "I love eating hot and crispy french fries."
+ },
+ "populace": {
+  "ipa": "/ˈpɒpjʊləs/",
+  "reading": "popyulıs",
+  "meanings": [
+   "Halk",
+   "nüfus"
+  ],
+  "definition": "The people living in a particular country or area.",
+  "example": "The new law affected the entire populace."
+ },
+ "vernacular": {
+  "ipa": "/vəˈnækjʊlə(r)/",
+  "reading": "vernakyulâr",
+  "meanings": [
+   "Halkın günlük kullandığı dil"
+  ],
+  "definition": "The language spoken by ordinary people in a region.",
+  "example": "He writes poetry in the local vernacular."
+ },
+ "sparing": {
+  "ipa": "/ˈspeərɪŋ/",
+  "reading": "speyring",
+  "meanings": [
+   "Tutumlu",
+   "az miktarda kullanan"
+  ],
+  "definition": "Restrained in the use of something; frugal.",
+  "example": "Be sparing with the salt in this recipe."
+ },
+ "barring": {
+  "ipa": "/ˈbɑːrɪŋ/",
+  "reading": "baring",
+  "meanings": [
+   "Hariç",
+   "dışında"
+  ],
+  "definition": "Except for; prepending a negative condition.",
+  "example": "Barring any delays, we will arrive by noon."
+ },
+ "heliocentric": {
+  "ipa": "/ˌhiːliəʊˈsentrɪk/",
+  "reading": "hiliosentrik",
+  "meanings": [
+   "Güneş merkezli"
+  ],
+  "definition": "Having the sun as the center of the universe.",
+  "example": "Galileo supported the heliocentric model of the solar system."
+ },
+ "reform": {
+  "ipa": "/rɪˈfɔːm/",
+  "reading": "riform",
+  "meanings": [
+   "Yeniden düzenlemek",
+   "iyileştirmek"
+  ],
+  "definition": "To make changes for improvement.",
+  "example": "The government plans to reform the tax system."
+ },
+ "interdependent": {
+  "ipa": "/ˌɪntədɪˈpɛndənt/",
+  "reading": "intırdipendent",
+  "meanings": [
+   "Birbirine bağımlı"
+  ],
+  "definition": "Depending on each other.",
+  "example": "All living things are interdependent in an ecosystem."
+ },
+ "martial": {
+  "ipa": "/ˈmɑːʃəl/",
+  "reading": "marşal",
+  "meanings": [
+   "Askerî",
+   "savaşla ilgili ⚠️"
+  ],
+  "definition": "Associated with war or armed forces.",
+  "example": "The city was placed under martial law."
+ },
+ "redirect": {
+  "ipa": "/ˌriːdaɪˈrɛkt/",
+  "reading": "riydayrekt",
+  "meanings": [
+   "Yeniden yönlendirmek"
+  ],
+  "definition": "To direct to a new place or purpose.",
+  "example": "We need to redirect our focus to marketing."
+ },
+ "feudal": {
+  "ipa": "/ˈfjuːdəl/",
+  "reading": "fyüdal",
+  "meanings": [
+   "Feodal sisteme ait"
+  ],
+  "definition": "Relating to the medieval feudal system.",
+  "example": "The country emerged from its feudal past."
+ },
+ "predecessor": {
+  "ipa": "/ˈpriːdɪsɛsə/",
+  "reading": "priydisesur",
+  "meanings": [
+   "Önceki kişi veya şey"
+  ],
+  "definition": "A person who held a job before someone else.",
+  "example": "She is much faster than her predecessor."
+ },
+ "premature": {
+  "ipa": "/ˈprɛmətʃʊə/",
+  "reading": "premature",
+  "meanings": [
+   "Zamanından önce gerçekleşen"
+  ],
+  "definition": "Happening before the proper time.",
+  "example": "Any decision right now would be premature."
+ },
+ "potent": {
+  "ipa": "/ˈpəʊtənt/",
+  "reading": "poutnt",
+  "meanings": [
+   "Güçlü",
+   "etkili"
+  ],
+  "definition": "Having great power, influence, or effect.",
+  "example": "The medicine is a potent pain reliever."
+ },
+ "incessant": {
+  "ipa": "/ɪnˈsɛsənt/",
+  "reading": "insesnt",
+  "meanings": [
+   "Aralıksız",
+   "durmadan devam eden"
+  ],
+  "definition": "Continuing without pause or interruption.",
+  "example": "The incessant rain ruined our picnic."
+ },
+ "inseparable": {
+  "ipa": "/ɪnˈsɛpərəbəl/",
+  "reading": "inseprabıl",
+  "meanings": [
+   "Ayrılmaz"
+  ],
+  "definition": "Unable to be separated from each other.",
+  "example": "The two friends are virtually inseparable."
+ },
+ "domesticate": {
+  "ipa": "/dəˈmɛstɪkeɪt/",
+  "reading": "damestikeyt",
+  "meanings": [
+   "Evcilleştirmek"
+  ],
+  "definition": "To tame an animal for human use.",
+  "example": "Humans began to domesticate wolves thousands of years ago."
+ },
+ "cumulative": {
+  "ipa": "/ˈkjuːmjʊlətɪv/",
+  "reading": "kyumyulativ",
+  "meanings": [
+   "Birikimli",
+   "zamanla toplamı artan"
+  ],
+  "definition": "Increasing by successive additions.",
+  "example": "The cumulative effect of stress can harm health."
+ },
+ "mechanism": {
+  "ipa": "/ˈmɛkənɪzəm/",
+  "reading": "mekanizm",
+  "meanings": [
+   "Mekanizma",
+   "çalışma düzeni"
+  ],
+  "definition": "A system of parts working together.",
+  "example": "The clock mechanism is very complex."
+ },
+ "forethought": {
+  "ipa": "/ˈfɔːθɔːt/",
+  "reading": "forthot",
+  "meanings": [
+   "Önceden düşünme",
+   "öngörülü planlama"
+  ],
+  "definition": "Careful consideration before doing something.",
+  "example": "The success of the event required much forethought."
+ },
+ "majesty": {
+  "ipa": "/ˈmædʒɪsti/",
+  "reading": "macisti",
+  "meanings": [
+   "Görkem",
+   "ihtişam"
+  ],
+  "definition": "Impressive beauty or scale.",
+  "example": "We admired the majesty of the mountains."
+ },
+ "tier": {
+  "ipa": "/tɪə/",
+  "reading": "tiyır",
+  "meanings": [
+   "Kademe",
+   "seviye"
+  ],
+  "definition": "A row or level of a structure.",
+  "example": "The stadium has a new upper tier."
+ },
+ "prowess": {
+  "ipa": "/ˈpraʊɪs/",
+  "reading": "pravis",
+  "meanings": [
+   "Üstün beceri",
+   "ustalık"
+  ],
+  "definition": "Great skill or expertise in a domain.",
+  "example": "His military prowess was widely recognized."
+ },
+ "fierce": {
+  "ipa": "/fɪəs/",
+  "reading": "firs",
+  "meanings": [
+   "Şiddetli",
+   "çok güçlü"
+  ],
+  "definition": "Having or displaying a violent or ferocious aggressiveness.",
+  "example": "They faced fierce competition in the market."
+ },
+ "conjunction": {
+  "ipa": "/kənˈdʒʌŋkʃn/",
+  "reading": "kancankşn",
+  "meanings": [
+   "Bağlaç"
+  ],
+  "definition": "The action or an instance of two or more events occurring together.",
+  "example": "The project was developed in conjunction with local schools."
+ },
+ "irrational": {
+  "ipa": "/ɪˈræʃənl/",
+  "reading": "ireşınl",
+  "meanings": [
+   "Mantıksız"
+  ],
+  "definition": "Not logical or reasonable.",
+  "example": "She had an irrational fear of spiders."
+ },
+ "abnormal": {
+  "ipa": "/æbˈnɔːml/",
+  "reading": "ebnormal",
+  "meanings": [
+   "Normal dışı",
+   "alışılmıştan farklı"
+  ],
+  "definition": "Deviating from what is standard or normal.",
+  "example": "The test results showed abnormal levels of sugar."
+ },
+ "catastrophe": {
+  "ipa": "/kəˈtæstrəfi/",
+  "reading": "katastrofi",
+  "meanings": [
+   "Büyük felaket ⚠️"
+  ],
+  "definition": "An event causing great and often sudden damage or suffering.",
+  "example": "The earthquake was a terrible catastrophe."
+ },
+ "outpatient": {
+  "ipa": "/ˈaʊtpeɪʃnt/",
+  "reading": "autpeyşnt",
+  "meanings": [
+   "Ayakta tedavi gören hasta"
+  ],
+  "definition": "A patient who receives treatment without being admitted to a hospital.",
+  "example": "He had the minor surgery as an outpatient."
+ },
+ "predation": {
+  "ipa": "/prɪˈdeɪʃn/",
+  "reading": "prideyşn",
+  "meanings": [
+   "Avlanma",
+   "avcı-av ilişkisi ⚠️"
+  ],
+  "definition": "The preying of one animal on others.",
+  "example": "Small birds face constant predation from cats."
+ },
+ "invertebrate": {
+  "ipa": "/ɪnˈvɜːtɪbrət/",
+  "reading": "invörtibret",
+  "meanings": [
+   "Omurgasız canlı"
+  ],
+  "definition": "An animal lacking a backbone.",
+  "example": "An earthworm is a common invertebrate."
+ },
+ "spatial": {
+  "ipa": "/ˈspeɪʃl/",
+  "reading": "speyşl",
+  "meanings": [
+   "Mekânsal",
+   "uzaydaki konumla ilgili"
+  ],
+  "definition": "Relating to space.",
+  "example": "Architects need good spatial awareness."
+ },
+ "orient": {
+  "ipa": "/ˈɔːrient/",
+  "reading": "orient",
+  "meanings": [
+   "Yönünü belirlemek",
+   "yönlendirmek"
+  ],
+  "definition": "To align or position relative to points of reference.",
+  "example": "New students need time to orient themselves."
+ },
+ "obstruct": {
+  "ipa": "/əbˈstrʌkt/",
+  "reading": "abstrakt",
+  "meanings": [
+   "Engellemek",
+   "yolu kapatmak"
+  ],
+  "definition": "To block or prevent passage or progress.",
+  "example": "Fallen trees obstruct the main road."
+ },
+ "apnea": {
+  "ipa": "/ˈæpniə/",
+  "reading": "apniya",
+  "meanings": [
+   "Solunumun geçici olarak durması ⚠️"
+  ],
+  "definition": "Temporary cessation of breathing.",
+  "example": "Sleep apnea can cause severe daytime fatigue."
+ },
+ "befriend": {
+  "ipa": "/bɪˈfrend/",
+  "reading": "bifrend",
+  "meanings": [
+   "Arkadaş olmak",
+   "arkadaşlık kurmak"
+  ],
+  "definition": "To act as a friend to someone.",
+  "example": "She tried to befriend the new student."
+ },
+ "adjunct": {
+  "ipa": "/ˈædʒʌŋkt/",
+  "reading": "acankt",
+  "meanings": [
+   "Ek",
+   "yardımcı unsur"
+  ],
+  "definition": "A thing added to something else as a supplementary part.",
+  "example": "The computer is a useful adjunct to learning."
+ },
+ "moratorium": {
+  "ipa": "/ˌmɒrəˈtɔːriəm/",
+  "reading": "moratoriyum",
+  "meanings": [
+   "Geçici durdurma"
+  ],
+  "definition": "A temporary prohibition of an activity.",
+  "example": "The city declared a moratorium on new building permits."
+ },
+ "guise": {
+  "ipa": "/ɡaɪz/",
+  "reading": "gayz",
+  "meanings": [
+   "Görünüş",
+   "kılık"
+  ],
+  "definition": "An external form, appearance, or manner of presentation.",
+  "example": "He came to the meeting in the guise of a friend."
+ },
+ "marketable": {
+  "ipa": "/ˈmɑːkɪtəbl/",
+  "reading": "markitabıl",
+  "meanings": [
+   "Satılabilir",
+   "pazarlanabilir"
+  ],
+  "definition": "Able or fit to be sold or marketed.",
+  "example": "The company created a highly marketable product."
+ },
+ "patriotism": {
+  "ipa": "/ˈpætriətɪzəm/",
+  "reading": "petriyotizm",
+  "meanings": [
+   "Vatanseverlik"
+  ],
+  "definition": "Devotion to and vigorous support for one's country.",
+  "example": "The soldiers showed great patriotism during the war."
+ },
+ "brink": {
+  "ipa": "/brɪŋk/",
+  "reading": "brink",
+  "meanings": [
+   "Kenar",
+   "eşik noktası"
+  ],
+  "definition": "The extreme edge of land before a steep slope.",
+  "example": "The company was on the brink of bankruptcy."
+ },
+ "inexhaustible": {
+  "ipa": "/ˌɪnɪɡˈzɔːstəbl/",
+  "reading": "inegzostabıl",
+  "meanings": [
+   "Tükenmez"
+  ],
+  "definition": "Unable to be used up because existing in abundance.",
+  "example": "She seemed to have an inexhaustible supply of energy."
+ },
+ "botany": {
+  "ipa": "/ˈbɒtəni/",
+  "reading": "botani",
+  "meanings": [
+   "Botanik",
+   "bitki bilimi"
+  ],
+  "definition": "The scientific study of plants.",
+  "example": "He is studying botany at the university."
+ },
+ "intersect": {
+  "ipa": "/ˌɪntəˈsekt/",
+  "reading": "intorsekt",
+  "meanings": [
+   "Kesişmek"
+  ],
+  "definition": "To pass or cross each other.",
+  "example": "The two main roads intersect in the town centre."
+ },
+ "tribute": {
+  "ipa": "/ˈtrɪbjuːt/",
+  "reading": "tribyut",
+  "meanings": [
+   "Saygı ifadesi",
+   "anma"
+  ],
+  "definition": "An act or statement showing gratitude and respect.",
+  "example": "They held a concert as a tribute to the singer."
+ },
+ "navigate": {
+  "ipa": "/ˈnævɪɡeɪt/",
+  "reading": "nevigeyt",
+  "meanings": [
+   "Yön bulmak",
+   "rota belirlemek"
+  ],
+  "definition": "To plan and direct the route of a journey.",
+  "example": "It is difficult to navigate through the complex city streets."
+ },
+ "machinery": {
+  "ipa": "/məˈʃiːnəri/",
+  "reading": "maşineri",
+  "meanings": [
+   "Makine sistemi",
+   "makineler"
+  ],
+  "definition": "Machines as a whole or a mechanical system.",
+  "example": "Heavy machinery was used to clear the road."
+ },
+ "dysfunction": {
+  "ipa": "/dɪsˈfʌŋkʃn/",
+  "reading": "disfonkşın",
+  "meanings": [
+   "İşlev bozukluğu ⚠️"
+  ],
+  "definition": "Abnormal or impaired functioning of a bodily organ.",
+  "example": "The therapy aims to treat family dysfunction."
+ },
+ "bilateral": {
+  "ipa": "/ˌbaɪˈlætərəl/",
+  "reading": "baylateral",
+  "meanings": [
+   "İki taraflı"
+  ],
+  "definition": "Having or relating to two sides or nations.",
+  "example": "The two countries signed a bilateral trade agreement."
+ },
+ "multilateral": {
+  "ipa": "/ˌmʌltiˈlætərəl/",
+  "reading": "maltilateral",
+  "meanings": [
+   "Çok taraflı"
+  ],
+  "definition": "Agreed upon or participated in by three or more parties.",
+  "example": "They engaged in multilateral negotiations to solve the crisis."
+ },
+ "instrumental": {
+  "ipa": "/ˌɪnstrʊˈmentl/",
+  "reading": "instrumental",
+  "meanings": [
+   "Çok önemli rol oynayan"
+  ],
+  "definition": "Serving as a means of pursuing an aim.",
+  "example": "She was instrumental in organizing the charity event."
+ },
+ "proponent": {
+  "ipa": "/prəˈpəʊnənt/",
+  "reading": "propoynınt",
+  "meanings": [
+   "Destekleyen kişi",
+   "savunucu"
+  ],
+  "definition": "A person who advocates a theory or proposal.",
+  "example": "He is a strong proponent of renewable energy."
+ },
+ "repetitive": {
+  "ipa": "/rɪˈpetətɪv/",
+  "reading": "repetativ",
+  "meanings": [
+   "Tekrarlayıcı"
+  ],
+  "definition": "Containing repetition, very similar and tedious.",
+  "example": "He grew tired of doing repetitive tasks every day."
+ },
+ "cornea": {
+  "ipa": "/ˈkɔːniə/",
+  "reading": "korniia",
+  "meanings": [
+   "Kornea"
+  ],
+  "definition": "The transparent layer forming the front of the eye.",
+  "example": "The surgeon performed a successful cornea transplant."
+ },
+ "forage": {
+  "ipa": "/ˈfɒrɪdʒ/",
+  "reading": "foric",
+  "meanings": [
+   "Yiyecek aramak"
+  ],
+  "definition": "To search for food or provisions.",
+  "example": "Animals forage for food in the forest."
+ },
+ "indicate": {
+  "ipa": "/ˈɪndɪkeɪt/",
+  "reading": "indikeyt",
+  "meanings": [
+   "Göstermek",
+   "işaret etmek"
+  ],
+  "definition": "To point out or show something.",
+  "example": "The sign will indicate the right direction."
+ },
+ "methodical": {
+  "ipa": "/mɪˈθɒdɪkl/",
+  "reading": "metodıkal",
+  "meanings": [
+   "Sistemli",
+   "düzenli yöntem izleyen"
+  ],
+  "definition": "Done according to a careful plan.",
+  "example": "She takes a methodical approach to her work."
+ },
+ "sticky": {
+  "ipa": "/ˈstɪki/",
+  "reading": "stiki",
+  "meanings": [
+   "Yapışkan"
+  ],
+  "definition": "Tending to stick to things.",
+  "example": "The child has sticky fingers from candy."
+ },
+ "culinary": {
+  "ipa": "/ˈkʌlɪnəri/",
+  "reading": "kalinerri",
+  "meanings": [
+   "Yemek pişirmeyle ilgili",
+   "mutfak sanatlarına ait"
+  ],
+  "definition": "Related to cooking or the kitchen.",
+  "example": "He wants to pursue a culinary career."
+ },
+ "staple": {
+  "ipa": "/ˈsteɪpl/",
+  "reading": "steýpıl",
+  "meanings": [
+   "Temel gıda maddesi"
+  ],
+  "definition": "A main or important food item.",
+  "example": "Rice is a staple food in many countries."
+ },
+ "pipeline": {
+  "ipa": "/ˈpaɪplaɪn/",
+  "reading": "payplayn",
+  "meanings": [
+   "Boru hattı"
+  ],
+  "definition": "A long pipe for transporting oil or gas.",
+  "example": "Workers are repairing the underground pipeline."
+ },
+ "arthritis": {
+  "ipa": "/ɑːˈθraɪtɪs/",
+  "reading": "arthraytis",
+  "meanings": [
+   "Eklem iltihabı",
+   "artrit ⚠️"
+  ],
+  "definition": "Painful inflammation of the joints.",
+  "example": "My grandmother suffers from arthritis in her hands."
+ },
+ "vascular": {
+  "ipa": "/ˈvæskjʊlə(r)/",
+  "reading": "vasküler",
+  "meanings": [
+   "Damarlarla ilgili"
+  ],
+  "definition": "Relating to blood vessels.",
+  "example": "The disease affects the human vascular system."
+ },
+ "decode": {
+  "ipa": "/diːˈkəʊd/",
+  "reading": "dikot",
+  "meanings": [
+   "Kod çözmek",
+   "anlamını çözmek"
+  ],
+  "definition": "To translate a coded message.",
+  "example": "Spies use special tools to decode messages."
+ },
+ "prognosis": {
+  "ipa": "/prɒɡˈnəʊsɪs/",
+  "reading": "proğnosis",
+  "meanings": [
+   "Hastalığın gelecekteki seyri hakkında öngörü ⚠️"
+  ],
+  "definition": "The likely course of a medical condition.",
+  "example": "The doctor gave a very positive prognosis."
+ },
+ "enroll": {
+  "ipa": "/ɪnˈrəʊl/",
+  "reading": "inrol",
+  "meanings": [
+   "Kayıt olmak"
+  ],
+  "definition": "To officially join a course or school.",
+  "example": "Many students enroll in the university."
+ },
+ "comet": {
+  "ipa": "/ˈkɒmɪt/",
+  "reading": "komit",
+  "meanings": [
+   "Kuyruklu yıldız"
+  ],
+  "definition": "An icy celestial body with a tail.",
+  "example": "A bright comet lit up the night sky."
+ },
+ "gloomy": {
+  "ipa": "/ˈɡluːmi/",
+  "reading": "glumi",
+  "meanings": [
+   "Kasvetli",
+   "karanlık"
+  ],
+  "definition": "Dark or poorly lit, causing sadness.",
+  "example": "The weather today is very gloomy and grey."
+ },
+ "retrograde": {
+  "ipa": "/ˈretrəɡreɪd/",
+  "reading": "retrogreyd",
+  "meanings": [
+   "Geriye doğru hareket eden"
+  ],
+  "definition": "Directed or moving backward.",
+  "example": "Planets sometimes appear to take a retrograde motion."
+ },
+ "elliptical": {
+  "ipa": "/ɪˈlɪptɪkl/",
+  "reading": "iliptıkal",
+  "meanings": [
+   "Elips biçiminde"
+  ],
+  "definition": "Oval in shape.",
+  "example": "The earth moves in an elliptical orbit."
+ },
+ "sweeten": {
+  "ipa": "/ˈswiːtən/",
+  "reading": "swiitın",
+  "meanings": [
+   "Tatlandırmak"
+  ],
+  "definition": "To make something taste sweet.",
+  "example": "Add some honey to sweeten the tea."
+ },
+ "wreak": {
+  "ipa": "/riːk/",
+  "reading": "riik",
+  "meanings": [
+   "Büyük zarara yol açmak ⚠️"
+  ],
+  "definition": "To cause a large amount of damage.",
+  "example": "The storm will wreak havoc on the coast."
+ },
+ "havoc": {
+  "ipa": "/ˈhævək/",
+  "reading": "hévık",
+  "meanings": [
+   "Büyük karmaşa",
+   "ciddi tahribat ⚠️"
+  ],
+  "definition": "Widespread destruction or severe disorder.",
+  "example": "The virus caused havoc in the financial markets."
+ },
+ "calcify": {
+  "ipa": "/ˈkælsɪfaɪ/",
+  "reading": "kélsifay",
+  "meanings": [
+   "Kireçlenmek",
+   "kalsiyum biriktirerek sertleşmek"
+  ],
+  "definition": "To harden by the deposit of calcium salts.",
+  "example": "Old tissues can calcify over time."
+ },
+ "exhaustive": {
+  "ipa": "/ɪɡˈzɔːstɪv/",
+  "reading": "igzostiv",
+  "meanings": [
+   "Kapsamlı",
+   "hiçbir ayrıntıyı atlamayan"
+  ],
+  "definition": "Examining all elements completely and thoroughly.",
+  "example": "The police conducted an exhaustive search for clues."
+ },
+ "converse": {
+  "ipa": "/ˈkɒnvɜːs/",
+  "reading": "konvös",
+  "meanings": [
+   "Sohbet etmek",
+   "konuşmak"
+  ],
+  "definition": "To engage in conversation.",
+  "example": "She likes to converse with her neighbors."
+ },
+ "niche": {
+  "ipa": "/niːʃ/",
+  "reading": "niş",
+  "meanings": [
+   "Özel alan",
+   "özel rol"
+  ],
+  "definition": "A comfortable or suitable position in life or employment.",
+  "example": "She found her niche in digital marketing."
+ },
+ "eventual": {
+  "ipa": "/ɪˈventʃuəl/",
+  "reading": "iventçuıl",
+  "meanings": [
+   "Sonunda gerçekleşen"
+  ],
+  "definition": "Occurring at the end of a process.",
+  "example": "They celebrated their eventual victory."
+ },
+ "bizarre": {
+  "ipa": "/bɪˈzɑː/",
+  "reading": "bizar",
+  "meanings": [
+   "Çok tuhaf",
+   "sıra dışı"
+  ],
+  "definition": "Very unusual or strange.",
+  "example": "He wore a bizarre costume to the party."
+ },
+ "accept": {
+  "ipa": "",
+  "reading": "eksept",
+  "meanings": [
+   "kabul etmek"
+  ],
+  "definition": "To say yes to an invitation or offer.",
+  "example": "I accept your invitation with pleasure.",
+  "word": "accept"
+ },
+ "family tie": {
+  "ipa": "/ˈfæməli taɪz/",
+  "reading": "femeli tayz",
+  "meanings": [
+   "aile bağı"
+  ],
+  "definition": "The connections between members of a family.",
+  "example": "They have strong family ties.",
+  "word": "family tie"
+ },
+ "meet with friends": {
+  "ipa": "/ˈmiːtɪŋ wɪð frendz/",
+  "reading": "miytin vid frenz",
+  "meanings": [
+   "arkadaşlarla buluşmak"
+  ],
+  "definition": "A gathering involving people you know well.",
+  "example": "I have a fun meeting with friends tonight.",
+  "word": "meet with friends"
+ },
+ "moody": {
+  "word": "moody",
+  "ipa": "/ˈmuːdi/",
+  "reading": "muudi",
+  "meanings": [
+   "değişken ruhlu"
+  ],
+  "definition": "Having moods that change quickly and often.",
+  "example": "Do not talk to him when he is moody."
+ },
+ "tell a lie": {
+  "word": "tell a lie",
+  "ipa": "/tel ə laɪ/",
+  "reading": "tel e lay",
+  "meanings": [
+   "yalan söylemek"
+  ],
+  "definition": "To say something that is not true.",
+  "example": "It is wrong to tell a lie to your friends."
+ },
+ "spare time": {
+  "word": "spare time",
+  "ipa": "/speə taɪm/",
+  "reading": "speır taym",
+  "meanings": [
+   "boş zaman"
+  ],
+  "definition": "Time when you are not working.",
+  "example": "I like to read books in my spare time."
+ },
+ "fall out": {
+  "word": "fall out",
+  "ipa": "/fɔːl aʊt/",
+  "reading": "fool aut",
+  "meanings": [
+   "küsmek"
+  ],
+  "definition": "To argue and stop being friendly.",
+  "example": "I do not want to fall out with you."
+ },
+ "personal trait": {
+  "word": "personal trait",
+  "ipa": "/ˈpɜːsənl treɪt/",
+  "reading": "pörsınıl treyt",
+  "meanings": [
+   "kişilik özelliği"
+  ],
+  "definition": "A particular quality in someone's character.",
+  "example": "Honesty is an important personal trait."
+ },
+ "bossy": {
+  "word": "bossy",
+  "ipa": "/ˈbɒsi/",
+  "reading": "bosi",
+  "meanings": [
+   "baskıcı",
+   "buyurgan"
+  ],
+  "definition": "Always telling other people what to do.",
+  "example": "No one likes a bossy person at work."
+ },
+ "hobby": {
+  "word": "hobby",
+  "ipa": "/ˈhɒbi/",
+  "reading": "hobi",
+  "meanings": [
+   "hobi"
+  ],
+  "definition": "An activity you do for pleasure.",
+  "example": "Photography is a very popular hobby."
+ },
+ "activity": {
+  "word": "activity",
+  "ipa": "/ækˈtɪvəti/",
+  "reading": "aktivıti",
+  "meanings": [
+   "aktivite"
+  ],
+  "definition": "Something that you do for interest or pleasure.",
+  "example": "Swimming is a healthy outdoor activity."
  }
 }
