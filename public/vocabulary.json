@@ -17968,15 +17968,6 @@
    "Wrung"
   ]
  },
- "about": {
-  "ipa": "/əˈbaʊt/",
-  "reading": "ebaunt",
-  "meanings": [
-   "hakkında"
-  ],
-  "definition": "On the subject of or regarding something.",
-  "example": "We are talking about the new project."
- },
  "action": {
   "ipa": "/ˈækʃn/",
   "reading": "ekşın",
@@ -18766,15 +18757,6 @@
   "definition": "An emotional state or reaction.",
   "example": "I have a good feeling about this."
  },
- "find (interesting)": {
-  "ipa": "/faɪnd ˈɪntrəstɪŋ/",
-  "reading": "faynd intrəsting",
-  "meanings": [
-   "bulmak (ilginç bulmak)"
-  ],
-  "definition": "To discover something to be engaging.",
-  "example": "I find history very interesting."
- },
  "fish": {
   "ipa": "/fɪʃ/",
   "reading": "fiş",
@@ -19148,15 +19130,6 @@
   ],
   "definition": "Before a particular time or event.",
   "example": "Please book your tickets in advance."
- },
- "in the dark": {
-  "ipa": "/ɪn ðə dɑːk/",
-  "reading": "in dı daak",
-  "meanings": [
-   "karanlıkta"
-  ],
-  "definition": "Lacking illumination or specific information.",
-  "example": "We were left in the dark."
  },
  "in times of trouble": {
   "ipa": "/ɪn taɪmz ɒv ˈtrʌbl/",
@@ -20679,16 +20652,6 @@
   "definition": "Polite invitation or offer.",
   "example": "Would you like to join us for dinner?"
  },
- "your own": {
-  "ipa": "/jɔːr əʊn/",
-  "reading": "yor ovn",
-  "meanings": [
-   "kendinin",
-   "kendin"
-  ],
-  "definition": "Belonging to oneself.",
-  "example": "You should make your own decisions."
- },
  "yummy": {
   "ipa": "/ˈjʌmi/",
   "reading": "yami",
@@ -20726,16 +20689,6 @@
   ],
   "definition": "To carry something to a place; to serve orders.",
   "example": "The waiter will bring your orders soon."
- },
- "care (about)": {
-  "ipa": "",
-  "reading": "keyr",
-  "meanings": [
-   "önemsemek",
-   "ilgilenmek"
-  ],
-  "definition": "To feel that someone or something is important.",
-  "example": "Real friends care about your feelings."
  },
  "casual / casually": {
   "ipa": "",
@@ -55491,5 +55444,36 @@
   ],
   "definition": "The usual things you do every day.",
   "example": "Exercise is an important part of my daily routine."
+ },
+ "find interesting": {
+  "ipa": "/faɪnd ˈɪntrəstɪŋ/",
+  "reading": "faynd intrəsting",
+  "meanings": [
+   "bulmak (ilginç bulmak)"
+  ],
+  "definition": "To discover something to be engaging.",
+  "example": "I find history very interesting.",
+  "word": "find interesting"
+ },
+ "dark": {
+  "ipa": "/ɪn ðə dɑːk/",
+  "reading": "in dı daak",
+  "meanings": [
+   "karanlık"
+  ],
+  "definition": "Lacking illumination or specific information.",
+  "example": "We were left in the dark.",
+  "word": "dark"
+ },
+ "care about": {
+  "ipa": "",
+  "reading": "keyr",
+  "meanings": [
+   "önemsemek",
+   "ilgilenmek"
+  ],
+  "definition": "To feel that someone or something is important.",
+  "example": "Real friends care about your feelings.",
+  "word": "care about"
  }
 }
