@@ -12,7 +12,7 @@ export default function HomeScreen({ onPractice, onOpenGrammar, onOpenQuizHub, o
   return (
     <>
       {/* Deepest-black stage behind the network animation. */}
-      <div className="fixed inset-0 -z-10 bg-black" />
+      <div className="fixed inset-0 -z-10 bg-[#080808]" />
 
       {/* Fluid hex network — fills the whole area above the nav on any screen. */}
       <div

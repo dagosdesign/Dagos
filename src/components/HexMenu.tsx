@@ -50,15 +50,15 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
     <section className="een" aria-label="Genel İngilizce konu ağı">
       <style>{`
         .een {
-          --gold: #f5a516;
-          --gold-bright: #ffce4f;
+          --gold: #C88A1A;
+          --gold-bright: #E3A72F;
           position: relative;
           width: 100%;
           height: 100%;
           max-width: 760px;
           margin: 0 auto;
           background: transparent;
-          color: #f7f7f7;
+          color: #F2F0EB;
           isolation: isolate;
         }
         .een-field {
@@ -86,18 +86,10 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-wave:nth-child(4) { opacity: .55; animation-duration: 26s; }
         .een-link {
           stroke: url(#een-link-grad);
-          stroke-width: 6;
+          stroke-width: 2.5;
           stroke-linecap: round;
-          opacity: .95;
-          filter: drop-shadow(0 0 4px rgba(245,157,10,.6));
-        }
-        .een-joint {
-          fill: #fff7df;
-          filter: drop-shadow(0 0 6px var(--gold-bright)) drop-shadow(0 0 14px var(--gold));
-        }
-        .een-dot {
-          fill: var(--gold-bright);
-          filter: drop-shadow(0 0 7px var(--gold));
+          opacity: .9;
+          filter: drop-shadow(0 0 2px rgba(200,138,26,.25));
         }
         .een-hex {
           position: absolute;
@@ -110,15 +102,15 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           border-radius: 50%;
           transform: translate(-50%, -50%);
           background:
-            linear-gradient(135deg, #ffe27a 0%, #ffc63c 22%, #f59d0a 50%, #d97b00 74%, #8a4d00 100%);
+            linear-gradient(135deg, #E3A72F 0%, #C88A1A 28%, #A9721A 55%, #8A5A12 80%, #6E4610 100%);
           color: #f7f7f7;
           font: inherit;
           font-size: clamp(0.62rem, 2.6vw, 0.86rem);
           cursor: pointer;
           box-shadow:
-            0 0 14px rgba(255,176,32,.55),
-            0 0 34px rgba(245,157,10,.3),
-            inset 0 0 6px rgba(255,220,120,.8);
+            0 0 6px rgba(200,138,26,.28),
+            0 0 16px rgba(200,138,26,.14),
+            inset 0 0 4px rgba(227,167,47,.35);
           animation: een-breathe 4.8s ease-in-out infinite;
         }
         .een-hex::before {
@@ -126,10 +118,10 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           position: absolute;
           inset: clamp(3px, 0.8vw, 4.5px);
           border-radius: 50%;
-          background: radial-gradient(circle at 50% 38%, #16120a 0%, #050403 68%);
+          background: radial-gradient(circle at 50% 38%, #12100b 0%, #0D0D0D 68%);
           box-shadow:
-            inset 0 0 10px rgba(244,184,47,.35),
-            0 0 4px rgba(255,198,60,.8);
+            inset 0 0 8px rgba(200,138,26,.22),
+            0 0 2px rgba(227,167,47,.4);
           z-index: 0;
         }
         .een-hex > span { position: relative; z-index: 1; }
@@ -142,9 +134,9 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         }
         .een-hex:hover {
           box-shadow:
-            0 0 20px rgba(255,214,107,.8),
-            0 0 48px rgba(244,184,47,.45),
-            inset 0 0 8px rgba(255,244,200,1);
+            0 0 10px rgba(227,167,47,.4),
+            0 0 24px rgba(200,138,26,.22),
+            inset 0 0 5px rgba(227,167,47,.5);
         }
         .een-hex:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
 
@@ -157,18 +149,18 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         .een-center {
           border-radius: 50%;
           background:
-            radial-gradient(circle, #f0ab1e 55%, #e29414 70%, #c47c08 85%, #a05f02 94%, #7d4900 100%);
+            radial-gradient(circle, #C88A1A 55%, #B0771A 70%, #8A5A12 85%, #6E4610 94%, #543509 100%);
           box-shadow:
-            0 0 16px rgba(209,127,6,.55),
-            0 0 42px rgba(189,106,1,.35),
-            0 0 80px rgba(189,106,1,.18),
-            inset 0 0 8px rgba(226,152,18,.7);
+            0 0 8px rgba(200,138,26,.35),
+            0 0 20px rgba(200,138,26,.18),
+            0 0 40px rgba(138,90,18,.1),
+            inset 0 0 5px rgba(227,167,47,.45);
         }
         .een-center::before {
           inset: clamp(5px, 1.3vw, 7px);
         }
-        .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); }
-        .een-center strong { color: var(--gold); font-weight: 500; }
+        .een-center span { font-size: clamp(1.15rem, 5.5vw, 1.55rem); color: #F2F0EB; }
+        .een-center strong { color: #D99A24; font-weight: 500; }
 
         .een-n1  { left: 50%;   top: 14.5%;   animation-delay: -.6s; }
         .een-n2  { left: 73.5%; top: 21%; animation-delay: -1.5s; }
@@ -190,13 +182,13 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           50%     { transform: translate(-50%, calc(-50% + 5px)) scale(1.015); }
         }
         @keyframes een-center-pulse {
-          0%,100% { transform: translate(-50%,-50%); filter: drop-shadow(0 0 13px rgba(232,147,12,.4)); }
-          50%     { transform: translate(-50%,-50%); filter: drop-shadow(0 0 28px rgba(232,147,12,.7)); }
+          0%,100% { transform: translate(-50%,-50%); filter: drop-shadow(0 0 6px rgba(200,138,26,.2)); }
+          50%     { transform: translate(-50%,-50%); filter: drop-shadow(0 0 12px rgba(200,138,26,.38)); }
         }
         @media (prefers-reduced-motion: reduce) {
           .een-hex { animation: none; transform: translate(-50%, -50%); }
           .een-center { animation: none; transform: translate(-50%, -50%); }
-          .een-wave, .een-link, .een-dot { animation: none; }
+          .een-wave, .een-link,
         }
       `}</style>
 
@@ -211,8 +203,8 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
         <svg className="een-lines" viewBox="0 0 760 920" preserveAspectRatio="none" aria-hidden="true">
           <defs>
             <linearGradient id="een-link-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="920">
-              <stop offset="0" stopColor="#ffd24d" />
-              <stop offset="1" stopColor="#c96f00" />
+              <stop offset="0" stopColor="#C88A1A" />
+              <stop offset="1" stopColor="#8A5A12" />
             </linearGradient>
           </defs>
           {links.map(([x, y], index) => {
@@ -225,16 +217,6 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
             return (
               <g key={`${x}-${y}`}>
                 <line className="een-link" x1="380" y1="460" x2={x} y2={y} />
-                <circle className="een-joint" cx={jc[0]} cy={jc[1]} r="6" />
-                <circle className="een-joint" cx={jn[0]} cy={jn[1]} r="5" />
-                <circle className="een-dot" r="5">
-                  <animateMotion
-                    dur={`${4.8 + (index % 5) * 0.35}s`}
-                    begin={`-${index * 0.45}s`}
-                    repeatCount="indefinite"
-                    path={`M380 460 L${x} ${y}`}
-                  />
-                </circle>
               </g>
             );
           })}
