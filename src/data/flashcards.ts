@@ -2865,7 +2865,7 @@ export const FLASHCARDS: Flashcard[] = [
   { id: 'fc-lgsf108', word: 'feature', partOfSpeech: 'word', turkishMeaning: 'özellik', exampleSentence: 'This phone has many new features.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
   { id: 'fc-lgsf109', word: 'fee', partOfSpeech: 'word', turkishMeaning: 'ücret', exampleSentence: 'The university application fee is high.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
   { id: 'fc-lgsf110', word: 'feel', partOfSpeech: 'word', turkishMeaning: 'hissetmek', exampleSentence: 'I have a good feeling about this.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
-  { id: 'fc-lgsf111', word: 'find interesting', partOfSpeech: 'word', turkishMeaning: 'bulmak (ilginç bulmak)', exampleSentence: 'I find history very interesting.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
+  { id: 'fc-lgsf111', word: 'find interesting', partOfSpeech: 'word', turkishMeaning: 'ilginç bulmak', exampleSentence: 'I find history very interesting.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
   { id: 'fc-lgsf112', word: 'fish', partOfSpeech: 'word', turkishMeaning: 'balık', exampleSentence: 'I like to eat fish for dinner.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
   { id: 'fc-lgsf113', word: 'follow', partOfSpeech: 'word', turkishMeaning: 'takip etmek', exampleSentence: 'Please follow me to the office.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
   { id: 'fc-lgsf114', word: 'forever', partOfSpeech: 'word', turkishMeaning: 'sonsuza kadar', exampleSentence: 'I will remember this day forever.', category: FLASHCARD_CATEGORIES.LGS_FRIENDSHIP },
