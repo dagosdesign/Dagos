@@ -668,13 +668,13 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
                     <p className="text-base font-mono text-white/90">{entry.ipa}</p>
                   )}
                   {entry.reading && (
-                    <p className="text-base font-light text-[#e3b553]">({entry.reading})</p>
+                    <p className="text-base font-light text-white">({entry.reading})</p>
                   )}
                 </>
               )}
 
               {meanings.length > 0 && (
-                <p className="text-sm font-light text-[#e3b553]/90 leading-relaxed">
+                <p className="text-sm font-light text-[#c08f3a] leading-relaxed">
                   {meanings.join(', ')}
                 </p>
               )}
@@ -708,13 +708,8 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
             <div className="flex-1 h-px bg-gradient-to-l from-transparent via-[#e3b553]/60 to-[#e3b553]/60" />
           </div>
 
-          {/* Bottom: definition + example */}
+          {/* Bottom: example sentence only (English definition removed) */}
           <div className="space-y-2">
-            {entry.definition && (
-              <p className="text-sm sm:text-base font-light text-white leading-relaxed">
-                {entry.definition}
-              </p>
-            )}
             {example && (
               <p className="text-sm text-white/60 italic font-light leading-relaxed border-l-2 border-[#e3b553]/50 pl-3">
                 <Highlighted text={example} word={current.word} />
