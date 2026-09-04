@@ -57898,5 +57898,1526 @@
   ],
   "definition": "To take part in an activity or event.",
   "example": "Many students want to participate in the school play."
+ },
+ "e-mail": {
+  "word": "e-mail",
+  "ipa": "/ˈiːmeɪl/",
+  "reading": "iymeyl",
+  "meanings": [
+   "e-posta"
+  ],
+  "definition": "A digital message sent over the internet",
+  "example": "You should send an e-mail to the manager."
+ },
+ "e-mail address": {
+  "word": "e-mail address",
+  "ipa": "/ˈiːmeɪl əˈdres/",
+  "reading": "iymeyl edres",
+  "meanings": [
+   "e-posta adresi"
+  ],
+  "definition": "The unique identifier used to send digital messages",
+  "example": "Please write your e-mail address on this form."
+ },
+ "notification": {
+  "word": "notification",
+  "ipa": "/ˌnəʊtɪfɪˈkeɪʃn/",
+  "reading": "nötifikeyşın",
+  "meanings": [
+   "bildirim"
+  ],
+  "definition": "A message that informs you about an event",
+  "example": "I received a notification on my phone today."
+ },
+ "laptop": {
+  "word": "laptop",
+  "ipa": "/ˈlæptɒp/",
+  "reading": "leptap",
+  "meanings": [
+   "dizüstü bilgisayar"
+  ],
+  "definition": "A portable computer that fits on your lap",
+  "example": "I bought a new laptop for my work."
+ },
+ "wireless": {
+  "word": "wireless",
+  "ipa": "/ˈwaɪələs/",
+  "reading": "vayırlıs",
+  "meanings": [
+   "kablosuz"
+  ],
+  "definition": "Using radio waves instead of wires to send signals",
+  "example": "We need a wireless connection in this office."
+ },
+ "keyboard": {
+  "word": "keyboard",
+  "ipa": "/ˈkiːbɔːd/",
+  "reading": "kiybord",
+  "meanings": [
+   "klavye"
+  ],
+  "definition": "A set of keys used to type on computers",
+  "example": "The new keyboard is very comfortable to use."
+ },
+ "mouse": {
+  "word": "mouse",
+  "ipa": "/maʊs/",
+  "reading": "maus",
+  "meanings": [
+   "fare"
+  ],
+  "definition": "A small hand-held device to move a computer cursor",
+  "example": "You can click with the mouse to open files."
+ },
+ "scanner": {
+  "word": "scanner",
+  "ipa": "/ˈskænə(r)/",
+  "reading": "skenır",
+  "meanings": [
+   "tarayıcı (cihaz)"
+  ],
+  "definition": "A device that copies documents into digital form",
+  "example": "Use the scanner to copy this old photograph."
+ },
+ "speaker": {
+  "word": "speaker",
+  "ipa": "/ˈspiːkə(r)/",
+  "reading": "spiykır",
+  "meanings": [
+   "hoparlör"
+  ],
+  "definition": "A device that outputs sound from a computer",
+  "example": "The left speaker is making a strange noise."
+ },
+ "microphone": {
+  "word": "microphone",
+  "ipa": "/ˈmaɪkrəfəʊn/",
+  "reading": "maykrofoun",
+  "meanings": [
+   "mikrofon"
+  ],
+  "definition": "An instrument used to record or amplify sound",
+  "example": "Speak clearly into the microphone during the call."
+ },
+ "webcam": {
+  "word": "webcam",
+  "ipa": "/ˈwebkæm/",
+  "reading": "vebkem",
+  "meanings": [
+   "web kamerası"
+  ],
+  "definition": "A video camera connected to a computer",
+  "example": "She turned on her webcam for the online meeting."
+ },
+ "headphones": {
+  "word": "headphones",
+  "ipa": "/ˈhedfəʊnz/",
+  "reading": "hedfounz",
+  "meanings": [
+   "kulaklık"
+  ],
+  "definition": "Speakers worn over the ears to listen privately",
+  "example": "I always wear headphones when I work."
+ },
+ "router": {
+  "word": "router",
+  "ipa": "/ˈruːtə(r)/",
+  "reading": "ruutır",
+  "meanings": [
+   "yönlendirici"
+  ],
+  "definition": "A device that forwards data across computer networks",
+  "example": "We need to restart the router to fix the internet."
+ },
+ "modem": {
+  "word": "modem",
+  "ipa": "/ˈməʊdem/",
+  "reading": "modem",
+  "meanings": [
+   "modem"
+  ],
+  "definition": "A device that connects computers to the internet",
+  "example": "The green light on the modem is flashing."
+ },
+ "wi-fi": {
+  "word": "wi-fi",
+  "ipa": "/ˈwaɪ faɪ/",
+  "reading": "vay fay",
+  "meanings": [
+   "kablosuz internet"
+  ],
+  "definition": "A facility allowing computers to connect to the internet wirelessly",
+  "example": "Is there free wi-fi in this cafe?"
+ },
+ "software": {
+  "word": "software",
+  "ipa": "/ˈsɒftweə(r)/",
+  "reading": "softveır",
+  "meanings": [
+   "yazılım"
+  ],
+  "definition": "Programs and operating information used by a computer",
+  "example": "You must update the software regularly for security."
+ },
+ "hardware": {
+  "word": "hardware",
+  "ipa": "/ˈhɑːdweə(r)/",
+  "reading": "haardveır",
+  "meanings": [
+   "donanım"
+  ],
+  "definition": "The physical components of a computer system",
+  "example": "This shop sells various types of computer hardware."
+ },
+ "program": {
+  "word": "program",
+  "ipa": "/ˈprəʊɡræm/",
+  "reading": "prougrem",
+  "meanings": [
+   "program"
+  ],
+  "definition": "A set of instructions that a computer executes",
+  "example": "This program is very easy to install."
+ },
+ "antivirus": {
+  "word": "antivirus",
+  "ipa": "/ˌæntiˈvaɪrəs/",
+  "reading": "entivayrıs",
+  "meanings": [
+   "antivirüs"
+  ],
+  "definition": "Software designed to detect and destroy computer viruses",
+  "example": "Make sure your antivirus is turned on."
+ },
+ "virus": {
+  "word": "virus",
+  "ipa": "/ˈvaɪrəs/",
+  "reading": "vayrıs",
+  "meanings": [
+   "virüs"
+  ],
+  "definition": "A harmful program designed to damage a computer system",
+  "example": "My computer has a virus that slows it down."
+ },
+ "malware": {
+  "word": "malware",
+  "ipa": "/ˈmæl.weə(r)/",
+  "reading": "melveır",
+  "meanings": [
+   "zararlı yazılım"
+  ],
+  "definition": "Software designed to harm or disrupt computers.",
+  "example": "You should scan your computer to detect malware."
+ },
+ "homepage": {
+  "word": "homepage",
+  "ipa": "/ˈhəʊm.peɪdʒ/",
+  "reading": "hömpeyc",
+  "meanings": [
+   "ana sayfa"
+  ],
+  "definition": "The main introductory page of a website.",
+  "example": "Click the logo to return to the homepage."
+ },
+ "domain": {
+  "word": "domain",
+  "ipa": "/dəʊˈmeɪn/",
+  "reading": "dömeyn",
+  "meanings": [
+   "alan adı"
+  ],
+  "definition": "An address of a website on the internet.",
+  "example": "You need to register a domain for your business."
+ },
+ "webpage": {
+  "word": "webpage",
+  "ipa": "/ˈweb.peɪdʒ/",
+  "reading": "vebpeyc",
+  "meanings": [
+   "web sayfası"
+  ],
+  "definition": "A single hypertext document on the World Wide Web.",
+  "example": "This webpage contains useful information about technology."
+ },
+ "url": {
+  "word": "url",
+  "ipa": "/ˌjuː.ɑːrˈel/",
+  "reading": "yu-ar-el",
+  "meanings": [
+   "internet adresi"
+  ],
+  "definition": "The address of a specific webpage or file.",
+  "example": "Please copy and paste the URL into your browser."
+ },
+ "search bar": {
+  "word": "search bar",
+  "ipa": "/ˈsɜːtʃ ˌbɑː(r)/",
+  "reading": "sörç bar",
+  "meanings": [
+   "arama çubuğu"
+  ],
+  "definition": "A box where you type terms to find information.",
+  "example": "Type your query in the search bar at the top."
+ },
+ "keyword": {
+  "word": "keyword",
+  "ipa": "/ˈkiː.wɜːd/",
+  "reading": "kiyvörd",
+  "meanings": [
+   "anahtar kelime"
+  ],
+  "definition": "A word used to find relevant search results.",
+  "example": "Enter a relevant keyword to find the articles you need."
+ },
+ "pop-up": {
+  "word": "pop-up",
+  "ipa": "/ˈpɒp.ʌp/",
+  "reading": "popap",
+  "meanings": [
+   "açılır pencere"
+  ],
+  "definition": "A small window that suddenly appears on a screen.",
+  "example": "Use an ad blocker to stop every pop-up."
+ },
+ "spam": {
+  "word": "spam",
+  "ipa": "/spæm/",
+  "reading": "spem",
+  "meanings": [
+   "istenmeyen posta"
+  ],
+  "definition": "Unwanted or unsolicited bulk email messages.",
+  "example": "My folder is full of automated spam."
+ },
+ "inbox": {
+  "word": "inbox",
+  "ipa": "/ˈɪn.bɒks/",
+  "reading": "inboks",
+  "meanings": [
+   "gelen kutusu"
+  ],
+  "definition": "An electronic folder where incoming emails are received.",
+  "example": "Check your inbox for the confirmation email."
+ },
+ "outbox": {
+  "word": "outbox",
+  "ipa": "/ˈaʊt.bɒks/",
+  "reading": "autboks",
+  "meanings": [
+   "giden kutusu"
+  ],
+  "definition": "A folder where outgoing emails are temporarily held.",
+  "example": "The email is still waiting in my outbox."
+ },
+ "recipient": {
+  "word": "recipient",
+  "ipa": "/rɪˈsɪp.i.ənt/",
+  "reading": "risipiyınt",
+  "meanings": [
+   "alıcı"
+  ],
+  "definition": "A person who receives something.",
+  "example": "Make sure you enter the correct recipient before sending."
+ },
+ "forward": {
+  "word": "forward",
+  "ipa": "/ˈfɔː.wəd/",
+  "reading": "forvırd",
+  "meanings": [
+   "iletmek"
+  ],
+  "definition": "To resend an email to another person.",
+  "example": "Please forward this message to the manager."
+ },
+ "hard drive": {
+  "word": "hard drive",
+  "ipa": "/ˈh&aːd ˌdraɪv/",
+  "reading": "hard drayv",
+  "meanings": [
+   "sabit disk"
+  ],
+  "definition": "A magnetic disk drive used for storing data.",
+  "example": "I need to install a larger hard drive."
+ },
+ "storage": {
+  "word": "storage",
+  "ipa": "/ˈstɔː.rɪdʒ/",
+  "reading": "storic",
+  "meanings": [
+   "depolama"
+  ],
+  "definition": "The space available for saving digital data.",
+  "example": "My phone is running out of storage."
+ },
+ "data": {
+  "word": "data",
+  "ipa": "/ˈdeɪ.tə/",
+  "reading": "deytı",
+  "meanings": [
+   "veri"
+  ],
+  "definition": "Information processed or stored by a computer.",
+  "example": "We must backup all important data regularly."
+ },
+ "database": {
+  "word": "database",
+  "ipa": "/ˈdeɪ.tə.beɪs/",
+  "reading": "dey-tı-beys",
+  "meanings": [
+   "veri tabanı"
+  ],
+  "definition": "An organized collection of structured data.",
+  "example": "The system stores user info in a secure database."
+ },
+ "cloud": {
+  "word": "cloud",
+  "ipa": "/klaʊd/",
+  "reading": "klaud",
+  "meanings": [
+   "bulut"
+  ],
+  "definition": "Remote servers used to store and manage data.",
+  "example": "I prefer to save my files in the cloud."
+ },
+ "server": {
+  "word": "server",
+  "ipa": "/ˈsɜː.və(r)/",
+  "reading": "sörvır",
+  "meanings": [
+   "sunucu"
+  ],
+  "definition": "A computer that provides data to other computers.",
+  "example": "The company needs a main server to host the website."
+ },
+ "profile": {
+  "word": "profile",
+  "ipa": "/ˈprəʊfaɪl/",
+  "reading": "profayl",
+  "meanings": [
+   "profil"
+  ],
+  "definition": "User information and settings on a website.",
+  "example": "You should update your profile."
+ },
+ "avatar": {
+  "word": "avatar",
+  "ipa": "/ˈævətɑː/",
+  "reading": "evıtaa",
+  "meanings": [
+   "avatar"
+  ],
+  "definition": "An image representing a user in games or forums.",
+  "example": "Choose a funny avatar for your account."
+ },
+ "membership": {
+  "word": "membership",
+  "ipa": "/ˈmembəʃɪp/",
+  "reading": "membışip",
+  "meanings": [
+   "üyelik"
+  ],
+  "definition": "The state of being a member of a group.",
+  "example": "You must pay for your membership."
+ },
+ "subscription": {
+  "word": "subscription",
+  "ipa": "/səbˈskrɪpʃn/",
+  "reading": "sabskripşın",
+  "meanings": [
+   "abonelik"
+  ],
+  "definition": "An agreement to pay regularly for a service.",
+  "example": "I want to cancel my subscription."
+ },
+ "vlogger": {
+  "word": "vlogger",
+  "ipa": "/ˈvlɒɡə/",
+  "reading": "vlogı",
+  "meanings": [
+   "vlog yayıncısı"
+  ],
+  "definition": "A person who creates and posts video blogs.",
+  "example": "She wants to become a famous vlogger."
+ },
+ "content creator": {
+  "word": "content creator",
+  "ipa": "/ˈkɒntent kriˈeɪtə/",
+  "reading": "kontent krieytı",
+  "meanings": [
+   "içerik üreticisi"
+  ],
+  "definition": "Someone who makes material for the internet.",
+  "example": "He works as a full-time content creator."
+ },
+ "administrator": {
+  "word": "administrator",
+  "ipa": "/ədˈmɪnɪstreɪtə/",
+  "reading": "edministreytı",
+  "meanings": [
+   "yönetici"
+  ],
+  "definition": "A person responsible for running a system or website.",
+  "example": "Please contact the administrator for help."
+ },
+ "moderator": {
+  "word": "moderator",
+  "ipa": "/ˈmɒdəreɪtə/",
+  "reading": "modıreytı",
+  "meanings": [
+   "moderatör"
+  ],
+  "definition": "A person who monitors online discussions or forums.",
+  "example": "The moderator can delete inappropriate comments."
+ },
+ "privacy": {
+  "word": "privacy",
+  "ipa": "/ˈprɪvəsi/",
+  "reading": "privısi",
+  "meanings": [
+   "gizlilik"
+  ],
+  "definition": "The state of being free from public attention.",
+  "example": "We must respect the privacy of our users."
+ },
+ "permission": {
+  "word": "permission",
+  "ipa": "/pəˈmɪʃn/",
+  "reading": "pımişın",
+  "meanings": [
+   "izin"
+  ],
+  "definition": "The act of allowing someone to do something.",
+  "example": "You need permission to access this folder."
+ },
+ "cyberbullying": {
+  "word": "cyberbullying",
+  "ipa": "/ˈsaɪbəbʊliɪŋ/",
+  "reading": "saybıbuliying",
+  "meanings": [
+   "siber zorbalık"
+  ],
+  "definition": "Using digital technology to harass or threaten someone.",
+  "example": "Schools must take steps to prevent cyberbullying."
+ },
+ "cyberbully": {
+  "word": "cyberbully",
+  "ipa": "/ˈsaɪbəbʊli/",
+  "reading": "saybıbuli",
+  "meanings": [
+   "siber zorba"
+  ],
+  "definition": "A person who uses technology to hurt others.",
+  "example": "Do not let a cyberbully ruin your day."
+ },
+ "hacker": {
+  "word": "hacker",
+  "ipa": "/ˈhækə/",
+  "reading": "hekı",
+  "meanings": [
+   "bilgisayar korsanı"
+  ],
+  "definition": "A person who gains unauthorized access to computer systems.",
+  "example": "A skilled hacker broke into the network."
+ },
+ "hacking": {
+  "word": "hacking",
+  "ipa": "/ˈhækɪŋ/",
+  "reading": "heking",
+  "meanings": [
+   "bilgisayar korsanlığı"
+  ],
+  "definition": "Gaining unauthorized access to data in a system.",
+  "example": "He was arrested for illegal hacking."
+ },
+ "scam": {
+  "word": "scam",
+  "ipa": "/skæm/",
+  "reading": "skem",
+  "meanings": [
+   "dolandırıcılık"
+  ],
+  "definition": "A dishonest scheme to make money.",
+  "example": "This email looks like a clever scam."
+ },
+ "scammer": {
+  "word": "scammer",
+  "ipa": "/ˈskæmə/",
+  "reading": "skemı",
+  "meanings": [
+   "dolandırıcı"
+  ],
+  "definition": "A person who cheats others out of money.",
+  "example": "The scammer tried to steal my credit card details."
+ },
+ "fake news": {
+  "word": "fake news",
+  "ipa": "/feɪk njuːz/",
+  "reading": "feyk nyuuz",
+  "meanings": [
+   "sahte haber"
+  ],
+  "definition": "False stories presented as real news on the internet.",
+  "example": "Social media websites often spread fake news."
+ },
+ "fake profile": {
+  "word": "fake profile",
+  "ipa": "/feɪk ˈprəʊfaɪl/",
+  "reading": "feyk profayl",
+  "meanings": [
+   "sahte profil"
+  ],
+  "definition": "A false online identity created to deceive people.",
+  "example": "I suspect that this is a fake profile."
+ },
+ "block": {
+  "word": "block",
+  "ipa": "/blɒk/",
+  "reading": "blok",
+  "meanings": [
+   "engellemek"
+  ],
+  "definition": "To stop someone from contacting you online.",
+  "example": "You should block users who send spam."
+ },
+ "firewall": {
+  "word": "firewall",
+  "ipa": "/ˈfaɪəwɔːl/",
+  "reading": "fayırvol",
+  "meanings": [
+   "güvenlik duvarı"
+  ],
+  "definition": "A security system that controls network traffic.",
+  "example": "You must enable the firewall to protect your computer."
+ },
+ "encryption": {
+  "word": "encryption",
+  "ipa": "/ɪnˈkrɪpʃn/",
+  "reading": "inkripşın",
+  "meanings": [
+   "şifreleme"
+  ],
+  "definition": "The process of converting data into a secret code.",
+  "example": "Data encryption is essential for secure online shopping."
+ },
+ "verification": {
+  "word": "verification",
+  "ipa": "/ˌverɪfɪˈkeɪʃn/",
+  "reading": "verifikeyşın",
+  "meanings": [
+   "doğrulama"
+  ],
+  "definition": "The process of proving something is true or correct.",
+  "example": "The bank requires identity verification before opening an account."
+ },
+ "code": {
+  "word": "code",
+  "ipa": "/kəʊd/",
+  "reading": "koud",
+  "meanings": [
+   "kod"
+  ],
+  "definition": "A system of words, letters, or symbols.",
+  "example": "Please enter the secret code to open the door."
+ },
+ "pin": {
+  "word": "pin",
+  "ipa": "/pɪn/",
+  "reading": "pin",
+  "meanings": [
+   "PIN"
+  ],
+  "definition": "A personal identification number used for security.",
+  "example": "Please enter your four-digit pin."
+ },
+ "qr code": {
+  "word": "qr code",
+  "ipa": "/ˌkjuː ˈɑː kəʊd/",
+  "reading": "kyu ar koud",
+  "meanings": [
+   "QR kod"
+  ],
+  "definition": "A machine-readable code consisting of black and white squares.",
+  "example": "Please scan this qr code to view the menu."
+ },
+ "captcha": {
+  "word": "captcha",
+  "ipa": "/ˈkæptʃə/",
+  "reading": "kepçı",
+  "meanings": [
+   "captcha doğrulaması"
+  ],
+  "definition": "A test to determine if a user is human.",
+  "example": "You need to solve the captcha to submit the form."
+ },
+ "privacy policy": {
+  "word": "privacy policy",
+  "ipa": "/ˈprɪvəsi ˌpɒləsi/",
+  "reading": "privısi polisi",
+  "meanings": [
+   "gizlilik politikası"
+  ],
+  "definition": "A statement explaining how a website handles user data.",
+  "example": "Please read our privacy policy to understand data usage."
+ },
+ "terms of use": {
+  "word": "terms of use",
+  "ipa": "/tɜːmz əv juːs/",
+  "reading": "tömz ov yuus",
+  "meanings": [
+   "kullanım koşulları"
+  ],
+  "definition": "Rules that users must agree to follow.",
+  "example": "You must accept the terms of use before signing up."
+ },
+ "age restriction": {
+  "word": "age restriction",
+  "ipa": "/eɪdʒ rɪˈstrɪkʃn/",
+  "reading": "eyc ristrikşın",
+  "meanings": [
+   "yaş sınırı"
+  ],
+  "definition": "A rule limiting access based on a person's age.",
+  "example": "This video game has a strict age restriction."
+ },
+ "parental control": {
+  "word": "parental control",
+  "ipa": "/pəˈrentl kənˈtrəʊl/",
+  "reading": "pırentıl kıntrol",
+  "meanings": [
+   "ebeveyn denetimi"
+  ],
+  "definition": "Tools allowing parents to restrict internet content for kids.",
+  "example": "You can set up parental control on this tablet."
+ },
+ "digital footprint": {
+  "word": "digital footprint",
+  "ipa": "/ˌdɪdʒɪtl ˈfʊtprɪnt/",
+  "reading": "dicitıl futprint",
+  "meanings": [
+   "dijital ayak izi"
+  ],
+  "definition": "The information about a person that exists on the internet.",
+  "example": "Everything you post online contributes to your digital footprint."
+ },
+ "cybercrime": {
+  "word": "cybercrime",
+  "ipa": "/ˈsaɪbəkraɪm/",
+  "reading": "saybırkraym",
+  "meanings": [
+   "siber suç"
+  ],
+  "definition": "Criminal activities carried out using computers or the internet.",
+  "example": "The government is trying to prevent cybercrime online."
+ },
+ "screen time": {
+  "word": "screen time",
+  "ipa": "/ˈskriːn taɪm/",
+  "reading": "skriin taym",
+  "meanings": [
+   "ekran süresi"
+  ],
+  "definition": "Time spent looking at a device screen.",
+  "example": "Parents should limit their children's screen time."
+ },
+ "internet user": {
+  "word": "internet user",
+  "ipa": "/ˈɪntənet ˌjuːzə/",
+  "reading": "intırnet yuuzır",
+  "meanings": [
+   "internet kullanıcısı"
+  ],
+  "definition": "A person who uses the internet.",
+  "example": "Every internet user should protect their personal data."
+ },
+ "user-friendly": {
+  "word": "user-friendly",
+  "ipa": "/ˌjuːzə ˈfrendli/",
+  "reading": "yuuzır frendli",
+  "meanings": [
+   "kullanıcı dostu"
+  ],
+  "definition": "Easy for people to use or understand.",
+  "example": "The new application has a very user-friendly interface."
+ },
+ "functional": {
+  "word": "functional",
+  "ipa": "/ˈfʌŋkʃənl/",
+  "reading": "fankşınl",
+  "meanings": [
+   "işlevsel"
+  ],
+  "definition": "Designed to be practical and useful.",
+  "example": "The design of the website is simple but functional."
+ },
+ "interactive": {
+  "word": "interactive",
+  "ipa": "/ˌɪntərˈæktɪv/",
+  "reading": "intırektiv",
+  "meanings": [
+   "etkileşimli"
+  ],
+  "definition": "Allowing two-way flow of information between user and system.",
+  "example": "The website has an interactive map of the city."
+ },
+ "digital": {
+  "word": "digital",
+  "ipa": "/ˈdɪdʒɪtl/",
+  "reading": "dicitıl",
+  "meanings": [
+   "dijital"
+  ],
+  "definition": "Expressed as series of the digits 0 and 1.",
+  "example": "We live in a digital world now."
+ },
+ "technical": {
+  "word": "technical",
+  "ipa": "/ˈteknɪkl/",
+  "reading": "teknikl",
+  "meanings": [
+   "teknik"
+  ],
+  "definition": "Relating to a particular subject, art, or craft.",
+  "example": "The support team can help you with any technical problem."
+ },
+ "automatic": {
+  "word": "automatic",
+  "ipa": "/ˌɔː.təˈmæt.ɪk/",
+  "reading": "otomatik",
+  "meanings": [
+   "otomatik"
+  ],
+  "definition": "Working by itself without human control.",
+  "example": "The doors have an automatic system."
+ },
+ "inappropriate": {
+  "word": "inappropriate",
+  "ipa": "/ˌɪn.əˈprəʊ.pri.ət/",
+  "reading": "inıpropiriyıt",
+  "meanings": [
+   "uygunsuz"
+  ],
+  "definition": "Not suitable or proper for a situation.",
+  "example": "His behavior was inappropriate for the meeting."
+ },
+ "legal": {
+  "word": "legal",
+  "ipa": "/ˈliː.ɡəl/",
+  "reading": "liigıl",
+  "meanings": [
+   "yasal"
+  ],
+  "definition": "Allowed or official according to the law.",
+  "example": "You should seek legal advice."
+ },
+ "licence": {
+  "word": "licence",
+  "ipa": "/ˈlaɪ.səns/",
+  "reading": "laysıns",
+  "meanings": [
+   "lisans"
+  ],
+  "definition": "An official document giving permission.",
+  "example": "You need a licence to drive."
+ },
+ "owner": {
+  "word": "owner",
+  "ipa": "/ˈəʊ.nər/",
+  "reading": "ounır",
+  "meanings": [
+   "sahip"
+  ],
+  "definition": "A person who owns something.",
+  "example": "She is the owner of this car."
+ },
+ "publisher": {
+  "word": "publisher",
+  "ipa": "/ˈpʌb.lɪ.ʃər/",
+  "reading": "pablişır",
+  "meanings": [
+   "yayıncı"
+  ],
+  "definition": "A company or person that publishes books.",
+  "example": "The publisher accepted my new book."
+ },
+ "online course": {
+  "word": "online course",
+  "ipa": "/ˌɒn.laɪn ˈkɔːs/",
+  "reading": "onlayn koors",
+  "meanings": [
+   "çevrim içi kurs"
+  ],
+  "definition": "A class taught over the internet.",
+  "example": "I want to start an online course."
+ },
+ "e-book": {
+  "word": "e-book",
+  "ipa": "/ˈiː.bʊk/",
+  "reading": "iibuk",
+  "meanings": [
+   "e-kitap"
+  ],
+  "definition": "A book published in digital form.",
+  "example": "You can download this e-book."
+ },
+ "podcast": {
+  "word": "podcast",
+  "ipa": "/ˈpɒd.kɑːst/",
+  "reading": "podkast",
+  "meanings": [
+   "podcast"
+  ],
+  "definition": "A digital audio file available on internet.",
+  "example": "I listen to a daily podcast."
+ },
+ "livestream": {
+  "word": "livestream",
+  "ipa": "/ˈlaɪv.striːm/",
+  "reading": "layvstriim",
+  "meanings": [
+   "canlı yayın"
+  ],
+  "definition": "Broadcast video live over the internet.",
+  "example": "We will watch the livestream now."
+ },
+ "video call": {
+  "word": "video call",
+  "ipa": "/ˈvɪd.i.əʊ kɔːl/",
+  "reading": "vidyo kool",
+  "meanings": [
+   "görüntülü arama"
+  ],
+  "definition": "A phone call with real-time video.",
+  "example": "Let us have a video call."
+ },
+ "video conference": {
+  "word": "video conference",
+  "ipa": "/ˈvɪd.i.əʊ ˌkɒn.fər.əns/",
+  "reading": "vidyo konfırıns",
+  "meanings": [
+   "video konferans"
+  ],
+  "definition": "A meeting held by video link.",
+  "example": "The team joined the video conference."
+ },
+ "online game": {
+  "word": "online game",
+  "ipa": "/ˌɒn.laɪn ˈɡeɪm/",
+  "reading": "onlayn geym",
+  "meanings": [
+   "çevrim içi oyun"
+  ],
+  "definition": "A game played over the internet.",
+  "example": "This is a popular online game."
+ },
+ "multiplayer": {
+  "word": "multiplayer",
+  "ipa": "/ˌmʌl.tiˈpleɪ.ər/",
+  "reading": "maltipleyır",
+  "meanings": [
+   "çok oyunculu"
+  ],
+  "definition": "Designed for several players at once.",
+  "example": "They prefer a multiplayer game mode."
+ },
+ "gaming": {
+  "word": "gaming",
+  "ipa": "/ˈɡeɪ.mɪŋ/",
+  "reading": "geyming",
+  "meanings": [
+   "oyun oynama"
+  ],
+  "definition": "The playing of video games.",
+  "example": "He spends much time on gaming."
+ },
+ "online banking": {
+  "word": "online banking",
+  "ipa": "/ˌɒn.laɪn ˈbæŋ.kɪŋ/",
+  "reading": "onlayn benking",
+  "meanings": [
+   "internet bankacılığı"
+  ],
+  "definition": "Managing bank accounts via the internet.",
+  "example": "I use online banking for safety."
+ },
+ "credit card": {
+  "word": "credit card",
+  "ipa": "/ˈkred.ɪt ˌkɑːd/",
+  "reading": "kredit kaad",
+  "meanings": [
+   "kredi kartı"
+  ],
+  "definition": "A plastic card used to buy goods.",
+  "example": "Can I pay by credit card?"
+ },
+ "cardholder": {
+  "word": "cardholder",
+  "ipa": "/ˈkɑːdˌhəʊl.dər/",
+  "reading": "kaadholdır",
+  "meanings": [
+   "kart sahibi"
+  ],
+  "definition": "The person to whom a card belongs.",
+  "example": "The cardholder must sign the receipt."
+ },
+ "shopping cart": {
+  "word": "shopping cart",
+  "ipa": "/ˈʃɒp.ɪŋ ˌkɑːt/",
+  "reading": "şoping kaat",
+  "meanings": [
+   "alışveriş sepeti"
+  ],
+  "definition": "A basket on wheels for groceries.",
+  "example": "Put the milk in the shopping cart."
+ },
+ "checkout": {
+  "word": "checkout",
+  "ipa": "/ˈtʃek.aʊt/",
+  "reading": "çekaut",
+  "meanings": [
+   "ödeme ekranı"
+  ],
+  "definition": "The place where you pay in store.",
+  "example": "Please pay at the checkout."
+ },
+ "shipping": {
+  "word": "shipping",
+  "ipa": "/ˈʃɪp.ɪŋ/",
+  "reading": "şiping",
+  "meanings": [
+   "kargolama"
+  ],
+  "definition": "The act of sending or delivering goods.",
+  "example": "We offer free shipping on all orders."
+ },
+ "free of charge": {
+  "word": "free of charge",
+  "ipa": "/friː əv tʃɑːdʒ/",
+  "reading": "frii ov caac",
+  "meanings": [
+   "ücretsiz"
+  ],
+  "definition": "Without any payment or cost.",
+  "example": "You can get this app free of charge."
+ },
+ "currency": {
+  "word": "currency",
+  "ipa": "/ˈkʌr.ən.si/",
+  "reading": "karınsi",
+  "meanings": [
+   "para birimi"
+  ],
+  "definition": "The system of money in common use.",
+  "example": "You can exchange your foreign currency here."
+ },
+ "online newspaper": {
+  "word": "online newspaper",
+  "ipa": "/ˌɒn.laɪn ˈnjuːzˌpeɪ.pər/",
+  "reading": "onlayn nüyuzpeypır",
+  "meanings": [
+   "çevrim içi gazete"
+  ],
+  "definition": "A newspaper published on the internet.",
+  "example": "I read an online newspaper every morning."
+ },
+ "online forum": {
+  "word": "online forum",
+  "ipa": "/ˌɒn.laɪn ˈfɔː.rəm/",
+  "reading": "onlayn forum",
+  "meanings": [
+   "çevrim içi forum"
+  ],
+  "definition": "A website where people discuss various topics.",
+  "example": "I found this solution on an online forum."
+ },
+ "discussion board": {
+  "word": "discussion board",
+  "ipa": "/dɪˈskʌʃ.ən bɔːd/",
+  "reading": "diskajın bood",
+  "meanings": [
+   "tartışma panosu"
+  ],
+  "definition": "An online area where users post messages.",
+  "example": "Students can post questions on the discussion board."
+ },
+ "group chat": {
+  "word": "group chat",
+  "ipa": "/ɡruːp tʃæt/",
+  "reading": "gurup çet",
+  "meanings": [
+   "grup sohbeti"
+  ],
+  "definition": "An online conversation involving multiple people.",
+  "example": "I will send the link to our group chat."
+ },
+ "chat room": {
+  "word": "chat room",
+  "ipa": "/ˈtʃæt ruːm/",
+  "reading": "çet ruum",
+  "meanings": [
+   "sohbet odası"
+  ],
+  "definition": "An online space for real-time communication.",
+  "example": "Many people met in this chat room."
+ },
+ "emoji": {
+  "word": "emoji",
+  "ipa": "/ɪˈməʊ.dʒi/",
+  "reading": "imoci",
+  "meanings": [
+   "emoji"
+  ],
+  "definition": "A small digital image used to express ideas.",
+  "example": "She sent a happy emoji in her reply."
+ },
+ "hashtag": {
+  "word": "hashtag",
+  "ipa": "/ˈhæʃ.tæɡ/",
+  "reading": "heşteg",
+  "meanings": [
+   "etiket"
+  ],
+  "definition": "A word preceded by a hash sign.",
+  "example": "Use this specific hashtag to join the discussion."
+ },
+ "trending": {
+  "word": "trending",
+  "ipa": "/ˈtren.dɪŋ/",
+  "reading": "trendiŋ",
+  "meanings": [
+   "gündemde olan"
+  ],
+  "definition": "Currently popular or widely discussed online.",
+  "example": "This topic is trending on social media right now."
+ },
+ "timeline": {
+  "word": "timeline",
+  "ipa": "/ˈtaɪm.laɪn/",
+  "reading": "taymlayn",
+  "meanings": [
+   "zaman çizelgesi"
+  ],
+  "definition": "A display of events in chronological order.",
+  "example": "Check your social media timeline for updates."
+ },
+ "gaming console": {
+  "word": "gaming console",
+  "ipa": "/ˈɡeɪ.mɪŋ ˌkɒn.səʊl/",
+  "reading": "geymiŋ konsol",
+  "meanings": [
+   "oyun konsolu"
+  ],
+  "definition": "An electronic device used for playing video games.",
+  "example": "He bought a new gaming console yesterday."
+ },
+ "internet café": {
+  "word": "internet café",
+  "ipa": "/ˈɪn.tə.net ˌkæf.eɪ/",
+  "reading": "intırnet kefey",
+  "meanings": [
+   "internet kafe"
+  ],
+  "definition": "A place providing public computers and internet access.",
+  "example": "I played video games at the local internet café."
+ },
+ "internet service provider": {
+  "word": "internet service provider",
+  "ipa": "/ˈɪn.tə.net ˈsɜː.vɪs prəˈvaɪ.dər/",
+  "reading": "intırnet sörvis provaydır",
+  "meanings": [
+   "internet servis sağlayıcısı"
+  ],
+  "definition": "A company that provides access to the internet.",
+  "example": "You should contact your internet service provider."
+ },
+ "cable": {
+  "word": "cable",
+  "ipa": "/ˈkeɪ.bəl/",
+  "reading": "keybıl",
+  "meanings": [
+   "kablo"
+  ],
+  "definition": "A wire used to carry electricity or signals.",
+  "example": "Please connect this cable to your computer."
+ },
+ "charger": {
+  "word": "charger",
+  "ipa": "/ˈtʃɑː.dʒər/",
+  "reading": "çaacır",
+  "meanings": [
+   "şarj aleti"
+  ],
+  "definition": "A device used to recharge batteries.",
+  "example": "Do you have a phone charger I can borrow?"
+ },
+ "touchscreen": {
+  "word": "touchscreen",
+  "ipa": "/ˈtʌtʃ.skriːn/",
+  "reading": "taçskriin",
+  "meanings": [
+   "dokunmatik ekran"
+  ],
+  "definition": "A display screen controlled by touching it.",
+  "example": "This device has a highly responsive touchscreen."
+ },
+ "operating system": {
+  "word": "operating system",
+  "ipa": "/ˈɒp.ər.eɪ.tɪŋ ˌsɪs.təm/",
+  "reading": "opıreytiŋ sistım",
+  "meanings": [
+   "işletim sistemi"
+  ],
+  "definition": "Software that supports a computer's basic functions.",
+  "example": "Linux is a reliable operating system."
+ },
+ "install": {
+  "word": "install",
+  "ipa": "/ɪnˈstɔːl/",
+  "reading": "instool",
+  "meanings": [
+   "yüklemek"
+  ],
+  "definition": "To set up software or equipment for use.",
+  "example": "You need to install the latest software update."
+ },
+ "uninstall": {
+  "word": "uninstall",
+  "ipa": "/ˌʌnɪnˈstɔːl/",
+  "reading": "anınstôl",
+  "meanings": [
+   "kaldırmak"
+  ],
+  "definition": "Remove software from a computer.",
+  "example": "You need to uninstall this app to save space."
+ },
+ "copy": {
+  "word": "copy",
+  "ipa": "/ˈkɒpi/",
+  "reading": "kopi",
+  "meanings": [
+   "kopyalamak"
+  ],
+  "definition": "Make a duplicate of something.",
+  "example": "Please copy this file to your desktop."
+ },
+ "swipe": {
+  "word": "swipe",
+  "ipa": "/swaɪp/",
+  "reading": "svayp",
+  "meanings": [
+   "kaydırmak (parmakla)"
+  ],
+  "definition": "Slide a finger across a touchscreen.",
+  "example": "You must swipe left to see the next photo."
+ },
+ "tap": {
+  "word": "tap",
+  "ipa": "/tæp/",
+  "reading": "tep",
+  "meanings": [
+   "dokunmak"
+  ],
+  "definition": "Touch a screen lightly with a finger.",
+  "example": "Just tap the screen to open the app."
+ },
+ "drop": {
+  "word": "drop",
+  "ipa": "/drɒp/",
+  "reading": "drop",
+  "meanings": [
+   "bırakmak"
+  ],
+  "definition": "Release or let something fall.",
+  "example": "Please drop the file in this folder."
+ },
+ "refresh": {
+  "word": "refresh",
+  "ipa": "/rɪˈfreʃ/",
+  "reading": "rifreş",
+  "meanings": [
+   "yenilemek"
+  ],
+  "definition": "Update the display of a webpage.",
+  "example": "You should refresh the page to see updates."
+ },
+ "restart": {
+  "word": "restart",
+  "ipa": "/ˌriːˈstɑːt/",
+  "reading": "riistart",
+  "meanings": [
+   "yeniden başlatmak"
+  ],
+  "definition": "Start a computer or device again.",
+  "example": "Please restart your computer after the update."
+ },
+ "disable": {
+  "word": "disable",
+  "ipa": "/dɪsˈeɪbl/",
+  "reading": "diseybıl",
+  "meanings": [
+   "devre dışı bırakmak"
+  ],
+  "definition": "Turn off a function or feature.",
+  "example": "You can disable notifications in settings."
+ },
+ "edit": {
+  "word": "edit",
+  "ipa": "/ˈedɪt/",
+  "reading": "edit",
+  "meanings": [
+   "düzenlemek"
+  ],
+  "definition": "Make changes to a document or file.",
+  "example": "You can edit this document at any time."
+ },
+ "reset": {
+  "word": "reset",
+  "ipa": "/ˌriːˈset/",
+  "reading": "riiset",
+  "meanings": [
+   "sıfırlamak"
+  ],
+  "definition": "Restore a device to its original state.",
+  "example": "I need to reset my router."
+ },
+ "bookmark": {
+  "word": "bookmark",
+  "ipa": "/ˈbʊkmɑːk/",
+  "reading": "bukmaark",
+  "meanings": [
+   "yer imi eklemek"
+  ],
+  "definition": "Save a website address for quick access.",
+  "example": "Make sure to bookmark this page for later."
+ },
+ "stream": {
+  "word": "stream",
+  "ipa": "/striːm/",
+  "reading": "striim",
+  "meanings": [
+   "yayın izlemek"
+  ],
+  "definition": "Play video or audio directly from the internet.",
+  "example": "You can stream video on this website."
+ },
+ "charge": {
+  "word": "charge",
+  "ipa": "/tʃɑːdʒ/",
+  "reading": "çaarc",
+  "meanings": [
+   "şarj etmek"
+  ],
+  "definition": "Fill a battery with electricity.",
+  "example": "I need to charge my phone now."
+ },
+ "disconnect": {
+  "word": "disconnect",
+  "ipa": "/ˌdɪskəˈnekt/",
+  "reading": "diskınekt",
+  "meanings": [
+   "bağlantıyı kesmek"
+  ],
+  "definition": "Break a connection to a network.",
+  "example": "You can disconnect your device from the Wi-Fi."
+ },
+ "bandwidth": {
+  "word": "bandwidth",
+  "ipa": "/ˈbændwɪtθ/",
+  "reading": "bendvitth",
+  "meanings": [
+   "bant genişliği"
+  ],
+  "definition": "The capacity for transmitting data over a network.",
+  "example": "High bandwidth allows faster download speeds."
+ },
+ "broadband": {
+  "word": "broadband",
+  "ipa": "/ˈbrɔːdbænd/",
+  "reading": "broodbend",
+  "meanings": [
+   "geniş bant"
+  ],
+  "definition": "A high-speed internet connection.",
+  "example": "We need broadband to watch high-quality videos."
+ },
+ "coverage": {
+  "word": "coverage",
+  "ipa": "/ˈkʌvərɪdʒ/",
+  "reading": "kavırıc",
+  "meanings": [
+   "kapsama alanı"
+  ],
+  "definition": "The area where a network signal is available.",
+  "example": "Mobile coverage is very poor in the mountains."
+ },
+ "password-protected": {
+  "word": "password-protected",
+  "ipa": "/ˈpɑːswɜːd prəˈtektɪd/",
+  "reading": "paasvörd prıtektıd",
+  "meanings": [
+   "parola korumalı"
+  ],
+  "definition": "Secured with a secret word or phrase.",
+  "example": "The Wi-Fi network is password-protected."
+ },
+ "portable": {
+  "word": "portable",
+  "ipa": "/ˈpɔːtəbl/",
+  "reading": "pootıbıl",
+  "meanings": [
+   "taşınabilir"
+  ],
+  "definition": "Easy to carry or move around.",
+  "example": "He bought a portable speaker for his trips."
+ },
+ "unavailable": {
+  "word": "unavailable",
+  "ipa": "/ˌʌnəˈveɪləbl/",
+  "reading": "anıveylıbıl",
+  "meanings": [
+   "kullanılamaz"
+  ],
+  "definition": "Not able to be used or obtained.",
+  "example": "The service is currently unavailable."
+ },
+ "distracting": {
+  "word": "distracting",
+  "ipa": "/dɪˈstræktɪŋ/",
+  "reading": "distrektin",
+  "meanings": [
+   "dikkat dağıtıcı"
+  ],
+  "definition": "Making it difficult to pay attention.",
+  "example": "Noise in the library is very distracting."
+ },
+ "time-consuming": {
+  "word": "time-consuming",
+  "ipa": "/ˈtaɪm.kənˌsjuː.mɪŋ/",
+  "reading": "taym kınsyumin",
+  "meanings": [
+   "zaman alıcı"
+  ],
+  "definition": "Taking a lot of time to do.",
+  "example": "Writing a book is a time-consuming process."
+ },
+ "addictive": {
+  "word": "addictive",
+  "ipa": "/əˈdɪktɪv/",
+  "reading": "adıktiv",
+  "meanings": [
+   "bağımlılık yapıcı"
+  ],
+  "definition": "Easy to become dependent on.",
+  "example": "Video games can be very addictive."
+ },
+ "suspicious": {
+  "word": "suspicious",
+  "ipa": "/səˈspɪʃəs/",
+  "reading": "saspışıs",
+  "meanings": [
+   "şüpheli"
+  ],
+  "definition": "Making you feel that something is wrong.",
+  "example": "He saw a suspicious man near the bank."
+ },
+ "misleading": {
+  "word": "misleading",
+  "ipa": "/ˌmɪsˈliːdɪŋ/",
+  "reading": "mizliidin",
+  "meanings": [
+   "yanıltıcı"
+  ],
+  "definition": "Giving a wrong idea or impression.",
+  "example": "The advertisement was highly misleading."
+ },
+ "inaccurate": {
+  "word": "inaccurate",
+  "ipa": "/ɪnˈækjərət/",
+  "reading": "inekyurıt",
+  "meanings": [
+   "yanlış",
+   "hatalı"
+  ],
+  "definition": "Not correct or exact.",
+  "example": "This clock is inaccurate by five minutes."
+ },
+ "outdated": {
+  "word": "outdated",
+  "ipa": "/ˌaʊtˈdeɪtɪd/",
+  "reading": "autdeytıd",
+  "meanings": [
+   "güncelliğini yitirmiş"
+  ],
+  "definition": "No longer modern or useful.",
+  "example": "We should replace this outdated computer."
+ },
+ "unlimited": {
+  "word": "unlimited",
+  "ipa": "/ʌnˈlɪmɪtɪd/",
+  "reading": "anlimitıd",
+  "meanings": [
+   "sınırsız"
+  ],
+  "definition": "Without any end, limit, or boundary.",
+  "example": "They offer unlimited internet access for students."
+ },
+ "communicator": {
+  "word": "communicator",
+  "ipa": "/kəˈmjuːnɪkeɪtə/",
+  "reading": "kımyunikeytı",
+  "meanings": [
+   "iletişimci"
+  ],
+  "definition": "A person who is able to share information well.",
+  "example": "She is a very effective communicator."
+ },
+ "misuse": {
+  "word": "misuse",
+  "ipa": "/ˌmɪsˈjuːz/",
+  "reading": "misyuuz",
+  "meanings": [
+   "kötüye kullanmak"
+  ],
+  "definition": "To use something in the wrong way.",
+  "example": "Do not misuse the company funds."
+ },
+ "backup": {
+  "word": "backup",
+  "ipa": "/ˈbækʌp/",
+  "reading": "bekap",
+  "meanings": [
+   "yedek"
+  ],
+  "definition": "An extra copy of data or a helper.",
+  "example": "Always make a backup of your files."
+ },
+ "synchronize": {
+  "word": "synchronize",
+  "ipa": "/ˈsɪŋkrənaɪz/",
+  "reading": "sinkronayz",
+  "meanings": [
+   "eşitlemek"
+  ],
+  "definition": "To make things happen at the same time.",
+  "example": "Please synchronize your devices now."
+ },
+ "cybersecurity": {
+  "word": "cybersecurity",
+  "ipa": "/ˌsaɪbəsɪˈkjʊərəti/",
+  "reading": "saybırsikyurıti",
+  "meanings": [
+   "siber güvenlik"
+  ],
+  "definition": "Protection of systems and networks from digital attacks.",
+  "example": "The firm invests a lot of money in cybersecurity."
+ },
+ "authentication": {
+  "word": "authentication",
+  "ipa": "/ɔːˌθentɪˈkeɪʃn/",
+  "reading": "ootentikeyşın",
+  "meanings": [
+   "kimlik doğrulama"
+  ],
+  "definition": "The process of proving who you are.",
+  "example": "Use two-factor authentication to protect your account."
  }
 }
