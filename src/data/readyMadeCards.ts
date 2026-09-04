@@ -512,7 +512,7 @@ export const READY_MADE_CARD_WORDS = [
   'educative game', 'embarrassed', 'engage in', 'find way',
   'foreign language', 'get driving license', 'get information about an issue', 'get married', 'give medical care',
   'give tips', 'go on', 'have an operation', 'have camp by the lake',
-  'improve foreign language', 'interaction', 'invent', 'keep phone calls short', 'learn lyrics of songs',
+  'improve foreign language', 'interaction', 'invent', 'learn lyrics of songs',
   'make a complaint', 'make phone call', 'make reservation', 'make sense', 'messenger bird',
   'old fashioned', 'order something to eat', 'participant', 'people in need',
   'percent', 'practice lesson', 'previous generation', 'pros and cons',
