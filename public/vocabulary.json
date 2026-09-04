@@ -60039,5 +60039,356 @@
   ],
   "definition": "To perform routine tasks around the house.",
   "example": "I hate to do household chores on Sunday mornings."
+ },
+ "engineering": {
+  "word": "engineering",
+  "ipa": "/ˌendʒɪˈnɪərɪŋ/",
+  "reading": "enciniyırink",
+  "meanings": [
+   "mühendislik"
+  ],
+  "definition": "The study or work of designing and building things",
+  "example": "She decided to study engineering at university."
+ },
+ "explorer": {
+  "word": "explorer",
+  "ipa": "/ɪkˈsplɔːrər/",
+  "reading": "eksplorır",
+  "meanings": [
+   "kâşif"
+  ],
+  "definition": "A person who travels to find new places",
+  "example": "The brave explorer traveled to the North Pole."
+ },
+ "get better": {
+  "word": "get better",
+  "ipa": "/ɡet ˈbetər/",
+  "reading": "get betır",
+  "meanings": [
+   "iyileşmek"
+  ],
+  "definition": "To improve or recover from an illness",
+  "example": "I hope you will get better soon."
+ },
+ "get treated": {
+  "word": "get treated",
+  "ipa": "/ɡet ˈtriːtɪd/",
+  "reading": "get tıriitıd",
+  "meanings": [
+   "tedavi olmak"
+  ],
+  "definition": "To receive medical care for an illness",
+  "example": "You need to go to the hospital to get treated."
+ },
+ "conduct an experiment": {
+  "word": "conduct an experiment",
+  "ipa": "/kənˈdʌkt ən ɪkˈsperɪmənt/",
+  "reading": "kandakt en eksperımınt",
+  "meanings": [
+   "deney yapmak"
+  ],
+  "definition": "To perform a scientific test to learn something",
+  "example": "We will conduct an experiment in the chemistry lab."
+ },
+ "science project": {
+  "word": "science project",
+  "ipa": "/ˈsaɪəns ˈprɒdʒekt/",
+  "reading": "sayıns projekt",
+  "meanings": [
+   "bilim projesi"
+  ],
+  "definition": "A school assignment about a scientific topic",
+  "example": "My group is working on a science project about space."
+ },
+ "science museum": {
+  "word": "science museum",
+  "ipa": "/ˈsaɪəns mjuːˈziːəm/",
+  "reading": "sayıns müziyım",
+  "meanings": [
+   "bilim müzesi"
+  ],
+  "definition": "A place with exhibits about science and technology",
+  "example": "We love to visit the local science museum on weekends."
+ },
+ "biography": {
+  "word": "biography",
+  "ipa": "/baɪˈɒɡrəfi/",
+  "reading": "bayogrıfi",
+  "meanings": [
+   "biyografi"
+  ],
+  "definition": "The story of a person's life written by another",
+  "example": "I am reading an interesting biography of Albert Einstein."
+ },
+ "electricity": {
+  "word": "electricity",
+  "ipa": "/ɪˌlekˈtrɪsəti/",
+  "reading": "ilektrisıti",
+  "meanings": [
+   "elektrik"
+  ],
+  "definition": "Energy used to power lights and machines",
+  "example": "Lightning is a natural form of electricity in nature."
+ },
+ "phonograph": {
+  "word": "phonograph",
+  "ipa": "/ˈfəʊnəɡrɑːf/",
+  "reading": "founıgraf",
+  "meanings": [
+   "fonograf"
+  ],
+  "definition": "An old machine that plays recorded music",
+  "example": "Thomas Edison invented the first phonograph in 1877."
+ },
+ "motion picture camera": {
+  "word": "motion picture camera",
+  "ipa": "/ˈməʊʃn ˈpɪktʃər ˈkæmrə/",
+  "reading": "moşın pikçır kemıra",
+  "meanings": [
+   "film kamerası"
+  ],
+  "definition": "A device used to record moving images",
+  "example": "He bought a vintage motion picture camera to make films."
+ },
+ "powered aircraft": {
+  "word": "powered aircraft",
+  "ipa": "/ˈpaʊəd ˈeəkrɑːft/",
+  "reading": "pauırd eyırkraft",
+  "meanings": [
+   "motorlu hava aracı"
+  ],
+  "definition": "A flying machine with an engine",
+  "example": "The Wright brothers built the first successful powered aircraft."
+ },
+ "synthetic": {
+  "word": "synthetic",
+  "ipa": "/sɪnˈθetɪk/",
+  "reading": "sintetik",
+  "meanings": [
+   "sentetik",
+   "yapay"
+  ],
+  "definition": "Made by people, not occurring naturally",
+  "example": "This shirt is made from a synthetic material."
+ },
+ "radioactivity": {
+  "word": "radioactivity",
+  "ipa": "/ˌreɪdiəʊækˈtɪvəti/",
+  "reading": "reydiyoaktivıti",
+  "meanings": [
+   "radyoaktivite"
+  ],
+  "definition": "The release of radiation from unstable atoms",
+  "example": "Marie Curie discovered key details about radioactivity in elements."
+ },
+ "radioactive": {
+  "word": "radioactive",
+  "ipa": "/ˌreɪdiəʊˈæktɪv/",
+  "reading": "reydiyoaktiv",
+  "meanings": [
+   "radyoaktif"
+  ],
+  "definition": "Sending out harmful radiation",
+  "example": "Uranium is a highly radioactive element used in power plants."
+ },
+ "bacteria": {
+  "word": "bacteria",
+  "ipa": "/bækˈtɪəriə/",
+  "reading": "bektıriya",
+  "meanings": [
+   "bakteri"
+  ],
+  "definition": "Very small living things that can cause disease",
+  "example": "Wash your hands with soap to kill harmful bacteria."
+ },
+ "bacterial": {
+  "word": "bacterial",
+  "ipa": "/bækˈtɪəriəl/",
+  "reading": "bektıriyıl",
+  "meanings": [
+   "bakteriyel"
+  ],
+  "definition": "Caused by or relating to bacteria",
+  "example": "The doctor prescribed antibiotics for her bacterial infection."
+ },
+ "prove": {
+  "word": "prove",
+  "ipa": "/pruːv/",
+  "reading": "pruuv",
+  "meanings": [
+   "kanıtlamak"
+  ],
+  "definition": "To show that something is true using facts",
+  "example": "You must find evidence to prove your theory."
+ },
+ "biology": {
+  "word": "biology",
+  "ipa": "/baɪˈɒlədʒi/",
+  "reading": "bayolıci",
+  "meanings": [
+   "biyoloji"
+  ],
+  "definition": "The scientific study of living things",
+  "example": "In school, I always enjoyed my biology class."
+ },
+ "biologist": {
+  "word": "biologist",
+  "ipa": "/baɪˈɒlədʒɪst/",
+  "reading": "bayolıcist",
+  "meanings": [
+   "biyolog"
+  ],
+  "definition": "A scientist who studies living things",
+  "example": "The biologist discovered a new species of frog."
+ },
+ "matter": {
+  "word": "matter",
+  "ipa": "/ˈmætə/",
+  "reading": "metı",
+  "meanings": [
+   "madde"
+  ],
+  "definition": "Physical substance that occupies space and has mass.",
+  "example": "All matter is made up of tiny atoms."
+ },
+ "energy": {
+  "word": "energy",
+  "ipa": "/ˈenədʒi/",
+  "reading": "enırci",
+  "meanings": [
+   "enerji"
+  ],
+  "definition": "The power to do work or produce heat.",
+  "example": "Solar energy is clean and renewable."
+ },
+ "liquid": {
+  "word": "liquid",
+  "ipa": "/ˈlɪkwɪd/",
+  "reading": "likwid",
+  "meanings": [
+   "sıvı"
+  ],
+  "definition": "A substance that flows freely, like water.",
+  "example": "Water is a liquid at room temperature."
+ },
+ "astronomy": {
+  "word": "astronomy",
+  "ipa": "/əˈstrɒnəmi/",
+  "reading": "estronımi",
+  "meanings": [
+   "astronomi"
+  ],
+  "definition": "The scientific study of stars and planets.",
+  "example": "She decided to study astronomy at college."
+ },
+ "alchemy": {
+  "word": "alchemy",
+  "ipa": "/ˈælkəmi/",
+  "reading": "elkımi",
+  "meanings": [
+   "simya"
+  ],
+  "definition": "An ancient form of chemistry trying to make gold.",
+  "example": "Medieval scientists practiced alchemy to find the elixir."
+ },
+ "theoretical physics": {
+  "word": "theoretical physics",
+  "ipa": "/θɪəˈretɪkl ˈfɪzɪks/",
+  "reading": "tioretikıl fiziks",
+  "meanings": [
+   "teorik fizik"
+  ],
+  "definition": "Physics using mathematical models to explain nature.",
+  "example": "He did research in theoretical physics."
+ },
+ "quantum theory": {
+  "word": "quantum theory",
+  "ipa": "/ˈkwɒntəm ˈθɪəri/",
+  "reading": "kuvantım tiori",
+  "meanings": [
+   "kuantum teorisi"
+  ],
+  "definition": "Physics theory about matter and energy at small scales.",
+  "example": "Einstein helped develop modern quantum theory."
+ },
+ "cosmology": {
+  "word": "cosmology",
+  "ipa": "/kɒzˈmɒlədʒi/",
+  "reading": "kozmolıci",
+  "meanings": [
+   "kozmoloji"
+  ],
+  "definition": "The science of the origin and development of the universe.",
+  "example": "He wrote a book on modern cosmology."
+ },
+ "black hole": {
+  "word": "black hole",
+  "ipa": "/ˌblæk ˈhəʊl/",
+  "reading": "blek houl",
+  "meanings": [
+   "kara delik"
+  ],
+  "definition": "An area in space with extremely strong gravity.",
+  "example": "Light cannot escape from a black hole."
+ },
+ "stem cell": {
+  "word": "stem cell",
+  "ipa": "/ˈstem sel/",
+  "reading": "stem sel",
+  "meanings": [
+   "kök hücre"
+  ],
+  "definition": "A simple cell that can develop into other types.",
+  "example": "Doctors can use a stem cell to repair tissue."
+ },
+ "technology": {
+  "word": "technology",
+  "ipa": "/tekˈnɒlədʒi/",
+  "reading": "teknolıci",
+  "meanings": [
+   "teknoloji"
+  ],
+  "definition": "The use of scientific knowledge for practical purposes.",
+  "example": "We use technology in our daily lives."
+ },
+ "technological": {
+  "word": "technological",
+  "ipa": "/ˌteknəˈlɒdʒɪkl/",
+  "reading": "teknolocikıl",
+  "meanings": [
+   "teknolojik"
+  ],
+  "definition": "Relating to science and industry or technology.",
+  "example": "We made great technological progress this year."
+ },
+ "university": {
+  "word": "university",
+  "ipa": "/ˌjuːnɪˈvɜːsəti/",
+  "reading": "yunivörsiti",
+  "meanings": [
+   "üniversite"
+  ],
+  "definition": "An institution of high-level education and research.",
+  "example": "She wants to study at university next year."
+ },
+ "formulate": {
+  "word": "formulate",
+  "ipa": "/ˈfɔːmjuleɪt/",
+  "reading": "formyuleyt",
+  "meanings": [
+   "formüle etmek"
+  ],
+  "definition": "To create or prepare something systematically.",
+  "example": "They will formulate a new plan tomorrow."
+ },
+ "radio waves": {
+  "word": "radio waves",
+  "ipa": "/ˈreɪdiəʊ weɪvz/",
+  "reading": "reydyo veyvz",
+  "meanings": [
+   "radyo dalgaları"
+  ],
+  "definition": "Electromagnetic waves used for transmitting signals.",
+  "example": "Antennas receive radio waves from the station."
  }
 }
