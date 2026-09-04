@@ -97,7 +97,7 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           place-items: center;
           width: clamp(74px, 19.5vw, 130px);
           aspect-ratio: 1;
-          padding: 12px;
+          padding: clamp(5px, 1.7vw, 12px);
           border: 0;
           border-radius: 50%;
           transform: translate(-50%, -50%);
@@ -125,12 +125,14 @@ export default function HexMenu({ onPractice, onOpenGrammar, onOpenQuizHub, onOp
           z-index: 0;
         }
         .een-hex > span { position: relative; z-index: 1; }
-        .een-hex--tight { font-size: clamp(0.54rem, 2.35vw, 0.78rem); letter-spacing: -0.02em; }
+        .een-hex--tight { font-size: clamp(0.45rem, 2.05vw, 0.78rem); letter-spacing: -0.03em; }
         .een-hex span {
           max-width: 100%;
           text-align: center;
           font-weight: 500;
           line-height: 1.15;
+          overflow-wrap: anywhere;
+          hyphens: auto;
         }
         .een-hex:hover {
           box-shadow:
