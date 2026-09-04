@@ -663,14 +663,9 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
                   })}
                 </div>
               ) : (
-                <>
-                  {entry.ipa && (
-                    <p className="text-base font-mono text-white/90">{entry.ipa}</p>
-                  )}
-                  {entry.reading && (
-                    <p className="text-base font-light text-white">({entry.reading})</p>
-                  )}
-                </>
+                entry.reading && (
+                  <p className="text-base font-light text-white">({entry.reading})</p>
+                )
               )}
 
               {meanings.length > 0 && (
