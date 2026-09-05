@@ -1,10 +1,11 @@
-import { Gamepad2, KeyRound } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
+  onPlayAtoZ: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -35,6 +36,23 @@ export default function GamesScreen({ onPlayWordLock }: GamesScreenProps) {
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">WORDLOCK</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 Harfleri bul, ipuçlarının kilidini aç, kelimeyi tahmin et.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={onPlayAtoZ}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <Timer className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">THE A–Z</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Her harf için 20 saniye; pas geçtiklerin sonda elemeli turda karşına çıkar.
               </p>
             </div>
           </div>
