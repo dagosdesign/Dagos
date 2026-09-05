@@ -60390,5 +60390,509 @@
   ],
   "definition": "Electromagnetic waves used for transmitting signals.",
   "example": "Antennas receive radio waves from the station."
+ },
+ "natural forces": {
+  "word": "natural forces",
+  "ipa": "/ˈnætʃrəl ˈfɔːsɪz/",
+  "reading": "neçrıl fōsız",
+  "meanings": [
+   "doğa güçleri"
+  ],
+  "definition": "Powers of nature that affect the earth",
+  "example": "The natural forces shaped these mountains over millions of years."
+ },
+ "alive": {
+  "word": "alive",
+  "ipa": "/əˈlaɪv/",
+  "reading": "ılayv",
+  "meanings": [
+   "canlı",
+   "hayatta"
+  ],
+  "definition": "Living and not dead",
+  "example": "They were happy to find the lost dog alive."
+ },
+ "injure": {
+  "word": "injure",
+  "ipa": "/ˈɪndʒə/",
+  "reading": "incı",
+  "meanings": [
+   "yaralamak"
+  ],
+  "definition": "To hurt a person or animal",
+  "example": "Be careful not to injure your back."
+ },
+ "homeless": {
+  "word": "homeless",
+  "ipa": "/ˈhəʊmləs/",
+  "reading": "höumlıs",
+  "meanings": [
+   "evsiz"
+  ],
+  "definition": "Having no home to live in",
+  "example": "The charity helps homeless people find shelter."
+ },
+ "emergency supplies": {
+  "word": "emergency supplies",
+  "ipa": "/ɪˈmɜːdʒənsi səˈplaɪz/",
+  "reading": "imöıcınsi sıplayz",
+  "meanings": [
+   "acil durum malzemeleri"
+  ],
+  "definition": "Food, water, and medicine kept for disasters",
+  "example": "We need to pack emergency supplies before the storm."
+ },
+ "evacuation": {
+  "word": "evacuation",
+  "ipa": "/ɪˌvækjuˈeɪʃn/",
+  "reading": "ivækyueyşın",
+  "meanings": [
+   "tahliye"
+  ],
+  "definition": "Moving people away from danger to safety",
+  "example": "The city ordered an immediate evacuation of the coast."
+ },
+ "take necessary measures": {
+  "word": "take necessary measures",
+  "ipa": "/teɪk ˈnesəsəri ˈmeʒəz/",
+  "reading": "teyk nesısəri mejız",
+  "meanings": [
+   "gerekli önlemleri almak"
+  ],
+  "definition": "To do what is needed to prevent trouble",
+  "example": "We must take necessary measures to protect the forest."
+ },
+ "heavy rain": {
+  "word": "heavy rain",
+  "ipa": "/ˌhevi ˈreɪn/",
+  "reading": "hevi reyn",
+  "meanings": [
+   "şiddetli yağmur"
+  ],
+  "definition": "A large amount of rain falling quickly",
+  "example": "The match was cancelled because of heavy rain."
+ },
+ "strong wind": {
+  "word": "strong wind",
+  "ipa": "/strɒŋ wɪnd/",
+  "reading": "stronğ vind",
+  "meanings": [
+   "kuvvetli rüzgâr"
+  ],
+  "definition": "Air moving with high speed and power",
+  "example": "A strong wind blew the leaves away."
+ },
+ "ash": {
+  "word": "ash",
+  "ipa": "/æʃ/",
+  "reading": "eş",
+  "meanings": [
+   "kül"
+  ],
+  "definition": "Grey powder left after something burns",
+  "example": "Volcanic ash covered the entire village."
+ },
+ "smoke": {
+  "word": "smoke",
+  "ipa": "/sməʊk/",
+  "reading": "smouk",
+  "meanings": [
+   "duman"
+  ],
+  "definition": "Grey or black gas from a fire",
+  "example": "Black smoke rose from the burning building."
+ },
+ "fault line": {
+  "word": "fault line",
+  "ipa": "/ˈfɔːlt laɪn/",
+  "reading": "fōlt layn",
+  "meanings": [
+   "fay hattı"
+  ],
+  "definition": "A crack in the earth's crust",
+  "example": "San Francisco lies near a major fault line."
+ },
+ "quake": {
+  "word": "quake",
+  "ipa": "/kweɪk/",
+  "reading": "kveyk",
+  "meanings": [
+   "sarsıntı",
+   "deprem"
+  ],
+  "definition": "A shaking of the ground",
+  "example": "A sudden quake shook the houses in the valley."
+ },
+ "carbon dioxide": {
+  "word": "carbon dioxide",
+  "ipa": "/ˌkɑːbən daɪˈɒksaɪd/",
+  "reading": "kabın dayoksayd",
+  "meanings": [
+   "karbondioksit"
+  ],
+  "definition": "A gas produced by burning carbon",
+  "example": "Plants absorb carbon dioxide from the air."
+ },
+ "greenhouse gas": {
+  "word": "greenhouse gas",
+  "ipa": "/ˈɡriːnhaʊs ɡæs/",
+  "reading": "grīnhaws ges",
+  "meanings": [
+   "sera gazı"
+  ],
+  "definition": "A gas that traps heat in the atmosphere",
+  "example": "Carbon dioxide is a common greenhouse gas."
+ },
+ "fossil fuel": {
+  "word": "fossil fuel",
+  "ipa": "/ˈfɒsl ˈfjuːəl/",
+  "reading": "fosıl fyul",
+  "meanings": [
+   "fosil yakıt"
+  ],
+  "definition": "Coal, oil, or gas from ancient remains",
+  "example": "Coal is a type of fossil fuel."
+ },
+ "clean energy": {
+  "word": "clean energy",
+  "ipa": "/kliːn ˈenədʒi/",
+  "reading": "klīn enıci",
+  "meanings": [
+   "temiz enerji"
+  ],
+  "definition": "Energy that does not harm the environment",
+  "example": "Our goal is to transition to clean energy."
+ },
+ "renewable energy": {
+  "word": "renewable energy",
+  "ipa": "/rɪˈnjuːəbl ˈenədʒi/",
+  "reading": "rinyuıbıl enıci",
+  "meanings": [
+   "yenilenebilir enerji"
+  ],
+  "definition": "Energy from sources that never run out",
+  "example": "Wind and solar power are forms of renewable energy."
+ },
+ "energy source": {
+  "word": "energy source",
+  "ipa": "/ˈenədʒi sɔːs/",
+  "reading": "enıci sōs",
+  "meanings": [
+   "enerji kaynağı"
+  ],
+  "definition": "Where power or heat comes from",
+  "example": "The sun is our ultimate energy source."
+ },
+ "water source": {
+  "word": "water source",
+  "ipa": "/ˈwɔːtə sɔːs/",
+  "reading": "vōtı sōs",
+  "meanings": [
+   "su kaynağı"
+  ],
+  "definition": "A place where water comes from",
+  "example": "We need to find a clean water source."
+ },
+ "waste water": {
+  "word": "waste water",
+  "ipa": "/ˈweɪst ˌwɔː.tər/",
+  "reading": "veyst votır",
+  "meanings": [
+   "suyu boşa harcamak"
+  ],
+  "definition": "Water that has been used and contaminated.",
+  "example": "We must treat waste water before releasing it."
+ },
+ "save water": {
+  "word": "save water",
+  "ipa": "/seɪv ˈwɔː.tər/",
+  "reading": "seyv votır",
+  "meanings": [
+   "su tasarrufu yapmak"
+  ],
+  "definition": "To use water carefully without wasting it.",
+  "example": "You should save water by taking shorter showers."
+ },
+ "recyclable": {
+  "word": "recyclable",
+  "ipa": "/ˌriːˈsaɪ.klə.bəl/",
+  "reading": "risaykılbıl",
+  "meanings": [
+   "geri dönüştürülebilir"
+  ],
+  "definition": "Able to be processed and used again.",
+  "example": "This plastic bottle is recyclable."
+ },
+ "environmentally friendly": {
+  "word": "environmentally friendly",
+  "ipa": "/ɪnˌvaɪ.rənˈmen.təl.i ˈfrend.li/",
+  "reading": "invayrınmentıli frendli",
+  "meanings": [
+   "çevre dostu"
+  ],
+  "definition": "Not harmful to the environment.",
+  "example": "They want to buy environmentally friendly products."
+ },
+ "endangered": {
+  "word": "endangered",
+  "ipa": "/ɪnˈdeɪn.dʒəd/",
+  "reading": "indeyncırd",
+  "meanings": [
+   "nesli tehlike altında"
+  ],
+  "definition": "At risk of extinction.",
+  "example": "The giant panda is an endangered species."
+ },
+ "ecosystem": {
+  "word": "ecosystem",
+  "ipa": "/ˈiː.kəʊˌsɪs.təm/",
+  "reading": "iikosistım",
+  "meanings": [
+   "ekosistem"
+  ],
+  "definition": "A community of living organisms and their environment.",
+  "example": "Pollution can damage the local ecosystem."
+ },
+ "drought-resistant": {
+  "word": "drought-resistant",
+  "ipa": "/draʊt rɪˈzɪs.tənt/",
+  "reading": "draut rızistınt",
+  "meanings": [
+   "kuraklığa dayanıklı"
+  ],
+  "definition": "Able to survive with very little water.",
+  "example": "Farmers plant drought-resistant crops in dry areas."
+ },
+ "sudden": {
+  "word": "sudden",
+  "ipa": "/ˈsʌd.ən/",
+  "reading": "sadın",
+  "meanings": [
+   "ani"
+  ],
+  "definition": "Happening quickly and without warning.",
+  "example": "A sudden noise scared the cat."
+ },
+ "acre": {
+  "word": "acre",
+  "ipa": "/ˈeɪ.kər/",
+  "reading": "eykır",
+  "meanings": [
+   "dönüm"
+  ],
+  "definition": "A unit of land area.",
+  "example": "They own a small acre of land."
+ },
+ "raincloud": {
+  "word": "raincloud",
+  "ipa": "/ˈreɪn.klaʊd/",
+  "reading": "reynklaud",
+  "meanings": [
+   "yağmur bulutu"
+  ],
+  "definition": "A dark cloud carrying rain.",
+  "example": "I see a dark raincloud in the sky."
+ },
+ "raindrop": {
+  "word": "raindrop",
+  "ipa": "/ˈreɪn.drɒp/",
+  "reading": "reyndrap",
+  "meanings": [
+   "yağmur damlası"
+  ],
+  "definition": "A single drop of rain.",
+  "example": "I felt a single raindrop on my face."
+ },
+ "rainforest": {
+  "word": "rainforest",
+  "ipa": "/ˈreɪn.fɒr.ɪst/",
+  "reading": "reynforıst",
+  "meanings": [
+   "yağmur ormanı"
+  ],
+  "definition": "A dense forest with high annual rainfall.",
+  "example": "Many unique animals live in the rainforest."
+ },
+ "outer surface": {
+  "word": "outer surface",
+  "ipa": "/ˈaʊ.tər ˈsɜː.fɪs/",
+  "reading": "autır sörfıs",
+  "meanings": [
+   "dış yüzey"
+  ],
+  "definition": "The external part of something.",
+  "example": "The outer surface of the fruit is rough."
+ },
+ "flow": {
+  "word": "flow",
+  "ipa": "/fləʊ/",
+  "reading": "flov",
+  "meanings": [
+   "akmak"
+  ],
+  "definition": "To move steadily and continuously.",
+  "example": "Water can flow freely."
+ },
+ "bury": {
+  "word": "bury",
+  "ipa": "/ˈber.i/",
+  "reading": "beri",
+  "meanings": [
+   "gömmek",
+   "altında bırakmak"
+  ],
+  "definition": "To put under the ground.",
+  "example": "Dogs like to bury bones in the garden."
+ },
+ "emergency kit": {
+  "word": "emergency kit",
+  "ipa": "/ɪˈmɜː.dʒən.si kɪt/",
+  "reading": "imörcınsi kit",
+  "meanings": [
+   "acil durum çantası"
+  ],
+  "definition": "A pack of supplies for emergencies.",
+  "example": "Every home needs a basic emergency kit."
+ },
+ "first aid": {
+  "word": "first aid",
+  "ipa": "/ˌfɜːst ˈeɪd/",
+  "reading": "först eyd",
+  "meanings": [
+   "ilk yardım"
+  ],
+  "definition": "Immediate basic medical help given to an injured person.",
+  "example": "She knows how to give first aid."
+ },
+ "safe place": {
+  "word": "safe place",
+  "ipa": "/seɪf pleɪs/",
+  "reading": "seyf pleys",
+  "meanings": [
+   "güvenli yer"
+  ],
+  "definition": "A location free from danger.",
+  "example": "Find a safe place during the earthquake."
+ },
+ "disaster area": {
+  "word": "disaster area",
+  "ipa": "/dɪˈzɑː.stər ˌeə.ri.ə/",
+  "reading": "dizastır erya",
+  "meanings": [
+   "afet bölgesi"
+  ],
+  "definition": "A region damaged by a major catastrophe.",
+  "example": "The government declared the town a disaster area."
+ },
+ "emergency call": {
+  "word": "emergency call",
+  "ipa": "/ɪˈmɜː.dʒən.si kɔːl/",
+  "reading": "imörcınsi kol",
+  "meanings": [
+   "acil durum çağrısı"
+  ],
+  "definition": "A telephone call made to rescue services.",
+  "example": "She had to make an emergency call immediately."
+ },
+ "firefighter": {
+  "word": "firefighter",
+  "ipa": "/ˈfaɪəfaɪtə/",
+  "reading": "fayırfaytır",
+  "meanings": [
+   "itfaiyeci"
+  ],
+  "definition": "A person whose job is to put out fires.",
+  "example": "Every firefighter needs to wear protective gear."
+ },
+ "rescue worker": {
+  "word": "rescue worker",
+  "ipa": "/ˈreskjuː ˌwɜːkə/",
+  "reading": "reskyu vörkır",
+  "meanings": [
+   "kurtarma görevlisi"
+  ],
+  "definition": "A person who helps people in danger or disasters.",
+  "example": "A rescue worker must stay calm during an emergency."
+ },
+ "volunteer": {
+  "word": "volunteer",
+  "ipa": "/ˌvɒlənˈtɪə/",
+  "reading": "volıntiır",
+  "meanings": [
+   "gönüllü"
+  ],
+  "definition": "A person who does work without being paid.",
+  "example": "She decided to work as a volunteer at the shelter."
+ },
+ "medical aid": {
+  "word": "medical aid",
+  "ipa": "/ˈmedɪkəl eɪd/",
+  "reading": "medıkıl eyd",
+  "meanings": [
+   "tıbbi yardım"
+  ],
+  "definition": "Medical treatment or care given to someone in need.",
+  "example": "The war zone urgently needs more medical aid."
+ },
+ "food supply": {
+  "word": "food supply",
+  "ipa": "/fuːd səˈplaɪ/",
+  "reading": "fuud sıplay",
+  "meanings": [
+   "gıda kaynağı",
+   "gıda stoğu"
+  ],
+  "definition": "The amount of food available to a community.",
+  "example": "The heavy drought affected the local food supply."
+ },
+ "energy shortage": {
+  "word": "energy shortage",
+  "ipa": "/ˈenədʒi ˌʃɔːtɪdʒ/",
+  "reading": "enırci şortıc",
+  "meanings": [
+   "enerji kıtlığı"
+  ],
+  "definition": "A lack of sufficient power or fuel.",
+  "example": "The country is facing a severe energy shortage this winter."
+ },
+ "water pollution": {
+  "word": "water pollution",
+  "ipa": "/ˈwɔːtə pəˌluːʃən/",
+  "reading": "votır poluşın",
+  "meanings": [
+   "su kirliliği"
+  ],
+  "definition": "Harmful substances dirtying bodies of water.",
+  "example": "Industrial waste is a major cause of water pollution."
+ },
+ "soil contamination": {
+  "word": "soil contamination",
+  "ipa": "/sɔɪl kənˌtæmɪˈneɪʃən/",
+  "reading": "soyl kıntemineyşın",
+  "meanings": [
+   "toprak kirliliği"
+  ],
+  "definition": "The presence of toxic chemicals in the ground.",
+  "example": "Farming chemicals can lead to serious soil contamination."
+ },
+ "sea level": {
+  "word": "sea level",
+  "ipa": "/siː ˈlevəl/",
+  "reading": "sii levıl",
+  "meanings": [
+   "deniz seviyesi"
+  ],
+  "definition": "The average level of the ocean's surface.",
+  "example": "The small island is only two meters above sea level."
+ },
+ "sea level rise": {
+  "word": "sea level rise",
+  "ipa": "/siː ˈlevəl raɪz/",
+  "reading": "sii levıl rayz",
+  "meanings": [
+   "deniz seviyesinin yükselmesi"
+  ],
+  "definition": "An increase in the level of the world's oceans.",
+  "example": "Coastal cities are threatened by rapid sea level rise."
  }
 }
