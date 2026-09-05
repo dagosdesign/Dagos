@@ -243,16 +243,13 @@ export default function App() {
             )}
             {activeTab === 'games' && (wordLock ? (
               <WordLockScreen
-                category={wordLock.category}
-                label={wordLock.label}
+                category={null}
+                label="All Words"
                 onExit={() => setWordLock(null)}
                 recordQuizXp={recordQuizXp}
               />
             ) : (
-              <GamesScreen
-                onPlay={(category, label) => setMethodSession({ method: 'Games', category, label })}
-                onPlayWordLock={(category, label) => setWordLock({ category, label })}
-              />
+              <GamesScreen onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })} />
             ))}
             {activeTab === 'ai' && (
               <AiCoachScreen isAiConfigured={isAiConfigured} />
