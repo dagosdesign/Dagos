@@ -5,6 +5,7 @@ import { useLexProgress } from './hooks/useLexProgress';
 import { getDueCards } from './lib/srs';
 import { FLASHCARDS } from './data/flashcards';
 import BottomNav, { NavItem } from './components/BottomNav';
+import GamesScreen from './screens/GamesScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -145,14 +146,25 @@ export default function App() {
     setActiveTab(tab);
   };
 
-  // Bottom nav is now 3 items: Ana Sayfa / AI Coach / Profile.
-  const navActive: NavItem = showProgress ? 'profile' : activeTab === 'ai' ? 'ai' : 'home';
+  // Bottom nav: Ana Sayfa / Games / AI Coach / Profile.
+  const navActive: NavItem = showProgress
+    ? 'profile'
+    : activeTab === 'ai'
+      ? 'ai'
+      : activeTab === 'games'
+        ? 'games'
+        : 'home';
 
   const handleNavSelect = (item: NavItem) => {
     if (item === 'home') {
       setShowProgress(false);
       setShowLgs(false);
       setActiveTab('home');
+    } else if (item === 'games') {
+      setShowProgress(false);
+      setShowLgs(false);
+      setShowConnectors(false);
+      setActiveTab('games');
     } else if (item === 'ai') {
       setShowProgress(false);
       setActiveTab('ai');
@@ -225,6 +237,11 @@ export default function App() {
                 </button>
                 <FlashcardsScreen srsState={srsState} reviewFlashcard={reviewFlashcard} playPronunciation={playPronunciation} />
               </div>
+            )}
+            {activeTab === 'games' && (
+              <GamesScreen
+                onPlay={(category, label) => setMethodSession({ method: 'Games', category, label })}
+              />
             )}
             {activeTab === 'ai' && (
               <AiCoachScreen isAiConfigured={isAiConfigured} />

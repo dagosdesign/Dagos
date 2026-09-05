@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
-import { Home, User, Sparkles } from 'lucide-react';
+import { Home, User, Sparkles, Gamepad2 } from 'lucide-react';
 
-export type NavItem = 'home' | 'ai' | 'profile';
+export type NavItem = 'home' | 'games' | 'ai' | 'profile';
 
 interface BottomNavProps {
   active: NavItem;
@@ -47,7 +47,8 @@ export default function BottomNav({ active, onSelect }: BottomNavProps) {
           />
 
           <SideTab icon={Home} label="Home" active={active === 'home'} onClick={() => onSelect('home')} />
-          <AiButton active={active === 'ai'} onClick={() => onSelect('ai')} />
+          <SideTab icon={Gamepad2} label="Games" active={active === 'games'} onClick={() => onSelect('games')} />
+          <SideTab icon={Sparkles} label="AI Lex" active={active === 'ai'} onClick={() => onSelect('ai')} />
           <SideTab icon={User} label="Profile" active={active === 'profile'} onClick={() => onSelect('profile')} />
         </div>
       </div>
@@ -79,7 +80,7 @@ function SideTab({
         <motion.span
           layoutId="nav-halo"
           transition={spring}
-          className="absolute w-[74px] h-[46px] rounded-full"
+          className="absolute w-[60px] h-[44px] rounded-full"
           style={{
             background:
               'radial-gradient(60% 70% at 50% 45%, rgba(200,138,26,0.16), transparent 75%)',
@@ -100,64 +101,12 @@ function SideTab({
           style={active ? { filter: 'drop-shadow(0 0 6px rgba(227,167,47,0.7))' } : undefined}
         />
         <span
-          className="text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
+          className="text-[9px] tracking-[0.1em] uppercase font-medium transition-colors duration-300"
           style={{ color: active ? GOLD_BRIGHT : '#77736D' }}
         >
           {label}
         </span>
       </motion.span>
-    </button>
-  );
-}
-
-function AiButton({ active, onClick }: { active: boolean; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label="AI LEX"
-      aria-current={active ? 'page' : undefined}
-      className="relative flex flex-col items-center justify-center cursor-pointer -mt-9 outline-none focus-visible:ring-2 focus-visible:ring-[#C88A1A]/60 rounded-full"
-    >
-      <motion.div
-        animate={{ y: active ? -2 : 0, scale: active ? 1.05 : 1 }}
-        whileTap={{ scale: 0.94 }}
-        transition={spring}
-        className="relative w-[58px] h-[58px] rounded-full"
-      >
-        {/* Slowly revolving gold ring */}
-        <motion.span
-          aria-hidden
-          className="absolute -inset-[2px] rounded-full"
-          style={{
-            background: `conic-gradient(from 0deg, #A9721A, #8A5A12 30%, ${GOLD} 52%, #8A5A12 75%, #A9721A)`,
-            filter: active ? 'drop-shadow(0 0 2px rgba(200,138,26,0.07))' : 'none',
-          }}
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
-        />
-        {/* Dark face */}
-        <span
-          className="absolute inset-[2.5px] rounded-full flex items-center justify-center"
-          style={{
-            background: 'radial-gradient(circle at 50% 30%, #2a2012, #0a0a0b 75%)',
-            boxShadow: 'inset 0 1px 0 rgba(227,167,47,0.18), inset 0 -6px 14px rgba(0,0,0,0.6)',
-          }}
-        >
-          <Sparkles
-            className="w-[22px] h-[22px]"
-            color={GOLD_BRIGHT}
-            strokeWidth={1.6}
-            style={{ opacity: 0.85 }}
-          />
-        </span>
-      </motion.div>
-      <span
-        className="mt-1 text-[10px] tracking-[0.14em] uppercase font-medium transition-colors duration-300"
-        style={{ color: active ? GOLD_BRIGHT : '#77736D' }}
-      >
-        AI LEX
-      </span>
     </button>
   );
 }
