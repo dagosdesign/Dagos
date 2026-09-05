@@ -6,6 +6,7 @@ import { getDueCards } from './lib/srs';
 import { FLASHCARDS } from './data/flashcards';
 import BottomNav, { NavItem } from './components/BottomNav';
 import GamesScreen from './screens/GamesScreen';
+import WordLockScreen from './screens/WordLockScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -139,6 +140,7 @@ export default function App() {
 
   const [showLgs, setShowLgs] = useState(false);
   const [showConnectors, setShowConnectors] = useState(false);
+  const [wordLock, setWordLock] = useState<{ category: string | null; label: string } | null>(null);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -161,6 +163,7 @@ export default function App() {
       setShowLgs(false);
       setActiveTab('home');
     } else if (item === 'games') {
+      setWordLock(null);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -238,11 +241,19 @@ export default function App() {
                 <FlashcardsScreen srsState={srsState} reviewFlashcard={reviewFlashcard} playPronunciation={playPronunciation} />
               </div>
             )}
-            {activeTab === 'games' && (
+            {activeTab === 'games' && (wordLock ? (
+              <WordLockScreen
+                category={wordLock.category}
+                label={wordLock.label}
+                onExit={() => setWordLock(null)}
+                recordQuizXp={recordQuizXp}
+              />
+            ) : (
               <GamesScreen
                 onPlay={(category, label) => setMethodSession({ method: 'Games', category, label })}
+                onPlayWordLock={(category, label) => setWordLock({ category, label })}
               />
-            )}
+            ))}
             {activeTab === 'ai' && (
               <AiCoachScreen isAiConfigured={isAiConfigured} />
             )}

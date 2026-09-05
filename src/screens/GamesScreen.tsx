@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Gamepad2, ChevronLeft, Shuffle } from 'lucide-react';
+import { Gamepad2, ChevronLeft, Shuffle, KeyRound } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 
 interface GamesScreenProps {
   // Opens a game session for the given word pool (null = every word).
   onPlay: (category: string | null, label: string) => void;
+  onPlayWordLock: (category: string | null, label: string) => void;
 }
 
 // Pools offered in the hub. LGS units are collapsed into one "All Units" pool so
@@ -37,7 +38,7 @@ function poolSize(category: string | null): number {
   return FLASHCARDS.filter(f => f.category === category).length;
 }
 
-export default function GamesScreen({ onPlay }: GamesScreenProps) {
+export default function GamesScreen({ onPlay, onPlayWordLock }: GamesScreenProps) {
   const [pool, setPool] = useState<{ label: string; category: string | null }>(POOLS[0]);
 
   return (
@@ -97,6 +98,23 @@ export default function GamesScreen({ onPlay }: GamesScreenProps) {
               <p className="text-base font-serif italic text-[#f2c463]">Eşleştirme</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 Kelimeleri Türkçe anlamlarıyla eşleştir; süren ve puanın kayda geçsin.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => onPlayWordLock(pool.category, pool.label)}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <KeyRound className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">WORDLOCK</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Harfleri bul, ipuçlarının kilidini aç, kelimeyi tahmin et.
               </p>
             </div>
           </div>
