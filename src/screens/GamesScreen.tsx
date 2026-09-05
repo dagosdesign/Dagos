@@ -1,11 +1,12 @@
-import { Gamepad2, KeyRound, Timer } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer, HelpCircle } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
   onPlayAtoZ: () => void;
+  onPlayWhatAmI: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock, onPlayAtoZ }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -53,6 +54,23 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ }: GamesScreenP
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">THE A–Z</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 Her harf için 20 saniye; pas geçtiklerin sonda elemeli turda karşına çıkar.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={onPlayWhatAmI}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <HelpCircle className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">WHAT AM I?</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Üç ipucu ve harf sayısı; ilk 15 saniyede bilirsen çift puan.
               </p>
             </div>
           </div>

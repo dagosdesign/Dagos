@@ -8,6 +8,7 @@ import BottomNav, { NavItem } from './components/BottomNav';
 import GamesScreen from './screens/GamesScreen';
 import WordLockScreen from './screens/WordLockScreen';
 import AtoZScreen from './screens/AtoZScreen';
+import WhatAmIScreen from './screens/WhatAmIScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -143,6 +144,7 @@ export default function App() {
   const [showConnectors, setShowConnectors] = useState(false);
   const [wordLock, setWordLock] = useState<{ category: string | null; label: string } | null>(null);
   const [atoZ, setAtoZ] = useState(false);
+  const [whatAmI, setWhatAmI] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -167,6 +169,7 @@ export default function App() {
     } else if (item === 'games') {
       setWordLock(null);
       setAtoZ(false);
+      setWhatAmI(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -253,10 +256,13 @@ export default function App() {
               />
             ) : atoZ ? (
               <AtoZScreen onExit={() => setAtoZ(false)} recordQuizXp={recordQuizXp} />
+            ) : whatAmI ? (
+              <WhatAmIScreen onExit={() => setWhatAmI(false)} recordQuizXp={recordQuizXp} />
             ) : (
               <GamesScreen
                 onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
                 onPlayAtoZ={() => setAtoZ(true)}
+                onPlayWhatAmI={() => setWhatAmI(true)}
               />
             ))}
             {activeTab === 'ai' && (
