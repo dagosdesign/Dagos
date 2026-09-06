@@ -1,4 +1,4 @@
-import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2 } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2, ArrowLeftRight } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
@@ -6,9 +6,10 @@ interface GamesScreenProps {
   onPlayWhatAmI: () => void;
   onPlayWordBuild: () => void;
   onPlayUnbroken: () => void;
+  onPlayGoldenMatch: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken, onPlayGoldenMatch }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -107,6 +108,23 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">UNBROKEN</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 Zinciri koparma: her kelimenin son harfiyle 10 saniyede yenisini bul.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={onPlayGoldenMatch}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <ArrowLeftRight className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">GOLDEN MATCH</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                10 Türkçe kelimeyi İngilizce karşılıklarıyla eşleştir, sonunda kontrol et.
               </p>
             </div>
           </div>
