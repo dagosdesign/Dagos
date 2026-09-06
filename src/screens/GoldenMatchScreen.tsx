@@ -49,22 +49,24 @@ function buildPairs(): Pair[] {
 }
 
 export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchScreenProps) {
-  const [round, setRound] = useState(0);
-  const pairs = useMemo(() => buildPairs(), [round]);
-  const [order, setOrder] = useState<string[]>(() => []);
+  // A round's words and their shuffled order are real state: they are created
+  // once per round, so a re-render can never silently rebuild the board.
+  const [pairs, setPairs] = useState<Pair[]>(() => buildPairs());
+  const [order, setOrder] = useState<string[]>(() => shuffle(pairs.map(p => p.id)));
   const [matches, setMatches] = useState<Record<string, string | null>>({});
   const [checked, setChecked] = useState(false);
   const [selected, setSelected] = useState<string | null>(null); // tap-to-place
   const [drag, setDrag] = useState<{ id: string; x: number; y: number; w: number } | null>(null);
-  const dragRef = useRef<{ id: string; dx: number; dy: number } | null>(null);
+  const dragRef = useRef<{ id: string; dx: number; dy: number; x0: number; y0: number; moved: boolean; fromRow: string | null } | null>(null);
 
-  // (Re)build the shuffled English order whenever a new round starts.
-  useMemo(() => {
-    setOrder(shuffle(pairs.map(p => p.id)));
+  const newRound = useCallback(() => {
+    const next = buildPairs();
+    setPairs(next);
+    setOrder(shuffle(next.map(p => p.id)));
     setMatches({});
     setChecked(false);
     setSelected(null);
-  }, [pairs]);
+  }, []);
 
   const byId = useMemo(() => {
     const m: Record<string, Pair> = {};
@@ -101,28 +103,46 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
   );
 
   /* ---- pointer drag: one implementation for mouse and touch ---- */
-  const onPointerDown = (e: ReactPointerEvent, cardId: string) => {
+  const onPointerDown = (e: ReactPointerEvent, cardId: string, fromRow: string | null = null) => {
     if (checked) return;
     const el = e.currentTarget as HTMLElement;
     const r = el.getBoundingClientRect();
-    dragRef.current = { id: cardId, dx: e.clientX - r.left, dy: e.clientY - r.top };
-    el.setPointerCapture(e.pointerId);
+    dragRef.current = {
+      id: cardId,
+      dx: e.clientX - r.left,
+      dy: e.clientY - r.top,
+      x0: e.clientX,
+      y0: e.clientY,
+      moved: false,
+      fromRow,
+    };
+    try {
+      el.setPointerCapture(e.pointerId);
+    } catch { /* ignore */ }
     setDrag({ id: cardId, x: r.left, y: r.top, w: r.width });
   };
 
   const onPointerMove = (e: ReactPointerEvent) => {
-    if (!dragRef.current) return;
-    e.preventDefault();
-    setDrag(d =>
-      d ? { ...d, x: e.clientX - dragRef.current!.dx, y: e.clientY - dragRef.current!.dy } : d
-    );
+    const info = dragRef.current;
+    if (!info) return;
+    if (!info.moved && Math.hypot(e.clientX - info.x0, e.clientY - info.y0) > 6) info.moved = true;
+    if (!info.moved) return;
+    setDrag(d => (d ? { ...d, x: e.clientX - info.dx, y: e.clientY - info.dy } : d));
   };
 
   const onPointerUp = (e: ReactPointerEvent) => {
     const info = dragRef.current;
     dragRef.current = null;
     setDrag(null);
-    if (!info) return;
+    if (!info || checked) return;
+
+    // A tap (no real movement) selects a pool card or frees a placed one.
+    if (!info.moved) {
+      if (info.fromRow) unplace(info.fromRow);
+      else setSelected(sel => (sel === info.id ? null : info.id));
+      return;
+    }
+
     const target = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null;
     const zone = target?.closest('[data-row]') as HTMLElement | null;
     if (zone?.dataset.row) place(info.id, zone.dataset.row);
@@ -195,10 +215,15 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
                 </span>
                 <div
                   data-row={p.id}
-                  onClick={() => {
-                    if (selected) place(selected, p.id);
-                    else if (cardId) unplace(p.id);
+                  onPointerDown={e => {
+                    if (cardId && !checked) onPointerDown(e, cardId, p.id);
                   }}
+                  onPointerMove={onPointerMove}
+                  onPointerUp={e => {
+                    if (dragRef.current) onPointerUp(e);
+                    else if (selected) place(selected, p.id);
+                  }}
+                  style={{ touchAction: 'none' }}
                   className={`flex-1 min-h-[44px] rounded-xl flex items-center justify-center px-2 text-[13px] font-medium transition-colors ${
                     card
                       ? isCorrect
@@ -236,7 +261,6 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
                 onPointerDown={e => onPointerDown(e, id)}
                 onPointerMove={onPointerMove}
                 onPointerUp={onPointerUp}
-                onClick={() => setSelected(s => (s === id ? null : id))}
                 disabled={checked}
                 style={{ touchAction: 'none', opacity: drag?.id === id ? 0.35 : 1 }}
                 className={`w-full min-h-[44px] rounded-xl border px-2 py-2 flex items-center justify-between gap-1 text-[13px] text-white ${
@@ -275,7 +299,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
         </button>
         {checked ? (
           <button
-            onClick={() => setRound(r => r + 1)}
+            onClick={newRound}
             className="flex-[1.7] rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.1em] bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer"
           >
             NEW ROUND
