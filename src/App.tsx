@@ -10,6 +10,7 @@ import WordLockScreen from './screens/WordLockScreen';
 import AtoZScreen from './screens/AtoZScreen';
 import WhatAmIScreen from './screens/WhatAmIScreen';
 import WordBuildScreen from './screens/WordBuildScreen';
+import UnbrokenScreen from './screens/UnbrokenScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -147,6 +148,7 @@ export default function App() {
   const [atoZ, setAtoZ] = useState(false);
   const [whatAmI, setWhatAmI] = useState(false);
   const [wordBuild, setWordBuild] = useState(false);
+  const [unbroken, setUnbroken] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -173,6 +175,7 @@ export default function App() {
       setAtoZ(false);
       setWhatAmI(false);
       setWordBuild(false);
+      setUnbroken(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -263,12 +266,15 @@ export default function App() {
               <WhatAmIScreen onExit={() => setWhatAmI(false)} recordQuizXp={recordQuizXp} />
             ) : wordBuild ? (
               <WordBuildScreen onExit={() => setWordBuild(false)} recordQuizXp={recordQuizXp} />
+            ) : unbroken ? (
+              <UnbrokenScreen onExit={() => setUnbroken(false)} />
             ) : (
               <GamesScreen
                 onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
                 onPlayAtoZ={() => setAtoZ(true)}
                 onPlayWhatAmI={() => setWhatAmI(true)}
                 onPlayWordBuild={() => setWordBuild(true)}
+                onPlayUnbroken={() => setUnbroken(true)}
               />
             ))}
             {activeTab === 'ai' && (

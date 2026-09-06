@@ -1,13 +1,14 @@
-import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2 } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
   onPlayAtoZ: () => void;
   onPlayWhatAmI: () => void;
   onPlayWordBuild: () => void;
+  onPlayUnbroken: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -89,6 +90,23 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">WORD BUILD</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 Türkçe anlamı gör, karışık harflerden İngilizce kelimeyi 45 saniyede diz.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={onPlayUnbroken}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <Link2 className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">UNBROKEN</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Zinciri koparma: her kelimenin son harfiyle 10 saniyede yenisini bul.
               </p>
             </div>
           </div>
