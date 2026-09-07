@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Ban } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 10 seconds
    and its final letter starts the next one. No score, no lives: only the record. */
@@ -103,7 +104,6 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
   const roundStartRef = useRef(Date.now());
   const endedRef = useRef(false);
   const busyRef = useRef(false); // guards double submissions
-  const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
   const noticeTimer = useRef<number | undefined>(undefined);
 
@@ -238,7 +238,6 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
       setTimeLeft(ROUND_SECONDS);
       roundStartRef.current = Date.now();
       release();
-      window.setTimeout(() => inputRef.current?.focus(), 0);
     },
     [status, requiredLetter, used, chain, record, brokeRecord, knownWord, dictionary]
   );
@@ -396,32 +395,26 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
         }`}</style>
       </div>
 
-      {/* Answer: typing and speech are always both available */}
-      <div className="space-y-2">
-        <div className="flex gap-2">
-          <input
-            ref={inputRef}
-            autoFocus
-            value={draft}
-            onChange={e => setDraft(e.target.value)}
-            onKeyDown={e => {
-              if (e.key === 'Enter') submitCandidate(draft);
-            }}
-            placeholder="Type your word..."
-            className="flex-1 bg-white/[0.03] border border-[#e3b553]/35 rounded-2xl px-4 py-4 text-base text-white outline-none focus:border-[#e3b553] placeholder:text-white/25"
-          />
-          <button
-            onClick={startVoice}
-            aria-label="Speak"
-            className={`w-16 rounded-2xl flex items-center justify-center cursor-pointer transition-colors ${
-              listening
-                ? 'bg-[#d2a442] text-[#0a0a0b]'
-                : 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b]'
-            }`}
-          >
-            <Mic className="w-6 h-6" />
-          </button>
-        </div>
+      {/* Answer: the in-app keyboard, with speech always available too */}
+      <div className="space-y-2.5">
+        <AnswerDisplay value={draft} placeholder="Spell your word on the keyboard" />
+        <GameKeyboard
+          onKey={ch => setDraft(d => (d.length < 24 ? d + ch : d))}
+          onDelete={() => setDraft(d => d.slice(0, -1))}
+          onEnter={() => submitCandidate(draft)}
+          enterLabel="SUBMIT"
+          enterDisabled={!draft.trim()}
+        />
+        <button
+          onClick={startVoice}
+          className={`w-full flex items-center justify-center gap-2 rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] border transition-colors cursor-pointer ${
+            listening
+              ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+              : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
+          }`}
+        >
+          <Mic className="w-4 h-4" /> {listening ? 'LISTENING…' : 'SPEAK INSTEAD'}
+        </button>
         <p className="h-4 text-center text-[11px] tracking-[0.12em] text-[#e3b553]">{notice ?? ''}</p>
       </div>
 

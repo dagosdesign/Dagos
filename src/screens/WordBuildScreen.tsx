@@ -27,6 +27,34 @@ interface WordBuildScreenProps {
   recordQuizXp: (correctCount: number) => void;
 }
 
+/* One word = one row. Every letter of the target word stays on a single
+   horizontal line whatever the word length or screen width: the tiles share the
+   row as equal columns and their height, gap and type scale down with them, so
+   nothing ever wraps to a second line. */
+function useRowMetrics(count: number) {
+  const [width, setWidth] = useState(0);
+  const observerRef = useRef<ResizeObserver | null>(null);
+  // Callback ref: measures the moment the row is attached, however late that is.
+  const ref = useCallback((el: HTMLDivElement | null) => {
+    observerRef.current?.disconnect();
+    observerRef.current = null;
+    if (!el) return;
+    setWidth(el.clientWidth);
+    const ro = new ResizeObserver(() => setWidth(el.clientWidth));
+    ro.observe(el);
+    observerRef.current = ro;
+  }, []);
+  useEffect(() => () => observerRef.current?.disconnect(), []);
+  const gap = count > 11 ? 3 : count > 8 ? 4 : 6;
+  const tile = width > 0 ? Math.max(0, (width - gap * (count - 1)) / count) : 0;
+  const height = Math.min(48, Math.max(26, tile * 1.15));
+  return {
+    ref,
+    style: { display: 'grid', gridTemplateColumns: `repeat(${count}, minmax(0, 1fr))`, gap: `${gap}px` },
+    tileStyle: { height: `${height}px`, fontSize: `${Math.max(10, Math.min(20, tile * 0.55))}px` },
+  };
+}
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -89,6 +117,10 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
   const startedAtRef = useRef(0);
 
   const current = questions[index];
+  // Both rows size themselves to the word, so no letter ever wraps.
+  const letterCount = current?.word.length ?? 1;
+  const row = useRowMetrics(letterCount);
+  const poolRow = useRowMetrics(letterCount);
 
   const reset = useCallback(() => {
     if (!current) return;
@@ -136,7 +168,9 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
   if (!current && !complete) return null;
 
   const placedIds = new Set(placement.filter(Boolean) as string[]);
-  const poolTiles = current ? current.tiles.filter(t => !placedIds.has(t.id)) : [];
+  // Tiles keep their shuffled position; a taken tile leaves its gap behind so
+  // the pool stays a single stable row.
+  const poolSlots = current ? current.tiles.map(t => (placedIds.has(t.id) ? null : t)) : [];
   const allFilled = placement.length > 0 && placement.every(Boolean);
   const tileById = (id: string) => current?.tiles.find(t => t.id === id);
 
@@ -251,7 +285,6 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
   }
 
   const ring = (timeLeft / QUESTION_SECONDS) * 100;
-  const slotW = current.word.length > 8 ? 'w-8' : current.word.length > 6 ? 'w-9' : 'w-11';
 
   return (
     <div className="space-y-4 pb-4">
@@ -289,8 +322,8 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
       >
         <p className="text-center text-2xl text-white font-light">{current.meaning}</p>
 
-        {/* Answer slots */}
-        <div className="flex flex-wrap justify-center gap-1.5">
+        {/* Answer slots — one row, always */}
+        <div ref={row.ref} style={row.style}>
           {placement.map((tileId, i) => {
             const t = tileId ? tileById(tileId) : undefined;
             return (
@@ -305,7 +338,8 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
                 }}
                 draggable={!!t && !locked}
                 onDragStart={() => t && setDragId(t.id)}
-                className={`${slotW} h-12 rounded-xl border flex items-center justify-center text-lg font-bold transition-colors ${
+                style={row.tileStyle}
+                className={`w-full rounded-xl border flex items-center justify-center font-bold transition-colors ${
                   t
                     ? 'border-[#e3b553] text-white bg-[#e3b553]/[0.08] cursor-pointer'
                     : 'border-[#e3b553]/35 bg-black/40'
@@ -317,21 +351,26 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
           })}
         </div>
 
-        {/* Letter pool (kept in its original shuffled order) */}
-        <div className="flex flex-wrap justify-center gap-2 min-h-[3rem]">
-          {poolTiles.map(t => (
-            <button
-              key={t.id}
-              onClick={() => tapPoolTile(t.id)}
-              draggable={!locked}
-              onDragStart={() => setDragId(t.id)}
-              disabled={locked}
-              className="w-11 h-12 rounded-xl border border-[#e3b553]/60 bg-[#0a0a0b] text-white text-lg font-bold cursor-pointer hover:border-[#e3b553] disabled:opacity-40"
-              style={{ boxShadow: '0 0 10px rgba(227,181,83,0.18)' }}
-            >
-              {t.letter}
-            </button>
-          ))}
+        {/* Letter pool (kept in its original shuffled order) — one row, always */}
+        <div ref={poolRow.ref} style={poolRow.style}>
+          {placement.map((tileId, i) => {
+            const t = poolSlots[i];
+            return t ? (
+              <button
+                key={t.id}
+                onClick={() => tapPoolTile(t.id)}
+                draggable={!locked}
+                onDragStart={() => setDragId(t.id)}
+                disabled={locked}
+                style={{ ...poolRow.tileStyle, boxShadow: '0 0 10px rgba(227,181,83,0.18)' }}
+                className="w-full rounded-xl border border-[#e3b553]/60 bg-[#0a0a0b] text-white font-bold cursor-pointer hover:border-[#e3b553] disabled:opacity-40"
+              >
+                {t.letter}
+              </button>
+            ) : (
+              <span key={`empty-${i}`} style={poolRow.tileStyle} className="w-full rounded-xl border border-white/[0.05]" />
+            );
+          })}
         </div>
 
         {/* Feedback */}

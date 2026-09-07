@@ -3,6 +3,7 @@ import { ChevronLeft, BarChart3, Lock, LockOpen, KeyRound, Lightbulb, SkipForwar
 import { FLASHCARDS } from '../data/flashcards';
 import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
+import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -55,29 +56,39 @@ function pickStartingPositions(word: string): number[] {
   return chosen.sort((a, b) => a - b);
 }
 
+/* Every clue must point at the word itself — what it means, what it does, how
+   it is used. Never where it was filed: no unit, set or deck references. */
 function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
   const word = card.word;
   const pos = card.partOfSpeech && card.partOfSpeech !== 'word' ? card.partOfSpeech : '';
-  const deck = card.category.replace('LGS · ', '');
   const mask = (s: string) =>
     s.replace(new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`, 'gi'), '_____');
+  const leaks = (s: string) => s.toLowerCase().includes(word.toLowerCase());
 
-  const candidates: string[] = [];
-  candidates.push(pos ? `It is a ${pos}.` : `This word is used in the ${deck} set.`);
-  if (entry?.definition) candidates.push(entry.definition);
-  const ex = entry?.example || card.exampleSentence;
-  if (ex) candidates.push(mask(ex));
+  const clues: string[] = [];
 
-  const fallbacks = [
-    `It has ${word.length} letters.`,
-    `This word is used in the ${deck} set.`,
-    `It starts with the letter ${word[0].toUpperCase()}.`,
-  ];
-  for (const f of fallbacks) {
-    if (candidates.length >= MAX_CLUES) break;
-    if (!candidates.includes(f)) candidates.push(f);
+  // 1. What it means — the English definition.
+  const definition = entry?.definition?.trim();
+  if (definition) {
+    const masked = mask(definition);
+    if (!leaks(masked)) clues.push(masked);
   }
-  return candidates.slice(0, MAX_CLUES);
+
+  // 2. How it is used — a real sentence with the word hidden.
+  const example = (entry?.example || card.exampleSentence || '').trim();
+  if (example) {
+    const masked = mask(example);
+    if (!leaks(masked)) clues.push(`Used like this: ${masked}`);
+  }
+
+  // 3. What it means in Turkish — the most direct meaning clue, opened last.
+  const turkish = (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim();
+  if (turkish) clues.push(`In Turkish it means: ${turkish}`);
+
+  // Filler, still about the word's function — never about where it is filed.
+  if (clues.length < MAX_CLUES && pos) clues.push(`It is a ${pos}.`);
+
+  return clues.slice(0, MAX_CLUES);
 }
 
 export default function WordLockScreen({ category, label, onExit, recordQuizXp }: WordLockScreenProps) {
@@ -397,58 +408,38 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
         </div>
       </div>
 
-      {/* A–Z keyboard */}
-      <div className="flex flex-wrap justify-center gap-1.5">
-        {ALPHABET.map(ch => {
-          const tried = guessed.has(ch);
-          const inWord = word.includes(ch);
-          const isStart = startLetters.has(ch) && !tried;
-          const correct = tried && inWord;
-          const wrong = tried && !inWord;
-          const disabled = roundOver || tried || (isStart && !word.split('').some((c, i) => c === ch && !revealed.has(i)));
-          return (
-            <button
-              key={ch}
-              onClick={() => pressLetter(ch)}
-              disabled={disabled}
-              className={`w-[9vw] max-w-[34px] aspect-square rounded-full border text-xs font-bold transition-all ${
-                correct
-                  ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
-                  : wrong
-                    ? 'border-white/8 text-white/20 bg-white/[0.02]'
-                    : isStart
-                      ? 'border-[#e3b553]/25 text-[#e3b553]/55 bg-[#e3b553]/[0.04]'
-                      : disabled
-                        ? 'border-white/10 text-white/30 bg-white/[0.02]'
-                        : 'border-[#e3b553]/40 text-white bg-[#0a0a0b] hover:border-[#e3b553] cursor-pointer'
-              }`}
-              style={correct ? { boxShadow: '0 0 10px rgba(227,181,83,0.35)' } : undefined}
-            >
-              {ch}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Whole-word guess input */}
-      {typing && !roundOver && (
-        <div className="flex gap-2">
-          <input
-            autoFocus
-            value={draft}
-            onChange={e => setDraft(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && submitWord()}
-            placeholder="Type the whole word"
-            className="flex-1 bg-white/[0.03] border border-[#e3b553]/35 rounded-2xl px-4 py-3 text-sm text-white outline-none focus:border-[#e3b553] placeholder:text-white/25"
-          />
-          <button
-            onClick={submitWord}
-            className="px-5 rounded-2xl bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] text-xs font-bold cursor-pointer"
-          >
-            SUBMIT
-          </button>
-        </div>
-      )}
+      {/* In-app keyboard: picks letters, or spells the whole word in guess mode */}
+      {typing && !roundOver && <AnswerDisplay value={draft} placeholder="Spell the whole word" />}
+      <GameKeyboard
+        onKey={ch =>
+          typing && !roundOver ? setDraft(d => (d.length < 20 ? d + ch : d)) : pressLetter(ch)
+        }
+        onDelete={typing && !roundOver ? () => setDraft(d => d.slice(0, -1)) : undefined}
+        onEnter={typing && !roundOver ? submitWord : undefined}
+        enterLabel="SUBMIT WORD"
+        enterDisabled={!draft.trim()}
+        disabled={roundOver}
+        toneOf={
+          typing
+            ? undefined
+            : ch => {
+                const tried = guessed.has(ch);
+                if (tried) return word.includes(ch) ? 'correct' : 'wrong';
+                return startLetters.has(ch) ? 'hint' : 'idle';
+              }
+        }
+        disabledKeys={
+          typing
+            ? undefined
+            : new Set(
+                ALPHABET.filter(
+                  ch =>
+                    guessed.has(ch) ||
+                    (startLetters.has(ch) && !word.split('').some((c, i) => c === ch && !revealed.has(i)))
+                )
+              )
+        }
+      />
 
       {/* Main actions */}
       <div className="flex gap-2">
@@ -467,10 +458,10 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
           </button>
         ) : (
           <button
-            onClick={() => setTyping(t => !t)}
+            onClick={() => { setTyping(t => !t); setDraft(''); }}
             className="flex-[1.6] flex items-center justify-center gap-1.5 bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] cursor-pointer"
           >
-            <KeyRound className="w-3.5 h-3.5" /> GUESS THE WORD
+            <KeyRound className="w-3.5 h-3.5" /> {typing ? 'PICK LETTERS' : 'GUESS THE WORD'}
           </button>
         )}
         <button

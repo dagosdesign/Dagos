@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ChevronLeft, BarChart3, Mic, Keyboard, Zap, Check, X } from 'lucide-react';
+import { ChevronLeft, BarChart3, Mic, Zap, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
 /* WHAT AM I? — three English clues, the word length, sixty seconds.
@@ -360,47 +361,29 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
         </div>
       )}
 
-      {/* Answer input: speak or type, independent alternatives */}
-      {mode === 'type' && !feedback && (
-        <div className="flex gap-2">
-          <input
-            autoFocus
-            value={draft}
-            onChange={e => setDraft(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && submit(draft)}
-            placeholder="Type the word"
-            className="flex-1 bg-white/[0.03] border border-[#e3b553]/35 rounded-2xl px-4 py-3 text-sm text-white outline-none focus:border-[#e3b553] placeholder:text-white/25"
-          />
-          <button
-            onClick={() => submit(draft)}
-            className="px-5 rounded-2xl bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] text-xs font-bold cursor-pointer"
-          >
-            CHECK ANSWER
-          </button>
-        </div>
-      )}
+      {/* Answer: the in-app keyboard, with voice as an alternative */}
+      <AnswerDisplay value={draft} placeholder="Spell the word on the keyboard" />
+      <GameKeyboard
+        onKey={ch => setDraft(d => (d.length < 20 ? d + ch : d))}
+        onDelete={() => setDraft(d => d.slice(0, -1))}
+        onEnter={() => submit(draft)}
+        enterLabel="CHECK ANSWER"
+        enterDisabled={!draft.trim()}
+        disabled={!!feedback}
+      />
 
-      <div className="flex gap-2">
-        <button
-          onClick={startVoice}
-          disabled={!!feedback}
-          className={`flex-1 flex items-center justify-center gap-2 rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.08em] cursor-pointer disabled:opacity-40 ${
-            listening
-              ? 'bg-[#d2a442] text-[#0a0a0b]'
-              : 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b]'
-          }`}
-        >
-          <Mic className="w-4 h-4" />
-          {listening ? 'LISTENING…' : 'SPEAK YOUR ANSWER'}
-        </button>
-        <button
-          onClick={() => setMode('type')}
-          disabled={!!feedback}
-          className="flex-1 flex items-center justify-center gap-2 border border-[#e3b553]/40 text-[#e3b553] rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.08em] hover:bg-[#e3b553]/10 cursor-pointer disabled:opacity-40"
-        >
-          <Keyboard className="w-4 h-4" /> TYPE YOUR ANSWER
-        </button>
-      </div>
+      <button
+        onClick={startVoice}
+        disabled={!!feedback}
+        className={`w-full flex items-center justify-center gap-2 rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.08em] border transition-colors cursor-pointer disabled:opacity-40 ${
+          listening
+            ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+            : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
+        }`}
+      >
+        <Mic className="w-4 h-4" />
+        {listening ? 'LISTENING…' : 'SPEAK INSTEAD'}
+      </button>
 
       <Stats correct={correct} wrong={wrong} score={score} />
 

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, SkipForward, Check, X, Minus } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* THE A–Z — read the Turkish clue, recall the English word, answer in 20 seconds.
    Round 1 walks A→Z; only PASSED letters return in Round 2, where one mistake
@@ -62,11 +63,31 @@ const FALLBACK: Record<string, { word: string; meaning: string }> = {
   X: { word: 'XYLOPHONE', meaning: 'ksilofon' },
 };
 
+/* How hard a word is: which deck it comes from, plus a nudge for long words.
+   Drives the easy-to-hard curve — A opens with school vocabulary, Z closes with
+   exam-level words. */
+const DECK_LEVEL: Array<[RegExp, number]> = [
+  [/^LGS · /, 0],
+  [/^Everyday Words$/, 1],
+  [/^(Irregular Verbs|Nouns|Adjectives|Adverbs|Prepositions)$/, 2],
+  [/^(Phrasal Verbs|Business English)$/, 3],
+  [/^(Academic & IELTS|YDS)$/, 4],
+  [/^(YDT|Advanced & GRE\/SAT)$/, 5],
+];
+const MAX_LEVEL = 5;
+
+function difficultyOf(card: { word: string; category: string }): number {
+  const deck = DECK_LEVEL.find(([re]) => re.test(card.category))?.[1] ?? 3;
+  return deck + (card.word.length > 9 ? 0.6 : card.word.length > 7 ? 0.3 : 0);
+}
+
 /* One target word per letter: single alphabetic word with a Turkish meaning,
-   validated so the answer really starts with the active letter. */
+   validated so the answer really starts with the active letter. The letter's
+   position in the alphabet sets the difficulty aimed for, so the run climbs
+   steadily from easy to hard. */
 function buildQuestions(): Question[] {
   const out: Question[] = [];
-  for (const letter of ALPHABET) {
+  ALPHABET.forEach((letter, i) => {
     const pool = FLASHCARDS.filter(
       f =>
         /^[a-zA-Z]{3,14}$/.test(f.word) &&
@@ -83,17 +104,24 @@ function buildQuestions(): Question[] {
           clue: `“${fb.meaning}” anlamına gelen İngilizce kelime.`,
         });
       }
-      continue;
+      return;
     }
-    const pick = pool[Math.floor(Math.random() * pool.length)];
-    if (pick.word[0].toUpperCase() !== letter) continue; // hard validation
+    // Aim at the difficulty this position calls for, then pick randomly among
+    // the closest candidates so the run still varies between sessions.
+    const target = (i / (ALPHABET.length - 1)) * MAX_LEVEL;
+    const ranked = pool
+      .map(f => ({ f, gap: Math.abs(difficultyOf(f) - target) }))
+      .sort((a, b) => a.gap - b.gap)
+      .slice(0, Math.max(1, Math.min(12, Math.ceil(pool.length * 0.1))));
+    const pick = ranked[Math.floor(Math.random() * ranked.length)].f;
+    if (pick.word[0].toUpperCase() !== letter) return; // hard validation
     const meaning = pick.turkishMeaning.split(',')[0].trim();
     out.push({
       letter,
       word: pick.word.toUpperCase(),
       clue: `“${meaning}” anlamına gelen İngilizce kelime.`,
     });
-  }
+  });
   return out;
 }
 
@@ -451,27 +479,15 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
         Read the Turkish clue and give the English answer.
       </p>
 
-      {/* Answer input + voice */}
-      <div className="flex gap-2">
-        <button
-          onClick={startVoice}
-          aria-label="Speak"
-          className={`px-4 rounded-2xl border transition-colors cursor-pointer ${
-            listening
-              ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
-              : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
-          }`}
-        >
-          <Mic className="w-4 h-4" />
-        </button>
-        <input
-          value={answer}
-          onChange={e => setAnswer(e.target.value)}
-          onKeyDown={e => e.key === 'Enter' && answer.trim() && commit(closeEnough(answer, current.word) ? 'correct' : 'wrong')}
-          placeholder="Your answer"
-          className="flex-1 bg-white/[0.03] border border-[#e3b553]/30 rounded-2xl px-4 py-3 text-sm text-white outline-none focus:border-[#e3b553] placeholder:text-white/25"
-        />
-      </div>
+      {/* Answer: the in-app keyboard, with voice as an alternative */}
+      <AnswerDisplay value={answer} placeholder="Use the keyboard below" />
+      <GameKeyboard
+        onKey={ch => setAnswer(a => (a.length < 20 ? a + ch : a))}
+        onDelete={() => setAnswer(a => a.slice(0, -1))}
+        onEnter={() => answer.trim() && commit(closeEnough(answer, current.word) ? 'correct' : 'wrong')}
+        enterLabel="CHECK ANSWER"
+        enterDisabled={!answer.trim()}
+      />
 
       {/* Main actions */}
       <div className="flex gap-2">
@@ -491,10 +507,14 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
           </button>
         )}
         <button
-          onClick={() => answer.trim() && commit(closeEnough(answer, current.word) ? 'correct' : 'wrong')}
-          className="flex-[1.8] flex items-center justify-center gap-1.5 bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] cursor-pointer"
+          onClick={startVoice}
+          className={`flex-[1.8] flex items-center justify-center gap-1.5 rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] border transition-colors cursor-pointer ${
+            listening
+              ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+              : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
+          }`}
         >
-          <Mic className="w-3.5 h-3.5" /> CHECK ANSWER
+          <Mic className="w-3.5 h-3.5" /> {listening ? 'LISTENING…' : 'SPEAK INSTEAD'}
         </button>
       </div>
 
