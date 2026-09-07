@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Keyboard, Zap, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { loadVocabulary } from '../lib/vocabulary';
 
 /* WHAT AM I? — three English clues, the word length, sixty seconds.
    Answer within the first 15 seconds for double points. One answer per question. */
@@ -47,10 +48,7 @@ function shuffle<T>(arr: T[]): T[] {
 export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenProps) {
   const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
   useEffect(() => {
-    fetch('/vocabulary.json')
-      .then(r => (r.ok ? r.json() : {}))
-      .then(setVocab)
-      .catch(() => setVocab({}));
+    loadVocabulary<VocabEntry>().then(setVocab);
   }, []);
 
   /* Build the session once the vocabulary is available: every question needs a

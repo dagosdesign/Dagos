@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
+import { loadVocabulary } from '../lib/vocabulary';
 
 /* THE CLUE — read an English clue, pick the English word it describes.
    Exactly 20 questions per level; only 20/20 unlocks the next level.
@@ -98,10 +99,7 @@ function stem(w: string): string {
 export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenProps) {
   const [vocab, setVocab] = useState<Record<string, { definition?: string }> | null>(null);
   useEffect(() => {
-    fetch('/vocabulary.json')
-      .then(r => (r.ok ? r.json() : {}))
-      .then(setVocab)
-      .catch(() => setVocab({}));
+    loadVocabulary<{ definition?: string }>().then(setVocab);
   }, []);
 
   /* Master pool: only items with a clean English definition that never leaks

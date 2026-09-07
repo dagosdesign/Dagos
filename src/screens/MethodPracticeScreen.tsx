@@ -3,6 +3,7 @@ import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'l
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
+import { loadVocabulary } from '../lib/vocabulary';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -475,15 +476,6 @@ interface VocabEntry {
   forms?: string[];
 }
 
-let vocabPromise: Promise<Record<string, VocabEntry>> | null = null;
-function loadVocabulary(): Promise<Record<string, VocabEntry>> {
-  if (!vocabPromise) {
-    vocabPromise = fetch('/vocabulary.json')
-      .then(r => (r.ok ? r.json() : {}))
-      .catch(() => ({}));
-  }
-  return vocabPromise;
-}
 
 // Probes candidate image URLs in order; resolves the first that loads, else null.
 const imageProbeCache = new Map<string, Promise<string | null>>();
@@ -563,7 +555,7 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
     : (entry.meanings ?? []);
 
   useEffect(() => {
-    loadVocabulary().then(setVocab);
+    loadVocabulary<VocabEntry>().then(setVocab);
   }, []);
 
   // Probe for a ready-made full card image and a photo for the side slot.
@@ -1122,7 +1114,7 @@ function StoryMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }:
   const current = rounds[idx];
   const wordForms = (vocab && current && vocab[current.word.toLowerCase()]?.forms) || undefined;
 
-  useEffect(() => { loadVocabulary().then(setVocab); }, []);
+  useEffect(() => { loadVocabulary<VocabEntry>().then(setVocab); }, []);
 
   // Stop any active narration the moment the story changes or the mode unmounts.
   useEffect(() => { stopSpeech(); }, [idx, finished]);
@@ -1230,7 +1222,7 @@ function DialogueMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart
   const current = rounds[idx];
   const wordForms = (vocab && current && vocab[current.word.toLowerCase()]?.forms) || undefined;
 
-  useEffect(() => { loadVocabulary().then(setVocab); }, []);
+  useEffect(() => { loadVocabulary<VocabEntry>().then(setVocab); }, []);
 
   // Stop any active narration the moment the dialogue changes or the mode unmounts.
   useEffect(() => { stopSpeech(); }, [idx, finished]);

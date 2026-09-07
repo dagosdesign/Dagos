@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, LockOpen, KeyRound, Lightbulb, SkipForward, Eraser } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { Flashcard } from '../types';
+import { loadVocabulary } from '../lib/vocabulary';
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -82,10 +83,7 @@ function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
 export default function WordLockScreen({ category, label, onExit, recordQuizXp }: WordLockScreenProps) {
   const [vocab, setVocab] = useState<Record<string, VocabEntry> | null>(null);
   useEffect(() => {
-    fetch('/vocabulary.json')
-      .then(r => (r.ok ? r.json() : {}))
-      .then(setVocab)
-      .catch(() => setVocab({}));
+    loadVocabulary<VocabEntry>().then(setVocab);
   }, []);
 
   // Single alphabetic words only — phrases do not work in a letter game.
