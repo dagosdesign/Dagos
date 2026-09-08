@@ -14,6 +14,7 @@ import UnbrokenScreen from './screens/UnbrokenScreen';
 import GoldenMatchScreen from './screens/GoldenMatchScreen';
 import TheClueScreen from './screens/TheClueScreen';
 import OddOneScreen from './screens/OddOneScreen';
+import WordPathScreen from './screens/WordPathScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -155,6 +156,7 @@ export default function App() {
   const [goldenMatch, setGoldenMatch] = useState(false);
   const [theClue, setTheClue] = useState(false);
   const [oddOne, setOddOne] = useState(false);
+  const [wordPath, setWordPath] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -185,6 +187,7 @@ export default function App() {
       setGoldenMatch(false);
       setTheClue(false);
       setOddOne(false);
+      setWordPath(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -283,6 +286,8 @@ export default function App() {
               <TheClueScreen onExit={() => setTheClue(false)} recordQuizXp={recordQuizXp} />
             ) : oddOne ? (
               <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={recordQuizXp} />
+            ) : wordPath ? (
+              <WordPathScreen onExit={() => setWordPath(false)} recordQuizXp={recordQuizXp} />
             ) : (
               <GamesScreen
                 onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
@@ -293,6 +298,7 @@ export default function App() {
                 onPlayGoldenMatch={() => setGoldenMatch(true)}
                 onPlayTheClue={() => setTheClue(true)}
                 onPlayOddOne={() => setOddOne(true)}
+                onPlayWordPath={() => setWordPath(true)}
               />
             ))}
             {activeTab === 'ai' && (
