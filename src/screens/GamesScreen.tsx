@@ -1,4 +1,4 @@
-import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2, ArrowLeftRight, Search } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2, ArrowLeftRight, Search, Shapes } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
@@ -8,9 +8,10 @@ interface GamesScreenProps {
   onPlayUnbroken: () => void;
   onPlayGoldenMatch: () => void;
   onPlayTheClue: () => void;
+  onPlayOddOne: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken, onPlayGoldenMatch, onPlayTheClue }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken, onPlayGoldenMatch, onPlayTheClue, onPlayOddOne }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -143,6 +144,23 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">THE CLUE</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
                 İngilizce açıklamadan doğru kelimeyi bul; her seviye 20 soru, geçmek için 20/20.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={onPlayOddOne}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <Shapes className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">ODD ONE</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Dört kelimeden gruba ait olmayanı bul; her seviye 20 soru, geçmek için 20/20.
               </p>
             </div>
           </div>

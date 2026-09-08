@@ -13,6 +13,7 @@ import WordBuildScreen from './screens/WordBuildScreen';
 import UnbrokenScreen from './screens/UnbrokenScreen';
 import GoldenMatchScreen from './screens/GoldenMatchScreen';
 import TheClueScreen from './screens/TheClueScreen';
+import OddOneScreen from './screens/OddOneScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -153,6 +154,7 @@ export default function App() {
   const [unbroken, setUnbroken] = useState(false);
   const [goldenMatch, setGoldenMatch] = useState(false);
   const [theClue, setTheClue] = useState(false);
+  const [oddOne, setOddOne] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -182,6 +184,7 @@ export default function App() {
       setUnbroken(false);
       setGoldenMatch(false);
       setTheClue(false);
+      setOddOne(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -278,6 +281,8 @@ export default function App() {
               <GoldenMatchScreen onExit={() => setGoldenMatch(false)} recordQuizXp={recordQuizXp} />
             ) : theClue ? (
               <TheClueScreen onExit={() => setTheClue(false)} recordQuizXp={recordQuizXp} />
+            ) : oddOne ? (
+              <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={recordQuizXp} />
             ) : (
               <GamesScreen
                 onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
@@ -287,6 +292,7 @@ export default function App() {
                 onPlayUnbroken={() => setUnbroken(true)}
                 onPlayGoldenMatch={() => setGoldenMatch(true)}
                 onPlayTheClue={() => setTheClue(true)}
+                onPlayOddOne={() => setOddOne(true)}
               />
             ))}
             {activeTab === 'ai' && (
