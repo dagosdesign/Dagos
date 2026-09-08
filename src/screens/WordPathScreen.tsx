@@ -548,10 +548,10 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
   );
 }
 
-/* The mountain is the progress display, not a backdrop: a stone stairway climbs
-   from the foot of the peak to the lit gate at the summit. The meaning path sits
-   on the steps, the lanterns light as the climb advances, and the height reached
-   is driven by the same question progress as the bar above. */
+/* The mountain is the progress display, not a backdrop. The scene is the
+   approved artwork — a stone stairway climbing to a lit gate at the summit —
+   and the climb is drawn over it: everything above the height reached stays in
+   shadow, the reached line glows, and the gate flares only on a 20/20 summit. */
 
 /* Icons support a node without giving the answer away. A word with no clearly
    right icon simply gets none — a wrong icon would be worse than no icon — and
@@ -583,12 +583,13 @@ const NODE_ICONS: Record<string, LucideIcon> = {
   wash: Droplet, apology: HeartHandshake,
 };
 
-/* Four checkpoints climbing the stairway: lower steps sit wider and nearer. */
+/* The checkpoints follow the stairway of the artwork, which leans to the right
+   as it rises, so each slab sits on the step that belongs to it. */
 const STEPS = [
-  { y: 87, w: 56 },
-  { y: 69, w: 50 },
-  { y: 52, w: 45 },
-  { y: 35, w: 40 },
+  { x: 49, y: 86, w: 50 },
+  { x: 55, y: 67, w: 43 },
+  { x: 61, y: 49, w: 37 },
+  { x: 67, y: 32, w: 31 },
 ];
 
 function Mountain({
@@ -607,136 +608,70 @@ function Mountain({
   instruction?: string;
 }) {
   const labels = [...nodes, answered ?? '?'];
+  const climbedPct = Math.max(0, Math.min(1, progress)) * 100;
   return (
     <div
       className="relative w-full rounded-3xl border border-[#e3b553]/25 overflow-hidden"
       style={{
-        aspectRatio: compact ? '16 / 9' : '3 / 4',
-        maxHeight: compact ? 200 : 470,
+        aspectRatio: compact ? '1024 / 430' : '1024 / 860',
         background: '#030303',
       }}
     >
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 w-full h-full">
-        <defs>
-          <radialGradient id="wp-sky" cx="0.5" cy="0.1" r="0.62">
-            <stop offset="0%" stopColor="#E3A72F" stopOpacity="0.55" />
-            <stop offset="28%" stopColor="#6b4610" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#020202" stopOpacity="1" />
-          </radialGradient>
-          <radialGradient id="wp-cloud">
-            <stop offset="0%" stopColor="#E3A72F" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#E3A72F" stopOpacity="0" />
-          </radialGradient>
-          <radialGradient id="wp-gate">
-            <stop offset="0%" stopColor="#FFE7AE" stopOpacity="1" />
-            <stop offset="30%" stopColor="#E3A72F" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#E3A72F" stopOpacity="0" />
-          </radialGradient>
-          <linearGradient id="wp-rock" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#6b5942" />
-            <stop offset="35%" stopColor="#3a3022" />
-            <stop offset="100%" stopColor="#141109" />
-          </linearGradient>
-          <linearGradient id="wp-stone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#3c3226" />
-            <stop offset="100%" stopColor="#191510" />
-          </linearGradient>
-        </defs>
+      {/* the approved scene */}
+      <img
+        src="/games/wordpath-mountain.webp"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+        // the result strip frames the summit; the play view frames the climb
+        style={{ objectPosition: compact ? 'center top' : 'center bottom' }}
+      />
 
-        <rect width="100" height="100" fill="url(#wp-sky)" />
-
-        {/* lit cloud bank flanking the peak */}
-        <ellipse cx="16" cy="42" rx="26" ry="12" fill="url(#wp-cloud)" />
-        <ellipse cx="86" cy="38" rx="28" ry="13" fill="url(#wp-cloud)" />
-        <ellipse cx="50" cy="60" rx="48" ry="15" fill="url(#wp-cloud)" opacity="0.45" />
-
-        {/* the peak, seen head on */}
-        <path
-          d="M50,6 L58,18 L55,24 L64,36 L60,44 L72,58 L68,68 L84,84 L90,100 L10,100 L16,84 L32,68 L28,58 L40,44 L36,36 L45,24 L42,18 Z"
-          fill="url(#wp-rock)"
+      {/* a light vignette toward the summit, part of the scene's own look */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: 'linear-gradient(to top, rgba(3,3,3,0) 55%, rgba(3,3,3,0.4) 100%)' }}
+      />
+      {/* the climb adds light rather than taking it away: the part of the
+          mountain already reached warms up as the run advances */}
+      <div
+        className="absolute left-0 right-0 bottom-0 wp-anim pointer-events-none"
+        style={{
+          height: `${climbedPct}%`,
+          background:
+            'linear-gradient(to top, rgba(227,167,47,0.22) 0%, rgba(227,167,47,0.13) 60%, rgba(227,167,47,0) 100%)',
+          mixBlendMode: 'screen',
+        }}
+      />
+      {/* the line the climb has reached */}
+      <div
+        className="absolute left-0 right-0 wp-anim pointer-events-none"
+        style={{
+          bottom: `${climbedPct}%`,
+          height: 2,
+          background: 'linear-gradient(90deg, transparent, rgba(227,167,47,0.85), transparent)',
+          boxShadow: '0 0 14px rgba(227,167,47,0.7)',
+          opacity: climbedPct > 1 && climbedPct < 99 ? 1 : 0,
+        }}
+      />
+      {/* the summit gate flares only on a perfect climb */}
+      {summit && (
+        <div
+          className="absolute pointer-events-none wp-beacon"
+          style={{
+            left: '68%',
+            top: '6%',
+            width: '46%',
+            height: '30%',
+            transform: 'translate(-50%,-30%)',
+            background: 'radial-gradient(circle, rgba(255,231,174,0.75) 0%, rgba(227,167,47,0.35) 35%, transparent 70%)',
+          }}
         />
-        {/* backlit rim, so the peak's shape reads against the glow */}
-        <path
-          d="M50,6 L58,18 L55,24 L64,36 L60,44 L72,58 L68,68 L84,84 L90,100"
-          fill="none"
-          stroke="#E3A72F"
-          strokeWidth="0.55"
-          opacity="0.45"
-        />
-        <path
-          d="M50,6 L42,18 L45,24 L36,36 L40,44 L28,58 L32,68 L16,84 L10,100"
-          fill="none"
-          stroke="#E3A72F"
-          strokeWidth="0.55"
-          opacity="0.45"
-        />
-        {/* ridge lines cut across the face so it reads as rock, not a flat shape */}
-        <path d="M42,18 L36,36 L28,58 L16,84 L10,100" fill="none" stroke="#a08757" strokeWidth="0.5" opacity="0.7" />
-        <path d="M58,18 L64,36 L72,58 L84,84 L90,100" fill="none" stroke="#a08757" strokeWidth="0.5" opacity="0.7" />
-        <path d="M45,24 L40,44 L32,68" fill="none" stroke="#8a7448" strokeWidth="0.35" opacity="0.55" />
-        <path d="M55,24 L60,44 L68,68" fill="none" stroke="#8a7448" strokeWidth="0.35" opacity="0.55" />
-        {/* outer shoulders */}
-        <path d="M0,100 L5,74 L18,60 L28,70 L20,86 L26,100 Z" fill="#241f16" />
-        <path d="M100,100 L95,72 L82,58 L72,70 L80,86 L74,100 Z" fill="#241f16" />
-
-        {/* the stairway: steps narrow as they recede toward the gate */}
-        {Array.from({ length: 26 }).map((_, i) => {
-          const t = i / 25;
-          const y = 99 - t * 78;
-          const half = 31 - t * 23;
-          const lit = t <= progress;
-          return (
-            <g key={i}>
-              <rect x={50 - half} y={y - 1.6} width={half * 2} height="1.7" rx="0.4" fill="url(#wp-stone)" />
-              <rect
-                x={50 - half}
-                y={y - 1.9}
-                width={half * 2}
-                height="0.35"
-                rx="0.2"
-                fill={lit ? '#E3A72F' : '#453a29'}
-                opacity={lit ? 0.85 : 0.5}
-              />
-            </g>
-          );
-        })}
-
-        {/* lanterns on posts, flanking the stairway */}
-        {[0.06, 0.3, 0.54, 0.78].map((t, i) => {
-          const y = 99 - t * 78;
-          const half = 31 - t * 23 + 3.8;
-          const lit = t <= progress + 0.06;
-          const r = 1.9 - t * 0.8;
-          return (
-            <g key={i} opacity={lit ? 1 : 0.55}>
-              {[50 - half, 50 + half].map(x => (
-                <g key={x}>
-                  <circle cx={x} cy={y - 4} r={r * 3.4} fill="url(#wp-gate)" opacity={lit ? 0.75 : 0.28} />
-                  <rect x={x - 0.35} y={y - 3.6} width="0.7" height="3.6" fill="#2a2318" />
-                  <rect x={x - r} y={y - 4 - r} width={r * 2} height={r * 2} rx="0.3" fill={lit ? '#F2C463' : '#3a3125'} />
-                </g>
-              ))}
-            </g>
-          );
-        })}
-
-        {/* the gate at the summit */}
-        <circle
-          cx="50"
-          cy="13"
-          r={summit ? 26 : 15}
-          fill="url(#wp-gate)"
-          className={summit ? 'wp-beacon' : ''}
-          opacity={summit ? 1 : 0.8}
-        />
-        <path d="M45.5,19 L45.5,10 Q50,4.5 54.5,10 L54.5,19 Z" fill={summit ? '#FFE7AE' : '#8a6212'} opacity={summit ? 1 : 0.9} />
-        <rect x="43.6" y="18.4" width="12.8" height="1.3" rx="0.4" fill={summit ? '#F2D48A' : '#6b4d12'} />
-        <rect x="49.2" y="12" width="1.6" height="7" rx="0.3" fill="#050403" opacity="0.7" />
-      </svg>
+      )}
 
       {/* instruction, sitting over the scene as on the reference */}
       {instruction && !compact && (
-        <div className="absolute left-3 top-3 max-w-[52%] rounded-2xl border border-[#e3b553]/60 bg-black/75 px-3 py-2.5">
+        <div className="absolute left-3 top-3 max-w-[46%] rounded-2xl border border-[#e3b553]/70 bg-black/80 px-3 py-2.5">
           <p className="text-[12px] leading-snug text-white font-medium">{instruction}</p>
         </div>
       )}
@@ -752,32 +687,32 @@ function Mountain({
             <div
               key={i}
               className="absolute -translate-x-1/2 -translate-y-1/2 wp-anim"
-              style={{ left: '50%', top: step.y + '%', width: step.w + '%' }}
+              style={{ left: step.x + '%', top: step.y + '%', width: step.w + '%' }}
             >
               <div
                 className={
-                  'rounded-2xl border px-2 py-2.5 flex flex-col items-center justify-center gap-1 ' +
+                  'rounded-2xl border px-2 py-2 flex flex-col items-center justify-center gap-0.5 ' +
                   (filled
                     ? 'border-[#e3b553] text-[#0a0a0b]'
-                    : 'border-[#e3b553]/55 text-white')
+                    : 'border-[#e3b553]/60 text-white')
                 }
                 style={{
                   background: filled
                     ? 'linear-gradient(180deg,#F2C463,#C88A1A)'
-                    : 'linear-gradient(180deg,rgba(28,24,18,0.94),rgba(8,7,6,0.96))',
+                    : 'linear-gradient(180deg,rgba(16,13,9,0.9),rgba(4,3,2,0.94))',
                   boxShadow:
                     filled || isMissing
-                      ? '0 0 20px rgba(227,181,83,0.6), inset 0 1px 0 rgba(255,231,174,0.35)'
-                      : '0 4px 14px rgba(0,0,0,0.8), inset 0 1px 0 rgba(227,181,83,0.28)',
+                      ? '0 0 20px rgba(227,181,83,0.65), inset 0 1px 0 rgba(255,231,174,0.35)'
+                      : '0 6px 18px rgba(0,0,0,0.85), inset 0 1px 0 rgba(227,181,83,0.3)',
                 }}
               >
-                {Icon && <Icon className={'w-4 h-4 ' + (filled ? 'text-[#0a0a0b]' : 'text-white/85')} />}
+                {Icon && <Icon className={'w-4 h-4 ' + (filled ? 'text-[#0a0a0b]' : 'text-white/90')} />}
                 <span
                   className={
                     'block text-center font-bold leading-tight break-words ' +
                     (isMissing ? 'text-[#e3b553] text-xl' : '')
                   }
-                  style={{ fontSize: isMissing ? undefined : label.length > 12 ? '0.78rem' : '0.95rem' }}
+                  style={{ fontSize: isMissing ? undefined : label.length > 11 ? '0.75rem' : '0.9rem' }}
                 >
                   {label}
                 </span>
