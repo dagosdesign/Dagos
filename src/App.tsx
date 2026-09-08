@@ -15,6 +15,7 @@ import GoldenMatchScreen from './screens/GoldenMatchScreen';
 import TheClueScreen from './screens/TheClueScreen';
 import OddOneScreen from './screens/OddOneScreen';
 import WordPathScreen from './screens/WordPathScreen';
+import GrammarDuelScreen from './screens/GrammarDuelScreen';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -157,6 +158,7 @@ export default function App() {
   const [theClue, setTheClue] = useState(false);
   const [oddOne, setOddOne] = useState(false);
   const [wordPath, setWordPath] = useState(false);
+  const [grammarDuel, setGrammarDuel] = useState(false);
 
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
@@ -188,6 +190,7 @@ export default function App() {
       setTheClue(false);
       setOddOne(false);
       setWordPath(false);
+      setGrammarDuel(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -288,6 +291,8 @@ export default function App() {
               <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={recordQuizXp} />
             ) : wordPath ? (
               <WordPathScreen onExit={() => setWordPath(false)} recordQuizXp={recordQuizXp} />
+            ) : grammarDuel ? (
+              <GrammarDuelScreen onExit={() => setGrammarDuel(false)} recordQuizXp={recordQuizXp} />
             ) : (
               <GamesScreen
                 onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
@@ -299,6 +304,7 @@ export default function App() {
                 onPlayTheClue={() => setTheClue(true)}
                 onPlayOddOne={() => setOddOne(true)}
                 onPlayWordPath={() => setWordPath(true)}
+                onPlayGrammarDuel={() => setGrammarDuel(true)}
               />
             ))}
             {activeTab === 'ai' && (
