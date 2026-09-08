@@ -1,5 +1,16 @@
 import { useCallback, useRef, useState } from 'react';
-import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import {
+  ChevronLeft, BarChart3, Lock, Check, X, Star,
+  CloudRain, CloudLightning, CloudSnow, Wind, Snowflake, Droplet, Waves, Sun, Flame,
+  Mountain as MountainIcon, TriangleAlert, Thermometer, Bandage, Stethoscope, Pill,
+  Building2, Ambulance, Activity, ClipboardCheck, BookOpen, PenLine, FileText,
+  GraduationCap, Microscope, Mail, MessageSquare, MessagesSquare, Megaphone,
+  CreditCard, PiggyBank, Tag, ShoppingCart, Store, Ticket, Plane, Sprout, Flower2, Bug,
+  BellRing, BedDouble, Moon, Utensils, ChefHat, Coffee, Dumbbell, Trophy, Gavel, Search,
+  Factory, Briefcase, CalendarClock, CircleHelp, Lightbulb, Map, CheckCheck, Trash2,
+  HeartHandshake,
+} from 'lucide-react';
 import { WORD_PATHS, WordPath } from '../data/wordPaths';
 
 /* WORD PATH — connect the meaning, climb the mountain.
@@ -435,6 +446,15 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
     <div className="space-y-4 pb-4">
       <TopBar onExit={() => setView('levels')} level={level} />
       <Title />
+      <style>{`
+        .wp-anim { transition: all .35s ease; }
+        @keyframes wp-glow { 0%,100% { opacity:.6 } 50% { opacity:1 } }
+        .wp-beacon { animation: wp-glow 3s ease-in-out infinite; }
+        @media (prefers-reduced-motion: reduce) {
+          .wp-anim { transition: none !important; }
+          .wp-beacon { animation: none !important; }
+        }
+      `}</style>
 
       <div className="space-y-2">
         <p className="text-center text-[11px] tracking-[0.2em] text-white/50">
@@ -448,15 +468,12 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
         </div>
       </div>
 
-      <p className="text-sm text-white/70 font-light leading-snug px-1">
-        Choose the next word that correctly continues the meaning path.
-      </p>
-
       <Mountain
         nodes={q.nodes}
         answered={verdict === 'true' ? q.answer : null}
         progress={climbed}
         summit={false}
+        instruction="Choose the next word that correctly continues the meaning path."
       />
 
       {/* Four options, 2 x 2, no letters and no numbering */}
@@ -531,150 +548,240 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
   );
 }
 
-/* The mountain is the progress display, not a backdrop: the climber's height on
-   the trail and the lit checkpoints are driven by the same question progress as
-   the bar above it. */
+/* The mountain is the progress display, not a backdrop: a stone stairway climbs
+   from the foot of the peak to the lit gate at the summit. The meaning path sits
+   on the steps, the lanterns light as the climb advances, and the height reached
+   is driven by the same question progress as the bar above. */
+
+/* Icons support a node without giving the answer away. A word with no clearly
+   right icon simply gets none — a wrong icon would be worse than no icon — and
+   the missing "?" step never carries one. */
+const NODE_ICONS: Record<string, LucideIcon> = {
+  rain: CloudRain, storm: CloudLightning, snow: CloudSnow, wind: Wind, cold: Snowflake,
+  ice: Snowflake, water: Droplet, river: Waves, flood: Waves, drought: Sun, sunlight: Sun,
+  fire: Flame, smoke: Flame, earthquake: MountainIcon, landslide: MountainIcon,
+  damage: TriangleAlert, collapse: TriangleAlert, fault: TriangleAlert, accident: TriangleAlert,
+  illness: Thermometer, symptom: Thermometer, injury: Bandage, doctor: Stethoscope,
+  treatment: Pill, medicine: Pill, therapy: Pill, hospital: Building2, ambulance: Ambulance,
+  scan: Activity, diagnosis: ClipboardCheck,
+  study: BookOpen, lesson: BookOpen, homework: PenLine, exam: FileText, revision: FileText,
+  school: GraduationCap, university: GraduationCap, research: Microscope, experiment: Microscope,
+  data: BarChart3, analysis: BarChart3, draft: FileText, letter: Mail, envelope: Mail,
+  message: MessageSquare, reply: MessageSquare, conversation: MessagesSquare,
+  advertisement: Megaphone, campaign: Megaphone, protest: Megaphone,
+  payment: CreditCard, savings: PiggyBank, deposit: PiggyBank, price: Tag,
+  order: ShoppingCart, shop: Store, ticket: Ticket, booking: Ticket, airport: Plane,
+  flight: Plane, boarding: Plane,
+  seed: Sprout, plant: Sprout, growth: Sprout, flower: Flower2, bee: Bug,
+  alarm: BellRing, warning: BellRing, bed: BedDouble, sleep: Moon, tired: Moon,
+  hungry: Utensils, eat: Utensils, cook: ChefHat, cooking: ChefHat, recipe: ChefHat,
+  breakfast: Coffee, exercise: Dumbbell, training: Dumbbell, competition: Trophy,
+  victory: Trophy, crime: Gavel, arrest: Gavel, trial: Gavel, evidence: Search,
+  investigation: Search, pollution: Factory, production: Factory, work: Briefcase,
+  application: FileText, deadline: CalendarClock, problem: CircleHelp, idea: Lightbulb,
+  plan: Map, decision: CheckCheck, rubbish: Trash2, bin: Trash2, dirty: Trash2,
+  wash: Droplet, apology: HeartHandshake,
+};
+
+/* Four checkpoints climbing the stairway: lower steps sit wider and nearer. */
+const STEPS = [
+  { y: 87, w: 56 },
+  { y: 69, w: 50 },
+  { y: 52, w: 45 },
+  { y: 35, w: 40 },
+];
+
 function Mountain({
   nodes,
   answered,
   progress,
   summit,
   compact = false,
+  instruction,
 }: {
   nodes: string[];
   answered: string | null;
   progress: number;
   summit: boolean;
   compact?: boolean;
+  instruction?: string;
 }) {
-  const climber = pointAt(progress);
   const labels = [...nodes, answered ?? '?'];
   return (
     <div
       className="relative w-full rounded-3xl border border-[#e3b553]/25 overflow-hidden"
-      style={{ height: compact ? 190 : 330, background: '#040404' }}
+      style={{
+        aspectRatio: compact ? '16 / 9' : '3 / 4',
+        maxHeight: compact ? 200 : 470,
+        background: '#030303',
+      }}
     >
-      <style>{`
-        .wp-anim { transition: all .35s ease; }
-        .wp-climb { transition: left .5s ease, top .5s ease; }
-        @media (prefers-reduced-motion: reduce) {
-          .wp-anim, .wp-climb { transition: none !important; }
-          .wp-beacon { animation: none !important; }
-        }
-        @keyframes wp-glow { 0%,100% { opacity:.55 } 50% { opacity:1 } }
-        .wp-beacon { animation: wp-glow 2.6s ease-in-out infinite; }
-      `}</style>
-
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 w-full h-full">
         <defs>
-          <linearGradient id="wp-sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#121009" />
-            <stop offset="60%" stopColor="#080706" />
-            <stop offset="100%" stopColor="#030303" />
-          </linearGradient>
-          <linearGradient id="wp-trail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0%" stopColor="#8A5A12" />
-            <stop offset="100%" stopColor="#E3A72F" />
-          </linearGradient>
-          <radialGradient id="wp-summit">
-            <stop offset="0%" stopColor="#E3A72F" stopOpacity="0.9" />
+          <radialGradient id="wp-sky" cx="0.5" cy="0.1" r="0.62">
+            <stop offset="0%" stopColor="#E3A72F" stopOpacity="0.55" />
+            <stop offset="28%" stopColor="#6b4610" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#020202" stopOpacity="1" />
+          </radialGradient>
+          <radialGradient id="wp-cloud">
+            <stop offset="0%" stopColor="#E3A72F" stopOpacity="0.3" />
             <stop offset="100%" stopColor="#E3A72F" stopOpacity="0" />
           </radialGradient>
+          <radialGradient id="wp-gate">
+            <stop offset="0%" stopColor="#FFE7AE" stopOpacity="1" />
+            <stop offset="30%" stopColor="#E3A72F" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#E3A72F" stopOpacity="0" />
+          </radialGradient>
+          <linearGradient id="wp-rock" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#6b5942" />
+            <stop offset="35%" stopColor="#3a3022" />
+            <stop offset="100%" stopColor="#141109" />
+          </linearGradient>
+          <linearGradient id="wp-stone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#3c3226" />
+            <stop offset="100%" stopColor="#191510" />
+          </linearGradient>
         </defs>
 
         <rect width="100" height="100" fill="url(#wp-sky)" />
-        {/* distant range */}
-        <path d="M0,78 L14,58 L26,70 L40,44 L54,64 L66,40 L80,62 L92,48 L100,72 L100,100 L0,100 Z" fill="#0e0d0b" />
-        {/* mid range */}
-        <path d="M0,88 L12,74 L24,82 L38,62 L52,74 L64,46 L78,70 L90,60 L100,82 L100,100 L0,100 Z" fill="#15130f" />
-        {/* the climbed mountain: one face rising to the summit */}
+
+        {/* lit cloud bank flanking the peak */}
+        <ellipse cx="16" cy="42" rx="26" ry="12" fill="url(#wp-cloud)" />
+        <ellipse cx="86" cy="38" rx="28" ry="13" fill="url(#wp-cloud)" />
+        <ellipse cx="50" cy="60" rx="48" ry="15" fill="url(#wp-cloud)" opacity="0.45" />
+
+        {/* the peak, seen head on */}
         <path
-          d="M0,100 L8,93 L20,85 L32,73 L44,58 L56,40 L70,9 L80,40 L88,62 L100,88 L100,100 Z"
-          fill="#1e1a14"
+          d="M50,6 L58,18 L55,24 L64,36 L60,44 L72,58 L68,68 L84,84 L90,100 L10,100 L16,84 L32,68 L28,58 L40,44 L36,36 L45,24 L42,18 Z"
+          fill="url(#wp-rock)"
+        />
+        {/* backlit rim, so the peak's shape reads against the glow */}
+        <path
+          d="M50,6 L58,18 L55,24 L64,36 L60,44 L72,58 L68,68 L84,84 L90,100"
+          fill="none"
+          stroke="#E3A72F"
+          strokeWidth="0.55"
+          opacity="0.45"
         />
         <path
-          d="M0,100 L8,93 L20,85 L32,73 L44,58 L56,40 L70,9 L80,40 L88,62 L100,88"
+          d="M50,6 L42,18 L45,24 L36,36 L40,44 L28,58 L32,68 L16,84 L10,100"
           fill="none"
-          stroke="#3d3221"
-          strokeWidth="0.5"
+          stroke="#E3A72F"
+          strokeWidth="0.55"
+          opacity="0.45"
         />
-        {/* ridge shadow, gives the face some body */}
-        {/* the far side of the ridge falls into shadow */}
-        <path d="M70,9 L80,40 L88,62 L100,88 L100,100 L70,100 Z" fill="#000" opacity="0.45" />
-        {/* the trail itself */}
-        <polyline
-          points={TRAIL.map(p => `${p.x},${p.y}`).join(' ')}
-          fill="none"
-          stroke="url(#wp-trail)"
-          strokeWidth="0.9"
-          strokeDasharray="2.4 2"
-          opacity="0.75"
-        />
-        {/* stone steps along the trail */}
-        {Array.from({ length: 22 }).map((_, i) => {
-          const p = pointAt(i / 21);
-          const lit = i / 21 <= progress;
+        {/* ridge lines cut across the face so it reads as rock, not a flat shape */}
+        <path d="M42,18 L36,36 L28,58 L16,84 L10,100" fill="none" stroke="#a08757" strokeWidth="0.5" opacity="0.7" />
+        <path d="M58,18 L64,36 L72,58 L84,84 L90,100" fill="none" stroke="#a08757" strokeWidth="0.5" opacity="0.7" />
+        <path d="M45,24 L40,44 L32,68" fill="none" stroke="#8a7448" strokeWidth="0.35" opacity="0.55" />
+        <path d="M55,24 L60,44 L68,68" fill="none" stroke="#8a7448" strokeWidth="0.35" opacity="0.55" />
+        {/* outer shoulders */}
+        <path d="M0,100 L5,74 L18,60 L28,70 L20,86 L26,100 Z" fill="#241f16" />
+        <path d="M100,100 L95,72 L82,58 L72,70 L80,86 L74,100 Z" fill="#241f16" />
+
+        {/* the stairway: steps narrow as they recede toward the gate */}
+        {Array.from({ length: 26 }).map((_, i) => {
+          const t = i / 25;
+          const y = 99 - t * 78;
+          const half = 31 - t * 23;
+          const lit = t <= progress;
           return (
-            <rect
-              key={i}
-              x={p.x - 1.5}
-              y={p.y - 0.45}
-              width="3"
-              height="0.9"
-              rx="0.3"
-              fill={lit ? '#C88A1A' : '#231e16'}
-              opacity={lit ? 0.9 : 0.7}
-            />
+            <g key={i}>
+              <rect x={50 - half} y={y - 1.6} width={half * 2} height="1.7" rx="0.4" fill="url(#wp-stone)" />
+              <rect
+                x={50 - half}
+                y={y - 1.9}
+                width={half * 2}
+                height="0.35"
+                rx="0.2"
+                fill={lit ? '#E3A72F' : '#453a29'}
+                opacity={lit ? 0.85 : 0.5}
+              />
+            </g>
           );
         })}
-        {/* summit beacon */}
-        <circle cx="70" cy="12" r={summit ? 16 : 9} fill="url(#wp-summit)" className={summit ? 'wp-beacon' : ''} opacity={summit ? 1 : 0.5} />
-        <circle cx="70" cy="12" r="1.6" fill={summit ? '#F2D48A' : '#8A5A12'} />
-        {/* lanterns beside the path */}
-        {[
-          { x: 12, y: 84 },
-          { x: 46, y: 62 },
-          { x: 62, y: 26 },
-        ].map((l, i) => (
-          <circle key={i} cx={l.x} cy={l.y} r="0.9" fill="#E3A72F" opacity="0.55" />
-        ))}
+
+        {/* lanterns on posts, flanking the stairway */}
+        {[0.06, 0.3, 0.54, 0.78].map((t, i) => {
+          const y = 99 - t * 78;
+          const half = 31 - t * 23 + 3.8;
+          const lit = t <= progress + 0.06;
+          const r = 1.9 - t * 0.8;
+          return (
+            <g key={i} opacity={lit ? 1 : 0.55}>
+              {[50 - half, 50 + half].map(x => (
+                <g key={x}>
+                  <circle cx={x} cy={y - 4} r={r * 3.4} fill="url(#wp-gate)" opacity={lit ? 0.75 : 0.28} />
+                  <rect x={x - 0.35} y={y - 3.6} width="0.7" height="3.6" fill="#2a2318" />
+                  <rect x={x - r} y={y - 4 - r} width={r * 2} height={r * 2} rx="0.3" fill={lit ? '#F2C463' : '#3a3125'} />
+                </g>
+              ))}
+            </g>
+          );
+        })}
+
+        {/* the gate at the summit */}
+        <circle
+          cx="50"
+          cy="13"
+          r={summit ? 26 : 15}
+          fill="url(#wp-gate)"
+          className={summit ? 'wp-beacon' : ''}
+          opacity={summit ? 1 : 0.8}
+        />
+        <path d="M45.5,19 L45.5,10 Q50,4.5 54.5,10 L54.5,19 Z" fill={summit ? '#FFE7AE' : '#8a6212'} opacity={summit ? 1 : 0.9} />
+        <rect x="43.6" y="18.4" width="12.8" height="1.3" rx="0.4" fill={summit ? '#F2D48A' : '#6b4d12'} />
+        <rect x="49.2" y="12" width="1.6" height="7" rx="0.3" fill="#050403" opacity="0.7" />
       </svg>
 
-      {/* the climber, driven by question progress */}
-      <div
-        className="absolute wp-climb"
-        style={{ left: `${climber.x}%`, top: `${climber.y}%`, transform: 'translate(-50%,-50%)' }}
-      >
-        <span
-          className="block w-2.5 h-2.5 rounded-full bg-[#F2D48A]"
-          style={{ boxShadow: '0 0 12px rgba(243,212,138,0.9)' }}
-        />
-      </div>
+      {/* instruction, sitting over the scene as on the reference */}
+      {instruction && !compact && (
+        <div className="absolute left-3 top-3 max-w-[52%] rounded-2xl border border-[#e3b553]/60 bg-black/75 px-3 py-2.5">
+          <p className="text-[12px] leading-snug text-white font-medium">{instruction}</p>
+        </div>
+      )}
 
-      {/* checkpoints: the meaning path, read bottom to top */}
+      {/* the meaning path, on the steps, read bottom to top */}
       {!compact &&
         labels.map((label, i) => {
-          const p = TRAIL[i];
+          const step = STEPS[i] ?? STEPS[STEPS.length - 1];
           const isMissing = i === labels.length - 1 && label === '?';
           const filled = i === labels.length - 1 && !isMissing;
+          const Icon = isMissing ? null : NODE_ICONS[label.toLowerCase()] ?? null;
           return (
             <div
               key={i}
-              className="absolute -translate-x-1/2 -translate-y-1/2 max-w-[42%]"
-              style={{ left: `${p.x}%`, top: `${p.y}%` }}
+              className="absolute -translate-x-1/2 -translate-y-1/2 wp-anim"
+              style={{ left: '50%', top: step.y + '%', width: step.w + '%' }}
             >
-              <span
-                className={`block rounded-full border px-3 py-1.5 text-center text-[12px] font-semibold leading-tight break-words wp-anim ${
-                  isMissing
-                    ? 'border-[#e3b553] text-[#e3b553] bg-[#0a0a0b]'
-                    : filled
-                      ? 'border-[#e3b553] text-[#0a0a0b] bg-[#e3b553]'
-                      : 'border-[#e3b553]/45 text-white bg-[#0a0a0b]/90'
-                }`}
-                style={filled || isMissing ? { boxShadow: '0 0 14px rgba(227,181,83,0.45)' } : undefined}
+              <div
+                className={
+                  'rounded-2xl border px-2 py-2.5 flex flex-col items-center justify-center gap-1 ' +
+                  (filled
+                    ? 'border-[#e3b553] text-[#0a0a0b]'
+                    : 'border-[#e3b553]/55 text-white')
+                }
+                style={{
+                  background: filled
+                    ? 'linear-gradient(180deg,#F2C463,#C88A1A)'
+                    : 'linear-gradient(180deg,rgba(28,24,18,0.94),rgba(8,7,6,0.96))',
+                  boxShadow:
+                    filled || isMissing
+                      ? '0 0 20px rgba(227,181,83,0.6), inset 0 1px 0 rgba(255,231,174,0.35)'
+                      : '0 4px 14px rgba(0,0,0,0.8), inset 0 1px 0 rgba(227,181,83,0.28)',
+                }}
               >
-                {label}
-              </span>
+                {Icon && <Icon className={'w-4 h-4 ' + (filled ? 'text-[#0a0a0b]' : 'text-white/85')} />}
+                <span
+                  className={
+                    'block text-center font-bold leading-tight break-words ' +
+                    (isMissing ? 'text-[#e3b553] text-xl' : '')
+                  }
+                  style={{ fontSize: isMissing ? undefined : label.length > 12 ? '0.78rem' : '0.95rem' }}
+                >
+                  {label}
+                </span>
+              </div>
             </div>
           );
         })}
