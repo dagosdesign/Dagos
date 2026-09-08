@@ -4,6 +4,7 @@ import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
+import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -415,28 +416,18 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
         <p className="text-xs text-white/40 font-light">Bu anlama gelen İngilizce kelimeyi yaz</p>
       </div>
 
-      <form onSubmit={(e) => { e.preventDefault(); submit(); }} className="space-y-3">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
+      {/* the app's own keyboard, so no system keyboard is needed here either */}
+      <div className="space-y-3">
+        <AnswerDisplay value={input} placeholder="İngilizce kelimeyi klavyeden yaz" />
+        <GameKeyboard
+          onKey={ch => !submitted && setInput(v => (v.length < 24 ? v + ch : v))}
+          onDelete={() => !submitted && setInput(v => v.slice(0, -1))}
+          onEnter={submit}
+          enterLabel="KONTROL ET"
+          enterDisabled={!input.trim()}
           disabled={submitted}
-          placeholder="İngilizce kelimeyi yaz..."
-          autoFocus
-          className="w-full text-base bg-white/[0.02] border border-white/[0.08] focus:border-[#e3b553] focus:ring-1 focus:ring-[#e3b553] rounded-xl px-4 py-3.5 outline-hidden text-white font-light placeholder-white/20"
         />
-        {!submitted && (
-          <button
-            type="submit"
-            disabled={!input.trim()}
-            className={`w-full py-3.5 rounded-xl text-xs font-bold transition-all ${
-              input.trim() ? 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer' : 'bg-white/[0.02] text-white/25 border border-white/[0.04] cursor-not-allowed'
-            }`}
-          >
-            Kontrol Et
-          </button>
-        )}
-      </form>
+      </div>
 
       {submitted && (
         <div className={`rounded-2xl border p-5 space-y-2 ${isCorrect ? 'bg-[#e3b553]/5 border-[#e3b553]/30' : 'bg-red-950/20 border-red-500/40'}`}>
