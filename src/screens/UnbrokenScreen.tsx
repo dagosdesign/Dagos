@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Ban } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 10 seconds
@@ -44,7 +45,7 @@ const PROPER_NAMES = new Set([
 const UNSAFE = new Set(['damn', 'hell', 'idiot', 'stupid', 'shut']);
 
 function normalize(s: string): string {
-  return s.toLowerCase().replace(/[^a-z]/g, '');
+  return foldAnswer(s).replace(/[^a-z]/g, '');
 }
 
 export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {

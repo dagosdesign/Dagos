@@ -4,6 +4,7 @@ import { FLASHCARDS } from '../data/flashcards';
 import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
+import { foldAnswer } from '../lib/answerText';
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -221,11 +222,11 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
   };
 
   const submitWord = () => {
-    const guess = draft.trim().toUpperCase();
+    const guess = foldAnswer(draft).trim();
     if (!guess || roundOver) return;
     setTyping(false);
     setDraft('');
-    if (guess === word) solveWord(50 + lives * 5);
+    if (guess === foldAnswer(word)) solveWord(50 + lives * 5);
     else loseLife();
   };
 
@@ -419,6 +420,7 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
         enterLabel="SUBMIT WORD"
         enterDisabled={!draft.trim()}
         disabled={roundOver}
+        latinOnly={!typing}
         toneOf={
           typing
             ? undefined

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, SkipForward, Check, X, Minus } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* THE A–Z — read the Turkish clue, recall the English word, answer in 20 seconds.
@@ -27,8 +28,7 @@ interface AtoZScreenProps {
 }
 
 function normalize(s: string): string {
-  return s
-    .toLowerCase()
+  return foldAnswer(s)
     .replace(/[^a-z\s]/g, '')
     .replace(/\s+/g, ' ')
     .trim();

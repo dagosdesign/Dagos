@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Zap, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
@@ -39,7 +40,7 @@ interface WhatAmIScreenProps {
 }
 
 function normalize(s: string): string {
-  return s.toLowerCase().replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
+  return foldAnswer(s).replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
 }
 
 function shuffle<T>(arr: T[]): T[] {

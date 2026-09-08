@@ -1,10 +1,18 @@
 import { Delete, CornerDownLeft } from 'lucide-react';
 
-/* The one on-screen keyboard Lexistencehub uses wherever an English word is
-   typed. QWERTY layout, rounded-square gold keys, sized for a thumb — so a
-   player never meets the phone's system keyboard inside a game. */
+/* The one on-screen keyboard Lexistencehub uses wherever a word is typed:
+   the Turkish Q layout, rounded-square gold keys, sized for a thumb — so a
+   player never meets the phone's system keyboard inside a game.
 
-const ROWS = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'].map(r => r.split(''));
+   Answers are English words, and src/lib/answerText.ts folds the Turkish
+   letters onto their English neighbours before comparing, so reaching for İ
+   or Ş by habit never costs a correct answer. */
+
+const ROWS = ['QWERTYUIOPĞÜ', 'ASDFGHJKLŞİ', 'ZXCVBNMÖÇ'].map(r => r.split(''));
+
+/* The letters that cannot appear in an English word. WORDLOCK's letter mode
+   greys them out rather than hiding them, so the layout never shifts. */
+const TURKISH_ONLY = new Set(['Ğ', 'Ü', 'Ş', 'İ', 'Ö', 'Ç']);
 
 export type KeyTone = 'idle' | 'correct' | 'wrong' | 'hint';
 
@@ -20,6 +28,8 @@ interface GameKeyboardProps {
   toneOf?: (ch: string) => KeyTone;
   disabledKeys?: Set<string>;
   disabled?: boolean;
+  /** Greys out the Turkish-only keys — for picking letters of an English word. */
+  latinOnly?: boolean;
 }
 
 const TONE: Record<KeyTone, string> = {
@@ -38,24 +48,26 @@ export default function GameKeyboard({
   toneOf,
   disabledKeys,
   disabled = false,
+  latinOnly = false,
 }: GameKeyboardProps) {
   const controls = !!onDelete || !!onEnter;
   return (
     <div className="space-y-2.5">
       <div className="space-y-1.5">
         {ROWS.map((row, r) => (
-          <div key={r} className="flex justify-center gap-1.5">
+          <div key={r} className="flex justify-center gap-1">
             {row.map(ch => {
-              const tone = toneOf ? toneOf(ch) : 'idle';
-              const off = disabled || disabledKeys?.has(ch) || tone === 'wrong';
+              const blocked = latinOnly && TURKISH_ONLY.has(ch);
+              const tone = !blocked && toneOf ? toneOf(ch) : 'idle';
+              const off = disabled || blocked || disabledKeys?.has(ch) || tone === 'wrong';
               return (
                 <button
                   key={ch}
                   type="button"
                   onClick={() => onKey(ch)}
                   disabled={off}
-                  className={`flex-1 min-w-0 max-w-[46px] h-[46px] sm:h-[50px] rounded-xl border text-[15px] sm:text-base font-bold transition-all ${
-                    off && tone === 'idle' ? 'border-white/10 text-white/30 bg-white/[0.02]' : TONE[tone]
+                  className={`flex-1 min-w-0 max-w-[44px] h-[46px] sm:h-[50px] rounded-xl border text-[15px] sm:text-base font-bold transition-all ${
+                    off && tone === 'idle' ? 'border-white/10 text-white/25 bg-white/[0.02]' : TONE[tone]
                   }`}
                   style={tone === 'correct' ? { boxShadow: '0 0 10px rgba(227,181,83,0.35)' } : undefined}
                 >

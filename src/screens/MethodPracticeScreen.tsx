@@ -5,6 +5,7 @@ import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
 import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
+import { foldAnswer } from '../lib/answerText';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -395,7 +396,7 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
   }
   if (!current) return null;
 
-  const normalize = (s: string) => s.toLowerCase().trim().replace(/\s+/g, ' ');
+  const normalize = (s: string) => foldAnswer(s).trim().replace(/\s+/g, ' ');
   const isCorrect = normalize(input) === normalize(current.word);
 
   const submit = () => {
