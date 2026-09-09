@@ -11,7 +11,7 @@ import {
   Factory, Briefcase, CalendarClock, CircleHelp, Lightbulb, Map, CheckCheck, Trash2,
   HeartHandshake,
 } from 'lucide-react';
-import { WORD_PATHS, WordPath } from '../data/wordPaths';
+import { SEMANTIC_PATHS, SemanticPath } from '../data/wordPaths';
 
 /* WORD PATH — connect the meaning, climb the mountain.
    Each question is a meaning path whose next step must be found. Exactly 20 per
@@ -108,33 +108,116 @@ function tiersFor(level: number): [number, number] {
   return [4, 5];
 }
 
-/* Every path is validated before it can reach a player. */
-function isValid(p: WordPath): boolean {
-  if (p.nodes.length < 3) return false;
-  if (!p.answer.trim() || !p.explanation.trim()) return false;
-  if (p.distractors.length !== 3) return false;
-  const all = [p.answer, ...p.distractors].map(w => w.trim().toLowerCase());
-  if (all.some(w => !w)) return false;
-  if (new Set(all).size !== 4) return false; // no duplicate options
-  if (p.nodes.some(n => !n.trim())) return false;
-  // an option must not simply repeat a node already shown on the path
-  if (all.some(w => p.nodes.map(n => n.toLowerCase()).includes(w))) return false;
+/* WORD PATH is a semantic vocabulary game. A question is three words from one
+   semantic group plus a fourth word from the same group as the answer; the three
+   distractors are associated with the topic but are NOT members of the group, so
+   exactly one option can ever be right.
+
+   Nothing here uses cause and effect, process, routine or chronology: the only
+   question the player answers is "which word belongs with these?". */
+
+/* Every group is checked before it can produce a question. */
+function isValidGroup(g: SemanticPath): boolean {
+  if (g.words.length < 4 || g.distractors.length < 3) return false;
+  if (!g.predicate.trim() || !g.label.trim()) return false;
+  const words = g.words.map(w => w.trim().toLowerCase());
+  const dis = g.distractors.map(w => w.trim().toLowerCase());
+  if (words.some(w => !w) || dis.some(w => !w)) return false;
+  if (new Set(words).size !== words.length) return false;
+  if (new Set(dis).size !== dis.length) return false;
+  // a distractor may never be a member of its own group
+  if (dis.some(d => words.includes(d))) return false;
   return true;
+}
+
+const GROUPS = SEMANTIC_PATHS.filter(isValidGroup);
+
+/* Ambiguity guard. A question is rejected when a distractor could also be
+   defended as belonging with the path — either because some other group holds
+   the whole path and that distractor too, or because the word already appears
+   on the path. Only one option may satisfy the relationship. */
+function isAmbiguous(nodes: string[], answer: string, distractors: string[], groupId: string): boolean {
+  const all = [...nodes, answer, ...distractors].map(w => w.trim().toLowerCase());
+  if (all.some(w => !w)) return true;
+  if (new Set(all).size !== all.length) return true; // a word may appear only once
+  for (const g of GROUPS) {
+    if (g.id === groupId) continue;
+    const holdsPath = nodes.every(n => g.words.includes(n));
+    if (!holdsPath) continue;
+    if (distractors.some(d => g.words.includes(d))) return true;
+  }
+  return false;
+}
+
+/* All 3-word paths a group can show. */
+function trios(words: string[]): [string, string, string][] {
+  const out: [string, string, string][] = [];
+  for (let i = 0; i < words.length - 2; i++)
+    for (let j = i + 1; j < words.length - 1; j++)
+      for (let k = j + 1; k < words.length; k++) out.push([words[i], words[j], words[k]]);
+  return out;
+}
+
+interface Candidate {
+  id: string;
+  nodes: string[];
+  answer: string;
+  distractors: string[];
+  explanation: string;
+  relation: string;
+}
+
+/* The candidate pool for a level: validated, ambiguity-free questions built from
+   the semantic groups of that difficulty band. Deterministic per level so the
+   band is stable, and large enough that a run can pick 20 unique questions. */
+function buildPool(level: number): Candidate[] {
+  const [minTier, maxTier] = tiersFor(level);
+  const band = GROUPS.filter(g => g.tier >= minTier && g.tier <= maxTier);
+  if (!band.length) return [];
+
+  const rnd = mulberry32(level * 6151 + 7);
+  const rotated = shuffle(band, rnd);
+  const out: Candidate[] = [];
+  const seen = new Set<string>();
+
+  for (let pass = 0; pass < 5 && out.length < 60; pass++) {
+    for (const g of rotated) {
+      if (out.length >= 60) break;
+      const combos = shuffle(trios(g.words), rnd);
+      const combo = combos[(pass + level) % combos.length];
+      if (!combo) continue;
+      const rest = g.words.filter(w => !combo.includes(w));
+      if (!rest.length) continue;
+      const answer = rest[Math.floor(rnd() * rest.length)];
+      const key = [...combo].sort().join('|') + '>' + answer;
+      if (seen.has(key)) continue;
+
+      const distractors = shuffle(g.distractors, rnd).slice(0, 3);
+      if (distractors.length !== 3) continue;
+      if (isAmbiguous(combo, answer, distractors, g.id)) continue;
+
+      seen.add(key);
+      const [a, b, c] = combo;
+      out.push({
+        id: `${g.id}-${key}`,
+        nodes: combo,
+        answer,
+        distractors,
+        relation: g.relation,
+        explanation: `${a}, ${b} and ${c} are ${g.predicate}. ${answer} belongs to the same group; the other options do not.`,
+      });
+    }
+  }
+  return out;
 }
 
 /* Twenty unique questions for a level. The correct option is spread evenly over
    the four cells (five each) so its position can never be learned, and every
    layout is fixed here — re-renders never reshuffle anything. */
 function buildRound(level: number): Question[] {
-  const [minTier, maxTier] = tiersFor(level);
-  const band = WORD_PATHS.filter(p => p.tier >= minTier && p.tier <= maxTier && isValid(p));
-  if (band.length < QUESTIONS_PER_LEVEL) return [];
-
-  // Level-seeded ordering gives each level its own flavour; the per-run shuffle
-  // below keeps the order and the exact selection varying between attempts.
-  const seeded = shuffle(band, mulberry32(level * 6151 + 7));
-  const preferred = seeded.slice(0, Math.max(QUESTIONS_PER_LEVEL, Math.min(seeded.length, 34)));
-  const picked = shuffle(preferred).slice(0, QUESTIONS_PER_LEVEL);
+  const pool = buildPool(level);
+  if (pool.length < QUESTIONS_PER_LEVEL) return [];
+  const picked = shuffle(pool).slice(0, QUESTIONS_PER_LEVEL);
   const slots = shuffle(Array.from({ length: QUESTIONS_PER_LEVEL }, (_, i) => i % 4));
 
   return picked.map((p, i) => {
@@ -149,7 +232,7 @@ function buildRound(level: number): Question[] {
       correctId: correct.id,
       answer: p.answer,
       explanation: p.explanation,
-      relationshipType: p.relationshipType,
+      relationshipType: p.relation,
     };
   });
 }
@@ -473,7 +556,7 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
         answered={verdict === 'true' ? q.answer : null}
         progress={climbed}
         summit={false}
-        instruction="Choose the next word that correctly continues the meaning path."
+        instruction="Choose the word with the closest meaning connection."
       />
 
       {/* Four options, 2 x 2, no letters and no numbering */}
