@@ -3,6 +3,7 @@ import { ChevronLeft, BarChart3, Mic, Zap, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import { rampedPick, wordDifficulty } from '../lib/difficulty';
+import { buildWhatAmIClues } from '../lib/clues';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
@@ -59,26 +60,17 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
      hidden single word plus three clean English clues that never leak it. */
   const questions = useMemo<Question[]>(() => {
     if (!vocab) return [];
-    const hide = (text: string, word: string) =>
-      text.replace(new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`, 'gi'), '_____');
     const out: Question[] = [];
-    // Gather far more than we need, then lay them out easiest to hardest below.
+    // Gather a wide pool of words that can carry three real clues, then lay the
+    // session out from easiest to hardest below.
     for (const card of shuffle(FLASHCARDS)) {
       if (out.length >= TOTAL_QUESTIONS * 8) break;
       const w = card.word;
       if (!/^[a-zA-Z]{3,14}$/.test(w)) continue;
       if (out.some(q => q.word.toLowerCase() === w.toLowerCase())) continue;
       const entry = vocab[w.toLowerCase()];
-      const definition = entry?.definition?.trim();
-      const example = (entry?.example || card.exampleSentence || '').trim();
-      if (!definition || !example) continue;
-      const pos = card.partOfSpeech && card.partOfSpeech !== 'word' ? card.partOfSpeech : 'word';
-      const clues: [string, string, string] = [
-        `It is a ${pos} used in everyday English.`,
-        hide(definition, w),
-        hide(example, w),
-      ];
-      if (clues.some(c => c.toLowerCase().includes(w.toLowerCase()))) continue; // never leak the answer
+      const clues = buildWhatAmIClues(w, entry?.definition ?? '', entry?.example || card.exampleSentence || '');
+      if (!clues) continue; // a word we cannot clue specifically is left out
       out.push({
         id: `${w}-${out.length}`,
         word: w.toUpperCase(),
