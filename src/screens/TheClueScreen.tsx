@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { loadVocabulary } from '../lib/vocabulary';
+import { levelDifficulty } from '../lib/difficulty';
 
 /* THE CLUE — read an English clue, pick the English word it describes.
    Exactly 20 questions per level; only 20/20 unlocks the next level.
@@ -135,31 +136,27 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
     return out;
   }, [vocab]);
 
-  const byBand = useMemo(() => {
-    const m: Record<number, Item[]> = {};
-    for (const it of pool) (m[it.band] ??= []).push(it);
-    for (const k of Object.keys(m)) m[+k].sort((a, b) => a.hardness - b.hardness);
-    return m;
-  }, [pool]);
+  /* The whole pool in teaching order: school words first, exam words last, and
+     each band sorted from its easiest word to its hardest. */
+  const ordered = useMemo<Item[]>(
+    () => [...pool].sort((a, b) => a.band - b.band || a.hardness - b.hardness),
+    [pool]
+  );
 
-  /* Level difficulty: bands open up as levels rise and the window inside a band
-     advances, so levels stay playable for ever (level 101, 200, …). */
+  /* A level reads a window of that order, and the window slides up with the
+     level. There are no band steps to fall off, so the climb is smooth from
+     level 1 onward - the first ten levels already move through easy school
+     vocabulary into harder school vocabulary - and it never caps out, so level
+     101, 200 and beyond keep working at the hardest end. */
   const buildLevel = useCallback(
     (level: number): Question[] => {
-      const bands = Object.keys(byBand).map(Number).sort((a, b) => a - b);
-      if (bands.length === 0) return [];
-      const bandIdx = Math.min(bands.length - 1, Math.floor((level - 1) / 12));
-      const band = bands[bandIdx];
-      const list = byBand[band] ?? [];
-      if (list.length < 8) return [];
-
-      // window of candidates inside the band, sliding with the level and wrapping
-      const windowSize = Math.max(80, QUESTIONS_PER_LEVEL * 4);
-      const start = ((level - 1) * 20) % Math.max(1, list.length);
-      const candidates: Item[] = [];
-      for (let i = 0; i < Math.min(windowSize, list.length); i++) {
-        candidates.push(list[(start + i) % list.length]);
-      }
+      const n = ordered.length;
+      if (n < 40) return [];
+      const windowSize = Math.min(n, Math.max(140, QUESTIONS_PER_LEVEL * 6));
+      const position = (levelDifficulty(level) - 1) / 4; // 0 at level 1, 1 at level 100
+      const start = Math.floor(position * Math.max(0, n - windowSize));
+      const list: Item[] = ordered.slice(start, start + windowSize);
+      const candidates: Item[] = list;
 
       const questions: Question[] = [];
       const usedIds = new Set<string>();
@@ -191,7 +188,7 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
       }
       return questions.length === QUESTIONS_PER_LEVEL ? questions : [];
     },
-    [byBand]
+    [ordered]
   );
 
   /* ---- progress ---- */

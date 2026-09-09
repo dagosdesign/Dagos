@@ -5,6 +5,7 @@ import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { foldAnswer } from '../lib/answerText';
+import { rampedPick, wordDifficulty } from '../lib/difficulty';
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -116,7 +117,9 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
             })()
           : FLASHCARDS.filter(f => f.category === category);
     const usable = pool.filter(f => /^[a-zA-Z]{4,12}$/.test(f.word));
-    return shuffle(usable).slice(0, WORDS_PER_SET);
+    // The set climbs: the first word is the gentlest the pool offers and the
+    // tenth the hardest, with the exact words still changing between runs.
+    return rampedPick(usable, WORDS_PER_SET, wordDifficulty);
   }, [category]);
 
   const [idx, setIdx] = useState(0);

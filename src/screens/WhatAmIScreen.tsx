@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Zap, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
+import { rampedPick, wordDifficulty } from '../lib/difficulty';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
@@ -24,6 +25,7 @@ interface Question {
   word: string;
   clues: [string, string, string];
   length: number;
+  difficulty: number;
 }
 
 interface QuestionResult {
@@ -60,8 +62,9 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     const hide = (text: string, word: string) =>
       text.replace(new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`, 'gi'), '_____');
     const out: Question[] = [];
+    // Gather far more than we need, then lay them out easiest to hardest below.
     for (const card of shuffle(FLASHCARDS)) {
-      if (out.length >= TOTAL_QUESTIONS) break;
+      if (out.length >= TOTAL_QUESTIONS * 8) break;
       const w = card.word;
       if (!/^[a-zA-Z]{3,14}$/.test(w)) continue;
       if (out.some(q => q.word.toLowerCase() === w.toLowerCase())) continue;
@@ -76,9 +79,15 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
         hide(example, w),
       ];
       if (clues.some(c => c.toLowerCase().includes(w.toLowerCase()))) continue; // never leak the answer
-      out.push({ id: `${w}-${out.length}`, word: w.toUpperCase(), clues, length: w.length });
+      out.push({
+        id: `${w}-${out.length}`,
+        word: w.toUpperCase(),
+        clues,
+        length: w.length,
+        difficulty: wordDifficulty(card),
+      });
     }
-    return out;
+    return rampedPick(out, TOTAL_QUESTIONS, q => q.difficulty);
   }, [vocab]);
 
   const [index, setIndex] = useState(0);

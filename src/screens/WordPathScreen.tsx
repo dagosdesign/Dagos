@@ -12,6 +12,7 @@ import {
   HeartHandshake,
 } from 'lucide-react';
 import { SEMANTIC_PATHS, SemanticPath } from '../data/wordPaths';
+import { levelDifficulty, tierWindow, tierWeight, weightedShuffle } from '../lib/difficulty';
 
 /* WORD PATH — connect the meaning, climb the mountain.
    Each question is a meaning path whose next step must be found. Exactly 20 per
@@ -101,11 +102,7 @@ function saveProgress(p: Progress) {
 /* Difficulty band. Tier carries vocabulary level, relationship subtlety and how
    close the distractors sit; the bands keep rising and never cap out. */
 function tiersFor(level: number): [number, number] {
-  if (level <= 10) return [1, 1];
-  if (level <= 30) return [1, 2];
-  if (level <= 60) return [2, 3];
-  if (level <= 100) return [3, 4];
-  return [4, 5];
+  return tierWindow(levelDifficulty(level));
 }
 
 /* WORD PATH is a semantic vocabulary game. A question is three words from one
@@ -171,12 +168,15 @@ interface Candidate {
    the semantic groups of that difficulty band. Deterministic per level so the
    band is stable, and large enough that a run can pick 20 unique questions. */
 function buildPool(level: number): Candidate[] {
+  const d = levelDifficulty(level);
   const [minTier, maxTier] = tiersFor(level);
   const band = GROUPS.filter(g => g.tier >= minTier && g.tier <= maxTier);
   if (!band.length) return [];
 
   const rnd = mulberry32(level * 6151 + 7);
-  const rotated = shuffle(band, rnd);
+  // Groups whose tier matches this level come up first, so consecutive levels
+  // inside one band still differ in how hard they read.
+  const rotated = weightedShuffle(band, g => tierWeight(g.tier, d), rnd);
   const out: Candidate[] = [];
   const seen = new Set<string>();
 

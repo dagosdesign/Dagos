@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, RotateCcw, Check } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { rampedPick, wordDifficulty } from '../lib/difficulty';
 
 /* WORD BUILD — read the Turkish meaning, build the English word from shuffled
    letter tiles within 45 seconds. A wrong CHECK WORD only resets the tiles;
@@ -20,6 +21,7 @@ interface Question {
   meaning: string; // Turkish prompt
   word: string; // hidden English target (uppercase)
   tiles: Tile[]; // shuffled, one per target letter
+  difficulty: number;
 }
 
 interface WordBuildScreenProps {
@@ -80,8 +82,10 @@ function makeTiles(word: string): Tile[] {
 
 function buildQuestions(): Question[] {
   const out: Question[] = [];
+  // Collect a wide pool first, then lay it out from the shortest, plainest word
+  // to the longest exam word, so the run climbs.
   for (const card of shuffle(FLASHCARDS)) {
-    if (out.length >= TOTAL_QUESTIONS) break;
+    if (out.length >= TOTAL_QUESTIONS * 8) break;
     const w = card.word;
     if (!/^[a-zA-Z]{3,10}$/.test(w)) continue; // single words keep the row readable
     const meaning = (card.turkishMeaning || '').split(',')[0].trim();
@@ -94,9 +98,11 @@ function buildQuestions(): Question[] {
     const a = tiles.map(t => t.letter).sort().join('');
     const b = word.split('').sort().join('');
     if (a !== b) continue;
-    out.push({ id: `${word}-${out.length}`, meaning, word, tiles });
+    out.push({ id: `${word}-${out.length}`, meaning, word, tiles, difficulty: wordDifficulty(card) });
   }
-  return out;
+  // In WORD BUILD the number of tiles is most of the difficulty, so length
+  // weighs as heavily as the deck the word comes from.
+  return rampedPick(out, TOTAL_QUESTIONS, q => q.difficulty + q.word.length * 0.8);
 }
 
 export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScreenProps) {

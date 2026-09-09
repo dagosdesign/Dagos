@@ -1,6 +1,7 @@
 import { PointerEvent as ReactPointerEvent, useCallback, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, GripVertical, RotateCcw, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
+import { wordDifficulty } from '../lib/difficulty';
 
 /* GOLDEN MATCH — slide the English cards onto the Turkish rows. Nothing is
    marked right or wrong until CHECK ANSWERS is pressed. No timer, no lives. */
@@ -28,12 +29,14 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 /* Ten unambiguous pairs: unique Turkish meanings, unique English words. */
-function buildPairs(): Pair[] {
-  const out: Pair[] = [];
+/* Board 1 is the gentlest ten pairs the decks offer and every board after it is
+   a step harder, so the game climbs the way the level games do. */
+function buildPairs(round = 1): Pair[] {
+  const out: Array<Pair & { difficulty: number }> = [];
   const seenTr = new Set<string>();
   const seenEn = new Set<string>();
   for (const card of shuffle(FLASHCARDS)) {
-    if (out.length >= PAIRS) break;
+    if (out.length >= PAIRS * 12) break;
     const en = card.word.trim();
     const tr = (card.turkishMeaning || '').split(',')[0].trim();
     if (!/^[a-zA-Z][a-zA-Z ]{2,13}$/.test(en)) continue;
@@ -43,15 +46,23 @@ function buildPairs(): Pair[] {
     if (seenEn.has(ek) || seenTr.has(tk)) continue;
     seenEn.add(ek);
     seenTr.add(tk);
-    out.push({ id: `${ek}-${out.length}`, turkish: tr, english: en });
+    out.push({ id: `${ek}-${out.length}`, turkish: tr, english: en, difficulty: wordDifficulty(card) });
   }
-  return out;
+  // Slide a window up the sorted pool as the rounds go by.
+  const sorted = out.sort((a, b) => a.difficulty - b.difficulty);
+  const span = Math.max(PAIRS, Math.floor(sorted.length / 6));
+  const start = Math.min(Math.max(0, sorted.length - span), (round - 1) * Math.floor(span / 2));
+  const band = sorted.slice(start, start + span);
+  return shuffle(band.length >= PAIRS ? band : sorted).slice(0, PAIRS);
 }
 
 export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchScreenProps) {
   // A round's words and their shuffled order are real state: they are created
   // once per round, so a re-render can never silently rebuild the board.
-  const [pairs, setPairs] = useState<Pair[]>(() => buildPairs());
+  // Each completed board raises the round, and the next board is drawn a step
+  // higher up the difficulty range — board 1 is the gentlest, board 5 harder.
+  const [round, setRound] = useState(1);
+  const [pairs, setPairs] = useState<Pair[]>(() => buildPairs(1));
   const [order, setOrder] = useState<string[]>(() => shuffle(pairs.map(p => p.id)));
   const [matches, setMatches] = useState<Record<string, string | null>>({});
   const [checked, setChecked] = useState(false);
@@ -60,9 +71,13 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
   const dragRef = useRef<{ id: string; dx: number; dy: number; x0: number; y0: number; moved: boolean; fromRow: string | null } | null>(null);
 
   const newRound = useCallback(() => {
-    const next = buildPairs();
-    setPairs(next);
-    setOrder(shuffle(next.map(p => p.id)));
+    setRound(r => {
+      const nextRound = r + 1;
+      const next = buildPairs(nextRound);
+      setPairs(next);
+      setOrder(shuffle(next.map(p => p.id)));
+      return nextRound;
+    });
     setMatches({});
     setChecked(false);
     setSelected(null);
@@ -180,6 +195,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
           <span className="text-[#e3b553]">GOLDEN</span> <span className="text-white">MATCH</span>
         </h1>
         <p className="text-[10px] tracking-[0.28em] text-white/45">MATCH THE WORDS</p>
+        <p className="text-[10px] tracking-[0.2em] text-[#e3b553]/80">ROUND {round}</p>
       </div>
 
       {checked && (

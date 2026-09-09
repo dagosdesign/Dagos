@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { SEMANTIC_GROUPS, SemanticGroup, CONFLICTS } from '../data/oddOneGroups';
+import { levelDifficulty, tierWindow, nearness, tierWeight, weightedShuffle } from '../lib/difficulty';
 
 /* ODD ONE — spot the difference.
    Four English words: three share one clear relationship, one does not.
@@ -96,12 +97,15 @@ function saveProgress(p: Progress) {
    a far odd word (different domain) is easier to spot than a near one. The
    bands keep climbing and never cap out, so level 101, 200 and beyond keep
    working with the hardest settings. */
-function bandFor(level: number): { minTier: number; maxTier: number; near: boolean } {
-  if (level <= 10) return { minTier: 1, maxTier: 1, near: false };
-  if (level <= 30) return { minTier: 1, maxTier: 2, near: false };
-  if (level <= 60) return { minTier: 2, maxTier: 3, near: true };
-  if (level <= 100) return { minTier: 3, maxTier: 4, near: true };
-  return { minTier: 4, maxTier: 5, near: true };
+function bandFor(level: number): { minTier: number; maxTier: number; nearRatio: number; d: number } {
+  const d = levelDifficulty(level);
+  const [minTier, maxTier] = tierWindow(d);
+  // The odd word moves closer as the climb goes on: a different domain at first,
+  // the same domain later, which asks for more vocabulary without making the
+  // question vaguer. It is a proportion, not a switch, so consecutive levels
+  // differ — around level 5 a fifth of the board is a near miss, by level 10
+  // nearly half of it.
+  return { minTier, maxTier, nearRatio: nearness(d), d };
 }
 
 /* Ambiguity guard. A candidate is rejected when any group would give a second
@@ -133,13 +137,14 @@ function trios(words: string[]): [string, string, string][] {
    from real semantic groups. Deterministic per level so the difficulty band is
    stable, and always large enough that a run can pick 20 unique questions. */
 function buildPool(level: number): Question[] {
-  const { minTier, maxTier, near } = bandFor(level);
+  const { minTier, maxTier, nearRatio, d } = bandFor(level);
   const inBand = SEMANTIC_GROUPS.filter(g => g.tier >= minTier && g.tier <= maxTier && g.words.length >= 3);
   if (inBand.length < 2) return [];
 
   const rnd = mulberry32(level * 7919 + 13);
   // Rotate the starting point with the level so level 5, 105 and 205 differ.
-  const rotated = shuffle(inBand, rnd);
+  // Groups whose tier matches this level come up first.
+  const rotated = weightedShuffle(inBand, g => tierWeight(g.tier, d), rnd);
   const out: Question[] = [];
   const seenSets = new Set<string>();
 
@@ -154,6 +159,7 @@ function buildPool(level: number): Question[] {
       // clearly different domain.
       const blocked = CONFLICTS.get(group.id);
       const usable = (g: SemanticGroup) => g.id !== group.id && !blocked?.has(g.id);
+      const near = rnd() < nearRatio;
       const donors = rotated.filter(g =>
         usable(g) && (near ? g.domain === group.domain : g.domain !== group.domain)
       );
