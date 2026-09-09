@@ -16,62 +16,87 @@ interface UnbrokenScreenProps {
   onExit: () => void;
 }
 
-/* ---- prohibited categories (checked before dictionary lookup so the student
-   gets the precise reason, as specified) ---- */
+/* The four forbidden categories, and nothing else. Every other valid English
+   word is accepted - the dictionary is the authority, not this file.
+
+   A name or brand is listed here only when it is NOT also an ordinary English
+   word. "turkey", "china", "apple", "shell", "amazon", "rose", "mark", "will"
+   and "frank" stay playable, because rejecting them would be a false rejection
+   of the common noun the player almost certainly meant. */
 const NUMBER_WORDS = new Set([
   'zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve',
   'thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty','thirty',
   'forty','fifty','sixty','seventy','eighty','ninety','hundred','thousand','million','billion',
-  'first','second','third',
+  'trillion','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth',
+  'eleventh','twelfth','twentieth','thirtieth','hundredth','thousandth',
 ]);
 const BRANDS = new Set([
-  'nike','adidas','puma','samsung','google','facebook','instagram','youtube','twitter','tiktok',
-  'coca','cola','pepsi','fanta','toyota','honda','bmw','mercedes','audi','volkswagen','ford',
-  'sony','microsoft','netflix','spotify','tesla','ferrari','gucci','prada','zara','ikea',
-  'starbucks','mcdonalds','burger','lego','nintendo','playstation','xbox','huawei','xiaomi',
+  'nike','adidas','reebok','samsung','google','facebook','instagram','youtube','twitter','tiktok',
+  'pepsi','fanta','sprite','toyota','honda','bmw','mercedes','audi','volkswagen','renault','peugeot',
+  'sony','microsoft','netflix','spotify','tesla','ferrari','lamborghini','gucci','prada','zara',
+  'ikea','starbucks','mcdonalds','lego','nintendo','playstation','xbox','huawei','xiaomi','nestle',
+  'danone','unilever','vodafone','siemens','philips','panasonic','yamaha','kawasaki','suzuki',
 ]);
 const ABBREVIATIONS = new Set([
-  'usa','uk','un','eu','tv','fbi','cia','nasa','ceo','atm','pc','id','dvd','cd','gps','sms','pdf',
-  'hiv','aids','bbc','cnn','nba','nfl','ufo','dj','vip','phd','faq','asap','diy','gpa','ok','ky',
+  'usa','uk','un','eu','tv','fbi','cia','nasa','ceo','cfo','atm','pc','id','dvd','cd','gps','sms',
+  'pdf','hiv','aids','bbc','cnn','nba','nfl','ufo','dj','vip','phd','faq','asap','diy','gpa','usb',
+  'url','html','http','wifi','suv','vpn','pin','atv','api','ram','cpu','led','lcd','gmo','iq','eq',
 ]);
 const PROPER_NAMES = new Set([
-  'tom','john','mary','james','robert','michael','david','sarah','emma','olivia','ali','ahmet',
-  'mehmet','ayse','fatma','mustafa','elif','zeynep','can','deniz','london','paris','berlin','rome',
-  'madrid','istanbul','ankara','izmir','tokyo','beijing','moscow','cairo','sydney','turkey','england',
-  'france','germany','italy','spain','america','europe','asia','africa','canada','japan','china',
-  'india','russia','brazil','mexico','greece','egypt','australia','holland','poland','sweden',
-  'norway','denmark','ireland','scotland','wales','texas','california','florida',
+  // given names that are not also common words
+  'tom','john','mary','james','robert','michael','david','sarah','emma','olivia','sophia','jacob',
+  'daniel','joseph','thomas','george','henry','edward','peter','paul','susan','laura','helen',
+  'ali','ahmet','mehmet','ayse','fatma','mustafa','elif','zeynep','murat','emine','hasan','huseyin',
+  // places that are not also common words
+  'london','paris','berlin','rome','madrid','lisbon','vienna','prague','athens','moscow','istanbul',
+  'ankara','izmir','bursa','antalya','tokyo','beijing','shanghai','cairo','sydney','melbourne',
+  'toronto','chicago','boston','seattle','dallas','houston','miami','england','scotland','wales',
+  'ireland','france','germany','italy','spain','portugal','greece','egypt','norway','sweden',
+  'denmark','finland','poland','hungary','romania','bulgaria','austria','belgium','holland',
+  'europe','asia','africa','america','antarctica','canada','brazil','mexico','argentina','india',
+  'russia','australia','texas','california','florida','nevada','oregon','alabama','arizona',
 ]);
-const UNSAFE = new Set(['damn', 'hell', 'idiot', 'stupid', 'shut']);
 
 function normalize(s: string): string {
   return foldAnswer(s).replace(/[^a-z]/g, '');
 }
 
 export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
-  /* The app's own vocabulary is the dictionary: instant, offline, curriculum-safe. */
-  const dictionary = useMemo(() => {
-    const set = new Set<string>();
-    for (const card of FLASHCARDS) {
-      const w = normalize(card.word);
-      if (w.length >= 2) set.add(w);
-    }
-    return set;
+  /* A full English dictionary - 274,927 words, including plurals, past tenses,
+     participles, comparatives and superlatives. The course vocabulary is NOT a
+     whitelist: a word missing from the lesson lists is still a valid answer. */
+  const [dictionary, setDictionary] = useState<Set<string> | null>(null);
+  useEffect(() => {
+    let alive = true;
+    fetch('/dictionary/english-words.txt')
+      .then(r => (r.ok ? r.text() : ''))
+      .then(text => {
+        if (!alive) return;
+        setDictionary(new Set(text.split('\n').map(w => w.trim()).filter(Boolean)));
+      })
+      .catch(() => {
+        if (alive) setDictionary(new Set());
+      });
+    return () => {
+      alive = false;
+    };
   }, []);
 
   const knownWord = useCallback(
     (w: string) => {
+      if (!dictionary || dictionary.size === 0) return true; // never block on a failed load
       if (dictionary.has(w)) return true;
-      // accept ordinary inflections of a known word
+      // a regular inflection of a listed word is still a valid English word
       const stems = [
         w.replace(/s$/, ''),
         w.replace(/es$/, ''),
         w.replace(/ed$/, ''),
-        w.replace(/d$/, ''),
+        w.replace(/ed$/, 'e'),
         w.replace(/ing$/, ''),
         w.replace(/ing$/, 'e'),
         w.replace(/ies$/, 'y'),
         w.replace(/er$/, ''),
+        w.replace(/est$/, ''),
         w.replace(/ly$/, ''),
       ];
       return stems.some(s => s.length >= 3 && s !== w && dictionary.has(s));
@@ -79,13 +104,16 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
     [dictionary]
   );
 
-  const startWords = useMemo(
-    () =>
-      [...dictionary].filter(
-        w => w.length >= 4 && w.length <= 8 && /[aelnorstydkmgpcbhiuw]$/.test(w)
-      ),
-    [dictionary]
-  );
+  /* Openers come from the course vocabulary so a run starts on a familiar word;
+     from then on the whole dictionary is in play. */
+  const startWords = useMemo(() => {
+    const set = new Set<string>();
+    for (const card of FLASHCARDS) {
+      const w = normalize(card.word);
+      if (w.length >= 4 && w.length <= 8 && /[aelnorstydkmgpcbhiuw]$/.test(w)) set.add(w);
+    }
+    return [...set];
+  }, []);
 
   const [record, setRecord] = useState<number>(() => {
     const saved = typeof localStorage !== 'undefined' ? localStorage.getItem(RECORD_KEY) : null;
@@ -195,7 +223,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
         setDraft('');
         return release();
       }
-      if (BRANDS.has(w) && !dictionary.has(w)) {
+      if (BRANDS.has(w)) {
         flash('No brand names');
         setDraft('');
         return release();
@@ -205,13 +233,8 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
         setDraft('');
         return release();
       }
-      if (UNSAFE.has(w)) {
-        flash('Not a valid word');
-        setDraft('');
-        return release();
-      }
       if (!knownWord(w)) {
-        flash('Not a valid word');
+        flash('Not an English word');
         setDraft('');
         return release();
       }
