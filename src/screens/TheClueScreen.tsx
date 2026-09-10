@@ -360,7 +360,11 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
           {passed && <p className="text-[11px] tracking-[0.22em] text-[#e3b553]">PERFECT</p>}
         </div>
 
-        {passed ? (
+        {passed && level === MAX_LEVEL ? (
+          <p className="text-center text-sm tracking-[0.16em] text-[#e3b553] font-bold">
+            THE CLUE COMPLETE · ALL 50 LEVELS
+          </p>
+        ) : passed ? (
           <button
             onClick={() => startLevel(level + 1)}
             className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"
