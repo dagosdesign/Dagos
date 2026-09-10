@@ -1,9 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ChevronLeft, BarChart3, Mic, Zap, Check, X } from 'lucide-react';
+import { ChevronLeft, BarChart3, Mic, Zap, Check, X, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import { rampedPick, wordDifficulty } from '../lib/difficulty';
 import { buildWhatAmIClues } from '../lib/clues';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen } from '../lib/seenHistory';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
@@ -15,6 +23,10 @@ const QUESTION_SECONDS = 60;
 const BONUS_SECONDS = 15;
 const POINTS = 100;
 const BONUS_POINTS = 200;
+/* Exactly 50 levels, A1 at level 1 and C1 at level 50. There is no level 51. */
+const MAX_LEVEL = 50;
+const STORE_KEY = 'lex_whatami_progress';
+const SEEN_KEY = 'whatami';
 
 interface VocabEntry {
   definition?: string;
@@ -58,28 +70,24 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   /* Build the session once the vocabulary is available: every question needs a
      hidden single word plus three clean English clues that never leak it. */
-  const questions = useMemo<Question[]>(() => {
+  /* Every word that can carry three real clues, once, from the gentlest to the
+     hardest. Levels read their own step of this list. */
+  const pool = useMemo<Question[]>(() => {
     if (!vocab) return [];
     const out: Question[] = [];
-    // Gather a wide pool of words that can carry three real clues, then lay the
-    // session out from easiest to hardest below.
-    for (const card of shuffle(FLASHCARDS)) {
-      if (out.length >= TOTAL_QUESTIONS * 8) break;
+    const taken = new Set<string>();
+    for (const card of FLASHCARDS) {
       const w = card.word;
       if (!/^[a-zA-Z]{3,14}$/.test(w)) continue;
-      if (out.some(q => q.word.toLowerCase() === w.toLowerCase())) continue;
-      const entry = vocab[w.toLowerCase()];
+      const key = w.toLowerCase();
+      if (taken.has(key)) continue;
+      const entry = vocab[key];
       const clues = buildWhatAmIClues(w, entry?.definition ?? '', entry?.example || card.exampleSentence || '');
       if (!clues) continue; // a word we cannot clue specifically is left out
-      out.push({
-        id: `${w}-${out.length}`,
-        word: w.toUpperCase(),
-        clues,
-        length: w.length,
-        difficulty: wordDifficulty(card),
-      });
+      taken.add(key);
+      out.push({ id: key, word: w.toUpperCase(), clues, length: w.length, difficulty: wordDifficulty(card) });
     }
-    return rampedPick(out, TOTAL_QUESTIONS, q => q.difficulty);
+    return out.sort((a, b) => a.difficulty - b.difficulty);
   }, [vocab]);
 
   const [index, setIndex] = useState(0);
@@ -96,6 +104,68 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     { kind: 'correct' | 'wrong'; points: number; double: boolean; answer: string } | null
   >(null);
   const [complete, setComplete] = useState(false);
+  const [progress, setProgress] = useState<LevelProgress>(() => loadLevelProgress(STORE_KEY, MAX_LEVEL));
+  const [view, setView] = useState<'levels' | 'play'>('levels');
+  const [level, setLevel] = useState(1);
+  const [passed, setPassed] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [questions, setQuestions] = useState<Question[]>([]);
+
+  /* Twenty words on this level's own step of the pool - level 1 the easiest,
+     level 50 the hardest - preferring words this player has not met yet. */
+  const buildLevel = (lv: number): Question[] => {
+    const n = pool.length;
+    const L = Math.min(MAX_LEVEL, Math.max(1, lv));
+    const windowSize = Math.min(n, Math.max(TOTAL_QUESTIONS * 4, Math.ceil(n / MAX_LEVEL) * 2));
+    const start = Math.floor(((L - 1) / (MAX_LEVEL - 1)) * Math.max(0, n - windowSize));
+    const fresh = (a: number, b: number) =>
+      pool.slice(Math.max(0, a), Math.max(0, b)).filter(q => !isSeen(SEEN_KEY, q.id));
+    let picks: Question[] = fresh(start, start + windowSize);
+    for (let step = 1; picks.length < TOTAL_QUESTIONS * 2 && step * 30 < n; step++) {
+      picks = picks.concat(
+        fresh(start + windowSize + (step - 1) * 30, start + windowSize + step * 30),
+        fresh(start - step * 30, start - (step - 1) * 30)
+      );
+    }
+    // Only if every nearby word has been met already, fall back to the level's own step.
+    if (picks.length < TOTAL_QUESTIONS) {
+      const ids = new Set(picks.map(q => q.id));
+      picks = picks.concat(pool.slice(start, start + windowSize).filter(q => !ids.has(q.id)));
+    }
+    return shuffle<Question>(picks)
+      .slice(0, TOTAL_QUESTIONS)
+      .sort((a, b) => a.difficulty - b.difficulty);
+  };
+
+  const startLevel = (lv: number) => {
+    if (lv > MAX_LEVEL) return;
+    if (lv > progress.highestUnlockedLevel) {
+      setNotice('Complete the previous level with 20/20.');
+      window.setTimeout(() => setNotice(null), 2200);
+      return;
+    }
+    const qs = buildLevel(lv);
+    if (qs.length < TOTAL_QUESTIONS) {
+      setNotice('This level could not be prepared. Please try again.');
+      window.setTimeout(() => setNotice(null), 2200);
+      return;
+    }
+    setLevel(lv);
+    setQuestions(qs);
+    setIndex(0);
+    setTimeLeft(QUESTION_SECONDS);
+    setScore(0);
+    setCorrect(0);
+    setWrong(0);
+    setDoubles(0);
+    setResults([]);
+    setMode('idle');
+    setDraft('');
+    setFeedback(null);
+    setPassed(false);
+    setComplete(false);
+    setView('play');
+  };
 
   const resolvedRef = useRef(false); // exactly one result per question
   const startedAtRef = useRef(0);
@@ -139,7 +209,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   /* ---- one 60-second countdown per question, restarted on every question ---- */
   useEffect(() => {
-    if (!current || complete) return;
+    if (view !== 'play' || !current || complete) return;
     resolvedRef.current = false;
     startedAtRef.current = Date.now();
     setTimeLeft(QUESTION_SECONDS);
@@ -155,12 +225,24 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     }, 250);
     return () => window.clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, current?.id, complete]);
+  }, [view, index, current?.id, complete]);
 
   useEffect(() => {
-    if (complete) recordQuizXp(correct);
+    if (!complete) return;
+    recordQuizXp(correct);
+    // Twenty correct out of twenty, in this attempt, is the only pass.
+    const result = recordLevelAttempt(progress, level, correct, TOTAL_QUESTIONS, MAX_LEVEL);
+    setProgress(result.progress);
+    saveLevelProgress(STORE_KEY, result.progress);
+    setPassed(result.passed);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [complete]);
+
+  // A word counts as met the moment its clues are on screen.
+  useEffect(() => {
+    const q = questions[index];
+    if (view === 'play' && q) markSeen(SEEN_KEY, q.id);
+  }, [view, index, questions]);
 
   useEffect(() => () => {
     try {
@@ -202,7 +284,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   /* ---- screens ---- */
 
-  if (!vocab || (questions.length === 0 && vocab)) {
+  if (!vocab || pool.length === 0) {
     return (
       <div className="space-y-5">
         <TopBar onExit={onExit} />
@@ -216,6 +298,51 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     );
   }
 
+  if (view === 'levels') {
+    const top = visibleLevels(progress, MAX_LEVEL);
+    return (
+      <div className="space-y-5 pb-4">
+        <TopBar onExit={onExit} />
+        <Title />
+        <p className="text-center text-[11px] text-white/45">
+          50 levels from A1 to C1, 20 words each. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
+        </p>
+        {progress.finished && (
+          <p className="text-center text-[11px] tracking-[0.14em] text-[#e3b553] font-bold">ALL 50 LEVELS COMPLETE</p>
+        )}
+        {notice && <p className="text-center text-[11px] tracking-[0.1em] text-[#e3b553]">{notice}</p>}
+        <div className="grid grid-cols-5 gap-2">
+          {Array.from({ length: top }, (_, i) => i + 1).map(lv => {
+            const unlocked = lv <= progress.highestUnlockedLevel;
+            const done = progress.completedLevels.includes(lv);
+            return (
+              <button
+                key={lv}
+                onClick={() => startLevel(lv)}
+                className={`aspect-square rounded-2xl border flex flex-col items-center justify-center gap-1 ${
+                  done
+                    ? 'border-[#e3b553] bg-[#e3b553]/10 text-[#e3b553]'
+                    : unlocked
+                      ? 'border-[#e3b553]/45 bg-[#0a0a0b] text-white cursor-pointer hover:border-[#e3b553]'
+                      : 'border-white/8 bg-white/[0.02] text-white/25'
+                }`}
+              >
+                {unlocked ? (
+                  <>
+                    <span className="text-sm font-bold">{lv}</span>
+                    {done && <Star className="w-3 h-3 fill-[#e3b553] text-[#e3b553]" />}
+                  </>
+                ) : (
+                  <Lock className="w-3.5 h-3.5" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   if (complete) {
     const accuracy = Math.round((correct / questions.length) * 100);
     const review = results.filter(r => !r.isCorrect);
@@ -224,7 +351,13 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
         <TopBar onExit={onExit} />
         <Title />
         <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-6 text-center space-y-2">
-          <p className="text-lg tracking-[0.18em] text-[#e3b553] font-bold">GAME COMPLETE</p>
+          <p className={`text-lg tracking-[0.18em] font-bold ${passed ? 'text-[#e3b553]' : 'text-white/70'}`}>
+            {passed ? (level === MAX_LEVEL ? 'WHAT AM I? COMPLETE' : 'LEVEL COMPLETE') : 'LEVEL NOT PASSED'}
+          </p>
+          <p className="text-2xl font-serif text-white">
+            {correct} / {TOTAL_QUESTIONS}
+          </p>
+          <p className="text-[10px] tracking-[0.16em] text-white/40">LEVEL {level}</p>
           <p className="text-5xl font-serif text-[#e3b553]">{score}</p>
           <p className="text-[11px] tracking-[0.16em] text-white/40">SCORE</p>
         </div>
@@ -254,11 +387,27 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
             </div>
           </div>
         )}
+        {passed && level < MAX_LEVEL && (
+          <button
+            onClick={() => startLevel(level + 1)}
+            className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
+          >
+            NEXT LEVEL
+          </button>
+        )}
+        {!passed && (
+          <button
+            onClick={() => startLevel(level)}
+            className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
+          >
+            TRY AGAIN
+          </button>
+        )}
         <button
-          onClick={onExit}
-          className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold cursor-pointer"
+          onClick={() => setView('levels')}
+          className="w-full border border-white/12 text-white/60 rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
         >
-          BACK TO GAMES
+          LEVELS
         </button>
       </div>
     );
@@ -277,7 +426,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
       {/* Question · timer · score */}
       <div className="flex items-center justify-between gap-3">
         <div>
-          <p className="text-[10px] tracking-[0.18em] text-white/45">QUESTION</p>
+          <p className="text-[10px] tracking-[0.18em] text-white/45">LEVEL {level} · QUESTION</p>
           <p className="text-lg font-serif text-[#e3b553] leading-tight">
             {index + 1} / {questions.length}
           </p>

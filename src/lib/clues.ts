@@ -85,7 +85,7 @@ function nounHead(definition: string): string | null {
 
 /* The category clue: what kind of thing or action this is. Returns null when
    nothing specific can be said, and the word is then left out of the game. */
-function categoryClue(word: string, definition: string): string | null {
+export function categoryLine(word: string, definition: string): string | null {
   const key = word.toLowerCase();
 
   const predicate = GROUP_OF.get(key);
@@ -152,7 +152,7 @@ function obviousForm(a: string, b: string): boolean {
 
 /* A clue must not contain the word, nor an obvious form of it: "the quality of
    being loyal" gives away LOYALTY just as plainly as the word itself would. */
-function leaks(clue: string, word: string): boolean {
+export function mentionsWord(clue: string, word: string): boolean {
   const target = word.toLowerCase();
   const c = clue.toLowerCase();
   if (c.includes(target)) return true;
@@ -167,8 +167,35 @@ function leaks(clue: string, word: string): boolean {
   return false;
 }
 
-/* Three clues, or nothing. Order: what kind of thing it is, what it means, then
-   a real sentence it lives in — each one more helpful than the last. */
+/* Words that carry no context of their own. */
+const FUNCTION_WORDS = new Set((
+  'the a an and or but to of in on at for with from by is are was were be been being am will would ' +
+  'can could should may might must shall do does did have has had not no it its this that these those ' +
+  'i you he she we they me him her us them my your his our their there here so very too also just only ' +
+  'all some any more most much many into about after before over under up down out off than then when ' +
+  'while if because as what which who whom whose where why how every each one get got make made go went ' +
+  'like need needs want wants let lets please yes ' +
+  'two three four five six seven eight nine ten eleven twelve twenty hundred thousand first second third'
+).split(' '));
+
+/* "They will broadcast the match live tonight." -> "It often appears with words
+   like match, live and tonight." The example's own context, never the sentence
+   with a hole in it: a gap would turn the clue into a completion exercise. */
+function contextLine(example: string, word: string): string | null {
+  const picked: string[] = [];
+  for (const raw of example.toLowerCase().replace(/[^a-z ]/g, ' ').split(' ')) {
+    const w = raw.trim();
+    if (w.length < 3 || FUNCTION_WORDS.has(w)) continue;
+    if (mentionsWord(w, word)) continue;
+    if (!picked.includes(w)) picked.push(w);
+    if (picked.length === 3) break;
+  }
+  if (picked.length < 2) return null;
+  const list = picked.length === 2 ? `${picked[0]} and ${picked[1]}` : `${picked[0]}, ${picked[1]} and ${picked[2]}`;
+  return `It often appears with words like ${list}.`;
+}
+
+/* Three clues, or nothing: meaning, kind of word, usual company. */
 export function buildWhatAmIClues(
   word: string,
   definition: string,
@@ -178,18 +205,21 @@ export function buildWhatAmIClues(
   const ex = (example || '').trim();
   if (!def || !ex) return null;
 
-  const category = categoryClue(word, def);
+  const category = categoryLine(word, def);
   if (!category) return null;
+  const context = contextLine(ex, word);
+  if (!context) return null;
 
-  const meaning = hide(def, word);
-  const context = `You might hear it like this: ${hide(ex, word)}`;
-
-  const clues: [string, string, string] = [category, meaning, context];
+  // Three different kinds of information about the word, none of them a
+  // sentence with a gap: its meaning, what kind of word it is, and the words
+  // it usually keeps company with.
+  const meaning = def;
+  const clues: [string, string, string] = [meaning, category, context];
 
   for (const clue of clues) {
     if (!clue || clue.length < 12) return null;
     if (isGeneric(clue)) return null;
-    if (leaks(clue, word)) return null;
+    if (mentionsWord(clue, word)) return null;
   }
   if (nearDuplicate(clues[0], clues[1])) return null;
   if (nearDuplicate(clues[1], clues[2])) return null;

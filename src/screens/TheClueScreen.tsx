@@ -2,7 +2,14 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { loadVocabulary } from '../lib/vocabulary';
-import { levelDifficulty } from '../lib/difficulty';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen } from '../lib/seenHistory';
 
 /* THE CLUE — read an English clue, pick the English word it describes.
    Exactly 20 questions per level; only 20/20 unlocks the next level.
@@ -10,6 +17,9 @@ import { levelDifficulty } from '../lib/difficulty';
 
 const QUESTIONS_PER_LEVEL = 20;
 const STORE_KEY = 'lex_theclue_progress';
+const SEEN_KEY = 'theclue';
+/* Exactly 50 levels, A1 at level 1 and C1 at level 50. There is no level 51. */
+const MAX_LEVEL = 50;
 
 interface Item {
   id: string;
@@ -28,12 +38,7 @@ interface Question {
   correctId: string;
 }
 
-interface Progress {
-  highestUnlockedLevel: number;
-  completedLevels: number[];
-  bestScores: Record<string, number>;
-  lastPlayedLevel: number;
-}
+type Progress = LevelProgress;
 
 interface Mistake {
   clue: string;
@@ -55,27 +60,8 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function loadProgress(): Progress {
-  try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (raw) {
-      const p = JSON.parse(raw) as Progress;
-      return {
-        highestUnlockedLevel: Math.max(1, p.highestUnlockedLevel || 1),
-        completedLevels: p.completedLevels || [],
-        bestScores: p.bestScores || {},
-        lastPlayedLevel: p.lastPlayedLevel || 1,
-      };
-    }
-  } catch { /* ignore */ }
-  return { highestUnlockedLevel: 1, completedLevels: [], bestScores: {}, lastPlayedLevel: 1 };
-}
-
-function saveProgress(p: Progress) {
-  try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(p));
-  } catch { /* ignore */ }
-}
+const loadProgress = (): Progress => loadLevelProgress(STORE_KEY, MAX_LEVEL);
+const saveProgress = (p: Progress) => saveLevelProgress(STORE_KEY, p);
 
 /* Difficulty band from the deck a word belongs to, then fine-grained hardness. */
 function bandOf(category: string, word: string): number {
@@ -152,11 +138,23 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
     (level: number): Question[] => {
       const n = ordered.length;
       if (n < 40) return [];
+      // Level 1 reads the easiest window of the pool, level 50 the hardest, and
+      // every level in between its own step: A1 -> A2 -> B1 -> B2 -> C1.
+      const lv = Math.min(MAX_LEVEL, Math.max(1, level));
       const windowSize = Math.min(n, Math.max(140, QUESTIONS_PER_LEVEL * 6));
-      const position = (levelDifficulty(level) - 1) / 4; // 0 at level 1, 1 at level 100
+      const position = (lv - 1) / (MAX_LEVEL - 1);
       const start = Math.floor(position * Math.max(0, n - windowSize));
       const list: Item[] = ordered.slice(start, start + windowSize);
-      const candidates: Item[] = list;
+
+      // Fresh questions only: a word already shown as a clue - in any attempt,
+      // passed or failed - is never asked again. If the level's own window runs
+      // low, the search widens to the nearest difficulty on either side.
+      const candidates: Item[] = list.filter(it => !isSeen(SEEN_KEY, it.id));
+      for (let step = 1; candidates.length < QUESTIONS_PER_LEVEL * 3 && step * 40 < n; step++) {
+        const lower = ordered.slice(Math.max(0, start - step * 40), Math.max(0, start - (step - 1) * 40));
+        const upper = ordered.slice(start + windowSize + (step - 1) * 40, start + windowSize + step * 40);
+        for (const it of [...upper, ...lower]) if (!isSeen(SEEN_KEY, it.id)) candidates.push(it);
+      }
 
       const questions: Question[] = [];
       const usedIds = new Set<string>();
@@ -238,12 +236,19 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
     const ok = optionId === q.correctId;
     setChosen(optionId);
     setVerdict(ok ? 'true' : 'wrong');
-    if (ok) setCorrectCount(c => c + 1);
-    else {
-      const chosenWord = q.options.find(o => o.id === optionId)?.word ?? '';
-      const correctWord = q.options.find(o => o.id === q.correctId)?.word ?? '';
-      setMistakes(m => [...m, { clue: q.clue, chosen: chosenWord, correct: correctWord }]);
+    if (ok) {
+      setCorrectCount(c => c + 1);
+      return;
     }
+    // One wrong answer and this attempt can no longer pass. It stops here: the
+    // correct answer and the review are shown, then only RESTART is offered.
+    const chosenWord = q.options.find(o => o.id === optionId)?.word ?? '';
+    const correctWord = q.options.find(o => o.id === q.correctId)?.word ?? '';
+    setMistakes([{ clue: q.clue, chosen: chosenWord, correct: correctWord }]);
+    const { progress: nextProgress } = recordLevelAttempt(progress, level, correctCount, QUESTIONS_PER_LEVEL, MAX_LEVEL);
+    setProgress(nextProgress);
+    saveProgress(nextProgress);
+    recordQuizXp(correctCount);
   };
 
   const next = () => {
@@ -258,25 +263,25 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
   };
 
   const finishLevel = () => {
-    const passed = correctCount === QUESTIONS_PER_LEVEL;
-    const key = String(level);
-    const best = Math.max(progress.bestScores[key] ?? 0, correctCount);
-    const nextProgress: Progress = {
-      ...progress,
-      bestScores: { ...progress.bestScores, [key]: best },
-      completedLevels: passed
-        ? Array.from(new Set([...progress.completedLevels, level]))
-        : progress.completedLevels,
-      // a replay can only ever raise progress, never lower it
-      highestUnlockedLevel: passed
-        ? Math.max(progress.highestUnlockedLevel, level + 1)
-        : progress.highestUnlockedLevel,
-    };
+    // Reached only after twenty correct answers in a row, but the rule is still
+    // checked here, where the unlock happens: this attempt, 20 out of 20.
+    const { progress: nextProgress } = recordLevelAttempt(
+      progress,
+      level,
+      correctCount,
+      QUESTIONS_PER_LEVEL,
+      MAX_LEVEL
+    );
     setProgress(nextProgress);
     saveProgress(nextProgress);
     recordQuizXp(correctCount);
     setView('result');
   };
+
+  // A question counts as used the moment it is on screen.
+  useEffect(() => {
+    if (view === 'play' && questions[index]) markSeen(SEEN_KEY, questions[index].id);
+  }, [view, index, questions]);
 
   /* ---- screens ---- */
 
@@ -291,7 +296,7 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
   }
 
   if (view === 'levels') {
-    const top = Math.max(progress.highestUnlockedLevel + 7, 12);
+    const top = visibleLevels(progress, MAX_LEVEL);
     const levels = Array.from({ length: top }, (_, i) => i + 1);
     return (
       <div className="space-y-5 pb-4">
@@ -523,12 +528,36 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
                 {verdict === 'true' ? 'TRUE' : 'WRONG'}
               </span>
             </div>
-            <button
-              onClick={next}
-              className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"
-            >
-              {index + 1 < questions.length ? 'NEXT' : 'FINISH'}
-            </button>
+            {verdict === 'true' ? (
+              <button
+                onClick={next}
+                className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"
+              >
+                {index + 1 < questions.length ? 'NEXT' : 'FINISH'}
+              </button>
+            ) : (
+              <>
+                <div className="rounded-3xl border border-[#e3b553]/30 p-4 space-y-3" style={{ background: '#08070a' }}>
+                  <div className="space-y-1">
+                    <p className="text-[10px] tracking-[0.18em] text-white/40">YOUR ANSWER</p>
+                    <p className="text-sm text-[#c2503f] font-medium">{mistakes[0]?.chosen}</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-[10px] tracking-[0.18em] text-white/40">CORRECT ANSWER</p>
+                    <p className="text-base text-[#3fae72] font-semibold">{mistakes[0]?.correct}</p>
+                  </div>
+                  <p className="text-[11px] text-white/55 leading-snug">
+                    One wrong answer ends the attempt. Level {level} stays open - restart it for a fresh set of 20.
+                  </p>
+                </div>
+                <button
+                  onClick={() => startLevel(level)}
+                  className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"
+                >
+                  RESTART
+                </button>
+              </>
+            )}
           </>
         )}
       </div>

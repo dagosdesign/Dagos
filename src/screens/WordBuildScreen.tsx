@@ -1,7 +1,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ChevronLeft, BarChart3, RotateCcw, Check } from 'lucide-react';
+import { ChevronLeft, BarChart3, RotateCcw, Check, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
-import { rampedPick, wordDifficulty } from '../lib/difficulty';
+import { wordDifficulty } from '../lib/difficulty';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen } from '../lib/seenHistory';
 
 /* WORD BUILD — read the Turkish meaning, build the English word from shuffled
    letter tiles within 45 seconds. A wrong CHECK WORD only resets the tiles;
@@ -10,6 +18,10 @@ import { rampedPick, wordDifficulty } from '../lib/difficulty';
 const TOTAL_QUESTIONS = 20;
 const QUESTION_SECONDS = 45;
 const POINTS = 100;
+/* Exactly 100 levels. Level 100 is the last; there is no level 101. */
+const MAX_LEVEL = 100;
+const STORE_KEY = 'lex_wordbuild_progress';
+const SEEN_KEY = 'wordbuild';
 
 interface Tile {
   id: string;
@@ -80,33 +92,87 @@ function makeTiles(word: string): Tile[] {
   return order;
 }
 
-function buildQuestions(): Question[] {
-  const out: Question[] = [];
-  // Collect a wide pool first, then lay it out from the shortest, plainest word
-  // to the longest exam word, so the run climbs.
-  for (const card of shuffle(FLASHCARDS)) {
-    if (out.length >= TOTAL_QUESTIONS * 8) break;
+interface Candidate {
+  word: string; // uppercase target
+  meaning: string; // Turkish prompt
+  difficulty: number;
+}
+
+/* Every usable word once, from the gentlest to the hardest. In WORD BUILD the
+   number of tiles is most of the difficulty, so length weighs as heavily as
+   the deck a word comes from. */
+const POOL: Candidate[] = (() => {
+  const seen = new Set<string>();
+  const out: Candidate[] = [];
+  for (const card of FLASHCARDS) {
     const w = card.word;
     if (!/^[a-zA-Z]{3,10}$/.test(w)) continue; // single words keep the row readable
+    const key = w.toLowerCase();
+    if (seen.has(key)) continue;
     const meaning = (card.turkishMeaning || '').split(',')[0].trim();
     if (!meaning || meaning.length > 28) continue;
-    if (out.some(q => q.word.toLowerCase() === w.toLowerCase())) continue;
-    const word = w.toUpperCase();
-    const tiles = makeTiles(word);
-    // hard validation: slot count, tile count and letter multiset must match
-    if (tiles.length !== word.length) continue;
-    const a = tiles.map(t => t.letter).sort().join('');
-    const b = word.split('').sort().join('');
-    if (a !== b) continue;
-    out.push({ id: `${word}-${out.length}`, meaning, word, tiles, difficulty: wordDifficulty(card) });
+    seen.add(key);
+    out.push({ word: w.toUpperCase(), meaning, difficulty: wordDifficulty(card) + w.length * 0.8 });
   }
-  // In WORD BUILD the number of tiles is most of the difficulty, so length
-  // weighs as heavily as the deck the word comes from.
-  return rampedPick(out, TOTAL_QUESTIONS, q => q.difficulty + q.word.length * 0.8);
+  return out.sort((a, b) => a.difficulty - b.difficulty);
+})();
+
+/* create, creation, creative share a family; one of them per attempt. */
+function familyOf(word: string): string {
+  return word.toLowerCase().slice(0, Math.min(5, word.length));
+}
+
+/* Twenty fresh words for a level. The level sits on its own step of the sorted
+   pool (level 1 the easiest words, level 100 the hardest). Any word already
+   shown - in a passed attempt, a failed one or a restart - is skipped; if the
+   level's step runs low, the search widens to the nearest difficulty. */
+function buildLevelQuestions(level: number): Question[] {
+  const n = POOL.length;
+  const lv = Math.min(MAX_LEVEL, Math.max(1, level));
+  const windowSize = Math.max(TOTAL_QUESTIONS * 4, Math.ceil(n / MAX_LEVEL) * 2);
+  const start = Math.floor(((lv - 1) / (MAX_LEVEL - 1)) * Math.max(0, n - windowSize));
+  const fresh = (from: number, to: number) =>
+    POOL.slice(Math.max(0, from), Math.max(0, to)).filter(c => !isSeen(SEEN_KEY, c.word.toLowerCase()));
+
+  let candidates = fresh(start, start + windowSize);
+  for (let step = 1; candidates.length < TOTAL_QUESTIONS * 2 && step * 30 < n; step++) {
+    candidates = candidates.concat(
+      fresh(start + windowSize + (step - 1) * 30, start + windowSize + step * 30),
+      fresh(start - step * 30, start - (step - 1) * 30)
+    );
+  }
+
+  const picked: Candidate[] = [];
+  const families = new Set<string>();
+  for (const c of shuffle(candidates)) {
+    if (picked.length >= TOTAL_QUESTIONS) break;
+    const f = familyOf(c.word);
+    if (families.has(f)) continue;
+    families.add(f);
+    picked.push(c);
+  }
+  picked.sort((a, b) => a.difficulty - b.difficulty); // a gentle climb inside the level too
+
+  const out: Question[] = [];
+  for (const c of picked) {
+    const tiles = makeTiles(c.word);
+    // hard validation: slot count, tile count and letter multiset must match
+    if (tiles.length !== c.word.length) continue;
+    const a = tiles.map(x => x.letter).sort().join('');
+    const b = c.word.split('').sort().join('');
+    if (a !== b) continue;
+    out.push({ id: `${c.word}-L${lv}-${out.length}`, meaning: c.meaning, word: c.word, tiles, difficulty: c.difficulty });
+  }
+  return out;
 }
 
 export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScreenProps) {
-  const questions = useMemo(buildQuestions, []);
+  const [progress, setProgress] = useState<LevelProgress>(() => loadLevelProgress(STORE_KEY, MAX_LEVEL));
+  const [view, setView] = useState<'levels' | 'play'>('levels');
+  const [level, setLevel] = useState(1);
+  const [passed, setPassed] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [placement, setPlacement] = useState<(string | null)[]>([]); // slot -> tileId
   const [timeLeft, setTimeLeft] = useState(QUESTION_SECONDS);
@@ -118,6 +184,35 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
   const [review, setReview] = useState<{ word: string; meaning: string }[]>([]);
   const [complete, setComplete] = useState(false);
   const [dragId, setDragId] = useState<string | null>(null);
+
+  /* Every attempt - first try, retry or restart - starts from zero with twenty
+     words nobody has shown this player before. */
+  const startLevel = (lv: number) => {
+    if (lv > MAX_LEVEL) return;
+    if (lv > progress.highestUnlockedLevel) {
+      setNotice('Complete the previous level with 20/20.');
+      window.setTimeout(() => setNotice(null), 2200);
+      return;
+    }
+    const qs = buildLevelQuestions(lv);
+    if (qs.length < TOTAL_QUESTIONS) {
+      setNotice('This level could not be prepared. Please try again.');
+      window.setTimeout(() => setNotice(null), 2200);
+      return;
+    }
+    setLevel(lv);
+    setQuestions(qs);
+    setIndex(0);
+    setScore(0);
+    setCorrect(0);
+    setWrong(0);
+    setFeedback(null);
+    setLocked(false);
+    setReview([]);
+    setPassed(false);
+    setComplete(false);
+    setView('play');
+  };
 
   const resolvedRef = useRef(false);
   const startedAtRef = useRef(0);
@@ -135,7 +230,7 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
 
   /* ---- one countdown per question, driven by real elapsed time ---- */
   useEffect(() => {
-    if (!current || complete) return;
+    if (view !== 'play' || !current || complete) return;
     resolvedRef.current = false;
     startedAtRef.current = Date.now();
     setPlacement(Array(current.word.length).fill(null));
@@ -164,12 +259,69 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
     }, 250);
     return () => window.clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, current?.id, complete]);
+  }, [view, index, current?.id, complete]);
 
   useEffect(() => {
-    if (complete) recordQuizXp(correct);
+    if (!complete) return;
+    recordQuizXp(correct);
+    // Twenty correct out of twenty, in this attempt, is the only pass.
+    const result = recordLevelAttempt(progress, level, correct, TOTAL_QUESTIONS, MAX_LEVEL);
+    setProgress(result.progress);
+    saveLevelProgress(STORE_KEY, result.progress);
+    setPassed(result.passed);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [complete]);
+
+  // A word counts as used the moment it is on screen, not when it is answered.
+  useEffect(() => {
+    const q = questions[index];
+    if (view === 'play' && q) markSeen(SEEN_KEY, q.word.toLowerCase(), familyOf(q.word));
+  }, [view, index, questions]);
+
+  if (view === 'levels') {
+    const top = visibleLevels(progress, MAX_LEVEL);
+    return (
+      <div className="space-y-5 pb-4">
+        <TopBar onExit={onExit} />
+        <Title />
+        <p className="text-center text-[11px] text-white/45">
+          100 levels, 20 words each. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
+        </p>
+        {progress.finished && (
+          <p className="text-center text-[11px] tracking-[0.14em] text-[#e3b553] font-bold">ALL 100 LEVELS COMPLETE</p>
+        )}
+        {notice && <p className="text-center text-[11px] tracking-[0.1em] text-[#e3b553]">{notice}</p>}
+        <div className="grid grid-cols-5 gap-2">
+          {Array.from({ length: top }, (_, i) => i + 1).map(lv => {
+            const unlocked = lv <= progress.highestUnlockedLevel;
+            const done = progress.completedLevels.includes(lv);
+            return (
+              <button
+                key={lv}
+                onClick={() => startLevel(lv)}
+                className={`aspect-square rounded-2xl border flex flex-col items-center justify-center gap-1 ${
+                  done
+                    ? 'border-[#e3b553] bg-[#e3b553]/10 text-[#e3b553]'
+                    : unlocked
+                      ? 'border-[#e3b553]/45 bg-[#0a0a0b] text-white cursor-pointer hover:border-[#e3b553]'
+                      : 'border-white/8 bg-white/[0.02] text-white/25'
+                }`}
+              >
+                {unlocked ? (
+                  <>
+                    <span className="text-sm font-bold">{lv}</span>
+                    {done && <Star className="w-3 h-3 fill-[#e3b553] text-[#e3b553]" />}
+                  </>
+                ) : (
+                  <Lock className="w-3.5 h-3.5" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 
   if (!current && !complete) return null;
 
@@ -255,7 +407,13 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
         <TopBar onExit={onExit} />
         <Title />
         <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-6 text-center space-y-2">
-          <p className="text-lg tracking-[0.18em] text-[#e3b553] font-bold">GAME COMPLETE</p>
+          <p className={`text-lg tracking-[0.18em] font-bold ${passed ? 'text-[#e3b553]' : 'text-white/70'}`}>
+            {passed ? (level === MAX_LEVEL ? 'WORD BUILD COMPLETE' : 'LEVEL COMPLETE') : 'LEVEL NOT PASSED'}
+          </p>
+          <p className="text-3xl font-serif text-white">
+            {correct} / {TOTAL_QUESTIONS}
+          </p>
+          <p className="text-[10px] tracking-[0.16em] text-white/40">LEVEL {level}</p>
           <p className="text-5xl font-serif text-[#e3b553]">{score}</p>
           <p className="text-[11px] tracking-[0.16em] text-white/40">SCORE</p>
         </div>
@@ -280,11 +438,27 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
             </div>
           </div>
         )}
+        {passed && level < MAX_LEVEL && (
+          <button
+            onClick={() => startLevel(level + 1)}
+            className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
+          >
+            NEXT LEVEL
+          </button>
+        )}
+        {!passed && (
+          <button
+            onClick={() => startLevel(level)}
+            className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
+          >
+            TRY AGAIN
+          </button>
+        )}
         <button
-          onClick={onExit}
-          className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold cursor-pointer"
+          onClick={() => setView('levels')}
+          className="w-full border border-white/12 text-white/60 rounded-2xl py-3 text-xs font-bold tracking-[0.12em] cursor-pointer"
         >
-          BACK TO GAMES
+          LEVELS
         </button>
       </div>
     );
@@ -300,7 +474,7 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
       {/* Question · timer · score */}
       <div className="flex items-center justify-between gap-3">
         <div>
-          <p className="text-[10px] tracking-[0.18em] text-white/45">QUESTION</p>
+          <p className="text-[10px] tracking-[0.18em] text-white/45">LEVEL {level} · QUESTION</p>
           <p className="text-lg font-serif text-[#e3b553] leading-tight">
             {index + 1} / {questions.length}
           </p>

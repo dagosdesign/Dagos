@@ -9,3 +9,4 @@ coverage/
 settings.json
 settings_1.json
 .claude/
+scripts/.cache/

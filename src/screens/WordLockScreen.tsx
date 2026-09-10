@@ -6,6 +6,7 @@ import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { foldAnswer } from '../lib/answerText';
 import { rampedPick, wordDifficulty } from '../lib/difficulty';
+import { categoryLine, mentionsWord } from '../lib/clues';
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -58,39 +59,28 @@ function pickStartingPositions(word: string): number[] {
   return chosen.sort((a, b) => a - b);
 }
 
-/* Every clue must point at the word itself — what it means, what it does, how
-   it is used. Never where it was filed: no unit, set or deck references. */
+/* Every clue describes the word itself - what kind of thing it is, what it
+   means, what it means in Turkish. No clue is ever a sentence with a gap in it:
+   a fill-in-the-blank line is a completion exercise, not information about the
+   word, so the example sentence is never used here. */
 function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
   const word = card.word;
-  const pos = card.partOfSpeech && card.partOfSpeech !== 'word' ? card.partOfSpeech : '';
-  const mask = (s: string) =>
-    s.replace(new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`, 'gi'), '_____');
-  const leaks = (s: string) => s.toLowerCase().includes(word.toLowerCase());
-
   const clues: string[] = [];
 
-  // 1. What it means — the English definition.
-  const definition = entry?.definition?.trim();
-  if (definition) {
-    const masked = mask(definition);
-    if (!leaks(masked)) clues.push(masked);
-  }
+  // 1. What kind of word it is, from its semantic group or its definition.
+  const category = categoryLine(word, entry?.definition ?? '');
+  if (category) clues.push(category);
 
-  // 2. How it is used — a real sentence with the word hidden.
-  const example = (entry?.example || card.exampleSentence || '').trim();
-  if (example) {
-    const masked = mask(example);
-    if (!leaks(masked)) clues.push(`Used like this: ${masked}`);
-  }
+  // 2. What it means - the English definition, with any form of the word hidden.
+  const definition = (entry?.definition ?? '').trim();
+  if (definition && !mentionsWord(definition, word)) clues.push(definition);
 
-  // 3. What it means in Turkish — the most direct meaning clue, opened last.
+  // 3. What it means in Turkish - the most direct meaning clue, opened last.
   const turkish = (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim();
   if (turkish) clues.push(`In Turkish it means: ${turkish}`);
 
-  // Filler, still about the word's function — never about where it is filed.
-  if (clues.length < MAX_CLUES && pos) clues.push(`It is a ${pos}.`);
-
-  return clues.slice(0, MAX_CLUES);
+  // Never a blank, never an underscore, never a missing word.
+  return clues.filter(c => !/_{2,}|\.{3}\s*$/.test(c)).slice(0, MAX_CLUES);
 }
 
 export default function WordLockScreen({ category, label, onExit, recordQuizXp }: WordLockScreenProps) {
