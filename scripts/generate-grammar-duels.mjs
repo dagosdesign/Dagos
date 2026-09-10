@@ -121,6 +121,10 @@ const cached = name => {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null;
 };
 const store = (name, data) => fs.writeFileSync(path.join(CACHE, name), JSON.stringify(data, null, 1));
+// OFFLINE=1 builds the bank from the cache alone (no API calls): missing batches are
+// skipped, and a level that has no review yet is written out for a manual review
+// (pending-review-LNN.json) and left out of the bank until its review exists.
+const OFFLINE = process.env.OFFLINE === '1';
 
 const norm = s => String(s).toLowerCase().replace(/[^a-z' ]/g, ' ').replace(/ +/g, ' ').trim();
 
@@ -160,6 +164,10 @@ for (const [level, cefr, focus] of CURRICULUM) {
   for (let b = 0; b < PER_LEVEL / BATCH; b++) {
     const genName = `gen-L${String(level).padStart(2, '0')}-${b}.json`;
     let items = cached(genName);
+    if (!items && OFFLINE) {
+      console.log(`L${level} batch ${b}: not cached, skipped (offline)`);
+      continue;
+    }
     if (!items) {
       const contexts = CONTEXTS.slice((level * 3 + b * 7) % CONTEXTS.length).concat(CONTEXTS).slice(0, 8);
       const prompt = `You write questions for GRAMMAR DUEL, an English grammar game. Level ${level} of 50 (CEFR ${cefr}).
@@ -188,6 +196,14 @@ Return JSON: {"duels":[{"correct":"...","incorrect":"...","target":"present perf
   // independent review of everything that passed the automatic checks
   const reviewName = `review-L${String(level).padStart(2, '0')}.json`;
   let review = cached(reviewName);
+  if (!review && OFFLINE) {
+    store(
+      `pending-${reviewName}`,
+      levelItems.map((d, i) => ({ n: i, correct: d.correct, incorrect: d.incorrect, explanation: d.explanation }))
+    );
+    console.log(`L${level}: no review cached - ${levelItems.length} duels written to pending-${reviewName}, level left out`);
+    continue;
+  }
   if (!review) {
     const prompt = `You are a strict English grammar examiner reviewing GRAMMAR DUEL questions for level ${level}/50 (CEFR ${cefr}).
 For each numbered duel decide "keep": true only if ALL of these hold:

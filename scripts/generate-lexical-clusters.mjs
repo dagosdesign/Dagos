@@ -9,6 +9,7 @@
 // Usage: node --use-system-ca --dns-result-order=ipv4first scripts/generate-lexical-clusters.mjs
 // Resumable: finished batches are cached in scripts/.cache/lexical and skipped.
 import { GoogleGenAI } from '@google/genai';
+import { createHash } from 'crypto';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
@@ -31,7 +32,10 @@ const DICT = new Set(
 
 const BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 // verbs and adjectives dominate; abstract nouns only where they teach nuance
-const TARGETS = { verb: 30, adjective: 28, noun: 10 };
+const TARGETS = { verb: 56, adjective: 50, noun: 12 };
+// The middle of the journey loses the most clusters to overlap with easier bands
+// and to review, so it asks for more.
+const BAND_BOOST = { A1: 1, A2: 1.9, B1: 2.1, B2: 1.3, C1: 1 };
 
 const DOMAINS = [
   'perception', 'communication', 'movement', 'cognition', 'emotion-positive', 'emotion-negative',
@@ -83,17 +87,21 @@ function store(name, data) {
 /* ---------- 1. generate ---------- */
 async function generate() {
   const all = [];
+  const owned = { verb: new Set(), adjective: new Set(), noun: new Set() }; // words already in a cluster
   for (const band of BANDS) {
-    for (const [pos, target] of Object.entries(TARGETS)) {
+    for (const [pos, base] of Object.entries(TARGETS)) {
+      const target = Math.round(base * BAND_BOOST[band]);
       let got = [];
+      let fresh = 0; // clusters that still bring at least 4 unused words - repeats of earlier meanings do not count
       let round = 0;
-      while (got.length < target && round < 6) {
+      while (fresh < target && round < 14) {
         const name = `gen-${band}-${pos}-${round}.json`;
         let batch = cached(name);
         if (!batch) {
           const avoid = [...all, ...got].map(c => c.meaning).slice(-160);
+          const usedWords = [...owned[pos]].slice(-450);
           const prompt = `You are building an English vocabulary game for Turkish learners.
-Create ${Math.min(14, target - got.length + 2)} NEW semantic clusters of ${pos.toUpperCase()}S for CEFR level ${band}.
+Create ${Math.min(14, Math.max(8, target - fresh + 4))} NEW semantic clusters of ${pos.toUpperCase()}S for CEFR level ${band}.
 
 A cluster is 6 or 7 English ${pos}s that are GENUINE synonyms or near-synonyms sharing ONE precise meaning,
 so that a teacher could state in one short sentence why they belong together.
@@ -105,18 +113,28 @@ Rules:
 - No cause-and-effect or sequences. Meaning only.
 - Single words only (for verbs, no phrasal verbs).
 - Do not repeat any of these meanings already used: ${JSON.stringify(avoid)}
+- Do not use any of these words, they already belong to other clusters: ${JSON.stringify(usedWords)}
 - domain must be one of: ${DOMAINS.join(', ')}
 - difficulty is 1-10 inside ${band} (1 = easiest ${band}, 10 = hardest ${band}).
 
 Return JSON: {"clusters":[{"meaning":"verbs that mean to look at something steadily","domain":"perception","difficulty":4,"words":["stare","gaze","gape","peer","gawk","ogle"]}]}`;
           batch = (await ask(prompt)).clusters ?? [];
-          store(name, batch);
+          if (batch.length) store(name, batch); // an empty answer is retried on the next run, never cached
           console.log(`generated ${band} ${pos} round ${round}: ${batch.length}`);
         }
-        for (const c of batch) got.push({ ...c, pos, cefr: band });
+        for (const c of batch) {
+          got.push({ ...c, pos, cefr: band });
+          const unused = [...new Set((c.words ?? []).map(w => String(w).trim().toLowerCase()))].filter(
+            w => DICT.has(w) && !owned[pos].has(w)
+          );
+          if (unused.length >= 4) {
+            fresh++;
+            unused.forEach(w => owned[pos].add(w));
+          }
+        }
         round++;
       }
-      all.push(...got.slice(0, target + 4));
+      all.push(...got);
     }
   }
   return all;
@@ -130,7 +148,8 @@ function validate(clusters) {
     const words = [...new Set((c.words ?? []).map(w => String(w).trim().toLowerCase()))]
       .filter(w => /^[a-z]+$/.test(w) && DICT.has(w) && !TRIVIAL.has(w));
     const kept = words.filter(w => !owner.has(`${c.pos}:${w}`)); // a word lives in one cluster only
-    if (kept.length < 5 || !c.meaning || !DOMAINS.includes(c.domain)) return;
+    // four is all a question needs: three shown words plus the answer
+    if (kept.length < 4 || !c.meaning || !DOMAINS.includes(c.domain)) return;
     kept.forEach(w => owner.set(`${c.pos}:${w}`, i));
     out.push({ ...c, words: kept.slice(0, 7) });
   });
@@ -148,7 +167,13 @@ async function review(clusters) {
   const reviewed = [];
   let n = 0;
   for (const [k, group] of byDomainPos) {
-    const name = `review-${k.replace(/[^a-z-|]/g, '')}.json`;
+    // Named by content, so a review is reused only for exactly the clusters it judged
+    // ("|" is not a legal filename character on Windows).
+    const digest = createHash('sha1')
+      .update(JSON.stringify(group.map(c => [c.id, c.meaning, c.words])))
+      .digest('hex')
+      .slice(0, 10);
+    const name = `review-${k.replace(/[^a-z-]/g, '_')}-${digest}.json`;
     let verdict = cached(name);
     if (!verdict) {
       const prompt = `You are a strict English lexicography reviewer. For each cluster below:
@@ -168,7 +193,7 @@ Return JSON: {"results":[{"id":"c0","remove":["word"],"conflicts":["c5"]}]}`;
       const v = byId.get(c.id) ?? { remove: [], conflicts: [] };
       const remove = new Set((v.remove ?? []).map(w => String(w).toLowerCase()));
       const words = c.words.filter(w => !remove.has(w));
-      if (words.length < 5) continue;
+      if (words.length < 4) continue;
       reviewed.push({ ...c, words, conflicts: v.conflicts ?? [] });
     }
     n += group.length;
@@ -184,14 +209,22 @@ const reviewed = await review(valid);
 
 // stable ids, conflicts remapped to them, difficulty point 1-50 across the whole journey
 const idMap = new Map(reviewed.map((c, i) => [c.id, `lx${String(i + 1).padStart(3, '0')}`]));
+// The model's 1-10 difficulty bunches in the middle, which would leave whole levels
+// empty. Inside each band the clusters are ranked by it and spread evenly over the
+// band's ten levels, so every level has its own step of the journey.
+const levelOf = new Map();
+for (const [b, band] of BANDS.entries()) {
+  const inBand = reviewed
+    .filter(c => c.cefr === band)
+    .sort((x, y) => (Number(x.difficulty) || 5) - (Number(y.difficulty) || 5));
+  inBand.forEach((c, rank) => levelOf.set(c.id, b * 10 + 1 + Math.floor((rank * 10) / inBand.length)));
+}
 const bank = reviewed.map(c => {
-  const band = BANDS.indexOf(c.cefr);
-  const d = Math.max(1, Math.min(10, Math.round(Number(c.difficulty) || 5)));
   return {
     id: idMap.get(c.id),
     pos: c.pos,
     cefr: c.cefr,
-    level: band * 10 + d, // 1..50
+    level: levelOf.get(c.id), // 1..50
     domain: c.domain,
     meaning: c.meaning,
     words: c.words,

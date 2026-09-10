@@ -1,7 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
-import { SEMANTIC_GROUPS, SemanticGroup, CONFLICTS } from '../data/oddOneGroups';
-import { levelDifficulty, tierWindow, nearness, tierWeight, weightedShuffle } from '../lib/difficulty';
+import CLUSTER_BANK from '../data/lexicalClusters.json';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen, familyUses } from '../lib/seenHistory';
 
 /* ODD ONE — spot the difference.
    Four English words: three share one clear relationship, one does not.
@@ -11,6 +18,9 @@ import { levelDifficulty, tierWindow, nearness, tierWeight, weightedShuffle } fr
 const QUESTIONS_PER_LEVEL = 20;
 const POOL_TARGET = 60; // candidate questions per level, 20 are played
 const STORE_KEY = 'lex_oddone_progress';
+/* Exactly 50 levels, A1 at level 1 and C1 at level 50. There is no level 51. */
+const MAX_LEVEL = 50;
+const SEEN_KEY = 'oddone';
 
 interface Card {
   id: string;
@@ -25,6 +35,7 @@ interface Question {
   relationshipExplanation: string;
   difficulty: number;
   category: string;
+  family: string;
 }
 
 interface Mistake {
@@ -35,12 +46,7 @@ interface Mistake {
   label: string;
 }
 
-interface Progress {
-  highestUnlockedLevel: number;
-  completedLevels: number[];
-  bestScores: Record<string, number>;
-  lastPlayedLevel: number;
-}
+type Progress = LevelProgress;
 
 interface OddOneScreenProps {
   onExit: () => void;
@@ -70,148 +76,116 @@ function mulberry32(seed: number) {
   };
 }
 
-function loadProgress(): Progress {
-  try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (raw) {
-      const p = JSON.parse(raw) as Progress;
-      return {
-        highestUnlockedLevel: Math.max(1, p.highestUnlockedLevel || 1),
-        completedLevels: p.completedLevels || [],
-        bestScores: p.bestScores || {},
-        lastPlayedLevel: p.lastPlayedLevel || 1,
-      };
-    }
-  } catch { /* ignore */ }
-  return { highestUnlockedLevel: 1, completedLevels: [], bestScores: {}, lastPlayedLevel: 1 };
+const loadProgress = (): Progress => loadLevelProgress(STORE_KEY, MAX_LEVEL);
+const saveProgress = (p: Progress) => saveLevelProgress(STORE_KEY, p);
+
+/* ---------- the lexical cluster bank ----------
+   Every cluster is a set of genuine near-synonyms sharing one precise meaning,
+   generated and then independently reviewed (scripts/generate-lexical-clusters.mjs).
+   A word lives in only one cluster of its part of speech, and clusters too close
+   in meaning are recorded as conflicts and never used against each other. */
+interface Cluster {
+  id: string;
+  pos: string;
+  cefr: string;
+  level: number; // 1-50
+  domain: string;
+  meaning: string;
+  words: string[];
+  conflicts: string[];
 }
 
-function saveProgress(p: Progress) {
-  try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(p));
-  } catch { /* ignore */ }
+// Verbs and adjectives only: noun sets drift into concrete categories (vehicles,
+// shops, money) that the game rules out as too easy.
+const CLUSTERS: Cluster[] = (CLUSTER_BANK as Cluster[]).filter(
+  c => (c.pos === 'verb' || c.pos === 'adjective') && c.words.length >= 4
+);
+
+function clash(a: Cluster, b: Cluster): boolean {
+  return a.id === b.id || a.conflicts.includes(b.id) || b.conflicts.includes(a.id);
 }
 
-/* Difficulty band for a level. Tier reflects word frequency, CEFR level,
-   abstraction and category specificity; `near` decides semantic distance —
-   a far odd word (different domain) is easier to spot than a near one. The
-   bands keep climbing and never cap out, so level 101, 200 and beyond keep
-   working with the hardest settings. */
-function bandFor(level: number): { minTier: number; maxTier: number; nearRatio: number; d: number } {
-  const d = levelDifficulty(level);
-  const [minTier, maxTier] = tierWindow(d);
-  // The odd word moves closer as the climb goes on: a different domain at first,
-  // the same domain later, which asks for more vocabulary without making the
-  // question vaguer. It is a proportion, not a switch, so consecutive levels
-  // differ — around level 5 a fifth of the board is a near miss, by level 10
-  // nearly half of it.
-  return { minTier, maxTier, nearRatio: nearness(d), d };
+/* How often the other words come from the same semantic domain - a near miss
+   that needs real vocabulary knowledge. Almost never at level 1, most of the
+   time by level 36. */
+function nearRatio(level: number): number {
+  return Math.max(0, Math.min(0.85, (level - 4) / 38));
 }
 
-/* Ambiguity guard. A candidate is rejected when any group would give a second
-   defensible answer: the odd word also belonging to the related group, another
-   group holding three or more of the four words, or a group holding all four. */
-function isAmbiguous(words: string[], relatedGroupId: string, groups: SemanticGroup[]): boolean {
-  for (const g of groups) {
-    let hits = 0;
-    for (const w of words) if (g.words.includes(w)) hits++;
-    if (g.id === relatedGroupId) {
-      if (hits === 4) return true; // the odd word belongs to the related group too
-      continue;
-    }
-    if (hits >= 3) return true; // another group offers its own trio
-  }
-  return false;
+/* Order does not make a new question: the same four words are the same question. */
+function setKey(words: string[]): string {
+  return [...words].map(w => w.toLowerCase()).sort().join('|');
 }
 
-/* All 3-word combinations of a group, capped so very large groups stay fast. */
-function trios(words: string[]): [string, string, string][] {
-  const out: [string, string, string][] = [];
-  for (let i = 0; i < words.length - 2; i++)
-    for (let j = i + 1; j < words.length - 1; j++)
-      for (let k = j + 1; k < words.length; k++) out.push([words[i], words[j], words[k]]);
-  return out;
+function capitalise(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-/* The candidate pool for a level: validated, ambiguity-free questions built
-   from real semantic groups. Deterministic per level so the difficulty band is
-   stable, and always large enough that a run can pick 20 unique questions. */
-function buildPool(level: number): Question[] {
-  const { minTier, maxTier, nearRatio, d } = bandFor(level);
-  const inBand = SEMANTIC_GROUPS.filter(g => g.tier >= minTier && g.tier <= maxTier && g.words.length >= 3);
-  if (inBand.length < 2) return [];
-
-  const rnd = mulberry32(level * 7919 + 13);
-  // Rotate the starting point with the level so level 5, 105 and 205 differ.
-  // Groups whose tier matches this level come up first.
-  const rotated = weightedShuffle(inBand, g => tierWeight(g.tier, d), rnd);
-  const out: Question[] = [];
-  const seenSets = new Set<string>();
-
-  for (let pass = 0; pass < 4 && out.length < POOL_TARGET; pass++) {
-    for (const group of rotated) {
-      if (out.length >= POOL_TARGET) break;
-      const combos = shuffle(trios(group.words), rnd);
-      const combo = combos[(pass + level) % combos.length];
-      if (!combo) continue;
-
-      // Odd word: same domain for a near miss at high levels, otherwise a
-      // clearly different domain.
-      const blocked = CONFLICTS.get(group.id);
-      const usable = (g: SemanticGroup) => g.id !== group.id && !blocked?.has(g.id);
-      const near = rnd() < nearRatio;
-      const donors = rotated.filter(g =>
-        usable(g) && (near ? g.domain === group.domain : g.domain !== group.domain)
-      );
-      const fallbackDonors = rotated.filter(g => usable(g) && g.domain !== group.domain);
-      const donorList = donors.length ? donors : fallbackDonors;
-      if (!donorList.length) continue;
-
-      let question: Question | null = null;
-      for (let attempt = 0; attempt < 8 && !question; attempt++) {
-        const donor = donorList[Math.floor(rnd() * donorList.length)];
-        const odd = donor.words[Math.floor(rnd() * donor.words.length)];
-        const words = [...combo, odd];
-        if (new Set(words).size !== 4) continue;
-        if (isAmbiguous(words, group.id, SEMANTIC_GROUPS)) continue;
-        const key = [...words].sort().join('|');
-        if (seenSets.has(key)) continue;
-        seenSets.add(key);
-        const [a, b, c] = combo;
-        question = {
-          id: `${group.id}-${key}`,
-          cards: words.map((w, i) => ({ id: `${group.id}-${i}-${w}`, word: w })),
-          oddId: `${group.id}-3-${odd}`,
-          relationshipLabel: group.label,
-          relationshipExplanation: `${a}, ${b} and ${c} are ${group.predicate}.`,
-          difficulty: group.tier,
-          category: group.domain,
-        };
-      }
-      if (question) out.push(question);
-    }
-  }
-  return out;
+/* Clusters on or around the level: verbs and adjectives before nouns, and the
+   least-met meanings first. */
+function clustersNear(level: number, spread: number): Cluster[] {
+  const rank = (c: Cluster) => (c.pos === 'noun' ? 1000 : 0) + familyUses(SEEN_KEY, c.id);
+  return shuffle(CLUSTERS.filter(c => Math.abs(c.level - level) <= spread)).sort((a, b) => rank(a) - rank(b));
 }
 
-/* Twenty unique questions with their cards laid out. The odd word's position is
-   spread evenly across the four cells (five each) so no corner can be learned,
-   and the layout is fixed once here — re-renders never reshuffle it. */
+/* Clusters that may supply the other words for cluster A at this level: same
+   part of speech, never in conflict with A, near in difficulty. */
+function donorsFor(A: Cluster, level: number, spread: number, near: boolean): Cluster[] {
+  const base = CLUSTERS.filter(B => B.pos === A.pos && !clash(A, B) && Math.abs(B.level - level) <= spread + 3);
+  const wanted = base.filter(B => (near ? B.domain === A.domain : B.domain !== A.domain));
+  return wanted.length ? wanted : base;
+}
+
+/* Twenty questions for a level. Three words share one cluster's meaning; the
+   fourth is the same part of speech from a cluster that is recorded as clearly
+   different, so the odd word is always defensible and part of speech never gives
+   it away. No four-word set the player has already met can return, and a
+   meaning is used once per round. */
 function buildRound(level: number): Question[] {
-  const pool = buildPool(level);
-  // Never pad a level with a repeated or unvalidated question — the caller
-  // shows an error state instead.
-  if (pool.length < QUESTIONS_PER_LEVEL) return [];
-  const picked = shuffle(pool).slice(0, QUESTIONS_PER_LEVEL);
-  const slots = shuffle(
-    Array.from({ length: QUESTIONS_PER_LEVEL }, (_, i) => i % 4)
-  );
-  return picked.map((q, i) => {
+  const lv = Math.min(MAX_LEVEL, Math.max(1, level));
+  const picked: Question[] = [];
+  const families = new Set<string>();
+  const keys = new Set<string>();
+
+  for (let spread = 1; spread <= MAX_LEVEL && picked.length < QUESTIONS_PER_LEVEL; spread += 2) {
+    for (const A of clustersNear(lv, spread)) {
+      if (picked.length >= QUESTIONS_PER_LEVEL) break;
+      if (families.has(A.id)) continue;
+      for (let attempt = 0; attempt < 14; attempt++) {
+        const trio = shuffle(A.words).slice(0, 3);
+        const donors = donorsFor(A, lv, spread, Math.random() < nearRatio(lv));
+        if (!donors.length) break;
+        const B = donors[Math.floor(Math.random() * donors.length)];
+        const odd = B.words[Math.floor(Math.random() * B.words.length)];
+        if (A.words.includes(odd)) continue;
+        const key = setKey([...trio, odd]);
+        if (keys.has(key) || isSeen(SEEN_KEY, key)) continue;
+        keys.add(key);
+        families.add(A.id);
+        const [a, b, c] = trio;
+        picked.push({
+          id: key,
+          cards: [...trio.map((w, i) => ({ id: `${key}-r${i}`, word: w })), { id: `${key}-odd`, word: odd }],
+          oddId: `${key}-odd`,
+          relationshipLabel: capitalise(A.meaning),
+          relationshipExplanation: `${a}, ${b} and ${c} are ${A.meaning}; ${odd} is not.`,
+          difficulty: A.level,
+          category: A.domain,
+          family: A.id,
+        });
+        break;
+      }
+    }
+  }
+  if (picked.length < QUESTIONS_PER_LEVEL) return [];
+
+  // The odd word sits in each of the four cells exactly five times.
+  const slots = shuffle(Array.from({ length: QUESTIONS_PER_LEVEL }, (_, i) => i % 4));
+  return picked.slice(0, QUESTIONS_PER_LEVEL).map((q, i) => {
     const odd = q.cards.find(c => c.id === q.oddId)!;
-    const rest = shuffle(q.cards.filter(c => c.id !== q.oddId));
-    const cards = [...rest];
+    const cards = shuffle(q.cards.filter(c => c.id !== q.oddId));
     cards.splice(slots[i], 0, odd);
-    return { ...q, id: `${q.id}-${i}`, cards: cards.slice(0, 4) };
+    return { ...q, cards: cards.slice(0, 4) };
   });
 }
 
@@ -301,37 +275,37 @@ export default function OddOneScreen({ onExit, recordQuizXp }: OddOneScreenProps
   };
 
   const finishLevel = () => {
-    const passed = correctCount === QUESTIONS_PER_LEVEL;
-    const key = String(level);
-    const best = Math.max(progress.bestScores[key] ?? 0, correctCount);
-    const nextProgress: Progress = {
-      ...progress,
-      bestScores: { ...progress.bestScores, [key]: best },
-      completedLevels: passed
-        ? Array.from(new Set([...progress.completedLevels, level]))
-        : progress.completedLevels,
-      // a replay can only raise progress, never take a level back
-      highestUnlockedLevel: passed
-        ? Math.max(progress.highestUnlockedLevel, level + 1)
-        : progress.highestUnlockedLevel,
-    };
+    // Twenty correct out of twenty in this attempt is the only way through.
+    const { progress: nextProgress } = recordLevelAttempt(
+      progress,
+      level,
+      correctCount,
+      QUESTIONS_PER_LEVEL,
+      MAX_LEVEL
+    );
     setProgress(nextProgress);
     saveProgress(nextProgress);
     recordQuizXp(correctCount);
     setView('result');
   };
 
+  // A question counts as used the moment it is on screen - failed attempts included.
+  useEffect(() => {
+    const q = questions[index];
+    if (view === 'play' && q) markSeen(SEEN_KEY, q.id, q.family);
+  }, [view, index, questions]);
+
   /* ---------- screens ---------- */
 
   if (view === 'levels') {
-    const top = Math.max(progress.highestUnlockedLevel + 7, 12);
+    const top = visibleLevels(progress, MAX_LEVEL);
     const levels = Array.from({ length: top }, (_, i) => i + 1);
     return (
       <div className="space-y-5 pb-4">
         <TopBar onExit={onExit} level={progress.highestUnlockedLevel} />
         <Title />
         <p className="text-center text-[11px] text-white/45">
-          Each level has 20 questions. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
+          50 levels from A1 to C1, 20 questions each. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
         </p>
         {notice && <p className="text-center text-[11px] tracking-[0.1em] text-[#e3b553]">{notice}</p>}
         <div className="grid grid-cols-4 gap-2">
@@ -386,7 +360,11 @@ export default function OddOneScreen({ onExit, recordQuizXp }: OddOneScreenProps
           {passed && <p className="text-[11px] tracking-[0.22em] text-[#e3b553]">PERFECT</p>}
         </div>
 
-        {passed ? (
+        {passed && level === MAX_LEVEL ? (
+          <p className="text-center text-sm tracking-[0.16em] text-[#e3b553] font-bold">
+            ODD ONE COMPLETE · ALL 50 LEVELS
+          </p>
+        ) : passed ? (
           <button
             onClick={() => startLevel(level + 1)}
             className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"

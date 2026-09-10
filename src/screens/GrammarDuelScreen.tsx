@@ -1,6 +1,15 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { GRAMMAR_DUELS, GrammarDuel } from '../data/grammarDuels';
+import GENERATED_BANK from '../data/grammarDuelBank.json';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen, familyUses } from '../lib/seenHistory';
 
 /* GRAMMAR DUEL — two sentences, only one is correct.
    Exactly 20 duels per level, only 20/20 unlocks the next level. No timer,
@@ -8,12 +17,9 @@ import { GRAMMAR_DUELS, GrammarDuel } from '../data/grammarDuels';
 
 const QUESTIONS_PER_LEVEL = 20;
 const STORE_KEY = 'lex_grammarduel_progress';
-/* How many duels a level's window covers, and how far the window slides per
-   level. LEVELS_TO_TOP levels take a learner from the first A1 window to the
-   final C1 one; beyond that the window stays on the hardest band. */
-const WINDOW = 40;
-const FIRST_WINDOW_END = 23; // level 1 sees only A1.1 and A1.2
-const LEVELS_TO_TOP = 80;
+/* Exactly 50 levels, A1 at level 1 and C1 at level 50. There is no level 51. */
+const MAX_LEVEL = 50;
+const SEEN_KEY = 'grammarduel';
 
 interface Side {
   id: string;
@@ -30,6 +36,7 @@ interface Question {
   topic: string;
   errorType: string;
   cefr: string;
+  family: string;
 }
 
 interface Mistake {
@@ -39,12 +46,7 @@ interface Mistake {
   topic: string;
 }
 
-interface Progress {
-  highestUnlockedLevel: number;
-  completedLevels: number[];
-  bestScores: Record<string, number>;
-  lastPlayedLevel: number;
-}
+type Progress = LevelProgress;
 
 interface GrammarDuelScreenProps {
   onExit: () => void;
@@ -62,75 +64,112 @@ function shuffle<T>(arr: T[], rnd: () => number = Math.random): T[] {
   return a;
 }
 
-function loadProgress(): Progress {
-  try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (raw) {
-      const p = JSON.parse(raw) as Progress;
-      return {
-        highestUnlockedLevel: Math.max(1, p.highestUnlockedLevel || 1),
-        completedLevels: p.completedLevels || [],
-        bestScores: p.bestScores || {},
-        lastPlayedLevel: p.lastPlayedLevel || 1,
-      };
-    }
-  } catch { /* ignore */ }
-  return { highestUnlockedLevel: 1, completedLevels: [], bestScores: {}, lastPlayedLevel: 1 };
-}
-
-function saveProgress(p: Progress) {
-  try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(p));
-  } catch { /* ignore */ }
-}
+const loadProgress = (): Progress => loadLevelProgress(STORE_KEY, MAX_LEVEL);
+const saveProgress = (p: Progress) => saveLevelProgress(STORE_KEY, p);
 
 const BAND_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
-/* The database is already written in teaching order; this keeps it in that
-   order whatever order the entries happen to sit in the file. */
-const ORDERED: GrammarDuel[] = [...GRAMMAR_DUELS].sort((a, b) => {
-  const band = BAND_ORDER.indexOf(a.cefr) - BAND_ORDER.indexOf(b.cefr);
-  if (band !== 0) return band;
-  return a.sub - b.sub;
-});
+/* One duel as the game uses it, whichever source it came from. */
+interface DuelItem {
+  id: string;
+  level: number;
+  correct: string;
+  incorrect: string;
+  topic: string;
+  errorType: string;
+  cefr: string;
+  family: string;
+  explanation: string;
+}
+
+/* The hand-written duels sit on the level their CEFR band and sub-band describe:
+   A1.1 -> level 1, A1.4 -> level 9, and so on up to C1.4 -> level 49. */
+const CURATED: DuelItem[] = GRAMMAR_DUELS.map(d => ({
+  id: d.id,
+  level: BAND_ORDER.indexOf(d.cefr) * 10 + [1, 4, 6, 9][Math.max(0, Math.min(3, d.sub - 1))],
+  correct: d.correct,
+  incorrect: d.incorrect,
+  topic: d.topic,
+  errorType: d.errorType,
+  cefr: d.cefr,
+  family: `${d.topic}|${d.subtopic}`,
+  explanation: d.explanation,
+}));
+
+interface BankEntry {
+  id: string;
+  level: number;
+  cefr: string;
+  correct: string;
+  incorrect: string;
+  target: string;
+  errorType: string;
+  family: string;
+  explanation: string;
+}
+
+const GENERATED: DuelItem[] = (GENERATED_BANK as BankEntry[]).map(d => ({
+  id: d.id,
+  level: d.level,
+  correct: d.correct,
+  incorrect: d.incorrect,
+  topic: d.target,
+  errorType: d.errorType,
+  cefr: d.cefr,
+  family: d.family,
+  explanation: d.explanation,
+}));
 
 /* Every duel is checked before it can reach a player. */
-function isValid(d: GrammarDuel): boolean {
+function isValid(d: DuelItem): boolean {
   const a = d.correct.trim();
   const b = d.incorrect.trim();
   if (!a || !b || a === b) return false;
-  if (!d.explanation.trim() || !d.topic.trim() || !d.errorType.trim()) return false;
-  if (!BAND_ORDER.includes(d.cefr)) return false;
-  // the two sentences must stay close: same length ballpark, mostly shared words
-  const wa = a.toLowerCase().replace(/[^a-z' ]/g, '').split(/\s+/);
-  const wb = b.toLowerCase().replace(/[^a-z' ]/g, '').split(/\s+/);
-  if (Math.abs(wa.length - wb.length) > 2) return false;
+  if (!d.explanation.trim() || !d.topic.trim()) return false;
+  if (d.level < 1 || d.level > MAX_LEVEL) return false;
+  const wa = a.toLowerCase().replace(/[^a-z' ]/g, '').split(' ').filter(Boolean);
+  const wb = b.toLowerCase().replace(/[^a-z' ]/g, '').split(' ').filter(Boolean);
+  if (Math.abs(wa.length - wb.length) > 3) return false;
   const shared = wa.filter(w => wb.includes(w)).length;
-  if (shared / Math.max(wa.length, wb.length) < 0.5) return false;
-  return true;
+  return shared / Math.max(wa.length, wb.length) >= 0.5;
 }
 
-const VALID = ORDERED.filter(isValid);
+/* One entry per sentence: the same correct sentence never exists twice. */
+const POOL: DuelItem[] = (() => {
+  const seen = new Set<string>();
+  const out: DuelItem[] = [];
+  for (const d of [...CURATED, ...GENERATED]) {
+    const key = d.correct.toLowerCase().replace(/[^a-z]/g, '');
+    if (seen.has(key) || !isValid(d)) continue;
+    seen.add(key);
+    out.push(d);
+  }
+  return out;
+})();
 
-/* The window of the curriculum a level may draw from. It slides upward with the
-   level, which is what makes progression smooth and stops B2 grammar from ever
-   appearing in an A1 band. Past LEVELS_TO_TOP it rests on the hardest window,
-   so level 101, 200 and beyond keep working at C1. */
-function windowFor(level: number): GrammarDuel[] {
-  const n = VALID.length;
-  const step = (n - FIRST_WINDOW_END) / Math.max(1, LEVELS_TO_TOP - 1);
-  const end = Math.min(n, Math.round(FIRST_WINDOW_END + (level - 1) * step));
-  const start = Math.max(0, end - WINDOW);
-  return VALID.slice(start, end);
-}
-
-/* Twenty duels for a level: unique, evenly balanced left and right, and spaced
-   so the same error type never runs more than twice in a row. */
+/* Twenty duels for a level, none of which this player has ever been shown.
+   The level's own duels come first; if they run out, the nearest levels on
+   either side fill in, so difficulty stays where it should. Within a round a
+   grammar family appears at most twice, families the player has met least
+   often are preferred, and the correct sentence sits on the left exactly ten
+   times. */
 function buildRound(level: number): Question[] {
-  const pool = windowFor(level);
-  if (pool.length < QUESTIONS_PER_LEVEL) return [];
+  const lv = Math.min(MAX_LEVEL, Math.max(1, level));
+  const picked: DuelItem[] = [];
+  const inRound = new Map<string, number>();
 
-  let picked = shuffle(pool).slice(0, QUESTIONS_PER_LEVEL);
+  for (let distance = 0; distance < MAX_LEVEL && picked.length < QUESTIONS_PER_LEVEL; distance++) {
+    const levels = distance === 0 ? [lv] : [lv - distance, lv + distance];
+    const fresh = POOL.filter(d => levels.includes(d.level) && !isSeen(SEEN_KEY, d.id));
+    const ordered = shuffle(fresh).sort((a, b) => familyUses(SEEN_KEY, a.family) - familyUses(SEEN_KEY, b.family));
+    for (const d of ordered) {
+      if (picked.length >= QUESTIONS_PER_LEVEL) break;
+      if ((inRound.get(d.family) ?? 0) >= 2) continue;
+      inRound.set(d.family, (inRound.get(d.family) ?? 0) + 1);
+      picked.push(d);
+    }
+  }
+  if (picked.length < QUESTIONS_PER_LEVEL) return [];
 
   // Break up runs of the same error type so a level never becomes one drill.
   for (let i = 2; i < picked.length; i++) {
@@ -140,8 +179,6 @@ function buildRound(level: number): Question[] {
     }
   }
 
-  // The correct sentence sits on the left exactly ten times, in a random order,
-  // so the side can never be guessed and never correlates with a topic.
   const sides = shuffle(
     Array.from({ length: QUESTIONS_PER_LEVEL }, (_, i) => (i < QUESTIONS_PER_LEVEL / 2 ? 'left' : 'right'))
   );
@@ -151,7 +188,7 @@ function buildRound(level: number): Question[] {
     const bad: Side = { id: `${d.id}-no`, text: d.incorrect };
     const correctLeft = sides[i] === 'left';
     return {
-      id: `${d.id}-${i}`,
+      id: d.id,
       left: correctLeft ? good : bad,
       right: correctLeft ? bad : good,
       correctId: good.id,
@@ -160,6 +197,7 @@ function buildRound(level: number): Question[] {
       topic: d.topic,
       errorType: d.errorType,
       cefr: d.cefr,
+      family: d.family,
     };
   });
 }
@@ -238,36 +276,36 @@ export default function GrammarDuelScreen({ onExit, recordQuizXp }: GrammarDuelS
   };
 
   const finishLevel = () => {
-    const passed = correctCount === QUESTIONS_PER_LEVEL;
-    const key = String(level);
-    const best = Math.max(progress.bestScores[key] ?? 0, correctCount);
-    const nextProgress: Progress = {
-      ...progress,
-      bestScores: { ...progress.bestScores, [key]: best },
-      completedLevels: passed
-        ? Array.from(new Set([...progress.completedLevels, level]))
-        : progress.completedLevels,
-      highestUnlockedLevel: passed
-        ? Math.max(progress.highestUnlockedLevel, level + 1)
-        : progress.highestUnlockedLevel,
-    };
+    const { progress: nextProgress } = recordLevelAttempt(
+      progress,
+      level,
+      correctCount,
+      QUESTIONS_PER_LEVEL,
+      MAX_LEVEL
+    );
     setProgress(nextProgress);
     saveProgress(nextProgress);
     recordQuizXp(correctCount);
     setView('result');
   };
 
+  // A duel counts as used the moment it is on screen - failed attempts included.
+  useEffect(() => {
+    const q = questions[index];
+    if (view === 'play' && q) markSeen(SEEN_KEY, q.id, q.family);
+  }, [view, index, questions]);
+
   /* ---------- screens ---------- */
 
   if (view === 'levels') {
-    const top = Math.max(progress.highestUnlockedLevel + 7, 12);
+    const top = visibleLevels(progress, MAX_LEVEL);
     const levels = Array.from({ length: top }, (_, i) => i + 1);
     return (
       <div className="space-y-5 pb-4">
         <TopBar onExit={onExit} level={progress.highestUnlockedLevel} />
         <Title />
         <p className="text-center text-[11px] text-white/45">
-          Each level has 20 duels. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
+          50 levels from A1 to C1, 20 duels each. Only <span className="text-[#e3b553]">20 / 20</span> unlocks the next one.
         </p>
         {notice && <p className="text-center text-[11px] tracking-[0.1em] text-[#e3b553]">{notice}</p>}
         <div className="grid grid-cols-4 gap-2">
@@ -322,7 +360,11 @@ export default function GrammarDuelScreen({ onExit, recordQuizXp }: GrammarDuelS
           {passed && <p className="text-[11px] tracking-[0.22em] text-[#e3b553]">PERFECT</p>}
         </div>
 
-        {passed ? (
+        {passed && level === MAX_LEVEL ? (
+          <p className="text-center text-sm tracking-[0.16em] text-[#e3b553] font-bold">
+            GRAMMAR DUEL COMPLETE · ALL 50 LEVELS
+          </p>
+        ) : passed ? (
           <button
             onClick={() => startLevel(level + 1)}
             className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"

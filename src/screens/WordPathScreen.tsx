@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { LucideIcon } from 'lucide-react';
 import {
   ChevronLeft, BarChart3, Lock, Check, X, Star,
@@ -11,7 +11,15 @@ import {
   Factory, Briefcase, CalendarClock, CircleHelp, Lightbulb, Map, CheckCheck, Trash2,
   HeartHandshake,
 } from 'lucide-react';
-import { SEMANTIC_PATHS, SemanticPath } from '../data/wordPaths';
+import CLUSTER_BANK from '../data/lexicalClusters.json';
+import {
+  LevelProgress,
+  loadLevelProgress,
+  saveLevelProgress,
+  recordLevelAttempt,
+  visibleLevels,
+} from '../lib/levelProgress';
+import { isSeen, markSeen, familyUses } from '../lib/seenHistory';
 import { levelDifficulty, tierWindow, tierWeight, weightedShuffle } from '../lib/difficulty';
 
 /* WORD PATH — connect the meaning, climb the mountain.
@@ -21,6 +29,9 @@ import { levelDifficulty, tierWindow, tierWeight, weightedShuffle } from '../lib
 
 const QUESTIONS_PER_LEVEL = 20;
 const STORE_KEY = 'lex_wordpath_progress';
+/* Exactly 50 levels, A1 at level 1 and C1 at level 50. There is no level 51. */
+const MAX_LEVEL = 50;
+const SEEN_KEY = 'wordpath';
 
 interface Option {
   id: string;
@@ -35,6 +46,7 @@ interface Question {
   answer: string;
   explanation: string;
   relationshipType: string;
+  family: string;
 }
 
 interface Mistake {
@@ -44,12 +56,7 @@ interface Mistake {
   explanation: string;
 }
 
-interface Progress {
-  highestUnlockedLevel: number;
-  completedLevels: number[];
-  bestScores: Record<string, number>;
-  lastPlayedLevel: number;
-}
+type Progress = LevelProgress;
 
 interface WordPathScreenProps {
   onExit: () => void;
@@ -77,82 +84,64 @@ function mulberry32(seed: number) {
   };
 }
 
-function loadProgress(): Progress {
-  try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (raw) {
-      const p = JSON.parse(raw) as Progress;
-      return {
-        highestUnlockedLevel: Math.max(1, p.highestUnlockedLevel || 1),
-        completedLevels: p.completedLevels || [],
-        bestScores: p.bestScores || {},
-        lastPlayedLevel: p.lastPlayedLevel || 1,
-      };
-    }
-  } catch { /* ignore */ }
-  return { highestUnlockedLevel: 1, completedLevels: [], bestScores: {}, lastPlayedLevel: 1 };
+const loadProgress = (): Progress => loadLevelProgress(STORE_KEY, MAX_LEVEL);
+const saveProgress = (p: Progress) => saveLevelProgress(STORE_KEY, p);
+
+/* ---------- the lexical cluster bank ----------
+   Every cluster is a set of genuine near-synonyms sharing one precise meaning,
+   generated and then independently reviewed (scripts/generate-lexical-clusters.mjs).
+   A word lives in only one cluster of its part of speech, and clusters too close
+   in meaning are recorded as conflicts and never used against each other. */
+interface Cluster {
+  id: string;
+  pos: string;
+  cefr: string;
+  level: number; // 1-50
+  domain: string;
+  meaning: string;
+  words: string[];
+  conflicts: string[];
 }
 
-function saveProgress(p: Progress) {
-  try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(p));
-  } catch { /* ignore */ }
+// Verbs and adjectives only: noun sets drift into concrete categories (vehicles,
+// shops, money) that the game rules out as too easy.
+const CLUSTERS: Cluster[] = (CLUSTER_BANK as Cluster[]).filter(
+  c => (c.pos === 'verb' || c.pos === 'adjective') && c.words.length >= 4
+);
+
+function clash(a: Cluster, b: Cluster): boolean {
+  return a.id === b.id || a.conflicts.includes(b.id) || b.conflicts.includes(a.id);
 }
 
-/* Difficulty band. Tier carries vocabulary level, relationship subtlety and how
-   close the distractors sit; the bands keep rising and never cap out. */
-function tiersFor(level: number): [number, number] {
-  return tierWindow(levelDifficulty(level));
+/* How often the other words come from the same semantic domain - a near miss
+   that needs real vocabulary knowledge. Almost never at level 1, most of the
+   time by level 36. */
+function nearRatio(level: number): number {
+  return Math.max(0, Math.min(0.85, (level - 4) / 38));
 }
 
-/* WORD PATH is a semantic vocabulary game. A question is three words from one
-   semantic group plus a fourth word from the same group as the answer; the three
-   distractors are associated with the topic but are NOT members of the group, so
-   exactly one option can ever be right.
-
-   Nothing here uses cause and effect, process, routine or chronology: the only
-   question the player answers is "which word belongs with these?". */
-
-/* Every group is checked before it can produce a question. */
-function isValidGroup(g: SemanticPath): boolean {
-  if (g.words.length < 4 || g.distractors.length < 3) return false;
-  if (!g.predicate.trim() || !g.label.trim()) return false;
-  const words = g.words.map(w => w.trim().toLowerCase());
-  const dis = g.distractors.map(w => w.trim().toLowerCase());
-  if (words.some(w => !w) || dis.some(w => !w)) return false;
-  if (new Set(words).size !== words.length) return false;
-  if (new Set(dis).size !== dis.length) return false;
-  // a distractor may never be a member of its own group
-  if (dis.some(d => words.includes(d))) return false;
-  return true;
+/* Order does not make a new question: the same four words are the same question. */
+function setKey(words: string[]): string {
+  return [...words].map(w => w.toLowerCase()).sort().join('|');
 }
 
-const GROUPS = SEMANTIC_PATHS.filter(isValidGroup);
-
-/* Ambiguity guard. A question is rejected when a distractor could also be
-   defended as belonging with the path — either because some other group holds
-   the whole path and that distractor too, or because the word already appears
-   on the path. Only one option may satisfy the relationship. */
-function isAmbiguous(nodes: string[], answer: string, distractors: string[], groupId: string): boolean {
-  const all = [...nodes, answer, ...distractors].map(w => w.trim().toLowerCase());
-  if (all.some(w => !w)) return true;
-  if (new Set(all).size !== all.length) return true; // a word may appear only once
-  for (const g of GROUPS) {
-    if (g.id === groupId) continue;
-    const holdsPath = nodes.every(n => g.words.includes(n));
-    if (!holdsPath) continue;
-    if (distractors.some(d => g.words.includes(d))) return true;
-  }
-  return false;
+function capitalise(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-/* All 3-word paths a group can show. */
-function trios(words: string[]): [string, string, string][] {
-  const out: [string, string, string][] = [];
-  for (let i = 0; i < words.length - 2; i++)
-    for (let j = i + 1; j < words.length - 1; j++)
-      for (let k = j + 1; k < words.length; k++) out.push([words[i], words[j], words[k]]);
-  return out;
+/* Clusters on or around the level: verbs and adjectives before nouns, and the
+   least-met meanings first. */
+function clustersNear(level: number, spread: number): Cluster[] {
+  const rank = (c: Cluster) => (c.pos === 'noun' ? 1000 : 0) + familyUses(SEEN_KEY, c.id);
+  return shuffle(CLUSTERS.filter(c => Math.abs(c.level - level) <= spread)).sort((a, b) => rank(a) - rank(b));
+}
+
+/* Clusters that may supply the other words for cluster A at this level: same
+   part of speech, never in conflict with A, near in difficulty. */
+function donorsFor(A: Cluster, level: number, spread: number, near: boolean): Cluster[] {
+  const base = CLUSTERS.filter(B => B.pos === A.pos && !clash(A, B) && Math.abs(B.level - level) <= spread + 3);
+  const wanted = base.filter(B => (near ? B.domain === A.domain : B.domain !== A.domain));
+  return wanted.length ? wanted : base;
 }
 
 interface Candidate {
@@ -162,77 +151,81 @@ interface Candidate {
   distractors: string[];
   explanation: string;
   relation: string;
+  family: string;
 }
 
-/* The candidate pool for a level: validated, ambiguity-free questions built from
-   the semantic groups of that difficulty band. Deterministic per level so the
-   band is stable, and large enough that a run can pick 20 unique questions. */
-function buildPool(level: number): Candidate[] {
-  const d = levelDifficulty(level);
-  const [minTier, maxTier] = tiersFor(level);
-  const band = GROUPS.filter(g => g.tier >= minTier && g.tier <= maxTier);
-  if (!band.length) return [];
+/* One question from cluster A: three of its words on the path, a fourth as the
+   answer, and three distractors of the same part of speech from clusters that
+   are recorded as clearly different - plausible, never a second right answer. */
+function candidateFrom(A: Cluster, level: number, spread: number): Candidate | null {
+  for (let attempt = 0; attempt < 14; attempt++) {
+    const words = shuffle(A.words);
+    const nodes = words.slice(0, 3);
+    const answer = words[3];
+    if (!answer) return null;
+    const key = setKey([...nodes, answer]);
+    if (isSeen(SEEN_KEY, key)) continue;
 
-  const rnd = mulberry32(level * 6151 + 7);
-  // Groups whose tier matches this level come up first, so consecutive levels
-  // inside one band still differ in how hard they read.
-  const rotated = weightedShuffle(band, g => tierWeight(g.tier, d), rnd);
-  const out: Candidate[] = [];
-  const seen = new Set<string>();
+    const distractors: string[] = [];
+    const usedDonors = new Set<string>();
+    for (let d = 0; d < 20 && distractors.length < 3; d++) {
+      const donors = donorsFor(A, level, spread, Math.random() < nearRatio(level)).filter(B => !usedDonors.has(B.id));
+      if (!donors.length) break;
+      const B = donors[Math.floor(Math.random() * donors.length)];
+      const w = B.words[Math.floor(Math.random() * B.words.length)];
+      if (A.words.includes(w) || distractors.includes(w)) continue;
+      usedDonors.add(B.id); // three different meanings, so no two distractors agree
+      distractors.push(w);
+    }
+    if (distractors.length < 3) return null;
 
-  for (let pass = 0; pass < 5 && out.length < 60; pass++) {
-    for (const g of rotated) {
-      if (out.length >= 60) break;
-      const combos = shuffle(trios(g.words), rnd);
-      const combo = combos[(pass + level) % combos.length];
-      if (!combo) continue;
-      const rest = g.words.filter(w => !combo.includes(w));
-      if (!rest.length) continue;
-      const answer = rest[Math.floor(rnd() * rest.length)];
-      const key = [...combo].sort().join('|') + '>' + answer;
-      if (seen.has(key)) continue;
+    const [a, b, c] = nodes;
+    return {
+      id: key,
+      nodes,
+      answer,
+      distractors,
+      relation: A.meaning,
+      family: A.id,
+      explanation: `${a}, ${b} and ${c} are ${A.meaning}. ${answer} shares that meaning; the other options do not.`,
+    };
+  }
+  return null;
+}
 
-      const distractors = shuffle(g.distractors, rnd).slice(0, 3);
-      if (distractors.length !== 3) continue;
-      if (isAmbiguous(combo, answer, distractors, g.id)) continue;
-
-      seen.add(key);
-      const [a, b, c] = combo;
-      out.push({
-        id: `${g.id}-${key}`,
-        nodes: combo,
-        answer,
-        distractors,
-        relation: g.relation,
-        explanation: `${a}, ${b} and ${c} are ${g.predicate}. ${answer} belongs to the same group; the other options do not.`,
-      });
+/* Twenty questions for a level, none of which this player has met before, one
+   per meaning, drawn from the clusters on or around the level. */
+function buildRound(level: number): Question[] {
+  const lv = Math.min(MAX_LEVEL, Math.max(1, level));
+  const picked: Candidate[] = [];
+  const families = new Set<string>();
+  for (let spread = 1; spread <= MAX_LEVEL && picked.length < QUESTIONS_PER_LEVEL; spread += 2) {
+    for (const A of clustersNear(lv, spread)) {
+      if (picked.length >= QUESTIONS_PER_LEVEL) break;
+      if (families.has(A.id)) continue;
+      const cand = candidateFrom(A, lv, spread);
+      if (!cand || picked.some(p => p.id === cand.id)) continue;
+      families.add(A.id);
+      picked.push(cand);
     }
   }
-  return out;
-}
+  if (picked.length < QUESTIONS_PER_LEVEL) return [];
 
-/* Twenty unique questions for a level. The correct option is spread evenly over
-   the four cells (five each) so its position can never be learned, and every
-   layout is fixed here — re-renders never reshuffle anything. */
-function buildRound(level: number): Question[] {
-  const pool = buildPool(level);
-  if (pool.length < QUESTIONS_PER_LEVEL) return [];
-  const picked = shuffle(pool).slice(0, QUESTIONS_PER_LEVEL);
   const slots = shuffle(Array.from({ length: QUESTIONS_PER_LEVEL }, (_, i) => i % 4));
-
-  return picked.map((p, i) => {
+  return picked.slice(0, QUESTIONS_PER_LEVEL).map((p, i) => {
     const correct: Option = { id: `${p.id}-c`, word: p.answer };
     const others: Option[] = shuffle(p.distractors.map((d, k) => ({ id: `${p.id}-d${k}`, word: d })));
     const options = [...others];
     options.splice(slots[i], 0, correct);
     return {
-      id: `${p.id}-${i}`,
+      id: p.id,
       nodes: p.nodes,
       options: options.slice(0, 4),
       correctId: correct.id,
       answer: p.answer,
       explanation: p.explanation,
       relationshipType: p.relation,
+      family: p.family,
     };
   });
 }
@@ -331,36 +324,37 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
   };
 
   const finishLevel = () => {
-    const passed = correctCount === QUESTIONS_PER_LEVEL;
-    const key = String(level);
-    const best = Math.max(progress.bestScores[key] ?? 0, correctCount);
-    const nextProgress: Progress = {
-      ...progress,
-      bestScores: { ...progress.bestScores, [key]: best },
-      completedLevels: passed
-        ? Array.from(new Set([...progress.completedLevels, level]))
-        : progress.completedLevels,
-      highestUnlockedLevel: passed
-        ? Math.max(progress.highestUnlockedLevel, level + 1)
-        : progress.highestUnlockedLevel,
-    };
+    // Twenty correct out of twenty in this attempt is the only way through.
+    const { progress: nextProgress } = recordLevelAttempt(
+      progress,
+      level,
+      correctCount,
+      QUESTIONS_PER_LEVEL,
+      MAX_LEVEL
+    );
     setProgress(nextProgress);
     saveProgress(nextProgress);
     recordQuizXp(correctCount);
     setView('result');
   };
 
+  // A question counts as used the moment it is on screen - failed attempts included.
+  useEffect(() => {
+    const q = questions[index];
+    if (view === 'play' && q) markSeen(SEEN_KEY, q.id, q.family);
+  }, [view, index, questions]);
+
   /* ---------- screens ---------- */
 
   if (view === 'levels') {
-    const top = Math.max(progress.highestUnlockedLevel + 7, 12);
+    const top = visibleLevels(progress, MAX_LEVEL);
     const levels = Array.from({ length: top }, (_, i) => i + 1);
     return (
       <div className="space-y-5 pb-4">
         <TopBar onExit={onExit} level={progress.highestUnlockedLevel} />
         <Title />
         <p className="text-center text-[11px] text-white/45">
-          Each level has 20 steps. Only <span className="text-[#e3b553]">20 / 20</span> reaches the summit.
+          50 levels from A1 to C1, 20 steps each. Only <span className="text-[#e3b553]">20 / 20</span> reaches the summit.
         </p>
         {notice && <p className="text-center text-[11px] tracking-[0.1em] text-[#e3b553]">{notice}</p>}
         <div className="grid grid-cols-4 gap-2">
@@ -416,7 +410,11 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
           {passed && <p className="text-[11px] tracking-[0.22em] text-[#e3b553]">PERFECT</p>}
         </div>
 
-        {passed ? (
+        {passed && level === MAX_LEVEL ? (
+          <p className="text-center text-sm tracking-[0.16em] text-[#e3b553] font-bold">
+            WORD PATH COMPLETE · ALL 50 LEVELS
+          </p>
+        ) : passed ? (
           <button
             onClick={() => startLevel(level + 1)}
             className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-xs font-bold tracking-[0.12em] cursor-pointer"
