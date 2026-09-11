@@ -181,7 +181,7 @@ const FUNCTION_WORDS = new Set((
 /* "They will broadcast the match live tonight." -> "It often appears with words
    like match, live and tonight." The example's own context, never the sentence
    with a hole in it: a gap would turn the clue into a completion exercise. */
-function contextLine(example: string, word: string): string | null {
+export function contextLine(example: string, word: string): string | null {
   const picked: string[] = [];
   for (const raw of example.toLowerCase().replace(/[^a-z ]/g, ' ').split(' ')) {
     const w = raw.trim();

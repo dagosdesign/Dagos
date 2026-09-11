@@ -111,7 +111,7 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
             <div className="min-w-0">
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">UNBROKEN</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
-                Zinciri koparma: her kelimenin son harfiyle 10 saniyede yenisini bul.
+                Zinciri koparma: her kelimenin son harfiyle 20 saniyede yenisini bul.
               </p>
             </div>
           </div>

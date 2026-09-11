@@ -4,10 +4,10 @@ import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
-/* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 10 seconds
+/* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 20 seconds
    and its final letter starts the next one. No score, no lives: only the record. */
 
-const ROUND_SECONDS = 10;
+const ROUND_SECONDS = 20;
 const RECORD_KEY = 'lex_unbroken_record';
 
 type Status = 'playing' | 'ended';

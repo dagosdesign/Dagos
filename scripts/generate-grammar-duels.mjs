@@ -219,6 +219,9 @@ Return JSON: {"results":[{"n":0,"keep":true}]}`;
     console.log(`L${level}: reviewed ${levelItems.length}`);
   }
   const keep = new Set(review.filter(r => r.keep).map(r => r.n));
+  // A manual review (manual-review-LNN.json), when one exists, can only take duels out.
+  const manual = cached(`manual-${reviewName}`);
+  if (manual) for (const r of manual) if (!r.keep) keep.delete(r.n);
 
   let kept = 0;
   levelItems.forEach((d, i) => {

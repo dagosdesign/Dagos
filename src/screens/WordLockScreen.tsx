@@ -6,7 +6,13 @@ import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { foldAnswer } from '../lib/answerText';
 import { rampedPick, wordDifficulty } from '../lib/difficulty';
-import { categoryLine, mentionsWord } from '../lib/clues';
+import { categoryLine, contextLine, mentionsWord } from '../lib/clues';
+import EXTRA_CLUES from '../data/wordlockClues.json';
+
+/* Generated for the words whose own data cannot give two English clues
+   (scripts/generate-wordlock-clues.ts): their real part of speech and one
+   short clue that passed the same leak and gap checks the game uses. */
+const EXTRA: Record<string, { pos: string; clue: string }> = EXTRA_CLUES;
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -65,22 +71,40 @@ function pickStartingPositions(word: string): number[] {
    word, so the example sentence is never used here. */
 function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
   const word = card.word;
-  const clues: string[] = [];
+  const noGap = (c: string | null | undefined): c is string => !!c && !/_{2,}|\.{3}\s*$/.test(c);
 
-  // 1. What kind of word it is, from its semantic group or its definition.
-  const category = categoryLine(word, entry?.definition ?? '');
-  if (category) clues.push(category);
-
-  // 2. What it means - the English definition, with any form of the word hidden.
+  // English information about the word, most telling last: what kind of thing
+  // it is, what it means, the words it keeps company with, its part of speech.
   const definition = (entry?.definition ?? '').trim();
-  if (definition && !mentionsWord(definition, word)) clues.push(definition);
+  const extra = EXTRA[word.toLowerCase()];
+  const extraClue = extra && !mentionsWord(extra.clue, word) ? extra.clue : null;
+  const english = [
+    categoryLine(word, definition),
+    definition && !mentionsWord(definition, word) ? definition : null,
+    contextLine(entry?.example || card.exampleSentence || '', word),
+    extraClue,
+    partOfSpeechLine(card.partOfSpeech) ?? partOfSpeechLine(extra?.pos),
+  ].filter(noGap);
 
-  // 3. What it means in Turkish - the most direct meaning clue, opened last.
-  const turkish = (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim();
-  if (turkish) clues.push(`In Turkish it means: ${turkish}`);
+  // What it means in Turkish - the most direct meaning clue, always opened last.
+  const turkishText = (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim();
+  const turkish = turkishText ? `In Turkish it means: ${turkishText}` : null;
 
-  // Never a blank, never an underscore, never a missing word.
-  return clues.filter(c => !/_{2,}|\.{3}\s*$/.test(c)).slice(0, MAX_CLUES);
+  // Exactly three clues every round: two English ones and the Turkish meaning,
+  // or three English ones for a word without a Turkish meaning.
+  const clues = turkish ? [...english.slice(0, MAX_CLUES - 1), turkish] : english.slice(0, MAX_CLUES);
+  return [...new Set(clues)].slice(0, MAX_CLUES);
+}
+
+/* "adjective" -> "It is an adjective." The part of speech is on every card, so a
+   round never runs short of clues. */
+function partOfSpeechLine(pos: string | undefined): string | null {
+  const raw = (pos ?? '').toLowerCase().split(/[\/,;(]/)[0].trim().replace(/\.$/, '');
+  const names: Record<string, string> = { adj: 'adjective', adv: 'adverb', n: 'noun', v: 'verb', prep: 'preposition', conj: 'conjunction', pron: 'pronoun' };
+  const name = names[raw] ?? raw;
+  // "word", "phrase" and the like say nothing about the word.
+  if (!/^[a-z][a-z ]{1,24}$/.test(name) || /^(words?|phrase|expression|idiom|term)$/.test(name)) return null;
+  return `It is ${/^[aeiou]/.test(name) ? 'an' : 'a'} ${name}.`;
 }
 
 export default function WordLockScreen({ category, label, onExit, recordQuizXp }: WordLockScreenProps) {
@@ -228,7 +252,9 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
     finishRound({ ...stats, skipped: stats.skipped + 1 });
   };
 
-  const availableClue = opened < MAX_CLUES && unlocks > opened;
+  // An earned right waits until the player spends it; there are never more
+  // usable rights than clues still locked, and never more than three clues.
+  const availableClue = opened < clues.length && unlocks > opened;
 
   if (finished) {
     return (
@@ -344,7 +370,7 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
         <div className="flex items-center gap-2 px-1">
           <KeyRound className="w-3.5 h-3.5 text-[#e3b553]" />
           <p className="text-[11px] tracking-[0.14em] text-white/55">
-            CLUE UNLOCKS: <span className="text-[#e3b553] font-bold">{unlocks}</span> / {MAX_CLUES}
+            CLUE UNLOCKS: <span className="text-[#e3b553] font-bold">{Math.max(0, unlocks - opened)}</span> / {MAX_CLUES}
           </p>
         </div>
 
