@@ -55,7 +55,25 @@ const TRIVIAL = new Set((
   'shirt skirt jacket coat sweater trousers arm leg hand finger knee elbow pencil eraser ruler'
 ).split(' '));
 
+const NETWORK_ERROR = /fetch failed|ENOTFOUND|ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket hang up|\b50[0-4]\b|UNAVAILABLE/i;
+
+/* A dropped connection is not a reason to stop a run that takes hours: network
+   errors are retried with a growing pause before giving up. */
 async function ask(prompt, schemaHint) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await askOnce(prompt);
+    } catch (err) {
+      const msg = String(err?.message || err) + String(err?.cause?.message || '');
+      if (!NETWORK_ERROR.test(msg) || attempt >= 8) throw err;
+      const wait = Math.min(300, 15 * 2 ** attempt);
+      console.warn(`  network error (${msg.slice(0, 80)}), retrying in ${wait}s`);
+      await new Promise(r => setTimeout(r, wait * 1000));
+    }
+  }
+}
+
+async function askOnce(prompt) {
   let last;
   for (const model of MODELS) {
     try {

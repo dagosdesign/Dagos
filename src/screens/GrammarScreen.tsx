@@ -11,6 +11,8 @@ import { GrammarProgressState } from '../types';
 interface GrammarScreenProps {
   grammarProgress: GrammarProgressState;
   recordGrammarQuizResult: (topicId: string, correctCount: number, totalCount: number) => void;
+  /* Asked before a test starts; false means today's grammar allowance is used up. */
+  canStartTest?: (testKey: string) => boolean;
 }
 
 interface Category {
@@ -57,7 +59,7 @@ function loadJson<T>(cache: Map<string, Promise<T>>, url: string, key: string): 
   return p;
 }
 
-export default function GrammarScreen({ recordGrammarQuizResult }: GrammarScreenProps) {
+export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }: GrammarScreenProps) {
   const [category, setCategory] = useState<Category | null>(null);
   const [subId, setSubId] = useState<string | null>(null);
   const [lessons, setLessons] = useState<Record<string, Lesson> | null>(null);
@@ -82,6 +84,8 @@ export default function GrammarScreen({ recordGrammarQuizResult }: GrammarScreen
   }, [category]);
 
   const startTest = (l: Level) => {
+    // Free members get one grammar test a day; retrying today's test is always allowed.
+    if (canStartTest && subId && !canStartTest(`${subId}-${l}`)) return;
     setLevel(l);
     setQIdx(0);
     setSelected(null);

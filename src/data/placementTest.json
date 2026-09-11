@@ -1,0 +1,2564 @@
+[
+ {
+  "id": "pt-A1-001",
+  "band": "A1",
+  "question": "My brother and I _____ happy today because it is the weekend.",
+  "options": [
+   "is",
+   "am",
+   "are",
+   "be"
+  ],
+  "correct": 2,
+  "topic": "verb to be",
+  "explanation": "Use 'are' for plural subjects like 'My brother and I' (we) in the present tense."
+ },
+ {
+  "id": "pt-A1-002",
+  "band": "A1",
+  "question": "My sister _____ a new red bicycle, but she doesn't ride it often.",
+  "options": [
+   "has got",
+   "have got",
+   "is got",
+   "has get"
+  ],
+  "correct": 0,
+  "topic": "have got",
+  "explanation": "Use 'has got' for third-person singular subjects (he/she/it) to show possession."
+ },
+ {
+  "id": "pt-A1-003",
+  "band": "A1",
+  "question": "Ahmet is a doctor and he _____ in a big hospital in Istanbul.",
+  "options": [
+   "work",
+   "works",
+   "is work",
+   "working"
+  ],
+  "correct": 1,
+  "topic": "present simple",
+  "explanation": "In the present simple, third-person singular verbs (he/she/it) must end with an 's'."
+ },
+ {
+  "id": "pt-A1-004",
+  "band": "A1",
+  "question": "My uncle is _____ engineer and he designs beautiful buildings.",
+  "options": [
+   "a",
+   "the",
+   "some",
+   "an"
+  ],
+  "correct": 3,
+  "topic": "a/an/the",
+  "explanation": "Use 'an' before singular countable nouns that begin with a vowel sound."
+ },
+ {
+  "id": "pt-A1-005",
+  "band": "A1",
+  "question": "There are three _____ playing with a ball in the garden.",
+  "options": [
+   "childs",
+   "childrens",
+   "children",
+   "child"
+  ],
+  "correct": 2,
+  "topic": "plural nouns",
+  "explanation": "'Children' is the irregular plural form of 'child' and does not take an 's'."
+ },
+ {
+  "id": "pt-A1-006",
+  "band": "A1",
+  "question": "I love my parents very much and I write letters to _____ every week.",
+  "options": [
+   "they",
+   "their",
+   "them",
+   "him"
+  ],
+  "correct": 2,
+  "topic": "subject and object pronouns",
+  "explanation": "Use the object pronoun 'them' after a preposition like 'to'."
+ },
+ {
+  "id": "pt-A1-007",
+  "band": "A1",
+  "question": "Sally is doing her homework, but _____ computer is very slow today.",
+  "options": [
+   "she",
+   "his",
+   "hers",
+   "her"
+  ],
+  "correct": 3,
+  "topic": "possessive adjectives",
+  "explanation": "Use the possessive adjective 'her' to show that something belongs to a female person."
+ },
+ {
+  "id": "pt-A1-008",
+  "band": "A1",
+  "question": "_____ many comfortable beds in this hotel, so we can sleep well.",
+  "options": [
+   "There is",
+   "Have",
+   "Is there",
+   "There are"
+  ],
+  "correct": 3,
+  "topic": "there is/there are",
+  "explanation": "Use 'there are' to state the existence of plural nouns like 'beds'."
+ },
+ {
+  "id": "pt-A1-009",
+  "band": "A1",
+  "question": "My father is a great swimmer, but he _____ swim in the cold sea.",
+  "options": [
+   "no can",
+   "cannot",
+   "cans not",
+   "not can"
+  ],
+  "correct": 1,
+  "topic": "can for ability",
+  "explanation": "The negative form of 'can' is 'cannot' (or 'can't') followed by the base form of the verb."
+ },
+ {
+  "id": "pt-A1-010",
+  "band": "A1",
+  "question": "My keys are not on the table; I think they are _____ my bag.",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "underneath of"
+  ],
+  "correct": 2,
+  "topic": "prepositions of place",
+  "explanation": "Use 'in' to show that an object is inside an enclosed space like a bag."
+ },
+ {
+  "id": "pt-A1-011",
+  "band": "A1",
+  "question": "The English exam is _____ Monday morning, so I must study tonight.",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "to"
+  ],
+  "correct": 0,
+  "topic": "prepositions of time",
+  "explanation": "Use the preposition 'on' before specific days of the week."
+ },
+ {
+  "id": "pt-A1-012",
+  "band": "A1",
+  "question": "Please _____ quiet in the library; people are trying to read.",
+  "options": [
+   "be",
+   "are",
+   "you are",
+   "to be"
+  ],
+  "correct": 0,
+  "topic": "imperatives",
+  "explanation": "Use the base form of the verb without a subject to give an instruction or command."
+ },
+ {
+  "id": "pt-A1-013",
+  "band": "A1",
+  "question": "Look at _____ birds high up in the sky; they are flying south.",
+  "options": [
+   "this",
+   "these",
+   "that",
+   "those"
+  ],
+  "correct": 3,
+  "topic": "this/that/these/those",
+  "explanation": "Use 'those' for plural objects that are far away from the speaker."
+ },
+ {
+  "id": "pt-A1-014",
+  "band": "A1",
+  "question": "I like tea, but my sister _____ like it; she prefers coffee.",
+  "options": [
+   "don't",
+   "isn't",
+   "doesn't",
+   "no"
+  ],
+  "correct": 2,
+  "topic": "present simple negative",
+  "explanation": "Use 'doesn't' for negative present simple sentences with third-person singular subjects (he/she/it)."
+ },
+ {
+  "id": "pt-A1-015",
+  "band": "A1",
+  "question": "Excuse me, _____ you the new English teacher at this school?",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ],
+  "correct": 0,
+  "topic": "verb to be",
+  "explanation": "Use 'are' with the subject pronoun 'you' in the present simple."
+ },
+ {
+  "id": "pt-A1-016",
+  "band": "A1",
+  "question": "I can't take a photo because I _____ got my camera today.",
+  "options": [
+   "don't",
+   "haven't",
+   "not",
+   "hasn't"
+  ],
+  "correct": 1,
+  "topic": "have got",
+  "explanation": "Use 'haven't' to form the negative of 'have got' with the subject 'I'."
+ },
+ {
+  "id": "pt-A1-017",
+  "band": "A1",
+  "question": "My parents usually _____ dinner at seven o'clock in the evening.",
+  "options": [
+   "eats",
+   "eating",
+   "eat",
+   "are eat"
+  ],
+  "correct": 2,
+  "topic": "present simple",
+  "explanation": "Use the base form of the verb for plural subjects like 'my parents' in the present simple."
+ },
+ {
+  "id": "pt-A1-018",
+  "band": "A1",
+  "question": "Where _____ your friend live in London?",
+  "options": [
+   "do",
+   "is",
+   "does",
+   "are"
+  ],
+  "correct": 2,
+  "topic": "present simple",
+  "explanation": "Use 'does' as the auxiliary verb for third-person singular questions in the present simple."
+ },
+ {
+  "id": "pt-A1-019",
+  "band": "A1",
+  "question": "Would you like _____ orange? They are very sweet today.",
+  "options": [
+   "a",
+   "the",
+   "any",
+   "an"
+  ],
+  "correct": 3,
+  "topic": "a/an/the",
+  "explanation": "Use the indefinite article 'an' before words starting with a vowel sound."
+ },
+ {
+  "id": "pt-A1-020",
+  "band": "A1",
+  "question": "Many _____ work in this office, and they all speak English.",
+  "options": [
+   "man",
+   "mans",
+   "mens",
+   "men"
+  ],
+  "correct": 3,
+  "topic": "plural nouns",
+  "explanation": "The word 'men' is the irregular plural form of 'man'."
+ },
+ {
+  "id": "pt-A1-021",
+  "band": "A1",
+  "question": "I see Mr. Brown every day, but I never talk to _____.",
+  "options": [
+   "he",
+   "him",
+   "his",
+   "himself"
+  ],
+  "correct": 1,
+  "topic": "subject and object pronouns",
+  "explanation": "Use the object pronoun 'him' after prepositions like 'to'."
+ },
+ {
+  "id": "pt-A1-022",
+  "band": "A1",
+  "question": "The children are playing in the garden with _____ dog.",
+  "options": [
+   "their",
+   "they",
+   "them",
+   "theirs"
+  ],
+  "correct": 0,
+  "topic": "possessive adjectives",
+  "explanation": "Use the possessive adjective 'their' to show ownership for a plural subject."
+ },
+ {
+  "id": "pt-A1-023",
+  "band": "A1",
+  "question": "_____ a supermarket near your house?",
+  "options": [
+   "Is there",
+   "Are there",
+   "There is",
+   "There are"
+  ],
+  "correct": 0,
+  "topic": "there is/there are",
+  "explanation": "Use 'Is there' to ask about the existence of a singular noun."
+ },
+ {
+  "id": "pt-A1-024",
+  "band": "A1",
+  "question": "My little sister is only four years old, but she can _____ her name.",
+  "options": [
+   "writing",
+   "writes",
+   "to write",
+   "write"
+  ],
+  "correct": 3,
+  "topic": "can for ability",
+  "explanation": "The modal verb 'can' is followed by the base form of the verb without 'to'."
+ },
+ {
+  "id": "pt-A1-025",
+  "band": "A1",
+  "question": "I am waiting for you _____ the bus stop near the cinema.",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "to"
+  ],
+  "correct": 1,
+  "topic": "basic prepositions of place",
+  "explanation": "Use the preposition 'at' for specific locations or points in space."
+ },
+ {
+  "id": "pt-A1-026",
+  "band": "A1",
+  "question": "Our school starts _____ nine o'clock every morning.",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "for"
+  ],
+  "correct": 2,
+  "topic": "basic prepositions of time",
+  "explanation": "Use the preposition 'at' before specific times of the day."
+ },
+ {
+  "id": "pt-A1-027",
+  "band": "A1",
+  "question": "_____ touch that hot plate; you will burn your hand.",
+  "options": [
+   "No",
+   "Don't",
+   "Not",
+   "Doesn't"
+  ],
+  "correct": 1,
+  "topic": "imperatives",
+  "explanation": "Use 'Don't' to form negative imperatives in English."
+ },
+ {
+  "id": "pt-A1-028",
+  "band": "A1",
+  "question": "Can you give me _____ book on the table over there?",
+  "options": [
+   "this",
+   "these",
+   "those",
+   "that"
+  ],
+  "correct": 3,
+  "topic": "this/that/these/those",
+  "explanation": "Use 'that' for a single object that is far from the speaker."
+ },
+ {
+  "id": "pt-A1-029",
+  "band": "A1",
+  "question": "My parents _____ very tired after work today, so they are sleeping now.",
+  "options": [
+   "is",
+   "have",
+   "are",
+   "am"
+  ],
+  "correct": 2,
+  "topic": "verb to be",
+  "explanation": "Use 'are' with plural subject pronouns like 'they' or plural nouns like 'parents'."
+ },
+ {
+  "id": "pt-A1-030",
+  "band": "A1",
+  "question": "My school _____ got a big computer lab, but we don't use it every day.",
+  "options": [
+   "have",
+   "has",
+   "is",
+   "does"
+  ],
+  "correct": 1,
+  "topic": "have got",
+  "explanation": "Use 'has got' for third-person singular subjects like 'my school'."
+ },
+ {
+  "id": "pt-A1-031",
+  "band": "A1",
+  "question": "My brother plays football on Saturdays, but he _____ play on Sundays.",
+  "options": [
+   "not",
+   "don't",
+   "isn't",
+   "doesn't"
+  ],
+  "correct": 3,
+  "topic": "present simple",
+  "explanation": "Use 'doesn't' to form negative sentences in the present simple with third-person singular subjects."
+ },
+ {
+  "id": "pt-A1-032",
+  "band": "A1",
+  "question": "My friend wants to buy _____ old car because he doesn't have much money.",
+  "options": [
+   "a",
+   "some",
+   "an",
+   "the"
+  ],
+  "correct": 2,
+  "topic": "a/an/the",
+  "explanation": "Use 'an' before singular countable nouns that start with a vowel sound."
+ },
+ {
+  "id": "pt-A1-033",
+  "band": "A1",
+  "question": "Brush your _____ before you go to bed because sugar is bad for them.",
+  "options": [
+   "tooths",
+   "teeth",
+   "tooth",
+   "teeths"
+  ],
+  "correct": 1,
+  "topic": "plural nouns",
+  "explanation": "The plural form of the irregular noun 'tooth' is 'teeth'."
+ },
+ {
+  "id": "pt-A1-034",
+  "band": "A1",
+  "question": "Our teacher is very nice and we like _____ because she helps us every day.",
+  "options": [
+   "she",
+   "him",
+   "hers",
+   "her"
+  ],
+  "correct": 3,
+  "topic": "subject and object pronouns",
+  "explanation": "Use the object pronoun 'her' after verbs like 'like' to refer to a female person."
+ },
+ {
+  "id": "pt-A1-035",
+  "band": "A1",
+  "question": "My sister and I live in Izmir, and _____ house is very close to the sea.",
+  "options": [
+   "our",
+   "your",
+   "their",
+   "we"
+  ],
+  "correct": 0,
+  "topic": "possessive adjectives",
+  "explanation": "Use 'our' to show possession for a group that includes the speaker."
+ },
+ {
+  "id": "pt-A1-036",
+  "band": "A1",
+  "question": "_____ some milk in the fridge, so you can make some coffee.",
+  "options": [
+   "There is",
+   "There are",
+   "It is",
+   "They are"
+  ],
+  "correct": 0,
+  "topic": "there is/there are",
+  "explanation": "Use 'there is' with uncountable nouns like 'milk' to show existence."
+ },
+ {
+  "id": "pt-A1-037",
+  "band": "A1",
+  "question": "Penguins are birds, but they _____ fly in the air.",
+  "options": [
+   "don't can",
+   "cannot to",
+   "can't",
+   "no can"
+  ],
+  "correct": 2,
+  "topic": "can for ability",
+  "explanation": "Use 'can't' (cannot) followed by the bare infinitive to express inability."
+ },
+ {
+  "id": "pt-A1-038",
+  "band": "A1",
+  "question": "The cat usually sleeps _____ the sofa, under the warm blanket.",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "to"
+  ],
+  "correct": 0,
+  "topic": "basic prepositions of place",
+  "explanation": "Use the preposition 'on' to describe something touching a flat surface like a sofa."
+ },
+ {
+  "id": "pt-A1-039",
+  "band": "A1",
+  "question": "My father always drinks a cup of tea _____ the evening after dinner.",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "for"
+  ],
+  "correct": 1,
+  "topic": "basic prepositions of time",
+  "explanation": "Use the preposition 'in' with parts of the day, such as 'the evening'."
+ },
+ {
+  "id": "pt-A1-040",
+  "band": "A1",
+  "question": "_____ open the window because it is very cold outside today.",
+  "options": [
+   "Don't",
+   "No",
+   "Not",
+   "Doesn't"
+  ],
+  "correct": 0,
+  "topic": "imperatives",
+  "explanation": "Form negative imperatives by putting 'Don't' before the base form of the verb."
+ },
+ {
+  "id": "pt-A1-041",
+  "band": "A1",
+  "question": "Look at _____ shoes I am wearing; they are completely new!",
+  "options": [
+   "this",
+   "that",
+   "those",
+   "these"
+  ],
+  "correct": 3,
+  "topic": "this/that/these/those",
+  "explanation": "Use 'these' for plural objects that are close to the speaker."
+ },
+ {
+  "id": "pt-A1-042",
+  "band": "A1",
+  "question": "_____ you want to play tennis with me this afternoon?",
+  "options": [
+   "Do",
+   "Are",
+   "Is",
+   "Does"
+  ],
+  "correct": 0,
+  "topic": "present simple",
+  "explanation": "Use the auxiliary verb 'Do' to start a present simple question with the subject 'you'."
+ },
+ {
+  "id": "pt-A2-001",
+  "band": "A2",
+  "question": "My brother _____ a new smartphone last week because his old one broke.",
+  "options": [
+   "buyed",
+   "bought",
+   "buys",
+   "has bought"
+  ],
+  "correct": 1,
+  "topic": "past simple irregular verbs",
+  "explanation": "Use the past simple form 'bought' for a completed action at a specific time in the past."
+ },
+ {
+  "id": "pt-A2-002",
+  "band": "A2",
+  "question": "I think chemistry is _____ than history because there are too many formulas to memorize.",
+  "options": [
+   "more difficult",
+   "difficult",
+   "difficultest",
+   "more difficulter"
+  ],
+  "correct": 0,
+  "topic": "comparatives and superlatives",
+  "explanation": "Use 'more' before long adjectives to form the comparative degree."
+ },
+ {
+  "id": "pt-A2-003",
+  "band": "A2",
+  "question": "Mount Everest is the _____ mountain in the world, and many climbers try to reach its top.",
+  "options": [
+   "high",
+   "higher",
+   "most high",
+   "highest"
+  ],
+  "correct": 3,
+  "topic": "comparatives and superlatives",
+  "explanation": "Use the '-est' suffix for the superlative form of short adjectives."
+ },
+ {
+  "id": "pt-A2-004",
+  "band": "A2",
+  "question": "I want to make a cake, but we don't have _____ milk left in the fridge.",
+  "options": [
+   "many",
+   "some",
+   "much",
+   "a"
+  ],
+  "correct": 2,
+  "topic": "countable and uncountable nouns",
+  "explanation": "Use 'much' with uncountable nouns like 'milk' in negative sentences."
+ },
+ {
+  "id": "pt-A2-005",
+  "band": "A2",
+  "question": "My sister is very healthy because she _____ fast food.",
+  "options": [
+   "eats never",
+   "is never eating",
+   "never eat",
+   "never eats"
+  ],
+  "correct": 3,
+  "topic": "adverbs of frequency",
+  "explanation": "Adverbs of frequency like 'never' go before the main verb in the present simple."
+ },
+ {
+  "id": "pt-A2-006",
+  "band": "A2",
+  "question": "You have a very bad cough; you _____ see a doctor today.",
+  "options": [
+   "should",
+   "must to",
+   "should to",
+   "ought"
+  ],
+  "correct": 0,
+  "topic": "should and must",
+  "explanation": "Use 'should' followed by the base form of the verb without 'to' to give advice."
+ },
+ {
+  "id": "pt-A2-007",
+  "band": "A2",
+  "question": "Last night, my parents _____ at home because they went to the cinema.",
+  "options": [
+   "wasn't",
+   "didn't",
+   "not were",
+   "weren't"
+  ],
+  "correct": 3,
+  "topic": "was and were",
+  "explanation": "Use 'weren't' as the past tense negative of 'to be' for plural subjects."
+ },
+ {
+  "id": "pt-A2-008",
+  "band": "A2",
+  "question": "My grandparents live in another city, so we visit _____ every summer.",
+  "options": [
+   "they",
+   "their",
+   "theirs",
+   "them"
+  ],
+  "correct": 3,
+  "topic": "object pronouns",
+  "explanation": "Use the object pronoun 'them' after a verb like 'visit'."
+ },
+ {
+  "id": "pt-A2-009",
+  "band": "A2",
+  "question": "This is not my jacket. Mine is blue, but _____ is black.",
+  "options": [
+   "your",
+   "you",
+   "yours",
+   "yourself"
+  ],
+  "correct": 2,
+  "topic": "possessive pronouns",
+  "explanation": "Use the possessive pronoun 'yours' to replace 'your jacket' and avoid repetition."
+ },
+ {
+  "id": "pt-A2-010",
+  "band": "A2",
+  "question": "Yesterday afternoon, my friends and I _____ football in the park for two hours.",
+  "options": [
+   "played",
+   "play",
+   "playing",
+   "was play"
+  ],
+  "correct": 0,
+  "topic": "past simple regular verbs",
+  "explanation": "Regular verbs in the past simple end in '-ed' for completed actions in the past."
+ },
+ {
+  "id": "pt-A2-011",
+  "band": "A2",
+  "question": "Last summer, my family and I _____ to Antalya by plane.",
+  "options": [
+   "go",
+   "goes",
+   "went",
+   "are going"
+  ],
+  "correct": 2,
+  "topic": "past simple irregular",
+  "explanation": "Use the past simple form 'went' for a completed action at a specific time in the past."
+ },
+ {
+  "id": "pt-A2-012",
+  "band": "A2",
+  "question": "Look! The dog _____ in the garden with my little sister.",
+  "options": [
+   "plays",
+   "is playing",
+   "play",
+   "playing"
+  ],
+  "correct": 1,
+  "topic": "present continuous vs present simple",
+  "explanation": "Use the present continuous for an action happening at the exact moment of speaking."
+ },
+ {
+  "id": "pt-A2-013",
+  "band": "A2",
+  "question": "My new laptop is much _____ than my old desktop computer.",
+  "options": [
+   "fast",
+   "faster",
+   "fastest",
+   "more fast"
+  ],
+  "correct": 1,
+  "topic": "comparatives",
+  "explanation": "Add '-er' to short adjectives like 'fast' to form the comparative."
+ },
+ {
+  "id": "pt-A2-014",
+  "band": "A2",
+  "question": "Our school football team won the cup because they are the _____ players in the city.",
+  "options": [
+   "good",
+   "better",
+   "most good",
+   "best"
+  ],
+  "correct": 3,
+  "topic": "superlatives",
+  "explanation": "'Best' is the irregular superlative form of 'good'."
+ },
+ {
+  "id": "pt-A2-015",
+  "band": "A2",
+  "question": "How _____ sugar do you usually put in your tea every morning?",
+  "options": [
+   "many",
+   "much",
+   "any",
+   "some"
+  ],
+  "correct": 1,
+  "topic": "countable and uncountable nouns",
+  "explanation": "Use 'much' with uncountable nouns like 'sugar' in questions."
+ },
+ {
+  "id": "pt-A2-016",
+  "band": "A2",
+  "question": "Where _____ you and your family last weekend when I called you?",
+  "options": [
+   "was",
+   "did",
+   "are",
+   "were"
+  ],
+  "correct": 3,
+  "topic": "was and were",
+  "explanation": "Use 'were' with plural subjects like 'you and your family' in the past simple."
+ },
+ {
+  "id": "pt-A2-017",
+  "band": "A2",
+  "question": "My keys are missing! Can you help _____ find them under the sofa?",
+  "options": [
+   "me",
+   "my",
+   "mine",
+   "I"
+  ],
+  "correct": 0,
+  "topic": "object pronouns",
+  "explanation": "Use the object pronoun 'me' after verbs like 'help'."
+ },
+ {
+  "id": "pt-A2-018",
+  "band": "A2",
+  "question": "I forgot my English textbook today. Can I borrow _____ for a few minutes?",
+  "options": [
+   "your",
+   "you",
+   "yours",
+   "yourself"
+  ],
+  "correct": 2,
+  "topic": "possessive pronouns",
+  "explanation": "Use the possessive pronoun 'yours' to replace 'your textbook'."
+ },
+ {
+  "id": "pt-A2-019",
+  "band": "A2",
+  "question": "Last night, I _____ for three hours for my difficult English exam.",
+  "options": [
+   "study",
+   "studying",
+   "studies",
+   "studied"
+  ],
+  "correct": 3,
+  "topic": "past simple regular",
+  "explanation": "Add '-ed' to regular verbs like 'study' to form the past simple."
+ },
+ {
+  "id": "pt-A2-020",
+  "band": "A2",
+  "question": "During our trip to London last winter, I _____ a famous actor in a small cafe.",
+  "options": [
+   "met",
+   "meet",
+   "meeting",
+   "meets"
+  ],
+  "correct": 0,
+  "topic": "past simple of irregular verbs",
+  "explanation": "Use the irregular past simple form 'met' because the action happened at a specific time in the past ('last winter')."
+ },
+ {
+  "id": "pt-A2-021",
+  "band": "A2",
+  "question": "Last Monday, our English teacher _____ a very interesting video about space during the class.",
+  "options": [
+   "shows",
+   "showed",
+   "showing",
+   "show"
+  ],
+  "correct": 1,
+  "topic": "past simple of regular verbs",
+  "explanation": "Regular verbs in the past simple end in '-ed' to describe a completed action in the past."
+ },
+ {
+  "id": "pt-A2-022",
+  "band": "A2",
+  "question": "Please don't turn off the radio because I _____ to my favorite news program right now.",
+  "options": [
+   "listen",
+   "am listening",
+   "listens",
+   "listening"
+  ],
+  "correct": 1,
+  "topic": "present continuous vs present simple",
+  "explanation": "Use the present continuous ('am listening') for an action happening at the exact moment of speaking."
+ },
+ {
+  "id": "pt-A2-023",
+  "band": "A2",
+  "question": "We bought the paint yesterday, so we _____ our classroom walls tomorrow morning.",
+  "options": [
+   "are going paint",
+   "paints",
+   "are going to paint",
+   "going to paint"
+  ],
+  "correct": 2,
+  "topic": "going to and will for plans and predictions",
+  "explanation": "Use 'be going to' to talk about plans and intentions made before the moment of speaking."
+ },
+ {
+  "id": "pt-A2-024",
+  "band": "A2",
+  "question": "Scientists predict that average global temperatures _____ by two degrees in the next fifty years.",
+  "options": [
+   "will rise",
+   "rising",
+   "will rising",
+   "are rise"
+  ],
+  "correct": 0,
+  "topic": "going to and will for plans and predictions",
+  "explanation": "Use 'will' followed by the base form of the verb to make predictions about the future."
+ },
+ {
+  "id": "pt-A2-025",
+  "band": "A2",
+  "question": "Our school runner, Ahmet, is the _____ athlete in the entire city tournament.",
+  "options": [
+   "fast",
+   "faster",
+   "fastest",
+   "most fast"
+  ],
+  "correct": 2,
+  "topic": "comparatives and superlatives",
+  "explanation": "Add '-est' to short adjectives to form the superlative when comparing more than two people."
+ },
+ {
+  "id": "pt-A2-026",
+  "band": "A2",
+  "question": "We cannot make the salad because there aren't _____ fresh tomatoes in the fridge.",
+  "options": [
+   "some",
+   "much",
+   "no",
+   "any"
+  ],
+  "correct": 3,
+  "topic": "countable and uncountable nouns with some/any/much/many",
+  "explanation": "Use 'any' in negative sentences with plural countable nouns."
+ },
+ {
+  "id": "pt-A2-027",
+  "band": "A2",
+  "question": "My sister loves books; she _____ a novel before she goes to sleep.",
+  "options": [
+   "reads usually",
+   "usually reading",
+   "usually reads",
+   "usually read"
+  ],
+  "correct": 2,
+  "topic": "adverbs of frequency",
+  "explanation": "Adverbs of frequency go before the main verb, and the verb must agree with the singular subject 'she'."
+ },
+ {
+  "id": "pt-A2-028",
+  "band": "A2",
+  "question": "This is a private road. You _____ drive your car here without a special permit.",
+  "options": [
+   "don't must",
+   "mustn't to",
+   "not must",
+   "mustn't"
+  ],
+  "correct": 3,
+  "topic": "should and must",
+  "explanation": "Use 'mustn't' followed directly by the base verb to express a strong prohibition or rule."
+ },
+ {
+  "id": "pt-A2-029",
+  "band": "A2",
+  "question": "When my grandfather was a young boy, he _____ very good at playing the violin.",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "did"
+  ],
+  "correct": 1,
+  "topic": "was/were",
+  "explanation": "Use 'was' as the past simple form of 'be' for singular subjects like 'he'."
+ },
+ {
+  "id": "pt-A2-030",
+  "band": "A2",
+  "question": "My little sister is crying because a big dog frightened _____ in the park.",
+  "options": [
+   "she",
+   "hers",
+   "her",
+   "herself"
+  ],
+  "correct": 2,
+  "topic": "object pronouns",
+  "explanation": "Use the object pronoun 'her' after a verb to refer to a female person who receives the action."
+ },
+ {
+  "id": "pt-B1-001",
+  "band": "B1",
+  "question": "If the weather _____ good tomorrow, we will have a picnic in the park.",
+  "options": [
+   "will be",
+   "is going to be",
+   "would be",
+   "is"
+  ],
+  "correct": 3,
+  "topic": "first conditional",
+  "explanation": "In first conditional sentences, use the present simple in the conditional 'if' clause to refer to a future possibility."
+ },
+ {
+  "id": "pt-B1-002",
+  "band": "B1",
+  "question": "If I _____ more money, I would buy a new laptop for my university classes.",
+  "options": [
+   "had",
+   "have",
+   "would have",
+   "will have"
+  ],
+  "correct": 0,
+  "topic": "second conditional",
+  "explanation": "The second conditional uses the past simple in the 'if' clause to describe an imaginary or unlikely present/future situation."
+ },
+ {
+  "id": "pt-B1-003",
+  "band": "B1",
+  "question": "Millions of smartphones _____ in China and exported to countries all over the world every year.",
+  "options": [
+   "are producing",
+   "produce",
+   "are produced",
+   "have produced"
+  ],
+  "correct": 2,
+  "topic": "present passive",
+  "explanation": "Use the present simple passive (am/is/are + past participle) when the focus is on the action rather than the doer."
+ },
+ {
+  "id": "pt-B1-004",
+  "band": "B1",
+  "question": "This beautiful wooden bridge _____ by a famous architect in 1920.",
+  "options": [
+   "built",
+   "was built",
+   "has been built",
+   "was building"
+  ],
+  "correct": 1,
+  "topic": "past passive",
+  "explanation": "Use the past simple passive (was/were + past participle) for a completed passive action with a specific past time marker."
+ },
+ {
+  "id": "pt-B1-005",
+  "band": "B1",
+  "question": "The doctor _____ treated my grandfather at the hospital was extremely kind and professional.",
+  "options": [
+   "which",
+   "whose",
+   "where",
+   "who"
+  ],
+  "correct": 3,
+  "topic": "defining relative clauses",
+  "explanation": "Use the relative pronoun 'who' to define or give essential information about a person."
+ },
+ {
+  "id": "pt-B1-006",
+  "band": "B1",
+  "question": "We decided _____ a car for our summer holiday because train tickets were too expensive.",
+  "options": [
+   "renting",
+   "to rent",
+   "rent",
+   "for renting"
+  ],
+  "correct": 1,
+  "topic": "gerunds vs infinitives",
+  "explanation": "The verb 'decide' must be followed by an infinitive with 'to'."
+ },
+ {
+  "id": "pt-B1-007",
+  "band": "B1",
+  "question": "You _____ pay for the museum tickets because children and students can enter for free today.",
+  "options": [
+   "mustn't",
+   "shouldn't",
+   "cannot",
+   "don't have to"
+  ],
+  "correct": 3,
+  "topic": "modals of obligation",
+  "explanation": "Use 'don't have to' to show that there is no obligation or necessity to do something."
+ },
+ {
+  "id": "pt-B1-008",
+  "band": "B1",
+  "question": "Take an umbrella with you because it _____ rain later this afternoon.",
+  "options": [
+   "might",
+   "must",
+   "would",
+   "shall"
+  ],
+  "correct": 0,
+  "topic": "modals of possibility",
+  "explanation": "Use 'might' to express a weak or uncertain possibility in the future."
+ },
+ {
+  "id": "pt-B1-009",
+  "band": "B1",
+  "question": "Aylin told me that she _____ her keys and couldn't open the front door.",
+  "options": [
+   "loses",
+   "has lost",
+   "had lost",
+   "will lose"
+  ],
+  "correct": 2,
+  "topic": "basic reported speech",
+  "explanation": "In reported speech, when the reporting verb is in the past, the present perfect shifts back to the past perfect."
+ },
+ {
+  "id": "pt-B1-010",
+  "band": "B1",
+  "question": "I wanted to buy that leather jacket, but it was _____ expensive for me.",
+  "options": [
+   "too",
+   "enough",
+   "too much",
+   "very much"
+  ],
+  "correct": 0,
+  "topic": "too/enough",
+  "explanation": "Use 'too' before an adjective to indicate that it is more than enough or more than desirable."
+ },
+ {
+  "id": "pt-B1-011",
+  "band": "B1",
+  "question": "To live a healthier life, you should avoid _____ fast food and sugary drinks.",
+  "options": [
+   "to eat",
+   "eating",
+   "eat",
+   "for eating"
+  ],
+  "correct": 1,
+  "topic": "gerunds vs infinitives",
+  "explanation": "The verb 'avoid' is always followed by a gerund (-ing form)."
+ },
+ {
+  "id": "pt-B1-012",
+  "band": "B1",
+  "question": "Our company _____ three new offices in Europe last year to expand our international business.",
+  "options": [
+   "has opened",
+   "opens",
+   "opened",
+   "was opening"
+  ],
+  "correct": 2,
+  "topic": "present perfect vs past simple",
+  "explanation": "Use the past simple for actions completed at a specific time in the past."
+ },
+ {
+  "id": "pt-B1-013",
+  "band": "B1",
+  "question": "If you _____ your homework before dinner, we will watch the new movie together.",
+  "options": [
+   "finish",
+   "will finish",
+   "finished",
+   "are finishing"
+  ],
+  "correct": 0,
+  "topic": "first conditional",
+  "explanation": "In the first conditional, use the present simple in the if-clause to talk about a future possibility."
+ },
+ {
+  "id": "pt-B1-014",
+  "band": "B1",
+  "question": "If I had a longer holiday, I _____ to Japan with my family this summer.",
+  "options": [
+   "will travel",
+   "would travel",
+   "traveled",
+   "travel"
+  ],
+  "correct": 1,
+  "topic": "second conditional",
+  "explanation": "In the second conditional, use would + verb in the main clause to talk about an imaginary or unlikely situation."
+ },
+ {
+  "id": "pt-B1-015",
+  "band": "B1",
+  "question": "Paper and plastic bottles _____ in separate bins to help protect the environment.",
+  "options": [
+   "are collected",
+   "is collected",
+   "collect",
+   "are collecting"
+  ],
+  "correct": 0,
+  "topic": "present passive",
+  "explanation": "Use the present simple passive (am/is/are + past participle) for regular actions where the agent is not the focus."
+ },
+ {
+  "id": "pt-B1-016",
+  "band": "B1",
+  "question": "The famous painting _____ by a private collector at the auction last Sunday.",
+  "options": [
+   "was bought",
+   "bought",
+   "has bought",
+   "were bought"
+  ],
+  "correct": 0,
+  "topic": "past passive",
+  "explanation": "Use the past simple passive (was/were + past participle) for a completed action in the past when the focus is on the object."
+ },
+ {
+  "id": "pt-B1-017",
+  "band": "B1",
+  "question": "The bus _____ goes to the city center stops right in front of our school.",
+  "options": [
+   "who",
+   "where",
+   "that",
+   "whose"
+  ],
+  "correct": 2,
+  "topic": "defining relative clauses",
+  "explanation": "Use 'that' or 'which' to refer to things or objects in a defining relative clause."
+ },
+ {
+  "id": "pt-B1-018",
+  "band": "B1",
+  "question": "My doctor suggested _____ more water every day to improve my energy levels.",
+  "options": [
+   "to drink",
+   "drinking",
+   "drink",
+   "for drinking"
+  ],
+  "correct": 1,
+  "topic": "gerunds vs infinitives after common verbs",
+  "explanation": "The verb 'suggest' is followed by a gerund (-ing form)."
+ },
+ {
+  "id": "pt-B1-019",
+  "band": "B1",
+  "question": "My grandmother _____ live in a small village, but she moved to Istanbul ten years ago.",
+  "options": [
+   "used to",
+   "use to",
+   "was used to",
+   "is used to"
+  ],
+  "correct": 0,
+  "topic": "used to",
+  "explanation": "Use 'used to' to describe past habits or states that are no longer true."
+ },
+ {
+  "id": "pt-B1-020",
+  "band": "B1",
+  "question": "You _____ wear a uniform at our office, so you can wear whatever casual clothes you like.",
+  "options": [
+   "mustn't",
+   "don't have to",
+   "shouldn't",
+   "can't"
+  ],
+  "correct": 1,
+  "topic": "modals of obligation",
+  "explanation": "Use 'don't have to' to show that there is no obligation to do something."
+ },
+ {
+  "id": "pt-B1-021",
+  "band": "B1",
+  "question": "I am not sure about my plans yet, but I _____ go to the cinema tonight.",
+  "options": [
+   "must",
+   "might",
+   "should",
+   "would"
+  ],
+  "correct": 1,
+  "topic": "modals of possibility",
+  "explanation": "Use 'might' to express a weak possibility in the present or future."
+ },
+ {
+  "id": "pt-B1-022",
+  "band": "B1",
+  "question": "My sister _____ me that she had passed her driving test on the first try.",
+  "options": [
+   "said",
+   "told",
+   "spoke",
+   "talked"
+  ],
+  "correct": 1,
+  "topic": "basic reported speech",
+  "explanation": "Use 'tell' (past 'told') instead of 'say' when you mention the person being spoken to."
+ },
+ {
+  "id": "pt-B1-023",
+  "band": "B1",
+  "question": "The weather is not _____ to swim in the pool today, so we should go tomorrow.",
+  "options": [
+   "warm enough",
+   "enough warm",
+   "too warm",
+   "warmly enough"
+  ],
+  "correct": 0,
+  "topic": "too/enough",
+  "explanation": "Place 'enough' after an adjective to indicate sufficiency."
+ },
+ {
+  "id": "pt-B1-024",
+  "band": "B1",
+  "question": "He promised _____ his manager with the new project before the weekend.",
+  "options": [
+   "helping",
+   "to help",
+   "help",
+   "for helping"
+  ],
+  "correct": 1,
+  "topic": "gerunds vs infinitives after common verbs",
+  "explanation": "The verb 'promise' is followed by an infinitive with 'to'."
+ },
+ {
+  "id": "pt-B1-025",
+  "band": "B1",
+  "question": "I _____ three different countries so far this year, and I plan to visit one more in October.",
+  "options": [
+   "visited",
+   "have visited",
+   "visit",
+   "was visiting"
+  ],
+  "correct": 1,
+  "topic": "present perfect vs past simple",
+  "explanation": "Use the present perfect with 'so far' to describe actions completed up to the present."
+ },
+ {
+  "id": "pt-B1-026",
+  "band": "B1",
+  "question": "If you _____ your flight ticket online today, you will get a fifteen percent discount.",
+  "options": [
+   "book",
+   "will book",
+   "booked",
+   "are booking"
+  ],
+  "correct": 0,
+  "topic": "first conditional",
+  "explanation": "Use the present simple in the if-clause of the first conditional to express a real future possibility."
+ },
+ {
+  "id": "pt-B1-027",
+  "band": "B1",
+  "question": "If I _____ his phone number, I would call him to ask about the homework.",
+  "options": [
+   "know",
+   "will know",
+   "have known",
+   "knew"
+  ],
+  "correct": 3,
+  "topic": "second conditional",
+  "explanation": "Use the past simple in the if-clause of the second conditional for imaginary or hypothetical situations."
+ },
+ {
+  "id": "pt-B1-028",
+  "band": "B1",
+  "question": "These organic vegetables _____ by local farmers and sold in the market every Friday.",
+  "options": [
+   "grow",
+   "are growing",
+   "are grown",
+   "grew"
+  ],
+  "correct": 2,
+  "topic": "present passive",
+  "explanation": "Use the present simple passive to describe regular actions or facts where the agent is not the main focus."
+ },
+ {
+  "id": "pt-B1-029",
+  "band": "B1",
+  "question": "The novel _____ into ten languages shortly after it won the international book award.",
+  "options": [
+   "translated",
+   "was translating",
+   "has translated",
+   "was translated"
+  ],
+  "correct": 3,
+  "topic": "past passive",
+  "explanation": "Use the past simple passive to describe a completed action in the past where the focus is on the receiver."
+ },
+ {
+  "id": "pt-B1-030",
+  "band": "B1",
+  "question": "The laboratory _____ we conduct our chemistry experiments has very modern equipment.",
+  "options": [
+   "where",
+   "which",
+   "who",
+   "whose"
+  ],
+  "correct": 0,
+  "topic": "defining relative clauses",
+  "explanation": "Use the relative pronoun 'where' to refer to a place in a defining relative clause."
+ },
+ {
+  "id": "pt-B1-031",
+  "band": "B1",
+  "question": "The driver refused _____ his car because it was blocking the hospital entrance.",
+  "options": [
+   "moving",
+   "move",
+   "to move",
+   "to moving"
+  ],
+  "correct": 2,
+  "topic": "gerunds vs infinitives after common verbs",
+  "explanation": "The verb 'refuse' is followed by a to-infinitive."
+ },
+ {
+  "id": "pt-B1-032",
+  "band": "B1",
+  "question": "My father _____ play basketball professionally, but he retired after a serious knee injury.",
+  "options": [
+   "was used to",
+   "used to",
+   "is used to",
+   "use to"
+  ],
+  "correct": 1,
+  "topic": "used to",
+  "explanation": "Use 'used to' to describe past habits or states that are no longer true."
+ },
+ {
+  "id": "pt-B1-033",
+  "band": "B1",
+  "question": "You _____ use your mobile phone during the exam, or the teacher will cancel your test.",
+  "options": [
+   "don't have to",
+   "mustn't",
+   "shouldn't to",
+   "haven't to"
+  ],
+  "correct": 1,
+  "topic": "modals of obligation",
+  "explanation": "Use 'mustn't' to express a strict prohibition."
+ },
+ {
+  "id": "pt-B1-034",
+  "band": "B1",
+  "question": "We should leave early because there _____ be a lot of traffic on the bridge tonight.",
+  "options": [
+   "must",
+   "can't",
+   "might",
+   "would"
+  ],
+  "correct": 2,
+  "topic": "modals of possibility",
+  "explanation": "Use 'might' to express a weak possibility in the future."
+ },
+ {
+  "id": "pt-B1-035",
+  "band": "B1",
+  "question": "The technician said that he _____ the broken computer the following day.",
+  "options": [
+   "will repair",
+   "repairs",
+   "has repaired",
+   "would repair"
+  ],
+  "correct": 3,
+  "topic": "basic reported speech",
+  "explanation": "In reported speech, 'will' backshifts to 'would' when the reporting verb is in the past tense."
+ },
+ {
+  "id": "pt-B1-036",
+  "band": "B1",
+  "question": "I couldn't finish the marathon because I was not fit _____ to run forty kilometers.",
+  "options": [
+   "too",
+   "so",
+   "very",
+   "enough"
+  ],
+  "correct": 3,
+  "topic": "too/enough",
+  "explanation": "Use 'enough' after adjectives to indicate sufficiency."
+ },
+ {
+  "id": "pt-B1-037",
+  "band": "B1",
+  "question": "I _____ my dentist appointment yesterday because I felt much better.",
+  "options": [
+   "have cancelled",
+   "cancelled",
+   "cancel",
+   "was cancelling"
+  ],
+  "correct": 1,
+  "topic": "present perfect vs past simple",
+  "explanation": "Use the past simple for actions completed at a specific time in the past."
+ },
+ {
+  "id": "pt-B2-001",
+  "band": "B2",
+  "question": "If we had booked the flights earlier, we _____ so much money on our trip to Rome last week.",
+  "options": [
+   "would spend",
+   "wouldn't have spent",
+   "didn't spend",
+   "hadn't spent"
+  ],
+  "correct": 1,
+  "topic": "third conditional",
+  "explanation": "The third conditional is used to talk about imaginary past situations and their past results."
+ },
+ {
+  "id": "pt-B2-002",
+  "band": "B2",
+  "question": "If Jason had accepted the job offer in London last year, he _____ in a much larger office now.",
+  "options": [
+   "would be working",
+   "would have worked",
+   "will be working",
+   "had worked"
+  ],
+  "correct": 0,
+  "topic": "mixed conditionals",
+  "explanation": "A mixed conditional is used here to link an imaginary past action with a present result."
+ },
+ {
+  "id": "pt-B2-003",
+  "band": "B2",
+  "question": "This new medication is highly sensitive and _____ in a cold refrigerator at all times.",
+  "options": [
+   "must keep",
+   "must have kept",
+   "must be kept",
+   "is must be kept"
+  ],
+  "correct": 2,
+  "topic": "passive with modals",
+  "explanation": "The modal passive 'must be + past participle' is used to express obligation for a passive subject."
+ },
+ {
+  "id": "pt-B2-004",
+  "band": "B2",
+  "question": "The software update _____ by the IT department before the computers crashed yesterday.",
+  "options": [
+   "should be installed",
+   "should have been installed",
+   "should have installed",
+   "had installed"
+  ],
+  "correct": 1,
+  "topic": "passive with perfect forms",
+  "explanation": "Use 'should have been + past participle' to express a past recommendation that was not carried out."
+ },
+ {
+  "id": "pt-B2-005",
+  "band": "B2",
+  "question": "The tourist asked the officer where _____ the nearest bus station after midnight.",
+  "options": [
+   "could he find",
+   "did he find",
+   "he could find",
+   "can he find"
+  ],
+  "correct": 2,
+  "topic": "reported questions",
+  "explanation": "Reported questions use statement word order (subject + verb) rather than question inversion."
+ },
+ {
+  "id": "pt-B2-006",
+  "band": "B2",
+  "question": "The streets are completely dry, so it _____ last night despite the dark clouds.",
+  "options": [
+   "must have rained",
+   "shouldn't rain",
+   "can't have rained",
+   "might not rain"
+  ],
+  "correct": 2,
+  "topic": "modals of deduction about the past",
+  "explanation": "Use 'can't have + past participle' to make a negative deduction about a past event with near certainty."
+ },
+ {
+  "id": "pt-B2-007",
+  "band": "B2",
+  "question": "I love this city, but I wish it _____ so much during the winter months.",
+  "options": [
+   "didn't rain",
+   "doesn't rain",
+   "wouldn't have rained",
+   "won't rain"
+  ],
+  "correct": 0,
+  "topic": "wish and if only",
+  "explanation": "Use 'wish + past simple' to express a desire for a present situation to be different."
+ },
+ {
+  "id": "pt-B2-008",
+  "band": "B2",
+  "question": "The local history museum, _____ was renovated last year, attracts thousands of tourists every month.",
+  "options": [
+   "which",
+   "that",
+   "what",
+   "where"
+  ],
+  "correct": 0,
+  "topic": "non-defining relative clauses",
+  "explanation": "In non-defining relative clauses, 'which' must be used for things, and 'that' is never allowed."
+ },
+ {
+  "id": "pt-B2-009",
+  "band": "B2",
+  "question": "Our car was making a strange noise, so we had it _____ by a professional mechanic.",
+  "options": [
+   "repair",
+   "repaired",
+   "repairing",
+   "to repair"
+  ],
+  "correct": 1,
+  "topic": "causative have/get something done",
+  "explanation": "The causative structure 'have + object + past participle' is used when someone else performs a service for us."
+ },
+ {
+  "id": "pt-B2-010",
+  "band": "B2",
+  "question": "On his way to the gym, David stopped _____ some water because he was extremely thirsty.",
+  "options": [
+   "buying",
+   "to buy",
+   "buy",
+   "for buying"
+  ],
+  "correct": 1,
+  "topic": "verbs whose meaning changes with gerund or infinitive",
+  "explanation": "Use 'stop + infinitive' to express interrupting an activity in order to do something else."
+ },
+ {
+  "id": "pt-B2-011",
+  "band": "B2",
+  "question": "If Sarah had taken her allergy medicine this morning, she _____ so much right now.",
+  "options": [
+   "wouldn't have sneezed",
+   "didn't sneeze",
+   "wouldn't be sneezing",
+   "won't sneeze"
+  ],
+  "correct": 2,
+  "topic": "mixed conditional",
+  "explanation": "A mixed conditional is used here to link a hypothetical past action with its present continuous result."
+ },
+ {
+  "id": "pt-B2-012",
+  "band": "B2",
+  "question": "To prevent data loss, the system password _____ by all employees every three months.",
+  "options": [
+   "must change",
+   "must have changed",
+   "must be changed",
+   "must be changing"
+  ],
+  "correct": 2,
+  "topic": "passive with modals",
+  "explanation": "The passive voice with a modal verb is formed using 'modal + be + past participle' to show that the action is performed on the subject."
+ },
+ {
+  "id": "pt-B2-013",
+  "band": "B2",
+  "question": "By the time we arrived at the airport, our flight _____ due to bad weather.",
+  "options": [
+   "had been canceled",
+   "was canceling",
+   "had canceled",
+   "has been canceled"
+  ],
+  "correct": 0,
+  "topic": "passive with perfect forms",
+  "explanation": "The past perfect passive is used to describe an action that was completed before another action in the past."
+ },
+ {
+  "id": "pt-B2-014",
+  "band": "B2",
+  "question": "The customer politely asked the waiter why _____ so long to prepare.",
+  "options": [
+   "did the soup take",
+   "the soup had taken",
+   "had the soup taken",
+   "does the soup take"
+  ],
+  "correct": 1,
+  "topic": "reported questions",
+  "explanation": "Reported questions use statement word order (subject + verb) instead of question word order, and do not use auxiliary verbs like 'did'."
+ },
+ {
+  "id": "pt-B2-015",
+  "band": "B2",
+  "question": "Jack's keys are still on the kitchen table, so he _____ them when he left for work.",
+  "options": [
+   "must forget",
+   "should have forgotten",
+   "must have forgotten",
+   "can't have forgotten"
+  ],
+  "correct": 2,
+  "topic": "modals of deduction about the past",
+  "explanation": "Use 'must have + past participle' to express a strong, logical belief that a past event occurred."
+ },
+ {
+  "id": "pt-B2-016",
+  "band": "B2",
+  "question": "The exam was incredibly difficult, and I wish I _____ harder for it last week.",
+  "options": [
+   "studied",
+   "would study",
+   "have studied",
+   "had studied"
+  ],
+  "correct": 3,
+  "topic": "wish and if only",
+  "explanation": "Use 'wish' followed by the past perfect to express regret about a past situation that cannot be changed."
+ },
+ {
+  "id": "pt-B2-017",
+  "band": "B2",
+  "question": "Scientists believe that by the end of this decade, they _____ a cure for this rare disease.",
+  "options": [
+   "will discover",
+   "will have discovered",
+   "are discovering",
+   "will be discovering"
+  ],
+  "correct": 1,
+  "topic": "future perfect",
+  "explanation": "The future perfect is used to describe an action that will be completed before a specific point in the future."
+ },
+ {
+  "id": "pt-B2-018",
+  "band": "B2",
+  "question": "My grandmother, _____ is eighty-five years old, still works in her beautiful garden every day.",
+  "options": [
+   "who",
+   "that",
+   "which",
+   "whom"
+  ],
+  "correct": 0,
+  "topic": "non-defining relative clauses",
+  "explanation": "In non-defining relative clauses, 'who' must be used for people, as the relative pronoun 'that' cannot follow a comma."
+ },
+ {
+  "id": "pt-B2-019",
+  "band": "B2",
+  "question": "Emma had a severe toothache yesterday, so she went to the dentist to get her tooth _____.",
+  "options": [
+   "pull out",
+   "pulling out",
+   "to pull out",
+   "pulled out"
+  ],
+  "correct": 3,
+  "topic": "causative have/get something done",
+  "explanation": "The causative structure 'get + object + past participle' is used when someone else performs a service for us."
+ },
+ {
+  "id": "pt-B2-020",
+  "band": "B2",
+  "question": "I clearly remember _____ the front door, so I am certain the house is secure.",
+  "options": [
+   "to lock",
+   "locking",
+   "lock",
+   "to have locked"
+  ],
+  "correct": 1,
+  "topic": "verbs whose meaning changes with gerund or infinitive",
+  "explanation": "The verb 'remember' is followed by a gerund when referring to a memory of a past action that has already occurred."
+ },
+ {
+  "id": "pt-B2-021",
+  "band": "B2",
+  "question": "Dr. Green _____ the rare plant species for years before she finally published her groundbreaking study.",
+  "options": [
+   "had been researching",
+   "was researched",
+   "has been researching",
+   "is researching"
+  ],
+  "correct": 0,
+  "topic": "past perfect continuous",
+  "explanation": "The past perfect continuous is used to emphasize the duration of an ongoing activity that happened before another point in the past."
+ },
+ {
+  "id": "pt-B2-022",
+  "band": "B2",
+  "question": "If the company hadn't invested in that technology five years ago, they _____ market leaders now.",
+  "options": [
+   "wouldn't have been",
+   "wouldn't be",
+   "won't be",
+   "aren't"
+  ],
+  "correct": 1,
+  "topic": "third and mixed conditionals",
+  "explanation": "Mixed conditionals are used when a past action has a result in the present."
+ },
+ {
+  "id": "pt-B2-023",
+  "band": "B2",
+  "question": "If the goalkeeper had reacted a second faster, our team _____ the match last night.",
+  "options": [
+   "didn't lose",
+   "hadn't lost",
+   "wouldn't have lost",
+   "wouldn't lose"
+  ],
+  "correct": 2,
+  "topic": "third and mixed conditionals",
+  "explanation": "The third conditional is used to describe hypothetical past situations and their past results."
+ },
+ {
+  "id": "pt-B2-024",
+  "band": "B2",
+  "question": "To protect the local wildlife, these fragile ecosystems _____ from human interference.",
+  "options": [
+   "must protect",
+   "must be protected",
+   "must have protected",
+   "are protecting"
+  ],
+  "correct": 1,
+  "topic": "passive with modals and perfect forms",
+  "explanation": "Passive with modal verbs (must + be + past participle) is used when the receiver of the action is the subject."
+ },
+ {
+  "id": "pt-B2-025",
+  "band": "B2",
+  "question": "During the interview, the manager wanted to know when _____ to start the new position.",
+  "options": [
+   "would I be able",
+   "I would be able",
+   "will I be able",
+   "I am able"
+  ],
+  "correct": 1,
+  "topic": "reported questions and commands",
+  "explanation": "Indirect questions in reported speech use statement word order (subject + verb) and shift tense backward."
+ },
+ {
+  "id": "pt-B2-026",
+  "band": "B2",
+  "question": "The office lights are completely switched off, so the employees _____ home early today.",
+  "options": [
+   "must go",
+   "should have gone",
+   "must have gone",
+   "can go"
+  ],
+  "correct": 2,
+  "topic": "modals of deduction about the past",
+  "explanation": "'Must have + past participle' is used to make a logical deduction about a past event with high certainty."
+ },
+ {
+  "id": "pt-B2-027",
+  "band": "B2",
+  "question": "The weather was terrible during our beach holiday, and I wish we _____ to Spain instead.",
+  "options": [
+   "went",
+   "had gone",
+   "would go",
+   "have gone"
+  ],
+  "correct": 1,
+  "topic": "wish and if only",
+  "explanation": "'Wish + past perfect' is used to express regret about a past situation."
+ },
+ {
+  "id": "pt-B2-028",
+  "band": "B2",
+  "question": "The James Webb Space Telescope, _____ was launched in 2021, has sent back stunning images of distant galaxies.",
+  "options": [
+   "that",
+   "what",
+   "which",
+   "whose"
+  ],
+  "correct": 2,
+  "topic": "non-defining relative clauses",
+  "explanation": "Non-defining relative clauses use 'which' (not 'that') to add extra information about things."
+ },
+ {
+  "id": "pt-B2-029",
+  "band": "B2",
+  "question": "We need to get our passports _____ before our trip to Japan next summer.",
+  "options": [
+   "renew",
+   "renewed",
+   "renewing",
+   "to renew"
+  ],
+  "correct": 1,
+  "topic": "causative have/get something done",
+  "explanation": "The causative structure 'get + object + past participle' is used to talk about arranging for someone else to do a job."
+ },
+ {
+  "id": "pt-C1-001",
+  "band": "C1",
+  "question": "Not only _____ the company's reputation, but it also resulted in a massive fine for the firm.",
+  "options": [
+   "did the data breach damage",
+   "the data breach damaged",
+   "had damaged the data breach",
+   "did damage the data breach"
+  ],
+  "correct": 0,
+  "topic": "negative inversion",
+  "explanation": "Starting a sentence with a negative adverbial like 'not only' requires auxiliary inversion."
+ },
+ {
+  "id": "pt-C1-002",
+  "band": "C1",
+  "question": "What the board of directors really appreciated _____ clear, actionable solutions rather than endless complaints.",
+  "options": [
+   "being his ability to provide",
+   "was his ability to provide",
+   "it was his ability to provide",
+   "that his ability provided"
+  ],
+  "correct": 1,
+  "topic": "cleft sentences",
+  "explanation": "A pseudo-cleft sentence starting with 'What' requires a form of 'be' to link the clause to the emphasized element."
+ },
+ {
+  "id": "pt-C1-003",
+  "band": "C1",
+  "question": "The ancient ruins, discovered last year, are thought _____ by a sudden volcanic eruption in 1200 BCE.",
+  "options": [
+   "to have been destroyed",
+   "to destroy",
+   "having been destroyed",
+   "to be destroyed"
+  ],
+  "correct": 0,
+  "topic": "passive reporting verbs",
+  "explanation": "The passive reporting structure 'are thought' requires a perfect passive infinitive to refer to a past completed action."
+ },
+ {
+  "id": "pt-C1-004",
+  "band": "C1",
+  "question": "The athlete completed the marathon, _____ with a much slower time than she had originally anticipated.",
+  "options": [
+   "despite",
+   "notwithstanding",
+   "albeit",
+   "whereas"
+  ],
+  "correct": 2,
+  "topic": "advanced linking words",
+  "explanation": "'Albeit' is a conjunction meaning 'even though' or 'although', used to introduce a concessive modifier."
+ },
+ {
+  "id": "pt-C1-005",
+  "band": "C1",
+  "question": "Only after the final whistle blew _____ how close they had come to losing the championship.",
+  "options": [
+   "did the players realize",
+   "the players realized",
+   "had realized the players",
+   "realized the players"
+  ],
+  "correct": 0,
+  "topic": "negative inversion",
+  "explanation": "Sentences starting with 'Only after' require subject-auxiliary inversion in the main clause."
+ },
+ {
+  "id": "pt-C1-006",
+  "band": "C1",
+  "question": "Rarely _____ a scientific breakthrough of this magnitude occur without years of collaborative research.",
+  "options": [
+   "does",
+   "is",
+   "it does",
+   "has"
+  ],
+  "correct": 0,
+  "topic": "negative inversion",
+  "explanation": "Negative adverbs like 'rarely' require auxiliary inversion (subject-verb inversion) when placed at the beginning of a sentence."
+ },
+ {
+  "id": "pt-C1-007",
+  "band": "C1",
+  "question": "_____ all night due to the heavy storm, the passengers were exhausted when they finally arrived.",
+  "options": [
+   "Being delayed",
+   "Delaying",
+   "Having delayed",
+   "Having been delayed"
+  ],
+  "correct": 3,
+  "topic": "participle clauses",
+  "explanation": "A perfect passive participle clause ('having been delayed') is used to show that the action happened before the main clause and was passive."
+ },
+ {
+  "id": "pt-C1-008",
+  "band": "C1",
+  "question": "The ancient manuscript, currently kept in the national library, is believed _____ by a medieval monk.",
+  "options": [
+   "having been written",
+   "to be written",
+   "to have been written",
+   "that it was written"
+  ],
+  "correct": 2,
+  "topic": "passive reporting verbs",
+  "explanation": "The passive reporting structure 'is believed' is followed by a perfect passive infinitive to refer to a completed past action."
+ },
+ {
+  "id": "pt-C1-009",
+  "band": "C1",
+  "question": "The team decided to conduct the outdoor ecological survey, _____ the freezing temperatures and heavy snowfall.",
+  "options": [
+   "albeit",
+   "notwithstanding",
+   "whereas",
+   "nevertheless"
+  ],
+  "correct": 1,
+  "topic": "advanced linking",
+  "explanation": "'Notwithstanding' is a formal preposition meaning 'in spite of' or 'despite' and is followed by a noun phrase."
+ },
+ {
+  "id": "pt-C1-010",
+  "band": "C1",
+  "question": "Under no circumstances _____ the laboratory equipment without the direct supervision of a qualified technician.",
+  "options": [
+   "students should use",
+   "should students use",
+   "must students to use",
+   "do students have use"
+  ],
+  "correct": 1,
+  "topic": "negative inversion",
+  "explanation": "Negative adverbial phrases like 'under no circumstances' require subject-auxiliary inversion in the main clause."
+ },
+ {
+  "id": "pt-C1-011",
+  "band": "C1",
+  "question": "_____ the marketing team realized how costly the campaign would be, they would have chosen a different strategy.",
+  "options": [
+   "If",
+   "Should",
+   "Had",
+   "Did"
+  ],
+  "correct": 2,
+  "topic": "advanced mixed conditionals",
+  "explanation": "In conditional sentences, 'had' can be inverted with the subject to replace 'if' in third conditional structures."
+ },
+ {
+  "id": "pt-C1-012",
+  "band": "C1",
+  "question": "Scarcely _____ the new software update when their computers began crashing unexpectedly.",
+  "options": [
+   "they had installed",
+   "had they installed",
+   "did they installed",
+   "have they installed"
+  ],
+  "correct": 1,
+  "topic": "negative inversion",
+  "explanation": "With negative adverbs like 'scarcely', the auxiliary verb must be inverted and placed before the subject."
+ },
+ {
+  "id": "pt-C1-013",
+  "band": "C1",
+  "question": "The suspect is reported _____ the country hours before the border police received the arrest warrant.",
+  "options": [
+   "to have fled",
+   "to flee",
+   "having fled",
+   "that he fled"
+  ],
+  "correct": 0,
+  "topic": "passive reporting structures",
+  "explanation": "The perfect infinitive 'to have fled' is used after a passive reporting verb to indicate an action that happened before the reporting."
+ },
+ {
+  "id": "pt-C1-014",
+  "band": "C1",
+  "question": "_____ I love living in the city center, I cannot ignore the constant noise and air pollution.",
+  "options": [
+   "Much as",
+   "Despite",
+   "Albeit",
+   "Even though as"
+  ],
+  "correct": 0,
+  "topic": "advanced linking",
+  "explanation": "'Much as' is a conjunction meaning 'although' and must be followed by a clause."
+ },
+ {
+  "id": "pt-C1-015",
+  "band": "C1",
+  "question": "_____ for the timely intervention of the lifeguards, the struggling swimmer would have drowned.",
+  "options": [
+   "Were it not",
+   "Had it not been",
+   "If it weren't",
+   "But for it"
+  ],
+  "correct": 1,
+  "topic": "inverted conditionals",
+  "explanation": "'Had it not been for' is the correct inverted third conditional structure used to talk about past events."
+ },
+ {
+  "id": "pt-C1-016",
+  "band": "C1",
+  "question": "The archaeological team _____ the site last month, but the local government suddenly revoked their permit.",
+  "options": [
+   "was to excavate",
+   "was to have excavated",
+   "had excavated",
+   "would excavate"
+  ],
+  "correct": 1,
+  "topic": "future in the past",
+  "explanation": "The structure 'was/were to have + past participle' describes an event that was planned but did not actually take place."
+ },
+ {
+  "id": "pt-C1-017",
+  "band": "C1",
+  "question": "_____ she might, the young gymnast could not perfect her landing during the final routine.",
+  "options": [
+   "Try as",
+   "As she tried",
+   "Though trying",
+   "However try"
+  ],
+  "correct": 0,
+  "topic": "advanced linking",
+  "explanation": "The inverted concession pattern 'verb + as + subject + might' is used to emphasize the difficulty of an action."
+ },
+ {
+  "id": "pt-C2-001",
+  "band": "C2",
+  "question": "_____ your timely intervention last week, the negotiations would have collapsed entirely.",
+  "options": [
+   "Had it not been for",
+   "Were it not for",
+   "If it had not been",
+   "Hadn't it been for"
+  ],
+  "correct": 0,
+  "topic": "inversion after conditional omission",
+  "explanation": "The past unreal conditional without 'if' requires the inverted structure 'Had it not been for'."
+ },
+ {
+  "id": "pt-C2-002",
+  "band": "C2",
+  "question": "Out of the mist _____ the majestic peaks of the Kaçkar Mountains, taking our breath away.",
+  "options": [
+   "did loom",
+   "loomed",
+   "loomed they",
+   "did they loom"
+  ],
+  "correct": 1,
+  "topic": "fronting for emphasis",
+  "explanation": "When a locative or directional adverbial is fronted, full inversion (verb before subject) is required without an auxiliary verb."
+ },
+ {
+  "id": "pt-C2-003",
+  "band": "C2",
+  "question": "The surgeon sterilized the instruments with utmost care lest the patient _____ an infection.",
+  "options": [
+   "contracts",
+   "contracted",
+   "would contract",
+   "contract"
+  ],
+  "correct": 3,
+  "topic": "lest and the formal subjunctive",
+  "explanation": "The conjunction 'lest' is followed by a clause in the subjunctive mood, which uses the bare infinitive form."
+ },
+ {
+  "id": "pt-C2-004",
+  "band": "C2",
+  "question": "You _____ bought such an expensive gift for my graduation, but I am incredibly grateful.",
+  "options": [
+   "needn't have",
+   "didn't need to",
+   "mustn't have",
+   "shouldn't have to"
+  ],
+  "correct": 0,
+  "topic": "nuanced modal perfects",
+  "explanation": "'Needn't have' indicates that an action was performed but was actually unnecessary, unlike 'didn't need to' which usually means it wasn't done."
+ },
+ {
+  "id": "pt-C2-005",
+  "band": "C2",
+  "question": "_____ might, she could not solve the advanced calculus problem within the time limit.",
+  "options": [
+   "As she tried",
+   "Although trying as she",
+   "Try as she",
+   "However she tried"
+  ],
+  "correct": 2,
+  "topic": "as/though concessive structures",
+  "explanation": "The concessive structure 'Try as she might' is an advanced inversion meaning 'even though she tried very hard'."
+ },
+ {
+  "id": "pt-C2-006",
+  "band": "C2",
+  "question": "No sooner _____ the finish line than he collapsed from sheer exhaustion.",
+  "options": [
+   "had he crossed",
+   "he had crossed",
+   "did he crossed",
+   "he crossed"
+  ],
+  "correct": 0,
+  "topic": "complex comparative structures",
+  "explanation": "Negative adverbials like 'No sooner' at the beginning of a sentence require subject-auxiliary inversion in the past perfect."
+ },
+ {
+  "id": "pt-C2-007",
+  "band": "C2",
+  "question": "_____ I would love to join you on the trek up Mount Ararat, my current fitness levels simply won't allow it.",
+  "options": [
+   "As much",
+   "Even though much",
+   "Despite",
+   "Much as"
+  ],
+  "correct": 3,
+  "topic": "as/though concessive structures",
+  "explanation": "'Much as' is a concessive conjunction used with verbs of liking or wanting to mean 'although' or 'even though'."
+ },
+ {
+  "id": "pt-C2-008",
+  "band": "C2",
+  "question": "_____ the global temperature rise to exceed two degrees, the ecological consequences would be completely irreversible.",
+  "options": [
+   "Should",
+   "Were",
+   "Had",
+   "Would"
+  ],
+  "correct": 1,
+  "topic": "Conditional inversion",
+  "explanation": "The structure 'Were + subject + to-infinitive' is used to form a formal, hypothetical future conditional when the word 'if' is omitted."
+ },
+ {
+  "id": "pt-C2-009",
+  "band": "C2",
+  "question": "Only after the board members had debated for hours _____ to a final consensus regarding the merger.",
+  "options": [
+   "they did come",
+   "did they come",
+   "they came",
+   "had they come"
+  ],
+  "correct": 1,
+  "topic": "Fronting and negative inversion",
+  "explanation": "When a limiting adverbial phrase like 'only after' is fronted to the beginning of a sentence, it triggers subject-auxiliary inversion in the main clause."
+ },
+ {
+  "id": "pt-C2-010",
+  "band": "C2",
+  "question": "The CEO refused to comment on the ongoing investigation lest his words _____ by the media.",
+  "options": [
+   "be misinterpreted",
+   "are misinterpreted",
+   "were misinterpreted",
+   "would misinterpret"
+  ],
+  "correct": 0,
+  "topic": "Lest and the subjunctive",
+  "explanation": "The conjunction 'lest' means 'for fear that' and is followed by a verb in the subjunctive mood (base form) or 'should'."
+ },
+ {
+  "id": "pt-C2-011",
+  "band": "C2",
+  "question": "You _____ warned me about the spicy food; my stomach has been upset all afternoon!",
+  "options": [
+   "must have",
+   "could be",
+   "might have",
+   "would rather"
+  ],
+  "correct": 2,
+  "topic": "Nuanced modal perfects",
+  "explanation": "The modal perfect 'might have' is used here to express a polite reproach or annoyance about an action that did not occur."
+ },
+ {
+  "id": "pt-C2-012",
+  "band": "C2",
+  "question": "_____ his opposition to the proposal, he still voted in favor of it to maintain party unity.",
+  "options": [
+   "Although",
+   "Despite of",
+   "Whereas",
+   "Notwithstanding"
+  ],
+  "correct": 3,
+  "topic": "Nominalised and prepositional concessive clauses",
+  "explanation": "'Notwithstanding' is a formal preposition meaning 'despite' and is followed directly by a noun phrase."
+ },
+ {
+  "id": "pt-C2-013",
+  "band": "C2",
+  "question": "_____ the task seemed, the engineering team completed the bridge ahead of schedule.",
+  "options": [
+   "Daunting though",
+   "Dauntingly as",
+   "Although daunting",
+   "Despite daunting"
+  ],
+  "correct": 0,
+  "topic": "Concessive clauses with fronted adjectives",
+  "explanation": "An adjective can be fronted before 'though' or 'as' to form a concessive clause meaning 'even though the task seemed daunting'."
+ },
+ {
+  "id": "pt-C2-014",
+  "band": "C2",
+  "question": "We walked through the ancient ruins for hours, but there was _____ soul in sight to guide us.",
+  "options": [
+   "not the",
+   "nary a",
+   "single no",
+   "barely any"
+  ],
+  "correct": 1,
+  "topic": "Advanced determiners",
+  "explanation": "'Nary a' is an advanced, literary determiner meaning 'not a single' or 'not one'."
+ },
+ {
+  "id": "pt-C2-015",
+  "band": "C2",
+  "question": "He is understood _____ the country before the police could issue a warrant for his arrest.",
+  "options": [
+   "to flee",
+   "having fled",
+   "to be fleeing",
+   "to have fled"
+  ],
+  "correct": 3,
+  "topic": "Reporting with perfect infinitives",
+  "explanation": "The passive reporting structure 'is understood' is followed by a perfect infinitive ('to have fled') to indicate an action that happened before the reporting time."
+ },
+ {
+  "id": "pt-C2-016",
+  "band": "C2",
+  "question": "The committee recommended that the project _____ suspended until a thorough environmental impact assessment could be conducted.",
+  "options": [
+   "is",
+   "was",
+   "be",
+   "should being"
+  ],
+  "correct": 2,
+  "topic": "Mandative subjunctive",
+  "explanation": "The mandative subjunctive uses the base form of the verb ('be') in a 'that'-clause following verbs of recommending, suggesting, or demanding."
+ },
+ {
+  "id": "pt-C2-017",
+  "band": "C2",
+  "question": "Seldom _____ such a display of sheer determination and stamina in a local tennis tournament.",
+  "options": [
+   "I have witnessed",
+   "have I witnessed",
+   "did I witnessed",
+   "I witnessed"
+  ],
+  "correct": 1,
+  "topic": "Negative inversion",
+  "explanation": "When a limiting or negative adverb like 'seldom' starts a sentence, it triggers subject-auxiliary inversion."
+ },
+ {
+  "id": "pt-C2-018",
+  "band": "C2",
+  "question": "_____ the potential risks of the system migration earlier, we would have postponed the launch.",
+  "options": [
+   "Did we anticipate",
+   "If we anticipated",
+   "Had we anticipated",
+   "Were we to anticipate"
+  ],
+  "correct": 2,
+  "topic": "inversion after conditional omission",
+  "explanation": "In third conditional sentences, 'if' can be omitted by placing the auxiliary verb 'had' before the subject."
+ },
+ {
+  "id": "pt-C2-019",
+  "band": "C2",
+  "question": "At the end of the narrow valley _____ the ruins of an ancient Lycian city, hidden from sight.",
+  "options": [
+   "lay",
+   "did lay",
+   "lying",
+   "were lain"
+  ],
+  "correct": 0,
+  "topic": "fronting for emphasis",
+  "explanation": "When a locative adverbial is fronted, subject-verb inversion occurs with intransitive verbs of position like 'lie' (past tense 'lay')."
+ },
+ {
+  "id": "pt-C2-020",
+  "band": "C2",
+  "question": "The diplomat spoke in a whisper lest he _____ overheard by the journalists.",
+  "options": [
+   "was",
+   "be",
+   "should have been",
+   "would be"
+  ],
+  "correct": 1,
+  "topic": "lest and the formal subjunctive",
+  "explanation": "'Lest' is followed by a subject and the bare subjunctive form of the verb to express purpose or fear."
+ },
+ {
+  "id": "pt-C2-021",
+  "band": "C2",
+  "question": "I would rather you _____ me about the change of plans before I drove all the way here.",
+  "options": [
+   "had told",
+   "told",
+   "would tell",
+   "have told"
+  ],
+  "correct": 0,
+  "topic": "nuanced modal perfects",
+  "explanation": "When 'would rather' has a different subject and refers to a past regret, the past perfect tense is required."
+ },
+ {
+  "id": "pt-C2-022",
+  "band": "C2",
+  "question": "_____ no further objections from the board, the chairperson signed the contract.",
+  "options": [
+   "Having",
+   "Being",
+   "There being",
+   "It having"
+  ],
+  "correct": 2,
+  "topic": "reduced and nominalised clauses",
+  "explanation": "An absolute clause with 'there being' is used to state a reason when the subject of the subordinate clause differs from the main clause."
+ },
+ {
+  "id": "pt-C2-023",
+  "band": "C2",
+  "question": "Unlikely _____ it may seem, the two rival tech firms are planning a joint venture.",
+  "options": [
+   "although",
+   "though",
+   "even if",
+   "despite"
+  ],
+  "correct": 1,
+  "topic": "as/though concessive structures",
+  "explanation": "The concessive structure 'Adjective + though + subject + verb' is used to emphasize a contrast."
+ },
+ {
+  "id": "pt-C2-024",
+  "band": "C2",
+  "question": "Many _____ promising career has been ruined by a single lapse in judgment.",
+  "options": [
+   "of",
+   "the",
+   "one",
+   "a"
+  ],
+  "correct": 3,
+  "topic": "advanced quantifiers and determiners",
+  "explanation": "The formal determiner 'many a' is followed by a singular countable noun and a singular verb to mean 'many'."
+ },
+ {
+  "id": "pt-C2-025",
+  "band": "C2",
+  "question": "The CEO is alleged _____ company funds for personal use before he resigned.",
+  "options": [
+   "to embezzle",
+   "having embezzled",
+   "to have been embezzling",
+   "that he embezzled"
+  ],
+  "correct": 2,
+  "topic": "subtle tense and aspect choices in reporting",
+  "explanation": "A perfect continuous infinitive is used after passive reporting verbs to describe an ongoing action that occurred prior to another past event."
+ },
+ {
+  "id": "pt-C2-026",
+  "band": "C2",
+  "question": "_____ did the archaeologists realize that they were standing on the threshold of a major historical discovery.",
+  "options": [
+   "Seldom",
+   "Little",
+   "Barely",
+   "Not only"
+  ],
+  "correct": 1,
+  "topic": "inversion after negative adverbials",
+  "explanation": "The negative adverbial 'Little' triggers subject-auxiliary inversion when placed at the beginning of a sentence for emphasis."
+ },
+ {
+  "id": "pt-C2-027",
+  "band": "C2",
+  "question": "_____ any unforeseen delays, the construction of the new terminal will be completed by October.",
+  "options": [
+   "Barring",
+   "Excepting",
+   "Excluding",
+   "Save"
+  ],
+  "correct": 0,
+  "topic": "advanced prepositions",
+  "explanation": "The preposition 'Barring' is used to mean 'except for' or 'if there are no' obstacles or occurrences."
+ },
+ {
+  "id": "pt-C2-028",
+  "band": "C2",
+  "question": "The hikers walked for six hours, _____ they had completely run out of water.",
+  "options": [
+   "by then",
+   "by which time",
+   "at that time",
+   "which time"
+  ],
+  "correct": 1,
+  "topic": "complex relative clauses",
+  "explanation": "The relative phrase 'by which time' is used to connect a non-defining relative clause indicating when a state was reached."
+ }
+]

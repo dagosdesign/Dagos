@@ -26,6 +26,12 @@ import QuizScreen from './screens/QuizScreen';
 import GrammarScreen from './screens/GrammarScreen';
 import LgsUnitsScreen from './screens/LgsUnitsScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import PlacementTestScreen from './screens/profile/PlacementTestScreen';
+import PlanLimitCard, { LimitKind } from './components/PlanLimitCard';
+import { featuresFor } from './lib/plan';
+import { getUserProfile, updateUserProfile, useUserProfile } from './lib/userProfile';
+import { spendGame, spendGrammarActivity, spendListeningActivity } from './lib/dailyUsage';
+import { ActivityKind, addLearningMinutes, logActivity, TimeCategory } from './lib/activityLog';
 
 interface PracticeHistoryItem {
   id: string;
@@ -35,6 +41,19 @@ interface PracticeHistoryItem {
   wasCorrect: boolean;
   timestamp: number;
 }
+
+const PLACEMENT_PROMPTED_KEY = 'lex_placement_prompted';
+const TIME_TICK_SECONDS = 15;
+
+const METHOD_TITLE: Record<PracticeMethod, string> = {
+  Listening: 'Listening practice',
+  Writing: 'Writing practice',
+  Visual: 'Visual learning',
+  Games: 'Word matching',
+  Stories: 'Stories',
+  Conversations: 'Conversations',
+  Test: 'Word test',
+};
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
@@ -70,6 +89,20 @@ export default function App() {
 
   const { srsState, grammarProgress, gamification, reviewFlashcard, recordGrammarQuizResult, recordQuizXp } = useLexProgress();
 
+  // Membership decides what is open: AI Coach, and the daily limits on Free.
+  const profile = useUserProfile();
+  const features = featuresFor(profile.membership);
+  const [limit, setLimit] = useState<LimitKind | null>(null);
+
+  // New students check their level first; they can postpone it once.
+  const [showOnboarding, setShowOnboarding] = useState<boolean>(() => {
+    try {
+      return !getUserProfile().placementTestCompleted && localStorage.getItem(PLACEMENT_PROMPTED_KEY) !== '1';
+    } catch {
+      return false;
+    }
+  });
+
   useEffect(() => {
     fetch('/api/config')
       .then(res => res.json())
@@ -87,6 +120,13 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('vocab_history', JSON.stringify(history));
   }, [history]);
+
+  // The profile shows the same streak as the rest of the app.
+  useEffect(() => {
+    if (getUserProfile().currentStreak !== gamification.streakDays) {
+      updateUserProfile({ currentStreak: gamification.streakDays });
+    }
+  }, [gamification.streakDays]);
 
   const playPronunciation = (word: string) => {
     if ('speechSynthesis' in window) {
@@ -131,6 +171,19 @@ export default function App() {
     }
   };
 
+  /* Every screen reports XP once, when a session ends: that moment is also a
+     completed activity in the study history. */
+  const loggedXp = (kind: ActivityKind, title: string) => (correctCount: number) => {
+    logActivity(kind, title, `${correctCount} correct`);
+    recordQuizXp(correctCount);
+  };
+
+  const recordGrammarLogged = (topicId: string, correctCount: number, totalCount: number) => {
+    const topic = topicId.replace(/-(basic|intermediate|advanced)$/, ' • $1').replace(/-/g, ' ');
+    logActivity('grammar', 'Grammar test', `${topic} • ${correctCount}/${totalCount}`);
+    recordGrammarQuizResult(topicId, correctCount, totalCount);
+  };
+
   const dueCount = getDueCards(FLASHCARDS, srsState).length;
 
   // Measure the (fixed) bottom nav's real height so the home animation can fit
@@ -160,13 +213,58 @@ export default function App() {
   const [wordPath, setWordPath] = useState(false);
   const [grammarDuel, setGrammarDuel] = useState(false);
 
+  const gameOpen = Boolean(wordLock) || atoZ || whatAmI || wordBuild || unbroken || goldenMatch || theClue || oddOne || wordPath || grammarDuel;
+
+  /* Learning time: counted while a learning screen is open and visible, and
+     sorted into listening, writing, games or everything else. */
+  const timeCategory: TimeCategory | null = showOnboarding
+    ? 'others'
+    : methodSession
+      ? methodSession.method === 'Listening'
+        ? 'listening'
+        : methodSession.method === 'Writing'
+          ? 'writing'
+          : methodSession.method === 'Games'
+            ? 'games'
+            : 'others'
+      : showProgress || limit
+        ? null
+        : activeTab === 'games'
+          ? gameOpen
+            ? 'games'
+            : null
+          : activeTab === 'ai'
+            ? features.aiCoach
+              ? 'others'
+              : null
+            : activeTab === 'grammar' || activeTab === 'cards' || activeTab === 'quiz'
+              ? 'others'
+              : null;
+  const timeCategoryRef = useRef<TimeCategory | null>(timeCategory);
+  timeCategoryRef.current = timeCategory;
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      if (document.visibilityState === 'visible' && timeCategoryRef.current) {
+        addLearningMinutes(timeCategoryRef.current, TIME_TICK_SECONDS / 60);
+      }
+    }, TIME_TICK_SECONDS * 1000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  /* A game session starts only if today's allowance has one left. */
+  const startGame = (open: () => void) => {
+    if (spendGame()) open();
+    else setLimit('games');
+  };
+
   const handleNavigate = (tab: NavTab) => {
     setShowProgress(false);
     setShowLgs(false);
     setActiveTab(tab);
   };
 
-  // Bottom nav: Ana Sayfa / Games / AI Coach / Profile.
+  // Bottom nav: Home / Games / AI Lex / Profile.
   const navActive: NavItem = showProgress
     ? 'profile'
     : activeTab === 'ai'
@@ -214,13 +312,18 @@ export default function App() {
     } else if (method === 'AI') {
       // The "AI" orb opens the conversational AI Coach.
       handleNavigate('ai');
+    } else if (method === 'Listening' && !spendListeningActivity()) {
+      setLimit('listening');
     } else {
       setMethodSession({ method, category, label });
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0b] text-[#dcdcdc] flex flex-col antialiased">
+    <div
+      className="min-h-screen text-[#dcdcdc] flex flex-col antialiased"
+      style={{ background: showProgress ? '#050505' : '#0a0a0b' }}
+    >
       {/* Main Container */}
       <main
         className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8"
@@ -233,7 +336,6 @@ export default function App() {
             grammarProgress={grammarProgress}
             quizStats={{ score, totalAnswered, highStreak }}
             dueCount={dueCount}
-            onBack={() => setShowProgress(false)}
             onOpenCards={() => { setShowProgress(false); setActiveTab('cards'); }}
             onResetStats={resetStats}
           />
@@ -273,42 +375,48 @@ export default function App() {
                 category={null}
                 label="All Words"
                 onExit={() => setWordLock(null)}
-                recordQuizXp={recordQuizXp}
+                recordQuizXp={loggedXp('game', 'Wordlock')}
               />
             ) : atoZ ? (
-              <AtoZScreen onExit={() => setAtoZ(false)} recordQuizXp={recordQuizXp} />
+              <AtoZScreen onExit={() => setAtoZ(false)} recordQuizXp={loggedXp('game', 'A to Z')} />
             ) : whatAmI ? (
-              <WhatAmIScreen onExit={() => setWhatAmI(false)} recordQuizXp={recordQuizXp} />
+              <WhatAmIScreen onExit={() => setWhatAmI(false)} recordQuizXp={loggedXp('game', 'What Am I?')} />
             ) : wordBuild ? (
-              <WordBuildScreen onExit={() => setWordBuild(false)} recordQuizXp={recordQuizXp} />
+              <WordBuildScreen onExit={() => setWordBuild(false)} recordQuizXp={loggedXp('game', 'Word Build')} />
             ) : unbroken ? (
               <UnbrokenScreen onExit={() => setUnbroken(false)} />
             ) : goldenMatch ? (
-              <GoldenMatchScreen onExit={() => setGoldenMatch(false)} recordQuizXp={recordQuizXp} />
+              <GoldenMatchScreen onExit={() => setGoldenMatch(false)} recordQuizXp={loggedXp('game', 'Golden Match')} />
             ) : theClue ? (
-              <TheClueScreen onExit={() => setTheClue(false)} recordQuizXp={recordQuizXp} />
+              <TheClueScreen onExit={() => setTheClue(false)} recordQuizXp={loggedXp('game', 'The Clue')} />
             ) : oddOne ? (
-              <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={recordQuizXp} />
+              <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={loggedXp('game', 'Odd One')} />
             ) : wordPath ? (
-              <WordPathScreen onExit={() => setWordPath(false)} recordQuizXp={recordQuizXp} />
+              <WordPathScreen onExit={() => setWordPath(false)} recordQuizXp={loggedXp('game', 'Word Path')} />
             ) : grammarDuel ? (
-              <GrammarDuelScreen onExit={() => setGrammarDuel(false)} recordQuizXp={recordQuizXp} />
+              <GrammarDuelScreen onExit={() => setGrammarDuel(false)} recordQuizXp={loggedXp('game', 'Grammar Duel')} />
             ) : (
               <GamesScreen
-                onPlayWordLock={() => setWordLock({ category: null, label: 'All Words' })}
-                onPlayAtoZ={() => setAtoZ(true)}
-                onPlayWhatAmI={() => setWhatAmI(true)}
-                onPlayWordBuild={() => setWordBuild(true)}
-                onPlayUnbroken={() => setUnbroken(true)}
-                onPlayGoldenMatch={() => setGoldenMatch(true)}
-                onPlayTheClue={() => setTheClue(true)}
-                onPlayOddOne={() => setOddOne(true)}
-                onPlayWordPath={() => setWordPath(true)}
-                onPlayGrammarDuel={() => setGrammarDuel(true)}
+                onPlayWordLock={() => startGame(() => setWordLock({ category: null, label: 'All Words' }))}
+                onPlayAtoZ={() => startGame(() => setAtoZ(true))}
+                onPlayWhatAmI={() => startGame(() => setWhatAmI(true))}
+                onPlayWordBuild={() => startGame(() => setWordBuild(true))}
+                onPlayUnbroken={() => startGame(() => setUnbroken(true))}
+                onPlayGoldenMatch={() => startGame(() => setGoldenMatch(true))}
+                onPlayTheClue={() => startGame(() => setTheClue(true))}
+                onPlayOddOne={() => startGame(() => setOddOne(true))}
+                onPlayWordPath={() => startGame(() => setWordPath(true))}
+                onPlayGrammarDuel={() => startGame(() => setGrammarDuel(true))}
               />
             ))}
             {activeTab === 'ai' && (
-              <AiCoachScreen isAiConfigured={isAiConfigured} />
+              features.aiCoach ? (
+                <AiCoachScreen isAiConfigured={isAiConfigured} />
+              ) : (
+                <div className="pt-8">
+                  <PlanLimitCard kind="ai" onBack={() => handleNavigate('home')} />
+                </div>
+              )
             )}
             {activeTab === 'quiz' && (
               <QuizScreen
@@ -320,7 +428,7 @@ export default function App() {
                 onAnswer={handleQuizAnswer}
                 onAddHistory={handleAddHistory}
                 onResetStats={resetStats}
-                recordQuizXp={recordQuizXp}
+                recordQuizXp={loggedXp('quiz', 'Quiz')}
                 isAiConfigured={isAiConfigured}
                 playPronunciation={playPronunciation}
                 initialCategory={pendingQuizCategory}
@@ -328,7 +436,15 @@ export default function App() {
               />
             )}
             {activeTab === 'grammar' && (
-              <GrammarScreen grammarProgress={grammarProgress} recordGrammarQuizResult={recordGrammarQuizResult} />
+              <GrammarScreen
+                grammarProgress={grammarProgress}
+                recordGrammarQuizResult={recordGrammarLogged}
+                canStartTest={testKey => {
+                  const ok = spendGrammarActivity(testKey);
+                  if (!ok) setLimit('grammar');
+                  return ok;
+                }}
+              />
             )}
           </>
         )}
@@ -351,7 +467,25 @@ export default function App() {
           label={methodSession.label}
           onExit={() => setMethodSession(null)}
           playPronunciation={playPronunciation}
-          recordQuizXp={recordQuizXp}
+          recordQuizXp={loggedXp('practice', `${METHOD_TITLE[methodSession.method]} • ${methodSession.label}`)}
+        />
+      )}
+
+      {limit && (
+        <PlanLimitCard kind={limit} fullScreen onBack={() => setLimit(null)} onUpgraded={() => setLimit(null)} />
+      )}
+
+      {showOnboarding && (
+        <PlacementTestScreen
+          isOnboarding
+          onClose={() => {
+            try {
+              localStorage.setItem(PLACEMENT_PROMPTED_KEY, '1');
+            } catch {
+              /* ignore */
+            }
+            setShowOnboarding(false);
+          }}
         />
       )}
     </div>

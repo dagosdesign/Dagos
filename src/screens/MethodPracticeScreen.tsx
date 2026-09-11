@@ -6,6 +6,9 @@ import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { foldAnswer } from '../lib/answerText';
+import { allowWords } from '../lib/dailyUsage';
+import { useUserProfile } from '../lib/userProfile';
+import PlanLimitCard from '../components/PlanLimitCard';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -64,6 +67,12 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
     [category]
   );
 
+  // The words this session may use today: all of them on Premium; on Free the
+  // words already studied today plus what is left of the 10-word allowance.
+  // Wrong answers in multiple-choice modes still come from the whole pool.
+  const membership = useUserProfile().membership;
+  const allowed = useMemo(() => allowWords(pool), [pool, membership]);
+
   // Units whose word batches haven't been imported yet get a friendly notice
   // instead of an empty session.
   if (pool.length === 0) {
@@ -88,6 +97,14 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
     );
   }
 
+  if (allowed.length === 0) {
+    return (
+      <div className="fixed inset-0 z-50 bg-[#050505] overflow-y-auto flex items-center px-5">
+        <PlanLimitCard kind="words" onBack={onExit} onUpgraded={() => setSessionId(s => s + 1)} />
+      </div>
+    );
+  }
+
   return (
     <div className="fixed inset-0 z-50 bg-[#0a0a0b] text-[#dcdcdc] overflow-y-auto">
       <div className="max-w-xl mx-auto p-5 pb-16">
@@ -107,13 +124,13 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
 
         <Fragment key={sessionId}>
           {method === 'Listening' && (
-            <ListeningMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <ListeningMode pool={allowed} choicePool={pool}playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Writing' && (
-            <WritingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <WritingMode pool={allowed}recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Visual' && (
-            <VisualMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <VisualMode pool={allowed}playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Games' && (
             category?.startsWith('LGS') ? (
@@ -125,17 +142,17 @@ export default function MethodPracticeScreen({ method, category, label, onExit, 
                 </p>
               </div>
             ) : (
-              <MatchingMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+              <MatchingMode pool={allowed}recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
             )
           )}
           {method === 'Stories' && (
-            <StoryMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <StoryMode pool={allowed}playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Conversations' && (
-            <DialogueMode pool={pool} playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <DialogueMode pool={allowed}playPronunciation={playPronunciation} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
           {method === 'Test' && (
-            <TestMode pool={pool} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
+            <TestMode pool={allowed} choicePool={pool}recordQuizXp={recordQuizXp} onExit={onExit} onRestart={() => setSessionId(s => s + 1)} />
           )}
         </Fragment>
       </div>
@@ -191,8 +208,9 @@ function ProgressDots({ idx, total }: { idx: number; total: number }) {
 
 /* ---------- Listening: hear the word, pick the Turkish meaning ---------- */
 
-function ListeningMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
+function ListeningMode({ pool, choicePool, playPronunciation, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
+  choicePool?: Flashcard[];
   playPronunciation: (w: string) => void;
   recordQuizXp: (n: number) => void;
   onExit: () => void;
@@ -209,9 +227,9 @@ function ListeningMode({ pool, playPronunciation, recordQuizXp, onExit, onRestar
 
   const options = useMemo(() => {
     if (!current) return [];
-    const others = sample(pool.filter(f => f.id !== current.id), 3).map(f => f.turkishMeaning);
+    const others = sample((choicePool ?? pool).filter(f => f.id !== current.id), 3).map(f => f.turkishMeaning);
     return shuffle([current.turkishMeaning, ...others]);
-  }, [current, pool]);
+  }, [current, pool, choicePool]);
 
   useEffect(() => {
     if (current && !finished) playPronunciation(current.word);
@@ -290,8 +308,9 @@ function ListeningMode({ pool, playPronunciation, recordQuizXp, onExit, onRestar
 
 /* ---------- Test: read the word, pick the Turkish meaning ---------- */
 
-function TestMode({ pool, recordQuizXp, onExit, onRestart }: {
+function TestMode({ pool, choicePool, recordQuizXp, onExit, onRestart }: {
   pool: Flashcard[];
+  choicePool?: Flashcard[];
   recordQuizXp: (n: number) => void;
   onExit: () => void;
   onRestart: () => void;
@@ -307,9 +326,9 @@ function TestMode({ pool, recordQuizXp, onExit, onRestart }: {
 
   const options = useMemo(() => {
     if (!current) return [];
-    const others = sample(pool.filter(f => f.id !== current.id), 3).map(f => f.turkishMeaning);
+    const others = sample((choicePool ?? pool).filter(f => f.id !== current.id), 3).map(f => f.turkishMeaning);
     return shuffle([current.turkishMeaning, ...others]);
-  }, [current, pool]);
+  }, [current, pool, choicePool]);
 
   if (finished) {
     return <ResultsPanel correct={correctCount} total={rounds.length} recordQuizXp={recordQuizXp} onExit={onExit} onRestart={onRestart} />;

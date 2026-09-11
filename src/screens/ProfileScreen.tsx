@@ -1,22 +1,30 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import {
-  ChevronLeft,
-  Pencil,
-  Check,
-  Crown,
-  Sparkles,
-  Rocket,
-  ShieldCheck,
-  Layers,
-  ArrowRight,
-  RotateCcw,
-  Flame,
-  Zap,
-} from 'lucide-react';
-import ProgressScreen from './ProgressScreen';
-import { loadJSON, saveJSON, STORAGE_KEYS, defaultProfile, UserProfile, PlanId } from '../lib/storage';
 import { GamificationState, GrammarProgressState, SrsState } from '../types';
+import { C } from '../components/profile/ui';
+import ProfileHeader from '../components/profile/ProfileHeader';
+import StudentIdentityCard from '../components/profile/StudentIdentityCard';
+import LevelCard from '../components/profile/LevelCard';
+import LearningTimeCard from '../components/profile/LearningTimeCard';
+import AIInsightCard from '../components/profile/AIInsightCard';
+import MembershipSection from '../components/profile/MembershipSection';
+import ProfileFeatures, { ProfilePage } from '../components/profile/ProfileFeatures';
+import LearningOverview from '../components/profile/LearningOverview';
+import AccountSection from '../components/profile/AccountSection';
+import PersonalInfoPage from './profile/PersonalInfoPage';
+import MyLevelPage from './profile/MyLevelPage';
+import PlacementTestScreen from './profile/PlacementTestScreen';
+import LearningGoalsPage from './profile/LearningGoalsPage';
+import LearningActivityPage from './profile/LearningActivityPage';
+import LibraryPage from './profile/LibraryPage';
+import StatisticsPage from './profile/StatisticsPage';
+import AchievementsPage from './profile/AchievementsPage';
+import NotificationsPage from './profile/NotificationsPage';
+import LanguagePage from './profile/LanguagePage';
+import AccountSettingsPage from './profile/AccountSettingsPage';
+import SubscriptionPage from './profile/SubscriptionPage';
+import InfoPage from './profile/InfoPage';
+import { setMembership, signOutProfile, useUserProfile } from '../lib/userProfile';
 
 interface ProfileScreenProps {
   gamification: GamificationState;
@@ -24,68 +32,18 @@ interface ProfileScreenProps {
   grammarProgress: GrammarProgressState;
   quizStats: { score: number; totalAnswered: number; highStreak: number };
   dueCount: number;
-  onBack: () => void;
   onOpenCards: () => void;
   onResetStats: () => void;
 }
 
-interface Plan {
-  id: PlanId;
-  name: string;
-  price: string;
-  icon: typeof Crown;
-  features: string[];
-  highlight?: boolean;
-}
-
-const PLANS: Plan[] = [
-  {
-    id: 'free',
-    name: 'Ücretsiz',
-    price: '₺0',
-    icon: ShieldCheck,
-    features: ['Temel kelime desteleri', 'Günde 5 AI LEX mesajı', 'Standart testler'],
-  },
-  {
-    id: 'premium',
-    name: 'Premium',
-    price: '₺49/ay',
-    icon: Sparkles,
-    highlight: true,
-    features: ['Sınırsız AI LEX sohbeti', 'Tüm kelime desteleri', 'Reklamsız deneyim', 'Detaylı ilerleme analizi'],
-  },
-  {
-    id: 'pro',
-    name: 'Pro',
-    price: '₺89/ay',
-    icon: Rocket,
-    features: ['Premium’daki her şey', 'Kişisel çalışma planı', 'Öncelikli destek', 'Sınav simülasyonları'],
-  },
-];
-
-const PLAN_LABEL: Record<PlanId, string> = {
-  free: 'Ücretsiz Üye',
-  premium: 'Premium Üye',
-  pro: 'Pro Üye',
-};
-
-function initials(name: string): string {
-  const parts = name.trim().split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return '?';
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-}
-
+/* PROFILE. Hierarchy: the student, their level, their learning progress, then
+   membership, profile features, statistics and the account. */
 export default function ProfileScreen(props: ProfileScreenProps) {
-  const { gamification, srsState, grammarProgress, quizStats, dueCount, onBack, onOpenCards, onResetStats } = props;
-
-  const [profile, setProfile] = useState<UserProfile>(() => loadJSON(STORAGE_KEYS.profile, defaultProfile()));
-  const [editing, setEditing] = useState(false);
-  const [draftName, setDraftName] = useState(profile.name);
-  const [draftEmail, setDraftEmail] = useState(profile.email);
+  const { gamification, srsState, grammarProgress, quizStats, dueCount, onOpenCards, onResetStats } = props;
+  const profile = useUserProfile();
+  const [page, setPage] = useState<ProfilePage | null>(null);
   const [toast, setToast] = useState<string | null>(null);
-
-  useEffect(() => saveJSON(STORAGE_KEYS.profile, profile), [profile]);
+  const [confirmLogout, setConfirmLogout] = useState(false);
 
   useEffect(() => {
     if (!toast) return;
@@ -93,212 +51,138 @@ export default function ProfileScreen(props: ProfileScreenProps) {
     return () => clearTimeout(t);
   }, [toast]);
 
-  const saveEdit = () => {
-    setProfile(p => ({ ...p, name: draftName.trim() || 'Öğrenci', email: draftEmail.trim() }));
-    setEditing(false);
-    setToast('Profil güncellendi');
+  const open = (p: ProfilePage) => {
+    setPage(p);
+    window.scrollTo({ top: 0 });
+  };
+  const back = () => {
+    setPage(null);
+    window.scrollTo({ top: 0 });
   };
 
-  const choosePlan = (plan: Plan) => {
-    if (plan.id === profile.plan) return;
-    if (plan.id === 'free') {
-      setProfile(p => ({ ...p, plan: 'free' }));
-      setToast('Ücretsiz pakete geçildi');
-    } else {
-      // No real payment collection — surface a friendly placeholder.
-      setToast(`${plan.name} paketi çok yakında! Ödeme entegrasyonu hazırlanıyor.`);
-    }
+  const upgrade = () => {
+    setMembership('premium');
+    setToast('Premium is now active');
   };
+
+  const content = (() => {
+    switch (page) {
+      case 'personal':
+        return <PersonalInfoPage onBack={back} notify={setToast} />;
+      case 'level':
+        return <MyLevelPage onBack={back} onCheckLevel={() => open('placement')} />;
+      case 'placement':
+        return <PlacementTestScreen onClose={back} />;
+      case 'goals':
+        return <LearningGoalsPage onBack={back} />;
+      case 'activity':
+        return <LearningActivityPage onBack={back} />;
+      case 'library':
+        return <LibraryPage onBack={back} srsState={srsState} dueCount={dueCount} onOpenCards={onOpenCards} />;
+      case 'statistics':
+        return (
+          <StatisticsPage
+            onBack={back}
+            gamification={gamification}
+            srsState={srsState}
+            grammarProgress={grammarProgress}
+            quizStats={quizStats}
+          />
+        );
+      case 'achievements':
+        return <AchievementsPage onBack={back} gamification={gamification} />;
+      case 'notifications':
+        return <NotificationsPage onBack={back} />;
+      case 'language':
+        return <LanguagePage onBack={back} notify={setToast} />;
+      case 'account':
+        return (
+          <AccountSettingsPage
+            onBack={back}
+            onResetStats={onResetStats}
+            onChangeSubscription={() => open('subscription')}
+            notify={setToast}
+          />
+        );
+      case 'subscription':
+        return <SubscriptionPage onBack={back} notify={setToast} />;
+      case 'help':
+      case 'privacy':
+      case 'terms':
+      case 'about':
+        return <InfoPage kind={page} onBack={back} />;
+      default:
+        return (
+          <div className="space-y-6">
+            <ProfileHeader onSettings={() => open('account')} onNotifications={() => open('notifications')} hasUpdate={!profile.placementTestCompleted} />
+            <StudentIdentityCard profile={profile} onOpen={() => open('personal')} />
+            <LevelCard profile={profile} onDetails={() => open('level')} onCheckLevel={() => open('placement')} />
+            <LearningTimeCard />
+            <AIInsightCard profile={profile} onOpen={() => open('statistics')} />
+            <div className="pt-2">
+              <MembershipSection plan={profile.membership} onUpgrade={upgrade} onManage={() => open('subscription')} />
+            </div>
+            <ProfileFeatures profile={profile} open={open} />
+            <LearningOverview profile={profile} />
+            <AccountSection open={open} onLogOut={() => setConfirmLogout(true)} />
+          </div>
+        );
+    }
+  })();
 
   return (
-    <div className="space-y-6">
-      <button
-        onClick={onBack}
-        className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer"
-      >
-        <ChevronLeft className="w-4 h-4" /> Home
-      </button>
+    <div className="px-1 font-sans" style={{ color: C.text }}>
+      {content}
 
-      {/* User header card */}
-      <div className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-6 shadow-md">
-        {editing ? (
-          <div className="space-y-3">
-            <div className="flex items-center gap-2 mb-1">
-              <Pencil className="w-4 h-4 text-[#e3b553]" />
-              <span className="text-xs font-mono uppercase tracking-widest text-white/40">Profili Düzenle</span>
-            </div>
-            <input
-              value={draftName}
-              onChange={(e) => setDraftName(e.target.value)}
-              placeholder="Adın"
-              className="w-full text-sm bg-white/[0.02] border border-white/[0.08] focus:border-[#e3b553] focus:ring-1 focus:ring-[#e3b553] rounded-xl px-4 py-3 outline-hidden text-white font-light placeholder-white/25"
-            />
-            <input
-              value={draftEmail}
-              onChange={(e) => setDraftEmail(e.target.value)}
-              placeholder="E-posta (opsiyonel)"
-              className="w-full text-sm bg-white/[0.02] border border-white/[0.08] focus:border-[#e3b553] focus:ring-1 focus:ring-[#e3b553] rounded-xl px-4 py-3 outline-hidden text-white font-light placeholder-white/25"
-            />
-            <div className="flex gap-2 justify-end">
-              <button onClick={() => { setEditing(false); setDraftName(profile.name); setDraftEmail(profile.email); }} className="text-xs font-mono text-white/40 hover:text-white/70 px-3 py-2 cursor-pointer">
-                Vazgeç
-              </button>
-              <button onClick={saveEdit} className="flex items-center gap-1.5 bg-[#e3b553] text-[#0a0a0b] rounded-xl px-4 py-2 text-xs font-bold cursor-pointer">
-                <Check className="w-3.5 h-3.5" /> Kaydet
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="flex items-center gap-4">
+      <AnimatePresence>
+        {confirmLogout && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center px-5"
+            style={{ background: 'rgba(0,0,0,0.72)', paddingBottom: 'calc(var(--bottom-nav-h, 66px) + 16px)' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setConfirmLogout(false)}
+          >
             <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center text-xl font-serif font-bold text-[#0a0a0b] shrink-0"
-              style={{ background: 'linear-gradient(145deg, #ffd978, #d2a442)' }}
+              className="w-full max-w-md rounded-[22px] border p-5 space-y-4"
+              style={{ background: C.card, borderColor: C.border }}
+              onClick={e => e.stopPropagation()}
             >
-              {initials(profile.name)}
-            </div>
-            <div className="min-w-0 flex-1">
-              <h1 className="text-xl font-serif italic text-white truncate">{profile.name}</h1>
-              <p className="text-xs text-white/40 font-mono truncate">{profile.email || 'e-posta eklenmedi'}</p>
-              <span className="inline-flex items-center gap-1 mt-1.5 text-[10px] font-mono uppercase tracking-widest text-[#e3b553] bg-[#e3b553]/10 border border-[#e3b553]/20 px-2 py-0.5 rounded-md">
-                <Crown className="w-3 h-3" /> {PLAN_LABEL[profile.plan]}
-              </span>
-            </div>
-            <button
-              onClick={() => { setDraftName(profile.name); setDraftEmail(profile.email); setEditing(true); }}
-              className="p-2 text-white/40 hover:text-[#e3b553] hover:bg-white/[0.03] rounded-xl transition-colors cursor-pointer shrink-0"
-              aria-label="Profili düzenle"
-            >
-              <Pencil className="w-4 h-4" />
-            </button>
-          </div>
-        )}
-
-        {/* Quick streak / xp strip */}
-        <div className="grid grid-cols-2 gap-3 mt-5">
-          <div className="flex items-center gap-2 bg-white/[0.02] border border-white/[0.05] rounded-xl px-3 py-2.5">
-            <Flame className="w-4 h-4 text-[#e3b553]" />
-            <span className="text-sm font-mono font-bold text-white">{gamification.streakDays}</span>
-            <span className="text-[10px] text-white/40 font-mono">gün seri</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/[0.02] border border-white/[0.05] rounded-xl px-3 py-2.5">
-            <Zap className="w-4 h-4 text-[#e3b553]" />
-            <span className="text-sm font-mono font-bold text-white">{gamification.xp}</span>
-            <span className="text-[10px] text-white/40 font-mono">XP</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Membership plans */}
-      <div>
-        <h2 className="text-sm font-serif italic text-white flex items-center gap-2 mb-3 px-1">
-          <Crown className="w-4 h-4 text-[#e3b553]" /> Üyelik Paketleri
-        </h2>
-        <div className="space-y-3">
-          {PLANS.map(plan => {
-            const Icon = plan.icon;
-            const isCurrent = profile.plan === plan.id;
-            return (
-              <div
-                key={plan.id}
-                className={`rounded-2xl border p-5 transition-all ${
-                  plan.highlight && !isCurrent
-                    ? 'bg-[#e3b553]/[0.06] border-[#e3b553]/30'
-                    : isCurrent
-                      ? 'bg-[#e3b553]/[0.1] border-[#e3b553]/50'
-                      : 'bg-white/[0.02] border-white/[0.06]'
-                }`}
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex items-center gap-2.5">
-                    <div className="p-2 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-base font-serif italic text-white flex items-center gap-2">
-                        {plan.name}
-                        {plan.highlight && (
-                          <span className="text-[9px] font-mono uppercase tracking-widest text-[#0a0a0b] bg-[#e3b553] px-1.5 py-0.5 rounded">Popüler</span>
-                        )}
-                      </h3>
-                      <p className="text-sm font-mono text-[#e3b553]">{plan.price}</p>
-                    </div>
-                  </div>
-                  {isCurrent && (
-                    <span className="flex items-center gap-1 text-[10px] font-mono text-[#e3b553] shrink-0">
-                      <Check className="w-3.5 h-3.5" /> Aktif
-                    </span>
-                  )}
-                </div>
-
-                <ul className="mt-3 space-y-1.5">
-                  {plan.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-white/60 font-light">
-                      <Check className="w-3.5 h-3.5 text-[#e3b553] shrink-0 mt-0.5" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-
-                {!isCurrent && (
-                  <button
-                    onClick={() => choosePlan(plan)}
-                    className={`w-full mt-4 rounded-xl py-2.5 text-xs font-bold transition-all cursor-pointer ${
-                      plan.id === 'free'
-                        ? 'bg-white/[0.03] hover:bg-white/[0.06] text-white/80 border border-white/10'
-                        : 'bg-[#e3b553] text-[#0a0a0b] hover:bg-[#d2a442]'
-                    }`}
-                  >
-                    {plan.id === 'free' ? 'Ücretsiz Pakete Geç' : `${plan.name} Paketine Yükselt`}
-                  </button>
-                )}
+              <div className="space-y-1.5 text-center">
+                <p className="text-[18px] font-semibold" style={{ color: C.text }}>
+                  Log out of Lexistencehub?
+                </p>
+                <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
+                  Your name, photo, level and membership are removed from this device. Learning progress stays.
+                </p>
               </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Flashcard review entry */}
-      <button
-        onClick={onOpenCards}
-        className={`w-full flex items-center justify-between rounded-2xl border p-5 transition-all cursor-pointer ${
-          dueCount > 0 ? 'bg-[#e3b553]/[0.07] border-[#e3b553]/25' : 'bg-white/[0.02] border-white/[0.06]'
-        }`}
-      >
-        <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/20 rounded-xl">
-            <Layers className="w-5 h-5" />
-          </div>
-          <div className="text-left">
-            <p className="text-sm font-serif italic text-white">Kelime Kartları</p>
-            <p className="text-[11px] text-white/40 font-mono">
-              {dueCount > 0 ? `Bugün ${dueCount} kart tekrar edilecek` : 'Aralıklı tekrar destesi'}
-            </p>
-          </div>
-        </div>
-        <ArrowRight className="w-4 h-4 text-[#e3b553]" />
-      </button>
-
-      {/* Stats section (reuses the progress dashboard) */}
-      <div>
-        <h2 className="text-sm font-serif italic text-white flex items-center gap-2 mb-3 px-1">
-          İstatistikler
-        </h2>
-        <ProgressScreen
-          gamification={gamification}
-          srsState={srsState}
-          grammarProgress={grammarProgress}
-          quizStats={quizStats}
-          hideHeader
-        />
-      </div>
-
-      {/* Settings */}
-      <button
-        onClick={onResetStats}
-        className="w-full flex items-center justify-center gap-2 text-xs font-mono text-white/30 hover:text-red-400 transition-colors py-3 cursor-pointer"
-      >
-        <RotateCcw className="w-3.5 h-3.5" /> Tüm istatistikleri sıfırla
-      </button>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setConfirmLogout(false)}
+                  className="flex-1 rounded-2xl border py-3 text-[14px] font-medium cursor-pointer"
+                  style={{ borderColor: C.border, color: C.text }}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    signOutProfile();
+                    setConfirmLogout(false);
+                    setToast('Logged out');
+                  }}
+                  className="flex-1 rounded-2xl py-3 text-[14px] font-semibold cursor-pointer"
+                  style={{ background: C.text, color: '#0B0B0B' }}
+                >
+                  Log Out
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence>
         {toast && (
@@ -306,8 +190,8 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            className="fixed left-1/2 -translate-x-1/2 z-50 bg-[#171412] border border-[#e3b553]/30 text-white text-xs rounded-xl px-4 py-3 shadow-lg max-w-[90%] text-center"
-            style={{ bottom: 'calc(var(--bottom-nav-h, 66px) + 16px)' }}
+            className="fixed left-1/2 -translate-x-1/2 z-[60] border text-[13px] rounded-2xl px-4 py-3 max-w-[90%] text-center"
+            style={{ bottom: 'calc(var(--bottom-nav-h, 66px) + 16px)', background: C.card2, borderColor: 'rgba(245,184,46,0.4)', color: C.text }}
           >
             {toast}
           </motion.div>
