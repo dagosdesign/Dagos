@@ -1,1 +1,858 @@
-{}
+{
+ "accounting": {
+  "pos": "noun",
+  "clue": "This job or study involves keeping track of a company's money."
+ },
+ "adventurer": {
+  "pos": "noun",
+  "clue": "A person who loves visiting dangerous or exciting places to explore them."
+ },
+ "afterworld": {
+  "pos": "noun",
+  "clue": "This is the place where some people believe we go when we die."
+ },
+ "agree": {
+  "pos": "verb",
+  "clue": "You do this when you have the same opinion as someone."
+ },
+ "alternative": {
+  "pos": "noun",
+  "clue": "This is another choice or option you can pick."
+ },
+ "amazing": {
+  "pos": "adjective",
+  "clue": "This describes something that is very surprising and wonderful."
+ },
+ "apologize": {
+  "pos": "verb",
+  "clue": "You do this when you say sorry to someone for a mistake."
+ },
+ "assertive": {
+  "pos": "adjective",
+  "clue": "This kind of person expresses their opinions clearly and with great confidence."
+ },
+ "awesome": {
+  "pos": "adjective",
+  "clue": "You use this word to describe something that is extremely great."
+ },
+ "backpack": {
+  "pos": "noun",
+  "clue": "Students use this bag to carry books on their shoulders."
+ },
+ "bacterial": {
+  "pos": "adjective",
+  "clue": "This describes an illness caused by tiny, single-celled organisms."
+ },
+ "beautify": {
+  "pos": "verb",
+  "clue": "To make a place or object look much more attractive and pretty."
+ },
+ "beforehand": {
+  "pos": "adverb",
+  "clue": "If you plan something in advance, you do it at this time."
+ },
+ "believe": {
+  "pos": "verb",
+  "clue": "You do this when you accept that something is true or real."
+ },
+ "blogger": {
+  "pos": "noun",
+  "clue": "A person who regularly writes articles and shares stories on their own website."
+ },
+ "booklet": {
+  "pos": "noun",
+  "clue": "This is a very thin, small publication with only a few pages."
+ },
+ "boring": {
+  "pos": "adjective",
+  "clue": "This describes a movie or book that makes you want to sleep."
+ },
+ "brow": {
+  "pos": "noun",
+  "clue": "This is the part of your face just above your eyes."
+ },
+ "brush": {
+  "pos": "verb",
+  "clue": "To spread oil or egg onto food using a special kitchen tool."
+ },
+ "burdensome": {
+  "pos": "adjective",
+  "clue": "This describes a duty or task that is very difficult and tiring."
+ },
+ "calcify": {
+  "pos": "verb",
+  "clue": "To become hard and stiff like stone over a long time."
+ },
+ "caller": {
+  "pos": "noun",
+  "clue": "This is the person who contacts you by telephone."
+ },
+ "canyoning": {
+  "pos": "noun",
+  "clue": "The sport of exploring deep mountain valleys by jumping, climbing, and swimming."
+ },
+ "cardholder": {
+  "pos": "noun",
+  "clue": "The person who legally owns a specific plastic payment or membership item."
+ },
+ "careless": {
+  "pos": "adjective",
+  "clue": "This describes someone who does not pay attention and makes easy mistakes."
+ },
+ "caring": {
+  "pos": "adjective",
+  "clue": "This describes a person who is kind and helps other people."
+ },
+ "chemist": {
+  "pos": "noun",
+  "clue": "This scientist studies substances and how they react with each other."
+ },
+ "claimant": {
+  "pos": "noun",
+  "clue": "This person officially asks for money or property they believe is theirs."
+ },
+ "colonial": {
+  "pos": "adjective",
+  "clue": "Relating to a powerful country that controls and rules another land far away."
+ },
+ "communicator": {
+  "pos": "noun",
+  "clue": "Someone who is very good at sharing thoughts and information with others."
+ },
+ "comparative": {
+  "pos": "adjective",
+  "clue": "This describes something judged by looking at its relation to other things."
+ },
+ "competitor": {
+  "pos": "noun",
+  "clue": "This is a person who takes part in a race or contest."
+ },
+ "compound": {
+  "pos": "noun",
+  "clue": "This chemical substance is formed when two or more elements combine together."
+ },
+ "conceptual": {
+  "pos": "adjective",
+  "clue": "This describes something that is based on abstract ideas rather than real objects."
+ },
+ "converse": {
+  "pos": "verb",
+  "clue": "To have a friendly talk with someone about various topics."
+ },
+ "creamy": {
+  "pos": "adjective",
+  "clue": "This describes food that is thick, smooth, and soft, like rich milk."
+ },
+ "cycling": {
+  "pos": "noun",
+  "clue": "This is the sport or hobby of riding a two-wheeled vehicle with pedals."
+ },
+ "dark": {
+  "pos": "adjective",
+  "clue": "This describes a room or night when there is no light."
+ },
+ "darkness": {
+  "pos": "noun",
+  "clue": "The state of having absolutely no light in a room or outside."
+ },
+ "decide": {
+  "pos": "verb",
+  "clue": "You do this when you choose one option after thinking carefully."
+ },
+ "descriptive": {
+  "pos": "adjective",
+  "clue": "This kind of language gives clear details to help you picture something."
+ },
+ "digestive": {
+  "pos": "adjective",
+  "clue": "This system in your body processes the food you eat every day."
+ },
+ "digital": {
+  "pos": "adjective",
+  "clue": "This describes modern technology and electronic systems rather than physical paper."
+ },
+ "disconnect": {
+  "pos": "verb",
+  "clue": "To stop a computer from being linked to the internet."
+ },
+ "distantly": {
+  "pos": "adverb",
+  "clue": "This describes how people are related when they are not close family."
+ },
+ "drummer": {
+  "pos": "noun",
+  "clue": "This musician hits percussion instruments with sticks to make a beat."
+ },
+ "duckling": {
+  "pos": "noun",
+  "clue": "This is a very young, yellow bird that swims in ponds."
+ },
+ "educational": {
+  "pos": "adjective",
+  "clue": "This describes a book or video that helps you learn new things."
+ },
+ "energetic": {
+  "pos": "adjective",
+  "clue": "This describes a person who has a lot of power and activity."
+ },
+ "enjoyable": {
+  "pos": "adjective",
+  "clue": "This describes an activity that gives you pleasure and makes you happy."
+ },
+ "equalize": {
+  "pos": "verb",
+  "clue": "To make different things the same in size, value, or score."
+ },
+ "equation": {
+  "pos": "noun",
+  "clue": "This mathematical statement shows that two sides have the same value."
+ },
+ "ever": {
+  "pos": "adverb",
+  "clue": "At any time in the past, present, or future."
+ },
+ "everyone": {
+  "pos": "pronoun",
+  "clue": "All the people in a group or in the world."
+ },
+ "excellent": {
+  "pos": "adjective",
+  "clue": "This describes something that is of extremely high quality or very good."
+ },
+ "expressive": {
+  "pos": "adjective",
+  "clue": "This kind of face or voice clearly shows what someone is feeling."
+ },
+ "fearsome": {
+  "pos": "adjective",
+  "clue": "This describes something that looks very scary and causes people to feel afraid."
+ },
+ "feeling": {
+  "pos": "noun",
+  "clue": "An emotion that you experience, such as happiness, anger, or sadness."
+ },
+ "female": {
+  "pos": "adjective",
+  "clue": "Belonging to the sex that can give birth to babies or lay eggs."
+ },
+ "festive": {
+  "pos": "adjective",
+  "clue": "This describes a happy and bright atmosphere suitable for a holiday celebration."
+ },
+ "feudal": {
+  "pos": "adjective",
+  "clue": "Relating to a medieval social system where powerful lords owned all the land."
+ },
+ "fighting": {
+  "pos": "noun",
+  "clue": "Physical conflict or arguments between people who want to hurt each other."
+ },
+ "follow": {
+  "pos": "verb",
+  "clue": "You do this when you walk behind someone to see where they go."
+ },
+ "follower": {
+  "pos": "noun",
+  "clue": "A person who subscribes to see your updates on social media."
+ },
+ "foodstuff": {
+  "pos": "noun",
+  "clue": "This is any substance or material that can be eaten to stay alive."
+ },
+ "footprint": {
+  "pos": "noun",
+  "clue": "This is the mark your shoe leaves when you walk on sand."
+ },
+ "frontal": {
+  "pos": "adjective",
+  "clue": "This describes something located at the forward part of an object."
+ },
+ "funny": {
+  "pos": "adjective",
+  "clue": "This describes a joke or a person that makes you laugh."
+ },
+ "fuss": {
+  "pos": "noun",
+  "clue": "This is unnecessary excitement, worry, or anger about a very small matter."
+ },
+ "gaming": {
+  "pos": "noun",
+  "clue": "The hobby of playing electronic matches on a computer or console."
+ },
+ "goldsmith": {
+  "pos": "noun",
+  "clue": "An artist who creates beautiful jewelry and objects from a precious yellow metal."
+ },
+ "grate": {
+  "pos": "verb",
+  "clue": "You do this to cut cheese or vegetables into very small pieces."
+ },
+ "grilled": {
+  "pos": "adjective",
+  "clue": "This describes meat or vegetables cooked directly over a hot fire."
+ },
+ "hairdresser": {
+  "pos": "noun",
+  "clue": "This professional cuts, washes, and styles what grows on your head."
+ },
+ "handcrafts": {
+  "pos": "noun",
+  "clue": "Beautiful objects that people make using their own physical skills instead of machines."
+ },
+ "headphone": {
+  "pos": "noun",
+  "clue": "A small speaker you wear over your ears to listen to music privately."
+ },
+ "headstand": {
+  "pos": "noun",
+  "clue": "An exercise pose where you balance upside down on your skull."
+ },
+ "healthcare": {
+  "pos": "noun",
+  "clue": "Medical services that help keep people well and treat them when sick."
+ },
+ "homeless": {
+  "pos": "adjective",
+  "clue": "This describes people who have no place to live and sleep outside."
+ },
+ "homemade": {
+  "pos": "adjective",
+  "clue": "This describes delicious food that you prepare yourself in your own kitchen."
+ },
+ "homework": {
+  "pos": "noun",
+  "clue": "Tasks that teachers give to students to complete after school hours."
+ },
+ "hopeless": {
+  "pos": "adjective",
+  "clue": "This describes feeling that a bad situation will never get better."
+ },
+ "horizontal": {
+  "pos": "adjective",
+  "clue": "This describes a flat line that goes from left to right."
+ },
+ "household": {
+  "pos": "noun",
+  "clue": "All the people who live together in one home."
+ },
+ "housework": {
+  "pos": "noun",
+  "clue": "This includes daily tasks like cleaning, washing dishes, and sweeping the floor."
+ },
+ "humanity": {
+  "pos": "noun",
+  "clue": "This term refers to all the people living on our planet together."
+ },
+ "hungry": {
+  "pos": "adjective",
+  "clue": "You feel this way when you have not eaten food for hours."
+ },
+ "imagine": {
+  "pos": "verb",
+  "clue": "You do this when you form a picture of something in your mind."
+ },
+ "inflame": {
+  "pos": "verb",
+  "clue": "To make an angry situation or physical pain much worse and intense."
+ },
+ "inform": {
+  "pos": "verb",
+  "clue": "You do this when you give important facts or news to someone."
+ },
+ "internet": {
+  "pos": "noun",
+  "clue": "The global computer network that people use to visit websites and send emails."
+ },
+ "invitation": {
+  "pos": "noun",
+  "clue": "A card or message that asks you to come to a party."
+ },
+ "invitee": {
+  "pos": "noun",
+  "clue": "This is a person who is asked to attend a party or event."
+ },
+ "inviter": {
+  "pos": "noun",
+  "clue": "This is the person who asks others to come to their party."
+ },
+ "join": {
+  "pos": "verb",
+  "clue": "You do this when you become a member of a group."
+ },
+ "lash": {
+  "pos": "noun",
+  "clue": "This is one of the small hairs growing on your eyelid."
+ },
+ "lengthy": {
+  "pos": "adjective",
+  "clue": "This describes something that continues for a very long and often boring time."
+ },
+ "liar": {
+  "pos": "noun",
+  "clue": "This is a person who does not tell the truth."
+ },
+ "lighter": {
+  "pos": "noun",
+  "clue": "This small pocket device produces a flame to start a fire."
+ },
+ "livestream": {
+  "pos": "noun",
+  "clue": "An online video broadcast that you watch as it happens."
+ },
+ "machinery": {
+  "pos": "noun",
+  "clue": "This refers to a group of large devices used to do work."
+ },
+ "marketable": {
+  "pos": "adjective",
+  "clue": "This describes a product that is easy to sell because people want it."
+ },
+ "meatball": {
+  "pos": "noun",
+  "clue": "This is a small, round piece of cooked beef or lamb."
+ },
+ "medicate": {
+  "pos": "verb",
+  "clue": "To give drugs or pills to someone to treat their illness."
+ },
+ "membership": {
+  "pos": "noun",
+  "clue": "The state of belonging to a specific club, group, or organization."
+ },
+ "mild": {
+  "pos": "adjective",
+  "clue": "This describes weather that is pleasantly warm and not too cold."
+ },
+ "milky": {
+  "pos": "adjective",
+  "clue": "This describes coffee or tea that has a lot of white liquid."
+ },
+ "millionaire": {
+  "pos": "noun",
+  "clue": "This extremely wealthy person has a net worth of at least seven figures."
+ },
+ "mixer": {
+  "pos": "noun",
+  "clue": "This kitchen machine helps you combine ingredients quickly when baking a cake."
+ },
+ "moody": {
+  "pos": "adjective",
+  "clue": "This describes a person whose feelings change quickly from happy to angry."
+ },
+ "mountainous": {
+  "pos": "adjective",
+  "clue": "This describes an area of land that has many very high hills."
+ },
+ "moveable": {
+  "pos": "adjective",
+  "clue": "This describes an object that you can easily push, carry, or change."
+ },
+ "narrate": {
+  "pos": "verb",
+  "clue": "To speak the words that tell the story in a documentary."
+ },
+ "necessitate": {
+  "pos": "verb",
+  "clue": "To make a particular action or situation completely essential."
+ },
+ "needless": {
+  "pos": "adjective",
+  "clue": "This describes something that is completely unnecessary and serves no purpose."
+ },
+ "news": {
+  "pos": "noun",
+  "clue": "This is information about important recent events happening around the world."
+ },
+ "newscast": {
+  "pos": "noun",
+  "clue": "This is a television or radio program that reports the latest daily events."
+ },
+ "nothing": {
+  "pos": "pronoun",
+  "clue": "This word means not a single thing or zero items."
+ },
+ "occupied": {
+  "pos": "adjective",
+  "clue": "This describes a toilet or seat that is currently being used."
+ },
+ "okay": {
+  "pos": "adjective",
+  "clue": "This word means that something is acceptable, fine, or in good condition."
+ },
+ "others": {
+  "pos": "pronoun",
+  "clue": "This word refers to people who are not you or your group."
+ },
+ "outgoing": {
+  "pos": "adjective",
+  "clue": "This describes a friendly person who loves meeting and talking to people."
+ },
+ "overboard": {
+  "pos": "adverb",
+  "clue": "This describes falling or jumping from a ship directly into the sea."
+ },
+ "overrun": {
+  "pos": "verb",
+  "clue": "To fill a place in such large numbers that it causes problems."
+ },
+ "overuse": {
+  "pos": "verb",
+  "clue": "To do or employ something so much that it loses its effect."
+ },
+ "owner": {
+  "pos": "noun",
+  "clue": "The person to whom a particular object, house, or pet belongs."
+ },
+ "painting": {
+  "pos": "noun",
+  "clue": "This is a picture created by using colors on a canvas."
+ },
+ "parachutist": {
+  "pos": "noun",
+  "clue": "Someone who jumps out of an airplane wearing a large fabric canopy."
+ },
+ "participant": {
+  "pos": "noun",
+  "clue": "Someone who joins an event, a contest or a study."
+ },
+ "patriot": {
+  "pos": "noun",
+  "clue": "This is a person who deeply loves and supports their own country."
+ },
+ "peas": {
+  "pos": "noun",
+  "clue": "These are small, round, green vegetables that grow in a pod."
+ },
+ "pessimistic": {
+  "pos": "adjective",
+  "clue": "This describes someone who always expects bad things to happen in life."
+ },
+ "pipeline": {
+  "pos": "noun",
+  "clue": "This long underground tube carries oil or gas across a country."
+ },
+ "place": {
+  "pos": "noun",
+  "clue": "This is a specific area, building, or location where you can go."
+ },
+ "poisonous": {
+  "pos": "adjective",
+  "clue": "Eating this type of plant or wild berry can make you very sick."
+ },
+ "powerhouse": {
+  "pos": "noun",
+  "clue": "This highly energetic and successful group or person has a lot of influence."
+ },
+ "predecessor": {
+  "pos": "noun",
+  "clue": "This is the person who had a job or position before you."
+ },
+ "prepare": {
+  "pos": "verb",
+  "clue": "You do this to get ready for an event or task."
+ },
+ "priceless": {
+  "pos": "adjective",
+  "clue": "This describes an object that is worth too much money to buy."
+ },
+ "profile": {
+  "pos": "noun",
+  "clue": "The page on a website that shows your personal details and photo."
+ },
+ "proponent": {
+  "pos": "noun",
+  "clue": "This is a person who publicly supports an idea, plan, or belief."
+ },
+ "publisher": {
+  "pos": "noun",
+  "clue": "This business prints and sells books, magazines, or newspapers."
+ },
+ "railing": {
+  "pos": "noun",
+  "clue": "You can hold onto this metal or wooden bar when walking down stairs."
+ },
+ "raincloud": {
+  "pos": "noun",
+  "clue": "This dark shape in the sky brings water down to the ground."
+ },
+ "ready": {
+  "pos": "adjective",
+  "clue": "You say this when dinner is fully prepared and people can eat."
+ },
+ "realize": {
+  "pos": "verb",
+  "clue": "You do this when you suddenly understand a truth you did not know."
+ },
+ "receiver": {
+  "pos": "noun",
+  "clue": "This is the person who gets a letter, package, or gift."
+ },
+ "reduce": {
+  "pos": "verb",
+  "clue": "To make something smaller in size, amount, or number."
+ },
+ "relaxing": {
+  "pos": "adjective",
+  "clue": "This describes an activity, like a hot bath, that makes you calm."
+ },
+ "repeat": {
+  "pos": "verb",
+  "clue": "To say or do something for a second time."
+ },
+ "repetitive": {
+  "pos": "adjective",
+  "clue": "This describes an action that happens again and again, often becoming very boring."
+ },
+ "reset": {
+  "pos": "verb",
+  "clue": "To change a machine back to its original settings."
+ },
+ "respectful": {
+  "pos": "adjective",
+  "clue": "This describes someone who shows polite behavior towards other people."
+ },
+ "reverse": {
+  "pos": "verb",
+  "clue": "To change a decision or direction to the exact opposite of before."
+ },
+ "rocky": {
+  "pos": "adjective",
+  "clue": "Describe a path or ground that is covered with many hard stones."
+ },
+ "romance": {
+  "pos": "noun",
+  "clue": "This is a close, loving relationship between two people who are dating."
+ },
+ "salty": {
+  "pos": "adjective",
+  "clue": "This describes the taste of ocean water or potato chips."
+ },
+ "sandboarding": {
+  "pos": "noun",
+  "clue": "The sport of sliding down desert hills on a special flat wooden plank."
+ },
+ "sandpaper": {
+  "pos": "noun",
+  "clue": "This rough sheet is rubbed against wood to make it smooth."
+ },
+ "secret": {
+  "pos": "noun",
+  "clue": "This is information that you must not tell other people."
+ },
+ "sender": {
+  "pos": "noun",
+  "clue": "This is the person who mails a letter or package to you."
+ },
+ "sensory": {
+  "pos": "adjective",
+  "clue": "This describes anything connected to physical feelings like sight, hearing, and touch."
+ },
+ "serve": {
+  "pos": "verb",
+  "clue": "Waiters do this when they bring food and drinks to your table."
+ },
+ "shorten": {
+  "pos": "verb",
+  "clue": "To make something less long in distance, size, or time."
+ },
+ "sibling": {
+  "pos": "noun",
+  "clue": "A person who has the same parents as you."
+ },
+ "signpost": {
+  "pos": "noun",
+  "clue": "This wooden or metal pole on the road shows directions to different towns."
+ },
+ "singer": {
+  "pos": "noun",
+  "clue": "This person uses their voice to make music for an audience."
+ },
+ "skeletal": {
+  "pos": "adjective",
+  "clue": "This describes things related to the frame of bones inside a body."
+ },
+ "skillful": {
+  "pos": "adjective",
+  "clue": "This describes a person who does a difficult job very well."
+ },
+ "sliced": {
+  "pos": "adjective",
+  "clue": "This describes bread or cheese that is cut into thin, flat pieces."
+ },
+ "smile": {
+  "pos": "verb",
+  "clue": "You do this with your mouth when you are happy or friendly."
+ },
+ "sneaky": {
+  "pos": "adjective",
+  "clue": "This describes someone who behaves in a dishonest and quiet way."
+ },
+ "snorkeling": {
+  "pos": "noun",
+  "clue": "Swimming face down near the water surface while breathing through a plastic tube."
+ },
+ "snowboard": {
+  "pos": "verb",
+  "clue": "You do this winter sport by sliding down mountains on a single wide plank."
+ },
+ "sour": {
+  "pos": "adjective",
+  "clue": "This describes the sharp taste of fresh lemons or green apples."
+ },
+ "speedometer": {
+  "pos": "noun",
+  "clue": "This instrument on the dashboard shows how fast your car is traveling."
+ },
+ "spicy": {
+  "pos": "adjective",
+  "clue": "This describes food that makes your mouth feel hot, like chili peppers."
+ },
+ "spinal": {
+  "pos": "adjective",
+  "clue": "This describes things related to the long row of bones in your back."
+ },
+ "starchy": {
+  "pos": "adjective",
+  "clue": "This describes foods like potatoes, rice, and bread that give you energy."
+ },
+ "sticky": {
+  "pos": "adjective",
+  "clue": "This describes things like glue or wet honey that attach easily to fingers."
+ },
+ "storehouse": {
+  "pos": "noun",
+  "clue": "This is a large building used for keeping goods or supplies safe."
+ },
+ "subtract": {
+  "pos": "verb",
+  "clue": "To take one number away from another to find the difference."
+ },
+ "suggest": {
+  "pos": "verb",
+  "clue": "To offer an idea or plan for other people to think about."
+ },
+ "survivor": {
+  "pos": "noun",
+  "clue": "This is a person who stays alive after a terrible accident."
+ },
+ "sweet": {
+  "pos": "adjective",
+  "clue": "This describes the pleasant taste of sugar, honey, or chocolate."
+ },
+ "sweeten": {
+  "pos": "verb",
+  "clue": "To add sugar or honey to a drink to improve its taste."
+ },
+ "sympathetic": {
+  "pos": "adjective",
+  "clue": "This kind of person shows kind understanding to someone who is sad."
+ },
+ "systematic": {
+  "pos": "adjective",
+  "clue": "This describes doing something in a very organized and careful way."
+ },
+ "tactful": {
+  "pos": "adjective",
+  "clue": "This describes someone who is careful not to hurt other people's feelings."
+ },
+ "talk": {
+  "pos": "verb",
+  "clue": "To use your voice to share thoughts and speak with other people."
+ },
+ "tall": {
+  "pos": "adjective",
+  "clue": "This describes a person or object that has a great height."
+ },
+ "theorize": {
+  "pos": "verb",
+  "clue": "To suggest a possible explanation for something based on the available facts."
+ },
+ "thing": {
+  "pos": "noun",
+  "clue": "This is an object or item that you can see and touch."
+ },
+ "thirteenth": {
+  "pos": "adjective",
+  "clue": "This position comes immediately after the twelfth item in a series."
+ },
+ "thirtieth": {
+  "pos": "adjective",
+  "clue": "This position comes immediately after the twenty-ninth item in a series."
+ },
+ "tonight": {
+  "pos": "adverb",
+  "clue": "This refers to the evening or night of the day we are in."
+ },
+ "touchscreen": {
+  "pos": "noun",
+  "clue": "A monitor on a phone or computer that responds to your fingers."
+ },
+ "traverse": {
+  "pos": "verb",
+  "clue": "To move across a wide or difficult area from one side to the other."
+ },
+ "trekking": {
+  "pos": "noun",
+  "clue": "This is a long and difficult walk, usually in the wild mountains."
+ },
+ "trustworthy": {
+  "pos": "adjective",
+  "clue": "You can rely on this person because they are honest and safe."
+ },
+ "upset": {
+  "pos": "adjective",
+  "clue": "This describes someone who feels sad, angry, or worried about a bad situation."
+ },
+ "vaccination": {
+  "pos": "noun",
+  "clue": "An injection given to people to protect them from getting a dangerous disease."
+ },
+ "vice": {
+  "pos": "noun",
+  "clue": "This is a bad habit or negative personal quality, like smoking."
+ },
+ "visitor": {
+  "pos": "noun",
+  "clue": "A guest who comes to see a place or spend time with you."
+ },
+ "wait": {
+  "pos": "verb",
+  "clue": "To stay in one place because you are expecting someone to arrive."
+ },
+ "watercolours": {
+  "pos": "noun",
+  "clue": "Artists mix these special colored blocks with liquid to create soft pictures."
+ },
+ "waterlogged": {
+  "pos": "adjective",
+  "clue": "This describes ground or wood that is completely filled and soaked with liquid."
+ },
+ "waterproof": {
+  "pos": "adjective",
+  "clue": "This type of material keeps you dry by not letting rain inside."
+ },
+ "weekday": {
+  "pos": "noun",
+  "clue": "Any day from Monday to Friday when people usually go to work."
+ },
+ "weekdays": {
+  "pos": "noun",
+  "clue": "This term refers to Monday, Tuesday, Wednesday, Thursday, and Friday."
+ },
+ "weekend": {
+  "pos": "noun",
+  "clue": "This is the period of time that includes Saturday and Sunday."
+ },
+ "weigh": {
+  "pos": "verb",
+  "clue": "To measure how heavy an object or a person is."
+ },
+ "wilderness": {
+  "pos": "noun",
+  "clue": "A large area of natural land where humans do not live or build."
+ },
+ "wrap": {
+  "pos": "noun",
+  "clue": "This is a meal of meat and vegetables rolled inside thin bread."
+ }
+}
