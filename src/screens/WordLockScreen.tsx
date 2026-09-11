@@ -65,10 +65,10 @@ function pickStartingPositions(word: string): number[] {
   return chosen.sort((a, b) => a - b);
 }
 
-/* Every clue describes the word itself - what kind of thing it is, what it
-   means, what it means in Turkish. No clue is ever a sentence with a gap in it:
-   a fill-in-the-blank line is a completion exercise, not information about the
-   word, so the example sentence is never used here. */
+/* Every clue describes the word itself, in English only: what kind of thing it
+   is, what it means, the words it keeps company with, what part of speech it
+   is. The Turkish meaning is never a clue, and no clue is ever a sentence with
+   a gap in it. */
 function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
   const word = card.word;
   const noGap = (c: string | null | undefined): c is string => !!c && !/_{2,}|\.{3}\s*$/.test(c);
@@ -86,14 +86,8 @@ function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
     partOfSpeechLine(card.partOfSpeech) ?? partOfSpeechLine(extra?.pos),
   ].filter(noGap);
 
-  // What it means in Turkish - the most direct meaning clue, always opened last.
-  const turkishText = (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim();
-  const turkish = turkishText ? `In Turkish it means: ${turkishText}` : null;
-
-  // Exactly three clues every round: two English ones and the Turkish meaning,
-  // or three English ones for a word without a Turkish meaning.
-  const clues = turkish ? [...english.slice(0, MAX_CLUES - 1), turkish] : english.slice(0, MAX_CLUES);
-  return [...new Set(clues)].slice(0, MAX_CLUES);
+  // Exactly three clues every round, all in English - never the Turkish meaning.
+  return [...new Set(english)].slice(0, MAX_CLUES);
 }
 
 /* "adjective" -> "It is an adjective." The part of speech is on every card, so a
@@ -115,6 +109,9 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
 
   // Single alphabetic words only — phrases do not work in a letter game.
   const rounds = useMemo(() => {
+    // Words are chosen once the vocabulary is loaded, so every word in the set
+    // is known to have its three English clues.
+    if (!vocab) return [];
     const pool =
       category === null
         ? FLASHCARDS
@@ -130,11 +127,13 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
               });
             })()
           : FLASHCARDS.filter(f => f.category === category);
-    const usable = pool.filter(f => /^[a-zA-Z]{4,12}$/.test(f.word));
+    const usable = pool.filter(
+      f => /^[a-zA-Z]{4,12}$/.test(f.word) && buildClues(f, vocab[f.word.toLowerCase()]).length === MAX_CLUES
+    );
     // The set climbs: the first word is the gentlest the pool offers and the
     // tenth the hardest, with the exact words still changing between runs.
     return rampedPick(usable, WORDS_PER_SET, wordDifficulty);
-  }, [category]);
+  }, [category, vocab]);
 
   const [idx, setIdx] = useState(0);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
@@ -173,6 +172,15 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
     setDraft('');
     setFlash(null);
   }, [idx, card]);
+
+  if (!vocab) {
+    return (
+      <div className="space-y-6">
+        <TopBar onExit={onExit} />
+        <p className="text-center text-sm text-white/50 font-light py-10">Loading words…</p>
+      </div>
+    );
+  }
 
   if (!card) {
     return (
