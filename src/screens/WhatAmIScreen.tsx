@@ -15,11 +15,10 @@ import { isSeen, markSeen } from '../lib/seenHistory';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
 
-/* WHAT AM I? — three English clues, the word length, sixty seconds.
+/* WHAT AM I? — three English clues and the word length, with no time limit.
    Answer within the first 15 seconds for double points. One answer per question. */
 
 const TOTAL_QUESTIONS = 20;
-const QUESTION_SECONDS = 60;
 const BONUS_SECONDS = 15;
 const POINTS = 100;
 const BONUS_POINTS = 200;
@@ -44,7 +43,7 @@ interface Question {
 interface QuestionResult {
   word: string;
   isCorrect: boolean;
-  reason: 'CORRECT' | 'INCORRECT' | 'TIMER_EXPIRED';
+  reason: 'CORRECT' | 'INCORRECT';
   points: number;
   doublePoints: boolean;
 }
@@ -91,7 +90,6 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
   }, [vocab]);
 
   const [index, setIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(QUESTION_SECONDS);
   const [score, setScore] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -153,7 +151,6 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     setLevel(lv);
     setQuestions(qs);
     setIndex(0);
-    setTimeLeft(QUESTION_SECONDS);
     setScore(0);
     setCorrect(0);
     setWrong(0);
@@ -207,23 +204,12 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     [current, index, questions.length]
   );
 
-  /* ---- one 60-second countdown per question, restarted on every question ---- */
+  /* ---- every question starts fresh; there is no time limit, the start time
+     only decides the double-point bonus ---- */
   useEffect(() => {
     if (view !== 'play' || !current || complete) return;
     resolvedRef.current = false;
     startedAtRef.current = Date.now();
-    setTimeLeft(QUESTION_SECONDS);
-    const id = window.setInterval(() => {
-      const left = QUESTION_SECONDS - Math.floor((Date.now() - startedAtRef.current) / 1000);
-      if (left <= 0) {
-        window.clearInterval(id);
-        setTimeLeft(0);
-        resolve(false, 'TIMER_EXPIRED');
-      } else {
-        setTimeLeft(left);
-      }
-    }, 250);
-    return () => window.clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view, index, current?.id, complete]);
 
@@ -415,35 +401,18 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   if (!current) return null;
 
-  const ring = (timeLeft / QUESTION_SECONDS) * 100;
-  const bonusActive = timeLeft > QUESTION_SECONDS - BONUS_SECONDS;
-
   return (
     <div className="space-y-4 pb-4">
       <TopBar onExit={onExit} />
       <Title />
 
-      {/* Question · timer · score */}
+      {/* Question · score */}
       <div className="flex items-center justify-between gap-3">
         <div>
           <p className="text-[10px] tracking-[0.18em] text-white/45">LEVEL {level} · QUESTION</p>
           <p className="text-lg font-serif text-[#e3b553] leading-tight">
             {index + 1} / {questions.length}
           </p>
-        </div>
-
-        <div className="relative w-[88px] h-[88px] shrink-0">
-          <div
-            className="absolute inset-0 rounded-full"
-            style={{
-              background: `conic-gradient(#e3b553 ${ring}%, rgba(255,255,255,0.07) ${ring}%)`,
-              filter: bonusActive ? 'drop-shadow(0 0 12px rgba(227,181,83,0.5))' : 'none',
-            }}
-          />
-          <div className="absolute inset-[6px] rounded-full bg-[#08070a] flex flex-col items-center justify-center">
-            <span className="text-2xl font-bold text-white leading-none">{timeLeft}</span>
-            <span className="text-[8px] tracking-[0.18em] text-[#e3b553]">SECONDS</span>
-          </div>
         </div>
 
         <div className="text-right">
