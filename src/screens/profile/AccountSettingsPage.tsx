@@ -1,19 +1,25 @@
 import { useEffect, useState } from 'react';
-import { KeyRound, RotateCcw, Trash2 } from 'lucide-react';
-import { C, Card, GhostButton, SubPage, Toggle } from '../../components/profile/ui';
+import { Bell, KeyRound, Languages, RotateCcw, Trash2 } from 'lucide-react';
+import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage, Toggle } from '../../components/profile/ui';
 import { signOutProfile, useUserProfile } from '../../lib/userProfile';
 
 const PRIVACY_KEY = 'lex_privacy_settings';
 
+/* SETTINGS - opened from the gear icon at the top right of the profile:
+   notifications and language first, then the account itself. */
 export default function AccountSettingsPage({
   onBack,
   onResetStats,
   onChangeSubscription,
+  onNotifications,
+  onLanguage,
   notify,
 }: {
   onBack: () => void;
   onResetStats: () => void;
   onChangeSubscription: () => void;
+  onNotifications: () => void;
+  onLanguage: () => void;
   notify: (msg: string) => void;
 }) {
   const profile = useUserProfile();
@@ -35,7 +41,12 @@ export default function AccountSettingsPage({
   }, [privateProfile]);
 
   return (
-    <SubPage title="Account Settings" subtitle="Password, privacy and account" onBack={onBack}>
+    <SubPage title="Settings" subtitle="Notifications, language and account" onBack={onBack}>
+      <MenuList>
+        <ProfileMenuItem icon={Bell} title="Notifications" subtitle="Learning reminders and updates" onClick={onNotifications} />
+        <ProfileMenuItem icon={Languages} title="Language" subtitle="English / Türkçe" onClick={onLanguage} />
+      </MenuList>
+
       <Card className="divide-y divide-[#262626]">
         <Row title="Username" value={profile.username} />
         <Row title="Membership" value={profile.membership === 'premium' ? 'Premium' : 'Free'} action="Manage" onAction={onChangeSubscription} />

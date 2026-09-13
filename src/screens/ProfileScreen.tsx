@@ -51,12 +51,16 @@ export default function ProfileScreen(props: ProfileScreenProps) {
     return () => clearTimeout(t);
   }, [toast]);
 
-  const open = (p: ProfilePage) => {
+  const [fromSettings, setFromSettings] = useState(false);
+
+  const open = (p: ProfilePage, viaSettings = false) => {
     setPage(p);
+    setFromSettings(viaSettings);
     window.scrollTo({ top: 0 });
   };
   const back = () => {
     setPage(null);
+    setFromSettings(false);
     window.scrollTo({ top: 0 });
   };
 
@@ -91,16 +95,19 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         );
       case 'achievements':
         return <AchievementsPage onBack={back} gamification={gamification} />;
+      // Opened from Settings, back returns to Settings; from the bell, to the profile.
       case 'notifications':
-        return <NotificationsPage onBack={back} />;
+        return <NotificationsPage onBack={fromSettings ? () => open('account') : back} />;
       case 'language':
-        return <LanguagePage onBack={back} notify={setToast} />;
+        return <LanguagePage onBack={fromSettings ? () => open('account') : back} notify={setToast} />;
       case 'account':
         return (
           <AccountSettingsPage
             onBack={back}
             onResetStats={onResetStats}
             onChangeSubscription={() => open('subscription')}
+            onNotifications={() => open('notifications', true)}
+            onLanguage={() => open('language', true)}
             notify={setToast}
           />
         );

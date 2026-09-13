@@ -1,4 +1,4 @@
-import { History, Activity, Trophy, Bell, Languages, Settings } from 'lucide-react';
+import { History, Activity, Trophy } from 'lucide-react';
 import { UserProfile } from '../../lib/userProfile';
 import { MenuList, ProfileMenuItem, SectionHeading } from './ui';
 
@@ -29,9 +29,6 @@ export default function ProfileFeatures({ profile, open }: { profile: UserProfil
         <ProfileMenuItem icon={History} title="Learning Activity" subtitle="View your study history" onClick={() => open('activity')} />
         <ProfileMenuItem icon={Activity} title="My Statistics" subtitle="Progress, learning time and performance" onClick={() => open('statistics')} />
         <ProfileMenuItem icon={Trophy} title="Achievements" subtitle="Levels, streaks and completed challenges" onClick={() => open('achievements')} />
-        <ProfileMenuItem icon={Bell} title="Notifications" subtitle="Learning reminders and updates" onClick={() => open('notifications')} />
-        <ProfileMenuItem icon={Languages} title="Language" subtitle="English / Türkçe" onClick={() => open('language')} />
-        <ProfileMenuItem icon={Settings} title="Account Settings" subtitle="Password, privacy and account" onClick={() => open('account')} />
       </MenuList>
     </section>
   );
