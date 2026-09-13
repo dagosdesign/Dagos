@@ -9,7 +9,7 @@ import LearningTimeCard from '../components/profile/LearningTimeCard';
 import AIInsightCard from '../components/profile/AIInsightCard';
 import MembershipSection from '../components/profile/MembershipSection';
 import ProfileFeatures, { ProfilePage } from '../components/profile/ProfileFeatures';
-import AccountSection from '../components/profile/AccountSection';
+import { BrandSignature } from '../components/profile/AccountSection';
 import PersonalInfoPage from './profile/PersonalInfoPage';
 import MyLevelPage from './profile/MyLevelPage';
 import PlacementTestScreen from './profile/PlacementTestScreen';
@@ -107,6 +107,8 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             onChangeSubscription={() => open('subscription')}
             onNotifications={() => open('notifications', true)}
             onLanguage={() => open('language', true)}
+            openInfo={p => open(p, true)}
+            onLogOut={() => setConfirmLogout(true)}
             notify={setToast}
           />
         );
@@ -116,7 +118,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
       case 'privacy':
       case 'terms':
       case 'about':
-        return <InfoPage kind={page} onBack={back} />;
+        return <InfoPage kind={page} onBack={fromSettings ? () => open('account') : back} />;
       default:
         return (
           <div className="space-y-6">
@@ -129,7 +131,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
               <MembershipSection plan={profile.membership} onUpgrade={upgrade} onManage={() => open('subscription')} />
             </div>
             <ProfileFeatures profile={profile} open={open} />
-            <AccountSection open={open} onLogOut={() => setConfirmLogout(true)} />
+            <BrandSignature />
           </div>
         );
     }

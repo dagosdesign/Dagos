@@ -21,15 +21,20 @@ export default function AccountSection({ open, onLogOut }: { open: (page: Profil
       >
         <LogOut className="w-[18px] h-[18px]" strokeWidth={1.8} /> Log Out
       </button>
-
-      <div className="text-center pt-2 pb-2 space-y-0.5">
-        <p className="text-[13px] font-semibold tracking-[0.02em]" style={{ color: 'rgba(255,255,255,0.35)' }}>
-          Lexistencehub
-        </p>
-        <p className="text-[11.5px]" style={{ color: 'rgba(165,165,165,0.55)' }}>
-          Beyond English.
-        </p>
-      </div>
     </section>
+  );
+}
+
+/* The quiet brand line at the very bottom of the profile. */
+export function BrandSignature() {
+  return (
+    <div className="text-center pt-2 pb-2 space-y-0.5">
+      <p className="text-[13px] font-semibold tracking-[0.02em]" style={{ color: 'rgba(255,255,255,0.35)' }}>
+        Lexistencehub
+      </p>
+      <p className="text-[11.5px]" style={{ color: 'rgba(165,165,165,0.55)' }}>
+        Beyond English.
+      </p>
+    </div>
   );
 }

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Bell, KeyRound, Languages, RotateCcw, Trash2 } from 'lucide-react';
 import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage, Toggle } from '../../components/profile/ui';
 import { signOutProfile, useUserProfile } from '../../lib/userProfile';
+import AccountSection from '../../components/profile/AccountSection';
+import type { ProfilePage } from '../../components/profile/ProfileFeatures';
 
 const PRIVACY_KEY = 'lex_privacy_settings';
 
@@ -13,8 +15,12 @@ export default function AccountSettingsPage({
   onChangeSubscription,
   onNotifications,
   onLanguage,
+  openInfo,
+  onLogOut,
   notify,
 }: {
+  openInfo: (page: ProfilePage) => void;
+  onLogOut: () => void;
   onBack: () => void;
   onResetStats: () => void;
   onChangeSubscription: () => void;
@@ -116,6 +122,10 @@ export default function AccountSettingsPage({
           </button>
         )}
       </Card>
+
+      <div className="pt-2">
+        <AccountSection open={openInfo} onLogOut={onLogOut} />
+      </div>
     </SubPage>
   );
 }
