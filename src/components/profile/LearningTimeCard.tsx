@@ -16,12 +16,13 @@ export const PERIOD_LABEL: Record<Period, string> = {
   all: 'All Time',
 };
 
-/* Learning Time: total for the chosen period and how it splits across
-   listening, writing, games and everything else. */
+/* Learning Time: a bar carrying the total for the chosen period, and Details
+   listing the time spent on listening, writing, games and everything else. */
 export default function LearningTimeCard() {
   const buckets = useLearningTime();
   const [period, setPeriod] = useState<Period>('month');
   const [open, setOpen] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
   const { total, byCategory } = learningTimeFor(period, buckets);
 
   return (
@@ -71,37 +72,57 @@ export default function LearningTimeCard() {
         </div>
       </div>
 
-      <p className="text-[38px] font-bold leading-none mt-5" style={{ color: C.text }}>
-        {formatLearningTime(total)}
-      </p>
-      <p className="text-[15px] mt-2" style={{ color: C.muted }}>
+      {/* Total Learning bar: the categories fill it, the total sits on it */}
+      <p className="text-[15px] mt-5" style={{ color: C.muted }}>
         Total Learning
       </p>
-
-      <div className="mt-5 h-[14px] rounded-full overflow-hidden flex" style={{ background: '#1C1C1C' }}>
+      <div className="relative mt-2 h-11 rounded-full overflow-hidden flex" style={{ background: '#1C1C1C' }}>
         {total > 0 &&
           TIME_CATEGORIES.map(c =>
             byCategory[c] > 0 ? (
               <span key={c} style={{ width: `${(byCategory[c] / total) * 100}%`, background: CATEGORY_META[c].color }} />
             ) : null
           )}
+        <span
+          className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full px-3.5 py-1 text-[16px] font-bold whitespace-nowrap"
+          style={{ background: 'rgba(11,11,11,0.88)', color: C.text }}
+        >
+          {formatLearningTime(total)}
+        </span>
       </div>
 
-      <div className="mt-4 grid grid-cols-4 gap-x-1">
-        {TIME_CATEGORIES.map(c => (
-          <div key={c} className="min-w-0">
-            <div className="flex items-center gap-1 min-[400px]:gap-2">
-              <span className="w-2.5 h-2.5 min-[400px]:w-3.5 min-[400px]:h-3.5 rounded-full shrink-0" style={{ background: CATEGORY_META[c].color }} />
-              <span className="text-[12px] min-[400px]:text-[14px] whitespace-nowrap" style={{ color: C.muted }}>
+      {/* Details: every category and the time spent on it */}
+      <button
+        type="button"
+        onClick={() => setShowDetails(d => !d)}
+        className="mt-4 w-full flex items-center justify-between py-1 text-[15px] font-medium cursor-pointer"
+        style={{ color: C.text }}
+        aria-expanded={showDetails}
+      >
+        Details
+        <ChevronDown
+          className={`w-5 h-5 transition-transform ${showDetails ? 'rotate-180' : ''}`}
+          color={C.gold}
+        />
+      </button>
+      {showDetails && (
+        <div className="mt-2 divide-y divide-[#262626] border-t border-[#262626]">
+          {TIME_CATEGORIES.map(c => (
+            <div key={c} className="flex items-center gap-3 py-3">
+              <span className="w-3 h-3 rounded-full shrink-0" style={{ background: CATEGORY_META[c].color }} />
+              <span className="flex-1 min-w-0 text-[15px]" style={{ color: C.text }}>
                 {CATEGORY_META[c].label}
               </span>
+              <span className="text-[13px] tabular-nums" style={{ color: C.muted }}>
+                {total > 0 ? Math.round((byCategory[c] / total) * 100) : 0}%
+              </span>
+              <span className="w-[72px] text-right text-[15px] font-semibold tabular-nums whitespace-nowrap" style={{ color: C.text }}>
+                {formatLearningTime(byCategory[c])}
+              </span>
             </div>
-            <p className="text-[13.5px] min-[400px]:text-[15px] mt-1 min-[400px]:pl-[22px] whitespace-nowrap" style={{ color: C.text }}>
-              {formatLearningTime(byCategory[c])}
-            </p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </Card>
   );
 }
