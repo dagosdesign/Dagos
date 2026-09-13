@@ -9,7 +9,6 @@ import LearningTimeCard from '../components/profile/LearningTimeCard';
 import AIInsightCard from '../components/profile/AIInsightCard';
 import MembershipSection from '../components/profile/MembershipSection';
 import ProfileFeatures, { ProfilePage } from '../components/profile/ProfileFeatures';
-import LearningOverview from '../components/profile/LearningOverview';
 import AccountSection from '../components/profile/AccountSection';
 import PersonalInfoPage from './profile/PersonalInfoPage';
 import MyLevelPage from './profile/MyLevelPage';
@@ -130,7 +129,6 @@ export default function ProfileScreen(props: ProfileScreenProps) {
               <MembershipSection plan={profile.membership} onUpgrade={upgrade} onManage={() => open('subscription')} />
             </div>
             <ProfileFeatures profile={profile} open={open} />
-            <LearningOverview profile={profile} />
             <AccountSection open={open} onLogOut={() => setConfirmLogout(true)} />
           </div>
         );
