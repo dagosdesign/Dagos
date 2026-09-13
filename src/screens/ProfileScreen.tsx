@@ -115,7 +115,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         return (
           <div className="space-y-6">
             <ProfileHeader onSettings={() => open('account')} onNotifications={() => open('notifications')} hasUpdate={!profile.placementTestCompleted} />
-            <StudentIdentityCard profile={profile} onOpen={() => open('personal')} />
+            <StudentIdentityCard profile={profile} onEdit={() => open('personal')} />
             <LevelCard profile={profile} onDetails={() => open('level')} onCheckLevel={() => open('placement')} />
             <LearningTimeCard />
             <AIInsightCard profile={profile} onOpen={() => open('statistics')} />

@@ -1,4 +1,4 @@
-import { ChevronRight, Crown } from 'lucide-react';
+import { Crown, Pencil } from 'lucide-react';
 import { UserProfile } from '../../lib/userProfile';
 import { C } from './ui';
 
@@ -55,10 +55,11 @@ export function PlanBadge({ plan }: { plan: UserProfile['membership'] }) {
   );
 }
 
-/* Photo, name, username and membership badge. Tapping opens Personal Information. */
-export default function StudentIdentityCard({ profile, onOpen }: { profile: UserProfile; onOpen: () => void }) {
+/* Photo, name, username and membership badge, with Edit Profile - the way into
+   Personal Information (name, username and profile photo). */
+export default function StudentIdentityCard({ profile, onEdit }: { profile: UserProfile; onEdit: () => void }) {
   return (
-    <button type="button" onClick={onOpen} className="w-full flex items-center gap-4 text-left cursor-pointer py-2">
+    <div className="w-full flex items-center gap-4 py-2">
       <Avatar profile={profile} size={112} />
       <div className="min-w-0 flex-1 space-y-2">
         <p className="text-[24px] font-semibold leading-tight break-words" style={{ color: C.text }}>
@@ -67,9 +68,19 @@ export default function StudentIdentityCard({ profile, onOpen }: { profile: User
         <p className="text-[16px] leading-tight truncate" style={{ color: C.muted }}>
           {profile.username}
         </p>
-        <PlanBadge plan={profile.membership} />
+        <div className="flex flex-wrap items-center gap-2">
+          <PlanBadge plan={profile.membership} />
+          <button
+            type="button"
+            onClick={onEdit}
+            className="inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[15px] font-medium border cursor-pointer transition-colors hover:border-[#F5B82E]"
+            style={{ borderColor: C.border, color: C.text, background: C.card }}
+          >
+            <Pencil className="w-[15px] h-[15px]" color={C.gold} strokeWidth={1.8} />
+            Edit Profile
+          </button>
+        </div>
       </div>
-      <ChevronRight className="w-6 h-6 shrink-0" color={C.text} strokeWidth={1.8} />
-    </button>
+    </div>
   );
 }
