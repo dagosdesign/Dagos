@@ -1,4 +1,4 @@
-import { Delete, CornerDownLeft } from 'lucide-react';
+import { Delete, CornerDownLeft, ArrowBigUp } from 'lucide-react';
 
 /* The one on-screen keyboard Lexistencehub uses wherever a word is typed:
    the Turkish Q layout, rounded-square gold keys, sized for a thumb — so a
@@ -30,6 +30,13 @@ interface GameKeyboardProps {
   disabled?: boolean;
   /** Greys out the Turkish-only keys — for picking letters of an English word. */
   latinOnly?: boolean;
+  /** Sentence typing (AI LEX): a punctuation row under the letters… */
+  punctuation?: string[];
+  /** …a space bar… */
+  onSpace?: () => void;
+  /** …and a shift key for the next capital letter. */
+  onShift?: () => void;
+  shiftActive?: boolean;
 }
 
 const TONE: Record<KeyTone, string> = {
@@ -49,8 +56,12 @@ export default function GameKeyboard({
   disabledKeys,
   disabled = false,
   latinOnly = false,
+  punctuation,
+  onSpace,
+  onShift,
+  shiftActive = false,
 }: GameKeyboardProps) {
-  const controls = !!onDelete || !!onEnter;
+  const controls = !!onDelete || !!onEnter || !!onSpace || !!onShift;
   return (
     <div className="space-y-2.5">
       <div className="space-y-1.5">
@@ -77,10 +88,42 @@ export default function GameKeyboard({
             })}
           </div>
         ))}
+        {punctuation && punctuation.length > 0 && (
+          <div className="flex justify-center gap-1">
+            {punctuation.map(p => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => onKey(p)}
+                disabled={disabled}
+                aria-label={p}
+                className={`flex-1 min-w-0 max-w-[44px] h-[46px] sm:h-[50px] rounded-xl border text-[17px] font-bold transition-all disabled:opacity-40 ${TONE.idle}`}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {controls && (
         <div className="flex gap-2">
+          {onShift && (
+            <button
+              type="button"
+              onClick={onShift}
+              disabled={disabled}
+              aria-label="Shift"
+              aria-pressed={shiftActive}
+              className={`flex-1 flex items-center justify-center rounded-2xl py-3 border cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed ${
+                shiftActive
+                  ? 'border-[#e3b553] bg-[#e3b553] text-[#0a0a0b]'
+                  : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
+              }`}
+            >
+              <ArrowBigUp className="w-4 h-4" />
+            </button>
+          )}
           {onDelete && (
             <button
               type="button"
@@ -89,6 +132,16 @@ export default function GameKeyboard({
               className="flex-1 flex items-center justify-center gap-1.5 border border-[#e3b553]/40 text-[#e3b553] rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] hover:bg-[#e3b553]/10 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
             >
               <Delete className="w-4 h-4" /> DEL
+            </button>
+          )}
+          {onSpace && (
+            <button
+              type="button"
+              onClick={onSpace}
+              disabled={disabled}
+              className="flex-[2.4] flex items-center justify-center border border-[#e3b553]/40 text-white bg-[#0e0d0c] rounded-2xl py-3 text-[11px] font-bold tracking-[0.18em] hover:border-[#e3b553] active:bg-[#e3b553]/10 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+            >
+              SPACE
             </button>
           )}
           {onEnter && (

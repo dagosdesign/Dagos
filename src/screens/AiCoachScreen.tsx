@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square } from 'lucide-react';
+import GameKeyboard from '../components/GameKeyboard';
+
+const PUNCTUATION = [',', '.', '?', '!', "'", '"', '-', ':'];
+const MAX_INPUT = 600;
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -104,6 +108,56 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       setLoading(false);
     }
   };
+
+  /* ---- typing with the in-app keyboard ---- */
+  const [shift, setShift] = useState(false);
+  const shiftRef = useRef(shift);
+  shiftRef.current = shift;
+
+  // A letter is a capital after Shift or at the start of a sentence; the
+  // keyboard's own letters are all upper case.
+  const typeKey = (ch: string) => {
+    const isLetter = /\p{L}/u.test(ch);
+    setInput(prev => {
+      const sentenceStart = prev.trim() === '' || /[.!?]\s+$/.test(prev);
+      const upper = shiftRef.current || sentenceStart;
+      const next = isLetter ? (upper ? ch : ch === 'I' || ch === 'İ' ? 'i' : ch.toLowerCase()) : ch;
+      return (prev + next).slice(0, MAX_INPUT);
+    });
+    if (isLetter && shiftRef.current) setShift(false);
+  };
+
+  // A lone "i" becomes the pronoun "I" when the word ends.
+  const typeSpace = () =>
+    setInput(prev => {
+      if (!prev || prev.endsWith(' ')) return prev;
+      return `${prev.replace(/(^|\s)i$/, '$1I')} `.slice(0, MAX_INPUT);
+    });
+
+  // A physical keyboard still types on computers.
+  const sendRef = useRef(send);
+  sendRef.current = send;
+  const inputRef = useRef(input);
+  inputRef.current = input;
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        sendRef.current(inputRef.current);
+      } else if (e.key === 'Backspace') {
+        e.preventDefault();
+        setInput(prev => prev.slice(0, -1));
+      } else if (e.key.length === 1) {
+        e.preventDefault();
+        setInput(prev => (prev + e.key).slice(0, MAX_INPUT));
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
 
   const startListening = () => {
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -274,13 +328,23 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
             {listening ? <Square className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
           </button>
         )}
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder={listening ? 'Konuş...' : 'İngilizce pratik yap veya soru sor...'}
-          className="flex-1 min-w-0 text-sm bg-white/[0.02] border border-white/[0.08] focus:border-[#e3b553] focus:ring-1 focus:ring-[#e3b553] rounded-xl px-4 py-3 outline-hidden text-white font-light placeholder-white/25"
-        />
+        {/* The message being written; the in-app keyboard below types into it,
+            so the phone's system keyboard never opens here. */}
+        <div
+          role="textbox"
+          aria-label="Message"
+          aria-readonly="true"
+          className="flex-1 min-w-0 min-h-[46px] max-h-[88px] overflow-y-auto text-sm bg-white/[0.02] border border-[#e3b553]/35 rounded-xl px-4 py-3 text-white font-light break-words whitespace-pre-wrap"
+        >
+          {input ? (
+            <>
+              {input}
+              <span className="inline-block w-[2px] h-[1em] -mb-[2px] ml-[1px] bg-[#e3b553] animate-pulse" />
+            </>
+          ) : (
+            <span className="text-white/25">{listening ? 'Konuş...' : 'İngilizce pratik yap veya soru sor...'}</span>
+          )}
+        </div>
         <button
           type="submit"
           disabled={!input.trim() || loading}
@@ -294,6 +358,19 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
           <Send className="w-5 h-5" />
         </button>
       </form>
+
+      {/* The same keyboard as the games, with space, punctuation and shift for sentences */}
+      <div className="pt-3 shrink-0">
+        <GameKeyboard
+          onKey={typeKey}
+          onDelete={() => setInput(prev => prev.slice(0, -1))}
+          onSpace={typeSpace}
+          onShift={() => setShift(s => !s)}
+          shiftActive={shift}
+          punctuation={PUNCTUATION}
+          disabled={listening}
+        />
+      </div>
     </div>
   );
 }
