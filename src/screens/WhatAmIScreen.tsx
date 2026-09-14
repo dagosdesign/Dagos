@@ -403,21 +403,41 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   return (
     <div className="space-y-4 pb-4">
-      <TopBar onExit={onExit} />
-      <Title />
+      {/* Hero: the covered object sits behind the header, title and question row,
+          and fades to pure black inside this block - never into the clues. */}
+      <div className="relative overflow-hidden">
+        <img
+          src="/games/whatami-hero.webp"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none select-none absolute -right-2 top-2 w-[76%] max-w-[400px] h-auto"
+          style={{
+            maskImage:
+              'linear-gradient(to bottom, transparent 0%, #000 12%, #000 84%, transparent 100%), linear-gradient(to right, transparent 0%, #000 24%)',
+            WebkitMaskImage:
+              'linear-gradient(to bottom, transparent 0%, #000 12%, #000 84%, transparent 100%), linear-gradient(to right, transparent 0%, #000 24%)',
+            maskComposite: 'intersect',
+            WebkitMaskComposite: 'source-in',
+          }}
+        />
+        <div className="relative space-y-4">
+          <TopBar onExit={onExit} />
+          <HeroTitle />
 
-      {/* Question · score */}
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <p className="text-[10px] tracking-[0.18em] text-white/45">LEVEL {level} · QUESTION</p>
-          <p className="text-lg font-serif text-[#e3b553] leading-tight">
-            {index + 1} / {questions.length}
-          </p>
-        </div>
+          {/* Question · score */}
+          <div className="flex items-center justify-between gap-3">
+            <div>
+              <p className="text-[10px] tracking-[0.18em] text-white/45">LEVEL {level} · QUESTION</p>
+              <p className="text-lg font-serif text-[#e3b553] leading-tight">
+                {index + 1} / {questions.length}
+              </p>
+            </div>
 
-        <div className="text-right">
-          <p className="text-[10px] tracking-[0.18em] text-white/45">SCORE</p>
-          <p className="text-lg font-serif text-[#e3b553] leading-tight">{score}</p>
+            <div className="text-right">
+              <p className="text-[10px] tracking-[0.18em] text-white/45">SCORE</p>
+              <p className="text-lg font-serif text-[#e3b553] leading-tight">{score}</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -513,6 +533,24 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
           Answer within the first 15 seconds to get double points!
         </p>
       </div>
+    </div>
+  );
+}
+
+/* The play screen's title, left of the hero art: WHAT in white, AM I? in gold. */
+function HeroTitle() {
+  return (
+    <div className="pt-7 pb-6 space-y-3">
+      <h1 className="text-[42px] sm:text-[48px] font-extrabold leading-[0.92] tracking-[-0.01em]">
+        <span className="block text-white">WHAT</span>
+        <span
+          className="block bg-clip-text text-transparent"
+          style={{ backgroundImage: 'linear-gradient(180deg, #f7cf6a 0%, #e3b553 55%, #b8862c 100%)' }}
+        >
+          AM I?
+        </span>
+      </h1>
+      <p className="text-[10px] tracking-[0.34em] text-white/70">GUESS THE WORD.</p>
     </div>
   );
 }
