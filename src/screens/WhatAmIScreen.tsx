@@ -421,7 +421,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
           }}
         />
         <div className="relative space-y-4">
-          <TopBar onExit={onExit} />
+          <TopBar onExit={onExit} brand={false} />
           <HeroTitle />
 
           {/* Question · score */}
@@ -569,7 +569,8 @@ function Title() {
   );
 }
 
-function TopBar({ onExit }: { onExit: () => void }) {
+/* `brand` false leaves the middle empty, so the hero art shows through. */
+function TopBar({ onExit, brand = true }: { onExit: () => void; brand?: boolean }) {
   return (
     <div className="flex items-center justify-between">
       <button
@@ -579,13 +580,15 @@ function TopBar({ onExit }: { onExit: () => void }) {
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
-      <div className="text-center">
-        <p className="text-[13px] tracking-[0.22em] font-medium">
-          <span className="text-white">LEXISTENCE</span>
-          <span className="text-[#e3b553]">HUB</span>
-        </p>
-        <p className="text-[10px] tracking-[0.14em] text-[#e3b553]/70 font-light">Beyond English.</p>
-      </div>
+      {brand && (
+        <div className="text-center">
+          <p className="text-[13px] tracking-[0.22em] font-medium">
+            <span className="text-white">LEXISTENCE</span>
+            <span className="text-[#e3b553]">HUB</span>
+          </p>
+          <p className="text-[10px] tracking-[0.14em] text-[#e3b553]/70 font-light">Beyond English.</p>
+        </div>
+      )}
       <div className="p-2 bg-white/[0.03] text-[#e3b553]/70 border border-[#e3b553]/20 rounded-xl">
         <BarChart3 className="w-5 h-5" />
       </div>
