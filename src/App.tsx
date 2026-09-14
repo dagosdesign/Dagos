@@ -216,17 +216,22 @@ export default function App() {
   const gameOpen = Boolean(wordLock) || atoZ || whatAmI || wordBuild || unbroken || goldenMatch || theClue || oddOne || wordPath || grammarDuel;
 
   /* Learning time: counted while a learning screen is open and visible, and
-     sorted into listening, writing, games or everything else. */
+     sorted by learning method - Listening, Writing, Visual Learning, Games,
+     Stories, Conversations, AI - with grammar, word cards, quizzes and the
+     level test under others. */
+  const METHOD_TIME: Record<PracticeMethod, TimeCategory> = {
+    Listening: 'listening',
+    Writing: 'writing',
+    Visual: 'visual',
+    Games: 'games',
+    Stories: 'stories',
+    Conversations: 'conversations',
+    Test: 'others',
+  };
   const timeCategory: TimeCategory | null = showOnboarding
     ? 'others'
     : methodSession
-      ? methodSession.method === 'Listening'
-        ? 'listening'
-        : methodSession.method === 'Writing'
-          ? 'writing'
-          : methodSession.method === 'Games'
-            ? 'games'
-            : 'others'
+      ? METHOD_TIME[methodSession.method]
       : showProgress || limit
         ? null
         : activeTab === 'games'
@@ -235,7 +240,7 @@ export default function App() {
             : null
           : activeTab === 'ai'
             ? features.aiCoach
-              ? 'others'
+              ? 'ai'
               : null
             : activeTab === 'grammar' || activeTab === 'cards' || activeTab === 'quiz'
               ? 'others'

@@ -1,13 +1,20 @@
 import { useState } from 'react';
-import { Clock, ChevronDown } from 'lucide-react';
+import { Clock, ChevronDown, Headphones, Pencil, Eye, Gamepad2, BookOpen, MessagesSquare, Bot, MoreHorizontal } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import { formatLearningTime, learningTimeFor, Period, TIME_CATEGORIES, TimeCategory, useLearningTime } from '../../lib/activityLog';
 import { C, Card } from './ui';
 
-export const CATEGORY_META: Record<TimeCategory, { label: string; color: string }> = {
-  listening: { label: 'Listening', color: '#F5B82E' },
-  writing: { label: 'Writing', color: '#B88A2C' },
-  games: { label: 'Games', color: '#7A4A2E' },
-  others: { label: 'Others', color: '#4A4A4A' },
+/* The learning methods of the "How would you like to learn?" screen, with the
+   same icons, each with its own warm shade. */
+export const CATEGORY_META: Record<TimeCategory, { label: string; color: string; icon: LucideIcon }> = {
+  listening: { label: 'Listening', color: '#F5B82E', icon: Headphones },
+  writing: { label: 'Writing', color: '#C9962C', icon: Pencil },
+  visual: { label: 'Visual Learning', color: '#FFDA8A', icon: Eye },
+  games: { label: 'Games', color: '#8A5E26', icon: Gamepad2 },
+  stories: { label: 'Stories', color: '#E0C9A0', icon: BookOpen },
+  conversations: { label: 'Conversations', color: '#A87A3E', icon: MessagesSquare },
+  ai: { label: 'AI', color: '#A5A5A5', icon: Bot },
+  others: { label: 'Others', color: '#4A4A4A', icon: MoreHorizontal },
 };
 
 export const PERIOD_LABEL: Record<Period, string> = {
@@ -17,7 +24,7 @@ export const PERIOD_LABEL: Record<Period, string> = {
 };
 
 /* Learning Time: a bar carrying the total for the chosen period, and Details
-   listing the time spent on listening, writing, games and everything else. */
+   listing the time spent on each learning method. */
 export default function LearningTimeCard() {
   const buckets = useLearningTime();
   const [period, setPeriod] = useState<Period>('month');
@@ -107,9 +114,13 @@ export default function LearningTimeCard() {
       </button>
       {showDetails && (
         <div className="mt-2 divide-y divide-[#262626] border-t border-[#262626]">
-          {TIME_CATEGORIES.map(c => (
+          {/* the seven learning methods; grammar, cards and quizzes appear as Others once they have time */}
+          {TIME_CATEGORIES.filter(c => c !== 'others' || byCategory.others > 0).map(c => {
+            const Icon = CATEGORY_META[c].icon;
+            return (
             <div key={c} className="flex items-center gap-3 py-3">
               <span className="w-3 h-3 rounded-full shrink-0" style={{ background: CATEGORY_META[c].color }} />
+              <Icon className="w-[18px] h-[18px] shrink-0" color={C.gold} strokeWidth={1.8} />
               <span className="flex-1 min-w-0 text-[15px]" style={{ color: C.text }}>
                 {CATEGORY_META[c].label}
               </span>
@@ -120,7 +131,8 @@ export default function LearningTimeCard() {
                 {formatLearningTime(byCategory[c])}
               </span>
             </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </Card>

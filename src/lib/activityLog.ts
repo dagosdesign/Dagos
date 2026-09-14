@@ -15,8 +15,18 @@ export interface ActivityEntry {
   at: number; // epoch ms
 }
 
-export type TimeCategory = 'listening' | 'writing' | 'games' | 'others';
-export const TIME_CATEGORIES: TimeCategory[] = ['listening', 'writing', 'games', 'others'];
+/* The learning methods of the method screen, plus "others" for grammar, word
+   cards, quizzes and the level test. */
+export type TimeCategory =
+  | 'listening'
+  | 'writing'
+  | 'visual'
+  | 'games'
+  | 'stories'
+  | 'conversations'
+  | 'ai'
+  | 'others';
+export const TIME_CATEGORIES: TimeCategory[] = ['listening', 'writing', 'visual', 'games', 'stories', 'conversations', 'ai', 'others'];
 export type TimeBuckets = Record<string, Partial<Record<TimeCategory, number>>>; // YYYY-MM-DD -> minutes
 export type Period = 'week' | 'month' | 'all';
 
@@ -88,7 +98,7 @@ export function learningTimeFor(period: Period, source: TimeBuckets = buckets) {
   } else if (period === 'month') {
     from = dayKey(new Date(now.getFullYear(), now.getMonth(), 1));
   }
-  const byCategory: Record<TimeCategory, number> = { listening: 0, writing: 0, games: 0, others: 0 };
+  const byCategory = Object.fromEntries(TIME_CATEGORIES.map(c => [c, 0])) as Record<TimeCategory, number>;
   for (const [day, mins] of Object.entries(source)) {
     if (day < from) continue;
     for (const c of TIME_CATEGORIES) byCategory[c] += mins[c] ?? 0;
