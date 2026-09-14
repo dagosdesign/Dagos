@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square } from 'lucide-react';
-import GameKeyboard from '../components/GameKeyboard';
+import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
 
 const PUNCTUATION = [',', '.', '?', '!', "'", '"', '-', ':'];
 const MAX_INPUT = 600;
@@ -110,21 +110,28 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   };
 
   /* ---- typing with the in-app keyboard ---- */
-  const [shift, setShift] = useState(false);
-  const shiftRef = useRef(shift);
-  shiftRef.current = shift;
+  // abc: lower case · Abc: the next letter is a capital · ABC: caps lock.
+  const [caseMode, setCaseMode] = useState<CaseMode>('lower');
+  // At the start of a sentence the keyboard switches to Abc by itself, as a
+  // phone does - unless the student has just chosen abc.
+  const [autoCapOff, setAutoCapOff] = useState(false);
+  const sentenceStart = input.trim() === '' || /[.!?]\s+$/.test(input);
+  const shownCase: CaseMode = caseMode === 'lower' && sentenceStart && !autoCapOff ? 'once' : caseMode;
 
-  // A letter is a capital after Shift or at the start of a sentence; the
-  // keyboard's own letters are all upper case.
+  // The keyboard hands over each letter in the case it shows.
   const typeKey = (ch: string) => {
-    const isLetter = /\p{L}/u.test(ch);
-    setInput(prev => {
-      const sentenceStart = prev.trim() === '' || /[.!?]\s+$/.test(prev);
-      const upper = shiftRef.current || sentenceStart;
-      const next = isLetter ? (upper ? ch : ch === 'I' || ch === 'İ' ? 'i' : ch.toLowerCase()) : ch;
-      return (prev + next).slice(0, MAX_INPUT);
-    });
-    if (isLetter && shiftRef.current) setShift(false);
+    setInput(prev => (prev + ch).slice(0, MAX_INPUT));
+    setAutoCapOff(false);
+    if (caseMode === 'once' && /\p{L}/u.test(ch)) setCaseMode('lower');
+  };
+
+  const cycleCase = () => {
+    if (shownCase === 'lower') setCaseMode('once');
+    else if (shownCase === 'once') setCaseMode('caps');
+    else {
+      setCaseMode('lower');
+      setAutoCapOff(true);
+    }
   };
 
   // A lone "i" becomes the pronoun "I" when the word ends.
@@ -365,8 +372,9 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
           onKey={typeKey}
           onDelete={() => setInput(prev => prev.slice(0, -1))}
           onSpace={typeSpace}
-          onShift={() => setShift(s => !s)}
-          shiftActive={shift}
+          onShift={cycleCase}
+          caseMode={shownCase}
+          lowercase={shownCase === 'lower'}
           punctuation={PUNCTUATION}
           disabled={listening}
         />

@@ -1,4 +1,4 @@
-import { Delete, CornerDownLeft, ArrowBigUp } from 'lucide-react';
+import { Delete, CornerDownLeft, ArrowBigUp, ArrowBigUpDash } from 'lucide-react';
 
 /* The one on-screen keyboard Lexistencehub uses wherever a word is typed:
    the Turkish Q layout, rounded-square gold keys, sized for a thumb — so a
@@ -34,10 +34,15 @@ interface GameKeyboardProps {
   punctuation?: string[];
   /** …a space bar… */
   onSpace?: () => void;
-  /** …and a shift key for the next capital letter. */
+  /** …and a case key: abc (lower case), Abc (next letter capital), ABC (caps lock). */
   onShift?: () => void;
-  shiftActive?: boolean;
+  caseMode?: CaseMode;
+  /** Letter keys show - and type - lower case. Games leave this off. */
+  lowercase?: boolean;
 }
+
+export type CaseMode = 'lower' | 'once' | 'caps';
+const CASE_LABEL: Record<CaseMode, string> = { lower: 'abc', once: 'Abc', caps: 'ABC' };
 
 const TONE: Record<KeyTone, string> = {
   correct: 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/12',
@@ -59,7 +64,8 @@ export default function GameKeyboard({
   punctuation,
   onSpace,
   onShift,
-  shiftActive = false,
+  caseMode = 'lower',
+  lowercase = false,
 }: GameKeyboardProps) {
   const controls = !!onDelete || !!onEnter || !!onSpace || !!onShift;
   return (
@@ -71,18 +77,20 @@ export default function GameKeyboard({
               const blocked = latinOnly && TURKISH_ONLY.has(ch);
               const tone = !blocked && toneOf ? toneOf(ch) : 'idle';
               const off = disabled || blocked || disabledKeys?.has(ch) || tone === 'wrong';
+              // Turkish Q in lower case: I -> ı and İ -> i, as on a Turkish keyboard.
+              const label = lowercase ? ch.toLocaleLowerCase('tr') : ch;
               return (
                 <button
                   key={ch}
                   type="button"
-                  onClick={() => onKey(ch)}
+                  onClick={() => onKey(label)}
                   disabled={off}
                   className={`flex-1 min-w-0 max-w-[44px] h-[46px] sm:h-[50px] rounded-xl border text-[15px] sm:text-base font-bold transition-all ${
                     off && tone === 'idle' ? 'border-white/10 text-white/25 bg-white/[0.02]' : TONE[tone]
                   }`}
                   style={tone === 'correct' ? { boxShadow: '0 0 10px rgba(227,181,83,0.35)' } : undefined}
                 >
-                  {ch}
+                  {label}
                 </button>
               );
             })}
@@ -113,15 +121,18 @@ export default function GameKeyboard({
               type="button"
               onClick={onShift}
               disabled={disabled}
-              aria-label="Shift"
-              aria-pressed={shiftActive}
-              className={`flex-1 flex items-center justify-center rounded-2xl py-3 border cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed ${
-                shiftActive
+              aria-label={`Letter case: ${CASE_LABEL[caseMode]}`}
+              aria-pressed={caseMode !== 'lower'}
+              className={`flex-[1.3] flex items-center justify-center gap-1 rounded-2xl py-3 border text-[12px] font-bold tracking-[0.04em] cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed ${
+                caseMode === 'caps'
                   ? 'border-[#e3b553] bg-[#e3b553] text-[#0a0a0b]'
-                  : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
+                  : caseMode === 'once'
+                    ? 'border-[#e3b553] bg-[#e3b553]/15 text-[#e3b553]'
+                    : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
               }`}
             >
-              <ArrowBigUp className="w-4 h-4" />
+              {caseMode === 'caps' ? <ArrowBigUpDash className="w-4 h-4" /> : <ArrowBigUp className="w-4 h-4" />}
+              {CASE_LABEL[caseMode]}
             </button>
           )}
           {onDelete && (
