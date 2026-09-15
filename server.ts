@@ -88,8 +88,9 @@ app.get("/api/config", (req, res) => {
 
 // AI LEX chat endpoint — a conversational English-learning tutor.
 app.post("/api/chat", async (req, res) => {
-  const { messages } = req.body as {
+  const { messages, mode } = req.body as {
     messages?: { role: "user" | "assistant"; content: string }[];
+    mode?: "speaking";
   };
 
   if (!Array.isArray(messages) || messages.length === 0) {
@@ -105,7 +106,14 @@ app.post("/api/chat", async (req, res) => {
       "give example sentences, and hold simple conversations to build fluency. " +
       "Keep replies concise (2-5 sentences). When the student writes in Turkish, you may briefly answer in " +
       "Turkish but always steer them back to practicing English. When you correct an error, show the corrected " +
-      "sentence clearly. Be positive and motivating.";
+      "sentence clearly. Be positive and motivating." +
+      // AI Speaking: the reply is read aloud and the student answers by voice.
+      (mode === "speaking"
+        ? " This is a SPOKEN conversation: your reply will be read aloud. Answer in English only, in 1-3 short, " +
+          "natural spoken sentences. No markdown, lists, emojis or symbols. If the student made a mistake, " +
+          "model the correct phrase naturally in your answer instead of explaining grammar. " +
+          "Always end with one simple question that keeps the conversation going."
+        : "");
 
     // Gemini expects a `contents` array with role 'user' | 'model'.
     const contents = messages.map((m) => ({
