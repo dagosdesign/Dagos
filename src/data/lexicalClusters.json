@@ -9,12 +9,15 @@
   "words": [
    "look",
    "watch",
+   "see",
    "view",
    "stare",
-   "gaze",
-   "glance"
+   "gaze"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx007",
+   "lx008"
+  ]
  },
  {
   "id": "lx002",
@@ -36,72 +39,154 @@
  {
   "id": "lx003",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 21,
+  "cefr": "A2",
+  "level": 15,
   "domain": "perception",
-  "meaning": "verbs that mean to press or make physical contact with something using your hands",
+  "meaning": "verbs that mean to try to find something by looking carefully",
   "words": [
-   "handle",
-   "stroke",
-   "tap",
-   "pat"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx004",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 32,
-  "domain": "perception",
-  "meaning": "verbs that mean to show, reveal, or make something visible or known",
-  "words": [
-   "reveal",
-   "display",
-   "exhibit",
-   "expose",
-   "manifest",
-   "disclose",
-   "uncover"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx005",
-  "pos": "verb",
-  "cefr": "A1",
-  "level": 8,
-  "domain": "communication",
-  "meaning": "verbs that mean to make a loud sound with your voice",
-  "words": [
-   "shout",
-   "scream",
-   "yell",
-   "cheer"
+   "search",
+   "seek",
+   "hunt",
+   "scan"
   ],
   "conflicts": [
    "lx009"
   ]
  },
  {
+  "id": "lx004",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "perception",
+  "meaning": "verbs that mean to make a short, sharp, or sudden sound by hitting something",
+  "words": [
+   "knock",
+   "clap",
+   "click",
+   "tap",
+   "bang"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx005",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "perception",
+  "meaning": "verbs that mean to produce music or sing using your voice",
+  "words": [
+   "sing",
+   "hum",
+   "chant",
+   "croon"
+  ],
+  "conflicts": []
+ },
+ {
   "id": "lx006",
   "pos": "verb",
-  "cefr": "A1",
-  "level": 2,
-  "domain": "communication",
-  "meaning": "verbs that mean to ask for information or request something",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "perception",
+  "meaning": "verbs that mean to produce a low, soft, continuous sound",
   "words": [
-   "ask",
-   "beg",
-   "request",
-   "demand"
+   "murmur",
+   "hiss",
+   "rustle",
+   "buzz"
   ],
   "conflicts": [
-   "lx011"
+   "lx010"
   ]
  },
  {
   "id": "lx007",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "perception",
+  "meaning": "verbs that mean to look at someone or something very quickly, briefly, or secretly",
+  "words": [
+   "glimpse",
+   "peek",
+   "peep",
+   "spy"
+  ],
+  "conflicts": [
+   "lx001"
+  ]
+ },
+ {
+  "id": "lx008",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "perception",
+  "meaning": "verbs that mean to notice, see, or observe someone or something",
+  "words": [
+   "notice",
+   "observe",
+   "witness",
+   "detect"
+  ],
+  "conflicts": [
+   "lx001"
+  ]
+ },
+ {
+  "id": "lx009",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "perception",
+  "meaning": "verbs that mean to search thoroughly or rummage through a place to find something",
+  "words": [
+   "rummage",
+   "ransack",
+   "ferret",
+   "rifle"
+  ],
+  "conflicts": [
+   "lx003"
+  ]
+ },
+ {
+  "id": "lx010",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "perception",
+  "meaning": "verbs that mean to make a continuous, low, humming or vibrating sound",
+  "words": [
+   "drone",
+   "purr",
+   "whir",
+   "thrum"
+  ],
+  "conflicts": [
+   "lx006"
+  ]
+ },
+ {
+  "id": "lx011",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "perception",
+  "meaning": "verbs that mean to thoroughly wet, soak, or saturate something with liquid",
+  "words": [
+   "drench",
+   "saturate",
+   "steep",
+   "douse",
+   "flood"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx012",
   "pos": "verb",
   "cefr": "A2",
   "level": 11,
@@ -117,22 +202,121 @@
   "conflicts": []
  },
  {
-  "id": "lx008",
+  "id": "lx013",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 35,
+  "cefr": "A2",
+  "level": 15,
   "domain": "communication",
-  "meaning": "verbs that mean to make something clear, plain, or easy to understand",
+  "meaning": "verbs that mean to describe, define, or express something in words",
   "words": [
-   "clarify",
-   "illustrate",
-   "elucidate",
-   "simplify"
+   "describe",
+   "report",
+   "define",
+   "detail",
+   "outline"
+  ],
+  "conflicts": [
+   "lx029"
+  ]
+ },
+ {
+  "id": "lx014",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "communication",
+  "meaning": "verbs that mean to give a name, title, or label to someone or something",
+  "words": [
+   "name",
+   "term",
+   "title",
+   "label",
+   "tag"
   ],
   "conflicts": []
  },
  {
-  "id": "lx009",
+  "id": "lx015",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "communication",
+  "meaning": "verbs that mean to make something clear or easy to understand by explaining or showing",
+  "words": [
+   "clarify",
+   "demonstrate",
+   "illustrate",
+   "simplify"
+  ],
+  "conflicts": [
+   "lx017",
+   "lx027"
+  ]
+ },
+ {
+  "id": "lx016",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "communication",
+  "meaning": "verbs that mean to ask questions in order to get information",
+  "words": [
+   "inquire",
+   "interview",
+   "quiz",
+   "interrogate"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx017",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "communication",
+  "meaning": "verbs that mean to show, display, or present something to be seen by others",
+  "words": [
+   "display",
+   "exhibit",
+   "showcase",
+   "feature"
+  ],
+  "conflicts": [
+   "lx015"
+  ]
+ },
+ {
+  "id": "lx018",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "communication",
+  "meaning": "verbs that mean to state or declare something as a fact",
+  "words": [
+   "assert",
+   "claim",
+   "maintain",
+   "insist"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx019",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "communication",
+  "meaning": "verbs that mean to speak or make vocal sounds in a quiet, hesitant, or indistinct way",
+  "words": [
+   "mutter",
+   "mumble",
+   "stammer",
+   "stutter"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx020",
   "pos": "verb",
   "cefr": "B2",
   "level": 31,
@@ -145,20 +329,84 @@
    "screech"
   ],
   "conflicts": [
-   "lx005"
+   "lx026"
   ]
  },
  {
-  "id": "lx010",
+  "id": "lx021",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "communication",
+  "meaning": "verbs that mean to ask for something in an earnest, urgent, or begging manner",
+  "words": [
+   "plead",
+   "implore",
+   "entreat",
+   "beseech"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx022",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "communication",
+  "meaning": "verbs that mean to suggest, hint, or express something in an indirect or subtle way",
+  "words": [
+   "imply",
+   "hint",
+   "intimate",
+   "insinuate",
+   "allude"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx023",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "communication",
+  "meaning": "verbs that mean to talk or discuss something with others to exchange opinions or reach a decision",
+  "words": [
+   "debate",
+   "consult",
+   "confer",
+   "deliberate",
+   "negotiate"
+  ],
+  "conflicts": [
+   "lx024"
+  ]
+ },
+ {
+  "id": "lx024",
   "pos": "verb",
   "cefr": "C1",
-  "level": 41,
+  "level": 42,
+  "domain": "communication",
+  "meaning": "verbs that mean to argue, dispute, or quarrel angrily over trivial matters",
+  "words": [
+   "bicker",
+   "wrangle",
+   "squabble",
+   "quarrel"
+  ],
+  "conflicts": [
+   "lx023"
+  ]
+ },
+ {
+  "id": "lx025",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 42,
   "domain": "communication",
   "meaning": "verbs that mean to talk rapidly, continuously, and about trivial matters",
   "words": [
    "prattle",
-   "babble",
-   "chatter",
    "gabble",
    "blather",
    "jabber"
@@ -166,58 +414,76 @@
   "conflicts": []
  },
  {
-  "id": "lx011",
+  "id": "lx026",
   "pos": "verb",
   "cefr": "C1",
-  "level": 48,
+  "level": 45,
   "domain": "communication",
-  "meaning": "verbs that mean to demand, beg, or plead with someone urgently or anxiously",
+  "meaning": "verbs that mean to speak or shout in a loud, angry, or bombastic manner",
   "words": [
-   "implore",
-   "beseech",
-   "entreat",
-   "plead",
-   "importune",
-   "supplicate"
+   "rant",
+   "rave",
+   "bluster",
+   "harangue",
+   "declaim",
+   "clamor"
   ],
   "conflicts": [
-   "lx006"
+   "lx020"
   ]
  },
  {
-  "id": "lx012",
+  "id": "lx027",
   "pos": "verb",
   "cefr": "C1",
-  "level": 44,
+  "level": 42,
   "domain": "communication",
-  "meaning": "verbs that mean to officially assert, declare, or state something to be true",
+  "meaning": "verbs that mean to explain, clarify, or make something clear and understandable",
   "words": [
-   "assert",
-   "affirm",
-   "proclaim",
-   "aver",
-   "profess",
-   "contend"
+   "elucidate",
+   "expound",
+   "demystify",
+   "explicate"
+  ],
+  "conflicts": [
+   "lx015"
+  ]
+ },
+ {
+  "id": "lx028",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 42,
+  "domain": "communication",
+  "meaning": "verbs that mean to signal or direct someone using hand or body movements",
+  "words": [
+   "gesture",
+   "gesticulate",
+   "motion",
+   "beckon"
   ],
   "conflicts": []
  },
  {
-  "id": "lx013",
+  "id": "lx029",
   "pos": "verb",
   "cefr": "C1",
-  "level": 44,
+  "level": 42,
   "domain": "communication",
-  "meaning": "verbs that mean to speak or boast proudly and self-satisfyingly about oneself",
+  "meaning": "verbs that mean to describe, portray, or represent something in words, art, or a performance",
   "words": [
-   "boast",
-   "brag",
-   "vaunt",
-   "crow"
+   "depict",
+   "portray",
+   "delineate",
+   "characterize",
+   "represent"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx013"
+  ]
  },
  {
-  "id": "lx014",
+  "id": "lx030",
   "pos": "verb",
   "cefr": "A1",
   "level": 5,
@@ -233,10 +499,10 @@
   "conflicts": []
  },
  {
-  "id": "lx015",
+  "id": "lx031",
   "pos": "verb",
   "cefr": "A1",
-  "level": 8,
+  "level": 7,
   "domain": "movement",
   "meaning": "verbs that mean to jump or move upwards off the ground",
   "words": [
@@ -248,22 +514,7 @@
   "conflicts": []
  },
  {
-  "id": "lx016",
-  "pos": "verb",
-  "cefr": "A1",
-  "level": 1,
-  "domain": "movement",
-  "meaning": "verbs that mean to hold, touch, or carry something with your hands",
-  "words": [
-   "hold",
-   "catch",
-   "grab",
-   "carry"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx017",
+  "id": "lx032",
   "pos": "verb",
   "cefr": "A1",
   "level": 1,
@@ -275,10 +526,12 @@
    "place",
    "set"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx045"
+  ]
  },
  {
-  "id": "lx018",
+  "id": "lx033",
   "pos": "verb",
   "cefr": "A1",
   "level": 5,
@@ -293,7 +546,7 @@
   "conflicts": []
  },
  {
-  "id": "lx019",
+  "id": "lx034",
   "pos": "verb",
   "cefr": "A1",
   "level": 2,
@@ -307,14 +560,14 @@
    "cycle"
   ],
   "conflicts": [
-   "lx020"
+   "lx041"
   ]
  },
  {
-  "id": "lx020",
+  "id": "lx035",
   "pos": "verb",
   "cefr": "A2",
-  "level": 13,
+  "level": 12,
   "domain": "movement",
   "meaning": "verbs that mean to travel or move on or through water",
   "words": [
@@ -323,15 +576,13 @@
    "row",
    "surf"
   ],
-  "conflicts": [
-   "lx019"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx021",
+  "id": "lx036",
   "pos": "verb",
   "cefr": "A2",
-  "level": 14,
+  "level": 12,
   "domain": "movement",
   "meaning": "verbs that mean to move or flow as a liquid",
   "words": [
@@ -342,11 +593,12 @@
    "spill"
   ],
   "conflicts": [
-   "lx030"
+   "lx049",
+   "lx052"
   ]
  },
  {
-  "id": "lx022",
+  "id": "lx037",
   "pos": "verb",
   "cefr": "A2",
   "level": 11,
@@ -361,72 +613,136 @@
   "conflicts": []
  },
  {
-  "id": "lx023",
+  "id": "lx038",
   "pos": "verb",
   "cefr": "A2",
-  "level": 14,
+  "level": 12,
   "domain": "movement",
-  "meaning": "verbs that mean to shake or tremble slightly",
+  "meaning": "verbs that mean to move or change the position of your body or a body part",
   "words": [
-   "shake",
-   "shiver",
-   "tremble",
-   "vibrate"
+   "stretch",
+   "bend",
+   "turn",
+   "twist",
+   "lean",
+   "bow"
   ],
   "conflicts": []
  },
  {
-  "id": "lx024",
+  "id": "lx039",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 22,
+  "cefr": "A2",
+  "level": 12,
   "domain": "movement",
-  "meaning": "verbs that mean to travel, wander, or journey from place to place",
+  "meaning": "verbs  that mean to move in a circle or spin around a central point",
   "words": [
-   "journey",
-   "roam",
+   "spin",
+   "rotate",
+   "revolve",
+   "circle"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx040",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "movement",
+  "meaning": "verbs that mean to lose one's balance, slip, or fall down",
+  "words": [
+   "trip",
+   "stumble",
+   "tumble",
+   "collapse"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx041",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "movement",
+  "meaning": "verbs that mean to travel, visit, or go on a journey to different places",
+  "words": [
    "tour",
-   "trek",
-   "voyage"
+   "journey",
+   "voyage",
+   "cruise"
   ],
   "conflicts": [
-   "lx031"
+   "lx034"
   ]
  },
  {
-  "id": "lx025",
+  "id": "lx042",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "movement",
+  "meaning": "verbs that mean to open, unlock, or undo something that is closed, folded, or fastened",
+  "words": [
+   "unlock",
+   "unfold",
+   "unwrap",
+   "uncover",
+   "untie"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx043",
   "pos": "verb",
   "cefr": "B1",
-  "level": 23,
+  "level": 28,
   "domain": "movement",
-  "meaning": "verbs that mean to shape or force something into a curve or angle",
+  "meaning": "verbs that mean to walk with difficulty or in an unsteady way",
   "words": [
-   "bend",
-   "curve",
-   "twist",
-   "fold",
-   "bow",
-   "arch"
+   "limp",
+   "hobble",
+   "stagger",
+   "shuffle",
+   "waddle",
+   "lurch"
   ],
   "conflicts": []
  },
  {
-  "id": "lx026",
+  "id": "lx044",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 39,
+  "cefr": "B1",
+  "level": 24,
   "domain": "movement",
-  "meaning": "verbs that mean to walk in a heavy, slow, or purposeful manner",
+  "meaning": "verbs that mean to move quietly and slowly, especially to avoid being seen or heard",
   "words": [
-   "trudge",
-   "plod",
-   "stomp",
-   "stride"
+   "sneak",
+   "creep",
+   "tiptoe",
+   "prowl"
   ],
   "conflicts": []
  },
  {
-  "id": "lx027",
+  "id": "lx045",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "movement",
+  "meaning": "verbs that mean to move something from one place to another",
+  "words": [
+   "transfer",
+   "shift",
+   "convey",
+   "relocate"
+  ],
+  "conflicts": [
+   "lx032"
+  ]
+ },
+ {
+  "id": "lx046",
   "pos": "verb",
   "cefr": "B2",
   "level": 36,
@@ -436,179 +752,198 @@
    "scatter",
    "disperse",
    "strew",
-   "spread",
    "distribute",
-   "sow",
    "sprinkle"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx050"
+  ]
  },
  {
-  "id": "lx028",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 36,
-  "domain": "movement",
-  "meaning": "verbs that mean to move quietly, slowly, or stealthily to avoid being seen or heard",
-  "words": [
-   "creep",
-   "tiptoe",
-   "sneak",
-   "prowl",
-   "slink",
-   "stalk"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx029",
+  "id": "lx047",
   "pos": "verb",
   "cefr": "B2",
   "level": 32,
   "domain": "movement",
-  "meaning": "verbs that mean to turn, spin, or rotate rapidly around a point",
+  "meaning": "verbs that mean to come together or gather in one place",
   "words": [
-   "spin",
-   "rotate",
-   "revolve",
-   "twirl",
-   "whirl",
-   "swirl"
+   "congregate",
+   "convene",
+   "rally",
+   "flock"
   ],
   "conflicts": []
  },
  {
-  "id": "lx030",
+  "id": "lx048",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "movement",
+  "meaning": "verbs that mean to walk, travel, or move about aimlessly or without a fixed destination",
+  "words": [
+   "roam",
+   "rove",
+   "ramble",
+   "meander",
+   "stray"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx049",
   "pos": "verb",
   "cefr": "C1",
-  "level": 41,
+  "level": 42,
   "domain": "movement",
   "meaning": "verbs that mean to flow, pour, or stream out rapidly in large quantities",
   "words": [
    "gush",
    "spout",
-   "surge",
    "spew",
    "cascade",
    "stream"
   ],
   "conflicts": [
-   "lx021"
+   "lx036"
   ]
  },
  {
-  "id": "lx031",
+  "id": "lx050",
   "pos": "verb",
   "cefr": "C1",
-  "level": 41,
+  "level": 42,
   "domain": "movement",
-  "meaning": "verbs that mean to wander, roam, or travel around without a fixed destination",
+  "meaning": "verbs that mean to scatter, distribute, or spread widely in various directions",
   "words": [
-   "meander",
-   "ramble",
-   "rove",
-   "stray"
+   "disseminate",
+   "diffuse",
+   "propagate",
+   "broadcast"
   ],
   "conflicts": [
-   "lx024"
+   "lx046"
   ]
  },
  {
-  "id": "lx032",
+  "id": "lx051",
   "pos": "verb",
   "cefr": "C1",
-  "level": 44,
+  "level": 42,
   "domain": "movement",
-  "meaning": "verbs that mean to gather or bring together a group of people for a specific purpose",
+  "meaning": "verbs that mean to completely cover, swallow up, or submerge something",
   "words": [
-   "convene",
-   "muster",
-   "congregate",
-   "assemble",
-   "mobilize"
+   "engulf",
+   "submerge",
+   "overwhelm",
+   "inundate",
+   "deluge",
+   "immerse"
   ],
   "conflicts": []
  },
  {
-  "id": "lx033",
+  "id": "lx052",
   "pos": "verb",
-  "cefr": "A1",
-  "level": 5,
-  "domain": "cognition",
-  "meaning": "verbs that mean to choose, decide, or select something",
+  "cefr": "C1",
+  "level": 42,
+  "domain": "movement",
+  "meaning": "verbs that mean to flow, fall, or pass slowly in small drops or a thin stream",
   "words": [
-   "decide",
-   "pick",
-   "select",
-   "vote"
+   "trickle",
+   "seep",
+   "ooze",
+   "percolate"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx036"
+  ]
  },
  {
-  "id": "lx034",
+  "id": "lx053",
   "pos": "verb",
-  "cefr": "A1",
-  "level": 9,
+  "cefr": "A2",
+  "level": 18,
   "domain": "cognition",
-  "meaning": "verbs that mean to remember, recall, or keep information in your mind",
+  "meaning": "verbs that mean to form an opinion or make a judgment without certain knowledge",
   "words": [
-   "remember",
-   "recall",
-   "memorize",
-   "retain"
+   "estimate",
+   "judge",
+   "figure",
+   "reckon"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx058"
+  ]
  },
  {
-  "id": "lx035",
+  "id": "lx054",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 27,
+  "cefr": "A2",
+  "level": 12,
   "domain": "cognition",
-  "meaning": "verbs that mean to understand or realize the meaning of something",
+  "meaning": "verbs that mean to understand, realize, or grasp a meaning or concept",
   "words": [
    "understand",
-   "grasp",
    "realize",
    "follow",
-   "register"
+   "grasp",
+   "comprehend"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx061",
+   "lx060"
+  ]
  },
  {
-  "id": "lx036",
+  "id": "lx055",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 36,
+  "cefr": "A2",
+  "level": 19,
   "domain": "cognition",
-  "meaning": "verbs that mean to say, expect, or estimate what will happen in the future",
+  "meaning": "verbs that mean to expect, predict, or wait for something to happen in the future",
   "words": [
+   "expect",
+   "anticipate",
+   "await",
    "predict",
-   "forecast",
-   "foresee",
-   "foretell",
-   "project"
+   "forecast"
   ],
   "conflicts": []
  },
  {
-  "id": "lx037",
+  "id": "lx056",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 32,
+  "cefr": "B1",
+  "level": 28,
   "domain": "cognition",
-  "meaning": "verbs that mean to think deeply, carefully, or quietly about something",
+  "meaning": "verbs that mean to think about something carefully and deeply",
   "words": [
    "ponder",
-   "contemplate",
    "reflect",
-   "muse",
+   "consider",
+   "contemplate",
    "meditate"
   ],
   "conflicts": []
  },
  {
-  "id": "lx038",
+  "id": "lx057",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "cognition",
+  "meaning": "verbs that mean to decide or make a firm choice about something",
+  "words": [
+   "determine",
+   "elect",
+   "opt",
+   "resolve"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx058",
   "pos": "verb",
   "cefr": "B2",
   "level": 36,
@@ -616,51 +951,70 @@
   "meaning": "verbs that mean to form an opinion or guess about something without having all the facts",
   "words": [
    "speculate",
-   "assume",
    "presume",
    "theorize",
    "hypothesize"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx053"
+  ]
  },
  {
-  "id": "lx039",
+  "id": "lx059",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 45,
+  "cefr": "B2",
+  "level": 39,
   "domain": "cognition",
-  "meaning": "verbs that mean to absorb, take in, or fully integrate information, ideas, or culture",
+  "meaning": "verbs that mean to puzzle, confuse, or thoroughly mystify someone's mind",
   "words": [
-   "absorb",
-   "imbibe",
-   "internalize",
-   "incorporate"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx040",
-  "pos": "verb",
-  "cefr": "C1",
-  "level": 45,
-  "domain": "cognition",
-  "meaning": "verbs that mean to puzzle, confuse, or bewilder someone completely",
-  "words": [
-   "perplex",
    "baffle",
+   "perplex",
    "mystify",
-   "confound",
-   "bewilder",
-   "nonplus",
-   "bemuse"
+   "confound"
   ],
   "conflicts": []
  },
  {
-  "id": "lx041",
+  "id": "lx060",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "cognition",
+  "meaning": "verbs that mean to solve, decipher, or figure out something difficult or mysterious",
+  "words": [
+   "decipher",
+   "decode",
+   "unravel",
+   "disentangle"
+  ],
+  "conflicts": [
+   "lx054",
+   "lx061"
+  ]
+ },
+ {
+  "id": "lx061",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "cognition",
+  "meaning": "verbs that mean to understand, comprehend, or grasp a difficult concept or idea",
+  "words": [
+   "fathom",
+   "apprehend",
+   "digest",
+   "assimilate"
+  ],
+  "conflicts": [
+   "lx054",
+   "lx060"
+  ]
+ },
+ {
+  "id": "lx062",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "emotion-positive",
   "meaning": "verbs that mean to like, love, or enjoy someone or something",
   "words": [
@@ -670,13 +1024,12 @@
    "adore"
   ],
   "conflicts": [
-   "lx042",
-   "lx044",
-   "lx046"
+   "lx065",
+   "lx067"
   ]
  },
  {
-  "id": "lx042",
+  "id": "lx063",
   "pos": "verb",
   "cefr": "A1",
   "level": 1,
@@ -689,12 +1042,11 @@
    "desire"
   ],
   "conflicts": [
-   "lx041",
-   "lx048"
+   "lx070"
   ]
  },
  {
-  "id": "lx043",
+  "id": "lx064",
   "pos": "verb",
   "cefr": "A1",
   "level": 1,
@@ -710,7 +1062,7 @@
   "conflicts": []
  },
  {
-  "id": "lx044",
+  "id": "lx065",
   "pos": "verb",
   "cefr": "A2",
   "level": 20,
@@ -724,28 +1076,49 @@
    "interest"
   ],
   "conflicts": [
-   "lx046",
-   "lx047",
-   "lx041"
+   "lx068",
+   "lx067",
+   "lx071",
+   "lx062"
   ]
  },
  {
-  "id": "lx045",
+  "id": "lx066",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 23,
+  "cefr": "A2",
+  "level": 11,
   "domain": "emotion-positive",
-  "meaning": "verbs that mean to surprise, shock, or amaze someone",
+  "meaning": "verbs that mean to show joy, celebrate, or have fun at a social event",
   "words": [
-   "amaze",
-   "astonish",
-   "astound",
-   "startle"
+   "celebrate",
+   "party",
+   "feast",
+   "toast"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx072"
+  ]
  },
  {
-  "id": "lx046",
+  "id": "lx067",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 28,
+  "domain": "emotion-positive",
+  "meaning": "verbs that mean to attract, charm, or interest someone greatly",
+  "words": [
+   "attract",
+   "charm",
+   "fascinate",
+   "appeal"
+  ],
+  "conflicts": [
+   "lx065",
+   "lx062"
+  ]
+ },
+ {
+  "id": "lx068",
   "pos": "verb",
   "cefr": "B2",
   "level": 32,
@@ -758,49 +1131,63 @@
    "content"
   ],
   "conflicts": [
-   "lx044",
-   "lx041"
+   "lx065"
   ]
  },
  {
-  "id": "lx047",
+  "id": "lx069",
   "pos": "verb",
   "cefr": "B2",
   "level": 36,
   "domain": "emotion-positive",
   "meaning": "verbs that mean to soothe, calm, or pacify someone or their feelings",
   "words": [
-   "soothe",
-   "calm",
    "pacify",
    "appease",
-   "placate"
+   "placate",
+   "quiet"
   ],
   "conflicts": [
-   "lx044"
+   "lx071"
   ]
  },
  {
-  "id": "lx048",
+  "id": "lx070",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 41,
+  "cefr": "B2",
+  "level": 32,
   "domain": "emotion-positive",
-  "meaning": "verbs that mean to long for, crave, or desire something strongly",
+  "meaning": "verbs that mean to have a very strong desire, wish, or craving for something",
   "words": [
-   "yearn",
    "crave",
-   "long",
-   "pine",
-   "hanker",
-   "lust"
+   "covet",
+   "yearn",
+   "long"
   ],
   "conflicts": [
-   "lx042"
+   "lx063"
   ]
  },
  {
-  "id": "lx049",
+  "id": "lx071",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "emotion-positive",
+  "meaning": "verbs that mean to comfort, cheer, or give hope to someone who is sad or discouraged",
+  "words": [
+   "console",
+   "reassure",
+   "hearten",
+   "uplift"
+  ],
+  "conflicts": [
+   "lx069",
+   "lx065"
+  ]
+ },
+ {
+  "id": "lx072",
   "pos": "verb",
   "cefr": "C1",
   "level": 45,
@@ -813,29 +1200,33 @@
    "glory",
    "jubilate"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx066"
+  ]
  },
  {
-  "id": "lx050",
+  "id": "lx073",
   "pos": "verb",
   "cefr": "A1",
-  "level": 6,
+  "level": 5,
   "domain": "giving-taking",
   "meaning": "verbs that mean to give, provide, or share something with others",
   "words": [
    "give",
    "offer",
-   "provide",
-   "share"
+   "share",
+   "pass"
   ],
   "conflicts": [
-   "lx055",
-   "lx057",
-   "lx053"
+   "lx080",
+   "lx083",
+   "lx087",
+   "lx089",
+   "lx079"
   ]
  },
  {
-  "id": "lx051",
+  "id": "lx074",
   "pos": "verb",
   "cefr": "A1",
   "level": 1,
@@ -849,32 +1240,35 @@
    "accept"
   ],
   "conflicts": [
-   "lx054",
-   "lx052"
+   "lx078",
+   "lx075",
+   "lx086"
   ]
  },
  {
-  "id": "lx052",
-  "pos": "verb",
-  "cefr": "A1",
-  "level": 6,
-  "domain": "giving-taking",
-  "meaning": "verbs that mean to find, discover, or locate something",
-  "words": [
-   "discover",
-   "locate",
-   "spot",
-   "trace"
-  ],
-  "conflicts": [
-   "lx051"
-  ]
- },
- {
-  "id": "lx053",
+  "id": "lx075",
   "pos": "verb",
   "cefr": "A2",
-  "level": 14,
+  "level": 12,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to take something that does not belong to you without permission",
+  "words": [
+   "steal",
+   "rob",
+   "snatch",
+   "pocket"
+  ],
+  "conflicts": [
+   "lx074",
+   "lx084",
+   "lx088"
+  ]
+ },
+ {
+  "id": "lx076",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
   "domain": "giving-taking",
   "meaning": "verbs that mean to bring, take, or carry something to a different place",
   "words": [
@@ -884,29 +1278,111 @@
    "transport"
   ],
   "conflicts": [
-   "lx050"
+   "lx079"
   ]
  },
  {
-  "id": "lx054",
+  "id": "lx077",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 21,
+  "cefr": "A2",
+  "level": 15,
   "domain": "giving-taking",
-  "meaning": "verbs that mean to buy, purchase, or obtain goods or services",
+  "meaning": "verbs that mean to temporarily give, receive, or pay to use something that must be returned",
   "words": [
-   "purchase",
-   "order",
-   "acquire",
+   "lend",
+   "borrow",
+   "rent",
+   "hire",
+   "loan"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx078",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to get, receive, or acquire something",
+  "words": [
    "obtain",
-   "secure"
+   "gain",
+   "acquire",
+   "earn"
   ],
   "conflicts": [
-   "lx051"
+   "lx074"
   ]
  },
  {
-  "id": "lx055",
+  "id": "lx079",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 12,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to send letters, packages, or goods to a destination",
+  "words": [
+   "mail",
+   "post",
+   "ship",
+   "forward"
+  ],
+  "conflicts": [
+   "lx073",
+   "lx076"
+  ]
+ },
+ {
+  "id": "lx080",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to provide, supply, or equip someone with resources",
+  "words": [
+   "supply",
+   "equip",
+   "furnish",
+   "issue"
+  ],
+  "conflicts": [
+   "lx073",
+   "lx083"
+  ]
+ },
+ {
+  "id": "lx081",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to provide money or financial support for something",
+  "words": [
+   "fund",
+   "finance",
+   "sponsor",
+   "back",
+   "subsidize"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx082",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to hold something or someone tightly in your hands or arms",
+  "words": [
+   "grip",
+   "clutch",
+   "clasp",
+   "embrace"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx083",
   "pos": "verb",
   "cefr": "B2",
   "level": 32,
@@ -919,11 +1395,12 @@
    "allot"
   ],
   "conflicts": [
-   "lx050"
+   "lx073",
+   "lx080"
   ]
  },
  {
-  "id": "lx056",
+  "id": "lx084",
   "pos": "verb",
   "cefr": "B2",
   "level": 32,
@@ -935,52 +1412,121 @@
    "loot",
    "plunder"
   ],
-  "conflicts": []
- },
- {
-  "id": "lx057",
-  "pos": "verb",
-  "cefr": "C1",
-  "level": 49,
-  "domain": "giving-taking",
-  "meaning": "verbs that mean to formally give up, surrender, or hand over a right, power, or possession",
-  "words": [
-   "relinquish",
-   "cede",
-   "surrender",
-   "renounce",
-   "yield",
-   "abdicate",
-   "waive"
-  ],
   "conflicts": [
-   "lx050"
+   "lx075"
   ]
  },
  {
-  "id": "lx058",
+  "id": "lx085",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to give up or formally surrender a position, right, or claim",
+  "words": [
+   "renounce",
+   "surrender",
+   "waive",
+   "relinquish",
+   "forfeit"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx086",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to take away, remove, or subtract something from a larger amount or whole",
+  "words": [
+   "subtract",
+   "deduct",
+   "withdraw",
+   "extract"
+  ],
+  "conflicts": [
+   "lx074"
+  ]
+ },
+ {
+  "id": "lx087",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to give something, especially as a gift, donation, or contribution",
+  "words": [
+   "donate",
+   "contribute",
+   "grant",
+   "award",
+   "gift"
+  ],
+  "conflicts": [
+   "lx073",
+   "lx089"
+  ]
+ },
+ {
+  "id": "lx088",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to take, seize, or confiscate something by force or authority",
+  "words": [
+   "usurp",
+   "confiscate",
+   "commandeer",
+   "expropriate"
+  ],
+  "conflicts": [
+   "lx075"
+  ]
+ },
+ {
+  "id": "lx089",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "giving-taking",
+  "meaning": "verbs that mean to formally present, bestow, or offer something to someone",
+  "words": [
+   "bestow",
+   "endow",
+   "bequeath",
+   "proffer"
+  ],
+  "conflicts": [
+   "lx073",
+   "lx087"
+  ]
+ },
+ {
+  "id": "lx090",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "creation",
   "meaning": "verbs that mean to make, build, or produce something",
   "words": [
    "make",
    "build",
    "create",
-   "produce",
-   "form",
-   "shape"
+   "produce"
   ],
   "conflicts": [
-   "lx061"
+   "lx092",
+   "lx095",
+   "lx098"
   ]
  },
  {
-  "id": "lx059",
+  "id": "lx091",
   "pos": "verb",
   "cefr": "A1",
-  "level": 3,
+  "level": 2,
   "domain": "creation",
   "meaning": "verbs that mean to cook or prepare food using heat",
   "words": [
@@ -994,10 +1540,28 @@
   "conflicts": []
  },
  {
-  "id": "lx060",
+  "id": "lx092",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "creation",
+  "meaning": "verbs that mean to give a particular physical form or shape to something",
+  "words": [
+   "model",
+   "mold",
+   "sculpt",
+   "fashion"
+  ],
+  "conflicts": [
+   "lx090",
+   "lx099"
+  ]
+ },
+ {
+  "id": "lx093",
   "pos": "verb",
   "cefr": "B1",
-  "level": 23,
+  "level": 21,
   "domain": "creation",
   "meaning": "verbs that mean to mix, blend, or combine different substances or elements together",
   "words": [
@@ -1009,29 +1573,115 @@
   "conflicts": []
  },
  {
-  "id": "lx061",
+  "id": "lx094",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 41,
+  "cefr": "B1",
+  "level": 22,
   "domain": "creation",
-  "meaning": "verbs that mean to invent, plan, or devise something in a clever or systematic way",
+  "meaning": "verbs that mean to make something different in some way",
   "words": [
-   "devise",
-   "formulate",
-   "concoct",
-   "contrive",
-   "orchestrate",
-   "engineer"
+   "alter",
+   "modify",
+   "vary",
+   "transform",
+   "convert",
+   "adjust"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx095",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "creation",
+  "meaning": "verbs that mean to plan, design, or blueprint for something",
+  "words": [
+   "draft",
+   "map",
+   "sketch",
+   "plot"
   ],
   "conflicts": [
-   "lx058"
+   "lx097",
+   "lx090"
   ]
  },
  {
-  "id": "lx062",
+  "id": "lx096",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "creation",
+  "meaning": "verbs  that mean to make an exact copy or reproduction of something",
+  "words": [
+   "replicate",
+   "clone",
+   "photocopy",
+   "reproduce"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx097",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 36,
+  "domain": "creation",
+  "meaning": "verbs that mean to invent, plan, or formulate a clever method, system, or story",
+  "words": [
+   "devise",
+   "formulate",
+   "conceive",
+   "invent",
+   "concoct"
+  ],
+  "conflicts": [
+   "lx095",
+   "lx098"
+  ]
+ },
+ {
+  "id": "lx098",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 33,
+  "domain": "creation",
+  "meaning": "verbs that mean to produce, generate, or bring something into existence",
+  "words": [
+   "generate",
+   "breed",
+   "spawn",
+   "originate"
+  ],
+  "conflicts": [
+   "lx090",
+   "lx097"
+  ]
+ },
+ {
+  "id": "lx099",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "creation",
+  "meaning": "verbs that mean to cut, carve, or shape a hard material like wood or stone",
+  "words": [
+   "chisel",
+   "whittle",
+   "engrave",
+   "etch",
+   "hew"
+  ],
+  "conflicts": [
+   "lx092"
+  ]
+ },
+ {
+  "id": "lx100",
   "pos": "verb",
   "cefr": "A1",
-  "level": 3,
+  "level": 2,
   "domain": "beginning-ending",
   "meaning": "verbs that mean to bring something to an end or stop",
   "words": [
@@ -1042,14 +1692,16 @@
    "complete"
   ],
   "conflicts": [
-   "lx064"
+   "lx103",
+   "lx104",
+   "lx105"
   ]
  },
  {
-  "id": "lx063",
+  "id": "lx101",
   "pos": "verb",
   "cefr": "A1",
-  "level": 6,
+  "level": 5,
   "domain": "beginning-ending",
   "meaning": "verbs that mean to start or begin an activity or event",
   "words": [
@@ -1059,10 +1711,70 @@
    "initiate",
    "commence"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx102"
+  ]
  },
  {
-  "id": "lx064",
+  "id": "lx102",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "beginning-ending",
+  "meaning": "verbs that mean to perform, do, or start an action again",
+  "words": [
+   "repeat",
+   "redo",
+   "replay",
+   "restart",
+   "retry",
+   "remake"
+  ],
+  "conflicts": [
+   "lx101"
+  ]
+ },
+ {
+  "id": "lx103",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "beginning-ending",
+  "meaning": "verbs that mean to temporarily stop or disrupt an ongoing action or process",
+  "words": [
+   "interrupt",
+   "disrupt",
+   "suspend",
+   "halt"
+  ],
+  "conflicts": [
+   "lx100",
+   "lx105"
+  ]
+ },
+ {
+  "id": "lx104",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "beginning-ending",
+  "meaning": "verbs that mean to cancel, abolish, or officially end a law, rule, or agreement",
+  "words": [
+   "cancel",
+   "abolish",
+   "repeal",
+   "revoke",
+   "annul",
+   "nullify",
+   "invalidate"
+  ],
+  "conflicts": [
+   "lx100",
+   "lx105"
+  ]
+ },
+ {
+  "id": "lx105",
   "pos": "verb",
   "cefr": "C1",
   "level": 41,
@@ -1071,20 +1783,21 @@
   "words": [
    "cease",
    "terminate",
-   "halt",
    "conclude",
    "discontinue",
    "desist"
   ],
   "conflicts": [
-   "lx062"
+   "lx100",
+   "lx103",
+   "lx104"
   ]
  },
  {
-  "id": "lx065",
+  "id": "lx106",
   "pos": "verb",
   "cefr": "A1",
-  "level": 6,
+  "level": 5,
   "domain": "work-study",
   "meaning": "verbs that mean to study, practice, or acquire knowledge",
   "words": [
@@ -1095,14 +1808,14 @@
    "review"
   ],
   "conflicts": [
-   "lx066"
+   "lx107"
   ]
  },
  {
-  "id": "lx066",
+  "id": "lx107",
   "pos": "verb",
   "cefr": "A1",
-  "level": 6,
+  "level": 5,
   "domain": "work-study",
   "meaning": "verbs that mean to teach or give instruction to someone",
   "words": [
@@ -1112,11 +1825,95 @@
    "tutor"
   ],
   "conflicts": [
-   "lx065"
+   "lx106"
   ]
  },
  {
-  "id": "lx067",
+  "id": "lx108",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "work-study",
+  "meaning": "verbs that mean to perform common household cleaning or organizing tasks",
+  "words": [
+   "dust",
+   "vacuum",
+   "mop",
+   "iron",
+   "fold"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx109",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "work-study",
+  "meaning": "verbs that mean to arrange or secure a place, service, or item in advance",
+  "words": [
+   "book",
+   "reserve",
+   "schedule",
+   "secure"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx110",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "work-study",
+  "meaning": "verbs that mean to grow plants or produce crops by farming",
+  "words": [
+   "plant",
+   "farm",
+   "harvest",
+   "cultivate",
+   "sow"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx111",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "work-study",
+  "meaning": "verbs that mean to use, employ, or apply something for a specific purpose",
+  "words": [
+   "use",
+   "employ",
+   "apply",
+   "utilize"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx112",
+  "pos": "verb",
+  "cefr": "A1",
+  "level": 8,
+  "domain": "damage",
+  "meaning": "verbs that mean to hurt, break, or damage something",
+  "words": [
+   "hurt",
+   "break",
+   "damage",
+   "injure"
+  ],
+  "conflicts": [
+   "lx113",
+   "lx115",
+   "lx116",
+   "lx118",
+   "lx123",
+   "lx122"
+  ]
+ },
+ {
+  "id": "lx113",
   "pos": "verb",
   "cefr": "A1",
   "level": 6,
@@ -1130,11 +1927,64 @@
    "carve"
   ],
   "conflicts": [
-   "lx072"
+   "lx116",
+   "lx112"
   ]
  },
  {
-  "id": "lx068",
+  "id": "lx114",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "damage",
+  "meaning": "verbs that mean to make something dirty, unhealthy, or ruined in quality",
+  "words": [
+   "pollute",
+   "dirty",
+   "spoil",
+   "poison",
+   "infect"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx115",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "damage",
+  "meaning": "verbs that mean to break, crush, or shatter something into pieces",
+  "words": [
+   "smash",
+   "crush",
+   "shatter",
+   "snap"
+  ],
+  "conflicts": [
+   "lx112"
+  ]
+ },
+ {
+  "id": "lx116",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "damage",
+  "meaning": "verbs that mean to cut, tear, or split something forcefully or violently",
+  "words": [
+   "rip",
+   "shred",
+   "slash",
+   "hack",
+   "slit"
+  ],
+  "conflicts": [
+   "lx113",
+   "lx112"
+  ]
+ },
+ {
+  "id": "lx117",
   "pos": "verb",
   "cefr": "B2",
   "level": 40,
@@ -1150,42 +2000,56 @@
   "conflicts": []
  },
  {
-  "id": "lx069",
+  "id": "lx118",
   "pos": "verb",
   "cefr": "B2",
-  "level": 32,
+  "level": 33,
   "domain": "damage",
-  "meaning": "verbs that mean to make something dirty, impure, or polluted",
+  "meaning": "verbs that mean to severely damage, ruin, or completely destroy something",
   "words": [
-   "pollute",
-   "contaminate",
-   "soil",
-   "stain",
-   "taint",
-   "dirty"
+   "wreck",
+   "devastate",
+   "demolish",
+   "ravage"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx112",
+   "lx123"
+  ]
  },
  {
-  "id": "lx070",
+  "id": "lx119",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 49,
+  "cefr": "B2",
+  "level": 36,
   "domain": "damage",
-  "meaning": "verbs that mean to weaken, exhaust, or drain someone of strength or energy",
+  "meaning": "verbs that mean to twist, bend, or distort the shape or appearance of something out of its natural state",
   "words": [
-   "enervate",
-   "debilitate",
-   "exhaust",
-   "drain",
-   "sap",
-   "fatigue",
-   "weary"
+   "distort",
+   "warp",
+   "deform",
+   "contort"
   ],
   "conflicts": []
  },
  {
-  "id": "lx071",
+  "id": "lx120",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 36,
+  "domain": "damage",
+  "meaning": "verbs that mean to gradually weaken or damage something's strength or effectiveness",
+  "words": [
+   "undermine",
+   "impair",
+   "erode",
+   "sap",
+   "debilitate"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx121",
   "pos": "verb",
   "cefr": "C1",
   "level": 42,
@@ -1201,27 +2065,49 @@
   "conflicts": []
  },
  {
-  "id": "lx072",
+  "id": "lx122",
   "pos": "verb",
   "cefr": "C1",
-  "level": 45,
+  "level": 43,
   "domain": "damage",
-  "meaning": "verbs that mean to tear, cut, or pull something apart with great force",
+  "meaning": "verbs that mean to cause great physical or mental pain, suffering, or distress",
   "words": [
-   "rip",
-   "tear",
-   "rend",
-   "cleave"
+   "afflict",
+   "torment",
+   "torture",
+   "rack",
+   "plague"
   ],
   "conflicts": [
-   "lx067"
+   "lx112"
   ]
  },
  {
-  "id": "lx073",
+  "id": "lx123",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 48,
+  "domain": "damage",
+  "meaning": "verbs that mean to completely destroy, wipe out, or erase something",
+  "words": [
+   "obliterate",
+   "annihilate",
+   "eradicate",
+   "exterminate",
+   "expunge",
+   "efface",
+   "extirpate"
+  ],
+  "conflicts": [
+   "lx118",
+   "lx112"
+  ]
+ },
+ {
+  "id": "lx124",
   "pos": "verb",
   "cefr": "A2",
-  "level": 15,
+  "level": 13,
   "domain": "relationships",
   "meaning": "verbs that mean to fasten, join, or connect two or more things together",
   "words": [
@@ -1233,7 +2119,7 @@
   "conflicts": []
  },
  {
-  "id": "lx074",
+  "id": "lx125",
   "pos": "verb",
   "cefr": "B2",
   "level": 36,
@@ -1245,15 +2131,43 @@
    "excuse",
    "absolve"
   ],
-  "conflicts": [
-   "lx075"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx075",
+  "id": "lx126",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "relationships",
+  "meaning": "verbs that mean to happen at the same time, match exactly, or agree in timing and position",
+  "words": [
+   "coincide",
+   "overlap",
+   "align",
+   "synchronize"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx127",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 33,
+  "domain": "relationships",
+  "meaning": "verbs that mean to associate, interact, or mix socially with other people",
+  "words": [
+   "mingle",
+   "fraternize",
+   "associate",
+   "interact"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx128",
   "pos": "verb",
   "cefr": "C1",
-  "level": 49,
+  "level": 48,
   "domain": "relationships",
   "meaning": "verbs that mean to make peace, calm, or pacify someone who is angry or discontented",
   "words": [
@@ -1262,61 +2176,199 @@
    "propitiate",
    "mollify"
   ],
-  "conflicts": [
-   "lx074"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx076",
+  "id": "lx129",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 42,
-  "domain": "relationships",
-  "meaning": "verbs that mean to foster, nurture, or care for the growth and development of someone or something",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "safety-danger",
+  "meaning": "verbs that mean to live, dwell, or reside in a particular place",
   "words": [
-   "nurture",
-   "foster",
-   "cultivate",
-   "nourish"
+   "live",
+   "reside",
+   "dwell",
+   "inhabit"
   ],
   "conflicts": []
  },
  {
-  "id": "lx077",
+  "id": "lx130",
   "pos": "verb",
   "cefr": "B1",
-  "level": 23,
+  "level": 22,
   "domain": "safety-danger",
   "meaning": "verbs that mean to warn, alert, or notify someone of danger or information",
   "words": [
    "caution",
    "alert",
    "notify",
-   "alarm",
+   "signal",
    "inform"
   ],
   "conflicts": []
  },
  {
-  "id": "lx078",
+  "id": "lx131",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 24,
-  "domain": "decrease",
-  "meaning": "verbs that mean to become or make something smaller in size or amount",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "safety-danger",
+  "meaning": "verbs that mean to put someone or something in a dangerous, risky, or vulnerable situation",
   "words": [
-   "reduce",
-   "decrease",
-   "lessen",
-   "decline"
+   "imperil",
+   "jeopardize",
+   "compromise",
+   "hazard"
   ],
   "conflicts": []
  },
  {
-  "id": "lx079",
+  "id": "lx132",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "safety-danger",
+  "meaning": "verbs that mean to make something safe, stable, or firmly established",
+  "words": [
+   "anchor",
+   "fasten",
+   "stabilize",
+   "cement",
+   "fortify"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx133",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "decrease",
+  "meaning": "verbs that mean to make something cold or freeze it",
+  "words": [
+   "freeze",
+   "cool",
+   "chill",
+   "ice",
+   "refrigerate"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx134",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "decrease",
+  "meaning": "verbs that mean to make or become smaller, lower, or less in amount or intensity",
+  "words": [
+   "reduce",
+   "decrease",
+   "shrink",
+   "decline",
+   "lessen",
+   "diminish",
+   "contract"
+  ],
+  "conflicts": [
+   "lx135",
+   "lx136",
+   "lx137",
+   "lx139"
+  ]
+ },
+ {
+  "id": "lx135",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "decrease",
+  "meaning": "verbs that mean to reduce the value, price, or worth of something",
+  "words": [
+   "devalue",
+   "depreciate",
+   "cheapen",
+   "discount"
+  ],
+  "conflicts": [
+   "lx134",
+   "lx139"
+  ]
+ },
+ {
+  "id": "lx136",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 36,
+  "domain": "decrease",
+  "meaning": "verbs that mean to shorten or reduce the length or size of a written or spoken text",
+  "words": [
+   "shorten",
+   "abbreviate",
+   "abridge",
+   "condense"
+  ],
+  "conflicts": [
+   "lx134"
+  ]
+ },
+ {
+  "id": "lx137",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 43,
+  "domain": "decrease",
+  "meaning": "verbs that mean to gradually decrease, decline, or fade in strength, intensity, or amount",
+  "words": [
+   "dwindle",
+   "wane",
+   "subside",
+   "ebb"
+  ],
+  "conflicts": [
+   "lx134"
+  ]
+ },
+ {
+  "id": "lx138",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 45,
+  "domain": "decrease",
+  "meaning": "verbs that mean to decay, rot, or waste away organically",
+  "words": [
+   "decompose",
+   "wither",
+   "shrivel",
+   "molder"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx139",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 48,
+  "domain": "decrease",
+  "meaning": "verbs that mean to reduce, cut back, or restrict something, especially expenses, resources, or size",
+  "words": [
+   "curtail",
+   "retrench",
+   "dock",
+   "prune"
+  ],
+  "conflicts": [
+   "lx134",
+   "lx135"
+  ]
+ },
+ {
+  "id": "lx140",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "increase",
   "meaning": "verbs that mean to grow, rise, or make something larger",
   "words": [
@@ -1327,32 +2379,71 @@
    "expand"
   ],
   "conflicts": [
-   "lx080"
+   "lx141",
+   "lx142",
+   "lx143"
   ]
  },
  {
-  "id": "lx080",
+  "id": "lx141",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 45,
+  "cefr": "A2",
+  "level": 16,
   "domain": "increase",
-  "meaning": "verbs that mean to grow, multiply, or increase rapidly in number or size",
+  "meaning": "verbs that mean to grow, mature, or develop over time",
   "words": [
-   "proliferate",
-   "mushroom",
-   "snowball",
-   "burgeon",
-   "balloon"
+   "develop",
+   "age",
+   "mature",
+   "evolve"
   ],
   "conflicts": [
-   "lx079"
+   "lx140"
   ]
  },
  {
-  "id": "lx081",
+  "id": "lx142",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "increase",
+  "meaning": "verbs that mean to become larger in size, volume, or physical space",
+  "words": [
+   "swell",
+   "inflate",
+   "enlarge",
+   "widen"
+  ],
+  "conflicts": [
+   "lx140",
+   "lx143"
+  ]
+ },
+ {
+  "id": "lx143",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "increase",
+  "meaning": "verbs that mean to grow, increase, or multiply rapidly in size, number, or strength",
+  "words": [
+   "multiply",
+   "escalate",
+   "mushroom",
+   "snowball",
+   "surge",
+   "intensify"
+  ],
+  "conflicts": [
+   "lx140",
+   "lx142"
+  ]
+ },
+ {
+  "id": "lx144",
   "pos": "verb",
   "cefr": "A1",
-  "level": 3,
+  "level": 2,
   "domain": "improvement",
   "meaning": "verbs that mean to clean or wash something to make it tidy",
   "words": [
@@ -1362,49 +2453,65 @@
    "rinse"
   ],
   "conflicts": [
-   "lx083"
+   "lx149"
   ]
  },
  {
-  "id": "lx082",
+  "id": "lx145",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 39,
+  "cefr": "A2",
+  "level": 19,
   "domain": "improvement",
-  "meaning": "verbs that mean to make something more attractive by adding decorative items or details",
+  "meaning": "verbs that mean to update, modernize, or renew something",
   "words": [
-   "decorate",
-   "adorn",
-   "embellish",
-   "ornament"
+   "update",
+   "modernize",
+   "renew",
+   "refresh",
+   "upgrade"
   ],
   "conflicts": [
-   "lx083"
+   "lx147"
   ]
  },
  {
-  "id": "lx083",
+  "id": "lx146",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 33,
+  "cefr": "A2",
+  "level": 16,
   "domain": "improvement",
-  "meaning": "verbs that mean to improve, enhance, or raise the quality of something",
+  "meaning": "verbs that mean to stick, glue, or attach objects to a surface using an adhesive",
+  "words": [
+   "stick",
+   "glue",
+   "paste",
+   "tape",
+   "bond"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx147",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "improvement",
+  "meaning": "verbs that mean to make something better or more valuable",
   "words": [
    "enhance",
-   "upgrade",
-   "enrich",
-   "refine"
+   "refine",
+   "boost",
+   "enrich"
   ],
   "conflicts": [
-   "lx082",
-   "lx081"
+   "lx145"
   ]
  },
  {
-  "id": "lx084",
+  "id": "lx148",
   "pos": "verb",
   "cefr": "C1",
-  "level": 49,
+  "level": 48,
   "domain": "improvement",
   "meaning": "verbs that mean to make something less intense, severe, or painful",
   "words": [
@@ -1412,27 +2519,61 @@
    "mitigate",
    "assuage",
    "allay",
-   "palliate"
+   "palliate",
+   "moderate"
   ],
   "conflicts": []
  },
  {
-  "id": "lx085",
+  "id": "lx149",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 39,
-  "domain": "effort-difficulty",
-  "meaning": "verbs that mean to make it difficult for someone to do something or for something to progress",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "improvement",
+  "meaning": "verbs that mean to clean, wash, or purify something thoroughly",
   "words": [
-   "hinder",
-   "obstruct",
-   "hamper",
-   "impede"
+   "cleanse",
+   "scrub",
+   "scour",
+   "sanitize"
+  ],
+  "conflicts": [
+   "lx144"
+  ]
+ },
+ {
+  "id": "lx150",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "effort-difficulty",
+  "meaning": "verbs that mean to make a situation, topic, or object confused, complicated, or tangled",
+  "words": [
+   "complicate",
+   "confuse",
+   "tangle",
+   "muddle",
+   "jumble"
   ],
   "conflicts": []
  },
  {
-  "id": "lx086",
+  "id": "lx151",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "effort-difficulty",
+  "meaning": "verbs that mean to face, confront, or directly deal with a difficult situation or person",
+  "words": [
+   "face",
+   "confront",
+   "tackle",
+   "address"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx152",
   "pos": "verb",
   "cefr": "A1",
   "level": 3,
@@ -1445,46 +2586,26 @@
    "support"
   ],
   "conflicts": [
-   "lx089"
+   "lx154"
   ]
  },
  {
-  "id": "lx087",
+  "id": "lx153",
   "pos": "verb",
   "cefr": "B1",
-  "level": 21,
+  "level": 25,
   "domain": "agreement-support",
-  "meaning": "verbs that mean to encourage, inspire, or motivate someone",
+  "meaning": "verbs that mean to agree to, follow, or comply with rules, requests, or authority",
   "words": [
-   "encourage",
-   "inspire",
-   "motivate",
-   "urge",
-   "stimulate"
+   "obey",
+   "comply",
+   "submit",
+   "conform"
   ],
   "conflicts": []
  },
  {
-  "id": "lx088",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 33,
-  "domain": "agreement-support",
-  "meaning": "verbs that mean to express strong approval, admiration, or praise for someone or something",
-  "words": [
-   "praise",
-   "applaud",
-   "commend",
-   "compliment",
-   "acclaim"
-  ],
-  "conflicts": [
-   "lx089",
-   "lx090"
-  ]
- },
- {
-  "id": "lx089",
+  "id": "lx154",
   "pos": "verb",
   "cefr": "B2",
   "level": 33,
@@ -1495,16 +2616,14 @@
    "champion",
    "endorse",
    "promote",
-   "back",
    "uphold"
   ],
   "conflicts": [
-   "lx086",
-   "lx088"
+   "lx152"
   ]
  },
  {
-  "id": "lx090",
+  "id": "lx155",
   "pos": "verb",
   "cefr": "C1",
   "level": 45,
@@ -1514,34 +2633,50 @@
    "revere",
    "venerate",
    "deify",
-   "idolize"
+   "idolize",
+   "exalt"
   ],
   "conflicts": [
-   "lx088"
+   "lx157"
   ]
  },
  {
-  "id": "lx091",
+  "id": "lx156",
   "pos": "verb",
   "cefr": "C1",
-  "level": 45,
+  "level": 46,
   "domain": "agreement-support",
   "meaning": "verbs that mean to match, agree, or be consistent with something else",
   "words": [
    "tally",
    "correspond",
    "square",
-   "accord",
-   "coincide",
-   "harmonize"
+   "accord"
   ],
   "conflicts": []
  },
  {
-  "id": "lx092",
+  "id": "lx157",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "agreement-support",
+  "meaning": "verbs that mean to express warm approval, praise, or admiration for someone or something",
+  "words": [
+   "commend",
+   "laud",
+   "extol",
+   "acclaim"
+  ],
+  "conflicts": [
+   "lx155"
+  ]
+ },
+ {
+  "id": "lx158",
   "pos": "verb",
   "cefr": "B1",
-  "level": 27,
+  "level": 25,
   "domain": "speed-time",
   "meaning": "verbs that mean to continue to exist or stay in the same state over time",
   "words": [
@@ -1553,74 +2688,57 @@
   "conflicts": []
  },
  {
-  "id": "lx093",
+  "id": "lx159",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 40,
+  "cefr": "B1",
+  "level": 25,
   "domain": "speed-time",
-  "meaning": "verbs that mean to waste time, move slowly, or delay progress in a place",
+  "meaning": "verbs that mean to move, act, or happen more quickly",
   "words": [
-   "dawdle",
-   "loiter",
-   "dally",
-   "idle"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx094",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 31,
-  "domain": "speed-time",
-  "meaning": "verbs that mean to make something happen faster or speed up a process",
-  "words": [
+   "speed",
    "accelerate",
    "hasten",
-   "quicken",
-   "speed"
+   "quicken"
   ],
   "conflicts": []
  },
  {
-  "id": "lx095",
+  "id": "lx160",
   "pos": "verb",
-  "cefr": "B2",
-  "level": 31,
+  "cefr": "B1",
+  "level": 28,
   "domain": "speed-time",
-  "meaning": "verbs that mean to delay or postpone an event, action, or decision to a later time",
+  "meaning": "verbs that mean to spend time in a slow, lazy, or unproductive way",
   "words": [
-   "defer",
-   "adjourn",
-   "suspend",
-   "shelve"
+   "idle",
+   "loaf",
+   "lounge",
+   "laze",
+   "loiter"
   ],
   "conflicts": []
  },
  {
-  "id": "lx096",
+  "id": "lx161",
   "pos": "verb",
   "cefr": "A2",
-  "level": 20,
+  "level": 19,
   "domain": "health",
   "meaning": "verbs that mean to breathe, gasp, or blow air",
   "words": [
    "breathe",
    "gasp",
    "sigh",
-   "blow",
    "puff",
    "inhale"
   ],
-  "conflicts": [
-   "lx097"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx097",
+  "id": "lx162",
   "pos": "verb",
   "cefr": "A2",
-  "level": 19,
+  "level": 16,
   "domain": "health",
   "meaning": "verbs that mean to experience or show signs of physical illness or pain",
   "words": [
@@ -1629,15 +2747,74 @@
    "cough",
    "sneeze"
   ],
-  "conflicts": [
-   "lx096"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx098",
+  "id": "lx163",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "health",
+  "meaning": "verbs that mean to wash, clean, or groom your own body",
+  "words": [
+   "shower",
+   "bathe",
+   "shave",
+   "comb",
+   "shampoo"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx164",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "health",
+  "meaning": "verbs that mean to wake up or stop sleeping",
+  "words": [
+   "wake",
+   "awake",
+   "waken",
+   "awaken"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx165",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "health",
+  "meaning": "verbs that mean to exhaust, tire, or weary someone",
+  "words": [
+   "tire",
+   "exhaust",
+   "weary",
+   "fatigue"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx166",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 43,
+  "domain": "health",
+  "meaning": "verbs that mean to eat or consume food quickly, greedily, or in large amounts",
+  "words": [
+   "devour",
+   "gobble",
+   "gorge",
+   "bolt"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx167",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "control-power",
   "meaning": "verbs that mean to lead, direct, or control people or things",
   "words": [
@@ -1647,13 +2824,15 @@
    "manage",
    "head"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx170"
+  ]
  },
  {
-  "id": "lx099",
+  "id": "lx168",
   "pos": "verb",
-  "cefr": "B1",
-  "level": 28,
+  "cefr": "A2",
+  "level": 20,
   "domain": "control-power",
   "meaning": "verbs that mean to forbid, ban, or prohibit an action",
   "words": [
@@ -1662,78 +2841,60 @@
    "prohibit",
    "bar"
   ],
+  "conflicts": []
+ },
+ {
+  "id": "lx169",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "control-power",
+  "meaning": "verbs that mean to have an effect on or change the opinions or behavior of someone",
+  "words": [
+   "affect",
+   "influence",
+   "impact",
+   "sway"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx170",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "control-power",
+  "meaning": "verbs that mean to dominate, control, or exercise authority over others",
+  "words": [
+   "dominate",
+   "govern",
+   "command",
+   "dictate"
+  ],
   "conflicts": [
-   "lx101"
+   "lx167"
   ]
  },
  {
-  "id": "lx100",
+  "id": "lx171",
   "pos": "verb",
   "cefr": "B2",
   "level": 36,
   "domain": "control-power",
-  "meaning": "verbs that mean to make someone do something by using force, authority, or pressure",
+  "meaning": "verbs that mean to consciously restrain, suppress, or hold back an emotion, reaction, or impulse",
   "words": [
-   "force",
-   "compel",
-   "oblige",
-   "pressure"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx101",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 37,
-  "domain": "control-power",
-  "meaning": "verbs that mean to keep someone or something within certain limits, boundaries, or rules",
-  "words": [
-   "confine",
-   "constrain",
-   "restrain",
-   "curb"
-  ],
-  "conflicts": [
-   "lx099"
-  ]
- },
- {
-  "id": "lx102",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 33,
-  "domain": "control-power",
-  "meaning": "verbs that mean to influence or change someone's opinions, feelings, or actions",
-  "words": [
-   "influence",
-   "sway",
-   "bias",
-   "manipulate"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx103",
-  "pos": "verb",
-  "cefr": "C1",
-  "level": 49,
-  "domain": "control-power",
-  "meaning": "verbs that mean to suppress, crush, or completely put down an opposition or rebellion",
-  "words": [
-   "quell",
    "suppress",
-   "quash",
-   "subdue",
-   "subjugate"
+   "restrain",
+   "stifle",
+   "smother"
   ],
   "conflicts": []
  },
  {
-  "id": "lx104",
+  "id": "lx172",
   "pos": "verb",
   "cefr": "C1",
-  "level": 45,
+  "level": 46,
   "domain": "control-power",
   "meaning": "verbs that mean to eject, force out, or expel someone from a place or position",
   "words": [
@@ -1747,25 +2908,10 @@
   "conflicts": []
  },
  {
-  "id": "lx105",
-  "pos": "verb",
-  "cefr": "C1",
-  "level": 42,
-  "domain": "control-power",
-  "meaning": "verbs that mean to yield, submit, or give in to a stronger force or authority",
-  "words": [
-   "succumb",
-   "capitulate",
-   "submit",
-   "acquiesce"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx106",
+  "id": "lx173",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "avoidance",
   "meaning": "verbs that mean to avoid, escape, or stay away from something",
   "words": [
@@ -1775,43 +2921,49 @@
    "dodge"
   ],
   "conflicts": [
-   "lx107"
+   "lx174",
+   "lx175"
   ]
  },
  {
-  "id": "lx107",
+  "id": "lx174",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "avoidance",
+  "meaning": "verbs that mean to intentionally ignore, bypass, or pay no attention to someone or something",
+  "words": [
+   "ignore",
+   "bypass",
+   "overlook",
+   "disregard"
+  ],
+  "conflicts": [
+   "lx173",
+   "lx175"
+  ]
+ },
+ {
+  "id": "lx175",
   "pos": "verb",
   "cefr": "B2",
-  "level": 37,
+  "level": 40,
   "domain": "avoidance",
-  "meaning": "verbs that mean to intentionally avoid, escape, or stay away from someone or something",
+  "meaning": "verbs that mean to avoid, escape, or neglect a duty, responsibility, or question",
   "words": [
    "evade",
    "elude",
-   "shun",
-   "bypass"
+   "shirk",
+   "sidestep",
+   "duck"
   ],
   "conflicts": [
-   "lx106"
+   "lx173",
+   "lx174"
   ]
  },
  {
-  "id": "lx108",
-  "pos": "verb",
-  "cefr": "B2",
-  "level": 37,
-  "domain": "avoidance",
-  "meaning": "verbs that mean to reject, decline, or refuse an offer, request, or suggestion",
-  "words": [
-   "reject",
-   "refuse",
-   "spurn",
-   "rebuff"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx109",
+  "id": "lx176",
   "pos": "verb",
   "cefr": "A1",
   "level": 6,
@@ -1826,10 +2978,56 @@
   "conflicts": []
  },
  {
-  "id": "lx110",
+  "id": "lx177",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "size-amount",
+  "meaning": "verbs that mean to empty, clear, or remove the contents of something",
+  "words": [
+   "empty",
+   "dump",
+   "unpack",
+   "unload"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx178",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 36,
+  "domain": "size-amount",
+  "meaning": "verbs that mean to collect and store a large quantity of something over time",
+  "words": [
+   "accumulate",
+   "amass",
+   "hoard",
+   "stockpile",
+   "store"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx179",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "size-amount",
+  "meaning": "verbs that mean to exceed, surpass, or go beyond a limit or expectation",
+  "words": [
+   "exceed",
+   "surpass",
+   "transcend",
+   "outstrip"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx180",
   "pos": "verb",
   "cefr": "A1",
-  "level": 9,
+  "level": 8,
   "domain": "honesty-deception",
   "meaning": "verbs that mean to lie to, trick, or deceive someone",
   "words": [
@@ -1838,10 +3036,61 @@
    "fool",
    "mislead"
   ],
+  "conflicts": [
+   "lx181"
+  ]
+ },
+ {
+  "id": "lx181",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "honesty-deception",
+  "meaning": "verbs that mean to behave in a false way to make others believe something that is not true",
+  "words": [
+   "pretend",
+   "fake",
+   "simulate",
+   "act",
+   "pose"
+  ],
+  "conflicts": [
+   "lx180",
+   "lx184"
+  ]
+ },
+ {
+  "id": "lx182",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 36,
+  "domain": "honesty-deception",
+  "meaning": "verbs that mean to reveal, uncover, or bring to light something that was hidden or secret",
+  "words": [
+   "unearth",
+   "unveil",
+   "unmask",
+   "divulge"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx111",
+  "id": "lx183",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 33,
+  "domain": "honesty-deception",
+  "meaning": "verbs that mean to represent something as being larger, better, or more important than it really is",
+  "words": [
+   "exaggerate",
+   "overstate",
+   "embellish",
+   "magnify"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx184",
   "pos": "verb",
   "cefr": "C1",
   "level": 46,
@@ -1852,13 +3101,29 @@
    "falsify",
    "counterfeit",
    "fabricate",
-   "fake",
    "doctor"
+  ],
+  "conflicts": [
+   "lx181"
+  ]
+ },
+ {
+  "id": "lx185",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 48,
+  "domain": "honesty-deception",
+  "meaning": "verbs that mean to plan, plot, or scheme secretly, especially to achieve an evil or illegal end",
+  "words": [
+   "conspire",
+   "collude",
+   "scheme",
+   "machinate"
   ],
   "conflicts": []
  },
  {
-  "id": "lx112",
+  "id": "lx186",
   "pos": "verb",
   "cefr": "A1",
   "level": 10,
@@ -1871,115 +3136,237 @@
    "loathe",
    "despise"
   ],
-  "conflicts": [
-   "lx116"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx113",
+  "id": "lx187",
+  "pos": "verb",
+  "cefr": "A1",
+  "level": 8,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to shed tears or cry",
+  "words": [
+   "weep",
+   "sob",
+   "wail",
+   "whimper",
+   "bawl"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx188",
   "pos": "verb",
   "cefr": "B1",
-  "level": 24,
+  "level": 22,
   "domain": "emotion-negative",
   "meaning": "verbs that mean to make someone feel sad, disappointed, or discouraged",
   "words": [
    "disappoint",
    "discourage",
    "sadden",
-   "depress",
-   "dissatisfy"
+   "depress"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx189",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to cause someone to feel hurt, embarrassed, or socially uncomfortable",
+  "words": [
+   "offend",
+   "insult",
+   "humiliate",
+   "embarrass",
+   "shame"
   ],
   "conflicts": [
-   "lx114"
+   "lx197",
+   "lx191"
   ]
  },
  {
-  "id": "lx114",
+  "id": "lx190",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 25,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to feel or express deep sadness, grief, or regret over a loss",
+  "words": [
+   "mourn",
+   "grieve",
+   "lament",
+   "sorrow"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx191",
   "pos": "verb",
   "cefr": "B2",
-  "level": 37,
+  "level": 36,
   "domain": "emotion-negative",
   "meaning": "verbs that mean to shock, offend, or outrage someone's sense of decency or values",
   "words": [
-   "offend",
    "outrage",
    "scandalize",
    "appall",
    "disgust"
   ],
   "conflicts": [
-   "lx113"
+   "lx189"
   ]
  },
  {
-  "id": "lx115",
+  "id": "lx192",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 46,
+  "cefr": "B2",
+  "level": 33,
   "domain": "emotion-negative",
-  "meaning": "verbs that mean to feel or express deep sorrow, grief, or regret",
+  "meaning": "verbs that mean to annoy, irritate, or cause mild anger to someone",
   "words": [
-   "mourn",
-   "grieve",
-   "lament",
-   "bewail",
-   "rue",
-   "bemoan"
+   "vex",
+   "provoke",
+   "harass",
+   "pester"
+  ],
+  "conflicts": [
+   "lx196"
+  ]
+ },
+ {
+  "id": "lx193",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to make someone extremely angry or infuriated",
+  "words": [
+   "enrage",
+   "infuriate",
+   "madden",
+   "incense",
+   "exasperate"
   ],
   "conflicts": []
  },
  {
-  "id": "lx116",
+  "id": "lx194",
   "pos": "verb",
-  "cefr": "C1",
-  "level": 42,
+  "cefr": "B2",
+  "level": 33,
   "domain": "emotion-negative",
-  "meaning": "verbs that mean to envy, resent, or begrudge someone's success or possessions",
+  "meaning": "verbs that mean to express anger, displeasure, or disapproval through one's facial expression",
   "words": [
-   "envy",
-   "begrudge",
-   "covet",
-   "grudge"
+   "glare",
+   "scowl",
+   "glower",
+   "pout"
   ],
-  "conflicts": [
-   "lx112"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx117",
+  "id": "lx195",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to shrink back, tense up, or draw away in fear, pain, or disgust",
+  "words": [
+   "cringe",
+   "flinch",
+   "recoil",
+   "wince",
+   "cower"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx196",
   "pos": "verb",
   "cefr": "C1",
   "level": 46,
   "domain": "emotion-negative",
   "meaning": "verbs that mean to irritate, annoy, or make someone slightly angry",
   "words": [
-   "vex",
    "irk",
    "nettle",
    "peeve",
    "gall",
    "pique"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx192"
+  ]
  },
  {
-  "id": "lx118",
+  "id": "lx197",
   "pos": "verb",
   "cefr": "C1",
   "level": 46,
-  "domain": "success-failure",
-  "meaning": "verbs that mean to fail, collapse, or break down completely",
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to make someone feel deeply humiliated, ashamed, or embarrassed",
   "words": [
-   "collapse",
-   "fail",
-   "founder",
-   "miscarry",
-   "implode"
+   "mortify",
+   "abase",
+   "demean",
+   "degrade",
+   "humble"
+  ],
+  "conflicts": [
+   "lx189"
+  ]
+ },
+ {
+  "id": "lx198",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 46,
+  "domain": "emotion-negative",
+  "meaning": "verbs that mean to think anxiously, unhappily, or obsessively about something for a long period",
+  "words": [
+   "brood",
+   "fret",
+   "stew",
+   "obsess"
   ],
   "conflicts": []
  },
  {
-  "id": "lx119",
+  "id": "lx199",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "success-failure",
+  "meaning": "verbs that mean to successfully reach a goal, standard, or desired result",
+  "words": [
+   "achieve",
+   "accomplish",
+   "fulfill",
+   "attain"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx200",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "success-failure",
+  "meaning": "verbs that mean to defeat, overcome, or gain control over an opponent or obstacle",
+  "words": [
+   "defeat",
+   "overcome",
+   "subdue",
+   "overpower"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx201",
   "pos": "adjective",
   "cefr": "A1",
   "level": 3,
@@ -1993,11 +3380,12 @@
    "joyful"
   ],
   "conflicts": [
-   "lx121"
+   "lx204",
+   "lx206"
   ]
  },
  {
-  "id": "lx120",
+  "id": "lx202",
   "pos": "adjective",
   "cefr": "A2",
   "level": 11,
@@ -2013,58 +3401,105 @@
   "conflicts": []
  },
  {
-  "id": "lx121",
+  "id": "lx203",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 46,
+  "cefr": "A2",
+  "level": 16,
   "domain": "emotion-positive",
-  "meaning": "adjectives that mean being extremely happy, joyful, or thrilled",
+  "meaning": "adjectives that mean being caring, loving, or showing support to others",
   "words": [
-   "elated",
-   "ecstatic",
-   "euphoric",
-   "overjoyed",
-   "jubilant",
-   "exultant"
+   "caring",
+   "loving",
+   "supportive",
+   "thoughtful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx204",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 11,
+  "domain": "emotion-positive",
+  "meaning": "adjectives that mean feeling proud, satisfied, or pleased with achievements",
+  "words": [
+   "proud",
+   "satisfied",
+   "content",
+   "contented"
   ],
   "conflicts": [
-   "lx119"
+   "lx201"
   ]
  },
  {
-  "id": "lx122",
+  "id": "lx205",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "emotion-positive",
+  "meaning": "adjectives that mean being highly interesting, fascinating, or holding one's attention completely",
+  "words": [
+   "engaging",
+   "captivating",
+   "gripping",
+   "absorbing"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx206",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "emotion-positive",
+  "meaning": "adjectives that mean being extremely happy, overjoyed, or thrilled",
+  "words": [
+   "overjoyed",
+   "gleeful",
+   "ecstatic",
+   "elated"
+  ],
+  "conflicts": [
+   "lx201"
+  ]
+ },
+ {
+  "id": "lx207",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 42,
+  "level": 43,
   "domain": "emotion-positive",
   "meaning": "adjectives that mean being very enthusiastic, passionate, or showing great eagerness",
   "words": [
    "zealous",
    "ardent",
    "fervent",
-   "avid"
+   "avid",
+   "passionate"
   ],
   "conflicts": []
  },
  {
-  "id": "lx123",
+  "id": "lx208",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "emotion-negative",
-  "meaning": "adjectives that mean feeling or showing strong anger or annoyance",
+  "meaning": "adjectives that mean feeling sad, unhappy, or down",
   "words": [
-   "angry",
-   "mad",
-   "cross",
-   "annoyed"
+   "sad",
+   "unhappy",
+   "upset",
+   "gloomy"
   ],
   "conflicts": [
-   "lx127"
+   "lx212",
+   "lx215"
   ]
  },
  {
-  "id": "lx124",
+  "id": "lx209",
   "pos": "adjective",
   "cefr": "A1",
   "level": 3,
@@ -2074,18 +3509,18 @@
    "afraid",
    "scared",
    "frightened",
-   "terrified",
    "fearful"
   ],
   "conflicts": [
-   "lx130"
+   "lx211",
+   "lx220"
   ]
  },
  {
-  "id": "lx125",
+  "id": "lx210",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 12,
+  "level": 11,
   "domain": "emotion-negative",
   "meaning": "adjectives that mean boring, dull, or uninteresting",
   "words": [
@@ -2098,23 +3533,94 @@
   "conflicts": []
  },
  {
-  "id": "lx126",
+  "id": "lx211",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling nervous, anxious, or stressed",
+  "words": [
+   "nervous",
+   "anxious",
+   "uneasy",
+   "tense",
+   "stressed"
+  ],
+  "conflicts": [
+   "lx209",
+   "lx220"
+  ]
+ },
+ {
+  "id": "lx212",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling disappointed, discouraged, or unhappy with an outcome",
+  "words": [
+   "disappointed",
+   "discouraged",
+   "dissatisfied",
+   "frustrated"
+  ],
+  "conflicts": [
+   "lx208",
+   "lx215"
+  ]
+ },
+ {
+  "id": "lx213",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 16,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling embarrassed, guilty, or uncomfortable about your actions",
+  "words": [
+   "embarrassed",
+   "ashamed",
+   "guilty",
+   "sorry"
+  ],
+  "conflicts": [
+   "lx221"
+  ]
+ },
+ {
+  "id": "lx214",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 28,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling strong shock, horror, or disgust because of something very unpleasant",
+  "words": [
+   "disgusted",
+   "horrified",
+   "appalled",
+   "sickened"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx215",
   "pos": "adjective",
   "cefr": "B2",
   "level": 37,
   "domain": "emotion-negative",
   "meaning": "adjectives that mean being very sad, depressed, or unhappy",
   "words": [
-   "miserable",
    "dejected",
    "sorrowful",
    "melancholy",
    "downcast"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx208",
+   "lx212"
+  ]
  },
  {
-  "id": "lx127",
+  "id": "lx216",
   "pos": "adjective",
   "cefr": "B2",
   "level": 37,
@@ -2127,62 +3633,96 @@
    "wrathful"
   ],
   "conflicts": [
-   "lx123"
+   "lx219"
   ]
  },
  {
-  "id": "lx128",
+  "id": "lx217",
   "pos": "adjective",
   "cefr": "B2",
-  "level": 33,
+  "level": 37,
   "domain": "emotion-negative",
-  "meaning": "adjectives that mean being jealous, envious, or covetous of others",
+  "meaning": "adjectives that mean showing a lack of interest, concern, or enthusiasm",
   "words": [
-   "jealous",
-   "envious",
-   "covetous",
-   "begrudging"
+   "indifferent",
+   "unconcerned",
+   "uninterested",
+   "lukewarm",
+   "uncaring"
   ],
   "conflicts": []
  },
  {
-  "id": "lx129",
+  "id": "lx218",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 46,
+  "cefr": "B2",
+  "level": 31,
   "domain": "emotion-negative",
-  "meaning": "adjectives that mean being hostile, aggressive, or eager to fight or argue",
+  "meaning": "adjectives that mean feeling annoyed, irritated, or impatient",
   "words": [
-   "hostile",
-   "aggressive",
-   "belligerent",
-   "pugnacious",
-   "combative",
-   "antagonistic",
-   "bellicose"
+   "irritated",
+   "exasperated",
+   "displeased",
+   "impatient"
   ],
   "conflicts": []
  },
  {
-  "id": "lx130",
+  "id": "lx219",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling or showing extreme anger or rage",
+  "words": [
+   "enraged",
+   "incensed",
+   "fuming",
+   "infuriated",
+   "seething"
+  ],
+  "conflicts": [
+   "lx216"
+  ]
+ },
+ {
+  "id": "lx220",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 42,
+  "level": 43,
   "domain": "emotion-negative",
   "meaning": "adjectives that mean being very worried, anxious, or filled with apprehension",
   "words": [
-   "anxious",
    "apprehensive",
-   "uneasy",
    "fretful",
+   "perturbed",
    "jittery"
   ],
   "conflicts": [
-   "lx124"
+   "lx209",
+   "lx211"
   ]
  },
  {
-  "id": "lx131",
+  "id": "lx221",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 43,
+  "domain": "emotion-negative",
+  "meaning": "adjectives that mean feeling or expressing deep regret, remorse, or sorrow for one's misdeeds",
+  "words": [
+   "remorseful",
+   "contrite",
+   "penitent",
+   "repentant",
+   "regretful"
+  ],
+  "conflicts": [
+   "lx213"
+  ]
+ },
+ {
+  "id": "lx222",
   "pos": "adjective",
   "cefr": "A1",
   "level": 3,
@@ -2196,15 +3736,15 @@
    "vast"
   ],
   "conflicts": [
-   "lx138",
-   "lx140"
+   "lx238",
+   "lx234"
   ]
  },
  {
-  "id": "lx132",
+  "id": "lx223",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 4,
+  "level": 3,
   "domain": "size-amount",
   "meaning": "adjectives that mean small or little in physical size",
   "words": [
@@ -2214,14 +3754,14 @@
    "mini"
   ],
   "conflicts": [
-   "lx139"
+   "lx241"
   ]
  },
  {
-  "id": "lx133",
+  "id": "lx224",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "size-amount",
   "meaning": "adjectives that mean costing a lot of money",
   "words": [
@@ -2233,10 +3773,10 @@
   "conflicts": []
  },
  {
-  "id": "lx134",
+  "id": "lx225",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 4,
+  "level": 3,
   "domain": "size-amount",
   "meaning": "adjectives that mean being located near, close, or nearby in space",
   "words": [
@@ -2248,26 +3788,42 @@
   "conflicts": []
  },
  {
-  "id": "lx135",
+  "id": "lx226",
   "pos": "adjective",
-  "cefr": "A2",
-  "level": 12,
+  "cefr": "A1",
+  "level": 9,
   "domain": "size-amount",
-  "meaning": "adjectives that mean being far, distant, or remote in space",
+  "meaning": "adjectives that mean being similar, identical, or the same",
+  "words": [
+   "same",
+   "similar",
+   "alike",
+   "matching",
+   "identical"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx227",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 10,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being located far away or distant",
   "words": [
    "far",
    "distant",
    "remote",
    "faraway",
-   "removed"
+   "isolated"
   ],
   "conflicts": []
  },
  {
-  "id": "lx136",
+  "id": "lx228",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 15,
+  "level": 13,
   "domain": "size-amount",
   "meaning": "adjectives that mean rich, wealthy, or having a lot of money",
   "words": [
@@ -2279,41 +3835,199 @@
   "conflicts": []
  },
  {
-  "id": "lx137",
+  "id": "lx229",
   "pos": "adjective",
-  "cefr": "B1",
-  "level": 28,
+  "cefr": "A2",
+  "level": 13,
   "domain": "size-amount",
-  "meaning": "adjectives that mean being thin, slim, or slender in physical build",
+  "meaning": "adjectives that mean being complete, whole, or total",
+  "words": [
+   "whole",
+   "complete",
+   "entire",
+   "total"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx230",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being thin, slim, or lean in physical appearance",
   "words": [
    "thin",
    "slim",
-   "slender",
    "skinny",
+   "slender",
    "lean"
   ],
   "conflicts": []
  },
  {
-  "id": "lx138",
+  "id": "lx231",
   "pos": "adjective",
-  "cefr": "B2",
-  "level": 33,
+  "cefr": "A2",
+  "level": 16,
   "domain": "size-amount",
-  "meaning": "adjectives that mean being very large, huge, or immense in size",
+  "meaning": "adjectives that mean consisting of two parts, double, or dual",
   "words": [
-   "enormous",
-   "gigantic",
-   "massive",
-   "immense",
-   "colossal"
+   "double",
+   "twin",
+   "dual",
+   "twofold",
+   "paired"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx232",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 11,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being fat, overweight, or chubby in body shape",
+  "words": [
+   "fat",
+   "overweight",
+   "chubby",
+   "plump",
+   "stout"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx233",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being many, numerous, or multiple in quantity",
+  "words": [
+   "many",
+   "numerous",
+   "multiple",
+   "countless"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx234",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being wide, broad, or offering plenty of space",
+  "words": [
+   "broad",
+   "spacious",
+   "roomy",
+   "extensive"
   ],
   "conflicts": [
-   "lx131"
+   "lx222"
   ]
  },
  {
-  "id": "lx139",
+  "id": "lx235",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being partial, incomplete, or not finished",
+  "words": [
+   "partial",
+   "incomplete",
+   "unfinished",
+   "half"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx236",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being enough, sufficient, or adequate for a need",
+  "words": [
+   "enough",
+   "sufficient",
+   "adequate",
+   "satisfactory"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx237",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being in the middle, medium, or halfway in position or size",
+  "words": [
+   "middle",
+   "medium",
+   "halfway",
+   "intermediate",
+   "midway"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx238",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being extremely large or huge in size",
+  "words": [
+   "enormous",
+   "massive",
+   "gigantic",
+   "tremendous"
+  ],
+  "conflicts": [
+   "lx222"
+  ]
+ },
+ {
+  "id": "lx239",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean added, extra, or existing in addition to what is already there",
+  "words": [
+   "extra",
+   "spare",
+   "additional",
+   "added",
+   "supplementary",
+   "further"
+  ],
+  "conflicts": [
+   "lx246"
+  ]
+ },
+ {
+  "id": "lx240",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being abundant, plentiful, or existing in large quantities",
+  "words": [
+   "abundant",
+   "plentiful",
+   "ample",
+   "bountiful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx241",
   "pos": "adjective",
   "cefr": "B2",
   "level": 37,
@@ -2323,32 +4037,14 @@
    "miniature",
    "minute",
    "microscopic",
-   "minuscule",
-   "petite"
+   "minuscule"
   ],
   "conflicts": [
-   "lx132"
+   "lx223"
   ]
  },
  {
-  "id": "lx140",
-  "pos": "adjective",
-  "cefr": "B2",
-  "level": 31,
-  "domain": "size-amount",
-  "meaning": "adjectives that mean being wide, spacious, or having a lot of space",
-  "words": [
-   "broad",
-   "spacious",
-   "roomy",
-   "extensive"
-  ],
-  "conflicts": [
-   "lx131"
-  ]
- },
- {
-  "id": "lx141",
+  "id": "lx242",
   "pos": "adjective",
   "cefr": "B2",
   "level": 33,
@@ -2357,14 +4053,13 @@
   "words": [
    "scarce",
    "sparse",
-   "limited",
    "meager",
    "scanty"
   ],
   "conflicts": []
  },
  {
-  "id": "lx142",
+  "id": "lx243",
   "pos": "adjective",
   "cefr": "B2",
   "level": 31,
@@ -2379,42 +4074,63 @@
   "conflicts": []
  },
  {
-  "id": "lx143",
+  "id": "lx244",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 42,
+  "cefr": "B2",
+  "level": 31,
   "domain": "size-amount",
-  "meaning": "adjectives that mean being highly abundant, plentiful, or existing in large quantities",
+  "meaning": "adjectives that mean situated on the inside or relating to the inner part of something",
   "words": [
-   "abundant",
-   "plentiful",
-   "copious",
-   "bountiful",
-   "profuse"
+   "internal",
+   "inner",
+   "interior",
+   "inward",
+   "inside",
+   "innermost"
   ],
   "conflicts": []
  },
  {
-  "id": "lx144",
+  "id": "lx245",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 46,
+  "cefr": "B2",
+  "level": 31,
   "domain": "size-amount",
-  "meaning": "adjectives that mean being extra, unnecessary, or exceeding what is needed",
+  "meaning": "adjectives that mean situated on the outside or relating to the outer part of something",
   "words": [
-   "redundant",
-   "superfluous",
+   "external",
+   "outer",
+   "exterior",
+   "outward",
+   "outside",
+   "outermost"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx246",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being excessive, unnecessary, or more than what is needed",
+  "words": [
    "excessive",
-   "needless",
-   "gratuitous"
+   "superfluous",
+   "redundant",
+   "surplus",
+   "unneeded",
+   "unnecessary"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx239"
+  ]
  },
  {
-  "id": "lx145",
+  "id": "lx247",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 49,
+  "level": 48,
   "domain": "size-amount",
   "meaning": "adjectives that mean being widespread, common, or existing everywhere",
   "words": [
@@ -2428,10 +4144,26 @@
   "conflicts": []
  },
  {
-  "id": "lx146",
+  "id": "lx248",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 46,
+  "domain": "size-amount",
+  "meaning": "adjectives that mean being highly diverse, varied, or consisting of many different kinds",
+  "words": [
+   "heterogeneous",
+   "multifarious",
+   "manifold",
+   "miscellaneous",
+   "assorted"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx249",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 10,
+  "level": 9,
   "domain": "speed-time",
   "meaning": "adjectives that mean moving or happening with great speed",
   "words": [
@@ -2441,28 +4173,15 @@
    "swift",
    "speedy"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx261"
+  ]
  },
  {
-  "id": "lx147",
+  "id": "lx250",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 10,
-  "domain": "speed-time",
-  "meaning": "adjectives that mean having been made, built, or born recently",
-  "words": [
-   "new",
-   "modern",
-   "recent",
-   "young"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx148",
-  "pos": "adjective",
-  "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "speed-time",
   "meaning": "adjectives that mean having lived or existed for a long time",
   "words": [
@@ -2472,14 +4191,14 @@
    "aged"
   ],
   "conflicts": [
-   "lx152"
+   "lx260"
   ]
  },
  {
-  "id": "lx149",
+  "id": "lx251",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "speed-time",
   "meaning": "adjectives that mean being late, delayed, or behind schedule",
   "words": [
@@ -2488,94 +4207,278 @@
    "delayed",
    "overdue"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx257"
+  ]
  },
  {
-  "id": "lx150",
+  "id": "lx252",
   "pos": "adjective",
-  "cefr": "B1",
-  "level": 28,
+  "cefr": "A1",
+  "level": 10,
   "domain": "speed-time",
-  "meaning": "adjectives that mean being permanent, lasting, or enduring for a long time",
+  "meaning": "adjectives that mean being long, extended, or lasting a long time",
   "words": [
-   "permanent",
-   "lasting",
-   "endless",
-   "eternal"
+   "long",
+   "extended",
+   "lengthy",
+   "prolonged"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx262"
+  ]
  },
  {
-  "id": "lx151",
+  "id": "lx253",
   "pos": "adjective",
-  "cefr": "B1",
-  "level": 28,
+  "cefr": "A2",
+  "level": 17,
   "domain": "speed-time",
-  "meaning": "adjectives that mean happening quickly, unexpectedly, or without warning",
+  "meaning": "adjectives that mean happening by chance, unexpectedly, or without planning",
   "words": [
-   "sudden",
+   "accidental",
    "unexpected",
-   "abrupt",
-   "unforeseen"
+   "unplanned",
+   "unintentional"
+  ],
+  "conflicts": [
+   "lx261"
+  ]
+ },
+ {
+  "id": "lx254",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being early, punctual, or on time",
+  "words": [
+   "early",
+   "punctual",
+   "prompt",
+   "timely"
   ],
   "conflicts": []
  },
  {
-  "id": "lx152",
+  "id": "lx255",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean happening on a regular basis according to calendar units",
+  "words": [
+   "daily",
+   "weekly",
+   "monthly",
+   "yearly",
+   "annual"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx256",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean happening in the future, upcoming, or coming next",
+  "words": [
+   "future",
+   "upcoming",
+   "coming",
+   "following"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx257",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being past, former, or previous in time",
+  "words": [
+   "former",
+   "previous",
+   "earlier",
+   "prior"
+  ],
+  "conflicts": [
+   "lx251"
+  ]
+ },
+ {
+  "id": "lx258",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being constant, continuous, or remaining unchanged over time",
+  "words": [
+   "continuous",
+   "constant",
+   "steady",
+   "stable",
+   "continual"
+  ],
+  "conflicts": [
+   "lx262"
+  ]
+ },
+ {
+  "id": "lx259",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean lasting for only a short, brief, or temporary period of time",
+  "words": [
+   "temporary",
+   "brief",
+   "momentary",
+   "passing",
+   "fleeting"
+  ],
+  "conflicts": [
+   "lx266"
+  ]
+ },
+ {
+  "id": "lx260",
   "pos": "adjective",
   "cefr": "B2",
-  "level": 34,
+  "level": 33,
   "domain": "speed-time",
   "meaning": "adjectives that mean being ancient, antique, or belonging to the distant past",
   "words": [
-   "antique",
    "primitive",
    "archaic",
    "olden",
    "bygone"
   ],
   "conflicts": [
-   "lx148",
-   "lx154"
+   "lx250"
   ]
  },
  {
-  "id": "lx153",
+  "id": "lx261",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 33,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean happening quickly, suddenly, or without warning",
+  "words": [
+   "abrupt",
+   "unforeseen",
+   "unanticipated",
+   "immediate"
+  ],
+  "conflicts": [
+   "lx253",
+   "lx249"
+  ]
+ },
+ {
+  "id": "lx262",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 33,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being permanent, everlasting, or enduring over a long period of time",
+  "words": [
+   "enduring",
+   "perpetual",
+   "everlasting",
+   "lifelong"
+  ],
+  "conflicts": [
+   "lx258",
+   "lx252"
+  ]
+ },
+ {
+  "id": "lx263",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being extremely busy, hectic, or rushed",
+  "words": [
+   "hectic",
+   "frantic",
+   "frenetic",
+   "bustling",
+   "rushed"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx264",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean occurring, existing, or happening at the same time",
+  "words": [
+   "simultaneous",
+   "concurrent",
+   "synchronized",
+   "parallel",
+   "coexisting"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx265",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 31,
+  "domain": "speed-time",
+  "meaning": "adjectives that mean being young, youthful, or characteristic of youth",
+  "words": [
+   "juvenile",
+   "adolescent",
+   "boyish",
+   "girlish"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx266",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 49,
+  "level": 48,
   "domain": "speed-time",
   "meaning": "adjectives that mean being temporary, fleeting, or lasting for only a very short time",
   "words": [
    "transient",
    "ephemeral",
-   "fleeting",
    "transitory",
-   "momentary",
-   "evanescent",
-   "temporary"
+   "evanescent"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx259"
+  ]
  },
  {
-  "id": "lx154",
+  "id": "lx267",
   "pos": "adjective",
   "cefr": "C1",
   "level": 46,
   "domain": "speed-time",
-  "meaning": "adjectives that mean being outdated, obsolete, or no longer in general use",
+  "meaning": "adjectives that mean being highly unstable, unpredictable, or subject to sudden change",
   "words": [
-   "obsolete",
-   "antiquated",
-   "outdated",
-   "outmoded"
+   "volatile",
+   "erratic",
+   "unpredictable",
+   "mercurial",
+   "capricious"
   ],
-  "conflicts": [
-   "lx152"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx155",
+  "id": "lx268",
   "pos": "adjective",
   "cefr": "A1",
   "level": 1,
@@ -2587,13 +4490,15 @@
    "excellent",
    "super"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx283"
+  ]
  },
  {
-  "id": "lx156",
+  "id": "lx269",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 4,
+  "level": 3,
   "domain": "evaluation",
   "meaning": "adjectives that mean very bad, unpleasant, or of poor quality",
   "words": [
@@ -2603,14 +4508,14 @@
    "horrible"
   ],
   "conflicts": [
-   "lx168"
+   "lx294"
   ]
  },
  {
-  "id": "lx157",
+  "id": "lx270",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 4,
+  "level": 3,
   "domain": "evaluation",
   "meaning": "adjectives that mean clean, neat, or tidy",
   "words": [
@@ -2619,30 +4524,15 @@
    "neat",
    "spotless"
   ],
-  "conflicts": []
- },
- {
-  "id": "lx158",
-  "pos": "adjective",
-  "cefr": "A1",
-  "level": 7,
-  "domain": "evaluation",
-  "meaning": "adjectives that mean dirty, messy, or untidy",
-  "words": [
-   "dirty",
-   "messy",
-   "untidy",
-   "filthy"
-  ],
   "conflicts": [
-   "lx165"
+   "lx291"
   ]
  },
  {
-  "id": "lx159",
+  "id": "lx271",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "evaluation",
   "meaning": "adjectives that mean being useful, helpful, or practical for a purpose",
   "words": [
@@ -2654,7 +4544,7 @@
   "conflicts": []
  },
  {
-  "id": "lx160",
+  "id": "lx272",
   "pos": "adjective",
   "cefr": "A1",
   "level": 4,
@@ -2669,10 +4559,10 @@
   "conflicts": []
  },
  {
-  "id": "lx161",
+  "id": "lx273",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 10,
+  "level": 9,
   "domain": "evaluation",
   "meaning": "adjectives that mean being normal, usual, or happening often",
   "words": [
@@ -2681,13 +4571,51 @@
    "common",
    "regular"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx277"
+  ]
  },
  {
-  "id": "lx162",
+  "id": "lx274",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 9,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean widely known, famous, or popular",
+  "words": [
+   "famous",
+   "popular",
+   "famed",
+   "celebrated"
+  ],
+  "conflicts": [
+   "lx286",
+   "lx292"
+  ]
+ },
+ {
+  "id": "lx275",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 9,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being unusual, strange, or different from the normal",
+  "words": [
+   "strange",
+   "unusual",
+   "odd",
+   "weird",
+   "curious"
+  ],
+  "conflicts": [
+   "lx281"
+  ]
+ },
+ {
+  "id": "lx276",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 15,
+  "level": 13,
   "domain": "evaluation",
   "meaning": "adjectives that mean ugly, plain, or physically unattractive",
   "words": [
@@ -2700,10 +4628,156 @@
   "conflicts": []
  },
  {
-  "id": "lx163",
+  "id": "lx277",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 13,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being ordinary, typical, or average",
+  "words": [
+   "ordinary",
+   "average",
+   "standard",
+   "typical",
+   "everyday",
+   "routine"
+  ],
+  "conflicts": [
+   "lx273"
+  ]
+ },
+ {
+  "id": "lx278",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean holding your attention and being highly enjoyable or exciting",
+  "words": [
+   "interesting",
+   "exciting",
+   "fascinating",
+   "entertaining",
+   "fun"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx279",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being untidy, messy, or disorganized",
+  "words": [
+   "disorganized",
+   "cluttered",
+   "sloppy",
+   "chaotic"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx280",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being perfect, ideal, or without any faults",
+  "words": [
+   "perfect",
+   "ideal",
+   "flawless",
+   "faultless"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx281",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being rare, unique, or highly unusual and special",
+  "words": [
+   "rare",
+   "unique",
+   "uncommon",
+   "special",
+   "exceptional"
+  ],
+  "conflicts": [
+   "lx275"
+  ]
+ },
+ {
+  "id": "lx282",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being fair, just, or treating everyone equally",
+  "words": [
+   "fair",
+   "just",
+   "neutral",
+   "unbiased",
+   "impartial"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx283",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being excellent, wonderful, or of extremely high quality",
+  "words": [
+   "terrific",
+   "fantastic",
+   "marvelous",
+   "outstanding"
+  ],
+  "conflicts": [
+   "lx268"
+  ]
+ },
+ {
+  "id": "lx284",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being spoiled, rotten, or no longer fresh to eat",
+  "words": [
+   "spoiled",
+   "rotten",
+   "stale",
+   "moldy"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx285",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 21,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being comfortable, cozy, or pleasant to be in",
+  "words": [
+   "cozy",
+   "comfy",
+   "relaxing",
+   "restful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx286",
   "pos": "adjective",
   "cefr": "B2",
-  "level": 34,
+  "level": 33,
   "domain": "evaluation",
   "meaning": "adjectives that mean being famous, renowned, or widely recognized and respected",
   "words": [
@@ -2713,14 +4787,92 @@
    "notable"
   ],
   "conflicts": [
-   "lx164"
+   "lx274",
+   "lx292"
   ]
  },
  {
-  "id": "lx164",
+  "id": "lx287",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being highly detailed, precise, or extremely thorough",
+  "words": [
+   "thorough",
+   "meticulous",
+   "rigorous",
+   "detailed"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx288",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being useless, pointless, or producing no result",
+  "words": [
+   "fruitless",
+   "ineffective",
+   "unproductive",
+   "unprofitable"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx289",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being highly pleasing to the sense of taste, delicious, or appetizing",
+  "words": [
+   "appetizing",
+   "savory",
+   "delectable",
+   "scrumptious"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx290",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean well-known for some bad quality, deed, or reputation",
+  "words": [
+   "infamous",
+   "notorious",
+   "disreputable",
+   "scandalous"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx291",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being extremely clean, spotless, or pure",
+  "words": [
+   "unblemished",
+   "untarnished",
+   "stainless",
+   "unsullied"
+  ],
+  "conflicts": [
+   "lx270"
+  ]
+ },
+ {
+  "id": "lx292",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 42,
+  "level": 43,
   "domain": "evaluation",
   "meaning": "adjectives that mean being highly famous, distinguished, and widely respected",
   "words": [
@@ -2730,47 +4882,15 @@
    "acclaimed"
   ],
   "conflicts": [
-   "lx163"
+   "lx274",
+   "lx286"
   ]
  },
  {
-  "id": "lx165",
+  "id": "lx293",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 43,
-  "domain": "evaluation",
-  "meaning": "adjectives that mean being messy, untidy, or disorganized",
-  "words": [
-   "cluttered",
-   "chaotic",
-   "disorganized",
-   "disheveled",
-   "shambolic"
-  ],
-  "conflicts": [
-   "lx158"
-  ]
- },
- {
-  "id": "lx166",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 43,
-  "domain": "evaluation",
-  "meaning": "adjectives that mean being flexible, adaptable, or easily modified to suit different conditions",
-  "words": [
-   "flexible",
-   "adaptable",
-   "versatile",
-   "adjustable"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx167",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 49,
+  "level": 48,
   "domain": "evaluation",
   "meaning": "adjectives that mean being very poor, destitute, or lacking money",
   "words": [
@@ -2782,7 +4902,7 @@
   "conflicts": []
  },
  {
-  "id": "lx168",
+  "id": "lx294",
   "pos": "adjective",
   "cefr": "C1",
   "level": 43,
@@ -2797,31 +4917,65 @@
    "lousy"
   ],
   "conflicts": [
-   "lx156"
+   "lx269"
   ]
  },
  {
-  "id": "lx169",
+  "id": "lx295",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 47,
+  "level": 46,
   "domain": "evaluation",
   "meaning": "adjectives that mean being highly suitable, appropriate, or fitting",
   "words": [
    "apt",
    "fitting",
    "appropriate",
-   "suitable",
    "apposite",
    "felicitous"
   ],
   "conflicts": []
  },
  {
-  "id": "lx170",
+  "id": "lx296",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 48,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean being extremely wicked, evil, or morally bad",
+  "words": [
+   "evil",
+   "wicked",
+   "nefarious",
+   "heinous",
+   "villainous",
+   "malevolent",
+   "iniquitous"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx297",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 46,
+  "domain": "evaluation",
+  "meaning": "adjectives that mean extremely luxurious, grand, or expensive-looking",
+  "words": [
+   "opulent",
+   "sumptuous",
+   "luxurious",
+   "palatial",
+   "lavish",
+   "plush"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx298",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 7,
+  "level": 6,
   "domain": "personality",
   "meaning": "adjectives that mean smart, intelligent, or mentally sharp",
   "words": [
@@ -2834,10 +4988,10 @@
   "conflicts": []
  },
  {
-  "id": "lx171",
+  "id": "lx299",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 2,
+  "level": 1,
   "domain": "personality",
   "meaning": "adjectives that mean friendly, kind, or pleasant to others",
   "words": [
@@ -2849,16 +5003,15 @@
    "gentle"
   ],
   "conflicts": [
-   "lx178",
-   "lx179",
-   "lx183"
+   "lx312",
+   "lx313"
   ]
  },
  {
-  "id": "lx172",
+  "id": "lx300",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 15,
+  "level": 14,
   "domain": "personality",
   "meaning": "adjectives that mean being brave, courageous, or showing no fear",
   "words": [
@@ -2872,10 +5025,10 @@
   "conflicts": []
  },
  {
-  "id": "lx173",
+  "id": "lx301",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 16,
+  "level": 14,
   "domain": "personality",
   "meaning": "adjectives that mean greedy, selfish, or unwilling to share",
   "words": [
@@ -2885,79 +5038,179 @@
    "ungenerous"
   ],
   "conflicts": [
-   "lx187"
+   "lx320"
   ]
  },
  {
-  "id": "lx174",
+  "id": "lx302",
   "pos": "adjective",
-  "cefr": "B1",
-  "level": 24,
+  "cefr": "A2",
+  "level": 14,
   "domain": "personality",
-  "meaning": "adjectives that mean being rude, impolite, or disrespectful to others",
+  "meaning": "adjectives that mean being rude, unfriendly, or unkind",
   "words": [
    "rude",
    "impolite",
+   "unkind",
+   "unfriendly",
    "disrespectful",
-   "insulting",
-   "offensive"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx175",
-  "pos": "adjective",
-  "cefr": "B1",
-  "level": 25,
-  "domain": "personality",
-  "meaning": "adjectives that mean being very active, lively, or full of energy",
-  "words": [
-   "lively",
-   "energetic",
-   "dynamic",
-   "vibrant"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx176",
-  "pos": "adjective",
-  "cefr": "B2",
-  "level": 38,
-  "domain": "personality",
-  "meaning": "adjectives that mean being stubborn, obstinate, or unwilling to change one's mind",
-  "words": [
-   "stubborn",
-   "obstinate",
-   "headstrong",
-   "willful",
-   "inflexible",
-   "uncompromising",
-   "unyielding"
+   "unpleasant"
   ],
   "conflicts": [
-   "lx182"
+   "lx306",
+   "lx316"
   ]
  },
  {
-  "id": "lx177",
+  "id": "lx303",
   "pos": "adjective",
-  "cefr": "B2",
-  "level": 38,
+  "cefr": "A2",
+  "level": 19,
   "domain": "personality",
-  "meaning": "adjectives that mean being proud, arrogant, or conceited",
+  "meaning": "adjectives that mean being shy, quiet, or reserved in social situations",
   "words": [
-   "arrogant",
-   "haughty",
-   "vain",
-   "boastful",
-   "conceited",
-   "pompous"
+   "shy",
+   "reserved",
+   "timid",
+   "introverted",
+   "bashful"
+  ],
+  "conflicts": [
+   "lx318"
+  ]
+ },
+ {
+  "id": "lx304",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "personality",
+  "meaning": "adjectives that mean being silly, foolish, or lacking good sense",
+  "words": [
+   "ridiculous",
+   "dumb",
+   "brainless",
+   "senseless"
   ],
   "conflicts": []
  },
  {
-  "id": "lx178",
+  "id": "lx305",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "personality",
+  "meaning": "adjectives that mean being talkative, chatty, or highly communicative",
+  "words": [
+   "talkative",
+   "chatty",
+   "communicative",
+   "conversational"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx306",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "personality",
+  "meaning": "adjectives that mean being very unkind, cruel, or mean to others",
+  "words": [
+   "cruel",
+   "harsh",
+   "brutal",
+   "heartless"
+  ],
+  "conflicts": [
+   "lx302",
+   "lx323"
+  ]
+ },
+ {
+  "id": "lx307",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 22,
+  "domain": "personality",
+  "meaning": "adjectives that mean being patient, tolerant, or understanding of others",
+  "words": [
+   "patient",
+   "tolerant",
+   "understanding",
+   "forgiving"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx308",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "personality",
+  "meaning": "adjectives that mean being serious, solemn, or grave in manner or appearance",
+  "words": [
+   "serious",
+   "solemn",
+   "grave",
+   "sober",
+   "earnest"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx309",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "personality",
+  "meaning": "adjectives that mean able to be trusted, relied on, or believed",
+  "words": [
+   "reliable",
+   "dependable",
+   "trustworthy",
+   "responsible",
+   "solid"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx310",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "personality",
+  "meaning": "adjectives that mean showing too much pride, arrogance, or self-importance",
+  "words": [
+   "arrogant",
+   "vain",
+   "boastful",
+   "conceited",
+   "cocky"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx311",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "personality",
+  "meaning": "adjectives that mean being stubborn, inflexible, or unwilling to change one's mind",
+  "words": [
+   "stubborn",
+   "obstinate",
+   "inflexible",
+   "uncompromising",
+   "unyielding",
+   "willful"
+  ],
+  "conflicts": [
+   "lx321"
+  ]
+ },
+ {
+  "id": "lx312",
   "pos": "adjective",
   "cefr": "B2",
   "level": 34,
@@ -2972,121 +5225,98 @@
    "genial"
   ],
   "conflicts": [
-   "lx171"
+   "lx299"
   ]
  },
  {
-  "id": "lx179",
+  "id": "lx313",
   "pos": "adjective",
   "cefr": "B2",
-  "level": 31,
+  "level": 32,
   "domain": "personality",
   "meaning": "adjectives that mean being compassionate, sympathetic, or showing deep care for others",
   "words": [
    "compassionate",
    "sympathetic",
    "empathetic",
-   "caring",
-   "understanding"
+   "considerate"
   ],
   "conflicts": [
-   "lx171",
-   "lx183"
+   "lx299"
   ]
  },
  {
-  "id": "lx180",
+  "id": "lx314",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 37,
+  "domain": "personality",
+  "meaning": "adjectives that mean being fond of fighting, arguing, or competing",
+  "words": [
+   "aggressive",
+   "combative",
+   "argumentative",
+   "confrontational",
+   "quarrelsome"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx315",
   "pos": "adjective",
   "cefr": "B2",
   "level": 38,
   "domain": "personality",
-  "meaning": "adjectives that mean being lenient, merciful, or tolerant in treating other people",
+  "meaning": "adjectives that mean being willing to obey, submissive, or compliant to authority",
   "words": [
-   "lenient",
-   "merciful",
-   "indulgent",
-   "tolerant",
-   "forgiving"
+   "obedient",
+   "submissive",
+   "compliant",
+   "dutiful",
+   "docile"
   ],
   "conflicts": [
-   "lx183"
+   "lx326"
   ]
  },
  {
-  "id": "lx181",
+  "id": "lx316",
   "pos": "adjective",
   "cefr": "B2",
   "level": 34,
   "domain": "personality",
-  "meaning": "adjectives that mean being extremely cruel, heartless, or lacking sympathy for others",
+  "meaning": "adjectives that mean being rude, impolite, or showing a lack of respect for others",
   "words": [
-   "cruel",
-   "brutal",
-   "ruthless",
-   "heartless",
-   "merciless",
-   "callous"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx182",
-  "pos": "adjective",
-  "cefr": "B2",
-  "level": 38,
-  "domain": "personality",
-  "meaning": "adjectives that mean being highly determined, resolute, or firm in one's purpose",
-  "words": [
-   "determined",
-   "resolute",
-   "firm",
-   "persistent",
-   "purposeful",
-   "unwavering"
+   "discourteous",
+   "insolent",
+   "impudent",
+   "uncivil"
   ],
   "conflicts": [
-   "lx176"
+   "lx302"
   ]
  },
  {
-  "id": "lx183",
+  "id": "lx317",
   "pos": "adjective",
   "cefr": "C1",
   "level": 43,
   "domain": "personality",
-  "meaning": "adjectives that mean being kind, compassionate, and showing goodwill toward others",
+  "meaning": "adjectives that mean being highly determined, resolute, or unwavering in purpose",
   "words": [
-   "benevolent",
-   "altruistic",
-   "humane",
-   "gracious"
-  ],
-  "conflicts": [
-   "lx171",
-   "lx179",
-   "lx180"
-  ]
- },
- {
-  "id": "lx184",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 47,
-  "domain": "personality",
-  "meaning": "adjectives that mean being extremely careful, precise, and attentive to small details",
-  "words": [
-   "meticulous",
-   "fastidious",
-   "painstaking",
-   "thorough"
+   "resolute",
+   "steadfast",
+   "unwavering",
+   "purposeful",
+   "tenacious"
   ],
   "conflicts": []
  },
  {
-  "id": "lx185",
+  "id": "lx318",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 50,
+  "level": 48,
   "domain": "personality",
   "meaning": "adjectives that mean being quiet, reserved, or not inclined to speak",
   "words": [
@@ -3095,13 +5325,15 @@
    "uncommunicative",
    "unforthcoming"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx303"
+  ]
  },
  {
-  "id": "lx186",
+  "id": "lx319",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 50,
+  "level": 49,
   "domain": "personality",
   "meaning": "adjectives that mean being highly irritable, easily angered, or bad-tempered",
   "words": [
@@ -3116,7 +5348,7 @@
   "conflicts": []
  },
  {
-  "id": "lx187",
+  "id": "lx320",
   "pos": "adjective",
   "cefr": "C1",
   "level": 50,
@@ -3130,14 +5362,131 @@
    "rapacious"
   ],
   "conflicts": [
-   "lx173"
+   "lx301"
   ]
  },
  {
-  "id": "lx188",
+  "id": "lx321",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "personality",
+  "meaning": "adjectives that mean being extremely stubborn, obstinate, or refusing to change one's mind",
+  "words": [
+   "mulish",
+   "intractable",
+   "obdurate",
+   "recalcitrant",
+   "bullheaded"
+  ],
+  "conflicts": [
+   "lx311"
+  ]
+ },
+ {
+  "id": "lx322",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "personality",
+  "meaning": "adjectives that mean being extremely fussy, selective, or difficult to please",
+  "words": [
+   "fastidious",
+   "finicky",
+   "fussy",
+   "persnickety"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx323",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 43,
+  "domain": "personality",
+  "meaning": "adjectives that mean being extremely cruel, cold-hearted, or showing no mercy",
+  "words": [
+   "merciless",
+   "ruthless",
+   "pitiless",
+   "callous"
+  ],
+  "conflicts": [
+   "lx306"
+  ]
+ },
+ {
+  "id": "lx324",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "personality",
+  "meaning": "adjectives that mean being extremely lively, energetic, and full of high spirits",
+  "words": [
+   "vivacious",
+   "animated",
+   "spirited",
+   "exuberant",
+   "effervescent"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx325",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "personality",
+  "meaning": "adjectives that mean being extremely cowardly, timid, or lacking courage",
+  "words": [
+   "cowardly",
+   "craven",
+   "pusillanimous",
+   "timorous",
+   "spineless"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx326",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "personality",
+  "meaning": "adjectives that mean being excessively submissive, eager to please, or behaving in a servile manner",
+  "words": [
+   "obsequious",
+   "servile",
+   "sycophantic",
+   "subservient",
+   "fawning",
+   "groveling",
+   "ingratiating"
+  ],
+  "conflicts": [
+   "lx315"
+  ]
+ },
+ {
+  "id": "lx327",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "personality",
+  "meaning": "adjectives that mean being rebellious, disobedient, or actively resisting authority",
+  "words": [
+   "insubordinate",
+   "mutinous",
+   "contumacious",
+   "refractory"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx328",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 8,
+  "level": 7,
   "domain": "effort-difficulty",
   "meaning": "adjectives that mean difficult to do, understand, or deal with",
   "words": [
@@ -3146,10 +5495,61 @@
    "tough",
    "tricky"
   ],
+  "conflicts": [
+   "lx329"
+  ]
+ },
+ {
+  "id": "lx329",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "effort-difficulty",
+  "meaning": "adjectives that mean requiring great physical or mental effort and causing tiredness",
+  "words": [
+   "exhausting",
+   "tiring",
+   "strenuous",
+   "taxing",
+   "grueling",
+   "wearing"
+  ],
+  "conflicts": [
+   "lx328"
+  ]
+ },
+ {
+  "id": "lx330",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "safety-danger",
+  "meaning": "adjectives that mean being wild, untamed, or fierce in nature",
+  "words": [
+   "untamed",
+   "savage",
+   "fierce",
+   "ferocious"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx189",
+  "id": "lx331",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "safety-danger",
+  "meaning": "adjectives that mean being vulnerable, helpless, or unprotected from harm",
+  "words": [
+   "vulnerable",
+   "defenseless",
+   "unprotected",
+   "unguarded"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx332",
   "pos": "adjective",
   "cefr": "B2",
   "level": 38,
@@ -3165,37 +5565,7 @@
   "conflicts": []
  },
  {
-  "id": "lx190",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 43,
-  "domain": "safety-danger",
-  "meaning": "adjectives that mean being vulnerable, defenseless, or open to attack or harm",
-  "words": [
-   "vulnerable",
-   "defenseless",
-   "exposed",
-   "unprotected"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx191",
-  "pos": "adjective",
-  "cefr": "A1",
-  "level": 8,
-  "domain": "honesty-deception",
-  "meaning": "adjectives that mean true, real, or genuine",
-  "words": [
-   "true",
-   "real",
-   "actual",
-   "factual"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx192",
+  "id": "lx333",
   "pos": "adjective",
   "cefr": "A1",
   "level": 4,
@@ -3208,28 +5578,29 @@
    "incorrect"
   ],
   "conflicts": [
-   "lx193"
+   "lx334"
   ]
  },
  {
-  "id": "lx193",
+  "id": "lx334",
   "pos": "adjective",
-  "cefr": "B2",
-  "level": 34,
+  "cefr": "C1",
+  "level": 49,
   "domain": "honesty-deception",
-  "meaning": "adjectives that mean being fake, false, or not genuine",
+  "meaning": "adjectives that mean being fake, false, or counterfeit",
   "words": [
-   "artificial",
-   "counterfeit",
    "bogus",
-   "imitation"
+   "counterfeit",
+   "spurious",
+   "sham",
+   "phony"
   ],
   "conflicts": [
-   "lx192"
+   "lx333"
   ]
  },
  {
-  "id": "lx194",
+  "id": "lx335",
   "pos": "adjective",
   "cefr": "A1",
   "level": 4,
@@ -3246,10 +5617,10 @@
   "conflicts": []
  },
  {
-  "id": "lx195",
+  "id": "lx336",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 10,
+  "level": 9,
   "domain": "perception",
   "meaning": "adjectives that mean covered or soaked with water or another liquid",
   "words": [
@@ -3258,13 +5629,31 @@
    "moist",
    "soaked"
   ],
+  "conflicts": [
+   "lx358"
+  ]
+ },
+ {
+  "id": "lx337",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 7,
+  "domain": "perception",
+  "meaning": "adjectives that mean being very hot or burning",
+  "words": [
+   "hot",
+   "boiling",
+   "burning",
+   "baking",
+   "fiery"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx196",
+  "id": "lx338",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 12,
+  "level": 11,
   "domain": "perception",
   "meaning": "adjectives that mean being loud, noisy, or making a lot of sound",
   "words": [
@@ -3274,29 +5663,31 @@
    "roaring"
   ],
   "conflicts": [
-   "lx201"
+   "lx355",
+   "lx356"
   ]
  },
  {
-  "id": "lx197",
+  "id": "lx339",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 16,
+  "level": 14,
   "domain": "perception",
   "meaning": "adjectives that mean clear, obvious, or easy to see and understand",
   "words": [
    "obvious",
    "noticeable",
+   "visible",
    "apparent",
    "evident"
   ],
   "conflicts": []
  },
  {
-  "id": "lx198",
+  "id": "lx340",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 16,
+  "level": 14,
   "domain": "perception",
   "meaning": "adjectives that mean dark, dim, or lacking light",
   "words": [
@@ -3308,61 +5699,297 @@
   "conflicts": []
  },
  {
-  "id": "lx199",
+  "id": "lx341",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 11,
+  "level": 19,
   "domain": "perception",
-  "meaning": "adjectives that mean having a high temperature, hot, or warm",
+  "meaning": "adjectives that mean being rough, uneven, or bumpy to the touch",
   "words": [
-   "hot",
-   "boiling",
-   "roasting",
-   "burning",
-   "heated"
+   "rough",
+   "uneven",
+   "bumpy",
+   "coarse",
+   "rugged"
   ],
   "conflicts": []
  },
  {
-  "id": "lx200",
+  "id": "lx342",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "perception",
+  "meaning": "adjectives that mean being spicy, hot, or highly seasoned with spices",
+  "words": [
+   "spicy",
+   "seasoned",
+   "peppery",
+   "spiced",
+   "zesty"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx343",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "perception",
+  "meaning": "adjectives that mean being dry, dried, or lacking water and moisture",
+  "words": [
+   "dry",
+   "dried",
+   "waterless",
+   "dehydrated"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx344",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "perception",
+  "meaning": "adjectives that mean having a pleasant, sweet, or fresh smell",
+  "words": [
+   "fragrant",
+   "scented",
+   "perfumed",
+   "aromatic"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx345",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "perception",
+  "meaning": "adjectives that mean being smelly, stinky, or having an unpleasant odor",
+  "words": [
+   "smelly",
+   "stinky",
+   "foul",
+   "stinking"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx346",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "perception",
+  "meaning": "adjectives that mean being cloudy, foggy, or covered with mist and clouds",
+  "words": [
+   "cloudy",
+   "foggy",
+   "misty",
+   "overcast",
+   "hazy"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx347",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "perception",
+  "meaning": "adjectives that mean being windy, breezy, or characterized by strong winds",
+  "words": [
+   "windy",
+   "breezy",
+   "gusty",
+   "blowy"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx348",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 14,
+  "domain": "perception",
+  "meaning": "adjectives that mean being cooked, baked, or prepared by heat",
+  "words": [
+   "cooked",
+   "baked",
+   "roasted",
+   "fried",
+   "boiled",
+   "grilled"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx349",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "perception",
+  "meaning": "adjectives that mean being pale, colorless, or faded in appearance",
+  "words": [
+   "pale",
+   "colorless",
+   "faded",
+   "bleached"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx350",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 23,
+  "domain": "perception",
+  "meaning": "adjectives that mean being curved, bent, or not straight in physical shape",
+  "words": [
+   "curved",
+   "bent",
+   "twisted",
+   "winding",
+   "arched"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx351",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "perception",
+  "meaning": "adjectives that mean being next to, adjacent, or sharing a common border with something else",
+  "words": [
+   "adjacent",
+   "neighboring",
+   "adjoining",
+   "bordering",
+   "touching"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx352",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "perception",
+  "meaning": "adjectives that mean emitting, reflecting, or filled with light, bright, or shining",
+  "words": [
+   "radiant",
+   "luminous",
+   "brilliant",
+   "gleaming"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx353",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "perception",
+  "meaning": "adjectives that mean being very smooth, sleek, or glassy",
+  "words": [
+   "sleek",
+   "glassy",
+   "silky",
+   "polished",
+   "glossy"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx354",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "perception",
+  "meaning": "adjectives that mean lacking strong, distinctive, or pleasant flavor",
+  "words": [
+   "tasteless",
+   "bland",
+   "flavorless",
+   "insipid"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx355",
   "pos": "adjective",
   "cefr": "B2",
   "level": 38,
   "domain": "perception",
-  "meaning": "adjectives that mean being dry, arid, or parched",
+  "meaning": "adjectives that mean being very noisy, rowdy, or boisterous",
   "words": [
-   "dry",
-   "arid",
-   "parched",
-   "dehydrated",
-   "waterless"
+   "boisterous",
+   "clamorous",
+   "uproarious",
+   "tumultuous"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx338",
+   "lx356"
+  ]
  },
  {
-  "id": "lx201",
+  "id": "lx356",
   "pos": "adjective",
   "cefr": "C1",
   "level": 47,
   "domain": "perception",
   "meaning": "adjectives that mean being extremely loud, noisy, or harsh-sounding",
   "words": [
-   "clamorous",
-   "boisterous",
    "vociferous",
    "raucous",
    "cacophonous",
    "strident"
   ],
   "conflicts": [
-   "lx196"
+   "lx338",
+   "lx355"
   ]
  },
  {
-  "id": "lx202",
+  "id": "lx357",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "perception",
+  "meaning": "adjectives that mean being highly observant, attentive, or watchful",
+  "words": [
+   "vigilant",
+   "observant",
+   "attentive",
+   "heedful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx358",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "perception",
+  "meaning": "adjectives that mean being extremely wet, soaked, or drenched",
+  "words": [
+   "drenched",
+   "sodden",
+   "saturated",
+   "dripping",
+   "waterlogged"
+  ],
+  "conflicts": [
+   "lx336"
+  ]
+ },
+ {
+  "id": "lx359",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 5,
+  "level": 4,
   "domain": "health",
   "meaning": "adjectives that mean being healthy, fit, or in good physical shape",
   "words": [
@@ -3371,13 +5998,16 @@
    "well",
    "sound"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx362",
+   "lx361"
+  ]
  },
  {
-  "id": "lx203",
+  "id": "lx360",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 12,
+  "level": 11,
   "domain": "health",
   "meaning": "adjectives that mean hurt, injured, or suffering from physical pain",
   "words": [
@@ -3389,25 +6019,75 @@
   "conflicts": []
  },
  {
-  "id": "lx204",
+  "id": "lx361",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 41,
+  "cefr": "A2",
+  "level": 17,
   "domain": "health",
-  "meaning": "adjectives that mean being extremely tired, exhausted, or depleted of energy",
+  "meaning": "adjectives that mean being awake, alive, or active and conscious",
   "words": [
-   "fatigued",
+   "awake",
+   "alive",
+   "living",
+   "conscious",
+   "waking"
+  ],
+  "conflicts": [
+   "lx359"
+  ]
+ },
+ {
+  "id": "lx362",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "health",
+  "meaning": "adjectives that mean being physically strong, tough, or able to withstand damage",
+  "words": [
+   "sturdy",
+   "hardy",
+   "robust",
+   "resilient"
+  ],
+  "conflicts": [
+   "lx359"
+  ]
+ },
+ {
+  "id": "lx363",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "health",
+  "meaning": "adjectives that mean feeling extremely tired, exhausted, or drained of energy",
+  "words": [
    "weary",
-   "spent",
-   "drained"
+   "fatigued",
+   "drained",
+   "spent"
   ],
   "conflicts": []
  },
  {
-  "id": "lx205",
+  "id": "lx364",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "health",
+  "meaning": "adjectives that mean being highly harmful, toxic, or destructive to health or well-being",
+  "words": [
+   "deleterious",
+   "noxious",
+   "pernicious",
+   "baneful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx365",
   "pos": "adjective",
   "cefr": "A1",
-  "level": 10,
+  "level": 9,
   "domain": "certainty-doubt",
   "meaning": "adjectives that mean completely confident or having no doubt about something",
   "words": [
@@ -3417,46 +6097,60 @@
    "confident",
    "convinced"
   ],
+  "conflicts": [
+   "lx368"
+  ]
+ },
+ {
+  "id": "lx366",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 10,
+  "domain": "certainty-doubt",
+  "meaning": "adjectives that mean being possible, likely, or expected to happen",
+  "words": [
+   "possible",
+   "likely",
+   "probable",
+   "expected"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx206",
+  "id": "lx367",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 47,
+  "cefr": "A2",
+  "level": 17,
   "domain": "certainty-doubt",
-  "meaning": "adjectives that mean being unclear, vague, or open to multiple interpretations",
+  "meaning": "adjectives that mean being unsure, doubtful, or confused",
   "words": [
-   "equivocal",
-   "cryptic",
-   "enigmatic",
-   "nebulous"
+   "unsure",
+   "uncertain",
+   "undecided",
+   "doubtful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx368",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "certainty-doubt",
+  "meaning": "adjectives that mean being certain to happen and impossible to avoid",
+  "words": [
+   "inevitable",
+   "unavoidable",
+   "inescapable",
+   "destined",
+   "fated"
   ],
   "conflicts": [
-   "lx207"
+   "lx365"
   ]
  },
  {
-  "id": "lx207",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 41,
-  "domain": "certainty-doubt",
-  "meaning": "adjectives that mean being doubtful, skeptical, or disbelieving",
-  "words": [
-   "skeptical",
-   "doubtful",
-   "dubious",
-   "suspicious",
-   "incredulous",
-   "distrustful"
-  ],
-  "conflicts": [
-   "lx206"
-  ]
- },
- {
-  "id": "lx208",
+  "id": "lx369",
   "pos": "adjective",
   "cefr": "A1",
   "level": 10,
@@ -3470,30 +6164,14 @@
    "central"
   ],
   "conflicts": [
-   "lx211",
-   "lx212"
+   "lx371"
   ]
  },
  {
-  "id": "lx209",
+  "id": "lx370",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 16,
-  "domain": "importance",
-  "meaning": "adjectives that mean being famous, popular, or well-known",
-  "words": [
-   "famous",
-   "celebrated",
-   "noted",
-   "famed"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx210",
-  "pos": "adjective",
-  "cefr": "A2",
-  "level": 19,
+  "level": 17,
   "domain": "importance",
   "meaning": "adjectives that mean unimportant, minor, or of little consequence",
   "words": [
@@ -3503,49 +6181,45 @@
    "insignificant"
   ],
   "conflicts": [
-   "lx213"
+   "lx373",
+   "lx374"
   ]
  },
  {
-  "id": "lx211",
+  "id": "lx371",
   "pos": "adjective",
-  "cefr": "B1",
-  "level": 30,
+  "cefr": "A2",
+  "level": 17,
   "domain": "importance",
-  "meaning": "adjectives that mean being absolutely necessary, required, or essential",
+  "meaning": "adjectives that mean absolutely needed, basic, or essential",
   "words": [
    "necessary",
-   "essential",
-   "vital",
-   "crucial",
+   "needed",
    "required",
-   "needed"
+   "essential",
+   "vital"
   ],
   "conflicts": [
-   "lx208",
-   "lx212"
+   "lx369"
   ]
  },
  {
-  "id": "lx212",
+  "id": "lx372",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 43,
+  "cefr": "B2",
+  "level": 38,
   "domain": "importance",
-  "meaning": "adjectives that mean being crucial, essential, or absolutely necessary",
+  "meaning": "adjectives that mean being little known, hidden, or obscure",
   "words": [
-   "indispensable",
-   "imperative",
-   "critical",
-   "requisite"
+   "concealed",
+   "unseen",
+   "veiled",
+   "disguised"
   ],
-  "conflicts": [
-   "lx208",
-   "lx211"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx213",
+  "id": "lx373",
   "pos": "adjective",
   "cefr": "C1",
   "level": 47,
@@ -3558,14 +6232,33 @@
    "paltry"
   ],
   "conflicts": [
-   "lx210"
+   "lx370"
   ]
  },
  {
-  "id": "lx214",
+  "id": "lx374",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "importance",
+  "meaning": "adjectives that mean being secondary, subordinate, or of lesser importance",
+  "words": [
+   "subordinate",
+   "subsidiary",
+   "ancillary",
+   "peripheral",
+   "auxiliary",
+   "incidental"
+  ],
+  "conflicts": [
+   "lx370"
+  ]
+ },
+ {
+  "id": "lx375",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 13,
+  "level": 11,
   "domain": "relationships",
   "meaning": "adjectives that mean being married, engaged, or united in a relationship",
   "words": [
@@ -3574,13 +6267,46 @@
    "attached",
    "coupled"
   ],
+  "conflicts": [
+   "lx380"
+  ]
+ },
+ {
+  "id": "lx376",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being related to other nations or foreign places",
+  "words": [
+   "foreign",
+   "international",
+   "overseas",
+   "multinational"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx215",
+  "id": "lx377",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being highly loved, favored, or cherished by someone",
+  "words": [
+   "favorite",
+   "preferred",
+   "loved",
+   "beloved",
+   "cherished"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx378",
   "pos": "adjective",
   "cefr": "B1",
-  "level": 30,
+  "level": 29,
   "domain": "relationships",
   "meaning": "adjectives that mean being loyal, faithful, or deeply committed to someone or something",
   "words": [
@@ -3593,88 +6319,271 @@
   "conflicts": []
  },
  {
-  "id": "lx216",
+  "id": "lx379",
   "pos": "adjective",
-  "cefr": "C1",
-  "level": 47,
+  "cefr": "B1",
+  "level": 26,
   "domain": "relationships",
-  "meaning": "adjectives that mean being native, indigenous, or naturally belonging to a particular place",
+  "meaning": "adjectives that mean being different, distinct, or unlike one another",
   "words": [
-   "native",
-   "indigenous",
-   "endemic",
-   "homegrown"
+   "distinct",
+   "diverse",
+   "unlike",
+   "contrasting",
+   "varied"
   ],
   "conflicts": []
  },
  {
-  "id": "lx217",
+  "id": "lx380",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 26,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being joined, linked, or united together in a group or alliance",
+  "words": [
+   "linked",
+   "connected",
+   "allied",
+   "associated"
+  ],
+  "conflicts": [
+   "lx375"
+  ]
+ },
+ {
+  "id": "lx381",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 38,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being disloyal, unfaithful, or treacherous to someone or something",
+  "words": [
+   "disloyal",
+   "unfaithful",
+   "treacherous",
+   "faithless"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx382",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being uncooperative, unhelpful, or unwilling to work with others",
+  "words": [
+   "uncooperative",
+   "unhelpful",
+   "obstructive",
+   "unaccommodating",
+   "contrary"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx383",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 43,
+  "level": 44,
+  "domain": "relationships",
+  "meaning": "adjectives that mean being cold, distant, or unfriendly in manner",
+  "words": [
+   "aloof",
+   "standoffish",
+   "unapproachable",
+   "frigid",
+   "unsociable"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx384",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 17,
+  "domain": "work-study",
+  "meaning": "adjectives that mean being highly skilled, talented, or expert at a task",
+  "words": [
+   "skilled",
+   "talented",
+   "expert",
+   "gifted"
+  ],
+  "conflicts": [
+   "lx388"
+  ]
+ },
+ {
+  "id": "lx385",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 19,
+  "domain": "work-study",
+  "meaning": "adjectives that mean being unskilled, untrained, or inexperienced",
+  "words": [
+   "unskilled",
+   "untrained",
+   "amateur",
+   "inexperienced"
+  ],
+  "conflicts": [
+   "lx387"
+  ]
+ },
+ {
+  "id": "lx386",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "work-study",
+  "meaning": "adjectives that mean being professional, official, or formal in nature",
+  "words": [
+   "professional",
+   "official",
+   "formal",
+   "authorized",
+   "certified"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx387",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 34,
+  "domain": "work-study",
+  "meaning": "adjectives that mean lacking the necessary skills, ability, or competence to do something",
+  "words": [
+   "incompetent",
+   "inept",
+   "amateurish",
+   "unqualified",
+   "incapable"
+  ],
+  "conflicts": [
+   "lx385"
+  ]
+ },
+ {
+  "id": "lx388",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 44,
   "domain": "work-study",
   "meaning": "adjectives that mean being extremely skilled, expert, or highly proficient",
   "words": [
    "adept",
    "proficient",
-   "skilled",
    "accomplished",
-   "expert",
+   "masterful",
    "deft"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx384"
+  ]
  },
  {
-  "id": "lx218",
+  "id": "lx389",
   "pos": "adjective",
-  "cefr": "A2",
-  "level": 13,
+  "cefr": "A1",
+  "level": 10,
   "domain": "beginning-ending",
-  "meaning": "adjectives that mean being first, initial, or coming at the beginning",
+  "meaning": "adjectives  that mean being the first, initial, or beginning part of something",
   "words": [
    "first",
    "initial",
-   "opening",
-   "starting"
+   "starting",
+   "opening"
+  ],
+  "conflicts": [
+   "lx392"
+  ]
+ },
+ {
+  "id": "lx390",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "beginning-ending",
+  "meaning": "adjectives that mean being final, ultimate, or coming at the very end of a series",
+  "words": [
+   "final",
+   "ultimate",
+   "terminal",
+   "concluding",
+   "closing",
+   "eventual"
   ],
   "conflicts": []
  },
  {
-  "id": "lx219",
+  "id": "lx391",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 17,
+  "level": 20,
+  "domain": "beginning-ending",
+  "meaning": "adjectives that mean being endless, infinite, or without any limit",
+  "words": [
+   "infinite",
+   "limitless",
+   "boundless",
+   "unlimited"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx392",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "beginning-ending",
+  "meaning": "adjectives that mean existing from the earliest times, original, or ancient",
+  "words": [
+   "primordial",
+   "primeval",
+   "primal",
+   "earliest"
+  ],
+  "conflicts": [
+   "lx389"
+  ]
+ },
+ {
+  "id": "lx393",
+  "pos": "adjective",
+  "cefr": "A1",
+  "level": 10,
   "domain": "cognition",
   "meaning": "adjectives that mean feeling surprised, shocked, or amazed",
   "words": [
    "surprised",
-   "shocked",
    "amazed",
+   "shocked",
    "stunned",
-   "startled",
-   "astonished"
-  ],
-  "conflicts": [
-   "lx224"
-  ]
- },
- {
-  "id": "lx220",
-  "pos": "adjective",
-  "cefr": "A2",
-  "level": 17,
-  "domain": "cognition",
-  "meaning": "adjectives that mean interested, curious, or wanting to know more",
-  "words": [
-   "interested",
-   "curious",
-   "inquisitive",
-   "nosy"
+   "astonished",
+   "startled"
   ],
   "conflicts": []
  },
  {
-  "id": "lx221",
+  "id": "lx394",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "cognition",
+  "meaning": "adjectives that mean being unknown, unfamiliar, or unrecognized",
+  "words": [
+   "unfamiliar",
+   "anonymous",
+   "unidentified",
+   "nameless"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx395",
   "pos": "adjective",
   "cefr": "B2",
   "level": 34,
@@ -3687,32 +6596,26 @@
    "judicious",
    "shrewd"
   ],
-  "conflicts": [
-   "lx223"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx222",
+  "id": "lx396",
   "pos": "adjective",
   "cefr": "B2",
   "level": 34,
   "domain": "cognition",
   "meaning": "adjectives that mean feeling confused, puzzled, or unable to think clearly",
   "words": [
-   "confused",
-   "puzzled",
    "bewildered",
    "perplexed",
    "baffled",
    "disoriented",
    "muddled"
   ],
-  "conflicts": [
-   "lx225"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx223",
+  "id": "lx397",
   "pos": "adjective",
   "cefr": "B2",
   "level": 38,
@@ -3720,54 +6623,81 @@
   "meaning": "adjectives that mean being logical, coherent, or well-structured and consistent",
   "words": [
    "coherent",
-   "logical",
    "systematic",
    "structured",
    "methodical",
    "consistent"
   ],
   "conflicts": [
-   "lx221"
+   "lx401"
   ]
  },
  {
-  "id": "lx224",
+  "id": "lx398",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 38,
+  "domain": "cognition",
+  "meaning": "adjectives that mean lacking any logical basis, factual support, or justification",
+  "words": [
+   "baseless",
+   "groundless",
+   "unfounded",
+   "unsupported"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx399",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 38,
+  "domain": "cognition",
+  "meaning": "adjectives that mean being impractical, unrealistic, or driven by ideal dreams rather than facts",
+  "words": [
+   "unrealistic",
+   "impractical",
+   "idealistic",
+   "visionary",
+   "fanciful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx400",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "cognition",
+  "meaning": "adjectives that mean being indecisive, hesitant, or unable to make a firm decision",
+  "words": [
+   "indecisive",
+   "hesitant",
+   "wavering",
+   "irresolute"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx401",
   "pos": "adjective",
   "cefr": "C1",
-  "level": 43,
+  "level": 50,
   "domain": "cognition",
-  "meaning": "adjectives that mean being extremely surprised, shocked, or astounded",
+  "meaning": "adjectives that mean being easily understood, clear, and logical",
   "words": [
-   "astounded",
-   "dumbfounded",
-   "flabbergasted",
-   "speechless",
-   "staggered"
+   "lucid",
+   "comprehensible",
+   "intelligible",
+   "perspicuous",
+   "fathomable"
   ],
   "conflicts": [
-   "lx219"
+   "lx397"
   ]
  },
  {
-  "id": "lx225",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 44,
-  "domain": "cognition",
-  "meaning": "adjectives that mean being mysterious, puzzling, or difficult to understand",
-  "words": [
-   "mysterious",
-   "puzzling",
-   "baffling",
-   "perplexing",
-   "inexplicable"
-  ],
-  "conflicts": [
-   "lx222"
-  ]
- },
- {
-  "id": "lx226",
+  "id": "lx402",
   "pos": "noun",
   "cefr": "A1",
   "level": 1,
@@ -3783,14 +6713,14 @@
    "boat"
   ],
   "conflicts": [
-   "lx228"
+   "lx404"
   ]
  },
  {
-  "id": "lx227",
+  "id": "lx403",
   "pos": "noun",
   "cefr": "A1",
-  "level": 2,
+  "level": 1,
   "domain": "movement",
   "meaning": "nouns that mean a road, path, or route for traveling from one place to another",
   "words": [
@@ -3800,14 +6730,14 @@
    "way"
   ],
   "conflicts": [
-   "lx228"
+   "lx404"
   ]
  },
  {
-  "id": "lx228",
+  "id": "lx404",
   "pos": "noun",
   "cefr": "A2",
-  "level": 17,
+  "level": 14,
   "domain": "movement",
   "meaning": "nouns that mean an act of traveling from one place to another",
   "words": [
@@ -3819,15 +6749,15 @@
    "drive"
   ],
   "conflicts": [
-   "lx226",
-   "lx227"
+   "lx403",
+   "lx402"
   ]
  },
  {
-  "id": "lx229",
+  "id": "lx405",
   "pos": "noun",
   "cefr": "A1",
-  "level": 5,
+  "level": 4,
   "domain": "communication",
   "meaning": "nouns that mean a written message or communication sent to someone",
   "words": [
@@ -3835,43 +6765,90 @@
    "letter",
    "card",
    "email",
-   "text"
+   "text",
+   "message"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx409"
+  ]
  },
  {
-  "id": "lx230",
+  "id": "lx406",
   "pos": "noun",
   "cefr": "A1",
-  "level": 8,
+  "level": 7,
   "domain": "communication",
   "meaning": "nouns that mean a piece of information, news, or a report about something",
   "words": [
    "news",
    "info",
-   "report",
-   "detail"
+   "story",
+   "report"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx409"
+  ]
  },
  {
-  "id": "lx231",
+  "id": "lx407",
   "pos": "noun",
   "cefr": "B1",
-  "level": 21,
+  "level": 26,
   "domain": "communication",
-  "meaning": "nouns that mean a spoken conversation, discussion, or talk between people",
+  "meaning": "nouns that mean an act of asking for something, such as a request or appeal",
   "words": [
-   "conversation",
-   "discussion",
-   "chat",
-   "talk",
-   "dialogue"
+   "request",
+   "appeal",
+   "demand",
+   "application"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx408"
+  ]
  },
  {
-  "id": "lx232",
+  "id": "lx408",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "communication",
+  "meaning": "nouns that mean a suggestion, advice, or proposal offered to someone",
+  "words": [
+   "suggestion",
+   "proposal",
+   "recommendation",
+   "advice",
+   "offer",
+   "tip",
+   "hint"
+  ],
+  "conflicts": [
+   "lx407"
+  ]
+ },
+ {
+  "id": "lx409",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "communication",
+  "meaning": "nouns that mean a formal or official statement making something known",
+  "words": [
+   "announcement",
+   "declaration",
+   "statement",
+   "proclamation",
+   "pronouncement",
+   "disclosure",
+   "notification"
+  ],
+  "conflicts": [
+   "lx405",
+   "lx406"
+  ]
+ },
+ {
+  "id": "lx410",
   "pos": "noun",
   "cefr": "C1",
   "level": 44,
@@ -3889,10 +6866,28 @@
   "conflicts": []
  },
  {
-  "id": "lx233",
+  "id": "lx411",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "communication",
+  "meaning": "nouns that mean a complete, systematic, and detailed list or collection of items",
+  "words": [
+   "inventory",
+   "catalog",
+   "directory",
+   "registry",
+   "index",
+   "register",
+   "roster"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx412",
   "pos": "noun",
   "cefr": "A1",
-  "level": 5,
+  "level": 4,
   "domain": "perception",
   "meaning": "nouns that mean a visual representation, picture, or drawing of something",
   "words": [
@@ -3905,10 +6900,41 @@
   "conflicts": []
  },
  {
-  "id": "lx234",
+  "id": "lx413",
   "pos": "noun",
   "cefr": "A1",
-  "level": 8,
+  "level": 7,
+  "domain": "perception",
+  "meaning": "nouns that mean an audible sound, voice, or musical tone",
+  "words": [
+   "sound",
+   "noise",
+   "voice",
+   "call",
+   "cry"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx414",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 29,
+  "domain": "perception",
+  "meaning": "nouns that mean a group of people who watch, listen to, or observe something",
+  "words": [
+   "audience",
+   "viewers",
+   "spectators",
+   "listeners"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx415",
+  "pos": "noun",
+  "cefr": "A1",
+  "level": 7,
   "domain": "cognition",
   "meaning": "nouns that mean a plan, goal, or hope for the future",
   "words": [
@@ -3918,58 +6944,118 @@
    "wish",
    "dream"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx418",
+   "lx419"
+  ]
  },
  {
-  "id": "lx235",
+  "id": "lx416",
   "pos": "noun",
   "cefr": "B1",
-  "level": 22,
+  "level": 27,
   "domain": "cognition",
-  "meaning": "nouns that mean a personal belief, opinion, or way of thinking about something",
+  "meaning": "nouns that mean mental capacity, intelligence, or wisdom",
   "words": [
-   "opinion",
-   "belief",
-   "view",
-   "attitude"
+   "intelligence",
+   "wisdom",
+   "cleverness",
+   "sense",
+   "understanding"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx420"
+  ]
  },
  {
-  "id": "lx236",
+  "id": "lx417",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "cognition",
+  "meaning": "nouns that mean a specific method, system, or procedure for doing something",
+  "words": [
+   "method",
+   "system",
+   "technique",
+   "process",
+   "procedure"
+  ],
+  "conflicts": [
+   "lx419"
+  ]
+ },
+ {
+  "id": "lx418",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "cognition",
+  "meaning": "nouns that mean an aim, purpose, or desired result of an action",
+  "words": [
+   "purpose",
+   "intention",
+   "aim",
+   "objective",
+   "target"
+  ],
+  "conflicts": [
+   "lx415"
+  ]
+ },
+ {
+  "id": "lx419",
   "pos": "noun",
   "cefr": "B2",
-  "level": 31,
+  "level": 35,
   "domain": "cognition",
-  "meaning": "nouns that mean a sign, indication, or clue that suggests something",
+  "meaning": "nouns that mean a detailed plan, scheme, or strategy to achieve something",
   "words": [
-   "sign",
-   "clue",
-   "indication",
-   "signal",
-   "symptom"
+   "scheme",
+   "design",
+   "plot",
+   "blueprint"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx415",
+   "lx417"
+  ]
  },
  {
-  "id": "lx237",
+  "id": "lx420",
   "pos": "noun",
   "cefr": "C1",
-  "level": 50,
+  "level": 49,
   "domain": "cognition",
   "meaning": "nouns that mean a deep wisdom, keen insight, or sharp mental alertness",
   "words": [
    "sagacity",
    "discernment",
    "acumen",
-   "wisdom",
    "insight",
    "astuteness"
+  ],
+  "conflicts": [
+   "lx416"
+  ]
+ },
+ {
+  "id": "lx421",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "cognition",
+  "meaning": "nouns that mean a subtle distinction, slight variation, or small difference in meaning or detail",
+  "words": [
+   "nuance",
+   "subtlety",
+   "gradation",
+   "nicety"
   ],
   "conflicts": []
  },
  {
-  "id": "lx238",
+  "id": "lx422",
   "pos": "noun",
   "cefr": "A1",
   "level": 2,
@@ -3979,30 +7065,16 @@
    "shop",
    "store",
    "market",
-   "supermarket"
+   "supermarket",
+   "mall"
   ],
   "conflicts": []
  },
  {
-  "id": "lx239",
-  "pos": "noun",
-  "cefr": "A1",
-  "level": 2,
-  "domain": "giving-taking",
-  "meaning": "nouns that mean physical money, cash, or coins",
-  "words": [
-   "money",
-   "cash",
-   "coin",
-   "bill"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx240",
+  "id": "lx423",
   "pos": "noun",
   "cefr": "A2",
-  "level": 13,
+  "level": 11,
   "domain": "giving-taking",
   "meaning": "nouns that mean something given to someone as a present or reward",
   "words": [
@@ -4014,40 +7086,76 @@
   "conflicts": []
  },
  {
-  "id": "lx241",
+  "id": "lx424",
   "pos": "noun",
-  "cefr": "B1",
-  "level": 29,
-  "domain": "size-amount",
-  "meaning": "nouns that mean a border, boundary, or outer limit of an area",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "giving-taking",
+  "meaning": "nouns that mean a payment, charge, or fee",
   "words": [
-   "border",
-   "boundary",
-   "limit",
-   "edge"
+   "charge",
+   "fee",
+   "tax",
+   "fare",
+   "rent",
+   "payment"
   ],
   "conflicts": []
  },
  {
-  "id": "lx242",
+  "id": "lx425",
+  "pos": "noun",
+  "cefr": "A1",
+  "level": 4,
+  "domain": "size-amount",
+  "meaning": "nouns that mean a part, piece, or section of a whole",
+  "words": [
+   "part",
+   "piece",
+   "bit",
+   "section"
+  ],
+  "conflicts": [
+   "lx426"
+  ]
+ },
+ {
+  "id": "lx426",
   "pos": "noun",
   "cefr": "B2",
-  "level": 39,
+  "level": 38,
   "domain": "size-amount",
   "meaning": "nouns that mean a small amount, trace, or tiny quantity of something",
   "words": [
-   "trace",
-   "hint",
    "speck",
    "scrap",
    "shred",
    "crumb",
    "grain"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx425"
+  ]
  },
  {
-  "id": "lx243",
+  "id": "lx427",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "size-amount",
+  "meaning": "nouns that mean a very large quantity or an overflowing supply of something",
+  "words": [
+   "abundance",
+   "plenty",
+   "bounty",
+   "profusion"
+  ],
+  "conflicts": [
+   "lx429"
+  ]
+ },
+ {
+  "id": "lx428",
   "pos": "noun",
   "cefr": "C1",
   "level": 44,
@@ -4063,10 +7171,43 @@
   "conflicts": []
  },
  {
-  "id": "lx244",
+  "id": "lx429",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 44,
+  "domain": "size-amount",
+  "meaning": "nouns that mean a sudden, overwhelming flood, rush, or outpouring of something",
+  "words": [
+   "deluge",
+   "torrent",
+   "inundation",
+   "avalanche",
+   "spate"
+  ],
+  "conflicts": [
+   "lx427"
+  ]
+ },
+ {
+  "id": "lx430",
+  "pos": "noun",
+  "cefr": "A1",
+  "level": 2,
+  "domain": "emotion-positive",
+  "meaning": "nouns that mean a game, sport, or fun activity done for enjoyment",
+  "words": [
+   "game",
+   "sport",
+   "match",
+   "hobby"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx431",
   "pos": "noun",
   "cefr": "A2",
-  "level": 18,
+  "level": 15,
   "domain": "emotion-positive",
   "meaning": "nouns that mean a strong feeling of happiness, pleasure, or satisfaction",
   "words": [
@@ -4076,14 +7217,48 @@
    "enjoyment"
   ],
   "conflicts": [
-   "lx248"
+   "lx437"
   ]
  },
  {
-  "id": "lx245",
+  "id": "lx432",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 23,
+  "domain": "emotion-positive",
+  "meaning": "nouns that mean a feeling of affection, care, or warm attachment",
+  "words": [
+   "love",
+   "affection",
+   "warmth",
+   "attachment",
+   "liking"
+  ],
+  "conflicts": [
+   "lx436"
+  ]
+ },
+ {
+  "id": "lx433",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "emotion-positive",
+  "meaning": "nouns that mean a feeling of great surprise or wonder",
+  "words": [
+   "amazement",
+   "wonder",
+   "astonishment",
+   "surprise",
+   "awe"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx434",
   "pos": "noun",
   "cefr": "B2",
-  "level": 39,
+  "level": 38,
   "domain": "emotion-positive",
   "meaning": "nouns that mean a strong desire, longing, or craving",
   "words": [
@@ -4096,22 +7271,23 @@
   "conflicts": []
  },
  {
-  "id": "lx246",
+  "id": "lx435",
   "pos": "noun",
   "cefr": "B2",
   "level": 35,
   "domain": "emotion-positive",
   "meaning": "nouns that mean a state of peace, calm, or tranquility",
   "words": [
-   "peace",
    "calm",
    "tranquility",
-   "serenity"
+   "serenity",
+   "stillness",
+   "quiet"
   ],
   "conflicts": []
  },
  {
-  "id": "lx247",
+  "id": "lx436",
   "pos": "noun",
   "cefr": "C1",
   "level": 41,
@@ -4119,14 +7295,16 @@
   "meaning": "nouns that mean a strong feeling of deep affection, fondness, or devotion",
   "words": [
    "adoration",
-   "affection",
    "devotion",
-   "fondness"
+   "fondness",
+   "tenderness"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx432"
+  ]
  },
  {
-  "id": "lx248",
+  "id": "lx437",
   "pos": "noun",
   "cefr": "C1",
   "level": 44,
@@ -4142,14 +7320,14 @@
    "exultation"
   ],
   "conflicts": [
-   "lx244"
+   "lx431"
   ]
  },
  {
-  "id": "lx249",
+  "id": "lx438",
   "pos": "noun",
   "cefr": "A1",
-  "level": 8,
+  "level": 7,
   "domain": "relationships",
   "meaning": "nouns that mean a person who is a visitor, customer, or member of a group",
   "words": [
@@ -4159,15 +7337,13 @@
    "customer",
    "member"
   ],
-  "conflicts": [
-   "lx250"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx250",
+  "id": "lx439",
   "pos": "noun",
   "cefr": "A2",
-  "level": 18,
+  "level": 15,
   "domain": "relationships",
   "meaning": "nouns that mean a person who helps, works with, or spends time with another person",
   "words": [
@@ -4178,15 +7354,13 @@
    "assistant",
    "buddy"
   ],
-  "conflicts": [
-   "lx249"
-  ]
+  "conflicts": []
  },
  {
-  "id": "lx251",
+  "id": "lx440",
   "pos": "noun",
   "cefr": "B1",
-  "level": 25,
+  "level": 23,
   "domain": "relationships",
   "meaning": "nouns that mean a regular habit, custom, or traditional way of doing something",
   "words": [
@@ -4199,10 +7373,60 @@
   "conflicts": []
  },
  {
-  "id": "lx252",
+  "id": "lx441",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "relationships",
+  "meaning": "nouns that mean a connection, bond, or link between people or things",
+  "words": [
+   "bond",
+   "link",
+   "connection",
+   "tie",
+   "association",
+   "relation",
+   "union"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx442",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 38,
+  "domain": "evaluation",
+  "meaning": "verbs that mean to calculate, estimate, or judge the value, size, or amount of something",
+  "words": [
+   "calculate",
+   "compute",
+   "gauge",
+   "appraise"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx443",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "opposition-criticism",
+  "meaning": "verbs that mean to refuse, reject, or oppose something",
+  "words": [
+   "refuse",
+   "reject",
+   "resist",
+   "oppose"
+  ],
+  "conflicts": [
+   "lx446"
+  ]
+ },
+ {
+  "id": "lx444",
   "pos": "verb",
   "cefr": "B1",
-  "level": 29,
+  "level": 27,
   "domain": "opposition-criticism",
   "meaning": "verbs that mean to complain, grumble, or express dissatisfaction about something",
   "words": [
@@ -4214,37 +7438,58 @@
   "conflicts": []
  },
  {
-  "id": "lx253",
+  "id": "lx445",
   "pos": "verb",
   "cefr": "B2",
-  "level": 40,
+  "level": 39,
   "domain": "opposition-criticism",
   "meaning": "verbs that mean to laugh at or make fun of someone in an unkind way",
   "words": [
-   "mock",
    "ridicule",
    "taunt",
-   "jeer"
+   "jeer",
+   "scoff",
+   "sneer"
   ],
   "conflicts": []
  },
  {
-  "id": "lx254",
+  "id": "lx446",
   "pos": "verb",
   "cefr": "B2",
   "level": 35,
   "domain": "opposition-criticism",
-  "meaning": "verbs that mean to use physical force to attack or invade someone or something",
+  "meaning": "verbs that mean to openly resist, disobey, or challenge authority or rules",
   "words": [
-   "assault",
-   "raid",
-   "ambush",
-   "invade"
+   "defy",
+   "rebel",
+   "disobey",
+   "revolt"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx443"
+  ]
  },
  {
-  "id": "lx255",
+  "id": "lx447",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "opposition-criticism",
+  "meaning": "verbs that mean to criticize or speak angrily to someone for doing something wrong",
+  "words": [
+   "reprimand",
+   "rebuke",
+   "chide",
+   "berate",
+   "admonish"
+  ],
+  "conflicts": [
+   "lx448"
+  ]
+ },
+ {
+  "id": "lx448",
   "pos": "verb",
   "cefr": "C1",
   "level": 47,
@@ -4257,30 +7502,94 @@
    "castigate",
    "upbraid"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx447"
+  ]
  },
  {
-  "id": "lx256",
+  "id": "lx449",
   "pos": "verb",
   "cefr": "C1",
-  "level": 47,
-  "domain": "certainty-doubt",
-  "meaning": "verbs that mean to provide evidence to confirm, verify, or prove the truth of something",
+  "level": 44,
+  "domain": "opposition-criticism",
+  "meaning": "verbs that mean to delay, block, or obstruct the progress of something",
   "words": [
-   "corroborate",
-   "substantiate",
-   "verify",
-   "validate",
-   "confirm",
-   "authenticate"
+   "impede",
+   "hamper",
+   "thwart",
+   "stymie"
   ],
   "conflicts": []
  },
  {
-  "id": "lx257",
+  "id": "lx450",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "opposition-criticism",
+  "meaning": "verbs that mean to incite, stir up, or provoke trouble or anger",
+  "words": [
+   "incite",
+   "instigate",
+   "foment",
+   "inflame",
+   "goad"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx451",
+  "pos": "verb",
+  "cefr": "B2",
+  "level": 38,
+  "domain": "certainty-doubt",
+  "meaning": "verbs that mean to prove or show that something is true, correct, or authentic",
+  "words": [
+   "verify",
+   "confirm",
+   "validate",
+   "authenticate",
+   "certify"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx452",
+  "pos": "verb",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "certainty-doubt",
+  "meaning": "verbs that mean to formally reject, disown, or declare that one no longer holds a belief or claim",
+  "words": [
+   "recant",
+   "abjure",
+   "retract",
+   "disavow",
+   "repudiate"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx453",
+  "pos": "verb",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "importance",
+  "meaning": "verbs that mean to emphasize or highlight something",
+  "words": [
+   "emphasize",
+   "highlight",
+   "stress",
+   "underline",
+   "spotlight"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx454",
   "pos": "adjective",
   "cefr": "A2",
-  "level": 18,
+  "level": 15,
   "domain": "success-failure",
   "meaning": "adjectives that mean being successful, winning, or having good fortune",
   "words": [
@@ -4289,45 +7598,410 @@
    "victorious",
    "winning"
   ],
-  "conflicts": []
- },
- {
-  "id": "lx258",
-  "pos": "noun",
-  "cefr": "A2",
-  "level": 18,
-  "domain": "work-study",
-  "meaning": "nouns that mean a job, profession, or employment",
-  "words": [
-   "job",
-   "career",
-   "trade",
-   "position"
-  ],
   "conflicts": [
-   "lx259"
+   "lx456"
   ]
  },
  {
-  "id": "lx259",
+  "id": "lx455",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 23,
+  "domain": "success-failure",
+  "meaning": "adjectives that mean being unlucky, unfortunate, or unsuccessful",
+  "words": [
+   "unlucky",
+   "unfortunate",
+   "unsuccessful",
+   "failed"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx456",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 49,
+  "domain": "success-failure",
+  "meaning": "adjectives that mean being extremely lucky, fortunate, or favorable",
+  "words": [
+   "fortunate",
+   "auspicious",
+   "providential",
+   "propitious"
+  ],
+  "conflicts": [
+   "lx454"
+  ]
+ },
+ {
+  "id": "lx457",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "damage",
+  "meaning": "adjectives that mean being harmful, damaging, or destructive",
+  "words": [
+   "detrimental",
+   "damaging",
+   "destructive",
+   "injurious"
+  ],
+  "conflicts": [
+   "lx458"
+  ]
+ },
+ {
+  "id": "lx458",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 44,
+  "domain": "damage",
+  "meaning": "adjectives that mean causing great damage, destruction, or ruin",
+  "words": [
+   "devastating",
+   "catastrophic",
+   "calamitous",
+   "crippling"
+  ],
+  "conflicts": [
+   "lx457"
+  ]
+ },
+ {
+  "id": "lx459",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "creation",
+  "meaning": "adjectives that mean being creative, imaginative, or highly artistic",
+  "words": [
+   "creative",
+   "imaginative",
+   "artistic",
+   "inventive",
+   "inspired"
+  ],
+  "conflicts": [
+   "lx460"
+  ]
+ },
+ {
+  "id": "lx460",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "creation",
+  "meaning": "adjectives that mean being newly made, original, or first of its kind",
+  "words": [
+   "novel",
+   "innovative",
+   "groundbreaking",
+   "pioneering"
+  ],
+  "conflicts": [
+   "lx459"
+  ]
+ },
+ {
+  "id": "lx461",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "control-power",
+  "meaning": "adjectives that mean being powerful, strong, or dominant in position",
+  "words": [
+   "powerful",
+   "mighty",
+   "influential",
+   "dominant",
+   "forceful"
+  ],
+  "conflicts": [
+   "lx463"
+  ]
+ },
+ {
+  "id": "lx462",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "control-power",
+  "meaning": "adjectives that mean being strict, firm, or demanding high standards",
+  "words": [
+   "strict",
+   "firm",
+   "stern",
+   "rigid",
+   "demanding"
+  ],
+  "conflicts": [
+   "lx463"
+  ]
+ },
+ {
+  "id": "lx463",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "control-power",
+  "meaning": "adjectives that mean being bossy, dominant, or controlling over others in an unpleasant way",
+  "words": [
+   "bossy",
+   "overbearing",
+   "dictatorial",
+   "domineering",
+   "authoritarian"
+  ],
+  "conflicts": [
+   "lx461",
+   "lx462"
+  ]
+ },
+ {
+  "id": "lx464",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "control-power",
+  "meaning": "adjectives that mean required by a law, rule, or authority",
+  "words": [
+   "compulsory",
+   "obligatory",
+   "mandatory",
+   "binding"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx465",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "control-power",
+  "meaning": "adjectives that mean being optional, voluntary, or not required by rules or laws",
+  "words": [
+   "optional",
+   "voluntary",
+   "elective",
+   "discretionary"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx466",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 20,
+  "domain": "avoidance",
+  "meaning": "adjectives that mean being avoided, ignored, or unwanted by other people",
+  "words": [
+   "ignored",
+   "avoided",
+   "rejected",
+   "excluded"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx467",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "avoidance",
+  "meaning": "adjectives that mean being careful, cautious, or alert to avoid danger or mistakes",
+  "words": [
+   "careful",
+   "cautious",
+   "watchful",
+   "wary"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx468",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "avoidance",
+  "meaning": "adjectives that mean being careless, thoughtless, or not paying proper attention",
+  "words": [
+   "careless",
+   "thoughtless",
+   "unthinking",
+   "inattentive"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx469",
+  "pos": "adjective",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "improvement",
+  "meaning": "adjectives that mean being better, improved, or enhanced in quality",
+  "words": [
+   "better",
+   "improved",
+   "superior",
+   "upgraded",
+   "finer"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx470",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "improvement",
+  "meaning": "adjectives that mean producing good results or being highly beneficial",
+  "words": [
+   "beneficial",
+   "advantageous",
+   "favorable",
+   "fruitful"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx471",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "opposition-criticism",
+  "meaning": "adjectives that mean refusing to obey rules, authority, or people in power",
+  "words": [
+   "rebellious",
+   "disobedient",
+   "defiant",
+   "unruly"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx472",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "opposition-criticism",
+  "meaning": "adjectives that mean being critical, disapproving, or expressing unfavorable opinions",
+  "words": [
+   "disapproving",
+   "unfavorable",
+   "judgmental",
+   "dismissive"
+  ],
+  "conflicts": [
+   "lx473"
+  ]
+ },
+ {
+  "id": "lx473",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "opposition-criticism",
+  "meaning": "adjectives that mean being highly critical, fault-finding, or expressing severe disapproval",
+  "words": [
+   "censorious",
+   "hypercritical",
+   "captious",
+   "carping",
+   "faultfinding"
+  ],
+  "conflicts": [
+   "lx472"
+  ]
+ },
+ {
+  "id": "lx474",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 11,
+  "domain": "work-study",
+  "meaning": "nouns that mean a test, examination, or evaluation of knowledge or ability",
+  "words": [
+   "test",
+   "exam",
+   "examination",
+   "quiz"
+  ],
+  "conflicts": [
+   "lx476"
+  ]
+ },
+ {
+  "id": "lx475",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 11,
+  "domain": "work-study",
+  "meaning": "nouns that mean a person who teaches, instructs, or guides others",
+  "words": [
+   "teacher",
+   "tutor",
+   "coach",
+   "trainer",
+   "guide"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx476",
   "pos": "noun",
   "cefr": "B1",
-  "level": 25,
+  "level": 23,
   "domain": "work-study",
   "meaning": "nouns that mean a specific task, duty, or piece of work to be done",
   "words": [
-   "task",
    "duty",
    "assignment",
    "project",
    "chore"
   ],
   "conflicts": [
-   "lx258"
+   "lx474"
   ]
  },
  {
-  "id": "lx260",
+  "id": "lx477",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "work-study",
+  "meaning": "nouns that mean money received regularly for work or support",
+  "words": [
+   "salary",
+   "wage",
+   "pay",
+   "income",
+   "earnings",
+   "allowance",
+   "pension"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx478",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 11,
+  "domain": "effort-difficulty",
+  "meaning": "nouns that mean a situation, matter, or person that causes difficulties",
+  "words": [
+   "problem",
+   "trouble",
+   "difficulty",
+   "challenge",
+   "issue"
+  ],
+  "conflicts": [
+   "lx479"
+  ]
+ },
+ {
+  "id": "lx479",
   "pos": "noun",
   "cefr": "B2",
   "level": 39,
@@ -4340,10 +8014,28 @@
    "impediment",
    "obstruction"
   ],
+  "conflicts": [
+   "lx478"
+  ]
+ },
+ {
+  "id": "lx480",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "effort-difficulty",
+  "meaning": "nouns that mean hard physical or mental work, effort, or exertion",
+  "words": [
+   "effort",
+   "labor",
+   "toil",
+   "exertion",
+   "drudgery"
+  ],
   "conflicts": []
  },
  {
-  "id": "lx261",
+  "id": "lx481",
   "pos": "noun",
   "cefr": "C1",
   "level": 50,
@@ -4353,33 +8045,16 @@
    "penury",
    "destitution",
    "indigence",
-   "privation",
    "pauperism",
    "impoverishment"
   ],
   "conflicts": []
  },
  {
-  "id": "lx262",
-  "pos": "noun",
-  "cefr": "B1",
-  "level": 26,
-  "domain": "health",
-  "meaning": "nouns that mean a physical injury, wound, or damage to the body",
-  "words": [
-   "injury",
-   "wound",
-   "cut",
-   "bruise",
-   "scratch"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx263",
+  "id": "lx482",
   "pos": "noun",
   "cefr": "A2",
-  "level": 19,
+  "level": 18,
   "domain": "opposition-criticism",
   "meaning": "nouns that mean an angry disagreement, fight, or struggle between people",
   "words": [
@@ -4388,17 +8063,56 @@
    "quarrel",
    "conflict"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx483"
+  ]
  },
  {
-  "id": "lx264",
+  "id": "lx483",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "opposition-criticism",
+  "meaning": "nouns that mean an expression of disapproval, criticism, or objection",
+  "words": [
+   "criticism",
+   "complaint",
+   "objection",
+   "protest"
+  ],
+  "conflicts": [
+   "lx482",
+   "lx484"
+  ]
+ },
+ {
+  "id": "lx484",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 44,
+  "domain": "opposition-criticism",
+  "meaning": "nouns that mean a formal, severe, or official expression of disapproval or criticism",
+  "words": [
+   "censure",
+   "reprimand",
+   "rebuke",
+   "condemnation",
+   "reproof",
+   "admonition",
+   "denunciation"
+  ],
+  "conflicts": [
+   "lx483"
+  ]
+ },
+ {
+  "id": "lx485",
   "pos": "noun",
   "cefr": "A2",
-  "level": 19,
+  "level": 18,
   "domain": "control-power",
   "meaning": "nouns that mean an official statement or instruction telling you what you must or should do",
   "words": [
-   "rule",
    "order",
    "direction",
    "instruction",
@@ -4407,7 +8121,24 @@
   "conflicts": []
  },
  {
-  "id": "lx265",
+  "id": "lx486",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "control-power",
+  "meaning": "nouns that mean power, control, or physical strength",
+  "words": [
+   "power",
+   "strength",
+   "force",
+   "control"
+  ],
+  "conflicts": [
+   "lx488"
+  ]
+ },
+ {
+  "id": "lx487",
   "pos": "noun",
   "cefr": "B2",
   "level": 40,
@@ -4424,7 +8155,61 @@
   "conflicts": []
  },
  {
-  "id": "lx266",
+  "id": "lx488",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "control-power",
+  "meaning": "nouns that mean official permission, approval, or the right to do something",
+  "words": [
+   "authority",
+   "permission",
+   "authorization",
+   "consent",
+   "sanction",
+   "approval",
+   "clearance"
+  ],
+  "conflicts": [
+   "lx486"
+  ]
+ },
+ {
+  "id": "lx489",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 15,
+  "domain": "speed-time",
+  "meaning": "nouns that mean a rapid state of movement, action, or progress",
+  "words": [
+   "speed",
+   "rush",
+   "hurry",
+   "race"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx490",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 23,
+  "domain": "speed-time",
+  "meaning": "nouns that mean a specific period, era, or span of time",
+  "words": [
+   "period",
+   "era",
+   "age",
+   "season",
+   "term"
+  ],
+  "conflicts": [
+   "lx491",
+   "lx492"
+  ]
+ },
+ {
+  "id": "lx491",
   "pos": "noun",
   "cefr": "C1",
   "level": 44,
@@ -4434,15 +8219,39 @@
    "respite",
    "intermission",
    "lull",
-   "recess"
+   "recess",
+   "hiatus"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx492",
+   "lx490"
+  ]
  },
  {
-  "id": "lx267",
+  "id": "lx492",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "speed-time",
+  "meaning": "nouns that mean a state of temporary inactivity, suspension, or dormant condition",
+  "words": [
+   "abeyance",
+   "latency",
+   "dormancy",
+   "suspension",
+   "moratorium",
+   "standstill"
+  ],
+  "conflicts": [
+   "lx491",
+   "lx490"
+  ]
+ },
+ {
+  "id": "lx493",
   "pos": "noun",
   "cefr": "A2",
-  "level": 20,
+  "level": 18,
   "domain": "evaluation",
   "meaning": "nouns that mean a position, level, or score on a scale of progress or quality",
   "words": [
@@ -4453,27 +8262,11 @@
    "score"
   ],
   "conflicts": [
-   "lx269"
+   "lx494"
   ]
  },
  {
-  "id": "lx268",
-  "pos": "noun",
-  "cefr": "B1",
-  "level": 26,
-  "domain": "evaluation",
-  "meaning": "nouns that mean a mistake, error, or fault in something",
-  "words": [
-   "mistake",
-   "error",
-   "fault",
-   "slip",
-   "defect"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx269",
+  "id": "lx494",
   "pos": "noun",
   "cefr": "B2",
   "level": 40,
@@ -4487,74 +8280,178 @@
    "prestige"
   ],
   "conflicts": [
-   "lx267"
+   "lx493"
   ]
  },
  {
-  "id": "lx270",
-  "pos": "adjective",
+  "id": "lx495",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "success-failure",
+  "meaning": "nouns that mean a gain, profit, or positive result",
+  "words": [
+   "profit",
+   "gain",
+   "benefit",
+   "advantage"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx496",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "safety-danger",
+  "meaning": "nouns that mean a safe place, shelter, or protection",
+  "words": [
+   "protection",
+   "shelter",
+   "cover",
+   "defense"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx497",
+  "pos": "noun",
   "cefr": "B1",
-  "level": 26,
-  "domain": "control-power",
-  "meaning": "adjectives that mean having great physical strength, power, or durability",
+  "level": 23,
+  "domain": "safety-danger",
+  "meaning": "nouns that mean a dangerous, critical, or threatening situation",
   "words": [
-   "powerful",
-   "mighty",
-   "muscular",
-   "sturdy"
+   "danger",
+   "crisis",
+   "emergency",
+   "disaster"
   ],
   "conflicts": []
  },
  {
-  "id": "lx271",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 48,
-  "domain": "control-power",
-  "meaning": "adjectives that mean being obedient, compliant, or willing to obey rules or authority",
+  "id": "lx498",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 35,
+  "domain": "beginning-ending",
+  "meaning": "nouns that mean a final result, consequence, or outcome of an event",
   "words": [
-   "obedient",
-   "compliant",
-   "submissive",
-   "docile",
-   "yielding",
-   "subservient"
+   "outcome",
+   "result",
+   "consequence",
+   "effect"
+  ],
+  "conflicts": [
+   "lx499"
+  ]
+ },
+ {
+  "id": "lx499",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "beginning-ending",
+  "meaning": "nouns that mean the highest, most successful, or decisive point of something",
+  "words": [
+   "peak",
+   "climax",
+   "summit",
+   "culmination",
+   "apex",
+   "pinnacle",
+   "zenith"
+  ],
+  "conflicts": [
+   "lx498"
+  ]
+ },
+ {
+  "id": "lx500",
+  "pos": "noun",
+  "cefr": "A2",
+  "level": 18,
+  "domain": "damage",
+  "meaning": "nouns that mean a physical injury, harm, or damage",
+  "words": [
+   "damage",
+   "harm",
+   "injury",
+   "wound"
   ],
   "conflicts": []
  },
  {
-  "id": "lx272",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 48,
-  "domain": "control-power",
-  "meaning": "adjectives that mean being very strict, harsh, or demanding severe obedience",
-  "words": [
-   "stringent",
-   "austere",
-   "stern",
-   "authoritarian"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx273",
-  "pos": "adjective",
+  "id": "lx501",
+  "pos": "noun",
   "cefr": "B1",
-  "level": 29,
-  "domain": "avoidance",
-  "meaning": "adjectives that mean being very careful, cautious, or watchful to avoid danger",
+  "level": 30,
+  "domain": "honesty-deception",
+  "meaning": "nouns that mean a person who commits a crime or does something illegal",
   "words": [
-   "careful",
-   "cautious",
-   "watchful",
-   "alert",
-   "wary"
+   "criminal",
+   "thief",
+   "robber",
+   "burglar",
+   "offender",
+   "culprit",
+   "lawbreaker"
   ],
   "conflicts": []
  },
  {
-  "id": "lx274",
+  "id": "lx502",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "honesty-deception",
+  "meaning": "nouns that mean an act or scheme designed to deceive, cheat, or trick someone",
+  "words": [
+   "deception",
+   "fraud",
+   "scam",
+   "bluff",
+   "hoax"
+  ],
+  "conflicts": [
+   "lx503"
+  ]
+ },
+ {
+  "id": "lx503",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "honesty-deception",
+  "meaning": "nouns that mean an act or quality of trickery, deceit, or dishonest behavior",
+  "words": [
+   "duplicity",
+   "chicanery",
+   "guile",
+   "subterfuge",
+   "artifice",
+   "craftiness"
+  ],
+  "conflicts": [
+   "lx502"
+  ]
+ },
+ {
+  "id": "lx504",
+  "pos": "verb",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "personality",
+  "meaning": "verbs that mean to behave or talk in a proud, boastful, or self-important manner",
+  "words": [
+   "boast",
+   "brag",
+   "crow",
+   "swagger"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx505",
   "pos": "adjective",
   "cefr": "C1",
   "level": 50,
@@ -4570,57 +8467,142 @@
   "conflicts": []
  },
  {
-  "id": "lx275",
+  "id": "lx506",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 50,
+  "domain": "giving-taking",
+  "meaning": "adjectives that mean being extremely stingy, miserly, or unwilling to spend money",
+  "words": [
+   "miserly",
+   "parsimonious",
+   "tightfisted",
+   "penurious",
+   "niggardly"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx507",
   "pos": "adjective",
   "cefr": "B1",
-  "level": 26,
-  "domain": "creation",
-  "meaning": "adjectives that mean being highly creative, imaginative, or talented",
+  "level": 23,
+  "domain": "movement",
+  "meaning": "adjectives that mean shaking, trembling, or moving unsteadily",
   "words": [
-   "creative",
-   "imaginative",
-   "artistic",
-   "inventive"
+   "unsteady",
+   "wobbly",
+   "trembling",
+   "shivering",
+   "shaking"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx510"
+  ]
  },
  {
-  "id": "lx276",
-  "pos": "noun",
-  "cefr": "B1",
-  "level": 30,
-  "domain": "safety-danger",
-  "meaning": "nouns that mean a state or means of protection, safety, or security",
-  "words": [
-   "safety",
-   "security",
-   "protection",
-   "defense"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx277",
-  "pos": "noun",
-  "cefr": "C1",
-  "level": 48,
-  "domain": "success-failure",
-  "meaning": "nouns that mean the highest point, peak, or apex of success, power, or development",
-  "words": [
-   "zenith",
-   "pinnacle",
-   "apex",
-   "peak",
-   "summit",
-   "acme"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx278",
-  "pos": "noun",
+  "id": "lx508",
+  "pos": "adjective",
   "cefr": "B1",
   "level": 27,
+  "domain": "movement",
+  "meaning": "adjectives that mean not moving, staying in one place, or completely still",
+  "words": [
+   "motionless",
+   "stationary",
+   "static",
+   "fixed",
+   "frozen"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx509",
+  "pos": "adjective",
+  "cefr": "B2",
+  "level": 32,
+  "domain": "movement",
+  "meaning": "adjectives that mean being physically loose, limp, or lacking tension",
+  "words": [
+   "limp",
+   "floppy",
+   "slack",
+   "drooping"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx510",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 44,
+  "domain": "movement",
+  "meaning": "adjectives that mean being clumsy, awkward, or lacking coordination",
+  "words": [
+   "clumsy",
+   "gawky",
+   "ungainly",
+   "maladroit",
+   "bumbling",
+   "uncoordinated"
+  ],
+  "conflicts": [
+   "lx507"
+  ]
+ },
+ {
+  "id": "lx511",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 23,
+  "domain": "increase",
+  "meaning": "adjectives that mean growing, rising, or increasing in size, amount, or intensity",
+  "words": [
+   "growing",
+   "rising",
+   "increasing",
+   "expanding",
+   "mounting"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx512",
+  "pos": "adjective",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "decrease",
+  "meaning": "adjectives that mean falling, dropping, or decreasing in level, size, or value",
+  "words": [
+   "falling",
+   "declining",
+   "decreasing",
+   "sinking",
+   "dropping"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx513",
+  "pos": "adjective",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "communication",
+  "meaning": "adjectives that mean being brief, concise, or using very few words",
+  "words": [
+   "succinct",
+   "concise",
+   "terse",
+   "laconic",
+   "pithy"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx514",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 24,
   "domain": "decrease",
   "meaning": "nouns that mean a reduction, decrease, or downward turn in amount or level",
   "words": [
@@ -4633,152 +8615,230 @@
   "conflicts": []
  },
  {
-  "id": "lx279",
+  "id": "lx515",
   "pos": "noun",
   "cefr": "B1",
-  "level": 22,
-  "domain": "increase",
-  "meaning": "nouns that mean an increase, rise, or growth in size, amount, or level",
-  "words": [
-   "increase",
-   "rise",
-   "growth",
-   "gain"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx280",
-  "pos": "adjective",
-  "cefr": "B2",
-  "level": 40,
-  "domain": "damage",
-  "meaning": "adjectives that mean being harmful, damaging, or destructive",
-  "words": [
-   "detrimental",
-   "damaging",
-   "destructive",
-   "injurious",
-   "ruinous"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx281",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 50,
-  "domain": "communication",
-  "meaning": "adjectives that mean being highly talkative, wordy, or communicative",
-  "words": [
-   "loquacious",
-   "garrulous",
-   "voluble",
-   "talkative",
-   "chatty"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx282",
-  "pos": "adjective",
-  "cefr": "C1",
-  "level": 48,
-  "domain": "communication",
-  "meaning": "adjectives that mean being brief, concise, or using very few words",
-  "words": [
-   "succinct",
-   "concise",
-   "terse",
-   "laconic",
-   "pithy",
-   "brief"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx283",
-  "pos": "noun",
-  "cefr": "B2",
-  "level": 35,
+  "level": 24,
   "domain": "emotion-negative",
-  "meaning": "nouns that mean a strong feeling of fear, terror, or dread",
+  "meaning": "nouns that mean a strong feeling of fear, worry, or anxiety",
   "words": [
-   "dread",
+   "fear",
    "terror",
    "panic",
-   "fright",
-   "horror"
+   "anxiety",
+   "fright"
+  ],
+  "conflicts": [
+   "lx520"
+  ]
+ },
+ {
+  "id": "lx516",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 27,
+  "domain": "emotion-negative",
+  "meaning": "nouns that mean a state of deep sadness, sorrow, or unhappiness",
+  "words": [
+   "sadness",
+   "grief",
+   "sorrow",
+   "misery",
+   "despair"
   ],
   "conflicts": []
  },
  {
-  "id": "lx284",
+  "id": "lx517",
   "pos": "noun",
-  "cefr": "B2",
-  "level": 39,
+  "cefr": "B1",
+  "level": 28,
   "domain": "emotion-negative",
-  "meaning": "nouns that mean a strong feeling of anger, rage, or resentment",
+  "meaning": "nouns that mean a feeling of strong displeasure, anger, or irritation",
   "words": [
    "anger",
    "rage",
    "fury",
-   "wrath",
-   "resentment",
-   "indignation"
+   "irritation",
+   "annoyance"
   ],
   "conflicts": []
  },
  {
-  "id": "lx285",
+  "id": "lx518",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 40,
+  "domain": "emotion-negative",
+  "meaning": "nouns that mean a feeling or state of shame, embarrassment, or loss of honor",
+  "words": [
+   "shame",
+   "embarrassment",
+   "humiliation",
+   "disgrace",
+   "dishonor",
+   "mortification"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx519",
   "pos": "noun",
   "cefr": "C1",
-  "level": 48,
+  "level": 47,
   "domain": "emotion-negative",
   "meaning": "nouns that mean a feeling of deep regret, remorse, or guilt for past wrongdoing",
   "words": [
    "remorse",
    "penitence",
    "contrition",
+   "compunction",
    "repentance"
   ],
   "conflicts": []
  },
  {
-  "id": "lx286",
-  "pos": "noun",
-  "cefr": "B2",
-  "level": 35,
-  "domain": "beginning-ending",
-  "meaning": "nouns that mean a final result, consequence, or outcome of an event",
-  "words": [
-   "outcome",
-   "result",
-   "consequence",
-   "effect"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx287",
-  "pos": "noun",
-  "cefr": "B2",
-  "level": 35,
-  "domain": "agreement-support",
-  "meaning": "nouns that mean a formal agreement, contract, or pact between parties",
-  "words": [
-   "agreement",
-   "contract",
-   "treaty",
-   "pact"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx288",
+  "id": "lx520",
   "pos": "noun",
   "cefr": "C1",
-  "level": 48,
+  "level": 45,
+  "domain": "emotion-negative",
+  "meaning": "nouns that mean a feeling of deep anxiety, dread, or unease about the future",
+  "words": [
+   "dread",
+   "trepidation",
+   "foreboding",
+   "disquiet",
+   "unease"
+  ],
+  "conflicts": [
+   "lx515"
+  ]
+ },
+ {
+  "id": "lx521",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 28,
+  "domain": "personality",
+  "meaning": "nouns that mean a person's character, nature, or inner qualities",
+  "words": [
+   "character",
+   "nature",
+   "personality",
+   "spirit",
+   "soul"
+  ],
+  "conflicts": [
+   "lx522"
+  ]
+ },
+ {
+  "id": "lx522",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 47,
+  "domain": "personality",
+  "meaning": "nouns that mean a natural tendency, inclination, or leaning toward a certain behavior or thing",
+  "words": [
+   "propensity",
+   "proclivity",
+   "inclination",
+   "predisposition",
+   "bent",
+   "penchant"
+  ],
+  "conflicts": [
+   "lx521"
+  ]
+ },
+ {
+  "id": "lx523",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 41,
+  "domain": "agreement-support",
+  "meaning": "nouns that mean a state of complete agreement, consensus, or unity of opinion among a group",
+  "words": [
+   "unanimity",
+   "consensus",
+   "accord",
+   "concurrence",
+   "unison"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx524",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 28,
+  "domain": "importance",
+  "meaning": "nouns that mean the quality of being important, valuable, or significant",
+  "words": [
+   "importance",
+   "significance",
+   "value",
+   "worth"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx525",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 28,
+  "domain": "certainty-doubt",
+  "meaning": "nouns that mean a feeling of trust, confidence, or certainty",
+  "words": [
+   "certainty",
+   "confidence",
+   "trust",
+   "faith"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx526",
+  "pos": "noun",
+  "cefr": "B1",
+  "level": 30,
+  "domain": "certainty-doubt",
+  "meaning": "nouns that mean a sign, trace, or evidence that shows something exists or happened",
+  "words": [
+   "sign",
+   "trace",
+   "clue",
+   "evidence",
+   "symptom",
+   "indication"
+  ],
+  "conflicts": []
+ },
+ {
+  "id": "lx527",
+  "pos": "noun",
+  "cefr": "B2",
+  "level": 39,
+  "domain": "certainty-doubt",
+  "meaning": "nouns that mean a feeling of doubt, mistrust, or skepticism about something",
+  "words": [
+   "suspicion",
+   "skepticism",
+   "mistrust",
+   "disbelief",
+   "misgiving",
+   "reservation"
+  ],
+  "conflicts": [
+   "lx528"
+  ]
+ },
+ {
+  "id": "lx528",
+  "pos": "noun",
+  "cefr": "C1",
+  "level": 47,
   "domain": "certainty-doubt",
   "meaning": "nouns that mean a state of mental uncertainty, hesitation, or a puzzling dilemma",
   "words": [
@@ -4789,37 +8849,23 @@
    "indecision",
    "vacillation"
   ],
-  "conflicts": []
+  "conflicts": [
+   "lx527"
+  ]
  },
  {
-  "id": "lx289",
+  "id": "lx529",
   "pos": "noun",
-  "cefr": "C1",
-  "level": 50,
-  "domain": "honesty-deception",
-  "meaning": "nouns that mean an act or quality of trickery, deceit, or dishonest behavior",
+  "cefr": "B1",
+  "level": 24,
+  "domain": "creation",
+  "meaning": "nouns that mean a physical tool, device, or piece of equipment used for a specific task",
   "words": [
-   "deception",
-   "duplicity",
-   "chicanery",
-   "guile",
-   "subterfuge"
-  ],
-  "conflicts": []
- },
- {
-  "id": "lx290",
-  "pos": "noun",
-  "cefr": "C1",
-  "level": 48,
-  "domain": "personality",
-  "meaning": "nouns that mean a natural tendency, inclination, or leaning toward a certain behavior or thing",
-  "words": [
-   "propensity",
-   "proclivity",
-   "inclination",
-   "predisposition",
-   "bent"
+   "tool",
+   "instrument",
+   "device",
+   "gadget",
+   "appliance"
   ],
   "conflicts": []
  }
