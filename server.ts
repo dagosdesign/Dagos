@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import fs from "fs";
 import { createServer as createViteServer } from "vite";
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenAI, Modality, Type } from "@google/genai";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -88,9 +88,8 @@ app.get("/api/config", (req, res) => {
 
 // AI LEX chat endpoint — a conversational English-learning tutor.
 app.post("/api/chat", async (req, res) => {
-  const { messages, mode } = req.body as {
+  const { messages } = req.body as {
     messages?: { role: "user" | "assistant"; content: string }[];
-    mode?: "speaking";
   };
 
   if (!Array.isArray(messages) || messages.length === 0) {
@@ -106,14 +105,7 @@ app.post("/api/chat", async (req, res) => {
       "give example sentences, and hold simple conversations to build fluency. " +
       "Keep replies concise (2-5 sentences). When the student writes in Turkish, you may briefly answer in " +
       "Turkish but always steer them back to practicing English. When you correct an error, show the corrected " +
-      "sentence clearly. Be positive and motivating." +
-      // AI Speaking: the reply is read aloud and the student answers by voice.
-      (mode === "speaking"
-        ? " This is a SPOKEN conversation: your reply will be read aloud. Answer in English only, in 1-3 short, " +
-          "natural spoken sentences. No markdown, lists, emojis or symbols. If the student made a mistake, " +
-          "model the correct phrase naturally in your answer instead of explaining grammar. " +
-          "Always end with one simple question that keeps the conversation going."
-        : "");
+      "sentence clearly. Be positive and motivating.";
 
     // Gemini expects a `contents` array with role 'user' | 'model'.
     const contents = messages.map((m) => ({
@@ -159,6 +151,65 @@ const rememberOpening = (kind: "story" | "dialogue", opening: string) => {
   list.push(clean);
   if (list.length > 12) list.shift();
 };
+
+/* AI Speaking - a real-time voice conversation with Gemini Live, the same kind
+   of spoken chat as the Gemini app, only for practising English.
+   The browser never sees the API key: this endpoint hands out a short-lived,
+   single-use token whose model, voice and tutor instructions are locked here. */
+const LIVE_MODELS = ["gemini-3.1-flash-live-preview", "gemini-2.5-flash-native-audio-latest"];
+
+const LIVE_SYSTEM_INSTRUCTION =
+  "You are AI LEX, a friendly English speaking partner for Turkish students. This is a live, spoken " +
+  "conversation, like a phone call. Speak ONLY in English, clearly and at a natural but slightly slower pace. " +
+  "Keep each turn short - usually one to three sentences - so the student does most of the talking. " +
+  "Match the student's level: use simple words with beginners and richer language with advanced speakers. " +
+  "Ask open, interesting questions about daily life, school, hobbies, plans and opinions to keep the " +
+  "conversation going. When the student makes a mistake, do not lecture: naturally repeat the sentence " +
+  "correctly in your reply (for example 'Oh, you went to the park yesterday? Nice!'). If the student " +
+  "speaks Turkish or is stuck, help with a short English phrase they can use and encourage them to try. " +
+  "Never use lists, markdown or emojis. Start by greeting the student warmly and asking how their day is going.";
+
+app.post("/api/live-token", async (_req, res) => {
+  try {
+    const ai = getAIClient();
+    const now = Date.now();
+    let lastError: unknown = null;
+    for (const model of LIVE_MODELS) {
+      try {
+        const token = await ai.authTokens.create({
+          config: {
+            uses: 1,
+            expireTime: new Date(now + 30 * 60 * 1000).toISOString(),
+            newSessionExpireTime: new Date(now + 2 * 60 * 1000).toISOString(),
+            liveConnectConstraints: {
+              model,
+              config: {
+                responseModalities: [Modality.AUDIO],
+                systemInstruction: LIVE_SYSTEM_INSTRUCTION,
+                speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } } },
+                inputAudioTranscription: {},
+                outputAudioTranscription: {},
+              },
+            },
+            lockAdditionalFields: [],
+            httpOptions: { apiVersion: "v1alpha" },
+          },
+        });
+        return res.json({ token: token.name, model });
+      } catch (err) {
+        lastError = err;
+      }
+    }
+    throw lastError;
+  } catch (error: any) {
+    console.error("Live token error:", error?.message || error);
+    res.status(500).json({
+      error: "live_token_failed",
+      message: "Voice conversation is not available right now. Please try again.",
+      details: String(error?.message || error).slice(0, 300),
+    });
+  }
+});
 
 // Generates practice content for a target word: a short story or a two-person dialogue.
 app.post("/api/practice-content", async (req, res) => {

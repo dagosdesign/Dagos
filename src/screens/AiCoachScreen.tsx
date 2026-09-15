@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
-import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square, AudioLines, X } from 'lucide-react';
+import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square, AudioLines } from 'lucide-react';
 import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
+import AiSpeakingSession from '../components/AiSpeakingSession';
 
 // Beside the space bar: , ' on the left, . ? on the right.
 const PUNCTUATION = [',', "'", '.', '?'];
@@ -61,31 +62,21 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   // Cleanup any ongoing recognition/speech when leaving the screen.
   useEffect(() => {
     return () => {
-      sessionRef.current = false;
       recognitionRef.current?.abort?.();
       if (ttsSupported) window.speechSynthesis.cancel();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const speak = (text: string, onDone?: () => void) => {
-    if (!ttsSupported) {
-      onDone?.();
-      return;
-    }
+  const speak = (text: string) => {
+    if (!ttsSupported) return;
     window.speechSynthesis.cancel();
     const utter = new SpeechSynthesisUtterance(forSpeech(text));
     utter.lang = 'en-US';
     utter.rate = 0.95;
     utter.onstart = () => setSpeaking(true);
-    utter.onend = () => {
-      setSpeaking(false);
-      onDone?.();
-    };
-    utter.onerror = () => {
-      setSpeaking(false);
-      onDone?.();
-    };
+    utter.onend = () => setSpeaking(false);
+    utter.onerror = () => setSpeaking(false);
     window.speechSynthesis.speak(utter);
   };
 
@@ -98,11 +89,9 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   const messagesRef = useRef(messages);
   messagesRef.current = messages;
 
-  /* Sends a message and returns the reply. In AI Speaking the reply is short
-     and spoken, and the session itself decides when to read it aloud. */
-  const send = async (text: string, speakReply = false, mode?: 'speaking'): Promise<string | null> => {
+  const send = async (text: string, speakReply = false) => {
     const trimmed = text.trim();
-    if (!trimmed || loadingRef.current) return null;
+    if (!trimmed || loadingRef.current) return;
 
     const nextMessages = [...messagesRef.current, { role: 'user' as const, content: trimmed }];
     setMessages(nextMessages);
@@ -115,116 +104,35 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: nextMessages.filter(m => m !== GREETING), mode }),
+        body: JSON.stringify({ messages: nextMessages.filter(m => m !== GREETING) }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || 'AI LEX is unavailable.');
       setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
-      if (mode !== 'speaking' && (speakReply || voiceModeRef.current)) speak(data.reply);
-      return data.reply as string;
+      if (speakReply || voiceModeRef.current) speak(data.reply);
     } catch (err: any) {
       setError(err.message || 'Something went wrong.');
-      return null;
     } finally {
       setLoading(false);
       loadingRef.current = false;
     }
   };
 
-  /* ---- AI Speaking: a hands-free spoken conversation ----
-     listen → the student's sentence is sent → the reply is read aloud → listen again,
-     until the student ends it. */
-  type Phase = 'listening' | 'thinking' | 'speaking' | 'paused';
+  /* ---- AI Speaking: a live voice call with Gemini (see AiSpeakingSession) ---- */
   const [speakingOpen, setSpeakingOpen] = useState(false);
   const speakingOpenRef = useRef(speakingOpen);
   speakingOpenRef.current = speakingOpen;
-  const [phase, setPhase] = useState<Phase>('paused');
-  const [heard, setHeard] = useState('');
-  const [lastReply, setLastReply] = useState('');
-  const [speakingError, setSpeakingError] = useState<string | null>(null);
-  const sessionRef = useRef(false);
-  const silenceRef = useRef(0);
-
-  const listenTurn = () => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR || !sessionRef.current) return;
-    const rec = new SR();
-    rec.lang = 'en-US';
-    rec.interimResults = true;
-    rec.continuous = false;
-    let said = '';
-    rec.onresult = (e: any) => {
-      said = Array.from(e.results).map((r: any) => r[0].transcript).join('');
-      setHeard(said);
-    };
-    rec.onerror = (e: any) => {
-      if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed') {
-        setSpeakingError('Microphone access is blocked. Allow the microphone for this site and try again.');
-        sessionRef.current = false;
-        setPhase('paused');
-      }
-    };
-    rec.onend = async () => {
-      if (!sessionRef.current) return;
-      const t = said.trim();
-      if (!t) {
-        // Nothing heard: listen again a couple of times, then wait for a tap.
-        silenceRef.current += 1;
-        if (silenceRef.current <= 2) listenTurn();
-        else setPhase('paused');
-        return;
-      }
-      silenceRef.current = 0;
-      setPhase('thinking');
-      const reply = await send(t, false, 'speaking');
-      if (!sessionRef.current) return;
-      if (!reply) {
-        setSpeakingError('AI LEX could not answer right now. Tap the circle to try again.');
-        setPhase('paused');
-        return;
-      }
-      setLastReply(reply);
-      setPhase('speaking');
-      speak(reply, () => {
-        if (!sessionRef.current) return;
-        setHeard('');
-        setPhase('listening');
-        listenTurn();
-      });
-    };
-    recognitionRef.current = rec;
-    setPhase('listening');
-    rec.start();
-  };
-
-  const resumeSpeaking = () => {
-    setSpeakingError(null);
-    silenceRef.current = 0;
-    sessionRef.current = true;
-    stopSpeaking();
-    setHeard('');
-    listenTurn();
-  };
 
   const openSpeaking = () => {
-    setSpeakingOpen(true);
-    setLastReply('');
-    if (speechRecognitionSupported && ttsSupported) resumeSpeaking();
-    else setPhase('paused');
-  };
-
-  const pauseSpeaking = () => {
-    sessionRef.current = false;
-    recognitionRef.current?.abort?.();
     stopSpeaking();
-    setPhase('paused');
+    recognitionRef.current?.abort?.();
+    setListening(false);
+    setSpeakingOpen(true);
   };
 
-  const closeSpeaking = () => {
-    pauseSpeaking();
-    setSpeakingOpen(false);
-    setHeard('');
-  };
+  // Each finished spoken turn also lands in the chat, so the call can be read back.
+  const addSpokenTurn = (role: 'user' | 'assistant', text: string) =>
+    setMessages(prev => [...prev, { role, content: text }]);
 
   /* ---- typing with the in-app keyboard ---- */
   // abc: lower case · Abc: the next letter is a capital · ABC: caps lock.
@@ -507,102 +415,8 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         />
       </div>
 
-      {/* AI Speaking */}
-      {speakingOpen && (
-        <div
-          className="fixed inset-0 z-[70] flex flex-col px-5 pb-[max(20px,env(safe-area-inset-bottom))] pt-[max(16px,env(safe-area-inset-top))]"
-          style={{ background: '#050505' }}
-          role="dialog"
-          aria-label="AI Speaking"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-[18px] font-semibold text-white">AI Speaking</p>
-              <p className="text-[12px] text-[#A5A5A5]">Talk with AI LEX in English</p>
-            </div>
-            <button
-              onClick={closeSpeaking}
-              aria-label="End speaking"
-              className="w-10 h-10 rounded-full border border-[#262626] bg-[#0B0B0B] flex items-center justify-center text-white cursor-pointer"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-
-          <div className="flex-1 flex flex-col items-center justify-center gap-7 min-h-0">
-            {/* The circle shows the turn: listening, thinking or speaking; tap it to talk again */}
-            <button
-              type="button"
-              onClick={() => (phase === 'paused' ? resumeSpeaking() : pauseSpeaking())}
-              disabled={!speechRecognitionSupported || !ttsSupported}
-              aria-label={phase === 'paused' ? 'Start talking' : 'Pause'}
-              className="relative w-44 h-44 rounded-full flex items-center justify-center cursor-pointer disabled:cursor-not-allowed"
-            >
-              {(phase === 'listening' || phase === 'speaking') && (
-                <span className="absolute inset-0 rounded-full border border-[#F5B82E]/40 animate-ping" style={{ animationDuration: '1.8s' }} />
-              )}
-              <span
-                className="absolute inset-0 rounded-full border-2"
-                style={{
-                  borderColor: phase === 'paused' ? '#262626' : '#F5B82E',
-                  boxShadow: phase === 'paused' ? 'none' : '0 0 34px rgba(245,184,46,0.25)',
-                  background: '#0B0B0B',
-                }}
-              />
-              <span className="relative text-[#F5B82E]">
-                {phase === 'listening' ? (
-                  <Mic className="w-12 h-12" />
-                ) : phase === 'speaking' ? (
-                  <Volume2 className="w-12 h-12" />
-                ) : phase === 'thinking' ? (
-                  <span className="flex gap-1.5">
-                    {[0, 150, 300].map(d => (
-                      <span key={d} className="w-2.5 h-2.5 rounded-full bg-[#F5B82E] animate-bounce" style={{ animationDelay: `${d}ms` }} />
-                    ))}
-                  </span>
-                ) : (
-                  <Mic className="w-12 h-12 opacity-60" />
-                )}
-              </span>
-            </button>
-
-            <p className="text-[15px] font-medium text-white text-center">
-              {!speechRecognitionSupported || !ttsSupported
-                ? 'Voice conversation needs Chrome or Safari with a microphone.'
-                : phase === 'listening'
-                  ? 'Listening… speak in English'
-                  : phase === 'thinking'
-                    ? 'AI LEX is thinking…'
-                    : phase === 'speaking'
-                      ? 'AI LEX is speaking'
-                      : 'Tap the circle to talk'}
-            </p>
-
-            <div className="w-full max-w-md space-y-3">
-              {heard && (
-                <div className="rounded-2xl border border-[#262626] bg-[#0B0B0B] px-4 py-3">
-                  <p className="text-[11px] tracking-[0.12em] text-[#A5A5A5] mb-1">YOU</p>
-                  <p className="text-[15px] text-white leading-snug">{heard}</p>
-                </div>
-              )}
-              {lastReply && (
-                <div className="rounded-2xl border border-[#F5B82E]/30 bg-[#0B0B0B] px-4 py-3">
-                  <p className="text-[11px] tracking-[0.12em] text-[#F5B82E] mb-1">AI LEX</p>
-                  <p className="text-[15px] text-white leading-snug">{forSpeech(lastReply)}</p>
-                </div>
-              )}
-              {speakingError && <p className="text-[13px] text-[#A5A5A5] text-center">{speakingError}</p>}
-            </div>
-          </div>
-
-          <button
-            onClick={closeSpeaking}
-            className="w-full rounded-2xl border border-[#262626] py-3.5 text-[15px] font-medium text-white cursor-pointer"
-          >
-            End conversation
-          </button>
-        </div>
-      )}
+      {/* AI Speaking: a live voice call */}
+      {speakingOpen && <AiSpeakingSession onClose={() => setSpeakingOpen(false)} onTurn={addSpokenTurn} />}
     </div>
   );
 }
