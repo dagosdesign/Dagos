@@ -39,6 +39,8 @@ interface GameKeyboardProps {
   caseMode?: CaseMode;
   /** Letter keys show - and type - lower case. Games leave this off. */
   lowercase?: boolean;
+  /** A smaller, quieter layout for chat (AI LEX); games use the full size. */
+  compact?: boolean;
 }
 
 export type CaseMode = 'lower' | 'once' | 'caps';
@@ -66,8 +68,71 @@ export default function GameKeyboard({
   onShift,
   caseMode = 'lower',
   lowercase = false,
+  compact = false,
 }: GameKeyboardProps) {
   const controls = !!onDelete || !!onEnter || !!onSpace || !!onShift;
+
+  /* Compact: a small, quiet keyboard for chat screens. Three letter rows, then
+     one bottom row - case key, punctuation, SPACE in the middle, DEL on the right. */
+  if (compact) {
+    const marks = punctuation ?? [];
+    const half = Math.ceil(marks.length / 2);
+    const key = 'min-w-0 h-[34px] rounded-lg border border-white/[0.09] bg-white/[0.03] text-white text-[13px] font-medium transition-colors hover:border-[#e3b553]/50 active:bg-[#e3b553]/15 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed';
+    const mark = (p: string) => (
+      <button key={p} type="button" onClick={() => onKey(p)} disabled={disabled} aria-label={p} className={`flex-1 max-w-[34px] text-[15px] ${key}`}>
+        {p}
+      </button>
+    );
+    return (
+      <div className="space-y-1">
+        {ROWS.map((row, r) => (
+          <div key={r} className="flex justify-center gap-[3px]">
+            {row.map(ch => {
+              const label = lowercase ? ch.toLocaleLowerCase('tr') : ch;
+              return (
+                <button key={ch} type="button" onClick={() => onKey(label)} disabled={disabled} className={`flex-1 max-w-[34px] ${key}`}>
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+        ))}
+        <div className="flex justify-center gap-[3px]">
+          {onShift && (
+            <button
+              type="button"
+              onClick={onShift}
+              disabled={disabled}
+              aria-label={`Letter case: ${CASE_LABEL[caseMode]}`}
+              aria-pressed={caseMode !== 'lower'}
+              className={`flex-[1.4] ${key} text-[11px] font-semibold ${
+                caseMode === 'caps'
+                  ? '!border-[#e3b553] !bg-[#e3b553] !text-[#0a0a0b]'
+                  : caseMode === 'once'
+                    ? '!border-[#e3b553]/70 !text-[#e3b553]'
+                    : '!text-white/70'
+              }`}
+            >
+              {CASE_LABEL[caseMode]}
+            </button>
+          )}
+          {marks.slice(0, half).map(mark)}
+          {onSpace && (
+            <button type="button" onClick={onSpace} disabled={disabled} aria-label="Space" className={`flex-[4] ${key} text-[10px] tracking-[0.2em] !text-white/45`}>
+              SPACE
+            </button>
+          )}
+          {marks.slice(half).map(mark)}
+          {onDelete && (
+            <button type="button" onClick={onDelete} disabled={disabled} aria-label="Delete" className={`flex-[1.4] flex items-center justify-center ${key} !text-white/70`}>
+              <Delete className="w-4 h-4" />
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-2.5">
       <div className="space-y-1.5">

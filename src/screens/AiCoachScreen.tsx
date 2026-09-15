@@ -3,7 +3,8 @@ import { motion } from 'motion/react';
 import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square } from 'lucide-react';
 import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
 
-const PUNCTUATION = [',', '.', '?', '!', "'", '"', '-', ':'];
+// Beside the space bar: , ' on the left, . ? on the right.
+const PUNCTUATION = [',', "'", '.', '?'];
 const MAX_INPUT = 600;
 
 interface ChatMessage {
@@ -367,8 +368,9 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       </form>
 
       {/* The same keyboard as the games, with space, punctuation and shift for sentences */}
-      <div className="pt-3 shrink-0">
+      <div className="pt-2 shrink-0">
         <GameKeyboard
+          compact
           onKey={typeKey}
           onDelete={() => setInput(prev => prev.slice(0, -1))}
           onSpace={typeSpace}
