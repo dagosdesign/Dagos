@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { loadVocabulary } from '../lib/vocabulary';
@@ -234,6 +235,15 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
     lockRef.current = true; // atomic: the question can never resolve twice
     const q = questions[index];
     const ok = optionId === q.correctId;
+    recordAnswer({
+      area: 'vocabulary',
+      concept: VOCABULARY.confused,
+      correct: ok,
+      source: 'The Clue',
+      prompt: q.clue,
+      given: q.options.find(o => o.id === optionId)?.word,
+      expected: q.options.find(o => o.id === q.correctId)?.word,
+    });
     setChosen(optionId);
     setVerdict(ok ? 'true' : 'wrong');
     if (ok) {

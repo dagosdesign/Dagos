@@ -1,4 +1,5 @@
 import { PointerEvent as ReactPointerEvent, useCallback, useMemo, useRef, useState } from 'react';
+import { recordAnswer, VOCABULARY } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, GripVertical, RotateCcw, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { wordDifficulty } from '../lib/difficulty';
@@ -175,6 +176,17 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
     if (!allFilled || checked) return;
     setChecked(true);
     const correct = pairs.filter(p => matches[p.id] === p.id).length;
+    for (const p of pairs) {
+      recordAnswer({
+        area: 'vocabulary',
+        concept: VOCABULARY.confused,
+        correct: matches[p.id] === p.id,
+        source: 'Golden Match',
+        prompt: `Match "${p.turkish}"`,
+        given: pairs.find(x => x.id === matches[p.id])?.english,
+        expected: p.english,
+      });
+    }
     recordQuizXp(correct);
   };
 

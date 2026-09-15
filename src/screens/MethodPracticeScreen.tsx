@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { recordAnswer, SPELLING, VOCABULARY } from '../lib/learningRecord';
 import { ChevronLeft, Volume2, CheckCircle2, XCircle, RotateCcw, Award } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { READY_MADE_CARD_SET } from '../data/readyMadeCards';
@@ -278,6 +279,16 @@ function ListeningMode({ pool, choicePool, playPronunciation, recordQuizXp, onEx
               onClick={() => {
                 setSelected(opt);
                 if (opt === current.turkishMeaning) setCorrectCount(c => c + 1);
+                recordAnswer({
+                  area: 'vocabulary',
+                  concept: VOCABULARY.confused,
+                  correct: opt === current.turkishMeaning,
+                  source: 'Word Practice',
+                  prompt: `The meaning of "${current.word}"`,
+                  given: opt,
+                  expected: current.turkishMeaning,
+                  item: current.word,
+                });
               }}
               className={`w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-3 ${cls} ${!answered ? 'cursor-pointer' : 'cursor-default'}`}
             >
@@ -365,6 +376,16 @@ function TestMode({ pool, choicePool, recordQuizXp, onExit, onRestart }: {
               onClick={() => {
                 setSelected(opt);
                 if (opt === current.turkishMeaning) setCorrectCount(c => c + 1);
+                recordAnswer({
+                  area: 'vocabulary',
+                  concept: VOCABULARY.confused,
+                  correct: opt === current.turkishMeaning,
+                  source: 'Word Practice',
+                  prompt: `The meaning of "${current.word}"`,
+                  given: opt,
+                  expected: current.turkishMeaning,
+                  item: current.word,
+                });
               }}
               className={`w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-3 ${cls} ${!answered ? 'cursor-pointer' : 'cursor-default'}`}
             >
@@ -422,6 +443,15 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
     if (!input.trim() || submitted) return;
     setSubmitted(true);
     if (normalize(input) === normalize(current.word)) setCorrectCount(c => c + 1);
+    recordAnswer({
+      area: 'writing',
+      concept: SPELLING,
+      correct: normalize(input) === normalize(current.word),
+      source: 'Writing',
+      prompt: `Write the English word for "${current.turkishMeaning}"`,
+      given: input.trim(),
+      expected: current.word,
+    });
   };
 
   return (

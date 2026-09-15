@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { grammarConcept, recordAnswer, VOCABULARY } from '../lib/learningRecord';
 import { motion } from 'motion/react';
 import {
   Sparkles,
@@ -207,6 +208,16 @@ export default function QuizScreen({
     const isCorrect = optionIdx === currentQuestion.correctIndex;
     setSelectedOptionIdx(optionIdx);
     onAnswer(isCorrect);
+    recordAnswer({
+      area: currentQuestion.kind === 'grammar' ? 'grammar' : 'vocabulary',
+      concept: currentQuestion.kind === 'grammar' ? grammarConcept(currentQuestion.partOfSpeech) : VOCABULARY.confused,
+      correct: isCorrect,
+      source: 'Quiz',
+      prompt: currentQuestion.headline,
+      given: currentQuestion.options[optionIdx],
+      expected: currentQuestion.options[currentQuestion.correctIndex],
+      item: currentQuestion.kind === 'grammar' ? undefined : currentQuestion.headline,
+    });
 
     onAddHistory({
       id: `hist-${Date.now()}`,

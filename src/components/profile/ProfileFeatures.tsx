@@ -1,5 +1,6 @@
-import { ChevronRight, History, Activity, Trophy, TrendingUp } from 'lucide-react';
+import { ChevronRight, History, Activity, Trophy, TrendingUp, Sparkles, ScanSearch, NotebookPen } from 'lucide-react';
 import { C, Card, MenuList, ProfileMenuItem, SubPage } from './ui';
+import { INSIGHT_MIN_ANSWERS, useLearningInsight } from '../../screens/profile/LearningIntelPages';
 
 export type ProfilePage =
   | 'personal'
@@ -7,6 +8,11 @@ export type ProfilePage =
   | 'placement'
   | 'goals'
   | 'progress'
+  | 'insight'
+  | 'weakness'
+  | 'mistakes'
+  | 'mistake'
+  | 'practice'
   | 'activity'
   | 'library'
   | 'statistics'
@@ -46,11 +52,46 @@ export default function MyProgressCard({ onOpen }: { onOpen: () => void }) {
   );
 }
 
-/* The My Progress page: one row for each part of the student's progress. */
+/* The My Progress page: the three learning-feedback features first, then the
+   student's activity, statistics and achievements. Each row stays one line of
+   summary; the detail opens inside. */
 export function MyProgressPage({ onBack, open }: { onBack: () => void; open: (page: ProfilePage) => void }) {
+  const { analysis, insight, enough } = useLearningInsight();
+  const weaknesses = analysis.weaknesses.length;
+  const s = analysis.summary;
   return (
     <SubPage title="My Progress" subtitle="Learning activity, statistics and achievements" onBack={onBack}>
       <MenuList>
+        <ProfileMenuItem
+          icon={Sparkles}
+          title="AI Learning Insight"
+          subtitle={
+            insight
+              ? insight.preview.length > 90
+                ? `${insight.preview.slice(0, 88).trimEnd()}…`
+                : insight.preview
+              : enough
+                ? 'Open to analyse your recent learning'
+                : `Starts after ${INSIGHT_MIN_ANSWERS} answers · ${analysis.totalAnswers} recorded`
+          }
+          onClick={() => open('insight')}
+        />
+        <ProfileMenuItem
+          icon={ScanSearch}
+          title="Weakness Detector"
+          subtitle={
+            weaknesses > 0
+              ? `${weaknesses} ${weaknesses === 1 ? 'area needs' : 'areas need'} attention`
+              : 'No recurring weakness detected'
+          }
+          onClick={() => open('weakness')}
+        />
+        <ProfileMenuItem
+          icon={NotebookPen}
+          title="Mistake Memory"
+          subtitle={`This week ${s.thisWeek} · Repeated ${s.repeated} · Overcome ${s.overcome}`}
+          onClick={() => open('mistakes')}
+        />
         <ProfileMenuItem icon={History} title="Learning Activity" subtitle="View your study history" onClick={() => open('activity')} />
         <ProfileMenuItem icon={Activity} title="My Statistics" subtitle="Progress, learning time and performance" onClick={() => open('statistics')} />
         <ProfileMenuItem icon={Trophy} title="Achievements" subtitle="Levels, streaks and completed challenges" onClick={() => open('achievements')} />

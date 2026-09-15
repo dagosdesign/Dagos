@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, RotateCcw, Check, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { wordDifficulty } from '../lib/difficulty';
@@ -247,6 +248,14 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
           setLocked(true);
           setWrong(w => w + 1);
           setReview(r => [...r, { word: current.word, meaning: current.meaning }]);
+          recordAnswer({
+            area: 'vocabulary',
+            concept: VOCABULARY.forgotten,
+            correct: false,
+            source: 'Word Build',
+            prompt: `The English word for "${current.meaning}"`,
+            expected: current.word.toLowerCase(),
+          });
           setFeedback('timeup');
           window.setTimeout(() => {
             if (index + 1 < questions.length) setIndex(i => i + 1);
@@ -376,6 +385,14 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
       setLocked(true);
       setCorrect(c => c + 1);
       setScore(s => s + POINTS);
+      recordAnswer({
+        area: 'vocabulary',
+        concept: VOCABULARY.forgotten,
+        correct: true,
+        source: 'Word Build',
+        prompt: `The English word for "${current.meaning}"`,
+        expected: current.word.toLowerCase(),
+      });
       setFeedback('correct');
       window.setTimeout(() => {
         if (index + 1 < questions.length) setIndex(i => i + 1);

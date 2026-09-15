@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, Mic, Zap, Check, X, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
@@ -178,6 +179,14 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
       const elapsed = (Date.now() - startedAtRef.current) / 1000;
       const double = isCorrect && elapsed <= BONUS_SECONDS;
       const points = isCorrect ? (double ? BONUS_POINTS : POINTS) : 0;
+      recordAnswer({
+        area: 'vocabulary',
+        concept: VOCABULARY.forgotten,
+        correct: isCorrect,
+        source: 'What Am I?',
+        prompt: current.clues[0],
+        expected: current.word.toLowerCase(),
+      });
 
       if (isCorrect) {
         setCorrect(c => c + 1);

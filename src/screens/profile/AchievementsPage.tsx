@@ -42,7 +42,6 @@ export default function AchievementsPage({ onBack, gamification }: { onBack: () 
         { title: 'Committed', detail: 'Complete 100 activities', current: profile.completedActivities, target: 100 },
         { title: 'First Hour', detail: 'Learn for 1 hour', current: Math.floor(hours), target: 1 },
         { title: 'Ten Hours', detail: 'Learn for 10 hours', current: Math.floor(hours), target: 10 },
-        { title: '1,000 XP', detail: 'Earn 1,000 XP', current: gamification.xp, target: 1000 },
       ],
     },
   ];

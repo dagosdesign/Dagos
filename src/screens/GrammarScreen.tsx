@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { grammarConcept, recordAnswer } from '../lib/learningRecord';
 import { motion } from 'motion/react';
 import {
   GraduationCap, ChevronRight, ChevronLeft, BookOpen, Loader2,
@@ -187,6 +188,17 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                   onClick={() => {
                     setSelected(idx);
                     setAnswers(prev => [...prev, idx === question.correct]);
+                    recordAnswer({
+                      area: 'grammar',
+                      concept: grammarConcept(
+                        category.subtopics.find(s => s.id === subId)?.title || lessons?.[subId]?.title || category.title
+                      ),
+                      correct: idx === question.correct,
+                      source: 'Grammar Test',
+                      prompt: question.q,
+                      given: question.options[idx],
+                      expected: question.options[question.correct],
+                    });
                   }}
                   className={`w-full text-left p-3.5 rounded-2xl border-2 transition-all duration-200 flex items-center gap-3 ${tile} ${!hasAnswered ? 'cursor-pointer' : 'cursor-default'}`}
                 >

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import type { LucideIcon } from 'lucide-react';
 import {
   ChevronLeft, BarChart3, Lock, Check, X, Star,
@@ -300,6 +301,15 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
     lockRef.current = true;
     const q = questions[index];
     const ok = optionId === q.correctId;
+    recordAnswer({
+      area: 'vocabulary',
+      concept: VOCABULARY.choice,
+      correct: ok,
+      source: 'Word Path',
+      prompt: `Closest in meaning to ${q.nodes.join(', ')}`,
+      given: q.options.find(o => o.id === optionId)?.word,
+      expected: q.answer,
+    });
     setChosenId(optionId);
     setVerdict(ok ? 'true' : 'wrong');
     if (ok) setCorrectCount(c => c + 1);

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { grammarConcept, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { GRAMMAR_DUELS, GrammarDuel } from '../data/grammarDuels';
 import GENERATED_BANK from '../data/grammarDuelBank.json';
@@ -252,6 +253,15 @@ export default function GrammarDuelScreen({ onExit, recordQuizXp }: GrammarDuelS
     lockRef.current = true;
     const q = questions[index];
     const ok = sideId === q.correctId;
+    recordAnswer({
+      area: 'grammar',
+      concept: grammarConcept(q.topic),
+      correct: ok,
+      source: 'Grammar Duel',
+      prompt: 'Choose the correct sentence.',
+      given: [q.left, q.right].find(s => s.id === sideId)?.text,
+      expected: q.correctText,
+    });
     setChosenId(sideId);
     setVerdict(ok ? 'true' : 'wrong');
     if (ok) setCorrectCount(c => c + 1);

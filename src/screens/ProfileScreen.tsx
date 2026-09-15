@@ -22,6 +22,7 @@ import LanguagePage from './profile/LanguagePage';
 import AccountSettingsPage from './profile/AccountSettingsPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
+import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage, WeaknessPage } from './profile/LearningIntelPages';
 import { setMembership, signOutProfile, useUserProfile } from '../lib/userProfile';
 
 interface ProfileScreenProps {
@@ -64,6 +65,16 @@ export default function ProfileScreen(props: ProfileScreenProps) {
   };
   const up = parent ? () => open(parent) : back;
 
+  // Weakness Detector and Mistake Memory: the concept being reviewed or practised,
+  // and where Practice This was started from.
+  const [focus, setFocus] = useState<string | null>(null);
+  const [practiceFrom, setPracticeFrom] = useState<ProfilePage>('weakness');
+  const practise = (key: string, from: ProfilePage) => {
+    setFocus(key);
+    setPracticeFrom(from);
+    open('practice', from);
+  };
+
   const upgrade = () => {
     setMembership('premium');
     setToast('Premium is now active');
@@ -81,6 +92,26 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         return <LearningGoalsPage onBack={back} />;
       case 'progress':
         return <MyProgressPage onBack={back} open={p => open(p, 'progress')} />;
+      case 'insight':
+        return <InsightPage onBack={() => open('progress')} />;
+      case 'weakness':
+        return <WeaknessPage onBack={() => open('progress')} onPractice={key => practise(key, 'weakness')} />;
+      case 'mistakes':
+        return (
+          <MistakeMemoryPage
+            onBack={() => open('progress')}
+            onOpen={key => {
+              setFocus(key);
+              open('mistake', 'mistakes');
+            }}
+          />
+        );
+      case 'mistake':
+        return focus ? (
+          <MistakeDetailPage conceptKey={focus} onBack={() => open('mistakes')} onPractice={key => practise(key, 'mistake')} />
+        ) : null;
+      case 'practice':
+        return focus ? <PracticePage conceptKey={focus} onBack={() => open(practiceFrom, practiceFrom === 'mistake' ? 'mistakes' : 'progress')} /> : null;
       case 'activity':
         return <LearningActivityPage onBack={up} />;
       case 'library':

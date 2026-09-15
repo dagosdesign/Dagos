@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
+import { grammarConcept, recordAnswer } from '../../lib/learningRecord';
 import { ChevronLeft } from 'lucide-react';
 import { C, Card, GhostButton, GoldButton } from '../../components/profile/ui';
 import PlanLimitCard from '../../components/PlanLimitCard';
@@ -33,6 +34,15 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
 
   const next = () => {
     if (!state || !current || choice === null) return;
+    recordAnswer({
+      area: 'grammar',
+      concept: grammarConcept(current.topic),
+      correct: choice === current.correct,
+      source: 'Check Your Level',
+      prompt: current.question,
+      given: current.options[choice],
+      expected: current.options[current.correct],
+    });
     const s = answerPlacement(state, choice === current.correct);
     setChoice(null);
     setState(s);

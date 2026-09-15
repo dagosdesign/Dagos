@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, Lock, LockOpen, KeyRound, Lightbulb, SkipForward, Eraser } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { Flashcard } from '../types';
@@ -9,10 +10,10 @@ import { rampedPick, wordDifficulty } from '../lib/difficulty';
 import { categoryLine, contextLine, mentionsWord } from '../lib/clues';
 import EXTRA_CLUES from '../data/wordlockClues.json';
 
-/* Generated for the words whose own data cannot give two English clues
-   (scripts/generate-wordlock-clues.ts): their real part of speech and one
-   short clue that passed the same leak and gap checks the game uses. */
-const EXTRA: Record<string, { pos: string; clue: string }> = EXTRA_CLUES;
+/* Generated for the words whose own data cannot give three English clues
+   (scripts/generate-wordlock-clues.ts): their real part of speech and the short
+   clues that passed the same leak and gap checks the game uses. */
+const EXTRA: Record<string, { pos: string; clues?: string[]; clue?: string }> = EXTRA_CLUES;
 
 /* WORDLOCK — find the letters, unlock the clues, guess the word.
    Six life rings, three locked clues, whole-word guessing. No hangman imagery. */
@@ -77,12 +78,12 @@ function buildClues(card: Flashcard, entry: VocabEntry | undefined): string[] {
   // it is, what it means, the words it keeps company with, its part of speech.
   const definition = (entry?.definition ?? '').trim();
   const extra = EXTRA[word.toLowerCase()];
-  const extraClue = extra && !mentionsWord(extra.clue, word) ? extra.clue : null;
+  const extraClues = (extra?.clues ?? (extra?.clue ? [extra.clue] : [])).filter(c => !mentionsWord(c, word));
   const english = [
     categoryLine(word, definition),
     definition && !mentionsWord(definition, word) ? definition : null,
     contextLine(entry?.example || card.exampleSentence || '', word),
-    extraClue,
+    ...extraClues,
     partOfSpeechLine(card.partOfSpeech) ?? partOfSpeechLine(extra?.pos),
   ].filter(noGap);
 
@@ -213,11 +214,16 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
     setRevealed(new Set(word.split('').map((_, i) => i)));
     setSolved(true);
     setFlash('SOLVED');
+    recordAnswer({ area: 'vocabulary', concept: VOCABULARY.forgotten, correct: true, source: 'Wordlock', prompt: clues[0], expected: word.toLowerCase() });
     const next = { ...stats, correct: stats.correct + 1, score: stats.score + points };
     setStats(next);
   };
 
   const loseLife = () => {
+    // The last guess is used up: the word was not found.
+    if (lives <= 1 && !solved) {
+      recordAnswer({ area: 'vocabulary', concept: VOCABULARY.forgotten, correct: false, source: 'Wordlock', prompt: clues[0], expected: word.toLowerCase() });
+    }
     setLives(l => {
       const nl = Math.max(0, l - 1);
       if (nl === 0) {

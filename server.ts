@@ -211,6 +211,123 @@ app.post("/api/live-token", async (_req, res) => {
   }
 });
 
+/* AI Learning Insight: a short, personal analysis written only from the student's
+   measured performance (the client sends the analysis of its answer record). */
+app.post("/api/learning-insight", async (req, res) => {
+  const { data } = req.body as { data?: unknown };
+  if (!data || typeof data !== "object") {
+    return res.status(400).json({ error: "Missing 'data' in request body." });
+  }
+  try {
+    const ai = getAIClient();
+    const systemInstruction =
+      "You are the learning analyst of Lexistencehub, an English learning app for Turkish students. " +
+      "Write an insight ONLY from the performance data you are given. Every sentence must state something " +
+      "concrete that the data shows: a strength with its topic, a recurring difficulty, a trend (improving or " +
+      "declining accuracy), study consistency, or an area with too little practice. Name topics exactly as they " +
+      "appear in the data. Never invent topics, numbers or activities that are not in the data. " +
+      "Do NOT write motivational filler such as 'Keep going', 'You are doing great' or 'Practice makes perfect'. " +
+      "Write in English, second person, calm and professional. " +
+      "preview: one or two sentences (max 35 words) with the single most important finding. " +
+      "detail: three to five sentences that expand on the findings and say what to focus on next.";
+    const response = await generateResilient(ai, {
+      contents: `Student performance data (JSON):\n${JSON.stringify(data).slice(0, 12000)}`,
+      config: {
+        systemInstruction,
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: { preview: { type: Type.STRING }, detail: { type: Type.STRING } },
+          required: ["preview", "detail"],
+        },
+        temperature: 0.4,
+      },
+    });
+    const parsed = JSON.parse(response.text || "{}");
+    if (!parsed.preview || !parsed.detail) throw new Error("Empty insight");
+    res.json({ preview: String(parsed.preview).trim(), detail: String(parsed.detail).trim() });
+  } catch (err: any) {
+    console.error("Learning insight error:", err?.message || err);
+    res.status(500).json({ error: "insight_failed", message: "The learning insight could not be prepared right now." });
+  }
+});
+
+/* Weakness Detector → Practice This: focused questions on one weakness, pitched
+   at the student's level and current accuracy, built around their own mistakes. */
+app.post("/api/weakness-practice", async (req, res) => {
+  const { area, concept, cefr, difficulty, examples, items } = req.body as {
+    area?: string;
+    concept?: string;
+    cefr?: string;
+    difficulty?: "easy" | "medium" | "hard";
+    examples?: { prompt?: string; given?: string; expected?: string }[];
+    items?: string[];
+  };
+  if (!concept || !area) return res.status(400).json({ error: "Missing 'concept' or 'area'." });
+  try {
+    const ai = getAIClient();
+    const systemInstruction =
+      "You write practice questions for Lexistencehub, an English learning app for Turkish students. " +
+      "Every question must practise exactly the given learning concept - nothing else. " +
+      "Each question has exactly four options and exactly ONE correct answer that no careful teacher could dispute; " +
+      "the wrong options must be realistic learner mistakes for this concept. Vary the sentences and contexts; " +
+      "never repeat the student's previous questions word for word. Questions and options are in English. " +
+      "explanation: one short English sentence a learner at the given level understands.";
+    const brief = {
+      area,
+      concept,
+      studentLevel: cefr || "B1",
+      difficulty: difficulty || "medium",
+      previousMistakes: (examples ?? []).slice(0, 5),
+      wordsToPractise: (items ?? []).slice(0, 10),
+      guidance:
+        area === "vocabulary"
+          ? "Practise the listed words when they are given: meaning, correct word in context, or telling similar words apart."
+          : "Practise the grammar concept in natural sentences with a gap or a choice of forms.",
+    };
+    const response = await generateResilient(ai, {
+      contents: `Write 6 practice questions for this brief:\n${JSON.stringify(brief)}`,
+      config: {
+        systemInstruction,
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              question: { type: Type.STRING },
+              options: { type: Type.ARRAY, items: { type: Type.STRING } },
+              correct: { type: Type.INTEGER },
+              explanation: { type: Type.STRING },
+            },
+            required: ["question", "options", "correct", "explanation"],
+          },
+        },
+        temperature: 0.8,
+      },
+    });
+    const list = JSON.parse(response.text || "[]") as any[];
+    const questions = list
+      .filter(
+        q =>
+          q &&
+          typeof q.question === "string" &&
+          Array.isArray(q.options) &&
+          q.options.length === 4 &&
+          new Set(q.options.map((o: string) => String(o).trim().toLowerCase())).size === 4 &&
+          Number.isInteger(q.correct) &&
+          q.correct >= 0 &&
+          q.correct < 4
+      )
+      .slice(0, 6);
+    if (questions.length < 3) throw new Error("Too few valid questions");
+    res.json({ questions });
+  } catch (err: any) {
+    console.error("Weakness practice error:", err?.message || err);
+    res.status(500).json({ error: "practice_failed", message: "Practice could not be prepared right now. Please try again." });
+  }
+});
+
 // Generates practice content for a target word: a short story or a two-person dialogue.
 app.post("/api/practice-content", async (req, res) => {
   const { kind, word, meaning } = req.body as {

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, Mic, SkipForward, Check, X, Minus } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
@@ -190,6 +191,16 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
       if (!current || resolvedRef.current) return;
       resolvedRef.current = true;
       const letter = current.letter;
+      if (result !== 'passed') {
+        recordAnswer({
+          area: 'vocabulary',
+          concept: VOCABULARY.forgotten,
+          correct: result === 'correct',
+          source: 'A-Z',
+          prompt: current.clue,
+          expected: current.word.toLowerCase(),
+        });
+      }
       setFeedback(result);
       setAnswer('');
       window.setTimeout(() => setFeedback(null), 550);
