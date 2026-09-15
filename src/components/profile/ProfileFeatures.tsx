@@ -1,5 +1,4 @@
 import { History, Activity, Trophy } from 'lucide-react';
-import { UserProfile } from '../../lib/userProfile';
 import { MenuList, ProfileMenuItem, SectionHeading } from './ui';
 
 export type ProfilePage =
@@ -20,11 +19,11 @@ export type ProfilePage =
   | 'terms'
   | 'about';
 
-/* All profile features in one card, one row each. */
-export default function ProfileFeatures({ profile, open }: { profile: UserProfile; open: (page: ProfilePage) => void }) {
+/* My Progress: the student's activity, statistics and achievements, one row each. */
+export default function ProfileFeatures({ open }: { open: (page: ProfilePage) => void }) {
   return (
     <section className="space-y-4">
-      <SectionHeading title="Profile Features" />
+      <SectionHeading title="My Progress" />
       <MenuList>
         <ProfileMenuItem icon={History} title="Learning Activity" subtitle="View your study history" onClick={() => open('activity')} />
         <ProfileMenuItem icon={Activity} title="My Statistics" subtitle="Progress, learning time and performance" onClick={() => open('statistics')} />

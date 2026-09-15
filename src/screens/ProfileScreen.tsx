@@ -6,7 +6,6 @@ import ProfileHeader from '../components/profile/ProfileHeader';
 import StudentIdentityCard from '../components/profile/StudentIdentityCard';
 import LevelCard from '../components/profile/LevelCard';
 import LearningTimeCard from '../components/profile/LearningTimeCard';
-import AIInsightCard from '../components/profile/AIInsightCard';
 import MembershipSection from '../components/profile/MembershipSection';
 import ProfileFeatures, { ProfilePage } from '../components/profile/ProfileFeatures';
 import { BrandSignature } from '../components/profile/AccountSection';
@@ -126,11 +125,10 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             <StudentIdentityCard profile={profile} onEdit={() => open('personal')} />
             <LevelCard profile={profile} onDetails={() => open('level')} onCheckLevel={() => open('placement')} />
             <LearningTimeCard />
-            <AIInsightCard profile={profile} onOpen={() => open('statistics')} />
+            <ProfileFeatures open={open} />
             <div className="pt-2">
               <MembershipSection plan={profile.membership} onUpgrade={upgrade} onManage={() => open('subscription')} />
             </div>
-            <ProfileFeatures profile={profile} open={open} />
             <BrandSignature />
           </div>
         );
