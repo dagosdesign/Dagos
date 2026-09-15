@@ -7,7 +7,7 @@ import StudentIdentityCard from '../components/profile/StudentIdentityCard';
 import LevelCard from '../components/profile/LevelCard';
 import LearningTimeCard from '../components/profile/LearningTimeCard';
 import MembershipSection from '../components/profile/MembershipSection';
-import ProfileFeatures, { ProfilePage } from '../components/profile/ProfileFeatures';
+import MyProgressCard, { MyProgressPage, ProfilePage } from '../components/profile/ProfileFeatures';
 import { BrandSignature } from '../components/profile/AccountSection';
 import PersonalInfoPage from './profile/PersonalInfoPage';
 import MyLevelPage from './profile/MyLevelPage';
@@ -49,18 +49,20 @@ export default function ProfileScreen(props: ProfileScreenProps) {
     return () => clearTimeout(t);
   }, [toast]);
 
-  const [fromSettings, setFromSettings] = useState(false);
+  // The page a sub-page was opened from (Settings, My Progress), so back returns there.
+  const [parent, setParent] = useState<ProfilePage | null>(null);
 
-  const open = (p: ProfilePage, viaSettings = false) => {
+  const open = (p: ProfilePage, from: ProfilePage | null = null) => {
     setPage(p);
-    setFromSettings(viaSettings);
+    setParent(from);
     window.scrollTo({ top: 0 });
   };
   const back = () => {
     setPage(null);
-    setFromSettings(false);
+    setParent(null);
     window.scrollTo({ top: 0 });
   };
+  const up = parent ? () => open(parent) : back;
 
   const upgrade = () => {
     setMembership('premium');
@@ -77,14 +79,16 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         return <PlacementTestScreen onClose={back} />;
       case 'goals':
         return <LearningGoalsPage onBack={back} />;
+      case 'progress':
+        return <MyProgressPage onBack={back} open={p => open(p, 'progress')} />;
       case 'activity':
-        return <LearningActivityPage onBack={back} />;
+        return <LearningActivityPage onBack={up} />;
       case 'library':
         return <LibraryPage onBack={back} srsState={srsState} dueCount={dueCount} onOpenCards={onOpenCards} />;
       case 'statistics':
         return (
           <StatisticsPage
-            onBack={back}
+            onBack={up}
             gamification={gamification}
             srsState={srsState}
             grammarProgress={grammarProgress}
@@ -92,21 +96,21 @@ export default function ProfileScreen(props: ProfileScreenProps) {
           />
         );
       case 'achievements':
-        return <AchievementsPage onBack={back} gamification={gamification} />;
+        return <AchievementsPage onBack={up} gamification={gamification} />;
       // Opened from Settings, back returns to Settings; from the bell, to the profile.
       case 'notifications':
-        return <NotificationsPage onBack={fromSettings ? () => open('account') : back} />;
+        return <NotificationsPage onBack={up} />;
       case 'language':
-        return <LanguagePage onBack={fromSettings ? () => open('account') : back} notify={setToast} />;
+        return <LanguagePage onBack={up} notify={setToast} />;
       case 'account':
         return (
           <AccountSettingsPage
             onBack={back}
             onResetStats={onResetStats}
             onChangeSubscription={() => open('subscription')}
-            onNotifications={() => open('notifications', true)}
-            onLanguage={() => open('language', true)}
-            openInfo={p => open(p, true)}
+            onNotifications={() => open('notifications', 'account')}
+            onLanguage={() => open('language', 'account')}
+            openInfo={p => open(p, 'account')}
             onLogOut={() => setConfirmLogout(true)}
             notify={setToast}
           />
@@ -117,7 +121,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
       case 'privacy':
       case 'terms':
       case 'about':
-        return <InfoPage kind={page} onBack={fromSettings ? () => open('account') : back} />;
+        return <InfoPage kind={page} onBack={up} />;
       default:
         return (
           <div className="space-y-6">
@@ -125,7 +129,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             <StudentIdentityCard profile={profile} onEdit={() => open('personal')} />
             <LevelCard profile={profile} onDetails={() => open('level')} onCheckLevel={() => open('placement')} />
             <LearningTimeCard />
-            <ProfileFeatures open={open} />
+            <MyProgressCard onOpen={() => open('progress')} />
             <div className="pt-2">
               <MembershipSection plan={profile.membership} onUpgrade={upgrade} onManage={() => open('subscription')} />
             </div>
