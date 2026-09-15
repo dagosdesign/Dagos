@@ -1,10 +1,14 @@
-// Builds the extra WORDLOCK clues for words the game cannot clue three ways from
-// its own data: the definition gives the word away, the example is too short for a
-// context line, and the card's part of speech is only "word".
+// Builds the extra WORDLOCK clues. Every Wordlock round shows exactly three
+// English clues (never the Turkish meaning), drawn from the word's own data: its
+// category, its definition, the words from its example, its part of speech. Many
+// words cannot give three that way - the definition gives the word away, the
+// example is too short, or the card's part of speech is only "word".
 //
-// For each such word Gemini writes its real part of speech and one short English
-// clue. Every clue is checked with the game's own leak test (mentionsWord) and gap
-// rule before it is kept, so what reaches a player is exactly what the game allows.
+// For each of those words Gemini writes its real part of speech and three
+// candidate clues of different kinds; the ones that pass the game's own checks
+// (no form of the word, no gap, not generic, not a repeat of another clue) fill
+// the missing places. Clues already in the file are kept. The bare part-of-speech
+// line does not count as one of the three.
 //
 // Usage: npx tsx scripts/generate-wordlock-clues.ts
 // Resumable: finished batches are cached in scripts/.cache/wordlock and skipped.
@@ -19,7 +23,8 @@ dotenv.config({ path: '.env' });
 
 const CACHE = path.join('scripts', '.cache', 'wordlock');
 const OUT = path.join('src', 'data', 'wordlockClues.json');
-const BATCH = 30;
+const BATCH = 25;
+const WANTED = 3;
 fs.mkdirSync(CACHE, { recursive: true });
 
 const ai = new GoogleGenAI({
@@ -28,24 +33,58 @@ const ai = new GoogleGenAI({
 });
 const MODELS = ['gemini-3.5-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-2.0-flash'];
 const POS = ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'conjunction', 'pronoun', 'determiner', 'interjection'];
-const GENERIC_POS = /^(words?|phrase|expression|idiom|term)?$/;
 
 interface VocabEntry { definition?: string; example?: string; meanings?: string[] }
-interface Extra { pos: string; clue: string }
+interface Extra { pos: string; clues: string[] }
 
 const vocab: Record<string, VocabEntry> = JSON.parse(fs.readFileSync(path.join('public', 'vocabulary.json'), 'utf8'));
 
-/* The same English clue sources WordLockScreen uses, part of speech included. */
-function englishSources(word: string, pos: string, entry: VocabEntry | undefined): number {
+// Earlier runs stored one `clue`; the file now keeps a list.
+const existing: Record<string, Extra> = {};
+if (fs.existsSync(OUT)) {
+  for (const [w, x] of Object.entries(JSON.parse(fs.readFileSync(OUT, 'utf8')) as Record<string, any>)) {
+    existing[w] = { pos: x.pos, clues: x.clues ?? (x.clue ? [x.clue] : []) };
+  }
+}
+
+const noGap = (c: string | null | undefined): c is string => !!c && !/_{2,}|\.{3}\s*$/.test(c);
+
+/* The real English clues WordLockScreen can show, in its order. The part-of-speech
+   line ("It is a verb.") is not counted: it says too little to be one of three
+   clues, and stays in the game only as a last resort. */
+function currentClues(word: string, cardPos: string, example: string, entry: VocabEntry | undefined, extra: Extra | undefined): string[] {
   const def = (entry?.definition ?? '').trim();
-  const card = FLASHCARDS.find(c => c.word === word);
-  const raw = pos.toLowerCase().split(/[\/,;(]/)[0].trim().replace(/\.$/, '');
   return [
-    categoryLine(word, def),
-    def && !mentionsWord(def, word) ? def : null,
-    contextLine(entry?.example || card?.exampleSentence || '', word),
-    GENERIC_POS.test(raw) ? null : raw,
-  ].filter(Boolean).length;
+    ...new Set(
+      [
+        categoryLine(word, def),
+        def && !mentionsWord(def, word) ? def : null,
+        contextLine(entry?.example || example, word),
+        ...(extra?.clues ?? []).filter(c => !mentionsWord(c, word)),
+      ].filter(noGap)
+    ),
+  ];
+}
+
+const words = (s: string) => new Set(s.toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(w => w.length > 2));
+function tooClose(a: string, b: string): boolean {
+  const x = words(a);
+  const y = words(b);
+  if (!x.size || !y.size) return false;
+  let shared = 0;
+  x.forEach(w => y.has(w) && shared++);
+  return shared / Math.min(x.size, y.size) >= 0.6;
+}
+
+function goodClue(word: string, clue: unknown, others: string[]): clue is string {
+  if (typeof clue !== 'string') return false;
+  const c = clue.trim();
+  if (c.length < 12 || c.length > 120) return false;
+  if (/_{2,}|\.{3}|\[|\]|blank/i.test(c)) return false; // never a gap
+  if (/[çğıöşüÇĞİÖŞÜ]/.test(c)) return false; // English only
+  if (mentionsWord(c, word)) return false; // never the word or an obvious form of it
+  if (/^it is an? (word|thing)\b|common word/i.test(c)) return false; // never generic
+  return !others.some(o => tooClose(o, c));
 }
 
 async function ask(prompt: string): Promise<any> {
@@ -55,7 +94,7 @@ async function ask(prompt: string): Promise<any> {
       const res = await ai.models.generateContent({
         model,
         contents: prompt,
-        config: { responseMimeType: 'application/json', temperature: 0.4 },
+        config: { responseMimeType: 'application/json', temperature: 0.5 },
       });
       return JSON.parse(res.text ?? '');
     } catch (err) {
@@ -68,19 +107,9 @@ async function ask(prompt: string): Promise<any> {
   throw last;
 }
 
-function valid(word: string, x: Extra | undefined, definition: string): x is Extra {
-  if (!x || typeof x.clue !== 'string' || typeof x.pos !== 'string') return false;
-  const clue = x.clue.trim();
-  if (clue.length < 12 || clue.length > 120) return false;
-  if (/_{2,}|\.{3}|\[|\]|blank/i.test(clue)) return false; // never a gap
-  if (mentionsWord(clue, word)) return false; // never the word or an obvious form of it
-  if (/^it is an? (word|thing)\b/i.test(clue)) return false; // never generic
-  if (definition && clue.toLowerCase().replace(/[^a-z]/g, '') === definition.toLowerCase().replace(/[^a-z]/g, '')) return false;
-  return POS.includes(x.pos.toLowerCase().trim());
-}
-
-/* ---------- which words need help ---------- */
-const needed: { word: string; pos: string; turkish: string; definition: string; example: string }[] = [];
+/* ---------- which words are short of three English clues ---------- */
+interface Need { word: string; cardPos: string; entry: VocabEntry | undefined; example: string; turkish: string }
+const needs: Need[] = [];
 const seen = new Set<string>();
 for (const card of FLASHCARDS) {
   const word = card.word;
@@ -89,55 +118,89 @@ for (const card of FLASHCARDS) {
   if (seen.has(key)) continue;
   seen.add(key);
   const entry = vocab[key];
-  if (englishSources(word, card.partOfSpeech, entry) >= 2) continue;
-  needed.push({
+  if (currentClues(word, card.partOfSpeech, card.exampleSentence || '', entry, existing[key]).length >= WANTED) continue;
+  needs.push({
     word: key,
-    pos: card.partOfSpeech,
+    cardPos: card.partOfSpeech,
+    entry,
+    example: card.exampleSentence || '',
     turkish: (entry?.meanings?.filter(Boolean).join(', ') || card.turkishMeaning || '').trim(),
-    definition: (entry?.definition ?? '').trim(),
-    example: (entry?.example || card.exampleSentence || '').trim(),
   });
 }
-console.log(`${needed.length} words need an extra clue`);
+console.log(`${needs.length} words have fewer than ${WANTED} English clues`);
 
-/* ---------- generate, two passes: the second retries whatever failed validation ---------- */
-const result: Record<string, Extra> = {};
-for (let pass = 0; pass < 2; pass++) {
-  const todo = needed.filter(n => !result[n.word]);
+const result: Record<string, Extra> = { ...existing };
+const shortOf = (n: Need) => WANTED - currentClues(n.word, n.cardPos, n.example, n.entry, result[n.word]).length;
+
+/* ---------- generate, two passes: the second retries words still short ---------- */
+// When the API credits run out, stop asking and save everything already generated.
+let outOfCredits = false;
+passes: for (let pass = 0; pass < 2; pass++) {
+  const todo = needs.filter(n => shortOf(n) > 0);
+  if (!todo.length) break;
+  console.log(`pass ${pass + 1}: ${todo.length} words`);
   for (let b = 0; b < todo.length; b += BATCH) {
     const batch = todo.slice(b, b + BATCH);
-    const name = `pass${pass}-${batch.map(n => n.word).join('-').slice(0, 60)}-${batch.length}.json`;
+    const name = `v3-pass${pass}-${batch.map(n => n.word).join('-').slice(0, 60)}-${batch.length}.json`;
     const file = path.join(CACHE, name.replace(/[^a-z0-9.-]/gi, '_'));
-    let answer: Record<string, Extra> | null = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null;
+    let answer: Record<string, { pos?: string; clues?: unknown[] }> | null = fs.existsSync(file)
+      ? JSON.parse(fs.readFileSync(file, 'utf8'))
+      : null;
     if (!answer) {
-      const prompt = `You write clues for WORDLOCK, an English vocabulary game for Turkish learners.
-For each word below, return its part of speech as used in the example, and ONE clue.
+      const prompt = `You write clues for WORDLOCK, an English vocabulary game for Turkish learners. The player guesses a
+hidden English word letter by letter and opens clues to help.
 
-The clue:
-- is one short, natural English sentence (at most 14 words) that describes the word's meaning or how it is used;
+For each word below return its part of speech as used in the example, and THREE different clues:
+1. its meaning, said in other words;
+2. a typical situation, place or person connected with it;
+3. something else useful: what it is often used with, its opposite, or how it feels or looks.
+
+Every clue:
+- is one short, natural English sentence (at most 14 words), in simple English for a learner;
 - must NOT contain the word itself or any form, derivative or family member of it (no "apology" for "apologize");
 - must NOT be a sentence with a blank, gap, underscore or missing word;
-- must NOT be generic ("It is a word", "It is a common word");
-- must NOT be a Turkish translation and must NOT repeat the given definition;
-- uses simple English a learner at this word's level understands.
-part of speech is one of: ${POS.join(', ')}.
+- must NOT be generic ("It is a word", "It is a common word") and must NOT repeat the given definition;
+- must NOT be in Turkish or translate the word.
+Part of speech is one of: ${POS.join(', ')}.
 
-Words: ${JSON.stringify(batch.map(n => ({ word: n.word, turkish: n.turkish, definition: n.definition, example: n.example })))}
+Words: ${JSON.stringify(batch.map(n => ({ word: n.word, turkish: n.turkish, definition: n.entry?.definition ?? '', example: n.entry?.example || n.example })))}
 
-Return JSON: {"<word>": {"pos": "verb", "clue": "..."}}`;
-      answer = (await ask(prompt)) as Record<string, Extra>;
+Return JSON: {"<word>": {"pos": "verb", "clues": ["...", "...", "..."]}}`;
+      try {
+        answer = await ask(prompt);
+      } catch (err) {
+        if (/prepayment|credits|quota|RESOURCE_EXHAUSTED|429/i.test(String((err as Error)?.message || err))) {
+          outOfCredits = true;
+          console.log('API credits are exhausted - saving what has been generated so far.');
+          break passes;
+        }
+        throw err;
+      }
       fs.writeFileSync(file, JSON.stringify(answer, null, 1));
-      console.log(`pass ${pass + 1}: batch ${b / BATCH + 1}/${Math.ceil(todo.length / BATCH)} generated`);
+      console.log(`  batch ${b / BATCH + 1}/${Math.ceil(todo.length / BATCH)} generated`);
     }
     for (const n of batch) {
-      const x = answer?.[n.word];
-      if (valid(n.word, x, n.definition)) result[n.word] = { pos: x.pos.toLowerCase().trim(), clue: x.clue.trim() };
+      const got = answer?.[n.word];
+      if (!got) continue;
+      const pos = typeof got.pos === 'string' && POS.includes(got.pos.toLowerCase().trim()) ? got.pos.toLowerCase().trim() : result[n.word]?.pos;
+      const entry: Extra = { pos: pos ?? '', clues: [...(result[n.word]?.clues ?? [])] };
+      for (const c of got.clues ?? []) {
+        const shown = currentClues(n.word, n.cardPos, n.example, n.entry, entry);
+        if (shown.length >= WANTED) break;
+        if (goodClue(n.word, c, shown)) entry.clues.push(c.trim());
+      }
+      if (entry.clues.length || entry.pos) result[n.word] = entry;
     }
   }
 }
 
-const sorted = Object.fromEntries(Object.entries(result).sort(([a], [b]) => a.localeCompare(b)));
+if (outOfCredits) console.log('Run the script again after adding credits to finish the remaining words.');
+const sorted = Object.fromEntries(
+  Object.entries(result)
+    .filter(([, x]) => x.clues.length || x.pos)
+    .sort(([a], [b]) => a.localeCompare(b))
+);
 fs.writeFileSync(OUT, JSON.stringify(sorted, null, 1) + '\n');
-const missing = needed.filter(n => !result[n.word]).map(n => n.word);
-console.log(`\n${Object.keys(result).length} of ${needed.length} words clued -> ${OUT}`);
-if (missing.length) console.log(`still without an extra clue: ${missing.join(', ')}`);
+const still = needs.filter(n => shortOf(n) > 0).map(n => n.word);
+console.log(`\n${needs.length - still.length} of ${needs.length} words now have ${WANTED} English clues -> ${OUT}`);
+if (still.length) console.log(`still short (${still.length}): ${still.slice(0, 40).join(', ')}${still.length > 40 ? ' …' : ''}`);
