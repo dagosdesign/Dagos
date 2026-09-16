@@ -7,6 +7,7 @@ import { Flashcard } from '../types';
 import { loadVocabulary } from '../lib/vocabulary';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { foldAnswer } from '../lib/answerText';
+import { checkTranslation, TranslationVerdict } from '../lib/translationCheck';
 import { allowWords } from '../lib/dailyUsage';
 import { useUserProfile } from '../lib/userProfile';
 import PlanLimitCard from '../components/PlanLimitCard';
@@ -429,6 +430,8 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
   const [submitted, setSubmitted] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
+  // exact: the stored word · alternative: another valid English word for the meaning · null: not decided yet
+  const [verdict, setVerdict] = useState<TranslationVerdict | null>(null);
 
   const current = rounds[idx];
   if (finished) {
@@ -436,21 +439,33 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
   }
   if (!current) return null;
 
-  const normalize = (s: string) => foldAnswer(s).trim().replace(/\s+/g, ' ');
-  const isCorrect = normalize(input) === normalize(current.word);
+  const isCorrect = verdict === 'exact' || verdict === 'alternative';
 
-  const submit = () => {
+  /* The stored word is not the only right answer: another valid English word
+     for the same Turkish meaning is correct too ("acı": bitter or pain). */
+  const submit = async () => {
     if (!input.trim() || submitted) return;
     setSubmitted(true);
-    if (normalize(input) === normalize(current.word)) setCorrectCount(c => c + 1);
+    setVerdict(null);
+    const card = current;
+    const answer = input.trim();
+    const result = await checkTranslation({
+      turkishMeaning: card.turkishMeaning,
+      expected: card.word,
+      given: answer,
+      partOfSpeech: card.partOfSpeech,
+    });
+    setVerdict(result);
+    const ok = result !== 'wrong';
+    if (ok) setCorrectCount(c => c + 1);
     recordAnswer({
       area: 'writing',
       concept: SPELLING,
-      correct: normalize(input) === normalize(current.word),
+      correct: ok,
       source: 'Writing',
-      prompt: `Write the English word for "${current.turkishMeaning}"`,
-      given: input.trim(),
-      expected: current.word,
+      prompt: `Write the English word for "${card.turkishMeaning}"`,
+      given: answer,
+      expected: card.word,
     });
   };
 
@@ -463,7 +478,7 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
           {current.partOfSpeech}
         </span>
         <p className="text-2xl font-serif italic text-[#e3b553]">{current.turkishMeaning}</p>
-        <p className="text-xs text-white/40 font-light">Bu anlama gelen İngilizce kelimeyi yaz</p>
+        <p className="text-xs text-white/40 font-light">Bu anlama gelen İngilizce karşılığı yaz</p>
       </div>
 
       {/* the app's own keyboard, so no system keyboard is needed here either */}
@@ -481,18 +496,28 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
         />
       </div>
 
-      {submitted && (
+      {submitted && verdict === null && (
+        <p className="text-center text-xs font-mono text-white/50 py-2">Kontrol ediliyor…</p>
+      )}
+
+      {submitted && verdict !== null && (
         <div className={`rounded-2xl border p-5 space-y-2 ${isCorrect ? 'bg-[#e3b553]/5 border-[#e3b553]/30' : 'bg-red-950/20 border-red-500/40'}`}>
           <p className="flex items-center gap-2 text-sm font-medium">
             {isCorrect
               ? <><CheckCircle2 className="w-4 h-4 text-[#e3b553]" /> <span className="text-[#e3b553]">Doğru!</span></>
               : <><XCircle className="w-4 h-4 text-red-400" /> <span className="text-red-300">Doğru cevap: <strong className="font-serif italic">{current.word}</strong></span></>}
           </p>
+          {verdict === 'alternative' && (
+            <p className="text-xs text-white/70 font-light">
+              "<span className="text-white">{input.trim()}</span>" da bu anlama gelir. Kartta kayıtlı cevap:{' '}
+              <strong className="font-serif italic text-[#e3b553]">{current.word}</strong>
+            </p>
+          )}
           <p className="text-xs text-white/60 italic font-light">"{current.exampleSentence}"</p>
           <div className="flex justify-end pt-1">
             <button
               onClick={() => {
-                if (idx + 1 < rounds.length) { setIdx(i => i + 1); setInput(''); setSubmitted(false); }
+                if (idx + 1 < rounds.length) { setIdx(i => i + 1); setInput(''); setSubmitted(false); setVerdict(null); }
                 else setFinished(true);
               }}
               className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-2.5 px-5 text-xs font-bold cursor-pointer"

@@ -328,6 +328,53 @@ app.post("/api/weakness-practice", async (req, res) => {
   }
 });
 
+/* Writing: is the student's English answer a valid translation of the Turkish
+   meaning, even if it is not the one word stored on the card? */
+app.post("/api/check-translation", async (req, res) => {
+  const { turkish, expected, given, partOfSpeech } = req.body as {
+    turkish?: string;
+    expected?: string;
+    given?: string;
+    partOfSpeech?: string;
+  };
+  if (!turkish || !given) return res.status(400).json({ error: "Missing 'turkish' or 'given'." });
+  try {
+    const ai = getAIClient();
+    const systemInstruction =
+      "You check answers in an English vocabulary writing exercise for Turkish students. The student sees a Turkish " +
+      "word or phrase and types its English equivalent. Decide whether the student's answer is a correct English " +
+      "translation of the Turkish meaning. Accept it when it is a real English word or phrase that correctly " +
+      "expresses the Turkish meaning in any common sense of the Turkish word - synonyms and other valid senses count " +
+      "(for 'acı' both 'bitter' and 'pain' are correct). Ignore capital letters. Reject it when the meaning is " +
+      "different or only loosely related, when it is misspelled (this is also spelling practice), when it is not " +
+      "English, or when it is a phrase that merely describes the meaning instead of translating it.";
+    const response = await generateResilient(ai, {
+      contents: JSON.stringify({
+        turkish,
+        partOfSpeechOnCard: partOfSpeech || "",
+        storedAnswer: expected || "",
+        studentAnswer: given,
+      }),
+      config: {
+        systemInstruction,
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: { accepted: { type: Type.BOOLEAN } },
+          required: ["accepted"],
+        },
+        temperature: 0,
+      },
+    });
+    const parsed = JSON.parse(response.text || "{}");
+    if (typeof parsed.accepted !== "boolean") throw new Error("No verdict");
+    res.json({ accepted: parsed.accepted });
+  } catch (err: any) {
+    console.error("Translation check error:", err?.message || err);
+    res.status(500).json({ error: "check_failed", message: "The answer could not be checked right now." });
+  }
+});
+
 // Generates practice content for a target word: a short story or a two-person dialogue.
 app.post("/api/practice-content", async (req, res) => {
   const { kind, word, meaning } = req.body as {
