@@ -1,4 +1,9 @@
 import { useSyncExternalStore } from 'react';
+import GRAMMAR_CATEGORIES from '../data/grammarTopics.json';
+
+const GRAMMAR_CATEGORY_TITLES = new Map(
+  (GRAMMAR_CATEGORIES as { title: string }[]).map(c => [c.title.toLowerCase(), c.title])
+);
 
 /* The answer record behind AI Learning Insight, Weakness Detector and Mistake
    Memory: every answered question across Lexistencehub - right or wrong - with
@@ -107,6 +112,10 @@ const GRAMMAR_CONCEPTS: [RegExp, string][] = [
 export function grammarConcept(label: string | undefined): string {
   const text = (label ?? '').trim();
   if (!text) return 'Grammar';
+  // The Grammar section's own category names ("Present Tenses", "Wish & If Only")
+  // are already learning concepts: they stay exactly as they are.
+  const category = GRAMMAR_CATEGORY_TITLES.get(text.toLowerCase());
+  if (category) return category;
   for (const [re, name] of GRAMMAR_CONCEPTS) if (re.test(text)) return name;
   // An unknown topic keeps its own name, tidied into Title Case.
   return text

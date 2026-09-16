@@ -3,7 +3,7 @@ import { grammarConcept, recordAnswer } from '../lib/learningRecord';
 import { motion } from 'motion/react';
 import {
   GraduationCap, ChevronRight, ChevronLeft, BookOpen, Loader2,
-  CheckCircle2, XCircle, ArrowRight, Trophy, ClipboardList,
+  CheckCircle2, XCircle, ArrowRight, Trophy, ClipboardList, Shuffle, ChevronDown,
 } from 'lucide-react';
 import GRAMMAR_CATEGORIES from '../data/grammarTopics.json';
 import Markdown from '../components/Markdown';
@@ -34,7 +34,13 @@ interface TestQuestion {
   options: string[];
   correct: number;
   explanation: string;
+  topic?: string; // Mixed Grammar: the grammar category each question tests
 }
+
+/* MIXED GRAMMAR TEST: five 50-question tests, each mixing every grammar
+   category of this section - not only tenses (public/grammar-tests/mixed.json). */
+const MIXED_TESTS = [1, 2, 3, 4, 5].map(n => ({ id: `mixed-${n}`, title: `Mixed Grammar ${n}` }));
+const mixedCache = new Map<string, Promise<Record<string, TestQuestion[]>>>();
 
 type Lang = 'en' | 'tr';
 type Level = 'basic' | 'intermediate' | 'advanced';
@@ -74,6 +80,16 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
   const [answers, setAnswers] = useState<boolean[]>([]);
   const [finished, setFinished] = useState(false);
 
+  // Mixed Grammar Test: the chosen test, and all five once loaded.
+  const [mixedId, setMixedId] = useState<string | null>(null);
+  const [mixedOpen, setMixedOpen] = useState(false);
+  const [mixedTests, setMixedTests] = useState<Record<string, TestQuestion[]> | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    loadJson(mixedCache, '/grammar-tests/mixed.json', 'mixed').then(d => { if (!cancelled) setMixedTests(d); });
+    return () => { cancelled = true; };
+  }, []);
+
   useEffect(() => {
     if (!category) return;
     let cancelled = false;
@@ -94,15 +110,32 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
     setFinished(false);
   };
 
-  const exitTest = () => {
-    setLevel(null);
+  const startMixed = (id: string) => {
+    // The same daily allowance as every grammar test; retrying today's test is always allowed.
+    if (canStartTest && !canStartTest(id)) return;
+    setMixedId(id);
+    setQIdx(0);
+    setSelected(null);
+    setAnswers([]);
     setFinished(false);
   };
 
-  /* ---- Test (quiz) view ---- */
-  if (category && subId && level) {
-    const questions = tests?.[subId]?.[level] ?? [];
-    const meta = LEVEL_META.find(m => m.id === level)!;
+  const exitTest = () => {
+    setLevel(null);
+    setMixedId(null);
+    setFinished(false);
+  };
+
+  /* ---- Test (quiz) view: a topic test (Basic / Intermediate / Advanced) or a Mixed Grammar test ---- */
+  const mixed = mixedId ? MIXED_TESTS.find(m => m.id === mixedId) ?? null : null;
+  if (mixed || (category && subId && level)) {
+    const questions = mixed ? mixedTests?.[mixed.id] ?? [] : tests?.[subId!]?.[level!] ?? [];
+    const meta = mixed
+      ? { id: 'mixed', label: 'Mixed', labelTr: 'Karışık', dots: 3 }
+      : LEVEL_META.find(m => m.id === level)!;
+    const testKey = mixed ? mixed.id : `${subId}-${level}`;
+    const testTitle = mixed ? mixed.title : lessons?.[subId!]?.title;
+    const restart = () => (mixed ? startMixed(mixed.id) : startTest(level!));
 
     if (finished) {
       const correct = answers.filter(Boolean).length;
@@ -114,7 +147,7 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
             </div>
             <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Test Tamamlandı</h2>
             <p className="text-[13px] text-white/75 font-mono">
-              {lessons?.[subId]?.title} · {meta.label}
+              {testTitle} · {meta.label}
             </p>
           </div>
 
@@ -126,11 +159,11 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
           </div>
 
           <div className="pt-2 flex flex-col sm:flex-row justify-center gap-3">
-            <button onClick={() => startTest(level)} className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3.5 px-6 text-xs font-bold cursor-pointer">
+            <button onClick={restart} className="bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-xl py-3.5 px-6 text-xs font-bold cursor-pointer">
               Tekrar Dene
             </button>
             <button onClick={exitTest} className="bg-white/[0.03] hover:bg-white/[0.06] text-white/90 border border-white/10 rounded-xl py-3.5 px-6 text-xs font-bold cursor-pointer">
-              Konuya Dön
+              {mixed ? 'Grammar\'a Dön' : 'Konuya Dön'}
             </button>
           </div>
         </motion.div>
@@ -141,10 +174,10 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
       return (
         <div className="space-y-4">
           <button onClick={exitTest} className="flex items-center gap-1.5 text-xs font-mono text-white/40 hover:text-[#e3b553] transition-colors cursor-pointer">
-            <ChevronLeft className="w-3.5 h-3.5" /> Konuya dön
+            <ChevronLeft className="w-3.5 h-3.5" /> {mixed ? 'Grammar' : 'Konuya dön'}
           </button>
           <p className="text-center text-white/40 text-xs font-mono py-16 bg-white/[0.02] rounded-3xl border border-white/[0.06]">
-            Bu test henüz hazırlanıyor. Lütfen daha sonra tekrar dene.
+            {mixed && !mixedTests ? 'Yükleniyor…' : 'Bu test henüz hazırlanıyor. Lütfen daha sonra tekrar dene.'}
           </p>
         </div>
       );
@@ -191,10 +224,12 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                     recordAnswer({
                       area: 'grammar',
                       concept: grammarConcept(
-                        category.subtopics.find(s => s.id === subId)?.title || lessons?.[subId]?.title || category.title
+                        mixed
+                          ? question.topic
+                          : category!.subtopics.find(s => s.id === subId)?.title || lessons?.[subId!]?.title || category!.title
                       ),
                       correct: idx === question.correct,
-                      source: 'Grammar Test',
+                      source: mixed ? mixed.title : 'Grammar Test',
                       prompt: question.q,
                       given: question.options[idx],
                       expected: question.options[question.correct],
@@ -234,7 +269,7 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                       setSelected(null);
                     } else {
                       const correct = answers.filter(Boolean).length;
-                      recordGrammarQuizResult(`${subId}-${level}`, correct, questions.length);
+                      recordGrammarQuizResult(testKey, correct, questions.length);
                       setFinished(true);
                     }
                   }}
@@ -390,6 +425,60 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
           <h2 className="text-2xl font-bold tracking-wide text-[#f2c463]">Grammar</h2>
           <p className="text-[13px] text-white/75 font-mono">{CATEGORIES.length} kategori · İngilizce + Türkçe anlatım</p>
         </div>
+      </div>
+
+      {/* MIXED GRAMMAR TEST: right under the Grammar heading; tap to open the five tests */}
+      <div className="bg-white/[0.02] rounded-3xl border border-[#e3b553]/25 shadow-lg overflow-hidden">
+        <button
+          type="button"
+          onClick={() => setMixedOpen(o => !o)}
+          aria-expanded={mixedOpen}
+          className="w-full flex items-center gap-2.5 p-5 sm:p-6 text-left cursor-pointer"
+        >
+          <div className="p-2 bg-[#e3b553]/15 text-[#e3b553] border border-[#e3b553]/30 rounded-xl">
+            <Shuffle className="w-5 h-5" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-[16px] font-bold tracking-[0.1em] text-[#f2c463] uppercase whitespace-nowrap truncate">Mixed Grammar Test</h3>
+            <p className="text-[12px] text-white/60 font-mono">5 test · 250 soru · tüm konular karışık</p>
+          </div>
+          <ChevronDown className={`w-5 h-5 text-[#e3b553] shrink-0 transition-transform duration-200 ${mixedOpen ? 'rotate-180' : ''}`} />
+        </button>
+        {mixedOpen && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          className="space-y-2.5 px-5 sm:px-6 pb-5 sm:pb-6"
+        >
+          {MIXED_TESTS.map((m, idx) => {
+            const count = mixedTests?.[m.id]?.length ?? 0;
+            const ready = count > 0;
+            return (
+              <button
+                key={m.id}
+                onClick={() => ready && startMixed(m.id)}
+                disabled={!ready}
+                className={`w-full flex items-center gap-3.5 text-left rounded-2xl border px-4 py-3.5 transition-all group ${
+                  ready
+                    ? 'bg-gradient-to-b from-[#1a170f] to-[#0d0c08] border-[#e3b553]/35 hover:border-[#e3b553]/70 cursor-pointer'
+                    : 'bg-white/[0.01] border-white/[0.05] opacity-40 cursor-not-allowed'
+                }`}
+              >
+                <span className="w-7 h-7 rounded-lg bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
+                  {idx + 1}
+                </span>
+                <span className="flex-1 min-w-0">
+                  <span className="block text-[15px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors">{m.title}</span>
+                  <span className="block text-[11px] text-white/55 font-mono mt-0.5">
+                    {ready ? `${count} soru` : mixedTests ? 'hazırlanıyor' : 'yükleniyor'}
+                  </span>
+                </span>
+                <ChevronRight className="w-4 h-4 text-white/25 group-hover:text-[#e3b553] transition-colors shrink-0" />
+              </button>
+            );
+          })}
+        </motion.div>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

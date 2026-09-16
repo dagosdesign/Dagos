@@ -1,0 +1,3262 @@
+{
+ "mixed-1": [
+  {
+   "q": "My brother usually ____ to school by bus, but today he is walking.",
+   "options": [
+    "is going",
+    "go",
+    "went",
+    "goes"
+   ],
+   "correct": 3,
+   "explanation": "Genellikle yapılan işleri (genel alışkanlıkları) anlatmak için Present Simple (Geniş Zaman) ve üçüncü tekil şahıs için 'goes' kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "A2"
+  },
+  {
+   "q": "I know you think I forgot your birthday, but I ____ buy you a gift! Here it is.",
+   "options": [
+    "do",
+    "did",
+    "am",
+    "was"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte yapılmış bir eylemi vurgulamak için 'did' yardımcı fiili asıl fiilin yalın haliyle birlikte kullanılır.",
+   "topic": "Emphasis Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "After the long separation, the two sisters ran to embrace ____ warmly.",
+   "options": [
+    "themselves",
+    "each other",
+    "ourselves",
+    "one another's"
+   ],
+   "correct": 1,
+   "explanation": "İki kişi arasındaki karşılıklı eylemleri ifade etmek için 'each other' (birbirini) zamiri kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B2"
+  },
+  {
+   "q": "If our initial business plan fails, we have no reserve funds to ____.",
+   "options": [
+    "take up with",
+    "keep up with",
+    "fall back on",
+    "make up for"
+   ],
+   "correct": 2,
+   "explanation": "Bir plan başarısız olduğunda başvurulacak son çareyi veya yedek kaynağı belirtmek için 'fall back on' phrasal verb'ü kullanılır.",
+   "topic": "Phrasal Verbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "We decided to go for a walk ____ the heavy rain.",
+   "options": [
+    "although",
+    "despite",
+    "because",
+    "even though"
+   ],
+   "correct": 1,
+   "explanation": "'Despite' (rağmen) bağlacından sonra bir isim veya isim öbeği (the heavy rain) gelir.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B1"
+  },
+  {
+   "q": "We tested two different software programs, but ____ of them was suitable for our project.",
+   "options": [
+    "none",
+    "either",
+    "neither",
+    "both"
+   ],
+   "correct": 2,
+   "explanation": "İki seçenekten hiçbirinin uygun olmadığını belirtmek için 'neither of' yapısı kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "B2"
+  },
+  {
+   "q": "The more demanding the task is, ____ the satisfaction upon completing it.",
+   "options": [
+    "greater",
+    "the greater",
+    "the greatest",
+    "as great as"
+   ],
+   "correct": 1,
+   "explanation": "Paralel artış bildiren 'the more..., the more...' (ne kadar... o kadar...) yapısında her iki tarafta da 'the + comparative' kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "C1"
+  },
+  {
+   "q": "The long lecture about ancient history was so ____ that many students fell asleep.",
+   "options": [
+    "bored",
+    "bore",
+    "boring",
+    "boringly"
+   ],
+   "correct": 2,
+   "explanation": "Bir durumun veya nesnenin başkalarında uyandırdığı etkiyi (sıkıcı) tanımlamak için '-ing' ekiyle biten sıfatlar kullanılır.",
+   "topic": "Adjective & Participle Clauses",
+   "cefr": "A2"
+  },
+  {
+   "q": "She managed ____ all her tasks before the manager arrived at the office.",
+   "options": [
+    "to finish",
+    "finishing",
+    "finish",
+    "to finishing"
+   ],
+   "correct": 0,
+   "explanation": "'Manage' fiilinden sonra gelen diğer fiil 'to + yalın hal' (to infinitive) yapısında olmalıdır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B1"
+  },
+  {
+   "q": "I love this city, but I wish it ____ so much during the winter months.",
+   "options": [
+    "doesn't rain",
+    "won't rain",
+    "hadn't rained",
+    "didn't rain"
+   ],
+   "correct": 3,
+   "explanation": "Şu anki duruma yönelik dilek ve pişmanlıkları belirtmek için 'wish' kelimesinden sonra Past Simple Tense kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B2"
+  },
+  {
+   "q": "Yesterday, while I was walking to school, I ____ my old friend, Emily.",
+   "options": [
+    "meet",
+    "met",
+    "was meeting",
+    "have met"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte devam eden bir eylem sırasında gerçekleşen anlık ve kısa bir durumu ifade etmek için 'Past Simple' (met) kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "A2"
+  },
+  {
+   "q": "The new bridge ____ by the construction company next year.",
+   "options": [
+    "will be built",
+    "will build",
+    "is built",
+    "was built"
+   ],
+   "correct": 0,
+   "explanation": "Gelecek zamandaki pasif (edilgen) yapıyı kurmak için 'will be + fiilin 3. hali' (past participle) kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B1"
+  },
+  {
+   "q": "The manager had his secretary ____ all the official documents before the meeting.",
+   "options": [
+    "to copy",
+    "copied",
+    "copying",
+    "copy"
+   ],
+   "correct": 3,
+   "explanation": "Ettirgen (causative) yapıda 'have someone do something' kalıbı kullanıldığı için fiilin yalın hali (bare infinitive) gelir.",
+   "topic": "Verb Forms",
+   "cefr": "B2"
+  },
+  {
+   "q": "The committee recommended that the budget ____ revised before the end of the quarter.",
+   "options": [
+    "is",
+    "was",
+    "being",
+    "be"
+   ],
+   "correct": 3,
+   "explanation": "'Recommend' gibi tavsiye bildiren fiillerden sonra gelen 'that' cümleciğinde subjunctive (istek kipi) yapısı gereği fiilin yalın hali (be) kullanılır.",
+   "topic": "Verb Forms",
+   "cefr": "C1"
+  },
+  {
+   "q": "Never before ____ seen such a breathtaking sunset in my entire life.",
+   "options": [
+    "I have",
+    "have I",
+    "did I",
+    "I had"
+   ],
+   "correct": 1,
+   "explanation": "Cümle 'Never' gibi olumsuz bir zarfla başladığında devrik yapı (inversion) kullanılır ve yardımcı fiil özneden önce gelir.",
+   "topic": "Inversion",
+   "cefr": "B1"
+  },
+  {
+   "q": "The negotiation was ____ more difficult than we had initially anticipated.",
+   "options": [
+    "very",
+    "significantly",
+    "too",
+    "so"
+   ],
+   "correct": 1,
+   "explanation": "Karşılaştırma (comparative) sıfatlarını derecelendirmek ve vurgulamak için 'significantly' (önemli ölçüde) zarfı kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "The diplomat spoke very carefully ____ he should offend the foreign dignitaries.",
+   "options": [
+    "so that",
+    "unless",
+    "lest",
+    "in case of"
+   ],
+   "correct": 2,
+   "explanation": "'-mesin diye', 'korkusuyla' anlamına gelen 'lest' bağlacından sonra genellikle 'should' veya yalın fiil kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "C1"
+  },
+  {
+   "q": "We usually have a big family dinner ____ Christmas Day.",
+   "options": [
+    "at",
+    "in",
+    "to",
+    "on"
+   ],
+   "correct": 3,
+   "explanation": "Belirli günlerden (Christmas Day gibi) bahsederken 'on' edatı kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "A2"
+  },
+  {
+   "q": "I knocked on the door, but ____ answered, so I decided to leave.",
+   "options": [
+    "anyone",
+    "someone",
+    "no one",
+    "everyone"
+   ],
+   "correct": 2,
+   "explanation": "Kapıyı çaldıktan sonra kimsenin cevap vermediğini belirtmek için olumsuz anlam taşıyan 'no one' (hiç kimse) zamiri kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B1"
+  },
+  {
+   "q": "The company ____ I work has recently opened a new branch in Berlin.",
+   "options": [
+    "whom",
+    "for which",
+    "where which",
+    "whose"
+   ],
+   "correct": 1,
+   "explanation": "Şirket için çalışıldığından, 'work' fiili 'for' edatıyla kullanılır ve relative clause yapısında 'for which' şeklinde yer alır.",
+   "topic": "Relative Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "I don't know ____ she lives because she recently moved to a new apartment.",
+   "options": [
+    "where",
+    "what",
+    "who",
+    "which"
+   ],
+   "correct": 0,
+   "explanation": "Bir kişinin yaşadığı yeri sormak veya belirtmek için isim cümleciğinde yer bildiren 'where' bağlacı kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "A2"
+  },
+  {
+   "q": "Look at the wet ground! It ____ have rained heavily during the night.",
+   "options": [
+    "can't",
+    "must",
+    "should",
+    "might not"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişe yönelik güçlü bir tahminde bulunurken 'must have + V3' yapısı kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "If you ____ me about the traffic jam, I would have taken the train instead.",
+   "options": [
+    "told",
+    "would tell",
+    "had told",
+    "have told"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişte gerçekleşmemiş bir koşulu ve sonucunu ifade eden 'Third Conditional' yapısında 'if'li kısımda Past Perfect Tense kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B2"
+  },
+  {
+   "q": "The archeological team ____ ancient ruins in this valley for over a decade, but they have yet to find the main temple.",
+   "options": [
+    "excavates",
+    "is excavating",
+    "excavated",
+    "has been excavating"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte başlayıp günümüzde de hâlâ devam eden ve sürecin uzunluğunu ('for over a decade') vurgulayan eylemler için Present Perfect Continuous kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "C1"
+  },
+  {
+   "q": "By the time you graduate next year, you ____ here for four years.",
+   "options": [
+    "will have lived",
+    "will live",
+    "are going to live",
+    "will be living"
+   ],
+   "correct": 0,
+   "explanation": "Gelecekte belirli bir zamandan önce tamamlanmış olacak süreçleri ifade etmek için Future Perfect Tense (will have lived) kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "During the intense debate, the two politicians continuously interrupted ____ speeches.",
+   "options": [
+    "each other's",
+    "each other",
+    "each others'",
+    "one another"
+   ],
+   "correct": 0,
+   "explanation": "\"Birbirlerinin\" anlamını vermek için \"each other\" ifadesine iyelik bildiren kesme işareti ve s (-'s) eklenmelidir.",
+   "topic": "Determiners & Possession",
+   "cefr": "B2"
+  },
+  {
+   "q": "The board has not yet decided ____ of the two candidates will be promoted to the executive position.",
+   "options": [
+    "which",
+    "whoever",
+    "whom",
+    "that"
+   ],
+   "correct": 0,
+   "explanation": "Sınırlı bir seçenek grubu arasından seçim yaparken 'hangisi' anlamını vermek için isim cümleciğinde 'which' tercih edilir.",
+   "topic": "Noun Clauses",
+   "cefr": "C1"
+  },
+  {
+   "q": "____ does it take to get to the airport from the city center by train?",
+   "options": [
+    "How much",
+    "How many",
+    "How far",
+    "How long"
+   ],
+   "correct": 3,
+   "explanation": "Bir eylemin ne kadar sürdüğünü (zaman miktarını) sormak için 'How long' soru kalıbı kullanılır.",
+   "topic": "Question Structures",
+   "cefr": "A2"
+  },
+  {
+   "q": "You haven't seen my car keys anywhere, ____?",
+   "options": [
+    "haven't you",
+    "did you",
+    "have you",
+    "didn't you"
+   ],
+   "correct": 2,
+   "explanation": "Olumsuz bir cümleyle başlayan onaylama sorularında (tag questions) soru kısmı olumlu yardımcı fiille (have you) yapılır.",
+   "topic": "Question Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "Unfortunately, the new software update is not fully compatible ____ older operating systems.",
+   "options": [
+    "to",
+    "with",
+    "for",
+    "by"
+   ],
+   "correct": 1,
+   "explanation": "İngilizcede bir şeyle \"uyumlu\" olmak anlamındaki \"compatible\" sıfatı her zaman \"with\" edatıyla kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "B2"
+  },
+  {
+   "q": "We don't have ____ milk left in the fridge, so we should buy some.",
+   "options": [
+    "much",
+    "many",
+    "few",
+    "a few"
+   ],
+   "correct": 0,
+   "explanation": "\"Milk\" (süt) sayılamayan bir isim olduğu için olumsuz cümlelerde miktar belirtirken \"much\" kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "A2"
+  },
+  {
+   "q": "I found ____ useful information on the website, but not enough to finish my report.",
+   "options": [
+    "an",
+    "many",
+    "some",
+    "a few"
+   ],
+   "correct": 2,
+   "explanation": "'Information' sayılamayan bir isim olduğu için 'an', 'many' veya 'a few' ile kullanılamaz; miktar belirtmek için 'some' uygundur.",
+   "topic": "Articles & Determiners",
+   "cefr": "B1"
+  },
+  {
+   "q": "The manager accused her assistant of ____ confidential company secrets to the rival firm.",
+   "options": [
+    "leaking",
+    "to leak",
+    "leak",
+    "that he leaked"
+   ],
+   "correct": 0,
+   "explanation": "\"Accuse someone of\" (birini bir şeyle suçlamak) yapısından sonra gelen fiil \"-ing\" takısı (gerund) alır.",
+   "topic": "Reported Speech",
+   "cefr": "B2"
+  },
+  {
+   "q": "The company has appointed a new director, under ____ leadership they hope to expand globally.",
+   "options": [
+    "whom",
+    "which",
+    "who",
+    "whose"
+   ],
+   "correct": 3,
+   "explanation": "\"Onun liderliği altında\" anlamını vererek sahiplik belirtmek için ilgi zamiri olarak \"whose\" (under whose leadership) kullanılmalıdır.",
+   "topic": "Relative Clauses",
+   "cefr": "C1"
+  },
+  {
+   "q": "Please be quiet; an important conference ____ in the next room right now.",
+   "options": [
+    "is being held",
+    "is holding",
+    "holds",
+    "has held"
+   ],
+   "correct": 0,
+   "explanation": "\"Right now\" şimdiki zamanı belirtir ve konferans kendi kendine yapılamayacağı için şimdiki zaman edilgen yapısı (is being held) kullanılmalıdır.",
+   "topic": "Passive Voice",
+   "cefr": "B1"
+  },
+  {
+   "q": "I deeply regret ____ you that your application has been rejected.",
+   "options": [
+    "informing",
+    "inform",
+    "to inform",
+    "having informed"
+   ],
+   "correct": 2,
+   "explanation": "\"Regret\" fiili, kötü bir haberi vermekten duyulan üzüntüyü ifade ederken kendisinden sonra mastar (to-infinitive) yapısı alır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B2"
+  },
+  {
+   "q": "No sooner had the plane landed ____ the passengers began gathering their luggage.",
+   "options": [
+    "than",
+    "when",
+    "then",
+    "before"
+   ],
+   "correct": 0,
+   "explanation": "\"No sooner... than\" kalıbı, bir eylemin hemen ardından diğerinin gerçekleştiğini belirtmek için kullanılır.",
+   "topic": "Relative Time Expressions",
+   "cefr": "C1"
+  },
+  {
+   "q": "Last summer, we ____ to Spain for our family vacation and stayed in a lovely hotel.",
+   "options": [
+    "went",
+    "go",
+    "were going",
+    "have gone"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte tamamlanmış ve zamanı belirtilmiş ('last summer') eylemler için Simple Past Tense (went) kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "A2"
+  },
+  {
+   "q": "The travel agent gave us some very useful ____ about the local attractions.",
+   "options": [
+    "informations",
+    "an information",
+    "informings",
+    "information"
+   ],
+   "correct": 3,
+   "explanation": "\"Information\" (bilgi) sayılamayan bir isim olduğu için çoğul eki (-s) alamaz ve başında \"an\" ile kullanılamaz.",
+   "topic": "Nouns",
+   "cefr": "B1"
+  },
+  {
+   "q": "The fire department managed to ____ the blaze before it could reach the neighboring houses.",
+   "options": [
+    "turn off",
+    "call off",
+    "put out",
+    "give up"
+   ],
+   "correct": 2,
+   "explanation": "Yangın veya ışık söndürmek anlamında 'put out' deyimsel fiili (phrasal verb) kullanılır.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "My car was very dirty, so I had it ____ yesterday.",
+   "options": [
+    "wash",
+    "washing",
+    "washed",
+    "to wash"
+   ],
+   "correct": 2,
+   "explanation": "\"Have something done\" ettirgen (causative) yapısında, nesneden sonra fiilin üçüncü hali (past participle) kullanılır.",
+   "topic": "Causative Structures",
+   "cefr": "A2"
+  },
+  {
+   "q": "I love this city, but I wish it ____ so much during the winter.",
+   "options": [
+    "doesn't rain",
+    "won't rain",
+    "hadn't rained",
+    "didn't rain"
+   ],
+   "correct": 3,
+   "explanation": "Şu ana ait bir durumla ilgili pişmanlık veya dilek belirtirken \"wish\" yapısından sonra Geçmiş Zaman (Past Simple) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B1"
+  },
+  {
+   "q": "The new software system performs ____ faster than the older version we replaced last month.",
+   "options": [
+    "highly",
+    "deeply",
+    "considerably",
+    "extremely"
+   ],
+   "correct": 2,
+   "explanation": "Daha hızlı ('faster') karşılaştırma ifadesini derecelendirmek için 'önemli ölçüde' anlamına gelen 'considerably' zarfı kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "____ unemployment is a major economic challenge that requires immediate policy intervention.",
+   "options": [
+    "No article",
+    "The",
+    "An",
+    "A"
+   ],
+   "correct": 0,
+   "explanation": "Soyut ve genel anlamda kullanılan kavramlar (unemployment) tekil ve genel bir durumu ifade ederken herhangi bir tanımlayıcı (article) almaz.",
+   "topic": "Articles & Determiners",
+   "cefr": "C1"
+  },
+  {
+   "q": "The more you practice playing the piano, ____ it will become.",
+   "options": [
+    "easier",
+    "the easiest",
+    "more easy",
+    "the easier"
+   ],
+   "correct": 3,
+   "explanation": "\"Ne kadar... o kadar...\" anlamını veren paralel karşılaştırma yapısında \"the more..., the + comparative\" kalıbı kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "B1"
+  },
+  {
+   "q": "If you had taken my advice yesterday, you ____ in this difficult situation now.",
+   "options": [
+    "won't be",
+    "wouldn't be",
+    "hadn't been",
+    "wouldn't have been"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişteki bir eylemin (Type 3) günümüzdeki sonucunu (Type 2) gösteren karma koşul cümlesinde (Mixed Conditional) temel kısımda \"would + fiil\" kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B2"
+  },
+  {
+   "q": "The suspect denied ____ anywhere near the crime scene on the night of the burglary.",
+   "options": [
+    "to be",
+    "having been",
+    "should be",
+    "to have been"
+   ],
+   "correct": 1,
+   "explanation": "\"Deny\" (inkar etmek) fiilinden sonra, geçmişte yapılmış tamamlanmış bir eyleme atıfta bulunurken \"having + V3\" yapısı tercih edilir.",
+   "topic": "Reported Speech",
+   "cefr": "C1"
+  },
+  {
+   "q": "I have decided to learn a new language, so I ____ a Spanish course next month.",
+   "options": [
+    "am going to start",
+    "start",
+    "started",
+    "will starting"
+   ],
+   "correct": 0,
+   "explanation": "Önceden planlanmış ve karar verilmiş gelecek planlarını ifade etmek için 'be going to' yapısı kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "A2"
+  },
+  {
+   "q": "We have plenty of food in the fridge, so you ____ go to the supermarket.",
+   "options": [
+    "mustn't",
+    "don't have to",
+    "shouldn't",
+    "can't"
+   ],
+   "correct": 1,
+   "explanation": "Dolapta yiyecek olduğu için markete gitmeye \"gerek olmadığını\" (zorunluluk yokluğunu) belirtmek için \"don't have to\" kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "Not only ____ the race, but he also broke the national record.",
+   "options": [
+    "he won",
+    "he did win",
+    "won he",
+    "did he win"
+   ],
+   "correct": 3,
+   "explanation": "'Not only' yapısı cümlenin başında kullanıldığında cümle devrik (inversion) olur ve 'did he win' şeklinde yardımcı fiil öznenin önüne gelir.",
+   "topic": "Sentence Structure",
+   "cefr": "B2"
+  }
+ ],
+ "mixed-2": [
+  {
+   "q": "You ____ take photos in this museum. It is strictly forbidden.",
+   "options": [
+    "don't have to",
+    "mustn't",
+    "couldn't",
+    "should"
+   ],
+   "correct": 1,
+   "explanation": "Yasakları belirtmek için 'mustn't' kullanılır; 'strictly forbidden' (kesinlikle yasak) ifadesi bunu gösterir.",
+   "topic": "Modal Verbs",
+   "cefr": "A2"
+  },
+  {
+   "q": "We need to get the mechanic ____ our car before we leave for our holiday.",
+   "options": [
+    "repair",
+    "repaired",
+    "to repair",
+    "repairing"
+   ],
+   "correct": 2,
+   "explanation": "'Get' ettirgen fiili, işi yapan kişi belirtildiğinde 'get + someone + to do something' yapısını alır.",
+   "topic": "Causative Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "Currently, I ____ of moving to Spain, but I haven't made a final decision yet.",
+   "options": [
+    "think",
+    "have been thought",
+    "am thinking",
+    "will have thought"
+   ],
+   "correct": 2,
+   "explanation": "Geleceğe yönelik bir planı aktif olarak düşünme sürecini ifade etmek için 'think' fiili şimdiki zaman (present continuous) yapısıyla kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "B2"
+  },
+  {
+   "q": "My sister speaks French very ____ because she lived in Paris for five years.",
+   "options": [
+    "well",
+    "good",
+    "fluent",
+    "best"
+   ],
+   "correct": 0,
+   "explanation": "Bir fiili (speaks) nitelemek için zarf (adverb) olan 'well' kelimesi kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "A2"
+  },
+  {
+   "q": "The children made these beautiful decorations all by ____.",
+   "options": [
+    "them",
+    "their",
+    "theirs",
+    "themselves"
+   ],
+   "correct": 3,
+   "explanation": "Özne çoğul (the children) olduğu ve eylemi kendi başlarına yaptıklarını belirtmek için dönüşlü zamir 'themselves' kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B1"
+  },
+  {
+   "q": "The harder you work on this assignment, ____ your final grade will be.",
+   "options": [
+    "the best",
+    "the better",
+    "better",
+    "more better"
+   ],
+   "correct": 1,
+   "explanation": "İki durumun doğru orantılı olarak değiştiğini belirtmek için 'the + comparative, the + comparative' yapısı kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "B2"
+  },
+  {
+   "q": "____ we would like to assist you, we are currently short of staff.",
+   "options": [
+    "Despite",
+    "In spite of",
+    "Much as",
+    "Whereas"
+   ],
+   "correct": 2,
+   "explanation": "'Much as', 'her ne kadar ... olsa da' anlamına gelerek zıtlık bildirir ve cümle başında 'much as + özne + fiil' yapısıyla kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "C1"
+  },
+  {
+   "q": "He asked me where ____ my keys.",
+   "options": [
+    "had I lost",
+    "did I lose",
+    "have I lost",
+    "I had lost"
+   ],
+   "correct": 3,
+   "explanation": "Dolaylı sorularda (reported questions) soru sırası düz cümleye dönüşür ve zaman geçmişe kaydırılır (past perfect).",
+   "topic": "Reported Speech",
+   "cefr": "B1"
+  },
+  {
+   "q": "This new laptop is ____ faster than my old one, which used to take five minutes just to boot up.",
+   "options": [
+    "very",
+    "more",
+    "far",
+    "as"
+   ],
+   "correct": 2,
+   "explanation": "Karşılaştırma sıfatlarını (faster) daha güçlü bir şekilde vurgulamak için 'far' (çok daha) zarfı kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "B2"
+  },
+  {
+   "q": "She ____ her keys at the office; otherwise, she wouldn't have been locked out of her apartment.",
+   "options": [
+    "must leave",
+    "must have left",
+    "should have left",
+    "might leave"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişe yönelik güçlü bir tahminde (çıkarsamada) bulunmak için 'must have + V3' yapısı kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "My uncle ____ visits us during the summer holidays because he lives in Germany.",
+   "options": [
+    "is usually",
+    "usually",
+    "usually is",
+    "does usually"
+   ],
+   "correct": 1,
+   "explanation": "Sıklık zarfları (usually), geniş zaman cümlelerinde asıl fiilden (visits) önce gelir.",
+   "topic": "Sentence Structure",
+   "cefr": "A2"
+  },
+  {
+   "q": "I can't open the door because I ____ my keys at home.",
+   "options": [
+    "am leaving",
+    "have left",
+    "leave",
+    "have been leaving"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte gerçekleşen ama etkisi şu anda devam eden (kapıyı açamama) durumlar için Present Perfect tense kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "B1"
+  },
+  {
+   "q": "It was only after she read the letter ____ she finally understood the truth.",
+   "options": [
+    "that",
+    "when",
+    "then",
+    "which"
+   ],
+   "correct": 0,
+   "explanation": "'It is/was ... that' vurgu (cleft) yapısında, vurgulanan ögeden sonra 'that' bağlacı getirilir.",
+   "topic": "Emphasis Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "These delicious cakes ____ by my grandmother every Sunday.",
+   "options": [
+    "make",
+    "are made",
+    "is made",
+    "were making"
+   ],
+   "correct": 1,
+   "explanation": "Çoğul bir özne (cakes) ve her pazar yapılan genel bir eylem olduğu için Present Simple Passive (are + V3) yapısı uygundur.",
+   "topic": "Passive Voice",
+   "cefr": "A2"
+  },
+  {
+   "q": "We had to ____ the meeting until next Tuesday because the manager was sick.",
+   "options": [
+    "put off",
+    "call off",
+    "give up",
+    "take after"
+   ],
+   "correct": 0,
+   "explanation": "Bir etkinliği daha sonraki bir tarihe ertelemek anlamında 'put off' phrasal verb'ü kullanılır.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "I really regret ____ him my secret, as he has now told everyone in the class.",
+   "options": [
+    "to tell",
+    "told",
+    "tell",
+    "telling"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte yapılmış bir eylemden pişmanlık duymayı ifade ederken 'regret' fiilinden sonra gerund (-ing) gelir.",
+   "topic": "Verb Forms",
+   "cefr": "B2"
+  },
+  {
+   "q": "There is ____ hope of finding survivors in the rubble, as several days have already passed.",
+   "options": [
+    "a little",
+    "few",
+    "a few",
+    "little"
+   ],
+   "correct": 3,
+   "explanation": "Sayılamayan 'hope' ismiyle birlikte, neredeyse hiç olmayan, olumsuz anlamda azlığı belirtmek için 'little' kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "C1"
+  },
+  {
+   "q": "We were extremely ____ to hear that the flight had been cancelled due to the storm.",
+   "options": [
+    "disappointed",
+    "disappointing",
+    "disappoint",
+    "disappointedly"
+   ],
+   "correct": 0,
+   "explanation": "Kişilerin hissettikleri duyguları ifade etmek için '-ed' ile biten sıfatlar (disappointed) kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ by the sudden loud noise, the dog jumped over the fence and ran away.",
+   "options": [
+    "Frightening",
+    "Having frightened",
+    "Frighten",
+    "Frightened"
+   ],
+   "correct": 3,
+   "explanation": "Köpeğin gürültüden korktuğunu (edilgen bir durumu) belirtmek için kısaltmada Past Participle (V3) kullanılır.",
+   "topic": "Adjective & Participle Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The project was completed ahead of schedule, largely ____ the dedication of the research team.",
+   "options": [
+    "with a view to",
+    "in terms of",
+    "by virtue of",
+    "contrary to"
+   ],
+   "correct": 2,
+   "explanation": "'...sayesinde / ...den ötürü' anlamına gelen ve sebep bildiren 'by virtue of' ifadesi cümleye uygundur.",
+   "topic": "Prepositions",
+   "cefr": "C1"
+  },
+  {
+   "q": "I don't have enough money to buy that laptop. I wish I ____ more money.",
+   "options": [
+    "have",
+    "had",
+    "would have",
+    "am having"
+   ],
+   "correct": 1,
+   "explanation": "Şu anki zamanla ilgili bir dileği belirtirken 'wish' yapısından sonra Past Simple (had) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "A2"
+  },
+  {
+   "q": "The woman ____ daughter won the science competition was very proud.",
+   "options": [
+    "who",
+    "whom",
+    "whose",
+    "which"
+   ],
+   "correct": 2,
+   "explanation": "Kadın ile kızı arasındaki sahiplik ilişkisini nitelemek için iyelik bildiren 'whose' ilgi zamiri kullanılır.",
+   "topic": "Relative Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "The suspect is believed ____ the country last night using a fake passport.",
+   "options": [
+    "to leave",
+    "having left",
+    "to have left",
+    "to be leaving"
+   ],
+   "correct": 2,
+   "explanation": "İnanılan durumun geçmişte gerçekleştiğini (last night) belirtmek için edilgen yapıdan sonra 'to have + V3' (perfect infinitive) kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B2"
+  },
+  {
+   "q": "They decided ____ a new car because their old one kept breaking down.",
+   "options": [
+    "buying",
+    "to buy",
+    "buy",
+    "bought"
+   ],
+   "correct": 1,
+   "explanation": "'Decide' (karar vermek) fiilinden sonra başka bir fiil geldiğinde 'to + infinitive' yapısı kullanılır.",
+   "topic": "Verb Forms",
+   "cefr": "A2"
+  },
+  {
+   "q": "If I had more free time, I ____ a musical instrument like the guitar.",
+   "options": [
+    "will learn",
+    "learnt",
+    "would learn",
+    "have learnt"
+   ],
+   "correct": 2,
+   "explanation": "Şu anki gerçek dışı bir durumu (Type 2) ifade etmek için koşul kısmında Past Simple, temel cümlede ise 'would + V1' kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B1"
+  },
+  {
+   "q": "Rarely ____ such a breathtaking performance by a young violinist.",
+   "options": [
+    "we have witnessed",
+    "have we witnessed",
+    "did we witnessed",
+    "we witnessed"
+   ],
+   "correct": 1,
+   "explanation": "\"Rarely\" gibi olumsuz zarflar cümle başına geldiğinde devrik yapı (yardımcı fiil + özne) kullanılır.",
+   "topic": "Inversion",
+   "cefr": "B2"
+  },
+  {
+   "q": "By the time the new policy is implemented, they ____ on the project for over a year.",
+   "options": [
+    "will have been working",
+    "will be working",
+    "would work",
+    "have been working"
+   ],
+   "correct": 0,
+   "explanation": "Gelecekte belirli bir zamandan önce başlayıp o ana kadar devam edecek olan süreçleri anlatmak için Future Perfect Continuous kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "C1"
+  },
+  {
+   "q": "____ the heavy rain, the outdoor music festival was a huge success.",
+   "options": [
+    "Despite",
+    "Although",
+    "In spite",
+    "Even though"
+   ],
+   "correct": 0,
+   "explanation": "\"Heavy rain\" (şiddetli yağmur) bir isim öbeği olduğu için, arkasından bir cümle yerine isim alan ve \"-e rağmen\" anlamına gelen \"Despite\" bağlacı kullanılmalıdır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B1"
+  },
+  {
+   "q": "The committee recommended that the project ____ suspended until further safety checks are completed.",
+   "options": [
+    "is",
+    "be",
+    "was",
+    "will be"
+   ],
+   "correct": 1,
+   "explanation": "\"Recommend\" gibi tavsiye bildiren fiillerden sonra gelen isim cümleciklerinde (noun clause) istek kipi (subjunctive) gereği fiilin yalın hali (be) kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The university accepted forty applicants, many of ____ had outstanding academic records.",
+   "options": [
+    "which",
+    "who",
+    "whom",
+    "whose"
+   ],
+   "correct": 2,
+   "explanation": "Edatlardan (of) sonra insanları nitelemek için ilgi zamiri (relative pronoun) olarak sadece 'whom' kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "C1"
+  },
+  {
+   "q": "____ did you go to the cinema with last Saturday?",
+   "options": [
+    "Which",
+    "Where",
+    "What",
+    "Who"
+   ],
+   "correct": 3,
+   "explanation": "Birisiyle sinemaya gitmekten bahsedildiği için kişiyi soran 'Who' soru kelimesi kullanılmalıdır.",
+   "topic": "Question Structures",
+   "cefr": "A2"
+  },
+  {
+   "q": "I am not sure ____ the museum is open on Mondays or not.",
+   "options": [
+    "that",
+    "whether",
+    "which",
+    "what"
+   ],
+   "correct": 1,
+   "explanation": "'Or not' ifadesiyle birlikte kullanılarak '-ıp ıpmadığı' anlamını veren bağlaç 'whether'dır.",
+   "topic": "Noun Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "We have two projectors in the conference room, but unfortunately, ____ of them is working today.",
+   "options": [
+    "neither",
+    "none",
+    "either",
+    "both"
+   ],
+   "correct": 0,
+   "explanation": "İki seçenekten hiçbirinin çalışmadığını olumlu yapılı bir cümlede belirtmek için 'neither' kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "B2"
+  },
+  {
+   "q": "If you ____ some ice in a glass of water, it melts quickly.",
+   "options": [
+    "put",
+    "will put",
+    "puts",
+    "putting"
+   ],
+   "correct": 0,
+   "explanation": "Genel doğruları ve doğa yasalarını ifade eden 'Type 0' koşul cümlelerinde koşul kısmında geniş zaman (Simple Present) kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "A2"
+  },
+  {
+   "q": "My boss suggested ____ the meeting until next Monday.",
+   "options": [
+    "to postpone",
+    "postponed",
+    "should postpone",
+    "postponing"
+   ],
+   "correct": 3,
+   "explanation": "'Suggest' fiilinden sonra gelen eylem direkt olarak '-ing' (gerund) takısı alır.",
+   "topic": "Reported Speech",
+   "cefr": "B1"
+  },
+  {
+   "q": "By the time the new highway is completed next year, we ____ in this small town for a decade.",
+   "options": [
+    "will have been living",
+    "will live",
+    "will be living",
+    "are going to live"
+   ],
+   "correct": 0,
+   "explanation": "\"By the time\" yapısıyla belirtilen gelecekteki bir noktaya kadar ne kadar süredir yaşamakta olduğumuzu vurgulamak için Future Perfect Continuous kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "B2"
+  },
+  {
+   "q": "We tested two different methods, but ____ was successful in solving the issue.",
+   "options": [
+    "either",
+    "none",
+    "any",
+    "neither"
+   ],
+   "correct": 3,
+   "explanation": "İki seçenekten hiçbirinin başarılı olmadığını belirtmek için tekil fiille 'neither' kullanılır.",
+   "topic": "Determiners & Possession",
+   "cefr": "C1"
+  },
+  {
+   "q": "We decided ____ the old city center on foot to enjoy the historic atmosphere.",
+   "options": [
+    "explore",
+    "to explore",
+    "exploring",
+    "to exploring"
+   ],
+   "correct": 1,
+   "explanation": "'Decide' fiili kendisinden sonra gelen diğer fiili 'to-infinitive' (to + yalın fiil) yapısında gerektirir.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B1"
+  },
+  {
+   "q": "Nobody called for me while I was out of the office, ____?",
+   "options": [
+    "didn't they",
+    "did he",
+    "did they",
+    "didn't he"
+   ],
+   "correct": 2,
+   "explanation": "'Nobody' gibi olumsuzluk bildiren özne durumlarındaki kuyruk sorularında (question tag) olumlu yardımcı fiil ve 'they' zamiri kullanılır.",
+   "topic": "Question Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "When we were children, my grandfather ____ sit on the porch for hours, telling us tales of his youth.",
+   "options": [
+    "used to be",
+    "was used to",
+    "had",
+    "would"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişteki tekrarlanan alışkanlıkları ve eylemleri anlatmak için 'would + yalın fiil' yapısı kullanılabilir.",
+   "topic": "Past Tenses",
+   "cefr": "C1"
+  },
+  {
+   "q": "Our flight to London leaves ____ Tuesday morning at 8:30.",
+   "options": [
+    "at",
+    "in",
+    "on",
+    "for"
+   ],
+   "correct": 2,
+   "explanation": "Belirli günlerden ve günün kısımlarını belirten gün isimlerinden önce 'on' edatı kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "A2"
+  },
+  {
+   "q": "The meeting was ____ until next Friday because the manager was sick.",
+   "options": [
+    "called off",
+    "put off",
+    "turned down",
+    "brought up"
+   ],
+   "correct": 1,
+   "explanation": "'Put off' deyimsel fiili (phrasal verb), bir işi veya etkinliği ertelemek anlamına gelir.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "We interviewed two candidates for the position, but unfortunately ____ of them had the required experience.",
+   "options": [
+    "none",
+    "either",
+    "neither",
+    "no one"
+   ],
+   "correct": 2,
+   "explanation": "İki kişi veya seçenek arasından 'hiçbiri' anlamını vermek için 'neither' kullanılır; 'none' ise ikiden fazla kişi için tercih edilir.",
+   "topic": "Articles & Determiners",
+   "cefr": "B2"
+  },
+  {
+   "q": "I have to work all weekend. I wish I ____ free to go to the beach with you.",
+   "options": [
+    "was",
+    "am",
+    "will be",
+    "have been"
+   ],
+   "correct": 0,
+   "explanation": "Şu anki durumlarla ilgili gerçekleşmesi istenen dilekleri belirtirken 'wish' yapısından sonra Past Tense (was/were) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "A2"
+  },
+  {
+   "q": "The company is looking for a graphic designer ____ portfolio shows creative branding skills.",
+   "options": [
+    "whose",
+    "who",
+    "which",
+    "whom"
+   ],
+   "correct": 0,
+   "explanation": "Boşluktan sonra gelen ismin kime ait olduğunu (sahiplik) belirtmek için ilgi zamiri olarak 'whose' kullanılır.",
+   "topic": "Relative Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "Unfortunately, we have ____ hope of finding any survivors in this freezing weather.",
+   "options": [
+    "little",
+    "a little",
+    "few",
+    "a few"
+   ],
+   "correct": 0,
+   "explanation": "Sayılamayan 'hope' ismiyle olumsuz bir anlam (neredeyse hiç yok) katmak için 'little' kullanılır.",
+   "topic": "Articles & Determiners",
+   "cefr": "B2"
+  },
+  {
+   "q": "I deeply regret ____ you that your application for the research grant has been unsuccessful.",
+   "options": [
+    "to inform",
+    "informing",
+    "having informed",
+    "to have informed"
+   ],
+   "correct": 0,
+   "explanation": "'Regret' fiili, üzücü bir haberi vermekten duyulan üzüntüyü ifade ederken 'to-infinitive' yapısıyla kullanılır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "C1"
+  },
+  {
+   "q": "Please make sure you submit your final reports ____ the end of this week.",
+   "options": [
+    "until",
+    "since",
+    "during",
+    "by"
+   ],
+   "correct": 3,
+   "explanation": "Belirli bir zamana kadar veya en geç o zamanda yapılması gereken işlerde son teslim tarihini belirtmek için 'by' edatı kullanılır.",
+   "topic": "Relative Time Expressions",
+   "cefr": "B1"
+  },
+  {
+   "q": "She ____ for two hours when her husband finally arrived home with the keys.",
+   "options": [
+    "was waiting",
+    "waited",
+    "has been waiting",
+    "had been waiting"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte bir eylem gerçekleşmeden önce belirli bir süredir devam etmekte olan başka bir eylemi vurgulamak için Past Perfect Continuous kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The local police ____ investigating the sudden disappearance of the valuable painting from the gallery.",
+   "options": [
+    "is",
+    "has been",
+    "was",
+    "are"
+   ],
+   "correct": 3,
+   "explanation": "'Police' kelimesi topluluk adı olup yapısal olarak her zaman çoğul bir fiil ('are') gerektirir.",
+   "topic": "Nouns",
+   "cefr": "C1"
+  }
+ ],
+ "mixed-3": [
+  {
+   "q": "The scientist ____ research led to the new vaccine was awarded a Nobel Prize.",
+   "options": [
+    "who",
+    "whose",
+    "whom",
+    "which"
+   ],
+   "correct": 1,
+   "explanation": "Boşluktan sonra gelen 'research' ismi bilim insanına ait olduğu için iyelik bildiren 'whose' kullanılmalıdır.",
+   "topic": "Relative Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "The new policy was implemented ____ the board's official guidelines.",
+   "options": [
+    "with a view to",
+    "in respect of",
+    "by virtue of",
+    "in accordance with"
+   ],
+   "correct": 3,
+   "explanation": "Yönetim kurulunun resmi yönergelerine 'uygun olarak' anlamını vermek için 'in accordance with' ifadesi kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "B2"
+  },
+  {
+   "q": "We ____ bought so much food for the dinner party; half of it went to waste.",
+   "options": [
+    "didn't need to",
+    "must not have",
+    "needn't have",
+    "had better not"
+   ],
+   "correct": 2,
+   "explanation": "Boş yere yapılmış eylemler için geçmiş zamanda 'needn't have + V3' yapısı kullanılır; 'didn't need to' ise eylemin yapılmasına gerek olmadığını ve genellikle yapılmadığını belirtir.",
+   "topic": "Modal Verbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "We had dinner at a new Italian restaurant yesterday. ____ food was absolutely delicious.",
+   "options": [
+    "A",
+    "An",
+    "The",
+    "Some"
+   ],
+   "correct": 2,
+   "explanation": "Bahsedilen belirli bir yiyecekten (restorandaki yemekten) söz edildiği için belirli tanımlık olan 'the' kullanılmalıdır.",
+   "topic": "Articles & Determiners",
+   "cefr": "A2"
+  },
+  {
+   "q": "Can you turn the volume down? I ____ to concentrate on my homework.",
+   "options": [
+    "am trying",
+    "try",
+    "have tried",
+    "was trying"
+   ],
+   "correct": 0,
+   "explanation": "Konuşma anında devam eden bir eylemi belirtmek için şimdiki zaman (Present Continuous) kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "B1"
+  },
+  {
+   "q": "The company has hired thirty new employees, many of ____ have just graduated from university.",
+   "options": [
+    "who",
+    "whose",
+    "them",
+    "whom"
+   ],
+   "correct": 3,
+   "explanation": "Miktar belirten 'many of' ifadesinden sonra insanları nitelemek için nesne konumundaki 'whom' zamiri gelir.",
+   "topic": "Relative Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "My brother lost his keys, so I lent him ____ so he could open the office.",
+   "options": [
+    "me",
+    "my",
+    "mine",
+    "myself"
+   ],
+   "correct": 2,
+   "explanation": "Kendi anahtarlarımı kastetmek ve ismi tekrar etmemek için iyelik zamiri olan 'mine' kullanılmalıdır.",
+   "topic": "Pronouns",
+   "cefr": "A2"
+  },
+  {
+   "q": "To improve your health, you should avoid ____ processed foods late at night.",
+   "options": [
+    "to eat",
+    "eat",
+    "having eaten",
+    "eating"
+   ],
+   "correct": 3,
+   "explanation": "'Avoid' fiilinden sonra gelen diğer fiil gerund (-ing) takısı alır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B1"
+  },
+  {
+   "q": "The company will have completed the transition to renewable energy ____ the next decade begins.",
+   "options": [
+    "until",
+    "by the time",
+    "as soon as",
+    "while"
+   ],
+   "correct": 1,
+   "explanation": "Gelecekte belirli bir andan önce tamamlanmış olacak eylemleri belirtmek için 'by the time' (o zamana kadar) kullanılır.",
+   "topic": "Relative Time Expressions",
+   "cefr": "B2"
+  },
+  {
+   "q": "She ____ at the firm for barely three months when she was suddenly offered a partnership.",
+   "options": [
+    "has been working",
+    "had only been working",
+    "was only working",
+    "would only work"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte belirli bir andan önce başlamış ve o ana kadar devam etmekte olan bir süreci vurgulamak için Past Perfect Continuous kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "C1"
+  },
+  {
+   "q": "The travel agent gave us some very useful ____ about the local transport system.",
+   "options": [
+    "information",
+    "informations",
+    "an information",
+    "pieces of informations"
+   ],
+   "correct": 0,
+   "explanation": "'Information' sayılamayan bir isim olduğu için çoğul eki (-s) almaz ve tekil formda kullanılır.",
+   "topic": "Nouns",
+   "cefr": "B1"
+  },
+  {
+   "q": "Unfortunately, there is ____ hope of finding any survivors after the avalanche.",
+   "options": [
+    "few",
+    "little",
+    "a few",
+    "a little"
+   ],
+   "correct": 1,
+   "explanation": "'Hope' sayılamayan bir isimdir ve 'neredeyse hiç yok' anlamında olumsuz bir beklentiyi belirtmek için 'little' kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "B2"
+  },
+  {
+   "q": "Instead of hiring a professional, we decided to get our cousin ____ the house.",
+   "options": [
+    "to paint",
+    "paint",
+    "painting",
+    "painted"
+   ],
+   "correct": 0,
+   "explanation": "Ettirgen (causative) yapılarda 'get someone' kalıbından sonra gelen fiil 'to + yalın fiil' (to paint) şeklinde kullanılır.",
+   "topic": "Causative Structures",
+   "cefr": "C1"
+  },
+  {
+   "q": "Jack told us that he ____ very busy with his school project that day.",
+   "options": [
+    "was",
+    "is",
+    "has been",
+    "will be"
+   ],
+   "correct": 0,
+   "explanation": "Dolaylı anlatımda (reported speech), temel cümle geçmiş zaman olduğunda aktarılan sözün zamanı da geçmiş zamana (was) kaydırılır.",
+   "topic": "Reported Speech",
+   "cefr": "A2"
+  },
+  {
+   "q": "The new smartphone is ____ more expensive than the old model, but its camera is definitely worth the price.",
+   "options": [
+    "very",
+    "more",
+    "slightly",
+    "too"
+   ],
+   "correct": 2,
+   "explanation": "Karşılaştırma (comparative) yapılarından önce 'slightly' (hafifçe, biraz) gibi derecelendirme zarfları kullanılabilir, ancak 'very' kullanılamaz.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "The ancient artifacts ____ to a secure location before the storm hit the coast.",
+   "options": [
+    "should have been transferred",
+    "should have transferred",
+    "must be transferred",
+    "were transferring"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte yapılması gereken ama yapılmayan (veya yapılması tavsiye edilen) edilgen bir eylemi ifade etmek için 'should have been + V3' yapısı kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B2"
+  },
+  {
+   "q": "This smart TV is much ____ than the one we looked at yesterday.",
+   "options": [
+    "expensive",
+    "more expensive",
+    "most expensive",
+    "expensiver"
+   ],
+   "correct": 1,
+   "explanation": "Uzun sıfatlarla karşılaştırma (comparative) yaparken sıfatın önüne 'more' getirilir ve karşılaştırma 'than' ile kurulur.",
+   "topic": "Comparisons",
+   "cefr": "A2"
+  },
+  {
+   "q": "My doctor advised me to avoid ____ heavy weights for at least two weeks after the surgery.",
+   "options": [
+    "lifting",
+    "to lift",
+    "lift",
+    "having lifted"
+   ],
+   "correct": 0,
+   "explanation": "'Avoid' (kaçınmak) fiilinden sonra gelen diğer fiil '-ing' takısı alarak isim-fiil (gerund) formunda kullanılır.",
+   "topic": "Verb Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "The suspect denied ____ the jewelry, claiming he had been at home all evening.",
+   "options": [
+    "to steal",
+    "of stealing",
+    "stealing",
+    "to have stolen"
+   ],
+   "correct": 2,
+   "explanation": "'Deny' (inkar etmek) fiili, kendisinden sonra bir eylem geldiğinde gerund (-ing) yapısıyla kullanılır.",
+   "topic": "Reported Speech",
+   "cefr": "B2"
+  },
+  {
+   "q": "Seldom ____ such a breathtaking performance by a young pianist.",
+   "options": [
+    "we have witnessed",
+    "we witnessed",
+    "have we witnessed",
+    "had we been witnessed"
+   ],
+   "correct": 2,
+   "explanation": "'Seldom' gibi olumsuz bir zarf cümlenin başına geldiğinde, cümle devrik (inverted) yapıya sahip olur.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "You ____ bring your passport to the exam; a student ID card is sufficient.",
+   "options": [
+    "mustn't",
+    "can't",
+    "don't have to",
+    "shouldn't"
+   ],
+   "correct": 2,
+   "explanation": "Zorunluluk olmadığını ('gerek yok' anlamında) belirtmek için 'don't have to' kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ having a severe headache, she managed to deliver an excellent presentation.",
+   "options": [
+    "Although",
+    "Despite",
+    "In spite",
+    "Even though"
+   ],
+   "correct": 1,
+   "explanation": "Zıtlık belirten ve kendisinden sonra bir isim/gerund (-ing) yapısı alan bağlaç 'Despite'tır.",
+   "topic": "Sentence Structure",
+   "cefr": "B2"
+  },
+  {
+   "q": "Don't pay attention to him; he is just ____ difficult because he is tired.",
+   "options": [
+    "be",
+    "being",
+    "been",
+    "is"
+   ],
+   "correct": 1,
+   "explanation": "Bir kişinin geçici olarak sergilediği bir davranışı vurgulamak için 'be' fiili şimdiki zaman sürekli formunda (is being) kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "C1"
+  },
+  {
+   "q": "I don't like horror movies, but I ____ like this one because of the plot.",
+   "options": [
+    "do",
+    "did",
+    "am",
+    "have"
+   ],
+   "correct": 0,
+   "explanation": "Geniş zamanda olumlu bir cümlede vurgu yapmak için özneye göre 'do' yardımcı fiili kullanılır.",
+   "topic": "Emphasis Structures",
+   "cefr": "A2"
+  },
+  {
+   "q": "Many people believe that ____ happiness is more important than money.",
+   "options": [
+    "a",
+    "an",
+    "the",
+    "Ø (no article)"
+   ],
+   "correct": 3,
+   "explanation": "Soyut isimler (happiness) genel anlamda kullanıldığında başlarına tanımlık (article) almazlar.",
+   "topic": "Articles & Determiners",
+   "cefr": "B1"
+  },
+  {
+   "q": "The company offered us free tickets to ____ the delay of our flight.",
+   "options": [
+    "put up with",
+    "make up for",
+    "keep up with",
+    "look down on"
+   ],
+   "correct": 1,
+   "explanation": "\"Make up for\" phrasal fiili \"telafi etmek\" anlamına gelir ve gecikmeyi telafi etmek anlamında cümleye en uygun seçenektir.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "If it rains tomorrow, we ____ go to the park.",
+   "options": [
+    "don't",
+    "didn't",
+    "won't",
+    "haven't"
+   ],
+   "correct": 2,
+   "explanation": "Birinci tip koşul cümlesinde (Type 1 Conditional) \"if\"li kısım geniş zaman iken ana cümle gelecek zaman (will/won't) olur.",
+   "topic": "Conditionals",
+   "cefr": "A2"
+  },
+  {
+   "q": "We have ____ time before the train leaves, so we can grab a quick coffee.",
+   "options": [
+    "little",
+    "a few",
+    "a little",
+    "few"
+   ],
+   "correct": 2,
+   "explanation": "\"Time\" (zaman) sayılamayan bir isimdir ve \"biraz/yeterli\" anlamında olumlu bir durum belirtmek için \"a little\" kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "B1"
+  },
+  {
+   "q": "By the time the manager arrives at noon, we ____ the entire presentation.",
+   "options": [
+    "will finish",
+    "are finishing",
+    "will have finished",
+    "will be finishing"
+   ],
+   "correct": 2,
+   "explanation": "\"By the time\" ifadesi gelecekte belirli bir andan önce tamamlanmış olacak eylemleri belirtmek için Future Perfect Tense (will have + V3) gerektirir.",
+   "topic": "Future Forms",
+   "cefr": "B2"
+  },
+  {
+   "q": "____ by the sudden drop in temperature, the climbers decided to turn back to the base camp.",
+   "options": [
+    "Having warned",
+    "Warning",
+    "Warned themselves",
+    "Having been warned"
+   ],
+   "correct": 3,
+   "explanation": "Dağcıların uyarılma eylemi geçmişte ve edilgen (passive) olarak gerçekleştiği için perfect passive participle yapısı (\"Having been warned\") kullanılmalıdır.",
+   "topic": "Adjective & Participle Clauses",
+   "cefr": "C1"
+  },
+  {
+   "q": "I wonder ____ they will accept our proposal or ask for modifications.",
+   "options": [
+    "that",
+    "what",
+    "which",
+    "whether"
+   ],
+   "correct": 3,
+   "explanation": "'Whether ... or' yapısı, seçenekler arasında kararsızlık veya merak belirtirken isim cümlelerinde (Noun Clause) 'olup olmadığı' anlamında kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "I wish I ____ my camera on this trip; the scenery is absolutely breathtaking.",
+   "options": [
+    "brought",
+    "had brought",
+    "would bring",
+    "have brought"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişe dair pişmanlıkları belirtmek için \"wish\" yapısından sonra Past Perfect Tense (had + V3) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B2"
+  },
+  {
+   "q": "Hardly anyone turned up at the meeting, ____?",
+   "options": [
+    "didn't they",
+    "did they",
+    "did he",
+    "had they"
+   ],
+   "correct": 1,
+   "explanation": "\"Hardly\" olumsuz bir anlam kattığı için soru eklentisi (tag question) olumlu olmalıdır ve belgisiz zamir \"anyone\" için \"they\" öznesi kullanılır.",
+   "topic": "Question Structures",
+   "cefr": "C1"
+  },
+  {
+   "q": "This beautiful library ____ in 1890 by a wealthy businessman.",
+   "options": [
+    "was built",
+    "built",
+    "is built",
+    "was building"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte tamamlanmış ve öznenin etkilenen olduğu edilgen (passive) bir eylemi ifade etmek için Past Simple Passive (was/were + V3) kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "A2"
+  },
+  {
+   "q": "It took me several months to get used to ____ on the left side of the road when I moved to London.",
+   "options": [
+    "driving",
+    "drive",
+    "to drive",
+    "driven"
+   ],
+   "correct": 0,
+   "explanation": "Bir duruma alışmayı ifade eden 'get used to' kalıbından sonra gelen fiil '-ing' takısı alarak gerund formunda kullanılır.",
+   "topic": "Verb Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ the heavy traffic, we managed to arrive at the wedding on time.",
+   "options": [
+    "Although",
+    "Even though",
+    "However",
+    "Despite"
+   ],
+   "correct": 3,
+   "explanation": "\"Although\" ve \"even though\" arkasından bir cümle alırken, \"Despite\" bir isim öbeği (the heavy traffic) ile kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B2"
+  },
+  {
+   "q": "\"I don't really enjoy horror movies.\" - \"____ do I. They are too scary.\"",
+   "options": [
+    "Neither",
+    "So",
+    "Too",
+    "Either"
+   ],
+   "correct": 0,
+   "explanation": "Olumsuz bir cümleye katıldığımızı belirtmek için \"Neither + yardımcı fiil + özne\" yapısı kullanılır.",
+   "topic": "Inversion",
+   "cefr": "A2"
+  },
+  {
+   "q": "The train is ____ faster than the bus, so we should definitely take it.",
+   "options": [
+    "more",
+    "very",
+    "too",
+    "much"
+   ],
+   "correct": 3,
+   "explanation": "Karşılaştırma sıfatlarını (comparatives) derecelendirmek ve pekiştirmek için önlerine \"much\" zarfı getirilebilir.",
+   "topic": "Comparisons",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ the severe weather warnings, the outdoor music festival went ahead as planned.",
+   "options": [
+    "Despite",
+    "Although",
+    "In spite",
+    "However"
+   ],
+   "correct": 0,
+   "explanation": "İsim öbeğiyle ('the severe weather warnings') birlikte zıtlık bildirmek için 'despite' (rağmen) edatı kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B2"
+  },
+  {
+   "q": "After discussing the financial reports, the board went on ____ the new marketing strategy.",
+   "options": [
+    "discussing",
+    "to discuss",
+    "discuss",
+    "having discussed"
+   ],
+   "correct": 1,
+   "explanation": "\"Go on\" fiili, bir eylemi bitirip başka bir eyleme geçmeyi ifade ettiğinde arkasından mastar (to-infinitive) alır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "C1"
+  },
+  {
+   "q": "The children painted the entire classroom all by ____ during the weekend.",
+   "options": [
+    "them",
+    "their own",
+    "themselves",
+    "themself"
+   ],
+   "correct": 2,
+   "explanation": "\"Kendi kendilerine\" veya \"tek başlarına\" anlamını pekiştirmek için \"by themselves\" dönüşlü zamir (reflexive pronoun) yapısı kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B1"
+  },
+  {
+   "q": "The ground was wet because it ____ heavily for hours before we went outside.",
+   "options": [
+    "had been raining",
+    "was raining",
+    "has been raining",
+    "rained"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte bir andan önce başlayıp o ana kadar süren ve etkisi devam eden eylemleri vurgulamak için Past Perfect Continuous Tense kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The committee recommended that the project ____ postponed until next spring.",
+   "options": [
+    "is",
+    "was",
+    "must be",
+    "be"
+   ],
+   "correct": 3,
+   "explanation": "\"Recommend\" gibi tavsiye ve talep bildiren fiillerden sonra gelen \"that\" yapısında dilek kipi (subjunctive) gereği fiilin yalın hali (\"be\") kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "C1"
+  },
+  {
+   "q": "Don't forget to ____ the lights before you leave the office.",
+   "options": [
+    "turn up",
+    "turn off",
+    "look for",
+    "get on"
+   ],
+   "correct": 1,
+   "explanation": "Işıkları söndürmek anlamında kullanılan temel phrasal verb \"turn off\"tur.",
+   "topic": "Phrasal Verbs",
+   "cefr": "A2"
+  },
+  {
+   "q": "If I ____ more free time, I would join a local tennis club.",
+   "options": [
+    "have",
+    "had",
+    "would have",
+    "had had"
+   ],
+   "correct": 1,
+   "explanation": "Şu anki hayali veya gerçekleşmesi zor durumları belirten İkinci Tip Koşul Cümlesinde (Type 2 Conditional) \"if\"li kısımda Past Simple kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B1"
+  },
+  {
+   "q": "I wish my neighbor ____ playing loud music so late at night.",
+   "options": [
+    "will stop",
+    "stopped",
+    "had stopped",
+    "would stop"
+   ],
+   "correct": 3,
+   "explanation": "Başkasının rahatsız edici bir davranışı değiştirmesini isteme durumlarında \"wish + would + fiil\" yapısı tercih edilir.",
+   "topic": "Wish & If Only",
+   "cefr": "B2"
+  },
+  {
+   "q": "A: \"What are your plans for the weekend?\" B: \"I ____ my grandparents in Izmir.\"",
+   "options": [
+    "will visit",
+    "visiting",
+    "visited",
+    "am going to visit"
+   ],
+   "correct": 3,
+   "explanation": "Geleceğe dair önceden yapılmış plan ve niyetleri ifade etmek için 'be going to' yapısı kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "A2"
+  },
+  {
+   "q": "That is not my jacket; mine is black, while ____ is blue.",
+   "options": [
+    "you",
+    "your",
+    "yours",
+    "yourself"
+   ],
+   "correct": 2,
+   "explanation": "İsim kullanmadan sahiplik belirtmek için iyelik zamiri (possessive pronoun) olan \"yours\" (seninki) kullanılmalıdır.",
+   "topic": "Determiners & Possession",
+   "cefr": "B1"
+  },
+  {
+   "q": "The local council decided to distribute the funds ____ the committee's guidelines.",
+   "options": [
+    "in accordance with",
+    "in compliance of",
+    "by means for",
+    "with respect on"
+   ],
+   "correct": 0,
+   "explanation": "\"Kurallara veya yönergelere uygun olarak\" anlamını veren doğru edat grubu \"in accordance with\" şeklindedir.",
+   "topic": "Prepositions",
+   "cefr": "B2"
+  },
+  {
+   "q": "How come ____ to the charity event last night if you were feeling so ill?",
+   "options": [
+    "did you go",
+    "had you gone",
+    "you have gone",
+    "you went"
+   ],
+   "correct": 3,
+   "explanation": "'How come' soru kalıbından sonra soru yardımcı eylemi kullanılmaz ve düz cümle kelime sırası takip edilir.",
+   "topic": "Question Structures",
+   "cefr": "C1"
+  }
+ ],
+ "mixed-4": [
+  {
+   "q": "She is very good ____ explaining complex mathematical concepts to children.",
+   "options": [
+    "in",
+    "at",
+    "with",
+    "for"
+   ],
+   "correct": 1,
+   "explanation": "Bir alanda iyi veya yetenekli olmaktan bahsederken 'good' sıfatıyla birlikte 'at' edatı kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "B1"
+  },
+  {
+   "q": "Since the two business partners couldn't agree with ____, they decided to split the company.",
+   "options": [
+    "themselves",
+    "one another's",
+    "each other",
+    "himself"
+   ],
+   "correct": 2,
+   "explanation": "İki kişi arasındaki karşılıklı ilişkiyi belirtmek için 'each other' (birbiriyle) zamiri kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B2"
+  },
+  {
+   "q": "The committee rejected the proposal, the main objective ____ was to reduce operational costs.",
+   "options": [
+    "of which",
+    "whose",
+    "that",
+    "which"
+   ],
+   "correct": 0,
+   "explanation": "Cansız bir varlığın iyelik durumunu nitelemek için 'noun + of which' yapısı tercih edilir.",
+   "topic": "Relative Clauses",
+   "cefr": "C1"
+  },
+  {
+   "q": "Do you know ____ the next train to Ankara leaves?",
+   "options": [
+    "when does",
+    "that when",
+    "which time does",
+    "when"
+   ],
+   "correct": 3,
+   "explanation": "\"Do you know\" ile başlayan dolaylı sorularda, soru kelimesinden sonra düz cümle yapısı (özne + fiil) gelir.",
+   "topic": "Noun Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "You ____ bought such an expensive gift for my birthday, but thank you so much anyway!",
+   "options": [
+    "mustn't have",
+    "needn't have",
+    "shouldn't",
+    "couldn't"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte yapılmasına gerek olmayan ama yapılmış bir eylemi belirtmek için 'needn't have + V3' yapısı kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "____ you need any further assistance with your application, please do not hesitate to contact us.",
+   "options": [
+    "Had",
+    "Were",
+    "Would",
+    "Should"
+   ],
+   "correct": 3,
+   "explanation": "Birinci tip koşul cümlelerinde 'if' yerine devrik yapı oluşturmak için cümle başında 'Should' kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "C1"
+  },
+  {
+   "q": "Listen! Someone ____ the piano upstairs.",
+   "options": [
+    "plays",
+    "is playing",
+    "played",
+    "has played"
+   ],
+   "correct": 1,
+   "explanation": "Konuşma anında gerçekleşen eylemleri belirtmek için şimdiki zaman (Present Continuous) kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "A2"
+  },
+  {
+   "q": "I can't come to the cinema tonight because I ____ dinner with my grandparents at 7 PM.",
+   "options": [
+    "will have",
+    "am having",
+    "have had",
+    "going to have"
+   ],
+   "correct": 1,
+   "explanation": "Gelecekte önceden planlanmış ve kararlaştırılmış eylemler (randevular, programlar) için şimdiki zaman (Present Continuous) kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "The two business partners have always respected ____ opinions, even when they disagreed on financial strategies.",
+   "options": [
+    "each others'",
+    "each other",
+    "each other's",
+    "their own's"
+   ],
+   "correct": 2,
+   "explanation": "İki kişiyi kastettiğimiz ve onların birbirlerinin fikirlerine duydukları saygıdan bahsettiğimiz için doğru iyelik yapısı 'each other's' olmalıdır.",
+   "topic": "Determiners & Possession",
+   "cefr": "B2"
+  },
+  {
+   "q": "Do you know ____ the train station is?",
+   "options": [
+    "where",
+    "what",
+    "which",
+    "how"
+   ],
+   "correct": 0,
+   "explanation": "Yer bildiren bir ismi sormak ve noun clause oluşturmak için 'where' soru kelimesi kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "A2"
+  },
+  {
+   "q": "Could you tell me what time ____?",
+   "options": [
+    "the film starts",
+    "does the film start",
+    "is the film starting",
+    "did the film start"
+   ],
+   "correct": 0,
+   "explanation": "Dolaylı sorularda (indirect questions) soru kelimesinden sonra düz cümle yapısı (özne + fiil) gelir.",
+   "topic": "Question Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "Nobody phoned while I was out, ____?",
+   "options": [
+    "didn't they",
+    "did they",
+    "did he",
+    "didn't he"
+   ],
+   "correct": 1,
+   "explanation": "'Nobody' gibi olumsuz ve belgisiz zamirlerle kurulan cümlelerin kuyruk sorularında (tag question) olumlu yardımcı fiil ve 'they' zamiri kullanılır.",
+   "topic": "Question Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "The outdoor concert was cancelled ____ a lack of funding from the sponsors.",
+   "options": [
+    "in spite of",
+    "owing to",
+    "with a view to",
+    "on behalf of"
+   ],
+   "correct": 1,
+   "explanation": "Neden-sonuç bildiren 'owing to' (den dolayı) ifadesi kendisinden sonra bir isim öbeği alır.",
+   "topic": "Prepositions",
+   "cefr": "C1"
+  },
+  {
+   "q": "I'm sorry, but I have ____ money left, so I can't afford to go to the cinema tonight.",
+   "options": [
+    "a few",
+    "a little",
+    "little",
+    "few"
+   ],
+   "correct": 2,
+   "explanation": "\"Money\" sayılamayan bir isim olduğu ve cümlede olumsuz bir anlam (\"neredeyse hiç yok\") istendiği için \"little\" doğru seçenektir.",
+   "topic": "Quantifiers",
+   "cefr": "B1"
+  },
+  {
+   "q": "Although ____ information we gathered was useful, some of it was slightly outdated.",
+   "options": [
+    "most of",
+    "the most of",
+    "almost",
+    "most of the"
+   ],
+   "correct": 3,
+   "explanation": "Belirli bir bilgi grubundan bahsettiğimiz için 'most of the' yapısı kullanılır; 'most of' arkasından doğrudan 'the' olmadan bu şekilde belirli isim almaz.",
+   "topic": "Articles & Determiners",
+   "cefr": "B2"
+  },
+  {
+   "q": "The manager accused Helen ____ the confidential documents to the competitor.",
+   "options": [
+    "to leak",
+    "of leaking",
+    "that she leaked",
+    "for leaking"
+   ],
+   "correct": 1,
+   "explanation": "\"Accuse\" (suçlamak) fiili, birini bir şeyle suçlarken \"accuse someone of doing something\" kalıbıyla kullanılır.",
+   "topic": "Reported Speech",
+   "cefr": "C1"
+  },
+  {
+   "q": "This is the restaurant ____ we had dinner last night.",
+   "options": [
+    "which",
+    "where",
+    "who",
+    "that"
+   ],
+   "correct": 1,
+   "explanation": "Yer bildiren bir ismi nitelemek ve o yerde bir eylemin gerçekleştiğini belirtmek için 'where' ilgi zamiri kullanılır.",
+   "topic": "Relative Clauses",
+   "cefr": "A2"
+  },
+  {
+   "q": "The old bridge ____ by next month because of safety concerns.",
+   "options": [
+    "will demolish",
+    "is demolished",
+    "has been demolished",
+    "will be demolished"
+   ],
+   "correct": 3,
+   "explanation": "Gelecekte tamamlanacak edilgen (passive) bir eylemi belirtmek için 'will be + V3' yapısı kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B1"
+  },
+  {
+   "q": "I clearly remember ____ the front door, so I am sure the house is secure.",
+   "options": [
+    "to lock",
+    "locking",
+    "having to lock",
+    "lock"
+   ],
+   "correct": 1,
+   "explanation": "Geçmişte yapılmış bir eylemi hatırlamak anlamında 'remember' fiilinden sonra gerund (V-ing) gelir.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B2"
+  },
+  {
+   "q": "They have lived in this neighborhood ____ ten years.",
+   "options": [
+    "for",
+    "since",
+    "ago",
+    "during"
+   ],
+   "correct": 0,
+   "explanation": "Present Perfect Tense ile süreç bildiren zaman ifadelerinin (ten years) başında 'for' kullanılır.",
+   "topic": "Relative Time Expressions",
+   "cefr": "A2"
+  },
+  {
+   "q": "While the technician ____ the software update, the office suddenly lost power.",
+   "options": [
+    "installed",
+    "has installed",
+    "was installing",
+    "is installing"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişte devam eden bir eylem ('while' ile başlayan) başka ani bir eylemle bölündüğü için Past Continuous (was installing) kullanımı doğrudur.",
+   "topic": "Past Tenses",
+   "cefr": "B1"
+  },
+  {
+   "q": "The doctor advised him to eat more fresh fruit and vegetables for better ____.",
+   "options": [
+    "healths",
+    "health",
+    "healthy",
+    "healthiness"
+   ],
+   "correct": 1,
+   "explanation": "'Health' (sağlık) sayılamayan bir isim olduğu için çoğul takısı alamaz ve 'for better health' şeklinde kullanılır.",
+   "topic": "Nouns",
+   "cefr": "B2"
+  },
+  {
+   "q": "The manager decided to ____ the meeting until next Tuesday due to some urgent matters.",
+   "options": [
+    "call off",
+    "bring about",
+    "put off",
+    "hold on"
+   ],
+   "correct": 2,
+   "explanation": "Bir eylemi veya toplantıyı ertelemek anlamına gelen phrasal verb 'put off'tur.",
+   "topic": "Phrasal Verbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "Our car was making a strange noise, so we had a mechanic ____ it.",
+   "options": [
+    "to check",
+    "checked",
+    "checking",
+    "check"
+   ],
+   "correct": 3,
+   "explanation": "Ettirgen (causative) yapıda 'have + kişi + yalın fiil (V1)' kalıbı kullanılır.",
+   "topic": "Causative Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "I wish I ____ more attention during the lecture yesterday; now I don't understand the assignment.",
+   "options": [
+    "had paid",
+    "paid",
+    "would pay",
+    "have paid"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişe ait pişmanlıkları ifade etmek için 'wish' yapısından sonra Past Perfect Tense (had + V3) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B2"
+  },
+  {
+   "q": "Hardly ____ the office when the phone started ringing off the hook.",
+   "options": [
+    "had he entered",
+    "he had entered",
+    "did he enter",
+    "he entered"
+   ],
+   "correct": 0,
+   "explanation": "\"Hardly\" gibi olumsuz zarflar cümle başına geldiğinde devrik yapı (inversion) kullanılır ve genellikle Past Perfect tercih edilir.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "C1"
+  },
+  {
+   "q": "My brother wants to buy ____ new guitar because his old one is broken.",
+   "options": [
+    "a",
+    "the",
+    "an",
+    "some"
+   ],
+   "correct": 0,
+   "explanation": "Tekil ve sayılabilen bir isimden ilk kez bahsederken \"a\" belgisiz tanımlığı kullanılır.",
+   "topic": "Articles & Determiners",
+   "cefr": "A2"
+  },
+  {
+   "q": "This new office chair is ____ more comfortable than the old wooden one.",
+   "options": [
+    "very",
+    "much",
+    "more",
+    "so"
+   ],
+   "correct": 1,
+   "explanation": "Karşılaştırma (comparative) yapılarının derecesini artırmak için sıfatın önüne \"much\" zarfı getirilir.",
+   "topic": "Comparisons",
+   "cefr": "B1"
+  },
+  {
+   "q": "If I had taken his advice last year, I ____ in this difficult situation now.",
+   "options": [
+    "wouldn't be",
+    "wouldn't have been",
+    "won't be",
+    "am not"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişteki bir koşulun günümüzdeki sonucunu belirtmek için karma koşul yapısı (Mixed Conditional) kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B2"
+  },
+  {
+   "q": "My sister told me that she ____ tired and wanted to go to bed early.",
+   "options": [
+    "is",
+    "has been",
+    "was",
+    "will be"
+   ],
+   "correct": 2,
+   "explanation": "Dolaylı anlatımda (Reported Speech), aktarılan sözün zamanı geçmiş zamana (\"is\" yerine \"was\") uyarlanır.",
+   "topic": "Reported Speech",
+   "cefr": "A2"
+  },
+  {
+   "q": "We will start the meeting as soon as the manager ____.",
+   "options": [
+    "arrives",
+    "will arrive",
+    "arrived",
+    "is going to arrive"
+   ],
+   "correct": 0,
+   "explanation": "Zaman bağlaçlarından (as soon as, when vb.) sonra gelecek zaman anlamı vermek için \"will\" yerine geniş zaman (Present Simple) kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "Sally ____ her keys at the office; she couldn't open her front door when she got home.",
+   "options": [
+    "must leave",
+    "should have left",
+    "must have left",
+    "can't have left"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişe yönelik güçlü bir tahminde (\"bırakmış olmalı\") bulunmak için \"must have + V3\" yapısı kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "The committee recommended that the project ____ postponed until further funding is secured.",
+   "options": [
+    "is",
+    "was",
+    "will be",
+    "be"
+   ],
+   "correct": 3,
+   "explanation": "\"Recommend\" gibi fiillerden sonra gelen \"that\" yan cümleciğinde istek kipi (subjunctive) gereği fiilin yalın hali (\"be\") kullanılır.",
+   "topic": "Sentence Structure",
+   "cefr": "C1"
+  },
+  {
+   "q": "Mr. Davis ____ at this high school since he moved to Istanbul five years ago.",
+   "options": [
+    "works",
+    "is working",
+    "worked",
+    "has been working"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte başlayıp hala devam eden bir eylemi \"since\" ipucuyla vurgulamak için Present Perfect Continuous kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "B1"
+  },
+  {
+   "q": "It was his determination ____ helped him win the championship despite his injury.",
+   "options": [
+    "who",
+    "which",
+    "what",
+    "that"
+   ],
+   "correct": 3,
+   "explanation": "\"It is/was ... that\" vurgu yapısında (Cleft Sentence), vurgulanmak istenen ögeyi belirtmek için boşluğa \"that\" gelmelidir.",
+   "topic": "Emphasis Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "In a successful team, members must support and respect ____ ideas.",
+   "options": [
+    "each other",
+    "each other's",
+    "one other's",
+    "themselves"
+   ],
+   "correct": 1,
+   "explanation": "\"Birbirlerinin fikirleri\" anlamını vermek için iyelik eki alan \"each other's\" zamiri kullanılmalıdır.",
+   "topic": "Pronouns",
+   "cefr": "C1"
+  },
+  {
+   "q": "Please remember to ____ the lights before you leave the classroom.",
+   "options": [
+    "turn off",
+    "turn up",
+    "look for",
+    "put on"
+   ],
+   "correct": 0,
+   "explanation": "\"Işıkları kapatmak\" anlamını sağlamak için \"turn off\" deyimsel fiili (phrasal verb) kullanılmalıdır.",
+   "topic": "Phrasal Verbs",
+   "cefr": "A2"
+  },
+  {
+   "q": "____ the heavy rain, the football match was not cancelled.",
+   "options": [
+    "Despite",
+    "Although",
+    "However",
+    "In spite"
+   ],
+   "correct": 0,
+   "explanation": "Kendisinden sonra bir isim öbeği geldiği için zıtlık bildiren ve \"-e rağmen\" anlamına gelen \"Despite\" edatı kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B1"
+  },
+  {
+   "q": "The research team spent ____ time and effort collecting data from various sources.",
+   "options": [
+    "a great deal of",
+    "a large number of",
+    "many",
+    "several"
+   ],
+   "correct": 0,
+   "explanation": "Sayılamayan isimlerle (\"time and effort\") \"çok miktarda\" anlamını vermek için \"a great deal of\" yapısı kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "B2"
+  },
+  {
+   "q": "Mount Everest is the ____ mountain in the world.",
+   "options": [
+    "high",
+    "higher",
+    "highest",
+    "most high"
+   ],
+   "correct": 2,
+   "explanation": "Tek heceli sıfatlarda en üstünlük (superlative) derecesini belirtmek için sıfatın sonuna \"-est\" takısı eklenir.",
+   "topic": "Comparisons",
+   "cefr": "A2"
+  },
+  {
+   "q": "The police are looking for the painting ____ from the national museum last night.",
+   "options": [
+    "stealing",
+    "which stole",
+    "stolen",
+    "was stolen"
+   ],
+   "correct": 2,
+   "explanation": "\"Çalınan tablo\" anlamını vermek için ismi niteleyen edilgen (passive) bir kısaltma olan past participle (\"stolen\") kullanılmalıdır.",
+   "topic": "Adjective & Participle Clauses",
+   "cefr": "B1"
+  },
+  {
+   "q": "On my way home, I stopped ____ some bread at the local bakery.",
+   "options": [
+    "to buy",
+    "buying",
+    "for buying",
+    "buy"
+   ],
+   "correct": 0,
+   "explanation": "Bir eylemi yapmak amacıyla duraklamayı ifade etmek için \"stop\" fiilinden sonra \"to-infinitive\" yapısı kullanılır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B2"
+  },
+  {
+   "q": "If only you ____ interrupting me while I am trying to explain something important!",
+   "options": [
+    "won't keep",
+    "had kept",
+    "don't keep",
+    "wouldn't keep"
+   ],
+   "correct": 3,
+   "explanation": "Konuşma anında rahatsızlık veren bir alışkanlığın değişmesi istendiğinde \"if only\" yapısından sonra \"would + fiil\" kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "C1"
+  },
+  {
+   "q": "By the time the police arrived, the thieves ____ with all the jewelry.",
+   "options": [
+    "escaped",
+    "were escaping",
+    "had escaped",
+    "have escaped"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişteki bir andan veya eylemden (\"by the time\" ile belirtilen) daha önce tamamlanmış bir eylemi ifade etmek için Past Perfect Tense kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "B1"
+  },
+  {
+   "q": "The ancient temple is believed ____ by a sudden earthquake in the third century.",
+   "options": [
+    "to destroy",
+    "having been destroyed",
+    "to have been destroyed",
+    "to be destroying"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişte gerçekleşmiş edilgen bir eyleme yönelik güncel bir inanışı belirtmek için \"is believed to have been + V3\" yapısı kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B2"
+  },
+  {
+   "q": "We regret ____ you that your application for the research grant has been unsuccessful.",
+   "options": [
+    "informing",
+    "having informed",
+    "to have informed",
+    "to inform"
+   ],
+   "correct": 3,
+   "explanation": "\"Regret\" fiili, kötü bir haberi vermekten duyulan üzüntüyü belirtirken kendisinden sonra \"to + yalın fiil\" (infinitive) alır.",
+   "topic": "Verb Forms",
+   "cefr": "C1"
+  },
+  {
+   "q": "We decided ____ a taxi because it started raining heavily.",
+   "options": [
+    "take",
+    "taking",
+    "took",
+    "to take"
+   ],
+   "correct": 3,
+   "explanation": "\"Decide\" (karar vermek) fiilinden sonra gelen diğer fiil \"to-infinitive\" yapısında olmalıdır.",
+   "topic": "Verb Forms",
+   "cefr": "A2"
+  },
+  {
+   "q": "Seldom ____ such a beautiful sunset in this part of the country.",
+   "options": [
+    "we see",
+    "do we see",
+    "we have seen",
+    "saw we"
+   ],
+   "correct": 1,
+   "explanation": "Cümle \"Seldom\" gibi olumsuz bir zarfla başladığında devrik yapı (inversion) kullanılır ve yardımcı fiil özneden önce gelir.",
+   "topic": "Inversion",
+   "cefr": "B1"
+  },
+  {
+   "q": "The more effort you put into practicing your English, ____ you will become at speaking fluently.",
+   "options": [
+    "better",
+    "the best",
+    "the better",
+    "the more good"
+   ],
+   "correct": 2,
+   "explanation": "\"Ne kadar ... o kadar ...\" anlamını veren paralel artış yapısında \"the + comparative, the + comparative\" kalıbı kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "I wanted to go to the cinema, ____ I didn't have enough money for a ticket.",
+   "options": [
+    "because",
+    "so",
+    "or",
+    "but"
+   ],
+   "correct": 3,
+   "explanation": "İki zıt veya çelişen durumu birbirine bağlamak için \"ama / fakat\" anlamına gelen \"but\" bağlacı kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "A2"
+  }
+ ],
+ "mixed-5": [
+  {
+   "q": "The new software update makes the entire system run much ____ than before.",
+   "options": [
+    "efficiently",
+    "more efficiently",
+    "most efficient",
+    "more efficient"
+   ],
+   "correct": 1,
+   "explanation": "\"Run\" fiilini nitelemek için bir zarf (adverb) ve karşılaştırma yapıldığı için \"more efficiently\" yapısı kullanılmalıdır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ by the sudden sound of lightning, the horse jumped over the wooden fence.",
+   "options": [
+    "Startling",
+    "To startle",
+    "Having startled",
+    "Startled"
+   ],
+   "correct": 3,
+   "explanation": "Kısaltılmış yan cümlecikte, at etkilenen (edilgen) durumda olduğu için geçmiş zaman ortacı (past participle) kullanılır.",
+   "topic": "Adjective & Participle Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "We always go to our grandparents' village ____ July.",
+   "options": [
+    "at",
+    "in",
+    "on",
+    "to"
+   ],
+   "correct": 1,
+   "explanation": "Aylar ile birlikte zaman belirtmek için 'in' edatı kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "A2"
+  },
+  {
+   "q": "I wish I ____ to speak Spanish; it would make my trip to Madrid much easier.",
+   "options": [
+    "know",
+    "have known",
+    "knew",
+    "will know"
+   ],
+   "correct": 2,
+   "explanation": "Şu anki duruma dair dilek ve pişmanlıkları belirtmek için 'wish' yapısından sonra geçmiş zaman (Past Simple) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B1"
+  },
+  {
+   "q": "The company, ____ CEO was recently arrested, has filed for bankruptcy.",
+   "options": [
+    "who",
+    "whose",
+    "whom",
+    "which"
+   ],
+   "correct": 1,
+   "explanation": "İsimden (company) sonra gelen aitlik ilişkisini belirtmek için 'whose' ilgi zamiri kullanılır.",
+   "topic": "Relative Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The ancient scrolls are believed ____ written in the first century BC.",
+   "options": [
+    "to have been",
+    "to be",
+    "having been",
+    "being"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte gerçekleştiğine inanılan edilgen bir durum için 'to have been + V3' yapısı kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "C1"
+  },
+  {
+   "q": "They managed ____ the project on time despite the budget cuts.",
+   "options": [
+    "finish",
+    "to finish",
+    "finishing",
+    "to be finished"
+   ],
+   "correct": 1,
+   "explanation": "'Manage' fiilinden sonra gelen diğer fiil mastar (to-infinitive) yapısında olmalıdır.",
+   "topic": "Verb Forms",
+   "cefr": "B1"
+  },
+  {
+   "q": "If we had secured the funding last month, we ____ our new research lab right now.",
+   "options": [
+    "would be building",
+    "would have built",
+    "will build",
+    "built"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişteki bir durumun şu anki sonucunu belirtmek için karma koşul yapısı (Mixed Conditional) kullanılarak \"would be building\" tercih edilmelidir.",
+   "topic": "Conditionals",
+   "cefr": "B2"
+  },
+  {
+   "q": "Not until the final minutes of the match ____ that their team had actually won.",
+   "options": [
+    "the spectators realized",
+    "did the spectators realize",
+    "realized the spectators",
+    "the spectators did realize"
+   ],
+   "correct": 1,
+   "explanation": "\"Not until\" ifadesi cümle başına geldiğinde temel cümle devrik (inversion) yapılarak \"did + özne + fiil\" şeklinde kurulur.",
+   "topic": "Inversion",
+   "cefr": "C1"
+  },
+  {
+   "q": "I bought some paint yesterday because I ____ my bedroom walls this weekend.",
+   "options": [
+    "am going to paint",
+    "paint",
+    "will paint",
+    "painted"
+   ],
+   "correct": 0,
+   "explanation": "Geleceğe yönelik önceden yapılmış bir planı veya niyeti belirtmek için 'be going to' yapısı kullanılır.",
+   "topic": "Future Forms",
+   "cefr": "A2"
+  },
+  {
+   "q": "____ the heavy rain, they decided to go for a hike in the mountains.",
+   "options": [
+    "In spite of",
+    "Although",
+    "Even though",
+    "However"
+   ],
+   "correct": 0,
+   "explanation": "Kendinden sonra bir isim öbeği (the heavy rain) geldiği için zıtlık bildiren 'In spite of' edatı kullanılmalıdır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "B1"
+  },
+  {
+   "q": "The manager wanted to know ____ the team had completed the report before the deadline.",
+   "options": [
+    "whether",
+    "that",
+    "what",
+    "which"
+   ],
+   "correct": 0,
+   "explanation": "Merak etme ve sorma gibi belirsizlik bildiren durumlarda 'olup olmadığını' ifade etmek için 'whether' kullanılır.",
+   "topic": "Noun Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "My sister and I painted the kitchen ____ because we didn't want to hire a decorator.",
+   "options": [
+    "themselves",
+    "ourselves",
+    "us",
+    "myself"
+   ],
+   "correct": 1,
+   "explanation": "Özne 'My sister and I' (biz) olduğu için dönüşlülük zamiri olarak 'ourselves' (kendimiz) kullanılmalıdır.",
+   "topic": "Pronouns",
+   "cefr": "A2"
+  },
+  {
+   "q": "Could you please tell me what time ____?",
+   "options": [
+    "does the train leave",
+    "is the train leaving",
+    "the train leaves",
+    "will the train leave"
+   ],
+   "correct": 2,
+   "explanation": "Dolaylı sorularda (indirect questions) soru kelimesinden sonra düz cümle düzeneği (özne + fiil) gelir.",
+   "topic": "Question Structures",
+   "cefr": "B1"
+  },
+  {
+   "q": "____ we manage to secure the funding by Friday will determine the future of the entire project.",
+   "options": [
+    "If",
+    "That",
+    "What",
+    "Whether"
+   ],
+   "correct": 3,
+   "explanation": "Cümlenin öznesi konumunda olan isim cümleciğinin başında 'olup olmayacağı' anlamını vermek için 'Whether' kullanılır; 'if' bu şekilde cümlenin başında özne olarak tercih edilmez.",
+   "topic": "Noun Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "Unfortunately, ____ of the two candidates was qualified for the position.",
+   "options": [
+    "none",
+    "neither",
+    "either",
+    "any"
+   ],
+   "correct": 1,
+   "explanation": "İki seçenekten hiçbirini kastetmek ve tekil bir fiille ('was') kullanmak için 'neither' tercih edilir.",
+   "topic": "Quantifiers",
+   "cefr": "C1"
+  },
+  {
+   "q": "If you ____ me about the traffic jam, I would have taken a different route.",
+   "options": [
+    "warned",
+    "would warn",
+    "had warned",
+    "would have warned"
+   ],
+   "correct": 2,
+   "explanation": "Geçmişte gerçekleşmeyen hayali bir durumu ifade eden Type 3 Conditional yapısında \"if\"li cümlecikte Past Perfect Tense kullanılır.",
+   "topic": "Conditionals",
+   "cefr": "B1"
+  },
+  {
+   "q": "He promised that he ____ me as soon as he arrived at the station.",
+   "options": [
+    "would call",
+    "will call",
+    "calls",
+    "has called"
+   ],
+   "correct": 0,
+   "explanation": "Aktarılan sözlerde (Reported Speech) temel cümle geçmiş zamanda olduğunda, 'will' yardımcı fiili 'would' haline dönüşür.",
+   "topic": "Reported Speech",
+   "cefr": "B2"
+  },
+  {
+   "q": "They were on the verge of ____ a decision when the meeting was suddenly interrupted.",
+   "options": [
+    "make",
+    "to make",
+    "making",
+    "having made"
+   ],
+   "correct": 2,
+   "explanation": "'On the verge of' (eşiğinde olmak) edat grubundan sonra fiilin -ing takısı almış hali (gerund) gelir.",
+   "topic": "Future Forms",
+   "cefr": "C1"
+  },
+  {
+   "q": "Are these keys ____, or did I leave mine on the kitchen table?",
+   "options": [
+    "your",
+    "you",
+    "yours",
+    "yourselves"
+   ],
+   "correct": 2,
+   "explanation": "İsimden sonra gelen ve sahiplik bildiren \"seninki\" anlamındaki iyelik zamiri (possessive pronoun) \"yours\" olmalıdır.",
+   "topic": "Determiners & Possession",
+   "cefr": "A2"
+  },
+  {
+   "q": "She avoided ____ her boss about the mistake until she had a solution.",
+   "options": [
+    "telling",
+    "to tell",
+    "tell",
+    "to telling"
+   ],
+   "correct": 0,
+   "explanation": "'Avoid' (kaçınmak) fiilinden sonra gelen diğer fiil -ing takısı (gerund) alır.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "B1"
+  },
+  {
+   "q": "Let's go for a walk in the park, ____?",
+   "options": [
+    "won't we",
+    "don't we",
+    "will we",
+    "shall we"
+   ],
+   "correct": 3,
+   "explanation": "'Let's' ile başlayan öneri cümlelerinin kuyruk soruları (tag question) 'shall we' ile yapılır.",
+   "topic": "Question Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "We ____ a very interesting documentary about space exploration last night.",
+   "options": [
+    "watch",
+    "watched",
+    "are watching",
+    "watches"
+   ],
+   "correct": 1,
+   "explanation": "Cümledeki 'last night' (dün gece) zaman zarfı geçmiş zamana işaret ettiği için fiilin geçmiş zaman hali olan 'watched' doğru seçenektir.",
+   "topic": "Past Tenses",
+   "cefr": "A2"
+  },
+  {
+   "q": "The young artist is famous ____ her unique oil paintings of urban landscapes.",
+   "options": [
+    "with",
+    "about",
+    "at",
+    "for"
+   ],
+   "correct": 3,
+   "explanation": "\"Famous\" (ünlü) sıfatı, bir şeyle ünlü olunduğunu belirtmek için her zaman \"for\" edatıyla (preposition) birlikte kullanılır.",
+   "topic": "Prepositions",
+   "cefr": "B1"
+  },
+  {
+   "q": "I can no longer ____ his constant complaints; I need to find another roommate.",
+   "options": [
+    "look up to",
+    "put up with",
+    "keep up with",
+    "run out of"
+   ],
+   "correct": 1,
+   "explanation": "'Put up with' phrasal verb'ü 'katlanmak, tahammül etmek' anlamına gelir.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "____ Mount Everest is the highest peak in ____ Himalayas.",
+   "options": [
+    "The / the",
+    "(no article) / (no article)",
+    "The / (no article)",
+    "(no article) / the"
+   ],
+   "correct": 3,
+   "explanation": "Tekil dağ isimlerinin önüne belirteç gelmezken, sıradağ isimlerinin önünde \"the\" artikülü kullanılır.",
+   "topic": "Articles & Determiners",
+   "cefr": "C1"
+  },
+  {
+   "q": "I have to work all weekend, but I wish I ____ more free time to spend with my family.",
+   "options": [
+    "have",
+    "had",
+    "will have",
+    "would have"
+   ],
+   "correct": 1,
+   "explanation": "Şu anki bir durumla ilgili dilek belirtirken \"wish\" yapısından sonra Past Simple (had) kullanılır.",
+   "topic": "Wish & If Only",
+   "cefr": "B1"
+  },
+  {
+   "q": "The board members finally reached an agreement, the details of ____ will be announced tomorrow.",
+   "options": [
+    "that",
+    "whose",
+    "which",
+    "what"
+   ],
+   "correct": 2,
+   "explanation": "Bir edattan (of) sonra tanımlayıcı olmayan (non-defining) ilgi cümleciklerinde cansız varlıklar için sadece \"which\" zamiri kullanılabilir.",
+   "topic": "Relative Clauses",
+   "cefr": "B2"
+  },
+  {
+   "q": "The report highlights that ____ individual in the department must take responsibility for the security breach.",
+   "options": [
+    "all of",
+    "whole",
+    "every single",
+    "each of"
+   ],
+   "correct": 2,
+   "explanation": "Tekil bir isim olan \"individual\" kelimesini vurgulamak ve gruptaki herkesi tek tek belirtmek için \"every single\" ifadesi kullanılır.",
+   "topic": "Articles & Determiners",
+   "cefr": "C1"
+  },
+  {
+   "q": "My sister decided ____ medicine because she wants to help sick children.",
+   "options": [
+    "study",
+    "studying",
+    "studied",
+    "to study"
+   ],
+   "correct": 3,
+   "explanation": "\"Decide\" (karar vermek) fiilinden sonra başka bir fiil geldiğinde bu fiil \"to + mastar\" (infinitive) yapısında olur.",
+   "topic": "Gerunds & Infinitives",
+   "cefr": "A2"
+  },
+  {
+   "q": "____ we finally arrived at the theater, the play had already started.",
+   "options": [
+    "By the time",
+    "Until",
+    "While",
+    "As soon as"
+   ],
+   "correct": 0,
+   "explanation": "Geçmişte bir eylemin başka bir eylemden önce tamamlandığını belirtmek için \"-e kadar\" anlamında \"By the time\" bağlacı ve Past Perfect kullanımı uygundur.",
+   "topic": "Relative Time Expressions",
+   "cefr": "B1"
+  },
+  {
+   "q": "When the power went out, I ____ on my computer for three hours without saving my work.",
+   "options": [
+    "have been working",
+    "was working",
+    "worked",
+    "had been working"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte elektrik kesilmeden önce belirli bir süredir (three hours) devam etmekte olan bir eylemi belirtmek için Past Perfect Continuous Tense kullanılır.",
+   "topic": "Past Tenses",
+   "cefr": "B2"
+  },
+  {
+   "q": "Could you please buy two ____ of bread from the bakery on your way home?",
+   "options": [
+    "loafs",
+    "loaf",
+    "loaves",
+    "loave"
+   ],
+   "correct": 2,
+   "explanation": "Sonu \"-f\" veya \"-fe\" ile biten birçok İngilizce isim çoğul yapılırken \"-ves\" takısı alır, bu yüzden \"loaf\" kelimesinin çoğulu \"loaves\" olur.",
+   "topic": "Nouns",
+   "cefr": "A2"
+  },
+  {
+   "q": "You ____ bring your own towel to the hotel because they provide clean ones for free.",
+   "options": [
+    "mustn't",
+    "shouldn't",
+    "don't have to",
+    "can't"
+   ],
+   "correct": 2,
+   "explanation": "Otel havlu sağladığı için kişinin havlu getirme zorunluluğunun olmadığını belirtmek amacıyla 'gerek yok' anlamındaki 'don't have to' kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "We had our kitchen ____ last month because the old cabinets were falling apart.",
+   "options": [
+    "renovated",
+    "renovating",
+    "to renovate",
+    "renovate"
+   ],
+   "correct": 0,
+   "explanation": "\"Have + nesne + V3\" (causative) yapısı, bir işi başkasına yaptırma anlamı taşır; bu yüzden boşluğa fiilin üçüncü hali (renovated) gelmelidir.",
+   "topic": "Causative Structures",
+   "cefr": "B2"
+  },
+  {
+   "q": "I ____ buying a new car, but I haven't made a final decision yet.",
+   "options": [
+    "am thinking of",
+    "think",
+    "am thinking",
+    "thought"
+   ],
+   "correct": 0,
+   "explanation": "\"Think\" fiili planlama veya bir şeyi değerlendirme anlamında kullanıldığında şimdiki zamanla (am thinking of) çekimlenebilir.",
+   "topic": "Present Tenses",
+   "cefr": "C1"
+  },
+  {
+   "q": "The view from the top of the mountain was ____ breathtaking, and we spent hours taking photos.",
+   "options": [
+    "very",
+    "absolutely",
+    "extremely",
+    "fairly"
+   ],
+   "correct": 1,
+   "explanation": "\"Breathtaking\" (nefes kesici) gibi derecelendirilemeyen (extreme) sıfatlarla \"very\" yerine \"absolutely\" gibi pekiştiriciler kullanılır.",
+   "topic": "Adjectives & Adverbs",
+   "cefr": "B1"
+  },
+  {
+   "q": "After a long misunderstanding, the two sisters finally looked at ____ and began to laugh.",
+   "options": [
+    "themselves",
+    "each other",
+    "one another's",
+    "them"
+   ],
+   "correct": 1,
+   "explanation": "İki kişinin birbirine karşılıklı olarak yaptığı bir eylemi belirtmek için \"each other\" (birbirine) ifadesi kullanılır.",
+   "topic": "Pronouns",
+   "cefr": "B2"
+  },
+  {
+   "q": "The busier she got, ____ time she had to spend with her friends.",
+   "options": [
+    "the few",
+    "the less",
+    "the lesser",
+    "less"
+   ],
+   "correct": 1,
+   "explanation": "\"The + daha üstünlük derecesi... the + daha üstünlük derecesi...\" yapısında, sayılamayan \"time\" ismiyle \"the less\" kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "C1"
+  },
+  {
+   "q": "He stayed up late last night to finish his homework, ____ he is very tired today.",
+   "options": [
+    "but",
+    "because",
+    "although",
+    "so"
+   ],
+   "correct": 3,
+   "explanation": "Neden-sonuç ilişkisi kurarken \"bu yüzden, dolayısıyla\" anlamında \"so\" bağlacı kullanılır.",
+   "topic": "Conjunctions & Linking Words",
+   "cefr": "A2"
+  },
+  {
+   "q": "Mark told me that he ____ to Paris the following week, so he was already packing his bags.",
+   "options": [
+    "is going",
+    "went",
+    "was going",
+    "will go"
+   ],
+   "correct": 2,
+   "explanation": "Dolaylı anlatımda (Reported Speech), gelecek zaman bildiren şimdiki zaman yapısı geçmiş zamana aktarılarak \"was going\" haline gelir.",
+   "topic": "Reported Speech",
+   "cefr": "B1"
+  },
+  {
+   "q": "The new smartphone is nowhere ____ expensive as the older model, which surprised everyone.",
+   "options": [
+    "more",
+    "so",
+    "near as",
+    "as much"
+   ],
+   "correct": 2,
+   "explanation": "Bir şeyin diğeri kadar kesinlikle olmadığını vurgulamak için \"nowhere near as + sıfat + as\" kalıbı kullanılır.",
+   "topic": "Comparisons",
+   "cefr": "B2"
+  },
+  {
+   "q": "Excuse me, ____ you please show me the way to the nearest subway station?",
+   "options": [
+    "should",
+    "must",
+    "shall",
+    "could"
+   ],
+   "correct": 3,
+   "explanation": "Rica ve yardım isterken kibar bir ifade sunmak için \"could\" yardımcı fiili kullanılır.",
+   "topic": "Modal Verbs",
+   "cefr": "A2"
+  },
+  {
+   "q": "Could you please tell me where ____ the nearest post office?",
+   "options": [
+    "the nearest post office is",
+    "is",
+    "find",
+    "is the nearest post office"
+   ],
+   "correct": 0,
+   "explanation": "Dolaylı sorularda (indirect questions) soru kelimesinden sonra düz cümle yapısı (özne + yüklem) getirilir.",
+   "topic": "Sentence Structure",
+   "cefr": "B1"
+  },
+  {
+   "q": "The ground is very wet because it ____ for hours.",
+   "options": [
+    "is raining",
+    "rains",
+    "was raining",
+    "has been raining"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte başlayıp şu ana kadar kesintisiz devam eden ve etkisi şu an ıslak zeminle görülen eylemler için Present Perfect Continuous kullanılır.",
+   "topic": "Present Tenses",
+   "cefr": "B2"
+  },
+  {
+   "q": "Under no circumstances ____ open this door without authorization from the manager.",
+   "options": [
+    "you should",
+    "you must",
+    "should you",
+    "must you not"
+   ],
+   "correct": 2,
+   "explanation": "\"Under no circumstances\" gibi olumsuz bir ifadeyle başlayan cümlelerde devrik yapı (yardımcı fiil + özne) kullanılır.",
+   "topic": "Emphasis Structures",
+   "cefr": "C1"
+  },
+  {
+   "q": "The school library ____ by a famous architect in 1995.",
+   "options": [
+    "designed",
+    "has been designed",
+    "was designing",
+    "was designed"
+   ],
+   "correct": 3,
+   "explanation": "Geçmişte tamamlanmış ve yapanı belirten (by...) bir eylemi edilgen olarak ifade etmek için Past Simple Passive (was/were + V3) kullanılır.",
+   "topic": "Passive Voice",
+   "cefr": "B1"
+  },
+  {
+   "q": "The flight was delayed because the ground crew had to ____ a technical issue with the engine.",
+   "options": [
+    "sort out",
+    "look after",
+    "give up",
+    "put off"
+   ],
+   "correct": 0,
+   "explanation": "Bir sorunu çözmek veya halletmek anlamını taşıyan phrasal verb \"sort out\" ifadesidir.",
+   "topic": "Phrasal Verbs",
+   "cefr": "B2"
+  },
+  {
+   "q": "The committee insisted that the project ____ postponed until further funding is secured.",
+   "options": [
+    "be",
+    "is",
+    "was",
+    "will be"
+   ],
+   "correct": 0,
+   "explanation": "\"Insist that\" yapısından sonra gelen cümlecikte dilek/şart kipi (subjunctive) kullanıldığı için fiil yalın halde (\"be\") gelir.",
+   "topic": "Verb Forms",
+   "cefr": "C1"
+  },
+  {
+   "q": "We don't have ____ milk left in the fridge, so we need to buy some.",
+   "options": [
+    "many",
+    "few",
+    "a little",
+    "much"
+   ],
+   "correct": 3,
+   "explanation": "Olumsuz cümlelerde sayılamayan isimlerle (milk) miktar belirtmek için \"much\" kullanılır.",
+   "topic": "Quantifiers",
+   "cefr": "A2"
+  }
+ ]
+}
