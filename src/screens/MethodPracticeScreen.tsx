@@ -468,10 +468,12 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
 
       {/* the app's own keyboard, so no system keyboard is needed here either */}
       <div className="space-y-3">
-        <AnswerDisplay value={input} placeholder="İngilizce kelimeyi klavyeden yaz" />
+        <AnswerDisplay value={input} placeholder="İngilizce cevabı klavyeden yaz" />
         <GameKeyboard
-          onKey={ch => !submitted && setInput(v => (v.length < 24 ? v + ch : v))}
+          onKey={ch => !submitted && setInput(v => (v.length < 40 ? v + ch : v))}
           onDelete={() => !submitted && setInput(v => v.slice(0, -1))}
+          // Many answers are more than one word ("get along with"): one space at a time, never at the start.
+          onSpace={() => !submitted && setInput(v => (v && !v.endsWith(' ') && v.length < 40 ? `${v} ` : v))}
           onEnter={submit}
           enterLabel="KONTROL ET"
           enterDisabled={!input.trim()}

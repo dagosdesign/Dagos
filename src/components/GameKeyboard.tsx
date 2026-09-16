@@ -247,7 +247,8 @@ export function AnswerDisplay({
   return (
     <div className="bg-white/[0.03] border border-[#e3b553]/35 rounded-2xl px-4 py-3 min-h-[52px] flex items-center justify-center">
       {value ? (
-        <span className="text-xl font-bold tracking-[0.22em] text-white uppercase break-all text-center">
+        // pre-wrap keeps typed spaces visible; long multi-word answers wrap between words
+        <span className="text-xl font-bold tracking-[0.22em] text-white uppercase whitespace-pre-wrap break-words text-center">
           {value}
         </span>
       ) : (
