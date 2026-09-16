@@ -13,7 +13,9 @@
  },
  "abbreviate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "People do this when writing text messages to save time and space."
+  ]
  },
  "abide": {
   "pos": "verb",
@@ -29,7 +31,9 @@
  },
  "abnormal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something different from what is usual, expected, or healthy."
+  ]
  },
  "abnormally": {
   "pos": "adverb",
@@ -94,11 +98,15 @@
  },
  "abstain": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To choose not to do or consume something that you enjoy."
+  ]
  },
  "abstract": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Based on general ideas rather than real things you can touch."
+  ]
  },
  "abundantly": {
   "pos": "adverb",
@@ -187,7 +195,9 @@
  },
  "accord": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A formal agreement between countries or groups."
+  ]
  },
  "accordingly": {
   "pos": "adverb",
@@ -197,7 +207,9 @@
  },
  "accountable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This means being responsible for your decisions and ready to explain them."
+  ]
  },
  "accounting": {
   "pos": "noun",
@@ -306,7 +318,9 @@
  },
  "acute": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes a feeling or problem that is very sharp and sudden."
+  ]
  },
  "acutely": {
   "pos": "adverb",
@@ -352,7 +366,9 @@
  },
  "additive": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A chemical put into food to make it last longer or taste better."
+  ]
  },
  "adequate": {
   "pos": "adjective",
@@ -375,11 +391,15 @@
  },
  "adjacent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Two hotel rooms that share a wall are in this position."
+  ]
  },
  "adjunct": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "An extra part that is added to something larger to help it."
+  ]
  },
  "adjust": {
   "pos": "verb",
@@ -438,7 +458,9 @@
  },
  "adorn": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To add beautiful things to something to make it look nicer."
+  ]
  },
  "adrenaline": {
   "pos": "noun",
@@ -546,11 +568,15 @@
  },
  "affective": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things that are connected to emotions, feelings, or moods."
+  ]
  },
  "afflict": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make someone suffer or feel great physical or mental pain."
+  ]
  },
  "afford": {
   "pos": "verb",
@@ -573,7 +599,8 @@
  "afterworld": {
   "pos": "noun",
   "clues": [
-   "This is the place where some people believe we go when we die."
+   "This is the place where some people believe we go when we die.",
+   "It is a synonym for the afterlife or the next world."
   ]
  },
  "again": {
@@ -620,7 +647,9 @@
  },
  "agile": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A gymnast performs difficult jumps and flips without falling."
+  ]
  },
  "agree": {
   "pos": "verb",
@@ -636,8 +665,10 @@
   ]
  },
  "aground": {
-  "pos": "adjective",
-  "clues": []
+  "pos": "adverb",
+  "clues": [
+   "A captain might face this problem if the sea level is too low."
+  ]
  },
  "aircraft": {
   "pos": "noun",
@@ -647,11 +678,15 @@
  },
  "airtight": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You put biscuits in a plastic container so they stay fresh and dry."
+  ]
  },
  "albeit": {
   "pos": "conjunction",
-  "clues": []
+  "clues": [
+   "Used to add information that limits or contrasts with what was said."
+  ]
  },
  "alcohol": {
   "pos": "noun",
@@ -667,11 +702,15 @@
  },
  "align": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to put things into a neat, straight line."
+  ]
  },
  "alike": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having almost the same appearance, character, or behavior."
+  ]
  },
  "alive": {
   "pos": "adjective",
@@ -772,7 +811,9 @@
  },
  "amalgam": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a combination of different ideas, styles, or substances."
+  ]
  },
  "amateur": {
   "pos": "adjective",
@@ -807,7 +848,9 @@
  },
  "amphibian": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You can find these creatures near ponds or wet forests."
+  ]
  },
  "amphitheater": {
   "pos": "noun",
@@ -920,7 +963,9 @@
  },
  "antidote": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a special medicine that stops the effects of poison."
+  ]
  },
  "antivirus": {
   "pos": "noun",
@@ -936,7 +981,9 @@
  },
  "apnea": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A medical condition where a person stops breathing for a short time."
+  ]
  },
  "apologize": {
   "pos": "verb",
@@ -1039,7 +1086,9 @@
  },
  "approximate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Almost correct or close to the real number but not exact."
+  ]
  },
  "aquarium": {
   "pos": "noun",
@@ -1049,7 +1098,9 @@
  },
  "aquatic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Living, growing, or taking place in or near the water."
+  ]
  },
  "arbitrary": {
   "pos": "adjective",
@@ -1065,7 +1116,9 @@
  },
  "ardent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Showing very strong feelings of love, support, or eagerness."
+  ]
  },
  "arguably": {
   "pos": "adverb",
@@ -1088,7 +1141,9 @@
  },
  "aromatic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You might smell this when walking into a coffee shop or bakery."
+  ]
  },
  "around": {
   "pos": "preposition",
@@ -1134,11 +1189,15 @@
  },
  "artful": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A dishonest salesman might use this kind of trick to sell a car."
+  ]
  },
  "arthritis": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A painful medical condition that makes your joints swollen and stiff."
+  ]
  },
  "artificial": {
   "pos": "adjective",
@@ -1148,7 +1207,9 @@
  },
  "artillery": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Army units use these weapons to shoot at targets from far away."
+  ]
  },
  "ascend": {
   "pos": "verb",
@@ -1158,7 +1219,9 @@
  },
  "ascendancy": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A position of power, control, or influence over other people or groups."
+  ]
  },
  "ascertain": {
   "pos": "verb",
@@ -1180,7 +1243,9 @@
  },
  "aspire": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Young athletes do this when they dream of winning Olympic gold."
+  ]
  },
  "assault": {
   "pos": "noun",
@@ -1374,7 +1439,9 @@
  },
  "auditory": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected to the physical ability to hear sounds."
+  ]
  },
  "augment": {
   "pos": "verb",
@@ -1521,7 +1588,9 @@
  },
  "baggy": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Skateboarders and hip-hop artists often wear these types of jeans."
+  ]
  },
  "baked": {
   "pos": "adjective",
@@ -1597,11 +1666,15 @@
  },
  "barren": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Dry and empty land where plants cannot grow."
+  ]
  },
  "barring": {
   "pos": "preposition",
-  "clues": []
+  "clues": [
+   "This means unless a specific thing happens."
+  ]
  },
  "based": {
   "pos": "adjective",
@@ -1666,7 +1739,8 @@
  "beautify": {
   "pos": "verb",
   "clues": [
-   "To make a place or object look much more attractive and pretty."
+   "To make a place or object look much more attractive and pretty.",
+   "To improve the appearance of a place or person."
   ]
  },
  "become": {
@@ -1696,11 +1770,15 @@
  },
  "befriend": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To start acting like a helper and companion to a new person."
+  ]
  },
  "behalf": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Representing or speaking for another person or group."
+  ]
  },
  "behave": {
   "pos": "verb",
@@ -1791,11 +1869,15 @@
  },
  "bilateral": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Involving two different groups, sides, or countries."
+  ]
  },
  "bilingual": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A child raised by a French mother and Spanish father is often this."
+  ]
  },
  "bill": {
   "pos": "noun",
@@ -1842,7 +1924,9 @@
  },
  "blast": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Workers use dynamite to blow up rocks on a mountain."
+  ]
  },
  "blatantly": {
   "pos": "adverb",
@@ -1895,11 +1979,15 @@
  },
  "bloodthirsty": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Showing a strong desire to kill, hurt, or see violence."
+  ]
  },
  "bloom": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Cherry trees do this during the spring season."
+  ]
  },
  "blossom": {
   "pos": "verb",
@@ -1947,7 +2035,9 @@
  },
  "bodily": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Doctors examine your physical functions to check your health."
+  ]
  },
  "bodyguard": {
   "pos": "noun",
@@ -2037,7 +2127,9 @@
  },
  "borne": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Seeds and pollen are often carried through the air in this way."
+  ]
  },
  "borrow": {
   "pos": "verb",
@@ -2109,7 +2201,9 @@
  },
  "breakwater": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You will see this stone structure near harbors and ports."
+  ]
  },
  "breathe": {
   "pos": "verb",
@@ -2161,7 +2255,9 @@
  },
  "broad": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having a large distance from one side to the other side."
+  ]
  },
  "broaden": {
   "pos": "verb",
@@ -2221,7 +2317,9 @@
  },
  "brutish": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Cruel, violent, and not showing any intelligence."
+  ]
  },
  "buddy": {
   "pos": "noun",
@@ -2244,7 +2342,8 @@
  "burdensome": {
   "pos": "adjective",
   "clues": [
-   "This describes a duty or task that is very difficult and tiring."
+   "This describes a duty or task that is very difficult and tiring.",
+   "This describes something that causes worry, difficulty, or hard work."
   ]
  },
  "bureau": {
@@ -2311,7 +2410,8 @@
  "calcify": {
   "pos": "verb",
   "clues": [
-   "To become hard and stiff like stone over a long time."
+   "To become hard and stiff like stone over a long time.",
+   "This can happen to old body tissues or water pipes over time."
   ]
  },
  "calculate": {
@@ -2372,7 +2472,9 @@
  },
  "capitalism": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "In this system, individuals buy and sell goods in free markets."
+  ]
  },
  "capricious": {
   "pos": "adjective",
@@ -2382,7 +2484,9 @@
  },
  "captive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a person or animal that is kept in a cage."
+  ]
  },
  "capture": {
   "pos": "verb",
@@ -2497,7 +2601,9 @@
  },
  "catastrophe": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Emergency workers help people after a terrible earthquake or flood."
+  ]
  },
  "catch": {
   "pos": "verb",
@@ -2561,7 +2667,9 @@
  },
  "censor": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To remove offensive or sensitive parts from a book or movie."
+  ]
  },
  "central": {
   "pos": "adjective",
@@ -2640,7 +2748,9 @@
  },
  "charitable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Kind people do this kind of work for homeless shelters."
+  ]
  },
  "charlatan": {
   "pos": "noun",
@@ -2838,7 +2948,9 @@
  },
  "circular": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Shaped like a ring or a round object."
+  ]
  },
  "circulate": {
   "pos": "verb",
@@ -2989,7 +3101,9 @@
  },
  "clumsy": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes someone who drops things or falls over easily."
+  ]
  },
  "clutch": {
   "pos": "verb",
@@ -3074,12 +3188,15 @@
  "colonial": {
   "pos": "adjective",
   "clues": [
-   "Relating to a powerful country that controls and rules another land far away."
+   "Relating to a powerful country that controls and rules another land far away.",
+   "This relates to a powerful country controlling other lands far away."
   ]
  },
  "combat": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to fight against or try to stop something bad."
+  ]
  },
  "combination": {
   "pos": "noun",
@@ -3202,7 +3319,8 @@
  "comparative": {
   "pos": "adjective",
   "clues": [
-   "This describes something judged by looking at its relation to other things."
+   "This describes something judged by looking at its relation to other things.",
+   "This describes something measured by looking at the differences between things."
   ]
  },
  "compare": {
@@ -3313,7 +3431,9 @@
  },
  "complicate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make a situation or problem harder to solve or understand."
+  ]
  },
  "complicated": {
   "pos": "adjective",
@@ -3439,7 +3559,8 @@
  "conceptual": {
   "pos": "adjective",
   "clues": [
-   "This describes something that is based on abstract ideas rather than real objects."
+   "This describes something that is based on abstract ideas rather than real objects.",
+   "An artist might create this type of art to make people think."
   ]
  },
  "concern": {
@@ -3591,15 +3712,21 @@
  },
  "congenital": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Existing or starting from the moment a baby is born."
+  ]
  },
  "congest": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Thousands of cars try to cross the same bridge during rush hour."
+  ]
  },
  "conjunction": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Scientists might study two planets appearing close together in the sky."
+  ]
  },
  "connect": {
   "pos": "verb",
@@ -3621,7 +3748,9 @@
  },
  "conscious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes being awake and able to think, feel, and hear."
+  ]
  },
  "consciously": {
   "pos": "adverb",
@@ -3734,7 +3863,9 @@
  },
  "constrain": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A very tight budget will do this to your travel plans."
+  ]
  },
  "constraint": {
   "pos": "noun",
@@ -3786,7 +3917,9 @@
  },
  "contaminate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Factory waste can easily do this to nearby rivers and drinking water."
+  ]
  },
  "contemplate": {
   "pos": "verb",
@@ -3802,11 +3935,15 @@
  },
  "contentious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Causing people to disagree and argue a lot."
+  ]
  },
  "contiguous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things that touch each other or share a border."
+  ]
  },
  "continent": {
   "pos": "noun",
@@ -3823,7 +3960,9 @@
  },
  "contingent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Only happening if another event or situation happens first."
+  ]
  },
  "continual": {
   "pos": "adjective",
@@ -3870,7 +4009,9 @@
  },
  "controversy": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A lot of public disagreement and argument about a specific topic."
+  ]
  },
  "convenient": {
   "pos": "adjective",
@@ -3893,7 +4034,8 @@
  "converse": {
   "pos": "verb",
   "clues": [
-   "To have a friendly talk with someone about various topics."
+   "To have a friendly talk with someone about various topics.",
+   "To talk with someone and share ideas or thoughts."
   ]
  },
  "conversely": {
@@ -3994,7 +4136,9 @@
  },
  "cornerstone": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The most important part of an idea that everything else depends on."
+  ]
  },
  "correct": {
   "pos": "verb",
@@ -4040,7 +4184,9 @@
  },
  "cosmic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with the whole universe beyond our planet."
+  ]
  },
  "cost": {
   "pos": "verb",
@@ -4088,7 +4234,9 @@
  },
  "couple": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You often see them holding hands on a romantic date."
+  ]
  },
  "cover": {
   "pos": "verb",
@@ -4104,7 +4252,9 @@
  },
  "cradle": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Parents put their newborn baby to sleep in this in the nursery."
+  ]
  },
  "cramp": {
   "pos": "noun",
@@ -4126,7 +4276,9 @@
  },
  "crave": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To want something very strongly, especially food."
+  ]
  },
  "crawl": {
   "pos": "verb",
@@ -4155,7 +4307,8 @@
  "creamy": {
   "pos": "adjective",
   "clues": [
-   "This describes food that is thick, smooth, and soft, like rich milk."
+   "This describes food that is thick, smooth, and soft, like rich milk.",
+   "Thick, smooth, and soft, like the rich dairy product used in cooking."
   ]
  },
  "create": {
@@ -4197,7 +4350,9 @@
  },
  "cremate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A funeral service where a body is placed into an oven."
+  ]
  },
  "criminal": {
   "pos": "adjective",
@@ -4220,11 +4375,15 @@
  },
  "crispy": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Pleasantly hard and dry, making a sharp sound when you bite it."
+  ]
  },
  "criterion": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a standard used to judge or make a decision."
+  ]
  },
  "critical": {
   "pos": "adjective",
@@ -4265,7 +4424,9 @@
  },
  "cubic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Measuring the total space inside a large cardboard box."
+  ]
  },
  "cuisine": {
   "pos": "noun",
@@ -4275,7 +4436,9 @@
  },
  "culinary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with cooking or preparing food in a kitchen."
+  ]
  },
  "cultivate": {
   "pos": "verb",
@@ -4304,7 +4467,9 @@
  },
  "cumulative": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something growing in size or strength by gradual additions."
+  ]
  },
  "curb": {
   "pos": "verb",
@@ -4494,7 +4659,9 @@
  },
  "debilitate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A severe disease like the flu can do this to an athlete."
+  ]
  },
  "debris": {
   "pos": "noun",
@@ -4577,11 +4744,15 @@
  },
  "decode": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To find the hidden meaning of a secret message or symbol."
+  ]
  },
  "decompose": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To slowly break down and rot after dying."
+  ]
  },
  "decorate": {
   "pos": "verb",
@@ -4591,7 +4762,9 @@
  },
  "decorative": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something made to look pretty rather than be useful."
+  ]
  },
  "dedicate": {
   "pos": "verb",
@@ -4613,7 +4786,9 @@
  },
  "deem": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A judge or authority figure might do this to a document or action."
+  ]
  },
  "default": {
   "pos": "noun",
@@ -4679,7 +4854,9 @@
  },
  "definitive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes something that is the final and most reliable authority."
+  ]
  },
  "defy": {
   "pos": "verb",
@@ -4689,7 +4866,9 @@
  },
  "degrade": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To break down chemically or lower the value of something."
+  ]
  },
  "delay": {
   "pos": "verb",
@@ -4735,7 +4914,9 @@
  },
  "demise": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Bad financial decisions often lead to the sudden closing of a business."
+  ]
  },
  "demonstrate": {
   "pos": "verb",
@@ -4757,7 +4938,9 @@
  },
  "dense": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having many things or people packed very closely together."
+  ]
  },
  "densely": {
   "pos": "adverb",
@@ -4768,7 +4951,9 @@
  },
  "dental": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes anything related to teeth or their care."
+  ]
  },
  "deny": {
   "pos": "verb",
@@ -4802,7 +4987,9 @@
  },
  "deposit": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "You do this when you receive your monthly salary from your boss."
+  ]
  },
  "depress": {
   "pos": "verb",
@@ -4855,7 +5042,8 @@
  "descriptive": {
   "pos": "adjective",
   "clues": [
-   "This kind of language gives clear details to help you picture something."
+   "This kind of language gives clear details to help you picture something.",
+   "This refers to words that paint a clear picture of something."
   ]
  },
  "deserve": {
@@ -4963,7 +5151,9 @@
  },
  "deter": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A homeowner puts up a security camera to stop thieves."
+  ]
  },
  "deteriorate": {
   "pos": "verb",
@@ -4973,7 +5163,9 @@
  },
  "determinable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Able to be found out, calculated, or decided with certainty."
+  ]
  },
  "determine": {
   "pos": "verb",
@@ -5037,7 +5229,9 @@
  },
  "devour": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To eat something very quickly because you are extremely hungry."
+  ]
  },
  "diagnose": {
   "pos": "verb",
@@ -5071,7 +5265,9 @@
  },
  "dietary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Related to the food and drink that a person regularly consumes."
+  ]
  },
  "differ": {
   "pos": "verb",
@@ -5114,7 +5310,8 @@
  "digestive": {
   "pos": "adjective",
   "clues": [
-   "This system in your body processes the food you eat every day."
+   "This system in your body processes the food you eat every day.",
+   "This describes things related to how your body processes food."
   ]
  },
  "digital": {
@@ -5186,7 +5383,9 @@
  },
  "disapprove": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to think that something is bad, wrong, or not acceptable."
+  ]
  },
  "discard": {
   "pos": "verb",
@@ -5196,7 +5395,9 @@
  },
  "discern": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To see, hear, or understand something that is not very obvious."
+  ]
  },
  "discharge": {
   "pos": "verb",
@@ -5225,7 +5426,9 @@
  },
  "discourse": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Serious speech or writing about a particular subject."
+  ]
  },
  "discover": {
   "pos": "verb",
@@ -5247,7 +5450,9 @@
  },
  "discriminate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To treat a person or group worse than others because of prejudice."
+  ]
  },
  "discuss": {
   "pos": "verb",
@@ -5275,7 +5480,9 @@
  },
  "disguise": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To change how you look so people do not recognize you."
+  ]
  },
  "disgust": {
   "pos": "verb",
@@ -5327,7 +5534,9 @@
  },
  "dismissive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A rude boss might make a quick hand gesture to ignore you."
+  ]
  },
  "disobedience": {
   "pos": "noun",
@@ -5338,11 +5547,15 @@
  },
  "disparaging": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Showing that you do not think someone or something is valuable or important."
+  ]
  },
  "disparity": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a noticeable and unfair difference between two things."
+  ]
  },
  "dispatch": {
   "pos": "verb",
@@ -5388,7 +5601,9 @@
  },
  "disprove": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To show with facts that an idea or theory is not correct."
+  ]
  },
  "disputable": {
   "pos": "adjective",
@@ -5410,7 +5625,9 @@
  },
  "disrupt": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To stop something from continuing in its normal, quiet, or planned way."
+  ]
  },
  "dissatisfied": {
   "pos": "adjective",
@@ -5420,11 +5637,15 @@
  },
  "disseminate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Scientists do this when they publish their new discoveries in journals."
+  ]
  },
  "dissimilar": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Not looking or acting the same as something else."
+  ]
  },
  "dissipate": {
   "pos": "verb",
@@ -5562,7 +5783,9 @@
  },
  "divert": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To force something or someone to go in a different direction."
+  ]
  },
  "divide": {
   "pos": "verb",
@@ -5590,11 +5813,15 @@
  },
  "domesticate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to train a wild animal to live with humans."
+  ]
  },
  "dominant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is stronger or more noticeable than others."
+  ]
  },
  "dominate": {
   "pos": "verb",
@@ -5652,11 +5879,15 @@
  },
  "downright": {
   "pos": "adverb",
-  "clues": []
+  "clues": [
+   "It means completely or absolutely, usually describing a bad quality."
+  ]
  },
  "downstream": {
   "pos": "adverb",
-  "clues": []
+  "clues": [
+   "A leaf dropped in a river will naturally float this way."
+  ]
  },
  "doze": {
   "pos": "verb",
@@ -5708,7 +5939,9 @@
  },
  "drawback": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a negative point or a problem with an option."
+  ]
  },
  "drawn": {
   "pos": "adjective",
@@ -5749,7 +5982,9 @@
  },
  "dropout": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This happens when a student leaves high school to start a business."
+  ]
  },
  "drown": {
   "pos": "verb",
@@ -5822,11 +6057,15 @@
  },
  "dysfunction": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A state where a system or body part does not work correctly."
+  ]
  },
  "dyslexia": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A brain condition that makes reading, writing, and spelling difficult."
+  ]
  },
  "each": {
   "pos": "determiner",
@@ -5874,7 +6113,9 @@
  },
  "eccentric": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a person who behaves in a strange but harmless way."
+  ]
  },
  "economic": {
   "pos": "adjective",
@@ -5998,7 +6239,9 @@
  },
  "elliptical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having a shape like a stretched circle or an egg."
+  ]
  },
  "embark": {
   "pos": "verb",
@@ -6264,7 +6507,9 @@
  },
  "enroll": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To sign up and put your name on an official list."
+  ]
  },
  "ensure": {
   "pos": "verb",
@@ -6280,7 +6525,9 @@
  },
  "entangle": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To twist thin things together so tightly that they are hard to separate."
+  ]
  },
  "enter": {
   "pos": "verb",
@@ -6308,7 +6555,9 @@
  },
  "enthrall": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to hold someone's attention completely because something is so beautiful."
+  ]
  },
  "enthusiasm": {
   "pos": "noun",
@@ -6324,7 +6573,9 @@
  },
  "entice": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To persuade someone to do something by offering them something very nice."
+  ]
  },
  "entire": {
   "pos": "adjective",
@@ -6352,7 +6603,9 @@
  },
  "enumerate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to name or list a series of things one by one."
+  ]
  },
  "environment": {
   "pos": "noun",
@@ -6436,11 +6689,15 @@
  },
  "erode": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to slowly rub away or destroy the surface of something."
+  ]
  },
  "erratic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that changes suddenly and is not predictable."
+  ]
  },
  "erroneous": {
   "pos": "adjective",
@@ -6510,7 +6767,9 @@
  },
  "eternal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that never ends and lasts forever."
+  ]
  },
  "eucalyptus": {
   "pos": "noun",
@@ -6550,7 +6809,9 @@
  },
  "eventual": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "After many years of hard work, a student achieves this success."
+  ]
  },
  "eventually": {
   "pos": "adverb",
@@ -6592,7 +6853,9 @@
  },
  "evident": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Very easy to see, notice, or understand."
+  ]
  },
  "evolve": {
   "pos": "verb",
@@ -6627,7 +6890,9 @@
  },
  "exalted": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes holding a very high, noble, or powerful position."
+  ]
  },
  "example": {
   "pos": "noun",
@@ -6753,7 +7018,9 @@
  },
  "excrete": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Humans do this when they sweat on a hot day."
+  ]
  },
  "excuse": {
   "pos": "verb",
@@ -6793,7 +7060,9 @@
  },
  "exhaustive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Including every possible detail and leaving nothing out."
+  ]
  },
  "exhibit": {
   "pos": "verb",
@@ -6809,7 +7078,9 @@
  },
  "exorbitant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A simple bottle of water costing ten dollars at airports."
+  ]
  },
  "exotic": {
   "pos": "adjective",
@@ -6935,7 +7206,9 @@
  },
  "exponential": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A virus spreads to thousands of people in just a few days."
+  ]
  },
  "export": {
   "pos": "verb",
@@ -6964,7 +7237,8 @@
  "expressive": {
   "pos": "adjective",
   "clues": [
-   "This kind of face or voice clearly shows what someone is feeling."
+   "This kind of face or voice clearly shows what someone is feeling.",
+   "Showing what you are thinking or feeling through your face or voice."
   ]
  },
  "extend": {
@@ -7023,7 +7297,9 @@
  },
  "extrasolar": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Scientists look for this kind of planet orbiting distant stars."
+  ]
  },
  "extravagant": {
   "pos": "adjective",
@@ -7051,7 +7327,9 @@
  },
  "fabric": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Material made by weaving threads together to make clothes."
+  ]
  },
  "fabricate": {
   "pos": "verb",
@@ -7235,7 +7513,9 @@
  },
  "fatigue": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A feeling of being extremely tired after hard work or exercise."
+  ]
  },
  "fatty": {
   "pos": "adjective",
@@ -7270,7 +7550,8 @@
  "fearsome": {
   "pos": "adjective",
   "clues": [
-   "This describes something that looks very scary and causes people to feel afraid."
+   "This describes something that looks very scary and causes people to feel afraid.",
+   "Standing face-to-face with a giant, angry grizzly bear."
   ]
  },
  "feasible": {
@@ -7319,11 +7600,15 @@
  },
  "feral": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes an animal living in nature that is not tame."
+  ]
  },
  "ferocious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Very fierce, violent, and dangerous."
+  ]
  },
  "fertile": {
   "pos": "adjective",
@@ -7346,7 +7631,8 @@
  "festive": {
   "pos": "adjective",
   "clues": [
-   "This describes a happy and bright atmosphere suitable for a holiday celebration."
+   "This describes a happy and bright atmosphere suitable for a holiday celebration.",
+   "Streets look this way when they are decorated with colorful lights for Christmas."
   ]
  },
  "fetch": {
@@ -7358,7 +7644,8 @@
  "feudal": {
   "pos": "adjective",
   "clues": [
-   "Relating to a medieval social system where powerful lords owned all the land."
+   "Relating to a medieval social system where powerful lords owned all the land.",
+   "It relates to a medieval system of lords, vassals, and land."
   ]
  },
  "fiction": {
@@ -7369,11 +7656,15 @@
  },
  "fieldwork": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is practical research done outside of a laboratory or office."
+  ]
  },
  "fierce": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something extremely strong, violent, or aggressive."
+  ]
  },
  "fight": {
   "pos": "verb",
@@ -7452,7 +7743,9 @@
  },
  "fixate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To focus all your thoughts on one person or object."
+  ]
  },
  "flap": {
   "pos": "verb",
@@ -7480,7 +7773,9 @@
  },
  "flaw": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A small mistake, mark, or weakness that makes something imperfect."
+  ]
  },
  "flee": {
   "pos": "verb",
@@ -7496,7 +7791,9 @@
  },
  "flexible": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that can bend easily without breaking."
+  ]
  },
  "flexibly": {
   "pos": "adverb",
@@ -7572,11 +7869,15 @@
  },
  "fluorescent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Producing very bright, glowing light when electricity passes through it."
+  ]
  },
  "flush": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To clean something by sending a sudden, fast flow of water through it."
+  ]
  },
  "focus": {
   "pos": "verb",
@@ -7586,7 +7887,9 @@
  },
  "fodder": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A farmer gives this to horses during the cold winter months."
+  ]
  },
  "fold": {
   "pos": "verb",
@@ -7629,12 +7932,15 @@
  "foodstuff": {
   "pos": "noun",
   "clues": [
-   "This is any substance or material that can be eaten to stay alive."
+   "This is any substance or material that can be eaten to stay alive.",
+   "You can find many different kinds of this in a supermarket."
   ]
  },
  "footage": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A news channel showing a video of a bank robbery."
+  ]
  },
  "footprint": {
   "pos": "noun",
@@ -7651,7 +7957,9 @@
  },
  "forage": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To search around a wide area to find food."
+  ]
  },
  "force": {
   "pos": "noun",
@@ -7667,7 +7975,9 @@
  },
  "forefront": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Scientists who are leading the way in new medical research."
+  ]
  },
  "foreign": {
   "pos": "adjective",
@@ -7689,7 +7999,9 @@
  },
  "forethought": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is thinking about and planning for the future before acting."
+  ]
  },
  "forever": {
   "pos": "adverb",
@@ -7718,7 +8030,9 @@
  },
  "forgettable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is not special or easy to remember."
+  ]
  },
  "forgive": {
   "pos": "verb",
@@ -7758,11 +8072,15 @@
  },
  "forth": {
   "pos": "adverb",
-  "clues": []
+  "clues": [
+   "Moving forward or out from a starting place."
+  ]
  },
  "forthcoming": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You can find dates for these events on a school calendar."
+  ]
  },
  "forthwith": {
   "pos": "adverb",
@@ -7808,7 +8126,9 @@
  },
  "fraction": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A very small piece or portion of a larger whole."
+  ]
  },
  "fracture": {
   "pos": "verb",
@@ -7854,7 +8174,9 @@
  },
  "frenzy": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A state of wild, excited, and uncontrolled behavior or activity."
+  ]
  },
  "frequent": {
   "pos": "adjective",
@@ -7890,7 +8212,8 @@
  "frontal": {
   "pos": "adjective",
   "clues": [
-   "This describes something located at the forward part of an object."
+   "This describes something located at the forward part of an object.",
+   "Doctors use this word to talk about the forward part of the brain."
   ]
  },
  "frozen": {
@@ -7907,7 +8230,9 @@
  },
  "fruitful": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Business partners meet and agree on a great new plan together."
+  ]
  },
  "frustrate": {
   "pos": "verb",
@@ -8018,7 +8343,9 @@
  },
  "gangster": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a member of an organized group of violent criminals."
+  ]
  },
  "garnish": {
   "pos": "verb",
@@ -8028,7 +8355,9 @@
  },
  "gauge": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To measure or make a judgment about something."
+  ]
  },
  "general": {
   "pos": "adjective",
@@ -8062,7 +8391,9 @@
  },
  "genesis": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Scientists try to find the starting point of a new disease."
+  ]
  },
  "genetic": {
   "pos": "adjective",
@@ -8234,7 +8565,9 @@
  },
  "grave": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Extremely serious and causing people to feel deep worry or fear."
+  ]
  },
  "gravestone": {
   "pos": "noun",
@@ -8361,7 +8694,9 @@
  },
  "guise": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A false appearance that hides who you really are."
+  ]
  },
  "habit": {
   "pos": "noun",
@@ -8445,7 +8780,9 @@
  },
  "harass": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Bullies often do this to weaker students at school."
+  ]
  },
  "hard": {
   "pos": "adjective",
@@ -8510,15 +8847,21 @@
  },
  "haven": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A quiet library can be this for a student during stressful exams."
+  ]
  },
  "havoc": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A state of great confusion, damage, and lack of order."
+  ]
  },
  "hazard": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Something that is dangerous and likely to cause damage or injury."
+  ]
  },
  "hazardous": {
   "pos": "adjective",
@@ -8548,7 +8891,8 @@
  "headstand": {
   "pos": "noun",
   "clues": [
-   "An exercise pose where you balance upside down on your skull."
+   "An exercise pose where you balance upside down on your skull.",
+   "You will see people doing this in yoga classes or gymnastics."
   ]
  },
  "heal": {
@@ -8598,7 +8942,9 @@
  },
  "hectic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a situation that is very busy, fast, and full of activity."
+  ]
  },
  "heed": {
   "pos": "verb",
@@ -8614,7 +8960,9 @@
  },
  "heliocentric": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a model where the sun is at the middle."
+  ]
  },
  "help": {
   "pos": "verb",
@@ -8636,7 +8984,9 @@
  },
  "hereditary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A doctor asks if anyone else in your family has the same disease."
+  ]
  },
  "heritage": {
   "pos": "noun",
@@ -8677,7 +9027,9 @@
  },
  "highlight": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make people notice something important by making it stand out."
+  ]
  },
  "highlining": {
   "pos": "noun",
@@ -8778,7 +9130,8 @@
  "hopeless": {
   "pos": "adjective",
   "clues": [
-   "This describes feeling that a bad situation will never get better."
+   "This describes feeling that a bad situation will never get better.",
+   "It describes a situation that has no chance of succeeding or improving."
   ]
  },
  "horizontal": {
@@ -8853,12 +9206,15 @@
  "humanity": {
   "pos": "noun",
   "clues": [
-   "This term refers to all the people living on our planet together."
+   "This term refers to all the people living on our planet together.",
+   "All the people in the world considered as a single group."
   ]
  },
  "humble": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Not thinking you are better or more important than other people."
+  ]
  },
  "humiliate": {
   "pos": "verb",
@@ -8875,7 +9231,9 @@
  },
  "hurdle": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Passing a difficult exam is the final one of these for students."
+  ]
  },
  "hurry": {
   "pos": "verb",
@@ -8897,11 +9255,15 @@
  },
  "hybrid": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A modern car that uses both electricity and gasoline is an example."
+  ]
  },
  "hypnosis": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A deep state of relaxation where you follow another person's suggestions."
+  ]
  },
  "idea": {
   "pos": "noun",
@@ -8911,7 +9273,9 @@
  },
  "identical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It is the opposite of different."
+  ]
  },
  "identity": {
   "pos": "noun",
@@ -8921,7 +9285,9 @@
  },
  "ideology": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Political parties base their laws and promises on this system of thought."
+  ]
  },
  "ignorance": {
   "pos": "noun",
@@ -8956,7 +9322,9 @@
  },
  "illogical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Buying a winter coat in the middle of summer is often this."
+  ]
  },
  "illusion": {
   "pos": "noun",
@@ -9003,7 +9371,9 @@
  },
  "imminent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Dark clouds and strong winds mean that a storm is like this."
+  ]
  },
  "immoral": {
   "pos": "adjective",
@@ -9013,7 +9383,9 @@
  },
  "immune": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Safe from catching a specific disease because your body can fight it."
+  ]
  },
  "immunity": {
   "pos": "noun",
@@ -9041,15 +9413,21 @@
  },
  "impede": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Heavy snow on the road will do this to traffic."
+  ]
  },
  "imperial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes things connected to a powerful ruler of many countries."
+  ]
  },
  "impermanent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Existing or lasting for only a short period of time."
+  ]
  },
  "impetuous": {
   "pos": "adjective",
@@ -9089,7 +9467,9 @@
  },
  "impose": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to force people to accept a rule or tax."
+  ]
  },
  "impossible": {
   "pos": "adjective",
@@ -9123,7 +9503,9 @@
  },
  "imprison": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To lock someone up so they cannot leave a place."
+  ]
  },
  "improbable": {
   "pos": "adjective",
@@ -9157,7 +9539,9 @@
  },
  "inaction": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a failure to do anything in a situation."
+  ]
  },
  "inadequate": {
   "pos": "adjective",
@@ -9173,15 +9557,21 @@
  },
  "inadvertent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Done by accident without any plan or intention."
+  ]
  },
  "inanimate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things that do not breathe, grow, or have feelings."
+  ]
  },
  "inborn": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a quality or ability that you have from birth."
+  ]
  },
  "incalculable": {
   "pos": "adjective",
@@ -9191,7 +9581,9 @@
  },
  "incapable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes someone who does not have the ability to do something."
+  ]
  },
  "incentive": {
   "pos": "noun",
@@ -9201,15 +9593,21 @@
  },
  "inception": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is the start or beginning of an organization or project."
+  ]
  },
  "incessant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something going on and on without ever stopping."
+  ]
  },
  "incidence": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "How often a disease or bad event happens in a group."
+  ]
  },
  "incidentally": {
   "pos": "adverb",
@@ -9219,7 +9617,9 @@
  },
  "incline": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To tend to think or behave in a particular way."
+  ]
  },
  "include": {
   "pos": "verb",
@@ -9241,11 +9641,15 @@
  },
  "inconclusive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A medical test that does not show if you are sick or healthy."
+  ]
  },
  "incorporate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A chef decides to add local honey into their new dessert recipe."
+  ]
  },
  "incorrect": {
   "pos": "adjective",
@@ -9285,11 +9689,15 @@
  },
  "incubate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To keep eggs warm so that the young birds inside can grow and hatch."
+  ]
  },
  "incurable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Unable to be made healthy by medicine."
+  ]
  },
  "indecisive": {
   "pos": "adjective",
@@ -9330,7 +9738,9 @@
  },
  "indicate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A compass needle will do this to show you where north is."
+  ]
  },
  "indicative": {
   "pos": "adjective",
@@ -9353,7 +9763,9 @@
  },
  "indigenous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Belonging naturally to a specific country or area from the beginning."
+  ]
  },
  "individual": {
   "pos": "adjective",
@@ -9381,11 +9793,15 @@
  },
  "induce": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To cause a particular physical condition or state to happen."
+  ]
  },
  "industrial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things connected with factories, machines, and making goods."
+  ]
  },
  "inefficient": {
   "pos": "adjective",
@@ -9395,11 +9811,15 @@
  },
  "inept": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Lacking the skill or ability to do a task successfully."
+  ]
  },
  "inescapable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Impossible to get away from or to change."
+  ]
  },
  "inessential": {
   "pos": "adjective",
@@ -9446,7 +9866,9 @@
  },
  "infectious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Able to pass easily from one person to another through the air or touch."
+  ]
  },
  "infinite": {
   "pos": "adjective",
@@ -9457,7 +9879,8 @@
  "inflame": {
   "pos": "verb",
   "clues": [
-   "To make an angry situation or physical pain much worse and intense."
+   "To make an angry situation or physical pain much worse and intense.",
+   "Rubbing dirt into a fresh cut will do this to your skin."
   ]
  },
  "inflammable": {
@@ -9480,7 +9903,9 @@
  },
  "inflict": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To force someone to experience pain or damage."
+  ]
  },
  "influencer": {
   "pos": "noun",
@@ -9536,7 +9961,9 @@
  },
  "ingrained": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "So deeply fixed in your mind that it is hard to change."
+  ]
  },
  "inhabitant": {
   "pos": "noun",
@@ -9552,11 +9979,15 @@
  },
  "inherit": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To get money, property, or characteristics from your parents or relatives."
+  ]
  },
  "inhibit": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make it difficult for a process or action to happen."
+  ]
  },
  "inhospitable": {
   "pos": "adjective",
@@ -9608,7 +10039,9 @@
  },
  "innate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Existing in a person or animal from the time of birth."
+  ]
  },
  "innocent": {
   "pos": "adjective",
@@ -9618,7 +10051,9 @@
  },
  "innovate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A technology company creates a completely new type of smartphone."
+  ]
  },
  "innovation": {
   "pos": "noun",
@@ -9646,7 +10081,9 @@
  },
  "inseparable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things so closely joined that they cannot be kept apart."
+  ]
  },
  "insolvent": {
   "pos": "adjective",
@@ -9704,7 +10141,9 @@
  },
  "instrumental": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Being very important in making something happen."
+  ]
  },
  "insufficient": {
   "pos": "adjective",
@@ -9732,7 +10171,9 @@
  },
  "intact": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Archeologists are thrilled when they find ancient pots that are still like this."
+  ]
  },
  "intangible": {
   "pos": "adjective",
@@ -9742,7 +10183,9 @@
  },
  "integral": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Flour is this kind of ingredient when you are baking bread."
+  ]
  },
  "integration": {
   "pos": "noun",
@@ -9759,7 +10202,9 @@
  },
  "intelligible": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes speech or writing that is clear and easy to understand."
+  ]
  },
  "intense": {
   "pos": "adjective",
@@ -9819,7 +10264,9 @@
  },
  "intermittent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that happens from time to time, not continuously."
+  ]
  },
  "internal": {
   "pos": "adjective",
@@ -9842,11 +10289,15 @@
  },
  "interrelate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To connect with each other or affect one another."
+  ]
  },
  "intersect": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This is what two streets do when they form a corner together."
+  ]
  },
  "interval": {
   "pos": "noun",
@@ -9869,23 +10320,33 @@
  },
  "interweave": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to twist or mix different things closely together."
+  ]
  },
  "intimate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Two best friends share their deepest secrets with each other."
+  ]
  },
  "intoxicate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Drinking too much beer or wine will do this to a person."
+  ]
  },
  "intricate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that has many small, complicated parts."
+  ]
  },
  "intrigue": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To fill someone with a strong desire to know more about something."
+  ]
  },
  "intrinsic": {
   "pos": "adjective",
@@ -9901,7 +10362,9 @@
  },
  "intuitive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Easy to understand or use without needing any training or explanation."
+  ]
  },
  "invade": {
   "pos": "verb",
@@ -9941,7 +10404,9 @@
  },
  "investigate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To search for facts and truth about a crime or problem."
+  ]
  },
  "investment": {
   "pos": "noun",
@@ -9984,7 +10449,9 @@
  },
  "involuntary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Done automatically without you choosing or planning to do it."
+  ]
  },
  "involve": {
   "pos": "verb",
@@ -10007,11 +10474,15 @@
  },
  "irrational": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something not based on clear thinking, logic, or reason."
+  ]
  },
  "irrefutable": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a fact that is absolutely true and cannot be argued."
+  ]
  },
  "irregular": {
   "pos": "adjective",
@@ -10045,7 +10516,9 @@
  },
  "irrigate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Farmers do this to their fields during hot summer months."
+  ]
  },
  "irritate": {
   "pos": "verb",
@@ -10146,7 +10619,9 @@
  },
  "juvenile": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Police use this word for teenagers who get into trouble with the law."
+  ]
  },
  "kayaking": {
   "pos": "noun",
@@ -10396,7 +10871,9 @@
  },
  "leeway": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is extra space or time to make choices and decisions."
+  ]
  },
  "left": {
   "pos": "adjective",
@@ -10406,7 +10883,9 @@
  },
  "legacy": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is money, property, or history that you leave for others after death."
+  ]
  },
  "legal": {
   "pos": "adjective",
@@ -10428,7 +10907,9 @@
  },
  "legitimate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is legal, valid, or acceptable according to rules."
+  ]
  },
  "lemonade": {
   "pos": "noun",
@@ -10451,7 +10932,8 @@
  "lengthy": {
   "pos": "adjective",
   "clues": [
-   "This describes something that continues for a very long and often boring time."
+   "This describes something that continues for a very long and often boring time.",
+   "Continuing for a great amount of time."
   ]
  },
  "lentil": {
@@ -10462,11 +10944,15 @@
  },
  "lessen": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To reduce the size, amount, or strength of something."
+  ]
  },
  "lethal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Some wild snakes have a very dangerous poison that can kill a human."
+  ]
  },
  "level": {
   "pos": "noun",
@@ -10601,7 +11087,9 @@
  },
  "literate": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Teachers work hard to make sure all their young students become this."
+  ]
  },
  "literature": {
   "pos": "noun",
@@ -10623,7 +11111,9 @@
  },
  "livestock": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A farmer takes care of these animals every single day."
+  ]
  },
  "livestream": {
   "pos": "noun",
@@ -10786,12 +11276,15 @@
  },
  "luxuriant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes plants or hair that grow very thick, healthy, and rich."
+  ]
  },
  "machinery": {
   "pos": "noun",
   "clues": [
-   "This refers to a group of large devices used to do work."
+   "This refers to a group of large devices used to do work.",
+   "A group of large, powerful engines or mechanical devices used together."
   ]
  },
  "magnificent": {
@@ -10832,7 +11325,9 @@
  },
  "majesty": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is great beauty, power, or dignity that causes admiration."
+  ]
  },
  "major": {
   "pos": "adjective",
@@ -10860,7 +11355,9 @@
  },
  "malicious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Wishing to hurt other people or cause them trouble on purpose."
+  ]
  },
  "malware": {
   "pos": "noun",
@@ -10876,7 +11373,9 @@
  },
  "mandatory": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that you must do because of a rule."
+  ]
  },
  "manifest": {
   "pos": "verb",
@@ -10922,17 +11421,22 @@
  },
  "marine": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with the ocean and the living things that exist inside it."
+  ]
  },
  "marketable": {
   "pos": "adjective",
   "clues": [
-   "This describes a product that is easy to sell because people want it."
+   "This describes a product that is easy to sell because people want it.",
+   "Having qualities that make people want to buy it easily."
   ]
  },
  "martial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It is related to soldiers, fighting, or the armed forces."
+  ]
  },
  "mash": {
   "pos": "verb",
@@ -10996,7 +11500,9 @@
  },
  "meaningful": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Friends have a deep conversation about their lives instead of just talking about weather."
+  ]
  },
  "means": {
   "pos": "noun",
@@ -11053,7 +11559,8 @@
  "medicate": {
   "pos": "verb",
   "clues": [
-   "To give drugs or pills to someone to treat their illness."
+   "To give drugs or pills to someone to treat their illness.",
+   "Doctors do this to help patients who suffer from chronic pain."
   ]
  },
  "medicine": {
@@ -11070,11 +11577,15 @@
  },
  "mediocre": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Not very good, but not extremely bad either."
+  ]
  },
  "meditate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To sit quietly and focus your mind to relax or feel peaceful."
+  ]
  },
  "meet": {
   "pos": "verb",
@@ -11158,7 +11669,9 @@
  },
  "mere": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It means nothing more than what is specified."
+  ]
  },
  "merely": {
   "pos": "adverb",
@@ -11192,11 +11705,15 @@
  },
  "metabolism": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is how your body turns food into energy."
+  ]
  },
  "methodical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Done in a very careful, organized, and step-by-step way."
+  ]
  },
  "meticulous": {
   "pos": "adjective",
@@ -11263,11 +11780,15 @@
  },
  "mindful": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You should be careful of your steps when walking on icy roads."
+  ]
  },
  "miniature": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Made to look like a tiny version of a larger object."
+  ]
  },
  "minimal": {
   "pos": "adjective",
@@ -11406,11 +11927,15 @@
  },
  "momentum": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The power or speed that an object has when it moves."
+  ]
  },
  "monstrous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Extremely large, ugly, and scary to look at."
+  ]
  },
  "monument": {
   "pos": "noun",
@@ -11452,7 +11977,9 @@
  },
  "mortal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Cannot live forever and must die at some point."
+  ]
  },
  "mosque": {
   "pos": "noun",
@@ -11480,12 +12007,15 @@
  },
  "mount": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to climb up onto something, like a horse or bicycle."
+  ]
  },
  "mountainous": {
   "pos": "adjective",
   "clues": [
-   "This describes an area of land that has many very high hills."
+   "This describes an area of land that has many very high hills.",
+   "Switzerland and Nepal are famous for having this kind of landscape."
   ]
  },
  "mouthpiece": {
@@ -11509,7 +12039,9 @@
  },
  "multilateral": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Involving three or more different groups or countries."
+  ]
  },
  "multiplayer": {
   "pos": "adjective",
@@ -11525,7 +12057,9 @@
  },
  "mundane": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Very ordinary and not exciting in any way."
+  ]
  },
  "murmur": {
   "pos": "noun",
@@ -11583,7 +12117,9 @@
  },
  "mythology": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A group of traditional stories about ancient gods and heroes."
+  ]
  },
  "narrate": {
   "pos": "verb",
@@ -11594,11 +12130,15 @@
  },
  "narrative": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A novelist writes a long book about a hero's journey."
+  ]
  },
  "narrow": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having a very small distance from side to side."
+  ]
  },
  "nasty": {
   "pos": "adjective",
@@ -11608,7 +12148,9 @@
  },
  "natal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A doctor in a maternity ward deals with this kind of care."
+  ]
  },
  "national": {
   "pos": "adjective",
@@ -11644,11 +12186,15 @@
  },
  "nausea": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "People often experience this on a boat during a rough storm."
+  ]
  },
  "navigate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To find the right direction and guide a ship or car."
+  ]
  },
  "near": {
   "pos": "adjective",
@@ -11678,7 +12224,8 @@
  "necessitate": {
   "pos": "verb",
   "clues": [
-   "To make a particular action or situation completely essential."
+   "To make a particular action or situation completely essential.",
+   "To make a particular action or thing absolutely required."
   ]
  },
  "need": {
@@ -11751,15 +12298,21 @@
  },
  "nestle": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A baby bird will do this under its mother's wing."
+  ]
  },
  "neural": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things connected to the network of cells that carry messages."
+  ]
  },
  "neutral": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes not choosing a side in an argument or war."
+  ]
  },
  "never": {
   "pos": "adverb",
@@ -11777,7 +12330,8 @@
  "newscast": {
   "pos": "noun",
   "clues": [
-   "This is a television or radio program that reports the latest daily events."
+   "This is a television or radio program that reports the latest daily events.",
+   "This is a television or radio program that tells you what happened today."
   ]
  },
  "newspaper": {
@@ -11794,7 +12348,9 @@
  },
  "niche": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A perfect job, role, or place that suits you very well."
+  ]
  },
  "nightmare": {
   "pos": "noun",
@@ -11804,11 +12360,15 @@
  },
  "nimble": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes someone who can move quickly and easily."
+  ]
  },
  "nocturnal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Happening, active, or awake during the hours of darkness."
+  ]
  },
  "noisy": {
   "pos": "adjective",
@@ -11818,7 +12378,9 @@
  },
  "nomadic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Living by traveling from one area to another instead of staying permanently."
+  ]
  },
  "nominate": {
   "pos": "verb",
@@ -11987,7 +12549,9 @@
  },
  "obsess": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To think about one thing all the time in an unhealthy way."
+  ]
  },
  "obsession": {
   "pos": "noun",
@@ -11997,7 +12561,9 @@
  },
  "obsolete": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "No longer useful because something newer and better has been invented."
+  ]
  },
  "obstacle": {
   "pos": "noun",
@@ -12007,7 +12573,9 @@
  },
  "obstruct": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To stop something from moving forward by putting a barrier in the way."
+  ]
  },
  "obstructive": {
   "pos": "adjective",
@@ -12120,11 +12688,15 @@
  },
  "offshore": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You can find oil rigs and wind turbines in this location."
+  ]
  },
  "offspring": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The babies or children of a person, animal, or plant."
+  ]
  },
  "often": {
   "pos": "adverb",
@@ -12159,7 +12731,9 @@
  },
  "ongoing": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes something that is still happening right now and has not finished."
+  ]
  },
  "online": {
   "pos": "adjective",
@@ -12169,11 +12743,15 @@
  },
  "onset": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The moment when something difficult or bad starts to happen."
+  ]
  },
  "onward": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Travelers continue their journey to the next city after a short break."
+  ]
  },
  "operate": {
   "pos": "verb",
@@ -12250,7 +12828,9 @@
  },
  "orient": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to find your position or direction in a new place."
+  ]
  },
  "origin": {
   "pos": "noun",
@@ -12336,12 +12916,15 @@
  },
  "outweigh": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "When making a choice, you hope the benefits are greater than the risks."
+  ]
  },
  "overboard": {
   "pos": "adverb",
   "clues": [
-   "This describes falling or jumping from a ship directly into the sea."
+   "This describes falling or jumping from a ship directly into the sea.",
+   "From a ship or boat into the water outside."
   ]
  },
  "overcharge": {
@@ -12389,7 +12972,8 @@
  "overrun": {
   "pos": "verb",
   "clues": [
-   "To fill a place in such large numbers that it causes problems."
+   "To fill a place in such large numbers that it causes problems.",
+   "To fill a place in large numbers, often causing damage."
   ]
  },
  "overseas": {
@@ -12400,7 +12984,9 @@
  },
  "overt": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes actions that are completely open for everyone to see."
+  ]
  },
  "overtake": {
   "pos": "verb",
@@ -12423,7 +13009,8 @@
  "overuse": {
   "pos": "verb",
   "clues": [
-   "To do or employ something so much that it loses its effect."
+   "To do or employ something so much that it loses its effect.",
+   "To put something to work so many times that it gets damaged."
   ]
  },
  "overwhelm": {
@@ -12454,7 +13041,9 @@
  },
  "pacify": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to make someone calm and quiet when they are angry."
+  ]
  },
  "packed": {
   "pos": "adjective",
@@ -12522,7 +13111,9 @@
  },
  "paradigm": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "It is a perfect example that shows how something works."
+  ]
  },
  "paralyse": {
   "pos": "verb",
@@ -12643,7 +13234,9 @@
  },
  "pathological": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Relating to a disease, or being extreme and unreasonable due to illness."
+  ]
  },
  "patriot": {
   "pos": "noun",
@@ -12654,7 +13247,9 @@
  },
  "patriotism": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A strong feeling of love and pride for your own country."
+  ]
  },
  "patrol": {
   "pos": "verb",
@@ -12804,7 +13399,9 @@
  },
  "perilous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is extremely unsafe and full of hazards."
+  ]
  },
  "perish": {
   "pos": "verb",
@@ -12826,7 +13423,9 @@
  },
  "perpetuate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make a bad situation, belief, or system continue for a long time."
+  ]
  },
  "perplex": {
   "pos": "verb",
@@ -12874,7 +13473,9 @@
  },
  "pervasive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that spreads everywhere and affects everything."
+  ]
  },
  "pessimist": {
   "pos": "noun",
@@ -12903,7 +13504,9 @@
  },
  "phonetic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You see these symbols in a dictionary to help you pronounce a word."
+  ]
  },
  "phyllo": {
   "pos": "noun",
@@ -12943,7 +13546,9 @@
  },
  "pillage": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To steal things from a place using force, especially during a war."
+  ]
  },
  "pillowcase": {
   "pos": "noun",
@@ -12953,7 +13558,9 @@
  },
  "pinpoint": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To find or show the exact position of something on a map."
+  ]
  },
  "pioneer": {
   "pos": "noun",
@@ -12965,7 +13572,8 @@
  "pipeline": {
   "pos": "noun",
   "clues": [
-   "This long underground tube carries oil or gas across a country."
+   "This long underground tube carries oil or gas across a country.",
+   "A long line of large underground tubes used to carry liquids."
   ]
  },
  "pity": {
@@ -12976,7 +13584,9 @@
  },
  "pivotal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A captain making a great decision during a final match is a key moment."
+  ]
  },
  "place": {
   "pos": "noun",
@@ -12987,7 +13597,9 @@
  },
  "plague": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To continuously cause worry, pain, or difficulty to someone over time."
+  ]
  },
  "plainly": {
   "pos": "adverb",
@@ -13009,11 +13621,15 @@
  },
  "platypus": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a strange Australian mammal that lays eggs and has a bill."
+  ]
  },
  "plausible": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes an explanation or story that seems likely to be true."
+  ]
  },
  "plausibly": {
   "pos": "adverb",
@@ -13054,7 +13670,9 @@
  },
  "plow": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To dig and turn over the soil using a heavy farm tool."
+  ]
  },
  "pluck": {
   "pos": "verb",
@@ -13082,7 +13700,9 @@
  },
  "poetic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes something written with beautiful, artistic, and emotional language."
+  ]
  },
  "poignant": {
   "pos": "adjective",
@@ -13099,7 +13719,8 @@
  "poisonous": {
   "pos": "adjective",
   "clues": [
-   "Eating this type of plant or wild berry can make you very sick."
+   "Eating this type of plant or wild berry can make you very sick.",
+   "Some wild mushrooms in the forest are like this."
   ]
  },
  "polar": {
@@ -13140,7 +13761,9 @@
  },
  "populace": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "All the ordinary people who live in a specific country or city."
+  ]
  },
  "popular": {
   "pos": "adjective",
@@ -13210,7 +13833,9 @@
  },
  "potent": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A chemist might create this kind of medicine to cure diseases."
+  ]
  },
  "potential": {
   "pos": "adjective",
@@ -13306,12 +13931,15 @@
  },
  "predation": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Biologists study this relationship between wolves and deer in the forest."
+  ]
  },
  "predecessor": {
   "pos": "noun",
   "clues": [
-   "This is the person who had a job or position before you."
+   "This is the person who had a job or position before you.",
+   "A newly elected president might talk about the previous leader."
   ]
  },
  "predict": {
@@ -13383,19 +14011,27 @@
  },
  "prehistoric": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Related to the ancient time before people wrote things down."
+  ]
  },
  "preliminary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Happening before a more important action or event to prepare."
+  ]
  },
  "premature": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Doctors use this for babies born before their expected date."
+  ]
  },
  "preoccupy": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To take up all of someone's attention so they think of nothing else."
+  ]
  },
  "prepare": {
   "pos": "verb",
@@ -13448,7 +14084,9 @@
  },
  "prestigious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is highly respected and admired by everyone."
+  ]
  },
  "presume": {
   "pos": "verb",
@@ -13507,7 +14145,9 @@
  },
  "prey": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A mouse is this when a hungry cat is nearby."
+  ]
  },
  "priceless": {
   "pos": "adjective",
@@ -13536,7 +14176,9 @@
  },
  "principal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes the most important or main part of something."
+  ]
  },
  "print": {
   "pos": "verb",
@@ -13564,7 +14206,9 @@
  },
  "pristine": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Extremely clean, fresh, and looking like it is completely new."
+  ]
  },
  "private": {
   "pos": "adjective",
@@ -13648,7 +14292,9 @@
  },
  "proficient": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes someone who is very skilled and experienced at a task."
+  ]
  },
  "profile": {
   "pos": "noun",
@@ -13696,7 +14342,9 @@
  },
  "proliferate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To multiply or grow in number very quickly."
+  ]
  },
  "prolong": {
   "pos": "verb",
@@ -13737,11 +14385,15 @@
  },
  "prone": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes having a natural tendency to experience something bad or negative."
+  ]
  },
  "propagate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To spread opinions, lies, or plants to a wider area."
+  ]
  },
  "propel": {
   "pos": "verb",
@@ -13777,7 +14429,8 @@
  "proponent": {
   "pos": "noun",
   "clues": [
-   "This is a person who publicly supports an idea, plan, or belief."
+   "This is a person who publicly supports an idea, plan, or belief.",
+   "An environmental activist is this for clean energy laws."
   ]
  },
  "proportion": {
@@ -13812,7 +14465,9 @@
  },
  "prospective": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Describing someone who is likely to do or buy something in the future."
+  ]
  },
  "prosper": {
   "pos": "verb",
@@ -13872,7 +14527,9 @@
  },
  "provincial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "People who live in small, quiet countryside towns have this lifestyle."
+  ]
  },
  "provisional": {
   "pos": "adjective",
@@ -13894,23 +14551,33 @@
  },
  "prowess": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is great skill, ability, or bravery in a specific activity."
+  ]
  },
  "proximity": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The state of being very near to something in space or time."
+  ]
  },
  "pseudo": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that looks real but is actually false or fake."
+  ]
  },
  "psychiatric": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A doctor helps a patient who is suffering from severe depression."
+  ]
  },
  "psychic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having special mental abilities that cannot be explained by science."
+  ]
  },
  "public": {
   "pos": "adjective",
@@ -13978,7 +14645,9 @@
  },
  "pupil": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A young person who is learning in a school."
+  ]
  },
  "purchase": {
   "pos": "verb",
@@ -14061,7 +14730,9 @@
  },
  "racial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with the group of people that someone belongs to."
+  ]
  },
  "radiate": {
   "pos": "verb",
@@ -14077,7 +14748,9 @@
  },
  "radical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a very big change that affects the most important parts."
+  ]
  },
  "radioactive": {
   "pos": "adjective",
@@ -14167,7 +14840,9 @@
  },
  "rationale": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A manager must explain this when they make a big company change."
+  ]
  },
  "ravage": {
   "pos": "verb",
@@ -14189,7 +14864,9 @@
  },
  "reactive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Acting only after something has already happened."
+  ]
  },
  "read": {
   "pos": "verb",
@@ -14256,7 +14933,9 @@
  },
  "rebound": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To hit a hard surface and quickly bounce back in the opposite direction."
+  ]
  },
  "recall": {
   "pos": "verb",
@@ -14266,7 +14945,9 @@
  },
  "recast": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To change the form or organization of something to make it better."
+  ]
  },
  "recede": {
   "pos": "verb",
@@ -14313,7 +14994,9 @@
  },
  "reciprocal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Done or given by both sides to each other."
+  ]
  },
  "recite": {
   "pos": "verb",
@@ -14408,7 +15091,9 @@
  },
  "recur": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To happen more than once or keep appearing at different times."
+  ]
  },
  "recurrent": {
   "pos": "adjective",
@@ -14430,11 +15115,15 @@
  },
  "redeem": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To do something good to make people forget your past mistakes."
+  ]
  },
  "redirect": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to send someone or something to a different destination."
+  ]
  },
  "rediscover": {
   "pos": "verb",
@@ -14487,11 +15176,15 @@
  },
  "reforest": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To plant new trees in an area where a forest was destroyed."
+  ]
  },
  "reform": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to change an existing system to make it better."
+  ]
  },
  "refrain": {
   "pos": "verb",
@@ -14544,11 +15237,15 @@
  },
  "regardless": {
   "pos": "adverb",
-  "clues": []
+  "clues": [
+   "Doing something anyway, without being stopped by difficulties or warnings."
+  ]
  },
  "regime": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a particular government, especially one that is very strict."
+  ]
  },
  "region": {
   "pos": "noun",
@@ -14811,7 +15508,9 @@
  },
  "remote": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a place that is far away from towns or cities."
+  ]
  },
  "remove": {
   "pos": "verb",
@@ -14851,7 +15550,9 @@
  },
  "repay": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "You do this after a friend lends you cash for lunch."
+  ]
  },
  "repeat": {
   "pos": "verb",
@@ -14869,7 +15570,8 @@
  "repetitive": {
   "pos": "adjective",
   "clues": [
-   "This describes an action that happens again and again, often becoming very boring."
+   "This describes an action that happens again and again, often becoming very boring.",
+   "Factory workers who do the same movement all day have this job."
   ]
  },
  "replace": {
@@ -14892,7 +15594,9 @@
  },
  "replicate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to copy or repeat something exactly."
+  ]
  },
  "reply": {
   "pos": "verb",
@@ -15000,7 +15704,9 @@
  },
  "residential": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes an area where people live rather than work or shop."
+  ]
  },
  "residual": {
   "pos": "adjective",
@@ -15016,7 +15722,9 @@
  },
  "resilient": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Able to quickly become strong, healthy, or happy again after a difficult time."
+  ]
  },
  "resist": {
   "pos": "verb",
@@ -15083,7 +15791,9 @@
  },
  "respiratory": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with the process of taking air into your lungs."
+  ]
  },
  "respond": {
   "pos": "verb",
@@ -15159,7 +15869,9 @@
  },
  "resurgence": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A sudden increase in the popularity or activity of something again."
+  ]
  },
  "retain": {
   "pos": "verb",
@@ -15175,7 +15887,9 @@
  },
  "retard": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To slow down the development or progress of something."
+  ]
  },
  "retire": {
   "pos": "verb",
@@ -15191,15 +15905,21 @@
  },
  "retrieve": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A dog does this when you throw a stick into the water."
+  ]
  },
  "retrograde": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Astronomers use this to describe planets that seem to travel backward."
+  ]
  },
  "retrospect": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You use this when you realize a past mistake was actually useful."
+  ]
  },
  "return": {
   "pos": "verb",
@@ -15289,7 +16009,9 @@
  },
  "revulsion": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You might feel this when you see a giant insect in your food."
+  ]
  },
  "reward": {
   "pos": "verb",
@@ -15359,7 +16081,9 @@
  },
  "roam": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To walk or travel around a large area without a clear plan."
+  ]
  },
  "rock": {
   "pos": "noun",
@@ -15407,7 +16131,9 @@
  },
  "rough": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Not smooth or flat to the touch."
+  ]
  },
  "roughly": {
   "pos": "adverb",
@@ -15429,7 +16155,9 @@
  },
  "rudimentary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is very basic and not highly developed."
+  ]
  },
  "rural": {
   "pos": "adjective",
@@ -15488,7 +16216,9 @@
  },
  "salient": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A good summary will only include the main points of a long text."
+  ]
  },
  "saloon": {
   "pos": "noun",
@@ -15531,7 +16261,9 @@
  },
  "sanitary": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Doctors need these conditions in an operating room to keep patients safe."
+  ]
  },
  "sardine": {
   "pos": "noun",
@@ -15553,7 +16285,9 @@
  },
  "saturate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make something completely wet so it cannot hold any more liquid."
+  ]
  },
  "sauce": {
   "pos": "noun",
@@ -15587,7 +16321,9 @@
  },
  "savvy": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A modern teenager who knows how to fix any smartphone or computer."
+  ]
  },
  "scammer": {
   "pos": "noun",
@@ -15621,7 +16357,9 @@
  },
  "scent": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "You can smell this when you walk past a bakery or flower shop."
+  ]
  },
  "scheme": {
   "pos": "noun",
@@ -15631,7 +16369,9 @@
  },
  "scholarly": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You often find this kind of writing in university libraries."
+  ]
  },
  "scholarship": {
   "pos": "noun",
@@ -15691,7 +16431,9 @@
  },
  "scrutiny": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "The careful and detailed examination of something."
+  ]
  },
  "seafood": {
   "pos": "noun",
@@ -15719,7 +16461,9 @@
  },
  "seclude": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A writer might do this to themselves in a quiet cabin to work."
+  ]
  },
  "second": {
   "pos": "adjective",
@@ -15736,11 +16480,15 @@
  },
  "secrete": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Your skin does this to sweat when you are very hot."
+  ]
  },
  "secretive": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a person who likes to hide their thoughts, feelings, or plans."
+  ]
  },
  "section": {
   "pos": "noun",
@@ -15786,11 +16534,15 @@
  },
  "segregate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To keep different groups of people or things apart from each other."
+  ]
  },
  "seismic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Connected with the sudden shaking and movement of the ground."
+  ]
  },
  "seldom": {
   "pos": "adverb",
@@ -15836,7 +16588,9 @@
  },
  "seminal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Containing important new ideas that influence later work very strongly."
+  ]
  },
  "send": {
   "pos": "verb",
@@ -15853,7 +16607,9 @@
  },
  "senile": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having a weak mind and memory loss because of being very old."
+  ]
  },
  "senior": {
   "pos": "adjective",
@@ -15894,12 +16650,15 @@
  "sensory": {
   "pos": "adjective",
   "clues": [
-   "This describes anything connected to physical feelings like sight, hearing, and touch."
+   "This describes anything connected to physical feelings like sight, hearing, and touch.",
+   "Connected with the physical abilities of sight, hearing, touch, smell, and taste."
   ]
  },
  "sentiment": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Politicians analyze this to understand how the public feels about a new law."
+  ]
  },
  "separate": {
   "pos": "adjective",
@@ -15910,7 +16669,9 @@
  },
  "sequel": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Filmmakers make this when the first movie is a huge success."
+  ]
  },
  "serious": {
   "pos": "adjective",
@@ -16036,7 +16797,9 @@
  },
  "sheer": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This is used to emphasize that something is pure or complete."
+  ]
  },
  "shelter": {
   "pos": "verb",
@@ -16052,7 +16815,9 @@
  },
  "shipwreck": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is the broken remains of a vessel destroyed at sea."
+  ]
  },
  "shock": {
   "pos": "verb",
@@ -16081,7 +16846,8 @@
  "shorten": {
   "pos": "verb",
   "clues": [
-   "To make something less long in distance, size, or time."
+   "To make something less long in distance, size, or time.",
+   "To reduce the length or duration of something."
   ]
  },
  "should": {
@@ -16206,7 +16972,9 @@
  },
  "simultaneous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Happening or existing at the very same moment."
+  ]
  },
  "singer": {
   "pos": "noun",
@@ -16236,7 +17004,9 @@
  },
  "situate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To put something in a particular position or place."
+  ]
  },
  "situation": {
   "pos": "noun",
@@ -16266,7 +17036,8 @@
  "skeletal": {
   "pos": "adjective",
   "clues": [
-   "This describes things related to the frame of bones inside a body."
+   "This describes things related to the frame of bones inside a body.",
+   "Connected with the structure of bones inside a body."
   ]
  },
  "skiing": {
@@ -16496,7 +17267,9 @@
  },
  "solder": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "An electrician does this when fixing wires inside a radio."
+  ]
  },
  "sole": {
   "pos": "adjective",
@@ -16524,11 +17297,15 @@
  },
  "solstice": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is the day with either the most or least daylight."
+  ]
  },
  "soluble": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Sugar and salt are this when you stir them into hot tea."
+  ]
  },
  "solvable": {
   "pos": "adjective",
@@ -16603,7 +17380,9 @@
  },
  "sparing": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Using or giving only a very small amount of something."
+  ]
  },
  "spark": {
   "pos": "verb",
@@ -16613,7 +17392,9 @@
  },
  "spatial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something relating to the size, position, or area of things."
+  ]
  },
  "speak": {
   "pos": "verb",
@@ -16649,7 +17430,9 @@
  },
  "spectacle": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is an exciting and impressive public event or show."
+  ]
  },
  "spectacular": {
   "pos": "adjective",
@@ -16716,7 +17499,8 @@
  "spinal": {
   "pos": "adjective",
   "clues": [
-   "This describes things related to the long row of bones in your back."
+   "This describes things related to the long row of bones in your back.",
+   "Doctors check this area when a patient has severe back pain."
   ]
  },
  "spiritual": {
@@ -16777,7 +17561,9 @@
  },
  "spur": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A coach might say inspiring words to do this to their team."
+  ]
  },
  "squash": {
   "pos": "verb",
@@ -16829,7 +17615,9 @@
  },
  "stake": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a strong, pointed piece of wood pushed into the ground."
+  ]
  },
  "stall": {
   "pos": "noun",
@@ -16845,7 +17633,9 @@
  },
  "stance": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is your official opinion or public attitude toward a specific topic."
+  ]
  },
  "stand": {
   "pos": "verb",
@@ -16855,7 +17645,9 @@
  },
  "staple": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A basic food that people eat regularly in large amounts."
+  ]
  },
  "starch": {
   "pos": "noun",
@@ -16866,7 +17658,8 @@
  "starchy": {
   "pos": "adjective",
   "clues": [
-   "This describes foods like potatoes, rice, and bread that give you energy."
+   "This describes foods like potatoes, rice, and bread that give you energy.",
+   "This describes food that contains a large amount of a specific white carbohydrate."
   ]
  },
  "startle": {
@@ -16956,7 +17749,8 @@
  "sticky": {
   "pos": "adjective",
   "clues": [
-   "This describes things like glue or wet honey that attach easily to fingers."
+   "This describes things like glue or wet honey that attach easily to fingers.",
+   "Made of a substance that easily attaches to other surfaces."
   ]
  },
  "still": {
@@ -16979,7 +17773,9 @@
  },
  "stimulus": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Something that makes a person or animal react or start doing something."
+  ]
  },
  "sting": {
   "pos": "verb",
@@ -17026,7 +17822,8 @@
  "storehouse": {
   "pos": "noun",
   "clues": [
-   "This is a large building used for keeping goods or supplies safe."
+   "This is a large building used for keeping goods or supplies safe.",
+   "This is a large building where goods are kept for future use."
   ]
  },
  "storm": {
@@ -17079,7 +17876,9 @@
  },
  "striking": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Very unusual, beautiful, or easy to notice."
+  ]
  },
  "strive": {
   "pos": "verb",
@@ -17131,11 +17930,15 @@
  },
  "stumble": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To hit your foot against something and almost fall down while walking."
+  ]
  },
  "stunning": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You might say this when you see a beautiful sunset over the ocean."
+  ]
  },
  "stutter": {
   "pos": "verb",
@@ -17157,11 +17960,15 @@
  },
  "sublime": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Extremely beautiful, excellent, or grand in a way that inspires you."
+  ]
  },
  "subliminal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes an image or sound that influences your mind without you realizing."
+  ]
  },
  "submit": {
   "pos": "verb",
@@ -17348,15 +18155,21 @@
  },
  "superb": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is of the highest quality."
+  ]
  },
  "superficial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that only affects the very top layer of something."
+  ]
  },
  "superfluous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "More than what is needed or wanted."
+  ]
  },
  "superior": {
   "pos": "adjective",
@@ -17372,7 +18185,9 @@
  },
  "supernatural": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things that cannot be explained by science or physical laws."
+  ]
  },
  "supersede": {
   "pos": "verb",
@@ -17475,7 +18290,9 @@
  },
  "surround": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A high wall might do this to a secret garden."
+  ]
  },
  "survive": {
   "pos": "verb",
@@ -17568,7 +18385,8 @@
  "sweeten": {
   "pos": "verb",
   "clues": [
-   "To add sugar or honey to a drink to improve its taste."
+   "To add sugar or honey to a drink to improve its taste.",
+   "To add sugar or honey to make food taste better."
   ]
  },
  "swell": {
@@ -17598,7 +18416,9 @@
  },
  "swivel": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Office workers often do this in their comfortable chairs to face different desks."
+  ]
  },
  "swollen": {
   "pos": "adjective",
@@ -17609,7 +18429,8 @@
  "sympathetic": {
   "pos": "adjective",
   "clues": [
-   "This kind of person shows kind understanding to someone who is sad."
+   "This kind of person shows kind understanding to someone who is sad.",
+   "This describes showing that you understand and care about someone else's suffering."
   ]
  },
  "synchronize": {
@@ -17620,7 +18441,9 @@
  },
  "synchronous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Occurring at the exact same moment or speed."
+  ]
  },
  "synonym": {
   "pos": "noun",
@@ -17643,7 +18466,8 @@
  "systematic": {
   "pos": "adjective",
   "clues": [
-   "This describes doing something in a very organized and careful way."
+   "This describes doing something in a very organized and careful way.",
+   "Done in a very organized way using a clear method."
   ]
  },
  "taboo": {
@@ -17795,7 +18619,9 @@
  },
  "tenet": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A basic belief or principle that is accepted as true."
+  ]
  },
  "tentative": {
   "pos": "adjective",
@@ -17811,11 +18637,15 @@
  },
  "terminate": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A boss fires an employee and ends their work contract."
+  ]
  },
  "terrestrial": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Biologists use this to describe animals like lions, horses, and elephants."
+  ]
  },
  "terrible": {
   "pos": "adjective",
@@ -17849,7 +18679,9 @@
  },
  "texture": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is how a surface feels when you touch it."
+  ]
  },
  "theme": {
   "pos": "noun",
@@ -17878,7 +18710,9 @@
  },
  "thereby": {
   "pos": "adverb",
-  "clues": []
+  "clues": [
+   "You use this in formal writing to connect an action and its effect."
+  ]
  },
  "thing": {
   "pos": "noun",
@@ -17927,7 +18761,9 @@
  },
  "thorny": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Difficult to deal with because there are many complicated problems."
+  ]
  },
  "thorough": {
   "pos": "adjective",
@@ -18016,7 +18852,9 @@
  },
  "tier": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is one of several levels or rows placed one above another."
+  ]
  },
  "tightly": {
   "pos": "adverb",
@@ -18038,7 +18876,9 @@
  },
  "timber": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Trees that are cut down and prepared for building houses or furniture."
+  ]
  },
  "tiring": {
   "pos": "adjective",
@@ -18097,7 +18937,9 @@
  },
  "tonsil": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A doctor looks at these when you have a sore throat."
+  ]
  },
  "tortilla": {
   "pos": "noun",
@@ -18242,12 +19084,15 @@
  "traverse": {
   "pos": "verb",
   "clues": [
-   "To move across a wide or difficult area from one side to the other."
+   "To move across a wide or difficult area from one side to the other.",
+   "Explorers often do this to high mountains, deep valleys, or hot deserts."
   ]
  },
  "treacherous": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes something that is extremely dangerous, especially because of hidden hazards."
+  ]
  },
  "tread": {
   "pos": "verb",
@@ -18306,11 +19151,15 @@
  },
  "tribal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You might see this kind of dance during traditional ceremonies in the rainforest."
+  ]
  },
  "tribute": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Something you do or say to show respect for a famous person."
+  ]
  },
  "trick": {
   "pos": "verb",
@@ -18375,7 +19224,9 @@
  },
  "tubular": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes an object that has a long, hollow, round shape."
+  ]
  },
  "tuition": {
   "pos": "noun",
@@ -18391,7 +19242,9 @@
  },
  "turbulence": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Airplane passengers often feel this when flying through thick clouds."
+  ]
  },
  "turkey": {
   "pos": "noun",
@@ -18443,7 +19296,9 @@
  },
  "tyrannical": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A dictator who locks up anyone who disagrees with him is this."
+  ]
  },
  "ubiquitous": {
   "pos": "adjective",
@@ -18465,11 +19320,15 @@
  },
  "ultraviolet": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Relating to invisible light from the sun that can burn your skin."
+  ]
  },
  "unanswered": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes a question or letter that has received no reply."
+  ]
  },
  "unattractive": {
   "pos": "adjective",
@@ -18503,7 +19362,9 @@
  },
  "unchanging": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes something that stays exactly the same over a long time."
+  ]
  },
  "uncontrolled": {
   "pos": "adjective",
@@ -18513,7 +19374,9 @@
  },
  "uncover": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To find out or show something that was hidden or secret."
+  ]
  },
  "undergo": {
   "pos": "verb",
@@ -18542,11 +19405,15 @@
  },
  "underproduce": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To make a smaller amount of goods than people actually want."
+  ]
  },
  "underscore": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "A speaker might use a loud voice to do this to their point."
+  ]
  },
  "understand": {
   "pos": "verb",
@@ -18568,23 +19435,33 @@
  },
  "undetermined": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Police might say the cause of a fire is this during an investigation."
+  ]
  },
  "undeveloped": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Not having grown, progressed, or built up to a complete state."
+  ]
  },
  "undoubted": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Accepted by everyone as true, real, or certain."
+  ]
  },
  "undue": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "More than is necessary, reasonable, or acceptable."
+  ]
  },
  "unearth": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "Archaeologists do this when they search for ancient bones or old coins."
+  ]
  },
  "uneasy": {
   "pos": "adjective",
@@ -18624,7 +19501,9 @@
  },
  "unfold": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To open something that was closed, or to reveal a story slowly."
+  ]
  },
  "unhealthy": {
   "pos": "adjective",
@@ -18634,7 +19513,9 @@
  },
  "uniform": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Police officers, soldiers, and school children wear this."
+  ]
  },
  "unify": {
   "pos": "verb",
@@ -18650,7 +19531,9 @@
  },
  "unintended": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Happening by accident rather than because of a conscious choice."
+  ]
  },
  "unique": {
   "pos": "adjective",
@@ -18702,11 +19585,15 @@
  },
  "unpack": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to take clothes and items out of a suitcase."
+  ]
  },
  "unrealistic": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Based on hopes or dreams rather than facts and what is possible."
+  ]
  },
  "unrelated": {
   "pos": "adjective",
@@ -18759,11 +19646,15 @@
  },
  "unwelcome": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You feel this when an annoying guest arrives at your house uninvited."
+  ]
  },
  "upheaval": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "This is a sudden, big change that causes a lot of trouble."
+  ]
  },
  "uphold": {
   "pos": "verb",
@@ -18830,7 +19721,9 @@
  },
  "usher": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "This means to politely guide or lead someone to a specific place."
+  ]
  },
  "usually": {
   "pos": "adverb",
@@ -18890,7 +19783,9 @@
  },
  "vantage": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "A photographer on a high rooftop has this for taking city photos."
+  ]
  },
  "vaporize": {
   "pos": "verb",
@@ -18924,7 +19819,9 @@
  },
  "vascular": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things connected to the tubes that carry blood in the body."
+  ]
  },
  "vast": {
   "pos": "adjective",
@@ -18964,7 +19861,9 @@
  },
  "verbal": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Expressed in spoken words rather than written down or acted out."
+  ]
  },
  "verify": {
   "pos": "verb",
@@ -19010,7 +19909,9 @@
  },
  "vibrant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "You can experience this atmosphere at a busy street festival or market."
+  ]
  },
  "vibrate": {
   "pos": "verb",
@@ -19027,7 +19928,9 @@
  },
  "vicious": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "It describes someone or something that is very violent, cruel, and dangerous."
+  ]
  },
  "victim": {
   "pos": "noun",
@@ -19049,11 +19952,15 @@
  },
  "viewpoint": {
   "pos": "noun",
-  "clues": []
+  "clues": [
+   "Two people have different opinions about a movie because of their personal experiences."
+  ]
  },
  "vigilant": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Watching very carefully to notice any signs of danger or trouble."
+  ]
  },
  "vigorous": {
   "pos": "adjective",
@@ -19130,7 +20037,9 @@
  },
  "vocational": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A student goes to school to learn how to fix cars."
+  ]
  },
  "voicemail": {
   "pos": "noun",
@@ -19140,7 +20049,9 @@
  },
  "volatile": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "A person with a very angry temper might suddenly start shouting."
+  ]
  },
  "volcano": {
   "pos": "noun",
@@ -19223,7 +20134,9 @@
  },
  "warlike": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Friendly to conflict and very ready to fight or start battles."
+  ]
  },
  "warm": {
   "pos": "adjective",
@@ -19271,7 +20184,8 @@
  "waterlogged": {
   "pos": "adjective",
   "clues": [
-   "This describes ground or wood that is completely filled and soaked with liquid."
+   "This describes ground or wood that is completely filled and soaked with liquid.",
+   "A soccer field becomes this after a heavy summer rain."
   ]
  },
  "waterproof": {
@@ -19391,7 +20305,9 @@
  },
  "whereby": {
   "pos": "conjunction",
-  "clues": []
+  "clues": [
+   "This word means by which or through which system something happens."
+  ]
  },
  "whim": {
   "pos": "noun",
@@ -19419,7 +20335,9 @@
  },
  "wholesome": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes things that are good for your body, mind, or morals."
+  ]
  },
  "wide": {
   "pos": "adjective",
@@ -19448,7 +20366,8 @@
  "wilderness": {
   "pos": "noun",
   "clues": [
-   "A large area of natural land where humans do not live or build."
+   "A large area of natural land where humans do not live or build.",
+   "A deep forest or mountain range where no people live."
   ]
  },
  "wildlife": {
@@ -19581,7 +20500,9 @@
  },
  "worthy": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Having enough value to deserve respect, attention, or support."
+  ]
  },
  "wrap": {
   "pos": "noun",
@@ -19592,7 +20513,9 @@
  },
  "wreak": {
   "pos": "verb",
-  "clues": []
+  "clues": [
+   "To cause great harm, damage, or trouble to something."
+  ]
  },
  "wring": {
   "pos": "verb",
@@ -19629,7 +20552,9 @@
  },
  "wrought": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "Shaped or decorated by hammering metal."
+  ]
  },
  "yawn": {
   "pos": "verb",
@@ -19657,7 +20582,9 @@
  },
  "youthful": {
   "pos": "adjective",
-  "clues": []
+  "clues": [
+   "This describes having the fresh and active look of someone who is young."
+  ]
  },
  "yummy": {
   "pos": "adjective",
