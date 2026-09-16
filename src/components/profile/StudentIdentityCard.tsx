@@ -33,7 +33,7 @@ export function Avatar({ profile, size }: { profile: UserProfile; size: number }
   );
 }
 
-/* Photo, name, username and membership, with Edit Profile - the way into
+/* Photo, name and membership, with Edit Profile - the way into
    Personal Information (name, username and profile photo). A quiet row: the
    photo in a thin gold ring with an edit badge, the name leading, and two
    matching chips for the plan and for editing. */
@@ -79,10 +79,7 @@ export default function StudentIdentityCard({ profile, onEdit }: { profile: User
         <p className="text-[22px] font-semibold leading-tight truncate" style={{ color: C.text }}>
           {profile.name}
         </p>
-        <p className="text-[14px] leading-tight truncate mt-1" style={{ color: C.muted }}>
-          {profile.username}
-        </p>
-        <div className="flex items-center gap-1.5 mt-2.5">
+        <div className="flex items-center gap-1.5 mt-3">
           <span
             className="inline-flex items-center gap-1 h-[26px] rounded-full px-2.5 text-[10.5px] font-semibold tracking-[0.08em] uppercase border whitespace-nowrap shrink-0"
             style={
