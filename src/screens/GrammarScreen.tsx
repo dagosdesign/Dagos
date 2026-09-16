@@ -428,27 +428,27 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
       </div>
 
       {/* MIXED GRAMMAR TEST: right under the Grammar heading; tap to open the five tests */}
-      <div className="bg-white/[0.02] rounded-3xl border border-[#e3b553]/25 shadow-lg overflow-hidden">
+      <div className="bg-white/[0.02] rounded-2xl border border-[#e3b553]/25 shadow-md overflow-hidden">
         <button
           type="button"
           onClick={() => setMixedOpen(o => !o)}
           aria-expanded={mixedOpen}
-          className="w-full flex items-center gap-2.5 p-5 sm:p-6 text-left cursor-pointer"
+          className="w-full flex items-center gap-2.5 px-4 py-3 text-left cursor-pointer"
         >
-          <div className="p-2 bg-[#e3b553]/15 text-[#e3b553] border border-[#e3b553]/30 rounded-xl">
-            <Shuffle className="w-5 h-5" />
+          <div className="p-1.5 bg-[#e3b553]/15 text-[#e3b553] border border-[#e3b553]/30 rounded-lg">
+            <Shuffle className="w-4 h-4" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="text-[16px] font-bold tracking-[0.1em] text-[#f2c463] uppercase whitespace-nowrap truncate">Mixed Grammar Test</h3>
-            <p className="text-[12px] text-white/60 font-mono">5 test · 250 soru · tüm konular karışık</p>
+            <h3 className="text-[14px] font-bold tracking-[0.08em] text-[#f2c463] uppercase whitespace-nowrap truncate">Mixed Grammar Test</h3>
+            <p className="text-[11px] text-white/55 font-mono">5 test · 250 soru · tüm konular karışık</p>
           </div>
-          <ChevronDown className={`w-5 h-5 text-[#e3b553] shrink-0 transition-transform duration-200 ${mixedOpen ? 'rotate-180' : ''}`} />
+          <ChevronDown className={`w-4 h-4 text-[#e3b553] shrink-0 transition-transform duration-200 ${mixedOpen ? 'rotate-180' : ''}`} />
         </button>
         {mixedOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
-          className="space-y-2.5 px-5 sm:px-6 pb-5 sm:pb-6"
+          className="space-y-2 px-4 pb-4"
         >
           {MIXED_TESTS.map((m, idx) => {
             const count = mixedTests?.[m.id]?.length ?? 0;
@@ -458,18 +458,18 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                 key={m.id}
                 onClick={() => ready && startMixed(m.id)}
                 disabled={!ready}
-                className={`w-full flex items-center gap-3.5 text-left rounded-2xl border px-4 py-3.5 transition-all group ${
+                className={`w-full flex items-center gap-3 text-left rounded-xl border px-3 py-2.5 transition-all group ${
                   ready
                     ? 'bg-gradient-to-b from-[#1a170f] to-[#0d0c08] border-[#e3b553]/35 hover:border-[#e3b553]/70 cursor-pointer'
                     : 'bg-white/[0.01] border-white/[0.05] opacity-40 cursor-not-allowed'
                 }`}
               >
-                <span className="w-7 h-7 rounded-lg bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[12px] font-extrabold flex items-center justify-center shrink-0">
+                <span className="w-6 h-6 rounded-md bg-[#e3b553]/25 border border-[#e3b553]/50 text-[#ffd978] text-[11px] font-extrabold flex items-center justify-center shrink-0">
                   {idx + 1}
                 </span>
                 <span className="flex-1 min-w-0">
-                  <span className="block text-[15px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors">{m.title}</span>
-                  <span className="block text-[11px] text-white/55 font-mono mt-0.5">
+                  <span className="block text-[14px] font-bold text-[#f2c463] group-hover:text-[#ffd978] transition-colors">{m.title}</span>
+                  <span className="block text-[10.5px] text-white/50 font-mono">
                     {ready ? `${count} soru` : mixedTests ? 'hazırlanıyor' : 'yükleniyor'}
                   </span>
                 </span>
