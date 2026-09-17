@@ -256,6 +256,7 @@ export default function GrammarDuelScreen({ onExit, recordQuizXp }: GrammarDuelS
     recordAnswer({
       area: 'grammar',
       concept: grammarConcept(q.topic),
+      subtopic: q.topic,
       correct: ok,
       source: 'Grammar Duel',
       prompt: 'Choose the correct sentence.',

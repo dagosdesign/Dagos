@@ -284,7 +284,7 @@ function ListeningMode({ pool, choicePool, playPronunciation, recordQuizXp, onEx
                   area: 'vocabulary',
                   concept: VOCABULARY.confused,
                   correct: opt === current.turkishMeaning,
-                  source: 'Word Practice',
+                  source: 'Listening',
                   prompt: `The meaning of "${current.word}"`,
                   given: opt,
                   expected: current.turkishMeaning,

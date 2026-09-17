@@ -15,7 +15,7 @@ import { useUserProfile } from '../../lib/userProfile';
 
 /* The three Profile intelligence features, one analysis of the answer record:
    AI Learning Insight   - what Lexistencehub understands about the learning
-   Weakness Detector     - what the student is struggling with now
+   Performance Analysis  - strengths and areas to develop (PerformanceAnalysis.tsx)
    Mistake Memory        - which mistakes keep coming back, and which are overcome */
 
 export const INSIGHT_MIN_ANSWERS = 20;
@@ -196,66 +196,6 @@ export function InsightPage({ onBack }: { onBack: () => void }) {
               })}
             </Card>
           )}
-        </>
-      )}
-    </SubPage>
-  );
-}
-
-/* ---------------- Weakness Detector ---------------- */
-
-export function WeaknessPage({
-  onBack,
-  onPractice,
-}: {
-  onBack: () => void;
-  onPractice: (key: string) => void;
-}) {
-  const analysis = useLearningAnalysis();
-  const list = analysis.weaknesses;
-
-  return (
-    <SubPage title="Weakness Detector" subtitle="What you are currently struggling with" onBack={onBack}>
-      {list.length === 0 ? (
-        <EmptyState
-          title={analysis.totalAnswers < INSIGHT_MIN_ANSWERS ? 'Not enough answers yet' : 'No recurring weakness detected'}
-          body={
-            analysis.totalAnswers < INSIGHT_MIN_ANSWERS
-              ? `A weakness is only shown when your answers prove a real pattern. ${analysis.totalAnswers} answers are recorded so far.`
-              : 'Your recent answers show no topic with repeated errors. Single mistakes are not treated as weaknesses.'
-          }
-        />
-      ) : (
-        <>
-          <p className="px-1 text-[13px]" style={{ color: C.muted }}>
-            Areas That Need Attention
-          </p>
-          <div className="space-y-3">
-            {list.map((c, i) => (
-              <div key={c.key}>
-              <Card className="p-5 space-y-4">
-                <div className="flex items-start gap-3.5">
-                  <span className="text-[22px] font-semibold leading-none w-6 shrink-0" style={{ color: C.gold }}>
-                    {i + 1}
-                  </span>
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <p className="text-[17px] font-semibold leading-snug break-words" style={{ color: C.text }}>
-                      {c.concept}
-                    </p>
-                    <p className="text-[13px] leading-snug" style={{ color: C.muted }}>
-                      {AREA_LABEL[c.area]} · {pct(c.weightedAccuracy)}% accuracy · {c.wrongs} mistakes in {c.attempts} answers
-                    </p>
-                    <p className="text-[12px]" style={{ color: C.muted }}>
-                      Evidence: {c.weakness!.confidence >= 0.75 ? 'strong' : 'moderate'}
-                      {c.status === 'improving' ? ' · improving recently' : ''}
-                    </p>
-                  </div>
-                </div>
-                <GoldButton onClick={() => onPractice(c.key)}>Practice This</GoldButton>
-              </Card>
-              </div>
-            ))}
-          </div>
         </>
       )}
     </SubPage>
@@ -458,17 +398,21 @@ export function MistakeDetailPage({
 /* ---------------- Practice This ---------------- */
 
 interface PracticeQuestion {
+  concept?: string;
   question: string;
   options: string[];
   correct: number;
   explanation: string;
 }
 
-export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBack: () => void }) {
+export function PracticePage({ conceptKeys, onBack }: { conceptKeys: string[]; onBack: () => void }) {
   const analysis = useLearningAnalysis();
   const profile = useUserProfile();
-  // The concept as it was when practice began: questions are pitched at that level.
-  const [concept] = useState<ConceptAnalysis | undefined>(() => analysis.concepts.find(x => x.key === conceptKey));
+  // The concepts as they were when practice began: questions are pitched at that level.
+  const [targets] = useState<ConceptAnalysis[]>(() =>
+    conceptKeys.map(k => analysis.concepts.find(x => x.key === k)).filter((c): c is ConceptAnalysis => !!c)
+  );
+  const concept = targets[0] as ConceptAnalysis | undefined;
   const [questions, setQuestions] = useState<PracticeQuestion[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
@@ -477,24 +421,27 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
   const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
-    if (!concept) return;
+    if (!targets.length) return;
     let cancelled = false;
     setQuestions(null);
     setError(null);
     setIndex(0);
     setChosen(null);
     setScore(0);
+    const target = (c: ConceptAnalysis, i: number) => ({
+      area: c.area,
+      concept: c.concept,
+      difficulty: practiceDifficulty(c),
+      examples: c.examples.slice(0, 5).map(e => ({ prompt: e.prompt, given: e.given, expected: e.expected })),
+      items: c.items.map(x => x.item),
+      // The weakest topic comes first and gets the most questions.
+      weight: Math.max(0.2, 1 - c.weightedAccuracy) * (1 - i * 0.15),
+    });
+    const cefr = profile.placementTestCompleted ? profile.level : 'B1';
     fetch('/api/weakness-practice', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        area: concept.area,
-        concept: concept.concept,
-        cefr: profile.placementTestCompleted ? profile.level : 'B1',
-        difficulty: practiceDifficulty(concept),
-        examples: concept.examples.slice(0, 5).map(e => ({ prompt: e.prompt, given: e.given, expected: e.expected })),
-        items: concept.items.map(i => i.item),
-      }),
+      body: JSON.stringify(targets.length > 1 ? { cefr, targets: targets.map(target) } : { cefr, ...target(targets[0], 0) }),
     })
       .then(r => r.json().then(body => ({ ok: r.ok, body })))
       .then(({ ok, body }) => {
@@ -507,7 +454,7 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
       cancelled = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [conceptKey, attempt]);
+  }, [conceptKeys.join('|'), attempt]);
 
   if (!concept) {
     return (
@@ -517,7 +464,9 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
     );
   }
 
-  const now = analysis.concepts.find(x => x.key === conceptKey);
+  const multi = targets.length > 1;
+  const names = targets.map(c => c.concept).join(', ');
+  const now = analysis.concepts.find(x => x.key === concept.key);
   const q = questions?.[index];
   const done = questions && index >= questions.length;
 
@@ -527,9 +476,11 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
     const ok = i === q.correct;
     if (ok) setScore(s => s + 1);
     // Practice answers go back into the record: this is how a weakness is reassessed.
+    // Each answer is recorded under the topic the question practises.
+    const target = targets.find(c => c.concept === q.concept) ?? concept;
     const event: Omit<AnswerEvent, 'at'> = {
-      area: concept.area,
-      concept: concept.concept,
+      area: target.area,
+      concept: target.concept,
       correct: ok,
       source: 'Practice',
       prompt: q.question,
@@ -540,14 +491,18 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
   };
 
   return (
-    <SubPage title="Practice This" subtitle={`${concept.concept} · ${AREA_LABEL[concept.area]}`} onBack={onBack}>
+    <SubPage
+      title={multi ? 'Personalized Practice' : 'Practice This'}
+      subtitle={multi ? names : `${concept.concept} · ${AREA_LABEL[concept.area]}`}
+      onBack={onBack}
+    >
       {error ? (
         <>
           <EmptyState title="Practice is not ready" body={error} />
           <GhostButton onClick={() => setAttempt(a => a + 1)}>Try again</GhostButton>
         </>
       ) : !questions ? (
-        <EmptyState title="Preparing practice…" body={`Questions on ${concept.concept}, at your current level.`} />
+        <EmptyState title="Preparing practice…" body={`Questions on ${names}, at your current level.`} />
       ) : done ? (
         <>
           <Card className="p-6 text-center space-y-2" glow>
@@ -555,15 +510,17 @@ export function PracticePage({ conceptKey, onBack }: { conceptKey: string; onBac
               {score} / {questions.length}
             </p>
             <p className="text-[14px]" style={{ color: C.muted }}>
-              correct on {concept.concept}
+              correct on {multi ? 'your focus topics' : concept.concept}
             </p>
-            {now?.status && (
+            {!multi && now?.status && (
               <div className="pt-2 flex justify-center">
                 <StatusPill status={now.status} />
               </div>
             )}
             <p className="text-[13px] pt-1" style={{ color: C.muted }}>
-              {now?.weakness
+              {multi
+                ? 'Your answers now update your Performance Analysis.'
+                : now?.weakness
                 ? 'Still an area that needs attention - consistent correct answers will clear it.'
                 : 'No longer listed as a weakness.'}
             </p>

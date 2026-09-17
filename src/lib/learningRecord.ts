@@ -22,6 +22,7 @@ export interface AnswerEvent {
   given?: string; // the student's answer
   expected?: string; // the right answer
   item?: string; // the word or sentence the answer was about
+  subtopic?: string; // the finer topic under the concept, e.g. "third conditional" under Conditionals
 }
 
 /* The vocabulary patterns a mistake can belong to. */
@@ -52,7 +53,7 @@ export function recordAnswer(e: Omit<AnswerEvent, 'at'>) {
   const clip = (s?: string) => (s ? s.slice(0, 220) : undefined);
   events = [
     ...events,
-    { ...e, at: Date.now(), prompt: clip(e.prompt), given: clip(e.given), expected: clip(e.expected), item: clip(e.item) },
+    { ...e, at: Date.now(), prompt: clip(e.prompt), given: clip(e.given), expected: clip(e.expected), item: clip(e.item), subtopic: clip(e.subtopic) },
   ].slice(-MAX_EVENTS);
   try {
     localStorage.setItem(KEY, JSON.stringify(events));

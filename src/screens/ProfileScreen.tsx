@@ -22,7 +22,8 @@ import LanguagePage from './profile/LanguagePage';
 import AccountSettingsPage from './profile/AccountSettingsPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
-import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage, WeaknessPage } from './profile/LearningIntelPages';
+import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage } from './profile/LearningIntelPages';
+import { PerformanceAnalysisPage } from './profile/PerformanceAnalysis';
 import { setMembership, signOutProfile, useUserProfile } from '../lib/userProfile';
 
 interface ProfileScreenProps {
@@ -68,9 +69,13 @@ export default function ProfileScreen(props: ProfileScreenProps) {
   // Weakness Detector and Mistake Memory: the concept being reviewed or practised,
   // and where Practice This was started from.
   const [focus, setFocus] = useState<string | null>(null);
-  const [practiceFrom, setPracticeFrom] = useState<ProfilePage>('weakness');
-  const practise = (key: string, from: ProfilePage) => {
-    setFocus(key);
+  const [practiceKeys, setPracticeKeys] = useState<string[]>([]);
+  const [practiceFrom, setPracticeFrom] = useState<ProfilePage>('performance');
+  const practise = (key: string | string[], from: ProfilePage) => {
+    const keys = Array.isArray(key) ? key : [key];
+    if (!keys.length) return;
+    setPracticeKeys(keys);
+    setFocus(keys[0]);
     setPracticeFrom(from);
     open('practice', from);
   };
@@ -94,8 +99,8 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         return <MyProgressPage onBack={back} open={p => open(p, 'progress')} />;
       case 'insight':
         return <InsightPage onBack={() => open('progress')} />;
-      case 'weakness':
-        return <WeaknessPage onBack={() => open('progress')} onPractice={key => practise(key, 'weakness')} />;
+      case 'performance':
+        return <PerformanceAnalysisPage onBack={() => open('progress')} onStartPractice={keys => practise(keys, 'performance')} />;
       case 'mistakes':
         return (
           <MistakeMemoryPage
@@ -111,7 +116,12 @@ export default function ProfileScreen(props: ProfileScreenProps) {
           <MistakeDetailPage conceptKey={focus} onBack={() => open('mistakes')} onPractice={key => practise(key, 'mistake')} />
         ) : null;
       case 'practice':
-        return focus ? <PracticePage conceptKey={focus} onBack={() => open(practiceFrom, practiceFrom === 'mistake' ? 'mistakes' : 'progress')} /> : null;
+        return practiceKeys.length ? (
+          <PracticePage
+            conceptKeys={practiceKeys}
+            onBack={() => open(practiceFrom, practiceFrom === 'mistake' ? 'mistakes' : 'progress')}
+          />
+        ) : null;
       case 'activity':
         return <LearningActivityPage onBack={up} />;
       case 'library':
@@ -124,6 +134,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             srsState={srsState}
             grammarProgress={grammarProgress}
             quizStats={quizStats}
+            onStartPractice={keys => practise(keys, 'statistics')}
           />
         );
       case 'achievements':

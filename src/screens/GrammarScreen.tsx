@@ -228,6 +228,7 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                           ? question.topic
                           : category!.subtopics.find(s => s.id === subId)?.title || lessons?.[subId!]?.title || category!.title
                       ),
+                      subtopic: mixed ? undefined : category!.subtopics.find(s => s.id === subId)?.title,
                       correct: idx === question.correct,
                       source: mixed ? mixed.title : 'Grammar Test',
                       prompt: question.q,

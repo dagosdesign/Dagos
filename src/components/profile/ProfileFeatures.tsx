@@ -1,4 +1,4 @@
-import { ChevronRight, History, Activity, Trophy, TrendingUp, Sparkles, ScanSearch, NotebookPen } from 'lucide-react';
+import { ChevronRight, History, Activity, Trophy, TrendingUp, Sparkles, BarChart3, NotebookPen } from 'lucide-react';
 import { C, Card, MenuList, ProfileMenuItem, SubPage } from './ui';
 import { INSIGHT_MIN_ANSWERS, useLearningInsight } from '../../screens/profile/LearningIntelPages';
 
@@ -9,7 +9,7 @@ export type ProfilePage =
   | 'goals'
   | 'progress'
   | 'insight'
-  | 'weakness'
+  | 'performance'
   | 'mistakes'
   | 'mistake'
   | 'practice'
@@ -57,7 +57,6 @@ export default function MyProgressCard({ onOpen }: { onOpen: () => void }) {
    summary; the detail opens inside. */
 export function MyProgressPage({ onBack, open }: { onBack: () => void; open: (page: ProfilePage) => void }) {
   const { analysis, insight, enough } = useLearningInsight();
-  const weaknesses = analysis.weaknesses.length;
   const s = analysis.summary;
   return (
     <SubPage title="My Progress" subtitle="Learning activity, statistics and achievements" onBack={onBack}>
@@ -77,14 +76,10 @@ export function MyProgressPage({ onBack, open }: { onBack: () => void; open: (pa
           onClick={() => open('insight')}
         />
         <ProfileMenuItem
-          icon={ScanSearch}
-          title="Weakness Detector"
-          subtitle={
-            weaknesses > 0
-              ? `${weaknesses} ${weaknesses === 1 ? 'area needs' : 'areas need'} attention`
-              : 'No recurring weakness detected'
-          }
-          onClick={() => open('weakness')}
+          icon={BarChart3}
+          title="Performance Analysis"
+          subtitle="Your strengths and areas to develop"
+          onClick={() => open('performance')}
         />
         <ProfileMenuItem
           icon={NotebookPen}

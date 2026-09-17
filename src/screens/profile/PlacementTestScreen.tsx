@@ -37,6 +37,7 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
     recordAnswer({
       area: 'grammar',
       concept: grammarConcept(current.topic),
+      subtopic: current.topic,
       correct: choice === current.correct,
       source: 'Check Your Level',
       prompt: current.question,

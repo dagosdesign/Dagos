@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
 import type { ReactNode } from 'react';
-import { Activity, BookOpen, Clock, Flame, Layers, Target } from 'lucide-react';
+import { Activity, BookOpen, Clock, Flame, Layers } from 'lucide-react';
 import { C, Card, SubPage } from '../../components/profile/ui';
 import PlanLimitCard from '../../components/PlanLimitCard';
+import { PerformanceAnalysisSection } from './PerformanceAnalysis';
 import {
   ActivityKind,
   dayKey,
@@ -42,12 +43,14 @@ export default function StatisticsPage({
   srsState,
   grammarProgress,
   quizStats,
+  onStartPractice,
 }: {
   onBack: () => void;
   gamification: GamificationState;
   srsState: SrsState;
   grammarProgress: GrammarProgressState;
   quizStats: { score: number; totalAnswered: number; highStreak: number };
+  onStartPractice: (conceptKeys: string[]) => void;
 }) {
   const profile = useUserProfile();
   const buckets = useLearningTime();
@@ -92,11 +95,6 @@ export default function StatisticsPage({
   const grammarAverage = grammarTests.length
     ? Math.round(grammarTests.reduce((s, p) => s + p.bestScore, 0) / grammarTests.length)
     : null;
-  const weakestTests = Object.entries(grammarProgress)
-    .filter(([, p]) => p.attempts > 0)
-    .sort((a, b) => a[1].bestScore - b[1].bestScore)
-    .slice(0, 4);
-
   const byKind = new Map<ActivityKind, number>();
   for (const e of log) byKind.set(e.kind, (byKind.get(e.kind) ?? 0) + 1);
 
@@ -265,27 +263,7 @@ export default function StatisticsPage({
             </Card>
           </Section>
 
-          <Section title="Grammar Tests to Revisit">
-            <Card className="divide-y divide-[#262626]">
-              {weakestTests.length === 0 ? (
-                <p className="p-5 text-[14px]" style={{ color: C.muted }}>
-                  Complete a few grammar tests to see which ones to revisit.
-                </p>
-              ) : (
-                weakestTests.map(([topic, p]) => (
-                  <div key={topic} className="flex items-center gap-3 px-5 py-3.5">
-                    <Target className="w-4 h-4 shrink-0" color={p.bestScore >= 80 ? C.gold : C.muted} />
-                    <span className="flex-1 min-w-0 text-[14px] capitalize break-words" style={{ color: C.text }}>
-                      {topic.replace(/-(basic|intermediate|advanced)$/, ' · $1').replace(/-/g, ' ')}
-                    </span>
-                    <span className="text-[15px] font-semibold shrink-0" style={{ color: p.bestScore >= 80 ? C.gold : C.text }}>
-                      {p.bestScore}%
-                    </span>
-                  </div>
-                ))
-              )}
-            </Card>
-          </Section>
+          <PerformanceAnalysisSection onStartPractice={onStartPractice} />
         </>
       ) : (
         <PlanLimitCard kind="analytics" />

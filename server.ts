@@ -252,41 +252,60 @@ app.post("/api/learning-insight", async (req, res) => {
   }
 });
 
-/* Weakness Detector → Practice This: focused questions on one weakness, pitched
-   at the student's level and current accuracy, built around their own mistakes. */
+/* Practice: focused questions on one weakness (Practice This) or on several
+   development areas at once (Performance Analysis → START PRACTICE), pitched at
+   the student's level and current accuracy and built around their own mistakes.
+   With several targets the weakest topic gets the most questions, and every
+   question says which target it practises. */
 app.post("/api/weakness-practice", async (req, res) => {
-  const { area, concept, cefr, difficulty, examples, items } = req.body as {
+  type Target = {
     area?: string;
     concept?: string;
-    cefr?: string;
     difficulty?: "easy" | "medium" | "hard";
     examples?: { prompt?: string; given?: string; expected?: string }[];
     items?: string[];
+    subtopics?: string[];
+    weight?: number;
   };
-  if (!concept || !area) return res.status(400).json({ error: "Missing 'concept' or 'area'." });
+  const body = req.body as Target & { cefr?: string; targets?: Target[]; count?: number };
+  const targets: Target[] = Array.isArray(body.targets) && body.targets.length ? body.targets : [body];
+  if (!targets.every(x => x.concept && x.area)) return res.status(400).json({ error: "Missing 'concept' or 'area'." });
+
+  const total = Math.min(10, Math.max(3, body.count ?? (targets.length > 1 ? 8 : 6)));
+  // Question counts by weight: the weakest topic first and most.
+  const weights = targets.map(x => Math.max(0.1, x.weight ?? 1));
+  const sum = weights.reduce((s, w) => s + w, 0);
+  const counts = weights.map(w => Math.max(1, Math.floor((w / sum) * total)));
+  for (let i = 0; counts.reduce((s, c) => s + c, 0) < total; i = (i + 1) % counts.length) counts[i]++;
+
   try {
     const ai = getAIClient();
     const systemInstruction =
       "You write practice questions for Lexistencehub, an English learning app for Turkish students. " +
-      "Every question must practise exactly the given learning concept - nothing else. " +
+      "Every question must practise exactly its target learning concept - nothing else. Test the same underlying " +
+      "concept as the student's previous mistakes with NEW sentences: never repeat a previous question. " +
       "Each question has exactly four options and exactly ONE correct answer that no careful teacher could dispute; " +
-      "the wrong options must be realistic learner mistakes for this concept. Vary the sentences and contexts; " +
-      "never repeat the student's previous questions word for word. Questions and options are in English. " +
-      "explanation: one short English sentence a learner at the given level understands.";
+      "the wrong options must be realistic learner mistakes for that concept. Vary contexts. Questions and options " +
+      "are in English. explanation: one short English sentence a learner at the given level understands. " +
+      "concept: copy the target's concept name exactly.";
     const brief = {
-      area,
-      concept,
-      studentLevel: cefr || "B1",
-      difficulty: difficulty || "medium",
-      previousMistakes: (examples ?? []).slice(0, 5),
-      wordsToPractise: (items ?? []).slice(0, 10),
-      guidance:
-        area === "vocabulary"
-          ? "Practise the listed words when they are given: meaning, correct word in context, or telling similar words apart."
-          : "Practise the grammar concept in natural sentences with a gap or a choice of forms.",
+      studentLevel: body.cefr || "B1",
+      targets: targets.map((x, i) => ({
+        concept: x.concept,
+        area: x.area,
+        questions: counts[i],
+        difficulty: x.difficulty || "medium",
+        subtopicsCausingErrors: (x.subtopics ?? []).slice(0, 3),
+        previousMistakes: (x.examples ?? []).slice(0, 4),
+        wordsToPractise: (x.items ?? []).slice(0, 8),
+        guidance:
+          x.area === "vocabulary"
+            ? "Practise the listed words when given: meaning, the right word in context, or telling similar words apart."
+            : "Practise the grammar concept in natural sentences with a gap or a choice of forms, focusing on the listed subtopics.",
+      })),
     };
     const response = await generateResilient(ai, {
-      contents: `Write 6 practice questions for this brief:\n${JSON.stringify(brief)}`,
+      contents: `Write ${total} practice questions for this brief, the given number per target:\n${JSON.stringify(brief)}`,
       config: {
         systemInstruction,
         responseMimeType: "application/json",
@@ -295,17 +314,19 @@ app.post("/api/weakness-practice", async (req, res) => {
           items: {
             type: Type.OBJECT,
             properties: {
+              concept: { type: Type.STRING },
               question: { type: Type.STRING },
               options: { type: Type.ARRAY, items: { type: Type.STRING } },
               correct: { type: Type.INTEGER },
               explanation: { type: Type.STRING },
             },
-            required: ["question", "options", "correct", "explanation"],
+            required: ["concept", "question", "options", "correct", "explanation"],
           },
         },
         temperature: 0.8,
       },
     });
+    const names = new Set(targets.map(x => x.concept));
     const list = JSON.parse(response.text || "[]") as any[];
     const questions = list
       .filter(
@@ -319,12 +340,50 @@ app.post("/api/weakness-practice", async (req, res) => {
           q.correct >= 0 &&
           q.correct < 4
       )
-      .slice(0, 6);
+      .map(q => ({ ...q, concept: names.has(q.concept) ? q.concept : targets[0].concept }))
+      .slice(0, total);
     if (questions.length < 3) throw new Error("Too few valid questions");
     res.json({ questions });
   } catch (err: any) {
-    console.error("Weakness practice error:", err?.message || err);
+    console.error("Practice error:", err?.message || err);
     res.status(500).json({ error: "practice_failed", message: "Practice could not be prepared right now. Please try again." });
+  }
+});
+
+/* Performance Analysis → AI Recommendation: two to four sentences written only
+   from the analysed performance (strengths, development areas, subtopics,
+   common errors, change) for the selected skill filter. */
+app.post("/api/performance-recommendation", async (req, res) => {
+  const { data } = req.body as { data?: unknown };
+  if (!data || typeof data !== "object") return res.status(400).json({ error: "Missing 'data'." });
+  try {
+    const ai = getAIClient();
+    const systemInstruction =
+      "You are the performance analyst of Lexistencehub, an English learning app for Turkish students. Write a " +
+      "recommendation of two to four short sentences, in English, second person, professional and supportive, based " +
+      "ONLY on the data. Prioritise the one to three most important development areas by name and, when the data " +
+      "shows one, the specific subtopic or common error behind it. Acknowledge one meaningful strength when the data " +
+      "has one. Say what to practise next. Never invent strengths, weaknesses, topics, numbers or improvement that " +
+      "are not in the data. No motivational filler ('keep going', 'you are doing great').";
+    const response = await generateResilient(ai, {
+      contents: `Performance data (JSON):\n${JSON.stringify(data).slice(0, 10000)}`,
+      config: {
+        systemInstruction,
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: { recommendation: { type: Type.STRING } },
+          required: ["recommendation"],
+        },
+        temperature: 0.4,
+      },
+    });
+    const parsed = JSON.parse(response.text || "{}");
+    if (!parsed.recommendation) throw new Error("Empty recommendation");
+    res.json({ recommendation: String(parsed.recommendation).trim() });
+  } catch (err: any) {
+    console.error("Performance recommendation error:", err?.message || err);
+    res.status(500).json({ error: "recommendation_failed", message: "The recommendation could not be prepared right now." });
   }
 });
 
