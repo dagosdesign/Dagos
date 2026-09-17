@@ -35,10 +35,12 @@ interface TestQuestion {
   correct: number;
   explanation: string;
   topic?: string; // Mixed Grammar: the grammar category each question tests
+  focus?: string; // Mixed Grammar: the exact structure within that category
 }
 
-/* MIXED GRAMMAR TEST: five 50-question tests, each mixing every grammar
-   category of this section - not only tenses (public/grammar-tests/mixed.json). */
+/* MIXED GRAMMAR TEST: five 50-question tests (public/grammar-tests/mixed.json).
+   Each has 38 questions on tenses, conjunctions, conditionals, wish clauses and
+   relative clauses, and 12 on other grammar topics; no question repeats. */
 const MIXED_TESTS = [1, 2, 3, 4, 5].map(n => ({ id: `mixed-${n}`, title: `Mixed Grammar ${n}` }));
 const mixedCache = new Map<string, Promise<Record<string, TestQuestion[]>>>();
 
@@ -228,7 +230,7 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                           ? question.topic
                           : category!.subtopics.find(s => s.id === subId)?.title || lessons?.[subId!]?.title || category!.title
                       ),
-                      subtopic: mixed ? undefined : category!.subtopics.find(s => s.id === subId)?.title,
+                      subtopic: mixed ? question.focus : category!.subtopics.find(s => s.id === subId)?.title,
                       correct: idx === question.correct,
                       source: mixed ? mixed.title : 'Grammar Test',
                       prompt: question.q,
