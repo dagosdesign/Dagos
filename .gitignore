@@ -10,3 +10,6 @@ settings.json
 settings_1.json
 .claude/
 scripts/.cache/
+
+# server-side account store
+data/

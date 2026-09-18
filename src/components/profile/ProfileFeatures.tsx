@@ -18,7 +18,6 @@ export type ProfilePage =
   | 'statistics'
   | 'achievements'
   | 'notifications'
-  | 'language'
   | 'account'
   | 'password'
   | 'data'

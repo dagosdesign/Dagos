@@ -3,6 +3,7 @@ import { C, Card, Segmented, SubPage, Toggle } from '../../components/profile/ui
 
 interface NotificationSettings {
   dailyReminder: boolean;
+  wordDrop: boolean;
   reminderTime: string;
   streakReminder: boolean;
   weeklySummary: boolean;
@@ -11,19 +12,22 @@ interface NotificationSettings {
 
 const KEY = 'lex_notification_settings';
 const TIMES = ['08:00', '12:00', '18:00', '20:00', '22:00'];
+const CUSTOM = 'custom';
 
 function load(): NotificationSettings {
   try {
     const raw = localStorage.getItem(KEY);
-    if (raw) return JSON.parse(raw) as NotificationSettings;
+    if (raw) return { wordDrop: true, ...(JSON.parse(raw) as Partial<NotificationSettings>) } as NotificationSettings;
   } catch {
     /* defaults */
   }
-  return { dailyReminder: true, reminderTime: '20:00', streakReminder: true, weeklySummary: true, productUpdates: false };
+  return { dailyReminder: true, wordDrop: true, reminderTime: '20:00', streakReminder: true, weeklySummary: true, productUpdates: false };
 }
 
 export default function NotificationsPage({ onBack }: { onBack: () => void }) {
   const [s, setS] = useState<NotificationSettings>(load);
+  // A time outside the presets is a custom time.
+  const [custom, setCustom] = useState(() => !TIMES.includes(load().reminderTime));
 
   useEffect(() => {
     try {
@@ -35,6 +39,7 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
 
   const rows: { key: keyof NotificationSettings; title: string; subtitle: string }[] = [
     { key: 'dailyReminder', title: 'Daily learning reminder', subtitle: 'A reminder to keep your daily goal' },
+    { key: 'wordDrop', title: 'Word Drop', subtitle: 'A new word dropped to you during the day' },
     { key: 'streakReminder', title: 'Streak reminder', subtitle: 'Before your streak is about to end' },
     { key: 'weeklySummary', title: 'Weekly summary', subtitle: 'Your learning time and progress each week' },
     { key: 'productUpdates', title: 'Updates', subtitle: 'New games, words and features' },
@@ -67,7 +72,31 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
           <p className="text-[16px] font-semibold" style={{ color: C.text }}>
             Reminder time
           </p>
-          <Segmented options={TIMES.map(t => ({ value: t, label: t }))} value={s.reminderTime} onChange={v => setS(prev => ({ ...prev, reminderTime: v }))} />
+          <Segmented
+            options={[...TIMES.map(t => ({ value: t, label: t })), { value: CUSTOM, label: 'Custom' }]}
+            value={custom ? CUSTOM : s.reminderTime}
+            onChange={v => {
+              if (v === CUSTOM) setCustom(true);
+              else {
+                setCustom(false);
+                setS(prev => ({ ...prev, reminderTime: v }));
+              }
+            }}
+          />
+          {custom && (
+            <label className="flex items-center justify-between gap-3 rounded-2xl border px-4 py-3" style={{ background: C.card2, borderColor: C.border }}>
+              <span className="text-[14px]" style={{ color: C.muted }}>
+                Your time
+              </span>
+              <input
+                type="time"
+                value={s.reminderTime}
+                onChange={e => e.target.value && setS(prev => ({ ...prev, reminderTime: e.target.value }))}
+                className="bg-transparent text-[18px] font-semibold outline-none [color-scheme:dark]"
+                style={{ color: C.gold }}
+              />
+            </label>
+          )}
         </Card>
       )}
 

@@ -1,28 +1,26 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { Bell, Database, FileText, History, Info, KeyRound, Languages, LifeBuoy, LogOut, RotateCcw, Shield, Target, Trash2 } from 'lucide-react';
-import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage, Toggle } from '../../components/profile/ui';
+import { useState, type ReactNode } from 'react';
+import { Bell, Database, FileText, History, Info, LifeBuoy, LogOut, RotateCcw, Shield, Target, Trash2, UserRound } from 'lucide-react';
+import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage } from '../../components/profile/ui';
+import { useAccount } from './AccountPage';
 import { clearLearningRecord } from '../../lib/learningRecord';
 import { clearActivityHistory } from '../../lib/activityLog';
 import type { ProfilePage } from '../../components/profile/ProfileFeatures';
 
-const PRIVACY_KEY = 'lex_privacy_settings';
 const DANGER = '#E5484D';
 
 /* SETTINGS - opened from the gear icon at the top right of the profile: one
    list of everything about the account, then Log Out, and Delete Account last. */
 export default function AccountSettingsPage({
   onBack,
-  onPassword,
+  onAccount,
   onNotifications,
-  onLanguage,
   onData,
   openInfo,
   onLogOut,
 }: {
   onBack: () => void;
-  onPassword: () => void;
+  onAccount: () => void;
   onNotifications: () => void;
-  onLanguage: () => void;
   onData: () => void;
   openInfo: (page: ProfilePage) => void;
   onLogOut: () => void;
@@ -30,12 +28,11 @@ export default function AccountSettingsPage({
   const [deleting, setDeleting] = useState(false);
 
   return (
-    <SubPage title="Settings" subtitle="Password, notifications, language and your data" onBack={onBack}>
+    <SubPage title="Settings" subtitle="Account, notifications and your data" onBack={onBack}>
       <MenuList>
-        <ProfileMenuItem icon={KeyRound} title="Password" subtitle="Sign-in and account security" onClick={onPassword} />
+        <ProfileMenuItem icon={UserRound} title="Account" subtitle="Personal information, e-mail and password" onClick={onAccount} />
         <ProfileMenuItem icon={Bell} title="Notifications" subtitle="Learning reminders and updates" onClick={onNotifications} />
-        <ProfileMenuItem icon={Languages} title="Language" subtitle="English / Türkçe" onClick={onLanguage} />
-        <ProfileMenuItem icon={Database} title="Data & Privacy" subtitle="Privacy, statistics and learning data" onClick={onData} />
+        <ProfileMenuItem icon={Database} title="Data & Privacy" subtitle="Statistics and learning data" onClick={onData} />
         <ProfileMenuItem icon={LifeBuoy} title="Help & Support" onClick={() => openInfo('help')} />
         <ProfileMenuItem icon={Shield} title="Privacy Policy" onClick={() => openInfo('privacy')} />
         <ProfileMenuItem icon={FileText} title="Terms of Use" onClick={() => openInfo('terms')} />
@@ -79,8 +76,22 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
   const [step, setStep] = useState(0);
   const [reason, setReason] = useState<string | null>(null);
   const [understood, setUnderstood] = useState(false);
+  const { profileId, account } = useAccount();
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState<string | null>(null);
 
-  const deleteEverything = () => {
+  const deleteEverything = async () => {
+    setError(null);
+    try {
+      const r = await fetch('/api/account/delete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ profileId, currentPassword: password || undefined }),
+      });
+      if (r.status === 403) return setError('Your password is not correct.');
+    } catch {
+      /* offline: the data on this device is still removed */
+    }
     try {
       localStorage.clear();
       sessionStorage.clear();
@@ -175,9 +186,25 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
                 I understand that this is permanent and cannot be undone.
               </span>
             </label>
+            {account?.hasPassword && (
+              <input
+                type="password"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                autoComplete="current-password"
+                placeholder="Your password"
+                className="w-full rounded-2xl border px-4 py-3 text-[15px] outline-none focus:border-[#E5484D]"
+                style={{ background: C.card2, borderColor: C.border, color: C.text }}
+              />
+            )}
+            {error && (
+              <p className="text-[13px]" style={{ color: DANGER }}>
+                {error}
+              </p>
+            )}
             <div className="flex gap-2">
               <GhostButton onClick={onClose}>Cancel</GhostButton>
-              <DangerButton disabled={!understood} onClick={deleteEverything}>
+              <DangerButton disabled={!understood || (account?.hasPassword && !password)} onClick={deleteEverything}>
                 Delete Account
               </DangerButton>
             </div>
@@ -202,26 +229,6 @@ function DangerButton({ children, onClick, disabled }: { children: ReactNode; on
   );
 }
 
-/* ---------------- Password ---------------- */
-
-export function PasswordPage({ onBack }: { onBack: () => void }) {
-  return (
-    <SubPage title="Password" subtitle="Sign-in and account security" onBack={onBack}>
-      <Card className="p-5 space-y-2">
-        <div className="flex items-center gap-2.5">
-          <KeyRound className="w-[18px] h-[18px]" color={C.gold} />
-          <p className="text-[16px] font-semibold" style={{ color: C.text }}>
-            Password
-          </p>
-        </div>
-        <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
-          Password sign-in becomes available when your Lexistencehub account is connected. Your progress is saved on this device until then.
-        </p>
-      </Card>
-    </SubPage>
-  );
-}
-
 /* ---------------- Data & Privacy ---------------- */
 
 type ResetKind = 'quiz' | 'performance' | 'history';
@@ -235,22 +242,7 @@ export function DataPrivacyPage({
   onResetStats: () => void;
   notify: (msg: string) => void;
 }) {
-  const [privateProfile, setPrivateProfile] = useState<boolean>(() => {
-    try {
-      return JSON.parse(localStorage.getItem(PRIVACY_KEY) ?? '{}').privateProfile ?? true;
-    } catch {
-      return true;
-    }
-  });
   const [confirm, setConfirm] = useState<ResetKind | null>(null);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(PRIVACY_KEY, JSON.stringify({ privateProfile }));
-    } catch {
-      /* ignore */
-    }
-  }, [privateProfile]);
 
   const RESETS: { id: ResetKind; icon: typeof RotateCcw; title: string; subtitle: string; question: string; done: string; run: () => void }[] = [
     {
@@ -284,21 +276,7 @@ export function DataPrivacyPage({
   const active = RESETS.find(r => r.id === confirm);
 
   return (
-    <SubPage title="Data & Privacy" subtitle="Privacy, statistics and learning data" onBack={onBack}>
-      <Card className="divide-y divide-[#262626]">
-        <div className="flex items-center gap-3 px-4 py-3.5">
-          <div className="min-w-0 flex-1">
-            <p className="text-[15px] font-medium" style={{ color: C.text }}>
-              Private profile
-            </p>
-            <p className="text-[12.5px]" style={{ color: C.muted }}>
-              Keep your level and statistics visible only to you
-            </p>
-          </div>
-          <Toggle label="Private profile" checked={privateProfile} onChange={setPrivateProfile} />
-        </div>
-      </Card>
-
+    <SubPage title="Data & Privacy" subtitle="Statistics and learning data" onBack={onBack}>
       <MenuList>
         {RESETS.map(r => (
           <div key={r.id}>

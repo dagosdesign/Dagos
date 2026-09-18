@@ -18,8 +18,8 @@ import LibraryPage from './profile/LibraryPage';
 import StatisticsPage from './profile/StatisticsPage';
 import AchievementsPage from './profile/AchievementsPage';
 import NotificationsPage from './profile/NotificationsPage';
-import LanguagePage from './profile/LanguagePage';
-import AccountSettingsPage, { DataPrivacyPage, PasswordPage } from './profile/AccountSettingsPage';
+import AccountSettingsPage, { DataPrivacyPage } from './profile/AccountSettingsPage';
+import AccountPage from './profile/AccountPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
 import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage } from './profile/LearningIntelPages';
@@ -88,7 +88,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
   const content = (() => {
     switch (page) {
       case 'personal':
-        return <PersonalInfoPage onBack={back} notify={setToast} />;
+        return <PersonalInfoPage onBack={up} notify={setToast} />;
       case 'level':
         return <MyLevelPage onBack={back} onCheckLevel={() => open('placement')} />;
       case 'placement':
@@ -142,22 +142,19 @@ export default function ProfileScreen(props: ProfileScreenProps) {
       // Opened from Settings, back returns to Settings; from the bell, to the profile.
       case 'notifications':
         return <NotificationsPage onBack={up} />;
-      case 'language':
-        return <LanguagePage onBack={up} notify={setToast} />;
       case 'account':
         return (
           <AccountSettingsPage
             onBack={back}
-            onPassword={() => open('password', 'account')}
+            onAccount={() => open('password', 'account')}
             onData={() => open('data', 'account')}
             onNotifications={() => open('notifications', 'account')}
-            onLanguage={() => open('language', 'account')}
             openInfo={p => open(p, 'account')}
             onLogOut={() => setConfirmLogout(true)}
           />
         );
       case 'password':
-        return <PasswordPage onBack={up} />;
+        return <AccountPage onBack={() => open('account')} onPersonal={() => open('personal', 'password')} notify={setToast} />;
       case 'data':
         return <DataPrivacyPage onBack={up} onResetStats={onResetStats} notify={setToast} />;
       case 'subscription':
