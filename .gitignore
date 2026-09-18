@@ -12,4 +12,4 @@ settings_1.json
 scripts/.cache/
 
 # server-side account store
-data/
+/data/
