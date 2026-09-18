@@ -19,7 +19,7 @@ import StatisticsPage from './profile/StatisticsPage';
 import AchievementsPage from './profile/AchievementsPage';
 import NotificationsPage from './profile/NotificationsPage';
 import LanguagePage from './profile/LanguagePage';
-import AccountSettingsPage from './profile/AccountSettingsPage';
+import AccountSettingsPage, { DataPrivacyPage, PasswordPage } from './profile/AccountSettingsPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
 import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage } from './profile/LearningIntelPages';
@@ -148,15 +148,18 @@ export default function ProfileScreen(props: ProfileScreenProps) {
         return (
           <AccountSettingsPage
             onBack={back}
-            onResetStats={onResetStats}
-            onChangeSubscription={() => open('subscription')}
+            onPassword={() => open('password', 'account')}
+            onData={() => open('data', 'account')}
             onNotifications={() => open('notifications', 'account')}
             onLanguage={() => open('language', 'account')}
             openInfo={p => open(p, 'account')}
             onLogOut={() => setConfirmLogout(true)}
-            notify={setToast}
           />
         );
+      case 'password':
+        return <PasswordPage onBack={up} />;
+      case 'data':
+        return <DataPrivacyPage onBack={up} onResetStats={onResetStats} notify={setToast} />;
       case 'subscription':
         return <SubscriptionPage onBack={back} notify={setToast} />;
       case 'help':

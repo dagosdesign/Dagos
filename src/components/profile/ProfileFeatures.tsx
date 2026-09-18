@@ -20,6 +20,8 @@ export type ProfilePage =
   | 'notifications'
   | 'language'
   | 'account'
+  | 'password'
+  | 'data'
   | 'subscription'
   | 'help'
   | 'privacy'

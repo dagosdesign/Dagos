@@ -87,6 +87,16 @@ export function addLearningMinutes(category: TimeCategory, minutes: number) {
   notify();
 }
 
+/* Data & Privacy -> Clear learning history: the activity list and the learning time. */
+export function clearActivityHistory() {
+  entries = [];
+  buckets = {};
+  write(LOG_KEY, entries);
+  write(TIME_KEY, buckets);
+  updateUserProfile(() => ({ completedActivities: 0, learningTimeMinutes: 0 }));
+  notify();
+}
+
 /* Minutes per category for this week (from Monday), this month, or all time. */
 export function learningTimeFor(period: Period, source: TimeBuckets = buckets) {
   const now = new Date();

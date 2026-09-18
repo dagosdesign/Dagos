@@ -63,6 +63,19 @@ export function recordAnswer(e: Omit<AnswerEvent, 'at'>) {
   listeners.forEach(l => l());
 }
 
+/* Data & Privacy -> Reset performance data: the answer record and what was written from it. */
+export function clearLearningRecord() {
+  events = [];
+  try {
+    localStorage.removeItem(KEY);
+    localStorage.removeItem('lex_learning_insight');
+    localStorage.removeItem('lex_performance_recommendation');
+  } catch {
+    /* ignore */
+  }
+  listeners.forEach(l => l());
+}
+
 export function useLearningRecord(): AnswerEvent[] {
   return useSyncExternalStore(
     l => {
