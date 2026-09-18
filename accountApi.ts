@@ -2,7 +2,7 @@ import type { Express, Request, Response } from "express";
 import crypto from "crypto";
 import fs from "fs";
 import path from "path";
-import nodemailer from "nodemailer";
+import { mailReady, sendMail } from "./mailer";
 
 /* ACCOUNT: e-mail, phone and password of a Lexistencehub profile.
 
@@ -88,19 +88,13 @@ function view(id: string) {
   return { email: a.email ?? null, phone: a.phone ?? null, hasPassword: Boolean(a.passwordHash) };
 }
 
-const emailReady = () => Boolean(process.env.SMTP_HOST && process.env.SMTP_FROM);
+const emailReady = mailReady;
 const smsReady = () => Boolean(process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN && process.env.TWILIO_FROM);
 
 async function deliver(channel: Channel, destination: string, code: string): Promise<"sent" | "test"> {
   const text = `Your Lexistencehub verification code is ${code}. It is valid for 10 minutes. If you did not ask for it, ignore this message.`;
   if (channel === "email" && emailReady()) {
-    const transport = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      secure: Number(process.env.SMTP_PORT) === 465,
-      auth: process.env.SMTP_USER ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS } : undefined,
-    });
-    await transport.sendMail({ from: process.env.SMTP_FROM, to: destination, subject: "Lexistencehub verification code", text });
+    await sendMail({ to: destination, subject: "Lexistencehub verification code", text });
     return "sent";
   }
   if (channel === "sms" && smsReady()) {

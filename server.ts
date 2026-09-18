@@ -5,6 +5,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Modality, Type } from "@google/genai";
 import dotenv from "dotenv";
 import { registerAccountRoutes } from "./accountApi";
+import { registerSupportRoutes } from "./supportApi";
 
 dotenv.config();
 
@@ -15,6 +16,8 @@ app.use(express.json());
 
 // Account: e-mail, phone and password, every change confirmed by a code.
 registerAccountRoutes(app);
+// Help & Support: a student's message to the team.
+registerSupportRoutes(app);
 
 // Lazy-loaded Gemini client
 let aiClient: GoogleGenAI | null = null;

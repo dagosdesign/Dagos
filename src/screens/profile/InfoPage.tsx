@@ -1,6 +1,6 @@
 import { C, Card, SubPage } from '../../components/profile/ui';
 
-type InfoKind = 'help' | 'privacy' | 'terms' | 'about';
+type InfoKind = 'privacy' | 'terms' | 'about';
 
 interface Block {
   title: string;
@@ -8,28 +8,6 @@ interface Block {
 }
 
 const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block[]; signature?: boolean }> = {
-  help: {
-    title: 'Help & Support',
-    subtitle: 'Answers to common questions',
-    blocks: [
-      {
-        title: 'How is my level decided?',
-        body: 'Check Your Level is an adaptive grammar test. It moves up after strong answers and down after weak ones, and places you between A1 and C2. The result is saved to your profile.',
-      },
-      {
-        title: 'What does the Free plan include?',
-        body: 'Every day: 10 words, 3 games, 1 grammar activity and 1 listening activity, plus basic progress tracking and the daily challenge. Limits start over each day.',
-      },
-      {
-        title: 'How is learning time counted?',
-        body: 'Time is added while a learning screen - a game, practice session, grammar test, word cards or AI Lex - is open and visible.',
-      },
-      {
-        title: 'How do streaks work?',
-        body: 'Complete at least one activity every day. Missing a day starts the streak again.',
-      },
-    ],
-  },
   privacy: {
     title: 'Privacy Policy',
     subtitle: 'How your information is used',
