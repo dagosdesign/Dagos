@@ -21,6 +21,7 @@ import NotificationsPage from './profile/NotificationsPage';
 import AccountSettingsPage, { DataPrivacyPage } from './profile/AccountSettingsPage';
 import AccountPage from './profile/AccountPage';
 import HelpSupportPage from './profile/HelpSupportPage';
+import PrivacyPolicyPage from './profile/PrivacyPolicyPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
 import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage } from './profile/LearningIntelPages';
@@ -163,6 +164,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
       case 'help':
         return <HelpSupportPage onBack={up} />;
       case 'privacy':
+        return <PrivacyPolicyPage onBack={up} />;
       case 'terms':
       case 'about':
         return <InfoPage kind={page} onBack={up} />;

@@ -1,6 +1,6 @@
 import { C, Card, SubPage } from '../../components/profile/ui';
 
-type InfoKind = 'privacy' | 'terms' | 'about';
+type InfoKind = 'terms' | 'about';
 
 interface Block {
   title: string;
@@ -8,24 +8,6 @@ interface Block {
 }
 
 const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block[]; signature?: boolean }> = {
-  privacy: {
-    title: 'Privacy Policy',
-    subtitle: 'How your information is used',
-    blocks: [
-      {
-        title: 'What is stored',
-        body: 'Your name, username, profile photo, level, membership, learning time, activity history and game progress are stored on this device so the app can show your progress.',
-      },
-      {
-        title: 'AI features',
-        body: 'When you use AI Lex, the messages you send are processed by an AI service to create the replies. Do not share sensitive personal information in these conversations.',
-      },
-      {
-        title: 'Your control',
-        body: 'You can edit your personal information at any time, and reset your statistics or remove your profile data from this device in Account Settings.',
-      },
-    ],
-  },
   terms: {
     title: 'Terms of Use',
     subtitle: 'The basics of using Lexistencehub',
