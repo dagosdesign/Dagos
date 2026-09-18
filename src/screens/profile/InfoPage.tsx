@@ -1,6 +1,6 @@
 import { C, Card, SubPage } from '../../components/profile/ui';
 
-type InfoKind = 'terms' | 'about';
+type InfoKind = 'about';
 
 interface Block {
   title: string;
@@ -8,24 +8,6 @@ interface Block {
 }
 
 const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block[]; blocksEn?: Block[]; signature?: boolean }> = {
-  terms: {
-    title: 'Terms of Use',
-    subtitle: 'The basics of using Lexistencehub',
-    blocks: [
-      {
-        title: 'Personal learning',
-        body: 'Lexistencehub is for personal English learning. Use the content for your own study and do not copy or redistribute it.',
-      },
-      {
-        title: 'Membership',
-        body: 'Free membership includes daily learning limits. Premium removes them and adds AI personalisation while it is active.',
-      },
-      {
-        title: 'Assessments',
-        body: 'Level results are an estimate to guide your learning. They are not an official certificate.',
-      },
-    ],
-  },
   about: {
     title: 'About Lexistencehub',
     subtitle: 'Beyond English.',

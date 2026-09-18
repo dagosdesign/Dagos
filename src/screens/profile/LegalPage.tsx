@@ -2,8 +2,9 @@ import { Fragment, type ReactNode } from 'react';
 import { C, Card, SubPage } from '../../components/profile/ui';
 import { PRIVACY_EMAIL, PRIVACY_EN, PRIVACY_TR } from '../../data/privacyPolicy';
 import type { PolicyDocument } from '../../data/privacyPolicy';
+import { TERMS_EN, TERMS_TR } from '../../data/termsOfUse';
 
-/* PRIVACY POLICY: the Turkish text first, the English text under it. */
+/* PRIVACY POLICY and TERMS OF USE: the Turkish text first, the English text under it. */
 
 // The contact address is a link wherever it appears.
 function withEmail(text: string): ReactNode {
@@ -78,12 +79,18 @@ function Policy({ doc, lang }: { doc: PolicyDocument; lang: string }) {
   );
 }
 
-export default function PrivacyPolicyPage({ onBack }: { onBack: () => void }) {
+const DOCUMENTS = {
+  privacy: { title: 'Privacy Policy', subtitle: 'Gizlilik Politikası · Türkçe & English', tr: PRIVACY_TR, en: PRIVACY_EN },
+  terms: { title: 'Terms of Use', subtitle: 'Kullanım Koşulları · Türkçe & English', tr: TERMS_TR, en: TERMS_EN },
+};
+
+export default function LegalPage({ kind, onBack }: { kind: keyof typeof DOCUMENTS; onBack: () => void }) {
+  const doc = DOCUMENTS[kind];
   return (
-    <SubPage title="Privacy Policy" subtitle="Gizlilik Politikası · Türkçe & English" onBack={onBack}>
-      <Policy doc={PRIVACY_TR} lang="tr" />
+    <SubPage title={doc.title} subtitle={doc.subtitle} onBack={onBack}>
+      <Policy doc={doc.tr} lang="tr" />
       <div className="h-px my-2" style={{ background: C.border }} />
-      <Policy doc={PRIVACY_EN} lang="en" />
+      <Policy doc={doc.en} lang="en" />
     </SubPage>
   );
 }
