@@ -33,11 +33,11 @@ export default function LearningTimeCard() {
   const { total, byCategory } = learningTimeFor(period, buckets);
 
   return (
-    <Card className="p-5">
+    <Card className="p-4">
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <Clock className="w-6 h-6" color={C.gold} strokeWidth={2} />
-          <h3 className="text-[18px] font-semibold" style={{ color: C.text }}>
+          <Clock className="w-5 h-5" color={C.gold} strokeWidth={2} />
+          <h3 className="text-[16px] font-semibold" style={{ color: C.text }}>
             Learning Time
           </h3>
         </div>
@@ -45,7 +45,7 @@ export default function LearningTimeCard() {
           <button
             type="button"
             onClick={() => setOpen(o => !o)}
-            className="flex items-center gap-1 text-[14px] cursor-pointer"
+            className="flex items-center gap-1 text-[13px] cursor-pointer"
             style={{ color: C.gold }}
             aria-haspopup="listbox"
             aria-expanded={open}
@@ -80,10 +80,10 @@ export default function LearningTimeCard() {
       </div>
 
       {/* Total Learning bar: the categories fill it, the total sits on it */}
-      <p className="text-[15px] mt-5" style={{ color: C.muted }}>
+      <p className="text-[13.5px] mt-4" style={{ color: C.muted }}>
         Total Learning
       </p>
-      <div className="relative mt-2 h-11 rounded-full overflow-hidden flex" style={{ background: '#1C1C1C' }}>
+      <div className="relative mt-2 h-9 rounded-full overflow-hidden flex" style={{ background: '#1C1C1C' }}>
         {total > 0 &&
           TIME_CATEGORIES.map(c =>
             byCategory[c] > 0 ? (
@@ -91,7 +91,7 @@ export default function LearningTimeCard() {
             ) : null
           )}
         <span
-          className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full px-3.5 py-1 text-[16px] font-bold whitespace-nowrap"
+          className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full px-3 py-0.5 text-[14px] font-bold whitespace-nowrap"
           style={{ background: 'rgba(11,11,11,0.88)', color: C.text }}
         >
           {formatLearningTime(total)}
@@ -102,7 +102,7 @@ export default function LearningTimeCard() {
       <button
         type="button"
         onClick={() => setShowDetails(d => !d)}
-        className="mt-4 w-full flex items-center justify-between py-1 text-[15px] font-medium cursor-pointer"
+        className="mt-3 w-full flex items-center justify-between py-1 text-[14px] font-medium cursor-pointer"
         style={{ color: C.text }}
         aria-expanded={showDetails}
       >

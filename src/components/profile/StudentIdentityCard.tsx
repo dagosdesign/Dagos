@@ -40,7 +40,7 @@ export function Avatar({ profile, size }: { profile: UserProfile; size: number }
 export default function StudentIdentityCard({ profile, onEdit }: { profile: UserProfile; onEdit: () => void }) {
   const premium = profile.membership === 'premium';
   return (
-    <div className="w-full flex items-center gap-4 pt-1 pb-2">
+    <div className="w-full flex items-center gap-4 pt-2 pb-3">
       <button
         type="button"
         onClick={onEdit}
@@ -48,7 +48,7 @@ export default function StudentIdentityCard({ profile, onEdit }: { profile: User
         className="relative shrink-0 cursor-pointer rounded-full"
       >
         <span
-          className="block w-[80px] h-[80px] rounded-full p-[2px]"
+          className="block w-[94px] h-[94px] rounded-full p-[2px]"
           style={{
             background: `linear-gradient(145deg, ${C.gold}, rgba(245,184,46,0.25) 60%, ${C.gold})`,
             boxShadow: '0 0 18px rgba(245,184,46,0.14)',
@@ -61,14 +61,14 @@ export default function StudentIdentityCard({ profile, onEdit }: { profile: User
             {profile.profileImage ? (
               <img src={profile.profileImage} alt={profile.name} className="w-full h-full object-cover" />
             ) : (
-              <span className="text-[24px] font-semibold tracking-[0.02em]" style={{ color: C.gold }}>
+              <span className="text-[28px] font-semibold tracking-[0.02em]" style={{ color: C.gold }}>
                 {initials(profile.name)}
               </span>
             )}
           </span>
         </span>
         <span
-          className="absolute bottom-0 right-0 w-[26px] h-[26px] rounded-full flex items-center justify-center"
+          className="absolute bottom-0 right-0 w-[29px] h-[29px] rounded-full flex items-center justify-center"
           style={{ background: C.gold, border: `2px solid ${C.bg}` }}
         >
           <Pencil className="w-3.5 h-3.5" color="#0B0B0B" strokeWidth={2.2} />
@@ -76,12 +76,12 @@ export default function StudentIdentityCard({ profile, onEdit }: { profile: User
       </button>
 
       <div className="min-w-0 flex-1">
-        <p className="text-[22px] font-semibold leading-tight truncate" style={{ color: C.text }}>
+        <p className="text-[25px] font-semibold leading-tight truncate" style={{ color: C.text }}>
           {profile.name}
         </p>
         <div className="flex items-center gap-1.5 mt-3">
           <span
-            className="inline-flex items-center gap-1 h-[26px] rounded-full px-2.5 text-[10.5px] font-semibold tracking-[0.08em] uppercase border whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-1 h-[27px] rounded-full px-2.5 text-[10.5px] font-semibold tracking-[0.08em] uppercase border whitespace-nowrap shrink-0"
             style={
               premium
                 ? { color: C.gold, borderColor: 'rgba(245,184,46,0.45)', background: C.goldDim }
@@ -94,7 +94,7 @@ export default function StudentIdentityCard({ profile, onEdit }: { profile: User
           <button
             type="button"
             onClick={onEdit}
-            className="inline-flex items-center gap-1 h-[26px] rounded-full px-2.5 text-[10.5px] font-semibold tracking-[0.08em] uppercase border whitespace-nowrap shrink-0 cursor-pointer transition-colors hover:border-[#F5B82E]"
+            className="inline-flex items-center gap-1 h-[27px] rounded-full px-2.5 text-[10.5px] font-semibold tracking-[0.08em] uppercase border whitespace-nowrap shrink-0 cursor-pointer transition-colors hover:border-[#F5B82E]"
             style={{ color: C.text, borderColor: C.border, background: C.card }}
           >
             <Pencil className="w-3 h-3" color={C.gold} strokeWidth={2} />

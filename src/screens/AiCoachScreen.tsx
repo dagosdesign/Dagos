@@ -167,6 +167,9 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       return `${prev.replace(/(^|\s)i$/, '$1I')} `.slice(0, MAX_INPUT);
     });
 
+  const pasteText = (text: string) =>
+    setInput(prev => (prev + text.replace(/\s+/g, ' ')).slice(0, MAX_INPUT));
+
   // A physical keyboard still types on computers.
   const sendRef = useRef(send);
   sendRef.current = send;
@@ -188,9 +191,40 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         setInput(prev => (prev + e.key).slice(0, MAX_INPUT));
       }
     };
+    // Ctrl+V / Cmd+V: copied text goes into the message.
+    const onPaste = (e: ClipboardEvent) => {
+      if (speakingOpenRef.current) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
+      const text = e.clipboardData?.getData('text');
+      if (!text) return;
+      e.preventDefault();
+      pasteText(text);
+    };
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    window.addEventListener('paste', onPaste);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('paste', onPaste);
+    };
   }, []);
+
+  // On a phone there is no Ctrl+V: tapping the message box offers "Yapıştır".
+  const [pasteOffer, setPasteOffer] = useState(false);
+  useEffect(() => {
+    if (!pasteOffer) return;
+    const id = window.setTimeout(() => setPasteOffer(false), 4000);
+    return () => window.clearTimeout(id);
+  }, [pasteOffer]);
+  const pasteFromClipboard = async () => {
+    setPasteOffer(false);
+    try {
+      const text = await navigator.clipboard.readText();
+      if (text) pasteText(text);
+    } catch {
+      /* clipboard permission denied: nothing to paste */
+    }
+  };
 
   const startListening = () => {
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -371,20 +405,32 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         )}
         {/* The message being written; the in-app keyboard below types into it,
             so the phone's system keyboard never opens here. */}
-        <div
-          role="textbox"
-          aria-label="Message"
-          aria-readonly="true"
-          className="flex-1 min-w-0 min-h-[46px] max-h-[88px] overflow-y-auto text-sm bg-white/[0.02] border border-[#e3b553]/35 rounded-xl px-4 py-3 text-white font-light break-words whitespace-pre-wrap"
-        >
-          {input ? (
-            <>
-              {input}
-              <span className="inline-block w-[2px] h-[1em] -mb-[2px] ml-[1px] bg-[#e3b553] animate-pulse" />
-            </>
-          ) : (
-            <span className="text-white/25">{listening ? 'Konuş...' : 'İngilizce pratik yap veya soru sor...'}</span>
+        <div className="relative flex-1 min-w-0">
+          {pasteOffer && (
+            <button
+              type="button"
+              onClick={pasteFromClipboard}
+              className="absolute -top-10 left-2 z-10 rounded-lg bg-[#e3b553] px-3.5 py-2 text-[12px] font-semibold text-[#0a0a0b] shadow-lg cursor-pointer"
+            >
+              Yapıştır
+            </button>
           )}
+          <div
+            role="textbox"
+            aria-label="Message"
+            aria-readonly="true"
+            onClick={() => setPasteOffer(o => !o)}
+            className="min-h-[46px] max-h-[88px] overflow-y-auto text-sm bg-white/[0.02] border border-[#e3b553]/35 rounded-xl px-4 py-3 text-white font-light break-words whitespace-pre-wrap"
+          >
+            {input ? (
+              <>
+                {input}
+                <span className="inline-block w-[2px] h-[1em] -mb-[2px] ml-[1px] bg-[#e3b553] animate-pulse" />
+              </>
+            ) : (
+              <span className="text-white/25">{listening ? 'Konuş...' : 'İngilizce pratik yap veya soru sor...'}</span>
+            )}
+          </div>
         </div>
         <button
           type="submit"
