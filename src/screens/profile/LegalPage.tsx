@@ -28,9 +28,6 @@ function Policy({ doc, lang }: { doc: PolicyDocument; lang: string }) {
         <h2 className="text-[21px] font-semibold leading-tight" style={{ color: C.text }}>
           {doc.heading}
         </h2>
-        <p className="text-[12.5px] tracking-[0.04em]" style={{ color: C.gold }}>
-          {doc.updated}
-        </p>
       </div>
 
       <Card className="p-5 space-y-3">

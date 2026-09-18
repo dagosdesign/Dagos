@@ -7,7 +7,6 @@ export interface PolicySection {
 
 export interface PolicyDocument {
   heading: string;
-  updated: string;
   intro: string[];
   sections: PolicySection[];
 }
@@ -16,7 +15,6 @@ export const PRIVACY_EMAIL = 'lexistencehub@gmail.com';
 
 export const PRIVACY_TR: PolicyDocument = {
   heading: 'Gizlilik Politikası',
-  updated: 'Son Güncelleme: Eylül 2026',
   intro: [
     'Lexistencehub olarak gizliliğinize önem veriyor ve kişisel bilgilerinizin korunmasını önemsiyoruz. Bu Gizlilik Politikası, Lexistencehub uygulamasını ve uygulamayla bağlantılı hizmetleri kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklamaktadır.',
     'Lexistencehub’ı kullanarak bu Gizlilik Politikası kapsamında açıklanan uygulamalar hakkında bilgilendirilmiş olduğunuzu kabul etmiş olursunuz.',
@@ -157,7 +155,6 @@ export const PRIVACY_TR: PolicyDocument = {
 
 export const PRIVACY_EN: PolicyDocument = {
   heading: 'Privacy Policy',
-  updated: 'Last Updated: September 2026',
   intro: [
     'At Lexistencehub, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how information is collected, used, stored, and protected when you use the Lexistencehub application and its related services.',
     'By using Lexistencehub, you acknowledge the practices described in this Privacy Policy.',

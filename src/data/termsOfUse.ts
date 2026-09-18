@@ -4,7 +4,6 @@ import type { PolicyDocument } from './privacyPolicy';
 
 export const TERMS_TR: PolicyDocument = {
   heading: 'Kullanım Koşulları',
-  updated: 'Son Güncelleme: Eylül 2026',
   intro: [
     'Bu Kullanım Koşulları, Lexistencehub uygulamasına ve Lexistencehub tarafından sunulan ilgili hizmetlere erişiminizi ve bu hizmetleri kullanımınızı düzenlemektedir.',
     'Lexistencehub’a erişerek, hesap oluşturarak veya uygulamayı kullanarak bu Kullanım Koşullarını kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız uygulamayı ve ilgili hizmetleri kullanmamalısınız.',
@@ -231,7 +230,6 @@ export const TERMS_TR: PolicyDocument = {
 
 export const TERMS_EN: PolicyDocument = {
   heading: 'Terms of Use',
-  updated: 'Last Updated: September 2026',
   intro: [
     'Welcome to Lexistencehub.',
     'These Terms of Use govern your access to and use of the Lexistencehub application, its educational content, features, services, and related technologies.',
