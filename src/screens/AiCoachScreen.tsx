@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square, AudioLines } from 'lucide-react';
 import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
@@ -134,19 +134,72 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   const addSpokenTurn = (role: 'user' | 'assistant', text: string) =>
     setMessages(prev => [...prev, { role, content: text }]);
 
-  /* ---- typing with the in-app keyboard ---- */
+  /* ---- typing with the in-app keyboard ----
+     The message is a real text field (the phone's own keyboard stays closed:
+     inputMode="none"), so the caret, selection, Select All, Copy, Cut and Paste
+     all work the usual way. The in-app keyboard types at the caret and replaces
+     or deletes the selection, like any keyboard. */
+  const boxRef = useRef<HTMLTextAreaElement>(null);
+  const inputRef = useRef(input);
+  inputRef.current = input;
+  const pendingCaret = useRef<number | null>(null);
+  const [caret, setCaret] = useState(0);
+
+  const selection = (): [number, number] => {
+    const el = boxRef.current;
+    const len = inputRef.current.length;
+    if (!el) return [len, len];
+    return [Math.min(el.selectionStart ?? len, len), Math.min(el.selectionEnd ?? len, len)];
+  };
+  const commit = (next: string, at: number) => {
+    inputRef.current = next;
+    pendingCaret.current = at;
+    setInput(next);
+    setCaret(at);
+  };
+  // Replaces the selection (or inserts at the caret).
+  const insertText = (text: string, fixPronoun = false) => {
+    const [s, e] = selection();
+    let before = inputRef.current.slice(0, s);
+    const after = inputRef.current.slice(e);
+    // "i'm" -> "I'm", "i " -> "I ": a lone i is the pronoun.
+    if (fixPronoun) before = before.replace(/(^|\s)i$/, '$1I');
+    const room = Math.max(0, MAX_INPUT - before.length - after.length);
+    const added = text.slice(0, room);
+    commit(before + added + after, before.length + added.length);
+  };
+  const deleteBack = () => {
+    const [s, e] = selection();
+    const value = inputRef.current;
+    if (s !== e) commit(value.slice(0, s) + value.slice(e), s);
+    else if (s > 0) commit(value.slice(0, s - 1) + value.slice(s), s - 1);
+  };
+  // After an edit the caret goes where the edit ended, and the field keeps the focus.
+  useLayoutEffect(() => {
+    const el = boxRef.current;
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = `${Math.min(el.scrollHeight, 88)}px`;
+    if (pendingCaret.current != null) {
+      const at = pendingCaret.current;
+      pendingCaret.current = null;
+      if (document.activeElement !== el) el.focus({ preventScroll: true });
+      el.setSelectionRange(at, at);
+    }
+  }, [input]);
+
   // abc: lower case · Abc: the next letter is a capital · ABC: caps lock.
   const [caseMode, setCaseMode] = useState<CaseMode>('lower');
   // At the start of a sentence the keyboard switches to Abc by itself, as a
   // phone does - unless the student has just chosen abc.
   const [autoCapOff, setAutoCapOff] = useState(false);
-  const sentenceStart = input.trim() === '' || /[.!?]\s+$/.test(input);
+  const beforeCaret = input.slice(0, caret);
+  const sentenceStart = beforeCaret.trim() === '' || /[.!?]\s+$/.test(beforeCaret);
   const shownCase: CaseMode = caseMode === 'lower' && sentenceStart && !autoCapOff ? 'once' : caseMode;
 
   // The keyboard hands over each letter in the case it shows.
   const typeKey = (ch: string) => {
-    // "i'm" -> "I'm": a lone i followed by an apostrophe is the pronoun.
-    setInput(prev => ((ch === "'" ? prev.replace(/(^|\s)i$/, '$1I') : prev) + ch).slice(0, MAX_INPUT));
+    insertText(ch, ch === "'");
     setAutoCapOff(false);
     if (caseMode === 'once' && /\p{L}/u.test(ch)) setCaseMode('lower');
   };
@@ -160,56 +213,40 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
     }
   };
 
-  // A lone "i" becomes the pronoun "I" when the word ends.
-  const typeSpace = () =>
-    setInput(prev => {
-      if (!prev || prev.endsWith(' ')) return prev;
-      return `${prev.replace(/(^|\s)i$/, '$1I')} `.slice(0, MAX_INPUT);
-    });
+  const typeSpace = () => {
+    const [s, e] = selection();
+    const before = inputRef.current.slice(0, s);
+    if (s === e && (!before || before.endsWith(' '))) return;
+    insertText(' ', true);
+  };
 
-  const pasteText = (text: string) =>
-    setInput(prev => (prev + text.replace(/\s+/g, ' ')).slice(0, MAX_INPUT));
+  const pasteText = (text: string) => insertText(text.replace(/\s+/g, ' '));
 
-  // A physical keyboard still types on computers.
-  const sendRef = useRef(send);
-  sendRef.current = send;
-  const inputRef = useRef(input);
-  inputRef.current = input;
+  // A physical keyboard types into the field too, wherever the focus is.
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey || e.altKey || speakingOpenRef.current) return;
+      if (speakingOpenRef.current) return;
+      const el = boxRef.current;
       const target = e.target as HTMLElement | null;
+      if (!el || target === el) return;
       if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
-      if (e.key === 'Enter') {
+      const combo = e.ctrlKey || e.metaKey;
+      if (combo && e.key.toLowerCase() === 'a') {
+        // Select All selects the message, never the whole screen.
         e.preventDefault();
-        sendRef.current(inputRef.current);
-      } else if (e.key === 'Backspace') {
-        e.preventDefault();
-        setInput(prev => prev.slice(0, -1));
-      } else if (e.key.length === 1) {
-        e.preventDefault();
-        setInput(prev => (prev + e.key).slice(0, MAX_INPUT));
+        el.focus({ preventScroll: true });
+        el.select();
+      } else if (combo && e.key.toLowerCase() === 'v') {
+        el.focus({ preventScroll: true }); // the paste then lands in the field
+      } else if (!combo && !e.altKey && (e.key.length === 1 || e.key === 'Backspace' || e.key === 'Delete' || e.key === 'Enter')) {
+        el.focus({ preventScroll: true }); // the key then acts on the field
       }
     };
-    // Ctrl+V / Cmd+V: copied text goes into the message.
-    const onPaste = (e: ClipboardEvent) => {
-      if (speakingOpenRef.current) return;
-      const target = e.target as HTMLElement | null;
-      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
-      const text = e.clipboardData?.getData('text');
-      if (!text) return;
-      e.preventDefault();
-      pasteText(text);
-    };
     window.addEventListener('keydown', onKeyDown);
-    window.addEventListener('paste', onPaste);
-    return () => {
-      window.removeEventListener('keydown', onKeyDown);
-      window.removeEventListener('paste', onPaste);
-    };
+    return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  // On a phone there is no Ctrl+V: tapping the message box offers "Yapıştır".
+  // A quick way to paste on a phone: tapping the empty message box offers "Yapıştır".
   const [pasteOffer, setPasteOffer] = useState(false);
   useEffect(() => {
     if (!pasteOffer) return;
@@ -222,7 +259,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       const text = await navigator.clipboard.readText();
       if (text) pasteText(text);
     } catch {
-      /* clipboard permission denied: nothing to paste */
+      /* clipboard permission denied: the field's own menu still pastes */
     }
   };
 
@@ -260,7 +297,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   };
 
   return (
-    <div className="flex flex-col" style={{ height: 'calc(100dvh - var(--bottom-nav-h, 66px) - 24px)' }}>
+    <div className="flex flex-col select-none" style={{ height: 'calc(100dvh - var(--bottom-nav-h, 66px) - 40px)' }}>
       {/* Header */}
       <div className="flex items-center gap-3 pb-4 shrink-0">
         <div className="relative p-2.5 bg-white/[0.03] text-[#e3b553] border border-[#e3b553]/25 rounded-2xl">
@@ -308,7 +345,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       )}
 
       {/* Messages */}
-      <div ref={scrollRef} className="flex-1 overflow-y-auto space-y-3 pr-1">
+      <div ref={scrollRef} className="flex-1 overflow-y-auto space-y-3 pr-1 select-text">
         {messages.map((m, i) => (
           <motion.div
             key={i}
@@ -415,22 +452,34 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
               Yapıştır
             </button>
           )}
-          <div
-            role="textbox"
+          <textarea
+            ref={boxRef}
+            value={input}
+            rows={1}
+            inputMode="none"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck={false}
             aria-label="Message"
-            aria-readonly="true"
-            onClick={() => setPasteOffer(o => !o)}
-            className="min-h-[46px] max-h-[88px] overflow-y-auto text-sm bg-white/[0.02] border border-[#e3b553]/35 rounded-xl px-4 py-3 text-white font-light break-words whitespace-pre-wrap"
-          >
-            {input ? (
-              <>
-                {input}
-                <span className="inline-block w-[2px] h-[1em] -mb-[2px] ml-[1px] bg-[#e3b553] animate-pulse" />
-              </>
-            ) : (
-              <span className="text-white/25">{listening ? 'Konuş...' : 'İngilizce pratik yap veya soru sor...'}</span>
-            )}
-          </div>
+            maxLength={MAX_INPUT}
+            placeholder={listening ? 'Konuş...' : 'Mesajını yaz...'}
+            onChange={e => {
+              const next = e.target.value.replace(/\n/g, ' ').slice(0, MAX_INPUT);
+              inputRef.current = next;
+              setInput(next);
+              setCaret(e.target.selectionStart ?? next.length);
+            }}
+            onSelect={e => setCaret(e.currentTarget.selectionStart ?? 0)}
+            onClick={() => !input && setPasteOffer(o => !o)}
+            onKeyDown={e => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                send(input);
+              }
+            }}
+            className="block w-full select-text min-h-[46px] max-h-[88px] resize-none overflow-y-auto text-sm bg-white/[0.02] border border-[#e3b553]/35 rounded-xl px-4 py-3 text-white font-light placeholder:text-white/25 caret-[#e3b553] outline-none focus:border-[#e3b553]/60 selection:bg-[#e3b553]/35"
+          />
         </div>
         <button
           type="submit"
@@ -447,11 +496,11 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
       </form>
 
       {/* The same keyboard as the games, with space, punctuation and shift for sentences */}
-      <div className="pt-2 shrink-0">
+      <div className="pt-2 shrink-0 select-none" onMouseDown={e => e.preventDefault()}>
         <GameKeyboard
           compact
           onKey={typeKey}
-          onDelete={() => setInput(prev => prev.slice(0, -1))}
+          onDelete={deleteBack}
           onSpace={typeSpace}
           onShift={cycleCase}
           caseMode={shownCase}
