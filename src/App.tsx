@@ -208,6 +208,8 @@ export default function App() {
   const [wordBuild, setWordBuild] = useState(false);
   const [unbroken, setUnbroken] = useState(false);
   const [goldenMatch, setGoldenMatch] = useState(false);
+  // LGS -> Matching: Golden Match played with the opened LGS unit's words only.
+  const [lgsMatching, setLgsMatching] = useState<{ category: string; label: string } | null>(null);
   const [theClue, setTheClue] = useState(false);
   const [oddOne, setOddOne] = useState(false);
   const [wordPath, setWordPath] = useState(false);
@@ -230,6 +232,8 @@ export default function App() {
   };
   const timeCategory: TimeCategory | null = showOnboarding
     ? 'others'
+    : lgsMatching
+      ? 'games'
     : methodSession
       ? METHOD_TIME[methodSession.method]
       : showProgress || limit
@@ -314,6 +318,8 @@ export default function App() {
       setMethodSession({ method: 'Visual', category, label });
     } else if (method === 'Test') {
       setMethodSession({ method: 'Test', category, label });
+    } else if (method === 'Matching') {
+      setLgsMatching({ category, label });
     } else if (method === 'AI') {
       // The "AI" orb opens the conversational AI Coach.
       handleNavigate('ai');
@@ -474,6 +480,19 @@ export default function App() {
           playPronunciation={playPronunciation}
           recordQuizXp={loggedXp('practice', `${METHOD_TITLE[methodSession.method]} • ${methodSession.label}`)}
         />
+      )}
+
+      {lgsMatching && (
+        <div className="fixed inset-0 z-50 bg-[#0a0a0b] text-[#dcdcdc] overflow-y-auto">
+          <div className="max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+            <GoldenMatchScreen
+              lgsCategory={lgsMatching.category}
+              lgsLabel={lgsMatching.label}
+              onExit={() => setLgsMatching(null)}
+              recordQuizXp={loggedXp('practice', `Matching • ${lgsMatching.label}`)}
+            />
+          </div>
+        </div>
       )}
 
       {limit && (

@@ -1,4 +1,5 @@
 import {
+  ArrowLeftRight,
   Bot,
   BookOpen,
   ClipboardCheck,
@@ -15,6 +16,7 @@ export type LearningMethodLabel =
   | 'Writing'
   | 'Visual Learning'
   | 'Games'
+  | 'Matching'
   | 'Stories'
   | 'Conversations'
   | 'AI'
@@ -37,9 +39,15 @@ interface LearningOrbsTransitionProps {
 }
 
 export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
-  // LGS units get a Test orb instead of the AI orb.
+  // LGS units get a Test orb instead of the AI orb, and Matching instead of Games.
   const methods = categoryLabel.startsWith('LGS')
-    ? learningMethods.map(m => (m.label === 'AI' ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck } : m))
+    ? learningMethods.map(m =>
+        m.label === 'AI'
+          ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck }
+          : m.label === 'Games'
+            ? { ...m, label: 'Matching' as LearningMethodLabel, Icon: ArrowLeftRight }
+            : m
+      )
     : learningMethods;
   return (
     <div className="fixed inset-0 z-50">

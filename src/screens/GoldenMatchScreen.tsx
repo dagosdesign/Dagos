@@ -1,4 +1,4 @@
-import { PointerEvent as ReactPointerEvent, useCallback, useMemo, useRef, useState } from 'react';
+import { PointerEvent as ReactPointerEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { recordAnswer, VOCABULARY } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, GripVertical, RotateCcw, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
@@ -18,6 +18,10 @@ interface Pair {
 interface GoldenMatchScreenProps {
   onExit: () => void;
   recordQuizXp: (correctCount: number) => void;
+  /* LGS -> Matching: the same game, played only with LGS vocabulary. The value is
+     the LGS unit the student opened ('LGS · All Units' for every unit). */
+  lgsCategory?: string;
+  lgsLabel?: string;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -57,14 +61,90 @@ function buildPairs(round = 1): Pair[] {
   return shuffle(band.length >= PAIRS ? band : sorted).slice(0, PAIRS);
 }
 
-export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchScreenProps) {
+/* ---------------- LGS Matching: words only from the LGS vocabulary ----------------
+   The pool is read from the LGS word cards themselves (no copy of the list), so new
+   LGS words appear here by themselves. A round takes ten words of the opened unit;
+   words seen in recent rounds wait their turn, and when a unit cannot fill a round
+   the rest comes from other LGS units - never from another vocabulary. */
+const LGS_PREFIX = 'LGS · ';
+const LGS_ALL = 'LGS · All Units';
+const LGS_SEEN_KEY = 'lex_lgs_matching_seen';
+
+function lgsPairs(cards: typeof FLASHCARDS): Pair[] {
+  const out: Pair[] = [];
+  const seenTr = new Set<string>();
+  const seenEn = new Set<string>();
+  for (const card of cards) {
+    const en = card.word.trim();
+    const tr = (card.turkishMeaning || '').split(',')[0].trim();
+    if (!/^[a-zA-Z][a-zA-Z' -]{1,17}$/.test(en)) continue;
+    if (!tr || tr.length > 24) continue;
+    const ek = en.toLowerCase();
+    const tk = tr.toLowerCase();
+    if (seenEn.has(ek) || seenTr.has(tk)) continue;
+    seenEn.add(ek);
+    seenTr.add(tk);
+    out.push({ id: ek, turkish: tr, english: en });
+  }
+  return out;
+}
+
+function buildLgsPairs(category: string): Pair[] {
+  const lgs = FLASHCARDS.filter(f => f.category.startsWith(LGS_PREFIX));
+  const unit = category === LGS_ALL ? lgs : lgs.filter(f => f.category === category);
+  const own = lgsPairs(unit);
+
+  let seen: string[] = [];
+  try {
+    seen = JSON.parse(localStorage.getItem(LGS_SEEN_KEY) || '{}')[category] ?? [];
+  } catch { /* ignore */ }
+  const recent = new Set(seen);
+
+  // Unseen words first; when they run out, the words seen longest ago.
+  const fresh = shuffle(own.filter(p => !recent.has(p.id)));
+  const older = own.filter(p => recent.has(p.id)).sort((a, b) => seen.indexOf(a.id) - seen.indexOf(b.id));
+  const picked = [...fresh, ...older].slice(0, PAIRS);
+
+  // A unit too small for a round borrows from other LGS units - still LGS only.
+  if (picked.length < PAIRS) {
+    const usedEn = new Set(picked.map(p => p.id));
+    const usedTr = new Set(picked.map(p => p.turkish.toLowerCase()));
+    for (const p of shuffle(lgsPairs(lgs))) {
+      if (picked.length >= PAIRS) break;
+      if (usedEn.has(p.id) || usedTr.has(p.turkish.toLowerCase())) continue;
+      usedEn.add(p.id);
+      usedTr.add(p.turkish.toLowerCase());
+      picked.push(p);
+    }
+  }
+
+  return shuffle(picked);
+}
+
+/* The words of the board on screen join the recently-seen list of their unit. The list
+   never grows past what the unit can rotate through, so every word comes round again. */
+function rememberLgsRound(category: string, pairs: Pair[]) {
+  try {
+    const all = JSON.parse(localStorage.getItem(LGS_SEEN_KEY) || '{}');
+    const seen: string[] = all[category] ?? [];
+    const ids = pairs.map(p => p.id);
+    all[category] = [...seen.filter(id => !ids.includes(id)), ...ids].slice(-600);
+    localStorage.setItem(LGS_SEEN_KEY, JSON.stringify(all));
+  } catch { /* ignore */ }
+}
+
+export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, lgsLabel }: GoldenMatchScreenProps) {
+  const build = (round: number) => (lgsCategory ? buildLgsPairs(lgsCategory) : buildPairs(round));
   // A round's words and their shuffled order are real state: they are created
   // once per round, so a re-render can never silently rebuild the board.
   // Each completed board raises the round, and the next board is drawn a step
   // higher up the difficulty range — board 1 is the gentlest, board 5 harder.
   const [round, setRound] = useState(1);
-  const [pairs, setPairs] = useState<Pair[]>(() => buildPairs(1));
+  const [pairs, setPairs] = useState<Pair[]>(() => build(1));
   const [order, setOrder] = useState<string[]>(() => shuffle(pairs.map(p => p.id)));
+  useEffect(() => {
+    if (lgsCategory) rememberLgsRound(lgsCategory, pairs);
+  }, [lgsCategory, pairs]);
   const [matches, setMatches] = useState<Record<string, string | null>>({});
   const [checked, setChecked] = useState(false);
   const [selected, setSelected] = useState<string | null>(null); // tap-to-place
@@ -74,7 +154,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
   const newRound = useCallback(() => {
     setRound(r => {
       const nextRound = r + 1;
-      const next = buildPairs(nextRound);
+      const next = build(nextRound);
       setPairs(next);
       setOrder(shuffle(next.map(p => p.id)));
       return nextRound;
@@ -181,7 +261,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
         area: 'vocabulary',
         concept: VOCABULARY.confused,
         correct: matches[p.id] === p.id,
-        source: 'Golden Match',
+        source: lgsCategory ? 'LGS Matching' : 'Golden Match',
         prompt: `Match "${p.turkish}"`,
         given: pairs.find(x => x.id === matches[p.id])?.english,
         expected: p.english,
@@ -204,9 +284,19 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
 
       <div className="text-center space-y-1">
         <h1 className="text-3xl font-bold tracking-[0.1em]">
-          <span className="text-[#e3b553]">GOLDEN</span> <span className="text-white">MATCH</span>
+          {lgsCategory ? (
+            <>
+              <span className="text-[#e3b553]">LGS</span> <span className="text-white">MATCHING</span>
+            </>
+          ) : (
+            <>
+              <span className="text-[#e3b553]">GOLDEN</span> <span className="text-white">MATCH</span>
+            </>
+          )}
         </h1>
-        <p className="text-[10px] tracking-[0.28em] text-white/45">MATCH THE WORDS</p>
+        <p className="text-[10px] tracking-[0.28em] text-white/45">
+          {lgsCategory ? (lgsLabel ?? lgsCategory).replace(LGS_PREFIX, '').toUpperCase() : 'MATCH THE WORDS'}
+        </p>
         <p className="text-[10px] tracking-[0.2em] text-[#e3b553]/80">ROUND {round}</p>
       </div>
 
@@ -255,19 +345,34 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp }: GoldenMatchS
                   className={`flex-1 min-h-[44px] rounded-xl flex items-center justify-center px-2 text-[13px] font-medium transition-colors ${
                     card
                       ? isCorrect
-                        ? 'border border-[#3fae72] bg-[#3fae72]/10 text-white'
+                        ? lgsCategory
+                          ? 'border border-[#e3b553] bg-[#e3b553]/20 text-white' // LGS Matching: gold, never green
+                          : 'border border-[#3fae72] bg-[#3fae72]/10 text-white'
                         : isWrong
-                          ? 'border border-[#c2503f] bg-[#c2503f]/10 text-white'
+                          ? lgsCategory
+                            ? 'border border-white/30 bg-white/[0.04] text-white/55'
+                            : 'border border-[#c2503f] bg-[#c2503f]/10 text-white'
                           : 'border border-[#e3b553] bg-[#e3b553]/[0.07] text-white cursor-pointer'
                       : 'border border-dashed border-[#e3b553]/40 bg-black/40 cursor-pointer'
                   }`}
                 >
                   {card ? (
+                    lgsCategory ? (
+                      <span className="flex flex-col items-center text-center break-words py-1">
+                        <span className="flex items-center gap-1">
+                          {isCorrect && <Check className="w-3.5 h-3.5 text-[#e3b553] shrink-0" />}
+                          {isWrong && <X className="w-3.5 h-3.5 text-white/60 shrink-0" />}
+                          <span className={isWrong ? 'line-through' : ''}>{card.english}</span>
+                        </span>
+                        {isWrong && <span className="text-[11.5px] text-[#e3b553] leading-tight">{p.english}</span>}
+                      </span>
+                    ) : (
                     <span className="flex items-center gap-1 text-center break-words">
                       {isCorrect && <Check className="w-3.5 h-3.5 text-[#3fae72] shrink-0" />}
                       {isWrong && <X className="w-3.5 h-3.5 text-[#c2503f] shrink-0" />}
                       {card.english}
                     </span>
+                    )
                   ) : (
                     ''
                   )}
