@@ -58,7 +58,9 @@ export default function LearningOrbsTransition({ categoryLabel, onSelect, onClos
             position: relative;
             width: 100%;
             height: 100dvh;
-            overflow: hidden;
+            /* Every orb must be reachable on every phone: nothing is ever clipped away. */
+            overflow-x: hidden;
+            overflow-y: auto;
             background: #000;
             color: #f7f7f7;
             isolation: isolate;
@@ -178,11 +180,18 @@ export default function LearningOrbsTransition({ categoryLabel, onSelect, onClos
           }
 
           @media (max-width: 540px) {
-            .learning-orbits__field { min-height: 560px; }
-            .learning-orbits__orb { width: 122px; }
-            .orb-3 { left: calc(50% - 61px); }
+            /* The orbs scale with the height of the screen, so all seven fit on short phones too. */
+            .learning-orbits__field { min-height: 400px; }
+            .learning-orbits__orb { width: min(122px, 17.5dvh); }
+            .orb-3 { left: calc(50% - min(61px, 8.75dvh)); }
             .orb-6 { left: 9%; }
             .orb-7 { right: 9%; }
+          }
+
+          @media (max-height: 720px) {
+            .learning-orbits__heading { padding-top: 26px; font-size: 1.7rem; }
+            .learning-orbits__icon { width: 28px; height: 28px; }
+            .learning-orbits__content { gap: 5px; padding: 6px; }
           }
 
           @media (prefers-reduced-motion: reduce) {
