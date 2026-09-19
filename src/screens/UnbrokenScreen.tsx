@@ -126,6 +126,8 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
   const [status, setStatus] = useState<Status>('playing');
   const [draft, setDraft] = useState('');
   const [notice, setNotice] = useState<string | null>(null);
+  // Speak Mode: tapped once, it stays on for the whole run (see the voice section below).
+  const [speakMode, setSpeakMode] = useState(false);
   const [listening, setListening] = useState(false);
   const [brokeRecord, setBrokeRecord] = useState(false);
   const [pulse, setPulse] = useState(false);
@@ -139,6 +141,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
   const requiredLetter = currentWord ? currentWord[currentWord.length - 1].toUpperCase() : '';
 
   const beginRun = useCallback(() => {
+    stopSpeakMode();
     const start = startWords[Math.floor(Math.random() * startWords.length)] || 'travel';
     endedRef.current = false;
     busyRef.current = false;
@@ -169,9 +172,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
         if (!endedRef.current) {
           endedRef.current = true;
           setStatus('ended');
-          try {
-            recognitionRef.current?.stop();
-          } catch { /* ignore */ }
+          stopSpeakMode();
         }
       } else {
         setTimeLeft(left);
@@ -266,45 +267,87 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
     [status, requiredLetter, used, chain, record, brokeRecord, knownWord, dictionary]
   );
 
-  const startVoice = () => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR || status !== 'playing') return;
+  /* ---- SPEAK MODE ----
+     One tap turns it on and it stays on for the whole run: after every word -
+     accepted or not - the microphone listens again by itself. Browsers end a
+     recognition session after each utterance, so a new one is started in the
+     background; the student never taps again. It ends only with the run
+     (time out, restart, leaving the game) or when the student turns it off. */
+  const speakModeRef = useRef(false);
+  const restartTimer = useRef<number | undefined>(undefined);
+  // The recogniser outlives renders: it always reads the current round from here.
+  const roundRef = useRef({ requiredLetter, used, knownWord, submitCandidate });
+  roundRef.current = { requiredLetter, used, knownWord, submitCandidate };
+
+  function stopSpeakMode() {
+    speakModeRef.current = false;
+    window.clearTimeout(restartTimer.current);
+    setSpeakMode(false);
+    setListening(false);
+    const rec = recognitionRef.current;
+    recognitionRef.current = null;
     try {
-      recognitionRef.current?.stop();
+      rec?.abort();
     } catch { /* ignore */ }
+  }
+
+  const listenOnce = () => {
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR || !speakModeRef.current || endedRef.current) return;
     const rec = new SR();
     rec.lang = 'en-US';
     rec.interimResults = false;
     rec.maxAlternatives = 3;
     rec.onresult = (e: any) => {
-      setListening(false);
-      const res = e.results?.[0];
+      const res = e.results?.[e.results.length - 1];
       const alts: string[] = [];
       for (let i = 0; i < (res?.length ?? 0); i++) alts.push(res[i].transcript);
+      const round = roundRef.current;
       // prefer an alternative that already fits the round
       const fit = alts.find(a => {
         const n = normalize(a);
-        return n && n[0].toUpperCase() === requiredLetter && !used.has(n) && knownWord(n);
+        return n && n[0].toUpperCase() === round.requiredLetter && !round.used.has(n) && round.knownWord(n);
       });
-      if (fit) submitCandidate(fit);
-      else if (alts[0]) submitCandidate(alts[0]);
-      else flash('Try again');
+      if (fit) round.submitCandidate(fit);
+      else if (alts[0]) round.submitCandidate(alts[0]);
     };
-    rec.onerror = () => {
+    rec.onerror = (e: any) => {
+      // A blocked microphone cannot be retried; silence or an aborted session simply listens again.
+      if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed' || e?.error === 'audio-capture') {
+        stopSpeakMode();
+        flash('Microphone blocked');
+      }
+    };
+    rec.onend = () => {
+      if (recognitionRef.current !== rec) return;
       setListening(false);
-      flash('Try again');
+      if (!speakModeRef.current || endedRef.current) return;
+      // Listen for the next word, without another tap.
+      restartTimer.current = window.setTimeout(listenOnce, 120);
     };
-    rec.onend = () => setListening(false);
     recognitionRef.current = rec;
-    setListening(true);
-    rec.start();
+    try {
+      rec.start();
+      setListening(true);
+    } catch {
+      restartTimer.current = window.setTimeout(listenOnce, 400);
+    }
+  };
+
+  const toggleSpeakMode = () => {
+    if (speakModeRef.current) return stopSpeakMode();
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) return flash('Voice is not supported here');
+    if (status !== 'playing') return;
+    speakModeRef.current = true;
+    setSpeakMode(true);
+    listenOnce();
   };
 
   useEffect(() => () => {
-    try {
-      recognitionRef.current?.stop();
-    } catch { /* ignore */ }
+    stopSpeakMode();
     window.clearTimeout(noticeTimer.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* ---- heat comes from the current chain, never from the stored record ---- */
@@ -430,14 +473,20 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
           enterDisabled={!draft.trim()}
         />
         <button
-          onClick={startVoice}
+          onClick={toggleSpeakMode}
+          aria-pressed={speakMode}
           className={`w-full flex items-center justify-center gap-2 rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] border transition-colors cursor-pointer ${
-            listening
-              ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+            speakMode
+              ? 'border-[#e3b553] text-[#0a0a0b] bg-[#e3b553] shadow-[0_0_18px_rgba(227,181,83,0.35)]'
               : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
           }`}
         >
-          <Mic className="w-4 h-4" /> {listening ? 'LISTENING…' : 'SPEAK INSTEAD'}
+          <span className="relative flex items-center justify-center">
+            {speakMode && listening && <span className="absolute w-6 h-6 rounded-full bg-[#0a0a0b]/25 animate-ping" />}
+            <Mic className="relative w-4 h-4" />
+          </span>
+          SPEAK
+          {speakMode && <span className="text-[9.5px] font-semibold tracking-[0.14em] opacity-70">· ON</span>}
         </button>
         <p className="h-4 text-center text-[11px] tracking-[0.12em] text-[#e3b553]">{notice ?? ''}</p>
       </div>
