@@ -426,14 +426,14 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
         <button
           onClick={clearAll}
           disabled={checked}
-          className="flex-1 flex items-center justify-center gap-1.5 border border-[#e3b553]/40 text-white rounded-2xl py-3 text-[10px] font-bold tracking-[0.1em] hover:bg-[#e3b553]/10 cursor-pointer disabled:opacity-40"
+          className="shrink-0 whitespace-nowrap flex items-center justify-center gap-1.5 border border-[#e3b553]/40 text-white rounded-2xl px-3.5 py-3 text-[10px] font-bold tracking-[0.1em] hover:bg-[#e3b553]/10 cursor-pointer disabled:opacity-40"
         >
           <RotateCcw className="w-3.5 h-3.5 text-[#e3b553]" /> CLEAR ALL
         </button>
         {checked ? (
           <button
             onClick={newRound}
-            className="flex-[1.7] rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.1em] bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer"
+            className="flex-1 min-w-0 whitespace-nowrap rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.1em] bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer"
           >
             NEW ROUND
           </button>
@@ -441,7 +441,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
           <button
             onClick={check}
             disabled={!allFilled}
-            className={`flex-[1.7] rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.1em] ${
+            className={`flex-1 min-w-0 whitespace-nowrap rounded-2xl py-3.5 text-[11px] font-bold tracking-[0.1em] ${
               allFilled
                 ? 'bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] cursor-pointer'
                 : 'bg-white/[0.04] text-white/30 cursor-not-allowed'
@@ -450,9 +450,9 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
             CHECK ANSWERS
           </button>
         )}
-        <div className="flex-1 text-right">
+        <div className="shrink-0 pl-1 text-right whitespace-nowrap">
           <p className="text-[10px] tracking-[0.14em] text-[#e3b553]">{pairs.length} PAIRS</p>
-          <p className="text-[10px] tracking-[0.14em] text-white/40">SLIDE &amp; MATCH</p>
+          <p className="text-[9.5px] tracking-[0.08em] text-white/40">SLIDE &amp; MATCH</p>
         </div>
       </div>
     </div>
