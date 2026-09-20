@@ -10,9 +10,20 @@ import { useUserProfile } from '../../lib/userProfile';
 
 type Mode = 'signin' | 'signup' | 'reset';
 
-export default function SignInPage({ onBack, notify }: { onBack: () => void; notify: (msg: string) => void }) {
+export default function SignInPage({
+  onBack,
+  notify,
+  initialMode = 'signin',
+  onSignedIn,
+}: {
+  onBack: () => void;
+  notify: (msg: string) => void;
+  initialMode?: 'signin' | 'signup';
+  onSignedIn?: () => void; // defaults to going back
+}) {
+  const signedIn = onSignedIn ?? onBack;
   const profile = useUserProfile();
-  const [mode, setMode] = useState<Mode>('signin');
+  const [mode, setMode] = useState<Mode>(initialMode);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState(profile.name === 'Student' ? '' : profile.name);
@@ -34,13 +45,13 @@ export default function SignInPage({ onBack, notify }: { onBack: () => void; not
       if (mode === 'signin') {
         await signIn(mail, password);
         notify('Signed in');
-        onBack(); // the account and this device are brought together by AccountSyncGate
+        signedIn(); // the account and this device are brought together by AccountSyncGate
       } else if (mode === 'signup') {
         const result = await signUp(mail, password, name.trim() || 'Student');
         if (result === 'confirm-email') setSent('confirm');
         else {
           notify('Account created');
-          onBack();
+          signedIn();
         }
       } else {
         await sendPasswordReset(mail);
@@ -53,7 +64,8 @@ export default function SignInPage({ onBack, notify }: { onBack: () => void; not
     }
   };
 
-  const social = async (provider: 'google' | 'apple') => {
+  // Apple sign-in joins Google here once the Apple Developer account exists (lib/auth.ts is ready for it).
+  const social = async (provider: 'google') => {
     setError(null);
     try {
       await signInWithProvider(provider);
@@ -193,7 +205,6 @@ export default function SignInPage({ onBack, notify }: { onBack: () => void; not
           </div>
           <div className="space-y-2">
             <GhostButton onClick={() => social('google')}>Continue with Google</GhostButton>
-            <GhostButton onClick={() => social('apple')}>Continue with Apple</GhostButton>
           </div>
           <p className="px-1 text-[12px] leading-relaxed text-center" style={{ color: C.muted }}>
             By continuing you accept the Terms of Use and the Privacy Policy. You can also keep using Lexistencehub as a guest: your

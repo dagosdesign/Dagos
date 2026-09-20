@@ -17,6 +17,9 @@ import OddOneScreen from './screens/OddOneScreen';
 import WordPathScreen from './screens/WordPathScreen';
 import GrammarDuelScreen from './screens/GrammarDuelScreen';
 import AccountSyncGate from './components/AccountSyncGate';
+import WelcomeScreen, { welcomeSeen } from './screens/WelcomeScreen';
+import { useAuth } from './lib/auth';
+import { cloudEnabled } from './lib/supabase';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -96,6 +99,11 @@ export default function App() {
   const [limit, setLimit] = useState<LimitKind | null>(null);
 
   // New students check their level first; they can postpone it once.
+  // The welcome screen: once per device, for a student who is not signed in (accounts on).
+  const authState = useAuth();
+  const [welcomeDone, setWelcomeDone] = useState<boolean>(() => !cloudEnabled || welcomeSeen());
+  const showWelcome = !welcomeDone && authState.ready && !authState.session;
+
   const [showOnboarding, setShowOnboarding] = useState<boolean>(() => {
     try {
       return !getUserProfile().placementTestCompleted && localStorage.getItem(PLACEMENT_PROMPTED_KEY) !== '1';
@@ -498,6 +506,8 @@ export default function App() {
       )}
 
       <AccountSyncGate />
+
+      {showWelcome && <WelcomeScreen onDone={() => setWelcomeDone(true)} />}
 
       {limit && (
         <PlanLimitCard kind={limit} fullScreen onBack={() => setLimit(null)} onUpgraded={() => setLimit(null)} />

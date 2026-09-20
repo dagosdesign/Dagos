@@ -23,6 +23,7 @@ import AccountPage from './profile/AccountPage';
 import HelpSupportPage from './profile/HelpSupportPage';
 import SignInPage from './profile/SignInPage';
 import { signOut, useAuth } from '../lib/auth';
+import { WELCOME_SEEN_KEY } from './WelcomeScreen';
 import { cloudEnabled } from '../lib/supabase';
 import LegalPage from './profile/LegalPage';
 import SubscriptionPage from './profile/SubscriptionPage';
@@ -262,6 +263,11 @@ export default function ProfileScreen(props: ProfileScreenProps) {
                     if (auth.session) {
                       // The account's data is saved, then leaves this device; the app starts again as a guest.
                       await signOut();
+                      try {
+                        localStorage.removeItem(WELCOME_SEEN_KEY); // the next student on this device is welcomed again
+                      } catch {
+                        /* ignore */
+                      }
                       window.location.reload();
                       return;
                     }
