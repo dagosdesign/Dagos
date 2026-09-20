@@ -18,6 +18,20 @@ export default function AccountSyncGate() {
   const [busy, setBusy] = useState(false);
   const running = useRef(false);
 
+  // Coming back from Google / Apple (or an e-mail link) with an error: say so, instead of
+  // silently showing the same page, and clean the address.
+  const [signInError, setSignInError] = useState<string | null>(() => {
+    const params = new URLSearchParams(window.location.search || window.location.hash.replace(/^#/, '?'));
+    const description = params.get('error_description') || params.get('error');
+    if (!description) return null;
+    window.history.replaceState(null, '', window.location.pathname);
+    const text = description.replace(/\+/g, ' ');
+    if (/exchange external code/i.test(text)) return 'Sign-in with this provider is not set up correctly yet. Please use your e-mail and password for now.';
+    if (/expired|invalid/i.test(text)) return 'This link has expired or was already used. Please ask for a new one.';
+    if (/access.denied|cancel/i.test(text)) return 'Sign-in was cancelled.';
+    return text;
+  });
+
   const run = async (choice?: MergeChoice) => {
     if (running.current) return;
     running.current = true;
@@ -40,6 +54,24 @@ export default function AccountSyncGate() {
     void run();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, session?.user.id]);
+
+  if (signInError) {
+    return (
+      <div className="fixed inset-0 z-[90] flex items-end sm:items-center justify-center p-4" style={{ background: 'rgba(0,0,0,0.82)' }} role="alertdialog" aria-modal="true">
+        <div className="w-full max-w-md rounded-[24px] border border-[#262626] bg-[#0B0B0B] p-5 space-y-4">
+          <p className="text-[18px] font-semibold text-white">Sign-in did not work</p>
+          <p className="text-[14px] leading-relaxed text-[#A5A5A5]">{signInError}</p>
+          <button
+            type="button"
+            onClick={() => setSignInError(null)}
+            className="w-full rounded-2xl py-3.5 text-[15px] font-semibold bg-[#F5B82E] text-[#0B0B0B] cursor-pointer"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (recovery) {
     const ok = newPassword.length >= 8 && /[A-Za-z]/.test(newPassword) && /[0-9]/.test(newPassword);
