@@ -19,6 +19,7 @@ export type ProfilePage =
   | 'achievements'
   | 'notifications'
   | 'account'
+  | 'signin'
   | 'password'
   | 'data'
   | 'subscription'

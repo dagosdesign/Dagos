@@ -21,6 +21,9 @@ import NotificationsPage from './profile/NotificationsPage';
 import AccountSettingsPage, { DataPrivacyPage } from './profile/AccountSettingsPage';
 import AccountPage from './profile/AccountPage';
 import HelpSupportPage from './profile/HelpSupportPage';
+import SignInPage from './profile/SignInPage';
+import { signOut, useAuth } from '../lib/auth';
+import { cloudEnabled } from '../lib/supabase';
 import LegalPage from './profile/LegalPage';
 import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
@@ -82,9 +85,9 @@ export default function ProfileScreen(props: ProfileScreenProps) {
     open('practice', from);
   };
 
+  const auth = useAuth();
   const upgrade = () => {
-    setMembership('premium');
-    setToast('Premium is now active');
+    setToast(setMembership('premium') ? 'Premium is now active' : 'Premium purchases open with the App Store and Google Play release');
   };
 
   const content = (() => {
@@ -155,8 +158,17 @@ export default function ProfileScreen(props: ProfileScreenProps) {
             onLogOut={() => setConfirmLogout(true)}
           />
         );
+      case 'signin':
+        return <SignInPage onBack={up} notify={setToast} />;
       case 'password':
-        return <AccountPage onBack={() => open('account')} onPersonal={() => open('personal', 'password')} notify={setToast} />;
+        return (
+          <AccountPage
+            onBack={() => open('account')}
+            onPersonal={() => open('personal', 'password')}
+            onSignIn={() => open('signin', 'password')}
+            notify={setToast}
+          />
+        );
       case 'data':
         return <DataPrivacyPage onBack={up} onResetStats={onResetStats} notify={setToast} />;
       case 'subscription':
@@ -173,6 +185,26 @@ export default function ProfileScreen(props: ProfileScreenProps) {
           <div className="space-y-6">
             <ProfileHeader onSettings={() => open('account')} onNotifications={() => open('notifications')} hasUpdate={!profile.placementTestCompleted} />
             <StudentIdentityCard profile={profile} onEdit={() => open('personal')} />
+            {cloudEnabled && auth.ready && !auth.session && (
+              <button
+                type="button"
+                onClick={() => open('signin')}
+                className="w-full flex items-center gap-3 rounded-[22px] border px-5 py-4 text-left cursor-pointer"
+                style={{ background: C.card, borderColor: 'rgba(245,184,46,0.35)' }}
+              >
+                <span className="flex-1 min-w-0">
+                  <span className="block text-[15px] font-semibold" style={{ color: C.text }}>
+                    Sign in or create an account
+                  </span>
+                  <span className="block text-[12.5px] mt-0.5" style={{ color: C.muted }}>
+                    Keep your progress safe and use it on every device
+                  </span>
+                </span>
+                <span className="text-[13px] font-semibold shrink-0" style={{ color: C.gold }}>
+                  Sign In
+                </span>
+              </button>
+            )}
             <LevelCard profile={profile} onDetails={() => open('level')} onCheckLevel={() => open('placement')} />
             <LearningTimeCard />
             <MyProgressCard onOpen={() => open('progress')} />
@@ -209,7 +241,9 @@ export default function ProfileScreen(props: ProfileScreenProps) {
                   Log out of Lexistencehub?
                 </p>
                 <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
-                  Your name, photo, level and membership are removed from this device. Learning progress stays.
+                  {auth.session
+                    ? 'Your progress is saved to your account and removed from this device. Sign in again to get it back.'
+                    : 'Your name, photo, level and membership are removed from this device. Learning progress stays.'}
                 </p>
               </div>
               <div className="flex gap-2">
@@ -223,9 +257,15 @@ export default function ProfileScreen(props: ProfileScreenProps) {
                 </button>
                 <button
                   type="button"
-                  onClick={() => {
-                    signOutProfile();
+                  onClick={async () => {
                     setConfirmLogout(false);
+                    if (auth.session) {
+                      // The account's data is saved, then leaves this device; the app starts again as a guest.
+                      await signOut();
+                      window.location.reload();
+                      return;
+                    }
+                    signOutProfile();
                     setToast('Logged out');
                   }}
                   className="flex-1 rounded-2xl py-3 text-[14px] font-semibold cursor-pointer"

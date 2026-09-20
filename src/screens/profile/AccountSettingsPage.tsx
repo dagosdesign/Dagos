@@ -2,6 +2,9 @@ import { useState, type ReactNode } from 'react';
 import { Bell, Database, FileText, History, Info, LifeBuoy, LogOut, RotateCcw, Shield, Target, Trash2, UserRound } from 'lucide-react';
 import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage } from '../../components/profile/ui';
 import { useAccount } from './AccountPage';
+import { apiFetch } from '../../lib/api';
+import { useAuth } from '../../lib/auth';
+import { supabase } from '../../lib/supabase';
 import { clearLearningRecord } from '../../lib/learningRecord';
 import { clearActivityHistory } from '../../lib/activityLog';
 import type { ProfilePage } from '../../components/profile/ProfileFeatures';
@@ -80,8 +83,22 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
+  const auth = useAuth();
   const deleteEverything = async () => {
     setError(null);
+    if (auth.session) {
+      // A real account: the server deletes the user and everything stored for it.
+      try {
+        const r = await apiFetch('/api/account/delete-user', { method: 'POST' });
+        if (!r.ok) {
+          const body = await r.json().catch(() => ({}));
+          return setError(body.message || 'Your account could not be deleted. Please try again.');
+        }
+        await supabase?.auth.signOut();
+      } catch {
+        return setError('No connection. Your account was not deleted - please try again.');
+      }
+    }
     try {
       const r = await fetch('/api/account/delete', {
         method: 'POST',

@@ -28,8 +28,7 @@ export default function SubscriptionPage({ onBack, notify }: { onBack: () => voi
           </p>
           <GoldButton
             onClick={() => {
-              setMembership('premium');
-              notify('Premium is now active');
+              notify(setMembership('premium') ? 'Premium is now active' : 'Premium purchases open with the App Store and Google Play release');
               onBack();
             }}
           >
@@ -78,8 +77,7 @@ export default function SubscriptionPage({ onBack, notify }: { onBack: () => voi
             <GhostButton onClick={() => setConfirming(false)}>Cancel</GhostButton>
             <GhostButton
               onClick={() => {
-                setMembership('free');
-                notify('You are now on the Free plan');
+                notify(setMembership('free') ? 'You are now on the Free plan' : 'Subscriptions are managed in the App Store or Google Play');
                 onBack();
               }}
             >

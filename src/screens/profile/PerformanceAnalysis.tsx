@@ -12,6 +12,7 @@ import type {
   SkillFilter,
   TopicPerformance,
 } from "../../lib/performanceAnalysis";
+import { apiFetch } from "../../lib/api";
 
 /* PERFORMANCE ANALYSIS - what the student does well, what to develop and what
    to practise next, from the student's real answers only. Black, white and gold:
@@ -120,7 +121,7 @@ function useRecommendation(a: Analysis, filter: SkillFilter) {
     if (!stale || inFlight.has(filter)) return;
     inFlight.add(filter);
     setLoading(true);
-    fetch("/api/performance-recommendation", {
+    apiFetch("/api/performance-recommendation", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data: recommendationData(a, filter) }),

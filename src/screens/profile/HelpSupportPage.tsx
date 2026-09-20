@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ChevronDown, CircleCheck, Mail, Search } from 'lucide-react';
 import { C, Card, GoldButton, SubPage } from '../../components/profile/ui';
 import { useUserProfile } from '../../lib/userProfile';
+import { apiFetch } from '../../lib/api';
 
 /* HELP & SUPPORT: answers first (searchable), then a direct message to the
    Lexistencehub team. The reply comes by e-mail; every message gets a reference
@@ -267,7 +268,7 @@ export default function HelpSupportPage({ onBack }: { onBack: () => void }) {
     if (message.trim().length < 10) return setError(T.tooShort);
     setBusy(true);
     try {
-      const r = await fetch('/api/support', {
+      const r = await apiFetch('/api/support', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

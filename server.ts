@@ -6,18 +6,22 @@ import { GoogleGenAI, Modality, Type } from "@google/genai";
 import dotenv from "dotenv";
 import { registerAccountRoutes } from "./accountApi";
 import { registerSupportRoutes } from "./supportApi";
+import { accountsEnabled, guard, registerAccountDeletion } from "./authGuard";
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
+app.set("trust proxy", 1); // the real client IP behind the host's proxy (rate limits)
 app.use(express.json());
 
 // Account: e-mail, phone and password, every change confirmed by a code.
 registerAccountRoutes(app);
 // Help & Support: a student's message to the team.
 registerSupportRoutes(app);
+// Signed-in accounts (Supabase): deleting the account and everything stored for it.
+registerAccountDeletion(app);
 
 // Lazy-loaded Gemini client
 let aiClient: GoogleGenAI | null = null;
@@ -90,11 +94,11 @@ function getVocab(): Record<string, { forms?: string[] }> {
 // Endpoint to check if AI is configured
 app.get("/api/config", (req, res) => {
   const isConfigured = !!process.env.GEMINI_API_KEY;
-  res.json({ isConfigured });
+  res.json({ isConfigured, accountsEnabled });
 });
 
 // AI LEX chat endpoint — a conversational English-learning tutor.
-app.post("/api/chat", async (req, res) => {
+app.post("/api/chat", guard({ feature: 'chat', premium: true, perMinute: 20, perDay: 300 }), async (req, res) => {
   const { messages } = req.body as {
     messages?: { role: "user" | "assistant"; content: string }[];
   };
@@ -176,7 +180,7 @@ const LIVE_SYSTEM_INSTRUCTION =
   "speaks Turkish or is stuck, help with a short English phrase they can use and encourage them to try. " +
   "Never use lists, markdown or emojis. Start by greeting the student warmly and asking how their day is going.";
 
-app.post("/api/live-token", async (_req, res) => {
+app.post("/api/live-token", guard({ feature: 'speaking', premium: true, perMinute: 6, perDay: 20 }), async (_req, res) => {
   try {
     const ai = getAIClient();
     const now = Date.now();
@@ -220,7 +224,7 @@ app.post("/api/live-token", async (_req, res) => {
 
 /* AI Learning Insight: a short, personal analysis written only from the student's
    measured performance (the client sends the analysis of its answer record). */
-app.post("/api/learning-insight", async (req, res) => {
+app.post("/api/learning-insight", guard({ feature: 'analysis', premium: true, perMinute: 6, perDay: 40 }), async (req, res) => {
   const { data } = req.body as { data?: unknown };
   if (!data || typeof data !== "object") {
     return res.status(400).json({ error: "Missing 'data' in request body." });
@@ -264,7 +268,7 @@ app.post("/api/learning-insight", async (req, res) => {
    the student's level and current accuracy and built around their own mistakes.
    With several targets the weakest topic gets the most questions, and every
    question says which target it practises. */
-app.post("/api/weakness-practice", async (req, res) => {
+app.post("/api/weakness-practice", guard({ feature: 'practice', premium: true, perMinute: 6, perDay: 60 }), async (req, res) => {
   type Target = {
     area?: string;
     concept?: string;
@@ -360,7 +364,7 @@ app.post("/api/weakness-practice", async (req, res) => {
 /* Performance Analysis → AI Recommendation: two to four sentences written only
    from the analysed performance (strengths, development areas, subtopics,
    common errors, change) for the selected skill filter. */
-app.post("/api/performance-recommendation", async (req, res) => {
+app.post("/api/performance-recommendation", guard({ feature: 'analysis', premium: true, perMinute: 6, perDay: 40 }), async (req, res) => {
   const { data } = req.body as { data?: unknown };
   if (!data || typeof data !== "object") return res.status(400).json({ error: "Missing 'data'." });
   try {
@@ -396,7 +400,7 @@ app.post("/api/performance-recommendation", async (req, res) => {
 
 /* Writing: is the student's English answer a valid translation of the Turkish
    meaning, even if it is not the one word stored on the card? */
-app.post("/api/check-translation", async (req, res) => {
+app.post("/api/check-translation", guard({ feature: 'content', perMinute: 40 }), async (req, res) => {
   const { turkish, expected, given, partOfSpeech } = req.body as {
     turkish?: string;
     expected?: string;
@@ -442,7 +446,7 @@ app.post("/api/check-translation", async (req, res) => {
 });
 
 // Generates practice content for a target word: a short story or a two-person dialogue.
-app.post("/api/practice-content", async (req, res) => {
+app.post("/api/practice-content", guard({ feature: 'content', perMinute: 20 }), async (req, res) => {
   const { kind, word, meaning } = req.body as {
     kind?: "story" | "dialogue";
     word?: string;
@@ -697,7 +701,7 @@ app.post("/api/practice-content", async (req, res) => {
 });
 
 // API endpoint to dynamically generate a vocabulary quiz using Gemini API
-app.post("/api/generate-quiz", async (req, res) => {
+app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), async (req, res) => {
   const { theme, count = 5 } = req.body;
 
   if (!theme || typeof theme !== "string") {

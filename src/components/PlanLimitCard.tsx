@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Crown } from 'lucide-react';
 import { setMembership } from '../lib/userProfile';
 import { C, GhostButton, GoldButton } from './profile/ui';
@@ -49,6 +50,7 @@ export default function PlanLimitCard({
   fullScreen?: boolean;
 }) {
   const copy = COPY[kind];
+  const [note, setNote] = useState(false);
   const card = (
     <div
       className="w-full max-w-md mx-auto rounded-[22px] border p-6 text-center space-y-4"
@@ -71,12 +73,17 @@ export default function PlanLimitCard({
       <div className="space-y-2 pt-1">
         <GoldButton
           onClick={() => {
-            setMembership('premium');
-            onUpgraded?.();
+            if (setMembership('premium')) onUpgraded?.();
+            else setNote(true);
           }}
         >
           Upgrade to Premium
         </GoldButton>
+        {note && (
+          <p className="text-[13px] leading-relaxed" style={{ color: C.gold }}>
+            Premium purchases open with the App Store and Google Play release.
+          </p>
+        )}
         {onBack && <GhostButton onClick={onBack}>Back</GhostButton>}
       </div>
     </div>

@@ -16,6 +16,7 @@ import TheClueScreen from './screens/TheClueScreen';
 import OddOneScreen from './screens/OddOneScreen';
 import WordPathScreen from './screens/WordPathScreen';
 import GrammarDuelScreen from './screens/GrammarDuelScreen';
+import AccountSyncGate from './components/AccountSyncGate';
 import LearningOrbsTransition, { LearningMethodLabel } from './components/LearningOrbsTransition';
 import MethodPracticeScreen, { PracticeMethod } from './screens/MethodPracticeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -495,6 +496,8 @@ export default function App() {
           </div>
         </div>
       )}
+
+      <AccountSyncGate />
 
       {limit && (
         <PlanLimitCard kind={limit} fullScreen onBack={() => setLimit(null)} onUpgraded={() => setLimit(null)} />

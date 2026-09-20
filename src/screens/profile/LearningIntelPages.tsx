@@ -12,6 +12,7 @@ import {
 import type { ConceptAnalysis, LearningAnalysis, MistakeStatus } from '../../lib/learningIntel';
 import { learningTimeFor, useLearningTime } from '../../lib/activityLog';
 import { useUserProfile } from '../../lib/userProfile';
+import { apiFetch } from '../../lib/api';
 
 /* The three Profile intelligence features, one analysis of the answer record:
    AI Learning Insight   - what Lexistencehub understands about the learning
@@ -108,7 +109,7 @@ export function useLearningInsight() {
       profile.placementTestCompleted ? `${profile.level} ${profile.levelName}` : null,
       learningTimeFor('month', buckets).byCategory
     );
-    insightRequest = fetch('/api/learning-insight', {
+    insightRequest = apiFetch('/api/learning-insight', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ data }),
@@ -438,7 +439,7 @@ export function PracticePage({ conceptKeys, onBack }: { conceptKeys: string[]; o
       weight: Math.max(0.2, 1 - c.weightedAccuracy) * (1 - i * 0.15),
     });
     const cefr = profile.placementTestCompleted ? profile.level : 'B1';
-    fetch('/api/weakness-practice', {
+    apiFetch('/api/weakness-practice', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(targets.length > 1 ? { cefr, targets: targets.map(target) } : { cefr, ...target(targets[0], 0) }),

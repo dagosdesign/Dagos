@@ -1,5 +1,6 @@
 import { GoogleGenAI, Modality } from '@google/genai';
 import type { LiveServerMessage, Session } from '@google/genai';
+import { apiFetch } from './api';
 
 /* AI Speaking: a real-time spoken conversation with Gemini Live - the student
    talks, AI LEX answers in a natural voice, and either side can speak at any
@@ -238,7 +239,7 @@ export function startLiveConversation(h: LiveHandlers): LiveConversation {
 
   void (async () => {
   try {
-    const res = await fetch('/api/live-token', { method: 'POST' });
+    const res = await apiFetch('/api/live-token', { method: 'POST' });
     const data = await res.json();
     if (!res.ok || !data.token) throw new Error(data.message || 'Voice conversation is not available right now.');
     if (stopped) throw new Error('stopped');

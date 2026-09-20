@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Square, AudioLines } from 'lucide-react';
 import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
 import AiSpeakingSession from '../components/AiSpeakingSession';
+import { apiFetch } from '../lib/api';
 
 // Beside the space bar: , ' on the left, . ? on the right.
 const PUNCTUATION = [',', "'", '.', '?'];
@@ -101,7 +102,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
     loadingRef.current = true;
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await apiFetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: nextMessages.filter(m => m !== GREETING) }),
