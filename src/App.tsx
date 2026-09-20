@@ -208,7 +208,7 @@ export default function App() {
   const [wordBuild, setWordBuild] = useState(false);
   const [unbroken, setUnbroken] = useState(false);
   const [goldenMatch, setGoldenMatch] = useState(false);
-  // LGS -> Matching: Golden Match played with the opened LGS unit's words only.
+  // Matching: Golden Match played with the opened word group's own words only (LGS unit, YDT, Adjectives ...).
   const [lgsMatching, setLgsMatching] = useState<{ category: string; label: string } | null>(null);
   const [theClue, setTheClue] = useState(false);
   const [oddOne, setOddOne] = useState(false);
@@ -318,7 +318,7 @@ export default function App() {
       setMethodSession({ method: 'Visual', category, label });
     } else if (method === 'Test') {
       setMethodSession({ method: 'Test', category, label });
-    } else if (method === 'Matching') {
+    } else if (method === 'Matching' && category) {
       setLgsMatching({ category, label });
     } else if (method === 'AI') {
       // The "AI" orb opens the conversational AI Coach.
@@ -466,6 +466,7 @@ export default function App() {
       {orbFlow && (
         <LearningOrbsTransition
           categoryLabel={orbFlow.label}
+          matching={orbFlow.category !== null}
           onSelect={handleOrbSelect}
           onClose={() => setOrbFlow(null)}
         />

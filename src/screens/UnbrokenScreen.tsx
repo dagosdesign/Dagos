@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, BarChart3, Mic, Ban } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
+import { pluralLemma } from '../lib/lemma';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
 /* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 20 seconds
@@ -181,11 +182,19 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
     return () => window.clearInterval(id);
   }, [status, currentWord, chain]);
 
-  const flash = (msg: string) => {
+  const flash = (msg: string, ms = 1200) => {
     setNotice(msg);
     window.clearTimeout(noticeTimer.current);
-    noticeTimer.current = window.setTimeout(() => setNotice(null), 1200);
+    noticeTimer.current = window.setTimeout(() => setNotice(null), ms);
   };
+
+  /* A word and its plural are one word: cat / cats, city / cities, child / children.
+     Used words are compared by their base form, in both directions. */
+  const lemma = useCallback(
+    (w: string) => pluralLemma(w, base => (dictionary && dictionary.size > 0 ? dictionary.has(base) : true)),
+    [dictionary]
+  );
+  const usedLemmas = useMemo(() => new Set([...used].map(lemma)), [used, lemma]);
 
   /* ---- one validation pipeline for typing and speech ---- */
   const submitCandidate = useCallback(
@@ -211,6 +220,11 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
       }
       if (used.has(w)) {
         flash('Already used');
+        setDraft('');
+        return release();
+      }
+      if (usedLemmas.has(lemma(w))) {
+        flash('Already used · plurals do not count as new words', 2600);
         setDraft('');
         return release();
       }
@@ -264,7 +278,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
       roundStartRef.current = Date.now();
       release();
     },
-    [status, requiredLetter, used, chain, record, brokeRecord, knownWord, dictionary]
+    [status, requiredLetter, used, usedLemmas, lemma, chain, record, brokeRecord, knownWord, dictionary]
   );
 
   /* ---- SPEAK MODE ----
@@ -276,8 +290,8 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
   const speakModeRef = useRef(false);
   const restartTimer = useRef<number | undefined>(undefined);
   // The recogniser outlives renders: it always reads the current round from here.
-  const roundRef = useRef({ requiredLetter, used, knownWord, submitCandidate });
-  roundRef.current = { requiredLetter, used, knownWord, submitCandidate };
+  const roundRef = useRef({ requiredLetter, used, usedLemmas, lemma, knownWord, submitCandidate });
+  roundRef.current = { requiredLetter, used, usedLemmas, lemma, knownWord, submitCandidate };
 
   function stopSpeakMode() {
     speakModeRef.current = false;
@@ -306,7 +320,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
       // prefer an alternative that already fits the round
       const fit = alts.find(a => {
         const n = normalize(a);
-        return n && n[0].toUpperCase() === round.requiredLetter && !round.used.has(n) && round.knownWord(n);
+        return n && n[0].toUpperCase() === round.requiredLetter && !round.usedLemmas.has(round.lemma(n)) && round.knownWord(n);
       });
       if (fit) round.submitCandidate(fit);
       else if (alts[0]) round.submitCandidate(alts[0]);
@@ -488,7 +502,9 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
           SPEAK
           {speakMode && <span className="text-[9.5px] font-semibold tracking-[0.14em] opacity-70">· ON</span>}
         </button>
-        <p className="h-4 text-center text-[11px] tracking-[0.12em] text-[#e3b553]">{notice ?? ''}</p>
+        <p className={`h-4 text-center text-[11px] whitespace-nowrap text-[#e3b553] ${(notice?.length ?? 0) > 30 ? 'tracking-[0.02em]' : 'tracking-[0.12em]'}`}>
+          {notice ?? ''}
+        </p>
       </div>
 
       {/* Permanent rules strip */}

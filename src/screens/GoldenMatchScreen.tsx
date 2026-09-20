@@ -18,8 +18,9 @@ interface Pair {
 interface GoldenMatchScreenProps {
   onExit: () => void;
   recordQuizXp: (correctCount: number) => void;
-  /* LGS -> Matching: the same game, played only with LGS vocabulary. The value is
-     the LGS unit the student opened ('LGS · All Units' for every unit). */
+  /* Matching (the orb of every word group): the same game, played only with that
+     group's own words. The value is the group's word category - an LGS unit
+     ('LGS · All Units' for every unit), YDT, YDS, Adjectives ... */
   lgsCategory?: string;
   lgsLabel?: string;
 }
@@ -61,11 +62,12 @@ function buildPairs(round = 1): Pair[] {
   return shuffle(band.length >= PAIRS ? band : sorted).slice(0, PAIRS);
 }
 
-/* ---------------- LGS Matching: words only from the LGS vocabulary ----------------
-   The pool is read from the LGS word cards themselves (no copy of the list), so new
-   LGS words appear here by themselves. A round takes ten words of the opened unit;
-   words seen in recent rounds wait their turn, and when a unit cannot fill a round
-   the rest comes from other LGS units - never from another vocabulary. */
+/* ---------------- Matching: words only from the opened group's own vocabulary ----------------
+   The pool is read from the group's word cards themselves (no copy of the list), so new
+   words appear here by themselves. A round takes ten words of the opened group; words
+   seen in recent rounds wait their turn. Pools are never mixed: YDT Matching plays YDT
+   words, Adjectives Matching plays adjectives. Only an LGS unit too small for a round
+   borrows - and then from other LGS units, never from another vocabulary. */
 const LGS_PREFIX = 'LGS · ';
 const LGS_ALL = 'LGS · All Units';
 const LGS_SEEN_KEY = 'lex_lgs_matching_seen';
@@ -90,8 +92,10 @@ function lgsPairs(cards: typeof FLASHCARDS): Pair[] {
 }
 
 function buildLgsPairs(category: string): Pair[] {
-  const lgs = FLASHCARDS.filter(f => f.category.startsWith(LGS_PREFIX));
-  const unit = category === LGS_ALL ? lgs : lgs.filter(f => f.category === category);
+  const isLgs = category.startsWith(LGS_PREFIX);
+  // The wider pool a small unit may borrow from: LGS for an LGS unit, nothing for any other group.
+  const lgs = isLgs ? FLASHCARDS.filter(f => f.category.startsWith(LGS_PREFIX)) : [];
+  const unit = category === LGS_ALL ? lgs : FLASHCARDS.filter(f => f.category === category);
   const own = lgsPairs(unit);
 
   let seen: string[] = [];
@@ -135,6 +139,8 @@ function rememberLgsRound(category: string, pairs: Pair[]) {
 
 export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, lgsLabel }: GoldenMatchScreenProps) {
   const build = (round: number) => (lgsCategory ? buildLgsPairs(lgsCategory) : buildPairs(round));
+  // "LGS" for an LGS unit, otherwise the group as the student sees it: YDT, IELTS, Adjectives ...
+  const groupName = lgsCategory?.startsWith(LGS_PREFIX) ? 'LGS' : lgsLabel ?? lgsCategory ?? '';
   // A round's words and their shuffled order are real state: they are created
   // once per round, so a re-render can never silently rebuild the board.
   // Each completed board raises the round, and the next board is drawn a step
@@ -261,7 +267,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
         area: 'vocabulary',
         concept: VOCABULARY.confused,
         correct: matches[p.id] === p.id,
-        source: lgsCategory ? 'LGS Matching' : 'Golden Match',
+        source: lgsCategory ? `${groupName} Matching` : 'Golden Match',
         prompt: `Match "${p.turkish}"`,
         given: pairs.find(x => x.id === matches[p.id])?.english,
         expected: p.english,
@@ -283,10 +289,10 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
       <TopBar onExit={onExit} />
 
       <div className="text-center space-y-1">
-        <h1 className="text-3xl font-bold tracking-[0.1em]">
+        <h1 className={`font-bold tracking-[0.1em] ${groupName.length > 8 ? 'text-[19px] leading-tight' : 'text-3xl'}`}>
           {lgsCategory ? (
             <>
-              <span className="text-[#e3b553]">LGS</span> <span className="text-white">MATCHING</span>
+              <span className="text-[#e3b553]">{groupName.toUpperCase()}</span> <span className="text-white">MATCHING</span>
             </>
           ) : (
             <>
@@ -295,7 +301,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
           )}
         </h1>
         <p className="text-[10px] tracking-[0.28em] text-white/45">
-          {lgsCategory ? (lgsLabel ?? lgsCategory).replace(LGS_PREFIX, '').toUpperCase() : 'MATCH THE WORDS'}
+          {lgsCategory?.startsWith(LGS_PREFIX) ? (lgsLabel ?? lgsCategory).replace(LGS_PREFIX, '').toUpperCase() : 'MATCH THE WORDS'}
         </p>
         <p className="text-[10px] tracking-[0.2em] text-[#e3b553]/80">ROUND {round}</p>
       </div>
