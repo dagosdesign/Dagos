@@ -60,9 +60,9 @@ export default function LearningOrbsTransition({ categoryLabel, matching, onSele
             position: relative;
             width: 100%;
             height: 100dvh;
-            /* Every orb must be reachable on every phone: nothing is ever clipped away. */
-            overflow-x: hidden;
-            overflow-y: auto;
+            /* Never scrollable: the drifting orbs would keep changing the scroll size and make the
+               screen judder on phones. Short screens are handled by scaling the orbs instead. */
+            overflow: hidden;
             background: #000;
             color: #f7f7f7;
             isolation: isolate;
@@ -183,11 +183,12 @@ export default function LearningOrbsTransition({ categoryLabel, matching, onSele
 
           @media (max-width: 540px) {
             /* The orbs scale with the height of the screen, so all seven fit on short phones too. */
-            .learning-orbits__field { min-height: 400px; }
+            .learning-orbits__field { min-height: 0; }
             .learning-orbits__orb { width: min(122px, 17.5dvh); }
             .orb-3 { left: calc(50% - min(61px, 8.75dvh)); }
-            .orb-6 { left: 9%; }
-            .orb-7 { right: 9%; }
+            /* the bottom row sits a little higher, so its drift stays inside the screen */
+            .orb-6 { left: 9%; top: 72%; }
+            .orb-7 { right: 9%; top: 73%; }
           }
 
           @media (max-height: 720px) {
