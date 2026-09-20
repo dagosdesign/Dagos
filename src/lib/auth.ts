@@ -2,7 +2,7 @@ import { useSyncExternalStore } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import { supabase } from './supabase';
 import { syncAfterSignIn, syncBeforeSignOut, type MergeChoice } from './cloudSync';
-import { getUserProfile, updateUserProfile } from './userProfile';
+import { getUserProfile, updateUserProfile, usernameFrom } from './userProfile';
 import type { MembershipPlan } from './plan';
 
 /* THE ACCOUNT: who is signed in, and which plan the account has.
@@ -45,15 +45,28 @@ async function loadPlan(userId: string) {
   if (getUserProfile().membership !== plan) updateUserProfile({ membership: plan });
 }
 
+/* A new account starts with the name it was created with (Google / Apple name, or the
+   name typed at sign-up) instead of the placeholder "Student". */
+function adoptAccountName(session: Session | null) {
+  const meta = session?.user.user_metadata as { full_name?: string; name?: string } | undefined;
+  const name = (meta?.full_name || meta?.name || '').trim().slice(0, 40);
+  if (name && getUserProfile().name === 'Student') updateUserProfile({ name, username: usernameFrom(name) });
+}
+
 if (supabase) {
   supabase.auth.getSession().then(({ data }) => {
     set({ ready: true, session: data.session, email: data.session?.user.email ?? null });
-    if (data.session) void loadPlan(data.session.user.id);
+    if (data.session) {
+      adoptAccountName(data.session);
+      void loadPlan(data.session.user.id);
+    }
   });
   supabase.auth.onAuthStateChange((event, session) => {
     set({ session, email: session?.user.email ?? null, ...(event === 'PASSWORD_RECOVERY' ? { recovery: true } : {}) });
-    if (session) void loadPlan(session.user.id);
-    else set({ plan: 'free' });
+    if (session) {
+      adoptAccountName(session);
+      void loadPlan(session.user.id);
+    } else set({ plan: 'free' });
   });
 }
 
