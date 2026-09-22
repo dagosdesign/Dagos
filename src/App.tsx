@@ -36,6 +36,7 @@ import { featuresFor } from './lib/plan';
 import { getUserProfile, updateUserProfile, useUserProfile } from './lib/userProfile';
 import { spendGame, spendGrammarActivity, spendListeningActivity } from './lib/dailyUsage';
 import { ActivityKind, addLearningMinutes, logActivity, TimeCategory } from './lib/activityLog';
+import { apiUrl } from './lib/runtime';
 
 interface PracticeHistoryItem {
   id: string;
@@ -113,7 +114,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    fetch('/api/config')
+    fetch(apiUrl('/api/config'))
       .then(res => res.json())
       .then(data => setIsAiConfigured(data.isConfigured))
       .catch(() => setIsAiConfigured(false));

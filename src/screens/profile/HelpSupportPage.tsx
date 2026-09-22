@@ -3,6 +3,7 @@ import { ChevronDown, CircleCheck, Mail, Search } from 'lucide-react';
 import { C, Card, GoldButton, SubPage } from '../../components/profile/ui';
 import { useUserProfile } from '../../lib/userProfile';
 import { apiFetch } from '../../lib/api';
+import { apiUrl } from '../../lib/runtime';
 
 /* HELP & SUPPORT: answers first (searchable), then a direct message to the
    Lexistencehub team. The reply comes by e-mail; every message gets a reference
@@ -247,7 +248,7 @@ export default function HelpSupportPage({ onBack }: { onBack: () => void }) {
   // The confirmed account e-mail, when there is one, is where the reply goes.
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/account/${encodeURIComponent(profile.id)}`)
+    fetch(apiUrl(`/api/account/${encodeURIComponent(profile.id)}`))
       .then(r => r.json())
       .then(a => !cancelled && a?.email && setEmail(prev => prev || a.email))
       .catch(() => {});

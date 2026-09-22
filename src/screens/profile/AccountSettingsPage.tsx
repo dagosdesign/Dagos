@@ -8,6 +8,7 @@ import { supabase } from '../../lib/supabase';
 import { clearLearningRecord } from '../../lib/learningRecord';
 import { clearActivityHistory } from '../../lib/activityLog';
 import type { ProfilePage } from '../../components/profile/ProfileFeatures';
+import { apiUrl } from '../../lib/runtime';
 
 const DANGER = '#E5484D';
 
@@ -100,7 +101,7 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
       }
     }
     try {
-      const r = await fetch('/api/account/delete', {
+      const r = await fetch(apiUrl('/api/account/delete'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ profileId, currentPassword: password || undefined }),

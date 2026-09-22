@@ -6,6 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+!.env.native
 settings.json
 settings_1.json
 .claude/
@@ -13,3 +14,17 @@ scripts/.cache/
 
 # server-side account store
 /data/
+
+# native shells (Capacitor): build outputs only
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
+ios/App/Pods/
+ios/App/build/
+ios/App/App.xcworkspace/xcuserdata/
+ios/DerivedData/
+
+# copied into the native projects by `npx cap sync` - regenerated on every build
+android/app/src/main/assets/public/
+ios/App/App/public/

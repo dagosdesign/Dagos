@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { STATIC_QUESTIONS, CATEGORIES, VocabularyQuestion } from '../data/staticQuestions';
 import { GRAMMAR_TOPICS } from '../data/grammarLessons';
+import { apiUrl } from '../lib/runtime';
 
 interface PracticeHistoryItem {
   id: string;
@@ -170,7 +171,7 @@ export default function QuizScreen({
     }, 2200);
 
     try {
-      const response = await fetch('/api/generate-quiz', {
+      const response = await fetch(apiUrl('/api/generate-quiz'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ theme: theme.trim(), count: 5 }),

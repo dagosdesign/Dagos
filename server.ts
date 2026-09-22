@@ -821,6 +821,10 @@ app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), asy
   }
 });
 
+// The vocabulary photos (~800 MB) are not part of the web bundle or the phone app:
+// the server serves them from media/ - to the website and to the app alike.
+app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), { maxAge: "30d", immutable: true }));
+
 // Vite middleware integration
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {

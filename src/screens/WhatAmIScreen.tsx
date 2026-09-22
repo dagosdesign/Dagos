@@ -15,6 +15,7 @@ import {
 import { isSeen, markSeen } from '../lib/seenHistory';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { loadVocabulary } from '../lib/vocabulary';
+import { getSpeechRecognition } from '../lib/speech';
 
 /* WHAT AM I? — three English clues and the word length, with no time limit.
    Answer within the first 15 seconds for double points. One answer per question. */
@@ -252,7 +253,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
 
   const startVoice = () => {
     setMode('speak');
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     if (!SR) return;
     try {
       recognitionRef.current?.stop();

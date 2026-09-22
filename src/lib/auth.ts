@@ -1,6 +1,8 @@
 import { useSyncExternalStore } from 'react';
 import type { Session } from '@supabase/supabase-js';
+import { Browser } from '@capacitor/browser';
 import { supabase } from './supabase';
+import { isNative } from './runtime';
 import { syncAfterSignIn, syncBeforeSignOut, type MergeChoice } from './cloudSync';
 import { getUserProfile, updateUserProfile, usernameFrom } from './userProfile';
 import type { MembershipPlan } from './plan';
@@ -115,10 +117,40 @@ export async function signIn(email: string, password: string): Promise<void> {
   fail(error);
 }
 
+/* The address the phone app is sent back to after Google / Apple; registered with
+   Supabase (Redirect URLs) and with the app (AndroidManifest / Info.plist). */
+export const NATIVE_REDIRECT = 'com.lexistencehub.app://auth/callback';
+
 export async function signInWithProvider(provider: 'google' | 'apple'): Promise<void> {
   if (!supabase) throw new Error('Accounts are not available yet.');
-  const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: window.location.origin } });
+  if (!isNative) {
+    const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: window.location.origin } });
+    fail(error);
+    return;
+  }
+  // The app: sign in through the system browser and come back by deep link.
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider,
+    options: { redirectTo: NATIVE_REDIRECT, skipBrowserRedirect: true },
+  });
   fail(error);
+  if (data?.url) await Browser.open({ url: data.url, presentationStyle: 'popover' });
+}
+
+/* The deep link with the sign-in code arrives here (see bootNative). */
+export async function handleAuthDeepLink(url: string): Promise<boolean> {
+  if (!supabase || !url.startsWith(NATIVE_REDIRECT)) return false;
+  try {
+    await Browser.close();
+  } catch {
+    /* the browser may already be closed */
+  }
+  const params = new URL(url).searchParams;
+  const code = params.get('code');
+  if (!code) return true; // an error came back; AccountSyncGate shows it
+  const { error } = await supabase.auth.exchangeCodeForSession(code);
+  if (error) console.warn('[auth] code exchange failed', error.message);
+  return true;
 }
 
 export async function sendPasswordReset(email: string): Promise<void> {

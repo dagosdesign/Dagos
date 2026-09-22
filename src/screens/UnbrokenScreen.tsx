@@ -4,6 +4,7 @@ import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import { pluralLemma } from '../lib/lemma';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
+import { getSpeechRecognition } from '../lib/speech';
 
 /* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 20 seconds
    and its final letter starts the next one. No score, no lives: only the record. */
@@ -306,7 +307,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
   }
 
   const listenOnce = () => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     if (!SR || !speakModeRef.current || endedRef.current) return;
     const rec = new SR();
     rec.lang = 'en-US';
@@ -350,7 +351,7 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
 
   const toggleSpeakMode = () => {
     if (speakModeRef.current) return stopSpeakMode();
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     if (!SR) return flash('Voice is not supported here');
     if (status !== 'playing') return;
     speakModeRef.current = true;

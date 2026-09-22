@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { C, Card, Segmented, SubPage, Toggle } from '../../components/profile/ui';
+import { applyNotificationPrefs } from '../../lib/notifications';
 
 interface NotificationSettings {
   dailyReminder: boolean;
@@ -30,6 +31,7 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
   const [custom, setCustom] = useState(() => !TIMES.includes(load().reminderTime));
 
   useEffect(() => {
+    void applyNotificationPrefs(s); // the phone's own reminders follow the settings
     try {
       localStorage.setItem(KEY, JSON.stringify(s));
     } catch {

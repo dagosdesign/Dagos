@@ -1,4 +1,5 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import { isNative } from './runtime';
 
 /* The Supabase client: sign-in and the student's data in the cloud.
 
@@ -13,7 +14,9 @@ const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 export const supabase: SupabaseClient | null =
   url && anonKey
     ? createClient(url, anonKey, {
-        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
+        // In the app the browser is not the app: Google sends the student back through a deep
+        // link with a code, which the app exchanges for the session (PKCE). See lib/auth.ts.
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: !isNative, flowType: isNative ? 'pkce' : 'implicit' },
       })
     : null;
 

@@ -4,6 +4,7 @@ import { C, Card, GhostButton, GoldButton, MenuList, ProfileMenuItem, SubPage } 
 import { useUserProfile } from '../../lib/userProfile';
 import { cloudEnabled } from '../../lib/supabase';
 import { changeEmail, changePassword, useAuth } from '../../lib/auth';
+import { apiUrl } from '../../lib/runtime';
 
 /* ACCOUNT - personal information, e-mail, phone and password.
    Nothing here changes without proof: a new e-mail or phone is confirmed with a
@@ -20,7 +21,7 @@ interface AccountView {
 }
 
 async function api<T>(url: string, body?: unknown): Promise<T> {
-  const r = await fetch(url, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined);
+  const r = await fetch(apiUrl(url), body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined);
   const data = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(data.message || 'Something went wrong. Please try again.');
   return data as T;

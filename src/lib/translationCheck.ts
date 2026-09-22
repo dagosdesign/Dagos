@@ -1,6 +1,7 @@
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from './answerText';
 import { loadVocabulary } from './vocabulary';
+import { apiUrl } from './runtime';
 
 /* Writing answers are not tied to the one English word stored on a card: any
    valid English word for the Turkish meaning is correct. "acı" may be stored as
@@ -70,7 +71,7 @@ export async function checkTranslation(opts: {
   const key = `${turkish(opts.turkishMeaning)}|${given}`;
   if (!aiVerdicts.has(key)) {
     try {
-      const res = await fetch('/api/check-translation', {
+      const res = await fetch(apiUrl('/api/check-translation'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

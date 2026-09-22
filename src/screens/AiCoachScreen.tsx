@@ -4,6 +4,7 @@ import { Sparkles, Send, MessageCircle, AlertCircle, Volume2, VolumeX, Mic, Squa
 import GameKeyboard, { CaseMode } from '../components/GameKeyboard';
 import AiSpeakingSession from '../components/AiSpeakingSession';
 import { apiFetch } from '../lib/api';
+import { getSpeechRecognition, speechSupported } from '../lib/speech';
 
 // Beside the space bar: , ' on the left, . ? on the right.
 const PUNCTUATION = [',', "'", '.', '?'];
@@ -53,7 +54,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   voiceModeRef.current = voiceMode;
 
   const speechRecognitionSupported =
-    typeof window !== 'undefined' && !!((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition);
+    typeof window !== 'undefined' && speechSupported();
   const ttsSupported = typeof window !== 'undefined' && 'speechSynthesis' in window;
 
   useEffect(() => {
@@ -265,7 +266,7 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
   };
 
   const startListening = () => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     if (!SR || loading) return;
     stopSpeaking(); // don't let the coach talk over the user
 

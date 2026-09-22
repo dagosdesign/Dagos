@@ -4,6 +4,7 @@ import { ChevronLeft, BarChart3, Mic, SkipForward, Check, X, Minus } from 'lucid
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
+import { getSpeechRecognition } from '../lib/speech';
 
 /* THE A–Z — read the Turkish clue, recall the English word, answer in 30 seconds.
    Round 1 walks A→Z; only PASSED letters return in Round 2, where one mistake
@@ -300,7 +301,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
   }, []);
 
   const listenOnce = useCallback(() => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     const live = liveRef.current;
     if (!SR || !speakModeRef.current || (live.phase !== 'r1' && live.phase !== 'r2')) return;
     const rec = new SR();
@@ -341,7 +342,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
 
   const toggleSpeakMode = () => {
     if (speakModeRef.current) return stopSpeakMode();
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SR = getSpeechRecognition();
     if (!SR) {
       setBanner('VOICE IS NOT SUPPORTED HERE');
       window.setTimeout(() => setBanner(null), 1600);

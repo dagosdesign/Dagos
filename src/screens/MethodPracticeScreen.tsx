@@ -11,6 +11,7 @@ import { checkTranslation, TranslationVerdict } from '../lib/translationCheck';
 import { allowWords } from '../lib/dailyUsage';
 import { useUserProfile } from '../lib/userProfile';
 import PlanLimitCard from '../components/PlanLimitCard';
+import { apiUrl, assetUrl } from '../lib/runtime';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -575,18 +576,18 @@ function wordSlug(word: string): string {
 }
 function slotImageCandidates(word: string, category?: string | null): string[] {
   const w = wordSlug(word);
-  const shared = IMG_EXTS.map(ext => `/vocabulary/${w}.${ext}`);
+  const shared = IMG_EXTS.map(ext => assetUrl(`/vocabulary/${w}.${ext}`));
   // Words shared across units can carry a unit-specific photo under
   // /vocabulary/u/<category-slug>/ which wins over the shared one.
   if (category) {
     const c = wordSlug(category);
-    return [...IMG_EXTS.map(ext => `/vocabulary/u/${c}/${w}.${ext}`), ...shared];
+    return [...IMG_EXTS.map(ext => assetUrl(`/vocabulary/u/${c}/${w}.${ext}`)), ...shared];
   }
   return shared;
 }
 function fullCardCandidates(word: string): string[] {
   const w = wordSlug(word);
-  return IMG_EXTS.map(ext => `/vocabulary/cards/${w}.${ext}`);
+  return IMG_EXTS.map(ext => assetUrl(`/vocabulary/cards/${w}.${ext}`));
 }
 
 function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {
@@ -992,7 +993,7 @@ async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashca
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 25000);
   try {
-    const res = await fetch('/api/practice-content', {
+    const res = await fetch(apiUrl('/api/practice-content'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning }),
