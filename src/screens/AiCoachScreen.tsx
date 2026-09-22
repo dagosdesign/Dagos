@@ -307,7 +307,6 @@ export default function AiCoachScreen({ isAiConfigured }: AiCoachScreenProps) {
         </div>
         <div className="flex-1">
           <h1 className="text-lg font-serif italic text-white">AI LEX</h1>
-          <p className="text-[11px] text-white/40 font-mono">Gemini destekli İngilizce koçun</p>
         </div>
         <button
           onClick={openSpeaking}
