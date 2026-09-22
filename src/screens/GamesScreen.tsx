@@ -60,7 +60,7 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
             <div className="min-w-0">
               <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">THE A–Z</p>
               <p className="text-xs text-white/50 font-light leading-relaxed">
-                Her harf için 20 saniye; pas geçtiklerin sonda elemeli turda karşına çıkar.
+                Her harf için 30 saniye; pas geçtiklerin sonda elemeli turda karşına çıkar.
               </p>
             </div>
           </div>

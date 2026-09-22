@@ -5,12 +5,12 @@ import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 
-/* THE A–Z — read the Turkish clue, recall the English word, answer in 20 seconds.
+/* THE A–Z — read the Turkish clue, recall the English word, answer in 30 seconds.
    Round 1 walks A→Z; only PASSED letters return in Round 2, where one mistake
    (or an expired timer) ends the run. There is no Round 3. */
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-const SECONDS = 20;
+const SECONDS = 30;
 const R1_POINTS = 10;
 const R2_POINTS = 5;
 
@@ -152,6 +152,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
   const [review, setReview] = useState<Question[]>([]);
   const [failed, setFailed] = useState<Question | null>(null);
   const [banner, setBanner] = useState<string | null>(null);
+  const [showAnswers, setShowAnswers] = useState(false); // the full answer key on the results screen
 
   const resolvedRef = useRef(false); // one result per question, ever
   const recognitionRef = useRef<any>(null);
@@ -260,7 +261,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
       setTimeLeft(t => {
         if (t <= 1) {
           window.clearInterval(id);
-          commit('wrong'); // no answer in 20 seconds counts as wrong
+          commit('wrong'); // no answer in 30 seconds counts as wrong
           return 0;
         }
         return t - 1;
@@ -414,9 +415,48 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
           </div>
         )}
 
+        {/* The answer key: every letter with its word, clue and how it went */}
+        <button
+          onClick={() => setShowAnswers(v => !v)}
+          aria-expanded={showAnswers}
+          className="w-full flex items-center justify-center gap-2 bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3.5 text-[12px] font-bold tracking-[0.12em] cursor-pointer shadow-[0_0_22px_rgba(227,181,83,0.3)]"
+        >
+          <Check className="w-4 h-4" /> {showAnswers ? 'HIDE ANSWERS' : 'CHECK ANSWERS'}
+        </button>
+
+        {showAnswers && (
+          <div className="bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl overflow-hidden divide-y divide-white/[0.06]">
+            {questions.map(q => {
+              const st = states[q.letter];
+              const label =
+                st === 'correct' ? 'CORRECT' : st === 'wrong' ? 'WRONG' : st === 'passed' ? 'PASSED' : 'NOT REACHED';
+              return (
+                <div key={q.letter} className="flex items-center gap-3 px-4 py-3">
+                  <span className="w-8 text-2xl font-bold text-[#e3b553] leading-none">{q.letter}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[15px] text-white font-medium">{q.word.toLowerCase()}</p>
+                    <p className="text-[12px] text-white/50 font-light leading-snug">{q.clue}</p>
+                  </div>
+                  <span
+                    className={`shrink-0 text-[9.5px] font-bold tracking-[0.12em] px-2 py-1 rounded-full border ${
+                      st === 'correct'
+                        ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+                        : st === 'wrong'
+                          ? 'border-white/40 text-white'
+                          : 'border-white/15 text-white/40'
+                    }`}
+                  >
+                    {label}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         <button
           onClick={onExit}
-          className="w-full bg-[#e3b553] hover:bg-[#d2a442] text-[#0a0a0b] rounded-2xl py-3 text-xs font-bold cursor-pointer"
+          className="w-full border border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10 rounded-2xl py-3 text-xs font-bold tracking-[0.1em] cursor-pointer"
         >
           BACK TO GAMES
         </button>
@@ -594,7 +634,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
       <div className="flex items-center justify-between gap-3 bg-white/[0.02] border border-white/[0.06] rounded-2xl px-4 py-2.5">
         <p className="text-[11px] text-white/50 font-light leading-snug">
           {phase === 'r1'
-            ? 'Each letter has 20 seconds. If you don’t answer, it counts as wrong.'
+            ? 'Each letter has 30 seconds. If you don’t answer, it counts as wrong.'
             : 'No more passes. One wrong answer ends the game.'}
         </p>
         <span className="text-[10px] tracking-[0.14em] text-[#e3b553] shrink-0">
