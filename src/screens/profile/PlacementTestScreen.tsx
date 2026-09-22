@@ -14,9 +14,16 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
   const profile = useUserProfile();
   const features = featuresFor(profile.membership);
   const [phase, setPhase] = useState<'intro' | 'test' | 'result'>('intro');
-  const [state, setState] = useState<PlacementState | null>(null);
+  /* The test as a path the student can walk back along: states[i] is the test as
+     question i was shown, answers[i] the option chosen there. Going back keeps the
+     answers; changing one re-runs the adaptive test from that point. */
+  const [states, setStates] = useState<PlacementState[]>([]);
+  const [answers, setAnswers] = useState<number[]>([]);
+  const [pos, setPos] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
 
+  const state: PlacementState | null = states[pos] ?? null;
+  const finalState = states.length ? states[states.length - 1] : null;
   const current = state && !state.finished ? state.block[state.index] : null;
 
   // A question counts as seen the moment it is shown, so a retake brings new ones.
@@ -27,31 +34,56 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
   const locked = phase === 'intro' && profile.placementTestCompleted && !features.placementRetakes;
 
   const start = () => {
-    setState(startPlacement());
+    setStates([startPlacement()]);
+    setAnswers([]);
+    setPos(0);
     setChoice(null);
     setPhase('test');
   };
 
   const next = () => {
     if (!state || !current || choice === null) return;
-    recordAnswer({
-      area: 'grammar',
-      concept: grammarConcept(current.topic),
-      subtopic: current.topic,
-      correct: choice === current.correct,
-      source: 'Check Your Level',
-      prompt: current.question,
-      given: current.options[choice],
-      expected: current.options[current.correct],
-    });
+    // The same answer as before: walk forward along the path already taken.
+    if (answers[pos] === choice && states[pos + 1]) {
+      setPos(pos + 1);
+      setChoice(answers[pos + 1] ?? null);
+      return;
+    }
     const s = answerPlacement(state, choice === current.correct);
-    setChoice(null);
-    setState(s);
+    const nextAnswers = [...answers.slice(0, pos), choice];
+    const nextStates = [...states.slice(0, pos + 1), s];
+    setAnswers(nextAnswers);
+    setStates(nextStates);
     if (s.finished && s.level) {
+      // Only the answers the test ends with go on the record.
+      nextAnswers.forEach((a, i) => {
+        const q = nextStates[i].block[nextStates[i].index];
+        recordAnswer({
+          area: 'grammar',
+          concept: grammarConcept(q.topic),
+          subtopic: q.topic,
+          correct: a === q.correct,
+          source: 'Check Your Level',
+          prompt: q.question,
+          given: q.options[a],
+          expected: q.options[q.correct],
+        });
+      });
       savePlacementResult(s.level, s.progress ?? 0);
       logActivity('placement', 'Check Your Level', `${s.level} • ${LEVEL_NAMES[s.level]}`);
       setPhase('result');
+      return;
     }
+    setPos(pos + 1);
+    setChoice(null);
+  };
+
+  const back = () => {
+    if (pos === 0) return;
+    // An option picked but not yet confirmed is kept for when the student returns.
+    if (choice !== null) setAnswers(a => [...a.slice(0, pos), choice, ...a.slice(pos + 1)]);
+    setPos(pos - 1);
+    setChoice(answers[pos - 1] ?? null);
   };
 
   const shell = (children: ReactNode, title = 'Check Your Level') => (
@@ -137,7 +169,8 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
     );
   }
 
-  if (phase === 'result' && state?.level) {
+  if (phase === 'result' && finalState?.level) {
+    const state = finalState;
     const nextLevel = CEFR_LEVELS[CEFR_LEVELS.indexOf(state.level) + 1];
     return shell(
       <div className="space-y-4">
@@ -225,9 +258,22 @@ export default function PlacementTestScreen({ onClose, isOnboarding = false }: {
           );
         })}
       </div>
-      <GoldButton onClick={next} disabled={choice === null}>
-        Next
-      </GoldButton>
+      <div className="flex gap-2">
+        <button
+          type="button"
+          onClick={back}
+          disabled={pos === 0}
+          className="flex-1 rounded-2xl border py-3 text-[14px] font-semibold cursor-pointer disabled:opacity-35 disabled:cursor-default"
+          style={{ borderColor: C.border, color: C.text, background: C.card }}
+        >
+          Back
+        </button>
+        <div className="flex-[2]">
+          <GoldButton onClick={next} disabled={choice === null}>
+            Next
+          </GoldButton>
+        </div>
+      </div>
     </div>
   );
 }

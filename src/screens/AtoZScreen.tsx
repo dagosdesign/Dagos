@@ -275,35 +275,88 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
-  /* ---- voice input ---- */
+  /* ---- SPEAK MODE ----
+     One tap and the microphone stays on for the whole run: a spoken answer that
+     matches the word is checked at once; anything else lands in the answer box,
+     and the microphone listens again by itself - letter after letter, until the
+     run ends or the student turns it off. */
+  const [speakMode, setSpeakMode] = useState(false);
+  const speakModeRef = useRef(false);
+  const restartTimer = useRef<number | undefined>(undefined);
+  const liveRef = useRef({ current, commit, phase });
+  liveRef.current = { current, commit, phase };
 
-  const startVoice = () => {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) return;
+  const stopSpeakMode = useCallback(() => {
+    speakModeRef.current = false;
+    window.clearTimeout(restartTimer.current);
+    setSpeakMode(false);
+    setListening(false);
+    const rec = recognitionRef.current;
+    recognitionRef.current = null;
     try {
-      recognitionRef.current?.stop();
+      rec?.abort();
     } catch { /* ignore */ }
+  }, []);
+
+  const listenOnce = useCallback(() => {
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const live = liveRef.current;
+    if (!SR || !speakModeRef.current || (live.phase !== 'r1' && live.phase !== 'r2')) return;
     const rec = new SR();
     rec.lang = 'en-US';
     rec.interimResults = false;
     rec.maxAlternatives = 3;
     rec.onresult = (e: any) => {
-      const said = e.results?.[0]?.[0]?.transcript ?? '';
-      setAnswer(said);
-      setListening(false);
+      const res = e.results?.[e.results.length - 1];
+      const alts: string[] = [];
+      for (let i = 0; i < (res?.length ?? 0); i++) alts.push(res[i].transcript);
+      const { current: q, commit: submit } = liveRef.current;
+      if (!q || !alts.length) return;
+      const hit = alts.find(a => closeEnough(a, q.word));
+      if (hit) submit('correct');
+      else setAnswer(alts[0]); // not the word: shown, so the student can check, pass or say it again
     };
-    rec.onerror = () => setListening(false);
-    rec.onend = () => setListening(false);
+    rec.onerror = (e: any) => {
+      if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed' || e?.error === 'audio-capture') {
+        stopSpeakMode();
+        setBanner('MICROPHONE BLOCKED');
+        window.setTimeout(() => setBanner(null), 1600);
+      }
+    };
+    rec.onend = () => {
+      if (recognitionRef.current !== rec) return;
+      setListening(false);
+      if (!speakModeRef.current) return;
+      restartTimer.current = window.setTimeout(listenOnce, 120);
+    };
     recognitionRef.current = rec;
-    setListening(true);
-    rec.start();
+    try {
+      rec.start();
+      setListening(true);
+    } catch {
+      restartTimer.current = window.setTimeout(listenOnce, 400);
+    }
+  }, [stopSpeakMode]);
+
+  const toggleSpeakMode = () => {
+    if (speakModeRef.current) return stopSpeakMode();
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) {
+      setBanner('VOICE IS NOT SUPPORTED HERE');
+      window.setTimeout(() => setBanner(null), 1600);
+      return;
+    }
+    speakModeRef.current = true;
+    setSpeakMode(true);
+    listenOnce();
   };
 
-  useEffect(() => () => {
-    try {
-      recognitionRef.current?.stop();
-    } catch { /* ignore */ }
-  }, []);
+  // The run is over: the microphone goes quiet with it.
+  useEffect(() => {
+    if (phase === 'complete' || phase === 'over') stopSpeakMode();
+  }, [phase, stopSpeakMode]);
+
+  useEffect(() => () => stopSpeakMode(), [stopSpeakMode]);
 
   /* ---- results ---- */
 
@@ -481,7 +534,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
           <p className="text-[13px] text-white font-light leading-snug">{current.clue}</p>
           <div className="flex items-center gap-1.5 pt-1">
             <Mic className={`w-3.5 h-3.5 ${listening ? 'text-[#e3b553]' : 'text-[#e3b553]/70'}`} />
-            <span className="text-[10px] tracking-[0.1em] text-white/45">Say the answer in English.</span>
+            <span className="text-[10px] tracking-[0.1em] text-white/45">{speakMode ? 'Listening - say the answer in English.' : 'Tap SPEAK to answer by voice.'}</span>
           </div>
         </div>
       </div>
@@ -518,14 +571,20 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
           </button>
         )}
         <button
-          onClick={startVoice}
+          onClick={toggleSpeakMode}
+          aria-pressed={speakMode}
           className={`flex-[1.8] flex items-center justify-center gap-1.5 rounded-2xl py-3 text-[11px] font-bold tracking-[0.1em] border transition-colors cursor-pointer ${
-            listening
-              ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/10'
+            speakMode
+              ? 'border-[#e3b553] text-[#0a0a0b] bg-[#e3b553] shadow-[0_0_18px_rgba(227,181,83,0.35)]'
               : 'border-[#e3b553]/40 text-[#e3b553] hover:bg-[#e3b553]/10'
           }`}
         >
-          <Mic className="w-3.5 h-3.5" /> {listening ? 'LISTENING…' : 'SPEAK INSTEAD'}
+          <span className="relative flex items-center justify-center">
+            {speakMode && listening && <span className="absolute w-6 h-6 rounded-full bg-[#0a0a0b]/25 animate-ping" />}
+            <Mic className="relative w-3.5 h-3.5" />
+          </span>
+          SPEAK
+          {speakMode && <span className="text-[9.5px] font-semibold tracking-[0.14em] opacity-70">· ON</span>}
         </button>
       </div>
 

@@ -22,7 +22,7 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
         </div>
         <div>
           <h1 className="text-xl font-serif italic text-white">Games</h1>
-          <p className="text-[11px] text-white/40 font-mono">Oyna, öğren, puan kazan.</p>
+          <p className="text-[11px] text-white/40 font-mono">Oyna ve öğren.</p>
         </div>
       </div>
 
@@ -201,10 +201,6 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
             </div>
           </div>
         </button>
-
-        <div className="bg-white/[0.015] border border-white/[0.06] rounded-3xl p-5 text-center">
-          <p className="text-sm text-white/45 font-light">Yeni oyunlar çok yakında burada.</p>
-        </div>
       </div>
     </div>
   );

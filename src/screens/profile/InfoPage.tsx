@@ -25,7 +25,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         title: 'Çok Yönlü Öğrenme Deneyimi',
         body: [
           'Her kullanıcının öğrenme biçimi ve çalışma ihtiyacı farklıdır. Bu nedenle Lexistencehub, öğrenme sürecini tek bir yöntemle sınırlandırmak yerine farklı çalışma modellerini aynı platform içerisinde bir araya getirir.',
-          'Kullanıcılar hedef içerikleri Listening, Writing, Visual Learning, Games, Stories, Conversations ve AI destekli çalışmalar aracılığıyla farklı yöntemlerle ele alabilir.',
+          'Kullanıcılar hedef içerikleri Listening, Writing, Visual Learning, Games, Stories, Conversations ve AI destekli çalışmalar aracılığıyla farklı yöntemlerle ele alabilir. LGS, YDT, YDS, YÖK-DİL, IELTS ve kelime gruplarında ise Matching etkinliği, yalnızca o grubun kelime havuzundan seçilen on İngilizce kelimeyi Türkçe karşılıklarıyla eşleştirme pratiği sunar.',
           'Stories bölümünde öğrenilmesi hedeflenen kelimeler, anlamlı bir bağlam oluşturacak şekilde hikâyelerin içerisinde kullanılır. Böylece kullanıcı kelimeyi yalnızca karşılığıyla değil, içinde bulunduğu bağlamla birlikte öğrenme fırsatı elde eder.',
           'Conversations bölümünde ise hedef kelimeler diyalog yapıları içerisinde ele alınır. Kullanıcılar kelimelerin konuşma içerisindeki kullanım biçimlerini inceleyerek öğrendikleri bilgiyi doğal dil kullanımına daha yakın bir yapı içerisinde pekiştirebilir.',
           'Bu çok yönlü yapı, aynı içeriğin farklı öğrenme yöntemleriyle yeniden ele alınmasına ve öğrenme sürecinin daha sistematik biçimde sürdürülmesine olanak sağlar.',
@@ -38,6 +38,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
           'Gramer konuları, yalnızca kuralların sunulduğu içerikler olarak değil; detaylı konu anlatımları ve seviyelendirilmiş pratik çalışmalarıyla desteklenen bir öğrenme sistemi içerisinde sunulur.',
           'Kullanıcılar her gramer konusuna ilişkin ayrıntılı açıklamalara ulaşabilir ve edindikleri bilgileri Kolay, Orta ve Zor olmak üzere üç farklı zorluk seviyesinde uygulayabilir.',
           'Bu yapı sayesinde kullanıcı, aynı gramer konusu üzerinde temel uygulamalardan daha ileri düzey kullanımlara doğru kademeli biçimde ilerleyebilir; öğrendiği yapıları farklı zorluk düzeylerinde pekiştirebilir ve gramer gelişimini sistematik biçimde sürdürebilir.',
+          'Konu testlerinin yanı sıra Mixed Grammar Test bölümü, her biri elli sorudan oluşan beş karma testle farklı gramer konularını bir arada sınar. Soruların büyük bölümü zamanlar, bağlaçlar, koşul cümleleri, wish yapıları ve ilgi cümlecikleri gibi temel konulardan; geri kalanı diğer gramer yapılarından oluşur.',
         ],
       },
       {
@@ -49,12 +50,39 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         ],
       },
       {
+        title: 'Oyunlarla Öğrenme',
+        body: [
+          'Games bölümü, kelime bilgisini ve dil yapılarını oyun mekanikleri içerisinde pekiştiren on farklı oyun sunar: Wordlock, The A–Z, What Am I?, Word Build, Unbroken, Golden Match, The Clue, Odd One, Word Path ve Grammar Duel.',
+          'Her oyun farklı bir beceriyi hedefler: harf ipuçlarından kelime bulma, Türkçe ipucuyla İngilizce karşılığı söyleme, son harf zinciriyle yeni kelime üretme, kelime–anlam eşleştirme, tanımdan kelimeyi tahmin etme ya da iki cümleden doğru olanı seçme gibi.',
+          'The A–Z ve Unbroken oyunlarında Speak modu, tek dokunuşla açılır ve tur boyunca açık kalır; kullanıcı cevaplarını klavye yerine sesli olarak verebilir.',
+          'Oyunlardaki her cevap, kullanıcının öğrenme kaydına işlenir ve My Progress bölümündeki analizlere yansır.',
+        ],
+      },
+      {
+        title: 'My Progress | Gelişim Takibi',
+        body: [
+          'My Progress bölümü, kullanıcının uygulamadaki tüm cevaplarını bir araya getirerek öğrenme sürecini görünür kılar. Bu bölümde AI Learning Insight, Performance Analysis, Mistake Memory, Learning Activity, My Statistics ve Achievements yer alır.',
+          'Performance Analysis; Grammar, Vocabulary, Listening, Reading, Writing ve Speaking alanlarında kullanıcının güçlü olduğu konuları ve geliştirmesi gereken alanları yalnızca gerçek cevaplarına dayanarak belirler. Bir konu en az on cevaptan sonra değerlendirilir, yeni cevaplar daha ağırlıklı sayılır ve hiç çalışılmamış konular zayıf olarak gösterilmez. Kullanıcı, en zayıf konularına özel hazırlanan bir pratiği tek dokunuşla başlatabilir.',
+          'Mistake Memory, tekrar eden hataları konu bazında hatırlar ve hatanın aşılıp aşılmadığını izler; AI Learning Insight ise son dönem öğrenme verilerini yorumlayarak kısa bir değerlendirme sunar.',
+          'My Statistics ve Learning Time; toplam öğrenme süresini, günlük seriyi, aktif günleri, son yedi günün dağılımını ve yönteme göre (Listening, Writing, Visual Learning, Games, Stories, Conversations, AI) harcanan süreyi gösterir.',
+        ],
+      },
+      {
         title: 'Yapay Zekâ Destekli Öğrenme | AI LEX',
         body: [
           'AI LEX, Lexistencehub’ın yapay zekâ destekli İngilizce koçudur ve kullanıcıların öğrenme sürecinde ihtiyaç duydukları anda pratik yapabilmelerini ve geri bildirim alabilmelerini desteklemek amacıyla geliştirilmiştir.',
           'Kullanıcılar AI LEX ile İngilizce pratik yapabilir, cümlelerinin düzeltilmesini isteyebilir, gramer konularına ilişkin açıklamalar alabilir, kelime ve ifadelerin kullanım biçimlerini inceleyebilir ve farklı dil yapılarına ilişkin sorular yöneltebilir.',
           'AI LEX aynı zamanda writing çalışmalarını destekleyen etkileşimli bir çalışma alanı sunar. Kullanıcılar hazırladıkları İngilizce metinlerin değerlendirilmesini sağlayabilir; gramer, kelime seçimi, ifade kullanımı ve metnin geliştirilmesine yönelik düzeltme ve öneriler alabilir.',
+          'AI Speaking ile kullanıcı, AI LEX ile gerçek zamanlı sesli bir görüşme yapabilir: konuşur, dinler ve yanıt alır. Böylece konuşma pratiği, yazılı sohbetin ötesine geçerek doğal bir diyalog deneyimine dönüşür.',
           'Bu yapı ile yapay zekâ, yalnızca bilgi sağlayan bir araç olarak değil; kullanıcının İngilizceyi aktif biçimde kullanmasına, hatalarını fark etmesine ve çalışmalarını geliştirmesine yardımcı olan öğrenme sürecinin tamamlayıcı bir parçası olarak konumlandırılır.',
+        ],
+      },
+      {
+        title: 'Hesap, Bulut ve Üyelik',
+        body: [
+          'Lexistencehub hesabı, kullanıcının ilerlemesini cihaza değil hesaba bağlar: kelime kartları, gramer testleri, oyun sonuçları, istatistikler ve ayarlar bulutta saklanır ve aynı hesapla giriş yapılan her cihazda kullanılabilir. Uygulama, hesap oluşturmadan misafir olarak da kullanılabilir; bu durumda ilerleme yalnızca o cihazda kalır.',
+          'Free plan; her gün on kelime, üç oyun, bir gramer ve bir dinleme etkinliği ile temel ilerleme takibini kapsar. Premium; sınırsız kelime, oyun, gramer ve dinleme etkinliğinin yanı sıra AI LEX sohbetlerini, AI Speaking görüşmelerini, Performance Analysis ve ayrıntılı istatistikleri açar.',
+          'Ayarlar bölümünden hesap bilgileri ve şifre yönetilebilir, bildirim tercihleri (öğrenme hatırlatması, Word Drop, seri hatırlatması, haftalık özet) düzenlenebilir, istatistikler sıfırlanabilir ve istenirse hesap tüm verileriyle birlikte silinebilir. Help & Support bölümünden ekibe doğrudan mesaj gönderilebilir.',
         ],
       },
       {
@@ -80,7 +108,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         title: 'A Multifaceted Learning Experience',
         body: [
           'Every user has different learning preferences and study needs. For this reason, rather than limiting the learning process to a single method, Lexistencehub brings together a variety of study approaches within one platform.',
-          'Users can explore learning content through Listening, Writing, Visual Learning, Games, Stories, Conversations, and AI-supported activities.',
+          'Users can explore learning content through Listening, Writing, Visual Learning, Games, Stories, Conversations, and AI-supported activities. In the LGS, YDT, YDS, YÖK-DİL, IELTS and word-group sections, the Matching activity pairs ten English words drawn only from that group’s own vocabulary with their Turkish meanings.',
           'In the Stories section, target vocabulary is incorporated into stories that provide meaningful context. This gives users the opportunity to learn words not only through their definitions but also through the contexts in which they appear.',
           'In the Conversations section, target vocabulary is presented through dialogues. By examining how words are used in conversation, users can reinforce what they have learned in a format that more closely reflects natural language use.',
           'This multifaceted structure allows users to revisit the same content through different learning methods and maintain a more systematic learning process.',
@@ -93,6 +121,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
           'Grammar topics are presented not simply as sets of rules, but as part of a learning system supported by detailed explanations and practice activities organized by difficulty level.',
           'Users can access in-depth explanations of each grammar topic and apply what they have learned at three difficulty levels: Easy, Intermediate, and Advanced.',
           'This structure enables users to progress gradually from basic exercises to more advanced applications within the same grammar topic, reinforce their understanding at different levels of difficulty, and develop their grammar skills systematically.',
+          'Alongside the topic tests, the Mixed Grammar Test section offers five mixed tests of fifty questions each. Most questions come from core topics - tenses, conjunctions, conditionals, wish clauses and relative clauses - and the rest from other grammar structures.',
         ],
       },
       {
@@ -104,12 +133,39 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         ],
       },
       {
+        title: 'Learning Through Games',
+        body: [
+          'The Games section offers ten games that reinforce vocabulary and language structures through play: Wordlock, The A–Z, What Am I?, Word Build, Unbroken, Golden Match, The Clue, Odd One, Word Path and Grammar Duel.',
+          'Each game targets a different skill - finding a word from letter clues, saying the English word for a Turkish clue, building a chain of words from last letters, matching words with meanings, guessing a word from its definition, or choosing the correct sentence of two.',
+          'In The A–Z and Unbroken, Speak mode turns on with a single tap and stays on for the whole run, so users can answer by voice instead of the keyboard.',
+          'Every answer given in a game is added to the user’s learning record and feeds the analyses in My Progress.',
+        ],
+      },
+      {
+        title: 'My Progress | Progress Tracking',
+        body: [
+          'My Progress brings every answer the user has given together and makes the learning journey visible. It contains AI Learning Insight, Performance Analysis, Mistake Memory, Learning Activity, My Statistics and Achievements.',
+          'Performance Analysis identifies the user’s strengths and the areas to develop across Grammar, Vocabulary, Listening, Reading, Writing and Speaking, based only on real answers. A topic is assessed after at least ten answers, recent answers count more, and topics never practised are not shown as weak. A practice session built around the weakest topics can be started with one tap.',
+          'Mistake Memory remembers repeated mistakes by topic and follows whether they have been overcome, while AI Learning Insight interprets recent learning data into a short assessment.',
+          'My Statistics and Learning Time show total learning time, the daily streak, active days, the last seven days and the time spent per method - Listening, Writing, Visual Learning, Games, Stories, Conversations and AI.',
+        ],
+      },
+      {
         title: 'AI-Powered Learning | AI LEX',
         body: [
           'AI LEX is Lexistencehub’s AI-powered English coach, developed to help users practice and receive feedback whenever they need support during their learning journey.',
           'With AI LEX, users can practice English, request corrections to their sentences, receive explanations of grammar topics, explore how words and expressions are used, and ask questions about different language structures.',
           'AI LEX also provides an interactive workspace that supports writing practice. Users can have their English texts evaluated and receive corrections and suggestions on grammar, word choice, phrasing, and ways to improve their writing.',
+          'With AI Speaking, users can hold a real-time voice conversation with AI LEX - speaking, listening and receiving replies - so that speaking practice goes beyond written chat and becomes a natural dialogue.',
           'Through this approach, AI serves not only as a source of information but also as an integral support tool within the learning process, helping users actively use English, recognize their mistakes, and improve their work.',
+        ],
+      },
+      {
+        title: 'Account, Cloud and Membership',
+        body: [
+          'A Lexistencehub account ties progress to the user rather than to a device: word cards, grammar tests, game results, statistics and settings are stored in the cloud and available on every device signed in with the same account. The app can also be used as a guest without an account; progress then stays on that device only.',
+          'The Free plan includes ten words, three games, one grammar activity and one listening activity every day, with basic progress tracking. Premium unlocks unlimited words, games, grammar and listening activities, AI LEX conversations, AI Speaking calls, Performance Analysis and detailed statistics.',
+          'In Settings, users can manage their account details and password, adjust notification preferences (learning reminders, Word Drop, streak reminders, weekly summary), reset their statistics and, if they wish, delete their account together with all of its data. Help & Support offers a direct message to the team.',
         ],
       },
       {
