@@ -95,7 +95,7 @@ function getVocab(): Record<string, { forms?: string[] }> {
 // Endpoint to check if AI is configured
 app.get("/api/config", (req, res) => {
   const isConfigured = !!process.env.GEMINI_API_KEY;
-  res.json({ isConfigured, accountsEnabled });
+  res.json({ isConfigured, accountsEnabled, webApp: SERVE_WEB_APP, webAppSetting: process.env.SERVE_WEB_APP === undefined ? "not set" : "set" });
 });
 
 // AI LEX chat endpoint — a conversational English-learning tutor.
@@ -826,6 +826,9 @@ app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), asy
 // the server serves them from media/ - to the website and to the app alike.
 app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), { maxAge: "30d", immutable: true }));
 
+// SERVE_WEB_APP accepts true / 1 / yes / on, any case, with stray spaces.
+const SERVE_WEB_APP = /^(true|1|yes|on)$/i.test((process.env.SERVE_WEB_APP || "").trim());
+
 // Lexistencehub is a phone app. In production the server is its API plus the public
 // pages the stores and the sign-in e-mails need (privacy, terms, account deletion,
 // a landing page); the website itself is not served unless SERVE_WEB_APP=true.
@@ -838,7 +841,7 @@ async function startServer() {
       appType: "spa",
     });
     app.use(vite.middlewares);
-  } else if (process.env.SERVE_WEB_APP === "true") {
+  } else if (SERVE_WEB_APP) {
     registerPublicPages(app);
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
