@@ -79,9 +79,13 @@ function policyHtml(doc: PolicyDocument): string {
   return `<h2>${esc(doc.heading)}</h2>${doc.intro.map(p => `<p>${esc(p)}</p>`).join("")}${parts}`;
 }
 
-const storeButtons = () =>
-  (APP_STORE_URL ? `<a class="btn" href="${esc(APP_STORE_URL)}">App Store</a>` : `<span class="btn ghost">App Store · coming soon</span>`) +
-  (PLAY_STORE_URL ? `<a class="btn" href="${esc(PLAY_STORE_URL)}">Google Play</a>` : `<span class="btn ghost">Google Play · coming soon</span>`);
+/* The store buttons appear once the links exist (APP_STORE_URL / PLAY_STORE_URL); until then nothing. */
+const storeCard = () => {
+  const buttons =
+    (APP_STORE_URL ? `<a class="btn" href="${esc(APP_STORE_URL)}">App Store</a>` : '') +
+    (PLAY_STORE_URL ? `<a class="btn" href="${esc(PLAY_STORE_URL)}">Google Play</a>` : '');
+  return buttons ? `<div class="card"><p style="margin-top:0"><strong style="color:#fff">Get the app</strong></p>${buttons}</div>` : '';
+};
 
 export function registerPublicPages(app: Express) {
   app.get("/", (_req: Request, res: Response) => {
@@ -93,10 +97,7 @@ export function registerPublicPages(app: Express) {
 <h1>Lexistence<span style="color:#F5B82E">hub</span></h1>
 <p class="muted" style="letter-spacing:.3em;text-transform:uppercase">Beyond English</p>
 <p>Words, grammar, games and an AI coach - an English learning app for Turkish students, built around your level and your goals.</p>
-<div class="card">
-  <p style="margin-top:0"><strong style="color:#fff">Get the app</strong></p>
-  ${storeButtons()}
-</div>
+${storeCard()}
 <script>
 (function(){
   var q = new URLSearchParams(location.search), h = new URLSearchParams(location.hash.replace(/^#/, ''));
