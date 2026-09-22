@@ -32,10 +32,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.lexistencehub.app</string>
+			<string>app.lexistencehub</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.lexistencehub.app</string>
+				<string>app.lexistencehub</string>
 			</array>
 		</dict>
 	</array>

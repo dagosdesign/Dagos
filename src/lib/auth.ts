@@ -13,6 +13,11 @@ import type { MembershipPlan } from './plan';
    table, which only the server can write - so Premium cannot be switched on by
    editing the app's storage. */
 
+/* The address the phone app is sent back to after Google / Apple and where the
+   sign-up, password-reset and e-mail-change links open the app; registered with
+   Supabase (Redirect URLs) and with the app (AndroidManifest / Info.plist). */
+export const NATIVE_REDIRECT = 'app.lexistencehub://auth/callback';
+
 export interface AuthState {
   ready: boolean; // the first session check has finished
   session: Session | null;
@@ -105,7 +110,7 @@ export async function signUp(email: string, password: string, name: string): Pro
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
-    options: { data: { name }, emailRedirectTo: window.location.origin },
+    options: { data: { name }, emailRedirectTo: isNative ? NATIVE_REDIRECT : window.location.origin },
   });
   fail(error);
   return data.session ? 'signed-in' : 'confirm-email';
@@ -116,10 +121,6 @@ export async function signIn(email: string, password: string): Promise<void> {
   const { error } = await supabase.auth.signInWithPassword({ email, password });
   fail(error);
 }
-
-/* The address the phone app is sent back to after Google / Apple; registered with
-   Supabase (Redirect URLs) and with the app (AndroidManifest / Info.plist). */
-export const NATIVE_REDIRECT = 'com.lexistencehub.app://auth/callback';
 
 export async function signInWithProvider(provider: 'google' | 'apple'): Promise<void> {
   if (!supabase) throw new Error('Accounts are not available yet.');
@@ -155,7 +156,7 @@ export async function handleAuthDeepLink(url: string): Promise<boolean> {
 
 export async function sendPasswordReset(email: string): Promise<void> {
   if (!supabase) throw new Error('Accounts are not available yet.');
-  const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin });
+  const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: isNative ? NATIVE_REDIRECT : window.location.origin });
   fail(error);
 }
 
@@ -163,7 +164,7 @@ export async function sendPasswordReset(email: string): Promise<void> {
    the current one (checked by signing in again) - see AccountPage. */
 export async function changeEmail(newEmail: string): Promise<void> {
   if (!supabase) throw new Error('Accounts are not available yet.');
-  const { error } = await supabase.auth.updateUser({ email: newEmail }, { emailRedirectTo: window.location.origin });
+  const { error } = await supabase.auth.updateUser({ email: newEmail }, { emailRedirectTo: isNative ? NATIVE_REDIRECT : window.location.origin });
   fail(error);
 }
 

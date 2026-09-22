@@ -7,6 +7,7 @@ import dotenv from "dotenv";
 import { registerAccountRoutes } from "./accountApi";
 import { registerSupportRoutes } from "./supportApi";
 import { accountsEnabled, guard, registerAccountDeletion } from "./authGuard";
+import { registerPublicPages } from "./publicPages";
 
 dotenv.config();
 
@@ -825,19 +826,30 @@ app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), asy
 // the server serves them from media/ - to the website and to the app alike.
 app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), { maxAge: "30d", immutable: true }));
 
-// Vite middleware integration
+// Lexistencehub is a phone app. In production the server is its API plus the public
+// pages the stores and the sign-in e-mails need (privacy, terms, account deletion,
+// a landing page); the website itself is not served unless SERVE_WEB_APP=true.
+// In development the full app still runs in the browser for testing.
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
+    registerPublicPages(app); // /privacy, /terms, /account/delete stay reachable; "/" is the app
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
     app.use(vite.middlewares);
-  } else {
+  } else if (process.env.SERVE_WEB_APP === "true") {
+    registerPublicPages(app);
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
     app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
+    });
+  } else {
+    registerPublicPages(app);
+    app.use((req, res) => {
+      if (req.path.startsWith("/api/")) return res.status(404).json({ error: "not_found" });
+      res.redirect(302, "/");
     });
   }
 

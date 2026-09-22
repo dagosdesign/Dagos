@@ -5,7 +5,7 @@ için gereken her şeyi tek yerde toplar. Kod tarafı hazır (Capacitor); geri k
 derleme ortamı ve mağaza formlarıdır.
 
 ## Kod tarafında hazır olanlar
-- `capacitor.config.ts`, `android/`, `ios/` projeleri – appId **com.lexistencehub.app**
+- `capacitor.config.ts`, `android/`, `ios/` projeleri – appId **app.lexistencehub**
   (mağazaya ilk yüklemeden sonra değişmez; değiştirmek istersen şimdi söyle).
 - `npm run build:native` → web kısmını `.env.native` ile derler (API ve fotoğraflar
   `https://lex-zmt3.onrender.com` adresinden gelir) ve native projelere kopyalar.
@@ -18,7 +18,7 @@ derleme ortamı ve mağaza formlarıdır.
 ## Supabase'de yapılacak (Google girişi telefonda çalışsın diye)
 Authentication → URL Configuration → Redirect URLs listesine ekle:
 ```
-com.lexistencehub.app://auth/callback
+app.lexistencehub://auth/callback
 ```
 
 ## Derleme ortamı

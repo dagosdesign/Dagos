@@ -1,4 +1,4 @@
-package com.lexistencehub.app;
+package app.lexistencehub;
 
 import com.getcapacitor.BridgeActivity;
 

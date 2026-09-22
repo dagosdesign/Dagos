@@ -23,7 +23,7 @@ interface Ticket {
 }
 
 const FILE = path.join(process.cwd(), "data", "support.json");
-const TOPICS = ["Question", "Problem", "Membership & Payment", "Suggestion", "Other"];
+const TOPICS = ["Question", "Problem", "Membership & Payment", "Suggestion", "Other", "Account deletion"];
 const PER_HOUR = 5;
 
 let tickets: Ticket[] = [];
