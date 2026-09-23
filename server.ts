@@ -835,14 +835,14 @@ const SERVE_WEB_APP = /^(true|1|yes|on)$/i.test((process.env.SERVE_WEB_APP || ""
 // In development the full app still runs in the browser for testing.
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
-    registerPublicPages(app); // /privacy, /terms, /account/delete stay reachable; "/" is the app
+    registerPublicPages(app, { landing: false }); // /privacy, /terms, /account/delete stay reachable; "/" is the app
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
     app.use(vite.middlewares);
   } else if (SERVE_WEB_APP) {
-    registerPublicPages(app);
+    registerPublicPages(app, { landing: false }); // the app itself is "/"
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
     app.get('*', (req, res) => {

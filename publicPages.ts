@@ -87,8 +87,9 @@ const storeCard = () => {
   return buttons ? `<div class="card"><p style="margin-top:0"><strong style="color:#fff">Get the app</strong></p>${buttons}</div>` : '';
 };
 
-export function registerPublicPages(app: Express) {
-  app.get("/", (_req: Request, res: Response) => {
+/* landing=false: the website is being served, so "/" is the app and only the store pages are added. */
+export function registerPublicPages(app: Express, { landing = true } = {}) {
+  if (landing) app.get("/", (_req: Request, res: Response) => {
     // E-mail links (confirmation, e-mail change) land here with tokens or a code in the address.
     res.type("html").send(
       page(
