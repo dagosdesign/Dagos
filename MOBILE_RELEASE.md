@@ -10,7 +10,7 @@ derleme ortamı ve mağaza formlarıdır.
 - `npm run build:native` → web kısmını `.env.native` ile derler (API ve fotoğraflar
   `https://lex-zmt3.onrender.com` adresinden gelir) ve native projelere kopyalar.
 - Kelime fotoğrafları (800 MB) uygulama paketine girmez; sunucudan indirilir. Paket ~25 MB.
-- Ses tanıma (oyunlardaki SPEAK, AI Lex mikrofon), bildirimler (hatırlatma, Word Drop,
+- Ses tanıma (oyunlardaki SPEAK, AI Lex mikrofon), bildirimler (hatırlatma, Wordrobe,
   seri, haftalık özet), Google ile giriş (deep link), durum çubuğu, açılış ekranı, geri tuşu.
 - İkon ve açılış görseli `assets/icon.svg` ve `assets/splash.svg` dosyalarından üretilir.
   Gerçek logo geldiğinde bu iki dosyayı değiştirip `npx capacitor-assets generate` çalıştırılır.
@@ -47,7 +47,8 @@ Connect API anahtarı ile).
   doğrulandığında sunucumuzdaki `entitlements` tablosuna Premium yazacak webhook'u buradan
   kuracağız. Aylık ~2.500 $ gelire kadar ücretsiz.
 - Mağaza payı: ilk yıl / küçük işletme programlarında %15, sonrasında %30.
-- Planlar: aylık ve yıllık Premium; fiyatlar App Store Connect ve Play Console'da tanımlanır.
+- Plan: **yıllık Premium, 999 TL** (uygulamadaki fiyat `src/lib/plan.ts` → `PREMIUM_PRICE`). App Store Connect ve
+  Play Console'da abonelik süresi **1 yıl**, fiyat **999 TL** olarak tanımlanmalı; iki yer aynı olmalı.
 
 ## Yayın öncesi kontrol listesi
 - [ ] Supabase → kendi SMTP sağlayıcısı (Brevo / Resend) – doğrulama e-postaları için şart.

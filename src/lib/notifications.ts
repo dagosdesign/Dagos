@@ -5,7 +5,7 @@ import { isNative } from './runtime';
 /* NOTIFICATIONS on the phone: the reminders the student switches on in Settings.
    Everything is scheduled on the device itself (no server needed):
    - daily learning reminder at the chosen time;
-   - Word Drop: one new word a day at 13:00, planned two weeks ahead;
+   - Wordrobe: one new word a day at 13:00, planned two weeks ahead;
    - streak reminder at 21:00;
    - weekly summary on Sunday at 19:00.
    On the web nothing is scheduled - the settings are only saved. */
@@ -90,7 +90,7 @@ export async function applyNotificationPrefs(p: NotificationPrefs): Promise<void
         const w = wordOfDay(at);
         list.push({
           id: ID.wordDrop + i,
-          title: `Word Drop: ${w.word}`,
+          title: `Wordrobe: ${w.word}`,
           body: `${w.turkishMeaning} - "${w.exampleSentence}"`,
           schedule: { at, allowWhileIdle: true },
         });

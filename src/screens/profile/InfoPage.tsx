@@ -82,7 +82,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         body: [
           'Lexistencehub hesabı, kullanıcının ilerlemesini cihaza değil hesaba bağlar: kelime kartları, gramer testleri, oyun sonuçları, istatistikler ve ayarlar bulutta saklanır ve aynı hesapla giriş yapılan her cihazda kullanılabilir. Uygulama, hesap oluşturmadan misafir olarak da kullanılabilir; bu durumda ilerleme yalnızca o cihazda kalır.',
           'Free plan; her gün on kelime, üç oyun, bir gramer ve bir dinleme etkinliği ile temel ilerleme takibini kapsar. Premium; sınırsız kelime, oyun, gramer ve dinleme etkinliğinin yanı sıra AI LEX sohbetlerini, AI Speaking görüşmelerini, Performance Analysis ve ayrıntılı istatistikleri açar.',
-          'Ayarlar bölümünden hesap bilgileri ve şifre yönetilebilir, bildirim tercihleri (öğrenme hatırlatması, Word Drop, seri hatırlatması, haftalık özet) düzenlenebilir, istatistikler sıfırlanabilir ve istenirse hesap tüm verileriyle birlikte silinebilir. Help & Support bölümünden ekibe doğrudan mesaj gönderilebilir.',
+          'Ayarlar bölümünden hesap bilgileri ve şifre yönetilebilir, bildirim tercihleri (öğrenme hatırlatması, Wordrobe, seri hatırlatması, haftalık özet) düzenlenebilir, istatistikler sıfırlanabilir ve istenirse hesap tüm verileriyle birlikte silinebilir. Help & Support bölümünden ekibe doğrudan mesaj gönderilebilir.',
         ],
       },
       {
@@ -165,7 +165,7 @@ const CONTENT: Record<InfoKind, { title: string; subtitle: string; blocks: Block
         body: [
           'A Lexistencehub account ties progress to the user rather than to a device: word cards, grammar tests, game results, statistics and settings are stored in the cloud and available on every device signed in with the same account. The app can also be used as a guest without an account; progress then stays on that device only.',
           'The Free plan includes ten words, three games, one grammar activity and one listening activity every day, with basic progress tracking. Premium unlocks unlimited words, games, grammar and listening activities, AI LEX conversations, AI Speaking calls, Performance Analysis and detailed statistics.',
-          'In Settings, users can manage their account details and password, adjust notification preferences (learning reminders, Word Drop, streak reminders, weekly summary), reset their statistics and, if they wish, delete their account together with all of its data. Help & Support offers a direct message to the team.',
+          'In Settings, users can manage their account details and password, adjust notification preferences (learning reminders, Wordrobe, streak reminders, weekly summary), reset their statistics and, if they wish, delete their account together with all of its data. Help & Support offers a direct message to the team.',
         ],
       },
       {

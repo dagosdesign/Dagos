@@ -41,7 +41,7 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
 
   const rows: { key: keyof NotificationSettings; title: string; subtitle: string }[] = [
     { key: 'dailyReminder', title: 'Daily learning reminder', subtitle: 'A reminder to keep your daily goal' },
-    { key: 'wordDrop', title: 'Word Drop', subtitle: 'A new word dropped to you during the day' },
+    { key: 'wordDrop', title: 'Wordrobe', subtitle: 'A new word every day, with its meaning and an example' },
     { key: 'streakReminder', title: 'Streak reminder', subtitle: 'Before your streak is about to end' },
     { key: 'weeklySummary', title: 'Weekly summary', subtitle: 'Your learning time and progress each week' },
     { key: 'productUpdates', title: 'Updates', subtitle: 'New games, words and features' },
