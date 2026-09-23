@@ -48,7 +48,7 @@ export const PREMIUM_PLAN: PlanFeatures = {
 /* What the Premium card promises, and its price - one place for every screen.
    The price shown here must match the subscription defined in App Store Connect
    and Google Play (phase 3); the stores, not the app, charge it. */
-export const PREMIUM_PRICE = { amount: 999, currency: 'TRY', symbol: '₺', period: 'month' as 'month' | 'year' };
+export const PREMIUM_PRICE = { amount: 999, currency: 'TRY', symbol: '₺', period: 'year' as 'month' | 'year' };
 export const PREMIUM_PRICE_LABEL = `${PREMIUM_PRICE.symbol}${PREMIUM_PRICE.amount}`;
 export const PREMIUM_PERIOD_LABEL = PREMIUM_PRICE.period === 'month' ? '/ month' : '/ year';
 export const PREMIUM_TAGLINE = 'Unlimited Learning + AI Personalization';
