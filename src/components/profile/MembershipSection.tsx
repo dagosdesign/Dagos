@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { MembershipPlan } from '../../lib/plan';
+import { MembershipPlan, PREMIUM_FEATURES, PREMIUM_PERIOD_LABEL, PREMIUM_PRICE_LABEL, PREMIUM_TAGLINE } from '../../lib/plan';
 import { C, Card, GhostButton, GoldButton, SectionHeading } from './ui';
 
 const FREE_FEATURES = [
@@ -9,21 +9,6 @@ const FREE_FEATURES = [
   '1 Listening Activity / Day',
   'Basic Progress Tracking',
   'Daily Challenge',
-];
-
-const PREMIUM_FEATURES = [
-  'Unlimited Vocabulary',
-  'Unlimited Games',
-  'Full Grammar Access',
-  'Listening',
-  'Speaking',
-  'Writing',
-  'AI Coach',
-  'Personal Learning Plan',
-  'Detailed Progress Analytics',
-  'Weakness Analysis',
-  'Smart Recommendations',
-  'Unlimited Check Your Level Retakes',
 ];
 
 /* FREE is daily learning, PREMIUM is unlimited learning plus AI personalisation.
@@ -98,8 +83,16 @@ export default function MembershipSection({
               </span>
             )}
           </div>
-          <p className="text-[12px] mt-3 tracking-[0.08em] uppercase" style={{ color: C.gold }}>
-            Unlimited Learning + AI Personalization
+          <div className="mt-3 flex items-baseline gap-1.5">
+            <span className="text-[30px] font-bold leading-none" style={{ color: C.text }}>
+              {PREMIUM_PRICE_LABEL}
+            </span>
+            <span className="text-[13px]" style={{ color: C.muted }}>
+              {PREMIUM_PERIOD_LABEL}
+            </span>
+          </div>
+          <p className="text-[12px] mt-2 tracking-[0.08em] uppercase" style={{ color: C.gold }}>
+            {PREMIUM_TAGLINE}
           </p>
           <FeatureList items={PREMIUM_FEATURES} tone="premium" />
           <div className="mt-auto pt-2">

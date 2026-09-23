@@ -45,6 +45,35 @@ export const PREMIUM_PLAN: PlanFeatures = {
   placementRetakes: true,
 };
 
+/* What the Premium card promises, and its price - one place for every screen.
+   The price shown here must match the subscription defined in App Store Connect
+   and Google Play (phase 3); the stores, not the app, charge it. */
+export const PREMIUM_PRICE = { amount: 999, currency: 'TRY', symbol: '₺', period: 'month' as 'month' | 'year' };
+export const PREMIUM_PRICE_LABEL = `${PREMIUM_PRICE.symbol}${PREMIUM_PRICE.amount}`;
+export const PREMIUM_PERIOD_LABEL = PREMIUM_PRICE.period === 'month' ? '/ month' : '/ year';
+export const PREMIUM_TAGLINE = 'Unlimited Learning + AI Personalization';
+export const PREMIUM_FEATURES = [
+  'Unlimited AI LEX',
+  'Personalized Learning',
+  'General English',
+  'LGS · YDT · YDS · YÖKDİL · IELTS',
+  'Grammar Mastery + Tests',
+  'Unlimited Vocabulary',
+  'Unlimited Games',
+  'Unlimited Speaking',
+  'Unlimited Listening',
+  'Unlimited Writing',
+  'Personalized Stories',
+  'Personalized Conversations',
+  'Visual Learning',
+  'Wordrobe',
+  'Check Your Level Anytime',
+  'Performance Analysis',
+  'Weekly Summary',
+  'Streak Reminders',
+  'Continuous Updates',
+];
+
 export function featuresFor(plan: MembershipPlan): PlanFeatures {
   return plan === 'premium' ? PREMIUM_PLAN : FREE_PLAN;
 }

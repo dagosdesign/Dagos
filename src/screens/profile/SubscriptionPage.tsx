@@ -2,13 +2,9 @@ import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { C, Card, GhostButton, GoldButton, SubPage } from '../../components/profile/ui';
 import { setMembership, useUserProfile } from '../../lib/userProfile';
+import { PREMIUM_FEATURES, PREMIUM_PERIOD_LABEL, PREMIUM_PRICE_LABEL, PREMIUM_TAGLINE } from '../../lib/plan';
 
-const LOSES = [
-  'Unlimited vocabulary, games, grammar and listening',
-  'AI Coach and your personal learning plan',
-  'Detailed analytics, weakness analysis and smart recommendations',
-  'Unlimited Check Your Level retakes',
-];
+const LOSES = PREMIUM_FEATURES;
 
 /* Subscription management. A Premium member only moves to Free after
    confirming here - never by tapping the Free card. */
@@ -26,6 +22,30 @@ export default function SubscriptionPage({ onBack, notify }: { onBack: () => voi
           <p className="text-[14px]" style={{ color: C.muted }}>
             Daily learning with 10 words, 3 games, 1 grammar and 1 listening activity every day.
           </p>
+        </Card>
+        <Card gold glow className="p-5 space-y-3">
+          <p className="text-[12px] tracking-[0.12em] font-semibold" style={{ color: C.gold }}>
+            PREMIUM
+          </p>
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-[30px] font-bold leading-none" style={{ color: C.text }}>
+              {PREMIUM_PRICE_LABEL}
+            </span>
+            <span className="text-[13px]" style={{ color: C.muted }}>
+              {PREMIUM_PERIOD_LABEL}
+            </span>
+          </div>
+          <p className="text-[14px] font-medium" style={{ color: C.text }}>
+            {PREMIUM_TAGLINE}
+          </p>
+          <ul className="space-y-2 pt-1">
+            {PREMIUM_FEATURES.map(f => (
+              <li key={f} className="flex items-start gap-2.5 text-[14px]" style={{ color: C.text }}>
+                <Check className="w-4 h-4 mt-[2px] shrink-0" color={C.gold} strokeWidth={2.4} />
+                {f}
+              </li>
+            ))}
+          </ul>
           <GoldButton
             onClick={() => {
               notify(setMembership('premium') ? 'Premium is now active' : 'Premium purchases open with the App Store and Google Play release');
@@ -46,7 +66,10 @@ export default function SubscriptionPage({ onBack, notify }: { onBack: () => voi
           PREMIUM ACTIVE
         </p>
         <p className="text-[17px] font-semibold" style={{ color: C.text }}>
-          Unlimited Learning + AI Personalization
+          {PREMIUM_TAGLINE}
+        </p>
+        <p className="text-[13px]" style={{ color: C.muted }}>
+          {PREMIUM_PRICE_LABEL} {PREMIUM_PERIOD_LABEL}
         </p>
       </Card>
 
