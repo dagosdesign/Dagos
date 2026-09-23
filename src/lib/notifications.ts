@@ -1,11 +1,12 @@
 import { LocalNotifications, type LocalNotificationSchema } from '@capacitor/local-notifications';
 import { FLASHCARDS } from '../data/flashcards';
 import { isNative } from './runtime';
+import { getUserProfile } from './userProfile';
 
 /* NOTIFICATIONS on the phone: the reminders the student switches on in Settings.
    Everything is scheduled on the device itself (no server needed):
    - daily learning reminder at the chosen time;
-   - Wordrobe: one new word a day at 13:00, planned two weeks ahead;
+   - Wordrobe (Premium): one new word a day at 13:00, planned two weeks ahead;
    - streak reminder at 21:00;
    - weekly summary on Sunday at 19:00.
    On the web nothing is scheduled - the settings are only saved. */
@@ -52,7 +53,8 @@ export async function applyNotificationPrefs(p: NotificationPrefs): Promise<void
     const pending = await LocalNotifications.getPending();
     if (pending.notifications.length) await LocalNotifications.cancel({ notifications: pending.notifications.map(n => ({ id: n.id })) });
 
-    const wants = p.dailyReminder || p.wordDrop || p.streakReminder || p.weeklySummary;
+    const wordrobe = p.wordDrop && getUserProfile().membership === 'premium';
+    const wants = p.dailyReminder || wordrobe || p.streakReminder || p.weeklySummary;
     if (!wants || !(await notificationsAllowed())) return;
 
     const list: LocalNotificationSchema[] = [];
@@ -82,7 +84,7 @@ export async function applyNotificationPrefs(p: NotificationPrefs): Promise<void
         schedule: { on: { weekday: 1, hour: 19, minute: 0 }, allowWhileIdle: true },
       });
     }
-    if (p.wordDrop) {
+    if (wordrobe) {
       const now = new Date();
       for (let i = 0; i < 14; i++) {
         const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i, 13, 0, 0);

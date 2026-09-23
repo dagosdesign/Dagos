@@ -5,6 +5,7 @@ import { supabase } from './supabase';
 import { isNative } from './runtime';
 import { syncAfterSignIn, syncBeforeSignOut, type MergeChoice } from './cloudSync';
 import { getUserProfile, updateUserProfile, usernameFrom } from './userProfile';
+import { bootNotifications } from './notifications';
 import type { MembershipPlan } from './plan';
 
 /* THE ACCOUNT: who is signed in, and which plan the account has.
@@ -49,7 +50,10 @@ async function loadPlan(userId: string) {
   const active = data && data.plan === 'premium' && (!data.expires_at || new Date(data.expires_at) > new Date());
   const plan: MembershipPlan = active ? 'premium' : 'free';
   set({ plan });
-  if (getUserProfile().membership !== plan) updateUserProfile({ membership: plan });
+  if (getUserProfile().membership !== plan) {
+    updateUserProfile({ membership: plan });
+    bootNotifications(); // Wordrobe follows the plan
+  }
 }
 
 /* A new account starts with the name it was created with (Google / Apple name, or the

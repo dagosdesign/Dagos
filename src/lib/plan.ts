@@ -69,8 +69,6 @@ export const PREMIUM_FEATURES = [
   'Wordrobe',
   'Check Your Level Anytime',
   'Performance Analysis',
-  'Weekly Summary',
-  'Streak Reminders',
   'Continuous Updates',
 ];
 
