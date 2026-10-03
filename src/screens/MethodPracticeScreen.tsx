@@ -12,6 +12,7 @@ import { allowWords } from '../lib/dailyUsage';
 import { useUserProfile } from '../lib/userProfile';
 import PlanLimitCard from '../components/PlanLimitCard';
 import { apiUrl, assetUrl } from '../lib/runtime';
+import { apiFetch } from '../lib/api';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -546,29 +547,38 @@ interface VocabEntry {
 }
 
 
-// Probes candidate image URLs in order; resolves the first that loads, else null.
+// Probes candidate image URLs; resolves the first (in priority order) that loads,
+// else null. All candidates load at once, so a miss costs no extra round trip:
+// the answer is ready as soon as a hit is known and every earlier candidate missed.
 const imageProbeCache = new Map<string, Promise<string | null>>();
 function probeImage(candidates: string[]): Promise<string | null> {
   const key = candidates.join('|');
   const cached = imageProbeCache.get(key);
   if (cached) return cached;
-  const p = (async () => {
-    for (const src of candidates) {
-      const ok = await new Promise<boolean>(resolve => {
-        const im = new Image();
-        im.onload = () => resolve(true);
-        im.onerror = () => resolve(false);
-        im.src = src;
-      });
-      if (ok) return src;
-    }
-    return null;
-  })();
+  const p = new Promise<string | null>(resolve => {
+    const results: (boolean | undefined)[] = candidates.map(() => undefined);
+    const settle = () => {
+      for (let i = 0; i < candidates.length; i++) {
+        if (results[i] === undefined) return; // an earlier choice is still loading
+        if (results[i]) return resolve(candidates[i]);
+      }
+      resolve(null);
+    };
+    if (!candidates.length) return resolve(null);
+    candidates.forEach((src, i) => {
+      const im = new Image();
+      im.decoding = 'async';
+      im.onload = () => { results[i] = true; settle(); };
+      im.onerror = () => { results[i] = false; settle(); };
+      im.src = src;
+    });
+  });
   imageProbeCache.set(key, p);
   return p;
 }
 
-const IMG_EXTS = ['webp', 'png', 'jpg'];
+// Every photo in media/vocabulary is .webp (scripts/process-card-photos.py writes them).
+const IMG_EXTS = ['webp'];
 // Photo filenames are slugs so phrases ("alone / feel alone") map to safe names.
 // Single words slugify to themselves, so all existing files keep working.
 function wordSlug(word: string): string {
@@ -637,6 +647,11 @@ function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }
     probeImage(slotImageCandidates(current.word, current.category)).then(src => {
       if (!cancelled) setSlotSrc(prev => ({ ...prev, [current.id]: src }));
     });
+    // Warm up the next two cards so they open at once.
+    for (const next of cards.slice(idx + 1, idx + 3)) {
+      void probeImage(fullCardCandidates(next.word));
+      void probeImage(slotImageCandidates(next.word, next.category));
+    }
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idx]);
@@ -979,7 +994,8 @@ let aiFailureAt = 0;
 const AI_COOLDOWN_MS = 60_000;
 
 async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashcard): Promise<T> {
-  const cacheKey = `lex_pc6_${kind}_${card.id}`;
+  // pc7: fixed expressions ("what about") are no longer conjugated; drop older copies.
+  const cacheKey = `lex_pc7_${kind}_${card.id}`;
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) return JSON.parse(cached) as T;
@@ -993,10 +1009,10 @@ async function fetchPracticeContent<T>(kind: 'story' | 'dialogue', card: Flashca
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 25000);
   try {
-    const res = await fetch(apiUrl('/api/practice-content'), {
+    const res = await apiFetch('/api/practice-content', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning }),
+      body: JSON.stringify({ kind, word: card.word, meaning: card.turkishMeaning, partOfSpeech: card.partOfSpeech }),
       signal: controller.signal,
     });
     const data = await res.json();

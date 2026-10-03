@@ -29,7 +29,7 @@ const KIND_LABEL: Record<ActivityKind, string> = {
   cards: 'Word Cards',
   quiz: 'Quizzes',
   placement: 'Level Tests',
-  ai: 'AI Coach',
+  ai: 'AI Lex',
 };
 
 const WEEKDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

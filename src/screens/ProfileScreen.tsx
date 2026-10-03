@@ -30,7 +30,7 @@ import SubscriptionPage from './profile/SubscriptionPage';
 import InfoPage from './profile/InfoPage';
 import { InsightPage, MistakeDetailPage, MistakeMemoryPage, PracticePage } from './profile/LearningIntelPages';
 import { PerformanceAnalysisPage } from './profile/PerformanceAnalysis';
-import { setMembership, signOutProfile, useUserProfile } from '../lib/userProfile';
+import { signOutProfile, useUserProfile } from '../lib/userProfile';
 
 interface ProfileScreenProps {
   gamification: GamificationState;
@@ -87,9 +87,8 @@ export default function ProfileScreen(props: ProfileScreenProps) {
   };
 
   const auth = useAuth();
-  const upgrade = () => {
-    setToast(setMembership('premium') ? 'Premium is now active' : 'Premium purchases open with the App Store and Google Play release');
-  };
+  // Premium is bought on the Subscription page (price, terms, Buy and Restore).
+  const upgrade = () => open('subscription');
 
   const content = (() => {
     switch (page) {
@@ -173,7 +172,7 @@ export default function ProfileScreen(props: ProfileScreenProps) {
       case 'data':
         return <DataPrivacyPage onBack={up} onResetStats={onResetStats} notify={setToast} />;
       case 'subscription':
-        return <SubscriptionPage onBack={back} notify={setToast} />;
+        return <SubscriptionPage onBack={back} notify={setToast} onSignIn={() => open('signin', 'subscription')} />;
       case 'help':
         return <HelpSupportPage onBack={up} />;
       case 'privacy':

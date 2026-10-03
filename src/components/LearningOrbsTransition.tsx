@@ -34,20 +34,18 @@ const learningMethods: { label: LearningMethodLabel; Icon: typeof Headphones; cl
 
 interface LearningOrbsTransitionProps {
   categoryLabel: string;
-  /* A word group with its own vocabulary (LGS, YDT, YDS, IELTS, Adjectives ...) gets
-     Matching in place of Games; General English keeps Games. */
-  matching?: boolean;
   onSelect: (method: LearningMethodLabel) => void;
   onClose: () => void;
 }
 
-export default function LearningOrbsTransition({ categoryLabel, matching, onSelect, onClose }: LearningOrbsTransitionProps) {
-  // LGS units get a Test orb instead of the AI orb; every word group gets Matching instead of Games.
+export default function LearningOrbsTransition({ categoryLabel, onSelect, onClose }: LearningOrbsTransitionProps) {
+  // LGS units get a Test orb instead of the AI orb; every folder - General English
+  // included - gets Matching in place of Games (the games live in the Games tab).
   const isLgs = categoryLabel.startsWith('LGS');
   const methods = learningMethods.map(m =>
     m.label === 'AI' && isLgs
       ? { ...m, label: 'Test' as LearningMethodLabel, Icon: ClipboardCheck }
-      : m.label === 'Games' && (matching || isLgs)
+      : m.label === 'Games'
         ? { ...m, label: 'Matching' as LearningMethodLabel, Icon: ArrowLeftRight }
         : m
   );

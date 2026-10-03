@@ -97,7 +97,7 @@ export function registerPublicPages(app: Express, { landing = true } = {}) {
         `<div id="notice"></div>
 <h1>Lexistence<span style="color:#F5B82E">hub</span></h1>
 <p class="muted" style="letter-spacing:.3em;text-transform:uppercase">Beyond English</p>
-<p>Words, grammar, games and an AI coach - an English learning app for Turkish students, built around your level and your goals.</p>
+<p>Words, grammar, games and AI Lex - an English learning app for Turkish students, built around your level and your goals.</p>
 ${storeCard()}
 <script>
 (function(){

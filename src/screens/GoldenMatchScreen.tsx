@@ -1,4 +1,4 @@
-import { PointerEvent as ReactPointerEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { PointerEvent as ReactPointerEvent, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { recordAnswer, VOCABULARY } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, GripVertical, RotateCcw, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
@@ -8,6 +8,36 @@ import { wordDifficulty } from '../lib/difficulty';
    marked right or wrong until CHECK ANSWERS is pressed. No timer, no lives. */
 
 const PAIRS = 10;
+
+/* A word that always fits its card: a single word never breaks onto a second line,
+   a phrase wraps only between its words; if it still does not fit, the text gets
+   smaller (down to 9 px) until it does. */
+function FitText({ text, max = 13, min = 9, className = '' }: { text: string; max?: number; min?: number; className?: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [size, setSize] = useState(max);
+  const [width, setWidth] = useState(0);
+  useLayoutEffect(() => setSize(max), [text, max, width]);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (el && size > min && el.scrollWidth > el.clientWidth + 0.5) setSize(s => Math.max(min, s - 0.5));
+  }, [size, min, text, width]);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver(([e]) => setWidth(Math.round(e.contentRect.width)));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  return (
+    <span
+      ref={ref}
+      className={`block min-w-0 max-w-full overflow-hidden leading-tight ${className}`}
+      style={{ fontSize: size, overflowWrap: 'normal', wordBreak: 'normal', whiteSpace: text.includes(' ') ? 'normal' : 'nowrap' }}
+    >
+      {text}
+    </span>
+  );
+}
 
 interface Pair {
   id: string;
@@ -70,6 +100,8 @@ function buildPairs(round = 1): Pair[] {
    borrows - and then from other LGS units, never from another vocabulary. */
 const LGS_PREFIX = 'LGS · ';
 const LGS_ALL = 'LGS · All Units';
+/* General English Matching: its "group" is the whole vocabulary. */
+export const ALL_WORDS = 'General English · All Words';
 const LGS_SEEN_KEY = 'lex_lgs_matching_seen';
 
 function lgsPairs(cards: typeof FLASHCARDS): Pair[] {
@@ -95,7 +127,7 @@ function buildLgsPairs(category: string): Pair[] {
   const isLgs = category.startsWith(LGS_PREFIX);
   // The wider pool a small unit may borrow from: LGS for an LGS unit, nothing for any other group.
   const lgs = isLgs ? FLASHCARDS.filter(f => f.category.startsWith(LGS_PREFIX)) : [];
-  const unit = category === LGS_ALL ? lgs : FLASHCARDS.filter(f => f.category === category);
+  const unit = category === LGS_ALL ? lgs : category === ALL_WORDS ? FLASHCARDS : FLASHCARDS.filter(f => f.category === category);
   const own = lgsPairs(unit);
 
   let seen: string[] = [];
@@ -364,19 +396,19 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
                 >
                   {card ? (
                     lgsCategory ? (
-                      <span className="flex flex-col items-center text-center break-words py-1">
-                        <span className="flex items-center gap-1">
+                      <span className="w-full min-w-0 flex flex-col items-center text-center py-1">
+                        <span className="w-full min-w-0 flex items-center justify-center gap-1">
                           {isCorrect && <Check className="w-3.5 h-3.5 text-[#e3b553] shrink-0" />}
                           {isWrong && <X className="w-3.5 h-3.5 text-white/60 shrink-0" />}
-                          <span className={isWrong ? 'line-through' : ''}>{card.english}</span>
+                          <FitText text={card.english} className={isWrong ? 'line-through' : ''} />
                         </span>
-                        {isWrong && <span className="text-[11.5px] text-[#e3b553] leading-tight">{p.english}</span>}
+                        {isWrong && <FitText text={p.english} max={11.5} className="w-full text-[#e3b553]" />}
                       </span>
                     ) : (
-                    <span className="flex items-center gap-1 text-center break-words">
+                    <span className="w-full min-w-0 flex items-center justify-center gap-1 text-center">
                       {isCorrect && <Check className="w-3.5 h-3.5 text-[#3fae72] shrink-0" />}
                       {isWrong && <X className="w-3.5 h-3.5 text-[#c2503f] shrink-0" />}
-                      {card.english}
+                      <FitText text={card.english} />
                     </span>
                     )
                   ) : (
@@ -406,7 +438,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
                   isSel ? 'border-[#e3b553] bg-[#e3b553]/15' : 'border-[#e3b553]/55 bg-[#0a0a0b]'
                 } disabled:opacity-40 cursor-grab active:cursor-grabbing`}
               >
-                <span className="text-left break-words leading-tight">{p.english}</span>
+                <FitText text={p.english} className="flex-1 text-left" />
                 <GripVertical className="w-3.5 h-3.5 text-[#e3b553]/60 shrink-0" />
               </button>
             );
@@ -423,7 +455,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
           className="fixed z-[60] pointer-events-none rounded-xl border border-[#e3b553] bg-[#0a0a0b] px-2 py-2 text-[13px] text-white shadow-lg"
           style={{ left: drag.x, top: drag.y, width: drag.w }}
         >
-          {byId[drag.id].english}
+          <FitText text={byId[drag.id].english} />
         </div>
       )}
 

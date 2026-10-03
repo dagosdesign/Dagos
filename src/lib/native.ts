@@ -28,11 +28,11 @@ export async function bootNative() {
   });
 }
 
-/* Called once the first screen has rendered, so the splash never cuts to a blank page. */
+/* The splash is a plain dark screen; it hands over to the opening animation in index.html. */
 export async function hideSplash() {
   if (!isNative) return;
   try {
-    await SplashScreen.hide({ fadeOutDuration: 250 });
+    await SplashScreen.hide({ fadeOutDuration: 150 });
   } catch {
     /* ignore */
   }

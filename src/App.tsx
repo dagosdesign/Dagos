@@ -11,7 +11,7 @@ import AtoZScreen from './screens/AtoZScreen';
 import WhatAmIScreen from './screens/WhatAmIScreen';
 import WordBuildScreen from './screens/WordBuildScreen';
 import UnbrokenScreen from './screens/UnbrokenScreen';
-import GoldenMatchScreen from './screens/GoldenMatchScreen';
+import GoldenMatchScreen, { ALL_WORDS } from './screens/GoldenMatchScreen';
 import TheClueScreen from './screens/TheClueScreen';
 import OddOneScreen from './screens/OddOneScreen';
 import WordPathScreen from './screens/WordPathScreen';
@@ -94,7 +94,7 @@ export default function App() {
 
   const { srsState, grammarProgress, gamification, reviewFlashcard, recordGrammarQuizResult, recordQuizXp } = useLexProgress();
 
-  // Membership decides what is open: AI Coach, and the daily limits on Free.
+  // Membership decides what is open: AI Lex, and the daily limits on Free.
   const profile = useUserProfile();
   const features = featuresFor(profile.membership);
   const [limit, setLimit] = useState<LimitKind | null>(null);
@@ -328,10 +328,11 @@ export default function App() {
       setMethodSession({ method: 'Visual', category, label });
     } else if (method === 'Test') {
       setMethodSession({ method: 'Test', category, label });
-    } else if (method === 'Matching' && category) {
-      setLgsMatching({ category, label });
+    } else if (method === 'Matching') {
+      // General English (no category) matches words from the whole vocabulary.
+      setLgsMatching({ category: category ?? ALL_WORDS, label });
     } else if (method === 'AI') {
-      // The "AI" orb opens the conversational AI Coach.
+      // The "AI" orb opens the conversational AI Lex.
       handleNavigate('ai');
     } else if (method === 'Listening' && !spendListeningActivity()) {
       setLimit('listening');
@@ -476,7 +477,6 @@ export default function App() {
       {orbFlow && (
         <LearningOrbsTransition
           categoryLabel={orbFlow.label}
-          matching={orbFlow.category !== null}
           onSelect={handleOrbSelect}
           onClose={() => setOrbFlow(null)}
         />

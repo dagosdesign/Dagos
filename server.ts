@@ -1,13 +1,14 @@
 import express from "express";
+import helmet from "helmet";
 import path from "path";
 import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Modality, Type } from "@google/genai";
 import dotenv from "dotenv";
-import { registerAccountRoutes } from "./accountApi";
 import { registerSupportRoutes } from "./supportApi";
 import { accountsEnabled, guard, registerAccountDeletion } from "./authGuard";
 import { registerPublicPages } from "./publicPages";
+import { registerBillingRoutes } from "./billing";
 
 dotenv.config();
 
@@ -15,14 +16,37 @@ const app = express();
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.set("trust proxy", 1); // the real client IP behind the host's proxy (rate limits)
-app.use(express.json());
+// Security headers. CSP stays off (the public pages use inline scripts/styles and the
+// dev server injects its own); resources are cross-origin so the phone app, whose
+// origin is https://localhost / capacitor://localhost, can load the vocabulary photos.
+app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+}));
+// The phone app calls this API from its own origin, so it needs CORS. Only the
+// Capacitor origins are allowed; the website is same-origin and needs nothing.
+const NATIVE_ORIGINS = new Set(["https://localhost", "capacitor://localhost", "http://localhost"]);
+app.use("/api", (req, res, next) => {
+  const origin = req.headers.origin;
+  if (origin && NATIVE_ORIGINS.has(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Vary", "Origin");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.setHeader("Access-Control-Max-Age", "600");
+  }
+  if (req.method === "OPTIONS") return res.sendStatus(204);
+  next();
+});
+app.use(express.json({ limit: "100kb" }));
 
-// Account: e-mail, phone and password, every change confirmed by a code.
-registerAccountRoutes(app);
 // Help & Support: a student's message to the team.
 registerSupportRoutes(app);
 // Signed-in accounts (Supabase): deleting the account and everything stored for it.
 registerAccountDeletion(app);
+// Premium purchases: the RevenueCat webhook and the app's sync after a purchase.
+registerBillingRoutes(app);
 
 // Lazy-loaded Gemini client
 let aiClient: GoogleGenAI | null = null;
@@ -98,6 +122,11 @@ app.get("/api/config", (req, res) => {
   res.json({ isConfigured, accountsEnabled, webApp: SERVE_WEB_APP, webAppSetting: process.env.SERVE_WEB_APP === undefined ? "not set" : "set" });
 });
 
+// Size limits for the AI LEX chat (the app sends the whole conversation each time).
+const CHAT_MAX_MESSAGES = 30; // the newest 30 are sent to the model
+const CHAT_MAX_CHARS = 2000; // one message typed by the student
+const CHAT_MAX_TOTAL = 24000;
+
 // AI LEX chat endpoint — a conversational English-learning tutor.
 app.post("/api/chat", guard({ feature: 'chat', premium: true, perMinute: 20, perDay: 300 }), async (req, res) => {
   const { messages } = req.body as {
@@ -107,6 +136,18 @@ app.post("/api/chat", guard({ feature: 'chat', premium: true, perMinute: 20, per
   if (!Array.isArray(messages) || messages.length === 0) {
     return res.status(400).json({ error: "Missing or invalid 'messages' in request body." });
   }
+  // Every message costs tokens. The newest message has to fit; older ones are
+  // shortened and the oldest dropped, so a long chat keeps working but stays cheap.
+  const last = messages[messages.length - 1];
+  if (!last || typeof last.content !== "string" || last.content.length > CHAT_MAX_CHARS) {
+    return res.status(413).json({ error: "too_long", message: "This message is too long. Please shorten it." });
+  }
+  let history = messages
+    .filter(m => m && typeof m.content === "string" && m.content.trim())
+    .map(m => ({ role: m.role === "assistant" ? ("assistant" as const) : ("user" as const), content: m.content.slice(0, CHAT_MAX_CHARS * 2) }))
+    .slice(-CHAT_MAX_MESSAGES);
+  while (history.length > 1 && history.reduce((n, m) => n + m.content.length, 0) > CHAT_MAX_TOTAL) history = history.slice(1);
+  while (history.length > 1 && history[0].role === "assistant") history = history.slice(1); // start with the student
 
   try {
     const ai = getAIClient();
@@ -120,7 +161,7 @@ app.post("/api/chat", guard({ feature: 'chat', premium: true, perMinute: 20, per
       "sentence clearly. Be positive and motivating.";
 
     // Gemini expects a `contents` array with role 'user' | 'model'.
-    const contents = messages.map((m) => ({
+    const contents = history.map((m) => ({
       role: m.role === "assistant" ? "model" : "user",
       parts: [{ text: m.content }],
     }));
@@ -146,8 +187,7 @@ app.post("/api/chat", guard({ feature: 'chat', premium: true, perMinute: 20, per
     }
     res.status(500).json({
       error: "chat_failed",
-      message: "Could not reach the AI LEX right now. Please try again.",
-      details: err.message,
+      message: "Could not reach the AI LEX right now. Please try again."
     });
   }
 });
@@ -217,8 +257,7 @@ app.post("/api/live-token", guard({ feature: 'speaking', premium: true, perMinut
     console.error("Live token error:", error?.message || error);
     res.status(500).json({
       error: "live_token_failed",
-      message: "Voice conversation is not available right now. Please try again.",
-      details: String(error?.message || error).slice(0, 300),
+      message: "Voice conversation is not available right now. Please try again."
     });
   }
 });
@@ -401,14 +440,19 @@ app.post("/api/performance-recommendation", guard({ feature: 'analysis', premium
 
 /* Writing: is the student's English answer a valid translation of the Turkish
    meaning, even if it is not the one word stored on the card? */
-app.post("/api/check-translation", guard({ feature: 'content', perMinute: 40 }), async (req, res) => {
+app.post("/api/check-translation", guard({ feature: 'translation', signedIn: true, perMinute: 40, perDay: 400 }), async (req, res) => {
   const { turkish, expected, given, partOfSpeech } = req.body as {
     turkish?: string;
     expected?: string;
     given?: string;
     partOfSpeech?: string;
   };
-  if (!turkish || !given) return res.status(400).json({ error: "Missing 'turkish' or 'given'." });
+  if (!turkish || !given || typeof turkish !== "string" || typeof given !== "string") {
+    return res.status(400).json({ error: "Missing 'turkish' or 'given'." });
+  }
+  if (turkish.length > 200 || given.length > 120 || String(expected ?? "").length > 200 || String(partOfSpeech ?? "").length > 40) {
+    return res.status(413).json({ error: "too_long", message: "The answer is too long." });
+  }
   try {
     const ai = getAIClient();
     const systemInstruction =
@@ -446,16 +490,36 @@ app.post("/api/check-translation", guard({ feature: 'content', perMinute: 40 }),
   }
 });
 
+// A multi-word target is conjugated only when it is a verb ("give up" -> "gives up").
+// The card's part of speech decides; older clients don't send it, so then the first
+// word decides: question words, modals, pronouns etc. start fixed expressions.
+const NON_VERB_HEADS = new Set([
+  "what", "how", "why", "where", "when", "who", "which", "whose", "let's", "lets",
+  "would", "could", "can", "will", "shall", "should", "may", "might", "must",
+  "i", "you", "he", "she", "it", "we", "they", "i'm", "it's", "that's", "there",
+  "the", "a", "an", "this", "that", "of", "in", "on", "at", "by", "for", "to", "with",
+  "step", "no", "not", "all", "as", "so", "too", "very", "see", "thank", "excuse",
+]);
+function isVerbPhrase(word: string, partOfSpeech?: string): boolean {
+  const pos = typeof partOfSpeech === "string" ? partOfSpeech.toLowerCase() : "";
+  if (pos) return pos.includes("verb") && !pos.includes("adverb");
+  return !NON_VERB_HEADS.has(word.trim().split(/\s+/)[0].toLowerCase());
+}
+
 // Generates practice content for a target word: a short story or a two-person dialogue.
-app.post("/api/practice-content", guard({ feature: 'content', perMinute: 20 }), async (req, res) => {
-  const { kind, word, meaning } = req.body as {
+app.post("/api/practice-content", guard({ feature: 'practice_content', signedIn: true, perMinute: 20, perDay: 100 }), async (req, res) => {
+  const { kind, word, meaning, partOfSpeech } = req.body as {
     kind?: "story" | "dialogue";
     word?: string;
     meaning?: string;
+    partOfSpeech?: string;
   };
 
   if ((kind !== "story" && kind !== "dialogue") || !word || typeof word !== "string") {
     return res.status(400).json({ error: "Expected { kind: 'story'|'dialogue', word, meaning? }." });
+  }
+  if (word.length > 80 || String(meaning ?? "").length > 300) {
+    return res.status(413).json({ error: "too_long", message: "The word is too long." });
   }
 
   try {
@@ -581,7 +645,7 @@ app.post("/api/practice-content", guard({ feature: 'content', perMinute: 20 }), 
         `and keep the rest "${rest}" exactly as written. ` +
         `Examples: "I am ${rest}", "she was ${rest}", "you must be ${rest}". ` +
         `A sentence like "I be ${rest}" is a hard error — every sentence must be correct, natural English.`;
-    } else if (word.includes(" ")) {
+    } else if (word.includes(" ") && isVerbPhrase(word, partOfSpeech)) {
       // Multi-word phrasal verbs: the verb inflects naturally, particles stay unchanged.
       const [head, ...tail] = word.split(/\s+/);
       usageRule =
@@ -592,6 +656,16 @@ app.post("/api/practice-content", guard({ feature: 'content', perMinute: 20 }), 
         `while keeping "${tail.join(" ")}" exactly as written and never changing the word order. ` +
         `Do not force the bare dictionary form into a sentence where grammar requires a conjugated form; ` +
         `every sentence must be correct, natural English.`;
+    } else if (word.includes(" ")) {
+      // Fixed expressions ("what about", "how about", "step by step"): never inflected.
+      const phrase = word.replace(/[?!.]+$/, "");
+      usageRule =
+        `The target is the fixed expression "${phrase}"` +
+        (meaning ? ` (Turkish meaning: ${meaning})` : "") +
+        `. Use it at least 3 times, always exactly as written, word for word: it is not a verb, so never add ` +
+        `-s, 's, -ed or -ing to any of its words and never contract or change it ` +
+        `(e.g. "${phrase}" is correct; "${phrase.replace(/^(\S+)/, "$1s")}" is a hard error). ` +
+        `Only the capital letter at the start of a sentence may change.`;
     } else {
       usageRule =
         `The content must naturally use the target word/phrase "${word}"` +
@@ -695,18 +769,22 @@ app.post("/api/practice-content", guard({ feature: 'content', perMinute: 20 }), 
     }
     res.status(500).json({
       error: "generation_failed",
-      message: "İçerik üretilemedi. Lütfen tekrar dene.",
-      details: err.message,
+      message: "İçerik üretilemedi. Lütfen tekrar dene."
     });
   }
 });
 
 // API endpoint to dynamically generate a vocabulary quiz using Gemini API
-app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), async (req, res) => {
-  const { theme, count = 5 } = req.body;
+app.post("/api/generate-quiz", guard({ feature: 'quiz', signedIn: true, perMinute: 10, perDay: 30 }), async (req, res) => {
+  const { theme } = req.body;
+  // The number of questions decides the cost of the call: 1-10, default 5.
+  const count = Math.min(10, Math.max(1, Math.floor(Number(req.body?.count) || 5)));
 
   if (!theme || typeof theme !== "string") {
     return res.status(400).json({ error: "Missing or invalid 'theme' in request body." });
+  }
+  if (theme.length > 100) {
+    return res.status(413).json({ error: "too_long", message: "Please use a shorter theme (up to 100 characters)." });
   }
 
   try {
@@ -816,8 +894,7 @@ app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), asy
     }
     res.status(500).json({ 
       error: "generation_failed", 
-      message: "Could not generate questions. Please try again or use the offline static modes.",
-      details: err.message 
+      message: "Could not generate questions. Please try again or use the offline static modes."
     });
   }
 });
@@ -825,6 +902,11 @@ app.post("/api/generate-quiz", guard({ feature: 'content', perMinute: 10 }), asy
 // The vocabulary photos (~800 MB) are not part of the web bundle or the phone app:
 // the server serves them from media/ - to the website and to the app alike.
 app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), { maxAge: "30d", immutable: true }));
+// A word without a photo: a plain, cacheable 404 - never the redirect to "/" further
+// down, which made every miss cost a second round trip (the app probes for photos).
+app.use("/vocabulary", (_req, res) => {
+  res.set("Cache-Control", "public, max-age=86400").status(404).end();
+});
 
 // SERVE_WEB_APP accepts true / 1 / yes / on, any case, with stray spaces.
 const SERVE_WEB_APP = /^(true|1|yes|on)$/i.test((process.env.SERVE_WEB_APP || "").trim());

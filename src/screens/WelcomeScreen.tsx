@@ -84,7 +84,7 @@ export default function WelcomeScreen({ onDone }: { onDone: () => void }) {
           </p>
           <span className="mt-8 w-10 h-px" style={{ background: 'rgba(245,184,46,0.6)' }} />
           <p className="mt-8 text-[16px] leading-relaxed max-w-[300px]" style={{ color: '#D6D6D6' }}>
-            Words, grammar, games and an AI coach - built around your level and your goals.
+            Words, grammar, games and AI Lex - built around your level and your goals.
           </p>
         </motion.div>
 

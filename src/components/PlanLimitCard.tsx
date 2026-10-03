@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Crown } from 'lucide-react';
-import { setMembership } from '../lib/userProfile';
 import { C, GhostButton, GoldButton } from './profile/ui';
+import PremiumOffer from './PremiumOffer';
 
 export type LimitKind = 'games' | 'words' | 'grammar' | 'listening' | 'ai' | 'analytics' | 'retake';
 
@@ -23,7 +23,7 @@ const COPY: Record<LimitKind, { title: string; body: string }> = {
     body: 'A new listening activity unlocks tomorrow. Premium makes listening unlimited.',
   },
   ai: {
-    title: 'AI Coach is part of Premium',
+    title: 'AI Lex is part of Premium',
     body: 'Premium unlocks AI Lex conversations, a personal learning plan and smart recommendations.',
   },
   analytics: {
@@ -36,8 +36,9 @@ const COPY: Record<LimitKind, { title: string; body: string }> = {
   },
 };
 
-/* Shown when a Free daily limit is reached or a Premium feature is opened. The
-   upgrade takes effect at once. */
+/* Shown when a Free daily limit is reached or a Premium feature is opened.
+   Upgrade opens the Premium offer; once the store confirms the purchase, Premium
+   is active at once and onUpgraded lets the screen carry on. */
 export default function PlanLimitCard({
   kind,
   onBack,
@@ -50,7 +51,7 @@ export default function PlanLimitCard({
   fullScreen?: boolean;
 }) {
   const copy = COPY[kind];
-  const [note, setNote] = useState(false);
+  const [offer, setOffer] = useState(false);
   const card = (
     <div
       className="w-full max-w-md mx-auto rounded-[22px] border p-6 text-center space-y-4"
@@ -71,23 +72,28 @@ export default function PlanLimitCard({
         </p>
       </div>
       <div className="space-y-2 pt-1">
-        <GoldButton
-          onClick={() => {
-            if (setMembership('premium')) onUpgraded?.();
-            else setNote(true);
-          }}
-        >
-          Upgrade to Premium
-        </GoldButton>
-        {note && (
-          <p className="text-[13px] leading-relaxed" style={{ color: C.gold }}>
-            Premium purchases open with the App Store and Google Play release.
-          </p>
-        )}
+        <GoldButton onClick={() => setOffer(true)}>Upgrade to Premium</GoldButton>
         {onBack && <GhostButton onClick={onBack}>Back</GhostButton>}
       </div>
     </div>
   );
+
+  // The offer itself (price, terms, Buy and Restore), over whatever is on screen.
+  if (offer) {
+    return (
+      <div className="fixed inset-0 z-[60] overflow-y-auto px-5 py-8" style={{ background: C.bg }}>
+        <div className="w-full max-w-md mx-auto space-y-3">
+          <PremiumOffer
+            onActivated={() => {
+              setOffer(false);
+              onUpgraded?.();
+            }}
+          />
+          <GhostButton onClick={() => setOffer(false)}>Not now</GhostButton>
+        </div>
+      </div>
+    );
+  }
 
   if (!fullScreen) return card;
   return (

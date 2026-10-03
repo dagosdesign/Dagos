@@ -70,6 +70,9 @@ const saveProgress = (p: Progress) => saveLevelProgress(STORE_KEY, p);
 
 const BAND_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
+/* Every level is half tenses, half other grammar. */
+type Category = 'tense' | 'other';
+
 /* One duel as the game uses it, whichever source it came from. */
 interface DuelItem {
   id: string;
@@ -77,11 +80,27 @@ interface DuelItem {
   correct: string;
   incorrect: string;
   topic: string;
+  /* the exact tense or grammar point: a round spreads its duels over these */
+  grammar: string;
+  category: Category;
   errorType: string;
   cefr: string;
   family: string;
   explanation: string;
 }
+
+/* Duels that carry no category (the hand-written ones) are sorted by their topic. */
+const TENSE_TOPIC = /\b(present|past|future)\s+(simple|continuous|progressive|perfect)|\bbe going to\b|^will$|\btenses?\b/i;
+const categoryOf = (topic: string): Category => (TENSE_TOPIC.test(topic) ? 'tense' : 'other');
+
+/* What a round spreads its duels over. For tenses that is the tense itself, however
+   the topic is worded ("present simple negatives" and "Present Simple" are one). */
+const TENSE_NAME = /\b(present|past|future)\s+(perfect\s+continuous|perfect|continuous|progressive|simple)|\bbe going to\b|\bwill\b/i;
+function grammarKey(d: DuelItem): string {
+  const m = d.category === 'tense' ? d.grammar.match(TENSE_NAME) : null;
+  return (m ? m[0].replace(/progressive/i, 'continuous') : d.grammar).toLowerCase().replace(/\s+/g, ' ');
+}
+const isPresentSimple = (key: string) => key === 'present simple';
 
 /* The hand-written duels sit on the level their CEFR band and sub-band describe:
    A1.1 -> level 1, A1.4 -> level 9, and so on up to C1.4 -> level 49. */
@@ -91,6 +110,8 @@ const CURATED: DuelItem[] = GRAMMAR_DUELS.map(d => ({
   correct: d.correct,
   incorrect: d.incorrect,
   topic: d.topic,
+  grammar: d.topic,
+  category: categoryOf(d.topic),
   errorType: d.errorType,
   cefr: d.cefr,
   family: `${d.topic}|${d.subtopic}`,
@@ -101,6 +122,8 @@ interface BankEntry {
   id: string;
   level: number;
   cefr: string;
+  category?: Category;
+  grammar?: string;
   correct: string;
   incorrect: string;
   target: string;
@@ -114,7 +137,9 @@ const GENERATED: DuelItem[] = (GENERATED_BANK as BankEntry[]).map(d => ({
   level: d.level,
   correct: d.correct,
   incorrect: d.incorrect,
-  topic: d.target,
+  topic: d.grammar ?? d.target,
+  grammar: d.grammar ?? d.target,
+  category: d.category ?? categoryOf(d.target),
   errorType: d.errorType,
   cefr: d.cefr,
   family: d.family,
@@ -148,36 +173,75 @@ const POOL: DuelItem[] = (() => {
   return out;
 })();
 
-/* Twenty duels for a level, none of which this player has ever been shown.
-   The level's own duels come first; if they run out, the nearest levels on
-   either side fill in, so difficulty stays where it should. Within a round a
-   grammar family appears at most twice, families the player has met least
-   often are preferred, and the correct sentence sits on the left exactly ten
-   times. */
+/* Twenty duels for a level: exactly ten on tenses and ten on other grammar.
+   - Tenses are spread out: at most two duels per tense, and from level 5 on at
+     most one Present Simple, so no level turns into one tense drill.
+   - Other grammar: one duel per topic where possible, at most two.
+   - Only duels this player has never been shown; the level's own duels first,
+     then the nearest levels (within two) fill in, so difficulty stays put. Only
+     when all of that runs out does the search widen, and, last of all, reuse
+     duels already seen - a level can always be played.
+   - Topics the player has met least often are preferred, the same grammar point
+     never comes twice in a row, and the correct sentence sits on the left
+     exactly ten times. */
 function buildRound(level: number): Question[] {
   const lv = Math.min(MAX_LEVEL, Math.max(1, level));
+  const half = QUESTIONS_PER_LEVEL / 2;
+  const taken = new Set<string>();
+
+  const pickCategory = (category: Category): DuelItem[] => {
+    const out: DuelItem[] = [];
+    const uses = new Map<string, number>();
+    const passes = [
+      { reach: 2, fresh: true, cap: category === 'tense' ? 2 : 1 },
+      { reach: 2, fresh: true, cap: 2 },
+      { reach: MAX_LEVEL, fresh: true, cap: 2 },
+      { reach: MAX_LEVEL, fresh: false, cap: 3 },
+    ];
+    for (const pass of passes) {
+      for (let distance = 0; distance <= pass.reach && out.length < half; distance++) {
+        const levels = distance === 0 ? [lv] : [lv - distance, lv + distance];
+        const candidates = shuffle(
+          POOL.filter(
+            d =>
+              d.category === category &&
+              levels.includes(d.level) &&
+              !taken.has(d.id) &&
+              (!pass.fresh || !isSeen(SEEN_KEY, d.id))
+          )
+        ).sort((a, b) => familyUses(SEEN_KEY, a.family) - familyUses(SEEN_KEY, b.family));
+        for (const d of candidates) {
+          if (out.length >= half) break;
+          const k = grammarKey(d);
+          const cap = isPresentSimple(k) && lv >= 5 ? 1 : pass.cap;
+          const used = uses.get(k) ?? 0;
+          if (used >= cap) continue;
+          uses.set(k, used + 1);
+          taken.add(d.id);
+          out.push(d);
+        }
+      }
+      if (out.length >= half) break;
+    }
+    return out;
+  };
+
+  const chosen = [...pickCategory('tense'), ...pickCategory('other')];
+  if (chosen.length < QUESTIONS_PER_LEVEL) return [];
+
+  // Random order, but the same grammar point never twice in a row: each step takes,
+  // from the grammar points other than the last one, the one with most duels left.
   const picked: DuelItem[] = [];
-  const inRound = new Map<string, number>();
-
-  for (let distance = 0; distance < MAX_LEVEL && picked.length < QUESTIONS_PER_LEVEL; distance++) {
-    const levels = distance === 0 ? [lv] : [lv - distance, lv + distance];
-    const fresh = POOL.filter(d => levels.includes(d.level) && !isSeen(SEEN_KEY, d.id));
-    const ordered = shuffle(fresh).sort((a, b) => familyUses(SEEN_KEY, a.family) - familyUses(SEEN_KEY, b.family));
-    for (const d of ordered) {
-      if (picked.length >= QUESTIONS_PER_LEVEL) break;
-      if ((inRound.get(d.family) ?? 0) >= 2) continue;
-      inRound.set(d.family, (inRound.get(d.family) ?? 0) + 1);
-      picked.push(d);
-    }
-  }
-  if (picked.length < QUESTIONS_PER_LEVEL) return [];
-
-  // Break up runs of the same error type so a level never becomes one drill.
-  for (let i = 2; i < picked.length; i++) {
-    if (picked[i].errorType === picked[i - 1].errorType && picked[i].errorType === picked[i - 2].errorType) {
-      const swap = picked.findIndex((d, k) => k > i && d.errorType !== picked[i].errorType);
-      if (swap > -1) [picked[i], picked[swap]] = [picked[swap], picked[i]];
-    }
+  let rest = shuffle(chosen);
+  while (rest.length) {
+    const left = new Map<string, number>();
+    for (const d of rest) left.set(grammarKey(d), (left.get(grammarKey(d)) ?? 0) + 1);
+    const last = picked.length ? grammarKey(picked[picked.length - 1]) : '';
+    const options = rest.filter(d => grammarKey(d) !== last);
+    const pool = options.length ? options : rest;
+    const next = pool.reduce((best, d) => ((left.get(grammarKey(d)) ?? 0) > (left.get(grammarKey(best)) ?? 0) ? d : best));
+    picked.push(next);
+    rest = rest.filter(d => d !== next);
   }
 
   const sides = shuffle(

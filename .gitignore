@@ -28,3 +28,17 @@ ios/DerivedData/
 # copied into the native projects by `npx cap sync` - regenerated on every build
 android/app/src/main/assets/public/
 ios/App/App/public/
+
+# release signing - NEVER commit (losing or leaking these = losing the app)
+*.jks
+*.keystore
+keystore.properties
+android/keystore.properties
+*.aab
+
+# release output
+release/
+
+# Android Studio's own project settings
+android/.idea/
+

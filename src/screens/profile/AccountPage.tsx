@@ -1,46 +1,13 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { Eye, EyeOff, KeyRound, Mail, Phone, ShieldCheck, UserRound } from 'lucide-react';
+import { useState, type ReactNode } from 'react';
+import { Eye, EyeOff, KeyRound, Mail, ShieldCheck, UserRound } from 'lucide-react';
 import { C, Card, GhostButton, GoldButton, MenuList, ProfileMenuItem, SubPage } from '../../components/profile/ui';
 import { useUserProfile } from '../../lib/userProfile';
 import { cloudEnabled } from '../../lib/supabase';
 import { changeEmail, changePassword, useAuth } from '../../lib/auth';
-import { apiUrl } from '../../lib/runtime';
 
-/* ACCOUNT - personal information, e-mail, phone and password.
-   Nothing here changes without proof: a new e-mail or phone is confirmed with a
-   code sent to it, and a password with a code sent to the confirmed e-mail or
-   phone (plus the current password, once there is one). See accountApi.ts. */
-
-type Purpose = 'email' | 'phone' | 'password';
-type Channel = 'email' | 'sms';
-
-interface AccountView {
-  email: string | null;
-  phone: string | null;
-  hasPassword: boolean;
-}
-
-async function api<T>(url: string, body?: unknown): Promise<T> {
-  const r = await fetch(apiUrl(url), body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined);
-  const data = await r.json().catch(() => ({}));
-  if (!r.ok) throw new Error(data.message || 'Something went wrong. Please try again.');
-  return data as T;
-}
-
-export function useAccount() {
-  const profile = useUserProfile();
-  const [account, setAccount] = useState<AccountView | null>(null);
-  useEffect(() => {
-    let cancelled = false;
-    api<AccountView>(`/api/account/${encodeURIComponent(profile.id)}`)
-      .then(a => !cancelled && setAccount(a))
-      .catch(() => !cancelled && setAccount({ email: null, phone: null, hasPassword: false }));
-    return () => {
-      cancelled = true;
-    };
-  }, [profile.id]);
-  return { profileId: profile.id, account, setAccount };
-}
+/* ACCOUNT - personal information, e-mail and password of the signed-in account.
+   Everything goes through Supabase Auth: a new e-mail is confirmed with a link sent
+   to it, and a new password needs the current one (see lib/auth.ts). */
 
 interface AccountPageProps {
   onBack: () => void;
@@ -182,256 +149,23 @@ function CloudAccountPage({ onBack, onPersonal, onSignIn, notify }: AccountPageP
   );
 }
 
-/* ---------------- this device only (no accounts configured) ---------------- */
+/* ---------------- no accounts configured (local development) ---------------- */
 
-function LocalAccountPage({ onBack, onPersonal, notify }: AccountPageProps) {
+/* E-mail and password live only in the signed-in (Supabase) account. Without
+   Supabase there is nothing to manage here - the student is a guest on this device. */
+function LocalAccountPage({ onBack, onPersonal }: AccountPageProps) {
   const profile = useUserProfile();
-  const { profileId, account, setAccount } = useAccount();
-  const [editing, setEditing] = useState<Purpose | null>(null);
-
   return (
-    <SubPage title="Account" subtitle="Personal information, e-mail and password" onBack={onBack}>
+    <SubPage title="Account" subtitle="Personal information" onBack={onBack}>
       <MenuList>
         <ProfileMenuItem icon={UserRound} title="Personal Information" subtitle={profile.name} onClick={onPersonal} />
-        <ProfileMenuItem
-          icon={Mail}
-          title="E-mail"
-          subtitle={account ? account.email ?? 'Not added yet' : '…'}
-          onClick={() => setEditing(editing === 'email' ? null : 'email')}
-        />
-        <ProfileMenuItem
-          icon={Phone}
-          title="Phone"
-          subtitle={account ? account.phone ?? 'Not added yet' : '…'}
-          onClick={() => setEditing(editing === 'phone' ? null : 'phone')}
-        />
-        <ProfileMenuItem
-          icon={KeyRound}
-          title="Password"
-          subtitle={account ? (account.hasPassword ? '••••••••  ·  Change password' : 'Not set yet') : '…'}
-          onClick={() => setEditing(editing === 'password' ? null : 'password')}
-        />
       </MenuList>
-
-      {editing && account && (
-        <div key={editing}>
-          <ChangeFlow
-            purpose={editing}
-            profileId={profileId}
-            account={account}
-            onCancel={() => setEditing(null)}
-            onDone={next => {
-              setAccount(next);
-              setEditing(null);
-              notify(editing === 'password' ? 'Password updated' : editing === 'email' ? 'E-mail confirmed' : 'Phone confirmed');
-            }}
-          />
-        </div>
-      )}
-
-      <div className="flex items-start gap-2.5 px-1">
-        <ShieldCheck className="w-4 h-4 shrink-0 mt-0.5" color={C.gold} />
-        <p className="text-[12.5px] leading-relaxed" style={{ color: C.muted }}>
-          Every change is confirmed with a 6-digit code sent by e-mail or SMS. Your password is stored encrypted and is never shown.
+      <Card className="p-5">
+        <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
+          Accounts are not available in this version. Your progress is kept on this device.
         </p>
-      </div>
+      </Card>
     </SubPage>
-  );
-}
-
-/* One change, two steps: the details, then the code. */
-function ChangeFlow({
-  purpose,
-  profileId,
-  account,
-  onCancel,
-  onDone,
-}: {
-  purpose: Purpose;
-  profileId: string;
-  account: AccountView;
-  onCancel: () => void;
-  onDone: (next: AccountView) => void;
-}) {
-  const [step, setStep] = useState<'form' | 'code'>('form');
-  const [value, setValue] = useState('');
-  const [currentPassword, setCurrentPassword] = useState('');
-  const [newPassword, setNewPassword] = useState('');
-  const [repeat, setRepeat] = useState('');
-  const [channel, setChannel] = useState<Channel>(account.email ? 'email' : 'sms');
-  const [code, setCode] = useState('');
-  const [sent, setSent] = useState<{ sentTo: string; channel: Channel; testCode?: string } | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [busy, setBusy] = useState(false);
-
-  const title =
-    purpose === 'email'
-      ? account.email
-        ? 'Change e-mail'
-        : 'Add e-mail'
-      : purpose === 'phone'
-        ? account.phone
-          ? 'Change phone'
-          : 'Add phone'
-        : account.hasPassword
-          ? 'Change password'
-          : 'Set a password';
-
-  // A password needs somewhere confirmed to send the code to.
-  const noDestination = purpose === 'password' && !account.email && !account.phone;
-  const passwordOk = newPassword.length >= 8 && /[A-Za-z]/.test(newPassword) && /\d/.test(newPassword);
-
-  const requestCode = async () => {
-    setError(null);
-    if (purpose === 'password') {
-      if (!passwordOk) return setError('Use at least 8 characters with a letter and a number.');
-      if (newPassword !== repeat) return setError('The two passwords are not the same.');
-    }
-    setBusy(true);
-    try {
-      const r = await api<{ sentTo: string; channel: Channel; testCode?: string }>('/api/account/request-code', {
-        profileId,
-        purpose,
-        channel,
-        value,
-        currentPassword: account.hasPassword ? currentPassword : undefined,
-      });
-      setSent(r);
-      setCode('');
-      setStep('code');
-    } catch (e: any) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
-  };
-
-  const confirm = async () => {
-    setError(null);
-    setBusy(true);
-    try {
-      onDone(await api<AccountView>('/api/account/confirm', { profileId, purpose, code, newPassword: purpose === 'password' ? newPassword : undefined }));
-    } catch (e: any) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
-  };
-
-  return (
-    <Card className="p-5 space-y-4">
-      <p className="text-[16px] font-semibold" style={{ color: C.text }}>
-        {title}
-      </p>
-
-      {noDestination ? (
-        <>
-          <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
-            Add and confirm your e-mail or phone first. The code that protects your password is sent there.
-          </p>
-          <GhostButton onClick={onCancel}>OK</GhostButton>
-        </>
-      ) : step === 'form' ? (
-        <>
-          {purpose === 'email' && (
-            <Field label="New e-mail">
-              <Input type="email" value={value} onChange={setValue} autoComplete="email" placeholder="name@example.com" />
-            </Field>
-          )}
-          {purpose === 'phone' && (
-            <Field label="New phone number">
-              <Input type="tel" value={value} onChange={setValue} autoComplete="tel" placeholder="+90 5xx xxx xx xx" />
-            </Field>
-          )}
-          {account.hasPassword && (
-            <Field label="Current password">
-              <PasswordInput value={currentPassword} onChange={setCurrentPassword} autoComplete="current-password" />
-            </Field>
-          )}
-          {purpose === 'password' && (
-            <>
-              <Field label="New password">
-                <PasswordInput value={newPassword} onChange={setNewPassword} autoComplete="new-password" />
-              </Field>
-              <Field label="Repeat new password">
-                <PasswordInput value={repeat} onChange={setRepeat} autoComplete="new-password" />
-              </Field>
-              <p className="text-[12.5px]" style={{ color: passwordOk ? C.gold : C.muted }}>
-                At least 8 characters, with a letter and a number.
-              </p>
-              {account.email && account.phone && (
-                <Field label="Send the code by">
-                  <div className="flex gap-2">
-                    {(['email', 'sms'] as Channel[]).map(c => (
-                      <button
-                        key={c}
-                        type="button"
-                        onClick={() => setChannel(c)}
-                        className="flex-1 rounded-2xl border py-2.5 text-[14px] font-medium cursor-pointer"
-                        style={{
-                          color: C.text,
-                          background: channel === c ? C.goldDim : C.card2,
-                          borderColor: channel === c ? C.gold : C.border,
-                        }}
-                      >
-                        {c === 'email' ? 'E-mail' : 'SMS'}
-                      </button>
-                    ))}
-                  </div>
-                </Field>
-              )}
-            </>
-          )}
-          {error && <ErrorLine>{error}</ErrorLine>}
-          <div className="flex gap-2">
-            <GhostButton onClick={onCancel}>Cancel</GhostButton>
-            <GoldButton onClick={requestCode} disabled={busy}>
-              {busy ? 'Sending…' : 'Send code'}
-            </GoldButton>
-          </div>
-        </>
-      ) : (
-        <>
-          <p className="text-[14px] leading-relaxed" style={{ color: C.muted }}>
-            Enter the 6-digit code sent by {sent?.channel === 'sms' ? 'SMS' : 'e-mail'} to <span style={{ color: C.text }}>{sent?.sentTo}</span>. It is valid for 10 minutes.
-          </p>
-          {sent?.testCode && (
-            <div className="rounded-2xl border px-4 py-3" style={{ borderColor: 'rgba(245,184,46,0.35)', background: C.goldDim }}>
-              <p className="text-[12.5px] leading-relaxed" style={{ color: C.text }}>
-                Test mode: no {sent.channel === 'sms' ? 'SMS' : 'e-mail'} provider is connected to this server yet, so nothing was sent. Your test code is{' '}
-                <span className="font-semibold tracking-[0.18em]" style={{ color: C.gold }}>
-                  {sent.testCode}
-                </span>
-              </p>
-            </div>
-          )}
-          <Field label="Verification code">
-            <Input
-              value={code}
-              onChange={v => setCode(v.replace(/\D/g, '').slice(0, 6))}
-              inputMode="numeric"
-              autoComplete="one-time-code"
-              placeholder="••••••"
-              className="tracking-[0.4em] text-center text-[20px]"
-            />
-          </Field>
-          {error && <ErrorLine>{error}</ErrorLine>}
-          <div className="flex gap-2">
-            <GhostButton
-              onClick={() => {
-                setStep('form');
-                setError(null);
-              }}
-            >
-              Back
-            </GhostButton>
-            <GoldButton onClick={confirm} disabled={busy || code.length !== 6}>
-              {busy ? 'Checking…' : 'Confirm'}
-            </GoldButton>
-          </div>
-        </>
-      )}
-    </Card>
   );
 }
 

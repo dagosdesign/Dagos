@@ -115,15 +115,6 @@ export function updateUserProfile(patch: Partial<UserProfile> | ((p: UserProfile
   listeners.forEach(l => l());
 }
 
-/* With accounts on, the plan belongs to the account and is set by the server after a
-   purchase (see lib/auth.ts) - the app itself can no longer switch it. Returns whether
-   the plan was changed here. */
-export function setMembership(plan: MembershipPlan): boolean {
-  if (cloudEnabled) return false;
-  updateUserProfile({ membership: plan });
-  return true;
-}
-
 /* A finished placement test: the level is saved to the account and shows up in
    Your Level and My Level straight away. */
 export function savePlacementResult(level: CEFRLevel, progress: number) {

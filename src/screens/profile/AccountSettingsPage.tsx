@@ -1,14 +1,12 @@
 import { useState, type ReactNode } from 'react';
 import { Bell, Database, FileText, History, Info, LifeBuoy, LogOut, RotateCcw, Shield, Target, Trash2, UserRound } from 'lucide-react';
 import { C, Card, GhostButton, MenuList, ProfileMenuItem, SubPage } from '../../components/profile/ui';
-import { useAccount } from './AccountPage';
 import { apiFetch } from '../../lib/api';
 import { useAuth } from '../../lib/auth';
 import { supabase } from '../../lib/supabase';
 import { clearLearningRecord } from '../../lib/learningRecord';
 import { clearActivityHistory } from '../../lib/activityLog';
 import type { ProfilePage } from '../../components/profile/ProfileFeatures';
-import { apiUrl } from '../../lib/runtime';
 
 const DANGER = '#E5484D';
 
@@ -80,8 +78,6 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
   const [step, setStep] = useState(0);
   const [reason, setReason] = useState<string | null>(null);
   const [understood, setUnderstood] = useState(false);
-  const { profileId, account } = useAccount();
-  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
   const auth = useAuth();
@@ -99,16 +95,6 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
       } catch {
         return setError('No connection. Your account was not deleted - please try again.');
       }
-    }
-    try {
-      const r = await fetch(apiUrl('/api/account/delete'), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ profileId, currentPassword: password || undefined }),
-      });
-      if (r.status === 403) return setError('Your password is not correct.');
-    } catch {
-      /* offline: the data on this device is still removed */
     }
     try {
       localStorage.clear();
@@ -204,17 +190,6 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
                 I understand that this is permanent and cannot be undone.
               </span>
             </label>
-            {account?.hasPassword && (
-              <input
-                type="password"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                autoComplete="current-password"
-                placeholder="Your password"
-                className="w-full rounded-2xl border px-4 py-3 text-[15px] outline-none focus:border-[#E5484D]"
-                style={{ background: C.card2, borderColor: C.border, color: C.text }}
-              />
-            )}
             {error && (
               <p className="text-[13px]" style={{ color: DANGER }}>
                 {error}
@@ -222,7 +197,7 @@ function DeleteAccountDialog({ onClose }: { onClose: () => void }) {
             )}
             <div className="flex gap-2">
               <GhostButton onClick={onClose}>Cancel</GhostButton>
-              <DangerButton disabled={!understood || (account?.hasPassword && !password)} onClick={deleteEverything}>
+              <DangerButton disabled={!understood} onClick={deleteEverything}>
                 Delete Account
               </DangerButton>
             </div>

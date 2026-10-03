@@ -3,7 +3,7 @@ import { ChevronDown, CircleCheck, Mail, Search } from 'lucide-react';
 import { C, Card, GoldButton, SubPage } from '../../components/profile/ui';
 import { useUserProfile } from '../../lib/userProfile';
 import { apiFetch } from '../../lib/api';
-import { apiUrl } from '../../lib/runtime';
+import { useAuth } from '../../lib/auth';
 
 /* HELP & SUPPORT: answers first (searchable), then a direct message to the
    Lexistencehub team. The reply comes by e-mail; every message gets a reference
@@ -245,17 +245,11 @@ export default function HelpSupportPage({ onBack }: { onBack: () => void }) {
   const [done, setDone] = useState<string | null>(null);
   const [sent, setSent] = useState<SentMessage[]>(loadSent);
 
-  // The confirmed account e-mail, when there is one, is where the reply goes.
+  // The signed-in account's e-mail, when there is one, is where the reply goes.
+  const auth = useAuth();
   useEffect(() => {
-    let cancelled = false;
-    fetch(apiUrl(`/api/account/${encodeURIComponent(profile.id)}`))
-      .then(r => r.json())
-      .then(a => !cancelled && a?.email && setEmail(prev => prev || a.email))
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [profile.id]);
+    if (auth.email) setEmail(prev => prev || auth.email!);
+  }, [auth.email]);
 
   const groups = useMemo(() => {
     const q = query.trim().toLowerCase();

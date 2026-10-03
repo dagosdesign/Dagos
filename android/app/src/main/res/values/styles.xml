@@ -18,5 +18,10 @@
 
     <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
         <item name="android:background">@drawable/splash</item>
+        <!-- Android 12+ system splash: no launcher icon, only the dark background;
+             the logo comes in with the opening animation (index.html). -->
+        <item name="windowSplashScreenBackground">#050505</item>
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
     </style>
 </resources>

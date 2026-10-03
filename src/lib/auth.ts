@@ -24,10 +24,11 @@ export interface AuthState {
   session: Session | null;
   email: string | null;
   plan: MembershipPlan;
+  planExpiresAt: string | null; // Premium's current period end (null: free, or no end date)
   recovery: boolean; // came back from a password-reset link: a new password has to be set
 }
 
-let state: AuthState = { ready: !supabase, session: null, email: null, plan: 'free', recovery: false };
+let state: AuthState = { ready: !supabase, session: null, email: null, plan: 'free', planExpiresAt: null, recovery: false };
 const listeners = new Set<() => void>();
 
 function set(next: Partial<AuthState>) {
@@ -49,11 +50,17 @@ async function loadPlan(userId: string) {
   const { data } = await supabase.from('entitlements').select('plan,expires_at').eq('user_id', userId).maybeSingle();
   const active = data && data.plan === 'premium' && (!data.expires_at || new Date(data.expires_at) > new Date());
   const plan: MembershipPlan = active ? 'premium' : 'free';
-  set({ plan });
+  set({ plan, planExpiresAt: active ? data?.expires_at ?? null : null });
   if (getUserProfile().membership !== plan) {
     updateUserProfile({ membership: plan });
     bootNotifications(); // Wordrobe follows the plan
   }
+}
+
+/* Reads the plan again - after a purchase or a restore has been confirmed. */
+export async function refreshPlan() {
+  const userId = state.session?.user.id;
+  if (userId) await loadPlan(userId);
 }
 
 /* A new account starts with the name it was created with (Google / Apple name, or the
@@ -77,7 +84,7 @@ if (supabase) {
     if (session) {
       adoptAccountName(session);
       void loadPlan(session.user.id);
-    } else set({ plan: 'free' });
+    } else set({ plan: 'free', planExpiresAt: null });
   });
 }
 
