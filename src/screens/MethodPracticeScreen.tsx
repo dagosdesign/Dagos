@@ -579,6 +579,11 @@ function probeImage(candidates: string[]): Promise<string | null> {
 
 // Every photo in media/vocabulary is .webp (scripts/process-card-photos.py writes them).
 const IMG_EXTS = ['webp'];
+/* Photos are cached on the phone for 30 days under their URL. Raise this number whenever
+   existing photos in media/vocabulary are REPLACED, so every phone fetches the new ones
+   (new words need no bump). 2: the redrawn adverb photos (October 2026). */
+const PHOTO_VERSION = 2;
+const photoUrl = (p: string) => assetUrl(`${p}?v=${PHOTO_VERSION}`);
 // Photo filenames are slugs so phrases ("alone / feel alone") map to safe names.
 // Single words slugify to themselves, so all existing files keep working.
 function wordSlug(word: string): string {
@@ -586,18 +591,18 @@ function wordSlug(word: string): string {
 }
 function slotImageCandidates(word: string, category?: string | null): string[] {
   const w = wordSlug(word);
-  const shared = IMG_EXTS.map(ext => assetUrl(`/vocabulary/${w}.${ext}`));
+  const shared = IMG_EXTS.map(ext => photoUrl(`/vocabulary/${w}.${ext}`));
   // Words shared across units can carry a unit-specific photo under
   // /vocabulary/u/<category-slug>/ which wins over the shared one.
   if (category) {
     const c = wordSlug(category);
-    return [...IMG_EXTS.map(ext => assetUrl(`/vocabulary/u/${c}/${w}.${ext}`)), ...shared];
+    return [...IMG_EXTS.map(ext => photoUrl(`/vocabulary/u/${c}/${w}.${ext}`)), ...shared];
   }
   return shared;
 }
 function fullCardCandidates(word: string): string[] {
   const w = wordSlug(word);
-  return IMG_EXTS.map(ext => assetUrl(`/vocabulary/cards/${w}.${ext}`));
+  return IMG_EXTS.map(ext => photoUrl(`/vocabulary/cards/${w}.${ext}`));
 }
 
 function VisualMode({ pool, playPronunciation, recordQuizXp, onExit, onRestart }: {

@@ -58,6 +58,15 @@ Güvenlik incelemesi ve düzeltmeler:
 - Env: sunucu `REVENUECAT_SECRET_KEY`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ENTITLEMENT` (premium);
   `.env.native` `VITE_REVENUECAT_ANDROID_KEY` / `VITE_REVENUECAT_IOS_KEY`.
 
+## Kelime görselleri
+- `media/vocabulary/<kelime>.webp` (oval, altın halkalı, 750×1000). Sunucu GitHub'dan alır: **push edilmeden canlıya çıkmaz**
+  (Render'daki "deploy" GitHub'a bir şey göndermez).
+- Üretim: sahneler `scripts/scenes-*.json` → `node scripts/generate-card-photos.mjs <ham_klasör> <sahneler.json>` →
+  `node scripts/process-card-photos.mjs <ham_klasör>` (Python sürümünün Node eşi; bu makinede Python yok).
+- Var olan bir görsel DEĞİŞTİRİLİRSE `MethodPracticeScreen.tsx` → `PHOTO_VERSION` artırılır (telefonlar görseli 30 gün
+  önbellekte tutar) ve yeni AAB gerekir. Yeni kelime eklemek için gerekmez.
+- Zarflar (Eki 2026): 44 zarf `scripts/scenes-adverbs-ideas.json` ile yeniden çizildi; eskileri `scripts/.cache/adverbs-ideas/old`.
+
 ## Şu anki adım: Android
 - Android Studio kuruldu, Node.js kuruldu, `npm install` + `npm run build:native` + `npx cap open android` çalıştırıldı, Gradle sync yapılıyordu.
 - Sıradaki: telefonda USB hata ayıklama ile ▶ Run → uygulamayı test et (açılış, fotoğraflar, giriş, mikrofon, bildirim).

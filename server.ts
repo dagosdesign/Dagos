@@ -901,7 +901,16 @@ app.post("/api/generate-quiz", guard({ feature: 'quiz', signedIn: true, perMinut
 
 // The vocabulary photos (~800 MB) are not part of the web bundle or the phone app:
 // the server serves them from media/ - to the website and to the app alike.
-app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), { maxAge: "30d", immutable: true }));
+// A photo URL that carries a version (?v=3, see PHOTO_VERSION in the app) never changes:
+// cached for 30 days without asking again. Without a version (older app builds) it is
+// re-checked daily, so a replaced photo still reaches those phones.
+app.use("/vocabulary", express.static(path.join(process.cwd(), "media", "vocabulary"), {
+  maxAge: "30d",
+  immutable: true,
+  setHeaders: res => {
+    if (!res.req.query.v) res.setHeader("Cache-Control", "public, max-age=86400");
+  },
+}));
 // A word without a photo: a plain, cacheable 404 - never the redirect to "/" further
 // down, which made every miss cost a second round trip (the app probes for photos).
 app.use("/vocabulary", (_req, res) => {
