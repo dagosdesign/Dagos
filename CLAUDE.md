@@ -55,7 +55,7 @@ Güvenlik incelemesi ve düzeltmeler:
   sunucu `billing.ts`: `/api/billing/webhook` + `/api/billing/sync` → `entitlements` tablosu → uygulama `refreshPlan()`.
 - Sunucu olayın gövdesine değil RevenueCat API'sine (`GET /v1/subscribers/:id`) bakar. `source='manual'` Premium'a dokunmaz (inceleme hesabı).
 - Uygulama Premium'u kendisi açamaz (`setMembership` kaldırıldı). Webde satın alma yok.
-- Env: sunucu `REVENUECAT_SECRET_KEY`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ENTITLEMENT` (premium);
+- Env: sunucu `REVENUECAT_SECRET_KEY`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ENTITLEMENT` (varsayılan `lexistencehub_premium`; RevenueCat: offering `default` → `$rc_annual` → `premium_yearly:yearly`);
   `.env.native` `VITE_REVENUECAT_ANDROID_KEY` / `VITE_REVENUECAT_IOS_KEY`.
 
 ## Kelime görselleri

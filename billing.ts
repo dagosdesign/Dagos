@@ -17,11 +17,11 @@ import { admin, forgetPlan, guard } from "./authGuard";
    the event body - order and duplicates of events then do not matter.
 
    Env: REVENUECAT_SECRET_KEY (sk_..., server only), REVENUECAT_WEBHOOK_AUTH (any long
-   random string, also entered in RevenueCat), REVENUECAT_ENTITLEMENT (default "premium"). */
+   random string, also entered in RevenueCat), REVENUECAT_ENTITLEMENT (default "lexistencehub_premium", the identifier in RevenueCat). */
 
 const SECRET = process.env.REVENUECAT_SECRET_KEY || "";
 const WEBHOOK_AUTH = process.env.REVENUECAT_WEBHOOK_AUTH || "";
-const ENTITLEMENT = process.env.REVENUECAT_ENTITLEMENT || "premium";
+const ENTITLEMENT = process.env.REVENUECAT_ENTITLEMENT || "lexistencehub_premium";
 if (process.env.NODE_ENV === "production" && (!SECRET || !WEBHOOK_AUTH)) {
   console.error("REVENUECAT_SECRET_KEY / REVENUECAT_WEBHOOK_AUTH missing: Premium purchases cannot be confirmed.");
 }
