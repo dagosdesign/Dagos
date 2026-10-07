@@ -57,6 +57,9 @@ Güvenlik incelemesi ve düzeltmeler:
 - Uygulama Premium'u kendisi açamaz (`setMembership` kaldırıldı). Webde satın alma yok.
 - Env: sunucu `REVENUECAT_SECRET_KEY`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ENTITLEMENT` (varsayılan `lexistencehub_premium`; RevenueCat: offering `default` → `$rc_annual` → `premium_yearly:yearly`);
   `.env.native` `VITE_REVENUECAT_ANDROID_KEY` / `VITE_REVENUECAT_IOS_KEY`.
+- Durum (8 Eki 2026): Play aboneliği `premium_yearly:yearly` etkin; RevenueCat kimlik bilgileri geçerli; webhook testi 200;
+  Android public anahtarı `.env.native`'de. Kalan: versionCode 2 AAB'yi dahili teste yüklemek, lisans testçisi eklemek, telefonda test satın alması.
+  Webhook şifresi karşılaştırması boşluk/tırnak/`Bearer` önekini yok sayar; uyuşmazsa Render logunda `Billing webhook refused` satırı parmak izi yazar.
 
 ## Kelime görselleri
 - `media/vocabulary/<kelime>.webp` (oval, altın halkalı, 750×1000). Sunucu GitHub'dan alır: **push edilmeden canlıya çıkmaz**
