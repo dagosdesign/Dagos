@@ -1,4 +1,5 @@
 import type { Express, Request, Response } from "express";
+import { createHash, timingSafeEqual } from "crypto";
 import { admin, forgetPlan, guard } from "./authGuard";
 
 /* PREMIUM PURCHASES (Google Play / App Store through RevenueCat).
@@ -20,7 +21,18 @@ import { admin, forgetPlan, guard } from "./authGuard";
    random string, also entered in RevenueCat), REVENUECAT_ENTITLEMENT (default "lexistencehub_premium", the identifier in RevenueCat). */
 
 const SECRET = process.env.REVENUECAT_SECRET_KEY || "";
-const WEBHOOK_AUTH = process.env.REVENUECAT_WEBHOOK_AUTH || "";
+/* The shared webhook secret as both sides mean it: pasting it into a dashboard easily
+   adds spaces, quotes or a "Bearer " prefix on one side only, so those are ignored. */
+const cleanSecret = (s: string) =>
+  s.trim().replace(/^Bearers+/i, "").replace(/^["']+|["']+$/g, "").trim();
+const WEBHOOK_AUTH = cleanSecret(process.env.REVENUECAT_WEBHOOK_AUTH || "");
+// Never the secret itself: its length and a one-way fingerprint, for the server log.
+const fingerprint = (s: string) => `${s.length} chars, #${createHash("sha256").update(s).digest("hex").slice(0, 8)}`;
+const sameSecret = (a: string, b: string) => {
+  const x = createHash("sha256").update(a).digest();
+  const y = createHash("sha256").update(b).digest();
+  return timingSafeEqual(x, y);
+};
 const ENTITLEMENT = process.env.REVENUECAT_ENTITLEMENT || "lexistencehub_premium";
 if (process.env.NODE_ENV === "production" && (!SECRET || !WEBHOOK_AUTH)) {
   console.error("REVENUECAT_SECRET_KEY / REVENUECAT_WEBHOOK_AUTH missing: Premium purchases cannot be confirmed.");
@@ -82,8 +94,12 @@ export async function syncPlan(userId: string): Promise<{ plan: "free" | "premiu
 export function registerBillingRoutes(app: Express) {
   app.post("/api/billing/webhook", async (req: Request, res: Response) => {
     if (!WEBHOOK_AUTH) return res.status(503).json({ error: "billing_not_configured" });
-    const auth = String(req.headers.authorization || "");
-    if (auth !== WEBHOOK_AUTH && auth !== `Bearer ${WEBHOOK_AUTH}`) return res.status(401).json({ error: "unauthorized" });
+    const auth = cleanSecret(String(req.headers.authorization || ""));
+    if (!sameSecret(auth, WEBHOOK_AUTH)) {
+      // Which side is wrong shows in the two fingerprints; the secrets are never logged.
+      console.warn(`Billing webhook refused: received [${fingerprint(auth)}], expected [${fingerprint(WEBHOOK_AUTH)}]`);
+      return res.status(401).json({ error: "unauthorized" });
+    }
 
     const event = (req.body && req.body.event) || {};
     if (event.type === "TEST") return res.json({ ok: true });
