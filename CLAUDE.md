@@ -57,9 +57,14 @@ Güvenlik incelemesi ve düzeltmeler:
 - Uygulama Premium'u kendisi açamaz (`setMembership` kaldırıldı). Webde satın alma yok.
 - Env: sunucu `REVENUECAT_SECRET_KEY`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ENTITLEMENT` (varsayılan `lexistencehub_premium`; RevenueCat: offering `default` → `$rc_annual` → `premium_yearly:yearly`);
   `.env.native` `VITE_REVENUECAT_ANDROID_KEY` / `VITE_REVENUECAT_IOS_KEY`.
-- Durum (8 Eki 2026): Play aboneliği `premium_yearly:yearly` etkin; RevenueCat kimlik bilgileri geçerli; webhook testi 200;
-  Android public anahtarı `.env.native`'de. Kalan: versionCode 2 AAB'yi dahili teste yüklemek, lisans testçisi eklemek, telefonda test satın alması.
-  Webhook şifresi karşılaştırması boşluk/tırnak/`Bearer` önekini yok sayar; uyuşmazsa Render logunda `Billing webhook refused` satırı parmak izi yazar.
+- Durum (12 Eki 2026): **çalışıyor.** Kapalı test (Alpha) sürüm 3 (1.0.2) 10 Eki'de onaylandı; iki telefonda Play'den kuruldu,
+  test satın alması başarılı (kullanıcı doğruladı). Webhook şifresi karşılaştırması boşluk/tırnak/`Bearer` önekini yok sayar;
+  uyuşmazsa Render logunda `Billing webhook refused` satırı parmak izi yazar.
+- Sürüm üretimi: yükleme anahtarı `C:UsersosmanDocumentslexlexistencehub` (alias `upload`); şifreyi yalnızca Android Studio
+  hatırlıyor (kullanıcı hatırlamıyor) → imzalı AAB şimdilik Android Studio'dan üretilir. Her yüklemede versionCode +1.
+- Sıradaki: 12+ testçi kapalı teste katılacak, 14 gün sonra üretim erişimi başvurusu. Açık işler: R8/kod karartma
+  (Play uyarısı, son tarih Şub 2027; açınca gerçek telefonda tam test şart), Android 15 uçtan uca ekran kontrolü,
+  Play ödeme profiline banka hesabı, iOS.
 
 ## Kelime görselleri
 - `media/vocabulary/<kelime>.webp` (oval, altın halkalı, 750×1000). Sunucu GitHub'dan alır: **push edilmeden canlıya çıkmaz**
