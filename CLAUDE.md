@@ -60,7 +60,7 @@ Güvenlik incelemesi ve düzeltmeler:
 - Durum (12 Eki 2026): **çalışıyor.** Kapalı test (Alpha) sürüm 3 (1.0.2) 10 Eki'de onaylandı; iki telefonda Play'den kuruldu,
   test satın alması başarılı (kullanıcı doğruladı). Webhook şifresi karşılaştırması boşluk/tırnak/`Bearer` önekini yok sayar;
   uyuşmazsa Render logunda `Billing webhook refused` satırı parmak izi yazar.
-- Sürüm üretimi: yükleme anahtarı `C:UsersosmanDocumentslexlexistencehub` (alias `upload`); şifreyi yalnızca Android Studio
+- Sürüm üretimi: yükleme anahtarı `C:/Users/osman/Documents/lex/lexistencehub` (alias `upload`); şifreyi yalnızca Android Studio
   hatırlıyor (kullanıcı hatırlamıyor) → imzalı AAB şimdilik Android Studio'dan üretilir. Her yüklemede versionCode +1.
 - Sıradaki: 12+ testçi kapalı teste katılacak, 14 gün sonra üretim erişimi başvurusu. Açık işler: R8/kod karartma
   (Play uyarısı, son tarih Şub 2027; açınca gerçek telefonda tam test şart), Android 15 uçtan uca ekran kontrolü,
