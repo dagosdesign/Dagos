@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import CLUSTER_BANK from '../data/lexicalClusters.json';
 import {
@@ -255,6 +256,7 @@ export default function OddOneScreen({ onExit, recordQuizXp }: OddOneScreenProps
     });
     setChosenId(cardId);
     setVerdict(ok ? 'true' : 'wrong');
+    playAnswer(ok);
     if (ok) setCorrectCount(c => c + 1);
     else {
       setWrongCount(w => w + 1);

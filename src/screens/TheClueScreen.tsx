@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { FLASHCARDS, FLASHCARD_CATEGORIES } from '../data/flashcards';
 import { loadVocabulary } from '../lib/vocabulary';
@@ -246,6 +247,7 @@ export default function TheClueScreen({ onExit, recordQuizXp }: TheClueScreenPro
     });
     setChosen(optionId);
     setVerdict(ok ? 'true' : 'wrong');
+    playAnswer(ok);
     if (ok) {
       setCorrectCount(c => c + 1);
       return;

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The notification sound is looked up by name at run time; resource shrinking must keep it. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@raw/bildirim" />

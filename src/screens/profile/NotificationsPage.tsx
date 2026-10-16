@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { C, Card, Segmented, SubPage, Toggle } from '../../components/profile/ui';
 import { applyNotificationPrefs } from '../../lib/notifications';
 import { useUserProfile } from '../../lib/userProfile';
+import { playCorrect, setSoundsOn, soundsOn } from '../../lib/sfx';
 
 interface NotificationSettings {
   dailyReminder: boolean;
@@ -42,6 +43,7 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
 
   const premium = useUserProfile().membership === 'premium';
   const [wordrobeNote, setWordrobeNote] = useState(false);
+  const [sounds, setSounds] = useState(soundsOn);
 
   const rows: { key: keyof NotificationSettings; title: string; subtitle: string; premiumOnly?: boolean }[] = [
     { key: 'dailyReminder', title: 'Daily learning reminder', subtitle: 'A reminder to keep your daily goal' },
@@ -52,7 +54,29 @@ export default function NotificationsPage({ onBack }: { onBack: () => void }) {
   ];
 
   return (
-    <SubPage title="Notifications" subtitle="Learning reminders and updates" onBack={onBack}>
+    <SubPage title="Notifications" subtitle="Learning reminders, updates and sounds" onBack={onBack}>
+      <Card>
+        <div className="flex items-center gap-3 px-4 py-3.5">
+          <div className="min-w-0 flex-1">
+            <p className="text-[15px] font-medium" style={{ color: C.text }}>
+              Sound effects
+            </p>
+            <p className="text-[12.5px]" style={{ color: C.muted }}>
+              A sound for right and wrong answers in tests and games
+            </p>
+          </div>
+          <Toggle
+            label="Sound effects"
+            checked={sounds}
+            onChange={v => {
+              setSoundsOn(v);
+              setSounds(v);
+              if (v) playCorrect();
+            }}
+          />
+        </div>
+      </Card>
+
       <Card className="divide-y divide-[#262626]">
         {rows.map(r => {
           const locked = r.premiumOnly && !premium;

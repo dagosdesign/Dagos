@@ -13,6 +13,7 @@ import { useUserProfile } from '../lib/userProfile';
 import PlanLimitCard from '../components/PlanLimitCard';
 import { apiUrl, assetUrl } from '../lib/runtime';
 import { apiFetch } from '../lib/api';
+import { playAnswer, playCorrect, playWrong } from '../lib/sfx';
 
 export type PracticeMethod = 'Listening' | 'Writing' | 'Visual' | 'Games' | 'Stories' | 'Conversations' | 'Test';
 
@@ -281,6 +282,7 @@ function ListeningMode({ pool, choicePool, playPronunciation, recordQuizXp, onEx
               disabled={answered}
               onClick={() => {
                 setSelected(opt);
+                playAnswer(opt === current.turkishMeaning);
                 if (opt === current.turkishMeaning) setCorrectCount(c => c + 1);
                 recordAnswer({
                   area: 'vocabulary',
@@ -378,6 +380,7 @@ function TestMode({ pool, choicePool, recordQuizXp, onExit, onRestart }: {
               disabled={answered}
               onClick={() => {
                 setSelected(opt);
+                playAnswer(opt === current.turkishMeaning);
                 if (opt === current.turkishMeaning) setCorrectCount(c => c + 1);
                 recordAnswer({
                   area: 'vocabulary',
@@ -459,6 +462,7 @@ function WritingMode({ pool, recordQuizXp, onExit, onRestart }: {
     });
     setVerdict(result);
     const ok = result !== 'wrong';
+    playAnswer(ok);
     if (ok) setCorrectCount(c => c + 1);
     recordAnswer({
       area: 'writing',
@@ -857,9 +861,11 @@ function MatchingMode({ pool, recordQuizXp, onExit, onRestart }: {
   const pickRight = (card: Flashcard) => {
     if (!selectedLeft || matched.has(card.id)) return;
     if (card.id === selectedLeft) {
+      playCorrect();
       setMatched(prev => new Set(prev).add(card.id));
       setSelectedLeft(null);
     } else {
+      playWrong();
       setMistakes(m => m + 1);
       setWrongRight(card.id);
       setTimeout(() => setWrongRight(null), 500);

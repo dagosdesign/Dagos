@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { ChevronLeft, BarChart3, Mic, Zap, Check, X, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
@@ -177,6 +178,7 @@ export default function WhatAmIScreen({ onExit, recordQuizXp }: WhatAmIScreenPro
     (isCorrect: boolean, reason: QuestionResult['reason']) => {
       if (!current || resolvedRef.current) return;
       resolvedRef.current = true;
+      playAnswer(isCorrect);
       const elapsed = (Date.now() - startedAtRef.current) / 1000;
       const double = isCorrect && elapsed <= BONUS_SECONDS;
       const points = isCorrect ? (double ? BONUS_POINTS : POINTS) : 0;

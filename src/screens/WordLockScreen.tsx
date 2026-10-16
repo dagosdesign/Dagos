@@ -9,6 +9,7 @@ import { foldAnswer } from '../lib/answerText';
 import { rampedPick, wordDifficulty } from '../lib/difficulty';
 import { categoryLine, contextLine, mentionsWord } from '../lib/clues';
 import EXTRA_CLUES from '../data/wordlockClues.json';
+import { playCorrect, playWrong } from '../lib/sfx';
 
 /* Generated for the words whose own data cannot give three English clues
    (scripts/generate-wordlock-clues.ts): their real part of speech and the short
@@ -213,6 +214,7 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
   const solveWord = (points: number) => {
     setRevealed(new Set(word.split('').map((_, i) => i)));
     setSolved(true);
+    playCorrect();
     setFlash('SOLVED');
     recordAnswer({ area: 'vocabulary', concept: VOCABULARY.forgotten, correct: true, source: 'Wordlock', prompt: clues[0], expected: word.toLowerCase() });
     const next = { ...stats, correct: stats.correct + 1, score: stats.score + points };
@@ -220,6 +222,7 @@ export default function WordLockScreen({ category, label, onExit, recordQuizXp }
   };
 
   const loseLife = () => {
+    playWrong();
     // The last guess is used up: the word was not found.
     if (lives <= 1 && !solved) {
       recordAnswer({ area: 'vocabulary', concept: VOCABULARY.forgotten, correct: false, source: 'Wordlock', prompt: clues[0], expected: word.toLowerCase() });

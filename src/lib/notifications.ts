@@ -21,6 +21,23 @@ export interface NotificationPrefs {
 
 const ID = { daily: 1, streak: 2, weekly: 3, wordDrop: 100 }; // word drops: 100 + day
 
+/* Our own notification sound: android/app/src/main/res/raw/bildirim.m4a. On Android 8+
+   the sound belongs to the channel, and a channel's sound cannot change once created:
+   a new sound needs a new channel id. */
+const SOUND = 'bildirim.m4a';
+const CHANNEL = 'lex_reminders';
+let channelReady: Promise<void> | null = null;
+function ensureChannel() {
+  return (channelReady ??= LocalNotifications.createChannel({
+    id: CHANNEL,
+    name: 'Reminders',
+    description: 'Learning reminders, streak and Wordrobe',
+    importance: 4,
+    sound: SOUND,
+    vibration: true,
+  }).catch(() => {}));
+}
+
 const REMINDERS = [
   'Ten minutes of English today keeps your streak alive.',
   'A few new words are waiting for you.',
@@ -98,7 +115,10 @@ export async function applyNotificationPrefs(p: NotificationPrefs): Promise<void
         });
       }
     }
-    if (list.length) await LocalNotifications.schedule({ notifications: list });
+    if (list.length) {
+      await ensureChannel();
+      await LocalNotifications.schedule({ notifications: list.map(n => ({ ...n, channelId: CHANNEL, sound: SOUND })) });
+    }
   } catch (err) {
     console.warn('[notifications] could not schedule', err);
   }

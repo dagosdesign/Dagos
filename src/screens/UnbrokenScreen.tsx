@@ -5,6 +5,7 @@ import { foldAnswer } from '../lib/answerText';
 import { pluralLemma } from '../lib/lemma';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { getSpeechRecognition } from '../lib/speech';
+import { playCorrect, playWrong } from '../lib/sfx';
 
 /* UNBROKEN — keep the chain alive. Each accepted word gives a fresh 20 seconds
    and its final letter starts the next one. No score, no lives: only the record. */
@@ -217,45 +218,54 @@ export default function UnbrokenScreen({ onExit }: UnbrokenScreenProps) {
       if (w[0].toUpperCase() !== requiredLetter) {
         flash(`Starts with ${requiredLetter}`);
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (used.has(w)) {
         flash('Already used');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (usedLemmas.has(lemma(w))) {
         flash('Already used · plurals do not count as new words', 2600);
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (NUMBER_WORDS.has(w) || /\d/.test(raw)) {
         flash('No numbers');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (PROPER_NAMES.has(w)) {
         flash('No proper names');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (BRANDS.has(w)) {
         flash('No brand names');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (ABBREVIATIONS.has(w)) {
         flash('No abbreviations');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
       if (!knownWord(w)) {
         flash('Not an English word');
         setDraft('');
+        if (!speakModeRef.current) playWrong();
         return release();
       }
 
       // accepted: one atomic transition
+      if (!speakModeRef.current) playCorrect(); // the microphone must not hear the chime
       const nextChain = chain + 1;
       setUsed(prev => new Set(prev).add(w));
       setChain(nextChain);

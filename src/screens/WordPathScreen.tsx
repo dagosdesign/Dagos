@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import type { LucideIcon } from 'lucide-react';
 import {
   ChevronLeft, BarChart3, Lock, Check, X, Star,
@@ -312,6 +313,7 @@ export default function WordPathScreen({ onExit, recordQuizXp }: WordPathScreenP
     });
     setChosenId(optionId);
     setVerdict(ok ? 'true' : 'wrong');
+    playAnswer(ok);
     if (ok) setCorrectCount(c => c + 1);
     else {
       const chosen = q.options.find(o => o.id === optionId)?.word ?? '';

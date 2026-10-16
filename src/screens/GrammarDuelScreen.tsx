@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { grammarConcept, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { ChevronLeft, BarChart3, Lock, Check, X, Star } from 'lucide-react';
 import { GRAMMAR_DUELS, GrammarDuel } from '../data/grammarDuels';
 import GENERATED_BANK from '../data/grammarDuelBank.json';
@@ -329,6 +330,7 @@ export default function GrammarDuelScreen({ onExit, recordQuizXp }: GrammarDuelS
     });
     setChosenId(sideId);
     setVerdict(ok ? 'true' : 'wrong');
+    playAnswer(ok);
     if (ok) setCorrectCount(c => c + 1);
     else {
       const chosen = [q.left, q.right].find(s => s.id === sideId)?.text ?? '';

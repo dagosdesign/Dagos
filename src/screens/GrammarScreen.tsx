@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { grammarConcept, recordAnswer } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { motion } from 'motion/react';
 import {
   GraduationCap, ChevronRight, ChevronLeft, BookOpen, Loader2,
@@ -222,6 +223,7 @@ export default function GrammarScreen({ recordGrammarQuizResult, canStartTest }:
                   disabled={hasAnswered}
                   onClick={() => {
                     setSelected(idx);
+                    playAnswer(idx === question.correct);
                     setAnswers(prev => [...prev, idx === question.correct]);
                     recordAnswer({
                       area: 'grammar',

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
+import { playCorrect, playWrong } from '../lib/sfx';
 import { ChevronLeft, BarChart3, RotateCcw, Check, Lock, Star } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { wordDifficulty } from '../lib/difficulty';
@@ -246,6 +247,7 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
         if (!resolvedRef.current) {
           resolvedRef.current = true;
           setLocked(true);
+          playWrong();
           setWrong(w => w + 1);
           setReview(r => [...r, { word: current.word, meaning: current.meaning }]);
           recordAnswer({
@@ -383,6 +385,7 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
     if (built === current.word) {
       resolvedRef.current = true;
       setLocked(true);
+      playCorrect();
       setCorrect(c => c + 1);
       setScore(s => s + POINTS);
       recordAnswer({
@@ -401,6 +404,7 @@ export default function WordBuildScreen({ onExit, recordQuizXp }: WordBuildScree
     } else {
       // A wrong arrangement is a recoverable attempt: tiles go back, timer runs on.
       setLocked(true);
+      playWrong();
       setFeedback('try');
       window.setTimeout(() => {
         if (resolvedRef.current) return; // timer may have expired meanwhile

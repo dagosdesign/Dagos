@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { grammarConcept, recordAnswer, VOCABULARY } from '../lib/learningRecord';
+import { playAnswer } from '../lib/sfx';
 import { motion } from 'motion/react';
 import {
   Sparkles,
@@ -208,6 +209,7 @@ export default function QuizScreen({
     if (selectedOptionIdx !== null || !currentQuestion) return;
     const isCorrect = optionIdx === currentQuestion.correctIndex;
     setSelectedOptionIdx(optionIdx);
+    playAnswer(isCorrect);
     onAnswer(isCorrect);
     recordAnswer({
       area: currentQuestion.kind === 'grammar' ? 'grammar' : 'vocabulary',

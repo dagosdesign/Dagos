@@ -3,6 +3,7 @@ import { recordAnswer, VOCABULARY } from '../lib/learningRecord';
 import { ChevronLeft, BarChart3, GripVertical, RotateCcw, Check, X } from 'lucide-react';
 import { FLASHCARDS } from '../data/flashcards';
 import { wordDifficulty } from '../lib/difficulty';
+import { playAnswer } from '../lib/sfx';
 
 /* GOLDEN MATCH — slide the English cards onto the Turkish rows. Nothing is
    marked right or wrong until CHECK ANSWERS is pressed. No timer, no lives. */
@@ -305,6 +306,7 @@ export default function GoldenMatchScreen({ onExit, recordQuizXp, lgsCategory, l
         expected: p.english,
       });
     }
+    playAnswer(correct === pairs.length);
     recordQuizXp(correct);
   };
 

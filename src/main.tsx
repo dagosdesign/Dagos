@@ -5,6 +5,7 @@ import { startCloudSync } from './lib/cloudSync';
 import { bootNative, hideSplash } from './lib/native';
 import { bootNotifications } from './lib/notifications';
 import { dismissIntro, playIntro } from './lib/intro';
+import { preloadSounds } from './lib/sfx';
 
 // The native splash is only a dark screen; the opening animation (index.html) takes
 // over at once and covers the app while it loads.
@@ -22,4 +23,6 @@ Promise.all([bootNative().catch(() => {}), startCloudSync().catch(() => {})])
     );
     requestAnimationFrame(() => dismissIntro());
     bootNotifications();
+    // Answer sounds are decoded on the first tap, before the first answer needs them.
+    window.addEventListener('pointerdown', preloadSounds, { once: true });
   });

@@ -5,6 +5,7 @@ import { FLASHCARDS } from '../data/flashcards';
 import { foldAnswer } from '../lib/answerText';
 import GameKeyboard, { AnswerDisplay } from '../components/GameKeyboard';
 import { getSpeechRecognition } from '../lib/speech';
+import { playAnswer } from '../lib/sfx';
 
 /* THE A–Z — read the Turkish clue, recall the English word, answer in 30 seconds.
    Round 1 walks A→Z; only PASSED letters return in Round 2, where one mistake
@@ -203,6 +204,7 @@ export default function AtoZScreen({ onExit, recordQuizXp }: AtoZScreenProps) {
           expected: current.word.toLowerCase(),
         });
       }
+      if (result !== 'passed') playAnswer(result === 'correct');
       setFeedback(result);
       setAnswer('');
       window.setTimeout(() => setFeedback(null), 550);
