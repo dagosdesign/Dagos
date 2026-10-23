@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { Delete, CornerDownLeft, ArrowBigUp, ArrowBigUpDash } from 'lucide-react';
 
 /* The one on-screen keyboard Lexistencehub uses wherever a word is typed:
@@ -41,6 +42,8 @@ interface GameKeyboardProps {
   lowercase?: boolean;
   /** A smaller, quieter layout for chat (AI LEX); games use the full size. */
   compact?: boolean;
+  /** A game's own key in the bottom row, between DEL and the confirm key (CROSSWORDS: JOKER). */
+  extraKey?: ReactNode;
 }
 
 export type CaseMode = 'lower' | 'once' | 'caps';
@@ -69,8 +72,9 @@ export default function GameKeyboard({
   caseMode = 'lower',
   lowercase = false,
   compact = false,
+  extraKey,
 }: GameKeyboardProps) {
-  const controls = !!onDelete || !!onEnter || !!onSpace || !!onShift;
+  const controls = !!onDelete || !!onEnter || !!onSpace || !!onShift || !!extraKey;
 
   /* Compact: a small, quiet keyboard for chat screens. Three letter rows, then
      one bottom row - case key, punctuation, SPACE in the middle, DEL on the right. */
@@ -220,6 +224,7 @@ export default function GameKeyboard({
               SPACE
             </button>
           )}
+          {extraKey}
           {onEnter && (
             <button
               type="button"

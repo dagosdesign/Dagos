@@ -31,9 +31,11 @@ import {
 import {
   completePuzzle,
   emptyProgress,
+  jokersFor,
   levelStatus,
   sanitize,
   saveLetters,
+  spendJoker,
   startPuzzle,
 } from '../src/lib/crossword/progress';
 
@@ -268,7 +270,8 @@ test('progress: level 50 does not unlock past 50', () => {
   assert.equal(r.progress.hard.highestUnlocked, 50);
 });
 test('progress: a stale save for a replaced puzzle is ignored', () => {
-  const [p1, p2] = generated.filter(x => x.difficulty === 'easy' && x.level === 3);
+  const make = (seed: number) => generatePuzzle(bank, 'easy', 3, { layouts: [], contents: [], recentWords: [] }, seed).puzzle!;
+  const [p1, p2] = [make(41), make(42)];
   let pr = startPuzzle(emptyProgress(), p1);
   pr = startPuzzle(pr, p2);
   const after = saveLetters(pr, p1, { '0,0': 'Z' });
@@ -295,6 +298,85 @@ test('progress: replaying a completed level gives a new puzzle', () => {
   if (!r2.ok) return;
   assert.notEqual(r2.puzzle.layoutFp, r1.puzzle.layoutFp);
   assert.notEqual(r2.puzzle.contentFp, r1.puzzle.contentFp);
+});
+
+/* ---------- jokers ---------- */
+
+const easyOne = (level: number, seed: number) => {
+  const r = generatePuzzle(bank, 'easy', level, { layouts: [], contents: [], recentWords: [] }, seed);
+  assert.ok(r.ok);
+  return r.puzzle!;
+};
+test('jokers: none at the start; level 1 gives 1, level 2 gives 2 (3 in total), per difficulty', () => {
+  let pr = emptyProgress();
+  for (const d of DIFFICULTIES) assert.equal(pr[d].jokers, 0);
+  const p1 = easyOne(1, 501);
+  pr = startPuzzle(pr, p1);
+  pr = completePuzzle(pr, p1, solution(p1)).progress;
+  assert.equal(pr.easy.jokers, 1);
+  const p2 = easyOne(2, 502);
+  pr = startPuzzle(pr, p2);
+  pr = completePuzzle(pr, p2, solution(p2)).progress;
+  assert.equal(pr.easy.jokers, 3);
+  assert.equal(pr.medium.jokers, 0);
+  assert.equal(pr.hard.jokers, 0);
+  assert.equal(jokersFor(1), 1);
+  assert.equal(jokersFor(37), 2);
+});
+test('jokers: a replayed level earns again; completing twice the same puzzle does not', () => {
+  let pr = emptyProgress();
+  const a = easyOne(1, 601);
+  pr = startPuzzle(pr, a);
+  pr = completePuzzle(pr, a, solution(a)).progress;
+  const again = completePuzzle(pr, a, solution(a));
+  assert.equal(again.progress.easy.jokers, 1);
+  const b = easyOne(1, 602);
+  pr = startPuzzle(pr, b);
+  pr = completePuzzle(pr, b, solution(b)).progress;
+  assert.equal(pr.easy.jokers, 2);
+});
+test('jokers: one joker opens one letter, which then cannot be typed over or deleted', () => {
+  const p = easyOne(3, 701);
+  let pr = startPuzzle(emptyProgress(), p);
+  pr.easy.jokers = 2;
+  const cell = key(...cellsOf(p.entries[0])[0]);
+  const r = spendJoker(pr, p, cell);
+  assert.ok(r.used);
+  assert.equal(r.progress.easy.jokers, 1);
+  const a = r.progress.easy.active[3];
+  assert.equal(a.letters[cell], p.entries[0].answer[0]);
+  assert.deepEqual(a.revealed, [cell]);
+  // Typing over it keeps the joker letter, the cursor still moves.
+  const locked = new Set(a.revealed);
+  const typed = typeLetter(p, a.letters, 0, 0, a.letters[cell] === 'Q' ? 'J' : 'Q', locked);
+  assert.equal(typed.letters[cell], p.entries[0].answer[0]);
+  assert.equal(typed.cellIdx, 1);
+  assert.equal(deleteLetter(p, a.letters, 0, 0, locked).letters[cell], p.entries[0].answer[0]);
+  // saveLetters keeps it too, whatever the screen sends.
+  const saved = saveLetters(r.progress, p, { ...a.letters, [cell]: 'Z' });
+  assert.equal(saved.easy.active[3].letters[cell], p.entries[0].answer[0]);
+  // The same cell again costs nothing.
+  const twice = spendJoker(r.progress, p, cell);
+  assert.equal(twice.used, false);
+  assert.equal(twice.reason, 'already-right');
+});
+test('jokers: nothing is spent with none left or on a non-letter cell', () => {
+  const p = easyOne(3, 801);
+  const pr = startPuzzle(emptyProgress(), p);
+  const none = spendJoker(pr, p, key(...cellsOf(p.entries[0])[0]));
+  assert.equal(none.used, false);
+  assert.equal(none.reason, 'none-left');
+  pr.easy.jokers = 1;
+  const clueCell = key(...p.entries[0].clueCell);
+  assert.equal(spendJoker(pr, p, clueCell).used, false);
+  assert.equal(pr.easy.jokers, 1);
+});
+test('jokers: the count survives a save and a damaged value is repaired', () => {
+  const pr = emptyProgress();
+  pr.medium.jokers = 7;
+  assert.equal(sanitize(JSON.parse(JSON.stringify(pr))).medium.jokers, 7);
+  assert.equal(sanitize({ easy: { jokers: -4 } }).easy.jokers, 0);
+  assert.equal(sanitize({ easy: { jokers: 'x' } }).easy.jokers, 0);
 });
 
 /* ---------- report ---------- */

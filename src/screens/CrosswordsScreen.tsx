@@ -1,6 +1,6 @@
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type TouchList } from 'react';
 import { motion } from 'motion/react';
-import { ChevronLeft, Lock, Star, Crown, Grid3x3, ZoomIn, ZoomOut, ArrowLeftRight, RotateCcw } from 'lucide-react';
+import { ChevronLeft, Lock, Star, Crown, Grid3x3, ZoomIn, ZoomOut, ArrowLeftRight, RotateCcw, Sparkles } from 'lucide-react';
 import GameKeyboard from '../components/GameKeyboard';
 import PlanLimitCard from '../components/PlanLimitCard';
 import { VOCABULARY, recordAnswer } from '../lib/learningRecord';
@@ -30,10 +30,12 @@ import {
 import {
   completePuzzle,
   dropActive,
+  jokersFor,
   levelStatus,
   loadProgress,
   saveLetters,
   saveProgress,
+  spendJoker,
   startPuzzle,
   type CrosswordProgress,
 } from '../lib/crossword/progress';
@@ -42,7 +44,9 @@ import {
    arrow on each clue points to where its English answer starts. Three difficulties
    (Easy A1-A2, Medium B1-B2, Hard C1), 50 levels each, every puzzle generated and
    validated by lib/crossword/engine.ts and never repeated for the same student.
-   Free plan: the first FREE_LEVELS levels of every difficulty. */
+   Free plan: the first FREE_LEVELS levels of every difficulty.
+   Jokers: every completed level earns some (progress.ts -> jokersFor); one joker
+   opens one letter of the puzzle. */
 
 const FREE_LEVELS = 5;
 
@@ -82,6 +86,8 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
   const [level, setLevel] = useState(1);
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [letters, setLetters] = useState<Letters>({});
+  const [revealed, setRevealed] = useState<string[]>([]);
+  const [earned, setEarned] = useState(0);
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
@@ -128,6 +134,7 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
         if (validatePuzzle(saved.puzzle).length === 0) {
           setPuzzle(saved.puzzle);
           setLetters(saved.letters);
+          setRevealed(saved.revealed ?? []);
           setView('play');
           return;
         }
@@ -151,21 +158,22 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
         commit(next);
         setPuzzle(result.puzzle!);
         setLetters({});
+        setRevealed([]);
       }, 30);
     },
     [bank, progress, premium, commit]
   );
 
-  const onLetters = useCallback(
-    (next: Letters) => {
+  /* Saves the grid; when every letter is right the level is completed (once). */
+  const settle = useCallback(
+    (saved: CrosswordProgress, next: Letters) => {
       if (!puzzle) return;
       setLetters(next);
-      let saved = saveLetters(loadProgress(), puzzle, next);
       if (isSolved(puzzle, next)) {
         const done = completePuzzle(saved, puzzle, next);
-        saved = done.progress;
-        commit(saved);
+        commit(done.progress);
         if (done.changed) {
+          setEarned(jokersFor(puzzle.level));
           recordQuizXp(puzzle.entries.length);
           window.setTimeout(() => setView('complete'), 650);
         }
@@ -174,6 +182,34 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
       commit(saved);
     },
     [puzzle, commit, recordQuizXp]
+  );
+
+  const onLetters = useCallback(
+    (typed: Letters) => {
+      if (!puzzle) return;
+      const saved = saveLetters(loadProgress(), puzzle, typed);
+      // saveLetters keeps joker letters even if something was typed over them.
+      settle(saved, saved[puzzle.difficulty].active[puzzle.level]?.letters ?? typed);
+    },
+    [puzzle, settle]
+  );
+
+  /* One joker opens the letter of one cell. Returns a note when nothing was spent. */
+  const onJoker = useCallback(
+    (cell: string): string | null => {
+      if (!puzzle) return null;
+      const r = spendJoker(loadProgress(), puzzle, cell);
+      if (!r.used) {
+        if (r.reason === 'none-left') return 'Jokerin kalmadı. Her biten level joker kazandırır.';
+        if (r.reason === 'already-right') return 'Bu harf zaten doğru.';
+        return null;
+      }
+      const a = r.progress[puzzle.difficulty].active[puzzle.level];
+      setRevealed(a.revealed);
+      settle(r.progress, a.letters);
+      return null;
+    },
+    [puzzle, settle]
   );
 
   if (paywall) {
@@ -227,6 +263,11 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
                       <span className="text-white/35 text-sm"> / {LEVELS}</span>
                     </p>
                     <p className="text-[9.5px] tracking-[0.14em] text-white/35">LEVELS</p>
+                    {progress[d].jokers > 0 && (
+                      <p className="mt-1 inline-flex items-center gap-1 text-[10px] tracking-[0.1em] text-[#e3b553]">
+                        <Sparkles className="w-3 h-3" /> {progress[d].jokers} JOKER
+                      </p>
+                    )}
                   </div>
                 </div>
               </button>
@@ -244,6 +285,10 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
         <p className="text-center text-[11px] text-white/45">
           {TIER[difficulty].cefr} · Bir leveli bitirmek sonrakini açar.
           {!premium && <> İlk {FREE_LEVELS} level ücretsiz.</>}
+        </p>
+        <p className="flex items-center justify-center gap-1.5 text-[11px] text-white/55">
+          <Sparkles className="w-3.5 h-3.5 text-[#e3b553]" />
+          <span className="text-[#e3b553] font-bold">{t.jokers}</span> joker · her biten level joker kazandırır
         </p>
         {notice && <p className="text-center text-[11px] tracking-[0.06em] text-[#e3b553]">{notice}</p>}
         <div className="grid grid-cols-5 gap-2">
@@ -300,6 +345,16 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
           <p className="text-lg tracking-[0.18em] font-bold text-[#e3b553]">PUZZLE COMPLETE</p>
           <p className="text-5xl font-serif text-[#e3b553]">{puzzle.entries.length}</p>
           <p className="text-[11px] tracking-[0.18em] text-white/50">WORDS SOLVED</p>
+          {earned > 0 && (
+            <motion.p
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35 }}
+              className="pt-3 inline-flex items-center gap-1.5 text-sm font-bold tracking-[0.14em] text-[#e3b553]"
+            >
+              <Sparkles className="w-4 h-4" /> +{earned} JOKER · {progress[difficulty].jokers} TOTAL
+            </motion.p>
+          )}
         </motion.div>
         {last ? (
           <p className="text-center text-sm tracking-[0.14em] text-[#e3b553] font-bold">{TIER[difficulty].title} COMPLETE · ALL 50 LEVELS</p>
@@ -336,7 +391,14 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
         <Message text={failed ?? 'Bulmaca hazırlanamadı.'} action="TEKRAR DENE" onAction={() => openLevel(difficulty, level, true)} />
       ) : (
         <Fragment key={puzzle.id}>
-          <Board puzzle={puzzle} letters={letters} onLetters={onLetters} />
+          <Board
+            puzzle={puzzle}
+            letters={letters}
+            revealed={revealed}
+            jokers={progress[difficulty].jokers}
+            onLetters={onLetters}
+            onJoker={onJoker}
+          />
         </Fragment>
       )}
     </Shell>
@@ -345,7 +407,23 @@ export default function CrosswordsScreen({ onExit, onImmersive, recordQuizXp }: 
 
 /* ---------- the board ---------- */
 
-function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letters; onLetters: (l: Letters) => void }) {
+function Board({
+  puzzle,
+  letters,
+  revealed,
+  jokers,
+  onLetters,
+  onJoker,
+}: {
+  puzzle: Puzzle;
+  letters: Letters;
+  revealed: string[];
+  jokers: number;
+  onLetters: (l: Letters) => void;
+  onJoker: (cell: string) => string | null;
+}) {
+  const locked = useMemo(() => new Set(revealed), [revealed]);
+  const [jokerNote, setJokerNote] = useState<string | null>(null);
   const firstOpen = puzzle.entries.findIndex(e => wordState(e, letters) !== 'correct');
   const [active, setActive] = useState({ entry: Math.max(0, firstOpen), cell: 0 });
   const [zoom, setZoom] = useState(1);
@@ -439,12 +517,9 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
     setActive({ entry: pick, cell: Math.max(0, idx) });
   };
 
-  const selectEntry = (i: number) => {
-    const e = puzzle.entries[i];
-    const cells = cellsOf(e);
-    const empty = cells.findIndex(([r, c]) => !lettersRef.current[key(r, c)]);
-    setActive({ entry: i, cell: empty === -1 ? 0 : empty });
-  };
+  // A clue starts its answer from the first cell: students type the whole word, and
+  // joker letters on the way are stepped over rather than shifted.
+  const selectEntry = (i: number) => setActive({ entry: i, cell: 0 });
 
   const switchDir = () => {
     const other = entriesAt(puzzle, ar, ac).find(i => i !== active.entry);
@@ -462,14 +537,22 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
   };
 
   const onKey = (ch: string) => {
-    const r = typeLetter(puzzle, lettersRef.current, active.entry, active.cell, ch);
+    const r = typeLetter(puzzle, lettersRef.current, active.entry, active.cell, ch, locked);
     if (r.letters !== lettersRef.current) onLetters(r.letters);
     setActive(a => ({ ...a, cell: r.cellIdx }));
   };
   const onDelete = () => {
-    const r = deleteLetter(puzzle, lettersRef.current, active.entry, active.cell);
+    const r = deleteLetter(puzzle, lettersRef.current, active.entry, active.cell, locked);
     if (r.letters !== lettersRef.current) onLetters(r.letters);
     setActive(a => ({ ...a, cell: r.cellIdx }));
+  };
+
+  /* A joker opens the letter under the cursor; the cursor then moves on. */
+  const joker = () => {
+    const note = onJoker(key(ar, ac));
+    setJokerNote(note);
+    if (note) window.setTimeout(() => setJokerNote(null), 2400);
+    else setActive(a => ({ ...a, cell: Math.min(a.cell + 1, entry.answer.length - 1) }));
   };
 
   // A hardware keyboard works too (tablets, the web).
@@ -495,7 +578,8 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
   const clampZoom = (z: number) => Math.max(0.8, Math.min(2.2, z));
 
   return (
-    <div className="space-y-3">
+    // The board runs almost edge to edge: the page gutter would cost every cell a few pixels.
+    <div className="-mx-3 space-y-3">
       <div className="flex items-center justify-between text-[10.5px] tracking-[0.12em] text-white/45">
         <span>
           <span className="text-[#e3b553] font-bold">{solvedCount}</span> / {puzzle.entries.length} WORDS
@@ -555,6 +639,7 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
             const solved = through.some(i => states[i] === 'correct');
             const wrong = !solved && through.some(i => states[i] === 'incorrect');
             const isCursor = r === ar && c === ac;
+            const isJoker = locked.has(k);
             const inWord = activeCells.has(k);
             return (
               <button
@@ -562,7 +647,7 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
                 data-cell={k}
                 onClick={() => selectCell(r, c)}
                 aria-label={`Cell ${r + 1}-${c + 1}`}
-                className={`flex items-center justify-center border font-semibold select-none cursor-pointer transition-colors ${
+                className={`relative flex items-center justify-center border font-semibold select-none cursor-pointer transition-colors ${
                   isCursor
                     ? 'bg-[#e3b553]/35 border-[#e3b553]'
                     : inWord
@@ -572,11 +657,19 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
                 style={{ fontSize: Math.round(size * 0.5) }}
               >
                 {letters[k] ?? ''}
+                {isJoker && (
+                  <Sparkles
+                    className="absolute top-[2px] right-[2px] text-[#e3b553]/70"
+                    style={{ width: Math.max(7, size * 0.2), height: Math.max(7, size * 0.2) }}
+                  />
+                )}
               </button>
             );
           })}
         </div>
       </div>
+
+      {jokerNote && <p className="text-center text-[11px] text-[#e3b553]">{jokerNote}</p>}
 
       {/* The active clue, large, above the keyboard. */}
       <div className="flex items-center gap-3 rounded-2xl border border-[#e3b553]/40 bg-[#e3b553]/[0.06] px-4 py-3">
@@ -595,7 +688,27 @@ function Board({ puzzle, letters, onLetters }: { puzzle: Puzzle; letters: Letter
         )}
       </div>
 
-      <GameKeyboard onKey={onKey} onDelete={onDelete} onEnter={nextOpen} enterLabel="NEXT" latinOnly />
+      <GameKeyboard
+        onKey={onKey}
+        onDelete={onDelete}
+        onEnter={nextOpen}
+        enterLabel="NEXT"
+        latinOnly
+        extraKey={
+          <button
+            type="button"
+            onClick={joker}
+            aria-label={`Joker: open this letter (${jokers} left)`}
+            className={`flex-[1.3] flex items-center justify-center gap-1.5 rounded-2xl py-3 border text-[11px] font-bold tracking-[0.1em] cursor-pointer ${
+              jokers > 0
+                ? 'border-[#e3b553] text-[#e3b553] bg-[#e3b553]/[0.12] hover:bg-[#e3b553]/20'
+                : 'border-white/12 text-white/35 bg-white/[0.02]'
+            }`}
+          >
+            <Sparkles className="w-4 h-4" /> JOKER {jokers}
+          </button>
+        }
+      />
     </div>
   );
 }

@@ -607,27 +607,37 @@ export function typeLetter(
   letters: Letters,
   entryIdx: number,
   cellIdx: number,
-  ch: string
+  ch: string,
+  locked: ReadonlySet<string> = new Set()
 ): { letters: Letters; cellIdx: number } {
   const letter = normalizeLetter(ch);
   if (!letter) return { letters, cellIdx };
   const cells = cellsOf(p.entries[entryIdx]);
-  const [r, c] = cells[cellIdx];
-  const next = { ...letters, [key(r, c)]: letter };
+  const k = key(cells[cellIdx][0], cells[cellIdx][1]);
+  // A joker cell keeps its letter; the cursor still moves on.
+  const next = locked.has(k) ? letters : { ...letters, [k]: letter };
   return { letters: next, cellIdx: Math.min(cellIdx + 1, cells.length - 1) };
 }
 
-/* Backspace: clears the active cell; on an empty cell it steps back and clears that one. */
-export function deleteLetter(p: Puzzle, letters: Letters, entryIdx: number, cellIdx: number): { letters: Letters; cellIdx: number } {
+/* Backspace: clears the active cell; on an empty cell it steps back and clears that one.
+   Joker cells are never cleared. */
+export function deleteLetter(
+  p: Puzzle,
+  letters: Letters,
+  entryIdx: number,
+  cellIdx: number,
+  locked: ReadonlySet<string> = new Set()
+): { letters: Letters; cellIdx: number } {
   const cells = cellsOf(p.entries[entryIdx]);
   const here = key(cells[cellIdx][0], cells[cellIdx][1]);
-  if (letters[here]) {
+  if (letters[here] && !locked.has(here)) {
     const next = { ...letters };
     delete next[here];
     return { letters: next, cellIdx };
   }
   if (cellIdx === 0) return { letters, cellIdx };
   const back = key(cells[cellIdx - 1][0], cells[cellIdx - 1][1]);
+  if (locked.has(back)) return { letters, cellIdx: cellIdx - 1 };
   const next = { ...letters };
   delete next[back];
   return { letters: next, cellIdx: cellIdx - 1 };

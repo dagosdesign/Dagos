@@ -1,4 +1,4 @@
-import { DIFFICULTIES, LEVELS, isSolved, type Difficulty, type Letters, type PlayerHistory, type Puzzle } from './engine';
+import { DIFFICULTIES, LEVELS, cellsOf, isSolved, key, type Difficulty, type Letters, type PlayerHistory, type Puzzle } from './engine';
 
 /* CROSSWORDS progress, one record per difficulty, in localStorage under a lex_ key,
    so a signed-in student's progress follows the account through cloudSync.
@@ -10,16 +10,24 @@ import { DIFFICULTIES, LEVELS, isSolved, type Difficulty, type Letters, type Pla
      only the level after a completed one is unlocked.
    - Every puzzle given out is remembered by its two fingerprints, so the same
      student never gets the same puzzle again.
+   - Jokers belong to a difficulty. Completing level 1 gives 1, any other level 2,
+     every time a level is completed (replays too). One joker reveals one letter.
 
    The state functions are pure (they return a new state); load/save wrap storage. */
 
 export const STORE_KEY = 'lex_crosswords_v1';
 const MAX_FINGERPRINTS = 600;
 const MAX_RECENT_WORDS = 400;
+const MAX_JOKERS = 999;
+
+/** Jokers earned by completing a level. */
+export const jokersFor = (level: number) => (level === 1 ? 1 : 2);
 
 export interface ActivePuzzle {
   puzzle: Puzzle;
   letters: Letters;
+  /** Cells opened with a joker: they hold the solution letter and cannot be changed. */
+  revealed: string[];
   updatedAt: number;
 }
 
@@ -28,6 +36,7 @@ export interface TierProgress {
   completed: number[];
   active: Record<number, ActivePuzzle>;
   history: PlayerHistory;
+  jokers: number;
 }
 
 export type CrosswordProgress = Record<Difficulty, TierProgress> & { updatedAt: number };
@@ -37,6 +46,7 @@ export const emptyTier = (): TierProgress => ({
   completed: [],
   active: {},
   history: { layouts: [], contents: [], recentWords: [] },
+  jokers: 0,
 });
 
 export const emptyProgress = (): CrosswordProgress => ({
@@ -69,7 +79,8 @@ export function sanitize(raw: unknown): CrosswordProgress {
         if (p && Array.isArray(p.entries) && p.entries.length && typeof p.rows === 'number' && a.letters && typeof a.letters === 'object') {
           const letters: Letters = {};
           for (const [k, v] of Object.entries(a.letters)) if (typeof v === 'string' && /^[A-Z]$/.test(v)) letters[k] = v;
-          active[Number(lv)] = { puzzle: p, letters, updatedAt: Number(a.updatedAt) || 0 };
+          const revealed = Array.isArray(a.revealed) ? a.revealed.filter((k: unknown) => typeof k === 'string' && letters[k as string]) : [];
+          active[Number(lv)] = { puzzle: p, letters, revealed, updatedAt: Number(a.updatedAt) || 0 };
         }
       }
     }
@@ -83,6 +94,7 @@ export function sanitize(raw: unknown): CrosswordProgress {
         contents: strings(t.history?.contents, MAX_FINGERPRINTS),
         recentWords: strings(t.history?.recentWords, MAX_RECENT_WORDS),
       },
+      jokers: Math.max(0, Math.min(MAX_JOKERS, Math.floor(Number(t.jokers) || 0))),
     };
   }
   return out;
@@ -123,7 +135,7 @@ export function startPuzzle(p: CrosswordProgress, puzzle: Puzzle, now = Date.now
   };
   return {
     ...p,
-    [puzzle.difficulty]: { ...t, history, active: { ...t.active, [puzzle.level]: { puzzle, letters: {}, updatedAt: now } } },
+    [puzzle.difficulty]: { ...t, history, active: { ...t.active, [puzzle.level]: { puzzle, letters: {}, revealed: [], updatedAt: now } } },
     updatedAt: now,
   };
 }
@@ -133,9 +145,12 @@ export function saveLetters(p: CrosswordProgress, puzzle: Puzzle, letters: Lette
   const t = p[puzzle.difficulty];
   const a = t.active[puzzle.level];
   if (!a || a.puzzle.id !== puzzle.id) return p;
+  // A joker letter stays whatever was typed over it.
+  const kept = { ...letters };
+  for (const k of a.revealed) kept[k] = a.letters[k];
   return {
     ...p,
-    [puzzle.difficulty]: { ...t, active: { ...t.active, [puzzle.level]: { ...a, letters, updatedAt: now } } },
+    [puzzle.difficulty]: { ...t, active: { ...t.active, [puzzle.level]: { ...a, letters: kept, updatedAt: now } } },
     updatedAt: now,
   };
 }
@@ -155,8 +170,9 @@ export function completePuzzle(
   delete active[puzzle.level];
   const completed = t.completed.includes(puzzle.level) ? t.completed : [...t.completed, puzzle.level].sort((x, y) => x - y);
   const highestUnlocked = Math.max(t.highestUnlocked, Math.min(LEVELS, puzzle.level + 1));
+  const jokers = Math.min(MAX_JOKERS, t.jokers + jokersFor(puzzle.level));
   return {
-    progress: { ...p, [puzzle.difficulty]: { ...t, active, completed, highestUnlocked }, updatedAt: now },
+    progress: { ...p, [puzzle.difficulty]: { ...t, active, completed, highestUnlocked, jokers }, updatedAt: now },
     changed: true,
   };
 }
@@ -168,4 +184,32 @@ export function dropActive(p: CrosswordProgress, difficulty: Difficulty, level: 
   const active = { ...t.active };
   delete active[level];
   return { ...p, [difficulty]: { ...t, active }, updatedAt: Date.now() };
+}
+
+/* Spends one joker on one cell: the cell gets its solution letter and is locked.
+   Nothing is spent when there is no joker, the puzzle is not the active one, the
+   cell is not a letter cell, or it already holds the right letter. */
+export function spendJoker(
+  p: CrosswordProgress,
+  puzzle: Puzzle,
+  cell: string,
+  now = Date.now()
+): { progress: CrosswordProgress; used: boolean; reason?: 'none-left' | 'already-right' | 'not-active' } {
+  const t = p[puzzle.difficulty];
+  const a = t.active[puzzle.level];
+  if (!a || a.puzzle.id !== puzzle.id) return { progress: p, used: false, reason: 'not-active' };
+  if (t.jokers <= 0) return { progress: p, used: false, reason: 'none-left' };
+  let solution = '';
+  for (const e of a.puzzle.entries) {
+    cellsOf(e).forEach(([r, c], i) => {
+      if (key(r, c) === cell) solution = e.answer[i];
+    });
+  }
+  if (!solution) return { progress: p, used: false, reason: 'not-active' };
+  if (a.letters[cell] === solution) return { progress: p, used: false, reason: 'already-right' };
+  const active = {
+    ...t.active,
+    [puzzle.level]: { ...a, letters: { ...a.letters, [cell]: solution }, revealed: [...new Set([...a.revealed, cell])], updatedAt: now },
+  };
+  return { progress: { ...p, [puzzle.difficulty]: { ...t, active, jokers: t.jokers - 1 }, updatedAt: now }, used: true };
 }

@@ -66,6 +66,16 @@ Güvenlik incelemesi ve düzeltmeler:
   (Play uyarısı, son tarih Şub 2027; açınca gerçek telefonda tam test şart), Android 15 uçtan uca ekran kontrolü,
   Play ödeme profiline banka hesabı, iOS.
 
+## Crosswords (Eki 2026)
+- Kare bulmaca: Türkçe ipucu ızgarada, ok cevabın başını gösterir (→ ↓ ↳ ↴, kutu başına en çok 2 ipucu).
+  Easy A1–A2 / Medium B1–B2 / Hard C1, her biri 50 level. Ücretsizde her zorlukta ilk 5 level.
+- Motor `src/lib/crossword/engine.ts` (üretim + tek doğrulayıcı + parmak izleri), ilerleme `progress.ts`
+  (`lex_crosswords_v1`, cloudSync ile hesaba gider). Testler: `npm run test:crosswords` (178 test).
+- Banka `public/crosswords/bank.json` ← `npx tsx scripts/generate-crossword-bank.ts` (önbellek `scripts/.cache/crossword`,
+  `OFFLINE=1` API'siz yeniden kurar). Aynı uzunlukta başka cevaba uyan ve cevabı ele veren ipuçları elenir.
+- Joker: zorluk başına ayrı. Level 1 bitince +1, diğer her level +2 (tekrar oynayınca da). Bir joker imleçteki
+  tek harfi açar; açılan harf kilitlenir.
+
 ## Kelime görselleri
 - `media/vocabulary/<kelime>.webp` (oval, altın halkalı, 750×1000). Sunucu GitHub'dan alır: **push edilmeden canlıya çıkmaz**
   (Render'daki "deploy" GitHub'a bir şey göndermez).
