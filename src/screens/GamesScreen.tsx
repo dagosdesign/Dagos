@@ -1,4 +1,4 @@
-import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2, ArrowLeftRight, Search, Shapes, Mountain, Swords } from 'lucide-react';
+import { Gamepad2, KeyRound, Timer, HelpCircle, Blocks, Link2, ArrowLeftRight, Search, Shapes, Mountain, Swords, Grid3x3 } from 'lucide-react';
 
 interface GamesScreenProps {
   onPlayWordLock: () => void;
@@ -11,9 +11,10 @@ interface GamesScreenProps {
   onPlayOddOne: () => void;
   onPlayWordPath: () => void;
   onPlayGrammarDuel: () => void;
+  onPlayCrosswords: () => void;
 }
 
-export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken, onPlayGoldenMatch, onPlayTheClue, onPlayOddOne, onPlayWordPath, onPlayGrammarDuel }: GamesScreenProps) {
+export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI, onPlayWordBuild, onPlayUnbroken, onPlayGoldenMatch, onPlayTheClue, onPlayOddOne, onPlayWordPath, onPlayGrammarDuel, onPlayCrosswords }: GamesScreenProps) {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
@@ -31,6 +32,23 @@ export default function GamesScreen({ onPlayWordLock, onPlayAtoZ, onPlayWhatAmI,
         <p className="text-[11px] uppercase tracking-[0.14em] text-white/35 font-medium px-1">
           Oyunlar
         </p>
+
+        <button
+          onClick={onPlayCrosswords}
+          className="w-full text-left bg-white/[0.02] border border-[#e3b553]/25 rounded-3xl p-5 hover:border-[#e3b553]/60 transition-colors cursor-pointer"
+        >
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-[#e3b553]/10 text-[#e3b553] border border-[#e3b553]/20 rounded-2xl shrink-0">
+              <Grid3x3 className="w-6 h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-[0.12em] text-[#e3b553]">CROSSWORDS</p>
+              <p className="text-xs text-white/50 font-light leading-relaxed">
+                Kare bulmaca: Türkçe ipuçlarını oku, İngilizce kelimeleri yerleştir. 3 zorluk, 150 level.
+              </p>
+            </div>
+          </div>
+        </button>
 
         <button
           onClick={onPlayWordLock}

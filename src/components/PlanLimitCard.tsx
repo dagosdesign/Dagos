@@ -3,7 +3,7 @@ import { Crown } from 'lucide-react';
 import { C, GhostButton, GoldButton } from './profile/ui';
 import PremiumOffer from './PremiumOffer';
 
-export type LimitKind = 'games' | 'words' | 'grammar' | 'listening' | 'ai' | 'analytics' | 'retake';
+export type LimitKind = 'games' | 'words' | 'grammar' | 'listening' | 'ai' | 'analytics' | 'retake' | 'crosswords';
 
 const COPY: Record<LimitKind, { title: string; body: string }> = {
   games: {
@@ -29,6 +29,10 @@ const COPY: Record<LimitKind, { title: string; body: string }> = {
   analytics: {
     title: 'Detailed analytics are part of Premium',
     body: 'Premium adds detailed progress analytics, weakness analysis and smart recommendations.',
+  },
+  crosswords: {
+    title: 'Crosswords levels 6–50 are part of Premium',
+    body: 'The first 5 levels of every difficulty are free. Premium opens all 150 levels.',
   },
   retake: {
     title: 'Retaking the level test is part of Premium',

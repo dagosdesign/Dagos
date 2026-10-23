@@ -16,6 +16,7 @@ import TheClueScreen from './screens/TheClueScreen';
 import OddOneScreen from './screens/OddOneScreen';
 import WordPathScreen from './screens/WordPathScreen';
 import GrammarDuelScreen from './screens/GrammarDuelScreen';
+import CrosswordsScreen from './screens/CrosswordsScreen';
 import AccountSyncGate from './components/AccountSyncGate';
 import WelcomeScreen, { welcomeSeen } from './screens/WelcomeScreen';
 import { useAuth } from './lib/auth';
@@ -35,6 +36,7 @@ import PlanLimitCard, { LimitKind } from './components/PlanLimitCard';
 import { featuresFor } from './lib/plan';
 import { getUserProfile, updateUserProfile, useUserProfile } from './lib/userProfile';
 import { spendGame, spendGrammarActivity, spendListeningActivity } from './lib/dailyUsage';
+import { pronounce } from './lib/pronounce';
 import { ActivityKind, addLearningMinutes, logActivity, TimeCategory } from './lib/activityLog';
 import { apiUrl } from './lib/runtime';
 
@@ -138,15 +140,7 @@ export default function App() {
     }
   }, [gamification.streakDays]);
 
-  const playPronunciation = (word: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.85;
-      window.speechSynthesis.speak(utterance);
-    }
-  };
+  const playPronunciation = (word: string) => pronounce(word);
 
   const handleQuizAnswer = (isCorrect: boolean) => {
     setTotalAnswered(prev => prev + 1);
@@ -224,8 +218,11 @@ export default function App() {
   const [oddOne, setOddOne] = useState(false);
   const [wordPath, setWordPath] = useState(false);
   const [grammarDuel, setGrammarDuel] = useState(false);
+  const [crosswords, setCrosswords] = useState(false);
+  // While a crossword is on screen the bottom bar steps aside for the grid and the keyboard.
+  const [immersive, setImmersive] = useState(false);
 
-  const gameOpen = Boolean(wordLock) || atoZ || whatAmI || wordBuild || unbroken || goldenMatch || theClue || oddOne || wordPath || grammarDuel;
+  const gameOpen = Boolean(wordLock) || atoZ || whatAmI || wordBuild || unbroken || goldenMatch || theClue || oddOne || wordPath || grammarDuel || crosswords;
 
   /* Learning time: counted while a learning screen is open and visible, and
      sorted by learning method - Listening, Writing, Visual Learning, Games,
@@ -308,6 +305,7 @@ export default function App() {
       setOddOne(false);
       setWordPath(false);
       setGrammarDuel(false);
+      setCrosswords(false);
       setShowProgress(false);
       setShowLgs(false);
       setShowConnectors(false);
@@ -349,7 +347,7 @@ export default function App() {
       {/* Main Container */}
       <main
         className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-6 lg:p-8"
-        style={{ paddingBottom: 'calc(var(--bottom-nav-h, 66px) + 24px)' }}
+        style={{ paddingBottom: immersive ? 16 : 'calc(var(--bottom-nav-h, 66px) + 24px)' }}
       >
         {showProgress ? (
           <ProfileScreen
@@ -415,6 +413,15 @@ export default function App() {
               <OddOneScreen onExit={() => setOddOne(false)} recordQuizXp={loggedXp('game', 'Odd One')} />
             ) : wordPath ? (
               <WordPathScreen onExit={() => setWordPath(false)} recordQuizXp={loggedXp('game', 'Word Path')} />
+            ) : crosswords ? (
+              <CrosswordsScreen
+                onExit={() => {
+                  setImmersive(false);
+                  setCrosswords(false);
+                }}
+                onImmersive={setImmersive}
+                recordQuizXp={loggedXp('game', 'Crosswords')}
+              />
             ) : grammarDuel ? (
               <GrammarDuelScreen onExit={() => setGrammarDuel(false)} recordQuizXp={loggedXp('game', 'Grammar Duel')} />
             ) : (
@@ -429,6 +436,8 @@ export default function App() {
                 onPlayOddOne={() => startGame(() => setOddOne(true))}
                 onPlayWordPath={() => startGame(() => setWordPath(true))}
                 onPlayGrammarDuel={() => startGame(() => setGrammarDuel(true))}
+                // Crosswords has its own free allowance (the first levels), not the daily games.
+                onPlayCrosswords={() => setCrosswords(true)}
               />
             ))}
             {activeTab === 'ai' && (
@@ -472,7 +481,7 @@ export default function App() {
         )}
       </main>
 
-      <BottomNav active={navActive} onSelect={handleNavSelect} />
+      {!immersive && <BottomNav active={navActive} onSelect={handleNavSelect} />}
 
       {orbFlow && (
         <LearningOrbsTransition
