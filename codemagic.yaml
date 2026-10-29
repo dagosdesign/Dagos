@@ -1,0 +1,56 @@
+# iOS builds in the cloud (Codemagic): there is no Mac in this project's setup.
+#
+# One workflow: build the web app for the phone (npm run build:native, which reads
+# .env.native and copies it into ios/ with `cap sync`), sign it for the App Store
+# and upload it to TestFlight.
+#
+# Set up once in Codemagic (codemagic.io), not in this file:
+#   1. Add the GitHub repository (dagosdesign/Dagos).
+#   2. Settings -> Integrations -> Developer Portal (personal account; in a team it is
+#      Teams -> Integrations): add an App Store Connect API key
+#      (App Store Connect -> Users and Access -> Integrations -> Keys, role App Manager).
+#      Name the integration "lexistencehub_asc" - the name used below.
+#   3. Fill in APP_STORE_APPLE_ID below: the numeric "Apple ID" of the app
+#      (App Store Connect -> the app -> App Information).
+# Signing certificates and the provisioning profile are created by Codemagic itself
+# with that key (ios_signing below); nothing secret is stored in this repository.
+
+workflows:
+  ios-testflight:
+    name: iOS -> TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: lexistencehub_asc
+    environment:
+      node: 22
+      xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: app.lexistencehub
+      vars:
+        XCODE_PROJECT: ios/App/App.xcodeproj
+        XCODE_SCHEME: App
+        BUNDLE_ID: app.lexistencehub
+        APP_STORE_APPLE_ID: 0000000000 # TODO: the app's numeric Apple ID
+    # No triggering section: builds start only by hand from the Codemagic dashboard.
+    scripts:
+      - name: Install dependencies
+        script: npm ci
+      - name: Build the web app and copy it into the iOS project
+        script: npm run build:native
+      - name: Use the signing files Codemagic created
+        script: xcode-project use-profiles
+      - name: Build number = latest TestFlight build + 1
+        script: |
+          LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID" || echo 0)
+          cd ios/App && agvtool new-version -all $((LATEST + 1))
+      - name: Build the signed .ipa
+        script: xcode-project build-ipa --project "$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
