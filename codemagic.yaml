@@ -32,7 +32,7 @@ workflows:
         XCODE_PROJECT: ios/App/App.xcodeproj
         XCODE_SCHEME: App
         BUNDLE_ID: app.lexistencehub
-        APP_STORE_APPLE_ID: 0000000000 # TODO: the app's numeric Apple ID
+        APP_STORE_APPLE_ID: 6828505909 # App Store Connect -> Lexistencehub -> App Information -> Apple ID
     # No triggering section: builds start only by hand from the Codemagic dashboard.
     scripts:
       - name: Install dependencies
