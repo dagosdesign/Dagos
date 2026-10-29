@@ -3,6 +3,7 @@ import { Eye, EyeOff, MailCheck } from 'lucide-react';
 import { C, Card, GhostButton, GoldButton, SubPage } from '../../components/profile/ui';
 import { sendPasswordReset, signIn, signInWithProvider, signUp } from '../../lib/auth';
 import { useUserProfile } from '../../lib/userProfile';
+import { platform } from '../../lib/runtime';
 
 /* SIGN IN / CREATE ACCOUNT - an account keeps the student's progress in the
    cloud and is what a Premium membership belongs to. Signing in is optional:
@@ -64,8 +65,10 @@ export default function SignInPage({
     }
   };
 
-  // Apple sign-in joins Google here once the Apple Developer account exists (lib/auth.ts is ready for it).
-  const social = async (provider: 'google') => {
+  /* On iPhone, Apple requires "Sign in with Apple" next to any other social sign-in
+     (App Review 4.8), and it comes first. Elsewhere Google is enough. */
+  const showApple = platform === 'ios';
+  const social = async (provider: 'google' | 'apple') => {
     setError(null);
     try {
       await signInWithProvider(provider);
@@ -204,6 +207,18 @@ export default function SignInPage({
             <span className="flex-1 h-px" style={{ background: C.border }} />
           </div>
           <div className="space-y-2">
+            {showApple && (
+              <button
+                type="button"
+                onClick={() => social('apple')}
+                className="w-full flex items-center justify-center gap-2 rounded-2xl py-3 text-[15px] font-semibold cursor-pointer bg-white text-black"
+              >
+                <svg viewBox="0 0 17 20" width="15" height="18" aria-hidden="true" fill="currentColor">
+                  <path d="M14.1 10.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8C3.8 4.9 2.2 5.9 1.3 7.4c-1.8 3.2-.5 7.9 1.3 10.4.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.8-4.4zM11.6 3.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z" />
+                </svg>
+                Continue with Apple
+              </button>
+            )}
             <GhostButton onClick={() => social('google')}>Continue with Google</GhostButton>
           </div>
           <p className="px-1 text-[12px] leading-relaxed text-center" style={{ color: C.muted }}>
