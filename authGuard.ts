@@ -76,6 +76,19 @@ export async function isPremium(userId: string): Promise<boolean> {
   return premium;
 }
 
+/* The caller's real address. Behind Render's edge req.ip is the address of one of
+   many edge servers, different from request to request, so a per-IP limit keyed on it
+   never fills up (tested: 13 calls in a row, no 429). The edge (Cloudflare) writes the
+   client address into CF-Connecting-IP / True-Client-IP and overwrites any value the
+   client sent, so those headers are trusted first. */
+export function clientIp(req: Request): string {
+  const header = (name: string) => {
+    const v = req.headers[name];
+    return (Array.isArray(v) ? v[0] : v)?.trim() || "";
+  };
+  return header("cf-connecting-ip") || header("true-client-ip") || req.ip || "unknown";
+}
+
 /* ---- per-IP rate limit: a sliding minute ---- */
 const hits = new Map<string, number[]>();
 function tooFast(key: string, perMinute: number): boolean {
@@ -104,7 +117,7 @@ export function guard({ feature, premium = false, signedIn = false, perMinute = 
   const needsUser = premium || signedIn;
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
-      if (tooFast(`${feature}:${req.ip}`, perMinute)) {
+      if (tooFast(`${feature}:${clientIp(req)}`, perMinute)) {
         return res.status(429).json({ error: "rate_limited", message: "Too many requests. Please wait a moment." });
       }
       if (!admin) {
@@ -125,7 +138,12 @@ export function guard({ feature, premium = false, signedIn = false, perMinute = 
         return res.status(402).json({ error: "premium_required", message: "This feature is part of Premium." });
       }
       const { data: used, error } = await admin.rpc("bump_ai_usage", { p_user: caller.userId, p_feature: feature });
-      if (!error && typeof used === "number" && used > dailyLimit(feature, perDay)) {
+      // The daily count is what caps the cost: if it cannot be read, the call waits (fail closed).
+      if (error || typeof used !== "number") {
+        console.error("Usage count error:", error?.message || "no count");
+        return res.status(503).json({ error: "usage_unavailable", message: "Please try again in a moment." });
+      }
+      if (used > dailyLimit(feature, perDay)) {
         return res.status(429).json({ error: "daily_limit", message: "You have reached today's limit for this feature. It starts again tomorrow." });
       }
       next();

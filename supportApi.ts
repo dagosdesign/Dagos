@@ -3,6 +3,7 @@ import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 import { mailReady, sendMail } from "./mailer";
+import { clientIp } from "./authGuard";
 
 /* HELP & SUPPORT: a student's message to the Lexistencehub team.
 
@@ -62,7 +63,7 @@ export function registerSupportRoutes(app: Express) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail) || mail.length > 120) return res.status(400).json({ message: "Enter a valid e-mail address so we can reply." });
     if (text.length < 10) return res.status(400).json({ message: "Please describe your question in a little more detail." });
     if (text.length > 2000) return res.status(400).json({ message: "Please keep your message under 2000 characters." });
-    if (limited(id) || limited(req.ip ?? "ip")) return res.status(429).json({ message: "You have sent several messages. Please try again in an hour." });
+    if (limited(id) || limited(clientIp(req))) return res.status(429).json({ message: "You have sent several messages. Please try again in an hour." });
 
     const safeContext: Record<string, string> = {};
     for (const [k, v] of Object.entries(context ?? {}).slice(0, 10)) safeContext[k.slice(0, 30)] = String(v).slice(0, 200);

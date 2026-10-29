@@ -119,7 +119,7 @@ function getVocab(): Record<string, { forms?: string[] }> {
 // Endpoint to check if AI is configured
 app.get("/api/config", (req, res) => {
   const isConfigured = !!process.env.GEMINI_API_KEY;
-  res.json({ isConfigured, accountsEnabled, webApp: SERVE_WEB_APP, webAppSetting: process.env.SERVE_WEB_APP === undefined ? "not set" : "set" });
+  res.json({ isConfigured, accountsEnabled, webApp: SERVE_WEB_APP });
 });
 
 // Size limits for the AI LEX chat (the app sends the whole conversation each time).
