@@ -39,6 +39,8 @@ workflows:
         script: npm ci
       - name: Build the web app and copy it into the iOS project
         script: npm run build:native
+      - name: Stop if the build has no accounts (Supabase settings missing)
+        script: grep -rqF "supabase.co" ios/App/App/public/assets
       - name: Use the signing files Codemagic created
         script: xcode-project use-profiles
       - name: Build number = latest TestFlight build + 1

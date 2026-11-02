@@ -206,5 +206,7 @@ export async function mergeAfterSignIn(choice?: MergeChoice): Promise<'done' | '
 export async function signOut(): Promise<void> {
   if (!supabase) return;
   await syncBeforeSignOut();
-  await supabase.auth.signOut();
+  // Without a connection the server call fails and the session would stay on the phone.
+  const { error } = await supabase.auth.signOut();
+  if (error) await supabase.auth.signOut({ scope: 'local' });
 }

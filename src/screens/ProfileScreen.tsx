@@ -271,6 +271,16 @@ export default function ProfileScreen(props: ProfileScreenProps) {
                       return;
                     }
                     signOutProfile();
+                    if (cloudEnabled) {
+                      // A guest leaves too: back to the welcome screen, as after an account log-out.
+                      try {
+                        localStorage.removeItem(WELCOME_SEEN_KEY);
+                      } catch {
+                        /* ignore */
+                      }
+                      window.location.reload();
+                      return;
+                    }
                     setToast('Logged out');
                   }}
                   className="flex-1 rounded-2xl py-3 text-[14px] font-semibold cursor-pointer"
