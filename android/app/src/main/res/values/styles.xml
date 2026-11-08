@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -13,6 +13,14 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:background">@null</item>
+        <!-- Behind the bars on Android 15+, where apps draw edge to edge. -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <!-- System bars in the app's own dark colour from the first frame: the theme is
+             light, so status and navigation bars were white (with pale icons). -->
+        <item name="android:statusBarColor">#050505</item>
+        <item name="android:navigationBarColor">#050505</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
     </style>
 
 
@@ -23,5 +31,11 @@
         <item name="windowSplashScreenBackground">#050505</item>
         <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
         <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
+        <!-- System bars in the app's own dark colour from the first frame: the theme is
+             light, so status and navigation bars were white (with pale icons). -->
+        <item name="android:statusBarColor">#050505</item>
+        <item name="android:navigationBarColor">#050505</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
     </style>
 </resources>
