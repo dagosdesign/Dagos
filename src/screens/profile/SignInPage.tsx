@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import { Eye, EyeOff, MailCheck } from 'lucide-react';
 import { C, Card, GhostButton, GoldButton, SubPage } from '../../components/profile/ui';
-import { sendPasswordReset, signIn, signInWithProvider, signUp } from '../../lib/auth';
+import { sendPasswordReset, signIn, signInWithAppleNative, signInWithProvider, signUp } from '../../lib/auth';
 import { useUserProfile } from '../../lib/userProfile';
 import { platform } from '../../lib/runtime';
 
@@ -71,6 +71,13 @@ export default function SignInPage({
   const social = async (provider: 'google' | 'apple') => {
     setError(null);
     try {
+      if (provider === 'apple') {
+        // Apple's own sheet on iPhone; the session is ready when it returns.
+        if (!(await signInWithAppleNative())) return;
+        notify('Signed in');
+        signedIn();
+        return;
+      }
       await signInWithProvider(provider);
     } catch (e: any) {
       setError(e.message || 'This sign-in method is not available yet.');

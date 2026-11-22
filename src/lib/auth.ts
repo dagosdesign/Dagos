@@ -149,6 +149,43 @@ export async function signInWithProvider(provider: 'google' | 'apple'): Promise<
   if (data?.url) await Browser.open({ url: data.url, presentationStyle: 'popover' });
 }
 
+/* Sign in with Apple on iPhone: Apple's own sheet (Face ID), no browser.
+   Apple signs an identity token; Supabase checks it against the app's bundle id
+   (Authentication -> Providers -> Apple -> Client IDs: app.lexistencehub), so no
+   OAuth secret has to be kept up to date. A one-time nonce ties the token to this
+   sign-in: Apple gets its SHA-256, Supabase the original and compares the two. */
+/** true once signed in; false when the student closed Apple's sheet. */
+export async function signInWithAppleNative(): Promise<boolean> {
+  if (!supabase) throw new Error('Accounts are not available yet.');
+  const { SignInWithApple } = await import('@capacitor-community/apple-sign-in');
+  const bytes = crypto.getRandomValues(new Uint8Array(32));
+  const nonce = Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(nonce));
+  const hashedNonce = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
+
+  let result;
+  try {
+    result = await SignInWithApple.authorize({
+      clientId: 'app.lexistencehub',
+      redirectURI: '',
+      scopes: 'email name',
+      nonce: hashedNonce,
+    });
+  } catch (err: any) {
+    // Closing Apple's sheet is not an error worth showing.
+    if (/cancel|1001/i.test(String(err?.message ?? err))) return false;
+    throw new Error('Apple sign-in could not be completed. Please try again.');
+  }
+
+  const { identityToken, givenName, familyName } = result.response;
+  const { error } = await supabase.auth.signInWithIdToken({ provider: 'apple', token: identityToken, nonce });
+  fail(error);
+  // Apple sends the name only the very first time: keep it on the account.
+  const fullName = [givenName, familyName].filter(Boolean).join(' ').trim();
+  if (fullName) await supabase.auth.updateUser({ data: { full_name: fullName } });
+  return true;
+}
+
 /* The deep link with the sign-in code arrives here (see bootNative). */
 export async function handleAuthDeepLink(url: string): Promise<boolean> {
   if (!supabase || !url.startsWith(NATIVE_REDIRECT)) return false;
