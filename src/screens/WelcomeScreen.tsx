@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import SignInPage from './profile/SignInPage';
-import { signInWithProvider } from '../lib/auth';
+import { signInWithAppleNative, signInWithProvider } from '../lib/auth';
+import { platform } from '../lib/runtime';
+import AppleSignInButton from '../components/AppleSignInButton';
+import GoogleSignInButton from '../components/GoogleSignInButton';
 
 /* WELCOME - the first thing a new student sees, once per device:
    create an account, sign in, or go on as a guest. Nothing is forced - a guest
@@ -60,6 +63,16 @@ export default function WelcomeScreen({ onDone }: { onDone: () => void }) {
     }
   };
 
+  // On iPhone, Apple's own sign-in sits next to Google's (App Review 4.8).
+  const apple = async () => {
+    setError(null);
+    try {
+      if (await signInWithAppleNative()) finish();
+    } catch (e: any) {
+      setError(e.message || 'Apple sign-in is not available right now.');
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-[85] overflow-y-auto font-sans" style={{ background: '#050505' }}>
       {/* a quiet gold glow behind the name */}
@@ -110,14 +123,8 @@ export default function WelcomeScreen({ onDone }: { onDone: () => void }) {
           >
             Sign In
           </button>
-          <button
-            type="button"
-            onClick={google}
-            className="w-full rounded-2xl border py-4 text-[15px] font-medium text-white cursor-pointer"
-            style={{ borderColor: '#262626', background: '#0B0B0B' }}
-          >
-            Continue with Google
-          </button>
+          {platform === 'ios' && <AppleSignInButton onClick={apple} className="py-4" />}
+          <GoogleSignInButton onClick={google} className="py-4" />
 
           {error && (
             <p className="text-[13px] text-center" style={{ color: '#F5B82E' }}>
