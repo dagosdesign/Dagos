@@ -42,3 +42,8 @@ release/
 # Android Studio's own project settings
 android/.idea/
 
+
+# App Store frames: regenerated from store-assets/appstore/raw by scripts/make-store-screenshots.mjs
+store-assets/appstore/iphone-6.9/
+store-assets/appstore/iphone-6.3/
+store-assets/appstore/ipad-13/
